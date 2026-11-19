@@ -15,167 +15,167 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		addCharacter("rahi")
-		saynn("What do you wanna feed Rahi?")
+		saynn("Чем хочешь покормить Рахи?")
 
-		saynn("Seems like that crate of toys also has some packaged treats if you don't possess anything edible. How convenient.")
+		saynn("Похоже, в том ящике с игрушками тоже завалялось какое-то лакомство в упаковке, если у тебя нет ничего съедобного под рукой. Как удобно.")
 
-		addButton("Random treat", "Feed Rahi a random treat that you stole together", "random_treat")
+		addButton("Случайное лакомство", "Дать Рахи случайное лакомство, которое вы украли вместе", "random_treat")
 		if (GM.pc.getInventory().hasItemID("appleitem")):
-			addButton("Give apple", "Give your kitty an apple to chew on", "apple_treat")
+			addButton("Дать яблоко", "Дать своей кошечке погрызть яблоко", "apple_treat")
 		else:
-			addDisabledButton("Give apple", "You don't have any apples")
+			addDisabledButton("Дать яблоко", "У тебя нет яблок")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillPetplay")):
-			addButton("Pet bowl", "(Petplay) Fill a bowl with some kitty food for Rahi", "petplay_petbowl")
+			addButton("Миска для питомца", "(Петплей) Насыпать в миску кошачьего корма для Рахи", "petplay_petbowl")
 	if(state == "random_treat"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="kneel"})
-		saynn("You find a little bag of treats and shake it in front of Rahi. Her eyes fixate on it, tail already flicking back and forth in anticipation. She lets out a little meow of excitement.")
+		saynn("Ты находишь маленький пакетик с лакомствами и трясешь им перед Рахи. Её взгляд приковывается к нему, а хвост уже предвкушающе ходит из стороны в сторону. Она издает короткое восторженное мяуканье.")
 
 		if (deserved):
 			if (getModule("RahiModule").canTalkInFirstPerson()):
-				saynn("[say=rahi]Yay. I like treats![/say]")
+				saynn("[say=rahi]Ура! Обожаю вкусняшки![/say]")
 
 			else:
-				saynn("[say=rahi]Yay. She likes treats![/say]")
+				saynn("[say=rahi]Ура! Ей нравятся вкусняшки![/say]")
 
 		else:
 			if (getModule("RahiModule").canTalkInFirstPerson()):
-				saynn("[say=rahi]Do I deserve it?.. I probably do..[/say]")
+				saynn("[say=rahi]Неужели я это заслужила?.. Наверное, заслужила..[/say]")
 
 			else:
-				saynn("[say=rahi]Does she deserve it?.. She probably does..[/say]")
+				saynn("[say=rahi]Заслуживает ли она это?.. Наверное, заслуживает..[/say]")
 
-		saynn("[say=pc]Get on your knees if you want some, kitty.[/say]")
+		saynn("[say=pc]Хочешь вкусняшку — встань на колени, киска.[/say]")
 
-		saynn("You hold a single treat out towards Rahi. But when she tries to grab it, you pull it away. Kitty pouts but eventually gets on her knees before you. She opens her mouth and waits. Seeing such an obedient kitty makes you want to spoil her. You gently place the treat on Rahi's tongue.")
+		saynn("Вы протягиваете Рахи угощение. Но когда она пытается схватить его, вы резко убираете руку. Киска дуется, но в конце концов опускается перед вами на колени. Она открывает рот и ждет. Вид такой послушной кошечки заставляет вас захотеть побаловать её. Вы осторожно кладете лакомство ей на язык.")
 
-		saynn("As soon as Rahi tastes it, her eyes close in pleasure. She crunches down on it with great pleasure, a purr of content escapes from her.")
+		saynn("Как только Рахи пробует угощение, её глаза закрываются от удовольствия. Она с наслаждением хрустит им, и из её груди вырывается довольное мурчание.")
 
-		saynn("When Rahi finishes the treat, she licks her lips and looks up at you expectantly.")
+		saynn("Когда Рахи доедает лакомство, она облизывает губы и выжидающе смотрит на вас.")
 
-		addButton("Enough", "Enough treats", "endthescene")
-		addButton("One more", "Feed Rahi another treat", "another_treat")
+		addButton("Хватит", "Хватит вкусняшек", "endthescene")
+		addButton("Еще одну", "Дать Рахи еще одно лакомство", "another_treat")
 	if(state == "another_treat"):
-		saynn("How can you not when Rahi is being so cute. When you produce another treat from the little bag, her eyes lit up with joy. She eagerly accepts the second treat and noms it!")
+		saynn("Как тут устоять, когда Рахи такая милашка? Когда вы достаете из мешочка еще одно угощение, её глаза загораются радостью. Она жадно принимает второе лакомство и с аппетитом его уплетает!")
 
-		saynn("Rahi savores this treat, she closes her eyes again as she crunches down on it. Then she licks her lips and lets out a happy meow.")
+		saynn("Рахи смакует угощение, снова закрывая глаза, пока хрустит им. Затем она облизывает губы и издает довольное «мяу».")
 
-		saynn("That should be enough for now. Don't wanna spoil your kitty too much..")
+		saynn("На первый раз должно хватить. Не хочу слишком сильно баловать свою кошечку...")
 
-		addButton("Enough", "Enough treats", "endthescene")
+		addButton("Хватит", "Хватит вкусняшек", "endthescene")
 	if(state == "petplay_petbowl"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="allfours"})
 		var petLevel = getModule("RahiModule").getSkillScore("rahiSkillPetplay")
-		saynn("You find a pet bowl and a box of kitty treats. Perfect. As you approach Rahi, her feline ears perk up at the sight of the pet bowl in your hands.")
+		saynn("Ты находишь миску для животных и коробку с кошачьими лакомствами. Идеально. Когда ты приближаешься к Рахи, её кошачьи ушки навостряются при виде миски в твоих руках.")
 
-		saynn("[say=pc]I wanna feed you, kitty.[/say]")
+		saynn("[say=pc]Хочу тебя покормить, киса.[/say]")
 
-		saynn("[say=rahi]Meow?..[/say]")
+		saynn("[say=rahi]Мяу?..[/say]")
 
-		saynn("You place the bowl on the floor and fill it with kitty treats. Rahi's eyes widen as you do that.")
+		saynn("Ты ставишь миску на пол и наполняешь её лакомствами. Глаза Рахи расширяются от предвкушения.")
 
 		if (petLevel < 5):
 			if (getModule("RahiModule").canTalkInFirstPerson()):
-				saynn("[say=rahi]I can't just grab it, right?..[/say]")
+				saynn("[say=rahi]Она ведь не может просто схватить их лапами, верно?..[/say]")
 
 			else:
-				saynn("[say=rahi]She can't just grab it, right?..[/say]")
+				saynn("[say=rahi]Она ведь не может просто схватить их, верно?..[/say]")
 
-			saynn("[say=pc]Nope.[/say]")
+			saynn("[say=pc]Не-а.[/say]")
 
-			saynn("After some hesitation, Rahi finally gets on all fours and approaches the bowl. Kitty dips her face into it and begins to slowly munch on the treats, feeling quite embarrassed.")
+			saynn("После некоторого колебания Рахи наконец встает на четвереньки и подходит к миске. Кошечка опускает туда мордочку и начинает медленно жевать лакомства, чувствуя при этом сильное смущение.")
 
-			saynn("The more she does it, the more she gets into the role, nomming the dry treats like a happy kitty, without even using her paws. The more you watch, the bigger the smile on your face. After a few minutes, Rahi finishes the treats and lifts her head, showing you her muzzle covered in crumbs.")
+			saynn("Чем больше она это делает, тем сильнее вживается в роль, уплетая сухие кусочки, словно счастливая кошка, даже не используя лапы. Чем дольше ты наблюдаешь, тем шире становится твоя улыбка. Через несколько минут Рахи доедает угощение и поднимает голову, демонстрируя тебе свою мордочку, перепачканную крошками.")
 
 		else:
-			saynn("[say=rahi]Meow![/say]")
+			saynn("[say=rahi]Мяу![/say]")
 
-			saynn("Without any hesitation, Rahi gets on all fours and crawls up to the bowl, swaying her hips playfully. Kitty dips her face into the treats and begins to munch them while purring contentedly. Seems like your kitty enjoys being treated like a real feline.")
+			saynn("Без малейших колебаний Рахи встает на четвереньки и подползает к миске, игриво покачивая бедрами. Китти окунает мордочку в лакомства и начинает увлеченно хрустеть ими, довольно мурлыча. Похоже, твоей кошечке нравится, когда с ней обращаются как с настоящей кошкой.")
 
-			saynn("She doesn't even use her paws while nomming the dry treats. The more you watch, the bigger the smile on your face. After a few minutes, Rahi finishes the treats and lifts her head, showing you her muzzle covered in crumbs.")
+			saynn("Пока она уплетает сухие лакомства, она даже не использует лапки. Чем дольше ты наблюдаешь, тем шире становится твоя улыбка. Через несколько минут Рахи доедает всё до крошки и поднимает голову, демонстрируя тебе свою мордочку, перепачканную крошками.")
 
-		saynn("[say=pc]Did you like those?[/say]")
+		saynn("[say=pc]Понравилось?[/say]")
 
-		saynn("Rahi lets out a satisfied meow and licks her whiskers.")
+		saynn("Рахи издает удовлетворенное мяуканье и слизывает крошки с усов.")
 
-		addButton("Enough", "Enough treats", "endthescene")
+		addButton("Хватит", "Хватит вкусняшек", "endthescene")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillWatersports")):
-			addButton("Piss into the bowl", "(Watersports) Make Rahi lick your urine out of the bowl", "watersports_lickpiss")
+			addButton("Нассать в миску", "(Вотерспорт) Заставить Рахи вылизать твою мочу из миски", "watersports_lickpiss")
 	if(state == "watersports_lickpiss"):
 		var waterLevel = getModule("RahiModule").getSkillScore("rahiSkillWatersports")
-		saynn("You wait for the kitty to be done with the treats before stealing the bowl away from her for a second.")
+		saynn("Ты ждешь, пока кошечка закончит с лакомствами, прежде чем на секунду отобрать у нее миску.")
 
-		saynn("[say=pc]You're probably thirsty, aren't you, kitty?[/say]")
+		saynn("[say=pc]Ты, должно быть, хочешь пить, китти?[/say]")
 
 		if (waterLevel < 5):
-			saynn("She nods eagerly. But then she sees you placing the bowl on the floor and carefully peeing into it. She gulps audibly. Your kitty is clearly.. surprised. But now it's too late to say no.")
+			saynn("Она с энтузиазмом кивает. Но тут она видит, как ты ставишь миску на пол и осторожно справляешь в нее мочу. Она издает слышный глоток. Твоя кошечка явно... удивлена. Но теперь уже слишком поздно говорить «нет».")
 
-			saynn("As you point at the bowl, Rahi reluctantly crawls up to it and sniffs the contents cautiously. The feline then recoils at the very unpleasant smell. But something makes her commit to it.")
+			saynn("Когда ты указываешь на миску, Рахи неохотно подползает к ней и осторожно принюхивается к содержимому. Кошка тут же отпрядывает от крайне неприятного запаха. Но что-то заставляет её решиться на это.")
 
-			saynn("Rahi approaches the bowl again and starts slowly lapping up your piss with her tongue. The feline's expression shows disgust, she hesitates a lot between each lap.")
+			saynn("Рахи снова подходит к миске и начинает медленно слизывать твою мочу языком. На мордочке кошечки читается отвращение, она постоянно колеблется перед каждым новым глотком.")
 
-			saynn("Despite the gross smell and taste, Rahi continues to lap up the piss, clearly not wanting to disappoint you.")
+			saynn("Несмотря на мерзкий запах и вкус, Рахи продолжает слизывать мочу, явно не желая тебя разочаровывать.")
 
-			saynn("[say=pc]You don't like it?[/say]")
+			saynn("[say=pc]Тебе не нравится?[/say]")
 
-			saynn("Rahi lifts her head and meows softly. You approach her and pet her for trying. Quiet purring escapes from your kitty.")
+			saynn("Рахи поднимает голову и тихо мяукает. Ты подходишь к ней и гладишь за старания. Из твоей киски вырывается тихое мурлыканье.")
 
-			saynn("[say=pc]You will get used to it, kitty.[/say]")
+			saynn("[say=pc]Ты привыкнешь к этому, кошечка.[/say]")
 
 		elif (waterLevel < 10):
-			saynn("She nods eagerly. But then she sees you placing the bowl on the floor and carefully peeing into it. She seems.. interested. Her expression doesn't show regret. Which is nice.")
+			saynn("Она с энтузиазмом кивает. Но затем она видит, как ты ставишь миску на пол и осторожно справляешь в неё нужду. Кажется... она заинтересована. В её взгляде нет сожаления. И это радует.")
 
-			saynn("As you point at the bowl, Rahi crawls up to it and sniffs the contents. The smell is very unpleasant but she doesn't seem to mind, your kitty got accustomed to it by now.")
+			saynn("Когда ты указываешь на миску, Рахи подползает к ней и обнюхивает содержимое. Запах очень неприятный, но она, кажется, не против — твоя киска уже привыкла к нему.")
 
-			saynn("Without too much hesitation, Rahi begins lapping up the gross pee with her feline tongue, her eyes closed as she tries to focus.")
+			saynn("Без особых колебаний Рахи начинает слизывать вонючую мочу своим кошачьим языком, зажмурив глаза, чтобы сосредоточиться.")
 
-			saynn("Despite the gross smell and taste, Rahi continues to lap up the piss, clearly not wanting to disappoint you. She is not eager about it but she empties about half of the bowl before stopping and lifting her head.")
+			saynn("Несмотря на мерзкий запах и вкус, Рахи продолжает слизывать мочу, явно не желая тебя разочаровывать. Она делает это не с особым рвением, но успевает вылизать примерно половину миски, прежде чем остановиться и поднять голову.")
 
-			saynn("She meows softly and looks at you.")
+			saynn("Она тихо мяукает и смотрит на тебя.")
 
-			saynn("[say=pc]Proud of you, kitty.[/say]")
+			saynn("[say=pc]Горжусь тобой, киска.[/say]")
 
-			saynn("You approach her and scritch her behind the ears. Kitty purrs while drying her lips with her paws.")
+			saynn("Ты подходишь к ней и чешешь за ушком. Киска мурлычет, вытирая губы лапками.")
 
 		else:
-			saynn("She nods eagerly, already excited. You place the bowl on the floor and carefully pee into it, filling it fully. Rahi crawls around you, wiggling happily.")
+			saynn("Она с энтузиазмом кивает, уже пребывая в предвкушении. Ты ставишь миску на пол и осторожно справляешь в неё мочу, наполняя до краев. Рахи ползает вокруг тебя, радостно виляя задом.")
 
-			saynn("[say=pc]Okay, there you go.[/say]")
+			saynn("[say=pc]Ну вот, держи.[/say]")
 
-			saynn("As soon as you step away, kitty quickly approaches the bowl and lowers her muzzle into the gross yellow fluid. She sticks her tongue and begins to lapping it all up. Her eyes close in pleasure as she enjoys swallowing the warm piss.")
+			saynn("Как только ты отходишь, кошечка быстро подбирается к миске и опускает в неё мордочку, погружая её в мерзкую желтую жидкость. Она высовывает язык и начинает жадно всё вылизывать. Её глаза закрываются от удовольствия, пока она наслаждается глотками теплой мочи.")
 
-			saynn("You can't help but to smile seeing your piss slut at work. Training her to do this was so worth it.")
+			saynn("Ты не можешь сдержать улыбки, глядя на то, как работает твоя писс-сучка. Обучение этому навыку стоило всех затраченных усилий.")
 
-			saynn("After a few minutes, Rahi finishes drinking all your piss. She continues to lick the empty bowl, cleaning it. Then she lets out a satisfied meow and looks up at you.")
+			saynn("Спустя несколько минут Рахи допивает всю твою мочу до капли. Она продолжает вылизывать пустую миску, очищая её до блеска. Затем она издает удовлетворенное мяуканье и смотрит на тебя снизу вверх.")
 
-			saynn("[say=pc]Great job, kitty.[/say]")
+			saynn("[say=pc]Отличная работа, кошечка.[/say]")
 
-			saynn("You approach her and gently scritch her behind the ears and under the chin. Rahi leans into the touch and licks her lips while purring, happy and satisfied after completing the order with ease.")
+			saynn("Ты подходишь к ней и нежно чешешь её за ушками и под подбородком. Рахи прижимается к твоей руке и облизывает губы, довольно мурлыча — счастливая и удовлетворенная тем, что с легкостью выполнила приказ.")
 
-		addButton("Enough", "Enough gross stuff", "endthescene")
+		addButton("Хватит", "Хватит этой мерзости", "endthescene")
 	if(state == "apple_treat"):
-		saynn("You produce an apple and present it to Rahi. Any kind of fruit is forbidden for inmates to have so this is a pretty valuable reward. Kitty's eyes shine brightly when she sees it.")
+		saynn("Ты достаешь яблоко и протягиваешь его Рахи. Любые фрукты заключенным запрещены, так что это весьма ценная награда. Глаза кошечки ярко вспыхивают при виде угощения.")
 
 		if (deserved):
-			saynn("[say=rahi]It's for {rahiFP('me', 'her')}?..[/say]")
+			saynn("[say=rahi]Это для {rahiFP('me', 'her')}?..[/say]")
 
 		else:
-			saynn("[say=rahi]It's for {rahiFP('me', 'her')}?.. But {rahiFP('I don\\'t', 'she doesn\\'t')} deserve it..[/say]")
+			saynn("[say=rahi]Это для {rahiFP('me', 'her')}?.. Но {rahiFP('I don\\'t', 'she doesn\\'t')} это заслужила..[/say]")
 
-			saynn("[say=pc]That's for me to decide.[/say]")
+			saynn("[say=pc]Это решать мне.[/say]")
 
-		saynn("You hand Rahi the apple. She quickly rubs it against the sleeve of her shirt and looks at it, her mouth already getting wet with saliva.")
+		saynn("Вы протягиваете Рахи яблоко. Она быстро протирает его о рукав своей рубашки и смотрит на него, а у неё во рту уже начинает скапливаться слюна.")
 
-		saynn("Rahi's sharp fangs sank effortlessly into the crisp, juicy flesh of the apple, tearing off large chunks with each bite.")
+		saynn("Острые клыки Рахи без труда вонзились в хрустящую, сочную мякоть яблока, отрывая огромные куски с каждым укусом.")
 
-		saynn("You can't help but to smile while watching her bite into that apple.")
+		saynn("Вы не можете сдержать улыбки, наблюдая за тем, как она вгрызается в это яблоко.")
 
-		saynn("When she was done, she licked the last drops of juice from her lips and looked up at you.")
+		saynn("Когда она закончила, она слизнула последние капли сока с губ и посмотрела на вас.")
 
-		saynn("[say=rahi]Thank you..[/say]")
+		saynn("[say=rahi]Спасибо..[/say]")
 
-		saynn("Eating this apple gave the kitty some stamina back!")
+		saynn("Поедание этого яблока вернуло киске немного выносливости!")
 
-		addButton("Continue", "That was cute", "endthescene")
+		addButton("Продолжить", "Это было мило", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

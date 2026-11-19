@@ -13,11 +13,11 @@ func _run():
 		playAnimation(StageScene.StocksSexOral, "tease", {npc="avy"})
 
 	if(state == ""):
-		saynn("You feel a very firm smack on your butt! Ow! You squirm and try to protect your rear but that’s impossible, you feel another smach and then a feminine giggle behind you.")
+		saynn("Ты чувствуешь резкий, сильный шлепок по заднице! Ой! Ты дергаешься, пытаясь прикрыть тыл, но это невозможно — следом прилетает еще один удар, а за спиной раздается девичий смешок.")
 
-		saynn("[say=avy]Your ass bounces so much.[/say]")
+		saynn("[say=avy]Твоя задница так и подпрыгивает.[/say]")
 
-		saynn("A dark foxy walks into your view. She sports a uniform with a red trim to it so you know she is not up for no good. She crosses her arms and scratches her chin while humming.")
+		saynn("В поле твоего зрения входит смуглая лисица. На ней форма с красной отделкой, так что ты понимаешь: она здесь не для добрых дел. Она скрещивает руки на груди и, напевая под нос, чешет подбородок.")
 
 		saynn("[say=avy]"+RNG.pick([
 			"Hey there, bondage slut. Want me to help you?",
@@ -25,13 +25,13 @@ func _run():
 			"I saw your naked butt and just couldn’t walk past. Need my help?",
 		])+"[/say]")
 
-		saynn("You’re not sure how to react yet, her tone sounds awfully cunning. Avy smirks at the lack of answer, you notice her pulling down her shorts slightly and exposing her sheath, she is a dickgirl! She also pulls out a packaged condom and presents it to you.")
+		saynn("Ты еще не знаешь, как реагировать — её тон звучит чертовски хитро. Эви ухмыляется, видя твое замешательство; ты замечаешь, как она слегка приспускает шорты, обнажая свою щель — она дикгерл! Затем она достает упакованный презерватив и протягивает его тебе.")
 
-		saynn("[say=avy]I will make it easy for you. I’m fucking you either way. Your next words will decide if I will use this or not.[/say]")
+		saynn("[say=avy]Я всё сделаю проще. Я всё равно тебя оттрахаю. Твои следующие слова решат, пригодится мне эта штука или нет.[/say]")
 
-		addButton("Breed me!", "You crave for a good fucking, who needs condoms", "breed_me!")
-		addButton("Beg", "Beg her to use a condom. Avy might listen or she might not", "beg")
-		addButton("Fuck off", "Tell her that she can go screw herself instead", "fuck_off")
+		addButton("Оплодотвори меня!", "Ты жаждешь хорошего траха, зачем тебе презервативы?", "breed_me!")
+		addButton("Умолять", "Умолять её использовать презерватив. Эви может прислушаться, а может и нет.", "beg")
+		addButton("Отъебись", "Сказать ей, что она может пойти нахер вместо этого.", "fuck_off")
 
 
 	if(state == "breed_me!"):
@@ -44,13 +44,13 @@ func _run():
 			"I’m too horny to say no to breeding, please fuck me rough!",
 		])+"[/say]")
 
-		saynn("Avy chuckles and puts the condom away. She walks up close to you and shoves her sheath into your face, her height is perfect for that. You eagerly nuzzle her crotch and lick her knotted canine-type cock when it starts poking out.")
+		saynn("Эви посмеивается и убирает презерватив. Она подходит вплотную и сует свою щель тебе прямо в лицо — её рост для этого идеален. Ты жадно прижимаешься к её промежности и начинаешь лизать её узловатый собачий член, когда тот начинает показываться наружу.")
 
-		saynn("[say=avy]Well, if you ask so nicely.[/say]")
+		saynn("[say=avy]Ну, раз ты так мило просишь.[/say]")
 
-		saynn("She looks down at you, at how you get her cock ready without even any force. She cock-slaps your cheeks a few times, leaving a little line of precum on your face before walking behind you. You feel excited, the scent of her cock and its taste made you more aroused than ever.")
+		saynn("Она смотрит на тебя сверху вниз, наблюдая, как ты без всякого принуждения готовишь её член. Она несколько раз хлопает тебя по щекам, оставляя на твоём лице полоску предэякулята, а затем обходит тебя сзади. Ты чувствуешь возбуждение: запах и вкус её члена раззадоривают тебя сильнее, чем когда-либо.")
 
-		addButton("Continue", "See what happens next", "fucking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fucking")
 
 	if(state == "beg"):
 		playAnimation(StageScene.StocksSexOral, "tease", {npc="avy", npcBodyState={exposedCrotch=true, hard=true, condom=usedCondom}})
@@ -61,21 +61,21 @@ func _run():
 			"Condom?.. Please?",
 		])+"[/say]")
 
-		saynn("Avy puts on a cunning smile again and hums. You clearly see her canine-type cock peeking out of its sheath as you humiliate yourself in front of her.")
+		saynn("Ави снова хитро улыбается и напевает под нос. Ты отчетливо видишь, как её клыкастый член высовывается из препуция, пока ты унижаешься перед ней.")
 
 		# (if yes condom)
 		if(usedCondom):
-			saynn("[say=avy]Fine, I’m not feeling too frisky today.[/say]")
+			saynn("[say=avy]Ладно, сегодня я не настроена на игривости.[/say]")
 
-			saynn("She rips the package open and stretches it using her cock. Then she steps behind you.")
+			saynn("Она с треском разрывает упаковку и растягивает презерватив своим членом. Затем она встает позади тебя.")
 
 		# (if no condom)
 		if(!usedCondom):
-			saynn("[say=avy]But what am I supposed to do with my rut~. Your begging only made me breed you more, slut.[/say]")
+			saynn("[say=avy]Но что же мне делать с моей гоном~? Твои мольбы только заставили меня захотеть осеменить тебя ещё сильнее, шлюшка.[/say]")
 
-			saynn("She strokes her cock in your view until it’s fully hard. She makes it leak a drop of precum onto your forehead. You blush. Seems like your begging didn’t work, she puts the condom away and walks behind you.")
+			saynn("Она ласкает свой член прямо у тебя на глазах, пока он не становится полностью твердым. Она заставляет его выпустить каплю предэякулята тебе на лоб. Ты краснеешь. Похоже, твои уговоры не сработали: она убирает презерватив и обходит тебя сзади.")
 
-		addButton("Continue", "See what happens next", "fucking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fucking")
 
 	if(state == "fuck_off"):
 		playAnimation(StageScene.StocksSexOral, "tease", {npc="avy", npcBodyState={exposedCrotch=true, hard=true}})
@@ -86,51 +86,51 @@ func _run():
 			"Fuck off, whore, go find another red to fuck you in the ass.",
 		])+"[/say]")
 
-		saynn("Avy leans towards you and laughs into your face. Then she lands a loud slap on your cheek.")
+		saynn("Ави наклоняется к тебе и смеется прямо в лицо. Затем она отвешивает тебе звонкую пощечину.")
 
 		saynn("[say=avy]"+RNG.pick([
 			"Bitch please~. Fine, I hear you. Could have just said no",
 			"You’re not in a position to tell me that, whore~. Fine, I will have it my way then.",
 		])+"[/say]")
 
-		saynn("She slaps your face a few more times until the cheeks burn red. Ow. Each time she does that, her cock is visibly peeking out of its sheath more and becomes harder. It reaches the point where her cock is dripping pre.")
+		saynn("Она хлопает тебя по лицу еще несколько раз, пока щеки не начинают гореть красным. Ой! С каждым таким ударом её член заметно сильнее высовывается из препуция и становится тверже. Доходит до того, что её член начинает сочиться смазкой.")
 
-		saynn("Satisfied with that, she walks behind you while tracing her hand over your body.")
+		saynn("Довольная этим, она обходит тебя сзади, проводя рукой по твоему телу.")
 
-		addButton("Continue", "See what happens next", "fucking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fucking")
 
 	if(state == "fucking"):
 		playAnimation(StageScene.StocksSex, "sex", {npc="avy", pcCum=true, npcCum=true, bodyState={exposedCrotch=true}, npcBodyState={exposedCrotch=true, hard=true, condom=usedCondom}})
 		
-		saynn("You can’t look behind you with the stocks blocking your head but you can feel it for sure. Avy places her hands on your {pc.thick} butt and presses her cock against your cunt. She starts rubbing her shaft against your sensitive pussy lips, your body betrays you and gets aroused quickly.")
+		saynn("Из-за колодок, сковывающих голову, ты не можешь оглянуться, но точно чувствуешь её присутствие. Ави кладет руки на твою {pc.thick} задницу и прижимает свой член к твоей киске. Она начинает тереться стволом о твои чувствительные половые губы, и твое тело предательски быстро откликается возбуждением.")
 
 		# (if condom)
 		if(usedCondom):
-			saynn("Even though she is wearing a condom, you feel the bumps of her canine cock as she grinds it against you. Your eyes half-close themselves as you focus on the pleasurable sensations.")
+			saynn("Даже несмотря на то, что на ней презерватив, ты чувствуешь каждую выпуклость её клыкастого члена, когда она втирается в тебя. Твои глаза сами собой полузакрываются, пока ты сосредоточена на этих приятных ощущениях.")
 
 		# (if no condom)
 		if(!usedCondom):
-			saynn("You feel every bump of her cock, the warm drops of precum streaming down your slit as she grinds her shaft against you. Your eyes half-close themselves as you focus on the pleasurable sensations.")
+			saynn("Ты чувствуешь каждую неровность её члена; теплые капли предэякулята стекают по твоей щели, пока она трется стволом о тебя. Твои глаза сами собой полузакрываются, пока ты сосредоточена на этих приятных ощущениях.")
 
-		saynn("Her hand directs the tip towards your wet pussy entering and after a few prods, she enters you! Your petals happily spread under the onslaught of her cock, she bucked her hips forward and forced most of her cock inside you while also landing a smack on your ass. You can’t help but to squirm and moan as she starts using your {pc.vaginaStretch} cunt.")
+		saynn("Её рука направляет кончик к твоей мокрой киске, и после нескольких тычков она входит в тебя! Твои лепестки радостно раскрываются под натиском её члена; она резко подает бедра вперед, вбивая почти весь свой член внутрь и попутно отвешивая тебе шлепок по заднице. Ты не можешь удержаться от стонов и ерзанья, когда она начинает использовать твою {pc.vaginaStretch} киску.")
 
-		saynn("[say=avy]Such a whore, already wet for me~. Maybe I wanted to make your dry cunt suffer.[/say]")
+		saynn("[say=avy]Какая шлюшка, уже вся течешь для меня~. Может, я и хотела заставить твою сухую киску помучиться.[/say]")
 
-		saynn("She chuckles and bends forward to hold onto the top part of the stocks while she fucks you. She starts thrusting her hips back and forth, forcing her cock deeper inside your cunt and making it stretch to fit her length, you can only guess that the length of her cock is about {avy.penisSizeStr}, it easily reaches your cervix and starts pounding at it.")
+		saynn("Она посмеивается и наклоняется вперед, чтобы держаться за верхнюю часть колодок, пока трахает тебя. Она начинает двигать бедрами вперед-назад, заталкивая член всё глубже в твою киску и растягивая её под свою длину; ты можешь лишь догадываться, что её член достигает примерно {avy.penisSizeStr}, ведь он легко доходит до самой шейки матки и начинает нещадно колотить по ней.")
 
-		saynn("You can’t hold it, you open your mouth and moan, your body is forced into a prime position for breeding, your slit being ravaged so rough makes you feel ecstatic. You cum quick, your body starts squirming and struggling against the restraints but Avy keeps fucking you through your orgasm, your inner walls clenching around her cock overstimulate you and make you squirt.")
+		saynn("Ты не можешь сдержаться, ты приоткрываешь рот и стонешь; твоё тело вынуждено принять идеальную позу для осеменения, а то, как грубо терзают твою щель, доводит тебя до экстаза. Ты кончаешь быстро, твоё тело начинает извиваться и биться в путах, но Эви продолжает трахать тебя прямо сквозь оргазм; твои внутренние стенки, сжимающиеся вокруг её члена, перевозбуждают тебя настолько, что ты начинаешь сочиться.")
 
 		# (if has penis)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("You own cock shoots out a loud down at the floor, it’s useless in its chastity cage so it just sways a lot while you’re being fucked.")
+			saynn("Твой член безжизненно свисает вниз к полу; в своей девственной клетке он бесполезен и просто болтается туда-сюда, пока тебя трахают.")
 		elif(GM.pc.hasPenis()):
-			saynn("You own cock shoots out a loud down at the floor, it’s useless today so it just sways a lot while you’re being fucked.")
+			saynn("Твой член безжизненно свисает вниз к полу; сегодня он совершенно бесполезен и просто болтается туда-сюда, пока тебя трахают.")
 
-		saynn("[say=avy]Hope you’re ready to be bred, bitch.[/say]")
+		saynn("[say=avy]Надеюсь, ты готова к осеменению, сучка.[/say]")
 
 		# (if no condom)
 		if(!usedCondom):
-			saynn("She quickly closes in on her own climax before doing one last hard thrust and shoving her whole cock inside you, knot included. She grunts and growls while her cock breaks through your cervix and starts stuffing you full of her hot sticky cum. She doesn’t pull out, making sure that your pussy gets properly bred. The knot helps to keep most of the cum inside, you keep squirming while more warm orgasmic waves wash over you.")
+			saynn("Она стремительно приближается к своему пику, делает последний мощный толчок и заталкивает в тебя весь свой член целиком, включая узел. Она кряхтит и рычит, пока её член пробивает твою шейку матки и начинает заполнять тебя своей горячей липкой спермой. Она не вынимается, чтобы твоё киска была заполнена как следует. Узел помогает удержать почти всю сперму внутри, а ты продолжаешь извиваться, пока новые волны теплого оргазма накрывают тебя с головой.")
 
 			saynn("[say=avy]"+RNG.pick([
 				"Such a cumdump.",
@@ -141,45 +141,45 @@ func _run():
 
 		# (if condom)
 		if(usedCondom && !condomBroke):
-			saynn("She quickly closes in on her own climax before doing one last hard thrust and shoving her whole cock inside you, knot included. She grunts and growls while her cock breaks through your cervix and starts filling the condom while inside you with hot sticky cum. Your womb quickly starts to feel stuffed, she doesn’t pull out, using this chance to stretch you out more with her knot, maybe to cause you discomfort. But it only sends more warm orgasmic waves through your body, causing you to squirm and make more pleasure noises. Luckily the condom seems to hold all the cum nice and safe.")
+			saynn("Она стремительно приближается к собственному оргазму, делает последний мощный толчок и вгоняет в тебя весь свой член целиком, вместе с узлом. Она кряхтит и рычит, пока её член пробивает твою шейку матки и начинает наполнять презерватив горячей липкой спермой прямо внутри тебя. Твоя матка мгновенно ощущает распирание; она не спешит выходить, используя этот шанс, чтобы еще сильнее растянуть тебя своим узлом — возможно, чтобы причинить тебе дискомфорт. Но это лишь посылает новые волны теплого оргазма по твоему телу, заставляя тебя извиваться и стонать от удовольствия. К счастью, презерватив, кажется, надежно удерживает всю сперму внутри.")
 
-			saynn("[say=avy]Aww. And I used the worst condom I could find. Lucky whore.[/say]")
+			saynn("[say=avy]Оууу. И ведь я выбрала самый хреновый презерватив, какой только смогла найти. Везучая шлюшка.[/say]")
 
 		# (if condom breaks)
 		if(usedCondom && condomBroke):
-			saynn("She quickly closes in on her own climax before doing one last hard thrust and shoving her whole cock inside you, knot included. She grunts and growls while her cock breaks through your cervix and starts filling the condom while inside you with hot sticky cum. Your womb quickly starts to feel stuffed, she doesn’t pull out, using this chance to stretch you out more with her knot, maybe to cause you discomfort. But it only sends more warm orgasmic waves through your body, causing you to squirm and make more pleasure noises. Suddenly you feel that something is different.. The cum feels way more warm than before. [b]Oh no, the condom breaks and spills all of its contents![/b]")
+			saynn("Она стремительно приближается к собственному оргазму, делает последний мощный толчок и вгоняет в тебя весь свой член целиком, вместе с узлом. Она кряхтит и рычит, пока её член пробивает твою шейку матки и начинает наполнять презерватив горячей липкой спермой прямо внутри тебя. Твоя матка мгновенно ощущает распирание; она не спешит выходить, используя этот шанс, чтобы еще сильнее растянуть тебя своим узлом — возможно, чтобы причинить тебе дискомфорт. Но это лишь посылает новые волны теплого оргазма по твоему телу, заставляя тебя извиваться и стонать от удовольствия. Внезапно ты чувствуешь, что что-то изменилось... Сперма кажется гораздо более горячей, чем прежде. [b]О нет, презерватив порвался, и всё содержимое вылилось внутрь![/b]")
 
-			saynn("[say=avy]Oops. You probably didn’t want that? Oh well.[/say]")
+			saynn("[say=avy]Упс. Ты ведь, наверное, этого не хотела? Ну да ладно.[/say]")
 
-		saynn("When the knot starts to deflate, Avy pulls her cock out and rubs it clean against your butt. She quickly catches her breath and then [b]grabs a black marker and draws a tally mark on your body![/b]")
+		saynn("Когда узел начинает сдуваться, Эви вынимает свой член и вытирает его о твою задницу. Она быстро переводит дух и затем [b]хватает черный маркер и рисует на твоем теле черточку-отметку![/b]")
 
 		# (if condom didn’t break)
 		if(usedCondom && !condomBroke):
-			saynn("Avy also ties the used condom up and leaves it nearby.")
+			saynn("Эви также завязывает использованный презерватив и оставляет его неподалеку.")
 
 		# (if thats it)
 		if(!extraScene):
-			saynn("She puts her cock away and slaps your ass for the last time.")
+			saynn("Она убирает свой член и в последний раз шлепает тебя по заднице.")
 
-			saynn("[say=avy]It was great using you~[/say]")
+			saynn("[say=avy]Было охрененно тебя использовать~[/say]")
 
-			saynn("And with that, she leaves you, alone and used.")
+			saynn("И на этом она оставляет тебя — одинокого и использованного.")
 
 			# (scene ends)
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		else:
-			addButton("Continue", "There is more??", "analSex")
+			addButton("Продолжить", "Что, еще будет??", "analSex")
 
 	if(state == "analSex"):
 		playAnimation(StageScene.StocksSex, "fast", {npc="avy", pcCum=true, npcCum=true, bodyState={exposedCrotch=true}, npcBodyState={exposedCrotch=true, hard=true, condom=usedCondom}})
 		
-		saynn("But that’s not all of it, Avy’s cock is still as hard as it was and she is still horny. She spreads your {pc.masc} buttcheeks and starts prodding at your anal ring! You wiggle, squirm and try to voice your opinion but she calms you down with another smack.")
+		saynn("Но это еще не всё: член Эви всё еще твердый, и она всё еще хочет. Она раздвигает твои {pc.masc} ягодицы и начинает тыкать пальцем в твое анальное кольцо! Ты извиваешься, ерзаешь и пытаешься высказать свое мнение, но она успокаивает тебя очередным шлепком.")
 
-		saynn("[say=avy]Don’t need to waste a condom to fuck you in the ass at least.[/say]")
+		saynn("[say=avy]По крайней мере, не придется тратить презерватив, чтобы оттрахать тебя в задницу.[/say]")
 
-		saynn("You still squirm while she holds your hips still and slowly applies more pressure on your tailhole. Eventually it starts to give in no matter how much you clench, Avy uses this moment and shoves most of her length inside, causing a spike of discomfort as she stretches your insides. But she seems to be quite a sadistic bitch, without giving you even a breather she starts sliding her cock inside your {pc.analStretch} ass, using the old cum as a lube.")
+		saynn("Ты всё еще ерзаешь, пока она удерживает твои бедра и медленно усиливает давление на твое отверстие. В конце концов, оно начинает поддаваться, как бы сильно ты ни сжимался; Эви пользуется моментом и вонзает почти всю свою длину внутрь, вызывая всплеск дискомфорта от растяжения твоих внутренностей. Но она кажется довольно садистской сучкой: не давая тебе даже перевести дух, она начинает проталкивать свой член в твою {pc.analStretch} задницу, используя старую сперму вместо смазки.")
 
-		saynn("Discomfort quickly switches with pleasure as you relax and stop clenching, moans begin to escape your mouth again as Avy now fucks you in the ass. She quickly picks up the old pace, her hips slap against you as she explores your backdoor.")
+		saynn("Дискомфорт быстро сменяется удовольствием, когда ты расслабляешься и перестаешь сжиматься; из твоего рта снова начинают вырываться стоны, пока Эви трахает тебя в задницу. Она быстро набирает прежний темп, ее бедра хлопают по тебе, пока она исследует твой черный ход.")
 
 		saynn("[say=avy]"+RNG.pick([
 			"So you’re a buttslut too, good to know.",
@@ -187,23 +187,23 @@ func _run():
 			"Clench more, whore, it will only make me harder.",
 		])+"[/say]")
 
-		saynn("As her knot inflates she applies extra effort and shoves it inside you, switching to knot-fucking, pulling the orb out just to stuff it back in a second later. It stretches you out so much, you’re on the verge of cumming already.")
+		saynn("Когда её узел раздувается, она прикладывает дополнительные усилия и втискивает его в тебя, переходя к узловому траху; она вытягивает шар лишь для того, чтобы через секунду засунуть его обратно. Она так сильно растягивает тебя, что ты уже на грани кончания.")
 
 		# (if has penis)
 		if(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} is leaking {pc.cum} constantly as Avy milks your prostate to death, it feels so fucking good to be a buttslut for her.")
+			saynn("Твой {pc.cock} постоянно сочится {pc.cum}, пока Ави до смерти доит твою простату; это чертовски приятно — быть её задроченным жопотрахом.")
 
-		saynn("Her cock starts throbbing and shooting cum deep inside you! Avy groans as she cums again, she knots you and keeps stuffing your ass as your legs shake. This time she pulls out her cock very quickly, using the last waves of her cum to leave a sticky mess on your back and ass!")
+		saynn("Её член начинает пульсировать и извергать сперму глубоко в тебя! Ави стонет, снова кончая; она завязывается в тебе узлом и продолжает долбить твою задницу, пока твои ноги дрожат. На этот раз она очень быстро выдергивает член, используя последние волны спермы, чтобы оставить липкое месиво на твоей спине и заднице!")
 
-		saynn("[say=avy]Wow. I will make sure you find you again later, you know how to drain a girl’s balls. Hah.[/say]")
+		saynn("[say=avy]Ого. Постараюсь сделать так, чтобы ты снова нашёлся позже, ты умеешь опустошать девичьи яйца. Ха.[/say]")
 
-		saynn("She takes the marker again and [b]draws another tally mark on you![/b]")
+		saynn("Она снова берет маркер и [b] рисует на тебе еще одну черточку![/b]")
 
-		saynn("And, as if nothing happened, Avy leaves you and goes on her way, leaving you alone with your both holes used.")
+		saynn("И, будто ничего не произошло, Ави уходит своей дорогой, оставляя тебя в одиночестве с использованными на обоих отверстиях.")
 
 		# (scene ends)
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action in ["beg", "breed_me!", "fuck_off"]):

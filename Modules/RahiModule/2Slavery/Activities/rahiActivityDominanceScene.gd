@@ -6,1738 +6,1738 @@ func _init():
 func _run():
 	if(state == ""):
 		addCharacter("rahi")
-		saynn("What do you wanna teach Rahi about dominance?")
+		saynn("Чему ты хочешь научить Рахи в плане доминирования?")
 
 		var domLevel = getModule("RahiModule").getSkillScore("rahiSkillDominance")
 		if (domLevel >= 14):
-			saynn("Rahi can just feel when you are feeling submissive. She smiles and assumes a confident pose, paws on her sides, ears perking up, eyes already drilling you. Is it time to kneel yet?..")
+			saynn("Рахи буквально кожей чувствует, когда ты проявляешь покорность. Она улыбается и принимает уверенную позу: лапы на боках, ушки на макушке, а взгляд уже сверлит тебя насктезь. Не пора ли тебе уже встать на колени?..")
 
 		elif (domLevel >= 10):
-			saynn("Rahi is more and more confident each time you see her. Your kitty is not afraid to look you in the eyes anymore. She bites her lip, imagining what lewd things she can do with you and your body.")
+			saynn("С каждой встречей Рахи становится всё увереннее. Твоя кошечка больше не боится смотреть тебе прямо в глаза. Она прикусывает губу, воображая, какие пошлые вещи она может вытворять с тобой и твоим телом.")
 
 		elif (domLevel >= 6):
-			saynn("Rahi has gained more confidence since the last time. She can hold eye contact with you for a few seconds now. And almost doesn't resort to stroking her tail nervously. Your kitty clearly wants to play with you.")
+			saynn("С прошлой встречи Рахи стала куда смелее. Теперь она может удерживать твой взгляд в течение нескольких секунд и почти не нервно подергивает хвостом. Твоя кошечка явно хочет с тобой поиграть.")
 
 		elif (domLevel >= 3):
-			saynn("Rahi looks slightly more confident after all the training you gave her. She sneakily checks you out, ideas forming in her head. But each time your gazes collide Rahi still tilts her head down and blushes.")
+			saynn("После всех твоих тренировок Рахи выглядит чуть более уверенной. Она воровато разглядывает тебя, и в её голове уже рождаются идеи. Но каждый раз, когда ваши взгляды встречаются, она всё равно смущенно опускает голову и краснеет.")
 
 		if (domLevel == 0):
-			addButton("First steps", "Start teaching Rahi the basics", "scene1")
+			addButton("Первые шаги", "Начать обучать Рахи основам", "scene1")
 		if (domLevel == 1):
-			addButton("First steps", "Teach Rahi more of the basics", "scene2")
+			addButton("Первые шаги", "Обучить Рахи основам получше", "scene2")
 		if (domLevel == 2):
-			addButton("First steps", "Teach Rahi even more of the basics", "scene3")
+			addButton("Первые шаги", "Обучить Рахи еще большему количеству основ", "scene3")
 		if (domLevel >= 3):
-			addButton("Play", "Let Rahi play with you", "random_play_scene")
+			addButton("Воспроизвести", "Позволить Рахи поиграть с тобой", "random_play_scene")
 			if (domLevel >= 6):
-				addButton("Sex", "Let Rahi have sex with you", "random_sex_scene")
-				addButton("Pegging", "Let Rahi fuck you in the ass", "random_pegging_scene")
+				addButton("Секс", "Позволить Рахи заняться с тобой сексом", "random_sex_scene")
+				addButton("Пеггинг", "Позволить Рахи трахнуть тебя в зад", "random_pegging_scene")
 			else:
-				addDisabledButton("Sex", "Rahi is not confident enough yet")
-				addDisabledButton("Pegging", "Rahi is not confident enough yet")
+				addDisabledButton("Секс", "Рахи еще недостаточно уверена в себе")
+				addDisabledButton("Пеггинг", "Рахи еще недостаточно уверена в себе")
 			if (domLevel >= 14):
-				addButton("Submit to", "Submit to Rahi completely for one scene", "submit_scene")
+				addButton("Подчиниться", "Полностью подчиниться Рахи в этой сцене", "submit_scene")
 			elif (domLevel >= 6):
-				addDisabledButton("Submit to", "Rahi needs to be fully confident in her domming abilities for you to submit to her")
-		addButton("Never mind", "You changed your mind", "cancelactivity")
+				addDisabledButton("Подчиниться", "Рахи должна быть полностью уверена в своих доминантных способностях, чтобы ты смог ей подчиниться")
+		addButton("Проехали", "Вы передумали", "cancelactivity")
 	if(state == "scene1"):
-		saynn("You approach your kitty and gently pat her on the head.")
+		saynn("Ты подходишь к своей киске и нежно гладишь её по голове.")
 
-		saynn("[say=rahi]She was thinking about something..[/say]")
+		saynn("[say=rahi]Она о чём-то задумалась...[/say]")
 
-		saynn("[say=pc]About what, kitty?[/say]")
+		saynn("[say=pc]О чём, киска?[/say]")
 
-		saynn("Rahi strokes her tail that is wrapped around her waist.")
+		saynn("Рахи поглаживает хвост, обёрнутый вокруг её талии.")
 
-		saynn("[say=rahi]Other inmates were giving her a lot of trouble before.. She.. she needs to become more.. assertive.. dominant.[/say]")
+		saynn("[say=rahi]Другие заключённые раньше сильно над ней издевались... Ей... ей нужно стать более... напористой... доминантной.[/say]")
 
-		saynn("Her voice sounds so soft. How could you not offer help to such a submissive cutie?")
+		saynn("Её голос звучит так мягко. Как можно было не предложить помощь такой покорной милашке?")
 
-		saynn("[say=pc]You have me. I can teach you a thing or two. Anything in particular you wanna learn?[/say]")
+		saynn("[say=pc]У тебя есть я. Я могу научить тебя паре фишек. Есть что-то конкретное, чему ты хочешь научиться?[/say]")
 
-		saynn("[say=rahi]Um.. You could pretend to be one of the other inmates.. So she can.. give you some commands?..[/say]")
+		saynn("[say=rahi]Эм... Ты мог бы притвориться одной из других заключённых... Чтобы она могла... отдавать тебе команды?..[/say]")
 
-		saynn("You scritch Rahi behind her ears.")
+		saynn("Ты чешешь Рахи за ушком.")
 
-		saynn("[say=pc]You don't have to make me pretend. I'm fine with you giving me commands. You obviously won't do it out of malice.[/say]")
+		saynn("[say=pc]Тебе не обязательно заставлять меня притворяться. Мне будет достаточно, если команды будешь отдавать ты. Ты ведь явно не будешь делать это со злобой.[/say]")
 
-		saynn("Rahi blushes. Feels like she makes it harder for herself for no reason.")
+		saynn("Рахи краснеет. Ей кажется, что она сама всё усложняет на ровном месте.")
 
-		saynn("[say=rahi]Yeah, but.. She kinda.. belongs to you, {rahiMaster}.. It would be.. strange for her..[/say]")
+		saynn("[say=rahi]Да, но... она вроде как... принадлежит тебе, {rahiMaster}... Было бы... странно, если бы...[/say]")
 
-		saynn("[say=pc]Do what makes you feel better, kitty. You won't hurt me no matter what.[/say]")
+		saynn("[say=pc]Делай так, как тебе хочется, киса. Ты меня всё равно не обидишь.[/say]")
 
-		saynn("Kitty nods and gently escapes your touch by taking a few steps back. She then takes a deep breath, her tail unwinding from her waist.")
+		saynn("Киса кивает и мягко ускользает от твоих рук, отступив на несколько шагов. Затем она глубоко вздыхает, и её хвост разматывается на талии.")
 
-		saynn("[say=rahi]Okay.. here goes. That chair.. bring it closer to her..[/say]")
+		saynn("[say=rahi]Ладно... поехали. Тот стул... пододвинь его поближе к ней...[/say]")
 
-		saynn("She points at the metal chair that every cell has in one of the corners. It's chained to the floor but the chain should be long enough for this.")
+		saynn("Она указывает на металлический стул, который в каждой камере стоит в углу. Он прикован к полу, но цепи должно хватить.")
 
-		addButton("Obey", "Do what kitty tells you to do", "scene1_obey")
-		addButton("Disobey", "Try to be bratty with Rahi", "scene1_disobey")
+		addButton("Повиноваться", "Делать то, что говорит киса", "scene1_obey")
+		addButton("Проявить непослушание", "Попробовать вредничать перед Рахи", "scene1_disobey")
 	if(state == "scene1_disobey"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
-		saynn("You look at Rahi and cross your arms.")
+		saynn("Ты смотришь на Рахи и скрещиваешь руки на груди.")
 
-		saynn("[say=pc]And what if I won't do that?[/say]")
+		saynn("[say=pc]А что, если я не захочу?[/say]")
 
-		saynn("Rahi opens her mouth, about to say something. But then she gets very confused and small.")
+		saynn("Рахи открывает рот, собираясь что-то сказать, но тут же впадает в замешательство и кажется совсем крошечной.")
 
-		saynn("[say=rahi]Uh.. um.. t-that's.. that's okay..[/say]")
+		saynn("[say=rahi]Э-э.. ну.. в-всё.. всё хорошо..[/say]")
 
-		saynn("Her ears droop, eyes getting all watery. Her tail wraps around her waist again and gets glued to her body.")
+		saynn("Её ушки поникают, а глаза наполняются слезами. Хвост снова обвивает талию, плотно прижимаясь к телу.")
 
-		saynn("[say=pc]Aw, my bad kitty.[/say]")
+		saynn("[say=pc]Оу, моя плохая кошечка.[/say]")
 
-		saynn("She is clearly lacking all the experience. You walk up to Rahi and hug her, trying to make her feel better.")
+		saynn("Очевидно, что ей катастрофически не хватает опыта. Ты подходишь к Рахи и обнимаешь её, пытаясь утешить.")
 
-		saynn("[say=rahi]No.. not your.. me-eow..[/say]")
+		saynn("[say=rahi]Нет.. не твоя.. мяу-у..[/say]")
 
-		saynn("Maybe that was a little too harsh on your part.")
+		saynn("Возможно, с твоей стороны это было слишком жестко.")
 
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 	if(state == "scene1_obey"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("You nod and go grab the chair before placing it before Rahi.")
+		saynn("Ты киваешь, берешь стул и ставишь его перед Рахи.")
 
-		saynn("[say=pc]Here.[/say]")
+		saynn("[say=pc]Вот.[/say]")
 
-		saynn("[say=rahi]Um.. t-thanks.[/say]")
+		saynn("[say=rahi]Эм.. с-спасибо.[/say]")
 
-		saynn("Kitty turns it around so it faces you and then sits on it.")
+		saynn("Кошечка разворачивает стул к тебе лицом и садится на него.")
 
-		saynn("[say=pc]You don't have to be polite, just so you know. You make the rules.[/say]")
+		saynn("[say=pc]Просто чтобы ты знал: тебе не обязательно быть вежливым. Правила устанавливаешь ты.[/say]")
 
-		saynn("Rahi nods and looks up at you, standing near. Her lips tremble a little.")
+		saynn("Рахи кивает и смотрит на тебя снизу вверх, стоя совсем рядом. Её губы слегка подрагивают.")
 
-		saynn("[say=rahi]Okay.. She wants you to.. kneel down and bow your head to her..[/say]")
+		saynn("[say=rahi]Ладно... Она хочет, чтобы ты... опустился на колени и склонил перед ней голову...[/say]")
 
-		saynn("That's a way bigger ask.")
+		saynn("Это уже куда более серьезная просьба.")
 
-		addButton("Kneel", "Might as well do it", "scene1_kneel")
-		addButton("Disobey", "Try to be bratty with Rahi", "scene1_disobey")
+		addButton("Встать на колени", "Можно и попробовать.", "scene1_kneel")
+		addButton("Проявить непослушание", "Попробовать вредничать перед Рахи", "scene1_disobey")
 	if(state == "scene1_kneel"):
 		playAnimation(StageScene.Duo, "kneel", {npc="rahi", npcAction="sit"})
-		saynn("You raise an eyebrow but comply with Rahi's command, getting on your knees before her and lowering your head, bowing.")
+		saynn("Ты вскидываешь бровь, но подчиняешься приказу Рахи: опускаешься перед ней на колени и склоняешь голову в поклоне.")
 
-		saynn("As soon as you do that, Rahi feels a wave of shyness wash over her.")
+		saynn("Как только ты это делаешь, Рахи захлестывает волна смущения.")
 
-		saynn("[say=rahi]Um.. nevermind.. You can stand up now..[/say]")
+		saynn("[say=rahi]Эм... забудь... Можешь вставать...[/say]")
 
-		saynn("[say=pc]Something wrong, kitty?[/say]")
+		saynn("[say=pc]Что-то не так, котик?[/say]")
 
-		saynn("[say=rahi]No, no.. It's just.. She doesn't know how to react when you obey her..[/say]")
+		saynn("[say=rahi]Нет-нет... Просто... Она не знает, как реагировать, когда ты ей повинуешься...[/say]")
 
-		saynn("You place a hand on her lap and ruffle the fur of her thighs.")
+		saynn("Ты кладешь руку ей на колено и взъерошиваешь мех на ее бедрах.")
 
-		saynn("[say=pc]It's okay, kitty. It takes time. You did very well. What we're doing here.. it's for fun, you know? Test your limits, test my limits, see what works.[/say]")
+		saynn("[say=pc]Все хорошо, киса. Это требует времени. Ты отлично справилась. То, что мы здесь делаем... это же ради удовольствия, понимаешь? Проверяем твои пределы, проверяем мои, смотрим, что из этого выйдет.[/say]")
 
-		saynn("Rahi nods softly, her eyes still show some embarrassment.")
+		saynn("Рахи мягко кивает, хотя в ее глазах все еще читается смущение.")
 
-		saynn("[say=rahi]Okay..[/say]")
+		saynn("[say=rahi]Хорошо...[/say]")
 
-		saynn("[say=pc]You rest now, kitty.[/say]")
+		saynn("[say=pc]Теперь отдыхай, киса.[/say]")
 
-		saynn("You get up and kiss Rahi on the forehead.")
+		saynn("Ты встаешь и целуешь Рахи в лоб.")
 
-		saynn("Hopefully your words had an effect on her.")
+		saynn("Надеешься, что твои слова подействовали на нее.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "scene2"):
-		saynn("You approach your kitty to give her some headpats.")
+		saynn("Ты подходишь к своей киске, чтобы погладить ее по голове.")
 
-		saynn("[say=pc]Wanna do a little roleplay? With you in charge?[/say]")
+		saynn("[say=pc]Хочешь немного ролевой игры? Где ты будешь главной?[/say]")
 
-		saynn("[say=rahi]Meow?..[/say]")
+		saynn("[say=rahi]Мяу?..[/say]")
 
-		saynn("Kitty purrs and nuzzles your hand.")
+		saynn("Киса мурлычет и ластится к твоей руке.")
 
-		saynn("[say=pc]For example, you ordered me to bring you some milk. But, oh no, I spilled some of it while walking to you.[/say]")
+		saynn("[say=pc]Например, ты приказала мне принести тебе молока. Но, о нет, пока я шел к тебе, я немного пролил его.[/say]")
 
-		saynn("You hold an imaginary glass in your hand that you purposefully tilt to the side, spilling the imaginary milk on the floor.")
+		saynn("Ты держишь в руке воображаемый стакан, который намеренно наклоняешь в сторону, выливая воображаемое молоко на пол.")
 
-		saynn("Rahi's ears perk as she sees you do that. And she is.. pouting. Such a waste of a perfectly fine imaginary milk makes her frown.")
+		saynn("Уши Рахи навостряются, когда она видит это. И она... дуется. Такая трата отличного воображаемого молока заставляет её нахмуриться.")
 
-		addButton("Continue", "See what happens next", "scene2_conflict")
+		addButton("Продолжить", "Смотреть, что будет дальше", "scene2_conflict")
 	if(state == "scene2_conflict"):
 		playAnimation(StageScene.Duo, "defeat", {npc="rahi", npcAction="shove"})
-		saynn("Suddenly Rahi grabs you by the collar and yanks you down to your knees. She was so fast that you didn't even get a chance to resist.")
+		saynn("Внезапно Рахи хватает тебя за воротник и рывком опускает на колени. Она была настолько быстрой, что у тебя даже не было шанса сопротивляться.")
 
-		saynn("[say=rahi]Look what you did!.. You.. stupid slut![/say]")
+		saynn("[say=rahi]Посмотри, что ты наделала!.. Ты... тупая сучка![/say]")
 
-		saynn("She went from zero to a hundred in seconds. Kitty growls as she holds your collar so low that you can almost kiss the cold floor.")
+		saynn("Она перешла от нуля до сотни за считанные секунды. Кити рычит, сжимая твой воротник так низко, что ты почти касаешься губами холодного пола.")
 
-		saynn("[say=rahi]She can't drink that![/say]")
+		saynn("[say=rahi]Она не сможет это выпить![/say]")
 
-		saynn("You don't even know what words to pick to not make Rahi even angrier, you rarely see her like this. But you're not sure if you're regretting this.")
+		saynn("Ты даже не знаешь, какие слова подобрать, чтобы не разозлить Рахи еще сильнее — ты редко видишь её такой. Но ты не уверен, жалеешь ли ты о содеянном.")
 
-		saynn("[say=pc]My bad?[/say]")
+		saynn("[say=pc]Моя вина?[/say]")
 
-		saynn("She yanks on your hair, bringing you all the pain, before slapping your cheek and placing her paw on your neck. She applies a fair amount of strength, making breathing hard. Rahi's angry gaze drills you.")
+		saynn("Она дергает тебя за волосы, заставляя застонать от боли, после чего дает тебе пощечину и прижимает лапу к твоей шее. Она прикладывает немалую силу, из-за чего тебе становится трудно дышать. Яростный взгляд Рахи буквально сверлит тебя насквозь.")
 
-		saynn("[say=rahi]Excuses won't help you.. bitch! You're gonna lick it all up with your tongue. Or.. You're gonna lick my paws![/say]")
+		saynn("[say=rahi]Оправдания тебе не помогут.. сучка! Ты вылижешь всё до последней капли своим языком. Или.. будешь лизать мои лапы![/say]")
 
-		saynn("[say=pc]Kh-h..[/say]")
+		saynn("[say=pc]Кх-х..[/say]")
 
-		saynn("That paw on your throat doesn't really leave you much of a choice. But it's still.. a.. choice.")
+		saynn("Лапа на твоём горле особо не оставляет выбора. Но это всё равно.. всё равно.. выбор.")
 
-		addButton("Lick floor", "Lap up the imaginary spilled milk", "scene2_lickfloor")
-		addButton("Lick paws", "Lick Rahi's hind paws instead", "scene2_lickpaws")
+		addButton("Лизать пол", "Вылизывать воображаемое пролитое молоко", "scene2_lickfloor")
+		addButton("Лизать лапы", "Вместо этого лизать задние лапы Рахи", "scene2_lickpaws")
 	if(state == "scene2_lickfloor"):
-		saynn("You nod a few times towards the floor. Rahi sees it and pulls your head down again, making you lower yourself so much your face touches the cold floor. You cough after being choked while your kitty places her hind leg on your back, taking away your right to slack.")
+		saynn("Ты несколько раз киваешь в сторону пола. Рахи замечает это и снова прижимает твою голову вниз, заставляя склониться так низко, что твоё лицо касается холодного пола. Ты кашляешь от удушья, пока твоя киска ставит заднюю лапу тебе на спину, лишая тебя права на лень.")
 
-		saynn("Even though the milk was imaginary, the punishment feels quite real. You stick your tongue out and pretend to lick the floor. But each time you try to lick just the air, Rahi puts more pressure on your back with her leg.")
+		saynn("Хотя молоко и было воображаемым, наказание кажется вполне реальным. Ты высовываешь язык и делаешь вид, что лижешь пол. Но каждый раз, когда ты пытаешься лизнуть просто воздух, Рахи сильнее давит тебе на спину своей лапой.")
 
-		saynn("[say=rahi]Lick properly![/say]")
+		saynn("[say=rahi]Лижи как следует![/say]")
 
-		saynn("She is being serious, isn't she.. Okay, you stop trying to resist and let your tongue touch the cold dirty surface. So.. humiliating.. But you have no choice but to start dragging your tongue in little circles around Rahi.")
+		saynn("Она ведь не шутит, верно?.. Ладно, хватит сопротивляться, просто позволь своему языку коснуться холодной грязной поверхности. Как же это... унизительно... Но у тебя нет выбора — тебе приходится водить языком маленькими кругами вокруг Рахи.")
 
-		saynn("[say=rahi]Much.. better.. meow.. oh..[/say]")
+		saynn("[say=rahi]Так.. гораздо.. лучше.. мяу.. о..[/say]")
 
-		saynn("Her voice softens up as she realizes something. She takes her leg off of your back while you continue to obey her command, licking the floor.")
+		saynn("Её голос смягчается, когда до неё что-то доходит. Она убирает ногу с твоей спины, пока ты продолжаешь исполнять её приказ, вылизывая пол.")
 
-		saynn("[say=rahi]Sorry.. You're.. okay?[/say]")
+		saynn("[say=rahi]Прости.. Ты.. в порядке?[/say]")
 
-		saynn("You slowly raise yourself until you're kneeling again and look up at Rahi. You clean your tongue with your hands, trying to avoid swallowing all the dirt.")
+		saynn("Ты медленно поднимаешься на колени и смотришь на Рахи снизу вверх. Ты вытираешь язык руками, стараясь не проглотить всю эту грязь.")
 
-		saynn("[say=pc]Yeff?[/say]")
+		saynn("[say=pc]Ефф?[/say]")
 
-		addButton("Continue", "See what happens next", "scene2_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "scene2_outcome")
 	if(state == "scene2_lickpaws"):
 		playAnimation(StageScene.SexFeetPlay, "head", {pc="rahi", npc="pc"})
-		saynn("You nod a few times towards Rahi's paws. She sees it and pushes you on the floor before placing her hind leg on your face, her paw pads brushing against your cheeks. You cough after being choked while kitty lets you feel the claws of her paws gently scratching you.")
+		saynn("Ты несколько раз киваешь в сторону лап Рахи. Она замечает это и придавливает тебя к полу, прежде чем водрузить свою заднюю лапу тебе на лицо, так что подушечки её лап касаются твоих щек. Ты кашляешь от нехватки воздуха, пока кошечка позволяет своим когтям нежно царапать тебя.")
 
-		saynn("Even though the milk was imaginary, the punishment feels quite real. You slowly stick your tongue out and pretend to lick her toes. But that wasn't enough for Rahi, she shoves her foot into your mouth and growls.")
+		saynn("Хотя молоко было воображаемым, наказание кажется вполне реальным. Ты медленно высовываешь язык и притворяешься, что лижешь её пальцы. Но для Рахи этого оказалось мало: она засовывает тебе ступню в рот и рычит.")
 
-		saynn("[say=rahi]Lick properly![/say]")
+		saynn("[say=rahi]Лижи как следует![/say]")
 
-		saynn("She is being serious, isn't she.. Okay, you stop trying to resist and start dragging your tongue over her paw pads that she so eagerly offers you. Slowly you begin to get into it yourself, thrusting your tongue between her toes and licking there too, causing Rahi to wiggle them in your mouth.")
+		saynn("Она ведь не шутит, верно?.. Ладно, ты перестаешь сопротивляться и начинаешь водить языком по подушечкам её лап, которые она так жадно тебе подставляет. Постепенно ты и сам входишь во вкус, просовывая язык между её пальцами и вылизывая их там, отчего Рахи начинает забавно шевелить ими у тебя во рту.")
 
-		saynn("[say=rahi]Much.. better.. meow.. oh..[/say]")
+		saynn("[say=rahi]Так.. гораздо.. лучше.. мяу.. о..[/say]")
 
-		saynn("Her voice softens up as she realizes something. She pulls away her hind paw.")
+		saynn("Её голос смягчается, когда до неё что-то доходит. Она убирает свою заднюю лапу.")
 
-		saynn("[say=rahi]Sorry.. You're.. okay?[/say]")
+		saynn("[say=rahi]Прости.. Ты.. в порядке?[/say]")
 
-		saynn("You slowly raise yourself until you're kneeling again and look up at Rahi. You clean your tongue with your hands, trying to avoid swallowing all the dirt and dust.")
+		saynn("Ты медленно поднимаешься на колени и смотришь на Рахи снизу вверх. Ты вытираешь язык руками, стараясь не проглотить всю эту грязь и пыль.")
 
-		saynn("[say=pc]Yeff?[/say]")
+		saynn("[say=pc]Ефф?[/say]")
 
-		addButton("Continue", "See what happens next", "scene2_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "scene2_outcome")
 	if(state == "scene2_outcome"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("Kitty swipes the dust off you and helps you to get up before placing her paws on your cheeks.")
+		saynn("Китти смахивает с тебя пыль и помогает подняться, после чего прижимает лапки к твоим щекам.")
 
-		saynn("[say=rahi]She doesn't know what happened.. She just.. She doesn't know..[/say]")
+		saynn("[say=rahi]Она не знает, что произошло... Она просто... Она не знает...[/say]")
 
-		saynn("[say=pc]You did.. good. It would be nice to consider me a little bit more.. You know, just avoid choking me to death. Doms are allowed to be kind too.[/say]")
+		saynn("[say=pc]Ты... молодец. Было бы неплохо учитывать мои чувства чуть больше... Ну, знаешь, просто чтобы не задушить меня насмерть. Доминанткам тоже позволено быть добрыми.[/say]")
 
-		saynn("Rahi tilts her head down and pulls her paws away. Her shy posture tells you everything.")
+		saynn("Рахи склоняет голову и убирает лапы. Её застенчивая поза говорит сама за себя.")
 
-		saynn("[say=rahi]Sorry.. She will never be a good dominant..[/say]")
+		saynn("[say=rahi]Прости... Из неё никогда не выйдет хорошая доминанта...[/say]")
 
-		saynn("Now it's your turn to put your hands on her cheeks and caress them.")
+		saynn("Теперь твоя очередь положить руки ей на щеки и нежно погладить их.")
 
-		saynn("[say=pc]Don't say that, kitty. You try and you learn. I certainly enjoyed.. some of it.[/say]")
+		saynn("[say=pc]Не говори так, китти. Ты стараешься, и ты научишься. Мне определённо... кое-что понравилось.[/say]")
 
-		saynn("She offers you a soft but nervous smile.")
+		saynn("Она одаривает тебя мягкой, но нервной улыбкой.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "scene3"):
-		saynn("You approach your kitty and offer her a playful smile.")
+		saynn("Ты подходишь к своей киске и одариваешь её игривой улыбкой.")
 
-		saynn("[say=pc]Wanna practice your domming skills a little bit, kitty?[/say]")
+		saynn("[say=pc]Хочешь немного попрактиковаться в доминировании, киска?[/say]")
 
-		saynn("Rahi tilts her head down.")
+		saynn("Рахи склоняет голову.")
 
-		saynn("[say=rahi]She.. she doesn't know..[/say]")
+		saynn("[say=rahi]Она... она не знает...[/say]")
 
-		saynn("You give your kitty a tight hug and gently rub her back.")
+		saynn("Ты крепко обнимаешь свою киску и нежно гладишь её по спине.")
 
-		saynn("[say=pc]Aw. C'mon, it's gonna be fun. I can take anything you throw at me.[/say]")
+		saynn("[say=pc]Ну же. Это будет весело. Я выдержу всё, что ты со мной сделаешь.[/say]")
 
-		saynn("Kitty deliberates for a few seconds. Then she finally nods softly.")
+		saynn("Киска колеблется несколько секунд, а затем наконец тихо кивает.")
 
-		saynn("[say=rahi]Yeah, okay.. But she will try to avoid.. getting aggressive again..[/say]")
+		saynn("[say=rahi]Да, ладно... Но она постарается... не проявлять агрессию снова...[/say]")
 
-		saynn("[say=pc]I mean.. your choice, kitty. Do what's fun for you.[/say]")
+		saynn("[say=pc]В смысле... тебе решать, киска. Делай то, что тебе в кайф.[/say]")
 
-		saynn("The feline escapes your grasp and takes a few steps back. She takes a deep breath and rubs her face with her paws.")
+		saynn("Кошечка выскальзывает из твоих объятий и делает несколько шагов назад. Она глубоко вздыхает и трет мордочку лапками.")
 
-		saynn("[say=rahi]Alright.. She wants to sit. Bring the chair.[/say]")
+		saynn("[say=rahi]Ладно... Она хочет присесть. Принеси стул.[/say]")
 
-		saynn("That's a simple enough task.")
+		saynn("Задача проще некуда.")
 
-		addButton("Obey", "Bring the chair for Rahi", "scene3_bringchair")
+		addButton("Повиноваться", "Принести стул для Рахи", "scene3_bringchair")
 	if(state == "scene3_bringchair"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("You go ahead and grab the familiar chair before placing it near Rahi. She gives you.. the silent look. Oh. Right. You remember to rotate the chair for her so it faces you.")
+		saynn("Ты берешь тот самый привычный стул и подносишь его к Рахи. Она одаривает тебя... многозначительным молчаливым взглядом. Ах, точно. Ты не забываешь развернуть стул так, чтобы он стоял лицом к тебе.")
 
-		saynn("Rahi plops her fluffy butt onto the chair and looks up at you, towering over her.")
+		saynn("Рахи плюхается своей пушистой попой на стул и смотрит на тебя снизу вверх, пока ты возвышаешься над ней.")
 
-		saynn("[say=rahi]Get on your knees before her.[/say]")
+		saynn("[say=rahi]Встань перед ней на колени.[/say]")
 
-		saynn("Oh wow, her voice doesn't even sound that shy. Maybe because she already gave you that order before.")
+		saynn("Ого, а голос у неё совсем не такой уж и застенчивый. Может, потому что она уже давала тебе подобный приказ раньше.")
 
-		addButton("Obey", "Do as she says", "scene3_kneel")
-		addButton("Disobey", "Try to test the kitty", "scene3_notkneel")
+		addButton("Повиноваться", "Сделать, как она говорит", "scene3_kneel")
+		addButton("Проявить непослушание", "Попробовать проверить кошечку", "scene3_notkneel")
 	if(state == "scene3_notkneel"):
-		saynn("You decide to test the kitty a little. You begin kneeling but instead of fully committing, you stop half-way and get up again. That makes your kitty.. pout.. but she quickly catches herself.")
+		saynn("Ты решаешь немного пошалить и проверить кошечку. Ты начинаешь опускаться на колени, но вместо того, чтобы полностью подчиниться, замираешь на полпути и снова встаешь. От этого твоя кошечка... дуется... но быстро берет себя в руки.")
 
-		saynn("[say=pc]What if.. what if I don't?[/say]")
+		saynn("[say=pc]А что если... что если не встану?[/say]")
 
-		saynn("Rahi sighs deeply.")
+		saynn("Рахи глубоко вздыхает.")
 
-		saynn("[say=rahi]If you don't - nothing is gonna happen. No fun for you. But.. If you kneel before her.. you might get to enjoy yourself. And make her proud too. Mhm?[/say]")
+		saynn("[say=rahi]Если не будешь — ничего не произойдет. Никакого веселья для тебя. Но... если ты преклонишь перед ней колени... возможно, ты сможешь получить удовольствие. И заставишь её собой гордиться. М-м?[/say]")
 
-		saynn("That's.. you can't say that you expected that answer. The idea of obeying suddenly seems more enticing.")
+		saynn("Это... нельзя было ожидать такого ответа. Идея подчинения внезапно кажется куда более заманчивой.")
 
-		addButton("Obey", "Do as she says", "scene3_kneel")
+		addButton("Повиноваться", "Сделать, как она говорит", "scene3_kneel")
 	if(state == "scene3_kneel"):
 		playAnimation(StageScene.Duo, "kneel", {npc="rahi", npcAction="sit"})
-		saynn("You slowly get on your knees before Rahi. She nods after you do that and rests in her chair, crossing her legs.")
+		saynn("Ты медленно опускаешься на колени перед Рахи. Она кивает в ответ и откидывается в кресле, закинув ногу на ногу.")
 
-		saynn("[say=rahi]From now on.. She wants you to call her.. Miss.. Miss Rahi.[/say]")
+		saynn("[say=rahi]Отныне... она хочет, чтобы ты называл её... Мисс... Мисс Рахи.[/say]")
 
-		saynn("She tilts her head slightly.")
+		saynn("Она слегка наклоняет голову набок.")
 
-		saynn("[say=rahi]Do you understand?[/say]")
+		saynn("[say=rahi]Ты понимаешь?[/say]")
 
-		saynn("You eagerly agree.")
+		saynn("Ты с готовностью соглашаешься.")
 
-		saynn("[say=pc]Yes, Miss Rahi. I'm yours to command.[/say]")
+		saynn("[say=pc]Да, мисс Рахи. Я в вашем распоряжении.[/say]")
 
-		saynn("She points at her leg.")
+		saynn("Она указывает на свою ногу.")
 
-		saynn("[say=rahi]She could use a little massage.[/say]")
+		saynn("[say=rahi]Ей не помешал бы небольшой массаж.[/say]")
 
-		saynn("Sure. You reach your hands out and begin kneading Rahi's foot and shin. You make sure to rub her toes and all the paw pads before brushing your palms over her fur and removing any tension there by massaging her muscles.")
+		saynn("Конечно. Ты протягиваешь руки и начинаешь разминать стопу и голень Рахи. Ты старательно массируешь её пальцы и все подушечки лап, а затем проводишь ладонями по меху, снимая напряжение в мышцах.")
 
-		saynn("Kitty throws her head back and produces.. a muffled noise of satisfaction.")
+		saynn("Кошечка запрокидывает голову и издает... приглушенный звук удовлетворения.")
 
-		saynn("[say=rahi]Stop.[/say]")
+		saynn("[say=rahi]Стоять.[/say]")
 
-		saynn("You pull your hands away from her leg and continue kneeling.")
+		saynn("Ты убираешь руки от её ноги и продолжаешь стоять на коленях.")
 
-		saynn("[say=rahi]Get on all fours. Your Miss wants you to crawl around her three times.[/say]")
+		saynn("[say=rahi]Встань на четвереньки. Твоя Госпожа хочет, чтобы ты трижды обошел вокруг неё на карачках.[/say]")
 
-		saynn("That's.. a somewhat random request. But do you wanna question it?")
+		saynn("Это... довольно странная просьба. Но рискнешь ли ты ей перечить?")
 
-		addButton("Obey", "Do as she says", "scene3_crawlaround")
-		addButton("Be a brat", "You won't do it unless she makes you do it", "scene3_brat")
+		addButton("Повиноваться", "Сделать, как она говорит", "scene3_crawlaround")
+		addButton("Включить вредину", "Ты не сделаешь этого, пока она тебя не заставит", "scene3_brat")
 	if(state == "scene3_brat"):
 		playAnimation(StageScene.Duo, "crawl", {npc="rahi", npcAction="sit"})
-		saynn("Instead of just blindly following Rahi's command, you stick your tongue out at her.")
+		saynn("Вместо того чтобы слепо подчиниться приказу Рахи, ты просто высовываешь ей язык.")
 
-		saynn("[say=pc]How about you make me, Miss Rahi?[/say]")
+		saynn("[say=pc]А заставьте меня, мисс Рахи![/say]")
 
-		saynn("Kitty leans forward and extends her claws before gently scratching your tongue. Ow.")
+		saynn("Китти подается вперед и выпускает когти, а затем нежно царапает твой язык. Ой.")
 
-		saynn("[say=rahi]She won't force you.. little.. silly.. pet.[/say]")
+		saynn("[say=rahi]Она не будет заставлять тебя... глупый... питомец.[/say]")
 
-		saynn("Somehow her almost emotionless delivery of that sentence makes you want to obey her so much. You get on all fours and start crawling around her chair, three circles, just like she ordered.")
+		saynn("Каким-то образом её почти бесстрастная манера произносить эти слова заставляет тебя безумно хотеть ей подчиниться. Ты встаешь на четвереньки и начинаешь ползать вокруг её кресла — три круга, в точности как она и приказала.")
 
-		saynn("[say=rahi]Bark for her.[/say]")
+		saynn("[say=rahi]Лаяй для неё.[/say]")
 
-		saynn("[say=pc]Bark?..[/say]")
+		saynn("[say=pc]Лаять?..[/say]")
 
-		saynn("Either way, you comply, barking a few times for Rahi. That makes you feel both aroused and humiliated.")
+		saynn("Так или иначе, ты подчиняешься, несколько раз гавкнув для Рахи. От этого ты чувствуешь одновременно и возбуждение, и унижение.")
 
-		addButton("Continue", "See what happens next", "scene3_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "scene3_outcome")
 	if(state == "scene3_crawlaround"):
 		playAnimation(StageScene.Duo, "crawl", {npc="rahi", npcAction="sit"})
-		saynn("You don't brat at Rahi and instead get on all fours before proceeding to crawl around her chair, three circles, just like she ordered.")
+		saynn("Ты не дерзишь Рахи, а вместо этого встаешь на четвереньки и начинаешь ползать вокруг её кресла — три круга, в точности как она и приказала.")
 
-		saynn("[say=rahi]Bark for her.[/say]")
+		saynn("[say=rahi]Лаяй для неё.[/say]")
 
-		saynn("[say=pc]Bark?..[/say]")
+		saynn("[say=pc]Лаять?..[/say]")
 
-		saynn("Either way, you comply, barking a few times for Rahi. That makes you feel both aroused and humiliated.")
+		saynn("Так или иначе, ты подчиняешься, несколько раз гавкнув для Рахи. От этого ты чувствуешь одновременно и возбуждение, и унижение.")
 
-		saynn("[say=rahi]Such a little.. silly.. pet.[/say]")
+		saynn("[say=rahi]Такая маленькая.. глупенькая.. питомица.[/say]")
 
-		addButton("Continue", "See what happens next", "scene3_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "scene3_outcome")
 	if(state == "scene3_outcome"):
 		playAnimation(StageScene.Duo, "kneel", {npc="rahi", npcAction="sit"})
-		saynn("After the scene is over you are left kneeling before your kitty. Everything went alright. But something is clearly.. troubling her. She stops crossing her legs and instead leans closer to you.")
+		saynn("Когда сцена заканчивается, ты остаешься стоять на коленях перед своей кошечкой. Все прошло нормально. Но что-то явно.. беспокоит ее. Она перестает скрещивать ноги и, вместо этого, наклоняется ближе к тебе.")
 
-		saynn("[say=rahi]That went.. better. But.. It was also kinda.. boring?.. Don't you agree?[/say]")
+		saynn("[say=rahi]В этот раз вышло.. лучше. Но.. было как-то.. скучновато?.. Не согласен?[/say]")
 
-		saynn("[say=pc]You don't have to push your limits each time, kitty. I mean.. Miss Rahi.[/say]")
+		saynn("[say=pc]Тебе не обязательно каждый раз выжимать из себя все соки, кошечка. То есть.. мисс Рахи.[/say]")
 
-		saynn("She smiles softly.")
+		saynn("Она мягко улыбается.")
 
-		saynn("[say=rahi]Yeah.. But last time she went too far.. Couldn't even control herself.. It's not fun to injure you and not even remember it..[/say]")
+		saynn("[say=rahi]Да.. Но в прошлый раз она зашла слишком далеко.. Даже не могла себя контролировать.. Не дело это — калечить тебя и даже не помнить об этом..[/say]")
 
-		saynn("[say=pc]I trust you to push me as far as you want.[/say]")
+		saynn("[say=pc]Я доверяю тебе, можешь доводить меня до предела, насколько захочешь.[/say]")
 
-		saynn("Kitty sighs.")
+		saynn("Кошечка вздыхает.")
 
-		saynn("[say=pc]I guess the real answer is.. balance. You should try to balance between anger and kindness.. I think that's where the most fun is.[/say]")
+		saynn("[say=pc]Думаю, правильный ответ — это.. баланс. Тебе стоит искать баланс между гневом и добротой.. Мне кажется, именно в этом кроется самый кайф.[/say]")
 
-		saynn("Rahi tilts her head slightly, watching the ceiling for a bit.")
+		saynn("Рахи слегка наклоняет голову, какое-то время разглядывая потолок.")
 
-		saynn("[say=rahi]Meow.. You're probably right.[/say]")
+		saynn("[say=rahi]Мяу... Наверное, ты прав.[/say]")
 
-		saynn("You reach your hand out to pat the kitty. She smiles more and purrs even.")
+		saynn("Вы протягиваете руку, чтобы погладить кошечку. Она улыбается еще шире и начинает мурчать еще громче.")
 
-		saynn("[say=pc]You are doing great, Miss Rahi.[/say]")
+		saynn("[say=pc]Вы отлично справляетесь, мисс Рахи.[/say]")
 
-		saynn("Positive reinforcement is important. But you do begin to get that strange feeling about Rahi. That she might just have a dominant side hidden behind all the layers of shyness and mental problems.")
+		saynn("Положительное подкрепление важно. Но у вас начинает появляться странное предчувствие насчет Рахи. Что за всеми этими слоями застенчивости и ментальных проблем у неё может скрываться доминантная натура.")
 
-		addButton("Continue", "That was nice", "endthescene")
+		addButton("Продолжить", "Это было приятно", "endthescene")
 	if(state == "play1_lickpussy"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("Time for some fun. Depending on what mood Rahi is in. She goes ahead and sits on the chair in the opposite corner away from you.")
+		saynn("Время для веселья. В зависимости от настроения Рахи. Она проходит вперед и усаживается на стул в противоположном углу, подальше от вас.")
 
-		saynn("[say=rahi]Get on your knees and crawl here.[/say]")
+		saynn("[say=rahi]Встань на колени и ползи сюда.[/say]")
 
-		saynn("You're at least a few meters away from Rahi. And she is waiting..")
+		saynn("Между вами и Рахи как минимум несколько метров. И она ждет...")
 
-		addButton("Obey", "Get on all fours and crawl to Rahi", "play1_obey")
-		addButton("Brat", "Be a brat about it", "play1_brat")
+		addButton("Повиноваться", "Встать на четвереньки и поползти к Рахи", "play1_obey")
+		addButton("Дерзкая девчонка", "Включить вредину", "play1_brat")
 	if(state == "play1_brat"):
 		playAnimation(StageScene.Duo, "allfours", {npc="rahi", npcAction="sit"})
-		saynn("You spread your arms aside and put on a cheeky smile.")
+		saynn("Вы разводите руки в стороны и натягиваете на лицо наглую ухмылку.")
 
-		saynn("[say=pc]Make me~.[/say]")
+		saynn("[say=pc]Заставь меня~.[/say]")
 
-		saynn("Suddenly Rahi gets up and starts walking towards you. She is a small cute kitty but right now her posture is quite intimidating. Her claws are out. You're not sure if you're gonna regret this yet.")
+		saynn("Внезапно Рахи вскакивает и направляется к тебе. Она маленькая и милая кошечка, но сейчас её поза выглядит весьма устрашающе. Когти выпущены. Ты пока не уверен, не пожалеешь ли об этом.")
 
-		saynn("[say=rahi]You made her stand up.. slut.[/say]")
+		saynn("[say=rahi]Ты заставил её встать... сучка.[/say]")
 
-		saynn("Rahi raises her clawed paw, seemingly about to scratch your face. But instead she delivers a firm spank on your {pc.thick} butt with the palm. And then another. And another, making your butt receive a soft red glow. Each impact makes you yelp from pain.")
+		saynn("Рахи поднимает когтистую лапу, словно собираясь полоснуть тебя по лицу. Но вместо этого она с силой хлопает тебя ладонью по {pc.thick} заднице. И еще раз. И еще, отчего твоя попка начинает мягко краснеть. От каждого удара ты вскрикиваешь от боли.")
 
-		saynn("After that Rahi grabs you by the collar and pulls you behind her. Trying to resist only makes your collar choke you harder. Your kitty sits on the chair and yanks you down to your knees and even lower still, until you're panting on all fours. Yep, this was totally worth it.")
+		saynn("После этого Рахи хватает тебя за воротник и тянет за собой. Попытки сопротивляться лишь сильнее сдавливают твой ошейник. Твоя кошечка усаживается на стул и заставляет тебя опуститься на колени, а затем и вовсе прижимает к полу, пока ты не начинаешь тяжело дышать на четвереньках. Да уж, это определенно того стоило.")
 
-		saynn("[say=rahi]Such a bad.. pet. Now lick.[/say]")
+		saynn("[say=rahi]Какая же плохая.. питомица. А теперь лижи.[/say]")
 
-		saynn("She gets a hold on your hair instead and pulls you towards her crotch. Rahi smells.. needy.. down there.")
+		saynn("Вместо этого она вцепляется тебе в волосы и тянет к своему паху. От Рахи пахнет... желанием... там, внизу.")
 
-		addButton("Lick", "Do what the orders you to do", "play1_lick")
+		addButton("Лизать", "Делать то, что велят", "play1_lick")
 	if(state == "play1_obey"):
 		playAnimation(StageScene.Duo, "crawl", {npc="rahi", npcAction="sit"})
-		saynn("[say=pc]Yes, Miss Rahi..[/say]")
+		saynn("[say=pc]Да, мисс Рахи..[/say]")
 
-		saynn("You slowly lower yourself to all fours and begin crawling towards Rahi. It takes a while but Rahi enjoys seeing your blushy cheeks while you degrade yourself to a level of a pet.")
+		saynn("Ты медленно опускаешься на четвереньки и начинаешь ползти к Рахи. Это занимает время, но Рахи нравится видеть твои раскрасневшиеся щеки, пока ты унижаешь себя до уровня домашнего животного.")
 
-		saynn("You crawl on your hands and knees until you're in front of Rahi. She sinks her clawed digits into your hair and scritches your head, her fingers dividing the hair strands.")
+		saynn("Ты ползешь на руках и коленях, пока не оказываешься прямо перед Рахи. Она запускает когтистые пальцы в твои волосы и начинает чесать тебе голову, пробираясь пальцами сквозь пряди.")
 
-		saynn("[say=rahi]Good pet. Now she wants you to pleasure her. Use your tongue to make her cum.[/say]")
+		saynn("[say=rahi]Хорошая зверушка. Теперь она хочет, чтобы ты доставил ей удовольствие. Используй язык, чтобы она кончила.[/say]")
 
-		saynn("Her voice is soft and yet filled with authority. She spreads her legs for you, showing off her clothed crotch. You bring your head closer to it.. Her scent.. So needy.")
+		saynn("Её голос звучит мягко, но в нём чувствуется властность. Она раздвигает ноги, демонстрируя тебе свою затянутую в одежду промежность. Ты подносишь голову ближе... Её запах... Такой жаждущий.")
 
-		addButton("Lick", "Do what the orders you to do", "play1_lick")
+		addButton("Лизать", "Делать то, что велят", "play1_lick")
 	if(state == "play1_lick"):
 		playAnimation(StageScene.Duo, "allfours", {npc="rahi", npcAction="sit", npcBodyState={naked=true}})
-		saynn("Since you're standing on all fours, you can't really use your hands. And that would be against the spirit of it. So you just press your face against Rahi's shorts and begin nuzzling her there, rubbing your nose and lips against her sensitive spots. The more you do it, the more Rahi spreads her legs for you.")
+		saynn("Поскольку ты стоишь на четвереньках, руки тебе почти не подходят — да и это противоречило бы самой сути процесса. Поэтому ты просто прижимаешься лицом к шортам Рахи и начинаешь ласкать её, водя носом и губами по самым чувствительным местам. Чем больше ты это делаешь, тем шире Рахи раздвигает ноги.")
 
-		saynn("Her own paws land on your head and gently scritch you behind the ears.")
+		saynn("Её собственные лапы ложатся тебе на голову, и она начинает нежно почесывать тебя за ушами.")
 
-		saynn("[say=rahi]Take off the shorts, pet. No paws.[/say]")
+		saynn("[say=rahi]Снимай шорты, зверушка. Без лап.[/say]")
 
-		saynn("Huh. That's a tricky task. You open your mouth and gently bite into the cloth before proceeding to try to pull the shorts off. It's.. hard.. your teeth really like to slip off. Rahi has a cheeky smile on her face. Then she finally gets her butt off the chair slightly, allowing you to make progress.")
+		saynn("Хм. Задачка не из легких. Ты приоткрываешь рот и осторожно прикусываешь ткань, пытаясь стянуть шорты. Это... трудно... зубы постоянно соскальзывают. На лице Рахи играет озорная улыбка. Наконец, она слегка приподнимает задницу над стулом, позволяя тебе продвинуться в деле.")
 
-		saynn("As you finally get the shorts off, a great view is presented to you. Rahi's gorgeous pink pussy. You don't get to look at it from so close usually. The petals are all tight and neat, enclosing the little sensitive bean at the top. And she is already slightly moist.")
+		saynn("Когда тебе наконец удается снять шорты, перед твоими глазами открывается великолепный вид. Великолепная розовая киска Рахи. Обычно тебе не удается рассмотреть её так близко. Лепестки плотно и аккуратно смыкаются, скрывая крошечную чувствительную бусинку сверху. И она уже слегка влажная.")
 
-		saynn("Without much hesitation, you stick your tongue out and begin to eagerly lick Rahi's pussy, your motions slow and careful. You circle around her clit a few times and then gently squeeze it between your teeth, sucking. Rahi gets more needy, a few little moans escape from her that she tries to hide.")
+		saynn("Без лишних раздумий ты высовываешь язык и начинаешь жадно лизать киску Рахи, двигаясь медленно и осторожно. Ты несколько раз обводишь её клитор, а затем нежно зажимаешь его между зубами, посасывая. Рахи становится всё более требовательной, из её уст вырываются тихие стоны, которые она пытается скрыть.")
 
-		saynn("She suddenly growls at you.")
+		saynn("Внезапно она рычит на тебя.")
 
-		saynn("[say=rahi]Faster. She wants you to make her cum hard and fast.[/say]")
+		saynn("[say=rahi]Быстрее. Она хочет, чтобы ты довел её до оргазма мощно и быстро.[/say]")
 
-		saynn("You pick the pace, your tongue moving faster and more urgently against Rahi's clit and her pussy lips. Every chance you get, you swallow all the wetness that you collect  before returning to lapping up her juices. Your kitty moans in pleasure around your tongue, her paws gripping your hair as she slowly approaches her orgasm..")
+		saynn("Ты ускоряешься, твой язык движется всё быстрее и настойчивее по клитору и половым губам Рахи. При каждой возможности ты слизываешь всю собранную влагу, прежде чем снова приняться за её соки. Её киска стонет от удовольствия вокруг твоего языка, а её лапы впиваются в твои волосы, пока она медленно приближается к оргазму...")
 
-		saynn("[say=rahi]Stop.[/say]")
+		saynn("[say=rahi]Стоять.[/say]")
 
-		saynn("She pushes you away. Rahi is not satisfied. Yet.")
+		saynn("Она отталкивает тебя. Рахи ещё не удовлетворена. Пока что.")
 
-		addButton("Continue", "See what happens next", "play1_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "play1_cum")
 	if(state == "play1_cum"):
 		playAnimation(StageScene.SexFaceSitting, "grind", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={hard=true}})
-		saynn("[say=rahi]Now it's her turn.[/say]")
+		saynn("[say=rahi]Теперь её очередь.[/say]")
 
-		saynn("She pushes you onto your back before suddenly straddling your face, forcing you to start eating her out again. This time she is much rougher with you, grinding her crotch against your face and moaning loudly as she uses you for her pleasure.")
+		saynn("Она опрокидывает тебя на спину и внезапно усаживается верхом на твоё лицо, заставляя тебя снова начать её вылизывать. На этот раз она ведет себя гораздо грубее, вжимаясь промежностью в твоё лицо и громко стоная, используя тебя для своего наслаждения.")
 
-		saynn("She forces her scent onto you. But you don't mind, you're happily sticking your tongue out, dragging it over her sensitive parts and lapping up the juices. You can't see much from your position but Rahi has unbuttoned her shirt and is now also squeezing her perky tits, her face shows a very lusty expression.")
+		saynn("Она буквально навязывает тебе свой запах. Но тебе всё равно — ты счастлив, высунув язык, проводя им по её чувствительным местам и слизывая соки. Из своего положения ты видишь не всё, но Рахи уже расстегнула рубашку и теперь сжимает свои упругие сиськи, а на её лице застыло выражение дикого вожделения.")
 
-		saynn("She can only grind you for so long before she finally cums, her body starts shaking and shivering. Her thighs lock up around your head while her pussy twitches and squirts girlcum all over you. Loud passionate moans escape from her while you are busy swallowing as much of her juices as you can. The rest lands on your hair, face and neck.")
+		saynn("Она сможет тереться о тебя лишь недолго, прежде чем наконец кончит, и её тело начнет дрожать и содрогаться. Её бёдра плотно сжимаются вокруг твоей головы, пока киска судорожно пульсирует, заливая тебя девичьей смазкой. Из её уст вырываются громкие страстные стоны, пока ты стараешься проглотить как можно больше её соков. Остальное разлетается по твоим волосам, лицу и шее.")
 
-		saynn("After she rides the rest of her pleasure waves, Rahi is left to pant heavily. She raises her crotch off your face, allowing you to breathe, her paws gently stroke your wet cheeks.")
+		saynn("Когда волны наслаждения наконец утихают, Рахи остается лишь тяжело дышать. Она приподнимает промежность над твоим лицом, давая тебе возможность вздохнуть, и её лапки нежно поглаживают твои влажные щеки.")
 
-		saynn("[say=rahi]You were a good pet.[/say]")
+		saynn("[say=rahi]Ты был хорошим питомцем.[/say]")
 
-		saynn("You nod, a satisfied smile on your face.")
+		saynn("Ты киваешь с довольной улыбкой на лице.")
 
-		addButton("Enough", "That was fun", "endthescene")
+		addButton("Хватит", "Это было весело", "endthescene")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillWatersports")):
-			addButton("Pee on me?", "(Watersports) Ask Rahi to maybe pee on you", "play1_watersports")
+			addButton("Пописаешь на меня?", "(Вотерспорт) Попросить Рахи, может быть, пописать на тебя", "play1_watersports")
 		if (getModule("RahiModule").getSkillScore("rahiSkillAnal") >= 3):
-			addButton("Rim Rahi", "(Anal) Ask to lick Rahi's asshole", "play1_rimming")
+			addButton("Рим Рахи", "(Анал) Попросить лизнуть анус Рахи", "play1_rimming")
 	if(state == "play1_watersports"):
 		playAnimation(StageScene.SexFaceSitting, "sit", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={hard=true}})
-		saynn("Even just thinking about it makes you feel embarrassed. Rahi notices your puzzled expression and raises a brow. She is still hovering just above your face.")
+		saynn("От одной мысли об этом тебе становится неловко. Рахи замечает твое озадаченное выражение лица и приподнимает бровь. Она всё еще зависает прямо над твоим лицом.")
 
-		saynn("[say=pc]Maybe.. you wanna.. pee.. Miss Rahi?..[/say]")
+		saynn("[say=pc]Может... вы хотите... пописать... мисс Рахи?..[/say]")
 
-		saynn("Rahi tilts her head.")
+		saynn("Рахи наклоняет голову.")
 
-		saynn("[say=rahi]You want her to.. pee on you?[/say]")
+		saynn("[say=rahi]Ты хочешь, чтобы она... пописала на тебя?[/say]")
 
-		saynn("You nod, your wet cheeks blushing red. Rahi chuckles softly and then bites her lip. After her orgasm Rahi wouldn't mind relieving herself indeed. And since you're offering..")
+		saynn("Ты киваешь, и твои влажные щеки заливаются краской. Рахи тихонько посмеивается, а затем прикусывает губу. После оргазма она и правда не прочь облегчиться. И раз уж ты сам предлагаешь...")
 
-		saynn("The kitty starts to pant softly, her paw gently tickling her pussy hole, the small one that's just below the clit.")
+		saynn("Кити начинает тихонько дышать, её лапка нежно щекочет её дырочку — ту самую, маленькую, что прямо под клитором.")
 
-		saynn("Very soon the little brown kitty arches her back and lets out a gasp as a stream of piss emerges from that hole. The golden shower quickly washes away any girlcum that you had on you.. replacing the lewd scent.. with a much more gross one. During scene moments you realize that it was so worth it to train your kitty to like pee.")
+		saynn("Вскоре маленькая коричневая киска выгибает спину и издает судорожный вздох, когда из этой дырочки вырывается струя мочи. Золотой дождь быстро смывает остатки твоей девичьей смазки... сменяя похотливый аромат... на куда более вонючий. В этот момент ты понимаешь, что приучить свою киску любить писать стоило того.")
 
-		saynn("Kitty pisses all over your face, some of her pee lands on your tongue. Tastes awful.. but realizing that your own kitty is marking you.. is so hot. You eagerly swallow the urine and keep your mouth opened for more.")
+		saynn("Кити ссыт прямо тебе на лицо, часть её мочи попадает тебе на язык. Вкус отвратительный... но осознание того, что твоя собственная киска метит тебя... это так возбуждает. Ты жадно глотаешь мочу, держа рот открытым в ожидании добавки.")
 
-		saynn("[say=rahi]Such a good.. piss slut.. huff..[/say]")
+		saynn("[say=rahi]Какая же хорошая... piss-сучка... хафф...[/say]")
 
-		saynn("Eventually her piss stream dies down, leaving you with the salty aftertaste. Both you and Rahi are left panting.")
+		saynn("В конце концов струя мочи иссякает, оставляя во рту соленое послевкусие. И ты, и Рахи тяжело дышите.")
 
-		addButton("Continue", "That was lewd", "endthescene")
+		addButton("Продолжить", "Это было пошло", "endthescene")
 	if(state == "play1_rimming"):
 		playAnimation(StageScene.SexFaceSitting, "sit", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={hard=true}})
-		saynn("You pleased Rahi's pussy with your tongue. But she still has another hole.. Rahi is hovering her crotch above your face, showing you that hole.. A neat little star.. That was neglected so far.")
+		saynn("Ты ласкал киску Рахи своим языком. Но у неё есть еще одно отверстие... Рахи зависает промежностью над твоим лицом, демонстрируя тебе эту дырочку... аккуратную маленькую звездочку... которой до сих пор уделяли мало внимания.")
 
-		saynn("[say=pc]Can I.. can your pet.. maybe..[/say]")
+		saynn("[say=pc]Можно ли... твоя питомица... может быть...[/say]")
 
-		saynn("Rahi tilts her head.")
+		saynn("Рахи наклоняет голову.")
 
-		saynn("[say=rahi]Use words, pet.[/say]")
+		saynn("[say=rahi]Говори словами, питомец.[/say]")
 
-		saynn("[say=pc]Your.. other hole?[/say]")
+		saynn("[say=pc]Твое... другое отверстие?[/say]")
 
-		saynn("Rahi raises a brow, already mostly recovered from her orgasm. Her juices do still drip onto your face though.")
+		saynn("Рахи вскидывает бровь, уже почти полностью оправившись от оргазма. Впрочем, её соки всё ещё капают тебе на лицо.")
 
-		saynn("[say=rahi]Meow. Sure.[/say]")
+		saynn("[say=rahi]Мяу. Конечно.[/say]")
 
-		saynn("She suddenly plops her butt onto your face again. But this time she is shifted forward more, your lips already brushing against her tight tailhole. Her tail suddenly springs into action, wrapping around your neck, becoming a second collar.")
+		saynn("Она внезапно снова плюхается задом тебе на лицо. Но на этот раз она сместилась чуть вперед, так что твои губы уже касаются её тугого ануса. Её хвост внезапно оживает, обвивая твою шею и становясь вторым ошейником.")
 
-		saynn("[say=rahi]Lick her ass, pet.[/say]")
+		saynn("[say=rahi]Лижи её задницу, песик.[/say]")
 
-		saynn("That was said in a very commanding tone. Combined with the tail tightening around your neck, you quickly begin to lick and suck at Rahi's anus, dragging your tongue around it in little circles. So humiliating.. But at the same time, it feels so good.. Rahi lets out a soft purr as she feels your tongue penetrating her star and thrusting deeper into her. Her paw lands on her pussy and begins rubbing the clit for that extra pleasure.")
+		saynn("Это было сказано очень властным тоном. В сочетании с хвостом, сжимающимся на твоей шее, ты быстро начинаешь лизать и сосать анус Рахи, выписывая языком маленькие круги. Так унизительно... Но в то же время, как же это приятно... Рахи издает мягкое мурлыканье, чувствуя, как твой язык проникает в её сфинктер и зарывается всё глубже. Её лапа ложится на её киску и начинает теребить клитор для дополнительного удовольствия.")
 
-		saynn("[say=rahi]Good pet.. You're doing such a good job, licking her dirty little hole..[/say]")
+		saynn("[say=rahi]Хороший песик... Ты так стараешься, вылизывая её грязную дырочку...[/say]")
 
-		saynn("Her words send shivers of excitement down your spine. Something about being under Rahi's control.. doing such humiliating things for her.. something about that makes you incredibly aroused. You eagerly thrust your tongue deeper into your kitty, exploring every inch of that asshole.")
+		saynn("Её слова заставляют дрожь возбуждения пробежать по твоему позвоночнику. Что-то в подчинении Рахи... в выполнении таких унизительных вещей для неё... что-то в этом невероятно тебя возбуждает. Ты жадно засовываешь язык глубже в её киску, исследуя каждый дюйм её задницы.")
 
-		saynn("Rahi moans passionately as she feels your tongue teasing her inner walls and making them slick with your saliva. She reaches her other paw to grab your hair and pull you even close, grinding your lips with her anus.")
+		saynn("Рахи страстно стонет, чувствуя, как твой язык дразнит её внутренние стенки, делая их скользкими от твоей слюны. Она протягивает другую лапу, чтобы схватить тебя за волосы и притянуть еще ближе, втирая свои губы в её анус.")
 
-		saynn("Finally, Rahi leans back and lets out a satisfied sigh.")
+		saynn("Наконец Рахи откидывается назад и удовлетворенно вздыхает.")
 
-		saynn("[say=rahi]That's enough.. little butt slut.. Time for your reward.[/say]")
+		saynn("[say=rahi]Достаточно... маленькая жопная шлюшка... Время для награды.[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Rahi gets up and then lifts her leg, moving it closer to your chastity cage. It only takes a few strokes with her feet before your locked up dick suddenly bursts with multiple strings of thick ropey {pc.cum} through the little hole in the cage, leaving quite a mess on Rahi's feet.")
+			saynn("Рахи встает и поднимает ногу, поднося её ближе к твоей девственной клетке. Ей хватает всего нескольких движений ступней, прежде чем твой запертый член внезапно извергает несколько струй густой, тягучей {pc.cum} через маленькое отверстие в клетке, оставляя на ногах Рахи настоящий беспорядок.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Rahi gets up and then lifts her leg, moving it closer to your {pc.penis}. It only takes a few strokes with her feet before your member suddenly bursts with multiple strings of thick ropey {pc.cum}, leaving quite a mess on Rahi's feet.")
+			saynn("Рахи встает и поднимает ногу, поднося её ближе к твоему {pc.penis}. Ей хватает всего нескольких движений ступней, прежде чем твой член внезапно извергает несколько струй густой, тягучей {pc.cum}, оставляя на ногах Рахи настоящий беспорядок.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Rahi gets up and then lifts her leg, moving it closer to your wet pussy. She only rubs your clit a few times with her feet before you suddenly cum, your cunt squirting juices all over Rahi's foot, leaving quite a wet mess.")
+			saynn("Рахи встает и поднимает ногу, поднося её ближе к твоей влажной киске. Она лишь пару раз трет твой клитор ступней, как ты внезапно кончаешь, и твоя щелка заливает ноги Рахи соками, оставляя после себя мокрый след.")
 
 		else:
-			saynn("Rahi gets up and then lifts her leg, moving it closer to your crotch. She only rubs it a few times with her feet before you suddenly cum, your body squirming and shivering under Rahi.")
+			saynn("Рахи встает и поднимает ногу, поднося её ближе к твоему паху. Она лишь пару раз трет его ступнями, как ты внезапно кончаешь, а твое тело корчится и дрожит под Рахи.")
 
-		saynn("Kitty chuckles seeing that.")
+		saynn("Китти усмехается, видя это.")
 
-		saynn("[say=rahi]Wow.. She didn't know you like this so much.. good to know..[/say]")
+		saynn("[say=rahi]Ого... Она и не знала, что тебе это так нравится... полезно знать...[/say]")
 
-		addButton("Continue", "That was lewd", "endthescene")
+		addButton("Продолжить", "Это было пошло", "endthescene")
 	if(state == "play2_toys"):
-		saynn("You decide to let Rahi have some fun with you. She has a playful smirk on her face.")
+		saynn("Ты решаешь позволить Рахи немного развлечься с тобой. На её лице играет игривая ухмылка.")
 
-		saynn("[say=rahi]Are you ready for her?[/say]")
+		saynn("[say=rahi]Ты готов к ней?[/say]")
 
-		saynn("You nod eagerly while Rahi searches for some.. toys.. and restraints. It seems she found what she wanted.")
+		saynn("Ты жадно киваешь, пока Рахи ищет кое-какие... игрушки... и путы. Кажется, она нашла то, что хотела.")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("[say=rahi]Undress then.[/say]")
+			saynn("[say=rahi]Раздевайся.[/say]")
 
-			addButton("Undress", "See what happens next", "play2_getcuffed")
+			addButton("Раздеться", "Смотреть, что будет дальше", "play2_getcuffed")
 		else:
-			addButton("Continue", "See what happens next", "play2_getcuffed")
+			addButton("Продолжить", "Смотреть, что будет дальше", "play2_getcuffed")
 	if(state == "play2_getcuffed"):
 		playAnimation(StageScene.Sybian, "idle", {nosybian=true, bodyState={naked=true}})
 		if (!GM.pc.isFullyNaked()):
-			saynn("You take off any clothes and present yourself to your kitty.")
+			saynn("Ты снимаешь всю одежду и предстаешь перед своей кошечкой.")
 
-		saynn("[say=rahi]On your knees, pet.[/say]")
+		saynn("[say=rahi]На колени, питомец.[/say]")
 
-		saynn("Her authoritative voice is cute and yet somewhat intimidating. You do as she says, dropping down to your knees. Rahi pulls out two sets of metal cuffs and quickly secures them around your wrists and ankles. Now you're completely immobilized, your body vulnerable to Rahi's touch.")
+		saynn("Ее властный голос звучит мило, но в то же время немного пугающе. Ты делаешь, как она говорит, опускаясь на колени. Рахи достает две пары металлических кандалов и быстро застегивает их на твоих запястьях и лодыжках. Теперь ты полностью обездвижен, и твое тело беззащитно перед прикосновениями Рахи.")
 
-		saynn("[say=rahi]Good.. You're all hers now..[/say]")
+		saynn("[say=rahi]Хорошо... Теперь ты весь ее..[/say]")
 
-		saynn("Your kitty begins teasing you, running her paws all over your {pc.masc} body and taunting, getting close to your sensitive spots but never quite reaching or touching them. She extends her claws and begins to gently drag them over your skin, causing you to squirm and moan softly already.")
+		saynn("Твоя кошечка начинает дразнить тебя, пропуская лапки по всему твоему {pc.masc} телу и насмехаясь; она приближается к твоим чувствительным зонам, но никак не касается их. Она выпускает когти и начинает нежно водить ими по твоей коже, заставляя тебя уже сейчас ерзать и тихо стонать.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your caged up dick desperately tries to get hard but the metal constrains it, leaving you so needy.")
+			saynn("Твой зажатый в клетке член отчаянно пытается встать, но металл сковывает его, заставляя тебя изнывать от желания.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your {pc.penis} is hard and ready, leaking precum. But Rahi has her plans for it. You feel so needy..")
+			saynn("Твой {pc.penis} твердый и готовый, из него сочится предэякулят. Но у Рахи на него свои планы. Ты чувствуешь такую нестерпимую нужду...")
 
 		else:
-			saynn("Your pussy and wet and ready, dripping juices. But Rahi has her plans for it. You feel so needy..")
+			saynn("Твоя киска мокрая и готовая, из нее капает сок. Но у Рахи на нее свои планы. Ты чувствуешь такую нестерпимую нужду...")
 
-		saynn("That's when Rahi leaves for a bit, grabbing something else..")
+		saynn("В этот момент Рахи ненадолго отлучается, чтобы принести кое-что ещё...")
 
-		addButton("Continue", "See what happens next", "play2_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "play2_cum")
 	if(state == "play2_cum"):
 		playAnimation(StageScene.Sybian, "ride", {pcCum=true,nosybian=true, bodyState={naked=true, hard=true}})
-		saynn("Rahi retrieves a little pink vibro bullet and returns. You can already guess what she will do to you.")
+		saynn("Рахи возвращается с маленькой розовой вибро-пулей. Ты уже можешь догадаться, что она с тобой сделает.")
 
-		saynn("[say=rahi]Stay like that.[/say]")
+		saynn("[say=rahi]Замри так.[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Kitty presses the pink toy against the tip of your chastity cage before turning it on to a high setting. You can't help but to gasp and moan as your locked up member suddenly begins to receive stimulation, already dripping precum onto Rahi's digits.")
+			saynn("Китти прижимает розовую игрушку к кончику твоей клетки целомудрия, а затем включает её на максимальную мощность. Ты невольно ахаешь и стонешь, когда твой запертый член внезапно начинает получать стимуляцию, уже смазывая пальцы Рахи предэякулятом.")
 
-			saynn("The toy buzzes with a high pitch. You're squirming and making various noises of love while Rahi stares you into the eyes. She bites her lip seeing how much pleasure you're receiving from such a small toy. Her paw holds both it and your cage. Your orgasm draws near.. already..")
+			saynn("Игрушка жужжит на высокой ноте. Ты извиваешься и издаешь всякие звуки наслаждения, пока Рахи пристально смотрит тебе в глаза. Она прикусывает губу, видя, какое удовольствие доставляет тебе эта крошечная штучка. Её лапа сжимает и игрушку, и твою клетку. Твой оргазм уже близко... совсем близко...")
 
-			saynn("[say=pc]I.. I'm.. I'm gonna..[/say]")
+			saynn("[say=pc]Я... я сейчас... сейчас кончу...[/say]")
 
-			saynn("When Rahi hears that, she pulls the toy away, stealing the source of great sensations. Your {pc.penis} putting some real pressure onto that cage.")
+			saynn("Услышав это, Рахи резко отводит игрушку, лишая тебя источника невероятных ощущений. Твоя {pc.penis} начинает ощутимо давить на клетку.")
 
-			saynn("[say=pc]H-hey.. No..[/say]")
+			saynn("[say=pc]Эй... нет... подожди...[/say]")
 
-			saynn("[say=rahi]Who is she?[/say]")
+			saynn("[say=rahi]Кто она такая?[/say]")
 
-			saynn("She got you where she wanted, cuffed up and incredibly aroused. You're ready to say anything.")
+			saynn("Она заставила тебя делать то, что ей нужно: ты в наручниках и невероятно возбужден. Ты готов выложить ей всё, что угодно.")
 
-			saynn("[say=pc]Miss Rahi.. You're Miss Rahi.. Please.. Let your pet cum..[/say]")
+			saynn("[say=pc]Мисс Рахи... Вы — мисс Рахи... Пожалуйста... Позвольте своему питомцу кончить...[/say]")
 
-			saynn("After what feels like eternity of teasing, your kitty finally presses the vibrating toy against your chastity cage again. Your moans return and this time Rahi lets you cum. Your body writhing in pleasure, your dick shooting weak spurts of {pc.cum} through the cage while Rahi continues to stimulate it.")
+			saynn("После целой вечности изнурительного дразнения, твоя кошечка наконец снова прижимает вибрирующую игрушку к твоей девственной клетке. Твои стоны возвращаются, и на этот раз Рахи позволяет тебе кончить. Твое тело корчится от удовольствия, а член извергает слабые струйки {pc.cum} сквозь клетку, пока Рахи продолжает его стимулировать.")
 
-			saynn("[say=rahi]Yeah, she wants you to remember that.[/say]")
+			saynn("[say=rahi]Да, она хочет, чтобы ты об этом помнил.[/say]")
 
-			saynn("[say=pc]Thank you! Ah! Miss Rahi![/say]")
+			saynn("[say=pc]Спасибо! Ах! Мисс Рахи![/say]")
 
-			saynn("You leave a mess on your kitty's paws. After you're done orgasming, she brings her paw to her mouth and playfully licks the {pc.cum} off it. You almost feel like you're hard again..")
+			saynn("Ты оставляешь беспорядок на лапках своей кошечки. Когда оргазм заканчивается, она подносит лапку к рту и игриво слизывает {pc.cum}. Тебе кажется, что ты почти снова встал...")
 
-			saynn("[say=rahi]You were a good little pet.[/say]")
+			saynn("[say=rahi]Ты был хорошим маленьким питомцем.[/say]")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Kitty presses the pink toy against the tip of your {pc.penis} before turning it on to a high setting. You can't help but to gasp and moan as your hard member suddenly begins to receive stimulation, already dripping precum onto Rahi's digits.")
+			saynn("Кошечка прижимает розовую игрушку к кончику твоего {pc.penis}, прежде чем включить её на максимальную мощность. Ты не можешь сдержать вздохов и стонов, когда твой твердый член внезапно начинает получать стимуляцию, уже капая предэякулятом на пальцы Рахи.")
 
-			saynn("The toy buzzes with a high pitch. You're squirming and making various noises of love while Rahi stares you into the eyes. She bites her lip seeing how much pleasure you're receiving from such a small toy. Her paw holds both it and your dick. Your orgasm draws near.. already..")
+			saynn("Игрушка жужжит на высокой ноте. Ты извиваешься и издаешь всякие звуки наслаждения, пока Рахи пристально смотрит тебе в глаза. Она прикусывает губу, видя, какое удовольствие ты получаешь от такой маленькой игрушки. Её лапка сжимает и её, и твой член. Твой оргазм уже близко... совсем скоро...")
 
-			saynn("[say=pc]I.. I'm.. I'm gonna..[/say]")
+			saynn("[say=pc]Я... я сейчас... сейчас кончу...[/say]")
 
-			saynn("When Rahi hears that, she pulls the toy away, stealing the source of great sensations. Your {pc.penis} throbbing, wanting to burst so much..")
+			saynn("Когда Рахи слышит это, она отводит игрушку, крадя источник великих ощущений. Твой {pc.penis} пульсирует, желая вот-вот взорваться...")
 
-			saynn("[say=pc]H-hey.. No..[/say]")
+			saynn("[say=pc]Эй... нет... подожди...[/say]")
 
-			saynn("[say=rahi]Who is she?[/say]")
+			saynn("[say=rahi]Кто она такая?[/say]")
 
-			saynn("She got you where she wanted, cuffed up and incredibly aroused. You're ready to say anything.")
+			saynn("Она заставила тебя делать то, что ей нужно: ты в наручниках и невероятно возбужден. Ты готов выложить ей всё, что угодно.")
 
-			saynn("[say=pc]Miss Rahi.. You're Miss Rahi.. Please.. Let your pet cum..[/say]")
+			saynn("[say=pc]Мисс Рахи... Вы — мисс Рахи... Пожалуйста... Позвольте своему питомцу кончить...[/say]")
 
-			saynn("After what feels like eternity of teasing, your kitty finally presses the vibrating toy against your member again. Your moans return and this time Rahi lets you cum. Your body writhing in pleasure, your dick shooting strong spurts of {pc.cum} while Rahi continues to stimulate it.")
+			saynn("После целой вечности дразнилок твоя киска наконец снова прижимает вибрирующую игрушку к твоему члену. Твои стоны возвращаются, и на этот раз Рахи позволяет тебе кончить. Твое тело корчится от удовольствия, а член выпускает мощные струи {pc.cum}, пока Рахи продолжает его стимулировать.")
 
-			saynn("[say=rahi]Yeah, she wants you to remember that.[/say]")
+			saynn("[say=rahi]Да, она хочет, чтобы ты об этом помнил.[/say]")
 
-			saynn("[say=pc]Thank you! Ah! Miss Rahi![/say]")
+			saynn("[say=pc]Спасибо! Ах! Мисс Рахи![/say]")
 
-			saynn("You leave a mess on your kitty's paws. After you're done orgasming, she brings her paw to her mouth and playfully licks the {pc.cum} off it. You almost feel like you're hard again..")
+			saynn("Ты оставляешь беспорядок на лапках своей кошечки. Когда оргазм заканчивается, она подносит лапку к рту и игриво слизывает {pc.cum}. Тебе кажется, что ты почти снова встал...")
 
-			saynn("[say=rahi]You were a good little pet.[/say]")
+			saynn("[say=rahi]Ты был хорошим маленьким питомцем.[/say]")
 
 		else:
-			saynn("Kitty presses the pink toy against your sensitive clit before turning it on to a high setting. You can't help but to gasp and moan as your wet pussy slit suddenly begins to receive stimulation. You are already dripping juices onto Rahi's digits.")
+			saynn("Киска прижимает розовую игрушку к твоему чувствительному клитору, прежде чем включить её на максимальную мощность. Ты не можешь не ахать и не стонать, когда твоя влажная щель внезапно начинает получать стимуляцию. Ты уже вовсю капаешь соками на пальцы Рахи.")
 
-			saynn("The toy buzzes with a high pitch. You're squirming and making various noises of love while Rahi stares you into the eyes. She bites her lip seeing how much pleasure you're receiving from such a small toy. Her paw holds it firmly against your clit. Your orgasm draws near.. already..")
+			saynn("Игрушка жужжит на высокой ноте. Ты извиваешься и издаешь всякие звуки любви, пока Рахи пристально смотрит тебе в глаза. Она прикусывает губу, видя, какое наслаждение приносит тебе эта маленькая безделушка. Её лапа крепко прижимает её к твоему клитору. Твой оргазм уже близко... совсем близко...")
 
-			saynn("[say=pc]I.. I'm.. I'm gonna..[/say]")
+			saynn("[say=pc]Я... я сейчас... сейчас кончу...[/say]")
 
-			saynn("When Rahi hears that, she pulls the toy away, stealing the source of great sensations. Your pussy is twitching and pulsating slightly.. You need to cum.. Now..")
+			saynn("Услышав это, Рахи отводит игрушку, крадя источник невероятных ощущений. Твоя киска слегка подергивается и пульсирует... Тебе нужно кончить... Прямо сейчас...")
 
-			saynn("[say=pc]H-hey.. No..[/say]")
+			saynn("[say=pc]Эй... нет... подожди...[/say]")
 
-			saynn("[say=rahi]Who is she?[/say]")
+			saynn("[say=rahi]Кто она такая?[/say]")
 
-			saynn("She got you where she wanted, cuffed up and incredibly aroused. You're ready to say anything.")
+			saynn("Она заставила тебя делать то, что ей нужно: ты в наручниках и невероятно возбужден. Ты готов выложить ей всё, что угодно.")
 
-			saynn("[say=pc]Miss Rahi.. You're Miss Rahi.. Please.. Let your pet cum..[/say]")
+			saynn("[say=pc]Мисс Рахи... Вы — мисс Рахи... Пожалуйста... Позвольте своему питомцу кончить...[/say]")
 
-			saynn("After what feels like eternity of teasing, your kitty finally presses the vibrating toy against your pussy again. Your moans return and this time Rahi lets you cum. Your body writhing in pleasure, your slit gushing out girlcum while Rahi continues to stimulate it.")
+			saynn("После целой вечности дразнилок твоя киска наконец снова прижимает вибрирующую игрушку к твоей щели. Твои стоны возвращаются, и на этот раз Рахи позволяет тебе кончить. Твое тело корчится от удовольствия, а из щели хлещет девичья смазка, пока Рахи продолжает её стимулировать.")
 
-			saynn("[say=rahi]Yeah, she wants you to remember that.[/say]")
+			saynn("[say=rahi]Да, она хочет, чтобы ты об этом помнил.[/say]")
 
-			saynn("[say=pc]Thank you! Ah! Miss Rahi![/say]")
+			saynn("[say=pc]Спасибо! Ах! Мисс Рахи![/say]")
 
-			saynn("You leave a mess on your kitty's paws. After you're done orgasming, she brings her paw to her mouth and playfully licks the juices off it. You almost feel like you can go through all of that again..")
+			saynn("Ты оставляешь липкий след на лапках своей киски. Когда ты заканчиваешь оргазм, она подносит лапу к рту и игриво слизывает соки. Тебе кажется, что ты готов пройти через всё это снова и снова...")
 
-			saynn("[say=rahi]You were a good little pet.[/say]")
+			saynn("[say=rahi]Ты был хорошим маленьким питомцем.[/say]")
 
-		saynn("Kitty begins to remove the cuffs.")
+		saynn("Киска начинает снимать наручники.")
 
-		addButton("Continue", "See what happens next", "play2_end")
+		addButton("Продолжить", "Смотреть, что будет дальше", "play2_end")
 	if(state == "play3_pain"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", bodyState={naked=true}})
-		saynn("You let Rahi know that you want her to play with you. She crosses her arms and gets into her other mindset.")
+		saynn("Вы даете Рахи понять, что хотите поиграть с ней. Она скрещивает руки на груди, и ее настрой меняется на другой.")
 
-		saynn("[say=rahi]Stand in the middle of the room for her.[/say]")
+		saynn("[say=rahi]Встань посреди комнаты для меня.[/say]")
 
-		saynn("Simple enough.. You do as she says, walking to the center of her cell and just standing still. Rahi purrs seeing you obey.")
+		saynn("Довольно просто... Вы делаете, как она говорит, подходите к центру ее камеры и замираете. Рахи довольно мурлычет, видя ваше послушание.")
 
-		saynn("[say=rahi]Good pet.. She will do things to you.. And you're gonna let her do them, mhm?..[/say]")
+		saynn("[say=rahi]Хороший питомец... Она будет делать с тобой всякое... И ты позволишь ей, мхм?..[/say]")
 
-		saynn("She is slowly circling around you. Like a predator sizing up its prey. Her feline tail swishing behind her. She stops for a second, placing her paw under your chin, lifting your head up to look her in the eyes. She waits for an answer. Her stare makes you feel somewhat nervous.")
+		saynn("Она медленно кружит вокруг вас, словно хищник, оценивающий добычу. Ее кошачий хвост мерно покачивается сзади. На секунду она останавливается и подставляет лапу под ваш подбородок, заставляя вас поднять голову и посмотреть ей в глаза. Она ждет ответа. От ее пристального взгляда становится немного не по себе.")
 
-		saynn("[say=pc]Yes, Miss Rahi.[/say]")
+		saynn("[say=pc]Да, мисс Рахи.[/say]")
 
-		saynn("She smiles and scritches you under your chin before continuing to circle you. This time she stops behind you.")
+		saynn("Она улыбается и чешет вас под подбородком, после чего продолжает кружить вокруг, но на этот раз останавливается у вас за спиной.")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("Rahi begins to slowly undress you, taking off your clothes one by one, exposing all your private bits. And you just let her do it..")
+			saynn("Рахи начинает медленно раздевать вас, снимая одежду одну вещь за другой и обнажая все ваши интимные места. И вы просто позволяете ей это делать...")
 
 		else:
-			saynn("[say=rahi]Already naked.. good..[/say]")
+			saynn("[say=rahi]Уже голышом... хорошо...[/say]")
 
-			saynn("Rahi just drags her paws over your {pc.masc} back.")
+			saynn("Рахи медленно проводит лапами по вашей {pc.masc} спине{pc.masc}.")
 
-		saynn("Then she leans closer to your ear, whispering.")
+		saynn("Затем она наклоняется ближе к твоему уху и начинает шептать.")
 
-		saynn("[say=rahi]She wants to see how much pain you can handle.. How much pleasure you can endure..[/say]")
+		saynn("[say=rahi]Она хочет увидеть, сколько боли ты сможешь вытерпеть... Сколько удовольствия ты сможешь вынести...[/say]")
 
-		saynn("She almost growls into your ear at the end, her hot breath making you shiver.")
+		saynn("В конце она почти рычит тебе в ухо, и от её горячего дыхания тебя пробирает дрожь.")
 
-		saynn("Ow. Kitty has extended her claws and began gently clawing at your back. She scratches your skin, bringing some discomfort and making you squirm.")
+		saynn("Ой. Кити выпустила когти и начала нежно царапать твою спину. Она скребет твою кожу, причиняя легкий дискомфорт и заставляя тебя ерзать.")
 
-		saynn("[say=rahi]Start.. touching yourself..[/say]")
+		saynn("[say=rahi]Начни... ласкать себя...[/say]")
 
-		saynn("Each second you don't obey, Rahi sinks her claws deeper into you, threatening to pierce the skin..")
+		saynn("С каждой секундой твоего неповиновения Рахи вонзает когти всё глубже, грозя проткнуть кожу...")
 
-		addButton("Comply", "Do what Rahi tells you to do", "play3_comply")
+		addButton("Повиноваться", "Делать то, что велит Рахи", "play3_comply")
 	if(state == "play3_comply"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
 		if (GM.pc.isWearingChastityCage() && !GM.pc.hasReachableVagina()):
-			saynn("You comply.. the best way you can.. Rubbing your chastity cage with your hands. Sadly, that provides very little physical stimulation.. You quickly find that rubbing your taint area brings you the most pleasure.. And coupled with everything else.. It feels good..")
+			saynn("Ты повинуешься... как можешь... потирая свою девственную клетку руками. К сожалению, это дает мало физического возбуждения... Но ты быстро понимаешь, что трение промежности приносит больше всего удовольствия... И в сочетании со всем остальным... это чертовски приятно...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("You comply and begin stroking your own member. Your {pc.penis} hardens in your hand and already leaks precum. It feels good.. To be doing this because Rahi ordered you to..")
+			saynn("Ты повинуешься и начинаешь ласкать свой член. Твой {pc.penis} твердеет в руке и уже сочится предэякулятом. Это приятно... Делать это только потому, что так приказала Рахи...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("You comply and place your hand on your pussy. Your digits begin rubbing your clit in little circular motions, making the sensitive folds.. moist.. It feels good.. To be doing this because Rahi ordered you to..")
+			saynn("Ты послушно кладешь руку на свою киску. Пальцы начинают растирать клитор круговыми движениями, заставляя чувствительные складки... увлажняться. Это приятно... Делать это только потому, что Рахи так велела...")
 
 		else:
-			saynn("You comply and place your hand on your sensitive crotch. Your digits begin rubbing that area with little circular motions.. To be doing this because Rahi ordered you to..")
+			saynn("Ты послушно кладешь руку на свою чувствительную промежность. Пальцы начинают растирать эту область круговыми движениями... Делать это только потому, что Рахи так велела...")
 
-		saynn("You moan, feeling the pleasure building inside.. At the same time, Rahi has dropped her clothes. She reveals her naked body by walking in your view, her claws leaving little scratch marks on your shoulder.")
+		saynn("Ты стонешь, чувствуя, как внутри нарастает наслаждение... В это же время Рахи скидывает одежду. Она демонстрирует свое обнаженное тело, проходя перед твоими глазами, а её когти оставляют легкие царапины на твоем плече.")
 
-		saynn("She watches you, pleasuring yourself and smiles. Her paws land on your chest, teasing your {pc.breasts}. Her claws find the nipples and squeeze them, bringing more pain. You produce a groan while Rahi continues to teasingly scratch you everywhere. Your orgasm.. you feel it nearing you..")
+		saynn("Она наблюдает за тем, как ты ласкаешь себя, и улыбается. Её лапы ложатся тебе на грудь, дразня твой {pc.breasts}. Когти находят соски и сжимают их, принося еще больше боли. Ты издаешь стон, пока Рахи продолжает дразняще царапать тебя повсюду. Твой оргазм... ты чувствуешь, что он уже близко...")
 
-		saynn("[say=pc]Can I.. Can I cum?[/say]")
+		saynn("[say=pc]Можно мне... можно мне кончить?[/say]")
 
-		saynn("[say=rahi]Say please and she might..[/say]")
+		saynn("[say=rahi]Скажи «пожалуйста», и, может быть, она позволит...[/say]")
 
-		saynn("[say=pc]Please?..[/say]")
+		saynn("[say=pc]Пожалуйста?..[/say]")
 
-		saynn("Kitty painfully scratches your inner thigh, dangerously close to your bits. It is obviously what she wants..")
+		saynn("Кошечка больно царапает твое внутреннее бедро, опасно близко к твоим яйцам. Очевидно, что именно этого она и хочет...")
 
-		addButton("Beg", "Beg Rahi to let you cum", "play3_begcum")
+		addButton("Умолять", "Умолять Рахи дать тебе кончить", "play3_begcum")
 	if(state == "play3_begcum"):
-		saynn("You're slowly becoming desperate from Rahi's painful teasing and your own hands.")
+		saynn("Ты медленно впадаешь в отчаяние от болезненных ласк Рахи и собственных рук.")
 
-		saynn("[say=pc]Please.. let your pet cum..[/say]")
+		saynn("[say=pc]Пожалуйста... позволь своей питомице кончить...[/say]")
 
-		saynn("Rahi purrs deeply into your ear. Your kitty whispers..")
+		saynn("Рахи глубоко мурлычет тебе в ухо. Твоя кошечка шепчет...")
 
-		saynn("[say=rahi]Sure..[/say]")
+		saynn("[say=rahi]Конечно..[/say]")
 
-		saynn("And then suddenly bares her fangs and bites into your neck. She doesn't damage anything but it's still quite painful, some blood is drawn. All the while her claws land on your back and continue gently scratching it. So many sensations.. But you can't hold back anymore.. Your body shivers as you get sent into a spiral of pleasure from this crazy mix of pain and pleasure..")
+		saynn("И вдруг она оскаливает клыки и впивается тебе в шею. Она не повреждает ничего серьезного, но всё равно довольно больно, проступает немного крови. Всё это время её когти впиваются в твою спину, продолжая нежно её царапать. Столько ощущений... Но ты больше не можешь сдерживаться... Твое тело дрожит, когда тебя закручивает в спирали удовольствия от этой безумной смеси боли и наслаждения...")
 
 		if (GM.pc.isWearingChastityCage() && !GM.pc.hasReachableVagina()):
-			saynn("You suddenly feel pressure rising in your chastity cage.. Your dick inside throbs and fights the metal before bursting with a few weak strings of {pc.cum}. All that seed lands on Rahi's thigh. Wasteful. But lewd.")
+			saynn("Ты внезапно чувствуешь, как давление в твоей девственной клетке нарастает... Твой член внутри пульсирует и бьется о металл, прежде чем извергнуться несколькими слабыми струйками {pc.cum}. Всё это семя попадает на бедро Рахи. Расточительно. Но похотливо.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("You feel pressure rising in your {pc.penis}.. You member throbs and suddenly bursts with a few strong strings of {pc.cum}. They all land on Rahi's thighs, creating a mess. Wasteful. But lewd.")
+			saynn("Ты чувствуешь, как давление в твоем {pc.penis} нарастает... Твой член пульсирует и внезапно извергается несколькими мощными струями {pc.cum}. Все они попадают на бедра Рахи, создавая месиво. Расточительно. Но похотливо.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("The orgasm overwhelms you. Your hand rubs your clit extremely fast to the point of your pussy suddenly squirting out lots of juices. Some of them land on Rahi's thigh, creating quite a wet mess. Lewd.")
+			saynn("Оргазм захлестывает тебя. Твоя рука трет клитор невероятно быстро, до такой степени, что из твоей киски внезапно вырывается поток соков. Часть их попадает на бедро Рахи, создавая довольно мокрое пятно. Похотливо.")
 
 		else:
-			saynn("The orgasm overwhelms you. Your hand rubs your crotch area to the point of you shaking and squirming. Lewd.")
+			saynn("Оргазм захлестывает тебя. Твоя рука трет пах до такой степени, что ты начинаешь дрожать и извиваться. Похотливо.")
 
-		saynn("Rahi leaves a few shallow bite marks on your neck and pulls away, letting you ride the rest of your orgasmic waves on your own.")
+		saynn("Рахи оставляет на твоей шее несколько неглубоких следов от укусов и отстраняется, позволяя тебе в одиночку пережить оставшиеся волны оргазма.")
 
-		saynn("[say=rahi]Good.. She can probably train you into a little pain toy..[/say]")
+		saynn("[say=rahi]Хорошо... Из тебя, вероятно, получится отличная игрушка для боли...[/say]")
 
-		saynn("After that Rahi walks behind you again and hugs you this time. She starts licking all the wounds that she caused. It stings.. But it stings so good..")
+		saynn("После этого Рахи снова подходит к тебе сзади и на этот раз обнимает. Она начинает слизывать все раны, которые сама же и нанесла. Это щиплет... Но это так приятно щиплет...")
 
-		saynn("[say=pc]T-thank you..[/say]")
+		saynn("[say=pc]Спасибо..[/say]")
 
-		saynn("Rahi giggles and spends some more time with you to make sure you feel alright after all that.")
+		saynn("Рахи хихикает и проводит с тобой еще немного времени, чтобы убедиться, что после всего этого ты чувствуешь себя в порядке.")
 
-		addButton("Enough", "That was painful!", "endthescene")
+		addButton("Хватит", "Это было больно!", "endthescene")
 	if(state == "sex1_ride"):
-		saynn("As soon as you assume a submissive posture, lowering your head in front of Rahi, her ears perk up as she already knows what's up.")
+		saynn("Как только ты принимаешь покорную позу, склоняя голову перед Рахи, её ушки навостряются — она уже понимает, к чему всё идет.")
 
-		saynn("[say=rahi]Welcome.. pet.[/say]")
+		saynn("[say=rahi]Добро пожаловать.. питомец.[/say]")
 
-		saynn("Your kitty purrs, circling around you like a predator stalking its prey.")
+		saynn("Твоя киска мурлычет, кружа вокруг тебя, словно хищник, выслеживающий добычу.")
 
-		saynn("[say=rahi]You're eager to submit.. aren't you..[/say]")
+		saynn("[say=rahi]Ты так жаждешь подчиниться.. не так ли..[/say]")
 
-		saynn("She bites lip and drags her paw over your {pc.masc} curves, getting dangerously close to your crotch, her fluffy tail bumping into your {pc.thick} thighs.")
+		saynn("Она прикусывает губу и проводит лапкой по твоим {pc.masc} изгибам, опасно приближаясь к паху, а её пушистый хвост задевает твои {pc.thick} бёдра.")
 
-		saynn("[say=rahi]You're lucky she wants this..[/say]")
+		saynn("[say=rahi]Тебе повезло, что она этого хочет..[/say]")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("Kitty slides her paws under your clothes and begins taking them off, one by one. You know better than to say no to that.. Eventually kitty reveals your dick too..")
+			saynn("Киска просовывает лапки под твою одежду и начинает стягивать её, вещь за вещью. Ты слишком умен, чтобы говорить «нет»... В конце концов, киска обнажает и твой член тоже...")
 
-		saynn("Seeing your kitty like this.. after her being a shy submissive cutie for so long.. It makes you feel aroused already.")
+		saynn("Видеть её киску такой... после того, как она так долго была застенчивой и покорной милашкой... Это уже заставляет тебя возбуждаться.")
 
-		addButton("Continue", "See what happens next", "sex1_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex1_start")
 	if(state == "sex1_start"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="rahi", pc="pc", bodyState={naked=true, hard=true}})
-		saynn("Without much warning, Rahi pushes you onto her bed and then straddles you, pressing herself against you. She is still wearing her shorts as she starts grinding her crotch against your {pc.penis} through the cloth. You can't help but to produce a little gasp at the sudden contact, feeling the heat and wetness of her sex.")
+		saynn("Без лишних предупреждений Рахи толкает тебя на свою кровать, а затем садится сверху, прижимаясь к тебе всем телом. На ней всё еще надеты шорты, когда она начинает тереться промежностью о твой {pc.penis} сквозь ткань. Ты невольно издаешь короткий вздох от этого внезапного контакта, чувствуя жар и влажность её киски.")
 
-		saynn("[say=rahi]You will give her what she desires.. And you will do it well..[/say]")
+		saynn("[say=rahi]Ты дашь ей то, чего она желает... И сделаешь это хорошо...[/say]")
 
-		saynn("Rahi pulls away and begins to undress, revealing her fluffy agile body and firm perky breasts. Then she quickly disposes of her shorts too, revealing her tight wet"+str(" pierced" if getFlag("RahiModule.rahiMile8Pierced") else "")+" pussy, the needy scent of which is already filling the room and making you more horny too."+str(" Her taking off her shorts also reveals that she was branded by you, there are words just above her pussy that tell you that Rahi is your property." if getFlag("RahiModule.rahiMile8Branded") else "")+"")
+		saynn("Рахи отстраняется и начинает раздеваться, обнажая свое пушистое, гибкое тело и упругую, подтянутую грудь. Затем она быстро сбрасывает и шорты, открывая свою тесную, влажную"+str(" pierced" if getFlag("RahiModule.rahiMile8Pierced") else "")+" pussy, чей манящий запах уже наполняет комнату, разжигая в тебе еще больше похоти."+str(" Her taking off her shorts also reveals that she was branded by you, there are words just above her pussy that tell you that Rahi is your property." if getFlag("RahiModule.rahiMile8Branded") else "")+"")
 
-		saynn("Then she lowers herself onto you again, trapping your member between her pussy and your lower part of the belly. She starts grinding you yet again but this time you feel her sensitive folds coating your member with her juices.")
+		saynn("Затем она снова опускается на тебя, зажимая твой член между своей киской и нижней частью твоего живота. Она снова начинает тереться о тебя, но на этот раз ты чувствуешь, как её чувствительные складки покрывают твой член её соками.")
 
 		if (getCharacter("rahi").isVisiblyPregnant()):
-			saynn("[say=rahi]You will obey her.. You.. will breed her. Doesn't matter that she is pregnant.. You will do it again and again..[/say]")
+			saynn("[say=rahi]Ты будешь ей повиноваться... Ты... будешь её осеменять. Неважно, что она беременна... Ты будешь делать это снова и снова...[/say]")
 
 		else:
 			if (getCharacter("rahi").isInHeat()):
-				saynn("[say=rahi]She is in heat.. You will obey her.. You.. will breed her.[/say]")
+				saynn("[say=rahi]Она в течке... Ты будешь ей повиноваться... Ты... будешь её осеменять.[/say]")
 
 			else:
-				saynn("[say=rahi]You will obey her.. You.. will breed her.[/say]")
+				saynn("[say=rahi]Ты будешь ей повиноваться... Ты... будешь её осеменять.[/say]")
 
-		saynn("With that, Rahi takes a hold of your cock. She rubs it against her wetness, teasing you a bit more before finally letting it slide inside her..")
+		saynn("С этими словами Рахи берет твой член в руку. Она трется им о свою влагалищную смазку, еще немного дразня тебя, прежде чем, наконец, позволить ему скользнуть внутрь...")
 
-		addButton("Continue", "See what happens next", "sex1_doride")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex1_doride")
 	if(state == "sex1_doride"):
 		playAnimation(StageScene.SexCowgirl, "sex", {npc="rahi", pc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true}})
-		saynn("Rahi lets out a moan, her claws digging into your shoulder as she lets the tip of your dick to stretch her out. She is in complete control.. And you love it. She lowers herself onto you until a good part of your member is inside her kitty. The soft inner walls gently clenching around your shaft, all the juices help to lower the painful friction and amplify the pleasure.")
+		saynn("Рахи издает стон, впиваясь когтями в твое плечо, пока позволяет кончику твоего члена растягивать ее. Она полностью контролирует ситуацию... И тебе это чертовски нравится. Она опускается на тебя, пока добрая часть твоего достоинства не входит в ее киску. Мягкие внутренние стенки нежно сжимаются вокруг ствола, а обильная смазка помогает уменьшить болезненное трение и усиливает удовольствие.")
 
-		saynn("Rahi bites her lip, wiggling her butt for a bit to get used to your length. She forces eye contact with you before proceeding to ride you, raising her body before bringing it down onto your dick. All the while you just hold your hands on her hips and produce a few moans of your own, your member leaking precum inside your kitty.")
+		saynn("Рахи прикусывает губу, слегка виляя задницей, чтобы привыкнуть к твоей длине. Она заставляет тебя встретиться с ней взглядом, прежде чем продолжить скачку: она приподнимается всем телом, а затем с силой опускается на твой член. Все это время ты лишь держишь руки на ее бедрах и издаешь сдержанные стоны, пока твой член источает предэякулят в ее киску.")
 
-		saynn("You try to thrust your hips up to meet Rahi's movements but she quickly pins you into the bed and slaps your hands away before producing a needy growl.")
+		saynn("Ты пытаешься податься тазом навстречу движениям Рахи, но она быстро прижимает тебя к кровати и отшвыривает твои руки в стороны, издавая требовательный рык.")
 
-		saynn("[say=rahi]She is in charge here.[/say]")
+		saynn("[say=rahi]Здесь главная она.[/say]")
 
-		saynn("Wow, your kitty got teeth. Her pace has quickened, she starts riding you so fast that her breasts bounce clearly in your view. All of that is too much for you, you already feel your orgasm building up. Kitty seems to be edging herself too, her motions becoming more shaky and less defined.")
+		saynn("Ого, у твоей киски появились зубки. Ее темп ускорился; она начинает скакать так быстро, что ее груди отчетливо прыгают перед твоими глазами. Всего этого слишком много — ты уже чувствуешь, как нарастает оргазм. Похоже, киска тоже на грани: ее движения становятся все более прерывистыми и хаотичными.")
 
-		saynn("[say=pc]I'm gonna..[/say]")
+		saynn("[say=pc]Я сейчас...[/say]")
 
-		saynn("She cuts her off, almost screaming.")
+		saynn("Она обрывает тебя почти криком.")
 
-		saynn("[say=rahi]Shut up and do it..[/say]")
+		saynn("[say=rahi]Заткнись и делай это!..[/say]")
 
-		addButton("Cum inside", "Breed the kitty", "sex1_cum")
+		addButton("Кончить внутрь", "Оплодотворить кошечку", "sex1_cum")
 	if(state == "sex1_cum"):
 		playAnimation(StageScene.SexCowgirl, "inside", {npc="rahi", pc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true}})
-		saynn("With the final motion, Rahi brings herself down onto your {pc.penis} hard until the tip kisses her cervix. She only has time to produce a feral growl before cumming hard, her muscles clenching around your member, sending you over the peak in an instant.")
+		saynn("Последним мощным движением Рахи насаживается на твой {pc.penis}, пока самый кончик не касается её шейки матки. У неё хватает времени лишь на дикий рык, прежде чем она содрогается в мощном оргазме, сжимая мышцы вокруг твоего члена и мгновенно выбрасывая тебя за пик.")
 
-		saynn("Your member throbbing and pulsating inside Rahi as it starts shooting strings of thick {pc.cum} directly inside her inviting womb.")
+		saynn("Твой член пульсирует и бьется внутри Рахи, когда он начинает извергать струи густой {pc.cum} прямо ей в манящую утробу.")
 
-		saynn("After you're done emptying yourself inside your kitty, she lays on top of you, panting heavily. She reaches out to lick your lips.")
+		saynn("Когда ты заканчиваешь опустошать себя внутри её киски, она ложится сверху, тяжело дыша. Она тянется к тебе, чтобы облизать твои губы.")
 
-		saynn("[say=rahi]You.. have pleased her..[/say]")
+		saynn("[say=rahi]Ты... порадовал её...[/say]")
 
-		addButton("Enough", "That was fun", "endthescene")
+		addButton("Хватит", "Это было весело", "endthescene")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillSex")):
-			addButton("Sloppy seconds", "(Sex) Rahi wants more!", "sex1_more")
+			addButton("Второй сорт", "(Секс) Рахи хочет еще!", "sex1_more")
 	if(state == "sex1_more"):
 		playAnimation(StageScene.SexCowgirl, "fast", {npc="rahi", pc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true}})
-		saynn("As Rahi lays on top of you, she can't help but to feel.. excitement run through her body.. As she thought about something. By this she has mostly recovered her breathing.")
+		saynn("Пока Рахи лежит на тебе, она не может сдержать... волну возбуждения, проходящую по её телу... когда она о чем-то задумалась. К этому моменту её дыхание почти полностью восстановилось.")
 
-		saynn("[say=rahi]Are you ready to breed her again, pet?[/say]")
+		saynn("[say=rahi]Ты готов снова осеменить её, питомец?[/say]")
 
-		saynn("Her lusty eyes glow with anticipation. Even if you say no she will probably take it her way. You nod as your member begins to get hard again, just from hearing Rahi's words.")
+		saynn("Её похотливые глаза светятся предвкушением. Даже если ты скажешь «нет», она, скорее всего, сделает по-своему. Ты киваешь, чувствуя, как твой член начинает снова твердеть лишь от одних её слов.")
 
-		saynn("She wastes no time, already grinding your crotch with her dripping stuffed pussy until you're fully ready. This time, she starts to ride you with even more eagerness, her hips slamming down onto your shaft with each thrust.")
+		saynn("Она не теряет ни секунды, уже втираясь своей мокрой, набитой пиздой в твою промежность, пока ты окончательно не будешь готов. На этот раз она начинает скакать на тебе с еще большим рвением, с каждым толчком с силой вбивая свои бедра на твой член.")
 
-		saynn("As you two fuck, Rahi's moans become louder and more passionate, her eyes rolling up in ecstasy. She leans forward, pressing her perky breasts against your chest and biting your shoulder gently, drawing some blood, while her claws are raking across your back.")
+		saynn("Пока вы вдвоем трахаетесь, стоны Рахи становятся всё громче и страстнее, её глаза закатываются от экстаза. Она подаётся вперёд, прижимая свои упругие груди к твоей груди и нежно прикусывая твоё плечо, доводя дело до капли крови, пока её когти скребут по твоей спине.")
 
-		saynn("You can't help but to groan from this mix of pleasure and pain, kitty growls into your ear as she rides you harder and faster. You wrap your hands around her and help to bring her down onto your cock, bringing you both to your second orgasms..")
+		saynn("Ты не можешь не застонать от этой смеси удовольствия и боли; кошечка рычит тебе в ухо, трахаясь на тебе всё сильнее и быстрее. Ты обхватываешь её руками, помогая ей опуститься на твой член, что приводит вас обоих ко вторым оргазмам...")
 
-		saynn("With a wild cry, Rahi cums again, her stuffed pussy clenching tightly around your {pc.penis} as she coats it with her juices. You follow soon, grunting as your shaft stuffs that babymaker for the second time in a row until your balls are drained. So much hot {pc.cum} is stuffed into Rahi that her used pussy is already leaking some out.")
+		saynn("С диким криком Рахи снова кончает, её набитая киска плотно сжимается вокруг твоего {pc.penis}, заливая его своими соками. Вскоре за тобой следует она, кряхтя, пока твой член наполняет эту «производительницу детей» второй раз подряд, пока твои яйца не опустеют. В Рахи влито столько горячего {pc.cum}, что её использованная киска уже начинает подтекать.")
 
-		saynn("As Rahi lays on you, spent and exhausted, she can't help but to grin. Purring escapes from her as she slips out of character and starts nuzzling your cheek.")
+		saynn("Когда Рахи, измотанная и опустошенная, ложится на тебя, она не может сдержать улыбку. Из её горла вырывается мурлыканье, когда она выходит из образа и начинает тереться носом о твою щеку.")
 
-		saynn("[say=rahi]She can't wait to breed with you again.. meow-meow..[/say]")
+		saynn("[say=rahi]Она не может дождаться, когда снова осеменит тебя... мяу-мяу...[/say]")
 
-		addButton("Continue", "That was very lewd", "endthescene")
+		addButton("Продолжить", "Это было очень похотливо", "endthescene")
 	if(state == "sex2_ridestrapon"):
-		saynn("As soon as you assume a submissive posture, lowering your head in front of Rahi, her ears perk up as she already knows what's up.")
+		saynn("Как только ты принимаешь покорную позу, склоняя голову перед Рахи, её ушки навостряются — она уже понимает, к чему всё идет.")
 
-		saynn("[say=rahi]Welcome.. pet.[/say]")
+		saynn("[say=rahi]Добро пожаловать.. питомец.[/say]")
 
-		saynn("Your kitty purrs, circling around you like a predator stalking its prey.")
+		saynn("Твоя киска мурлычет, кружа вокруг тебя, словно хищник, выслеживающий добычу.")
 
-		saynn("[say=rahi]You're eager to submit.. aren't you..[/say]")
+		saynn("[say=rahi]Ты так жаждешь подчиниться.. не так ли..[/say]")
 
-		saynn("She bites lip and drags her paw over your {pc.masc} curves, getting dangerously close to your crotch, her fluffy tail bumping into your {pc.thick} thighs. Then Kitty goes ahead and grabs something from the crate of fun toys.")
+		saynn("Она прикусывает губу и проводит лапой по изгибам твоего {pc.masc}, опасно приближаясь к паху, а её пушистый хвост задевает твои {pc.thick} бёдра. Затем Кошечка лезет в ящик с забавными игрушками и что-то оттуда достаёт.")
 
-		saynn("[say=rahi]You're lucky she wants this..[/say]")
+		saynn("[say=rahi]Тебе повезло, что она этого хочет..[/say]")
 
-		saynn("She holds a canine-dick-shaped strapon, complete with a large knot at the base.")
+		saynn("В руках у неё страпон в форме собачьего члена, с огромной луковицей у основания.")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("Kitty slides her paws under your clothes and begins taking them off, one by one. You know better than to say no to that.. She then begins to put the strapon harness on you, making sure to tighten each belt.")
+			saynn("Китти просовывает лапки под твою одежду и начинает стягивать её, вещь за вещью. Ты слишком хорошо понимаешь, что отказывать не стоит... Затем она начинает надевать на тебя страпон, тщательно затягивая каждый ремень.")
 
 		else:
-			saynn("She then begins to put the strapon harness on you, making sure to tighten each belt.")
+			saynn("Затем она начинает надевать на тебя страпон, тщательно затягивая каждый ремень.")
 
-		saynn("Seeing your kitty like this.. after her being a shy submissive cutie for so long.. It makes you feel aroused already.")
+		saynn("Видеть её киску такой... после того, как она так долго была застенчивой и покорной милашкой... Это уже заставляет тебя возбуждаться.")
 
-		addButton("Continue", "See what happens next", "sex2_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex2_start")
 	if(state == "sex2_start"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="rahi", pc="pc", bodyState={naked=true, hard=true}})
-		saynn("Without much warning, Rahi pushes you onto her bed and then straddles you, pressing herself against you. She is still wearing her shorts as she starts grinding her crotch against your strapon through the cloth. You don't feel much but Rahi does produce a little noise of pleasure from that, her sex probably getting wet.")
+		saynn("Без лишних предупреждений Рахи толкает тебя на свою кровать и усаживается сверху, плотно прижимаясь к тебе. На ней всё ещё шорты, когда она начинает тереться промежностью о твой страпон сквозь ткань. Ты особо ничего не чувствуешь, но Рахи издает тихий стон удовольствия — похоже, там у неё уже начинает сочиться смазка.")
 
-		saynn("[say=rahi]You will give her what she desires.. And you will do it well..[/say]")
+		saynn("[say=rahi]Ты дашь ей то, чего она желает... И сделаешь это хорошо...[/say]")
 
-		saynn("Rahi pulls away and begins to undress, revealing her fluffy agile body and firm perky breasts. Then she quickly disposes of her shorts too, revealing her tight wet"+str(" pierced" if getFlag("RahiModule.rahiMile8Pierced") else "")+" pussy, the needy scent of which is already filling the room and making you more horny too."+str(" Her taking off her shorts also reveals that she was branded by you, there are words just above her pussy that tell you that Rahi is your property." if getFlag("RahiModule.rahiMile8Branded") else "")+"")
+		saynn("Рахи отстраняется и начинает раздеваться, обнажая свое пушистое, гибкое тело и упругую, подтянутую грудь. Затем она быстро сбрасывает и шорты, открывая свою тесную, влажную"+str(" pierced" if getFlag("RahiModule.rahiMile8Pierced") else "")+" pussy, чей манящий запах уже наполняет комнату, разжигая в тебе еще больше похоти."+str(" Her taking off her shorts also reveals that she was branded by you, there are words just above her pussy that tell you that Rahi is your property." if getFlag("RahiModule.rahiMile8Branded") else "")+"")
 
-		saynn("Then she lowers herself onto you again, trapping your fake rubber member between her pussy and your lower part of the belly. She starts grinding it, her sensitive folds coating the toy with her juices, making the surface slick.")
+		saynn("Затем она снова опускается на тебя, зажимая твой резиновый фаллос между своей киской и твоим низом живота. Она начинает двигаться, её чувствительные складки покрывают игрушку соком, делая поверхность скользкой.")
 
 		if (getCharacter("rahi").isInHeat()):
-			saynn("[say=rahi]She is in heat.. You will obey her.. You.. will satisfy her needs.[/say]")
+			saynn("[say=rahi]Она в течке... Ты будешь ей подчиняться... Ты... утолишь её нужды.[/say]")
 
 		else:
-			saynn("[say=rahi]You will obey her.. You.. will satisfy her needs.[/say]")
+			saynn("[say=rahi]Ты будешь ей подчиняться... Ты... утолишь её нужды.[/say]")
 
-		saynn("With that, Rahi takes hold of the strapon. She rubs it against her wetness, teasing herself a bit more before finally letting it slide inside her..")
+		saynn("С этими словами Рахи берет страпон в руки. Она водит им по своей влагалищной смазке, еще немного дразня себя, прежде чем, наконец, позволить ему скользнуть внутрь...")
 
-		addButton("Continue", "See what happens next", "sex2_doride")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex2_doride")
 	if(state == "sex2_doride"):
 		playAnimation(StageScene.SexCowgirl, "sex", {npc="rahi", pc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true}})
-		saynn("Rahi lets out a moan, her claws digging into your shoulder as she lets the pointy tip of the rubber canine cock to stretch her out. She is in complete control.. And you love it. She lowers herself onto you until a good part of the strapon is inside her kitty. The soft inner walls gently clenching around the shaft, all the juices help to lower the painful friction and amplify the pleasure.")
+		saynn("Рахи издает стон, впиваясь когтями в твое плечо, пока она позволяет острому кончику резинового клыкастого члена растягивать ее. Она полностью контролирует ситуацию... И тебе это чертовски нравится. Она опускается на тебя, пока добрая часть страпона не входит в ее киску. Мягкие внутренние стенки нежно сжимаются вокруг стержня, а обилие смазки помогает уменьшить болезненное трение и усилить удовольствие.")
 
-		saynn("Rahi bites her lip, wiggling her butt for a bit to get used to the toy. She forces eye contact with you before proceeding to ride you, raising her body before bringing it down onto your artificial dick. All the while you just hold your hands on her hips and produce a few desperate soft moans, feeling some of it but not enough to get off physically. Mentally, though, this is the best thing ever..")
+		saynn("Рахи прикусывает губу, слегка виляя задом, чтобы привыкнуть к игрушке. Она заставляет тебя встретиться с ней взглядом, прежде чем продолжить оседлать тебя, приподнимаясь всем телом и вновь опускаясь на твой искусственный член. Все это время ты лишь держишь руки на ее бедрах и издаешь несколько отчаянных тихих стонов, чувствуя некое возбуждение, но недостаточное для физической разрядки. Однако ментально — это лучшее, что случалось в жизни...")
 
-		saynn("You try to thrust your hips up to meet Rahi's movements and shove that rubber knot inside but she quickly pins you into the bed and slaps your hands away before producing a needy growl.")
+		saynn("Ты пытаешься податься тазом навстречу движениям Рахи, чтобы протолкнуть резиновый узел внутрь, но она быстро прижимает тебя к кровати и отшвыривает твои руки, издавая требовательный рык.")
 
-		saynn("[say=rahi]She is in charge here.[/say]")
+		saynn("[say=rahi]Здесь главная она.[/say]")
 
-		saynn("Wow, your kitty got teeth. Her pace has quickened, she starts riding you so fast that her breasts bounce clearly in your view. Kitty's orgasm seems to be building up fast, she is edging herself, her motions becoming more shaky and less defined.")
+		saynn("Ого, у твоей киски появились зубки. Ее темп ускорился; она начинает скакать на тебе так быстро, что ее груди отчетливо прыгают перед твоими глазами. Похоже, оргазм киски нарастает стремительно — она балансирует на грани, ее движения становятся все более прерывистыми и хаотичными.")
 
-		saynn("[say=rahi]She is gonna..[/say]")
+		saynn("[say=rahi]Она сейчас...[/say]")
 
-		saynn("She starts trying to squeeze that orb inside her. But her pussy struggles to stretch that much. Kitty is getting desperate.")
+		saynn("Она начинает пытаться втиснуть это шарообразное расширение внутрь себя. Но ее киска с трудом растягивается настолько сильно. Киска в отчаянии.")
 
-		saynn("[say=pc]It won't..[/say]")
+		saynn("[say=pc]Оно не...[/say]")
 
-		saynn("Kitty cuts you off, almost screaming.")
+		saynn("Киска обрывает тебя на полуслове, почти срываясь на крик.")
 
-		saynn("[say=rahi]Shut up and.. Ah!..[/say]")
+		saynn("[say=rahi]Заткнись и... А!..[/say]")
 
-		saynn("With the final motion, Rahi brings herself down onto the strapon hard until its tip kisses her cervix. She only has time to produce a feral growl before cumming hard, her muscles clenching around the rubber shaft. She suddenly manages to fit the whole thing inside her pussy, the knot and everything.")
+		saynn("Последним резким движением Рахи насаживается на страпон так сильно, что его кончик касается самой шейки матки. У неё хватает времени лишь на дикий рык, прежде чем она содрогается в мощном оргазме, сжимая мышцами резиновую плоть. Ей внезапно удается заглотить его целиком, вместе с узлом и всем прочим.")
 
-		saynn("It seems the strapon has something inside it.. And squeezing the knot made it start unloading it all.")
+		saynn("Кажется, внутри страпона что-то есть... И от сжатия узла он начал извергать всё содержимое.")
 
-		addButton("Cum inside?", "Breed the kitty?", "sex2_cum")
+		addButton("Кончить внутрь?", "Оплодотворить киску?", "sex2_cum")
 	if(state == "sex2_cum"):
 		playAnimation(StageScene.SexCowgirl, "inside", {npc="rahi", pc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true}})
-		saynn("The strapon throbs and pulsates inside Rahi as it starts shooting strings of thick white stuff directly inside her inviting womb. Your guess is that the strapon was loaded with cum lube. Hopefully..")
+		saynn("Страпон пульсирует и бьется внутри Рахи, выбрасывая струи густой белой жижи прямо в её манящую утробу. Твоя догадка: страпон был заправлен спермо-лубрикантом. Будем надеяться...")
 
-		saynn("After the strapon has done emptying itself inside the kitty, she lays on top of you, panting heavily. She reaches out to lick your lips.")
+		saynn("Когда страпон опустошает себя внутри киски, она ложится сверху на тебя, тяжело дыша. Она тянется к тебе, чтобы облизать твои губы.")
 
-		saynn("[say=rahi]You.. have pleased her..[/say]")
+		saynn("[say=rahi]Ты... порадовал её...[/say]")
 
-		saynn("And that is all that matters..")
+		saynn("И это всё, что имеет значение...")
 
-		addButton("Enough", "That was fun", "removestrapon")
+		addButton("Хватит", "Это было весело", "removestrapon")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillSex")):
-			addButton("Go again", "(Sex) Rahi wants more!", "sex2_more")
+			addButton("Повторить", "(Секс) Рахи хочет еще!", "sex2_more")
 	if(state == "sex2_more"):
 		playAnimation(StageScene.SexCowgirl, "fast", {npc="rahi", pc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true}})
-		saynn("As Rahi lays on top of you, she can't help but to feel.. excitement run through her body.. As she thought about something. By this she has mostly recovered her breathing.")
+		saynn("Пока Рахи лежит на тебе, она не может сдержать... волну возбуждения, проходящую по её телу... когда она о чем-то задумалась. К этому моменту её дыхание почти полностью восстановилось.")
 
-		saynn("[say=rahi]Are you ready to be her toy again, pet?[/say]")
+		saynn("[say=rahi]Ты готов снова стать её игрушкой, песик?[/say]")
 
-		saynn("Her lusty eyes glow with anticipation. Even if you say no she will probably do it her way. You nod.")
+		saynn("Её похотливые глаза светятся предвкушением. Даже если ты скажешь «нет», она, скорее всего, сделает всё по-своему. Ты киваешь.")
 
-		saynn("She wastes no time, already grinding your crotch with her dripping stuffed pussy until she does the opposite, pulling away and escaping the knot. This time, she starts to ride you with even more eagerness, her hips slamming down onto your rubber shaft with each thrust.")
+		saynn("Она не теряет ни секунды, уже втирая свою сочащуюся влагалищем набитую киску в твою промежность, пока не делает обратное — отстраняется, освобождаясь от узла. На этот раз она начинает скакать на тебе с еще большим рвением, с каждым толчком с силой вбивая свои бедра в твой резиновый член.")
 
-		saynn("As you two fuck, Rahi's moans become louder and more passionate, her eyes rolling up in ecstasy. She leans forward, pressing her perky breasts against your chest and biting your shoulder gently, drawing some blood, while her claws are raking across your back.")
+		saynn("Пока вы вдвоем трахаетесь, стоны Рахи становятся всё громче и страстнее, её глаза закатываются от экстаза. Она подаётся вперёд, прижимая свои упругие груди к твоей груди и нежно прикусывая твоё плечо, доводя дело до капли крови, пока её когти скребут по твоей спине.")
 
-		saynn("You can't help but to groan from this mix of strange pleasure and pain, kitty growls into your ear as she rides you harder and faster. You wrap your hands around her and help to bring her down onto the strapon, quickly bringing Rahi to her second orgasm..")
+		saynn("Ты невольно стонешь от этой смеси странного удовольствия и боли; кошечка рычит тебе в ухо, пока скачет на тебе всё сильнее и быстрее. Ты обхватываешь её руками, помогая ей опускаться на страпон, что быстро доводит Рахи до второго оргазма...")
 
-		saynn("With a wild cry, Rahi cums again, her stuffed pussy stretches around the knot, accepting it inside, before clenching tightly around the toy as she coats it with her juices. Sadly, this time there is nothing to stuff the kitty with. But she already had enough, her used pussy is actively leaking cum lube.")
+		saynn("С диким криком Рахи снова кончает; её набитая киска растягивается вокруг узла, принимая его внутрь, а затем плотно сжимает игрушку, заливая её своими соками. К сожалению, на этот раз набивать кошечку больше нечем. Но ей и так уже достаточно — её использованная киска активно сочится смазкой из спермы.")
 
-		saynn("As Rahi lays on you, spent and exhausted, she can't help but to grin. Purring escapes from her as she slips out of character and starts nuzzling your cheek.")
+		saynn("Когда Рахи, измотанная и опустошенная, ложится на тебя, она не может сдержать улыбку. Из её горла вырывается мурлыканье, когда она выходит из образа и начинает тереться носом о твою щеку.")
 
-		saynn("[say=rahi]She can't wait to play with you again.. meow-meow..[/say]")
+		saynn("[say=rahi]Она не может дождаться, чтобы поиграть с тобой снова... мяу-мяу...[/say]")
 
-		addButton("Continue", "That was very lewd", "removestrapon")
+		addButton("Продолжить", "Это было очень похотливо", "removestrapon")
 	if(state == "sex3_rahistraponspussy"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={naked=true}})
-		saynn("You're in the submissive mood today and could maybe use Rahi's rough touch.. But instead of asking for it outright, you lean against one of the walls and just watch your kitty while your hands slowly trace the {pc.masc} curves of your body, occasionally reaching to brush over your crotch.")
+		saynn("Сегодня ты в покорном настроении и, возможно, не прочь почувствовать грубые прикосновения Рахи... Но вместо того чтобы просить об этом прямо, ты прислоняешься к одной из стен и просто наблюдаешь за своей кошечкой, пока твои руки медленно обводят {pc.masc} изгибы твоего тела, время от времени касаясь паха.")
 
-		saynn("It doesn't take long for Rahi to spot that, the anticipation radiating off of you in waves. Kitty's tail flicks back and forth while she approaches you and grabs your chin, tilting her head slightly before looking you in the eyes.")
+		saynn("Рахи не заставит себя долго ждать — она сразу замечает, как от тебя волнами исходит предвкушение. Хвост кошечки нервно дергается туда-сюда, пока она приближается к тебе, хватает тебя за подбородок и слегка наклоняет голову, заглядывая прямо в глаза.")
 
-		saynn("[say=rahi]You are hers today. And she is going to make sure you know it.[/say]")
+		saynn("[say=rahi]Сегодня ты принадлежишь ей. И она позаботится о том, чтобы ты это прочувствовал.[/say]")
 
-		saynn("And with that, Rahi steps back and begins to undress, unbuttoning her shirt and pulling down her shorts. You bite your lip and reach to touch Rahi's {rahi.breasts} but she catches your hand and puts the digits in her mouth, sucking on them and leaving a saliva coating before bringing them down to her pussy and making you rub her exposed clit. Kitty moans softly, her pussy gets all wet and ready. But that's the only weakness that she allowed for herself.")
+		saynn("С этими словами Рахи отступает назад и начинает раздеваться, расстегивая рубашку и стягивая шорты. Ты закусываешь губу и тянешься, чтобы коснуться её {rahi.breasts}, но она перехватывает твою руку и заталкивает пальцы себе в рот, посасывая их и покрывая слюной, прежде чем опустить их к своей киске, заставляя тебя тереть её обнаженную клитор. Кити тихо стонет, её киска становится совсем мокрой и готовой. Но это единственная слабость, которую она себе позволила.")
 
-		saynn("Suddenly kitty goes ahead and grabs something. Something long.. You can't quite see it because she is turned away.")
+		saynn("Внезапно кити делает резкое движение и хватает что-то. Что-то длинное... Ты не можешь разглядеть это толком, потому что она отвернулась.")
 
-		addButton("Continue", "See what happens next", "sex3_rahiputsonstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex3_rahiputsonstrapon")
 	if(state == "sex3_rahiputsonstrapon"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="pc", pc="rahi", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You hear another cute noise of love coming from Rahi as she.. inserts something into her pussy, the slickness makes it easier. Then she turns around, revealing.. a knotted strapon between her legs. It's double-sided with the short end being inside Rahi. She is.. smiling.")
+		saynn("Ты слышишь еще один милый звук наслаждения, исходящий от Рахи, когда она... вставляет что-то в свою киску, смазка облегчает процесс. Затем она поворачивается, демонстрируя... узловатый страпон между ног. Он двусторонний, и короткий конец находится внутри Рахи. Она... улыбается.")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("You don't even get a good look at it before Rahi runs up to you, grabs you by the collar and pins against the reinforced glass of her cell. Her paws quickly undress you, revealing your own {pc.pussyStretch} pussy and {pc.breasts}. You can't hide the excitement..")
+			saynn("Ты даже не успеваешь толком рассмотреть его, как Рахи подлетает к тебе, хватает за воротник и прижимает к армированному стеклу своей камеры. Её лапы быстро раздевают тебя, обнажая твою собственную {pc.pussyStretch} киску и {pc.breasts}. Тебе не скрыть возбуждения...")
 
 		else:
-			saynn("You don't even get a good look at it before Rahi runs up to you, grabs you by the collar and pins against the reinforced glass of her cell. Her paws tracing over your naked curves, your {pc.pussyStretch} pussy and {pc.breasts}. You can't hide the excitement..")
+			saynn("Ты даже не успеваешь толком рассмотреть его, как Рахи подлетает к тебе, хватает за воротник и прижимает к армированному стеклу своей камеры. Её лапы скользят по твоим обнаженным изгибам, по твоей {pc.pussyStretch} киске и {pc.breasts}. Тебе не скрыть возбуждения...")
 
-		saynn("[say=pc]H-hey..[/say]")
+		saynn("[say=pc]Эй...[/say]")
 
-		saynn("Rahi shushes you, her digits reaching your mouth and sliding past the lips, landing on your tongue. You instinctively suck on them, your tongue licking and coating them with your saliva.")
+		saynn("Рахи шикает на тебя, её пальцы проникают в твой рот, скользя мимо губ и ложась на язык. Ты инстинктивно начинаешь сосать их, облизывая и покрывая слюной.")
 
-		saynn("[say=rahi]You're so easy to control.. She can tell you're getting off on the humiliation.. you dirty little slut..[/say]")
+		saynn("[say=rahi]Тобой так легко управлять... Она видит, что ты кайфуешь от унижения... грязная маленькая шлюшка...[/say]")
 
-		saynn("After you're done licking her digits, she pulls them out and instead slides them down to your pussy, spreading it with two of them while another two prod at the entrance, catching juices. All the while Rahi's strapon just brushes against your {pc.thick} thighs.")
+		saynn("Закончив облизывать её пальцы, она вынимает их и вместо этого опускает к твоей киске, раздвигая её двумя пальцами, пока остальные два ковыряются у входа, собирая соки. Всё это время страпон Рахи лишь слегка задевает твои {pc.thick} бёдра.")
 
-		saynn("[say=rahi]Yeah.. All wet down there.. So eager to be fucked.[/say]")
+		saynn("[say=rahi]Да... Вся там мокрая... Так и жаждешь, чтобы в тебя трахнули.[/say]")
 
-		saynn("Rahi spreads all the accumulated fluids on her rubber toy, making it look very shiny. All the while you're still pinned against the window, your stiff nipples feel the cold glass, you really hope people outside won't stare.. too much..")
+		saynn("Рахи размазывает всю скопившуюся смазку по своей резиновой игрушке, отчего та начинает блестеть. Ты всё ещё прижата к окну, твои затвердевшие соски чувствуют холодное стекло, и ты искренне надеешься, что люди на улице не будут слишком... пристально смотреть.")
 
-		addButton("Get fucked", "See what happens next", "sex3_rahiinserts")
+		addButton("Получи по полной", "Смотреть, что будет дальше", "sex3_rahiinserts")
 	if(state == "sex3_rahiinserts"):
 		playAnimation(StageScene.SexStanding, "sex", {npc="pc", pc="rahi", bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You let out a cute noise when Rahi smacks your ass, making it bounce. She holds one paw on your collar while another quickly aligns the toy with your dripping sex. One rough thrust and Rahi spreads open your cunt enough to shove the strapon inside. A moan escapes your lips.")
+		saynn("Ты издаёшь милый звук, когда Рахи шлепает тебя по заднице, заставляя её подпрыгнуть. Одной рукой она держит тебя за ошейник, а другой быстро совмещает игрушку с твоим течным отверстием. Один резкий толчок — и Рахи раздвигает твою щель достаточно широко, чтобы вогнать страпон внутрь. С твоих губ срывается стон.")
 
-		saynn("[say=rahi]Hope you can take it rough.. Because that's how she likes it. Now take it like a good "+str("girl" if GM.pc.getGender() != Gender.Male else "boy")+".[/say]")
+		saynn("[say=rahi]Надеюсь, ты выдержишь жесткий темп... Потому что именно так она любит. А теперь принимай всё как хорошая @@"+str("girl" if GM.pc.getGender() != Gender.Male else "boy")+".[/say]")
 
-		saynn("You can't help but to gasp and arch your back as Rahi begins to pound your slit, sliding it in and out, using her hips to generate powerful slams that rock your body each time. Your moans fill the room as Rahi continues to stretch you out from the inside, fucking you with increasing intensity. The friction is pleasurable for her too, little noises of love escape from Rahi but she tries to hide them, putting all the focus on you and your drippy cunt.")
+		saynn("Ты невольно ахаешь и выгибаешь спину, когда Рахи начинает неистово долбить в твою щель, двигаясь туда-сюда и используя бедра для мощных толчков, которые каждый раз сотрясают всё твое тело. Твои стоны наполняют комнату, пока Рахи продолжает растягивать тебя изнутри, трахая с нарастающей интенсивностью. Трение доставляет удовольствие и ей самой: из её горла вырываются тихие звуки страсти, которые она пытается скрыть, сосредоточив всё внимание на тебе и твоей сочащейся киске.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your poor caged up dick desperately tries to get hard but is unable to. All it can do is sway back and forth while leaking a lot of precum.")
+			saynn("Твой бедный запертый член отчаянно пытается встать, но у него ничего не выходит. Всё, что он может — это болтаться взад-вперед, обильно выделяя предэякулят.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your {pc.penis} is hard, swaying back and forth from Rahi's thrusts. You're leaking so much precum..")
+			saynn("Твой {pc.penis} твердый и раскачивается в такт толчкам Рахи. Ты так сильно течешь..")
 
-		saynn("Your kitty has reached a steady rhythm, the tip of her rubber dick reaching your firm cervix each time she rams it inside you. Your orgasm slowly builds up.. kitty feels it and.. keeps it like that. Instead, Rahi puts more strength into each thrust, the rubber knot of her toy slams against your petals, trying to stretch them even wider. You're not sure it will even fit.. But you're also so close now..")
+		saynn("Твоя киска поймала устойчивый ритм; кончик её резинового члена каждый раз достигает твоей тугой шейки матки, когда она вбивается в тебя. Твой оргазм медленно нарастает.. киска чувствует это и.. замирает. Вместо этого Рахи вкладывает всё больше силы в каждый толчок, и резиновое утолщение её игрушки с силой бьется о твои лепестки, пытаясь растянуть их еще шире. Ты не уверена, влезет ли оно вообще.. Но ты уже так близко..")
 
-		saynn("[say=pc]I-It w-won't..[/say]")
+		saynn("[say=pc]О-оно н-не..[/say]")
 
-		saynn("[say=rahi]Your pussy belongs to her![/say]")
+		saynn("[say=rahi]Твоя киска принадлежит ей![/say]")
 
-		saynn("With that, Rahi throws her hips forward for one last time, putting all her feline strength into this one.")
+		saynn("С этими словами Рахи в последний раз подается бедрами вперед, вкладывая всю свою кошачью силу в этот финальный рывок.")
 
-		addButton("Get knotted", "See what happens next", "sex3_cum")
+		addButton("Принять узел", "Смотреть, что будет дальше", "sex3_cum")
 	if(state == "sex3_cum"):
 		playAnimation(StageScene.SexStanding, "inside", {npc="pc", pc="rahi", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("The rubber knot puts an immense amount of pressure on your {pc.pussyStretch} pussy, stretching your slit to the limit.. until the orb just slips in, tying you and Rahi together.. With one swift motion Rahi drives the knot even deeper, breaking into your womb.")
+		saynn("Резиновый узел оказывает колоссальное давление на твою {pc.pussyStretch} киску, растягивая щель до предела... пока шар просто не проскальзывает внутрь, связывая тебя и Рахи воедино... Одним резким движением Рахи заталкивает узел еще глубже, буквально врываясь в твою матку.")
 
-		saynn("You cry out in pleasure and pain as Rahi has her whole strapon inside you. Squeezing the knot so much caused the toy to suddenly start filling you with some thick, creamy fluid.. seems like the strapon had some cum lube stored just for this occasion..")
+		saynn("Ты вскрикиваешь от смеси удовольствия и боли, когда Рахи вгоняет в тебя весь страпон целиком. От сильного сжатия узла игрушка внезапно начинает наполнять тебя густой кремообразной жидкостью... похоже, в страпон специально для такого случая залили смазку из кончи.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your caged up dick bursts with multiple weak waves of seed. The pressure is immense but the flow is barely enough to reach the wall and leave some sticky stains on it..")
+			saynn("Твой зажатый в клетке член извергается несколькими слабыми волнами семени. Давление огромно, но потока едва хватает, чтобы достичь стенки и оставить на ней липкие пятна...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your cock, twitching and unable to endure this immense pressure anymore, bursts with many waves of seed, leaving lots of sticky stains on the wall.")
+			saynn("Твой член, дергаясь и не в силах больше выносить это чудовищное давление, извергается множеством волн семени, оставляя на стенке кучу липких пятен.")
 
-		saynn("You're licking the cold grass, your body shivering around your kitty's rubber cock.. She can't pull it out anymore even if she wanted to, you're forced to endure her strapon inside you.. not that you mind..")
+		saynn("Ты лижешь холодную траву, а твое тело дрожит вокруг резинового члена её киски... Она уже не сможет вытащить его, даже если захочет, и ты вынужден терпеть её страпон внутри себя... впрочем, ты не против...")
 
-		saynn("It seems like you're not the only one who came though, while being busy moaning and having your pussy extremely stretched, you missed Rahi's cute moans and her body squirming behind you, her legs shaking, barely keeping her from falling. She leans into your back, letting you feel her breasts brushing against your skin.")
+		saynn("Похоже, ты не единственный, кто кончил: пока ты был занят стонами и растягиванием своей киски, ты пропустил милые вздохи Рахи и то, как её тело извивалось позади тебя, а ноги дрожали, едва удерживая её от падения. Она прижимается к твоей спине, позволяя тебе чувствовать, как её грудь трется о твою кожу.")
 
-		saynn("[say=rahi]Such a.. such.. little.. s-slutty..[/say]")
+		saynn("[say=rahi]Такая.. такая.. маленькая.. ш-шлюшка..[/say]")
 
-		saynn("She is panting heavily, just like you. The whole room smells of sex. Cum lube sloshing inside your womb.. You press your cheek against the cold glass and try to cool down..")
+		saynn("Она тяжело дышит, совсем как ты. Вся комната пропитана запахом секса. Спермолубрикант хлюпает внутри твоей утробы... Ты прижимаешься щекой к холодному стеклу, пытаясь остыть...")
 
-		saynn("After some time, Rahi has gathered enough courage to yank the knot out, letting some of the cum lube out.")
+		saynn("Спустя некоторое время Рахи набирается смелости и резко выдергивает узел, позволяя части спермолубриканта вытечь наружу.")
 
-		addButton("Enough", "That was something", "removerahistrapon")
+		addButton("Хватит", "Это было нечто", "removerahistrapon")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillMasochist")):
-			addButton("Knot-fucking", "(Masochist) Knot goes in and out..", "sex3_knotfuck")
+			addButton("Секс с узлом", "(Мазохистка) Узел входит и выходит...", "sex3_knotfuck")
 	if(state == "sex3_knotfuck"):
 		playAnimation(StageScene.SexStanding, "fast", {npc="pc", pc="rahi", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("After the knot got pulled out, it left a lot of empty space inside you.. Empty space that you so eagerly want to be filled.. again..")
+		saynn("После того как узел вытащили, внутри тебя осталось много пустого пространства... Пустоты, которую ты так жаждешь заполнить... снова...")
 
-		saynn("[say=pc]More, Miss Rahi, please!..[/say]")
+		saynn("[say=pc]Еще, мисс Рахи, пожалуйста!..[/say]")
 
-		saynn("Rahi was about to stop when she heard that. Your words.. they make her.. so eager. She growls as she pins you against the window again and ramming her strapon inside your used fuckhole that didn't even close yet. A loud cry escapes from you as the rubber knot slips inside your cunt, plugging that empty space.. Just so she can yank it out again, making your legs weak and your pussy aching.")
+		saynn("Рахи уже собиралась остановиться, когда услышала это. Твои слова... они заставляют её... так сильно желать тебя. Она рычит, снова прижимая тебя к окну и с силой вгоняя страпон в твою раздолбанную дырочку, которая еще даже не успела сомкнуться. Громкий крик срывается с твоих губ, когда резиновый узел проскальзывает в твою киску, затыкая ту самую пустоту... Только для того, чтобы она снова его выдернула, заставляя твои ноги слабеть, а киску — ныть от возбуждения.")
 
-		saynn("[say=rahi]You like that, don't you? Little.. insatiable.. whore.[/say]")
+		saynn("[say=rahi]Тебе ведь нравится, да? Маленькая... ненасытная... шлюшка.[/say]")
 
-		saynn("Rahi repeats this motion.. over and over again, each time yanking the knot out before shoving it back in, making your pussy stretch beyond its limit. The sensations are so intense that your pussy squirts all over the rubber toy and tries to clench around it, making Rahi moan too in the process.")
+		saynn("Рахи повторяет это движение... снова и снова, каждый раз выдергивая узел перед тем, как вогнать его обратно, растягивая твою киску до предела. Ощущения настолько интенсивные, что у тебя случается мощный оргазм, заливая резиновую игрушку сквиртом, а мышцы пытаются сжать её, заставляя и Рахи тоже стонать от удовольствия.")
 
-		saynn("[say=rahi]Such a slutty little thing..[/say]")
+		saynn("[say=rahi]Какая же ты похотливая сучка...[/say]")
 
-		saynn("Rahi snarls as she continues to knot-fuck your pussy at an increasing pace, not giving your cunt even a moment to try to close, leaving it gaping wide open so much that it starts to hurt.. The thick sticky cum lube leaks out around the edges, creating quite the mess on your legs.")
+		saynn("Рахи рычит, продолжая долбить твою киску узлом в бешеном темпе, не давая твоей щели ни секунды, чтобы сомкнуться; она раздирает её так широко, что это начинает причинять боль... Густая липкая смазка из спермы вытекает по краям, пачкая твои ноги.")
 
-		saynn("It was too much for your poor little pussy.. But instead of begging for Rahi to stop, you moan and gasp for more, lost in this crazy mix of pleasure and pain. Your body starts to tense up as you approach another orgasm.. Rahi's thrusts became faster and more erratic..")
+		saynn("Для твоей бедной малютки-киски это было слишком... Но вместо того чтобы умолять Рахи остановиться, ты стонешь и жадно ловишь ртом воздух, теряясь в этом безумном коктейле из удовольствия и боли. Твое тело начинает напрягаться, приближаясь к очередному оргазму... Толчки Рахи становятся всё быстрее и хаотичнее...")
 
-		saynn("With a final, forceful thrust, Rahi slams the knot back inside your pussy, triggering an explosive orgasm for both of you. Cries of pain and pleasure can be probably heard across the whole general pop block. You desperately hold onto that window just so you wouldn't fall, your pussy tightening around that knot and the whole shaft, your pussy juices gushing for a while. Rahi bites into your shoulder, growling, as her own orgasm makes her squirt too, her pussy spasming and pulsating around her end of the toy.")
+		saynn("Финальным, мощным толчком Рахи вбивает узел обратно в твою киску, вызывая взрывной оргазм у обеих. Крики боли и наслаждения, должно быть, слышны на весь общий блок. Ты отчаянно цепляешься за подоконник, чтобы не рухнуть, твоя киска сжимается вокруг узла и всего ствола, а соки хлещут фонтаном. Рахи вгрызается тебе в плечо, рыча, пока её собственный оргазм заставляет её кончить струей; её киска спазматично пульсирует вокруг конца игрушки.")
 
-		saynn("Kitty drags this intimate moment for a bit.. Before suddenly yanking her rubber toy out, finally letting you slump down onto the floor, your ruined cunt gaping wide and leaking cum lube profusely.")
+		saynn("Китти немного затягивает этот интимный момент... Прежде чем внезапно выдернуть свой резиновый фаллос, наконец позволяя тебе сползти на пол, с твоей разодранной киской, широко раззявленной и обильно сочащейся спермо-смазкой.")
 
-		saynn("Both of you are left to pant heavily.")
+		saynn("Вы обе тяжело дышите.")
 
-		saynn("[say=rahi]You.. satisfied her.. for the moment..[/say]")
+		saynn("[say=rahi]Ты... удовлетворила её... на данный момент...[/say]")
 
-		addButton("Enough", "Wow", "removerahistrapon")
+		addButton("Хватит", "Ого", "removerahistrapon")
 	if(state == "sex4_scissoring"):
 		playAnimation(StageScene.SexTribadism, "tease", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You only have to give Rahi a short submissive look for her to already start approaching you. Oh no..")
+		saynn("Тебе стоит лишь бросить на Рахи короткий покорный взгляд, как она уже начинает к тебе приближаться. О нет...")
 
-		saynn("Without a word, Rahi pounces on you, pinning you to the ground. She leans in close, her hot breath caressing your ear.")
+		saynn("Без единого слова Рахи набрасывается на тебя, прижимая к земле. Она наклоняется совсем близко, и её горячее дыхание ласкает твоё ухо.")
 
-		saynn("[say=rahi]Where are you going now, little prey?[/say]")
+		saynn("[say=rahi]Куда это ты собрался, маленькая добыча?[/say]")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("After whispering that, she also growls into your ear, sending a shudder running through your body. Her paws slowly take off your clothes, revealing your {pc.breasts} and, more importantly, your {pc.pussyStretch} pussy. After that she takes off her own shorts and shirt too, presenting herself completely naked. But still very threatening..")
+			saynn("Прошептав это, она также рычит тебе в ухо, заставляя всё твоё тело содрогнуться. Её лапы медленно стягивают с тебя одежду, обнажая твою {pc.breasts} и, что ещё важнее, твою {pc.pussyStretch} киску. После этого она тоже скидывает свои шорты и рубашку, представая перед тобой полностью голой. Но всё ещё очень угрожающе...")
 
 		else:
-			saynn("After whispering that, she also growls into your ear, sending a shudder running through your body. After that she takes off her own shorts and shirt, presenting herself completely naked. But still very threatening..")
+			saynn("Прошептав это, она также рычит тебе в ухо, заставляя всё твоё тело содрогнуться. После этого она скидывает свои шорты и рубашку, представая перед тобой полностью голой. Но всё ещё очень угрожающе...")
 
-		saynn("With a mean grin, Rahi shifts her body and interlocking legs with you before pressing her slick pussy against yours.")
+		saynn("С ехидной ухмылкой Рахи перекидывает ногу через твою, переплетая ваши ноги, прежде чем прижаться своей влажной киской к твоей.")
 
-		saynn("[say=rahi]Let's see how much you can take.[/say]")
+		saynn("[say=rahi]Посмотрим, сколько ты сможешь вытерпеть.[/say]")
 
-		addButton("Continue", "See what happens next", "sex4_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex4_start")
 	if(state == "sex4_start"):
 		playAnimation(StageScene.SexTribadism, "sex", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("And with that, Rahi grabs your hand and begins moving her hips, scissoring with you. You can't hold the moans back as your clits start rubbing together in a torturous rhythm. Rahi has full control, setting a pace that makes you pant.")
+		saynn("И с этими словами Рахи хватает тебя за руку и начинает двигать бёдрами, совершая движения «ножницами» вместе с тобой. Ты не можешь сдержать стонов, когда ваши клиторы начинают тереться друг о друга в мучительном ритме. Рахи полностью контролирует процесс, задавая темп, от которого у тебя перехватывает дыхание.")
 
-		saynn("[say=rahi]So helpless.. Nothing but a toy for her to use..[/say]")
+		saynn("[say=rahi]Такой беспомощный... Всего лишь игрушка в её руках...[/say]")
 
-		saynn("You moan while your body is squirming beneath Rahi's. As she continues to grind pussies with you, exchanging pussy juices, your pleasure grows more intense. She still holds hands with you, her fingers firmly planting themselves between yours as she keeps eye contact with you.")
+		saynn("Ты стонешь, пока твоё тело извивается под Рахи. Пока она продолжает тереться об тебя киской, смешивая ваши соки, твоё удовольствие становится всё более интенсивным. Она всё ещё держит тебя за руки, крепко переплетая свои пальцы с твоими и не сводя с тебя пристального взгляда.")
 
-		saynn("Eventually you join her, doing small hip motions of your own, meeting Rahi's. You can feel the ecstatic sensation building up within you. Rahi can probably feel it too, her movements becoming more desperate. So much clit rubbing makes your eyes roll up.. You feel like you might cum first..")
+		saynn("В конце концов ты подхватываешь её ритм, отвечая на движения Рахи легкими покачиваниями бедер. Ты чувствуешь, как внутри тебя нарастает экстатическое напряжение. Рахи, вероятно, чувствует то же самое — её движения становятся всё более отчаянными. От такого интенсивного трения клиторов глаза начинают закатываться... Кажется, ты вот-вот кончишь первым...")
 
-		addButton("Faster", "You wanna cum!", "sex4_cum")
+		addButton("Быстрее", "Ты хочешь кончить!", "sex4_cum")
 	if(state == "sex4_cum"):
 		playAnimation(StageScene.SexTribadism, "fast", {pc="rahi", npc="pc", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You can't stop rubbing pussies with Rahi, your clit already receiving a slight red tint of irritation but you don't give a damn, you just keep holding her paw while furiously grinding against Rahi.")
+		saynn("Ты не можешь перестать тереться кисками вместе с Рахи; твой клитор уже слегка покраснел от раздражения, но тебе плевать — ты просто продолжаешь сжимать её лапку, яростно вжимаясь в Рахи.")
 
-		saynn("Finally, with a cry of pleasure, you both cum! Your bodies shake and squirm, causing more torturous overstimulation, your juices blend into a wet, sticky mess. Rahi throws her head back and produces some passionate noises, riding her pleasure waves, just like you. And after that, she just collapses onto the floor, panting heavily.")
+		saynn("Наконец, с криком наслаждения, вы оба кончаете! Ваши тела содрогаются и извиваются, вызывая еще более мучительную сверхстимуляцию, а ваши соки смешиваются в мокрую, липкую кашу. Рахи запрокидывает голову и издает страстные звуки, оседлав волны удовольствия, как и ты. А после она просто валится на пол, тяжело дыша.")
 
-		addButton("Continue", "See what happens next", "sex4_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex4_after")
 	if(state == "sex4_after"):
 		playAnimation(StageScene.SexTribadism, "tease", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("For a moment, you lay there.. the only sounds in the room.. your breathing.. The only scent.. is a scent of sex..")
+		saynn("На мгновение ты замираешь... единственный звук в комнате — твое дыхание... Единственный запах — запах секса...")
 
-		saynn("As the orgasmic waves subside, Rahi slowly disengages from the scissor hold, her wet and glistening pussy leaving a trail of juices on your thigh. She looks at you with a predatory gaze and runs her digits through her own slick folds before bringing them to your face.")
+		saynn("Когда волны оргазма утихают, Рахи медленно разрывает «ножницы»; её мокрая, блестящая киска оставляет влажный след на твоем бедре. Она смотрит на тебя хищным взглядом и проводит пальцами по своим скользким складкам, прежде чем поднести их к твоему лицу.")
 
-		saynn("[say=rahi]You are hers.. little pet..[/say]")
+		saynn("[say=rahi]Ты принадлежишь ей... маленькая зверушка...[/say]")
 
-		saynn("She smears her juices across your cheek, forcing her scent into you.")
+		saynn("Она размазывает свои соки по твоей щеке, заставляя тебя впитывать её запах.")
 
-		saynn("Rahi trails her fingers down your body, tracing lazy circles around your nipples before pinching them roughly, forcing a gasp of pleasure out of you.")
+		saynn("Рахи ведет пальцами по твоему телу, лениво очерчивая круги вокруг сосков, а затем грубо сжимает их, вырывая у тебя судорожный вздох наслаждения.")
 
-		saynn("Time to rest.. maybe..")
+		saynn("Пора отдохнуть... наверное...")
 
-		addButton("Enough", "That was fun", "endthescene")
+		addButton("Хватит", "Это было весело", "endthescene")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillWatersports")):
-			addButton("Pee on pussy", "(Watersports) You kinda have an urge to pee now..", "sex4_watersports")
+			addButton("Поссать на киску", "(Вотерспортс) У тебя появилось непреодолимое желание пописать...", "sex4_watersports")
 	if(state == "sex4_watersports"):
-		saynn("After that powerful orgasm.. you kinda wanna go to the toilet now.. But also.. You really don't wanna stop this beautiful interaction..")
+		saynn("После такого мощного оргазма... тебе дико хочется в туалет... Но в то же время... тебе совсем не хочется прерывать это прекрасное взаимодействие...")
 
-		saynn("[say=pc]I kinda wanna.. pee..[/say]")
+		saynn("[say=pc]Мне так хочется... пописать...[/say]")
 
-		saynn("[say=rahi]Oh.. She has the same urge actually..[/say]")
+		saynn("[say=rahi]Ох... кажется, у неё такое же желание...[/say]")
 
-		saynn("Your slick pussies are still pressed against each other while you.. stare.. at each other. No need for words, you both understand it.. Your gazes.. become so lusty..")
+		saynn("Ваши влажные киски всё ещё прижаты друг к другу, пока вы... пристально смотрите друг другу в глаза. Слова не нужны, вы обе всё понимаете... Ваши взгляды... становятся полными похоти...")
 
-		saynn("Rahi is first, she throws her head back again and produces a cute moan while a stream of gross yellow urine comes out of her piss hole and hits you directly, washing over your crotch and pussy. That stream is like a golden shower.. the friction is enough to force a moan out of you as well..")
+		saynn("Рахи делает первый шаг: она снова запрокидывает голову и издает милый стон, когда из её писюльки вырывается струя желтой мочи, которая бьет прямо в тебя, омывая твой пах и киску. Эта струя подобна золотому дождю... трения достаточно, чтобы и из тебя вырвался стон...")
 
-		saynn("You don't wanna admit it but Rahi's piss is stimulating you and tickling your slit.. So much so that you join her and begin peeing too, your yellow streams cross and make you both drenched. At least it feels really good to relieve yourself, you can hear your kitty purring while she marks you and you mark her..")
+		saynn("Ты не хочешь в этом признаваться, но моча Рахи стимулирует тебя и щекочет твою щелочку... Настолько, что ты присоединяешься к ней и тоже начинаешь писать; ваши желтые струи пересекаются, и вы обе становитесь мокрыми насквозь. По крайней мере, облегчиться чертовски приятно — ты слышишь, как твоя киска мурлычет, пока она метит тебя, а ты метишь её...")
 
-		saynn("Your legs are pressed against each other firmly, allowing a little.. piss pond.. to form between your crotches. After you both are done, Rahi dips her digits into it and then licks them playfully.")
+		saynn("Ваши ноги плотно прижаты друг к другу, из-за чего между вашими промежностями образуется небольшая... лужица мочи. Когда вы обе заканчиваете, Рахи окунает в неё пальцы и игриво их облизывает.")
 
-		saynn("[say=rahi]Cute..[/say]")
+		saynn("[say=rahi]Мило...[/say]")
 
-		saynn("Eventually you do have to break away though, causing that stored piss to splash onto the floor. Someone will clean that.. for sure.. Maybe you even.")
+		saynn("В конце концов тебе всё равно придётся отстраниться, отчего накопленная моча брызнет на пол. Кто-нибудь это уберёт... наверняка... Может, даже ты сама.")
 
-		addButton("Continue", "Lewd", "endthescene")
+		addButton("Продолжить", "Пошлячить", "endthescene")
 	if(state == "peg1_rahistraponsbutt"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={naked=true}})
-		saynn("You're in the submissive mood today and could maybe use Rahi's rough touch.. But instead of asking for it outright, you lean to look through the reinforced window while your hands slowly trace the {pc.masc} curves of your body, occasionally reaching to squeeze your {pc.thick} butt.")
+		saynn("Сегодня ты в покорном настроении и, возможно, не прочь почувствовать грубую хватку Рахи... Но вместо того, чтобы просить об этом в лоб, ты наклоняешься к армированному окну, пока твои руки медленно обводят {pc.masc} изгибы твоего тела, время от времени сжимая твою {pc.thick} задницу.")
 
-		saynn("It doesn't take long for Rahi to spot that, the anticipation radiating off of you in waves. Kitty's tail flicks back and forth while she approaches you and grabs by the collar. She then pulls you back to her, tilting her head slightly before looking you in the eyes.")
+		saynn("Рахи не заставит себя долго ждать — она сразу заметит это предвкушение, исходящее от тебя волнами. Хвост Китти дёргается из стороны в сторону, когда она подходит к тебе и хватает за воротник. Затем она притягивает тебя к себе, слегка наклонив голову, прежде чем заглянуть тебе прямо в глаза.")
 
-		saynn("[say=rahi]You are hers today. And she is going to make sure you know it.[/say]")
+		saynn("[say=rahi]Сегодня ты принадлежишь ей. И она позаботится о том, чтобы ты это прочувствовал.[/say]")
 
-		saynn("And with that, Rahi steps back and begins to undress, unbuttoning her shirt and pulling down her shorts. You bite your lip and reach to touch Rahi's {rahi.breasts} but she catches your hand and puts the digits in her mouth, sucking on them and leaving a saliva coating before bringing them down to her pussy and making you rub her exposed clit. Kitty moans softly, her pussy gets all wet and ready. But that's the only weakness that she allowed for herself.")
+		saynn("С этими словами Рахи отступает назад и начинает раздеваться, расстегивая рубашку и стягивая шорты. Ты закусываешь губу и тянешься, чтобы коснуться её {rahi.breasts}, но она перехватывает твою руку и заталкивает пальцы себе в рот, посасывая их и покрывая слюной, прежде чем опустить их к своей киске, заставляя тебя тереть её обнаженную клитор. Кити тихо стонет, её киска становится совсем мокрой и готовой. Но это единственная слабость, которую она себе позволила.")
 
-		saynn("Suddenly kitty goes ahead and grabs something. Something long.. You can't quite see it because she is turned away.")
+		saynn("Внезапно кити делает резкое движение и хватает что-то. Что-то длинное... Ты не можешь разглядеть это толком, потому что она отвернулась.")
 
-		addButton("Continue", "See what happens next", "peg1_rahiputsonstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "peg1_rahiputsonstrapon")
 	if(state == "peg1_rahiputsonstrapon"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="pc", pc="rahi", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You hear another cute noise of love coming from Rahi as she.. inserts something into her pussy, the slickness makes it easier. Then she turns around, revealing.. a knotted strapon between her legs. It's double-sided with the short end being inside Rahi. She is.. smiling.")
+		saynn("Ты слышишь еще один милый звук наслаждения, исходящий от Рахи, когда она... вставляет что-то в свою киску, смазка облегчает процесс. Затем она поворачивается, демонстрируя... узловатый страпон между ног. Он двусторонний, и короткий конец находится внутри Рахи. Она... улыбается.")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("You don't even get a good look at it before Rahi runs up to you and pins against the reinforced glass of her cell. Her paws quickly undress you, revealing your {pc.analStretch} ass and {pc.breasts}. You can't hide the excitement..")
+			saynn("Ты даже не успеваешь толком рассмотреть её, как Рахи подбегает к тебе и прижимает к армированному стеклу своей камеры. Её лапы быстро раздевают тебя, обнажая твою {pc.analStretch} задницу и {pc.breasts}. Возбуждение невозможно скрыть...")
 
 		else:
-			saynn("You don't even get a good look at it before Rahi runs up to you, grabs you by the collar and pins against the reinforced glass of her cell. Her paws tracing over your naked curves, your {pc.analStretch} ass and {pc.breasts}. You can't hide the excitement..")
+			saynn("Ты даже не успеваешь толком рассмотреть её, как Рахи подбегает к тебе, хватает за воротник и прижимает к армированному стеклу своей камеры. Её лапы скользят по твоим обнажённым изгибам, по твоей {pc.analStretch} заднице и {pc.breasts}. Возбуждение невозможно скрыть...")
 
-		saynn("[say=pc]H-hey..[/say]")
+		saynn("[say=pc]Эй...[/say]")
 
-		saynn("Rahi shushes you, her digits reaching your mouth and sliding past the lips, landing on your tongue. You instinctively suck on them, your tongue licking and coating them with your saliva.")
+		saynn("Рахи шикает на тебя, её пальцы проникают в твой рот, скользя мимо губ и ложась на язык. Ты инстинктивно начинаешь сосать их, облизывая и покрывая слюной.")
 
-		saynn("[say=rahi]You're so easy to control.. She can tell you're getting off on the humiliation.. you dirty little slut..[/say]")
+		saynn("[say=rahi]Тобой так легко управлять... Она видит, что ты кайфуешь от унижения... грязная маленькая шлюшка...[/say]")
 
-		saynn("After you're done licking her digits, she pulls them out and instead slides them down to your butt, spreading your tailhole with two of them while another two prod at it, forcing saliva in. All the while Rahi's strapon just brushes against your {pc.thick} thighs.")
+		saynn("Когда ты закончишь вылизывать её пальцы, она вынимает их и вместо этого проводит ими вниз к твоей заднице, раздвигая анус двумя пальцами, пока остальные два ковыряются в нём, вбивая туда слюну. И всё это время страпон Рахи лишь слегка задевает твои {pc.thick} бёдра.")
 
-		saynn("[say=rahi]Yeah.. Like that.. All wet down there.. So eager to be fucked.[/say]")
+		saynn("[say=rahi]Да.. Вот так.. Там всё мокрое.. Так и жаждешь, чтобы тебя трахнули.[/say]")
 
-		saynn("Rahi then catches her own pussy juices and spreads them along her rubber toy, making it look very shiny. All the while you're still pinned against the window, your stiff nipples feel the cold glass, you really hope people outside won't stare.. too much..")
+		saynn("Рахи собирает соки своей киски и размазывает их по резиновой игрушке, отчего та начинает блестеть. Тем временем ты всё ещё прижата к окну; твои затвердевшие соски чувствуют холод стекла, и ты очень надеешься, что люди снаружи не будут пялиться.. слишком сильно..")
 
-		addButton("Get fucked", "See what happens next", "peg1_rahiinserts")
+		addButton("Получи по полной", "Смотреть, что будет дальше", "peg1_rahiinserts")
 	if(state == "peg1_rahiinserts"):
 		playAnimation(StageScene.SexStanding, "sex", {npc="pc", pc="rahi", bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You let out a cute noise when Rahi smacks your ass, making it bounce. She holds one paw on your neck while another quickly aligns the toy with your needy asshole. One rough thrust and Rahi spreads open your star enough to shove the strapon inside. A moan escapes your lips.")
+		saynn("Ты издаешь милый звук, когда Рахи шлепает тебя по заднице, заставляя её подпрыгнуть. Одной лапой она придерживает тебя за шею, а другой быстро прицеливает игрушку к твоему жаждущему анусу. Один резкий толчок — и Рахи раздвигает твою дырочку достаточно широко, чтобы вогнать страпон внутрь. С твоих губ срывается стон.")
 
-		saynn("[say=rahi]Hope you can take it rough.. Because that's how she likes it. Now take it like a good "+str("girl" if GM.pc.getGender() != Gender.Male else "boy")+".[/say]")
+		saynn("[say=rahi]Надеюсь, ты выдержишь жесткий темп... Потому что именно так она любит. А теперь принимай всё как хорошая @@"+str("girl" if GM.pc.getGender() != Gender.Male else "boy")+".[/say]")
 
-		saynn("You can't help but to gasp and arch your back as Rahi begins to pound your butt, sliding it in and out, using her hips to generate powerful slams that rock your body each time. Your moans fill the room as Rahi continues to stretch you out from the inside, fucking you with increasing intensity. The friction is pleasurable for her too, little noises of love escape from Rahi but she tries to hide them, putting all the focus on you and your needy tailhole.")
+		saynn("Ты не можешь не ахать и выгибать спину, когда Рахи начинает долбить в твою задницу, двигая игрушкой туда-сюда и используя свои бедра для мощных толчков, которые каждый раз сотрясают твое тело. Твои стоны наполняют комнату, пока Рахи продолжает растягивать тебя изнутри, трахая с нарастающей интенсивностью. Трение доставляет удовольствие и ей самой: из её горла вырываются тихие звуки страсти, но она пытается их скрыть, сосредоточив всё внимание на тебе и твоем голодном анусе.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your poor caged up dick desperately tries to get hard but is unable to. All it can do is sway back and forth while leaking a lot of precum from Rahi hammering at your pleasure spot.")
+			saynn("Твой бедный запертый член отчаянно пытается встать, но у него ничего не выходит. Всё, что он может — это покачиваться взад-вперед, обильно выделяя предэякулят, пока Рахи долбит прямо в твою точку удовольствия.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your {pc.penis} is hard, swaying back and forth from Rahi's thrusts. You're leaking so much precum from Rahi hammering at your pleasure spot..")
+			saynn("Твой {pc.penis} твердый и покачивается в такт толчкам Рахи. Из него течет столько смазки, пока Рахи методично вколачивается в твою точку удовольствия..")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("Even though you're being buttfucked, your {pc.vaginaStretch} pussy is dripping juices profusely. The toy is stimulating your g-spot through the inner wall so well.. Your slit looks small and slightly open, sharing some of the stretching with your ass.")
+			saynn("Хотя тебя трахают в задницу, твоя {pc.vaginaStretch} киска обильно сочится соками. Игрушка так хорошо стимулирует твою точку G через внутреннюю стенку... Твоя щель выглядит узкой и слегка приоткрытой, деля с анусом это чувство растяжения.")
 
-		saynn("Your kitty has reached a steady rhythm, the tip of her rubber dick reaching deep inside you each time she rams it in. Your orgasm slowly builds up.. kitty feels it and.. keeps it like that. Instead, Rahi puts more strength into each thrust, the rubber knot of her toy slams against your anus, trying to stretch it even wider. You're not sure it will even fit.. But you're also so close now..")
+		saynn("Твоя киска поймала ровный ритм: каждый раз, когда резиновый член входит в тебя, его кончик проникает глубоко внутрь. Твой оргазм медленно нарастает... киска это чувствует и... замирает в этом состоянии. Вместо этого Рахи вкладывает больше силы в каждый толчок, и резиновое уплотнение её игрушки с силой бьется о твой анус, пытаясь растянуть его еще шире. Ты не уверена, влезет ли оно вообще... но ты уже так близка к разрядке...")
 
-		saynn("[say=pc]I-It w-won't..[/say]")
+		saynn("[say=pc]О-оно н-не..[/say]")
 
-		saynn("[say=rahi]Your ass belongs to her![/say]")
+		saynn("[say=rahi]Твоя задница принадлежит ей![/say]")
 
-		saynn("With that, Rahi throws her hips forward for one last time, putting all her feline strength into this one.")
+		saynn("С этими словами Рахи в последний раз подается бедрами вперед, вкладывая всю свою кошачью силу в этот финальный рывок.")
 
-		addButton("Get knotted", "See what happens next", "peg1_cum")
+		addButton("Принять узел", "Смотреть, что будет дальше", "peg1_cum")
 	if(state == "peg1_cum"):
 		playAnimation(StageScene.SexStanding, "inside", {npc="pc", pc="rahi", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("The rubber knot puts an immense amount of pressure on your {pc.analStretch} anal ring, stretching it to the limit.. until the orb just slips in, tying you and Rahi together.. With one swift motion Rahi drives the knot even deeper inside your bowels.")
+		saynn("Резиновое уплотнение оказывает колоссальное давление на твое {pc.analStretch} анальное кольцо, растягивая его до предела... пока шар просто не проскальзывает внутрь, связывая тебя и Рахи воедино... Одним резким движением Рахи загоняет уплотнение еще глубже в твои кишки.")
 
-		saynn("You cry out in pleasure and pain as Rahi has her whole strapon in you. Squeezing the knot so much caused the toy to suddenly start filling you with some thick, creamy fluid.. seems like the strapon had some cum lube stored just for this occasion..")
+		saynn("Ты вскрикиваешь от смеси удовольствия и боли, когда Рахи вгоняет в тебя страпон целиком. От сильного сжатия узла игрушка внезапно начинает наполнять тебя какой-то густой кремообразной жидкостью... похоже, в страпон специально для этого случая закачали смазку из спермы...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your prostate got destroyed, causing your caged up dick to burst with multiple weak waves of seed. The pressure is immense but the flow is barely enough to reach the wall and leave some sticky stains on it..")
+			saynn("Твоя простата была буквально раздавлена, из-за чего твой зажатый в клетке член изверг несколько слабых волн семени. Давление колоссальное, но потока едва хватает, чтобы достичь стенки и оставить на ней липкие пятна...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your cock, twitching and unable to endure this immense pressure anymore coming from within your prostate, bursts with many waves of seed, leaving lots of sticky stains on the wall.")
+			saynn("Твой член, дергающийся и неспособный больше выносить это колоссальное давление изнутри простаты, извергается мощными волнами семени, оставляя на стене множество липких пятен.")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("Your moist pussy pulsates and gushes out plenty of girlcum. Even though it wasn't directly stimulated, your g-spot got rubber through the inner wall enough for you to cum hard!")
+			saynn("Твоя влажная киска пульсирует и извергает потоки девичьей смазки. Хотя прямой стимуляции не было, точка G была так сильно размята внутренней стенкой, что тебя пробило на мощный оргазм!")
 
-		saynn("You're licking the cold grass, your body shivering around your kitty's rubber cock.. She can't pull it out anymore even if she wanted to, you're forced to endure her strapon inside you.. not that you mind..")
+		saynn("Ты лижешь холодную траву, а твое тело дрожит вокруг резинового члена её киски... Она уже не сможет вытащить его, даже если захочет, и ты вынужден терпеть её страпон внутри себя... впрочем, ты не против...")
 
-		saynn("It seems like you're not the only one who came though, while being busy moaning and having your ass extremely stretched, you missed Rahi's cute moans and her body squirming behind you, her legs shaking, barely keeping her from falling. She leans into your back, letting you feel her breasts brushing against your skin.")
+		saynn("Похоже, ты не единственный, кто кончил; пока ты был занят стонами и тем, что твою задницу растягивали до предела, ты пропустил милые стоны Рахи и то, как её тело извивалось позади тебя, а ноги дрожали, едва удерживая её от падения. Она прижимается к твоей спине, позволяя тебе почувствовать, как её грудь трется о твою кожу.")
 
-		saynn("[say=rahi]Such a.. such.. little.. s-slutty..[/say]")
+		saynn("[say=rahi]Такая.. такая.. маленькая.. ш-шлюшка..[/say]")
 
-		saynn("She is panting heavily, just like you. The whole room smells of sex. Cum lube sloshing inside your butt.. You press your cheek against the cold glass and try to cool down..")
+		saynn("Она тяжело дышит, совсем как ты. Вся комната пропахла сексом. Сперма и смазка хлюпают у тебя внутри задницы... Ты прижимаешься щекой к холодному стеклу, пытаясь остыть...")
 
-		saynn("After some time, Rahi has gathered enough courage to yank the knot out, letting some of the cum lube out.")
+		saynn("Спустя некоторое время Рахи набирается смелости и резко выдергивает узел, позволяя части спермолубриканта вытечь наружу.")
 
-		addButton("Enough", "That was something", "removerahistrapon")
+		addButton("Хватит", "Это было нечто", "removerahistrapon")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillMasochist")):
-			addButton("Knot-fucking", "(Masochist) Knot goes in and out..", "peg1_knotfuck")
+			addButton("Секс с узлом", "(Мазохистка) Узел входит и выходит...", "peg1_knotfuck")
 	if(state == "peg1_knotfuck"):
 		playAnimation(StageScene.SexStanding, "fast", {npc="pc", pc="rahi", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("After the knot got pulled out, it left a lot of empty space inside you.. Empty space that you so eagerly want to be filled.. again..")
+		saynn("После того как узел вытащили, внутри тебя осталось много пустого пространства... Пустоты, которую ты так жаждешь заполнить... снова...")
 
-		saynn("[say=pc]More, Miss Rahi, please!..[/say]")
+		saynn("[say=pc]Еще, мисс Рахи, пожалуйста!..[/say]")
 
-		saynn("Rahi was about to stop when she heard that. Your words.. they make her.. so eager. She growls as she pins you against the window again and ramming her strapon inside your used fuckhole that didn't even close yet. A loud cry escapes from you as the rubber knot slips inside your ass, plugging that empty space.. Just so she can yank it out again, making your legs weak and your anus aching.")
+		saynn("Рахи уже собиралась остановиться, когда услышала это. Твои слова... они заставляют её... так сильно желать тебя. Она рычит, снова прижимая тебя к окну и вколачивая страпон в твою раздолбанную дырку, которая еще даже не успела сомкнуться. Громкий крик вырывается из твоих уст, когда резиновый узел проскальзывает внутрь твоей задницы, затыкая пустоту... Чтобы она тут же выдернула его обратно, заставляя твои ноги слабеть, а анус — ныть от боли.")
 
-		saynn("[say=rahi]You like that, don't you? Little.. insatiable.. whore.[/say]")
+		saynn("[say=rahi]Тебе ведь нравится, да? Маленькая... ненасытная... шлюшка.[/say]")
 
-		saynn("Rahi repeats this motion.. over and over again, each time yanking the knot out before shoving it back in, making your anal star stretch beyond its limit. The sensations are so intense that your tailhole tries to clench around it, increasing friction and making Rahi moan too in the process.")
+		saynn("Рахи повторяет это движение... снова и снова, каждый раз выдергивая узел наружу, а затем с силой вталкивая его обратно, заставляя твой анус растягиваться до предела. Ощущения настолько интенсивные, что твое анальное отверстие пытается сжаться вокруг него, усиливая трение и заставляя Рахи тоже стонать от удовольствия.")
 
-		saynn("[say=rahi]Such a slutty little thing..[/say]")
+		saynn("[say=rahi]Какая же ты похотливая сучка...[/say]")
 
-		saynn("Rahi snarls as she continues to knot-fuck your butt at an increasing pace, not giving your anus even a moment to try to close, leaving it gaping wide open so much that it starts to hurt.. The thick sticky cum lube leaks out around the edges, creating quite the mess on your legs.")
+		saynn("Рахи рычит, продолжая узловым трахом ебать твою задницу всё быстрее и быстрее, не давая твоему анусу ни единого шанса сомкнуться, оставляя его широко раскрытым до такой степени, что это начинает причинять боль... Густая, липкая смазка из спермы вытекает по краям, пачкая твои ноги.")
 
-		saynn("It was too much for your poor little tailhole.. But instead of begging for Rahi to stop, you moan and gasp for more, lost in this crazy mix of pleasure and pain. Your body starts to tense up as you approach another orgasm.. Rahi's thrusts became faster and more erratic..")
+		saynn("Для твоего бедного маленького ануса это было слишком... Но вместо того чтобы умолять Рахи остановиться, ты стонешь и жадно ловишь ртом воздух, теряясь в этом безумном коктейле из удовольствия и боли. Твое тело начинает напрягаться по мере приближения к очередному оргазму... Толчки Рахи становятся всё быстрее и хаотичнее...")
 
-		saynn("With a final, forceful thrust, Rahi slams the knot back inside your fuckhole, triggering an explosive orgasm for both of you. Cries of pain and pleasure can be probably heard across the whole general pop block. You desperately hold onto that window just so you wouldn't fall, your anus tightening around that knot and the whole shaft and spasming for a while. Rahi bites into your shoulder, growling, as her own orgasm makes her squirt, her pussy pulsating around her end of the toy.")
+		saynn("Финальным, мощным толчком Рахи вколачивает узел обратно в твою дырку, вызывая взрывной оргазм у вас обоих. Крики боли и наслаждения, должно быть, слышны на весь общий блок. Ты отчаянно вцепляешься в окно, лишь бы не упасть, пока твой анус сжимается вокруг узла и всего ствола, содрогаясь в спазмах. Рахи вгрызается тебе в плечо, рыча, пока её собственный оргазм заставляет её кончать струей, а её киска пульсирует вокруг конца игрушки.")
 
-		saynn("Kitty drags this intimate moment for a bit.. Before suddenly yanking her rubber toy out, finally letting you slump down onto the floor, your ruined ass gaping wide and leaking cum lube profusely.")
+		saynn("Китти затягивает этот интимный момент... Прежде чем внезапно выдернуть свою резиновую игрушку, наконец позволяя тебе рухнуть на пол; твоя раздолбанная задница широко зияет, обильно сочась смазкой со спермой.")
 
-		saynn("Both of you are left to pant heavily.")
+		saynn("Вы обе тяжело дышите.")
 
-		saynn("[say=rahi]You.. satisfied her.. for the moment..[/say]")
+		saynn("[say=rahi]Ты... удовлетворила её... на данный момент...[/say]")
 
-		addButton("Enough", "Wow", "removerahistrapon")
+		addButton("Хватит", "Ого", "removerahistrapon")
 	if(state == "peg2_allfours"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", bodyState={naked=true}})
-		saynn("One subby look is enough to set the dominant side in Rahi off. She assumes a confident stance and stares at you with her predatory eyes, her arms crossed.")
+		saynn("Всего одного покорного взгляда достаточно, чтобы разбудить доминантную сторону в Рахи. Она принимает уверенную позу и впивается в тебя хищным взглядом, скрестив руки на груди.")
 
-		saynn("The more dominant she acts, the less confident you become. Your shoulders tense up as Rahi starts circling around you.")
+		saynn("Чем больше она доминирует, тем меньше уверенности остается у тебя. Твои плечи напрягаются, когда Рахи начинает кружить вокруг тебя.")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("[say=rahi]Strip.[/say]")
+			saynn("[say=rahi]Разденься.[/say]")
 
-			saynn("That was said with a very commanding tone, her eyes locking onto yours until you comply. You swiftly remove your clothes until standing naked before her, your {pc.privates} out on display.")
+			saynn("Это было сказано очень властным тоном; её глаза впиваются в твои, пока ты не подчинишься. Ты быстро сбрасываешь одежду и замираешь перед ней нагим, выставляя напоказ свою {pc.privates}.")
 
 		else:
-			saynn("[say=rahi]Already prepared.. good..[/say]")
+			saynn("[say=rahi]Уже готова... хорошо..[/say]")
 
-			saynn("Her tone sounds very authoritative. Her eyes watch your {pc.masc} curves while you stand naked before her, your {pc.privates} out on display.")
+			saynn("Её тон звучит крайне авторитетно. Её глаза изучают изгибы твоей {pc.masc}, пока ты стоишь перед ней голышом, выставив напоказ свою {pc.privates}.")
 
-		saynn("Rahi then points at her bed.")
+		saynn("Затем Рахи указывает на свою кровать.")
 
-		saynn("[say=rahi]Get on it.[/say]")
+		saynn("[say=rahi]Живо на неё.[/say]")
 
-		addButton("Obey", "Do what Rahi tells you to do", "peg2_getonbed")
+		addButton("Повиноваться", "Делать то, что велит Рахи", "peg2_getonbed")
 	if(state == "peg2_getonbed"):
 		playAnimation(StageScene.SexAllFours, "tease", {pc="rahi", npc="pc", npcBodyState={naked=true, hard=true}})
-		saynn("You do as told, climbing onto Rahi's bed. She approaches you and moves your hands and knees until you're on all fours, with your legs slightly spread, making you look more exposed. That's kinda humiliating..")
+		saynn("Ты делаешь, как велено, и забираешься на кровать Рахи. Она подходит к тебе и переставляет твои руки и колени так, чтобы ты встал на четвереньки с широко разведенными ногами, делая тебя еще более уязвимым. Это чертовски унизительно...")
 
-		saynn("Rahi sits behind, her paws land on your back and begin caressing it, brushing her digits over your curves before grabbing you by the waist.")
+		saynn("Рахи сидит сзади; её лапки ложатся тебе на спину и начинают ласкать её, проводя пальцами по твоим изгибам, прежде чем крепко обхватить тебя за талию.")
 
-		saynn("[say=rahi]Wiggle your ass.[/say]")
+		saynn("[say=rahi]Повиляй задом.[/say]")
 
-		saynn("You're slightly confused by that order that came out of nowhere. But the sudden firm smack on your buttocks refreshes your mind. Ow. You do as told, swaying your rear for the kitty behind you. Her paws slide down to your {pc.masc} buttcheeks and knead them for a bit before spreading them apart, your {pc.analStretch} ring clenching and struggling to close because of the paws.")
+		saynn("Ты слегка сбита с толку этой внезапной командой. Но резкий, звонкий шлепок по ягодицам приводит тебя в чувство. Ой! Ты повинуешься, покачивая задницей перед кошечкой, что сидит позади. Её лапки скользят вниз к твоим {pc.masc} ягодицам и немного разминают их, а затем раздвигают в стороны, из-за чего твоё {pc.analStretch} кольцо сжимается и пытается сомкнуться, не давая лапкам войти.")
 
 		if (GM.pc.hasPenis()):
-			saynn("Your {pc.penis} twitching slightly while Rahi teases you.")
+			saynn("Твоё {pc.penis} слегка подергивается, пока Рахи дразнит тебя.")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("You get a feeling that Rahi has no interest in your pussy today.. But it still gets more wet in response to Rahi's touches.")
+			saynn("У тебя возникает чувство, что сегодня Рахи не особо интересует твоя киска... Но она всё равно становится всё мокрее в ответ на её прикосновения.")
 
-		saynn("[say=rahi]Bet you wanna get fucked by her, don't you? Have your cute kitty rail that little inviting asshole?[/say]")
+		saynn("[say=rahi]Спорим, ты хочешь, чтобы она тебя оттрахала? Чтобы твоя милая кошечка хорошенько проехалась по этому манящему анусу?[/say]")
 
 		if (GM.pc.hasPenis()):
-			saynn("She spits into your tailhole, making you squirm. And then shoves two fingers inside, applying more force until they break through your resistance and slip in. She just wiggles them inside you but even that is enough to reach your prostate that is placed only a few inches away from the entrance. Your {pc.penis} is leaking pre while Rahi watches your reaction with great fascination.")
+			saynn("Она плюет в твой хвост, заставляя тебя извиваться. А затем засовывает два пальца внутрь, нажимая всё сильнее, пока они не преодолевают твоё сопротивление и не входят. Она просто шевелит ими внутри, но даже этого достаточно, чтобы достать до твоей простаты, расположенной всего в паре дюймов от входа. Твоё {pc.penis} сочится предэякулятом, пока Рахи с огромным интересом наблюдает за твоей реакцией.")
 
 		else:
-			saynn("She spits into your tailhole, making you squirm. And then shoves two fingers inside, applying more force until they break through your resistance and slip in. She just wiggles them inside which doesn't provide much direct stimulation to your pleasure spots.. But it's still arousing..")
+			saynn("Она сплевывает тебе в анус, заставляя тебя корчиться. А затем засовывает внутрь два пальца, нажимая всё сильнее, пока они не преодолевают твое сопротивление и не проскальзывают внутрь. Она просто шевелит ими там, что не дает особого прямого воздействия на твои эрогенные зоны... Но это всё равно возбуждает...")
 
-		saynn("She plays with your assholes for a bit, working her fingers until your muscles don't tense up so much around them.")
+		saynn("Она немного поиграет с твоими дырочками, разминая пальцы до тех пор, пока твои мышцы не перестанут так сильно сжиматься вокруг них.")
 
-		saynn("[say=rahi]Yeah.. your kitty can do that.. Hold on.[/say]")
+		saynn("[say=rahi]Да.. твоя киска на это способна.. Погоди-ка.[/say]")
 
-		saynn("Rahi steps off the bed and then picks up something. You see with the corner of your eye that it's something quite long.")
+		saynn("Рахи спускается с кровати и что-то берет. Краем глаза ты замечаешь, что это нечто довольно длинное.")
 
-		addButton("Continue", "See what happens next", "peg2_putonstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "peg2_putonstrapon")
 	if(state == "peg2_putonstrapon"):
 		playAnimation(StageScene.SexAllFours, "tease", {pc="rahi", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("Rahi holds a strapon! A red rubber rocket that lacks balls and any kind of straps to secure it around her waist.. because it's double sided.")
+		saynn("У Рахи страпон! Красная резиновая ракета, у которой нет ни яичек, ни каких-либо ремней для фиксации на талии... потому что она двусторонняя.")
 
-		saynn("Your kitty undresses, quickly throwing her inmate uniform to the side before bringing the toy down to her pussy. She gently humps the shorter end of it and bites her lip while watching you, still on all fours, awaiting your fate.")
+		saynn("Твоя киска раздевается, быстро отшвыривая тюремную робу в сторону, а затем подносит игрушку к своей киске. Она нежно насаживается на короткий конец и прикусывает губу, наблюдая за тобой — ты всё еще стоишь на четвереньках, ожидая своей участи.")
 
-		saynn("One little push and the strapon's back side spreads Rahi's pussy lips enough to slide inside. A little cute moan escapes from the kitty while she grabs onto the shaft and tugs on it back and forth to make sure it's secured in her. She then quickly grabs a tube of lube and pours it over the rubber shaft, making it all slick and shiny.")
+		saynn("Всего один толчок — и задняя часть страпона раздвигает половые губы Рахи достаточно широко, чтобы проскользнуть внутрь. Из киски вырывается милый стон, пока она хватает ствол руками и тянет его вперед-назад, проверяя, надежно ли он зафиксирован. Затем она быстро хватает тюбик лубриканта и выливает его на резиновую плоть, делая её скользкой и блестящей.")
 
-		addButton("Continue", "See what happens next", "peg2_begansex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "peg2_begansex")
 	if(state == "peg2_begansex"):
 		playAnimation(StageScene.SexAllFours, "sex", {pc="rahi", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("After that, kitty hops onto the bed again and positions herself behind you. A shiver runs through your body as Rahi brushes the strapon's tip against your taint area before making it prod the entrance of your anus.")
+		saynn("После этого киска снова запрыгивает на кровать и устраивается позади тебя. По твоему телу пробегает дрожь, когда Рахи проводит кончиком страпона по твоему промежности, прежде чем начать тыкать им в отверстие твоего ануса.")
 
-		saynn("[say=rahi]Be a good {pc.boy} and take it.[/say]")
+		saynn("[say=rahi]Будь хорошим {pc.boy} и прими это.[/say]")
 
-		saynn("With one quick thrust of her hips, Rahi plunges the strapon deep into your ass, forcing your ring to stretch wide. The sharp sensation makes you groan. But not for long as your noises quickly switch to moans of pleasure as Rahi begins to pound you hard and fast, her girly hips slamming against your {pc.thick} ass with each rough motion.")
+		saynn("Одним резким толчком бедер Рахи вонзает страпон глубоко в твою задницу, заставляя твое кольцо растянуться до предела. От резкого ощущения ты стонешь, но ненадолго: твои звуки быстро сменяются стонами наслаждения, когда Рахи начинает долбить тебя жестко и быстро, ее девчачьи бедра с каждым грубым движением с силой впечатываются в твою {pc.thick} задницу.")
 
 		if (GM.pc.hasPenis()):
-			saynn("You feel your prostate being directly stimulated by the toy as it travels inside you. Your {pc.penis} leaking so much precum mixed with some other transparent fluid.")
+			saynn("Ты чувствуешь, как игрушка напрямую стимулирует твою простату, проходя внутри тебя. Твоя {pc.penis} так и течет предэякулятом, смешанным с какой-то другой прозрачной жидкостью.")
 
 		elif (GM.pc.hasVagina()):
-			saynn("Your g-spot is being indirectly stimulated by the toy through the inner wall of your anus. Your pussy looking slightly stretched and dripping so much juices already..")
+			saynn("Твоя точка G косвенно стимулируется игрушкой через внутреннюю стенку ануса. Твоя киска выглядит слегка растянутой и уже вовсю сочит соки...")
 
-		saynn("Kitty produces a soft noise when she feels your tailhole clenching around her rubber cock, causing its other end to shift inside Rahi.")
+		saynn("Китти издает мягкий звук, когда чувствует, как твое анальное отверстие сжимается вокруг ее резинового члена, заставляя другой конец игрушки смещаться внутри Рахи.")
 
-		saynn("[say=rahi]Oh, you like that, don't you?[/say]")
+		saynn("[say=rahi]О, тебе ведь это нравится, да?[/say]")
 
-		saynn("She forces her cock inside you until the rubber knot slams into your star, trying to stretch you extremely wide but failing at that. She even uses her paws to try to pull you towards her dick.")
+		saynn("Она вгоняет свой член в тебя до тех пор, пока резиновый узел не врезается в твою звезду, пытаясь растянуть тебя до невероятных размеров, но безуспешно. Она даже использует свои лапки, чтобы попытаться подтянуть тебя ближе к своему члену.")
 
-		saynn("[say=rahi]You're just a little slut.. Taking her cock like a good little bitch..[/say]")
+		saynn("[say=rahi]Ты просто маленькая шлюшка... Принимаешь её член как послушная сучка...[/say]")
 
-		saynn("You squirm around her dick and moan, unable to form any coherent response while Rahi continues to fuck your ass harder and harder. You can feel your orgasm approaching you, the pleasure slowly becomes too much to handle.. Your tailhole is involuntary clenching around that cock, causing Rahi's moans to be more pronounced.")
+		saynn("Ты извиваешься вокруг её члена и стонешь, не в силах выдавить из себя внятный ответ, пока Рахи продолжает трахать твою задницу всё сильнее и сильнее. Ты чувствуешь приближение оргазма, удовольствие становится почти невыносимым... Твое анальное отверстие непроизвольно сжимается вокруг этого члена, заставляя стоны Рахи становиться всё громче.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your poor locked cock is desperately pushing at the metal walls of the cage, the pressure is so high it hurts.. It hurts so good..")
+			saynn("Твой бедный запертый член отчаянно упирается в металлические стенки клетки; давление настолько сильное, что становится больно... Но это такая приятная боль...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your cock swaying a lot while Rahi rails your ass like she owns it. The pressure in your shaft rises more and more..")
+			saynn("Твой член сильно раскачивается, пока Рахи трахает твою задницу так, будто она принадлежит ей. Давление в стволе нарастает всё сильнее и сильнее...")
 
-		addButton("Continue", "See what happens next", "peg2_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "peg2_cum")
 	if(state == "peg2_cum"):
 		playAnimation(StageScene.SexAllFours, "inside", {pc="rahi", npc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
 		if (GM.pc.isWearingChastityCage()):
-			saynn("One of the thrusts hits your prostate just right, sending your body to convulse as you cum. Your stretched tailhole is clenching hard around Rahi's rubber member while your caged up member throbs desperately and leaks {pc.cum} through the little hole, messing up the kitty's bed.")
+			saynn("Один из толчков попадает точно в простату, заставляя твое тело содрогаться в оргазме. Твое растянутое анусное отверстие крепко сжимает резиновый член Рахи, пока твой запертый в клетке член отчаянно пульсирует и сочится {pc.cum} через маленькое отверстие, пачкая кошачью постель.")
 
-			saynn("[say=rahi]You ruined the bedsheets! Slut![/say]")
+			saynn("[say=rahi]Ты испортил постельное белье! Шлюшка![/say]")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("One of the thrusts hits your prostate just right, sending your body to convulse as you cum. Your stretched tailhole is clenching hard around Rahi's rubber member while your {pc.penis} throbs and twitches, shooting multiple thick strings of {pc.cum} down at Rahi's bed, creating a mess.")
+			saynn("Один из толчков попадает точно в простату, заставляя твое тело содрогаться в оргазме. Твое растянутое анусное отверстие крепко сжимает резиновый член Рахи, пока твой {pc.penis} пульсирует и дергается, выстреливая густыми струями {pc.cum} прямо на кровать Рахи, создавая жуткий беспорядок.")
 
-			saynn("[say=rahi]You ruined the bedsheets! Slut![/say]")
+			saynn("[say=rahi]Ты испортил постельное белье! Шлюшка![/say]")
 
 		elif (GM.pc.hasVagina()):
-			saynn("One of the thrusts hits your g-spot through the inner wall just right, sending your body to convulse as you cum. Your stretched tailhole is clenching hard around Rahi's rubber member while your neglected pussy spasms and pulsates, gushing out girlcum all over Rahi's bed, leaving a wet mess.")
+			saynn("Один из толчков попадает точно в твою точку G через внутреннюю стенку, заставляя твое тело содрогаться в оргазме. Твое растянутое анусное отверстие крепко сжимает резиновый член Рахи, пока твоя заброшенная киска спазмирует и пульсирует, заливая кровать Рахи девичьим соком и оставляя после себя мокрые пятна.")
 
-			saynn("[say=rahi]You ruined the bedsheets! Slut![/say]")
+			saynn("[say=rahi]Ты испортила постельное белье! Шлюшка![/say]")
 
 		else:
-			saynn("One of the thrusts hits your pleasure spot just right, sending your body to convulse as you cum. Your stretched tailhole is clenching hard around Rahi's rubber member.")
+			saynn("Один из толчков попадает точно в твою эрогенную зону, заставляя твое тело содрогаться в оргазме. Твое растянутое анусное отверстие крепко сжимает резиновый член Рахи.")
 
-		saynn("Rahi feels that her pounding has finally sent you over the edge, the friction that she experiences brings her to her peak as well. But instead of just letting the pleasure wash over her, she rams her strapon inside you with full strength, the rubber knot is stretching your twitching asshole extremely wide until it suddenly plops inside. Rahi cums as she knots you, her weak feline frame shaking behind you, passionate moans escaping from her lips as her pussy squirts out all the juices due to overstimulation.")
+		saynn("Рахи чувствует, что её мощные толчки наконец-то довели тебя до предела; трение доводит и её саму до пика. Но вместо того чтобы просто отдаться волне наслаждения, она с силой вбивает страпон в тебя; резиновый узел растягивает твою подергивающуюся дырку до невероятной ширины, пока он внезапно не застревает внутри. Рахи кончает, завязываясь в тебе; её хрупкое кошачье тело дрожит у тебя за спиной, а с губ срываются страстные стоны, пока её киска извергает соки из-за запредельной стимуляции.")
 
-		saynn("But that's not all of it, the strapon suddenly releases its contents inside you, flooding your bowels with white thick creamy cum lube. You cry out in pleasure as you now have Rahi's full rubber cock stuck inside you, as you are forced to endure it cumming inside you.")
+		saynn("Но и это ещё не всё: страпон внезапно извергает содержимое прямо в тебя, заливая кишечник густой белой спермо-смазкой. Ты вскрикиваешь от удовольствия, чувствуя, как внутри тебя застрял весь резиновый член Рахи, вынуждая тебя терпеть её кончать в тебя.")
 
-		saynn("After all the orgasms are over, Rahi lays on your back, panting heavily and letting you feel her breasts brushing against your skin.")
+		saynn("Когда все оргазмы стихают, Рахи ложится тебе на спину, тяжело дыша и позволяя тебе чувствовать, как её грудь трется о твою кожу.")
 
-		saynn("[say=rahi]Good {pc.boy}.. Such a good {pc.boy}..[/say]")
+		saynn("[say=rahi]Молодец {pc.boy}.. Такой послушный {pc.boy}..[/say]")
 
 		if (GM.pc.hasPenis()):
-			saynn("Your prostate is still under a lot of pressure, causing you to keep leaking {pc.cum}..")
+			saynn("Твоя простата всё ещё находится под сильным давлением, из-за чего из тебя продолжает сочиться {pc.cum}..")
 
-		saynn("She lets you rest with her fake cock inside you. Which is quite hard to do.. You're being forced to keep her shaft warm. Her paws reach for your belly and get a feel for the bulge that the strapon has caused.")
+		saynn("Она позволяет тебе отдохнуть, оставив свой фаллоимитатор внутри тебя. Что, впрочем, не так-то просто... Тебя заставляют согревать её ствол. Её лапки тянутся к твоему животу, ощупывая бугорок, который образовался от страпона.")
 
-		saynn("[say=rahi]Took the whole thing.. So greedy..[/say]")
+		saynn("[say=rahi]Заглотил всё целиком.. Какая жадность..[/say]")
 
-		saynn("Rubber knots will never deflate. So Rahi just waits until her breathing is mostly stable before yanking her cock out of you, making you moan for the last time and leaving your shiny star to gape and leak cum lube.")
+		saynn("Резиновые узлы никогда не сдуваются. Поэтому Рахи просто ждет, пока ее дыхание почти не станет ровным, а затем резко выдергивает свой член из тебя, заставляя тебя издать последний стон и оставляя твою блестящую звезду зиять и сочиться смазкой из спермы.")
 
-		saynn("The afterglow feeling is so strong.. just trying to close your used asshole is making you feel.. light.")
+		saynn("Чувство после оргазма такое сильное... одна лишь попытка сомкнуть твою раздолбанную дырку заставляет тебя чувствовать... легкость.")
 
-		saynn("Suddenly Rahi smacks your ass, causing a little fountain to erupt out of your tailhole.. Lewd.")
+		saynn("Внезапно Рахи шлепает тебя по заднице, из-за чего из твоего ануса вырывается маленький фонтанчик... Пошло.")
 
-		addButton("Enough", "That was lewd", "removerahistrapon")
+		addButton("Хватит", "Это было пошло", "removerahistrapon")
 		if (getModule("RahiModule").getSkillScore("rahiSkillAnal") >= 3):
-			addButton("Lick Rahi's holes", "(Anal) Clean Rahi out with your tongue. Including her asshole", "peg2_lickrahiout")
+			addButton("Лизать дырочки Рахи", "(Анально) Вылизать Рахи языком. Включая её анус", "peg2_lickrahiout")
 	if(state == "peg2_lickrahiout"):
 		playAnimation(StageScene.SexRimming, "sex", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Rahi jumped off the bed and took off her strapon, exposing her needy moist pussy slit. She leans against the nearest wall and just rests, her thighs covered in juices. But you are still in your submissive mindset.. You really wanna serve your Miss..")
+		saynn("Рахи спрыгнула с кровати и сняла страпон, обнажив свою жаждущую влажную щель. Она прислоняется к ближайшей стене и просто отдыхает, её бедра покрыты соками. Но ты всё еще в подчиненном состоянии... Тебе безумно хочется послужить своей Госпоже...")
 
-		saynn("You crawl off the bed and approach Rahi while still on all fours. Then you press your head between Rahi's legs and begin cleaning her pussy with your tongue, licking up all the girlcum and sweat that got accumulated there. Kitty moans softly as she feels your tongue moving over her sensitive folds. She places her paw on your head and scritches you behind your ear.")
+		saynn("Ты сползаешь с кровати и подползаешь к Рахи на четвереньках. Затем ты прижимаешься головой к её ногам и начинаешь вылизывать её киску, слизывая всю накопившуюся там девичью смазку и пот. Китти тихо стонет, чувствуя, как твой язык скользит по её чувствительным складкам. Она кладет лапу тебе на голову и чешет тебя за ушком.")
 
-		saynn("[say=rahi]Such a good pussy licker..[/say]")
+		saynn("[say=rahi]Такой хороший лизунчик киски...[/say]")
 
-		saynn("You lap up at her pussy for a little longer, making sure it's all neat and clean. But then Rahi decides to turn around and present her butt to you. She spreads her buttcheeks and moves her tail out of the way, showing off her careful pink asshole.")
+		saynn("Ты еще немного вылизываешь её киску, стараясь сделать всё идеально чистым. Но затем Рахи решает развернуться и подставить тебе свою задницу. Она раздвигает ягодицы и убирает хвост в сторону, демонстрируя свой аккуратный розовый анус.")
 
-		saynn("[say=rahi]Clean her up back here too.[/say]")
+		saynn("[say=rahi]Вылижи ей и здесь тоже.[/say]")
 
-		saynn("That sounded more like an order.. But.. Why not. You eagerly comply, pressing your face against her butt and then begin prodding at her tight anus with your tongue. After a few attempts, you manage to penetrate it, making your kitty gasp and clench..")
+		saynn("Это прозвучало скорее как приказ... Но... почему бы и нет. Ты с жадностью подчиняешься, прижимаясь лицом к её заднице, и начинаешь исследовать её тугой анус языком. После нескольких попыток тебе удается проникнуть внутрь, заставляя твою киску ахнуть и сжаться...")
 
-		saynn("Your tongue starts exploring her, plunging in and out of her dirty asshole as you lick and suck at her butt. Rahi's moans become more loud, she is clearly enjoying the sensations.")
+		saynn("Твой язык начинает исследовать её, ныряя то внутрь, то наружу её грязного ануса, пока ты лижешь и посасываешь её задницу. Стоны Рахи становятся громче — очевидно, она наслаждается ощущениями.")
 
-		saynn("[say=rahi]Such a dirty little slut..[/say]")
+		saynn("[say=rahi]Такая грязная маленькая шлюшка...[/say]")
 
-		saynn("Your tongue moves deeper inside her, lapping up at her soft inner walls.")
+		saynn("Твой язык проникает всё глубже, слизывая влагу с её мягких внутренних стенок.")
 
-		saynn("[say=rahi]You love when she uses you like this, don't you?[/say]")
+		saynn("[say=rahi]Тебе ведь нравится, когда она использует тебя вот так, правда?[/say]")
 
-		saynn("Finally, after enough rimming, Rahi pulls away from you. She turns around again and caresses your cheek.")
+		saynn("Наконец, после долгого римминга, Рахи отстраняется от тебя. Она снова разворачивается и нежно гладит тебя по щеке.")
 
-		addButton("Enough", "That was lewd", "endthescene")
+		addButton("Хватит", "Это было пошло", "endthescene")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillMasochist")):
-			addButton("CBT", "(Masochist) Maybe Rahi can reward you by torturing your genitals..", "peg2_cbt")
+			addButton("CBT", "(Мазохист) Может быть, Рахи вознаградит тебя, подвергнув твои гениталии пыткам...", "peg2_cbt")
 	if(state == "peg2_cbt"):
 		playAnimation(StageScene.SexFeetPlay, "crotch", {pc="rahi", npc="pc", npcCum=true, bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You stare at Rahi with very subby begging eyes. And that awakens something in Rahi. She suddenly pushes you down to the floor with her leg before putting her feet on your crotch.")
+		saynn("Ты смотришь на Рахи глазами покорного раба, полными мольбы. И это пробуждает в ней что-то. Она внезапно придавливает тебя ногой к полу, а затем ставит свои лапы тебе на пах.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your shaft is protected by that chastity cage like its armor. But your balls aren't.. Rahi's hind paws have claws that she digs into your sensitive skin, causing you to gasp and moan. Her motions are relentless, she puts more pressure on your cock and balls with her paw pads while the claws leave scratches and cuts.")
+			saynn("Твой член защищен этой девственной клеткой, словно броней. Но твои яйца — нет... Когти задних лап Рахи впиваются в твою чувствительную кожу, заставляя тебя ахать и стонать. Её движения неумолимы: она сильнее давит подушечками лап на твой член и яички, пока когти оставляют царапины и порезы.")
 
-			saynn("Suddenly, she stomps on your caged up member, causing a huge spike of pain. It was almost agonizing at first. You instinctively try to protect your poor berries from Rahi but she just rubs her feet into them harder, causing all sorts of sensations. And strangely enough, you are getting turned on by the pain.. it is only making you more eager to please Rahi.. Your locked away cock leaking precum while your kitty is torturing it with a mean smile on her face.")
+			saynn("Внезапно она наступает на твой запертый член, вызывая резкую вспышку боли. Поначалу это было почти мучительно. Ты инстинктивно пытаешься защитить свои бедные яички от Рахи, но она лишь сильнее втирает в них свои ступни, вызывая самые разные ощущения. И, как ни странно, от этой боли ты возбуждаешься... она лишь заставляет тебя еще сильнее желать угодить Рахи... Твой запертый член сочится предэякулятом, пока её киска мучает его с ехидной ухмылкой на лице.")
 
-			saynn("Finally, after what felt like an eternity of torment, your body convulses as you cum hard! Your bruised locked cock shooting weak ropes of {pc.cum} onto your own belly. Rahi laughs triumphantly as she watches you spasm, her clawed foot is still firmly planted into your twitching balls.")
+			saynn("Наконец, после того что показалось вечностью мучений, твое тело содрогается от мощного оргазма! Твой ушибленный, запертый член выпускает слабые струйки {pc.cum} прямо на твой живот. Рахи торжествующе смеется, наблюдая за твоими спазмами, а её когтистая лапа всё еще крепко вдавлена в твои дергающиеся яйца.")
 
-			saynn("[say=rahi]Pathetic. But at least you're good for something.[/say]")
+			saynn("[say=rahi]Жалкое зрелище. Но, по крайней мере, от тебя есть хоть какая-то польза.[/say]")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Rahi presses her foot against your shaft and balls. Her hind paws have claws that she digs into your sensitive skin, causing you to gasp and moan. Her motions are relentless, she puts more pressure on your cock and balls with her paw pads while the claws leave scratches and cuts.")
+			saynn("Рахи прижимает ступню к твоему стволу и яичкам. На её задних лапах есть когти, которыми она впивается в твою чувствительную кожу, заставляя тебя ахать и стонать. Её движения неумолимы: она сильнее давит подушечками лап на твой член и яйца, пока когти оставляют царапины и порезы.")
 
-			saynn("Suddenly, she stomps on your member, causing a huge spike of pain. It was almost agonizing at first. You instinctively try to protect your poor berries from Rahi but she just rubs her feet into them harder, causing all sorts of sensations. And strangely enough, you are getting turned on by the pain.. it is only making you more eager to please Rahi.. Your cock leaking precum while your kitty is torturing it with a mean smile on her face.")
+			saynn("Внезапно она наступает на твой член, вызывая резкую вспышку боли. Поначалу это было почти мучительно. Ты инстинктивно пытаешься защитить свои бедные яички от Рахи, но она лишь сильнее втирает в них свои ступни, вызывая бурю самых разных ощущений. И, как ни странно, эта боль тебя возбуждает... она лишь заставляет тебя еще сильнее жаждать угодить Рахи... Твой член сочится предэякулятом, пока её киска мучает его с ехидной ухмылкой на лице.")
 
-			saynn("Finally, after what felt like an eternity of torment, your body convulses as you cum hard! Your {pc.penis} shooting strong ropes of {pc.cum} onto your own belly. Rahi laughs triumphantly as she watches you spasm, her clawed foot is still firmly planted into your twitching balls.")
+			saynn("Наконец, после того что показалось вечностью мучений, твое тело содрогается от мощного оргазма! Твой {pc.penis} выпускает густые струи {pc.cum} прямо на твой живот. Рахи торжествующе смеется, наблюдая за твоими спазмами, а её когтистая лапа всё так же крепко вдавлена в твои подергивающиеся яйца.")
 
-			saynn("[say=rahi]Pathetic. But at least you're good for something.[/say]")
+			saynn("[say=rahi]Жалкое зрелище. Но, по крайней мере, от тебя есть хоть какая-то польза.[/say]")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Rahi presses her foot against your slick pussy. Her hind paws have claws that she digs into your sensitive skin, causing you to gasp and moan. Her motions are relentless, she puts more pressure on your cunt with her paw pads while the claws leave scratches and cuts.")
+			saynn("Рахи прижимает ступню к твоей влажной киске. На её задних лапах есть когти, которыми она впивается в твою чувствительную кожу, заставляя тебя ахать и стонать. Её движения неумолимы: она сильнее давит подушечками лап на твою щель, пока когти оставляют царапины и порезы.")
 
-			saynn("Suddenly, switches to stomping, pretty much kicking your pussy! And then grinding her foot between the petals, making you cry out in a mixture of pain and ecstasy. Each time you try to protect your pussy slit, Rahi only makes it more painful, digging her claws into your flesh.")
+			saynn("Внезапно она переходит к топтанию, практически втаптывая твою киску! А затем начинает растирать ступней между лепестками, заставляя тебя вскрикивать от смеси боли и экстаза. Каждый раз, когда ты пытаешься прикрыть вход в киску, Рахи лишь усиливает боль, вонзая когти в твою плоть.")
 
-			saynn("Finally, after what felt like an eternity of torment, your body convulses as you cum hard! Your bruised pussy spasming and then squirting out juices all over Rahi's foot. Kitty laughs triumphantly as she watches you spasm, her clawed foot is still firmly planted onto your pussy.")
+			saynn("Наконец, после целой вечности мучений, твое тело сотрясает мощнейший оргазм! Твоя разбитая киска спазмирует, извергая соки прямо на лапу Рахи. Китти торжествующе смеется, наблюдая за твоими конвульсиями, пока ее когтистая лапа всё еще крепко придавлена к твоей щелке.")
 
-			saynn("[say=rahi]Pathetic. But at least you're good for something.[/say]")
+			saynn("[say=rahi]Жалкое зрелище. Но, по крайней мере, от тебя есть хоть какая-то польза.[/say]")
 
 		else:
-			saynn("Rahi presses her foot against your crotch. Her hind paws have claws that she digs into your sensitive skin, causing you to gasp and moan. Her motions are relentless, she puts more pressure on your taint area with her paw pads while the claws leave scratches and cuts.")
+			saynn("Рахи прижимает лапу к твоей промежности. Ее задние лапы снабжены когтями, которые она вонзает в твою чувствительную кожу, заставляя тебя ахать и стонать. Ее движения неумолимы: она сильнее давит подушечками на область промежности, пока когти оставляют царапины и порезы.")
 
-			saynn("Suddenly, switches to stomping, pretty much kicking you in the crotch! And then grinding her foot into it, making you cry out in a mixture of pain and ecstasy. Each time you try to protect yourself, Rahi only makes it more painful, digging her claws into your flesh.")
+			saynn("Внезапно она переходит к топтанию, практически вбивая удары тебе в пах! А затем начинает втирать лапу прямо в него, заставляя тебя кричать от смеси боли и экстаза. Каждый раз, когда ты пытаешься защититься, Рахи лишь усиливает боль, впиваясь когтями в твою плоть.")
 
-			saynn("Finally, after what felt like an eternity of torment, your body convulses as you cum hard! Your tailhole pulsating. Kitty laughs triumphantly as she watches you spasm, her clawed foot is still firmly planted onto your crotch.")
+			saynn("Наконец, после целой вечности мучений, твое тело сотрясает мощнейший оргазм! Твое анус пульсирует. Китти торжествующе смеется, наблюдая за твоими конвульсиями, пока ее когтистая лапа всё еще крепко придавлена к твоей промежности.")
 
-			saynn("[say=rahi]Pathetic. But at least you're good for something.[/say]")
+			saynn("[say=rahi]Жалкое зрелище. Но, по крайней мере, от тебя есть хоть какая-то польза.[/say]")
 
-		addButton("Enough", "That was painful", "endthescene")
+		addButton("Хватит", "Это было больно", "endthescene")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillWatersports")):
-			addButton("Get peed on", "(Watersports) Why not at this point..", "peg2_getpeedon")
+			addButton("Тебя обтекают мочой", "(Вотерспорт) Почему бы и нет на данном этапе...", "peg2_getpeedon")
 	if(state == "peg2_getpeedon"):
 		playAnimation(StageScene.SexFeetPlay, "pin", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You feel.. wasted.. completely.. just laying on the floor and panting into the air.. your genitals aching from pain. All the while Rahi just stares at you, a devious idea coming into her head.")
+		saynn("Ты чувствуешь себя... опустошенной... совершенно... просто лежишь на полу, тяжело дыша... твои гениталии ноют от боли. А Рахи просто смотрит на тебя, и в ее голове зреет коварная идея.")
 
-		saynn("[say=rahi]You will be okay if she does this, right?[/say]")
+		saynn("[say=rahi]С ней всё будет в порядке, если она это сделает, верно?[/say]")
 
-		saynn("You don't even get enough time to ask what she is asking about before Rahi places her foot on your chest and proceeds to.. urinate.. all over you. A golden stream of gross piss emerges from her pisshole, hitting you right in the face, causing you to close your mouth and eyes. So.. degrading..")
+		saynn("Ты даже не успеваешь спросить, о чем она, как Рахи ставит ногу тебе на грудь и приступает к... мочеиспусканию... прямо на тебя. Золотистая струя вонючей мочи бьет тебе прямо в лицо, заставляя зажмуриться и плотно сжать рот. Как же это... унизительно...")
 
-		saynn("She then aims the stream at your neck.. {pc.masc} shoulders.. {pc.breasts}.. chest.. crotch.. her warm urine kinda softens up the pain you experienced.. by replacing it with humiliation..")
+		saynn("Затем она направляет струю на твою шею... {pc.masc} плечи... {pc.breasts}... грудь... пах... её теплая моча будто смягчает пережитую тобой боль... заменяя её чувством унижения...")
 
-		saynn("Kitty moans softly while emptying her full bladder, using you as her personal toilet. Eventually the flow starts to die down. You're now.. drenched.. in her piss.. and wearing her gross scent.. And it's kinda nice..")
+		saynn("Китти тихонько стонет, опорожняя полный мочевой пузырь и используя тебя как личный туалет. Наконец поток начинает слабеть. Ты теперь... весь промок... в её моче... и пропитан её вонючим запахом... И это даже как-то приятно...")
 
-		saynn("[say=rahi]Ah.. much better. Let's do this again sometime, mhm?[/say]")
+		saynn("[say=rahi]Ах... так гораздо лучше. Давай повторим это как-нибудь еще, м?[/say]")
 
-		saynn("You nod back softly. You use your hand to swipe the gross fluids off of your face so you can at least open your eyes.")
+		saynn("Ты тихонько киваешь в ответ. Ты проводишь рукой по лицу, смахивая липкую жидкость, чтобы иметь возможность хотя бы открыть глаза.")
 
-		addButton("Enough", "This is it. This is the end", "endthescene")
+		addButton("Хватит", "Это всё. Это конец.", "endthescene")
 	if(state == "submit_scene"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
 		
-		saynn("When you approach Rahi, she immediately knows that something is different. You are.. irradiating confidence and control.. yet again. And that makes your kitty curious.")
+		saynn("Когда ты подходишь к Рахи, она сразу понимает, что что-то изменилось. Ты снова... излучаешь уверенность и контроль... И это пробуждает любопытство твоей китти.")
 
-		saynn("[say=rahi]Something happened?..[/say]")
+		saynn("[say=rahi]Что-то случилось?..[/say]")
 
-		saynn("You reach your hand out and try to pat Rahi. She bares her fangs at first.. but when you actually begin headpatting her.. the mean expression goes away.. replaced with that of a cute shy kitty.. the one that you know and love.")
+		saynn("Ты протягиваешь руку и пытаешься погладить Рахи. Сначала она скалится, обнажая клыки... но когда ты действительно начинаешь гладить её по голове... её злобное выражение лица исчезает... сменяясь видом милой, застенчивой кошечки... той самой, которую ты знаешь и любишь.")
 
-		saynn("[say=pc]Just wanted to say that your dominance training.. is now complete![/say]")
+		saynn("[say=pc]Просто хотела сказать, что твоё обучение доминированию... завершено![/say]")
 
-		saynn("There is a hint of pride in your voice. Rahi's face lit up with joy when she heard that.")
+		saynn("В твоем голосе слышны нотки гордости. Лицо Рахи озарилось радостью, когда она это услышала.")
 
-		saynn("[say=rahi]Really? You think so?[/say]")
+		saynn("[say=rahi]Правда? Ты так думаешь?[/say]")
 
-		saynn("You nod and caress the girl's cheek.")
+		saynn("Ты киваешь и ласкаешь девушку по щеке.")
 
-		saynn("[say=pc]Yes. You've become an incredibly good domme, kitty. You know how to take control and make someone feel completely submissive.[/say]")
+		saynn("[say=pc]Да. Ты стала невероятно хорошей доминой, китти. Ты умеешь брать контроль в свои руки и заставлять кого-то чувствовать себя полностью покорным.[/say]")
 
-		saynn("Rahi couldn't contain her excitement. She jumps up and hugs you tightly.")
+		saynn("Рахи не смогла сдержать восторга. Она вскакивает и крепко обнимает тебя.")
 
-		saynn("[say=rahi]Thank you so much, {rahiMaster}! That means you don't need to pretend to be her.. training dummy anymore. Sorry it took so long..[/say]")
+		saynn("[say=rahi]Спасибо тебе огромное, {rahiMaster}! Значит, тебе больше не нужно притворяться её... тренировочным манекеном. Прости, что это заняло так много времени...[/say]")
 
-		saynn("Her words confuse you. But then you realize.")
+		saynn("Её слова сбивают тебя с толку. Но затем ты осознаёшь.")
 
-		saynn("[say=pc]Pretend?.. Kitty.. I wasn't pretending to be your sub.. I was actually subbing to you.. You're a natural domme, kitty.. I loved every second of our interactions.[/say]")
+		saynn("[say=pc]Притворяться?.. Китти... Я не притворялась твоей сабкой... Я действительно была тебе подчинена... Ты прирожденная домина, китти... Мне нравилась каждая секунда нашего взаимодействия.[/say]")
 
-		saynn("You hug her back.. just as tightly. Now it's kitty turn to be.. confused.")
+		saynn("Ты обнимаешь её в ответ... так же крепко. Теперь настала очередь китти... пребывать в замешательстве.")
 
-		saynn("[say=rahi]Really?.. She was just.. Doing what you showed her to do..[/say]")
+		saynn("[say=rahi]Правда?.. Она просто... делала то, чему ты её научила...[/say]")
 
-		saynn("You can't help but to chuckle.")
+		saynn("Ты невольно посмеиваешься.")
 
-		saynn("[say=pc]Kitty. You did so much more.. More than I taught you. Now.. Accept the compliment. And there is something else I want you to accept too..[/say]")
+		saynn("[say=pc]Кошечка. Ты сделала гораздо больше... Больше, чем я тебя учила. А теперь... Прими комплимент. И есть кое-что еще, что я хочу, чтобы ты приняла...[/say]")
 
-		saynn("Purring can be heard coming from Rahi. She nuzzles your cheek before finally breaking the hug.")
+		saynn("От Рахи доносится мурлыканье. Она прижимается носом к твоей щеке, прежде чем наконец разорвать объятия.")
 
-		saynn("[say=rahi]Thank you.. For teaching.. And being there.. She is grateful for all the experiences we shared..[/say]")
+		saynn("[say=rahi]Спасибо... За то, что учила... И за то, что была рядом... Она благодарна за весь тот опыт, что мы разделили на двоих...[/say]")
 
-		saynn("You nod. Now it's time for the second part..")
+		saynn("Ты киваешь. Пришло время для второй части...")
 
-		addButton("Kneel", "Submit to Miss Rahi", "submit_kneel")
+		addButton("Встать на колени", "Подчиниться мисс Рахи", "submit_kneel")
 	if(state == "submit_kneel"):
 		playAnimation(StageScene.Duo, "kneel", {npc="rahi"})
-		saynn("You slowly lower yourself to your knees before Rahi. Your gaze.. turning submissive.. but not fully.. your eyes still retain a bit of authority.. you hold your submissive and dominant sides.. in complete balance.")
+		saynn("Ты медленно опускаешься на колени перед Рахи. Твой взгляд становится покорным... но не до конца... в глазах всё еще читается капля властности... ты удерживаешь свои подчиненную и доминантную стороны в идеальном балансе.")
 
-		saynn("Rahi sees that.. it's such a new thing for her that she gets surprised.. But now you pick up on her posture becoming more confident, her dominant side returning and getting stronger.. Until it balances out her submissive one. She can do it too..")
+		saynn("Рахи замечает это... для неё это настолько в новинку, что она даже удивляется... Но вот ты видишь, как её осанка становится увереннее, её доминантная сторона возвращается и крепнет... пока не уравновешивает её покорную сторону. Она тоже на это способна...")
 
-		saynn("[say=pc]You have submitted to me, kitty. Willingly.. You gave me power over you. You let me order you around and control you. And now..[/say]")
+		saynn("[say=pc]Ты подчинилась мне, кошечка. Добровольно... Ты отдала мне власть над собой. Ты позволила мне командовать тобой и контролировать тебя. И теперь...[/say]")
 
-		saynn("You lower your head before Rahi. Your hands rest on your legs, palms directed up.. Showing that you have nothing to hide.")
+		saynn("Ты склоняешь голову перед Рахи. Твои руки лежат на коленях ладонями вверх... показывая, что тебе нечего скрывать.")
 
-		saynn("[say=pc]I want to submit to you.. I want.. No.. I need you to have power over me as well.. As much as you want.. Your dominance over me is absolute.. Miss Rahi.[/say]")
+		saynn("[say=pc]Я хочу подчиниться тебе... Я хочу... Нет... Мне нужно, чтобы ты владела мной... Настолько, насколько захочешь... Твоя власть надо мной абсолютна... Мисс Рахи.[/say]")
 
-		saynn("A few seconds of silence.. Seconds that get dragged on for way too long.. But you keep your pose completely still.. for Rahi.")
+		saynn("Несколько секунд тишины... Секунды, которые тянутся слишком долго... Но ты замираешь, не шелохнувшись... ради Рахи.")
 
-		saynn("You.. feel.. Rahi slowly walking towards you, raising your anticipation to the max. Then she leans in, tracing the lines of your face with her clawed digit. Then she whispers..")
+		saynn("Ты... чувствуешь... как Рахи медленно идет к тебе, доводя твое предвкушение до предела. Затем она наклоняется, очерчивая контуры твоего лица своим когтистым пальцем. И шепчет...")
 
-		saynn("[say=rahi]You.. are.. mine.. now..[/say]")
+		saynn("[say=rahi]Ты... теперь... мой...[/say]")
 
-		saynn("Your eyes widen from excitement, you feel a shiver of pleasure run down your spine. Rahi reaches with her paw and grabs your hair, pulling your head back before kissing you deeply, her rough feline tongue sliding past your lips and curling around yours, exchanging fluids.")
+		saynn("Твои глаза расширяются от возбуждения, ты чувствуешь, как по позвоночнику пробегает дрожь удовольствия. Рахи тянется лапой и хватает тебя за волосы, оттягивая твою голову назад, прежде чем глубоко поцеловать; её шершавый кошачий язык скользит сквозь твои губы, обвиваясь вокруг твоего, пока вы обмениваетесь слюной.")
 
-		saynn("After a single moment.. or an eternity.. who even knows.. Rahi breaks the kiss and steps back, letting go of your hair.")
+		saynn("Спустя мгновение... или вечность... кто знает... Рахи прерывает поцелуй и отступает, отпуская твои волосы.")
 
-		saynn("[say=rahi]I.. She.. will still be your kitty. Forever and ever. But, anytime you lose grip on her.. prepare to be dominated by Miss Rahi. I can switch instantly.[/say]")
+		saynn("[say=rahi]Она... она всё еще будет твоей кошечкой. Вечно и навечно. Но стоит тебе хоть на миг ослабить хватку... готовься к тому, что мисс Рахи возьмет верх. Я могу переключиться мгновенно.[/say]")
 
-		saynn("You establish eye contact with Rahi. She sees.. complete trust in your eyes.. You see the same. You nod silently.")
+		saynn("Ты встречаешься взглядом с Рахи. В твоих глазах она видит... полное доверие... В её глазах ты видишь то же самое. Ты молча киваешь.")
 
-		saynn("[say=rahi]One more thing..[/say]")
+		saynn("[say=rahi]И еще кое-что...[/say]")
 
-		saynn("You tilt your head, your interest is peaked.")
+		saynn("Ты наклоняешь голову, заинтригованный.")
 
-		saynn("[say=rahi]She wants to.. leave a mark on you.. You know. To claim you. If that's okay.[/say]")
+		saynn("[say=rahi]Она хочет... оставить на тебе след... Ну, ты понимаешь. Застолбить тебя. Если ты не против.[/say]")
 
-		saynn("That's asking for a lot. But the idea itself.. Is quite hot. You get excited just thinking about the ways she can mark you.")
+		saynn("Это много чего стоит. Но сама идея... чертовски горячая. Ты возбуждаешься от одной мысли о том, как именно она может тебя пометить.")
 
-		saynn("How would you like to be marked by Rahi?")
+		saynn("Как бы ты хотел, чтобы Рахи оставила на тебе свой след?")
 
-		addButton("No marking", "Well. Maybe you don't need a mark from Rahi", "submit_nomark")
-		addButton("Collar", "Have Rahi scratch some words onto your collar", "submit_collar")
+		addButton("Без меток", "Ну... может, тебе и не нужна метка от Рахи", "submit_nomark")
+		addButton("Ошейник", "Пусть Рахи выцарапает что-нибудь на твоем ошейнике", "submit_collar")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillMasochist")):
-			addButton("A bite", "(Masochist) Have Rahi mark you by biting your shoulder", "submit_bite")
+			addButton("Укус", "(Мазохист) Пусть Рахи отметит тебя, укусив за плечо", "submit_bite")
 		else:
-			addDisabledButton("A bite", "(Masochist) Rahi need to have the Masochist skill for this")
+			addDisabledButton("Укус", "(Мазохист) Рахи должна обладать навыком «Мазохист» для этого")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillWatersports")):
-			addButton("Get peed on", "(Watersports) Rahi marks you with her pee", "submit_watersports")
+			addButton("Тебя обтекают мочой", "(Вотерспорт) Рахи метит тебя своей мочой", "submit_watersports")
 		elif (OPTIONS.isContentEnabled(ContentType.Watersports)):
-			addDisabledButton("Get peed on", "(Watersports) Rahi needs to have the Watersports skill for this")
+			addDisabledButton("Тебя обтекают мочой", "(Вотерспорт) Рахи должна обладать навыком «Вотерспорт» для этого")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillExhibit") || getModule("RahiModule").isSkillLearned("rahiSkillPetplay")):
-			addButton("Get paraded", "(Exhibionism+Petplay) Rahi will let the whole prison know that you are her pet", "submit_parade")
+			addButton("Устроиться на парад", "(Эксгибиционизм+Petplay) Рахи даст всей тюрьме узнать, что ты её питомец", "submit_parade")
 		else:
-			addButton("Get paraded", "(Exhibionism+Petplay) Rahi needs to have one of these skills for this")
+			addButton("Устроиться на парад", "(Эксгибиционизм+Petplay) Рахи должна обладать хотя бы одним из этих навыков")
 	if(state == "submit_nomark"):
 		playAnimation(StageScene.Cuddling, "idle", {npc="rahi"})
-		saynn("Maybe being marked by your kitty isn't such a good idea.")
+		saynn("Может, быть помеченной твоей кошечкой — не самая лучшая идея...")
 
-		saynn("[say=pc]You left many marks on me, kitty. My heart especially.[/say]")
+		saynn("[say=pc]Ты оставила на мне столько меток, кошечка. Особенно в моем сердце.[/say]")
 
-		saynn("You slowly get up and embrace your kitty, your hands caressing her back. The dominant side of Rahi softens up while you do that.")
+		saynn("Ты медленно поднимаешься и обнимаешь свою кошечку, лаская её спину руками. В этот момент доминантная натура Рахи смягчается.")
 
-		saynn("[say=rahi]Yeah.. Maybe you're right..[/say]")
+		saynn("[say=rahi]Да.. Возможно, ты прав..[/say]")
 
-		saynn("She kisses your cheek and purrs in your hands.")
+		saynn("Она целует тебя в щеку и довольно мурлычет, пока ты держишь её в руках.")
 
-		saynn("You let the moment linger for a while longer.. maybe a few seconds.. maybe hours.. In the end you end up on the bed, cuddling.")
+		saynn("Ты позволяешь этому моменту продлиться еще немного.. может, несколько секунд.. а может, и часы.. В конце концов вы оказываетесь на кровати, обнимая друг друга.")
 
-		addButton("Continue", "That was cute", "endthescene")
+		addButton("Продолжить", "Это было мило", "endthescene")
 	if(state == "submit_collar"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
 		
-		saynn("You lower your head low, exposing your collar. And that gives Rahi an idea. She circles around you, her eyes scanning that bulky metal piece around your neck. The collar marks you as an inmate but it was plain and impersonal.")
+		saynn("Ты низко склоняешь голову, открывая свой ошейник. И это наводит Рахи на мысль. Она обходит тебя кругом, сканируя взглядом массивную металлическую штуку на твоей шее. Ошейник помечает тебя как заключенного, но он слишком простой и безличный.")
 
-		saynn("[say=rahi]Sit still.[/say]")
+		saynn("[say=rahi]Сиди смирно.[/say]")
 
-		saynn("Her voice is low and commanding. You listen, of course. Rahi reaches her paws out and gets a hold of your collar. She traces her claws along the surface, her touch gentle and yet firm. Seeing her claws so close to your throat makes you tense up. She picks a good spot on the front of the collar, a good visible spot.")
+		saynn("Ее голос звучит низко и властно. Ты, конечно, слушаешься. Рахи протягивает лапы и берется за твой ошейник. Она проводит когтями по поверхности — ее прикосновение нежное, но уверенное. Вид ее когтей так близко к твоему горлу заставляет тебя напрячься. Она выбирает подходящее место на передней части ошейника, чтобы его было хорошо видно.")
 
-		saynn("With a sudden motion, Rahi digs her claw into the metal of the collar, carving out the letters of her name in sharp, jagged lines. She obviously can't pierce the metal itself, only scratch off the top layer. But that's enough to leave a little message on it.")
+		saynn("Резким движением Рахи вонзает коготь в металл ошейника, выцарапывая буквы своего имени острыми, неровными линиями. Очевидно, она не может пробить сам металл, лишь содрать верхний слой. Но этого достаточно, чтобы оставить на нем небольшое послание.")
 
-		saynn("When she completes it, Rahi steps back, admiring her handiwork. Your collar now has the words \"Belongs to Miss Rahi\" roughly engraved into it for everyone to see. She rams her fingers over the metal.. and then over your cheek.. clearly pleased with how it turned out.")
+		saynn("Закончив, Рахи отступает назад, любуясь своей работой. Теперь на твоем ошейнике грубо выгравированы слова \"Принадлежит мисс Рахи\", чтобы все могли это видеть. Она проводит пальцами по металлу.. а затем по твоей щеке.. явно довольная результатом.")
 
-		saynn("[say=rahi]From now on.. You are.. Mine. And everyone will know it.[/say]")
+		saynn("[say=rahi]Отныне.. Ты.. мой. И все об этом узнают.[/say]")
 
-		saynn("She puts her clawed digit on your chin and invites you to get up. Then she hugs you.")
+		saynn("Она кладет когтистый палец тебе на подбородок, приглашая подняться. А затем обнимает тебя.")
 
-		saynn("[say=pc]Thank you Miss Rahi.[/say]")
+		saynn("[say=pc]Спасибо, мисс Рахи.[/say]")
 
-		saynn("You can hear purring coming from her.")
+		saynn("Вы слышите, как она довольно мурлычет.")
 
-		addButton("Continue", "That was cute", "endthescene")
+		addButton("Продолжить", "Это было мило", "endthescene")
 	if(state == "submit_bite"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
 		
-		saynn("You lower your head low, completely submitting. Seeing your exposed neck.. gives Rahi an idea. She circles around you, her confident eyes scanning for the best spot. Then she gets a hold of your collar and crouches before you, her free paw exposing more of your shoulder. Her eyes lock onto yours as she bares her sharp fangs, hovering just above your skin.")
+		saynn("Вы низко склоняете голову, полностью подчиняясь. Вид вашей открытой шеи... наводит Рахи на мысль. Она обходит вас кругом, уверенным взглядом выискивая лучшее место. Затем она берет вас за ошейник и приседает перед вами, свободной лапой обнажая ваше плечо. Её глаза впиваются в ваши, когда она скалит острые клыки, зависая прямо над вашей кожей.")
 
-		saynn("[say=rahi]Ready for this?[/say]")
+		saynn("[say=rahi]Готов к этому?[/say]")
 
-		saynn("Rahi purrs, there is excitement in her voice. You nod and hold your breath, bracing. Fear and desire battle inside you.")
+		saynn("Рахи мурлычет, в её голосе слышится азарт. Вы киваете и задерживаете дыхание, готовясь к удару. Внутри вас борются страх и желание.")
 
-		saynn("With a swift motion, Rahi sinks her teeth into your shoulder, just below your collar, until she draws blood. You gasp in pain.. but also in ecstasy.. the bond between you and Rahi grows stronger with each passing moment. Rahi uses her feline tongue to catch any blood and lick it up.")
+		saynn("Одним резким движением Рахи вонзает зубы в ваше плечо, чуть ниже ключицы, пока не проступает кровь. Вы ахаете от боли... но в то же время от экстаза... связь между вами и Рахи крепнет с каждым мгновением. Рахи использует свой кошачий язык, чтобы слизывать каждую каплю крови.")
 
-		saynn("She slowly retracts her fangs but continues to suckle on the wound, dragging her tongue over the deep bite marks that probably won't heal for at least a week. As she does that, you feel a rush of energy and power flowing through you.. making you feel alive.. and needed.")
+		saynn("Она медленно убирает клыки, но продолжает сосать рану, проводя языком по глубоким следам от укусов, которые, вероятно, не заживут как минимум неделю. Пока она это делает, вы чувствуете прилив энергии и силы, текущий сквозь вас... заставляющий вас чувствовать себя живым... и нужным.")
 
-		saynn("After she is done leaving her mark on you, Rahi wraps her paws around you and hugs. While you are still panting..")
+		saynn("Оставив на вас свою метку, Рахи обхватывает вас лапами и обнимает. Пока вы всё еще тяжело дышите...")
 
-		saynn("[say=rahi]Remember this moment..[/say]")
+		saynn("[say=rahi]Запомни этот момент...[/say]")
 
-		saynn("She purrs and leaves little kisses on you.")
+		saynn("Она мурлычет и осыпает вас короткими поцелуями.")
 
-		saynn("[say=rahi]You are.. mine now. Body and soul.[/say]")
+		saynn("[say=rahi]Теперь ты.. мой. Телом и душой.[/say]")
 
-		addButton("Continue", "That was cute", "endthescene")
+		addButton("Продолжить", "Это было мило", "endthescene")
 	if(state == "submit_watersports"):
 		playAnimation(StageScene.SexFeetPlay, "head", {pc="rahi", npc="pc", bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Rahi stares at you for some time. Then she bites her lip when a good idea comes up in her mind.")
+		saynn("Рахи какое-то время пристально смотрит на тебя. Затем она закусывает губу, когда в её голове рождается отличная идея.")
 
-		saynn("[say=rahi]Lie down![/say]")
+		saynn("[say=rahi]Ложись![/say]")
 
-		saynn("Her voice is low and commanding. You listen, of course, and get on your back. Rahi crouches and makes sure all your privates are exposed. Then she pulls down her own shorts, exposing her slightly-moist pussy for you. Your hand reaches towards it, sliding over Rahi's fluffy leg but she stops by pinning you to the ground with her foot. Her face has a smug grin on it, she moves her paw to her slit and spreads the petals open before trying to force something to happen..")
+		saynn("Её голос звучит низко и властно. Ты, разумеется, слушаешься и ложишься на спину. Рахи приседает и проверяет, чтобы все твои причиндалы были на виду. Затем она стягивает свои шорты, обнажая перед тобой свою слегка влажную киску. Твоя рука тянется к ней, скользя по пушистой ноге Рахи, но та останавливает тебя, прижимая к земле своей ступней. На её лице играет самодовольная ухмылка; она подносит лапку к своей щели и раздвигает лепестки, пытаясь заставить процесс начаться...")
 
-		saynn("[say=rahi]Hope you.. you're.. rea.. ah!..[/say]")
+		saynn("[say=rahi]Надеюсь.. ты.. ре.. ах!..[/say]")
 
-		saynn("Suddenly, Rahi releases a hot stream of urine onto your face and into your mouth, marking you with her scent and fluids! As you struggle to swallow and endure the humiliation, Rahi moans softly as she takes her time emptying her bladder.")
+		saynn("Внезапно Рахи выпускает горячую струю мочи тебе прямо на лицо и в рот, помечая тебя своим запахом и жидкостью! Пока ты пытаешься сглотнуть и вытерпеть это унижение, Рахи тихо стонет, не спеша опорожнять мочевой пузырь.")
 
-		saynn("After your face receives enough of it, Rahi turns slightly and now offers a golden shower for the rest of your body, the warm liquid splattering over your chest and running down your curves. She can't help but to chuckle softly, watching you squirm under her.")
+		saynn("Когда твое лицо получает достаточно порции, Рахи слегка поворачивается и устраивает золотой дождь на всё остальное твое тело; теплая жидкость разбрызгивается по твоей груди и стекает по изгибам твоего тела. Она не может сдержать тихого смешка, наблюдая за тем, как ты корчишься под ней.")
 
-		saynn("After the final drop of piss lands on you, Rahi rubs her pisshole with her digits. Then she brings them to her lips and licks them clean. All the while you just lay there.. covered in her gross-smelling urine..")
+		saynn("Когда на тебя падает последняя капля мочи, Рахи потирает свое отверстие пальцами. Затем она подносит их к губам и слизывает их дочиста. А ты всё это время просто лежишь.. покрытый её вонючей мочой...")
 
-		saynn("[say=rahi]There you go.. She marked you, making you her property.. Did you enjoy it?[/say]")
+		saynn("[say=rahi]Вот и всё.. Она пометила тебя, сделав своей собственностью.. Тебе понравилось?[/say]")
 
-		saynn("You nod.. feeling both humiliated and incredibly turned on at the same time.. You wouldn't have it any other way..")
+		saynn("Ты киваешь... чувствуя одновременно и унижение, и невероятное возбуждение... Иначе бы ты и не хотел...")
 
-		saynn("[say=rahi]Well. Go get a shower then.. Or not.[/say]")
+		saynn("[say=rahi]Ну что ж. Иди в душ... А если не хочешь — не иди.[/say]")
 
-		addButton("Continue", "That was cute", "endthescene")
+		addButton("Продолжить", "Это было мило", "endthescene")
 	if(state == "submit_parade"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", bodyState={naked=true}})
-		saynn("Rahi looks down at you for some time, a devious idea slowly getting born in her head.")
+		saynn("Рахи какое-то время смотрит на тебя сверху вниз, и в её голове медленно рождается коварная идея.")
 
 		if (!GM.pc.isFullyNaked()):
-			saynn("[say=rahi]Strip![/say]")
+			saynn("[say=rahi]Раздевайся![/say]")
 
-			saynn("Rahi commands.. And you obey, taking off your clothes and putting them in a neat pile nearby.")
+			saynn("Приказывает Рахи... И ты повинуешься, снимая одежду и складывая её аккуратной кучкой неподалеку.")
 
-		saynn("Suddenly the feline produces a chain leash and clips it to your collar in one smooth motion. That's.. concerning.")
+		saynn("Внезапно эта кошечка достает цепь на поводке и одним плавным движением пристегивает её к твоему ошейнику. Это... настораживает.")
 
-		saynn("[say=rahi]Get up. We're going for a walk, pet.[/say]")
+		saynn("[say=rahi]Вставай. Мы идем на прогулку, питомец.[/say]")
 
-		saynn("Oh no. Usually the games where you submit to Rahi don't go further than her cell. But now Rahi wants to change that.. The more you deliberate, the tighter her grip is on the leash. She pulls up on it, inviting you to obey.")
+		saynn("О нет. Обычно игры, в которых ты подчиняешься Рахи, не выходят за пределы её камеры. Но теперь Рахи хочет это изменить... Чем дольше ты медлишь, тем крепче она сжимает поводок. Она тянет его вверх, призывая тебя к повиновению.")
 
-		saynn("[say=rahi]C'mon, she can't wait to show everyone her new pet.[/say]")
+		saynn("[say=rahi]Давай же, ей не терпится показать всем своего нового питомца.[/say]")
 
-		saynn("You gulp and slowly get up. Kitty steps out of the cell and tugs on the leash more..")
+		saynn("Ты сглатываешь слюну и медленно поднимаешься. Кити выходит из камеры и снова тянет за поводок...")
 
-		addButton("Follow", "See where she brings you..", "submit_parade_show")
+		addButton("Следовать", "Посмотрим, куда она тебя приведет...", "submit_parade_show")
 	if(state == "submit_parade_show"):
 		playAnimation(StageScene.Duo, "allfours", {npc="rahi", bodyState={naked=true}})
 		aimCameraAndSetLocName("main_punishment_spot")
-		saynn("Rahi exits her cell and confidently walks you through the general pop block, leash in her paw with you on the other end of it. You walk with your head bowed, face blushing from shame. Rahi's eyes shine with satisfaction as she leads you past some other inmates, their gazes are all glued to you.")
+		saynn("Рахи выходит из камеры и уверенно ведет тебя через общий блок. В лапе у нее поводок, на другом конце которого — ты. Ты идешь, низко опустив голову, а твое лицо пылает от стыда. Глаза Рахи сияют от удовлетворения, пока она ведет тебя мимо других заключенных, чьи взгляды прикованы к тебе.")
 
-		saynn("Eventually kitty brings you out into the main hall where everyone usually hangs out. She climbs the main platform that has all the benches and pillories. She turns to you.")
+		saynn("В конце концов, кошечка выводит тебя в главный зал, где обычно тусуются все обитатели. Она взбирается на главную платформу, уставленную скамьями и колодками, и поворачивается к тебе.")
 
-		saynn("[say=rahi]Get on all fours.. She wants to see a happy obedient puppy.[/say]")
+		saynn("[say=rahi]Встань на четвереньки... Она хочет видеть счастливого, послушного песика.[/say]")
 
-		saynn("You deliberate.. a lot. Your {pc.privates} are all on display, no matter how much you try to hide them.")
+		saynn("Ты долго... очень долго раздумываешь. Твои {pc.privates} на виду, как бы ты ни пытался их спрятать.")
 
-		saynn("[say=pc]Maybe let's go back instead?..[/say]")
+		saynn("[say=pc]Может, лучше вернемся?..[/say]")
 
-		saynn("Instead of listening to you, Rahi smiles and turns away.")
+		saynn("Вместо того чтобы слушать тебя, Рахи лишь улыбается и отворачивается.")
 
-		saynn("[say=rahi]Look at her pet! {pc.He} is so obedient and well-trained![/say]")
+		saynn("[say=rahi]Посмотрите на ее питомца! {pc.He} такой послушный и дрессированный![/say]")
 
-		saynn("She was loud enough for everyone to hear. All the while kitty keeps tugging down on the leash.. you finally submit, slowly lowering yourself to all fours.")
+		saynn("Она крикнула достаточно громко, чтобы услышали все. Все это время кошечка продолжала тянуть за поводок... и ты наконец сдаешься, медленно опускаясь на четвереньки.")
 
-		saynn("All sorts of inmates crowd around you. Some pat you on the head and ruffle your hair. Some just taunt you, calling you a \"Good {pc.boy}\". It's humiliating.. but you can't deny that being patted and receiving scritches is kinda nice..")
+		saynn("Вокруг тебя собирается толпа заключенных. Кто-то похлопывает тебя по голове и взъерошивает волосы. Кто-то просто издевается, называя тебя \"хорошим {pc.boy}\". Это унизительно... но ты не можешь отрицать, что когда тебя гладят и чешут за ушком, это даже приятно...")
 
-		saynn("Rahi grins, watching you squirm with embarrassment. She crouches near you and wraps the leash around her wrist many times, making it super short. Inmates around asking if they can take you for a walk or breed you.")
+		saynn("Рахи ухмыляется, наблюдая за тем, как ты корчишься от смущения. Она приседает рядом и несколько раз обматывает поводок вокруг запястья, делая его совсем коротким. Окружающие заключенные спрашивают, можно ли вывести тебя на прогулку или спариться с тобой.")
 
-		saynn("[say=rahi]You like that, don't you? You like being her little bitch? Her property.[/say]")
+		saynn("[say=rahi]Тебе ведь нравится, правда? Нравится быть её маленькой сучкой? Её собственностью?[/say]")
 
-		saynn("You whimper, unable to meet her gaze.")
+		saynn("Ты скулишь, не в силах выдержать её взгляд.")
 
-		saynn("Rahi continues to parade you through the prison, with you crawling on all fours this time. She would show you off to anyone who would look. And let them pet you of course.")
+		saynn("Рахи продолжает выставлять тебя напоказ по всей тюрьме, на этот раз заставляя ползать на четвереньках. Она готова демонстрировать тебя любому, кто посмотрит в вашу сторону. И, конечно, позволяет им гладить тебя.")
 
-		addButton("Continue", "See what happens next", "submit_parade_end")
+		addButton("Продолжить", "Смотреть, что будет дальше", "submit_parade_end")
 	if(state == "submit_parade_end"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="rahi", npc="pc", npcBodyState={naked=true}})
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
-		saynn("Eventually you make your way back to Rahi's cell. The feline lays down on her bed and pulls you close to her. You can feel her hot breath near your ears. She puts her paws on you and cuddles you.")
+		saynn("В конце концов вы возвращаетесь в камеру к Рахи. Кошка ложится на свою кровать и притягивает тебя к себе. Ты чувствуешь её горячее дыхание у самого уха. Она кладет на тебя лапы и начинает ласкать тебя.")
 
-		saynn("[say=rahi]Sorry if that was too much, puppy..[/say]")
+		saynn("[say=rahi]Прости, если это было слишком чересчур, щенок...[/say]")
 
-		saynn("You lower your head.")
+		saynn("Ты опускаешь голову.")
 
-		saynn("[say=pc]No.. it was.. okay..[/say]")
+		saynn("[say=pc]Нет... всё было... нормально...[/say]")
 
-		saynn("She purrs and nuzzles your cheek.")
+		saynn("Она мурлычет и тычется носом в твою щеку.")
 
-		saynn("[say=rahi]But now everyone knows that you're.. mine. She didn't even had to bite or scratch you.[/say]")
+		saynn("[say=rahi]Но теперь все знают, что ты... моя. Ей даже не пришлось тебя кусать или царапать.[/say]")
 
-		saynn("Her paw pats you on the head. You keep cuddling for a while..")
+		saynn("Её лапа похлопывает тебя по голове. Вы ещё какое-то время продолжаете обниматься..")
 
-		addButton("Continue", "That was cute", "endthescene")
+		addButton("Продолжить", "Это было мило", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

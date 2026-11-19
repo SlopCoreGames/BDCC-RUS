@@ -12,11 +12,11 @@ func _run():
 		playAnimation(StageScene.StocksSexOral, "tease", {npc="eliza"})
 		# (if can see)
 		if(!GM.pc.isBlindfolded()):
-			saynn("You see a familiar doctor walking past you. She notices you and walks up to you.")
+			saynn("Вы видите знакомого врача, проходящую мимо. Она замечает вас и направляется к вам.")
 
 		# (if can’t see)
 		else:
-			saynn("You can hear some heels walking past you. Through, whoever that is, it seems they noticed you and stopped.")
+			saynn("Вы слышите цокот каблуков мимо вас. Кто бы это ни был, кажется, этот человек заметил вас и остановился.")
 
 		saynn("[say=eliza]"+RNG.pick([
 			"Oh hey there. Nice to see you again.",
@@ -28,13 +28,13 @@ func _run():
 
 		# (if gagged)
 		if(GM.pc.isGagged()):
-			saynn("You try to say something but can only make muffled noises with your gag. Eliza chuckles and pets your head before leaving.")
+			saynn("Вы пытаетесь что-то сказать, но из-за кляпа выходят лишь невнятные звуки. Элиза посмеивается и гладит вас по голове, прежде чем уйти.")
 
 		# (if not gagged)
 		else:
-			saynn("You feel slightly humiliated so you don’t say anything. Eliza chuckles and pets you on the head before leaving.")
+			saynn("Вы чувствуете легкое унижение, поэтому предпочитаете молчать. Элиза посмеивается и ласково гладит вас по голове, прежде чем уйти.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 

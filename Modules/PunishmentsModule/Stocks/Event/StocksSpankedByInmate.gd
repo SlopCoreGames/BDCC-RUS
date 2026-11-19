@@ -17,21 +17,21 @@ func _run():
 	if(state == ""):
 		# (if can see)
 		if(!GM.pc.isBlindfolded()):
-			saynn("You can feel someone walking towards you from behind. You try to look back but can only catch glimpses of an inmate uniform.")
+			saynn("Ты чувствуешь, что кто-то идет к тебе сзади. Ты пытаешься оглянуться, но успеваешь лишь мельком увидеть полосатую форму заключенного.")
 
 		# (if blind)
 		else:
-			saynn("You can feel someone walking towards you. You can’t even tell who with that blindfold, you only hear footsteps.")
+			saynn("Ты чувствуешь, что кто-то приближается. Из-за повязки на глазах невозможно понять, кто это — ты слышишь только шаги.")
 
-		saynn("Suddenly you feel a hand slapping your {pc.thick} butt! Ow. You try to cover yourself but no, you are completely helpless.")
+		saynn("Внезапно ты чувствуешь, как чья-то рука шлепает тебя по {pc.thick} заднице! Ой! Ты пытаешься прикрыться, но нет — ты совершенно беспомощна.")
 
 		# (one of these)
 		if(RNG.chance(20)):
-			saynn("You can hear a male humming.")
+			saynn("Ты слышишь, как какой-то мужчина что-то напевает под нос.")
 
 		# (another)
 		elif(RNG.chance(20)):
-			saynn("You can hear a male chuckle.")
+			saynn("Ты слышишь мужской смешок.")
 
 		# (another)
 		else:
@@ -45,31 +45,31 @@ func _run():
 				"Your butt is pretty soft.",
 			])+"[/sayMale]")
 
-		saynn("The inmate puts his hands on you and gropes your rear before giving it another firm spank, making your butt jiggle. You let out a muffled noise.")
+		saynn("Заключенный кладет на тебя руки и начинает тискать твою задницу, а затем отвешивает еще один крепкий шлепок, от которого твои ягодицы затряслись. Ты издаешь приглушенный стон.")
 
 		# (if has vagina && chance)
 		if(GM.pc.hasReachableVagina() && RNG.chance(50)):
 			# (if clothed)
 			if(!GM.pc.isFullyNaked()):
-				saynn("His hand lands on your crotch and rubs it. You can feel his digits digging into the fabric. You try to close your legs but he just spanks you again and forces them open. You moan softly as he teases you..")
+				saynn("Его рука ложится тебе на промежность и начинает тереться. Ты чувствуешь, как его пальцы впиваются в ткань. Ты пытаешься свести ноги, но он лишь снова шлепает тебя и силой раздвигает их. Ты тихо стонешь, пока он дразнит тебя...")
 
 			# (if naked)
 			else:
-				saynn("His hand reaches down to your crotch area, you can feel his digits tracing around your exposed cunt. You try to close your legs but he just spanks you again and forces them open. You moan softly as he teases you..")
+				saynn("Его рука опускается к твоей промежности; ты чувствуешь, как его пальцы очерчивают контуры твоей обнаженной киски. Ты пытаешься свести ноги, но он лишь снова шлепает тебя и силой раздвигает их. Ты тихо стонешь, пока он дразнит тебя...")
 
 		# (if has cock && chance)
 		if(GM.pc.hasReachablePenis() && RNG.chance(50)):
 			# (if clothed)
 			if(!GM.pc.isFullyNaked()):
-				saynn("Then his hand slides down to your bulge, digits dig into the cloth and give your ballsack a gentle squeeze. Then he starts stroking you out through the clothing, sliding his hand back and forth. It’s arousing.")
+				saynn("Затем его рука скользит вниз, к твоему бугорку; пальцы впиваются в ткань и слегка сжимают твой мошонку. После этого он начинает ласкать тебя прямо через одежду, водя рукой взад-вперед. Это чертовски возбуждает.")
 
 			# (if naked)
 			else:
-				saynn("Then his hand slides to your {pc.cock}. He gathers your balls into his hand and gives them a gentle squeeze. Then his digits wrap around your shaft and start stroking you, very teasingly. It’s so arousing.")
+				saynn("Затем его рука скользит к твоей {pc.cock}. Он берет твои яйца в ладонь и слегка сжимает их. Затем его пальцы обхватывают твой член и начинают дразняще ласкать его. Это так возбуждает!")
 
-		saynn("He gives another few spanks, each one harder than the last, until he starts to see red shine. Then he chuckles and leaves you alone. You certainly got turned on more than off.")
+		saynn("Он отвешивает еще несколько шлепков, каждый всё сильнее и сильнее, пока перед глазами не начинают плясать красные искры. Затем он усмехается и оставляет тебя в покое. Ты определенно возбудился, а не разозлился.")
 
-		addButton("Continue", "Ow", "endthescene")
+		addButton("Продолжить", "Ow", "endthescene")
 
 func _react(_action: String, _args):
 

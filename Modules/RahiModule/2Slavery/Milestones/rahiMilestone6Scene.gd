@@ -7,304 +7,304 @@ func _run():
 	if(state == ""):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="stand"})
-		saynn("A quiet day. You enter Rahi's cell and see her scribbling something on one of the walls with her claws. You approach her as sneakily as possible and look over her shoulder. Your kitty has scribbled \"Rahi + {rahiMaster} = \" and that's it for now. She also added a kitty face :3")
+		saynn("Тихий день. Ты заходишь в камеру к Рахи и видишь, как она что-то чертит когтями на одной из стен. Ты подкрадываешься к ней как можно незаметнее и заглядываешь ей через плечо. Твоя киска нацарапала \"Рахи + {rahiMaster} = \", и на этом пока всё. А ещё она добавила мордочку котика :3")
 
-		saynn("[say=pc]Interesting art.[/say]")
+		saynn("[say=pc]Интересное искусство.[/say]")
 
-		saynn("Rahi gasps as she turns around and sees you.")
+		saynn("Рахи ахает, резко оборачиваясь и видя тебя.")
 
-		saynn("[say=rahi]T-thanks.. Hope you are doing alright, {rahiMaster}..[/say]")
+		saynn("[say=rahi]С-спасибо.. Надеюсь, у тебя всё хорошо, {rahiMaster}..[/say]")
 
-		saynn("You reach your hand out to caress Rahi's cheek.")
+		saynn("Ты протягиваешь руку, чтобы ласково погладить Рахи по щеке.")
 
-		saynn("[say=pc]I am. Why didn't you finish the writing, kitty?[/say]")
+		saynn("[say=pc]У меня всё хорошо. Почему ты не закончила запись, киска?[/say]")
 
-		saynn("Rahi purrs and nuzzles into your hand but then lowers her head. Kitty's voice sounds a little on the sad side.")
+		saynn("Рахи мурлычет и прижимается к твоей ладони, но затем опускает голову. Голос кошечки звучит немного грустно.")
 
-		saynn("[say=rahi]She just.. she is still not sure.. about.. you know.. all of this.. Who is she to you?..[/say]")
+		saynn("[say=rahi]Она просто.. она всё ещё не уверена.. насчёт.. ну, знаешь.. всего этого.. Кто она для тебя?..[/say]")
 
-		saynn("[say=pc]You're my kitty.[/say]")
+		saynn("[say=pc]Ты моя киска.[/say]")
 
-		saynn("Rahi smiles softly but then gets sad again.")
+		saynn("Рахи мягко улыбается, но затем снова становится грустной.")
 
-		saynn("[say=rahi]Yeah, but.. Is that all?..[/say]")
+		saynn("[say=rahi]Да, но... это всё?..[/say]")
 
-		saynn("A few seconds of awkward silence.")
+		saynn("Несколько секунд неловкого молчания.")
 
-		saynn("[say=rahi]Sorry.. don't worry about it..[/say]")
+		saynn("[say=rahi]Прости... не бери в голову...[/say]")
 
-		saynn("You wrap your hands around her girly frame and pull closer to you. A few tears stream down her cheeks.")
+		saynn("Ты обхватываешь руками её хрупкое девичье тело и притягиваешь ближе к себе. По её щекам катятся слезы.")
 
-		saynn("[say=pc]Let's cuddle and figure it out together, kitty?[/say]")
+		saynn("[say=pc]Давай пообнимаемся и во всём разберемся вместе, кошечка?[/say]")
 
-		saynn("She buries her head into your chest and hugs you back.")
+		saynn("Она утыкается головой тебе в грудь и обнимает тебя в ответ.")
 
-		saynn("Suddenly you hear footsteps, lots of them.. And they're getting closer..")
+		saynn("Внезапно ты слышишь шаги, и их много... И они становятся всё ближе...")
 
-		addButton("Continue", "See what happens next", "eliza_walks_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_walks_in")
 	if(state == "eliza_walks_in"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("Doctor Quinn steps into the cell, followed by a few armored nurses. A familiar sight.")
+		saynn("В камеру входит доктор Куинн, за ней следуют несколько медсестер в броне. Знакомая картина.")
 
-		saynn("[say=eliza]Did I catch you during an emotional moment? My bad. But it's time we do something about all of this.[/say]")
+		saynn("[say=eliza]Я застала вас в эмоциональный момент? Мой косяк. Но пора с этим что-то делать.[/say]")
 
-		saynn("Eliza crosses her arms, her little gang blocking the only exit for you two. As you turn towards them, Rahi keeps hugging you and letting you be her shield.")
+		saynn("Элиза скрещивает руки на груди, а её маленькая банда перекрывает вам двоим единственный выход. Когда ты поворачиваешься к ним, Рахи продолжает обнимать тебя, используя тебя как свой щит.")
 
-		saynn("[say=pc]We don't have to do anything.[/say]")
+		saynn("[say=pc]Нам не обязательно что-то предпринимать.[/say]")
 
-		saynn("[say=eliza]Oh, please, save it. I allowed you two to get away with everything that you did for way too long.[/say]")
+		saynn("[say=eliza]Ой, да брось, не разыгрывай драму. Я слишком долго позволяла вам двоим сходить с рук всё, что вы творили.[/say]")
 
-		saynn("Eliza slowly steps closer to you while Rahi grabs onto you harder.")
+		saynn("Элиза медленно делает шаг к тебе, пока Рахи сжимает тебя ещё крепче.")
 
-		saynn("[say=eliza]I wanted to see what would happen. And, to be fair, you did help her, mentally. But let us take it from here and heal her body before the scars become permanent.[/say]")
+		saynn("[say=eliza]Мне хотелось посмотреть, что будет. И, если честно, ты тоже помогал ей — морально. Но позволь нам взять дело в свои руки и подлечить её тело, пока шрамы не стали вечными.[/say]")
 
-		saynn("She wants to throw Rahi into the cryopod. And since your kitty is still not too enthusiastic about it, you feel like you must protect her.")
+		saynn("Она хочет засунуть Рахи в криокапсулу. И раз уж твоя киска всё ещё не в восторге от этой идеи, ты чувствуешь, что обязан её защитить.")
 
-		saynn("[say=pc]You're not gonna do anything to her. Get out.[/say]")
+		saynn("[say=pc]Ты ничего с ней не сделаешь. Проваливай![/say]")
 
-		saynn("Eliza rolls her eyes and returns to her nurses.")
+		saynn("Элиза закатывает глаза и возвращается к своим медсёстрам.")
 
-		saynn("[say=eliza]If you two don't wanna play nice I can just..[/say]")
+		saynn("[say=eliza]Если вы двое не хотите играть по правилам, я могу просто...[/say]")
 
-		saynn("Suddenly Rahi cuts Eliza off.")
+		saynn("Внезапно Рахи перебивает Элизу.")
 
-		saynn("[say=rahi]Alright, let's go do it..[/say]")
+		saynn("[say=rahi]Ладно, пошли сделаем это...[/say]")
 
-		saynn("Rahi steps out from behind you and walks up to doctor Quinn. Both you and Eliza are confused.")
+		saynn("Рахи выходит из-за твоей спины и подходит к доктору Куинн. И ты, и Элиза в замешательстве.")
 
-		saynn("[say=rahi]What?.. She wants this, having a big scar across your whole belly gets old fast..[/say]")
+		saynn("[say=rahi]Что?.. Она сама этого хочет. Огромный шрам через весь живот быстро надоедает..[/say]")
 
-		saynn("Eliza stops crossing her arms and tilts her head slightly.")
+		saynn("Элиза перестает скрещивать руки на груди и слегка наклоняет голову.")
 
-		saynn("[say=eliza]That was easier than I thought. Huh.[/say]")
+		saynn("[say=eliza]Это было проще, чем я думала. Хм.[/say]")
 
-		saynn("[say=rahi]One condition. Kitty wants {pc.him} around, okay?[/say]")
+		saynn("[say=rahi]Одно условие. Китти должна быть {pc.him} рядом, идет?[/say]")
 
-		saynn("Rahi points at you. Eliza shrugs.")
+		saynn("Рахи указывает на тебя. Элиза пожимает плечами.")
 
-		saynn("[say=eliza]Sure, as long as this is not some plan to steal more of my equipment.[/say]")
+		saynn("[say=eliza]Ладно, если только это не очередной план по краже моего оборудования.[/say]")
 
-		saynn("[say=rahi]It's not, let's go.[/say]")
+		saynn("[say=rahi]Нет, идем.[/say]")
 
-		saynn("Rahi steps past Eliza and all her nurses, walking out of the cell. Eliza stares at you for a bit before following.")
+		saynn("Рахи проходит мимо Элизы и всех её медсестер, выходя из камеры. Элиза некоторое время пристально смотрит на тебя, прежде чем последовать за ней.")
 
-		addButton("Follow", "See where they bring you", "enter_biotech_lab")
+		addButton("Следовать", "Посмотри, куда они тебя поведут", "enter_biotech_lab")
 	if(state == "enter_biotech_lab"):
 		addCharacter("rahi", ["naked"])
 		aimCameraAndSetLocName("med_researchlab")
 		playAnimation(StageScene.Duo, "stand", {pc="rahi", bodyState={naked=true}, npc="eliza"})
-		saynn("You, Rahi, doctor Quinn and some nurses enter the elevator and arrive at the medbay. Eliza opens the staff-only doors and walks you to the biotech laboratory. A sterile white room that has plenty of different equipment.")
+		saynn("Вы, Рахи, доктор Куинн и несколько медсестер заходите в лифт и прибываете в медблок. Элиза открывает двери для персонала и ведет вас в биотехнологическую лабораторию — стерильную белую комнату, заставленную самым разным оборудованием.")
 
-		saynn("Doctor Quinn sends nurses away and presents you with a big glass tube with an attached machine.")
+		saynn("Доктор Куинн отправляет медсестер, после чего демонстрирует вам большую стеклянную капсулу с подключенным к ней аппаратом.")
 
-		saynn("[say=eliza]I want you to undress while I prepare everything, Rahi.[/say]")
+		saynn("[say=eliza]Пока я всё подготовлю, раздевайся, Рахи.[/say]")
 
-		saynn("She starts tapping away at some keyboard, causing the machine to spring into the action. All the while Rahi takes her time undressing, exposing her bits and also the big nasty surgical scar that still didn't heal despite everything.")
+		saynn("Она начинает быстро стучать по клавишам, и машина приходит в движение. Тем временем Рахи не спеша раздевается, обнажая свои прелести и тот огромный уродливый хирургический шрам, который так и не зажил, несмотря на все усилия.")
 
-		saynn("[say=pc]You sure, kitty?[/say]")
+		saynn("[say=pc]Ты уверена, Китти?[/say]")
 
-		saynn("[say=rahi]Yeah.. Kinda..[/say]")
+		saynn("[say=rahi]Да... Вроде того...[/say]")
 
-		saynn("Rahi holds onto your hand and waits until Eliza prepares everything.")
+		saynn("Рахи сжимает вашу руку и ждет, пока Элиза всё подготовит.")
 
-		saynn("[say=eliza]You're gonna put this breathing mask on and step inside. The tube will start filling up with something warm and heavy. It's not water.[/say]")
+		saynn("[say=eliza]Надень эту дыхательную маску и заходи внутрь. Капсула начнет наполняться чем-то теплым и тяжелым. Это не вода.[/say]")
 
-		saynn("[say=rahi]Okay..[/say]")
+		saynn("[say=rahi]Хорошо...[/say]")
 
-		saynn("Doctor carefully puts a breathing mask on Rahi that has a tube leading to it.")
+		saynn("Доктор осторожно надевает на Рахи дыхательную маску, соединенную трубкой с аппаратом.")
 
-		saynn("[say=eliza]You will want to fall asleep at some point. Don't fight it, we will control everything.[/say]")
+		saynn("[say=eliza]В какой-то момент тебе захочется уснуть. Не сопротивляйся, мы будем всё контролировать.[/say]")
 
-		saynn("Rahi looks at you from up close for the last time before stepping into the empty glass tube. Eliza does it too to quickly connect Rahi's mask to the port in the ceiling. Rahi is now breathing air that the machine supplies to her.")
+		saynn("Рахи в последний раз пристально смотрит на вас, прежде чем войти в пустую стеклянную капсулу. Элиза делает то же самое, чтобы быстро подсоединить маску Рахи к порту в потолке. Теперь Рахи дышит воздухом, который подает ей машина.")
 
-		addButton("Continue", "See what happens next", "rahi_gets_healed")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_gets_healed")
 	if(state == "rahi_gets_healed"):
 		playAnimation(StageScene.Cryopod, "idle", {pc="rahi", bodyState={naked=true}})
-		saynn("Eliza presses a button that closes the cryopod and starts some process.")
+		saynn("Элиза нажимает на кнопку, от которой криокапсула закрывается, и запускается какой-то процесс.")
 
-		saynn("Some kind of blue fluid begins filling the empty space inside. Kitty looks down at it and.. just stands still, letting it tickle her feet.")
+		saynn("Внутреннее пространство начинает заполняться какой-то синей жидкостью. Китти смотрит вниз на неё и... просто замирает, позволяя жидкости щекотать ей ступни.")
 
-		saynn("[say=pc]Why is it called a cryopod if.. it's warm?[/say]")
+		saynn("[say=pc]Почему это называют криокапсулой, если.. внутри тепло?[/say]")
 
-		saynn("Doctor is staring at the console.")
+		saynn("Доктор пристально смотрит на консоль.")
 
-		saynn("[say=eliza]Because.[/say]")
+		saynn("[say=eliza]Потому что.[/say]")
 
-		saynn("Quinn presses a button and the level of the blue fluid begins to rise faster, already reaching Rahi's knees.. thighs.. crotch. It clearly tickles her.")
+		saynn("Куинн нажимает кнопку, и уровень синей жидкости начинает подниматься быстрее, уже достигнув колен.. бёдер.. паха Рахи. Очевидно, что это щекочет её.")
 
-		saynn("[say=eliza]When it was invented, it was used to lower the patient's body temperature as close to zero kelvin as the universe allows. That pretty much stops any internal processes, helps if the situation is close to critical, buys you time.[/say]")
+		saynn("[say=eliza]Когда её изобрели, она использовалась для того, чтобы снизить температуру тела пациента до максимально близкой к абсолютному нулю, насколько это позволяет вселенная. Это практически останавливает любые внутренние процессы, помогает, если ситуация критическая, и дает вам время.[/say]")
 
-		saynn("Eliza makes sure the screen doesn't show anything bad and just stares at Rahi from now on. The fluid has already reached her neck, making her.. float.. above the floor. Your kitty seems quite surprised by that fact. But she is holding just fine otherwise.")
+		saynn("Элиза проверяет, чтобы на экране не отображалось ничего плохого, и с этого момента просто не сводит глаз с Рахи. Жидкость уже достигла её шеи, заставляя её.. парить.. над полом. Твоя киска, кажется, изрядно удивлена этим фактом. Но в остальном она держится молодцом.")
 
-		saynn("[say=eliza]But then we realized that we can do the opposite and speed up the recovery. The name stuck though.[/say]")
+		saynn("[say=eliza]Но потом мы поняли, что можем делать наоборот — ускорять восстановление. Хотя название так и приклеилось.[/say]")
 
-		saynn("Rahi closes her eyes as her head gets fully submerged under the heavy blue liquid. Then she dares to open her eyes again and realizes that it's not that bad. Eliza taps at the glass and shows an 'ok' sign to Rahi. She responds with the same one.")
+		saynn("Рахи закрывает глаза, когда её голова полностью погружается в тяжелую синюю жидкость. Затем она осмеливается снова открыть глаза и понимает, что всё не так уж плохо. Элиза постукивает по стеклу и показывает Рахи жест «ок». Та отвечает ей тем же.")
 
-		saynn("[say=eliza]She can't hear us anymore. But it seems everything is going well, the process has begun.[/say]")
+		saynn("[say=eliza]Она нас больше не слышит. Но, похоже, всё идёт по плану, процесс начался.[/say]")
 
-		saynn("Hard to tell if Rahi's scar is healing. But something is happening for sure. Very soon the kitty falls asleep, just floating inside.")
+		saynn("Трудно сказать, заживает ли шрам Рахи. Но что-то определённо происходит. Совсем скоро кошечка уснёт, просто паря внутри.")
 
-		saynn("[say=eliza]So. How did you manage to do that?[/say]")
+		saynn("[say=eliza]Итак. Как тебе это удалось?[/say]")
 
-		saynn("[say=pc]Manage what?[/say]")
+		saynn("[say=pc]Что именно удалось?[/say]")
 
-		saynn("[say=eliza]You saved Rahi. She wanted to kill herself before, didn't she? How did you pull her out of that depression spiral?[/say]")
+		saynn("[say=eliza]Ты спас Рахи. Раньше она ведь хотела покончить с собой, верно? Как тебе удалось вытащить её из этой спирали депрессии?[/say]")
 
-		addButton("Fixed by breaking", "Tell Eliza that you broke Rahi before making a better kitty out of her", "tell_broke")
-		addButton("Rahi is strong", "Tell Eliza that Rahi is a strong kitty and just needed some help", "tell_rahi_strong")
+		addButton("Исправлена через поломку", "Скажи Элизе, что ты сначала сломал Рахи, а уже потом сделал из неё идеальную кошечку", "tell_broke")
+		addButton("Рахи сильная", "Скажи Элизе, что Рахи — сильная кошечка, которой просто требовалась помощь", "tell_rahi_strong")
 	if(state == "tell_broke"):
 		setFlag("RahiModule.rahiMile6ToldBroke", true)
-		saynn("[say=pc]I think I broke her. Kitty wasn't on a good course indeed so I had to intervene and change it.[/say]")
+		saynn("[say=pc]Думаю, я её сломал. Кошечка и впрямь сбилась с пути, так что мне пришлось вмешаться и изменить курс.[/say]")
 
-		saynn("Eliza tilts her head, her eyes trying to read yours.")
+		saynn("Элиза наклоняет голову, пытаясь прочитать твои мысли.")
 
-		saynn("[say=eliza]And how did you accomplish that?[/say]")
+		saynn("[say=eliza]И как тебе это удалось?[/say]")
 
-		saynn("[say=pc]I gave her a better goal in life.[/say]")
+		saynn("[say=pc]Я дала ей новую цель в жизни.[/say]")
 
-		saynn("Eliza scritches her own chin.")
+		saynn("Элиза почесывает подбородок.")
 
-		saynn("[say=eliza]What goal would that be if you don't mind me asking?[/say]")
+		saynn("[say=eliza]Если не секрет, что это за цель?[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=pc]Easy. Her new life goal is serving me, being my kitty. She is happy when I give her tasks and then reward or punish her.[/say]")
+		saynn("[say=pc]Всё просто. Её новая цель — служить мне, быть моей киской. Она счастлива, когда я даю ей задания, а потом награждаю или наказываю её.[/say]")
 
-		saynn("Eliza crosses her arms.")
+		saynn("Элиза скрещивает руки на груди.")
 
-		saynn("[say=eliza]Sounds like slavery to me.[/say]")
+		saynn("[say=eliza]По мне, так это чистой воды рабство.[/say]")
 
-		saynn("[say=pc]Well, it worked, as you can see. If your life has a purpose, you don't get reminded of bad events that happened in your past life that much. You're very much focused on the present.[/say]")
+		saynn("[say=pc]Ну, как видишь, это сработало. Когда у жизни есть цель, ты не так часто вспоминаешь о дерьме, случившемся в прошлом. Ты полностью сосредоточена на настоящем.[/say]")
 
-		saynn("Eliza is being quiet for a bit.")
+		saynn("Элиза на мгновение замолкает.")
 
-		saynn("[say=eliza]Perhaps you're right. Maybe I can learn a thing or two from you.[/say]")
+		saynn("[say=eliza]Возможно, ты прав. Может, мне и правда стоит у тебя чему-нибудь поучиться.[/say]")
 
-		addButton("Continue", "See what happens next", "eliza_asks_future")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_asks_future")
 	if(state == "tell_rahi_strong"):
 		setFlag("RahiModule.rahiMile6ToldBroke", false)
-		saynn("[say=pc]Kitty is strong, you can't even imagine what weight she was carrying on her shoulders. She just needed some help, a pair of ears that would listen to her.[/say]")
+		saynn("[say=pc]Китти сильная, ты даже не представляешь, какой груз она тащила на своих плечах. Ей просто нужна была помощь, кто-то, кто готов был её выслушать.[/say]")
 
-		saynn("Eliza tilts her head, her eyes trying to read yours.")
+		saynn("Элиза наклоняет голову, пытаясь прочитать твои мысли.")
 
-		saynn("[say=eliza]She never opened up to me. Even though I was trying to help. How did you do it?[/say]")
+		saynn("[say=eliza]Она так и не открылась мне. Хотя я изо всех сил пытался помочь. Как это удалось тебе?[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=pc]We both grew on each other, I don't know what to say. And you were too.. strict.. harsh?[/say]")
+		saynn("[say=pc]Мы просто притерлись друг к другу, даже не знаю, как сказать. А ты был слишком... строгим? Или суровым?[/say]")
 
-		saynn("Eliza hums.")
+		saynn("Элиза что-то напевает под нос.")
 
-		saynn("[say=eliza]Perhaps you're right. Maybe I can learn a thing or two from you.[/say]")
+		saynn("[say=eliza]Возможно, ты прав. Может, мне и правда стоит у тебя чему-нибудь поучиться.[/say]")
 
-		addButton("Continue", "See what happens next", "eliza_asks_future")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_asks_future")
 	if(state == "eliza_asks_future"):
-		saynn("Some time passes. You realize that Rahi's scar.. looks better now. It's way smaller and less pronounced.")
+		saynn("Проходит некоторое время. Ты замечаешь, что шрам Рахи... теперь выглядит лучше. Он стал гораздо меньше и менее заметным.")
 
-		saynn("[say=pc]Seems to be working, her scar is disappearing.[/say]")
+		saynn("[say=pc]Похоже, это работает, её шрам исчезает.[/say]")
 
-		saynn("Eliza smiles.")
+		saynn("Элиза улыбается.")
 
-		saynn("[say=eliza]Yeah, your kitty will be fine. I wonder what your next step is gonna be.[/say]")
+		saynn("[say=eliza]Да, с твоей киской всё будет в порядке. Интересно, каким будет твой следующий шаг?[/say]")
 
-		saynn("You raise a brow.")
+		saynn("Вы вопросительно приподнимаете бровь.")
 
-		saynn("[say=eliza]You know, with Rahi.[/say]")
+		saynn("[say=eliza]Ну, знаешь, насчет Рахи.[/say]")
 
-		saynn("That didn't help much.")
+		saynn("Это не особо помогло.")
 
-		saynn("[say=pc]I don't quite understand-[/say]")
+		saynn("[say=pc]Я не совсем понимаю...[/say]")
 
-		saynn("She cuts you off.")
+		saynn("Она перебивает тебя.")
 
-		saynn("[say=eliza]Why not propose to her?[/say]")
+		saynn("[say=eliza]Почему бы тебе не сделать ей предложение?[/say]")
 
-		saynn("You start coughing.")
+		saynn("Ты начинаешь кашлять.")
 
-		saynn("[say=eliza]Your choice. But you would look cute together, as an official pair~. I can help with the setting up.[/say]")
+		saynn("[say=eliza]Выбор за тобой. Но вы бы смотрелись очень мило как официальная пара~. Я могу помочь всё устроить.[/say]")
 
-		saynn("[say=pc]Does that happen often around here?[/say]")
+		saynn("[say=pc]Тут такое часто случается?[/say]")
 
-		saynn("Eliza thinks about it for a second.")
+		saynn("Элиза на секунду задумывается.")
 
-		saynn("[say=eliza]Not really, inmates usually just fuck all day, no one is committing to anything bigger.[/say]")
+		saynn("[say=eliza]Да не особо, заключенные обычно просто трахаются целыми днями, никто не стремится к чему-то серьезному.[/say]")
 
-		saynn("Huh, you wonder why.")
+		saynn("Хм, ты задаешься вопросом, почему так.")
 
-		saynn("[say=eliza]Alternatively.. If you really want to make Rahi.. yours. You can claim her. I can help with that too, make sure its safe.[/say]")
+		saynn("[say=eliza]Или же... если ты действительно хочешь сделать Рахи... своей. Ты можешь заявить на неё права. С этим я тоже могу помочь, чтобы всё прошло безопасно.[/say]")
 
-		saynn("[say=pc]What do you mean by.. claim?[/say]")
+		saynn("[say=pc]Что ты имеешь в виду под... «заявить права»?[/say]")
 
-		saynn("[say=eliza]Branding her as your property. A few ways to do that. I'm sure she would be happy no matter what you choose for her.[/say]")
+		saynn("[say=eliza]Клеймить её как свою собственность. Есть несколько способов сделать это. Уверена, она будет счастлива, какой бы вариант ты ни выбрал.[/say]")
 
-		saynn("That's.. an interesting decision for sure. You just keep staring at your kitty while Eliza goes ahead and fetches something. A little box. She opens it for you and shows.. two simple rings.")
+		saynn("Это... определенно интересное решение. Ты просто продолжаешь пялиться на свою киску, пока Элиза идет за чем-то. Маленькая коробочка. Она открывает её перед тобой и показывает... два простых кольца.")
 
-		saynn("[say=eliza]If you're gonna propose, use this. A little gift from me for helping Rahi. Sometimes I ask Alex to melt old or broken restraints into these. Makes for a good reminder.[/say]")
+		saynn("[say=eliza]Если собираешься сделать предложение, используй это. Маленький подарок от меня за помощь Рахи. Иногда я прошу Алекса переплавлять старые или сломанные кандалы в такие кольца. Отличный способ не забывать о сути вещей.[/say]")
 
-		saynn("[say=pc]Really? Uh.. Thank you.[/say]")
+		saynn("[say=pc]Правда? Ох... Спасибо.[/say]")
 
-		saynn("[say=eliza]Don't mention it. I have a machine that can inscribe something on them if you want.[/say]")
+		saynn("[say=eliza]Не стоит благодарности. Если хочешь, у меня есть машинка, которая может сделать на них гравировку.[/say]")
 
-		saynn("You grab the little box with the rings and store it.")
+		saynn("Ты берешь маленькую коробочку с кольцами и убираешь её.")
 
-		saynn("[say=pc]Okay, I will have to think about it.[/say]")
+		saynn("[say=pc]Хорошо, мне нужно об этом подумать.[/say]")
 
-		saynn("Eliza smiles and nods. From now on you just stare at Rahi's quickly healing body.")
+		saynn("Элиза улыбается и кивает. С этого момента ты просто не можешь отвести глаз от быстро заживающего тела Рахи.")
 
-		addButton("Continue", "See what happens next", "rahi_after_healed")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_after_healed")
 	if(state == "rahi_after_healed"):
-		saynn("About an hour passes without you even noticing, your head was busy thinking about that offer. Finally, the machine beeps and begins draining the blue fluid out of the pod. That scar on Rahi's belly is completely gone.")
+		saynn("Проходит около часа, который ты даже не заметил, — голова была занята раздумьями над этим предложением. Наконец, машина издает писк и начинает откачивать голубую жидкость из капсулы. Шрам на животе Рахи полностью исчез.")
 
-		saynn("Eliza carefully wakes kitty up and waits for the machine to let her out.")
+		saynn("Элиза осторожно будит киску и ждет, пока машина выпустит её наружу.")
 
-		addButton("Continue", "See what happens next", "rahi_is_good")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_is_good")
 	if(state == "rahi_is_good"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
-		saynn("Wet Rahi steps out of the pod. You find a blanket and begin rubbing her fur dry.")
+		saynn("Мокрая Рахи выходит из капсулы. Ты находишь одеяло и начинаешь растирать её шерстку, чтобы она высохла.")
 
-		saynn("[say=eliza]How do you feel, Rahi?[/say]")
+		saynn("[say=eliza]Как ты себя чувствуешь, Рахи?[/say]")
 
-		saynn("[say=rahi]Oh.. yeah.. great. Wow.[/say]")
+		saynn("[say=rahi]Ох... да... отлично. Вау.[/say]")
 
-		saynn("While drying Rahi you realize that not just the big scar is gone. All of the previous old ones seem to be healed away. Signs of any abuse are all gone, Rahi's body looks incredibly clean, like she is a brand new kitty.")
+		saynn("Пока ты вытираешь Рахи, ты замечаешь, что исчез не только большой шрам. Все остальные старые шрамы тоже словно затянулись. Все следы прежних издевательств исчезли; тело Рахи выглядит невероятно чистым, будто она совсем новенькая кошечка.")
 
-		saynn("[say=pc]You look great too, kitty.[/say]")
+		saynn("[say=pc]Ты тоже выглядишь отлично, киса.[/say]")
 
-		saynn("Rahi smiles. Purring can be heard from her before she suddenly tackle-hugs you, her naked body rubbing against your.")
+		saynn("Рахи улыбается. Слышно её довольное мурчание, прежде чем она внезапно набрасывается на тебя с объятиями, прижимаясь своим голым телом к твоему.")
 
-		saynn("[say=rahi]Meow-meow![/say]")
+		saynn("[say=rahi]Мяу-мяу![/say]")
 
-		saynn("Eliza crosses her arms.")
+		saynn("Элиза скрещивает руки на груди.")
 
-		saynn("[say=eliza]Get a room you two.[/say]")
+		saynn("[say=eliza]Нашли бы уже комнату, голубки.[/say]")
 
-		saynn("You help Rahi dress and follow Eliza until you're out of the medical wing.")
+		saynn("Ты помогаешь Рахи одеться и идешь вслед за Элизой, пока вы не покидаете медицинское крыло.")
 
-		addButton("Continue", "See what happens next", "rahi_returns_to_cell")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_returns_to_cell")
 	if(state == "rahi_returns_to_cell"):
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
 		removeCharacter("eliza")
 		addCharacter("rahi")
-		saynn("Rahi hops around her cell like a happy kitty.")
+		saynn("Рахи прыгает по своей камере, словно счастливая кошечка.")
 
-		saynn("[say=pc]Glad you're doing better, kitty.[/say]")
+		saynn("[say=pc]Рада, что тебе уже лучше, киса.[/say]")
 
-		saynn("She stops near you and boops your nose.")
+		saynn("Она останавливается рядом и легонько тыкает тебя в нос.")
 
-		saynn("[say=rahi]Nothing hurts anymore![/say]")
+		saynn("[say=rahi]Больше ничего не болит![/say]")
 
-		saynn("She quickly realizes something and tilts her head down.")
+		saynn("Она внезапно что-то осознает и склоняет голову.")
 
-		saynn("[say=rahi]She wouldn't do it without you, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Без тебя она бы на это не решилась, {rahiMaster}..[/say]")
 
-		saynn("Your kitty reaches out to land a little kiss on your lips.")
+		saynn("Твоя киса тянется к тебе, чтобы запечатлеть легкий поцелуй на твоих губах.")
 
-		saynn("[say=rahi]Thank you..[/say]")
+		saynn("[say=rahi]Спасибо..[/say]")
 
-		saynn("You wonder if you should tell her about your decision now.. Nah, too much of a good thing is bad.")
+		saynn("Ты гадаешь, стоит ли рассказать ей о своем решении прямо сейчас... Хотя нет, хорошего должно быть в меру.")
 
-		addButton("Continue", "See what happens", "endthescene")
+		addButton("Продолжить", "Посмотреть, что будет", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

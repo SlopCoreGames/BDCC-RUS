@@ -11,284 +11,284 @@ func _run():
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
 		var isSlavery = getModule("RahiModule").isInSlavery()
-		saynn("You notice Rahi and she notices you, her eyes seem to be very nervous. Your gaze is immediately drawn to her pregnant belly that's round and very prominent. Rahi holds onto it, her paws and legs are shaky.")
+		saynn("Ты замечаешь Рахи, и она замечает тебя; её взгляд кажется очень нервным. Твой взор тут же приковывает её беременный живот — круглый и очень заметный. Рахи придерживает его, её лапки и ножки дрожат.")
 
 		if (isSlavery):
-			saynn("[say=rahi]S-she.. she thinks.. It's time.. She is scared, {rahiMaster}..[/say]")
+			saynn("[say=rahi]О-она... она думает... Пора... Ей страшно, {rahiMaster}..[/say]")
 
 		else:
-			saynn("[say=rahi]S-she.. she thinks.. It's time.. She is scared..[/say]")
+			saynn("[say=rahi]О-она... она думает... Пора... Ей страшно..[/say]")
 
-		saynn("Oh wow, you quickly rush to her and wrap your arms around her waist, to support.")
+		saynn("Ого, ты быстро бросаешься к ней и обхватываешь её за талию, чтобы поддержать.")
 
-		saynn("[say=pc]It's okay, kitty. We will get you to the medical wing, don't worry.[/say]")
+		saynn("[say=pc]Всё хорошо, киса. Мы доставим тебя в медблок, не волнуйся.[/say]")
 
 		if (getFlag("RahiModule.Rahi_GaveBirthTimes", 0) <= 0):
-			saynn("[say=rahi]Y-yeah.. please.. It's her first time..[/say]")
+			saynn("[say=rahi]Д-да... пожалуйста... Это её первый раз...[/say]")
 
 		else:
-			saynn("[say=rahi]Y-yeah.. please.. She is afraid she won't make it there this time..[/say]")
+			saynn("[say=rahi]Д-да... пожалуйста... Она боится, что в этот раз не донесёт...[/say]")
 
-		addButton("Help her", "Help kitty get to the medical wing", "help_kitty")
+		addButton("Помочь ей", "Помочь кисе добраться до медблока", "help_kitty")
 	if(state == "help_kitty"):
 		aimCameraAndSetLocName("medical_nursery")
 		GM.pc.setLocation("medical_nursery")
 		addCharacter("nurse")
 		playAnimation(StageScene.Duo, "sit", {pc = "nurse", npc="rahi", npcAction="stand"})
-		saynn("Together, you make your way through the dimly lit corridors of the prison, Rahi occasionally pausing to steady herself against the walls. At least it seems that your presence brings a sense of comforting reassurance to her, your touch helping her walk.")
+		saynn("Вместе вы пробираетесь сквозь тускло освещенные коридоры тюрьмы; Рахи время от времени останавливается, чтобы опереться о стены. Кажется, твоё присутствие дарит ей чувство утешения, а твои прикосновения помогают ей идти.")
 
-		saynn("Upon reaching the medical wing, one of the nurses sees you. Rahi tries to say something but instead lets out a painful cry while almost collapsing, trying to keep her legs closed. Luckily you've been there to keep her stable.")
+		saynn("Когда вы добираетесь до медблока, одна из медсестер замечает вас. Рахи пытается что-то сказать, но вместо этого издает болезненный крик и едва не падает, пытаясь свести ноги вместе. К счастью, ты рядом и удерживаешь её от падения.")
 
-		saynn("[say=nurse]Oh. I see. We have a situation here.[/say]")
+		saynn("[say=nurse]Ох. Понятно. У нас тут ситуация...[/say]")
 
-		saynn("The nurse quickly taps some buttons on her datapad and then leads you somewhere..")
+		saynn("Медсестра быстро нажимает несколько кнопок на своем датападе, а затем ведет вас куда-то...")
 
-		saynn("[say=nurse]C'mon, quick.[/say]")
+		saynn("[say=nurse]Давай же, быстрее![/say]")
 
-		saynn("[say=rahi]Me-eow.. She feels.. something.. the contractions..[/say]")
+		saynn("[say=rahi]Мяу-у... Она чувствует... что-то... схватки...[/say]")
 
-		saynn("You try to keep her calm.")
+		saynn("Вы пытаетесь сохранять спокойствие.")
 
-		addButton("Continue", "See what happens next", "rahi_prepares")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_prepares")
 	if(state == "rahi_prepares"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc="rahi", bodyState={naked=true}})
 		addCharacter("rahi", ["naked"])
-		saynn("You and Rahi are led into a private room with a soft and warm environment that already seems to be prepared for her labor. The nurse quickly undresses Rahi and positions her on a special hospital bed.")
+		saynn("Вас с Рахи ведут в отдельную палату с мягкой и теплой атмосферой, которая, кажется, уже подготовлена к её родам. Медсестра быстро раздевает Рахи и укладывает её на специальную больничную кровать.")
 
-		saynn("You stand by her side and hold her paw while more doctors and nurses walk in.")
+		saynn("Вы стоите рядом и держите её за лапу, пока входят другие врачи и медсестры.")
 
-		saynn("[say=pc]Everything is gonna be okay, kitty. Just listen to them.[/say]")
+		saynn("[say=pc]Все будет хорошо, киса. Просто слушай их.[/say]")
 
-		saynn("[say=rahi]She.. she can do that..[/say]")
+		saynn("[say=rahi]Она... она справится...[/say]")
 
-		saynn("As the contractions suddenly intensify, Rahi grips your hand tightly and produces a loud cry, her body trembling with both anticipation and pain. While the doctors are focused on her lower part of the body, you lean in closer and whisper her soothing words, sometimes swiping away loose hair strands of her ponytail.")
+		saynn("Когда схватки внезапно усиливаются, Рахи крепко сжимает вашу руку и громко вскрикивает, а её тело дрожит от предвкушения и боли. Пока врачи сосредоточены на её нижней части тела, вы наклоняетесь ближе и шепчете ей успокаивающие слова, время от времени убирая выбившиеся пряди из её хвоста.")
 
-		saynn("Time seems to blur as Rahi's labor progresses, each wave of pain met with another loud cry. The room's air is heavy with the sounds of her labored breathing. At some point her voice becomes all raspy from screaming..")
+		saynn("Время словно замирает, пока схватки Рахи становятся всё сильнее, и каждая волна боли сопровождается громким криком. Воздух в комнате пропитан звуками её тяжелого дыхания. В какой-то момент её голос становится совсем хриплым от непрекращающихся воплей...")
 
-		saynn("Finally, with one final push, a different-sounding cry fills the room, announcing the arrival of a new life..")
+		saynn("Наконец, после последнего мощного толчка, комнату наполняет крик совсем иного рода, возвещающий о появлении новой жизни...")
 
-		addButton("Continue", "See what happens next", "rahi_gives_birth")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_gives_birth")
 	if(state == "rahi_gives_birth"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="rahi", bodyState={naked=true}})
 		
 		if (bornChildAmount == 1):
-			saynn("Rahi gave birth to "+str(bornChildAmount)+" kid!")
+			saynn("Рахи родила "+str(bornChildAmount)+" ребенка!")
 
 		else:
-			saynn("Rahi gave birth to "+str(bornChildAmount)+" kids!")
+			saynn("Рахи родила "+str(bornChildAmount)+" детей!")
 
 		saynn(""+str(bornString)+"")
 
-		addButton("Continue", "See what happens next", "after_birth")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_birth")
 	if(state == "after_birth"):
 		playAnimation(StageScene.SexStart, "start", {pc = "pc", npc="rahi", npcBodyState={naked=true}})
 		if (bornChildAmount  <= 1):
-			saynn("Your eyes widen with awe as you catch your first glimpse of Rahi's child, your heart overflowing with love. Rahi is incredibly exhausted though, just smiling as she cradles her newborn in her paws.")
+			saynn("Твои глаза расширяются от благоговения, когда ты впервые видишь ребенка Рахи, а сердце переполняет любовь. Сама же Рахи невероятно истощена; она лишь улыбается, прижимая новорожденного к лапам.")
 
-			saynn("[say=rahi]So.. precious..[/say]")
+			saynn("[say=rahi]Такой.. кроха..[/say]")
 
 		else:
-			saynn("Your eyes widen with awe as you catch your first glimpse of Rahi's kids, your heart overflowing with love. Rahi is incredibly exhausted though, just smiling as she cradles her newborns in her paws, all "+str(bornChildAmount)+" of them.")
+			saynn("Твои глаза расширяются от благоговения, когда ты впервые видишь детей Рахи, а сердце переполняет любовь. Сама же Рахи невероятно истощена; она лишь улыбается, прижимая новорожденных к лапам, всех "+str(bornChildAmount)+" до единого.")
 
-			saynn("[say=rahi]So.. precious..[/say]")
+			saynn("[say=rahi]Такие.. крохи..[/say]")
 
-		saynn("[say=nurse]Let her rest, inmate.[/say]")
+		saynn("[say=nurse]Дай ей отдохнуть, заключенный.[/say]")
 
-		saynn("The nurse tries to get you out of the room now. Rahi looks up at you and blushes. A little concern clouds your mind, you direct a question towards the doctors that stand around Rahi, they seem to be already reaching their hands out to her.")
+		saynn("Медсестра пытается выпроводить тебя из комнаты. Рахи поднимает на тебя взгляд, заливаясь румянцем. В голове мелькает легкое беспокойство, и ты обращаешься к врачам, стоящим вокруг Рахи — кажется, они уже тянут к ней руки.")
 
-		saynn("[say=pc]What are you gonna do now?[/say]")
+		saynn("[say=pc]И что ты теперь будешь делать?[/say]")
 
-		saynn("[say=nurse]You know how it works, inmates aren't allowed to keep their kids in the prison.[/say]")
+		saynn("[say=nurse]Ты и сам знаешь, как это устроено: заключенным не разрешают оставлять детей в тюрьме.[/say]")
 
-		saynn("That's.. that's so.. unfair.")
+		saynn("Это так... так несправедливо.")
 
-		saynn("[say=pc]Let her be a mother. For some time at least.[/say]")
+		saynn("[say=pc]Дайте ей побыть матерью. Хотя бы какое-то время.[/say]")
 
 		if (bornChildAmount == 1):
-			saynn("Rahi protects her child from the doctor's hands, her eyes getting watery. The nurse sees that and sighs.")
+			saynn("Рахи пытается защитить своего ребенка от рук врачей, ее глаза наполняются слезами. Медсестра замечает это и вздыхает.")
 
-			saynn("[say=nurse]Alright.. Alright, fine. Let us at least do some basic procedures with the child and then she can spend some time together.[/say]")
+			saynn("[say=nurse]Ладно... Ладно, хорошо. Давайте хотя бы проведем с ребенком базовые процедуры, а потом они смогут побыть вместе.[/say]")
 
-			saynn("Rahi reluctantly hands the doctors her baby..")
+			saynn("Рахи неохотно отдает врачам своего малыша...")
 
 		else:
-			saynn("Rahi protects her children from the doctor's hands, her eyes getting watery. The nurse sees that and sighs.")
+			saynn("Рахи пытается защитить своих детей от рук врачей, ее глаза наполняются слезами. Медсестра замечает это и вздыхает.")
 
-			saynn("[say=nurse]Alright.. Alright, fine. Let us at least do some basic procedures with the children and then she can spend some time together.[/say]")
+			saynn("[say=nurse]Ладно... Ладно, хорошо. Давайте хотя бы проведем с детьми базовые процедуры, а потом они смогут побыть вместе.[/say]")
 
-			saynn("Rahi reluctantly hands the doctors her babies..")
+			saynn("Рахи неохотно отдает врачам своих младенцев...")
 
-		addButton("Continue", "See what happens next", "near_kindergarden")
+		addButton("Продолжить", "Смотреть, что будет дальше", "near_kindergarden")
 	if(state == "near_kindergarden"):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "sit", {npc="rahi", npcAction="kneel"})
-		saynn("A few hours pass.")
+		saynn("Проходит несколько часов.")
 
-		saynn("You are sitting in the lobby on one of the benches of the nursery.. just.. idling.")
+		saynn("Вы сидите в вестибюле на одной из скамеек в детском отделении... просто... бездельничаете.")
 
-		saynn("On the opposite wall is a heavily reinforced window that leads into some other room..")
+		saynn("На противоположной стене находится мощное армированное окно, ведущее в другое помещение...")
 
 		if (bornChildAmount == 1):
-			saynn("Suddenly you see Rahi walk into that room while carefully carrying her child. Your full attention is directed towards her.. but she doesn't seem to see you through the window.")
+			saynn("Внезапно вы видите, как Рахи входит в эту комнату, осторожно неся на руках своего ребенка. Всё ваше внимание приковано к ней... но она, кажется, не замечает вас за стеклом.")
 
 		else:
-			saynn("Suddenly you see Rahi walk into that room while carefully carrying one of her children. Your full attention is directed towards her.. but she doesn't seem to see you through the window.")
+			saynn("Внезапно вы видите, как Рахи входит в эту комнату, осторожно неся на руках одного из своих детей. Всё ваше внимание приковано к ней... но она, кажется, не замечает вас за стеклом.")
 
-		saynn("She looks around and then just kneels on the soft carpet that is placed in the middle of the room. Rahi just cradles her newborn in her arms and probably hums something, it's impossible to hear through the thick glass..")
+		saynn("Она оглядывается и просто опускается на колени на мягкий ковер, лежащий посреди комнаты. Рахи баюкает новорожденного на руках и, вероятно, что-то напевает — через толстое стекло это не расслышать...")
 
-		saynn("Rahi is a mother.. That's cute.. wholesome even. Too bad you aren't there.")
+		saynn("Рахи — мать... Это мило... даже трогательно. Жаль только, что вас нет рядом.")
 
-		addButton("Ask to join", "See if you can join Rahi", "check_join")
-		addButton("Leave", "Let Rahi enjoy the moment alone", "just_leave")
+		addButton("Попросить присоединиться", "Попробовать присоединиться к Рахи", "check_join")
+		addButton("Уйти", "Дать Рахи насладиться моментом в одиночестве", "just_leave")
 	if(state == "just_leave"):
-		saynn("You stare at Rahi through the window for a little longer, the sight makes you feel.. hope. Hope that your lives won't be meaningless. Or at least that Rahi's life won't be.")
+		saynn("Ты еще какое-то время пристально смотришь на Рахи через окно; это зрелище вселяет в тебя... надежду. Надежду на то, что ваши жизни не будут бессмысленными. Или, по крайней мере, что жизнь Рахи не будет такой.")
 
-		saynn("Time to go..")
+		saynn("Пора идти..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "check_join"):
 		playAnimation(StageScene.Duo, "sit", {pc="nurse", npc="pc", npcAction="stand"})
-		saynn("You approach the nurse that sits behind the counter. She seems to be quite bored, just staring at her computer screen while supporting her head with her arm.")
+		saynn("Ты подходишь к медсестре, сидящей за стойкой. Она выглядит изрядно заскучавшей: просто пялится в монитор компьютера, подпирая голову рукой.")
 
-		saynn("[say=nurse]Need something, inmate?[/say]")
+		saynn("[say=nurse]Что-то нужно, заключенная?[/say]")
 
-		saynn("[say=pc]Yeah, see the feline behind the glass? I wanna join her.[/say]")
+		saynn("[say=pc]Да, видите ту кошечку за стеклом? Я хочу к ней.[/say]")
 
 		if (!GM.pc.isTooLewd()):
-			saynn("The nurse lazily turns her head, looking at Rahi. Then she looks back at you and quickly scans you with her eyes, probably looking for anything.. inappropriate.")
+			saynn("Медсестра лениво поворачивает голову, глядя на Рахи. Затем она снова переводит взгляд на тебя и быстро сканирует тебя глазами, вероятно, выискивая что-нибудь... неподобающее.")
 
-			saynn("[say=nurse]Why?[/say]")
+			saynn("[say=nurse]Почему?[/say]")
 
-			saynn("[say=pc]Why not? I brought her here, I was helping her give birth, I..[/say]")
+			saynn("[say=pc]А почему нет? Я привел ее сюда, я помогал ей рожать, я...[/say]")
 
-			saynn("The nurse cuts you off.")
+			saynn("Медсестра перебивает тебя.")
 
-			saynn("[say=nurse]Fiiine, you have ten minutes.[/say]")
+			saynn("[say=nurse]Ладно, у тебя десять минут.[/say]")
 
-			saynn("She presses a button on her computer that opens one of the locked doors.")
+			saynn("Она нажимает кнопку на компьютере, открывая одну из запертых дверей.")
 
-			addButton("Continue", "Join Rahi", "join_rahi_wholesome")
+			addButton("Продолжить", "Присоединиться к Рахи", "join_rahi_wholesome")
 		else:
-			saynn("The nurse lazily turns her head, looking at Rahi. Then she looks back at you.")
+			saynn("Медсестра лениво поворачивает голову, глядя на Рахи. Затем она снова переводит взгляд на тебя.")
 
-			saynn("[say=nurse]Nope.[/say]")
+			saynn("[say=nurse]Не-а.[/say]")
 
-			saynn("[say=pc]Why not? I brought her here, I was helping her give birth, I..[/say]")
+			saynn("[say=pc]А почему нет? Я привел ее сюда, я помогал ей рожать, я...[/say]")
 
-			saynn("The nurse cuts you off.")
+			saynn("Медсестра перебивает тебя.")
 
-			saynn("[say=nurse]Look at yourself, inmate. We can't allow inmates that look so.. exposed.. anywhere near kids. Understand what I mean?[/say]")
+			saynn("[say=nurse]На себя посмотри, заключенная. Мы не можем позволить таким.. выставленным напоказ.. особам приближаться к детям. Понимаешь, о чем я?[/say]")
 
-			saynn("Aw, she has a point.")
+			saynn("Ох, а ведь она права.")
 
-			addButton("Leave", "Let Rahi enjoy the moment alone", "just_leave")
-			addButton("Inventory", "Look at your inventory", "open_inv")
+			addButton("Уйти", "Дать Рахи насладиться моментом в одиночестве", "just_leave")
+			addButton("Инвентарь", "Посмотреть инвентарь", "open_inv")
 	if(state == "open_inv"):
-		saynn("[say=pc]What about now?[/say]")
+		saynn("[say=pc]А сейчас?[/say]")
 
-		saynn("The nurse lazily scans you with her eyes again.")
+		saynn("Медсестра снова лениво сканирует тебя взглядом.")
 
 		if (!GM.pc.isTooLewd()):
-			saynn("[say=nurse]Sure, that's better. You have ten minutes.[/say]")
+			saynn("[say=nurse]Ну вот, так гораздо лучше. У тебя десять минут.[/say]")
 
-			saynn("She presses a button on her computer that opens one of the locked doors.")
+			saynn("Она нажимает кнопку на компьютере, открывая одну из запертых дверей.")
 
-			addButton("Continue", "Join Rahi", "join_rahi_wholesome")
+			addButton("Продолжить", "Присоединиться к Рахи", "join_rahi_wholesome")
 		else:
-			saynn("[say=nurse]Nope.[/say]")
+			saynn("[say=nurse]Не-а.[/say]")
 
-			saynn("It seems you can't visit her there today.. Maybe some other time when Rahi is gonna give another birth..")
+			saynn("Похоже, сегодня навестить её не получится... Может, в другой раз, когда Рахи снова будет рожать...")
 
-			addButton("Leave", "Let Rahi enjoy the moment alone", "just_leave")
-			addButton("Inventory", "Look at your inventory", "open_inv")
+			addButton("Уйти", "Дать Рахи насладиться моментом в одиночестве", "just_leave")
+			addButton("Инвентарь", "Посмотреть инвентарь", "open_inv")
 	if(state == "join_rahi_wholesome"):
 		playAnimation(StageScene.Duo, "kneel", {npc="rahi", npcAction="kneel"})
 		removeCharacter("nurse")
-		saynn("You enter a clean white room with some colorful furniture and a big soft carpet in the middle. There are plenty of cameras around, making you feel a bit uneasy.")
+		saynn("Ты входишь в чистую белую комнату с яркой мебелью и большим мягким ковром посередине. Повсюду развешано множество камер, отчего на душе становится немного не по себе.")
 
-		saynn("Rahi sits on the carpet, cradling her newborn baby in her arms. The soft sounds of cooing fill the air as the baby nuzzles against her chest. The kitty smiles as you sit nearby.")
+		saynn("Рахи сидит на ковре, баюкая новорожденного малыша на руках. Воздух наполнен нежным воркованием, пока ребенок прижимается к её груди. Кити улыбается, глядя на то, как ты садишься рядом.")
 
-		saynn("[say=rahi]Thank you.. for helping.. means the world..[/say]")
+		saynn("[say=rahi]Спасибо тебе.. за помощь.. это значит для меня всё..[/say]")
 
-		saynn("[say=pc]Yeah, of course.[/say]")
+		saynn("[say=pc]Да, конечно.[/say]")
 
-		saynn("The baby seems to be already hungry, seeking nourishment. So Rahi undoes a few buttons of her inmate shirt and spreads it open slightly, enough to uncover one of her nips. Rahi brings her child to her exposed breast and just proceeds to breastfeed..")
+		saynn("Малыш, кажется, уже проголодался и ищет еду. Рахи расстегивает несколько пуговиц на своей тюремной рубашке и слегка распахивает её, достаточно, чтобы обнажить один сосок. Она подносит ребенка к груди и просто начинает кормить его..")
 
-		saynn("[say=pc]You're a great mother, kitty.[/say]")
+		saynn("[say=pc]Ты отличная мать, кити.[/say]")
 
-		saynn("She looks down at her baby.. and sees the tiny fingers curling around her breast.. a soft sigh of contentment escapes Rahi's lips.")
+		saynn("Она смотрит на своего малыша.. и видит, как крошечные пальчики обхватывают её грудь.. с губ Рахи срывается тихий вздох удовлетворения.")
 
-		saynn("[say=rahi]Is she?.. She doesn't really know how to.. be.. a good mother..[/say]")
+		saynn("[say=rahi]Неужели?.. Она ведь толком не знает, как.. быть.. хорошей матерью..[/say]")
 
-		addButton("Instincts", "Tell Rahi that she just gotta follow her instincts", "say_instincts")
-		addButton("Experience", "Tell Rahi that she will get better at it with experience", "say_experience")
+		addButton("Инстинкты", "Сказать Рахи, что ей нужно просто довериться инстинктам", "say_instincts")
+		addButton("Опыт", "Скажи Рахи, что с опытом у неё всё будет получаться лучше", "say_experience")
 	if(state == "say_instincts"):
-		saynn("[say=pc]Just follow your instincts, kitty.[/say]")
+		saynn("[say=pc]Просто доверяй своим инстинктам, кошечка.[/say]")
 
-		saynn("Rahi sighs while the baby keeps suckling on her breast.")
+		saynn("Рахи вздыхает, пока младенец продолжает сосать её грудь.")
 
-		saynn("[say=rahi]Her current instinct is to.. Steal her baby and never give it back.. ever..[/say]")
+		saynn("[say=rahi]Её нынешний инстинкт — это... украсть своего ребёнка и никогда, никогда его не отдавать...[/say]")
 
-		saynn("You can't help but to get a little closer to Rahi and carefully put your hand on her shoulder, all eyes directed towards the curious baby that seems to be fully content while suckling on mother's dark nipple.")
+		saynn("Ты не можешь удержаться и придвигаешься ближе к Рахи, осторожно кладя руку ей на плечо; все взгляды прикованы к любопытному малышу, который кажется абсолютно довольным, припав к тёмному соску матери.")
 
-		saynn("[say=pc]Yeah..[/say]")
+		saynn("[say=pc]Да уж..[/say]")
 
-		saynn("You two stay silent for a bit, the room quiet, you can only hear the noises that the baby makes.")
+		saynn("Вы оба на мгновение замолкаете; в комнате стоит тишина, слышны лишь звуки, которые издаёт младенец.")
 
-		saynn("[say=rahi]But.. her head tells her that there is no worse place for a baby to be than prison..[/say]")
+		saynn("[say=rahi]Но... разум подсказывает ей, что нет места хуже тюрьмы для ребёнка...[/say]")
 
-		saynn("The unfortunate truth.")
+		saynn("Горькая правда.")
 
-		addButton("Continue", "See what happens next", "time_say_goodbye")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time_say_goodbye")
 	if(state == "say_experience"):
-		saynn("You shift closer to Rahi and wrap your arms around her, gently hugging.")
+		saynn("Ты придвигаешься ближе к Рахи и обнимаешь её, нежно прижимая к себе.")
 
-		saynn("[say=pc]You will get more experienced, kitty.[/say]")
+		saynn("[say=pc]Ты станешь опытнее, кошечка.[/say]")
 
-		saynn("Rahi turns her head and looks at you, her eyes a little sad.")
+		saynn("Рахи поворачивает голову и смотрит на тебя; в её глазах читается легкая грусть.")
 
-		saynn("[say=rahi]How is she gonna get enough experience though..[/say]")
+		saynn("[say=rahi]Но как же она наберется опыта...[/say]")
 
-		saynn("You lean in even closer and land a little kiss on Rahi's lips before whispering something into her ear.")
+		saynn("Ты наклоняешься еще ближе и едва касаешься губами губ Рахи, а затем что-то шепчешь ей на ухо.")
 
-		saynn("[say=pc]Ten.. minutes.. at a time..[/say]")
+		saynn("[say=pc]По десять... минут... за раз...[/say]")
 
-		saynn("A little blush appears on Rahi's cheeks.")
+		saynn("На щеках Рахи проступает легкий румянец.")
 
-		saynn("[say=rahi]That's one way..[/say]")
+		saynn("[say=rahi]Это тоже вариант...[/say]")
 
-		saynn("All eyes directed towards the curious baby that seems to be fully content while suckling on mother's dark nipple.")
+		saynn("Все взгляды устремлены на любопытного младенца, который кажется абсолютно довольным, припав к темному соску матери.")
 
-		saynn("You two stay silent for a bit, the room quiet, you can only hear the noises that the baby makes.")
+		saynn("Вы оба на мгновение замолкаете; в комнате стоит тишина, слышны лишь звуки, которые издаёт младенец.")
 
-		saynn("[say=rahi]Maybe that is her true purpose in life..[/say]")
+		saynn("[say=rahi]Может, в этом и заключается её истинное предназначение...[/say]")
 
-		saynn("You hug her tighter.")
+		saynn("Ты обнимаешь её крепче.")
 
-		addButton("Continue", "See what happens next", "time_say_goodbye")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time_say_goodbye")
 	if(state == "time_say_goodbye"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi", npcAction="stand"})
-		saynn("Together, Rahi and you, try to enjoy this precious moment of parenthood..")
+		saynn("Вместе, вы с Рахи пытаетесь насладиться этим драгоценным моментом родительства...")
 
-		saynn("Until the nurses walk in and tell you that it's time.")
+		saynn("Пока не зайдут медсестры и не скажут, что пора.")
 
-		saynn("Tears stream down Rahi's cheeks. She brings her baby closer to her face and takes a good last look before leaving a little kiss on her child's forehead.")
+		saynn("По щекам Рахи катятся слезы. Она подносит малышку поближе к лицу, чтобы в последний раз хорошенько на нее посмотреть, а затем оставляет нежный поцелуй на лбу ребенка.")
 
-		saynn("[say=rahi]Grow up big and strong.. And don't make your mother's mistakes..[/say]")
+		saynn("[say=rahi]Расти большой и сильной... И не совершай ошибок своей матери...[/say]")
 
-		saynn("Rahi reluctantly hands her child to the nurses and slowly gets up. She waves to her baby as the doctors take it away.")
+		saynn("Рахи неохотно передает ребенка медсестрам и медленно поднимается. Она машет малышке ручкой, пока врачи уносят её.")
 
-		saynn("[say=rahi]Sorry..[/say]")
+		saynn("[say=rahi]Прости...[/say]")
 
-		saynn("You get up too and give Rahi a tight hug. She presses her face into your shoulder.")
+		saynn("Ты тоже встаешь и крепко обнимаешь Рахи. Она утыкается лицом тебе в плечо.")
 
-		saynn("[say=pc]Time to go, kitty.[/say]")
+		saynn("[say=pc]Пора идти, киса.[/say]")
 
-		saynn("[say=rahi]Yeah.. she needs some.. rest..[/say]")
+		saynn("[say=rahi]Да... ей нужно немного... отдохнуть...[/say]")
 
-		saynn("You are guided back into the lobby. The door closes behind you. Rahi lowers her head and heads back to her spot.")
+		saynn("Вас выводят обратно в вестибюль. Дверь за вами закрывается. Рахи опускает голову и возвращается на свое место.")
 
-		addButton("Continue", "That was something", "endthescene")
+		addButton("Продолжить", "Это было нечто", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

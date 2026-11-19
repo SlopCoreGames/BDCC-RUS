@@ -15,200 +15,200 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("you shouldn't see this")
+		saynn("тебе не стоит на это смотреть")
 
 	if(state == "wedding"):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand"})
 		addCharacter("eliza")
-		saynn("You were about to give your kitty her task for today when you were suddenly interrupted by Eliza walking in on you.")
+		saynn("Ты уже собирался дать своей киске задание на сегодня, как вдруг тебя прервала вошедшая Элиза.")
 
-		saynn("[say=eliza]It's time.[/say]")
+		saynn("[say=eliza]Пора.[/say]")
 
-		saynn("Rahi looks at the doctor. Then she looks at you. Kitty is fidgeting nervously on her bed.")
+		saynn("Рахи смотрит на доктора. Затем она переводит взгляд на тебя. Киска нервно ерзает на своей кровати.")
 
-		saynn("[say=pc]Well.. what should we do?[/say]")
+		saynn("[say=pc]Ну.. и что нам делать?[/say]")
 
-		saynn("Eliza starts pushing you out of the cell.")
+		saynn("Элиза начинает выталкивать тебя из камеры.")
 
-		saynn("[say=eliza]Go waste some time, we need to prepare.[/say]")
+		saynn("[say=eliza]Иди, потрать время, нам нужно подготовиться.[/say]")
 
-		saynn("Rahi's big kitty eyes track you leaving until Eliza blocks the sight with herself.")
+		saynn("Большие кошачьи глазки Рахи следят за твоим уходом, пока Элиза не заслоняет им обзор собой.")
 
-		saynn("[say=eliza]Alright, let's begin..[/say]")
+		saynn("[say=eliza]Ладно, начнем..[/say]")
 
-		saynn("With nothing better to do.. Might as well give them some time.")
+		saynn("Делать всё равно нечего.. Можно и дать им немного времени.")
 
-		addButton("Go idle", "Spend some time", "go_near_stocks")
+		addButton("Ожидание", "Провести немного времени", "go_near_stocks")
 	if(state == "go_near_stocks"):
 		removeCharacter("eliza")
 		removeCharacter("rahi")
 		playAnimation(StageScene.Solo, "sit")
 		aimCameraAndSetLocName("main_bench2")
-		saynn("You step out into the main hall and sit on one of the benches. The one that Rahi uses sometimes.")
+		saynn("Вы выходите в главный зал и садитесь на одну из скамей. На ту самую, которую иногда занимает Рахи.")
 
-		saynn("The air is filled with excitement. You can't help but to feel slightly nervous too.")
+		saynn("Воздух пропитан волнением. Вы невольно начинаете испытывать легкое беспокойство.")
 
-		saynn("Minutes pass, each one getting dragged on for a while by all the thoughts in your head.")
+		saynn("Проходят минуты, и каждая из них кажется бесконечной из-за роя мыслей в вашей голове.")
 
-		saynn("Your eyes spot a few staff members and inmates heading towards the yard area. Huh. Someone's approaching.")
+		saynn("Ваш взгляд замечает нескольких сотрудников и заключенных, направляющихся к прогулочному двору. Хм. Кто-то приближается.")
 
-		saynn("[say=captain]Today is a big day, isn't it, inmate. How do you feel?[/say]")
+		saynn("[say=captain]Сегодня важный день, не так ли, заключенный? Что ты чувствуешь?[/say]")
 
-		addButton("Continue", "See what happens next", "captain_steps_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_steps_in")
 	if(state == "captain_steps_in"):
 		addCharacter("captain")
 		addCharacter("risha")
 		playAnimation(StageScene.Duo, "sit", {npc="captain", npcAction="stand"})
-		saynn("It's the captain! Guarded by one of his personal pets.")
+		saynn("Это капитан! В сопровождении одного из своих личных питомцев.")
 
-		saynn("[say=captain]Even though all of you have taken a wrong turn somewhere in your life, who am I to say no when two souls decide to be together. Love is one of the strongest feelings after all. It creates bonds tougher than any chains.[/say]")
+		saynn("[say=captain]Пусть каждый из вас когда-то свернул не туда, но кто я такой, чтобы отказывать двум душам, решившим быть вместе? В конце концов, любовь — одно из самых сильных чувств. Она создает узы крепче любых цепей.[/say]")
 
-		saynn("The captain offers you a kind smile. The guard stares at you intently but doesn't say anything.")
+		saynn("Капитан одаривает вас доброй улыбкой. Охранник пристально смотрит на вас, но молчит.")
 
-		saynn("[say=pc]Why are you here?[/say]")
+		saynn("[say=pc]Почему ты здесь?[/say]")
 
-		saynn("He chuckles.")
+		saynn("Он усмехается.")
 
-		saynn("[say=captain]Who do you think is gonna be the officiant? When doctor Quinn asked me, I knew I couldn't pass up such a rare opportunity.[/say]")
+		saynn("[say=captain]Как думаешь, кто будет регистратором? Когда доктор Куинн спросила меня, я поняла, что не могу упустить такую редкую возможность.[/say]")
 
-		saynn("His authoritative hand lands on your shoulder.")
+		saynn("Его властная рука ложится тебе на плечо.")
 
-		saynn("[say=captain]Let's go, inmate. I think everyone's gathering around already.[/say]")
+		saynn("[say=captain]Пошли, заключенная. Кажется, все уже собираются.[/say]")
 
-		saynn("[say=pc]Everyone?[/say]")
+		saynn("[say=pc]Все?[/say]")
 
-		saynn("He taps on your back, inviting to follow.")
+		saynn("Он слегка хлопает тебя по спине, приглашая следовать за ним.")
 
-		saynn("[say=captain]Not the whole station of course but I think we will have at least a little crowd.[/say]")
+		saynn("[say=captain]Ну, не вся станция, конечно, но думаю, соберется небольшая толпа.[/say]")
 
-		addButton("Follow", "See where he brings you", "pc_arrives_waterfall")
+		addButton("Следовать", "Посмотреть, куда он тебя приведет", "pc_arrives_waterfall")
 	if(state == "pc_arrives_waterfall"):
 		playAnimation(StageScene.Duo, "stand", {npc="captain", npcAction="stand"})
 		aimCameraAndSetLocName("yard_waterfall")
 		addCharacter("avy")
-		saynn("You follow the captain to the very familiar area. The waterfall. This time it is looking slightly more.. festive. A few colorful balloons help set the mood.")
+		saynn("Ты идешь за капитаном в очень знакомое место. К водопаду. На этот раз он выглядит немного... празднично. Атмосферу дополняют несколько разноцветных шариков.")
 
-		saynn("There are at least a dozen people around already, mostly just random observers. Captain brings you out into the main spot and stands near. Risha finds someone in the crowd and joins them.")
+		saynn("Вокруг уже собралось как минимум дюжина человек, в основном просто случайные зрители. Капитан выводит тебя на основную площадку и встает рядом. Риша находит кого-то в толпе и присоединяется к ним.")
 
-		saynn("[say=captain]It's not a chapel but.. It's something, isn't it? I think it's nice here.[/say]")
+		saynn("[say=captain]Это не часовня, но... всё же это что-то, правда? Мне кажется, здесь очень мило.[/say]")
 
-		saynn("So many memories attached with this place. Hard to believe that this is happening.")
+		saynn("С этим местом связано столько воспоминаний. Трудно поверить, что всё это происходит на самом деле.")
 
-		saynn("The captain directs his attention to people around.")
+		saynn("Капитан обращает внимание на присутствующих.")
 
-		saynn("[say=captain]Thank you all for being here today. The ritual will begin soon.[/say]")
+		saynn("[say=captain]Спасибо всем, что пришли сегодня. Ритуал начнется совсем скоро.[/say]")
 
-		saynn("You hold onto the second ring that Eliza gave you.")
+		saynn("Вы сжимаете во втором кольцо, которое вам дала Элиза.")
 
-		saynn("Oh, there she is by the way.")
+		saynn("О, кстати, вон она идет.")
 
-		addButton("Continue", "See what happens next", "rahi_eliza_walk_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_eliza_walk_in")
 	if(state == "rahi_eliza_walk_in"):
 		addCharacter("rahi")
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("Eliza slowly enters the scene. Behind her is Rahi that she is holding hands with. And wow, Rahi seems to be wearing a fancy transparent veil. Brown kitty notices the little crowd around and blushes deeply.")
+		saynn("Элиза медленно выходит на сцену. Она держит Рахи за руку. И вау, на Рахи, кажется, надета изысканная прозрачная вуаль. Коричневая киска замечает небольшую толпу вокруг и густо краснеет.")
 
-		saynn("Eliza brings Rahi close to you and joins the observers.")
+		saynn("Элиза подводит Рахи ближе к вам, и они встают рядом с остальными наблюдателями.")
 
-		saynn("As you make eye contact with her, kitty tilts her head down, her paws grab her fluffy tail and nervously stroke it. The captain smiles before clearing his throat.")
+		saynn("Когда вы встречаетесь с ней взглядом, киска склоняет голову, обхватывает лапками свой пушистый хвост и нервно поглаживает его. Капитан улыбается, а затем прочищает горло.")
 
-		saynn("[say=captain]Inmates and staff, thank you all for coming today to share this wonderful occasion with us.[/say]")
+		saynn("[say=captain]Заключенные и персонал, спасибо всем, что пришли сегодня разделить с нами это чудесное событие.[/say]")
 
-		saynn("You look around. Your spot a few familiar faces. Eliza claps her hands softly. Risha and Avy standing near, discussing something. Everyone else is kinda of a blur.")
+		saynn("Вы оглядываетесь по сторонам. Среди толпы вы замечаете несколько знакомых лиц. Элиза тихо хлопает в ладоши. Рыша и Ави стоят неподалеку, что-то обсуждая. Все остальные сливаются в неясное пятно.")
 
-		saynn("[say=captain]Today we are here together to unite the lives of two inmates, inmate number 12406 and inmate number {pc.inmateNumber}, in marriage.[/say]")
+		saynn("[say=captain]Сегодня мы собрались здесь, чтобы объединить узами брака жизни двух заключенных: заключенной номер 12406 и заключенного номер {pc.inmateNumber}.[/say]")
 
-		saynn("The captain takes a short pause.")
+		saynn("Капитан делает короткую паузу.")
 
-		saynn("[say=captain]They have faced many challenges, but their love has endured, and today they will make their commitment to each other official.[/say]")
+		saynn("[say=captain]Они прошли через множество испытаний, но их любовь выстояла, и сегодня они официально подтвердят свои обязательства друг перед другом.[/say]")
 
-		saynn("Rahi's eyes already become watery, she brushes her tail more.")
+		saynn("Глаза Рахи уже наполняются слезами, она начинает еще активнее поглаживать свой хвост.")
 
-		saynn("The captain reaches his open palm towards you slightly.")
+		saynn("Капитан слегка протягивает к тебе открытую ладонь.")
 
-		saynn("[say=captain]Do you {pc.name}, take this woman to be your lawfully wedded wife, to live together in harmony, to love her, comfort her, in good times and not so good times, to have and to hold, from this day forward, as long as you both shall live?[/say]")
+		saynn("[say=captain]Берешь ли ты {pc.name} эту женщину в законные жены, чтобы жить вместе в гармонии, любить её, утешать её в радостные и в трудные времена, владеть ею и хранить её отныне и до тех пор, пока вы оба живы?[/say]")
 
-		addButton("I do", "Commit to it", "say_i_do")
-		addDisabledButton("I don't", "That would break kitty's heart")
+		addButton("Доверяю", "Дать обет", "say_i_do")
+		addDisabledButton("Не доверяю", "Это разобьет кошечке сердце")
 	if(state == "say_i_do"):
-		saynn("[say=pc]I do.[/say]")
+		saynn("[say=pc]Так точно.[/say]")
 
-		saynn("Your answer was snappy and bold. Rahi stops playing with her tail and slowly raises her gaze, looking at you now.")
+		saynn("Твой ответ был резким и смелым. Рахи перестает играть с хвостом и медленно поднимает взгляд, теперь уже смотря прямо на тебя.")
 
-		saynn("The captain reaches his palm towards the kitty now.")
+		saynn("Теперь капитан протягивает ладонь к кошечке.")
 
-		saynn("[say=captain]Do you Rahi, take this inmate to be your lawfully wedded "+str("wife" if GM.pc.getGender() == Gender.Female else "husband")+", to live together in harmony, to love {pc.him}, comfort {pc.him}, in good times and not so good times, to have and to hold, from this day forward, as long as you both shall live?[/say]")
+		saynn("[say=captain]Берешь ли ты, Рахи, эту заключенную в законные..."+str("wife" if GM.pc.getGender() == Gender.Female else "husband")+", жить душа в душу, любить {pc.him}, утешать {pc.him}, в радости и в горе, владеть и беречь друг друга отныне и вовеки, пока оба вы живы?[/say]")
 
-		saynn("She inhales air audibly, taking her time.")
+		saynn("Она слышно вдыхает воздух, не торопясь.")
 
-		saynn("[say=rahi]I do..[/say]")
+		saynn("[say=rahi]Да..[/say]")
 
-		saynn("After her answer, her expression quickly changes to smiling, tears of happiness stream down her cheeks.")
+		saynn("После её ответа выражение её лица мгновенно меняется на улыбку, а по щекам текут слезы счастья.")
 
-		saynn("[say=captain]Rahi and {pc.name} have chosen rings to exchange with each other as a symbol of their unending love. As you place the ring on Rahi's finger, please repeat after me. With this ring, I pledge you my love now and forever.[/say]")
+		saynn("[say=captain]Рахи и {pc.name} выбрали кольца, чтобы обменяться ими как символом своей бесконечной любви. Когда вы будете надевать кольцо на палец Рахи, пожалуйста, повторяйте за мной. Этим кольцом я клянусь дарить тебе свою любовь сейчас и навеки.[/say]")
 
-		saynn("You begin putting on the ring on Rahi's fourth digit on her left paw that shivers ever so slightly.")
+		saynn("Вы начинаете надевать кольцо на четвертый палец её левой лапки, который слегка подрагивает.")
 
-		saynn("[say=pc]With this ring, I pledge you my love now and forever.[/say]")
+		saynn("[say=pc]Этим кольцом я клянусь дарить тебе свою любовь сейчас и навеки.[/say]")
 
-		saynn("Captain looks at Rahi.")
+		saynn("Капитан смотрит на Рахи.")
 
-		saynn("[say=captain]As you place the ring on {pc.name}'s finger, please repeat after me. With this ring, I pledge you my love now and forever.[/say]")
+		saynn("[say=captain]Когда вы будете надевать кольцо на палец {pc.name}, пожалуйста, повторяйте за мной. Этим кольцом я клянусь дарить тебе свою любовь сейчас и навеки.[/say]")
 
-		saynn("You reach your left hand out. Rahi slowly slides the ring onto your fourth digit. It's a simple one but the memories that it holds.. That's what makes it the most valuable object in the world.")
+		saynn("Вы протягиваете левую руку. Рахи медленно надевает кольцо на ваш четвертый палец. Оно простое, но воспоминания, которые оно хранит... Именно это делает его самым ценным предметом в мире.")
 
-		saynn("[say=rahi]With this ring, I.. pledge you my love now and forever.[/say]")
+		saynn("[say=rahi]Этим кольцом я... клянусь тебе в любви — сейчас и навеки.[/say]")
 
-		saynn("After putting the rings on each other's fingers, you continue to hold hands. Rahi looks you into the eyes.")
+		saynn("Надев кольца друг другу на пальцы, вы продолжаете держать друг друга за руки. Рахи заглядывает тебе прямо в глаза.")
 
-		saynn("[say=captain]By the authority vested in me by AlphaCorp, I now pronounce you "+str("wife" if GM.pc.getGender() == Gender.Female else "husband")+" and wife. You may kiss.[/say]")
+		saynn("[say=captain]Властью, данной мне корпорацией «АльфаКорп», объявляю вас "+str("wife" if GM.pc.getGender() == Gender.Female else "husband")+"мужем и женой. Можете целоваться![/say]")
 
-		addButton("Kiss", "Might as well..", "do_kiss")
+		addButton("Поцеловать", "Почему бы и нет...", "do_kiss")
 	if(state == "do_kiss"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
-		saynn("You carefully lift Rahi's veil and kiss her. She wraps her paws around you and extends it, actively kissing you back.")
+		saynn("Ты осторожно приподнимаешь вуаль Рахи и целуешь её. Она обвивает тебя лапками и отвечает на поцелуй с нескрываемым рвением.")
 
-		saynn("Everyone in the crowd begins to clap their hands. Everyone.. expect Avy and Risha. One of them has her arms crossed and another rolls her eyes. Who cares about them though when you are embracing Rahi. She melts from the long kiss, her legs shake slightly. But you support her nicely.")
+		saynn("Толпа взрывается аплодисментами. Все... кроме Эви и Риши. Одна из них стоит, скрестив руки на груди, а другая закатывает глаза. Но какая к ним разница, когда ты обнимаешь Рахи? Она буквально тает от долгого поцелуя, её ноги слегка подкашиваются, но ты надежно её поддерживаешь.")
 
-		saynn("Feels nice to be married..")
+		saynn("Как же хорошо быть женатым...")
 
-		addButton("Continue", "See what happens next", "continue_hug")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue_hug")
 	if(state == "continue_hug"):
-		saynn("You continue to hug and kiss each other. Minutes feel like seconds when Rahi is near.")
+		saynn("Вы продолжаете обниматься и целоваться. Когда Рахи рядом, минуты пролетают как секунды.")
 
-		saynn("After the ceremony is over, inmates and staff begin to slowly disperse.")
+		saynn("Когда церемония заканчивается, заключенные и персонал начинают медленно расходиться.")
 
-		saynn("[say=rahi]It won't get any better than this..[/say]")
+		saynn("[say=rahi]Лучше этого момента уже не будет...[/say]")
 
-		saynn("You chuckle softly.")
+		saynn("Ты тихо посмеиваешься.")
 
-		saynn("[say=pc]What makes you think that?[/say]")
+		saynn("[say=pc]С чего ты это взяла?[/say]")
 
-		saynn("[say=rahi]Because this feels too good..[/say]")
+		saynn("[say=rahi]Просто всё кажется слишком идеальным...[/say]")
 
-		saynn("Rahi nuzzles your cheeks. The captain nods and leaves his spot to have a chat with Eliza.")
+		saynn("Рахи ластится к твоим щекам. Капитан кивает и покидает своё место, чтобы перекинуться парой слов с Элизой.")
 
-		saynn("[say=rahi]You can continue to give me tasks.. I like doing them.. and failing at them is fun too..[/say]")
+		saynn("[say=rahi]Можешь и дальше давать мне задания... Мне нравится их выполнять... а проваливать их — это ещё веселее...[/say]")
 
-		saynn("[say=pc]Sure, Rahi. The ceremony is over.. Let's go cuddle.[/say]")
+		saynn("[say=pc]Конечно, Рахи. Церемония окончена... Пойдём обниматься.[/say]")
 
-		saynn("Rahi nods and holds onto your arm while you two proceed to leave. While walking past Avy and Risha you can't help but to hear their exchange. Risha asks first.")
+		saynn("Рахи кивает и крепко держит тебя за руку, пока вы вдвоём направляетесь к выходу. Проходя мимо Ави и Риши, ты невольно слышишь их разговор. Риша спрашивает первой.")
 
-		saynn("[say=risha]Think it will last?[/say]")
+		saynn("[say=risha]Думаешь, это надолго?[/say]")
 
-		saynn("Avy reponds.")
+		saynn("Отвечает Ави.")
 
-		saynn("[say=avy]It will. For a bit. I bet the slut will realize the mistake and marry my dick instead. Just give it time.[/say]")
+		saynn("[say=avy]Это продлится. Недолго. Бьюсь об заклад, эта шлюха скоро осознает свою ошибку и выйдет замуж за мой член. Просто дай ей время.[/say]")
 
-		saynn("[say=risha]Why wait though?[/say]")
+		saynn("[say=risha]А зачем ждать?[/say]")
 
-		saynn("Avy raises her brow.")
+		saynn("Ави приподнимает бровь.")
 
-		saynn("That's when you leave..")
+		saynn("И вот тогда ты уходишь...")
 
-		addButton("Continue", "See what happens next", "cuddle_in_cell_after_wedding")
+		addButton("Продолжить", "Смотреть, что будет дальше", "cuddle_in_cell_after_wedding")
 	if(state == "cuddle_in_cell_after_wedding"):
 		removeCharacter("captain")
 		removeCharacter("risha")
@@ -216,284 +216,284 @@ func _run():
 		removeCharacter("eliza")
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
 		playAnimation(StageScene.Cuddling, "idle", {npc="rahi"})
-		saynn("You two spend some time together in Rahi's cell, cuddling and staring at your new rings.")
+		saynn("Вы вдвоем проводите время в камере Рахи, обнимаясь и разглядывая ваши новые кольца.")
 
-		saynn("[say=rahi]Thank you.. for everything..[/say]")
+		saynn("[say=rahi]Спасибо.. за всё..[/say]")
 
-		saynn("You land a little kiss on Rahi's cheek.")
+		saynn("Ты нежно целуешь Рахи в щеку.")
 
-		saynn("[say=pc]You should stop saying that, kitty. This isn't over. The opposite in fact. This is a new page. For both of us.[/say]")
+		saynn("[say=pc]Тебе стоит перестать так говорить, кошечка. Это еще не конец. Напротив, это только начало. Новая страница. Для нас обоих.[/say]")
 
-		saynn("She nods and just rests in your hands.")
+		saynn("Она кивает и просто доверчиво прижимается к твоим рукам.")
 
-		saynn("Time passes. Feels so good..")
+		saynn("Проходит время. Это так приятно...")
 
-		saynn("[say=rahi]If we ever get out of here.. will you help me with something?.. Something very important.[/say]")
+		saynn("[say=rahi]Если мы когда-нибудь выберемся отсюда... ты поможешь мне с кое-чем?.. С чем-то очень важным.[/say]")
 
-		saynn("Her voice.. She is hopeful.")
+		saynn("Ее голос... В нем слышится надежда.")
 
-		saynn("[say=pc]What would that be, kitty?[/say]")
+		saynn("[say=pc]И что же это будет, кошечка?[/say]")
 
-		saynn("[say=rahi]It's about my brother's fate.[/say]")
+		saynn("[say=rahi]Речь пойдет о судьбе моего брата.[/say]")
 
-		saynn("Her tone changes during that sentence.. becoming.. rather intimidating.")
+		saynn("Её тон меняется на этом предложении... становясь... довольно пугающим.")
 
-		saynn("You spend the rest of your free time discussing it.")
+		saynn("Остаток свободного времени вы проводите в обсуждениях.")
 
-		saynn("(( This is where Rahi's content ends. Thank you for playing :3 ))")
-		addButton("Continue", "See what happens next", "resetequipandend")
+		saynn("(( На этом контент Рахи заканчивается. Спасибо за игру! :3 ))")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resetequipandend")
 	if(state == "branding"):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand"})
 		addCharacter("eliza")
-		saynn("You were about to approach your kitty to give her today's task when doctor Quinn suddenly steps into the room.")
+		saynn("Вы уже собирались подойти к своей кошечке, чтобы дать ей сегодняшнее задание, как вдруг в комнату входит доктор Куинн.")
 
-		saynn("[say=eliza]Everything is ready.[/say]")
+		saynn("[say=eliza]Всё готово.[/say]")
 
-		saynn("Rahi looks at both of you with big kitty eyes.")
+		saynn("Рахи смотрит на вас обоих огромными кошачьими глазками.")
 
-		saynn("[say=rahi]What is?..[/say]")
+		saynn("[say=rahi]Что?..[/say]")
 
-		saynn("You reach your hands out to Rahi's hair and brush it.")
+		saynn("Вы протягиваете руки к волосам Рахи и нежно их гладите.")
 
-		saynn("[say=pc]It's time to make your status official. Understand me, kitty?[/say]")
+		saynn("[say=pc]Пришло время официально закрепить твой статус. Понимаешь меня, кошечка?[/say]")
 
-		saynn("You put your hand on her chin and make her look at you. Rahi nods subtly. Your hand slides down to her collar and tugs on it, inviting the feline to get up off of her bed.")
+		saynn("Ты кладешь руку ей на подбородок, заставляя посмотреть на себя. Рахи едва заметно кивает. Твоя рука скользит вниз к её воротнику и слегка тянет его, призывая кошечку подняться с постели.")
 
-		addButton("Follow Eliza", "See where she brings you", "follow_eliza_to_sins_room")
+		addButton("Идти за Элизой", "Посмотреть, куда она тебя приведет", "follow_eliza_to_sins_room")
 	if(state == "follow_eliza_to_sins_room"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
 		aimCameraAndSetLocName("medical_confessionary")
-		saynn("You and Rahi follow the doctor to the medical wing. She uses her badge to open the staff-only doors and invites you into a dimly-lit room. A room where Eliza told you about Rahi's now solved problems. A room where everything began.")
+		saynn("Вы с Рахи следуете за доктором в медицинское крыло. Она прикладывает пропуск к дверям для персонала и приглашает тебя в тускло освещенную комнату. В ту самую комнату, о которой Элиза рассказывала тебе, когда речь зашла о решенных проблемах Рахи. В комнату, где всё началось.")
 
-		saynn("[say=eliza]Inmates usually don't claim each other. Well, no, they do actually. They leave scars.[/say]")
+		saynn("[say=eliza]Заключенные обычно не заявляют права друг на друга. Ну, то есть, на самом деле заявляют. Они оставляют шрамы.[/say]")
 
-		saynn("Eliza goes ahead and grabs a small long box before placing it on the table and opening. Inside are a few tools and what looks to be a metal rod with a special tip, a branding iron. Kitty holds onto your arm.")
+		saynn("Элиза берет небольшой длинный ящик, ставит его на стол и открывает. Внутри несколько инструментов и нечто похожее на металлический стержень со специальным наконечником — клеймо для выжигания. Кити крепко держится за твою руку.")
 
-		saynn("[say=eliza]But scars.. are so.. animalistic. And we're not animals, are we?[/say]")
+		saynn("[say=eliza]Но шрамы... они такие... животные. А мы ведь не животные, верно?[/say]")
 
-		saynn("Eliza puts on some latex gloves and grabs the branding iron. She also grabs one of the tools which seems to be a blow torch.")
+		saynn("Элиза надевает латексные перчатки и берет клеймо. Также она берет один из инструментов, который кажется газовой горелкой.")
 
-		saynn("[say=eliza]I find branding to be much more.. hot.. literally. No one can mistake a branded slave. But..[/say]")
+		saynn("[say=eliza]Мне кажется, что клеймение куда более... горячее... в прямом смысле слова. Никто не перепутает клейменую рабыню ни с кем другим. Но...[/say]")
 
-		saynn("She puts the tools back and grabs another one. This one seems to be a piercing gun.")
+		saynn("Она кладет инструменты обратно и берет другой предмет. Похоже, это пистолет для пирсинга.")
 
-		saynn("[say=eliza]If that's too much for you, this would be a better choice. Ears, nose, nipples, clit.. I prefer the last one of course. And that's what I suggest to you. That ring I gave you would be the perfect piercing.[/say]")
+		saynn("[say=eliza]Если это для тебя слишком, то этот вариант будет получше. Уши, нос, соски, клитор... Последний, конечно, мой фаворит. И именно это я тебе и предлагаю. То кольцо, что я тебе дала, стало бы идеальным пирсингом.[/say]")
 
-		saynn("[say=rahi]Ring?..[/say]")
+		saynn("[say=rahi]Кольцо?..[/say]")
 
-		saynn("Rahi tilts her head slightly. You turn towards her and grab her by the ponytail.")
+		saynn("Рахи слегка наклоняет голову. Ты поворачиваешься к ней и хватаешь её за хвост.")
 
-		saynn("[say=pc]Yes, a ring. Two of them in fact. Wedding rings. But.. Why would I marry my slave? I much prefer to use it to claim you. Do you have something against that, kitty?[/say]")
+		saynn("[say=pc]Да, кольцо. Даже два. Обручальные кольца. Но... зачем мне выходить замуж за свою рабыню? Мне куда больше нравится использовать это, чтобы заявить на тебя права. Ты против, киска?[/say]")
 
-		saynn("Your kitty lowers her head. Her posture is incredibly submissive while her eyes.. have a little spark in them.")
+		saynn("Твоя киска склоняет голову. Её поза невероятно покорная, а в глазах... пляшет озорной огонек.")
 
-		saynn("[say=rahi]Your slave doesn't have anything against that, {rahiMaster}.. I'd love to be claimed.. by you..[/say]")
+		saynn("[say=rahi]Твоя рабыня только «за», {rahiMaster}.. Я бы с удовольствием позволила тебе заявить на меня права..[/say]")
 
-		addButton("Undress her", "Prepare kitty for the ceremony", "do_undress_kitty")
+		addButton("Раздеть её", "Подготовить киску к церемонии", "do_undress_kitty")
 	if(state == "do_undress_kitty"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="pc", pc="rahi", bodyState={naked=true}})
-		saynn("You unbutton kitty's shirt and take it off her, exposing the nice bouncy breasts with pink perky nipples"+str(" that seem to be leaking breastmilk the more you touch them" if getCharacter("rahi").canBeMilked() else "")+". Rahi stands completely still and breathes warmly.")
+		saynn("Ты расстегиваешь пуговицы на рубашке киски и снимаешь её, обнажая аппетитные упругие груди с розовыми подтянутыми сосками."+str(" that seem to be leaking breastmilk the more you touch them" if getCharacter("rahi").canBeMilked() else "")+". Рахи стоит совершенно неподвижно, её дыхание становится теплым.")
 
-		saynn("After exposing her chest, you move on to her shorts, pulling them down and revealing your slave's tight pink pussy. The cryopod treatment that your kitty went through healed any and all little bruises and other signs of abuse, Rahi's body looks pristine, beautiful.")
+		saynn("Обнажив её грудь, ты переходишь к её шортам, стягивая их вниз и открывая тугую розовую киску своей рабыни. Криогенная обработка, через которую прошла твоя киска, заживила все мелкие синяки и прочие следы насилия; тело Рахи выглядит безупречным и прекрасным.")
 
-		saynn("[say=pc]Time to make you helpless.[/say]")
+		saynn("[say=pc]Пора сделать тебя беспомощной.[/say]")
 
-		saynn("You position the kitty under one of the meta hooks that are attached to the ceiling. You grab some tight cuffs and put them on Rahi's wrists before chaining them together and hooking her up, making it so she can barely touch the floor with her toes. You can't help but to be reminded of your first heist.")
+		saynn("Ты устраиваешь киску под одним из мета-крюков, прикрепленных к потолку. Ты берешь тугие наручники и надеваешь их на запястья Рахи, после чего соединяешь их цепью и подвешиваешь так, что она едва касается пола кончиками пальцев ног. Ты невольно вспоминаешь свой первый налет.")
 
-		saynn("Rahi wiggles slightly, all her private bits are on display. Eliza is just standing nearby, making sure everything is going smoothly.")
+		saynn("Рахи слегка ерзает, выставив напоказ все свои интимные места. Элиза стоит рядом, следя за тем, чтобы всё прошло гладко.")
 
-		saynn("You bring the little table with the tools closer and look at them. The tip of the branding iron says \"Property of {pc.name}\" in a fancy cursive font. There are no painkillers provided. But the more you think about it.. Good slaves must endure the pain to show their devotion.")
+		saynn("Ты подносишь поближе столик с инструментами и осматриваешь их. На наконечнике клейма изящным курсивом выведено: \"Собственность {pc.name}\". Обезболивающих не предусмотрено. Но чем больше ты об этом думаешь... Хорошая рабыня должна терпеть боль, чтобы доказать свою преданность.")
 
-		saynn("Still, maybe less is better? Or maybe you should do both, brand your kitty and put a piercing on her clit.")
+		saynn("И всё же, может, лучше не перебарщивать? Или стоит сделать и то, и другое: прижечь ей киску и проколоть клитор?")
 
-		addButton("Just branding", "Only use the branding iron on Rahi", "only_branding")
-		addButton("Just piercing", "Only use the piercing tool on Rahi's clit", "only_piercing")
-		addButton("Both", "Use the both tools on Rahi", "branding_and_piercing")
+		addButton("Только клеймо", "Использовать только клеймо на Рахи", "only_branding")
+		addButton("Только пирсинг", "Использовать только инструмент для пирсинга на клиторе Рахи", "only_piercing")
+		addButton("Оба", "Использовать оба инструмента на Рахи", "branding_and_piercing")
 	if(state == "do_brand"):
-		saynn("Well, no point in pushing away the inevitable. You grab the cold branding iron and begin heating its tip up with the blowtorch. Rahi gulps audibly while watching the process.")
+		saynn("Что ж, нет смысла откладывать неизбежное. Ты хватаешь холодное клеймо и начинаешь разогревать его наконечник газовой горелкой. Рахи издает слышный глоток, наблюдая за процессом.")
 
-		saynn("[say=pc]Scared?[/say]")
+		saynn("[say=pc]Напугана?[/say]")
 
-		saynn("[say=rahi]A little bit.. will it hurt?..[/say]")
+		saynn("[say=rahi]Чуть-чуть?.. Будет больно?..[/say]")
 
-		saynn("You nod. The branding iron is already glowing red. It's so hot that even the handle is now hard to hold. Rahi's heart is pounding when you turn off the torch and approach the kitty, looking for a good spot.")
+		saynn("Ты киваешь. Клеймо уже раскалено докрасна. Оно настолько горячее, что даже держать его за рукоять становится трудно. Сердце Рахи бешено колотится, когда ты выключаешь факел и приближаешься к кошечке, выискивая подходящее место.")
 
-		saynn("[say=pc]I'm gonna brand your crotch. Above the pussy. When anyone sees it, they will know who you belong to. Right, kitty?[/say]")
+		saynn("[say=pc]Я прижгу тебе пах. Прямо над киской. Когда кто-то это увидит, он сразу поймет, кому ты принадлежишь. Правда, кошечка?[/say]")
 
-		saynn("The heat emanating from the branding iron makes kitty wiggle and try to avoid it.")
+		saynn("Жар, исходящий от раскаленного железа, заставляет кошечку ерзать и пытаться увернуться.")
 
-		saynn("[say=rahi]Y-yes.. {rahiMaster}.. She.. I mean.. I.. belong to you..[/say]")
+		saynn("[say=rahi]Д-да.. {rahiMaster}.. Она.. то есть.. Я.. принадлежу тебе..[/say]")
 
-		saynn("Rahi lets out a [b]loud cry[/b] when you press the red-hot branding iron against her crotch. The smell of burning flesh and fur quickly fills the air. Poor kitty is arching her back and shakes a lot but the restraints help to keep her steady. Eliza winces while you hold the iron in place for at least several seconds.")
+		saynn("Рахи издает [b]громкий крик[/b], когда ты прижимаешь раскаленное клеймо к её паху. Запах горелой плоти и шерсти мгновенно наполняет воздух. Бедная кошечка выгибает спину и сильно дрожит, но ремни удерживают её на месте. Элиза морщится, пока ты держишь железо прижатым в течение нескольких секунд.")
 
-		saynn("The pain is intense, Rahi keeps hissing and making noises of pain as the branding iron burns the many letters into her skin. She could feel the mark being etched into her flesh, a permanent reminder of her ownership by you.")
+		saynn("Боль невыносимая; Рахи шипит и стонет от мучений, пока клеймо выжигает буквы на её коже. Она кожей чувствует, как знак впечатывается в её плоть — вечное напоминание о том, что она твоя собственность.")
 
-		saynn("After that, you slowly pull the iron away, revealing.. the results. \"Property of {pc.name}\" is now forever engraved into Rahi's crotch. It looks.. neat.")
+		saynn("Затем ты медленно отводишь железо, обнажая.. результат. \"Собственность {pc.name}\" теперь навечно выжжена на паху Рахи. Выглядит.. аккуратно.")
 
-		saynn("Kitty is panting heavily.")
+		saynn("Кошечка тяжело дышит.")
 
-		saynn("[say=rahi]Is it d-done?..[/say]")
+		saynn("[say=rahi]Всё.. в-всё?..[/say]")
 
-		saynn("[say=pc]It is.[/say]")
+		saynn("[say=pc]Так оно и есть.[/say]")
 
-		saynn("[say=rahi]I'm now.. a branded slave.. Ah..[/say]")
+		saynn("[say=rahi]Теперь я.. клеймёная рабыня.. Ах..[/say]")
 
 		if (pierced):
-			saynn("You put the iron away and reach for the piercing tool instead.")
+			saynn("Ты убираешь раскалённое железо и тянешься к инструменту для пирсинга.")
 
-			saynn("[say=pc]But we're not done yet..[/say]")
+			saynn("[say=pc]Но мы ещё не закончили..[/say]")
 
-			saynn("Kitty sees your intentions and lowers her head, staring at the floor.")
+			saynn("Китти понимает твои намерения и опускает голову, уставившись в пол.")
 
-			saynn("[say=rahi]Of c-course..[/say]")
+			saynn("[say=rahi]Ко-нечно..[/say]")
 
-			addButton("Continue", "See what happens next", "do_pierce")
+			addButton("Продолжить", "Смотреть, что будет дальше", "do_pierce")
 		else:
-			saynn("You put the iron away and carefully hug the kitty.")
+			saynn("Ты убираешь железо и осторожно обнимаешь китти.")
 
-			saynn("[say=pc]That's it, kitty.. This will be a reminder of your spot in life.[/say]")
+			saynn("[say=pc]Вот так, китти.. Это будет напоминанием о твоём месте в жизни.[/say]")
 
-			saynn("[say=rahi]It's a good s-spot..[/say]")
+			saynn("[say=rahi]Это х-хорошее место..[/say]")
 
-			addButton("Continue", "See what happens next", "branding_aftercare")
+			addButton("Продолжить", "Смотреть, что будет дальше", "branding_aftercare")
 	if(state == "do_pierce"):
 		if (branded):
-			saynn("You wait for the kitty to calm down after the branding iron treatment. Then you grab the piercing gun and approach her.")
+			saynn("Ты ждёшь, пока китти успокоится после процедуры клеймения. Затем ты берёшь пистолет для пирсинга и подходишь к ней.")
 
 		else:
-			saynn("You decide not to brand your kitty. But piercing her clit.. that sounds like something that you wanna do. You grab the piercing gun and approach her.")
+			saynn("Ты решаешь не клеймить свою киску. Но проколоть ей клитор... это звучит как то, что тебе очень хочется сделать. Ты хватаешь пистолет для пирсинга и подходишь к ней.")
 
-		saynn("The piercing tool looks like.. a pistol of sorts. It has a handle and a trigger but the barrel is replaced with a sharp needle.")
+		saynn("Инструмент для пирсинга похож на... своего рода пистолет. У него есть рукоятка и спусковой крючок, но вместо ствола — острая игла.")
 
 		if (branded):
-			saynn("[say=rahi]This will hurt too, right?..[/say]")
+			saynn("[say=rahi]Это тоже будет больно, да?..[/say]")
 
-			saynn("[say=pc]It will. But less.[/say]")
+			saynn("[say=pc]Будет. Но не так сильно.[/say]")
 
-			saynn("[say=rahi]Good..[/say]")
+			saynn("[say=rahi]Хорошо..[/say]")
 
 		else:
-			saynn("[say=rahi]It will hurt.. right?..[/say]")
+			saynn("[say=rahi]Будет больно.. правда?..[/say]")
 
-			saynn("[say=pc]Yes. But not that much.[/say]")
+			saynn("[say=pc]Да. Но не слишком сильно.[/say]")
 
-		saynn("You carefully move the tool to Rahi's crotch and press it against her sensitive bean. You can feel her shivering.. and then taking a deep breath.. her whole body tensing up.")
+		saynn("Ты осторожно подносишь инструмент к промежности Рахи и прижимаешь его к её чувствительному клитору. Ты чувствуешь, как она дрожит... а затем делает глубокий вдох... и всё её тело напрягается.")
 
-		saynn("You press on the trigger. Rahi felt a sharp pinch, and then a burning sensation as the needle went through her flesh. She gasps in pain and shuts her watery eyes, trying to focus on enduring the uncomfortable sensations.")
+		saynn("Ты нажимаешь на курок. Рахи ощутила резкий укол, а затем жгучее чувство, когда игла прошла сквозь её плоть. Она ахает от боли и зажмуривает влажные глаза, пытаясь сосредоточиться на том, чтобы вытерпеть эти неприятные ощущения.")
 
-		saynn("At least that was quick. Your kitty now has a little hole in her clit.")
+		saynn("По крайней мере, всё прошло быстро. Теперь в клиторе твоей киски красуется маленькая дырочка.")
 
-		saynn("[say=rahi]T-that's it?..[/say]")
+		saynn("[say=rahi]И это всё?..[/say]")
 
-		saynn("[say=pc]Almost.[/say]")
+		saynn("[say=pc]Почти.[/say]")
 
-		saynn("You produce the little box with the rings. You only need one so you take one. It's just a plain metal ring. But it has the words 'To remember. Forever and always.' inscribed on it. Pretty fitting.")
+		saynn("Ты достаешь маленькую коробочку с кольцами. Тебе нужно всего одно, поэтому ты берешь одно. Это простое металлическое кольцо. Но на нем выгравированы слова: «Чтобы помнить. Навсегда и вовеки». В самый раз.")
 
-		saynn("Kitty hisses slightly while you put the little ring through the new hole. Eliza walks up to you and offers you a little tag. It's a metal circle with a little hole on top. It says \"{pc.name}'s Property\". Sounds about right.")
+		saynn("Китти слегка шипит, пока ты продеваешь колечко в новое отверстие. К тебе подходит Элиза и протягивает маленькую бирку. Это металлический кружок с дырочкой наверху. На нем написано \"{pc.name}Собственность\". Звучит вполне логично.")
 
-		saynn("[say=pc]Thanks, you're very thoughtful, doctor.[/say]")
+		saynn("[say=pc]Спасибо, вы очень внимательны, доктор.[/say]")
 
-		saynn("Eliza chuckles while you attach the tag to Rahi's clit piercing. It dangles a little bit while you play with it. Cute and sexy.")
+		saynn("Элиза посмеивается, пока ты прикрепляешь бирку к пирсингу клитора Рахи. Она забавно покачивается, когда ты вертишь её в руках. Мило и сексуально.")
 
-		saynn("[say=eliza]That's why I'm here. I like what you did.[/say]")
+		saynn("[say=eliza]Для этого я здесь и нахожусь. Мне нравится то, что ты сделала.[/say]")
 
-		saynn("Rahi finally opens her eyes. She looks down at her pierced clit.. and smiles.")
+		saynn("Рахи наконец открывает глаза. Она смотрит вниз на свой проколотый клитор... и улыбается.")
 
-		saynn("[say=rahi]I like it a lot.. Still hurts a bit..[/say]")
+		saynn("[say=rahi]Мне очень нравится... Но всё еще немного больно...[/say]")
 
-		saynn("[say=pc]But now you are forever mine, kitty.[/say]")
+		saynn("[say=pc]Но теперь ты навеки моя, китти.[/say]")
 
-		addButton("Continue", "See what happens next", "branding_aftercare")
+		addButton("Продолжить", "Смотреть, что будет дальше", "branding_aftercare")
 	if(state == "branding_aftercare"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={naked=true}})
-		saynn("You uncuff the kitty and help not to fall. Eliza puts all the tools away and waits near the exit.")
+		saynn("Ты снимаешь наручники с кошечки и придерживаешь её, чтобы она не упала. Элиза убирает инструменты и ждёт у выхода.")
 
-		saynn("[say=eliza]I suggest.. not to touch down there.. for at least an hour. That includes clothes.[/say]")
+		saynn("[say=eliza]Я бы посоветовала... не трогать там ничего... как минимум час. Это касается и одежды тоже.[/say]")
 
-		saynn("[say=rahi]But..[/say]")
+		saynn("[say=rahi]Но...[/say]")
 
-		saynn("You grab Rahi's uniform and store it. And instead, you produce a leash.")
+		saynn("Ты берёшь форму Рахи и убираешь её, а вместо этого достаёшь поводок.")
 
-		saynn("[say=pc]Sure. Kitty is fine with being naked, right?[/say]")
+		saynn("[say=pc]Конечно. Кошечке ведь нравится ходить голой, правда?[/say]")
 
-		saynn("[say=rahi]Yes, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Да, {rahiMaster}..[/say]")
 
-		saynn("Rahi lets you put her on a leash.")
+		saynn("Рахи позволяет тебе надеть на неё поводок.")
 
-		saynn("[say=eliza]Have fun.[/say]")
+		saynn("[say=eliza]Развлекайся.[/say]")
 
-		addButton("Parade Rahi", "Walk the naked Rahi through the station", "parade_rahi")
+		addButton("Устроить парад Рахи", "Прогуляться с голой Рахи по станции", "parade_rahi")
 	if(state == "parade_rahi"):
 		removeCharacter("eliza")
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("You hold Rahi's leash as you leave the medical wing and step into the elevator. Every nurse is staring at your claimed kitty which makes her blush.")
+		saynn("Ты выходишь из медблока и заходишь в лифт, держа Рахи на поводке. Каждая медсестра пялится на твою «застолбленную» кошечку, отчего та заливается краской.")
 
-		saynn("As you step out into the main hall of the prison, Rahi begins putting some strain on the leash. But a few tugs and she continues to follow like a good kitty.")
+		saynn("Когда вы выходите в главный зал тюрьмы, Рахи начинает слегка натягивать поводок. Но после пары рывков она послушно продолжает следовать за вами, как ласковая кошечка.")
 
-		saynn("[say=pc]You're my kitty, I wanna show you.[/say]")
+		saynn("[say=pc]Ты моя кошечка, и я хочу тебя всем показать.[/say]")
 
-		saynn("[say=rahi]And I'm proud to be your kitty.. This is just a little embarrassing..[/say]")
+		saynn("[say=rahi]И я горжусь тем, что я твоя кошечка... Просто это немного неловко...[/say]")
 
-		saynn("Inmates and staff stare at you two. Some of their stares are hungry.")
+		saynn("Заключенные и персонал пялятся на вас двоих. В некоторых взглядах читается неприкрытый голод.")
 
-		saynn("You walk your kitty past Risha and Avy and capture their attention. Your ears pick up on their chatter.")
+		saynn("Вы ведете свою кошечку мимо Риши и Эви, привлекая их внимание. Ваши уши улавливают их шепот.")
 
-		addButton("Continue", "See what happens next", "listen_on_avy_risha_during_parade")
+		addButton("Продолжить", "Смотреть, что будет дальше", "listen_on_avy_risha_during_parade")
 	if(state == "listen_on_avy_risha_during_parade"):
 		addCharacter("risha")
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {pc="avy", npc="risha"})
-		saynn("Risha taps on Avy's shoulder.")
+		saynn("Риша хлопает Эви по плечу.")
 
 		if (branded):
-			saynn("[say=risha]Look who's got turned into a slave. Branded and everything.[/say]")
+			saynn("[say=risha]Смотри, кого тут в рабыню превратили. Прямо с клеймом, всё по фэншую.[/say]")
 
 		else:
-			saynn("[say=risha]Look who's got turned into a slave. Cute clit piercing.[/say]")
+			saynn("[say=risha]Смотри, кого тут в рабыню превратили. А пирсинг на клиторе — просто прелесть.[/say]")
 
-		saynn("Avy hums and crosses her arms.")
+		saynn("Эви что-то мычит себе под нос и скрещивает руки на груди.")
 
-		saynn("[say=avy]Huh. I bet the slut will realize the mistake soon and beg to be enslaved to my dick instead.[/say]")
+		saynn("[say=avy]Хм. Спорим, эта шлюшка скоро поймет свою ошибку и начнет умолять, чтобы её трахал мой член вместо этого?[/say]")
 
-		saynn("[say=risha]Why wait though?[/say]")
+		saynn("[say=risha]А зачем ждать?[/say]")
 
-		saynn("Avy raises her brow.")
+		saynn("Ави приподнимает бровь.")
 
-		saynn("That's when you leave.")
+		saynn("В этот момент ты уходишь.")
 
-		addButton("Continue", "See what happens next", "cuddle_in_cell_after_branding")
+		addButton("Продолжить", "Смотреть, что будет дальше", "cuddle_in_cell_after_branding")
 	if(state == "cuddle_in_cell_after_branding"):
 		removeCharacter("risha")
 		removeCharacter("avy")
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
 		playAnimation(StageScene.Cuddling, "idle", {npc="rahi", npcBodyState={naked=true}})
-		saynn("You two spend some time together in Rahi's cell, cuddling on the bed after the ritual.")
+		saynn("Вы вдвоем проводите время в камере Рахи, прижимаясь друг к другу на кровати после ритуала.")
 
-		saynn("[say=rahi]Thank you.. for showing me my place.. Teaching me.. Training me..[/say]")
+		saynn("[say=rahi]Спасибо тебе.. за то, что показала мне мое место.. За то, что учила меня.. Дрессировала меня..[/say]")
 
-		saynn("You land a little kiss on Rahi's cheek.")
+		saynn("Ты нежно целуешь Рахи в щеку.")
 
-		saynn("[say=pc]And I will continue doing that.[/say]")
+		saynn("[say=pc]И я продолжу это делать.[/say]")
 
-		saynn("She nods and just rests in your hands.")
+		saynn("Она кивает и просто доверчиво прижимается к твоим рукам.")
 
-		saynn("Time passes. Feels nice.. Kitty decides to ask a random question.")
+		saynn("Проходит время. Это приятно.. Китти решает задать случайный вопрос.")
 
-		saynn("[say=rahi]If we ever get out of here.. will you help me with something?.. Something very important.[/say]")
+		saynn("[say=rahi]Если мы когда-нибудь выберемся отсюда... ты поможешь мне с кое-чем?.. С чем-то очень важным.[/say]")
 
-		saynn("Her voice.. She is hopeful.")
+		saynn("Ее голос... В нем слышится надежда.")
 
-		saynn("[say=pc]What would that be, kitty?[/say]")
+		saynn("[say=pc]И что же это будет, кошечка?[/say]")
 
-		saynn("[say=rahi]It's about my brother's fate.[/say]")
+		saynn("[say=rahi]Речь пойдет о судьбе моего брата.[/say]")
 
-		saynn("Her tone changes during that sentence.. becoming.. rather intimidating.")
+		saynn("Её тон меняется на этом предложении... становясь... довольно пугающим.")
 
-		saynn("You spend the rest of your free time discussing it.")
+		saynn("Остаток свободного времени вы проводите в обсуждениях.")
 
-		saynn("(( This is where Rahi's content ends. Thank you for playing :3 ))")
-		addButton("Continue", "See what happens next", "resetequipandend")
+		saynn("(( На этом контент Рахи заканчивается. Спасибо за игру! :3 ))")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resetequipandend")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -25,105 +25,105 @@ func _run():
 		playAnimation(StageScene.Urinal, "idle", {pc="rahi", bodyState={naked=true}})
 		var waterLevel = getModule("RahiModule").getSkillScore("rahiSkillWatersports")
 		if (waterLevel < 5):
-			saynn("Time for a very degrading punishment. You leash your kitty and bring her into the bathroom. She looks around, unsure.")
+			saynn("Пришло время для очень унизительного наказания. Ты надеваешь поводок на свою кошечку и ведешь её в туалет. Она оглядывается по сторонам, не понимая, что её ждет.")
 
 		else:
-			saynn("Time for a very degrading punishment. You leash your kitty and bring her into the bathroom. She looks around and sighs, already having a rough idea of what you wanna do with her.")
+			saynn("Пришло время для очень унизительного наказания. Ты надеваешь поводок на свою кошечку и ведешь её в туалет. Она оглядывается и вздыхает, уже догадываясь, что именно ты задумал.")
 
-		saynn("Your hands reach out and start forcibly taking Rahi's uniform off, exposing her perky tits and a pink pussy. Then you produce some restraints. The first thing is the ring gag that goes inside Rahi's mouth.")
+		saynn("Твои руки тянутся к ней и начинают силой срывать с Рахи униформу, обнажая её упругую грудь и розовую киску. Затем ты достаешь средства фиксации. Первое, что ты используешь — это кольцевой кляп, который вставляется прямо в рот Рахи.")
 
 		if (deserved):
 			if (waterLevel < 5):
-				saynn("[say=rahi]{rahiFP('I', 'She')} screwed up.. But what are you gonna do here..[/say]")
+				saynn("[say=rahi]{rahiFP('I', 'She')} всё испортила.. Но что ты теперь с ней сделаешь..[/say]")
 
 			else:
-				saynn("[say=rahi]You gonna do what {rahiFP('I think', 'she thinks')} you gonna do?..[/say]")
+				saynn("[say=rahi]Ты собираешься сделать что, {rahiFP('I think', 'she thinks')} что именно ты сделаешь?..[/say]")
 
 		else:
-			saynn("[say=rahi]{rahiFP('I don\\'t', 'She doesn\\'t')} know what {rahiFP('I', 'she')} did but {rahiFP('I am', 'she is')} sorry..[/say]")
+			saynn("[say=rahi]{rahiFP('I don\\'t', 'She doesn\\'t')} знает, что {rahiFP('I', 'she')} наделал, но {rahiFP('I am', 'she is')} просит прощения..[/say]")
 
-		saynn("Without explaining anything, you put cuffs on Rahi's paws and ankles. Then you bring her to one of the urinals and start chaining her to it. Kitty looks at you with pleading eyes, the ring gag forces her mouth to be wide opened and also makes her drool.")
+		saynn("Ничего не объясняя, ты надеваешь наручники на лапки и лодыжки Рахи. Затем ты подводишь её к одной из писсуаров и приковываешь её к нему цепью. Кошечка смотрит на тебя умоляющими глазами; кольцевой кляп заставляет её рот широко раскрыться, из-за чего у неё начинает течь слюна.")
 
 		if (GM.pc.hasReachablePenis() || GM.pc.isWearingChastityCage()):
-			saynn("You expose your {pc.penis} and press it against Rahi's lips. Then you wait for the urge to happen..")
+			saynn("Ты обнажаешь свою {pc.penis} и прижимаешь её к губам Рахи. Затем ты ждешь, когда придет позыв..")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("You expose your {pc.pussyStretch} pussy and press it against Rahi's lips. Then you wait for the urge to happen..")
+			saynn("Ты обнажаешь свою {pc.pussyStretch} киску и прижимаешь её к губам Рахи. Затем ты ждешь, когда придет позыв..")
 
 		else:
-			saynn("You expose your crotch and press your pisshole against Rahi's lips. Then you wait for the urge to happen..")
+			saynn("Ты раздвигаешь ноги и прижимаешь свое мочеиспускательное отверстие к губам Рахи. Затем ты ждешь, когда придет позыв..")
 
 		if (waterLevel < 5):
-			saynn("And soon enough, a stream of gross yellow piss emerges from your urethra and gets directed towards Rahi's mouth. She desperately tries to avoid it but you grab her ponytail and yank on it, forcing your kitty to start swallowing your urine.")
+			saynn("И вскоре из твоей уретры вырывается струя мерзкой желтой мочи, направленная прямо в рот Рахи. Она отчаянно пытается увернуться, но ты хватаешь её за хвост и резко дергаешь, заставляя свою киску жадно глотать твою писанину.")
 
-			saynn("Kitty coughs and gasps while you keep pissing down her throat, her maw tries to close around the ring gag but the metal is too strong. The poor feline clearly doesn't have enough experience yet. But that's why it's a good punishment.")
+			saynn("Киска кашляет и задыхается, пока ты продолжаешь лить ей прямо в глотку; её пасть пытается сомкнуться вокруг кольцевой кляпы, но металл слишком прочен. Бедная кошечка явно еще недостаточно опытна. Но именно поэтому это отличная кара.")
 
-			saynn("By the end of it, your kitty looks incredibly embarrassed, her eyes are watery.")
+			saynn("К концу процесса твоя киска выглядит невероятно смущенной, а её глаза наполняются слезами.")
 
 		elif (waterLevel < 12):
-			saynn("And soon enough, a stream of gross yellow piss emerges from your urethra and gets directed towards Rahi's mouth. Surprisingly, she doesn't fight it. Instead your kitty focuses on quickly swallowing your urine each time she feels her mouth getting full. Her ears lower themselves as Rahi realizes how she is being used.")
+			saynn("И вскоре из твоей уретры вырывается струя мерзкой желтой мочи, направленная прямо в рот Рахи. Удивительно, но она не сопротивляется. Вместо этого твоя киска старается как можно быстрее проглатывать твою мочу каждый раз, когда чувствует, что рот наполняется. Её ушки опускаются, когда Рахи осознает, как именно её используют.")
 
-			saynn("Eventually she can't keep up anymore and starts to cough. Luckily the metal ring prevents her from biting you even if she wanted to. Kitty is forced to swallow your piss load until there is nothing left in your bladder.")
+			saynn("В конце концов она перестает справляться и начинает кашлять. К счастью, металлическое кольцо не дает ей укусить тебя, даже если бы она очень захотела. Киска вынуждена глотать твою порцию мочи до тех пор, пока твой мочевой пузырь не опустеет.")
 
-			saynn("By the end of it, your kitty looks incredibly embarrassed, her eyes are watery. But she is also.. blushing. Probably because her pussy has gotten wet.")
+			saynn("К концу процесса твоя киска выглядит невероятно смущенной, а её глаза наполняются слезами. Но она также... краснеет. Вероятно, потому что её киска намокла.")
 
 		else:
-			saynn("And soon enough, a stream of gross yellow piss emerges from your urethra and gets directed towards Rahi's mouth. And instead of fighting, she eagerly swallows your urine every time she can.")
+			saynn("И вскоре из твоей уретры вырывается струя мерзкой желтой мочи, направленная прямо в рот Рахи. И вместо того чтобы сопротивляться, она с жадностью глотает твою мочу при каждой возможности.")
 
-			saynn("It seems the training has paid off, your kitty is a hungry piss whore that loves being your piss toilet. Her lusty eyes look up at you while she obediently gulps your piss.")
+			saynn("Похоже, тренировки дали свои плоды: твоя киска превратилась в голодную писсуарную шлюху, которая обожает быть твоим мочевым унитазом. Её похотливые глазки смотрят на тебя снизу вверх, пока она послушно глотает твою мочу.")
 
-			saynn("By the end of it, your kitty is panting heavily, her eyes show passion, her pussy dripping juices down into the urinal.")
+			saynn("К концу процесса твоя киска тяжело дышит, в её глазах горит страсть, а из киски на писсуар стекают соки.")
 
-		saynn("Is this enough of a punishment you wonder.")
+		saynn("Достаточно ли это для наказания, задаешься ты вопросом.")
 
-		addButton("Enough", "Kitty got punished", "do_untie")
-		addButton("Golden shower", "Piss all over her body", "golden_shower")
+		addButton("Хватит", "Киску наказали", "do_untie")
+		addButton("Золотой дождь", "Облить всё её тело мочой", "golden_shower")
 	if(state == "golden_shower"):
-		saynn("No, it's not, your kitty needs to be humiliated more. You pull away slightly and direct the rest of the piss stream all over her body. The gross smelly fluid hits Rahi's face, hair, neck, chest, tits, belly, legs. Some of the piss streams between her pussy lips. Kitty closes her eyes and just lets you give her a golden shower.")
+		saynn("Нет, недостаточно — твою киску нужно унизить ещё сильнее. Ты слегка отстраняешься и направляешь остальную струю мочи прямо на её тело. Мерзкая вонючая жидкость заливает лицо, волосы, шею, грудь, сиськи, живот и ноги Рахи. Часть мочи струится между её половыми губами. Киска закрывает глаза, просто позволяя тебе устроить ей золотой дождь.")
 
 		var waterLevel = getModule("RahiModule").getSkillScore("rahiSkillWatersports")
 		if (waterLevel < 5):
-			saynn("Very soon her fur gets fully drenched in your urine. The smell is awful. After you've done using her, kitty slowly opens her sorry eyes. Her ears lowered because of so much humiliation.")
+			saynn("Вскоре её мех полностью пропитывается твоей мочой. Запах ужасный. Когда ты заканчиваешь использовать её, киска медленно открывает свои несчастные глазки. Её ушки опущены от такого сильного унижения.")
 
 		elif (waterLevel < 12):
-			saynn("Very soon her fur gets fully drenched in your urine. The smell is awful. But you can spot kitty sneakily licking her lips. After you've finished using her, she slowly opens her lusty eyes. It's still a very humiliating experience for Rahi but it seems she found some enjoyment in it too.")
+			saynn("Вскоре её мех полностью пропитывается твоей мочой. Запах ужасный. Но ты замечаешь, как киска украдкой облизывает губы. Когда ты заканчиваешь использовать её, она медленно открывает свои похотливые глазки. Для Рахи это всё ещё очень унизительный опыт, но, кажется, она нашла в этом и своё удовольствие.")
 
 		else:
-			saynn("Very soon her fur gets fully drenched in your urine. The smell is awful. But you can spot kitty playfully licking her lips. After you've finished using her, she slowly opens her lusty eyes. The only thing that's more wet currently is Rahi's slit, she seems to love every second of this.")
+			saynn("Вскоре её мех полностью пропитывается твоей мочой. Запах ужасный. Но ты замечаешь, как киска игриво облизывает губы. Когда ты заканчиваешь использовать её, она медленно открывает свои похотливые глазки. Единственное, что сейчас ещё мокрее — это щель Рахи; кажется, она наслаждается каждой секундой.")
 
-		addButton("Enough", "Kitty got punished", "do_untie")
+		addButton("Хватит", "Киску наказали", "do_untie")
 		if (getModule("RahiModule").isSkillLearned("rahiSkillProstitution")):
-			addButton("Share Rahi", "(Prostitution) Let others use Rahi as a piss toilet", "share_rahi")
+			addButton("Поделиться Рахи", "(Проституция) Позволить другим использовать Рахи как писсуар", "share_rahi")
 	if(state == "share_rahi"):
-		saynn("Hm, there seem to be random inmates walking past you. And they do seem to be intrigued by what's happening.")
+		saynn("Хм, кажется, мимо проходят случайные заключенные. И они явно заинтригованы происходящим.")
 
-		saynn("[say=pc]Hey. If anyone wants to relieve themselves, use this piss toilet.[/say]")
+		saynn("[say=pc]Эй! Если кто хочет облегчиться — используйте этот писсуар![/say]")
 
 		var waterLevel = getModule("RahiModule").getSkillScore("rahiSkillWatersports")
-		saynn("Some inmates instantly approach your kitty, already pulling down their shorts. A few dicks and a pussy. They make a nice queue.")
+		saynn("Некоторые заключенные тут же подходят к твоей киски, уже спуская шорты. Несколько членов и одна киска. Образуется отличная очередь.")
 
 		if (waterLevel < 5):
-			saynn("Rahi tries to resist it but there is nothing she can do. She is forced to swallow more urine as the first participant starts pissing down her throat. And every time she slacks, the piss starts flowing down her chin and tits, drenching her fur and adding another gross scent that she won't be able to wash away for a while.")
+			saynn("Рахи пытается сопротивляться, но она бессильна. Её заставляют глотать всё больше мочи, когда первый участник начинает справлять нужду ей прямо в глотку. И каждый раз, когда она расслабляется, струя течет по её подбородку и сиськам, пропитывая мех и оставляя мерзкий запах, который она не сможет смыть еще долго.")
 
-			saynn("Time passes. Rahi serves as a piss toilet for another few dicks. Then one of the girls grinds their pussy into your kitty's muzzle before proceeding to piss all over their face. At this point she has just given up, swallowing every fluid that ends up in her mouth.")
+			saynn("Проходит время. Рахи служит писсуаром для еще нескольких членов. Затем одна из девчонок втирает свою киску в мордочку твоей кошечки, прежде чем начать мочиться ей прямо на лицо. К этому моменту Рахи просто сдается, заглатывая любую жидкость, которая попадает ей в рот.")
 
-			saynn("Kitty looks incredibly sad. Her ponytail and fur are ruined. She smells very gross. And she swallowed a lot of urine. After the last person has finished using her, kitty just lets her own piss stream out, peeing down into the urinal.")
+			saynn("Киски выглядит невероятно печальной. Её хвост и мех испорчены. От неё несет жутко. И она проглотила уйму мочи. Когда последний человек заканчивает, киска просто выпускает свою собственную струю, справляя нужду прямо в писсуар.")
 
 		elif (waterLevel < 12):
-			saynn("Rahi doesn't resist much, she knows that there is nothing she can do. She is forced to swallow more urine as the first participant starts pissing down her throat. Sometimes it gets too much and the piss starts flowing down her chin and tits, drenching her fur and adding another gross scent that she won't be able to wash away for a while.")
+			saynn("Рахи не особо сопротивляется, она знает, что всё равно ничего не изменит. Её заставляют глотать всё больше мочи, когда первый участник начинает справлять нужду ей прямо в глотку. Иногда её пробивает через край, и струи текут по подбородку и сиськам, намочив мех и оставляя мерзкий запах, который она не сможет отмыть ещё долгое время.")
 
-			saynn("Time passes. Rahi serves as a piss toilet for another few dicks. Then one of the girls grinds their pussy into your kitty's muzzle before proceeding to piss all over their face. And Rahi looks.. happy.. she got used to swallowing every fluid that ends up in her mouth.")
+			saynn("Время идет. Рахи служит писсуаром для ещё нескольких членов. Затем одна из девчонок втирает свою киску прямо в мордочку твоей кошечки, после чего начинает лить мочу ей на всё лицо. И Рахи выглядит... счастливой... она привыкла глотать любую жидкость, которая оказывается у неё во рту.")
 
-			saynn("By the end of it, Rahi's ponytail and fur are ruined. She smells very gross. And she swallowed a lot of urine which satisfied her thirst. After the last person has finished using her, kitty just lets her own piss stream out, peeing down into the urinal.")
+			saynn("К концу процесса хвост и мех Рахи безнадёжно испорчены. От неё несёт жуткой вонью. Зато она наглоталась мочи, что утолило её жажду. Когда последний человек заканчивает использовать её, кошечка просто выпускает свою собственную струю, справляя нужду прямо в писсуар.")
 
 		else:
-			saynn("Rahi doesn't resist at all, she eagerly lets others use her as a piss toilet. Rahi makes gulping noises as she swallows more urine when the first participant starts pissing down her throat. Sometimes it gets too much and the piss starts flowing down her chin and tits, drenching her fur and adding another gross scent that she won't be able to wash away for a while.")
+			saynn("Рахи совсем не сопротивляется, она с жадностью позволяет другим использовать себя как писсуар. Рахи издаёт характерные глотательные звуки, поглощая порции мочи, когда первый участник начинает лить ей прямо в глотку. Иногда жидкости становится слишком много, и она начинает стекать по её подбородку и сиськам, пропитывая мех и добавляя ещё один мерзкий запах, который не отмоется ещё долго.")
 
-			saynn("Time passes. Rahi serves as a toilet for another few dicks. Then one of the girls grinds their pussy into your kitty's muzzle before proceeding to piss all over their face. And Rahi looks.. slutty.. She loves swallowing every fluid that ends up in her mouth.")
+			saynn("Время идет. Рахи служит туалетом для ещё нескольких членов. Затем одна из девчонок втирает свою киску в мордочку твоей кошечки, после чего начинает лить мочу ей на всё лицо. И Рахи выглядит... похотливой... Она обожает глотать любую жидкость, которая попадает ей в рот.")
 
-			saynn("By the end of it, Rahi's ponytail and fur are ruined. She smells very gross. And she swallowed a lot of urine which satisfied her thirst and made her incredibly horny. After the last person has finished using her, kitty just lets her own piss stream out, peeing down into the urinal.")
+			saynn("К концу всего этого дела хвост и мех Рахи безнадежно испорчены. От неё несёт жутко. Она наглоталась мочи, что утолило её жажду и невероятно её возбудило. Когда последний человек заканчивает использовать её, кошечка просто даёт своей струе течь, справляя нужду прямо в писсуар.")
 
-		addButton("Enough", "Kitty got punished", "do_untie")
+		addButton("Хватит", "Киску наказали", "do_untie")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

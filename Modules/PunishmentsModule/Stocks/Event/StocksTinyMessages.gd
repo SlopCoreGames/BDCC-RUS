@@ -8,15 +8,15 @@ func _reactInit():
 	
 func _run():
 	if(state == "1"):
-		saynn("A guard is walking past. His attention was definitely stolen by you for a second. Though he quickly continues his patrol.")
+		saynn("Мимо проходит охранник. На мгновение его взгляд определенно зацепился за тебя, но он быстро продолжает свой патруль.")
 	if(state == "2"):
-		saynn("A guard stops and rubs his chin while watching you. Your restraints keep you completely still.")
+		saynn("Охранник останавливается и, потирая подбородок, пристально смотрит на тебя. Из-за пут ты не можешь даже пошевелиться.")
 	if(state == "3"):
-		saynn("Some staff member with a yellow uniform walks past. Behind him are a few inmates carrying crates. They seem to be going towards the canteen.")
+		saynn("Мимо проходит сотрудник в желтой униформе. За ним семенят несколько заключенных с ящиками — похоже, они направляются в столовую.")
 	if(state == "4"):
-		saynn("A lilac walks past and smirks at you.")
+		saynn("Мимо проходит сиреневоволосая девчонка и самодовольно ухмыляется тебе.")
 		
-	addButton("Continue", "See what happens next", "endthescene")
+	addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 

@@ -14,32 +14,32 @@ func _run():
 		GM.pc.setLocation("main_punishment_spot")
 		aimCamera("main_punishment_spot")
 		
-		saynn("You’re stuck in stocks, there is very little you can do, the movement of your head and arms is blocked by a giant metal frame with 3 holes, its angle is forcing you to constantly stay bent forward, exposing your butt, your ankles are chained so you can’t really move them too. You’re completely helpless.")
+		saynn("Ты зажат в колодах, и почти ничего не можешь с этим поделать. Движения твоей головы и рук скованы гигантской металлической рамой с тремя отверстиями; из-за её наклона тебе приходится постоянно стоять, сильно наклонившись вперед, выставляя задницу напоказ. Лодыжки скованы цепями, так что и ими особо не пошевелишь. Ты абсолютно беспомощен.")
 
-		saynn("All you can do is wait while inmates and staff walk past you, minding their stuff. Though some look intrigued.")
+		saynn("Всё, что тебе остается — это ждать, пока мимо проходят заключенные и персонал, занятые своими делами. Хотя некоторые смотрят на тебя с любопытством.")
 
-		addButton("Wait", "Stay quiet and try to get some rest (You might get something done to you but you will never be fucked unwillingly)", "wait")
-		addButton("Be loud", "Ask to be freed. You might not get the type of attention that you want. (Anything can happen)", "be_loud")
-		addButton("Struggle", "Maybe you can escape somehow", "struggle")
+		addButton("Подождать", "Вести себя тихо и попытаться отдохнуть (С тобой могут что-то сделать, но тебя никогда не трахнут против воли)", "wait")
+		addButton("Шуметь", "Попросить освободить тебя. Возможно, ты получишь не совсем то внимание, на которое рассчитываешь (Может случиться что угодно)", "be_loud")
+		addButton("Сопротивление", "Может, получится как-нибудь сбежать", "struggle")
 		if(!GM.pc.getInventory().hasLockedStaticRestraints()):
-			addButton("Escape", "Sweet freedom!", "endthescene")
+			addButton("Побег", "Сладкая свобода!", "endthescene")
 		else:
-			addDisabledButton("Escape", "You can't escape while the stocks are locked")
+			addDisabledButton("Побег", "Пока колоды заперты, сбежать невозможно")
 
 	if(state == "wait"):
-		saynn("You decide to stay quiet. You’re forced to stand in an uncomfortable pose, it’s humiliating but you get some rest.")
+		saynn("Ты решаешь вести себя тихо. Тебя заставляют стоять в неудобной позе — это унизительно, но зато можно немного отдохнуть.")
 		
-		addButton("Continue", "What now", "afterjustwait")
+		addButton("Продолжить", "Что теперь?", "afterjustwait")
 
 
 	if(state == "be_loud"):
 		# (if not blindfolded)
 		if(!GM.pc.isBlindfolded()):
-			saynn("You look around to the best of your abilities and beg loudly.")
+			saynn("Ты оглядываешься по сторонам, насколько это позволяют оковы, и громко умоляешь о помощи.")
 
 		# (if blindfolded)
 		else:
-			saynn("You can’t really see if anyone is around but you beg anyway.")
+			saynn("Ты не особо понимаешь, есть ли кто-то рядом, но всё равно умоляешь.")
 
 		saynn("[say=pc]"+RNG.pick([
 			"Can someone help me?",
@@ -51,21 +51,21 @@ func _run():
 
 		# (forced random interaction)
 
-		addButton("Continue", "See what happens", "afterbeloud")
+		addButton("Продолжить", "Посмотреть, что будет", "afterbeloud")
 
 	if(state == "sleeping"):
-		saynn("You can’t sense anyone around, it seems to be very late. All the lights around you begin to turn off one by one. Wow, did they forget about you.")
+		saynn("Кажется, вокруг никого нет, уже очень поздно. Огни вокруг начинают гаснуть один за другим. Ого, неужели о тебе забыли?")
 		
-		saynn("Seems like you will have to sleep like this, stuck in stocks.")
+		saynn("Похоже, спать придётся вот так — зажатым в колодах.")
 		
-		addButton("Sleep", "Oh well", "aftersleep")
+		addButton("Спать", "Ну и ладно", "aftersleep")
 
 	if(state == "aftersleep"):
-		saynn("You wake up on time just like everyone else but with one difference, you’re still bound in stocks.")
+		saynn("Ты просыпаешься вовремя, как и все остальные, но с одной разницей: ты всё ещё скован в колодах.")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" твоего срока")
 		
-		addButton("Continue", "What's next", "")
+		addButton("Продолжить", "Что дальше?", "")
 
 func triggerRandomEvent(escapeChance, _lewdChance, _willingSexChance, _unWillingSexChance, _nothingChance):
 	var eventType = RNG.pickWeighted(["StocksEscape", "StocksEvent", "StocksWillingSex", "StocksUnWillingSex", ""], [escapeChance, _lewdChance, _willingSexChance, _unWillingSexChance, _nothingChance])

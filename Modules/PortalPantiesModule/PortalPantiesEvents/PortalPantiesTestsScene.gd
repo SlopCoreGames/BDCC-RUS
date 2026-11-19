@@ -35,15 +35,15 @@ func _run():
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You feel cold air washing over your {pc.pussyStretch} pussy. You grab onto your crotch and realize that your pussy is still somewhere else entirely, such a strange feeling. Then you feel your sex being poked with some tool.. Probably a thermometer. And that’s it. Was that the first test?")
+			saynn("Ты чувствуешь, как холодный воздух обдувает твою {pc.pussyStretch} киску. Ты хватаешься за промежность и осознаешь, что твоя киска всё ещё где-то совсем в другом месте — какое странное ощущение. Затем ты чувствуешь, как твой член тыкают каким-то инструментом... Наверное, термометром. И всё. Это был первый тест?")
 
-			saynn("You brush a hand over your fancy panties and continue on your way as if nothing happened.")
+			saynn("Ты проводишь рукой по своим шикарным трусикам и идешь дальше, как будто ничего не произошло.")
 		# (else)
 		else:
-			saynn("You feel cold air washing over your {pc.analStretch} tailhole. You grab onto your butt and realize that your anus is still somewhere else entirely, such a strange feeling. Then you feel the area around it being poked with some thermometer, causing you to clench.. And that’s it. Was that the first test?")
+			saynn("Ты чувствуешь, как холодный воздух обдувает твою {pc.analStretch} дырочку в хвосте. Ты хватаешься за задницу и понимаешь, что твой анус всё ещё где-то совсем в другом месте — какое странное ощущение. Затем ты чувствуешь, как область вокруг него тыкают каким-то термометром, заставляя тебя сжаться... И всё. Это был первый тест?")
 
-			saynn("You brush a hand over your fancy panties and continue on your way as if nothing happened.")
-		addButton("Continue", "That wasn't too bad", "endthescene")
+			saynn("Ты проводишь рукой по своим шикарным трусикам и идешь дальше, как будто ничего не произошло.")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 
@@ -53,29 +53,29 @@ func _run():
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Suddenly you feel latex brushing against your sex. Someone’s digits are gently spreading open your folds, causing you to bite your lip. You can’t even see whoever does it to you which makes it so much more exciting.")
+			saynn("Внезапно ты чувствуешь, как латекс касается твоего члена. Чьи-то пальцы нежно раздвигают твои складки, заставляя тебя прикусить губу. Ты даже не видишь, кто это делает, и от этого становится еще возбуждающее.")
 
 			# (if has cock)
 			if(GM.pc.isWearingChastityCage()):
-				saynn("You feel someone’s digits gently stroke your chastity cage, causing your cock to twitch. Can’t they do something more..")
+				saynn("Ты чувствуешь, как чьи-то пальцы нежно поглаживают твою корсетную клетку, заставляя твой член дернуться. Неужели они не могут сделать что-нибудь посерьезнее...")
 			elif(GM.pc.hasPenis()):
-				saynn("You feel yourself getting harder, you would expect your {pc.cock} to start applying pressure onto the panties but no, there is zero bulging. You feel someone’s digits gently stroke you, causing your cock to twitch. Can’t they do something more..")
+				saynn("Ты чувствуешь, как возбуждаешься; ты ожидала, что твоя {pc.cock} начнет давить на трусики, но нет — никакого выпирания. Ты чувствуешь, как чьи-то пальцы нежно ласкают тебя, заставляя твой член дернуться. Неужели они не могут сделать что-нибудь посерьезнее...")
 
-			saynn("Then you feel some object inserted into your slit.. it feels like a.. pen? And then there is much more stuffing your hole soon after. Are they using you to store their writing utensils? At least you got paid a credit for that still.")
+			saynn("Затем ты чувствуешь, как в твою щель вставляют какой-то предмет... похоже на... ручку? А вскоре твое отверстие начинают набивать чем-то еще и еще. Они что, используют тебя как футляр для своих пишущих принадлежностей? Ну, хотя бы за это тебе капнул один кредит.")
 
 		# (if no pussy)
 		else:
-			saynn("Suddenly you feel latex brushing against your butt. Someone’s digits are prodding at your tailhole and then gently spreading it open, causing you to bite your lip. You can’t even see whoever does it to you which makes it so much more exciting.")
+			saynn("Внезапно ты чувствуешь, как латекс касается твоей задницы. Чьи-то пальцы ковыряются в твоем анусе, а затем осторожно раздвигают его, заставляя тебя закусить губу. Ты даже не видишь, кто это делает, и от этого становится еще возбуждающеее.")
 
 			# (if has cock)
 			if(GM.pc.isWearingChastityCage()):
-				saynn("You feel someone’s digits gently stroke your chastity cage, causing your cock to twitch. Can’t they do something more..")
+				saynn("Ты чувствуешь, как чьи-то пальцы нежно поглаживают твою корсетную клетку, заставляя твой член дернуться. Неужели они не могут сделать что-нибудь посерьезнее...")
 			elif(GM.pc.hasPenis()):
-				saynn("You feel yourself getting harder, you would expect your {pc.cock} to start applying pressure onto the panties but no, there is zero bulging. You feel someone’s digits gently stroke you, causing your cock to twitch. Can’t they do something more..")
+				saynn("Ты чувствуешь, как возбуждаешься; ты ожидала, что твоя {pc.cock} начнет давить на трусики, но нет — никакого выпирания. Ты чувствуешь, как чьи-то пальцы нежно ласкают тебя, заставляя твой член дернуться. Неужели они не могут сделать что-нибудь посерьезнее...")
 
-			saynn("Then you feel some object inserted into your butt.. it feels like a.. pen? And then there is much more stuffing your hole soon after. Are they using you to store their writing utensils? At least you got paid a credit for that still.")
+			saynn("Затем ты чувствуешь, как в твою задницу вставляют какой-то предмет... похоже на... ручку? А вскоре твое отверстие начинают набивать чем-то еще и еще. Они что, используют тебя как футляр для своих пишущих принадлежностей? Ну, хотя бы за это тебе капнул один кредит.")
 
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 		
 		
 
@@ -84,17 +84,17 @@ func _run():
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You eek as suddenly someone inserts a cold speculum into your slit, spreading it wide open. You grab onto your panties but realize that there is nothing that you can do about your pussy while it’s attached to that fleshlight.")
+			saynn("Ты вскрикиваешь, когда кто-то внезапно вставляет в твою щель холодный расширитель, широко раздвигая её. Ты хватаешься за трусики, но понимаешь, что ничего не можешь поделать со своей киской, пока она прикреплена к этому фаллоимитатору.")
 
-			saynn("Then you feel someone pouring in some kind of drink inside your sex. And.. then adding a straw? Someone is totally using your pussy as their personal mug. You almost don’t mind it though..")
+			saynn("Затем ты чувствуешь, как кто-то вливает какой-то напиток прямо в твою щель. А потом... вставляет соломинку? Кто-то определенно использует твою киску как личную кружку. Но ты даже почти не против...")
 
 		# (else)
 		else:
-			saynn("You eek as suddenly someone inserts a cold speculum into your tailhole, spreading it wide open. You grab onto your panties but realize that there is nothing that you can do about your butthole while it’s attached to that fleshlight.")
+			saynn("Ты вскрикиваешь, когда кто-то внезапно вставляет в твой анус холодный расширитель, широко раздвигая его. Ты хватаешься за трусики, но понимаешь, что ничего не можешь поделать со своим задком, пока он прикреплен к этому фаллоимитатору.")
 
-			saynn("Then you feel someone adding a condom and pouring in some kind of drink inside you. And.. then adding a straw? Someone is totally using your butt as their personal mug. You almost don’t mind it though..")
+			saynn("Затем ты чувствуешь, как кто-то вставляет в тебя презерватив и заливает внутрь какую-то жидкость. А потом... вставляет трубочку? Кто-то явно использует твою задницу как личную кружку. Но ты даже почти не против этого...")
 		
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 
@@ -105,19 +105,19 @@ func _run():
 		
 		# (needs a cock)
 
-		saynn("You feel digits attaching some kind of electrodes to your {pc.cock}. They start stimulating your shaft by sending a small amount of current through it. Your cock’s muscles react by tensing up, causing you to swiftly get hard.")
+		saynn("Ты чувствуешь, как чьи-то пальцы прикрепляют какие-то электроды к твоему {pc.cock}. Они начинают стимулировать твой член, пропуская через него слабые разряды тока. Мышцы твоего хера реагируют напряжением, из-за чего ты мгновенно становишься твердым.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Then you let out a gasp as the tip of your cock seems to be brushing.. against your own slit. You shut your legs and look around, hoping that no one sees you and your blushing face. You feel your sensitive folds being spread by your own flesh, you’re almost begging for it to happen but it all just ends with teasing.")
+			saynn("Затем ты ахаешь, когда кончик твоего члена, кажется, начинает тереться... о твою собственную щель. Ты сжимаешь ноги и оглядываешься по сторонам, надеясь, что никто не заметит тебя и твое раскрасневшееся лицо. Ты чувствуешь, как твоя плоть раздвигает твои чувствительные складки; ты почти умоляешь об этом, но всё заканчивается лишь дразнящими ласками.")
 
 		# (else)
 		else:
-			saynn("Then you let out a gasp as the tip of your cock seems to be brushing.. against your own butthole. You shut your legs and look around, hoping that no one sees you and your blushing face. You feel your sensitive taihole being prodded by your own flesh, you’re almost begging for it to happen but it all just ends with teasing.")
+			saynn("Затем ты ахаешь, когда кончик твоего члена, кажется, начинает тереться... о твою собственную дырочку. Ты сжимаешь ноги и оглядываешься по сторонам, надеясь, что никто не заметит тебя и твое раскрасневшееся лицо. Ты чувствуешь, как твоя собственная плоть тычет в твое чувствительное анусное отверстие; ты почти умоляешь об этом, но всё заканчивается лишь дразнящими ласками.")
 
-		saynn("After the electrodes gather enough data, they are disconnected from your cock, letting it rest again.")
+		saynn("Когда электроды собирают достаточно данных, их отсоединяют от твоего члена, давая ему снова отдохнуть.")
 
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 	if(state == "cock_tease_poke"):
@@ -125,18 +125,18 @@ func _run():
 		
 		# (needs a cock)
 
-		saynn("Suddenly you feel some kind of vibrating toy tapped directly to the tip of your {pc.cock}. You look down at your portal panties and squirm helplessly after realizing there is nothing you can do. The toy seems to be set to its maximum setting though, your shaft quickly becomes hard and twitchy as you try to keep your mouth shut.")
+		saynn("Внезапно ты чувствуешь, как какая-то вибрирующая игрушка прижимается прямо к кончику твоего {pc.cock}. Ты смотришь вниз на свои портальные трусики и беспомощно ерзаешь, понимая, что ничего не можешь с этим поделать. Похоже, игрушка выставлена на максимум: твой член быстро становится твердым и дерганым, пока ты изо всех сил пытаешься держать рот на замке.")
 
-		addButton("Endure it", "Nothing else you can do", "endure_it")
+		addButton("Терпи", "Больше ничего не остается", "endure_it")
 
 	if(state == "endure_it"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside", "fast"]), {onlyLeft=true, npc="pc"})
 		
-		saynn("Muffled noises escape from you as you are pushed towards your orgasm already, you feel your cock shooting out a string of precum as the toy is vibrating against it relentlessly.")
+		saynn("Из твоих уст вырываются приглушенные звуки, когда тебя уже подталкивают к оргазму; ты чувствуешь, как из твоего члена брызжет предэякулят, пока игрушка безжалостно вибрирует прямо по нему.")
 
-		saynn("But just before you can experience your orgasm, the toy is pulled away, leaving you denied and desperate. You don’t care if anyone’s watching, you can’t stop squirming for another few minutes.")
+		saynn("Но как раз перед тем, как ты успеваешь испытать оргазм, игрушку резко отрывают, оставляя тебя в состоянии изнуренного желания. Тебе плевать, смотрит ли кто-то — ты не можешь перестать ерзать еще несколько минут.")
 
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 
@@ -145,23 +145,23 @@ func _run():
 		
 		# (needs pussy)
 
-		saynn("While you are doing something, a sudden vibrator gets pressed against your pussy lips! It feels like you are being teased with a magic wand but you can’t see it, only feel it, your portal panties are keeping your slit on some fleshlight somewhere deep in one of the labs.")
+		saynn("Пока ты чем-то занята, внезапно к твоим половым губам прижимается вибратор! Такое чувство, будто тебя дразнит волшебная палочка, которую ты не видишь, а только чувствуешь — твои портальные трусики удерживают твою щелочку на каком-то флешлайте где-то глубоко в одной из лабораторий.")
 
-		saynn("You stop whatever you’re doing and shut your legs while helplessly tugging on your panties, little muffled moans escape from you.")
+		saynn("Ты бросаешь все свои дела и сводишь ноги, беспомощно дергая за края трусиков, а из твоей груди вырываются тихие, сдавленные стоны.")
 
-		addButton("Endure it", "Nothing else you can do", "endure_it1")
+		addButton("Терпи", "Больше ничего не остается", "endure_it1")
 
 	if(state == "endure_it1"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside", "fast"]), {onlyLeft=true, npc="pc"})
 		
 		
-		saynn("You’re so wet already and the magic wand seems to be vibrating harder as the time passes. You can’t help but to squirm as your sensitive folds and the clit are all getting teased so much. You’re dripping but luckily no one around can tell that, they can only notice your cheeks blushing red and your jumpiness.")
+		saynn("Ты уже вся промокла, и кажется, что «волшебная палочка» вибрирует всё сильнее с каждой секундой. Ты невольно ерзаешь, когда твои чувствительные складки и клитор так нещадно дразнят. Ты буквально течешь, но, к счастью, окружающие этого не замечают — они видят лишь, как краснеют твои щеки и как ты вздрагиваешь от каждого прикосновения.")
 
-		saynn("Your breathing is fast, your heart is racing, you feel like you’re gonna cum. Your pussy starts to twitch and pulsate but just before you get that sweet release, the wand gets pulled away, stealing your orgasm!")
+		saynn("Твое дыхание учащается, сердце бешено колотится, ты чувствуешь, что вот-вот кончишь. Твоя киска начинает дергаться и пульсировать, но прямо перед тем, как наступает сладкая разрядка, палочку отрывают, крадя твой оргазм!")
 
-		saynn("Desperate moans escape through your lips as you try to rub your crotch to cum but can’t, you’re at full mercy of the person on the other end and they don’t really seem to care about your climax.")
+		saynn("От твоих губ срываются отчаянные стоны: ты пытаешься тереть промежность, чтобы кончить, но ничего не выходит — ты полностью во власти человека на другом конце, и ему, кажется, плевать на твой оргазм.")
 
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 
@@ -169,27 +169,27 @@ func _run():
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["sex"]), {onlyLeft=true, npc="pc"})
 		
 		
-		saynn("You feel something attached to your pussy! You can’t see it obviously but you feel the plastic rim pressed around your whole slit. Then you feel it.. pumping on your sex. Did they attach a pussy pump?")
+		saynn("Ты чувствуешь, что к твоей киске что-то присосалось! Глазами его не разглядеть, но ты ощущаешь, как пластиковый ободок плотно обхватил всю твою щель. А затем ты чувствуешь... как оно качает. Неужели они прицепили вакуумный насос для киски?")
 
-		saynn("You also notice that one of the security cameras is directly watching you. The pump starts doing its work on your slit, applying pressure and pumping on it, causing your pussy lips to become more buffy. It feels so good that you can’t help but to start moaning.")
+		saynn("Ты также замечаешь, что одна из камер наблюдения смотрит прямо на тебя. Насос начинает свою работу: он давит на твою щель и качает, отчего твои половые губы разбухают и становятся всё более припухлыми. Это настолько приятно, что ты невольно начинаешь стонать.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Another pump is then connected to your {pc.cock} and idly sucks on it.")
+			saynn("Затем к твоему {pc.cock} подключают еще один насос, который начинает лениво сосать его.")
 
-		addButton("Cum", "It’s gonna make you cum!", "cum")
+		addButton("Кончить", "Это заставит тебя кончить!", "cum")
 
 	if(state == "cum"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside", "fast"]), {onlyLeft=true, npc="pc"})
 		
 		
-		saynn("You close your legs and tilt your head down, trying to look normal to others but it’s really hard to endure this for long. The pump starts going through its cycles faster until you are pushed past the peak. You throw your head back and let out a very muffled but long moan as your slit starts squirting. And the pump takes full advantage of that, it collects all your juices and keeps milking you during the orgasm, causing your sex to squirt again and again.")
+		saynn("Ты сжимаешь ноги и опускаешь голову, пытаясь выглядеть естественно перед окружающими, но выносить это долго почти невозможно. Насос начинает работать всё быстрее, пока тебя не выбрасывает за пик удовольствия. Ты запрокидываешь голову и издаешь приглушенный, но долгий стон, когда из твоей щели начинает хлестать сквирт. Насос пользуется этим по полной: он собирает все твои соки и продолжает доить тебя прямо во время оргазма, заставляя твою киску извергаться снова и снова.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} shoots out its load too before it gets collected by the pump. It felt so good to cum.")
+			saynn("Твой {pc.cock} тоже выбрасывает порцию семени, прежде чем насос собирает её. Кончить было чертовски приятно.")
 
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 
@@ -197,24 +197,24 @@ func _run():
 		# (needs cock)
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["sex"]), {onlyLeft=true, npc="pc"})
 		
-		saynn("A cock milker gets attached to your {pc.cock}! You can’t see it, your portal panties aren’t even bulging but the thing already starts stroking you with a steady pace, getting you nice and hard.")
+		saynn("К твоим {pc.cock} прицепился доильщик члена! Его не видно, твои портальные трусики даже не выпирают, но эта штука уже начинает ритмично ласкать тебя, заставляя встать как следует.")
 
 		if(GM.pc.isWearingChastityCage()):
-			saynn("It feels so good, the fleshy ribbed texture of the milker vibrates, making you feel like you’re fucking someone and quickly pushing you to your first orgasm.")
+			saynn("Это так приятно: мясистая ребристая текстура доильщика вибрирует, создавая ощущение, будто ты трахаешься, и быстро подгоняет тебя к первому оргазму.")
 		else:
-			saynn("It feels so good, the fleshy ribbed texture of the milker makes you feel like you’re fucking someone, quickly pushing you to your first orgasm.")
+			saynn("Это так приятно: мясистая ребристая текстура доильщика заставляет тебя чувствовать, будто ты трахаешься, быстро подгоняя тебя к первому оргазму.")
 
-		addButton("Cum!", "You can’t endure it", "cum!")
+		addButton("Кончай!", "Ты не можешь это вытерпеть", "cum!")
 
 	if(state == "cum!"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside", "fast"]), {onlyLeft=true, npc="pc"})
 		
 		
-		saynn("You open your mouth slightly and pant heavily as your cock bursts with waves of sticky {pc.cum}, stuffing the milker full. But the milkers neatly pumps all of it out into a separate container and continues to milk you until your balls are left dry.")
+		saynn("Ты слегка приоткрываешь рот и тяжело дышишь, пока твой член извергает волны липкого {pc.cum}, наполняя доильщик до краев. Но прибор аккуратно выкачивает всё это в отдельный контейнер и продолжает доить тебя, пока твои яйца не станут совсем сухими.")
 
-		saynn("You’re squirming a lot and trying to catch your breath, hoping that nobody saw you cumming. Luckily there is zero mess.")
+		saynn("Ты много ерзаешь и пытаешься отдышаться, надеясь, что никто не заметил твой конч. К счастью, никакого беспорядка.")
 
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 func _react(_action: String, _args):

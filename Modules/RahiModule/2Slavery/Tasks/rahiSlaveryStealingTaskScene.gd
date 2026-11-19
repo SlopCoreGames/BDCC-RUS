@@ -17,91 +17,91 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		addCharacter("rahi")
-		saynn("Pick how hard you want the stealing task to be for Rahi.")
+		saynn("Выберите уровень сложности задачи по воровству для Рахи.")
 
-		saynn("Easy: "+str(Util.roundF(chanceEasy, 1))+"% chance. Rahi will try to steal an apple from the green houses.")
+		saynn("Легкий: "+str(Util.roundF(chanceEasy, 1))+"% шанс. Рахи попытается стащить яблоко из теплиц.")
 
-		saynn("Medium: "+str(Util.roundF(chanceMedium, 1))+"% chance. Rahi will try to steal something from the medical wing.")
+		saynn("Средний: "+str(Util.roundF(chanceMedium, 1))+"% шанс. Рахи попытается украсть что-нибудь из медблока.")
 
-		saynn("Hard: "+str(Util.roundF(chanceHard, 1))+"% chance. Rahi will try to steal credits from inmates")
+		saynn("Тяжелый: "+str(Util.roundF(chanceHard, 1))+"% шанс. Рахи попытается обнести заключенных на кредиты.")
 
-		addButton("Back", "Pick another task", "endthescene")
-		addButton("Easy", "Rahi will try to steal an apple from the green houses", "easy_steal")
-		addButton("Medium", "Rahi will try to steal something from the medical wing", "medium_steal")
-		addButton("Hard", "Rahi will try to steal credits from inmates", "hard_steal")
+		addButton("Назад", "Выбрать другое задание", "endthescene")
+		addButton("Легкий", "Рахи попытается стащить яблоко из теплиц", "easy_steal")
+		addButton("Средний", "Рахи попытается украсть что-нибудь из медблока", "medium_steal")
+		addButton("Сложный", "Рахи попытается обнести заключенных на кредиты", "hard_steal")
 	if(state == "easy_steal"):
-		saynn("You order Rahi to go to the greenhouses and steal an apple for you.")
+		saynn("Вы приказываете Рахи отправиться в теплицы и украсть для вас яблоко.")
 
-		saynn("She nods and steps out of the cell to do her task.")
+		saynn("Она кивает и выходит из камеры, чтобы выполнить задание.")
 
-		addButton("Continue", "See what happens next", "easy_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "easy_outcome")
 	if(state == "easy_outcome"):
 		if (success):
-			saynn("After some time Rahi returns and brings you the forbidden fruit!")
+			saynn("Спустя некоторое время Рахи возвращается и приносит вам запретный плод!")
 
-			saynn("[say=rahi]Here you go, {rahiMaster}.. No one saw her![/say]")
+			saynn("[say=rahi]Вот, держи, {rahiMaster}.. Её никто не заметил![/say]")
 
-			saynn("You grab the apple and rub it clean against her fur.")
+			saynn("Ты берешь яблоко и протираешь его о её мех, чтобы очистить.")
 
-			saynn("[say=pc]Good job.[/say]")
+			saynn("[say=pc]Молодец.[/say]")
 
 		else:
 			playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-			saynn("After some time Rahi returns. But instead of an apple, she is carrying a full list of restraints on her.")
+			saynn("Спустя некоторое время Рахи возвращается. Но вместо яблока она тащит на себе целый список средств для связывания.")
 
-			saynn("[say=rahi]She got spotted.. many times.. Sorry, {rahiMaster}, she couldn't do it..[/say]")
+			saynn("[say=rahi]Её спалили.. много раз.. Прости, {rahiMaster}, у неё не вышло..[/say]")
 
-			saynn("Well, Rahi failed her task. You wonder if you should even begin to untie her.")
+			saynn("Что ж, Рахи провалила задание. Ты гадаешь, стоит ли вообще начинать её развязывать.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "medium_steal"):
-		saynn("You order Rahi to slip into the medical wing storage and steal something from it.")
+		saynn("Ты приказываешь Рахи прокрасться в хранилище медблока и что-нибудь оттуда стащить.")
 
-		saynn("She nods and steps out of the cell to do her task.")
+		saynn("Она кивает и выходит из камеры, чтобы выполнить задание.")
 
-		addButton("Continue", "See what happens next", "medium_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "medium_outcome")
 	if(state == "medium_outcome"):
 		if (success):
-			saynn("After some time Rahi returns and brings you an item that she stole!")
+			saynn("Спустя некоторое время Рахи возвращается и приносит тебе украденную вещь!")
 
-			saynn("[say=rahi]Here you go, {rahiMaster}.. Not a single nurse saw her![/say]")
+			saynn("[say=rahi]Вот, держи, {rahiMaster}.. Ни одна медсестра её не заметила![/say]")
 
-			saynn("You grab what she brought you and nod to her.")
+			saynn("Ты забираешь принесенное ею и киваешь ей.")
 
-			saynn("[say=pc]Good job.[/say]")
+			saynn("[say=pc]Молодец.[/say]")
 
 		else:
-			saynn("After some time Rahi returns. But instead of bringing a useful item, she steps into the room wearing a straitjacket and looking.. quite lusty.")
+			saynn("Спустя некоторое время Рахи возвращается. Но вместо полезной вещи она входит в комнату в смирительной рубашке, и выглядит она.. весьма похотливо.")
 
-			saynn("[say=rahi]She got spotted.. They.. injected her with something.. Sorry, {rahiMaster}, she couldn't do it..[/say]")
+			saynn("[say=rahi]Её заметили.. Ей.. что-то вкололи.. Прости, {rahiMaster}, она не справилась..[/say]")
 
-			saynn("Well, Rahi failed her task. You wonder if you should even begin to free her.")
+			saynn("Что ж, Рахи провалила задание. Ты задумываешься, стоит ли вообще пытаться её освободить.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "hard_steal"):
-		saynn("You order Rahi to steal some credits from the inmates.")
+		saynn("Ты приказываешь Рахи украсть немного кредитов у заключенных.")
 
-		saynn("She nods and steps out of the cell to do her task.")
+		saynn("Она кивает и выходит из камеры, чтобы выполнить задание.")
 
-		addButton("Continue", "See what happens next", "hard_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "hard_outcome")
 	if(state == "hard_outcome"):
 		if (success):
-			saynn("After some time Rahi returns and brings you a chip with some credits!")
+			saynn("Спустя некоторое время Рахи возвращается и приносит тебе чип с кредитами!")
 
-			saynn("[say=rahi]Here you go, {rahiMaster}.. They won't know it was her![/say]")
+			saynn("[say=rahi]Вот, {rahiMaster}.. Они не узнают, что это была она![/say]")
 
-			saynn("You grab the chip and insert it into your collar, transferring the credits to your inmate account.")
+			saynn("Ты хватаешь чип и вставляешь его в свой ошейник, переводя кредиты на свой счет заключенного.")
 
-			saynn("[say=pc]Good job.[/say]")
+			saynn("[say=pc]Молодец.[/say]")
 
 		else:
-			saynn("Rahi returns but instead of carrying credits, she looks all roughed up. Seems like someone wrote humiliating things on her fur.")
+			saynn("Рахи возвращается, но вместо кредитов она выглядит избитой и помятой. Кажется, кто-то написал унизительные вещи прямо на её меху.")
 
-			saynn("[say=rahi]They caught her stealing.. She couldn't escape..[/say]")
+			saynn("[say=rahi]Её поймали на краже.. Она не смогла сбежать..[/say]")
 
-			saynn("Well, Rahi failed her task.")
+			saynn("Что ж, Рахи провалила задание.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

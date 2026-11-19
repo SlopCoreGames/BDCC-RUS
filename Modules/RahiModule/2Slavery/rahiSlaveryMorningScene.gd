@@ -26,53 +26,53 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You shouldn't see this")
+		saynn("Тебе не стоит этого видеть")
 
 	if(state == "rahi_is_sleeping"):
-		saynn("You step into Rahi's cell. She seems to be sleeping so you make your presence known by coughing a few times.")
+		saynn("Вы входите в камеру Рахи. Кажется, она спит, поэтому вы даете о себе знать, пару раз кашлянув.")
 
-		saynn("Rahi's ears perk as she opens her eyes. The feline quickly gets up and assumes a submissive pose. Straight posture, head tilted down, arms by her sides.")
+		saynn("Уши Рахи дергаются, и она открывает глаза. Кошка быстро вскакивает и принимает покорную позу: спина прямая, голова наклонена вниз, руки по швам.")
 
-		saynn("[say=rahi]Hello, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Привет, {rahiMaster}..[/say]")
 
-		saynn("[say=pc]Did you drink any alcohol while I wasn't here?[/say]")
+		saynn("[say=pc]Ты не пила алкоголь, пока меня не было?[/say]")
 
-		saynn("Rahi shakes her head subtly.")
+		saynn("Рахи едва заметно качает головой.")
 
-		saynn("[say=pc]I trust you not to lie, kitty.[/say]")
+		saynn("[say=pc]Верю, что ты не лжешь, киска.[/say]")
 
-		addButton("Continue", "See what happens next", "pick_task_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pick_task_scene")
 	if(state == "rahi_is_sad"):
-		saynn("As you enter Rahi's cell, you find her curled up on her bed, her ears drooping low and her tail wrapped around her body.")
+		saynn("Зайдя в камеру к Рахи, вы застаете её свернувшейся на кровати: уши поникли, а хвост обернут вокруг тела.")
 
-		saynn("You slowly approach her.")
+		saynn("Вы медленно приближаетесь к ней.")
 
-		saynn("[say=pc]Hey, kitty.[/say]")
+		saynn("[say=pc]Эй, киска.[/say]")
 
-		saynn("Rahi looks up at you with her sad eyes and gives a small nod.")
+		saynn("Рахи смотрит на вас своими печальными глазами и едва заметно кивает.")
 
-		saynn("[say=rahi]She is doing.. okay.[/say]")
+		saynn("[say=rahi]Она держится.. неплохо.[/say]")
 
-		saynn("You sit down next to her on the bed and put a hand on her shoulder, trying to cheer her up. Rahi's ears twitch slightly as she slowly gets up, getting ready to do her task.")
+		saynn("Вы садитесь рядом с ней на кровать и кладете руку ей на плечо, пытаясь подбодрить. Уши Рахи слегка дергаются, когда она медленно поднимается, готовясь к выполнению своего задания.")
 
-		addButton("Continue", "See what happens next", "pick_task_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pick_task_scene")
 	if(state == "rahi_default"):
-		saynn("You enter Rahi's cell. She is being the usual lazy kitty, sleeping in her bed. As you carefully wake her up, she swiftly gets off her bed and straightens her posture for you.")
+		saynn("Вы входите в камеру Рахи. Она, как обычно, ведет себя как ленивая кошечка, дремля в своей постели. Когда вы осторожно будите её, она быстро сползает с кровати и выпрямляется перед вами.")
 
-		saynn("[say=rahi]Hello, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Привет, {rahiMaster}..[/say]")
 
-		saynn("She rubs her nose and patiently awaits her task.")
+		saynn("Она потирает носик и терпеливо ждет своего задания.")
 
-		saynn("[say=pc]Let's see..[/say]")
+		saynn("[say=pc]Так, посмотрим..[/say]")
 
-		addButton("Continue", "See what happens next", "pick_task_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pick_task_scene")
 	if(state == "ask_if_advance"):
-		saynn("You're ready to advance your relationship with Rahi.")
+		saynn("Вы готовы развить свои отношения с Рахи.")
 
-		saynn("Do you wanna do that now?")
+		saynn("Хотите заняться этим прямо сейчас?")
 
-		addButton("Yes", "Advance it", "advance_stage")
-		addButton("Not today", "You have things to do", "no_advance")
+		addButton("Да", "Улучшить отношения", "advance_stage")
+		addButton("Не сегодня", "У вас есть дела поважнее", "no_advance")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

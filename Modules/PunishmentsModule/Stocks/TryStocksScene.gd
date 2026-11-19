@@ -11,21 +11,21 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You take a look at the stocks in the middle of the platform. They don’t seem to be locked, you can freely lift the top part. Your curious mind wonders how you would look in them. You place your head in the middle slot and stick your hands into two other holes. You have to stay bent forward.")
+		saynn("Ты осматриваешь колодки посреди платформы. Похоже, они не заперты, и верхнюю часть можно свободно поднять. Любопытство берет верх, и ты задаешься вопросом, как бы ты в них смотрелся. Ты опускаешь голову в центральный слот и просовываешь руки в два других отверстия. Теперь тебе приходится стоять, наклонившись вперед.")
 
-		saynn("It feels kinda nice actually but you think that staying like this for long would be quite uncomfortable.")
+		saynn("На самом деле, ощущения довольно приятные, но ты понимаешь, что долго простоять в такой позе будет весьма неудобно.")
 
 		# (if okay)
 		if(canEscape):
-			saynn("You free yourself and stand up.")
+			saynn("Ты освобождаешься и выпрямляешься.")
 			
-			addButton("Leave", "Nice", "endthescene")
+			addButton("Уйти", "Приятно", "endthescene")
 
 		# (if not okay)
 		else:
-			saynn("You try to free yourself but one accidental motion makes the top part close and lock itself on you. You seem to be stuck. Oh no. You try to struggle but it doesn’t give.")
+			saynn("Ты пытаешься выбраться, но из-за одного неосторожного движения верхняя часть захлопывается и защелкивается на тебе. Кажется, ты застрял. О нет... Ты пытаешься вырваться, но колодки не поддаются.")
 			
-			addButton("Oops", "Oh no", "getCaptured")
+			addButton("Ой", "О нет", "getCaptured")
 		
 
 

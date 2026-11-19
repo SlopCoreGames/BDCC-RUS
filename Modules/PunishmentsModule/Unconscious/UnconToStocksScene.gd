@@ -7,19 +7,19 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "sleep", {pc="pc"})
 
-		saynn("While you are.. sleeping soundly.. someone has approached you.. and began dragging you off somewhere..")
+		saynn("Пока ты... крепко спишь... кто-то подошел к тебе... и начал утаскивать куда-то прочь...")
 		
-		addButton("Continue", "See what happens next..", "do_drag_pc_off")
+		addButton("Продолжить", "Смотри, что будет дальше...", "do_drag_pc_off")
 	
 	if(state == "do_drag_pc_off"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
 		playAnimation(StageScene.Stocks, "idle", {pc="pc"})
 		
-		saynn("After a less-than-comfy sleeping experience, you finally open your eyes.. and realize that you are somewhere else..")
+		saynn("После довольно неуютного сна ты наконец открываешь глаза... и понимаешь, что ты уже в другом месте...")
 
-		saynn("In fact.. you know exactly where you are.. on a main punishment platform.. stuck inside stocks..")
+		saynn("Вообще-то... ты прекрасно понимаешь, где находишься... на главной платформе для наказаний... зажатая в колодках...")
 
-		addButton("Oh no..", "Time to get out..", "start_stocks")
+		addButton("О нет...", "Пора выбираться...", "start_stocks")
 
 
 func _react(_action: String, _args):

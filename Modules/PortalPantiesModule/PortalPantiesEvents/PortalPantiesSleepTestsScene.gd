@@ -13,9 +13,9 @@ func _reactInit():
 
 func _run():
 	if(state == "sleeping_poke"):
-		saynn("Even while sleeping you feel like your private bits are always out in the open. But at least no one is touching them.")
+		saynn("Даже во сне кажется, будто твои интимные места всегда на виду. Но, по крайней мере, их никто не трогает.")
 
-		addButton("Continue", "That wasn't too bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 
 func _react(_action: String, _args):

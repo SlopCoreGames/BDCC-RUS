@@ -17,167 +17,167 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		addCharacter("rahi")
-		saynn("Pick how hard you want the cleaning task to be for Rahi.")
+		saynn("Выберите уровень сложности уборки для Рахи.")
 
-		saynn("Easy: "+str(Util.roundF(chanceEasy, 1))+"% chance. Rahi cleans her cell")
+		saynn("Легкий: "+str(Util.roundF(chanceEasy, 1))+"% шанс. Рахи убирает свою камеру")
 
-		saynn("Medium: "+str(Util.roundF(chanceMedium, 1))+"% chance. Rahi cleans her cell with a blindfold")
+		saynn("Средний: "+str(Util.roundF(chanceMedium, 1))+"% шанс. Рахи убирает свою камеру с повязкой на глазах")
 
-		saynn("Hard: "+str(Util.roundF(chanceHard, 1))+"% chance. Rahi cleans her cell naked and tied up")
+		saynn("Тяжелый: "+str(Util.roundF(chanceHard, 1))+"% шанс. Рахи убирает свою камеру голой и связанной")
 
-		addButton("Back", "Pick another task", "endthescene")
-		addButton("Easy", "Rahi cleans her cell", "easy_clean")
-		addButton("Medium", "Rahi cleans her cell with a blindfold", "medium_clean")
-		addButton("Hard", "Rahi cleans her cell naked and tied up", "hard_clean")
+		addButton("Назад", "Выбрать другое задание", "endthescene")
+		addButton("Легкий", "Рахи убирает свою камеру", "easy_clean")
+		addButton("Средний", "Рахи убирает свою камеру с повязкой на глазах", "medium_clean")
+		addButton("Сложный", "Рахи убирает свою камеру голой и связанной", "hard_clean")
 	if(state == "easy_clean"):
-		saynn("You order Rahi to clean her cell. You quickly explain what it involves.")
+		saynn("Вы приказываете Рахи убраться в камере. Вы вкратце объясняете, что именно нужно сделать.")
 
 		if (success):
-			saynn("The feline nods and proceeds to do what was ordered. She starts by making her bed. She puts the pillow and blanket away before fixing the top sheet, making it look nice and tucked up, no wrinkles. She makes sure there is no dirt or strange bodily fluids before putting the pillow back and fluffing it up. Then she carefully places the blanket on top.")
+			saynn("Кошка кивает и принимается за дело. Она начинает с заправки кровати. Сначала она убирает подушку и одеяло, а затем расправляет верхнюю простыню, стараясь сделать её аккуратной и заправленной без единой складки. Она проверяет, нет ли грязи или странных телесных выделений, прежде чем положить подушку обратно и взбить её. Затем она осторожно накрывает всё одеялом.")
 
-			saynn("[say=rahi]That should be good..[/say]")
+			saynn("[say=rahi]Вроде бы неплохо..[/say]")
 
-			saynn("You nod and look away, letting kitty clean the rest of the cell.")
+			saynn("Вы киваете и отводите взгляд, позволяя кошечке домыть остальную часть камеры.")
 
 		else:
-			saynn("The feline nods and proceeds to do what was ordered. She starts by making her bed. She puts the pillow and blanket away before fixing the top sheet. Well, trying to. Kitty almost gets tangled in it. She drops the pillow onto the floor by accident, letting it catch some dirt. And the blanket.. oof.. she just stuffed it into the corner after getting annoyed with it all.")
+			saynn("Кошка кивает и принимается за дело. Она начинает с заправки кровати. Сначала она убирает подушку и одеяло, а затем пытается расправить верхнюю простыню. Ну, пытается. Кошечка чуть не запутывается в ней. Подушка случайно падает на пол, собирая грязь. А одеяло... ох... она просто запихнула его в угол, окончательно разозлившись на всё это.")
 
-			saynn("[say=rahi]Ughhh-h..[/say]")
+			saynn("[say=rahi]Уффф-ф..[/say]")
 
-			saynn("You sigh and look away, letting kitty clean the rest of the cell.")
+			saynn("Ты вздыхаешь и отводишь взгляд, позволяя кошечке домыть остальную часть камеры.")
 
-		addButton("Continue", "See what happens next", "after_easy")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_easy")
 	if(state == "after_easy"):
 		if (success):
-			saynn("After some time, you turn around and see that the cell.. looks pristine.. seemingly. Rahi stands still near her made bed and just waits for your verdict.")
+			saynn("Спустя некоторое время ты оборачиваешься и видишь, что камера... выглядит безупречно... по крайней мере, кажется. Рахи стоит неподвижно у своей заправленной кровати и просто ждет твоего вердикта.")
 
-			saynn("You proceed to slowly step around it, hands behind back, with a face of a restaurant critic. The floor.. looks clean.. The single chair that every single inmate is given is placed in the corner. You lean closer to the window's frame.. No dust there.")
+			saynn("Ты начинаешь медленно обходить помещение, заложив руки за спину с видом ресторанного критика. Пол... выглядит чистым... Единственный стул, который выдают каждому заключенному, стоит в углу. Ты наклоняешься ближе к оконной раме... Пыли нет.")
 
-			saynn("You approach Rahi and look at her bed. Yep, it's well made.")
+			saynn("Ты подходишь к Рахи и смотришь на её кровать. Да, заправлена на совесть.")
 
-			saynn("[say=pc]You succeeded. Good job.[/say]")
+			saynn("[say=pc]У тебя получилось. Хорошая работа.[/say]")
 
-			saynn("Rahi nods subtly.")
+			saynn("Рахи едва заметно кивает.")
 
 		else:
-			saynn("After some time, you turn around and see that the cell.. probably looks worse than before Rahi did anything. Rahi stands still near the disaster that looked like a bed before with her head tilted down.")
+			saynn("Спустя некоторое время ты оборачиваешься и видишь, что камера... вероятно, выглядит даже хуже, чем до того, как Рахи за неё взялась. Рахи стоит неподвижно возле того, что раньше называлось кроватью, низко опустив голову.")
 
-			saynn("Dust everywhere.. dirt too.. Is this a mineshaft or Rahi's cell?")
+			saynn("Повсюду пыль... и грязь... Это шахта или камера Рахи?")
 
-			saynn("You approach Rahi. She lowers her head even more, trying to look as little as possible.")
+			saynn("Ты подходишь к Рахи. Она опускает голову ещё ниже, стараясь стать как можно незаметнее.")
 
-			saynn("[say=rahi]She failed.. she knows..[/say]")
+			saynn("[say=rahi]Она провалилась... она знает это...[/say]")
 
-			saynn("You nod and just proceed to redo her bed, showing how it should have been done.")
+			saynn("Ты киваешь и просто приступаешь к перестилке её кровати, показывая, как всё должно быть сделано на самом деле.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "medium_clean"):
-		saynn("You order Rahi to clean her cell. You explain that involves making the bed and dusting off as many surfaces as she can reach.")
+		saynn("Ты приказываешь Рахи убраться в камере. Ты объясняешь, что это включает в себя заправку кровати и протирание пыли со всех поверхностей, до которых она может дотянуться.")
 
-		saynn("[say=pc]Let's make it harder for you.[/say]")
+		saynn("[say=pc]Давай усложним тебе задачу.[/say]")
 
-		saynn("Rahi raises her brow as you produce a simple piece of black cloth. You order the feline to turn away and then begin to wrap the piece of fabric around her head and over her eyes, blindfolding the kitty.")
+		saynn("Рахи вскидывает бровь, когда ты достаёшь простой кусок чёрной ткани. Ты приказываешь кошечке отвернуться, а затем начинаешь обматывать ткань вокруг её головы и закрывать ей глаза, завязывая ей повязку.")
 
-		saynn("[say=rahi]But how is she gonna see..[/say]")
+		saynn("[say=rahi]Но как же она будет видеть...[/say]")
 
-		saynn("[say=pc]Mhm. I will check on you later.[/say]")
+		saynn("[say=pc]М-м. Загляну к тебе попозже.[/say]")
 
-		saynn("After that, you turn the kitty around again and tap on her shoulder before stepping out of the cell and looking through the reinforced window at what the feline is gonna do.")
+		saynn("После этого ты снова разворачиваешь кошечку и хлопаешь её по плечу, прежде чем выйти из камеры и наблюдать через усиленное окно за тем, что будет делать кошка.")
 
-		saynn("Rahi begins to turn around a lot, trying to orient herself in her cell. Having no visual feedback is obviously making it quite tricky. Kitty reaches her paws forward and just begins to slowly step in a random direction. Oops, that's a wall. And that's a corner. But that at least gives kitty something to go off.")
+		saynn("Рахи начинает часто крутиться на месте, пытаясь сориентироваться в камере. Отсутствие визуального контроля явно усложняет задачу. Кошечка вытягивает лапки вперёд и начинает медленно шагать в случайном направлении. Ой, это стена. А это угол. Но это хотя бы даёт ей хоть какую-то опору.")
 
-		saynn("She starts following the wall using her paws until finally reaching her bed. Success. Well, kinda. Kitty still has to fix it somehow. She starts by finding the pillow and puffing it up. Then she grabs the blanket and wraps it around herself so she can work on fixing the top sheet, all blindly.")
+		saynn("Она начинает идти вдоль стены, прощупывая её лапами, пока наконец не добирается до своей кровати. Успех. Ну, почти. Кошечке всё ещё нужно как-то её привести в порядок. Сначала она находит подушку и взбивает её. Затем она хватает одеяло и оборачивается в него, чтобы можно было вслепую заняться заправкой простыни.")
 
-		saynn("You decide to let the kitty work and just turn away.")
+		saynn("Ты решаешь дать кошечке поработать и просто отворачиваешься.")
 
-		addButton("Continue", "See what happens next", "after_medium")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_medium")
 	if(state == "after_medium"):
-		saynn("After quite some time, the busy feline noises finally seem to die down.")
+		saynn("Спустя довольно долгое время суетливое кошачье ворчание, кажется, наконец затихает.")
 
 		if (success):
-			saynn("You turn around and see Rahi. She is standing roughly in the middle of her cell, her eyes still blindfolded. You step inside and begin slowly circling around. Kitty's ears track your position with surprising accuracy.")
+			saynn("Ты оборачиваешься и видишь Рахи. Она стоит почти в центре своей камеры, глаза всё ещё завязаны. Ты заходишь внутрь и начинаешь медленно обходить её кругом. Ушки кошечки отслеживают твоё перемещение с поразительной точностью.")
 
-			saynn("[say=pc]So, you think you succeeded?[/say]")
+			saynn("[say=pc]Ну что, думаешь, у тебя получилось?[/say]")
 
-			saynn("[say=rahi]There is no way for her to know, {rahiMaster}..[/say]")
+			saynn("[say=rahi]Она никак не могла этого заметить, {rahiMaster}..[/say]")
 
-			saynn("You look around. The bed.. seems to be mostly well-made. Yeah, the blanket is tilted slightly and the pillow is hanging off the side but effort clearly went into making it as good as Rahi can. As for the dust.. Hm.. You drag your finger over the window and try to catch some. But there is none. That's nice.")
+			saynn("Ты осматриваешься. Кровать... кажется, заправлена довольно неплохо. Да, одеяло слегка съехало, а подушка свисает с края, но явно было приложено немало усилий, чтобы сделать всё настолько хорошо, насколько это под силу Рахи. Что касается пыли... Хм... Ты проводишь пальцем по окну, пытаясь поймать хоть немного грязи. Но её нет. Это радует.")
 
-			saynn("You stand behind Rahi and untie the blindfold, letting her see. The feline blinks a few times quickly. She sees the bed that is clearly not perfect and prepares for the worst.")
+			saynn("Ты встаешь позади Рахи и развязываешь повязку, давая ей возможность увидеть результат. Кошечка несколько раз быстро моргает. Она видит кровать, которая явно не идеальна, и готовится к худшему.")
 
-			saynn("[say=pc]I think I can call it a success, kitty.[/say]")
+			saynn("[say=pc]Думаю, это можно считать успехом, киса.[/say]")
 
-			saynn("[say=rahi]Oh.. thank you, she didn't cheat..[/say]")
+			saynn("[say=rahi]Ох... спасибо, она не жульничала...[/say]")
 
 		else:
-			saynn("You turn around and see Rahi sitting on the floor. The cell seems to be cleaned pretty well, even the bed. But Rahi is not blindfolded, she has her head lowered. You step inside and get the kitty a strict glance.")
+			saynn("Ты оборачиваешься и видишь Рахи сидящей на полу. Камера кажется довольно чистой, даже кровать. Но повязка с Рахи спала, она низко опустила голову. Ты заходишь внутрь и бросаешь на кошечку строгий взгляд.")
 
-			saynn("[say=rahi]The blindfold has fallen.. no, that's a lie..[/say]")
+			saynn("[say=rahi]Повязка упала... нет, это ложь...[/say]")
 
-			saynn("She is trying to talk herself out of it? Your eyes become meaner, drilling through the sad kitty.")
+			saynn("Она пытается уговорить себя на это? Твой взгляд становится жестче, буквально впиваясь в эту грустную киску.")
 
-			saynn("[say=rahi]She couldn't do it, {rahiMaster}.. At least she cleaned everything?..[/say]")
+			saynn("[say=rahi]Она не смогла, {rahiMaster}.. По крайней мере, она всё вычистила?..[/say]")
 
-			saynn("Yeah she did, you drag the finger on the glass surface and are unable to pick up any dust. But cleaning the cell is not why you gave her that task.")
+			saynn("Да, вычистила. Ты проводишь пальцем по стеклянной поверхности, и на нем не остается ни пылинки. Но ты дал ей это задание вовсе не ради уборки камеры.")
 
-			saynn("[say=pc]You still failed, kitty.[/say]")
+			saynn("[say=pc]Ты всё равно провалилась, киска.[/say]")
 
-			saynn("You hear sad noises.")
+			saynn("Ты слышишь жалобные звуки.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "hard_clean"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={naked=true}})
-		saynn("You order Rahi to clean her cell. You explain that involves making the bed and dusting off as many surfaces as she can reach. But today you feel particularly strict.")
+		saynn("Ты приказываешь Рахи убраться в её камере. Ты объясняешь, что это включает в себя заправку кровати и протирание пыли со всех поверхностей, до которых она может дотянуться. Но сегодня ты настроен особенно строго.")
 
-		saynn("[say=pc]Let's see what you can do in a very tough situation. I want you to undress.[/say]")
+		saynn("[say=pc]Посмотрим, на что ты способна в действительно тяжелой ситуации. Раздевайся.[/say]")
 
-		saynn("[say=rahi]Meow?..[/say]")
+		saynn("[say=rahi]Мяу?..[/say]")
 
-		saynn("You don't order her twice so kitty doesn't ask again too. She begins to slowly unbutton her shirt while you prepare some bindings for her. Mostly ropes but also a simple piece of black cloth that you can use as a blindfold.")
+		saynn("Ты не повторяешь приказ дважды, так что киска не решается переспрашивать. Она начинает медленно расстегивать рубашку, пока ты готовишь путы. В основном веревки, но также и простой кусок черной ткани, который можно использовать как повязку на глаза.")
 
-		saynn("The feline undresses completely before presenting herself. There is a reinforced window that looks out into the general block with some inmates occasionally passing by so kitty covers her private bits, especially her {rahi.breasts} and her crotch.")
+		saynn("Кошечка раздевается полностью, прежде чем предстать перед тобой. В камере есть укрепленное окно, выходящее в общий блок, где изредка проходят заключенные, поэтому киска прикрывает свои интимные места, особенно свои {rahi.breasts} и промежность.")
 
-		saynn("You start by putting a blindfold around her eyes and trying it behind her head. Then you crouch near her and start using ropes to tie her ankles together, limiting the possible motions by harsh degree. You slowly go up, tying more ropes around the girl's body and chest, making sure to do extra loops below and above her breasts, emphasizing them. As you tighten the ropes, one of them digs into Rahi's sensitive pussy, causing her to moan softly. You use the remaining rope to tie the girl's paws behind her back, rendering them useless for this task.")
+		saynn("Сначала ты завязываешь ей глаза повязкой, затягивая её на затылке. Затем ты приседаешь рядом и начинаешь стягивать её лодыжки веревками, жестко ограничивая её движения. Ты медленно поднимаешься выше, обматывая тело и грудь девушки всё новыми витками веревок, обязательно делая дополнительные обороты под и над грудью, чтобы подчеркнуть их форму. Когда ты затягиваешь узлы, одна из веревок впивается в чувствительную киску Рахи, заставляя её тихо застонать. Оставшейся веревкой ты связываешь её лапки за спиной, делая их бесполезными для этой задачи.")
 
-		saynn("Here it is, a blindfolded tied up kitty. How is she gonna clean the cell like this? Well, that's not your problem now.")
+		saynn("Вот она — связанная кошечка с повязкой на глазах. И как она собирается убираться в камере в таком виде? Ну, сейчас это не твоя забота.")
 
-		saynn("[say=rahi]How is she gonna..[/say]")
+		saynn("[say=rahi]И как же она будет..[/say]")
 
-		saynn("[say=pc]Good luck.[/say]")
+		saynn("[say=pc]Удачи.[/say]")
 
-		saynn("You step out of the cell, letting the feline work.")
+		saynn("Ты выходишь из камеры, оставляя кошечку работать.")
 
-		saynn("The naked kitty seems to be quite lost at first. Her ears are turning a lot, trying to catch any useful noise. In the end, she just decides to start hopping into a random direction. The way she moves looks funny, like a cute bunny. Her exposed breasts bounce up and down a lot but she can't cover herself even if she wanted to. Quiet noises escape from Rahi. Eventually kitty hits one of the walls with her muzzle and begins following it until she finds the bed.")
+		saynn("Поначалу голая кошечка кажется совершенно растерянной. Её ушки постоянно дергаются, пытаясь уловить хоть какой-то полезный звук. В конце концов, она просто решает прыгать в случайном направлении. То, как она двигается, выглядит забавно, напоминая милого зайчика. Её обнаженная грудь сильно колышется при каждом движении, но она не может прикрыться, даже если бы очень захотела. Из горла Рахи вырываются тихие звуки. В конце концов, кошечка врезается мордочкой в одну из стен и начинает идти вдоль неё, пока не находит кровать.")
 
-		saynn("Now is clearly the hardest part. How is the kitty gonna do anything you wonder. She starts by dropping down to her knees and feeling where the bed is with her blindfolded head. She finds the pillow and puffs it up the best way she can, by bonking her head against it from different sides. Oh wow, is she using her teeth to move the blanket around? Smart.")
+		saynn("Сейчас явно наступила самая сложная часть. Ты гадаешь, как кошечка вообще будет что-то делать. Она начинает с того, что опускается на колени и нащупывает головой в повязке, где находится кровать. Найдя подушку, она старается взбить её как можно лучше, тычась в неё головой с разных сторон. Ого, неужели она использует зубы, чтобы поправлять одеяло? Умно.")
 
-		saynn("You notice that the girl is quite.. aroused. The rope that is digging into her crotch area constantly shifts back and forth while the feline moves around, making her wet down there. Well, you decide to check on her later.")
+		saynn("Ты замечаешь, что девушка весьма... возбуждена. Верёвка, впивающаяся ей в промежность, постоянно смещается туда-сюда, пока кошечка двигается, из-за чего там становится всё мокрее. Что ж, ты решаешь проверить её позже.")
 
-		addButton("Continue", "See what happens next", "after_hard")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_hard")
 	if(state == "after_hard"):
-		saynn("After quite some time, you return and look inside Rahi's cell.")
+		saynn("Спустя довольно долгое время ты возвращаешься и заглядываешь в камеру Рахи.")
 
 		if (success):
-			saynn("Kitty is finishing up her work. She seems to be using her fluffy tail as a feather duster, dusting off the window and metal walls. Kinda cute. And wow, the bed seems to be well-made. Well, as much as a tied up person can make it. The feline seems to be huffing and moaning sometimes, clearly battling her desires.")
+			saynn("Кошечка заканчивает работу. Кажется, она использует свой пушистый хвост вместо метелки, смахивая пыль с окна и металлических стен. Довольно мило. И вау, кровать выглядит вполне прибранной. Ну, насколько это возможно для связанного человека. Кошечка то и дело тяжело дышит и стонет, явно борясь со своими желаниями.")
 
-			saynn("You step inside and stop the kitty. She lets out a meow of surprise.")
+			saynn("Ты заходишь внутрь и останавливаешь кошечку. Она издаёт удивлённое «мяу».")
 
-			saynn("[say=rahi]Did she fail, {rahiMaster}?.. huff..[/say]")
+			saynn("[say=rahi]Она не справилась, {rahiMaster}?.. хфф..[/say]")
 
-			saynn("[say=pc]No. You did pretty well in fact. Good job.[/say]")
+			saynn("[say=pc]Нет. На самом деле, ты отлично справилась. Хорошая работа.[/say]")
 
-			saynn("The feline begins to purr as you untie her and remove the blindfold. The ropes have left a few trails on her short fur. She is still naked though so she covers herself when she can. You can notice her paw rubbing herself down there.")
+			saynn("Кошечка начинает мурлыкать, когда ты развязываешь её и снимаешь повязку. Верёвки оставили несколько следов на её коротком меху. Она всё ещё голая, поэтому старается прикрыться, где может. Ты замечаешь, как её лапка потирает себя там, внизу.")
 
 		else:
-			saynn("Kitty is sitting on the floor, squirming and arching her back. Seems like all the ropes have made her succumb to the mix of pleasure and discomfort, poor kitty is dripping arousal so much that there is a visible wet spot under her.")
+			saynn("Китти сидит на полу, извиваясь и выгибая спину. Похоже, веревки заставили её сдаться на милость смеси удовольствия и дискомфорта; бедняжка так сильно течет от возбуждения, что под ней уже образовалось заметное мокрое пятно.")
 
-			saynn("You step inside and look around. The bed is half-made and the dust wasn't touched at all.")
+			saynn("Ты заходишь внутрь и оглядываешься. Кровать застелена наполовину, а пыль на поверхностях даже не тронута.")
 
-			saynn("[say=pc]Seems like you failed, kitty.[/say]")
+			saynn("[say=pc]Похоже, ты провалилась, киска.[/say]")
 
-			saynn("You only hear huffing and moaning coming from her.")
+			saynn("Ты слышишь лишь её тяжелое дыхание и стоны.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -7,243 +7,243 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="nurse"})
 		addCharacter("nurse")
-		saynn("You hear a female voice in your dreams. A soft, almost angelic, voice. It calls you closer. Closer.. Until it begins to grow louder and louder. Ow. Someone is shaking you.")
+		saynn("Во сне ты слышишь женский голос. Нежный, почти ангельский голос. Он манит тебя ближе. Ближе... Пока не начинает звучать всё громче и громче. Ой. Кто-то тебя трясет.")
 
-		saynn("You open your eyes and see one of the nurses. She is looming over you.")
+		saynn("Ты открываешь глаза и видишь одну из медсестер. Она нависает над тобой.")
 
-		saynn("[say=nurse]Up, inmate.[/say]")
+		saynn("[say=nurse]Вставай, зэк![/say]")
 
-		saynn("Her voice is not so angelic, she sounds kinda annoyed actually.")
+		saynn("Ее голос совсем не ангельский — на самом деле, она звучит довольно раздраженно.")
 
-		saynn("[say=pc]Huh? What did I do?[/say]")
+		saynn("[say=pc]А? Что я сделал?[/say]")
 
-		saynn("You decide to listen though. Your hands push your head away from the pillow and help you sit down.")
+		saynn("Тем не менее, ты решаешь прислушаться. Руки отталкивают твою голову от подушки, помогая тебе сесть.")
 
-		saynn("[say=nurse]Doctor Quinn wants you. Don't make her wait.[/say]")
+		saynn("[say=nurse]Доктор Куинн зовет тебя. Не заставляй её ждать.[/say]")
 
-		saynn("Your head is still a bit hazy.")
+		saynn("В голове всё еще немного туманно.")
 
-		saynn("[say=pc]Doctor Who?[/say]")
+		saynn("[say=pc]Доктор кто?[/say]")
 
-		saynn("[say=nurse]Oh quit it before I smacked your ass red.[/say]")
+		saynn("[say=nurse]Ой, хорош тупить, пока я тебе задницу в красный цвет не отшлепала![/say]")
 
-		saynn("You slowly get up and look around. This is still your cell, just with an extra person in it.")
+		saynn("Ты медленно поднимаешься и оглядываешься по сторонам. Это всё та же твоя камера, только теперь в ней стало на одного человека больше.")
 
-		saynn("[say=pc]Did she mention why she needs me?[/say]")
+		saynn("[say=pc]Она упоминала, зачем я ей нужен?[/say]")
 
-		saynn("[say=nurse]Yeah. She is gonna do all the tests on you, try all the drugs that she has.[/say]")
+		saynn("[say=nurse]Ага. Она собирается провести на тебе все возможные тесты и перепробовать все свои лекарства.[/say]")
 
-		saynn("The cell becomes silent for a few seconds. Nurse stares at you while you stare back. She is trying to be dead-serious. But eventually a little cheeky smile does appear on her face, followed by an almost hysterical laugh.")
+		saynn("В камере на несколько секунд воцаряется тишина. Медсестра пристально смотрит на тебя, а ты — на неё. Она изо всех сил старается выглядеть предельно серьезной. Но в конце концов на её лице проскальзывает лукавая улыбка, за которой следует почти истерический смех.")
 
-		saynn("[say=nurse]I'm kidding, inmate. I have no idea, she mentioned something about some kitten.[/say]")
+		saynn("[say=nurse]Да шучу я, заключенный. Понятия не имею, она что-то лепетала про какого-то котенка.[/say]")
 
-		saynn("A kitten? You don't know that many kittens.")
+		saynn("Котенок? Ты не так уж много знаешь о котятах.")
 
-		saynn("[say=pc]Sure, I can go?[/say]")
+		saynn("[say=pc]То есть, я могу идти?[/say]")
 
-		saynn("You try to walk past her but she stops you, her paw masterfully clips a leash to your collar without you even realizing it.")
+		saynn("Ты пытаешься пройти мимо неё, но она тебя останавливает: её лапа мастерски пристегивает поводок к твоему ошейнику так, что ты этого даже не замечаешь.")
 
-		saynn("[say=nurse]Nuh uh. You're gonna follow me, inmate.[/say]")
+		saynn("[say=nurse]А вот и нет. Будешь идти за мной, заключенный.[/say]")
 
-		saynn("Well. Might as well let her escort you.")
+		saynn("Что ж. Пожалуй, стоит позволить ей сопроводить тебя.")
 
-		addButton("Follow", "See where she will bring you", "follow_nurse")
+		addButton("Следовать", "Посмотреть, куда она вас приведет", "follow_nurse")
 	if(state == "follow_nurse"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		removeCharacter("nurse")
 		aimCameraAndSetLocName("med_lobbymain")
-		saynn("The nurse brings you into the medical wing lobby and reaches to remove your leash. But doctor Quinn stops her.")
+		saynn("Медсестра заводит вас в вестибюль медицинского крыла и тянется, чтобы снять поводок. Но доктор Куинн останавливает её.")
 
-		saynn("[say=eliza]Leave the leash. You're free for now, thank you.[/say]")
+		saynn("[say=eliza]Оставьте поводок. Пока что вы свободны, спасибо.[/say]")
 
-		saynn("The nurse nods once and just leaves you two alone. You look around. Sterile white walls. Clean gray floors and ceilings. Cold lights give the lobby a slightly blue tint. The doctor is sitting behind the counter, finishing her coffee.")
+		saynn("Медсестра кивает и оставляет вас двоих наедине. Вы оглядываетесь. Стерильно-белые стены. Чистые серые полы и потолки. Холодный свет придает вестибюлю легкий голубоватый оттенок. Доктор сидит за стойкой, допивая свой кофе.")
 
-		saynn("[say=pc]So? What do you want, doctor.[/say]")
+		saynn("[say=pc]Ну и? Чего вы хотите, доктор?[/say]")
 
-		saynn("[say=eliza]Call me Eliza. I heard that you're.. friends.. with one of the inmates. A brown cat that speaks in third-person. Ring any bells?[/say]")
+		saynn("[say=eliza]Зови меня Элиза. Я слышала, что ты... дружишь... с одной из заключенных. Коричневая кошка, которая говорит о себе в третьем лице. Ничего не напоминает?[/say]")
 
-		saynn("[say=pc]Yeah, I know her. Why are you asking me that?[/say]")
+		saynn("[say=pc]Да, я знаю её. К чему такие вопросы?[/say]")
 
-		saynn("Eliza looks away for a second.")
+		saynn("Элиза на секунду отводит взгляд.")
 
-		saynn("[say=eliza]Well.. actually, let's go somewhere more private. These walls have too many ears.[/say]")
+		saynn("[say=eliza]Ну... вообще-то, давай пройдем куда-нибудь, где поуютнее. У этих стен слишком много ушей.[/say]")
 
-		saynn("Eliza steps from behind the counter and approaches you before grabbing your leash.")
+		saynn("Элиза выходит из-за стойки, подходит к вам и берет ваш поводок.")
 
-		saynn("That's the second time you're being leashed today. Hopefully she is not trying to lure you into some trap.")
+		saynn("Это уже второй раз за сегодня, когда на вас надевают поводок. Надеемся, она не пытается заманить вас в какую-нибудь ловушку.")
 
-		addButton("Follow Eliza", "See where she brings you", "follow_eliza")
+		addButton("Идти за Элизой", "Посмотреть, куда она тебя приведет", "follow_eliza")
 	if(state == "follow_eliza"):
 		aimCameraAndSetLocName("medical_confessionary")
 		playAnimation(StageScene.Duo, "sit", {npc="eliza", npcAction="sit"})
-		saynn("Eliza brings you into a dark moody room. This one somehow manages to be both cozy and stress-inducing. There is a big carpet, a chair and a big sofa. But also racks that are clearly designed for.. rough stuff.")
+		saynn("Элиза заводит тебя в темную, атмосферную комнату. Ей каким-то образом удается быть одновременно уютной и вызывающей стресс. Здесь есть большой ковер, кресло и огромный диван. Но также есть стойки, явно предназначенные для... жестких развлечений.")
 
-		saynn("[say=pc]You're not gonna torture me, are you?[/say]")
+		saynn("[say=pc]Ты ведь не собираешься меня пытать, а?[/say]")
 
-		saynn("[say=eliza]No, it's not about you even, don't worry. Take a seat.[/say]")
+		saynn("[say=eliza]Да нет, дело даже не в тебе, не переживай. Присаживайся.[/say]")
 
-		saynn("You plop your {pc.thick} butt onto the sofa while Eliza just takes the chair.")
+		saynn("Ты плюхаешься своей {pc.thick} задницей на диван, пока Элиза занимает кресло.")
 
-		saynn("[say=eliza]I wanna talk about Rahi. That's her name, in case you didn't know. But I noticed that she calls herself kitten a lot.[/say]")
+		saynn("[say=eliza]Я хочу поговорить о Рахи. Ее зовут так, если ты вдруг не знал. Но я заметила, что она часто называет себя «котенком».[/say]")
 
-		saynn("[say=pc]Yeah, she likes that name for some reason.[/say]")
+		saynn("[say=pc]Да, ей почему-то нравится это имя.[/say]")
 
-		saynn("[say=eliza]That's not the point. Well no, it might be connected.. but.. I wanna ask you something. Did you and Rahi ever drink any alcohol here, inside the prison's grounds? Or did you ever see her do that?[/say]")
+		saynn("[say=eliza]Но дело не в этом. Ну, то есть, может и связано... но... я хочу кое-что спросить. Вы с Рахи когда-нибудь пили здесь алкоголь, на территории тюрьмы? Или ты видел, чтобы она это делала?[/say]")
 
-		saynn("That's a tough question. You're not sure if you should answer it.")
+		saynn("Это непростой вопрос. Ты не уверен, стоит ли на него отвечать.")
 
-		saynn("[say=pc]Why are you asking that?[/say]")
+		saynn("[say=pc]Почему ты спрашиваешь?[/say]")
 
-		saynn("[say=eliza]As you may or may not know, alcohol is forbidden for inmates. And that means that inmates shouldn't have access to it. Or they would get into a lot of trouble. There is only one way for Rahi to get her hands on it.[/say]")
+		saynn("[say=eliza]Как ты, возможно, знаешь (а возможно, и нет), алкоголь заключенным запрещен. А это значит, что у них не должно быть к нему доступа. Иначе у них будут большие неприятности. Есть только один способ, которым Рахи могла его раздобыть.[/say]")
 
-		saynn("Doctor sounds somewhat intimidating, you really don't like her tone. You shift uncomfortably while looking around at all the BDSM torture devices.")
+		saynn("Голос Доктора звучит довольно устрашающе, её тон тебе совсем не нравится. Ты неловко ерзаешь, оглядывая вокруг всякие БДСМ-пыточные приспособления.")
 
-		saynn("[say=eliza]So-o.. I repeat. Have you ever seen Rahi drinking alcohol? Did you join her?[/say]")
+		saynn("[say=eliza]Так-к.. Повторяю вопрос. Ты когда-нибудь видела, чтобы Рахи пила алкоголь? И пила ли ты вместе с ней?[/say]")
 
-		addButton("Yes", "Admit that you did in fact saw her drinking", "say_yes_drinking")
-		addButton("No", "Lie to Eliza to try and keep Rahi from danger", "say_no_drinking")
+		addButton("Да", "Признаться, что ты действительно видела, как она пьет", "say_yes_drinking")
+		addButton("No", "Солгать Элизе, чтобы попытаться уберечь Рахи от опасности", "say_no_drinking")
 	if(state == "say_no_drinking"):
 		setFlag("RahiModule.rahi1ProtectedRahi", true)
-		saynn("You tilt your head down, thinking. Rahi really doesn't deserve to be punished for it. So you must lie.")
+		saynn("Ты склоняешь голову, погружаясь в раздумья. Рахи правда не заслуживает наказания за это. Значит, придется соврать.")
 
-		saynn("[say=pc]No, I never saw Rahi with alcohol. That kitten is one of the most well-behaving inmates around.[/say]")
+		saynn("[say=pc]Нет, я никогда не видела Рахи с алкоголем. Эта кошечка — одна из самых послушных заключенных здесь.[/say]")
 
-		saynn("Eliza carefully listens to you. And then puts on a cunning smile, her voice softens up.")
+		saynn("Элиза внимательно тебя слушает. А затем на её лице появляется хитрая ухмылка, и голос становится мягче.")
 
-		saynn("[say=eliza]So that means you weren't drinking whiskey near the waterfall in the yard area?[/say]")
+		saynn("[say=eliza]Значит, вы не пили виски у водопада во внутреннем дворе?[/say]")
 
-		saynn("Ohh, that was a low one. You try to keep calm.")
+		saynn("Ох, это был подлый вопрос. Ты стараешься сохранять спокойствие.")
 
-		saynn("[say=pc]No?[/say]")
+		saynn("[say=pc]Нет?[/say]")
 
-		saynn("Eliza leans closer to you, her feline eyes drilling you.")
+		saynn("Элиза наклоняется ближе, сверля тебя своими кошачьими глазами.")
 
-		saynn("[say=eliza]So the cameras must be lying then~?[/say]")
+		saynn("[say=eliza]Значит, камеры, получается, врут~?[/say]")
 
-		saynn("It's hard to stay calm when the doctor has evidence. Maybe you can try to lie yourself out of this.")
+		saynn("Трудно сохранять спокойствие, когда у доктора есть доказательства. Может, стоит попытаться выкрутиться с помощью лжи?")
 
-		saynn("[say=pc]Uhh.. it was just a.. a water bottle. Yes. We were just drinking water.[/say]")
+		saynn("[say=pc]Э-э... это была всего лишь... бутылка воды. Да. Мы просто пили воду.[/say]")
 
-		saynn("Eliza chuckles softly.")
+		saynn("Элиза тихо посмеивается.")
 
-		saynn("[say=eliza]Relax. I knew that Rahi steals alcohol for a long time. If she can somehow get her paws on it, I don't mind.[/say]")
+		saynn("[say=eliza]Расслабься. Я давно знаю, что Рахи ворует алкоголь. Если ей удается его раздобыть, я не против.[/say]")
 
-		saynn("[say=pc]Uh. What's.. what is the problem then?[/say]")
+		saynn("[say=pc]Э-э. И в чем тогда... в чем проблема?[/say]")
 
-		saynn("[say=eliza]Right.. Let me pull up some data.[/say]")
+		saynn("[say=eliza]Так... Дай-ка я подниму данные.[/say]")
 
-		saynn("Eliza fetches her trusty datapad.")
+		saynn("Элиза достает свой верный датапад.")
 
-		addButton("Continue", "See what happens next", "eliza_explains_about_rahi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_explains_about_rahi")
 	if(state == "say_yes_drinking"):
 		setFlag("RahiModule.rahi1ProtectedRahi", false)
-		saynn("Lying will only get you so far, might as well be honest with the doctor.")
+		saynn("Ложь помогает лишь до поры до времени, лучше уж быть честным с доктором.")
 
-		saynn("[say=pc]Rahi does drink sometimes. I have no idea where she gets it. I don't think she needs to be punished for it, just a drink that she likes.[/say]")
+		saynn("[say=pc]Рахи иногда выпивает. Понятия не имею, где она его берет. Не думаю, что за это стоит её наказывать — просто хочет выпить то, что ей нравится.[/say]")
 
-		saynn("Eliza listens to you carefully. Then she stays quiet for a second, observing you. At least you feel calm for not holding anything back.")
+		saynn("Элиза внимательно тебя слушает. Затем она на мгновение замолкает, пристально наблюдая за тобой. По крайней мере, ты чувствуешь спокойствие от того, что не стал ничего скрывать.")
 
-		saynn("Finally, she ends the quiet moment first.")
+		saynn("В конце концов, она первая прерывает это молчание.")
 
-		saynn("[say=eliza]To be honest, I knew about it already. Rahi steals it from the guards. A very resourceful girl if you ask me.[/say]")
+		saynn("[say=eliza]Если честно, я об этом уже знала. Рахи ворует их у охранников. Очень находчивая девчонка, если спросишь меня.[/say]")
 
-		saynn("[say=pc]Why are you asking me that, then?[/say]")
+		saynn("[say=pc]Зачем же ты тогда меня об этом спрашиваешь?[/say]")
 
-		saynn("Eliza scratches her nose.")
+		saynn("Элиза чешет нос.")
 
-		saynn("[say=eliza]Yeah, about that.. Let me pull up some data.[/say]")
+		saynn("[say=eliza]Да, насчет этого... Дай-ка я подниму данные.[/say]")
 
-		saynn("Eliza fetches her trusty datapad.")
+		saynn("Элиза достает свой верный датапад.")
 
-		addButton("Continue", "See what happens next", "eliza_explains_about_rahi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_explains_about_rahi")
 	if(state == "eliza_explains_about_rahi"):
-		saynn("Eliza presses a few buttons on her datapad before showing you the screen. It shows a rough outline of a feline, seemingly Rahi. Most of the outline is filled with healthy green but there are some areas that have orange, like around her stomach and her brain. Some bits are closer to red than orange already.")
+		saynn("Элиза нажимает несколько кнопок на своем датападе, прежде чем показать тебе экран. На нем виден грубый силуэт кошачьего, судя по всему, Рахи. Большая часть контура заполнена здоровым зеленым цветом, но есть области оранжевого, например, вокруг живота и мозга. Некоторые участки уже скорее красные, чем оранжевые.")
 
-		saynn("[say=eliza]See that? That's Rahi's last scan. Done about 2 weeks ago. So it's probably looking worse now.[/say]")
+		saynn("[say=eliza]Видишь? Это последнее сканирование Рахи. Сделано около двух недель назад. Так что сейчас всё, скорее всего, выглядит еще хуже.[/say]")
 
-		saynn("[say=pc]Can't you help her? You're a doctor.[/say]")
+		saynn("[say=pc]Разве ты не можешь ей помочь? Ты же врач.[/say]")
 
-		saynn("Eliza puts the datapad away.")
+		saynn("Элиза убирает датапад.")
 
-		saynn("[say=eliza]I'm a chemist. I can drug her up but that will bring all sorts of different problems. All while not solving the core issue.[/say]")
+		saynn("[say=eliza]Я химик. Я могу накачать её всякой дрянью, но это принесёт кучу других проблем, так и не решив основную задачу.[/say]")
 
-		saynn("[say=pc]What's the core issue then?[/say]")
+		saynn("[say=pc]И в чём же тогда основная задача?[/say]")
 
-		saynn("Eliza taps on her lap a few times before crossing her legs.")
+		saynn("Элиза пару раз постукивает себя по коленям, прежде чем скрестить ноги.")
 
-		saynn("[say=eliza]Rahi has a drinking problem. And it's really taking a toll on her body and mind, especially lately.[/say]")
+		saynn("[say=eliza]У Рахи проблемы с алкоголем. И в последнее время это реально сказывается на её теле и психике.[/say]")
 
-		saynn("[say=pc]Did you try talking with her?[/say]")
+		saynn("[say=pc]Ты пробовала поговорить с ней?[/say]")
 
-		saynn("Eliza sighs audibly.")
+		saynn("Элиза тяжело вздыхает.")
 
-		saynn("[say=eliza]I did. But her state keeps getting worse. Might not look like it but it is. And instead of helping me help her, she began avoiding me.[/say]")
+		saynn("[say=eliza]Пробовала. Но ей становится только хуже. Может, со стороны и не видно, но это так. И вместо того, чтобы позволить мне помочь ей, она начала меня избегать.[/say]")
 
-		saynn("Huh. The kitty does like her alcohol.")
+		saynn("Хм. Кисоньке явно нравится спиртное.")
 
-		saynn("[say=pc]There is probably a reason why she drinks.[/say]")
+		saynn("[say=pc]Наверняка есть причина, по которой она пьёт.[/say]")
 
-		saynn("Eliza looks at you.")
+		saynn("Элиза смотрит на тебя.")
 
-		saynn("[say=eliza]And that's where you come in. I need you to try to figure out why. Not for me, for her. I heard that you're friends. I'm just asking you to talk with her. How does that sound?[/say]")
+		saynn("[say=eliza]И вот тут вступаешь ты. Мне нужно, чтобы ты попытался выяснить причину. Не ради меня, а ради неё. Я слышала, вы друзья. Я просто прошу тебя поговорить с ней. Как тебе такой вариант?[/say]")
 
-		addButton("Sure", "You can talk with Rahi", "agree_to_talk")
-		addButton("Nah", "Rahi's problems are not your problems", "not_talk")
+		addButton("Конечно", "Поговорить с Рахи", "agree_to_talk")
+		addButton("Неа", "Проблемы Рахи — это не твои проблемы", "not_talk")
 	if(state == "agree_to_talk"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="sit"})
-		saynn("[say=pc]Sure, I can try to talk with her.[/say]")
+		saynn("[say=pc]Конечно, я могу попробовать с ней поговорить.[/say]")
 
-		saynn("Eliza offers you a kind smile.")
+		saynn("Элиза одаривает тебя доброй улыбкой.")
 
-		saynn("[say=eliza]Thank you. You probably know where to find her.[/say]")
+		saynn("[say=eliza]Спасибо. Ты, должно быть, знаешь, где её найти.[/say]")
 
-		saynn("[say=pc]Why are you doing that though? She is just one of the inmates.[/say]")
+		saynn("[say=pc]Но зачем тебе это? Она ведь всего лишь одна из заключенных.[/say]")
 
-		saynn("Eliza tilts her head down while you get up.")
+		saynn("Элиза склоняет голову, пока ты поднимаешься.")
 
-		saynn("[say=eliza]Me and Rahi share something in common I think. I get that feeling sometimes.. Don't know why.[/say]")
+		saynn("[say=eliza]Думаю, у нас с Рахи есть что-то общее. Иногда я ловлю то же самое чувство... Не знаю почему.[/say]")
 
-		saynn("[say=pc]Alright, thank you for letting me know.[/say]")
+		saynn("[say=pc]Хорошо, спасибо, что рассказала.[/say]")
 
-		saynn("Eliza nods and then lets you out of the room.")
+		saynn("Элиза кивает и выпускает тебя из комнаты.")
 
-		addButton("Leave", "Time to go", "leave_confess")
+		addButton("Уйти", "Пора идти", "leave_confess")
 	if(state == "not_talk"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="sit"})
-		saynn("[say=pc]I feel like it's not my problem to solve. Sure, it's not good. But that cat needs professional help. I will only make things worse.[/say]")
+		saynn("[say=pc]Мне кажется, это не моя проблема. Да, всё хреново. Но этой кошке нужна помощь профессионала. Я только всё испорчу.[/say]")
 
-		saynn("Eliza tilts her head to the side slightly, her gaze drilling you. Drilling you so much that you avoid it and swiftly get up.")
+		saynn("Элиза слегка наклоняет голову набок, сверля тебя взглядом. Настолько пристальным, что ты отводишь глаза и поспешно вскакиваешь.")
 
-		saynn("[say=eliza]You're not gonna just leave her to suffer.[/say]")
+		saynn("[say=eliza]Ты же не оставишь её страдать вот так просто.[/say]")
 
-		saynn("[say=pc]Like I said, it's not my problem.[/say]")
+		saynn("[say=pc]Как я уже сказал, это не моя проблема.[/say]")
 
-		saynn("Eliza produces a shock remote and points it at you.")
+		saynn("Элиза достает пульт шокера и направляет его на тебя.")
 
-		saynn("[say=eliza]It is now. That kitty needs your help. I'm serious. Or she will die. And if that happens, you are next. Understand?[/say]")
+		saynn("[say=eliza]Теперь твоя. Этой кошечке нужна твоя помощь. Я серьезно. Иначе она сдохнет. А если это случится, следующим будешь ты. Понял?[/say]")
 
-		saynn("Well, it's hard to go against that logic. You raise your hands slightly.")
+		saynn("Что ж, идти против такой логики трудно. Ты слегка поднимаешь руки.")
 
-		saynn("[say=pc]Okay, fine. I will try to help her. But you're gonna pay me.[/say]")
+		saynn("[say=pc]Ладно, черт с тобой. Я попробую ей помочь. Но ты мне за это заплатишь.[/say]")
 
-		saynn("Eliza smiles and just shakes her head.")
+		saynn("Элиза улыбается и просто качает головой.")
 
-		saynn("[say=eliza]You're not gonna do it for me. You're doing it for her.[/say]")
+		saynn("[say=eliza]Ты сделаешь это не ради меня. Ты сделаешь это ради неё.[/say]")
 
-		saynn("Eliza lowers the remote and lets you out of the room.")
+		saynn("Элиза опускает пульт и выпускает тебя из комнаты.")
 
-		addButton("Leave", "Time to go", "leave_confess")
+		addButton("Уйти", "Пора идти", "leave_confess")
 	if(state == "leave_confess"):
 		playAnimation(StageScene.Solo, "stand")
 		removeCharacter("eliza")
 		aimCameraAndSetLocName("medical_nearconfessionary")
 		GM.pc.setLocation("medical_nearconfessionary")
-		saynn("You step out of the dimly-lit room and look around. The contrast is high, the bright medical corridor makes you squint until your eyes adjust.")
+		saynn("Ты выходишь из полумрака комнаты и оглядываешься. Контраст бьет по глазам: яркий свет медицинского коридора заставляет тебя щуриться, пока зрение не привыкнет.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

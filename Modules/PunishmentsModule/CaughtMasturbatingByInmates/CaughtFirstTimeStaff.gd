@@ -9,20 +9,20 @@ func _run():
 		playAnimation(StageScene.Duo, "defeat", {npc="maleguard_canine"})
 
 	if(state == ""):
-		saynn("You were doing lewd things with yourself when suddenly you felt your collar buzzing and shocking you. Ow! You drop to your knees and grab onto it, desperately trying to take it off but that only makes things worse. When the shock finally ends, you’re left panting and whining.")
+		saynn("Ты вовсю развлекалась сама с собой, как вдруг почувствовала, что ошейник завибрировал и ударил тебя током. Ой! Ты падаешь на колени и хватаешься за него, отчаянно пытаясь снять, но от этого становится только хуже. Когда разряды наконец прекращаются, ты остаешься тяжело дышать и скулить.")
 
-		saynn("A guard approaches you, a guy. He crouches nearby and looks at you.")
+		saynn("К тебе подходит охранник, мужчина. Он приседает рядом и пристально на тебя смотрит.")
 
-		saynn("[say=maleguard_canine]You must be new here, inmate. Public indecency is illegal. I know you don’t care, you’re here because you are the scum that goes against rules.[/say]")
+		saynn("[say=maleguard_canine]Ты, должно быть, новенькая, заключенная. Публичное непристойное поведение здесь под запретом. Знаю, тебе плевать, ведь ты здесь именно потому, что ты — та еще дрянь, нарушающая правила.[/say]")
 
-		saynn("The guard scritches you under the chin for some reason.")
+		saynn("Охранник почему-то начинает чесать тебя под подбородком.")
 
-		saynn("[say=maleguard_canine]And if you keep this up, don’t come to us crying when somebody decides to have fun with you against your will. We like fun too. Mhm?[/say]")
+		saynn("[say=maleguard_canine]И если продолжишь в том же духе, не приходи к нам плакаться, когда кто-нибудь решит развлечься с тобой против твоей воли. Мы тоже любим веселиться. А?[/say]")
 
-		saynn("Yeah, that was pretty clear. You nod slightly and watch him leave you.")
+		saynn("Да, это было сказано предельно ясно. Ты слегка киваешь и провожаешь его взглядом.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 func _react(_action: String, _args):

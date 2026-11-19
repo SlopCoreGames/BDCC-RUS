@@ -12,56 +12,56 @@ func _run():
 		#playAnimation(StageScene.Duo, "stand", {npc="inmateMale"})
 
 	if(state == ""):
-		saynn("You feel somebody approaching you from behind. It was too late though, he unceremoniously grabs you by the hair and pulls you down onto your knees before shoving his knotted cock into your face. His grasp is pretty painful, you wince and let out an annoyed noise.")
+		saynn("Ты чувствуешь, как кто-то приближается к тебе сзади. Но уже слишком поздно: он бесцеремонно хватает тебя за волосы, заставляет опуститься на колени, а затем с силой впихивает свой узловатый член тебе прямо в лицо. Хватка довольно болезненная, ты морщишься и издаешь раздраженный звук.")
 
-		saynn("[say=inmateMale]Quit whining and open your fucking mouth already.[/say]")
+		saynn("[say=inmateMale]Хватит ныть, а ну открывай свой ебаный рот![/say]")
 
-		saynn("You can’t even get a good look of his face as he starts using you as some kind of whore, roughly shoving your face into his balls while the knotted shaft leaks precum onto your hair.")
+		saynn("Ты даже не успеваешь толком разглядеть его лицо — он уже начинает использовать тебя как шлюху, грубо вжимая твое лицо в свои яйца, пока из узловатого ствола на твои волосы капает предэякулят.")
 
-		saynn("When you try to complain or escape he only slaps your face and pulls you towards his cock again, it seems he doesn’t mind being rough with you.")
+		saynn("Когда ты пытаешься возмутиться или вырваться, он лишь дает тебе пощечину и снова притягивает к своему члену; похоже, грубость с тобой его вполне устраивает.")
 
-		saynn("[say=inmateMale]Quit resisting, no one will save you.[/say]")
+		saynn("[say=inmateMale]Хватит сопротивляться, тебя никто не спасет.[/say]")
 
-		addButton("Open mouth", "Let him use your throat willingly", "open_mouth")
-		addButtonWithChecks("Shove away", "Use your strength to overpower him", "shove_away", [], [ButtonChecks.HasStamina, [ButtonChecks.StatCheck, Stat.Strength, 6]])
-		addButton("Resist", "(noncon, possible drug use) You’re not gonna be willing", "resist")
+		addButton("Открыть рот", "Покорно подставить горло", "open_mouth")
+		addButtonWithChecks("Оттолкнуть", "Попытаться одолеть его силой", "shove_away", [], [ButtonChecks.HasStamina, [ButtonChecks.StatCheck, Stat.Strength, 6]])
+		addButton("Сопротивляться", "(некон, возможно под веществами) Ты не сможешь сопротивляться", "resist")
 
 
 	if(state == "open_mouth"):
-		saynn("You close your eyes and obey, lowering your resistance. As soon as you part your lips, you feel him shoving his canine cock past your teeth and down your throat, the guy clearly knows what he wants. You try to gasp but instead only choke on his shaft, the inmate gets a better grip on your hair before proceeding to fuck your face, shoving his dick in and out of your {pc.throatStretch} throat, stretching it out.")
+		saynn("Ты закрываешь глаза и подчиняешься, ослабляя сопротивление. Как только ты размыкаешь губы, ты чувствуешь, как он проталкивает свой звериный член сквозь зубы глубоко в глотку — парень явно знает, чего хочет. Ты пытаешься вдохнуть, но вместо этого лишь начинаешь давиться его стволом; заключенный еще крепче вцепляется в твои волосы и начинает ебать тебе лицо, с силой вгоняя и выгоняя член в твой {pc.throatStretch} глотку, растягивая её.")
 
-		saynn("[say=pc]Gh-.. h.. mh..[/say]")
+		saynn("[say=pc]Гх... х... мх...[/say]")
 
-		saynn("[say=inmateMale]Yeah, whore, gag more, it feels fucking great.[/say]")
+		saynn("[say=inmateMale]Да, шлюха, давай, заглатывай глубже, это охеренно приятно![/say]")
 
-		saynn("It’s not like you have a choice, each time you try to breathe you feel your gag reflex triggering, causing you to make wet noises while your throat clenches around his shaft. Your blow job is sloppy but he seems to love it, the guy eagerly humps your face, bringing his peak closer. You might be getting used to it..")
+		saynn("У тебя ведь нет выбора: каждый раз, когда ты пытаешься вдохнуть, срабатывает рвотный рефлекс, из-за чего ты издаешь влажные звуки, пока твоё горло сжимается вокруг его члена. Твой минет получается небрежным, но, похоже, ему это в кайф — парень жадно вжимается лицом в твой рот, приближаясь к пику. Кажется, ты начинаешь к этому привыкать...")
 
-		addButton("Cum", "Oh no, he is gonna cum", "cum")
+		addButton("Кончить", "О нет, он сейчас кончит", "cum")
 
 	if(state == "cum"):
-		saynn("The guy throws his head back and shoves his cock as deep as your throat allows, his knot is applying a great amount of pressure on your lips but that wasn’t enough to knot you. You spend a few seconds being his total cock slave before he suddenly starts to grunt and shooting his load directly down your throat.")
+		saynn("Парень запрокидывает голову и засовывает свой член так глубоко, насколько позволяет твоё горло; его узел оказывает сильное давление на твои губы, но этого всё ещё недостаточно, чтобы полностью тебя «завязать». Ты несколько секунд остаёшься его полной членом-рабыней, прежде чем он внезапно начинает хрипеть и извергать свою порцию прямо тебе в глотку.")
 
-		saynn("It’s just too much, his cock steals your ability to breathe or even moan, your throat gets tighter around that shaft, milking it for all its cum.")
+		saynn("Это уже слишком: его член лишает тебя возможности дышать или даже стонать, твоё горло сжимается вокруг него ещё сильнее, выжимая из него всё до последней капли спермы.")
 
-		saynn("As he starts to pull out, the last strings of his cum land into your opened mouth and onto your face, leaving quite a fancy mess. You’re forced to wear his facials and have a constant taste of his cock now.")
+		saynn("Когда он начинает выходить, последние струйки его спермы попадают тебе в открытый рот и на лицо, оставляя после себя довольно эффектный беспорядок. Теперь ты вынуждена носить его «фейшиалы» и постоянно чувствовать вкус его члена на губах.")
 
-		saynn("[say=inmateMale]Yeah, swallow it all, bitch.[/say]")
+		saynn("[say=inmateMale]Да, глотай всё до последней капли, сучка![/say]")
 
-		saynn("And just like that, he lets go of your hair and puts his cock away before leaving you alone.")
+		saynn("И вот так просто он отпускает твои волосы, убирает член и оставляет тебя одну.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 	if(state == "shove_away"):
 		# (requires strength 6+, maybe stamina too)
 
-		saynn("You manage to get a grasp on his fingers and pry them off one by one before shoving the guy away. He growls but doesn’t go further with you, instead showing off his sharp fangs before putting his cock away.")
+		saynn("Тебе удаётся ухватиться за его пальцы и по одному отцепить их, после чего ты отталкиваешь парня. Он рычит, но не переходит к решительным действиям, лишь демонстрирует свои острые клыки, прежде чем спрятать член.")
 
-		saynn("[say=inmateMale]Well go fuck yourself then.[/say]")
+		saynn("[say=inmateMale]Ну и иди нахуй тогда![/say]")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 
@@ -70,95 +70,95 @@ func _run():
 
 		# (drug variant)
 
-		saynn("The idea of having your throat fucked just like that doesn’t seem very appealing, you try back off and endure the pain of having your hair pulled. The guy snarls and grabs you by the chin, forcing you to look at him.")
+		saynn("Мысль о том, что тебе вот так просто будут трахать горло, не кажется слишком заманчивой, поэтому ты пытаешься отстраниться, терпя боль от того, что он тянет тебя за волосы. Парень рычит и хватает тебя за подбородок, заставляя смотреть ему прямо в глаза.")
 
-		saynn("[say=inmateMale]What, you thought you could just get me hard and escape? Fine.[/say]")
+		saynn("[say=inmateMale]Чего, думала, сможешь просто возбудить меня и свалить? Ладно.[/say]")
 
-		saynn("He produces a suspicious-looking blue pill, the sort you would see in the medical. You quickly realize what his intentions are and keep your mouth shut tight, grinding your teeth as he yanks you back towards him.")
+		saynn("Он достает подозрительную синюю таблетку, из тех, что обычно дают в медпункте. Ты быстро понимаешь его намерения и плотно сжимаешь губы, скрежеща зубами, пока он рывком тянет тебя обратно к себе.")
 
-		saynn("[say=inmateMale]Gonna play hard to get, whore? You have been quite eager before I grabbed you, what happened bitch? Let’s see how long you can last.[/say]")
+		saynn("[say=inmateMale]Будешь строить из себя недотрогу, шлюха? До того как я тебя схватил, ты была еще той охотницей, что случилось, сучка? Посмотрим, надолго ли тебя хватит.[/say]")
 
-		saynn("He has an edge in strength and position over you, all that you can do is try to get up, pull his hand away from your hair and break free while he tries to forcefully slip the pill between your lips. You don’t give up that easily though so he tries something special.")
+		saynn("Он сильнее тебя и занимает более выгодную позицию, так что всё, что тебе остается — это пытаться подняться, отцепить его руку от своих волос и вырваться, пока он пытается силой пропихнуть таблетку тебе между губ. Но ты не сдаешься так просто, и тогда он решает применить особый прием.")
 
-		saynn("The guy suddenly stops trying to shove the pill in and instead covers your face with his palm, his digits are keeping your nostrils shut, preventing you from breathing through them. So simple. But it works, you really struggle to get enough air, your muscles are all tensed up, burning through the remaining oxygen left in your blood.")
+		saynn("Парень внезапно перестает запихивать таблетку и вместо этого накрывает твое лицо ладонью, зажимая пальцами ноздри и не давая тебе дышать носом. Так просто. Но это работает: ты отчаянно пытаешься глотнуть воздуха, все твои мышцы напряжены до предела, сжигая остатки кислорода в крови.")
 
-		addButton("Get drugged", "Open your mouth and avoid getting choked", "get_drugged")
-		addButton("Pass out", "You’re not gonna let him drug you no matter what", "pass_out")
+		addButton("Принять препарат", "Открой рот, чтобы не задохнуться", "get_drugged")
+		addButton("Отключиться", "Ты во что бы то ни стало не дашь ему подсадить тебя на наркоту", "pass_out")
 
 	if(state == "pass_out"):
-		saynn("You shake your head a lot, trying to escape the palm blocking your only source of air but it's useless. Your body tries to force you to breathe in but all you can do is gasp silently with your mouth shut. Quite quickly the corners of your vision begin to darken, your body starts to give up.. But at least you’re not gonna get drugged willingly.")
+		saynn("Ты отчаянно мотаешь головой, пытаясь вырваться из ладони, перекрывающей твой единственный источник воздуха, но всё бесполезно. Тело требует вдоха, но всё, что ты можешь — это беззвучно хватать ртом воздух с плотно сжатыми губами. Вскоре края твоего зрения начинают темнеть, и тело начинает сдаваться... Но, по крайней мере, тебя не накачали наркотиками добровольно.")
 
-		saynn("The last thing that you hear is the inmate growling and then a sound of you hitting the cold floor. Sweet dreams, sleepyhead.")
+		saynn("Последнее, что ты слышишь — это рычание заключенного, а затем звук твоего падения на холодный пол. Сладких снов, соня.")
 
-		addButton("Sleep", "Sweet dreams", "sleep")
+		addButton("Спать", "Сладких снов", "sleep")
 
 	if(state == "sleep"):
 		# (sets time to night, breaks clothes)
 
-		saynn("Your head hurts, ow. You open your eyes and get your cheek off the cold dirty floor. You slowly get up and check your mouth for any foreign substances but find nothing, it seems you lucked out.")
+		saynn("Голова раскалывается, ой... Ты открываешь глаза и отрываешь щеку от холодного грязного пола. Ты медленно поднимаешься и проверяешь рот на наличие посторонних веществ, но ничего не находишь — похоже, тебе повезло.")
 
 		# (if wearing uniform and it got borked)
 		if(brokeClothes):
-			saynn("You look down at your clothes and find that they endured lots of damage, they don't even cover you as much anymore. Oh well.")
+			saynn("Ты смотришь на свою одежду и видишь, что она изрядно потрепана и почти ничего не прикрывает. Ну и ладно.")
 
-		saynn("You hold onto your head and rub it while looking around. The place is empty. Time to go.")
+		saynn("Ты хватаешься за голову и потираешь её, озираясь по сторонам. Здесь пусто. Пора уходить.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "get_drugged"):
-		saynn("Fuck it, you don’t care anymore, you part a lips a little bit to catch some air but the guy notices that and swiftly squeezes the pill between your teeth. Even without swallowing it, you feel it basically melting on your tongue. Oooh…")
+		saynn("Да к черту всё, тебе уже плевать. Ты слегка приоткрываешь губы, чтобы глотнуть воздуха, но парень замечает это и ловко заталкивает таблетку тебе между зубами. Даже не проглотив её, ты чувствуешь, как она буквально тает на языке. О-о-ох...")
 
-		saynn("Your body begins to feel very warm, especially near your crotch. Rubbing yourself feels so-o-o good.. The pain is still there but the other sensations are so overwhelming..")
+		saynn("Твое тело начинает наполняться жаром, особенно в районе паха. Тереть себя — это так-к-к приятно... Боль всё еще здесь, но остальные ощущения просто захлестывают тебя...")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Even though your hair is being pulled, your {pc.cock} is trying to get hard and is already leaking pre.")
+			saynn("Несмотря на то, что тебя тянут за волосы, твой {pc.cock} пытается встать и уже вовсю течет.")
 		elif(GM.pc.hasPenis()):
-			saynn("Even though your hair is being pulled, your {pc.cock} is getting hard and already leaking pre.")
+			saynn("Несмотря на то, что тебя тянут за волосы, твой {pc.cock} твердеет и уже вовсю течет.")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("Your slit gets wet and needy, that cock in front of your face suddenly doesn’t look so scary..")
+			saynn("Твоя щель намокает и требует ласки, а стояк прямо перед твоим лицом внезапно перестает казаться таким пугающим...")
 
-		saynn("People around are watching but you can’t help but to let out a passionate moan and stick your tongue out before giving that knotted cock a lick over its whole length, catching the precum that's hanging from its tip.")
+		saynn("Окружающие смотрят, но ты не можешь сдержать страстный стон и невольно высовываешь язык, чтобы облизать весь этот узловатый член, слизывая предэякулят, капающий с самого кончика.")
 
-		saynn("[say=inmateMale]Much better. Now open up, slut.[/say]")
+		saynn("[say=inmateMale]Так-то лучше. А теперь открывай рот, сучка.[/say]")
 
-		addButton("Open mouth", "Let him use your throat willingly", "open_mouth_drugged")
+		addButton("Открыть рот", "Покорно подставить горло", "open_mouth_drugged")
 
 	if(state == "open_mouth_drugged"):
-		saynn("You keep your eyes on his veiny member and obey. As soon as you part your lips, you feel him shoving his canine cock past your teeth and deep down your mouth, the guy clearly knows what he wants. But you welcome that cock, you willingly start sucking it off, sliding your head onto it more, inviting it to fuck your throat. It quickly becomes too much though, you choke and gag but that only makes him more eager, the inmate gets a better grip on your hair before proceeding to fuck your face, shoving his dick in and out of your {pc.throatStretch} throat, stretching it out.")
+		saynn("Ты не сводишь глаз с его вздутого венами члена и повинуешься. Стоит тебе разомкнуть губы, как ты чувствуешь, что он впихивает свой клыкастый член прямо тебе в рот, глубоко за горло — парень явно знает, чего хочет. Но ты принимаешь его, с готовностью начинаешь сосать, сильнее насаживаясь на него и приглашая трахать тебе глотку. Однако вскоре становится слишком тяжело: ты начинаешь задыхаться и давиться, но это лишь раззадоривает его. Заключенный крепче вцепляется в твои волосы и начинает ебать тебе лицо, с силой вгоняя член в твою {pc.throatStretch} глотку и растягивая её.")
 
-		saynn("[say=pc]Gh-.. h.. mh..[/say]")
+		saynn("[say=pc]Гх... х... мх...[/say]")
 
-		saynn("[say=inmateMale]Yeah, whore, gag more, it feels fucking great.[/say]")
+		saynn("[say=inmateMale]Да, шлюха, давай, заглатывай глубже, это охеренно приятно![/say]")
 
-		saynn("It’s not like you have a choice, each time you try to breathe you feel your gag reflex triggering, causing you to make wet noises while your throat clenches around his shaft. Your blow job is sloppy but he seems to love it, the guy eagerly humps your face, bringing his peak closer. You love it too, the drug makes you so aroused that you don’t care about your throat being violated in such a rough way, you even feel like you might cum like that..")
+		saynn("У тебя нет выбора: каждый раз, когда ты пытаешься вдохнуть, срабатывает рвотный рефлекс, заставляя тебя издавать влажные звуки, пока твоя глотка сжимается вокруг его ствола. Твой минет получается небрежным, но, кажется, ему это в кайф — парень жадно вжимается лицом в его член, приближаясь к пику. Тебе это тоже нравится: под действием наркотика возбуждение настолько зашкаливает, что тебе плевать на грубое насилие над горлом, ты даже чувствуешь, что можешь кончить прямо так...")
 
-		addButton("Cum", "Oh no, he is gonna cum", "cumDrugged")
+		addButton("Кончить", "О нет, он сейчас кончит", "cumDrugged")
 
 	if(state == "cumDrugged"):
-		saynn("The guy throws his head back and shoves his cock as deep as your throat allows, his knot is applying a great amount of pressure on your lips. Eager to fit his whole dick inside, you open your mouth as wide as your jaw allows before his meaty orb suddenly slips inside. He knots your mouth! You spend a few seconds being his total cock slave as he grunts and swiftly gets thrown over the edge, shooting his load directly down your throat.")
+		saynn("Парень запрокидывает голову и вгоняет свой член так глубоко, насколько позволяет твое горло; его узловатое основание с силой давит на твои губы. Жаждая принять его целиком, ты широко раскрываешь рот, и в этот момент его мясистая головка резко входит внутрь. Он завязывает тебе рот! Несколько секунд ты проводишь в роли его полной кока-рабыни, пока он кряхтит, а затем его резко вышвыривает за край, и он кончает прямо тебе в глотку.")
 
-		saynn("It’s just too much, his cock steals your ability to breathe or even moan, your throat gets tighter around that shaft, milking it for all its cum. You try to force out some muffled moans but can’t, your own orgasm overtakes your body out of nowhere, you cum without even being stimulated!")
+		saynn("Это просто слишком: его член лишает тебя возможности дышать или даже стонать, твое горло сжимается вокруг ствола, выжимая из него всё до последней капли спермы. Ты пытаешься издать приглушенный стон, но не можешь — внезапный оргазм накрывает твое тело, ты кончаешь, даже не получая прямой стимуляции!")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("You, flexing your kegel muscles too much, resulted in your {pc.cock} wasting its load! Even if it was a ruined orgasm, it felt so good.")
+			saynn("Из-за того, что ты слишком сильно напрягла мышцы тазового дна, твой {pc.cock} потратил заряд впустую! И пусть это был испорченный оргазм, ощущения были чертовски приятными.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your slit squirts the female juices all over the floor, who knew you could cum from giving a blow job.")
+			saynn("Твоя щель забрызгивает женскими соками весь пол — кто бы мог подумать, что ты можешь кончить от обычного минета.")
 
-		saynn("As he starts to pull out, the last strings of his cum land into your opened mouth and onto your face, leaving quite a fancy mess. You’re forced to wear his facials and have a constant taste of his cock now. But wow it was worth it, you swallow everything you can get to and then offer the guy a view of your empty mouth.")
+		saynn("Когда он начинает выходить, последние струйки его спермы попадают тебе в открытый рот и на лицо, оставляя после себя весьма эффектный беспорядок. Теперь ты вынуждена носить его «фейшиал» на себе, постоянно ощущая вкус его члена. Но, вау, это того стоило: ты проглатываешь всё, что можешь, а затем демонстрируешь парню свой пустой рот.")
 
-		saynn("[say=inmateMale]Yeah, good bitch.[/say]")
+		saynn("[say=inmateMale]Да, хорошая сучка.[/say]")
 
-		saynn("And just like that, he puts his cock away before leaving you alone with the afterglow of the drug.")
+		saynn("И вот так просто он убирает свой член, оставляя тебя наедине с послевкусием действия наркотика.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 func _react(_action: String, _args):

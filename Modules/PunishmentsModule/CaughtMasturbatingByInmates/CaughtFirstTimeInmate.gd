@@ -15,18 +15,18 @@ func _run():
 		playAnimation(StageScene.Solo, "defeat")
 
 	if(state == ""):
-		saynn("You were doing lewd things with yourself when suddenly somebody pushed you. Ow! You hit the floor and feel somebody pinning you to the floor, some inmate. She keeps her knee shoved into your back while murmuring into your ear.")
+		saynn("Ты вовсю ласкал себя, как вдруг кто-то толкнул тебя в спину. Ой! Ты приземляешься на пол и чувствуешь, как кто-то придавливает тебя к земле — какая-то заключенная. Она упирается коленом тебе в спину, что-то шепча прямо в ухо.")
 
-		saynn("[say=inmateShemale]Look at you, little horny thing. Didn’t anyone tell you that you are playing a very dangerous game~[/say]")
+		saynn("[say=inmateShemale]Посмотри на себя, маленькая похотливая штучка. Тебе никто не говорил, что ты играешь в очень опасную игру~[/say]")
 
-		saynn("You feel something poking against your butt. Oh, she is a dickgirl, for sure.")
+		saynn("Ты чувствуешь, как что-то упирается тебе в задницу. О, она определенно дикгёрл.")
 
-		saynn("[say=inmateShemale]Hah. You feel it? Keep doing what you’re doing and you will become a free use slut in no time~. Hope you heard me.[/say]")
+		saynn("[say=inmateShemale]Хах. Чувствуешь? Продолжай в том же духе, и очень скоро станешь шлюхой для общего пользования~. Надеюсь, ты меня услышала.[/say]")
 
-		saynn("You nod slightly, understanding. She decides to be merciful and just leaves.")
+		saynn("Ты слегка киваешь, всё понимая. Она решает проявить милосердие и просто уходит.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 func _react(_action: String, _args):

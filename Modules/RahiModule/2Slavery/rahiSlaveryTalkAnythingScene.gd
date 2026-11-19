@@ -53,726 +53,726 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You ask if Rahi has anything to talk about.")
+		saynn("Вы спрашиваете, есть ли Рахи что еще обсудить.")
 
-		saynn("[say=rahi]Sorry, {rahiMaster}. She has run out of things to talk about..[/say]")
+		saynn("[say=rahi]Прости, {rahiMaster}. У неё закончились темы для разговора..[/say]")
 
-		saynn("Fair enough. Maybe you can ask her again when your relationship advances.")
+		saynn("Справедливо. Может, стоит спросить её снова, когда ваши отношения станут ближе.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic1"):
-		saynn("[say=rahi]Hey, {rahiMaster}.. She found a black marker and some paper.. Wanna see what she drew?[/say]")
+		saynn("[say=rahi]Эй, {rahiMaster}.. Она нашла черный маркер и бумагу.. Хочешь взглянуть на её рисунок?[/say]")
 
-		saynn("You don't see why not. Nervous Rahi shows you the picture.")
+		saynn("Вы не видите причин отказаться. Нервничающая Рахи показывает вам рисунок.")
 
 		saynn("[img=500]res://Modules/RahiModule/RahiPics/rahi1.png[/img]")
 
-		saynn("[say=rahi]It's a.. self-portrait?[/say]")
+		saynn("[say=rahi]Это что.. автопортрет?[/say]")
 
-		addButton("Cute", "Tell her that the picture is cute", "pic1_cute")
-		addButton("Meh", "Tell her that she has lots to learn to still", "pic1_meh")
+		addButton("Мило", "Сказать ей, что рисунок милый", "pic1_cute")
+		addButton("Так себе", "Сказать ей, что ей еще многому предстоит научиться", "pic1_meh")
 	if(state == "pic1_cute"):
-		saynn("[say=pc]It's a cute one. Good job, kitty.[/say]")
+		saynn("[say=pc]Какая милашка. Молодец, киса.[/say]")
 
-		saynn("Rahi purrs.")
+		saynn("Рахи мурлычет.")
 
-		saynn("[say=rahi]Maybe she will draw more then..[/say]")
+		saynn("[say=rahi]Может, тогда она будет рисовать чаще...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic1_meh"):
-		saynn("[say=pc]You have a lot to learn, kitty.[/say]")
+		saynn("[say=pc]Тебе еще многому нужно научиться, киса.[/say]")
 
-		saynn("Rahi lowers her head.")
+		saynn("Рахи опускает голову.")
 
-		saynn("[say=rahi]You're right.. She will try harder next time..[/say]")
+		saynn("[say=rahi]Ты права... В следующий раз она постарается получше...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic2"):
-		saynn("[say=rahi]She drew another picture today.. wanna see it?[/say]")
+		saynn("[say=rahi]Она сегодня нарисовала еще один рисунок... хочешь взглянуть?[/say]")
 
-		saynn("[say=pc]Sure, kitty.[/say]")
+		saynn("[say=pc]Конечно, киска.[/say]")
 
-		saynn("Rahi shows you her second drawing.")
+		saynn("Рахи показывает тебе свой второй рисунок.")
 
 		saynn("[img=500]res://Modules/RahiModule/RahiPics/rahi2.png[/img]")
 
-		saynn("[say=pc]Why are you so sad, kitty?[/say]")
+		saynn("[say=pc]Почему ты такая грустная, киса?[/say]")
 
-		saynn("[say=rahi]Because.. She has no apples?.. But then you gave her one! Thank you, {rahiMaster}![/say]")
+		saynn("[say=rahi]Потому что... у неё нет яблок?.. Но ты же дал ей одно! Спасибо тебе, {rahiMaster}![/say]")
 
-		addButton("Good job", "Tell Rahi that she did a good job", "pic2_goodjob")
-		addButton("Too sad", "Tell Rahi that the picture is too sad", "pic2_toosad")
+		addButton("Молодец", "Сказать Рахи, что она молодец", "pic2_goodjob")
+		addButton("Слишком грустно", "Сказать Рахи, что картинка слишком грустная", "pic2_toosad")
 	if(state == "pic2_goodjob"):
-		saynn("[say=pc]Good job, kitty. Didn't know you liked apples so much.[/say]")
+		saynn("[say=pc]Молодец, кошечка. Не знала, что ты так любишь яблоки.[/say]")
 
-		saynn("Rahi purrs and bounces happily.")
+		saynn("Рахи довольно мурлычет и подпрыгивает от радости.")
 
-		saynn("[say=rahi]Meow-meow.[/say]")
+		saynn("[say=rahi]Мяу-мяу.[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic2_toosad"):
-		saynn("[say=pc]It's.. too sad, kitty. Why would you draw yourself sad? Why not the opposite.[/say]")
+		saynn("[say=pc]Это... слишком грустно, кошечка. Зачем ты нарисовала себя такой печальной? Почему бы не наоборот?[/say]")
 
-		saynn("Rahi lowers her head. Then she suddenly tears the picture in half.")
+		saynn("Рахи опускает голову. Затем она внезапно разрывает картинку пополам.")
 
-		saynn("[say=rahi]You're right.. She will draw something better..[/say]")
+		saynn("[say=rahi]Ты права.. Она нарисует что-нибудь получше..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic3"):
-		saynn("[say=rahi]She drew another picture today.. It's a bit.. Wanna see?[/say]")
+		saynn("[say=rahi]Она сегодня снова рисовала.. Немного странно.. Хочешь взглянуть?[/say]")
 
-		saynn("You nod. Rahi slowly turns the drawing that she holds so you can see it.")
+		saynn("Ты киваешь. Рахи медленно поворачивает рисунок, который держит в руках, чтобы ты мог его рассмотреть.")
 
 		saynn("[img=500]res://Modules/RahiModule/RahiPics/rahi3.png[/img]")
 
-		saynn("[say=pc]What made you draw that, kitty?[/say]")
+		saynn("[say=pc]Что заставило тебя это нарисовать, кошечка?[/say]")
 
-		saynn("Rahi blushes.")
+		saynn("Рахи краснеет.")
 
-		saynn("[say=rahi]Nothing in particular?..[/say]")
+		saynn("[say=rahi]Ничего особенного?..[/say]")
 
-		saynn("[say=pc]These cuffs don't look like they can hold you.[/say]")
+		saynn("[say=pc]Эти наручники не похожи на те, что смогут тебя удержать.[/say]")
 
-		saynn("Rahi meows and rubs her feline nose.")
+		saynn("Рахи мяукает и трется своим кошачьим носиком.")
 
-		addButton("Kinky", "Tell Rahi that its a kinky one", "pic3_kinky")
-		addButton("Very silly", "Tell Rahi that she drew a silly picture", "pic3_silly")
+		addButton("Кинки", "Сказать Рахи, что это будет извращенно", "pic3_kinky")
+		addButton("Очень глупо", "Сказать Рахи, что она нарисовала глупую картинку", "pic3_silly")
 	if(state == "pic3_kinky"):
-		saynn("[say=pc]It's quite kinky. You even found the red marker for it.[/say]")
+		saynn("[say=pc]Это довольно извращенно. Ты даже нашла для этого красный маркер.[/say]")
 
-		saynn("Rahi nods-nods and purrs.")
+		saynn("Рахи закивала и замурлыкала.")
 
-		saynn("[say=pc]Maybe we will do that to you.[/say]")
+		saynn("[say=pc]Может, мы сделаем это с тобой.[/say]")
 
-		saynn("Your words make her blush again.")
+		saynn("От твоих слов она снова покраснела.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic3_silly"):
-		saynn("[say=pc]It's more silly than sexy, kitty. Don't know if that was the idea.[/say]")
+		saynn("[say=pc]Это скорее глупо, чем сексуально, киса. Не знаю, в этом ли была задумка.[/say]")
 
-		saynn("Rahi blinks many times.")
+		saynn("Рахи часто заморгала.")
 
-		saynn("[say=rahi]Yeah.. silly fun..[/say]")
+		saynn("[say=rahi]Ага... глупое веселье...[/say]")
 
-		saynn("[say=pc]Ever saw how professional artists draw? It takes years.[/say]")
+		saynn("[say=pc]Видел когда-нибудь, как рисуют профессиональные художники? На это уходят годы.[/say]")
 
-		saynn("[say=rahi]You're right..[/say]")
+		saynn("[say=rahi]Ты прав..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic4"):
-		saynn("[say=rahi]Wanna see another drawing from her?..[/say]")
+		saynn("[say=rahi]Хочешь взглянуть на ещё один её рисунок?..[/say]")
 
-		saynn("[say=pc]Sure, kitty.[/say]")
+		saynn("[say=pc]Конечно, киска.[/say]")
 
-		saynn("Rahi shows you the picture.")
+		saynn("Рахи показывает тебе картинку.")
 
 		saynn("[img=500]res://Modules/RahiModule/RahiPics/rahi4.png[/img]")
 
-		saynn("[say=pc]Why didn't you take the apple?[/say]")
+		saynn("[say=pc]Почему ты не взял яблоко?[/say]")
 
-		saynn("Kitty's ears droop.")
+		saynn("Ушки Китти поникли.")
 
-		saynn("[say=pc]Almost like that other cat is trying to seduce you.[/say]")
+		saynn("[say=pc]Почти как будто та другая кошка пытается тебя соблазнить.[/say]")
 
-		saynn("Rahi shakes her head.")
+		saynn("Рахи качает головой.")
 
-		saynn("[say=pc]Good job, keep practicing.[/say]")
+		saynn("[say=pc]Молодец, продолжай практиковаться.[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "pic5"):
-		saynn("[say=rahi]Hey.. Wanna see what she drew just now?..[/say]")
+		saynn("[say=rahi]Эй.. Хочешь посмотреть, что она только что нарисовала?..[/say]")
 
-		saynn("[say=pc]I always do, kitty.[/say]")
+		saynn("[say=pc]Всегда, киса.[/say]")
 
-		saynn("Rahi shows you her drawing.")
+		saynn("Рахи показывает тебе свой рисунок.")
 
 		saynn("[img=500]res://Modules/RahiModule/RahiPics/rahi5.png[/img]")
 
-		saynn("[say=pc]Oh wow, that's a comic.[/say]")
+		saynn("[say=pc]Ого, это комикс.[/say]")
 
-		saynn("[say=rahi]Yeah.. it's about how headpats make her happy..[/say]")
+		saynn("[say=rahi]Ага.. он о том, как поглаживания по голове делают меня счастливой..[/say]")
 
-		saynn("[say=pc]But then you get sad again?[/say]")
+		saynn("[say=pc]А потом ты снова грустнеешь?[/say]")
 
-		saynn("[say=rahi]Pats are a finite resource..[/say]")
+		saynn("[say=rahi]Поглаживания — это исчерпаемый ресурс..[/say]")
 
-		addButton("Pat Rahi", "Give that kitty some good headpats", "pic5_pat")
-		addButton("Nod", "That makes sense", "endthescene")
+		addButton("Погладить Рахи", "Устроить этой киске хорошую порцию поглаживаний", "pic5_pat")
+		addButton("Кивнуть", "В этом есть смысл", "endthescene")
 	if(state == "pic5_pat"):
-		saynn("You pull your kitty closer to you and begin patting her many times. So much that her ears get flat with her head.")
+		saynn("Ты притягиваешь свою киску ближе к себе и начинаешь настойчиво гладить её. Так сильно, что её ушки прижимаются к голове.")
 
-		saynn("Rahi can't stop purring and rubbing her cheek against you.")
+		saynn("Рахи не может перестать мурчать и тереться щекой о тебя.")
 
-		saynn("Very cute.")
+		saynn("Очень мило.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_wonder"):
-		saynn("[say=rahi]She wonders if you.. training her.. is gonna help.. That task was pretty hard..[/say]")
+		saynn("[say=rahi]Она гадает, поможет ли ей... твоё обучение... Это было довольно непросто...[/say]")
 
-		addButton("It takes time", "Tell Rahi this", "0_wonder_time")
-		addButton("Do as I say", "Tell Rahi this", "0_wonder_do")
+		addButton("Это требует времени", "Сказать Рахи это", "0_wonder_time")
+		addButton("Делай, как я говорю", "Сказать Рахи это", "0_wonder_do")
 	if(state == "0_wonder_time"):
-		saynn("[say=pc]It will take time, kitty. A lot of time.[/say]")
+		saynn("[say=pc]Это займет время, киска. Много времени.[/say]")
 
-		saynn("Rahi nods.")
+		saynn("Рахи кивает.")
 
-		saynn("[say=rahi]Of course..[/say]")
+		saynn("[say=rahi]Конечно..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_wonder_do"):
-		saynn("[say=pc]Just do as I say, kitty. Leave all the thinking to me.[/say]")
+		saynn("[say=pc]Просто делай, как я говорю, киска. Оставь все раздумья мне.[/say]")
 
-		saynn("Rahi lowers her head.")
+		saynn("Рахи опускает голову.")
 
-		saynn("[say=rahi]You're probably right..[/say]")
+		saynn("[say=rahi]Наверное, ты прав..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_alcohol"):
-		saynn("[say=rahi]Alcohol was a good escape for her.. For a while.. Whiskey numbs her tongue.. and mind..[/say]")
+		saynn("[say=rahi]Алкоголь был для неё хорошим способом сбежать от реальности.. На какое-то время.. Виски притупляет её язык.. и разум..[/say]")
 
-		addButton("Health problems", "Tell Rahi that it's not healthy", "0_alcohol_health")
-		addButton("Not anymore", "Tell Rahi that that lifestyle is over", "0_alcohol_notanymore")
+		addButton("Проблемы со здоровьем", "Сказать Рахи, что это вредно", "0_alcohol_health")
+		addButton("Больше нет", "Сказать Рахи, что с таким образом жизни покончено", "0_alcohol_notanymore")
 	if(state == "0_alcohol_health"):
-		saynn("[say=pc]It's a huge health risk, kitty. The sooner you get rid of that addiction, the better.[/say]")
+		saynn("[say=pc]Это огромный риск для здоровья, киса. Чем быстрее ты избавишься от этой зависимости, тем лучше.[/say]")
 
-		saynn("Her ears droop.")
+		saynn("Её ушки поникли.")
 
-		saynn("[say=rahi]But.. What's the alternative..[/say]")
+		saynn("[say=rahi]Но.. Какая же тогда альтернатива..[/say]")
 
-		saynn("[say=pc]You will figure it out.[/say]")
+		saynn("[say=pc]Ты обязательно разберешься.[/say]")
 
-		saynn("Rahi nods softly.")
+		saynn("Рахи тихонько кивает.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_alcohol_notanymore"):
-		saynn("[say=pc]Not anymore it's not. That lifestyle is over, kitty.[/say]")
+		saynn("[say=pc]Больше нет. Тот образ жизни остался в прошлом, киса.[/say]")
 
-		saynn("Rahi pouts.")
+		saynn("Рахи дуется.")
 
-		saynn("[say=rahi]Why..[/say]")
+		saynn("[say=rahi]Почему..[/say]")
 
-		saynn("[say=pc]Because I said so.[/say]")
+		saynn("[say=pc]Потому что я так сказал(а).[/say]")
 
-		saynn("[say=rahi]Fair enough..[/say]")
+		saynn("[say=rahi]Справедливо..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_steal"):
-		saynn("[say=rahi]She used to steal things.. Others usually don't suspect a little brown kitty.. Her dad was so angry when he found out..[/say]")
+		saynn("[say=rahi]Она любила воровать.. Другие обычно не подозревают маленькую коричневую кошечку.. Её отец был в такой ярости, когда всё узнал..[/say]")
 
-		addButton("You had to", "Tell Rahi this", "0_steal_hadto")
-		addButton("Screw dad", "Tell Rahi this", "0_steal_screw")
+		addButton("Приходилось", "Сказать Рахи это", "0_steal_hadto")
+		addButton("Да к черту папашу", "Сказать Рахи это", "0_steal_screw")
 	if(state == "0_steal_hadto"):
-		saynn("[say=pc]You had to do it, kitty. I'm sure.[/say]")
+		saynn("[say=pc]Тебе пришлось это сделать, киса. Я уверен(а).[/say]")
 
-		saynn("Rahi smiles.")
+		saynn("Рахи улыбается.")
 
-		saynn("[say=rahi]Alternatives weren't the best, yes..[/say]")
+		saynn("[say=rahi]Альтернативы были не самыми лучшими, это да..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_steal_screw"):
-		saynn("[say=pc]Screw your dad, he doesn't understand anything.[/say]")
+		saynn("[say=pc]Да к черту твоего папашу, он ни черта не смыслит.[/say]")
 
-		saynn("Rahi lowers her head.")
+		saynn("Рахи опускает голову.")
 
-		saynn("[say=rahi]He was very kind.. Was..[/say]")
+		saynn("[say=rahi]Он был очень добрым.. Был..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_doctor"):
-		saynn("[say=rahi]That doctor is such a.. meanie.. Do you agree?[/say]")
+		saynn("[say=rahi]Этот доктор такая.. вредина.. Согласен?[/say]")
 
-		addButton("Yes", "Say this", "0_doctor_yes")
-		addButton("Has reasons", "Say this", "0_doctor_hasreasons")
+		addButton("Да", "Скажите это", "0_doctor_yes")
+		addButton("У неё есть причины", "Скажите это", "0_doctor_hasreasons")
 	if(state == "0_doctor_yes"):
-		saynn("[say=pc]I agree, kitty. I'm glad I saved you from her.[/say]")
+		saynn("[say=pc]Согласен, киса. Я рад, что спас тебя от неё.[/say]")
 
-		saynn("Rahi purrs.")
+		saynn("Рахи мурлычет.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "0_doctor_hasreasons"):
-		saynn("[say=pc]She probably has her reasons. Maybe she just likes you.[/say]")
+		saynn("[say=pc]У неё, наверное, свои причины. Может, ты ей просто нравишься.[/say]")
 
-		saynn("Rahi shakes her head.")
+		saynn("Рахи качает головой.")
 
-		saynn("[say=rahi]If she liked her, she would leave her alone..[/say]")
+		saynn("[say=rahi]Если бы ты ей нравилась, она бы оставила тебя в покое..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_nothappy"):
-		saynn("[say=rahi]If you're not happy with her.. We can stop..[/say]")
+		saynn("[say=rahi]Если ты не довольна ей.. Мы можем остановиться..[/say]")
 
-		addButton("Happy", "Tell Rahi that you're happy with her", "1_nothappy_happy")
-		addButton("Shush", "Shush Rahi", "1_nothappy_shush")
+		addButton("Счастлив(а)", "Сказать Рахи, что ты доволен ею", "1_nothappy_happy")
+		addButton("Тсс", "Тсс, Рахи", "1_nothappy_shush")
 	if(state == "1_nothappy_happy"):
-		saynn("[say=pc]Why would I not be? That last heist was very fun. You saved us.[/say]")
+		saynn("[say=pc]А почему бы и нет? Тот последний налет был очень веселым. Ты спасла нас.[/say]")
 
-		saynn("Rahi purrs.")
+		saynn("Рахи мурлычет.")
 
-		saynn("[say=rahi]And now we have lots of toys..[/say]")
+		saynn("[say=rahi]А теперь у нас полно игрушек...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_nothappy_shush"):
-		saynn("You shush Rahi.")
+		saynn("Ты, замолчи, Рахи.")
 
-		saynn("[say=pc]Don't ever say that. Anything that I don't like about you I will change.[/say]")
+		saynn("[say=pc]Никогда больше так не говори. Всё, что мне в тебе не нравится, я изменю.[/say]")
 
-		saynn("Rahi nods and lowers her head.")
+		saynn("Рахи кивает и опускает голову.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_kind"):
-		saynn("[say=rahi]You were so kind with the kitty when we first met.. You are probably the only person who understands her..[/say]")
+		saynn("[say=rahi]Ты была такой доброй с кошечкой, когда мы только встретились... Ты, наверное, единственный человек, который её понимает...[/say]")
 
-		addButton("I'm glad", "Tell Rahi this", "1_kind_glad")
-		addButton("Not true", "Tell Rahi this", "1_kind_nottrue")
+		addButton("Я рада", "Сказать Рахи это", "1_kind_glad")
+		addButton("Неправда", "Сказать Рахи это", "1_kind_nottrue")
 	if(state == "1_kind_glad"):
-		saynn("[say=pc]I'm glad you think this way about me, kitty.[/say]")
+		saynn("[say=pc]Приятно, что ты так обо мне думаешь, киса.[/say]")
 
-		saynn("Rahi smiles.")
+		saynn("Рахи улыбается.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_kind_nottrue"):
-		saynn("[say=pc]That's just not true, kitty. I'm sure there are many others who can also empathize with you. What about your family?[/say]")
+		saynn("[say=pc]Это совсем не так, киса. Уверена, есть много других, кто сможет тебя понять. А как же твоя семья?[/say]")
 
-		saynn("Rahi shrugs.")
+		saynn("Рахи пожимает плечами.")
 
-		saynn("[say=rahi]Her father is kind.. But she argued a lot with him.. Her brother.. is the reason why she is here..[/say]")
+		saynn("[say=rahi]Её отец добрый... Но она часто с ним спорила... А брат... именно из-за него она здесь...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_mother"):
-		saynn("[say=rahi]Her mother died when she was little.. All she had were her dad and brother.. Probably why Rahi ended up the way she is..[/say]")
+		saynn("[say=rahi]Мать умерла, когда она была совсем маленькой... У неё остались только отец и брат... Наверное, поэтому Рахи стала такой, какая она есть...[/say]")
 
-		addButton("Rahi?", "Why did she use her name", "1_mother_rahi")
-		addButton("How little", "Ask how little Rahi was when her mother died", "1_mother_howlittle")
+		addButton("Рахи?", "Почему она назвала её по имени?", "1_mother_rahi")
+		addButton("Какая крошка", "Спросить, какой маленькой была Рахи, когда умерла её мать", "1_mother_howlittle")
 	if(state == "1_mother_rahi"):
-		saynn("[say=pc]Rahi?[/say]")
+		saynn("[say=pc]Рахи?[/say]")
 
-		saynn("Rahi nods.")
+		saynn("Рахи кивает.")
 
-		saynn("[say=rahi]Rahi was way more.. assertive..[/say]")
+		saynn("[say=rahi]Рахи была куда более.. напористой..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_mother_howlittle"):
-		saynn("[say=pc]How little were you when mom passed away?[/say]")
+		saynn("[say=pc]Сколько тебе было лет, когда умерла мама?[/say]")
 
-		saynn("Rahi lowers her head.")
+		saynn("Рахи опускает голову.")
 
-		saynn("[say=rahi]Her mother died during birth..[/say]")
+		saynn("[say=rahi]Её мать умерла во время родов..[/say]")
 
-		saynn("Ouch.")
+		saynn("Ой.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_sorry"):
-		saynn("[say=rahi]She wants to say.. that she is sorry.. that she tried to end her life.. That won't happen ever again..[/say]")
+		saynn("[say=rahi]Она хочет сказать.. что ей жаль.. что она пыталась покончить с собой.. Что это больше никогда не повторится..[/say]")
 
-		addButton("Hug Rahi", "Hug this precious kitty", "1_sorry_hug")
-		addButton("It better not", "Tell Rahi this", "1_sorry_betternot")
+		addButton("Обнять Рахи", "Обнять эту драгоценную кошечку", "1_sorry_hug")
+		addButton("Лучше бы не повторилось", "Сказать Рахи это", "1_sorry_betternot")
 	if(state == "1_sorry_hug"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
-		saynn("Instead of saying anything you just walk up to Rahi and give her a tight hug. The feline mewls surprised and then proceeds to purr in your hands.")
+		saynn("Вместо того чтобы что-то сказать, ты просто подходишь к Рахи и крепко её обнимаешь. Кошечка удивленно мяукает, а затем начинает довольно мурчать у тебя на руках.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "1_sorry_betternot"):
-		saynn("[say=pc]It better not, kitty. Another trick like that and I will have to keep you leashed at all times.[/say]")
+		saynn("[say=pc]Лучше бы не повторилось, киса. Еще одна такая выходка, и мне придется держать тебя на поводке постоянно.[/say]")
 
-		saynn("Rahi is.. thinking about your proposal.. You give her a smack on the rear to speed that process up.")
+		saynn("Рахи... обдумывает твое предложение... Ты даешь ей звонкую пощечину по заднице, чтобы ускорить процесс.")
 
-		saynn("[say=rahi]Yeah, she won't..[/say]")
+		saynn("[say=rahi]Да, она не...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "2_sorry"):
-		saynn("[say=rahi]Sorry for lying to you, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Прости, что соврала тебе, {rahiMaster}..[/say]")
 
-		addButton("It's okay", "Tell Rahi this", "2_sorry_itsokay")
-		addButton("Bad kitty", "Tell Rahi this", "2_sorry_badkitty")
+		addButton("Все в порядке", "Сказать Рахи это", "2_sorry_itsokay")
+		addButton("Плохая кошечка", "Сказать Рахи это", "2_sorry_badkitty")
 	if(state == "2_sorry_itsokay"):
-		saynn("[say=pc]It's okay, kitty. You got a good lesson out of it.[/say]")
+		saynn("[say=pc]Все в порядке, кошечка. Ты извлекла из этого хороший урок.[/say]")
 
-		saynn("She nods.")
+		saynn("Она кивает.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "2_sorry_badkitty"):
-		saynn("[say=pc]You broke the rules, kitty. That makes you a very bad kitty.[/say]")
+		saynn("[say=pc]Ты нарушила правила, кошечка. А это делает тебя очень плохой кошечкой.[/say]")
 
-		saynn("[say=rahi]You don't have to be kind with..[/say]")
+		saynn("[say=rahi]Тебе не обязательно быть нежной с...[/say]")
 
-		saynn("You cut Rahi off.")
+		saynn("Ты перебиваешь Рахи.")
 
-		saynn("[say=pc]A very bad whore of a slave.[/say]")
+		saynn("[say=pc]Очень плохая шлюха-рабыня.[/say]")
 
-		saynn("That had a bigger effect. Rahi nods and assumes a submissive pose, lowering her chin and holding her paws by her sides.")
+		saynn("Это подействовало сильнее. Рахи кивает и принимает покорную позу, опуская подбородок и прижимая лапки к бокам.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "2_engineer"):
-		saynn("[say=rahi]She always wanted to become an engineer.. Make things, repair things, break things to make and repair other things.. That kind of stuff..[/say]")
+		saynn("[say=rahi]Она всегда хотела стать инженером... Создавать вещи, чинить вещи, ломать вещи, чтобы создать и починить что-то другое... Вроде того..[/say]")
 
-		addButton("What stopped?", "Ask Rahi about why she didn't end up being an engineer", "2_engineer_whatstopped")
-		addButton("Kitty is better", "Tell Rahi that her being your kitty is better", "2_engineer_kittyisbetter")
+		addButton("Что же ей помешало?", "Спросить Рахи, почему она так и не стала инженером", "2_engineer_whatstopped")
+		addButton("Китти — это лучше", "Сказать Рахи, что быть твоей китти — гораздо лучше", "2_engineer_kittyisbetter")
 	if(state == "2_engineer_whatstopped"):
-		saynn("[say=pc]What stopped you, kitty?[/say]")
+		saynn("[say=pc]Что тебя остановило, китти?[/say]")
 
-		saynn("Rahi sighs.")
+		saynn("Рахи вздыхает.")
 
-		saynn("[say=rahi]Any kind of education was very expensive.. Father did his best for her and her brother..[/say]")
+		saynn("[say=rahi]Любое образование стоило очень дорого.. Отец делал всё возможное для неё и её брата..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "2_engineer_kittyisbetter"):
-		saynn("[say=pc]But then you wouldn't be my kitty. And being a kitty that belongs to someone is much better, isn't it?[/say]")
+		saynn("[say=pc]Но тогда ты бы не была моей китти. А быть китти, которая кому-то принадлежит — куда лучше, правда?[/say]")
 
-		saynn("Rahi offers you a small smile.")
+		saynn("Рахи слегка улыбается.")
 
-		saynn("[say=rahi]You're right, {rahiMaster}.. She wouldn't be here then.. with you.[/say]")
+		saynn("[say=rahi]Ты прав, {rahiMaster}.. Тогда бы её здесь не было.. рядом с тобой.[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "2_like"):
-		saynn("[say=rahi]She.. never asked before.. Do you even like how kitty looks?..[/say]")
+		saynn("[say=rahi]Она... раньше никогда не спрашивала... Тебе вообще нравится, как выглядит эта киска?..[/say]")
 
-		addButton("I do", "Tell Rahi this", "2_like_do")
-		addButton("Doesn't matter", "Tell Rahi this", "2_like_matter")
+		addButton("Доверяю", "Сказать Рахи это", "2_like_do")
+		addButton("Неважно", "Сказать Рахи это", "2_like_matter")
 	if(state == "2_like_do"):
-		saynn("[say=pc]You are one pretty kitty.[/say]")
+		saynn("[say=pc]Ты очень симпатичная киска.[/say]")
 
-		saynn("[say=rahi]But.. she is so.. simple.. Just a brown kitty..[/say]")
+		saynn("[say=rahi]Но... она такая... простая... Просто коричневая кошечка...[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=pc]Sometimes simplicity is good.[/say]")
+		saynn("[say=pc]Иногда простота — это хорошо.[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "2_like_matter"):
-		saynn("[say=pc]It really doesn't matter, kitty. All the bondage gear is what makes you look like a beautiful slave.[/say]")
+		saynn("[say=pc]На самом деле это не важно, киска. Все эти атрибуты рабства — вот что делает тебя прекрасной рабыней.[/say]")
 
-		saynn("Rahi blushes and covers her eyes for a second.")
+		saynn("Рахи краснеет и на мгновение закрывает глаза ладонями.")
 
-		saynn("[say=rahi]Huff..[/say]")
+		saynn("[say=rahi]Пфф..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "3_normal"):
-		saynn("[say=rahi]Do you think that this.. What we're doing.. is normal?..[/say]")
+		saynn("[say=rahi]Как ты думаешь, это... то, что мы делаем... это нормально?..[/say]")
 
-		addButton("It's fun", "Tell Rahi this", "3_normal_fun")
-		addButton("It's not", "Tell Rahi this", "3_normal_not")
+		addButton("Это весело", "Сказать Рахи это", "3_normal_fun")
+		addButton("Это ненормально", "Сказать Рахи это", "3_normal_not")
 	if(state == "3_normal_fun"):
-		saynn("[say=pc]It's fun and that's all that matters, kitty. If you have any concerns - tell me.[/say]")
+		saynn("[say=pc]Это весело, и только это имеет значение, киска. Если тебя что-то беспокоит — говори мне.[/say]")
 
-		saynn("Rahi nods.")
+		saynn("Рахи кивает.")
 
-		saynn("[say=rahi]She has no concerns, {rahiMaster}..[/say]")
+		saynn("[say=rahi]У неё нет никаких опасений, {rahiMaster}..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "3_normal_not"):
-		saynn("[say=pc]Me making you my kitty? Others will say that it's not normal. But who cares about them? You need more discipline in your life. And I'm here to provide.[/say]")
+		saynn("[say=pc]То, что я сделаю тебя своей киской? Другие скажут, что это ненормально. Но какая разница, что они думают? Тебе не помешает немного дисциплины, а я здесь как раз для того, чтобы её дать.[/say]")
 
-		saynn("Rahi smiles warmly.")
+		saynn("Рахи тепло улыбается.")
 
-		saynn("[say=rahi]Thank you for that, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Спасибо тебе за это, {rahiMaster}..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "3_shy"):
-		saynn("[say=rahi]Is it bad that she is so shy and quiet?..[/say]")
+		saynn("[say=rahi]Это плохо, что она такая застенчивая и тихая?..[/say]")
 
-		addButton("No", "Tell Rahi this", "3_shy_no")
-		addButton("Yes", "Tell Rahi this", "3_shy_yes")
+		addButton("No", "Сказать Рахи это", "3_shy_no")
+		addButton("Да", "Сказать Рахи это", "3_shy_yes")
 	if(state == "3_shy_no"):
-		saynn("[say=pc]It's not. If being quiet makes you comfortable - be quiet, kitty. You have me to protect you.[/say]")
+		saynn("[say=pc]Вовсе нет. Если тебе комфортнее молчать — молчи, киска. У тебя есть я, чтобы защитить тебя.[/say]")
 
-		saynn("Rahi smiles.")
+		saynn("Рахи улыбается.")
 
-		saynn("[say=rahi]That's good to know..[/say]")
+		saynn("[say=rahi]Приятно это знать..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "3_shy_yes"):
-		saynn("[say=pc]In this prison.. yeah, it's a bad trait. You gotta be loud if you don't wanna be bullied. But right now you have my protection, kitty.[/say]")
+		saynn("[say=pc]В этой тюрьме.. да, это плохая черта. Нужно быть громкой, если не хочешь, чтобы тебя задирали. Но сейчас ты под моей защитой, киска.[/say]")
 
-		saynn("Rahi smiles.")
+		saynn("Рахи улыбается.")
 
-		saynn("[say=rahi]That's good to know..[/say]")
+		saynn("[say=rahi]Приятно это знать..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "3_like"):
-		saynn("[say=rahi]She really liked.. what we did.. out there near the waterfall..[/say]")
+		saynn("[say=rahi]Ей действительно понравилось.. то, что мы делали.. там, у водопада..[/say]")
 
-		addButton("Me too", "Tell Rahi this", "3_like_metoo")
-		addButton("Great pussy", "Tell Rahi this", "3_like_greatfuck")
+		addButton("Я тоже", "Сказать Рахи это", "3_like_metoo")
+		addButton("Офигенная киска", "Сказать Рахи это", "3_like_greatfuck")
 	if(state == "3_like_metoo"):
-		saynn("[say=pc]Me too, kitty. We should do it more.[/say]")
+		saynn("[say=pc]Я тоже, киска. Нам стоит делать это чаще.[/say]")
 
-		saynn("[say=rahi]Nya..[/say]")
+		saynn("[say=rahi]Ня..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "3_like_greatfuck"):
-		saynn("[say=pc]Yeah, your pussy is great, kitty.[/say]")
+		saynn("[say=pc]Да, у тебя офигенная киска, киска.[/say]")
 
-		saynn("Rahi blushes and blinks many times.")
+		saynn("Рахи краснеет и часто хлопает ресницами.")
 
-		saynn("[say=rahi]Oh.. It's not just about her pussy though, right?..[/say]")
+		saynn("[say=rahi]Ох... Но дело ведь не только в её киске, верно?..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_gun"):
-		saynn("[say=rahi]She still can't believe that she agreed to rob that person.. with a gun..[/say]")
+		saynn("[say=rahi]Она до сих пор не может поверить, что согласилась ограбить того человека... с пушкой в руках...[/say]")
 
-		addButton("Got tricked", "Tell Rahi this", "4_gun_hadto")
-		addButton("Good plan", "Tell Rahi that it was a good plan that didn't worked out", "4_gun_goodplan")
+		addButton("Попалась на удочку", "Сказать Рахи это", "4_gun_hadto")
+		addButton("Хороший план", "Сказать Рахи, что план был хорошим, хоть он и не сработал", "4_gun_goodplan")
 	if(state == "4_gun_hadto"):
-		saynn("[say=pc]You got tricked into doing it, kitty. You practically had no choice.[/say]")
+		saynn("[say=pc]Тебя просто развели, киска. У тебя практически не было выбора.[/say]")
 
-		saynn("Rahi puts on her sad eyes and thinks about it.")
+		saynn("Рахи делает грустные глазки и задумывается.")
 
-		saynn("[say=rahi]She made many choices.. She tricked herself in the end..[/say]")
+		saynn("[say=rahi]Она сделала немало выборов... В конце концов, она сама себя обманула...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_gun_goodplan"):
-		saynn("[say=pc]It was a good plan, those AlphaCorp pigs need a good shaking once in a while. Sucks that your cough betrayed you.[/say]")
+		saynn("[say=pc]План был отличный, этим свиньям из AlphaCorp полезно иногда встряхнуться. Жаль только, что твой кашель тебя выдал.[/say]")
 
-		saynn("Rahi sighs.")
+		saynn("Рахи вздыхает.")
 
-		saynn("[say=rahi]Maybe..[/say]")
+		saynn("[say=rahi]Может быть...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_think"):
-		saynn("[say=rahi]Is there something particular that you like about her, {rahiMaster}?..[/say]")
+		saynn("[say=rahi]Есть что-то особенное, что тебе в ней нравится, {rahiMaster}?..[/say]")
 
-		addButton("Face", "Tell Rahi this", "4_think_face")
-		addButton("Voice", "Tell Rahi this", "4_think_voice")
-		addButton("Fur", "Tell Rahi this", "4_think_fur")
-		addButton("Pussy", "Tell Rahi this", "4_think_pussy")
-		addButton("Ass", "Tell Rahi this", "4_think_ass")
-		addButton("Everything", "Tell Rahi this", "4_think_everything")
+		addButton("Лицо", "Сказать Рахи это", "4_think_face")
+		addButton("Голос", "Сказать Рахи это", "4_think_voice")
+		addButton("Мех", "Сказать Рахи это", "4_think_fur")
+		addButton("В киску", "Сказать Рахи это", "4_think_pussy")
+		addButton("В задницу", "Сказать Рахи это", "4_think_ass")
+		addButton("Всё", "Сказать Рахи это", "4_think_everything")
 	if(state == "4_think_face"):
-		saynn("[say=pc]You have a pretty cute face, kitty.[/say]")
+		saynn("[say=pc]У тебя очень милое личико, киса.[/say]")
 
-		saynn("Rahi gets all shy and blushy when you look at her.")
+		saynn("Рахи вся смущается и краснеет, когда ты смотришь на неё.")
 
-		saynn("[say=rahi]You too!..[/say]")
+		saynn("[say=rahi]Ты тоже!..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_think_voice"):
-		saynn("[say=pc]You have a very calming voice, kitty.[/say]")
+		saynn("[say=pc]У тебя очень успокаивающий голос, киса.[/say]")
 
-		saynn("Rahi can't hide her purring.")
+		saynn("Рахи не может скрыть своё мурлыканье.")
 
-		saynn("[say=rahi]It's just a feline voice, me-eow..[/say]")
+		saynn("[say=rahi]Это просто кошачий голос, мяу-у..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_think_fur"):
-		saynn("[say=pc]Your fur feels nice and soft.[/say]")
+		saynn("[say=pc]Твоя шерстка такая приятная и мягкая.[/say]")
 
-		saynn("Your hand on Rahi's exposed parts and strokes her fur, making the kitty wiggle slightly.")
+		saynn("Твоя рука касается открытых участков тела Рахи и поглаживает её шерсть, заставляя кису слегка подергиваться.")
 
-		saynn("[say=rahi]A kitty without any fur would be weird..[/say]")
+		saynn("[say=rahi]Киса без шерсти выглядела бы странно..[/say]")
 
-		saynn("[say=pc]But yours is extra soft.[/say]")
+		saynn("[say=pc]Но твоя — ну о-о-очень мягкая.[/say]")
 
-		saynn("She blushes.")
+		saynn("Она краснеет.")
 
-		saynn("[say=rahi]Maybe it's because she often licks.. nevermind..[/say]")
+		saynn("[say=rahi]Может, это потому, что она часто облизывается... а, неважно...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_think_pussy"):
-		saynn("[say=pc]Your pussy feels great to fuck, kitty. Couldn't ask for a better one.[/say]")
+		saynn("[say=pc]Твою киску так охрененно трахать, кошечка. Лучше и не пожелаешь.[/say]")
 
-		saynn("Rahi blushes and pouts while you stare at her crotch.")
+		saynn("Рахи краснеет и дует губы, пока ты пялишься ей в промежность.")
 
-		saynn("[say=rahi]She has other parts..[/say]")
+		saynn("[say=rahi]У неё есть и другие части тела...[/say]")
 
-		saynn("[say=pc]Yeah, your tits are great too.[/say]")
+		saynn("[say=pc]Да, сиськи у тебя тоже зачетные.[/say]")
 
-		saynn("Now you got her all flustered too.")
+		saynn("Теперь ты окончательно смутил её.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_think_ass"):
-		saynn("[say=pc]You have a very gropable ass. Would caress it all day if I could.[/say]")
+		saynn("[say=pc]У тебя такая задница, что так и хочется её тискать. Гладил бы её весь день, если бы мог.[/say]")
 
-		saynn("Rahi blushes and pouts while you squeeze her rear, forcing a squeak out of her.")
+		saynn("Рахи краснеет и дует губы, когда ты сжимаешь её задницу, заставляя её пискнуть.")
 
-		saynn("[say=rahi]Just ass?..[/say]")
+		saynn("[say=rahi]Только задница?..[/say]")
 
-		saynn("[say=pc]Your tits are great too.[/say]")
+		saynn("[say=pc]Твоя сиська тоже охрененная.[/say]")
 
-		saynn("Now you got her all flustered too.")
+		saynn("Теперь ты окончательно смутил её.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_think_everything"):
-		saynn("[say=pc]Your face.. beautiful.. a careful ponytail, kitty ears, big blue eyes, a pointy black nose, sharp fangs.. little lips. The voice that they produce.. is music to my ears.. your every word makes me want to grab and hold you forever while my hands..[/say]")
+		saynn("[say=pc]Твое личико... прекрасное... аккуратный хвост, кошачьи ушки, огромные голубые глаза, острый черный носик, острые клыки... манящие губки. А голос, который ты издаешь... это просто музыка для моих ушей... каждое твое слово заставляет меня хотеть схватить и прижать тебя к себе навсегда, пока мои руки...[/say]")
 
-		saynn("Kitty blushes already. And you're done yet.")
+		saynn("Кошечка уже покраснела. А ты еще даже не закончил.")
 
-		saynn("[say=pc]While my hands brush over your soft brown fur, caressing all your curves and other areas such as your beautiful flower or all around your tail.[/say]")
+		saynn("[say=pc]Пока мои руки скользят по твоему мягкому коричневому меху, лаская каждый изгиб твоего тела, твой прекрасный цветок и всё вокруг твоего хвоста.[/say]")
 
-		saynn("The feline covers her embarrassed eyes until you're done.")
+		saynn("Кошачья девчонка закрывает глаза от смущения, пока ты не закончишь.")
 
-		saynn("[say=rahi]Huff.. You will spoil her like that..[/say]")
+		saynn("[say=rahi]Ха... Ты так её совсем избалуешь...[/say]")
 
-		saynn("[say=pc]Sounds good.[/say]")
+		saynn("[say=pc]Звучит неплохо.[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_stealing"):
-		saynn("[say=rahi]Do you think stealing those meds was the right call?..[/say]")
+		saynn("[say=rahi]Думаешь, украсть те таблетки было правильным решением?..[/say]")
 
-		addButton("Yeah", "Tell Rahi this", "4_stealing_yeah")
-		addButton("Other way", "Tell Rahi that there might have been some other solution", "4_stealing_other")
+		addButton("Да", "Сказать Рахи это", "4_stealing_yeah")
+		addButton("Наоборот", "Скажи Рахи, что мог быть и другой выход", "4_stealing_other")
 	if(state == "4_stealing_yeah"):
-		saynn("[say=pc]Yeah, it was. You were dying, kitty. Screw that shopkeeper.[/say]")
+		saynn("[say=pc]Да, так и было. Ты умирала, кошечка. К черту этого лавочника.[/say]")
 
-		saynn("Rahi tilts her head from side to side, deliberating.")
+		saynn("Рахи задумчиво наклоняет голову то в одну, то в другую сторону.")
 
-		saynn("[say=rahi]The meds didn't help her in the end anyways..[/say]")
+		saynn("[say=rahi]В конечном счете, лекарства ей всё равно не помогли..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "4_stealing_other"):
-		saynn("[say=pc]Maybe there could have been some other way. Maybe the whole thing could have been avoided.. if you'd pick some other job?[/say]")
+		saynn("[say=pc]Может, был какой-то другой путь. Может, всего этого можно было избежать.. если бы ты выбрала другую работу?[/say]")
 
-		saynn("Rahi shrugs slowly and looks all sad.")
+		saynn("Рахи медленно пожимает плечами с печальным видом.")
 
-		saynn("[say=rahi]Maybe.. There wasn't much available for the uneducated people.. It was that.. or being a prostitute..[/say]")
+		saynn("[say=rahi]Может быть.. Для необразованных людей особого выбора не было.. Либо это.. либо работа проституткой..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "5_sorry"):
-		saynn("[say=rahi]Sorry for lying.. again.. And stealing from you.. She was kinda desperate.. It tasted so good.. But that's not a good enough reason to do that.. She can't betray you like this.. Not after everything you did..[/say]")
+		saynn("[say=rahi]Прости за ложь.. снова.. И за то, что украла у тебя.. Она была в отчаянии.. Это было так вкусно.. Но это не оправдание.. Она не может так предавать тебя.. Не после всего, что ты для неё сделал..[/say]")
 
-		addButton("It's okay", "Tell Rahi this", "5_sorry_itsokay")
-		addButton("Got punishment", "Tell Rahi that she received a punishment for it", "5_sorry_gotpunished")
+		addButton("Все в порядке", "Сказать Рахи это", "5_sorry_itsokay")
+		addButton("Получила наказание", "Сказать Рахи, что она получила за это наказание", "5_sorry_gotpunished")
 	if(state == "5_sorry_itsokay"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
 		
-		saynn("[say=pc]It's okay, kitty. You did trick me which wasn't ideal. But in the end, you did the right thing. All by yourself. Makes me think that this wasn't all for nothing.[/say]")
+		saynn("[say=pc]Всё в порядке, кошечка. Ты меня обхитрила, и это было не очень хорошо. Но в итоге ты поступила правильно. Сама, по своему решению. Это заставляет меня верить, что всё это было не зря.[/say]")
 
-		saynn("Rahi's eyes look watery, her lips twitch a little. You give her a short hug.")
+		saynn("Глаза Рахи наполнились слезами, губы слегка подрагивают. Ты коротко обнимаешь её.")
 
-		saynn("[say=rahi]M-meow..[/say]")
+		saynn("[say=rahi]М-мяу..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "5_sorry_gotpunished"):
-		saynn("[say=pc]You got punished for what you did, kitty. No need to say sorry anymore. What you did didn't break my trust in you. But if you decide to do something like that again..[/say]")
+		saynn("[say=pc]Тебя наказали за то, что ты натворила, кошечка. Больше не нужно извиняться. Твой поступок не подорвал моё доверие к тебе. Но если ты решишь повторить такое снова...[/say]")
 
-		saynn("[say=rahi]You're gonna make her regret..[/say]")
+		saynn("[say=rahi]Ты заставишь её пожалеть об этом...[/say]")
 
-		saynn("You offer your kitty a pat on her head.")
+		saynn("Ты ласково гладишь свою кошечку по голове.")
 
-		saynn("[say=pc]Good kitty.[/say]")
+		saynn("[say=pc]Хорошая кошечка.[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "5_father"):
-		saynn("[say=rahi]She tries not to think about what her father said.. You being around helps her..[/say]")
+		saynn("[say=rahi]Она старается не думать о том, что сказал отец... Твоё присутствие помогает ей прийти в себя...[/say]")
 
-		addButton("Not father", "Tell Rahi again that the vision she had wasn't her father", "5_father_notfather")
-		addButton("Don't think", "Tell Rahi that she doesn't have to think about anything", "5_father_dontthink")
+		addButton("Не отец", "Снова сказать Рахи, что видение, которое она видела, не было её отцом", "5_father_notfather")
+		addButton("Не думать", "Сказать Рахи, что ей не нужно ни о чём думать", "5_father_dontthink")
 	if(state == "5_father_notfather"):
-		saynn("[say=pc]It was just a vision, kitty. A hallucination that the drug has caused. Some drugs do cause anxiety.[/say]")
+		saynn("[say=pc]Это было всего лишь видение, кошечка. Галлюцинация, вызванная препаратом. Некоторые наркотики действительно вызывают тревогу.[/say]")
 
-		saynn("Rahi nods subtly.")
+		saynn("Рахи едва заметно кивает.")
 
-		saynn("[say=rahi]Yeah.. you're right, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Да.. ты прав, {rahiMaster}..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "5_father_dontthink"):
-		saynn("[say=pc]While you're with me, you don't have to think at all, kitty. Just do as I tell you, obey my words, and soon enough, you will forget it.[/say]")
+		saynn("[say=pc]Пока ты со мной, тебе вообще не нужно думать, киса. Просто делай, что я скажу, слушайся моих слов, и скоро ты обо всем забудешь.[/say]")
 
-		saynn("Rahi tries to offer you a smile.")
+		saynn("Рахи пытается тебе улыбнуться.")
 
-		saynn("[say=rahi]Yeah.. you're right, {rahiMaster}.. Sorry for that..[/say]")
+		saynn("[say=rahi]Да.. ты прав, {rahiMaster}.. Прости за это..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "5_meow"):
-		saynn("[say=rahi]She likes to meow a lot.. She hopes that's okay..[/say]")
+		saynn("[say=rahi]Ей нравится много мяукать.. Она надеется, что это нормально..[/say]")
 
-		addButton("Meow", "Meow-meow!", "5_meow_meow")
-		addButton("It's cute", "Tell Rahi this", "5_meow_cute")
+		addButton("Мяу", "Мяу-мяу!", "5_meow_meow")
+		addButton("Это мило", "Сказать Рахи это", "5_meow_cute")
 	if(state == "5_meow_meow"):
-		saynn("[say=pc]Meow-meow![/say]")
+		saynn("[say=pc]Мяу-мяу![/say]")
 
-		saynn("Rahi tilts her head.")
+		saynn("Рахи наклоняет голову.")
 
-		saynn("[say=pc]Meow mew meow?[/say]")
+		saynn("[say=pc]Мяу-мяу-мяу?[/say]")
 
-		saynn("Rahi recoils back a few steps.")
+		saynn("Рахи отступает на несколько шагов назад.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "5_meow_cute"):
-		saynn("[say=pc]It's cute, kitty. Is that common between felines?[/say]")
+		saynn("[say=pc]Мило, кошечка. У вас, кошачьих, это обычное дело?[/say]")
 
-		saynn("Rahi shrugs.")
+		saynn("Рахи пожимает плечами.")
 
-		saynn("[say=rahi]Her planet is not the only one that is inhabited by felines.. Probably.. Some find it embarrassing.. Meow..[/say]")
+		saynn("[say=rahi]Не только её планета населена кошачьими... Наверное... Некоторые находят это смущающим... Мяу...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "6_fresh"):
-		saynn("[say=rahi]She feels so.. fresh.. Makes her regret not doing this earlier..[/say]")
+		saynn("[say=rahi]От неё веет такой... свежестью... Она даже жалеет, что не сделала этого раньше...[/say]")
 
-		saynn("[say=pc]You were afraid of water, kitty.[/say]")
+		saynn("[say=pc]Ты боялась воды, кошечка.[/say]")
 
-		saynn("Kitty blinks many times.")
+		saynn("Кошечка часто моргает.")
 
-		saynn("[say=rahi]She still is.. Felines should be afraid of water.. probably..[/say]")
+		saynn("[say=rahi]Она всё ещё боится... Кошачьи должны бояться воды... наверное...[/say]")
 
-		saynn("[say=pc]Sounds silly.[/say]")
+		saynn("[say=pc]Звучит глупо.[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "6_talk"):
-		saynn("[say=rahi]What were you talking about while she was in the cryo?..[/say]")
+		saynn("[say=rahi]О чём вы болтали, пока она была в криокамере?..[/say]")
 
-		addButton("About you", "Tell Rahi this", "6_talk_aboutyou")
-		addButton("Secret", "Tell Rahi this", "6_talk_secret")
+		addButton("О тебе", "Сказать Рахи это", "6_talk_aboutyou")
+		addButton("Секрет", "Сказать Рахи это", "6_talk_secret")
 	if(state == "6_talk_aboutyou"):
-		saynn("[say=pc]About you. We were talking about you, kitty.[/say]")
+		saynn("[say=pc]О тебе. Мы как раз говорили о тебе, киска.[/say]")
 
-		saynn("Rahi raises a brow.")
+		saynn("Рахи приподнимает бровь.")
 
-		saynn("[say=rahi]What did the doctor say about her?[/say]")
+		saynn("[say=rahi]И что доктор сказал о ней?[/say]")
 
-		saynn("[say=pc]That's you're a good kitty.[/say]")
+		saynn("[say=pc]Что ты хорошая киска.[/say]")
 
-		saynn("Rahi blinks a few times and just meows.")
+		saynn("Рахи пару раз моргает и просто мяукает.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "6_talk_secret"):
-		saynn("[say=pc]It's a secret, kitty. Something that you're not supposed to know yet.[/say]")
+		saynn("[say=pc]Это секрет, киска. То, что тебе пока знать не положено.[/say]")
 
-		saynn("Rahi's ears perk up, her tail wagging behind her.")
+		saynn("Уши Рахи встают торчком, а хвост начинает вилять.")
 
-		saynn("[say=rahi]Why not? Now you made kitty even more curious.. huff..[/say]")
+		saynn("[say=rahi]Почему это? Ну вот, теперь киске стало еще любопытнее... ох...[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "6_quinn"):
-		saynn("[say=rahi]Doctor Quinn isn't such a meanie like she thought before.. She can be kinda nice..[/say]")
+		saynn("[say=rahi]Доктор Куинн не такая уж злюка, как та думала раньше... Она может быть довольно милой...[/say]")
 
-		saynn("[say=pc]She was the one who noticed that you weren't doing too well. Others probably didn't care enough.[/say]")
+		saynn("[say=pc]Именно она заметила, что тебе не очень-то хорошо. Остальным, скорее всего, было плевать.[/say]")
 
-		saynn("Rahi nods.")
+		saynn("Рахи кивает.")
 
-		saynn("[say=rahi]No one cares about some inmate kitty..[/say]")
+		saynn("[say=rahi]Никого не волнует какая-то там киска-заключенная...[/say]")
 
-		saynn("A few seconds of silence.")
+		saynn("Несколько секунд тишины.")
 
-		saynn("[say=rahi]Except you..[/say]")
+		saynn("[say=rahi]Кроме тебя..[/say]")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "7_happy"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
-		saynn("[say=rahi]She doesn't have much to say. But I do. I'm such a happy kitty.[/say]")
+		saynn("[say=rahi]Ей особо нечего сказать. А вот мне есть. Я такая счастливая кошечка.[/say]")
 
-		saynn("Rahi purrs and reaches out to hug you. Aw.")
+		saynn("Рахи мурлычет и тянется, чтобы обнять тебя. Оу.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 	if(state == "8_thankyou"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
 		
-		saynn("[say=rahi]I owe you everything, {rahiMaster}.. You made the life of this kitty so much better.. my life. I probably won't ever be the Rahi that I was before this prison.. But that's okay. I was unhappy. I was mean and grumpy at everything and everyone. Now I don't have to be. Unless you tell me to, meow.[/say]")
+		saynn("[say=rahi]Я всем тебе обязана, {rahiMaster}.. Ты сделала жизнь этой кошечки намного лучше.. мою жизнь. Наверное, я уже никогда не стану той Рахи, которой была до этой тюрьмы.. Но это нормально. Раньше я была несчастна. Была злой и ворчливой со всем миром и всеми вокруг. Теперь мне не обязательно такой быть. Если только ты сама не прикажешь, мяу.[/say]")
 
-		saynn("Rahi looks around.")
+		saynn("Рахи оглядывается по сторонам.")
 
-		saynn("[say=rahi]I'm still stuck here, in this giant black box drifting through space. But my story doesn't end. As long as I'm alive. And as long as you're around. A kitty can dream, huh?[/say]")
+		saynn("[say=rahi]Я всё еще заперта здесь, в этом гигантском черном ящике, дрейфующем в космосе. Но моя история не заканчивается. Пока я жива. И пока ты рядом. Кошечка ведь может мечтать, а?[/say]")
 
-		saynn("Rahi looks at her paws.")
+		saynn("Рахи смотрит на свои лапки.")
 
-		saynn("[say=rahi]I regret some things that I did. I'm not perfect. My father didn't like that I was stealing. He was furious when I tried to give him the stolen medicine. But he never disowned me no matter what. He never gave up. He understood how tough life can be. And now so do I. My name is Rahi. Rahi Haj'jar.[/say]")
+		saynn("[say=rahi]О некоторых своих поступках я жалею. Я не идеальна. Отец не одобрял то, что я воровала. Он был в ярости, когда я попыталась отдать ему украденные лекарства. Но он никогда не отрекался от меня, что бы ни случилось. Он никогда не сдавался. Он понимал, какой тяжелой может быть жизнь. И теперь я тоже это понимаю. Меня зовут Рахи. Рахи Хадж'джар.[/say]")
 
-		saynn("Rahi looks at you.")
+		saynn("Рахи смотрит на тебя.")
 
-		saynn("[say=rahi]And I'm proud to be your kitty.[/say]")
+		saynn("[say=rahi]И я горжусь тем, что я твоя кошечка.[/say]")
 
-		saynn("After that she fills her lungs full of air and exhales audibly.")
+		saynn("Затем она набирает полные легкие воздуха и со слышимым вздохом выдыхает.")
 
-		saynn("You can't help but to hug your kitty tightly, making her purr into your ear.")
+		saynn("Ты не можешь удержаться и крепко прижимаешь к себе свою киску, заставляя её мурлыкать тебе прямо в ухо.")
 
-		addButton("Continue", "Enough talking", "endthescene")
+		addButton("Продолжить", "Хватит болтать", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

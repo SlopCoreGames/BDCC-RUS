@@ -17,14 +17,14 @@ func _run():
 			setFlag("RahiModule.rahiAffection", statLimit)
 		
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("Rahi stands near her bed.")
+		saynn("Рахи стоит у своей кровати.")
 		
 		if(getFlag("RahiModule.rahiMile7Proposed", false)):
-			saynn("She proudly wears the ring that you gave her.")
+			saynn("Она с гордостью носит кольцо, которое ты ей подарил.")
 		elif(getFlag("RahiModule.rahiMile8Branded", false)):
-			saynn("She looks proud after being branded by you.")
+			saynn("Она выглядит гордой после того, как ты поставил на ней клеймо.")
 		elif(getFlag("RahiModule.rahiMile8Pierced", false)):
-			saynn("She looks proud wearing your piercing.")
+			saynn("Она выглядит гордой, нося твой пирсинг.")
 		
 		var currentStage = getModule("RahiModule").getSlaveryStage()
 		var isEnslaved = getFlag("RahiModule.rahiMile7Enslaved", false)
@@ -181,22 +181,22 @@ func _run():
 				"Meow-meow-meow!",
 			])+"[/say]")
 		else:
-			saynn("[say=rahi]Yes, {rahiMaster}?..[/say]")
+			saynn("[say=rahi]Да, {rahiMaster}?..[/say]")
 		
-		sayn("Rahi's stats:")
-		sayn("Relationship stage: "+str(getFlag("RahiModule.rahiSlaveryStage", 0)))
-		sayn("Obedience: "+str(getFlag("RahiModule.rahiObedience", 0)))
-		sayn("Affection: "+str(getFlag("RahiModule.rahiAffection", 0)))
-		sayn("Tiredness: "+str(getFlag("RahiModule.rahiTired", 0)))
+		sayn("Характеристики Рахи:")
+		sayn("Стадия отношений: "+str(getFlag("RahiModule.rahiSlaveryStage", 0)))
+		sayn("Послушание: "+str(getFlag("RahiModule.rahiObedience", 0)))
+		sayn("Привязанность: "+str(getFlag("RahiModule.rahiAffection", 0)))
+		sayn("Усталость: "+str(getFlag("RahiModule.rahiTired", 0)))
 		sayn("")
 		if(getFlag("RahiModule.rahiNeedsPunishment", false)):
-			sayn("Rahi deserves to be punished")
+			sayn("Рахи заслуживает наказания")
 		if(getFlag("RahiModule.rahiNeedsReward", false)):
-			sayn("Rahi deserves a reward")
+			sayn("Рахи заслуживает награды")
 		if(getFlag("RahiModule.rahiNeedsPunishment", false) || getFlag("RahiModule.rahiNeedsReward", false)):
 			sayn("")
 		
-		sayn("Rahi's skills:")
+		sayn("Навыки Рахи:")
 		var skills = rahiModule.getSkillsInfo()
 		for skillID in skills:
 			var skillInfo = skills[skillID]
@@ -207,170 +207,170 @@ func _run():
 			sayn(skillInfo["name"]+": "+rahiModule.getSkillScoreText(skillID))
 		if(getModule("RahiModule").canLearnNewSkill() && getFlag("RahiModule.rahiSlaveryShowNewSkill")):
 			setFlag("RahiModule.rahiSlaveryShowNewSkill", false)
-			sayn("(You can pick a new skill for Rahi to train in Relationship menu)")
+			sayn("(В меню отношений можно выбрать новый навык для обучения Рахи)")
 		
-		addButton("Talk", "Talk about stuff", "talk")
+		addButton("Поговорить", "Поболтать о всяком", "talk")
 		if(getFlag("RahiModule.rahiTired", 0) < 3):
-			addButton("Reward", "Reward Rahi", "reward")
-			addButton("Punish", "Punish Rahi", "punish")
-			addButton("Activities", "See what else you can do with Rahi", "activities")
+			addButton("Награда", "Вознаградить Рахи", "reward")
+			addButton("Наказать", "Наказать Рахи", "punish")
+			addButton("Занятия", "Посмотреть, что еще можно сделать с Рахи", "activities")
 		else:
-			addDisabledButton("Reward", "Rahi is too tired")
-			addDisabledButton("Punish", "Rahi is too tired")
-			addDisabledButton("Activities", "Rahi is too tired")
-		addButton("Relationship", "See where your relationship is headed", "relationship")
+			addDisabledButton("Награда", "Рахи слишком устала")
+			addDisabledButton("Наказать", "Рахи слишком устала")
+			addDisabledButton("Занятия", "Рахи слишком устала")
+		addButton("Отношения", "Посмотреть, к чему ведут ваши отношения", "relationship")
 		if(currentStage >= 5):
-			addButton("Feed something", "Feed something to Rahi", "feedmenu")
-		addButton("Leave", "Enough talking", "endthescene")
+			addButton("Покормить", "Покормить Рахи", "feedmenu")
+		addButton("Уйти", "Хватит болтать", "endthescene")
 		
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["rahiSlavery"])
 		
 	if(state == "talk"):
-		saynn("What do you wanna talk about with Rahi.")
+		saynn("О чем ты хочешь поговорить с Рахи?")
 		
 		if(!getFlag("RahiModule.rahiCommentedOnTask", false)):
-			addButton("Task", "Talk about the completed task", "talk_task")
+			addButton("Задание", "Обсудить выполненное задание", "talk_task")
 		else:
-			addDisabledButton("Task", "You clearly commented on her task today")
-		addButton("Anything", "Talk about anything", "talk_anything")
-		addButton("Back", "Go back a menu", "")
+			addDisabledButton("Задание", "Ты явно оценил её сегодняшнюю работу")
+		addButton("О чем угодно", "Поболтать о чем угодно", "talk_anything")
+		addButton("Назад", "Назад на меню", "")
 		
 	if(state == "reward"):
 		var slaveryStage = getModule("RahiModule").getSlaveryStage()
-		saynn("How do you wanna reward the kitty.")
+		saynn("Как ты хочешь наградить кошечку?")
 		
-		addButton("Pet", "Pet that kitty", "doreward", ["rahiRewardPetScene"])
+		addButton("Питомец", "Погладить кошечку", "doreward", ["rahiRewardPetScene"])
 		if(slaveryStage >= 1):
-			addButton("Give treat", "Give your kitty a treat", "doreward", ["rahiRewardTreatScene"])
+			addButton("Дать лакомство", "Дать кошечке лакомство", "doreward", ["rahiRewardTreatScene"])
 		if(slaveryStage >= 3):
-			addButton("Cuddle", "Cuddle with your kitty", "doreward", ["rahiRewardCuddleScene"])
+			addButton("Обнимашки", "Потискать кошечку", "doreward", ["rahiRewardCuddleScene"])
 		if(getModule("RahiModule").isSkillLearned("rahiSkillExhibit")):
-			addButton("Exhibitionism", "(Exhibitionism) Nudity can be rewarding..", "doreward", ["rahiRewardExhibitionismScene"])
-		addButton("Back", "Go back a menu", "")
+			addButton("Эксгибиционизм", "(Эксгибиционизм) Нагота может приносить удовольствие...", "doreward", ["rahiRewardExhibitionismScene"])
+		addButton("Назад", "Назад на меню", "")
 		
 	if(state == "punish"):
-		saynn("How do you wanna punish the kitty.")
+		saynn("Как ты хочешь наказать кошечку?")
 		
-		addButton("Tie up", "Tie kitty up", "dopunish", ["rahiPunishmentTyingUpScene"])
+		addButton("Связать", "Связать кошечку", "dopunish", ["rahiPunishmentTyingUpScene"])
 		if(getModule("RahiModule").isSkillLearned("rahiSkillMasochist")):
-			addButton("Choke Rahi", "(Masochism) Punish Rahi with a rough breathplay session", "dopunish", ["rahiPunishmentChokingScene"])
+			addButton("Придушить Рахи", "(Мазохизм) Наказать Рахи жестким брейсплей-сеансом", "dopunish", ["rahiPunishmentChokingScene"])
 		if(getModule("RahiModule").isSkillLearned("rahiSkillPetplay")):
-			addButton("Forced petplay", "(Petplay) Force Rahi to wear puppy equipment and give her walkies", "dopunish", ["rahiPunishmentForcedPetplayScene"])
+			addButton("Принудительный петплей", "(Петплей) Заставить Рахи надеть собачий костюм и вывести её на прогулку", "dopunish", ["rahiPunishmentForcedPetplayScene"])
 		if(getModule("RahiModule").isSkillLearned("rahiSkillWatersports")):
-			addButton("Piss toilet", "(Watersports) Make Rahi into a piss toilet for you", "dopunish", ["rahiPunishmentPissToiletScene"])
-		addButton("Back", "Go back a menu", "")
+			addButton("Писсуар", "(Вотерспорт) Сделать из Рахи свой мочевой унитаз", "dopunish", ["rahiPunishmentPissToiletScene"])
+		addButton("Назад", "Назад на меню", "")
 		
 	if(state == "activities"):
-		saynn("What do you wanna do with the kitty.")
+		saynn("Что ты хочешь сделать со своей киской?")
 		
-		addButton("Shower", "Go take a shower", "doactivity", ["RahiShowerScene"])
-		addButton("Embrace", "Hug kitty and spend some time together", "doactivity", ["RahiEmbraceScene"])
+		addButton("Душ", "Пойти в душ", "doactivity", ["RahiShowerScene"])
+		addButton("Обнять", "Обнять киску и провести время вместе", "doactivity", ["RahiEmbraceScene"])
 		if(getModule("RahiModule").isSkillLearned("rahiSkillDominance")):
-			addButton("Dominance", "Teach Rahi to be more dominant", "doactivity", ["rahiActivityDominanceScene"])
+			addButton("Доминирование", "Научить Рахи быть более доминантной", "doactivity", ["rahiActivityDominanceScene"])
 		if(getModule("RahiModule").isSkillLearned("rahiSkillAnal")):
-			addButton("Anal training", "Train Rahi to become a buttslut", "doactivity", ["rahiActivityAnalScene"])
+			addButton("Анальный тренинг", "Дрессировать Рахи, чтобы она стала задроткой-попой", "doactivity", ["rahiActivityAnalScene"])
 		if(getModule("RahiModule").isSkillLearned("rahiSkillPetplay")):
-			addButton("Petplay", "Train Rahi to be a puppy/kitty", "doactivity", ["rahiActivityPetplayScene"])
+			addButton("Петплей", "Дрессировать Рахи, чтобы она была щеночком/киской", "doactivity", ["rahiActivityPetplayScene"])
 
-		addButton("Back", "Go back a menu", "")
+		addButton("Назад", "Назад на меню", "")
 		
 	if(state == "relationship"):
-		saynn("What do you wanna change about your relationship?")
+		saynn("Что ты хочешь изменить в ваших отношениях?")
 		
-		saynn("Your kitty calls you: {rahiMaster}")
+		saynn("Твоя киска зовет тебя: {rahiMaster}")
 		
 		if(getModule("RahiModule").canSleepInPlayerCell()):
 			if(getModule("RahiModule").shouldSleepInPlayerCell()):
-				saynn("Your kitty will sleep in your cell if possible.")
+				saynn("Твоя киска будет спать в твоей камере, если будет возможность.")
 			else:
-				saynn("Your kitty sleeps in her cell.")
+				saynn("Твоя киска спит в своей камере.")
 			
 			if(getModule("RahiModule").canSexThePlayerOnMornings()):
 				if(getModule("RahiModule").shouldSexThePlayerOnMornings()):
-					saynn("Your kitty will wake you up with sex.")
+					saynn("Твоя киска разбудит тебя сексом.")
 				else:
-					saynn("Your kitty won't wake you up with sex.")
+					saynn("Твоя киска не будет будить тебя сексом.")
 			
 		# Unlocks from a certain stage
 		if(getModule("RahiModule").getSlaveryStage() >= 1):
-			addButton("Your title", "How should kitty call you", "change_title")
+			addButton("Твой титул", "Как киска должна тебя называть?", "change_title")
 		else:
-			addDisabledButton("Your title", "Advance your relationship further before you can choose your title")
+			addDisabledButton("Твой титул", "Развивай отношения дальше, прежде чем сможешь выбрать титул")
 		if(getModule("RahiModule").canLearnNewSkill()):
 			if(getFlag("RahiModule.rahiTired", 0) < 3):
-				addButton("Teach new skill", "Start training kitty a new skill", "train_new_skill")
+				addButton("Обучить новому навыку", "Начать обучение киски новому навыку", "train_new_skill")
 			else:
-				addDisabledButton("Teach new skill", "Rahi is too tired for that")
+				addDisabledButton("Обучить новому навыку", "Рахи слишком устала для этого")
 		
 		if(getModule("RahiModule").canSleepInPlayerCell()):
-			addButton("Toggle sleep", "Should the kitty sleep with you in your cell or not", "toggle_sleep")
+			addButton("Переключить режим сна", "Должна ли кошечка спать с тобой в камере или нет", "toggle_sleep")
 			
 			if(getModule("RahiModule").canSexThePlayerOnMornings()):
-				addButton("Morning sex", "Should the kitty surprise you with morning sex", "toggle_morningsex")
+				addButton("Утренний секс", "Должна ли кошечка удивить тебя утренним сексом", "toggle_morningsex")
 			else:
-				addDisabledButton("Morning sex", "(Sex) Kitty needs to be more skilled at sex to do this")
+				addDisabledButton("Утренний секс", "(Секс) Кошечке нужно лучше владеть техникой, чтобы это сделать")
 		
 		if(getFlag("RahiModule.wearingPortalPanties")):
-			addButton("Remove portal panties", "Take them back from Rahi", "take_portal_panties_back")
+			addButton("Снять портативные трусики", "Забрать их обратно у Рахи", "take_portal_panties_back")
 		elif(GM.pc.getInventory().hasItemID("PortalPanties")):
-			addButton("Give portal panties", "Ask Rahi to wear these panties that you have", "make_rahi_wear_portal_panties")
+			addButton("Отдать портативные трусики", "Попросить Рахи надеть те трусики, что у тебя есть", "make_rahi_wear_portal_panties")
 		
-		addButton("Back", "Go back a menu", "")
+		addButton("Назад", "Назад на меню", "")
 	
 	if(state == "take_portal_panties_back"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={underwear=true}})
 		
-		saynn("It's probably best if Rahi doesn't wear those panties anymore.")
+		saynn("Пожалуй, Рахи лучше больше не носить те трусики.")
 		
-		saynn("[say=pc]About those panties that you're wearing..[/say]")
+		saynn("[say=pc]Насчет тех трусиков, что на тебе сейчас..[/say]")
 		
-		saynn("[say=rahi]You want them back, {rahiMaster}?[/say]")
+		saynn("[say=rahi]Ты хочешь их вернуть, {rahiMaster}?[/say]")
 		
-		saynn("You nod. Rahi quickly pulls them down and gives them to you.")
+		saynn("Ты киваешь. Рахи быстро стягивает их и протягивает тебе.")
 		
-		saynn("[say=rahi]Here.. They are fun..[/say]")
+		saynn("[say=rahi]Вот.. Они забавные..[/say]")
 		
-		saynn("She blushes deeply after saying that. What a kitty.")
+		saynn("Сказав это, она густо краснеет. Ну и кошечка.")
 		
-		addButton("Continue", "See what happens next", "relationship")
+		addButton("Продолжить", "Смотреть, что будет дальше", "relationship")
 	
 	if(state == "make_rahi_wear_portal_panties"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={underwear=true}})
 		
-		saynn("You show Rahi the fancy panties that you have.")
+		saynn("Ты показываешь Рахи те шикарные трусики, что у тебя есть.")
 		
-		saynn("[say=rahi]The heart is cute.. Where did you get those, {rahiMaster}?[/say]")
+		saynn("[say=rahi]Сердечко такое милое.. Где ты их взял, {rahiMaster}?[/say]")
 		
-		saynn("You smile and offer them to the kitty. Maybe it's best if you don't tell her anything. But you make sure to set the portal panties to the 'unlocked' mode. Don't want your kitty to panic when she realizes she can't take off her panties.")
+		saynn("Ты улыбаешься и предлагаешь их кошечке. Возможно, лучше ничего ей не говорить. Но ты обязательно переводишь портальные трусики в режим «разблокировано». Не хочется, чтобы твоя кошечка запаниковала, когда поймет, что не может их снять.")
 		
-		saynn("[say=pc]It's a gift, enjoy.[/say]")
+		saynn("[say=pc]Это тебе подарок, наслаждайся.[/say]")
 		
-		saynn("Rahi lowers her gaze.")
+		saynn("Рахи опускает взгляд.")
 		
-		saynn("[say=rahi]Are you sure?..[/say]")
+		saynn("[say=rahi]Ты уверен?..[/say]")
 		
-		saynn("You nod, making the feline blush. She carefully grabs them.")
+		saynn("Ты киваешь, заставляя кошечку покраснеть. Она осторожно берет их.")
 		
-		saynn("[say=pc]I wanna see how they look on you.[/say]")
+		saynn("[say=pc]Хочу посмотреть, как они будут на тебе смотреться.[/say]")
 		
-		saynn("[say=rahi]Yes, {rahiMaster}, of course..")
+		saynn("[say=rahi]Да, {rahiMaster}, конечно..")
 		
-		saynn("Rahi quickly strips her uniform and puts the purple panties on.")
+		saynn("Рахи быстро скидывает униформу и натягивает фиолетовые трусики.")
 		
-		saynn("[say=rahi]A bit cold.. is that.. metal?[/say]")
+		saynn("[say=rahi]Немного прохладно.. это что.. металл?[/say]")
 		
-		saynn("[say=pc]Don't worry about it, kitty.[/say]")
+		saynn("[say=pc]Не парься об этом, киса.[/say]")
 		
-		saynn("Rahi purrs and nods.")
+		saynn("Рахи мурлычет и кивает.")
 		
-		saynn("[say=rahi]Thank you.. They're nice..[/say]")
+		saynn("[say=rahi]Спасибо.. Они милые..[/say]")
 		
-		addButton("Continue", "See what happens next", "relationship")
+		addButton("Продолжить", "Смотреть, что будет дальше", "relationship")
 	
 	if(state == "train_new_skill"):
-		saynn("What skill do you wanna start teaching to Rahi?")
+		saynn("Какой навык ты хочешь начать обучать Рахи?")
 		
-		saynn("(If you don't want Rahi to learn a certain skill you don't have to teach it to her, story will progress regardless)")
+		saynn("(Если не хочешь, чтобы Рахи освоила определенный навык, можно его не учить — сюжет все равно будет двигаться дальше)")
 		
 		var rahiModule = getModule("RahiModule")
 		var skills = rahiModule.getSkillsInfo()
@@ -391,12 +391,12 @@ func _run():
 			sayn("- [b]"+skillInfo["name"]+"[/b]: "+skillInfo["desc"])
 			addButton(skillInfo["name"], skillInfo["desc"], "do_teach_new_skill", [skillID])
 		
-		addButton("Back", "Never mind", "relationship")
+		addButton("Назад", "Проехали", "relationship")
 	
 	if(state == "change_title"):
-		saynn("How do you want kitty to call you?")
+		saynn("Как кошечка должна тебя называть?")
 		
-		saynn("(You will unlock more as your relationship progresses)")
+		saynn("(Новые варианты будут открываться по мере развития ваших отношений)")
 		var titles = [
 			GM.pc.getName(), "Master", "Mistress",
 		]
@@ -417,8 +417,8 @@ func _run():
 			titles.append_array(["my love", "my Lord", "my Queen", "my Miss", "Bitch"])
 		
 		for title in titles:
-			addButton("'"+title+"'", "Make her call you like this", "set_title", [title])
-		addButton("Never mind", "You don't wanna change it", "relationship")
+			addButton("'"+title+"'", "Пусть называет тебя так", "set_title", [title])
+		addButton("Проехали", "Ты не хочешь ничего менять", "relationship")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

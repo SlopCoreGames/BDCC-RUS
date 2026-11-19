@@ -10,18 +10,18 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("Pick what task you want Rahi to do today.")
+		saynn("Выберите задачу, которую Рахи должна выполнить сегодня.")
 
-		addButton("Cleaning", "Make her clean her cell", "dotask", ["rahiSlaveryCleaningTaskScene"])
+		addButton("Уборка", "Заставить её убраться в камере", "dotask", ["rahiSlaveryCleaningTaskScene"])
 		var rahiModule = getModule("RahiModule")
 		if(rahiModule.getSlaveryStage() >= 1):
-			addButton("Stealing", "Make her steal something", "dotask", ["rahiSlaveryStealingTaskScene"])
+			addButton("Кража", "Заставить её что-нибудь украсть", "dotask", ["rahiSlaveryStealingTaskScene"])
 		if(rahiModule.isSkillLearned("rahiSkillExhibit")):
-			addButton("Yoga", "(Exhibionism) Make her do yoga", "dotask", ["rahiSlaveryYogaTaskScene"])
+			addButton("Йога", "(Эксгибиционизм) Заставить её заниматься йогой", "dotask", ["rahiSlaveryYogaTaskScene"])
 		if(rahiModule.isSkillLearned("rahiSkillProstitution")):
-			addButton("Kissing booth", "(Prostitution) Make Rahi earn credits by offering kisses to others and more", "dotask", ["rahiSlaveryKissingBoothTaskScene"])
+			addButton("Будка поцелуев", "(Проституция) Заставить Рахи зарабатывать кредиты, предлагая поцелуи и не только", "dotask", ["rahiSlaveryKissingBoothTaskScene"])
 		if(rahiModule.getSlaveryStage() >= 8):
-			addButton("No task", "Give Rahi a free day!", "dotask", ["rahiSlaveryFreeTaskScene"])
+			addButton("Без задачи", "Дать Рахи выходной!", "dotask", ["rahiSlaveryFreeTaskScene"])
 				
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

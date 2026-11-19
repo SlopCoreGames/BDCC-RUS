@@ -13,1038 +13,1038 @@ func _run():
 	if(state == ""):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("As you enter Rahi's cell, you notice her sitting on her bed, staring at the featureless walls like there is something there.")
+		saynn("Когда ты входишь в камеру Рахи, ты замечаешь, что она сидит на кровати, уставившись в пустые стены, словно там что-то есть.")
 
-		saynn("[say=pc]Hey, kitty. Something is troubling you?[/say]")
+		saynn("[say=pc]Эй, киса. Тебя что-то беспокоит?[/say]")
 
-		saynn("She offers you a soft smile.")
+		saynn("Она отвечает тебе мягкой улыбкой.")
 
-		saynn("[say=rahi]Na-ah.. well.. She was thinking a lot lately.[/say]")
+		saynn("[say=rahi]Да нет.. ну.. Она в последнее время много о чем-то размышляет.[/say]")
 
-		saynn("Interesting. You sit near her and put your hand around her shoulders.")
+		saynn("Интересно. Ты садишься рядом и обнимаешь её за плечи.")
 
-		saynn("[say=pc]About?..[/say]")
+		saynn("[say=pc]О чем?..[/say]")
 
-		saynn("She nods and leans into you.")
+		saynn("Она кивает и прижимается к тебе.")
 
-		saynn("[say=rahi]She wants to tell you what happened.. Why she is like this..[/say]")
+		saynn("[say=rahi]Она хочет рассказать тебе, что случилось.. Почему она стала такой..[/say]")
 
-		saynn("You raise a brow.")
+		saynn("Вы вопросительно приподнимаете бровь.")
 
-		saynn("[say=pc]What made you want to do that, kitty. Something changed?[/say]")
+		saynn("[say=pc]Что заставило тебя так поступить, киса? Что-то изменилось?[/say]")
 
 		if (wasKind):
-			saynn("[say=rahi]You've been.. kind to her. She kinda wants to.. repay you?[/say]")
+			saynn("[say=rahi]Ты был.. добр к ней. И она вроде как хочет.. отплатить тебе?[/say]")
 
-			saynn("[say=pc]Kitty, don't feel pressured into doing it. I'm here because I like you, just like I said.[/say]")
+			saynn("[say=pc]Китти, не заставляй себя, если не хочешь. Я здесь, потому что ты мне нравишься, как я и говорил.[/say]")
 
 		else:
-			saynn("[say=rahi]You were curious and she kinda felt like she needed to tell you.. She doesn't want to ever say no to you, {rahiMaster}..[/say]")
+			saynn("[say=rahi]Тебе было любопытно, и ей показалось, что она должна тебе рассказать... Она просто не хочет когда-либо говорить тебе «нет», {rahiMaster}..[/say]")
 
-			saynn("[say=pc]Kitty, don't feel pressured into doing it. I might be rough with you sometimes but that's because I want you to be a better kitty. My kitty.[/say]")
+			saynn("[say=pc]Китти, не чувствуй давления. Иногда я могу быть грубоват с тобой, но только потому, что хочу, чтобы ты стала лучшей кошечкой. Моей кошечкой.[/say]")
 
-		saynn("You smooch your kitty on the cheek. She meows at you.")
+		saynn("Ты чмокаешь свою кошечку в щеку. Она отвечает тебе мяуканьем.")
 
-		saynn("[say=rahi]It's her decision. She wants to.. really..[/say]")
+		saynn("[say=rahi]Это её решение. Она сама хочет... правда..[/say]")
 
-		saynn("Fair enough. You decide to listen to her. Maybe that will help you help her.")
+		saynn("Справедливо. Ты решаешь прислушаться к ней. Возможно, это поможет тебе помочь ей.")
 
-		addButton("Continue", "See what happens next", "rahi_prepares")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_prepares")
 	if(state == "rahi_prepares"):
 		playAnimation(StageScene.Duo, "sit", {npc="rahi", npcAction="sit"})
-		saynn("Rahi inhales deeply, trying to gather all her thoughts before starting.")
+		saynn("Рахи глубоко вдыхает, пытаясь собраться с мыслями перед тем, как начать.")
 
-		saynn("[say=rahi]A few years ago.. How much exactly?.. She lost track of time a long time ago..[/say]")
+		saynn("[say=rahi]Несколько лет назад... Сколько именно?.. Она давно потеряла счет времени..[/say]")
 
-		saynn("You can't help but to get immersed in Rahi's story.")
+		saynn("Ты невольно погружаешься в рассказ Рахи.")
 
-		addButton("Rahi's mind..", "See the story with your own eyes", "start_backstory")
+		addButton("Разум Рахи..", "Увидеть всё своими глазами", "start_backstory")
 	if(state == "start_backstory"):
 		removeCharacter("rahi")
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("rahi_mineshaft")
-		saynn("Clang! Clang! Clang!")
+		saynn("Дзынь! Дзынь! Дзынь!")
 
-		saynn("One of the dry rocks finally cracks.")
+		saynn("Один из сухих камней наконец дает трещину.")
 
-		saynn("Rahi raises her pickaxe and hits it again, putting her full strength into it.")
+		saynn("Рахи замахивается киркой и бьет снова, вкладывая в удар всю свою силу.")
 
-		saynn("Clang! Crack, thud.")
+		saynn("Дзынь! Треснуло, глухой удар.")
 
-		saynn("The rock splits in half, some chips and sizable fragments break off and fall onto the cold ground with a thud that echoes throughout the whole mineshaft. The dust that was sent into the air in the process makes Rahi cough even though she is seemingly wearing a gas mask. Kitty is.. sweating..")
+		saynn("Камень раскалывается пополам; куски и довольно крупные обломки с глухим стуком падают на холодную землю, и этот звук эхом разносится по всей шахте. Поднявшаяся в воздух пыль заставляет Рахи кашлять, хотя на ней вроде бы надет противогаз. Китти... потеет...")
 
-		saynn("Rahi takes her time, resting against the uneven hand-made wall. She pulls the mask away from her face temporarily and keeps trying to clear her throat by coughing.")
+		saynn("Рахи не спеша отдыхает, прислонившись к неровной стене ручной работы. Она на время оттягивает маску от лица и пытается прочистить горло кашлем.")
 
-		saynn("[say=pc]Khm, k-khm.. Fuck, when is it gonna be over already.[/say]")
+		saynn("[say=pc]Кхм, кхм... Блядь, когда это уже закончится?[/say]")
 
-		saynn("There are other faceless felines around you hitting rocks with their pickaxes. Old school way, yes. But at least the tools are made out of light and sturdy materials, its weight comes mostly from its head.")
+		saynn("Вокруг тебя копошатся другие безликие кошачьи, долбя камни кирками. Старая школа, да. Но, по крайней мере, инструменты сделаны из легких и прочных материалов, а основной вес приходится на само навершие.")
 
-		saynn("Rahi grabs her pickaxe and continues to work, slowly chipping away at the walls. Her brown fur on her paws looks black and dirty. The feline tries to push through even though each impact spawns more of that dust that she tries to avoid breathing in so hard.")
+		saynn("Рахи хватает кирку и продолжает работу, медленно скалывая куски со стен. Коричневый мех на её лапах кажется черным от грязи. Кошка пытается пробиться сквозь работу, хотя каждый удар поднимает еще больше той самой пыли, которой она так старается не дышать.")
 
-		addButton("Continue", "See what happens next", "shift_stops")
+		addButton("Продолжить", "Смотреть, что будет дальше", "shift_stops")
 	if(state == "shift_stops"):
 		aimCameraAndSetLocName("rahi_mineshaftexit")
-		saynn("After some time, Rahi finally hears a loud ring coming from outside the mineshaft.")
+		saynn("Спустя какое-то время Рахи наконец слышит громкий звон, доносящийся снаружи шахты.")
 
-		saynn("[say=pc]Finally, it only took forever.[/say]")
+		saynn("[say=pc]Наконец-то, это заняло целую вечность.[/say]")
 
-		saynn("Panting kitty stops working and puts the pickaxe on her shoulder before proceeding to step out of the artificially-created cave, following the rails. Near the exit there are some racks to leave your equipment in and little buildings that are more like metal boxes.")
+		saynn("Тяжело дыша, кошечка перестает работать и закидывает кирку на плечо, чтобы выйти из искусственной пещеры, следуя вдоль рельсов. Возле выхода стоят стойки для снаряжения и маленькие постройки, больше похожие на металлические ящики.")
 
-		saynn("Rahi enters one of such buildings, revealing a dressing room and a doorway that leads to some showers.")
+		saynn("Рахи заходит в одну из таких построек, которая оказывается раздевалкой с дверью, ведущей к душевым.")
 
-		saynn("People around Rahi are talking about something but she is too tired to listen.")
+		saynn("Люди вокруг Рахи о чем-то болтают, но она слишком устала, чтобы прислушиваться.")
 
-		addButton("Shower", "Take a quick shower", "rahi_takes_shower")
+		addButton("Душ", "Быстро принять душ", "rahi_takes_shower")
 	if(state == "rahi_takes_shower"):
-		saynn("Rahi takes a quick shower and then puts on her normal clothes, just a shirt and some black pants. Then she wears an old slightly-oversized leather jacket on top.")
+		saynn("Рахи быстро принимает душ и надевает свою обычную одежду: простую рубашку и черные штаны. Сверху она накидывает старую, слегка великоватую кожаную куртку.")
 
-		saynn("She steps out of the little box and looks around. It's almost night, the dark sky is only illuminated by two moons and many little shiny dots. Rahi's blue eyes shine brightly in the dark.")
+		saynn("Она выходит из своего «ящика» и оглядывается. Уже почти ночь; темное небо освещено лишь двумя лунами и множеством мелких сияющих точек. Голубые глаза Рахи ярко блестят в темноте.")
 
-		saynn("Today is Rahi's payday so she goes straight for the administration building with a sign that proudly displays \"AlphaCorp's Ahdomai Exploration and Mining Division\". Rahi climbs the outside stairs to the second floor and opens a wooden door.")
+		saynn("Сегодня день зарплаты, поэтому Рахи направляется прямиком к административному зданию с гордой вывеской \"Разведывательно-горнодобывающее подразделение АльфаКорп «Ахдомай»\". Рахи поднимается по внешней лестнице на второй этаж и открывает деревянную дверь.")
 
-		addButton("Step inside", "Go collect your paycheck", "paycheck_fail")
+		addButton("Войти внутрь", "Иди и забери свой чек", "paycheck_fail")
 	if(state == "paycheck_fail"):
 		aimCameraAndSetLocName("rahi_shaftpay")
 		addCharacter("rahiMineOwner")
 		playAnimation(StageScene.Duo, "stand", {npc="rahiMineOwner", npcAction="sit"})
-		saynn("Rahi steps into a small cozy room. Wooden floors, painted walls, a little tv in the corner that seems to be spewing random news. In the middle of the room there is a wooden desk. A desk that clearly belongs to a busy person. A few telephones, a bin for papers, a cup holder for pens and pencils, a lamp.")
+		saynn("Рахи входит в маленькую уютную комнату. Деревянные полы, крашеные стены, в углу стоит маленький телевизор, из которого доносятся обрывки случайных новостей. Посреди комнаты стоит деревянный стол — стол, явно принадлежащий очень занятому человеку. Несколько телефонов, корзина для бумаг, подставка для ручек и карандашей, лампа.")
 
-		saynn("Behind that desk is sitting quite a big person. A human that is of such an age when your hair usually just starts to become gray. He is wearing a dusty black suit with old shoes and a tie. He seems to be busy reading a newspaper, not even noticing when Rahi coughs to get some attention.")
+		saynn("За столом сидит довольно крупный мужчина. Человек в том возрасте, когда волосы обычно только начинают седеть. На нем пыльный черный костюм, старые туфли и галстук. Кажется, он увлечен чтением газеты и даже не замечает, когда Рахи кашляет, пытаясь привлечь его внимание.")
 
-		saynn("[say=pc]I want to be paid.[/say]")
+		saynn("[say=pc]Я хочу получить расчет.[/say]")
 
-		saynn("He slowly lowers the newspaper and directs his sleazy eyes at the feline. Then he puts it away and grabs a chip with credits from one of the drawers before handing it to the girl, his other hand quickly leaving a mark on one of the papers.")
+		saynn("Он медленно опускает газету и устремляет свои сальные взгляды на кошкоподобную девицу. Затем он откладывает газету, достает из ящика кредитный чип и протягивает его девушке, при этом его вторая рука быстро ставит какую-то пометку на одном из листков.")
 
-		saynn("[say=rahiMineOwner]Rahi.. Haj'jar.. There you go, enjoy.[/say]")
+		saynn("[say=rahiMineOwner]Рахи... Хадж'джар... Вот, держи, наслаждайся.[/say]")
 
-		saynn("Rahi grabs the chip and looks at it. Something is wrong about it. Yeah. Something is definitely wrong.")
+		saynn("Рахи хватает чип и разглядывает его. Что-то здесь не так. Да уж. Определенно что-то не так.")
 
-		saynn("[say=pc]Why are there only ten credits on it? I worked every shift for an entire month, there should be twenty at least.[/say]")
+		saynn("[say=pc]Почему на нем всего десять кредитов? Я отпахала каждую смену целый месяц, там должно быть как минимум двадцать![/say]")
 
-		saynn("She furrows her brows, Rahi starts to get really annoyed after a hard day of work. The guy sighs as he has to lower his newspaper again and look at the girl.")
+		saynn("Она хмурит брови; после тяжелого рабочего дня Рахи начинает по-настоящему беситься. Мужик вздыхает, вынужденный снова опустить газету и посмотреть на девчонку.")
 
-		saynn("[say=rahiMineOwner]Well if you actually worked instead of fucking around all day, maybe you would have received more. Work harder next month.[/say]")
+		saynn("[say=rahiMineOwner]Ну, если бы ты реально работала, а не трахала мозги весь день, может, получила бы больше. В следующем месяце постарайся получше.[/say]")
 
-		saynn("Wow. Rahi raises her brows and tilts her head slightly. Her tail.. making jerky motions in the air.. sometimes hitting the floor with a low thud.")
+		saynn("Офигеть. Рахи вскидывает брови и слегка наклоняет голову набок. Ее хвост... делает резкие движения в воздухе... время от времени глухо ударяясь о пол.")
 
-		saynn("[say=pc]The fuck do you mean? Give me my credits, I earned them.[/say]")
+		saynn("[say=pc]Какого хера ты несешь? Отдай мои кредиты, я их заработала![/say]")
 
-		saynn("A single cough escapes Rahi's lungs.")
+		saynn("Из легких Рахи вырывается одиночный кашель.")
 
-		saynn("[say=rahiMineOwner]Like I said, I can only pay you for half of your hours since most of the time you've been doing nothing productive. Seems fair?[/say]")
+		saynn("[say=rahiMineOwner]Как я уже сказал, я могу заплатить тебе только за половину отработанных часов, потому что большую часть времени ты не делала ничего полезного. Справедливо?[/say]")
 
-		saynn("Rahi shakes head and approaches the desk before slamming her fist against it.")
+		saynn("Рахи качает головой и подходит к столу, после чего с силой хлопает по нему кулаком.")
 
-		saynn("[say=pc]Bullshit. I worked my ass off and you know it. If somebody was actually replacing filters in the masks I wouldn't be dying from this fucking cough.[/say]")
+		saynn("[say=pc]Херня какая-то. Я вкалывала как проклятая, и ты это знаешь. Если бы кто-то реально менял фильтры в масках, я бы не подыхала от этого гребаного кашля![/say]")
 
-		saynn("The guy only shrugs at Rahi's words. That really gets her going, she is slowly boiling inside until she grabs the guy by his fancy tie and pulls him closer, her other paw showing off its claws.")
+		saynn("Парень лишь пожимает плечами на слова Рахи. Это по-настоящему выводит её из себя; она медленно закипает внутри, пока не хватает парня за его шикарный галстук и не притягивает к себе, выставив когти на другой лапе.")
 
-		saynn("[say=pc]You're not doing this to me. I have to buy meds to treat this shit. I have to live on something. Now is not a time to be an asshole, really.[/say]")
+		saynn("[say=pc]Ты не имеешь права так со мной поступать. Мне нужно покупать лекарства, чтобы лечить эту дрянь. Мне нужно на что-то жить. Сейчас не время строить из себя мудака, серьезно.[/say]")
 
-		saynn("He only leans closer to your ear before whispering into it.")
+		saynn("Он лишь наклоняется ближе к её уху и шепчет:")
 
-		saynn("[say=rahiMineOwner]Sounds like a you problem. And if you don't wanna have problems with AlphaCorp.. you better take your ten credits and work harder next time.[/say]")
+		saynn("[say=rahiMineOwner]Похоже, это твои проблемы. И если не хочешь иметь проблем с «АльфаКорп»... лучше забери свои десять кредитов и в следующий раз паши усерднее.[/say]")
 
-		saynn("Rahi is growling and showing off her fangs now too. It would be so easy to scratch his face into a bloody mess right now. To bite into his throat and tear off a chunk. But instead, Rahi lets go of the tie and just stores the chip. The guy nods and sits on his wooden chair again.")
+		saynn("Рахи уже рычит, скаля клыки. Сейчас было бы так легко разодрать его лицо в кровавое месиво. Вгрызться в глотку и вырвать кусок мяса. Но вместо этого Рахи отпускает галстук и просто забирает чип. Парень кивает и снова усаживается на свой деревянный стул.")
 
-		saynn("Rahi tries to calm down.")
+		saynn("Рахи пытается успокоиться.")
 
-		saynn("[say=rahiMineOwner]Others are working just fine, no one is coughing like you do.[/say]")
+		saynn("[say=rahiMineOwner]Остальные работают нормально, никто не кашляет так, как ты.[/say]")
 
-		saynn("She rolls her eyes and steps towards the exit. Rahi was about to grab onto the handle.")
+		saynn("Она закатывает глаза и направляется к выходу. Рахи уже почти схватилась за ручку двери.")
 
-		saynn("[say=rahiMineOwner]Not even your father.[/say]")
+		saynn("[say=rahiMineOwner]Даже твой отец.[/say]")
 
-		saynn("Rahi stops and turns towards the guy again.")
+		saynn("Рахи останавливается и снова поворачивается к парню.")
 
-		saynn("[say=rahiMineOwner]Wasn't his name.. Samir. Yeah, Samir Haj'jar. I remember him.[/say]")
+		saynn("[say=rahiMineOwner]Его звали... Самир. Да, Самир Хадж'джар. Я его помню.[/say]")
 
-		saynn("Rahi furrows her brows.")
+		saynn("Рахи хмурит брови.")
 
-		saynn("[say=rahiMineOwner]The guy worked hard, day and night. Like a man should. He wasn't slaking away from hard tasks like most of you freeloaders.[/say]")
+		saynn("[say=rahiMineOwner]Этот парень вкалывал день и ночь. Как и подобает мужчине. Он не увиливал от тяжелой работы, как большинство из вас, дармоедов.[/say]")
 
-		saynn("[say=pc]Don't talk about my father.[/say]")
+		saynn("[say=pc]Не смей говорить о моем отце.[/say]")
 
-		saynn("He chuckles.")
+		saynn("Он усмехается.")
 
-		saynn("[say=rahiMineOwner]You know, he always talked about his family. His children. How he wanted them to become.. engineers I think? On a space station, no less. The guy had a great dream. I almost want to respect him. But. If only he knew.[/say]")
+		saynn("[say=rahiMineOwner]Знаешь, он всегда говорил о своей семье. О детях. О том, как хочет, чтобы они стали... инженерами, кажется? Причем на космической станции, не меньше. У парня была великая мечта. Мне даже хочется его уважать. Но... если бы он только знал.[/say]")
 
-		saynn("Rahi slowly steps closer to the guy's desk again, her paws clenched into fists.")
+		saynn("Рахи снова медленно подходит к столу парня, сжав лапы в кулаки.")
 
-		saynn("[say=rahiMineOwner]If only he knew what a bunch of spoiled lazy brats he had raised.[/say]")
+		saynn("[say=rahiMineOwner]Если бы он только знал, каких избалованных ленивых сопляков он вырастил.[/say]")
 
-		saynn("This is it, Rahi lashes out at the fucker and sinks her claws into his cheek, leaving some nasty but shallow bleeding marks.")
+		saynn("Вот и всё: Рахи срывается на этого ублюдка и вонзает когти ему в щеку, оставляя противные, но неглубокие кровоточащие следы.")
 
-		saynn("[say=pc]Fuck. You.[/say]")
+		saynn("[say=pc]Да пошел ты нахуй.[/say]")
 
-		saynn("The guy grunts and covers his cheek.")
+		saynn("Парень кряхтит и прикрывает щеку рукой.")
 
-		saynn("[say=rahiMineOwner]You stupid bitch, get the fuck out of here, now. Before I throw you out.[/say]")
+		saynn("[say=rahiMineOwner]Тупая сука, а ну съебалась отсюда, живо. Пока я тебя силой не вышвырнул.[/say]")
 
-		saynn("Rahi growls but then just kicks the door open and steps out before proceeding to step down the loud metal ladder.")
+		saynn("Рахи рычит, но затем просто распахивает дверь ногой и выходит, после чего начинает спускаться по шумной металлической лестнице.")
 
-		saynn("[say=rahiMineOwner]The truth always hurts, doesn't it, Rahi?[/say]")
+		saynn("[say=rahiMineOwner]Правда всегда ранит, не так ли, Рахи?[/say]")
 
-		saynn("[say=pc]Just fuck off.[/say]")
+		saynn("[say=pc]Просто отъебись.[/say]")
 
-		addButton("Continue", "See what happens next", "rahi_thinks_on_stairs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_thinks_on_stairs")
 	if(state == "rahi_thinks_on_stairs"):
 		aimCameraAndSetLocName("rahi_shaftstairs")
 		removeCharacter("rahiMineOwner")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Rahi stands at the bottom of the stairs, a little dirt leads towards the town streets.")
+		saynn("Рахи стоит у подножия лестницы; небольшая тропинка ведет к городским улицам.")
 
-		saynn("Kitty is still furious but the cold air helps to cool down. And realize everything that just happened. That's when she becomes sad, her eyes almost desperate.")
+		saynn("Китти всё еще в ярости, но холодный воздух помогает ей немного остыть и осознать всё произошедшее. В этот момент её охватывает печаль, а взгляд становится почти отчаявшимся.")
 
-		saynn("[say=pc]There goes the only job in this fucking town.[/say]")
+		saynn("[say=pc]Вот и ушла единственная работа в этом ебаном городке.[/say]")
 
-		saynn("Rahi turns around and looks at the sign, contemplating.")
+		saynn("Рахи оборачивается и задумчиво смотрит на вывеску.")
 
-		saynn("[say=pc]I don't wanna..[/say]")
+		saynn("[say=pc]Не хочу-у...[/say]")
 
-		saynn("The more Rahi thinks about it, the more that she realizes that she will have to. She will have to return here..")
+		saynn("Чем больше Рахи думает об этом, тем отчетливее понимает: ей придется. Ей придется вернуться сюда...")
 
-		saynn("But. Not today. Fuck today. Since it's friday, might as well go pay the bar a visit instead.")
+		saynn("Но не сегодня. Да пошло оно всё нахуй, это сегодня. Раз уж сегодня пятница, можно и в бар заглянуть.")
 
-		addButton("Continue", "See what happens next", "rahi_coughs_badly")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_coughs_badly")
 	if(state == "rahi_coughs_badly"):
 		aimCameraAndSetLocName("rahi_cough")
 		playAnimation(StageScene.Solo, "walk")
-		saynn("Rahi walks down the streets of her town. It's hard to tell if something is changing because all the buildings seem the same. And even if they aren't, they still.. feel.. the same.. Rectangular boxes made out of the same gray panels with a perfect grid of windows on each side. Efficient, cheap and easily fabricated on mass, perfect for quickly growing planets that have just joined the galaxy exploration race. They're souless and ugly but at least they're better than the.. primitive tents.")
+		saynn("Рахи идет по улицам своего городка. Трудно сказать, меняется ли здесь хоть что-то, потому что все здания кажутся одинаковыми. И даже если это не так, они всё равно... ощущаются... одинаково. Прямоугольные коробки из тех же серых панелей с идеальной сеткой окон на каждой стороне. Эффективные, дешевые и легко штампуемые массово — идеальный вариант для быстрорастущих планет, только что вступивших в галактическую гонку исследователей. Бездушные и уродливые, но, по крайней мере, они лучше этих... примитивных палаток.")
 
-		saynn("The snow gives each one a white hat which makes them look prettier. It feels weird when it's not snowing here.")
+		saynn("Снег надевает на каждое здание белую шапку, отчего они выглядят чуть симпатичнее. Когда снега нет, здесь становится как-то странно.")
 
-		saynn("Rahi just follows the sidewalks while lonely cars are passing by. Old boring cars that have wheels and doors and run on gas. It's like this planet is stuck in the past century when it in fact is stuck in the future and can't get past it. Like something is holding it. On a tight leash.")
+		saynn("Рахи просто идет по тротуару, а мимо проносятся одинокие машины. Старые, скучные тачки на бензине, с колесами и дверями. Такое чувство, будто планета застряла в прошлом веке, хотя на самом деле она застряла в будущем и никак не может из него вырваться. Будто что-то держит её... на коротком поводке.")
 
-		saynn("Rahi's eyes can almost see the bright neon sign of a bar past all the fog and snow. A beacon of hope. Rahi would stop to admire the view but the damn cough returns and forces her to stop.")
+		saynn("Сквозь туман и снег глаза Рахи почти различают яркую неоновую вывеску бара. Маяк надежды. Рахи бы остановилась, чтобы полюбоваться видом, но чертов кашель возвращается и заставляет её замереть.")
 
-		saynn("Rahi holds onto the nearest electric pole and starts coughing.. a lot. Her coughing fit is so strong that she almost collapses, dropping to her knees. After about half a minute of suffering the cough finally calms down, Rahi pulls her paw away from her mouth and notices.. blood. That's.. not good. But Rahi seems to be unphased by the sight, she leaves a bloody imprint on the pole and continues on her way.")
+		saynn("Рахи хватается за ближайший электрический столб и начинает кашлять... сильно. Приступ кашля настолько мощный, что она едва не падает, опускаясь на колени. Спустя полминуты мучений кашель наконец утихает; Рахи убирает лапу от рта и замечает... кровь. Это... не к добру. Но, кажется, зрелище её не особо беспокоит: оставив кровавый отпечаток на столбе, она продолжает свой путь.")
 
-		saynn("She goes through her pockets, searching for something. Aha, there is the pill bottle. Rahi opens it and finds.. that it's empty. Seems like fate really wants Rahi to change her course in life. Luckily there seems to be a drugstore just around the corner, might as well give it a visit. The inescapable AlphaCorp logo is proudly displayed on the glass window.")
+		saynn("Она шарит по карманам в поисках чего-то нужного. Ага, вот и баночка с таблетками. Рахи открывает её и обнаруживает... что она пуста. Похоже, судьба действительно хочет, чтобы Рахи сменила курс своей жизни. К счастью, прямо за углом оказалась аптека, так что можно заглянуть и туда. На стеклянной витрине гордо красуется вездесущий логотип «АльфаКорп».")
 
-		addButton("Drug store", "Buy some meds", "rahi_enters_drugstore")
+		addButton("Аптека", "Купить лекарства", "rahi_enters_drugstore")
 	if(state == "rahi_enters_drugstore"):
 		aimCameraAndSetLocName("rahi_store")
 		addCharacter("rahiPharmGirl")
 		playAnimation(StageScene.Duo, "stand", {npc="rahiPharmGirl"})
-		saynn("The little bell rings when Rahi opens the door and steps inside. Oh, great, more sterile gray walls. At least the floors are made out of polished wood, it's very nice to step on with your bare legs. Kitty walks up to the counter. Behind it is a cat, clearly a female, but she has a lighter fur tone compared to Rahi's.")
+		saynn("Когда Рахи открывает дверь и входит, раздается звон маленького колокольчика. О, отлично, еще больше стерильных серых стен. По крайней мере, полы здесь из полированного дерева — очень приятно ступать босыми лапами. Кити подходит к прилавку. За ним стоит кошка, явно самка, но её мех светлее, чем у Рахи.")
 
-		saynn("[say=rahiPharmGirl]Hey. What do you need?[/say]")
+		saynn("[say=rahiPharmGirl]Эй. Что вам нужно?[/say]")
 
-		saynn("[say=pc]Something against a cough.[/say]")
+		saynn("[say=pc]Что-нибудь от кашля.[/say]")
 
-		saynn("[say=rahiPharmGirl]Pneumonia? CWP? PMF?[/say]")
+		saynn("[say=rahiPharmGirl]Пневмония? Пылевой легкий? ПМФ?[/say]")
 
-		saynn("All of those sound scary. Rahi scratches the back of her head, trying to decide if she should be completely honest or just honest enough.")
+		saynn("Все эти названия звучат пугающе. Рахи чешет затылок, пытаясь решить: стоит ли ей быть предельно честной или просто сказать достаточно правды.")
 
-		saynn("[say=pc]Just.. cough? Been scratching my lungs these last days.[/say]")
+		saynn("[say=pc]Просто... кашель? Последние дни легкие прямо чешутся.[/say]")
 
-		saynn("Mhm. The girl raises a brow at Rahi's words but then reaches under the counter and presents a few pill bottles.")
+		saynn("Мгм. Девушка удивленно вскидывает бровь на слова Рахи, но затем лезет под прилавок и выставляет на стол несколько баночек с таблетками.")
 
-		saynn("[say=rahiPharmGirl]This one is ten, this one is fifteen and the last one is the best but also costs the most. Thirty for that one.[/say]")
+		saynn("[say=rahiPharmGirl]Эта стоит десять, эта — пятнадцать, а последняя — самая лучшая, но и самая дорогая. За ту, что в конце, с тебя тридцать.[/say]")
 
-		saynn("Wow. All Rahi has in her pockets is the ten credits chip that the asshole gave her.")
+		saynn("Ого. У Рахи в карманах всего лишь чип на десять кредитов, который ей сунул тот мудак.")
 
-		saynn("[say=pc]Uh. Did they raise the prices or something?[/say]")
+		saynn("[say=pc]Э-э... Они что, цены подняли?[/say]")
 
-		saynn("[say=rahiPharmGirl]It's a mining town, the demand is high for these.[/say]")
+		saynn("[say=rahiPharmGirl]Это шахтерский городок, на них тут бешеный спрос.[/say]")
 
-		saynn("Something doesn't add up here. But whatever, the more Rahi thinks about it all, the more she realizes that the bar deserves her credits more. Still, it's worth asking.")
+		saynn("Что-то тут не сходится. Но похрен — чем больше Рахи об этом думает, тем больше понимает, что этот бар заслуживает её кредитов больше, чем она сама. И всё же, стоит уточнить.")
 
-		saynn("[say=pc]What changed though? It's always been a mining town.[/say]")
+		saynn("[say=pc]Но что изменилось? Это всегда был шахтерский городок.[/say]")
 
-		saynn("She shrugs and gives Rahi an annoyed look.")
+		saynn("Она пожимает плечами и бросает на Рахи раздраженный взгляд.")
 
-		saynn("[say=rahiPharmGirl]You're buying anything or not?[/say]")
+		saynn("[say=rahiPharmGirl]Ты будешь что-то покупать или нет?[/say]")
 
-		saynn("Guess not. Rahi turns around and just steps out of the shop.")
+		saynn("Похоже, что нет. Рахи разворачивается и просто выходит из лавки.")
 
-		addButton("Continue", "See what happens next", "rahi_runs_into_rabi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_runs_into_rabi")
 	if(state == "rahi_runs_into_rabi"):
 		aimCameraAndSetLocName("rahi_nearstore")
 		playAnimation(StageScene.Duo, "stand", {npc="rahiRabi"})
 		addCharacter("rahiRabi")
 		removeCharacter("rahiPharmGirl")
-		saynn("[say=rahiRabi]Hey there, sis.[/say]")
+		saynn("[say=rahiRabi]Привет, сестрёнка.[/say]")
 
-		saynn("Rahi's ears perk towards the very familiar voice, she turns around and sees a brown male cat waving at her. Putting them near makes it obvious who they are to each other.")
+		saynn("Уши Рахи дернулись на очень знакомый голос; она оборачивается и видит коричневого кота-самца, который машет ей рукой. То, как они стоят рядом, сразу выдает их близкую связь.")
 
-		saynn("[say=pc]Hey yourself.[/say]")
+		saynn("[say=pc]И тебе привет.[/say]")
 
-		saynn("[say=rahiRabi]Meow? Something's up?[/say]")
+		saynn("[say=rahiRabi]Мяу? Что-то случилось?[/say]")
 
-		saynn("[say=pc]Can't buy the meds that I need, shit costs too much.[/say]")
+		saynn("[say=pc]Не могу купить нужные лекарства, всё это дерьмо стоит слишком дорого.[/say]")
 
-		saynn("The male cat peeks past the glass door of the drugstore.")
+		saynn("Кот заглядывает в стеклянную дверь аптеки.")
 
-		saynn("[say=rahiRabi]Oh yeah, she is upselling you.[/say]")
+		saynn("[say=rahiRabi]О да, она тебя разводит на бабки.[/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("[say=rahiRabi]And then she puts the difference in her pocket. Girl wants credits. Like you. Like everyone.[/say]")
+		saynn("[say=rahiRabi]А сдачу прячет себе в карман. Девчонке нужны кредиты. Как и тебе. Как и всем.[/say]")
 
-		saynn("Rahi tilts her head down, her paws clenching into fists again. The cat taps on Rahi's shoulder.")
+		saynn("Рахи понуро опускает голову, её лапы снова сжимаются в кулаки. Кот хлопает её по плечу.")
 
-		saynn("[say=rahiRabi]My job offer still stands, you know. You would be earning way more without all these health problems. What do you say?[/say]")
+		saynn("[say=rahiRabi]Моё предложение по работе всё ещё в силе, знаешь ли. Без всех этих проблем со здоровьем ты бы зарабатывала куда больше. Ну, что скажешь?[/say]")
 
-		saynn("[say=pc]I know what your job is, Rabi. It's illegal. But Also.. That's not what father would want.[/say]")
+		saynn("[say=pc]Я знаю, чем ты занимаешься, Раби. Это незаконно. Но еще... отец бы этого не захотел.[/say]")
 
-		saynn("Rabi chuckles softly and puts both his paws on Rahi's shoulder.")
+		saynn("Раби тихо посмеивается и кладет обе лапы на плечо Рахи.")
 
-		saynn("[say=rahiRabi]I only know one thing, sis. Father wanted us to be happy. I hate seeing you fade just like he did. It's not worth it.[/say]")
+		saynn("[say=rahiRabi]Я знаю только одно, сестренка. Отец хотел, чтобы мы были счастливы. Терпеть не могу видеть, как ты угасаешь так же, как он. Оно того не стоит.[/say]")
 
-		saynn("He offers kitty a smile and then rubs her shoulders.")
+		saynn("Он одаривает кошечку улыбкой, а затем разминает ей плечи.")
 
-		saynn("[say=pc]I'm done stealing and I don't wanna have anything to do with drugs, you know that..[/say]")
+		saynn("[say=pc]С воровством покончено, и я не хочу иметь ничего общего с наркотой, ты же сама знаешь...[/say]")
 
-		saynn("Rabi shrugs.")
+		saynn("Раби пожимает плечами.")
 
-		saynn("[say=rahiRabi]See you around then, I gotta go make a transaction.[/say]")
+		saynn("[say=rahiRabi]Ну, еще увидимся, мне пора, нужно провести одну сделку.[/say]")
 
-		saynn("Rahi nods and watches Rabi enter the drugstore. Huh.")
+		saynn("Рахи кивает и провожает взглядом Раби, входящего в аптеку. Хм.")
 
-		addButton("Continue", "See what happens next", "rahi_thinks_about_stealing")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_thinks_about_stealing")
 	if(state == "rahi_thinks_about_stealing"):
 		removeCharacter("rahiRabi")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The bar is attracting Rahi harder than her home planet attracts the two moons. But. The force of curiosity is stronger. Kitty takes a few steps back and sneakily peeks through the glass window.")
+		saynn("Бар тянет к Рахи сильнее, чем ее родная планета притягивает две луны. Но любопытство берет верх. Кошечка делает несколько шагов назад и украдкой заглядывает в стеклянное окно.")
 
-		saynn("Rabi and the pharmacist girl are talking about something before exchanging things and credits. Then the girl steps away from the counter and goes to look for something in the back.")
+		saynn("Раби и девушка-фармацевт о чем-то болтают, прежде чем обменяться товаром и кредитами. Затем девушка отходит от прилавка, чтобы поискать что-то на складе.")
 
-		saynn("Hm. The meds. They are probably still just under the counter. And Rahi knows that Rabi wouldn't rat on her. Now would be the perfect time to..")
+		saynn("Хм. Лекарства. Они, скорее всего, всё ещё лежат под прилавком. И Рахи знает, что Раби её не сдаст. Сейчас был бы идеальный момент, чтобы...")
 
-		saynn("No, that's so wrong.. But.. The girl that is selling them basically stole them too. And Rahi clearly needs them more.. The guilt is already eating Rahi from the inside. But.. No.. She is not gonna make the mistake that her father did. Yes..")
+		saynn("Нет, это так неправильно... Но... Девочка, которая их продает, по сути, тоже их украла. И Рахи они явно нужнее... Вина уже гложет Рахи изнутри. Но... Нет... Она не совершит ту же ошибку, что и её отец. Да...")
 
-		addButton("Sneak inside", "Try to steal the pills that Rahi needs", "rahi_sneaks_inside")
+		addButton("Пробраться внутрь", "Попытаться украсть таблетки, которые нужны Рахи", "rahi_sneaks_inside")
 	if(state == "rahi_sneaks_inside"):
 		aimCameraAndSetLocName("rahi_store")
 		addCharacter("rahiRabi")
 		addCharacter("rahiPharmGirl")
 		playAnimation(StageScene.Duo, "kneel", {npc="rahiRabi"})
-		saynn("Rahi slowly and carefully opens the door just enough to slip inside without triggering the bell. Rabi's ears instantly spot her though. The girl is still out in the back, searching for something.")
+		saynn("Рахи медленно и осторожно приоткрывает дверь ровно настолько, чтобы проскользнуть внутрь, не задев колокольчик. Но уши Раби мгновенно улавливают её присутствие. Девочка всё ещё там, в задней комнате, что-то ищет.")
 
-		saynn("But as Rahi begins to creep towards the counters, the girl suddenly returns. Gotta do something! Rahi leaps forward and hits the floor as silently as she can, hiding near Rabi's feet. He sneakily looks down at her sister and smiles.")
+		saynn("Но как только Рахи начинает подкрадываться к прилавку, девчонка внезапно возвращается. Нужно что-то делать! Рахи бросается вперед и максимально бесшумно падает на пол, прячась у ног Раби. Она украдкой смотрит на сестру и улыбается.")
 
-		saynn("[say=rahiPharmGirl]This stuff?[/say]")
+		saynn("[say=rahiPharmGirl]Это?[/say]")
 
-		saynn("Rabi gets handed a small box of some kind.. material...")
+		saynn("Раби протягивают какую-то маленькую коробочку из... материала...")
 
-		saynn("[say=rahiRabi]Yeah, that would do nicely. I need more though.[/say]")
+		saynn("[say=rahiRabi]Да, сойдет. Но мне нужно больше.[/say]")
 
-		saynn("[say=rahiPharmGirl]Geez, really? You could have said that before I had to dig through the stash.[/say]")
+		saynn("[say=rahiPharmGirl]Боже, серьезно? Могла бы сказать об этом до того, как мне пришлось копаться в заначке.[/say]")
 
-		saynn("[say=rahiRabi]The cameras are still broken, right?[/say]")
+		saynn("[say=rahiRabi]Камеры ведь всё еще сломаны, да?[/say]")
 
-		saynn("[say=rahiPharmGirl]Yeah. And I intend for them to stay that way. I guess I will go get more, wait here.[/say]")
+		saynn("[say=rahiPharmGirl]Ага. И я намерена оставить всё как есть. Пожалуй, схожу за добавкой, а ты пока жди здесь.[/say]")
 
-		saynn("The girl leaves her spot and goes searching for something again. Rabi winks at Rahi before she silently leaps over the counters and begins looking for the right pills. A voice comes from the back room.")
+		saynn("Девушка покидает своё место и снова отправляется на поиски. Раби подмигивает Рахи, после чего бесшумно перепрыгивает через прилавки и начинает искать нужные таблетки. Из подсобки доносится голос.")
 
-		saynn("[say=rahiPharmGirl]Saw your sister I think. Didn't even realize it wasn't you at first.[/say]")
+		saynn("[say=rahiPharmGirl]Кажется, твою сестру видела. Сначала даже не поняла, что это не ты.[/say]")
 
-		saynn("[say=rahiRabi]Oh yeah? What do you think about her?[/say]")
+		saynn("[say=rahiRabi]Да неужели? И что ты о ней думаешь?[/say]")
 
-		saynn("Shit. The pills that Rahi needs seem to be in a locked box. And she probably doesn't have much time left.")
+		saynn("Черт. Похоже, таблетки, которые нужны Рахи, заперты в ящике. И времени у неё, скорее всего, осталось немного.")
 
-		saynn("[say=rahiPharmGirl]No offense but why is she such a bitch? Demanding stuff, asking stupid questions. Did she find her clothes in a garbage dumpster?[/say]")
+		saynn("[say=rahiPharmGirl]Без обид, но почему она такая стерва? Вечно чего-то требует, задает тупые вопросы... Она что, одежду в мусорном баке нашла?[/say]")
 
-		saynn("That does it. Rahi pulls out a metal hairpin that was holding her ponytail together before bending it into a lockpick and sliding past the keyhole.")
+		saynn("Это была последняя капля. Рахи выхватывает металлическую шпильку, которой удерживала хвост, сгибает её в отмычку и просовывает в замочную скважину.")
 
-		saynn("[say=rahiRabi]She had a rough day, don't go so hard on her. She is also trying to stay away from this whole thing.[/say]")
+		saynn("[say=rahiRabi]У неё был тяжелый день, не будь к ней так строг. Она просто пытается держаться подальше от всей этой заварухи.[/say]")
 
-		saynn("[say=rahiPharmGirl]Is she mining coal all day instead? PFf-f-f. Good luck to her.[/say]")
+		saynn("[say=rahiPharmGirl]А она что, весь день уголь в шахте добывает? Пффф. Ну, удачи ей.[/say]")
 
-		saynn("Rahi's ears pick up on the girl's footsteps. And they are getting closer and closer. Rahi quickly shakes her paw with the lockpick until she hears something clicking inside the box. She quickly opens the box, grabs the first pill bottle that she sees and then hops over the counter again, hairpin in her paw. Then she hears a thud as the pharmacist girl places something.")
+		saynn("Уши Рахи улавливают шаги девушки. И они становятся всё ближе и ближе. Рахи быстро трясет лапой с отмычкой, пока не слышит отчетливый щелчок внутри ящика. Она стремительно открывает его, хватает первый попавшийся пузырек с таблетками и снова перепрыгивает через прилавок, сжимая шпильку в лапе. В этот момент она слышит глухой стук — это девушка-фармацевт что-то поставила на стол.")
 
-		saynn("[say=rahiPharmGirl]Here, happy now?![/say]")
+		saynn("[say=rahiPharmGirl]Ну что, теперь ты довольна?![/say]")
 
-		saynn("Phew. She didn't see Rahi. But she still needs to slip out somehow.")
+		saynn("Фух. Она не заметила Рахи. Но ей всё равно нужно как-то ускользнуть.")
 
-		saynn("[say=rahiRabi]You know what, I changed my mind, what I have will be enough.[/say]")
+		saynn("[say=rahiRabi]Знаешь что, я передумала, того, что у меня есть, будет достаточно.[/say]")
 
-		saynn("Rahi can almost hear the other girl's eyes rolling.")
+		saynn("Рахи почти физически чувствует, как у другой девчонки закатываются глаза.")
 
-		saynn("[say=rahiPharmGirl]Fucking really?! You.. You!.. ARghh-h-! Fuck you![/say]")
+		saynn("[say=rahiPharmGirl]Да ты издеваешься?! Ты... Ты!.. А-а-ах! Да пошёл ты![/say]")
 
-		saynn("Rabi chuckles softly while the girl grabs the box of stuff and goes away again.")
+		saynn("Раби тихо посмеивается, пока девчонка хватает коробку с вещами и снова уходит.")
 
-		saynn("[say=rahiRabi]We will get to that~.[/say]")
+		saynn("[say=rahiRabi]До этого мы ещё доберёмся~.[/say]")
 
-		saynn("Rabi then nods towards Rahi. Rahi nods back.")
+		saynn("Затем Раби кивает в сторону Рахи. Рахи кивает в ответ.")
 
-		addButton("Slip out", "Time to go", "rahi_slips_out_of_drugstore")
+		addButton("Выскользнуть наружу", "Пора идти", "rahi_slips_out_of_drugstore")
 	if(state == "rahi_slips_out_of_drugstore"):
 		removeCharacter("rahiPharmGirl")
 		removeCharacter("rahiRabi")
 		aimCameraAndSetLocName("rahi_nearstore")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Rahi slips out of the drugstore the same way she entered it and starts walking towards the bar again. She quickly fixes her ponytail back with the hairpin.")
+		saynn("Рахи выскальзывает из аптеки тем же путём, которым вошла, и снова направляется к бару. Она быстро поправляет хвост заколкой.")
 
-		saynn("Her paw brings the stolen pill bottle to her face. Seems like she stole the best ones.")
+		saynn("Она подносит украденную баночку с таблетками к мордочке. Похоже, она стащила самые лучшие.")
 
-		saynn("[say=pc]Maybe life isn't so unfair.[/say]")
+		saynn("[say=pc]Может, жизнь и не так уж несправедлива.[/say]")
 
-		saynn("The instructions warn not to mix them with alcohol but who cares about what instructions say. She pops one into her mouth and swallows it. No apparent effects but hopefully they will help against the cough in the long run.")
+		saynn("В инструкции сказано не смешивать их с алкоголем, но кому какое дело до инструкций? Она закидывает одну таблетку в рот и проглатывает. Никаких явных эффектов, но, она надеется, в долгосрочной перспективе они помогут от кашля.")
 
-		addButton("Continue", "See what happens next", "rahi_near_bar")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_near_bar")
 	if(state == "rahi_near_bar"):
 		aimCameraAndSetLocName("rahi_outsidebar")
 		playAnimation(StageScene.Solo, "walk")
-		saynn("As Rahi approaches the bar, she spots more and more.. girls.. and guys too.. wearing skimpy and sexy clothes. Night-butterflies. Earning credits the only way they know how. Or maybe they like it? Who knows. Rahi hopes she will never reach such a low level. But then she realizes that stealing is probably lower than selling your body on the global scales. From now on she prefers not to think about it.")
+		saynn("Когда Рахи подходит к бару, она замечает всё больше... девчонок... и парней тоже... в вызывающей и сексуальной одежде. Ночные бабочки. Зарабатывают кредиты единственным известным им способом. А может, им это даже нравится? Кто знает. Рахи надеется, что никогда не опустится так низко. Но затем она понимает, что воровство, пожалуй, стоит еще ниже на общемировой шкале ценностей. С этого момента она предпочитает об этом не думать.")
 
-		saynn("Here it is. The bar. It's maybe the only place in the entire town that wasn't tainted by the greedy hands of AlphaCorp. Not yet at least. The wooden walls and floors, the bright neon sign, the promise of a good time, it's very inviting.")
+		saynn("Вот он. Бар. Пожалуй, это единственное место во всем городе, которое еще не было осквернено жадными руками АльфаКорп. По крайней мере, пока что. Деревянные стены и полы, яркая неоновая вывеска, обещание хорошего времяпрепровождения — всё это очень заманчиво.")
 
-		addButton("Bar", "Enter it", "rahi_enters_bar")
+		addButton("Бар", "Войти", "rahi_enters_bar")
 	if(state == "rahi_enters_bar"):
 		aimCameraAndSetLocName("rahi_bar")
 		playAnimation(StageScene.Solo, "sit")
-		saynn("The cold light from the moons is replaced by a warm one from all the lamps. It's cozy here. Which means the place is also quite busy. Every single cat in the town comes here to have a nice chat, drink some cheap alcohol and then smash heads until they forget what year it is.")
+		saynn("Холодный свет лун сменяется теплым светом множества ламп. Здесь уютно. А это значит, что в заведении довольно людно. Сюда стекается каждая местная кошка, чтобы поболтать, выпить дешевого пойла, а потом начать махач, пока не забудут, какой сейчас год.")
 
-		saynn("Rahi steps further and flops her butt on one of the round stools near the barmen. Her paw places the ten credits chip on the counter.")
+		saynn("Рахи проходит вглубь и плюхается закругленным задом на один из круглых табуретов возле бармена. Её лапа кладет на стойку чип номиналом в десять кредитов.")
 
-		saynn("[say=pc]The usual.[/say]")
+		saynn("[say=pc]Как обычно.[/say]")
 
-		saynn("The guy behind the wooden bar counter nods. Ten credits means ten shots of whiskey. Barely enough to fix anything. But fixing everything would require a barrel.")
+		saynn("Парень за деревянной барной стойкой кивает. Десять кредитов — это десять шотов виски. Едва хватит, чтобы хоть что-то исправить. Но чтобы исправить всё, понадобится целая бочка.")
 
-		saynn("Time passes and nothing changes. Kitty is sitting alone, sipping the lifejuice. It's cute to see her try to occasionally shove her muzzle into the glass and lap the remains of whiskey up. All the while others around her are busy living their lives. It's almost like the bar is the only place where people are truly alive. It doesn't do it for Rahi anymore though.")
+		saynn("Время идет, но ничего не меняется. Китти сидит в одиночестве, потягивая «жизненный сок». Мило наблюдать, как она время от времени пытается засунуть мордочку в стакан, чтобы слизывать остатки виски. Тем временем остальные вокруг заняты своей жизнью. Кажется, будто бар — это единственное место, где люди по-настоящему живут. Но Рахи это больше не цепляет.")
 
-		saynn("[say=pc]Repeat.[/say]")
+		saynn("[say=pc]Повторить.[/say]")
 
-		saynn("The kind barman shakes his head. Damn. Already? The night has only just started and Rahi is already out of credits.")
+		saynn("Добродушный бармен качает головой. Черт. Уже? Ночь только началась, а у Рахи уже кончились кредиты.")
 
-		saynn("Kitty decides to look around. Sneakily. Huh. She quickly spots a group of drunk felines with one of them clearly being the main guy. It seems he is buying today, swaying around and waving his giant glass of beer around. Which means he has credits to spare.")
+		saynn("Китти решает оглядеться. Потихоньку, исподтишка. Хм. Она быстро замечает группу пьяных кошачьих, среди которых явно выделяется один главный. Похоже, сегодня он угощает: он раскачивается из стороны в сторону, размахивая огромной кружкой пива. А значит, у него есть лишние кредиты.")
 
-		saynn("Rahi looks at the barmen.")
+		saynn("Рахи смотрит на бармена.")
 
-		saynn("[say=pc]Be right back.[/say]")
+		saynn("[say=pc]Скоро вернусь.[/say]")
 
-		saynn("The guy nods, his eyes see Rahi getting up and seemingly heading for the restrooms. But then she alters her course by losing her balance. No matter how agile you are, the brain poison that is the alcohol will do that to you.")
+		saynn("Парень кивает, видя, как Рахи встает и, кажется, направляется к уборным. Но тут она теряет равновесие и меняет курс. Какой бы ловкой ты ни была, яд для мозга под названием алкоголь всё равно возьмет своё.")
 
-		addButton("Continue", "See what happens next", "rahi_flops_on_guy")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_flops_on_guy")
 	if(state == "rahi_flops_on_guy"):
 		addCharacter("rahiBarGuy")
 		playAnimation(StageScene.SexStart, "start", {pc="rahiBarGuy", npc="pc"})
-		saynn("Rahi sways to the side until she runs herself into the loud group, her paws instinctively grabbing onto the cat's jacket.")
+		saynn("Рахи заносит в сторону, пока не врезается в шумную компанию, инстинктивно вцепившись лапами в куртку одного из котов.")
 
-		saynn("[say=pc]Eep![/say]")
+		saynn("[say=pc]Ик![/say]")
 
-		saynn("He catches the drunk Rahi and saves her from collapsing completely.")
+		saynn("Он подхватывает пьяную Рахи, не давая ей окончательно рухнуть на пол.")
 
-		saynn("[say=rahiBarGuy]Oh hey. Are you hurt, kitty cat?[/say]")
+		saynn("[say=rahiBarGuy]О, привет. Ты не ушиблась, киса?[/say]")
 
-		saynn("[say=pc]Sorry, had one too many glasses of whiskey today.[/say]")
+		saynn("[say=pc]Прости, сегодня перебрала с виски.[/say]")
 
-		saynn("He helps Rahi get up before tapping on her shoulders.")
+		saynn("Он помогает Рахи подняться, а затем слегка хлопает её по плечам.")
 
-		saynn("[say=rahiBarGuy]Well, if you still have room in ya, we can share. I'm buying rounds. It's not whiskey. But you know.[/say]")
+		saynn("[say=rahiBarGuy]Ну, если в тебе ещё осталось место, можем составить компанию. С меня по кружке. Это не виски, но ты поймёшь.[/say]")
 
-		saynn("Rahi is clearly not interested.")
+		saynn("Рахи явно не заинтересована.")
 
-		saynn("[say=pc]I'm good, thank you. Sorry again.[/say]")
+		saynn("[say=pc]Я в порядке, спасибо. И ещё раз прости.[/say]")
 
-		addButton("Continue", "See what happens next", "rahi_after_stealing_credits")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_after_stealing_credits")
 	if(state == "rahi_after_stealing_credits"):
 		playAnimation(StageScene.Solo, "sit")
-		saynn("Rahi returns back to the barmen and places a thirty credit chip on the counter. He raises his brow but accepts it.")
+		saynn("Рахи возвращается к бармену и кладет на стойку чип номиналом в тридцать кредитов. Тот удивленно приподнимает бровь, но принимает оплату.")
 
-		saynn("[say=pc]Limit me to.. Ah, screw it, no limit. Just repeat until I say stop or lose consciousness..[/say]")
+		saynn("[say=pc]Ограничь меня... А, к черту, без ограничений. Просто подливай, пока я не скажу «стоп» или пока не отключусь...[/say]")
 
-		saynn("And so the fun times continue. Rahi slowly sips more and more whiskey, clouding her mind. Accepting reality is way harder when looking through an empty glass. At least she is making progress.")
+		saynn("И так веселье продолжается. Рахи медленно потягивает виски одну за другой, затуманивая разум. Принимать реальность куда сложнее, когда смотришь сквозь пустое дно стакана. По крайней мере, прогресс есть.")
 
-		saynn("More time passes. Some people leave, some have just walked in. The group that Rahi has disturbed has decided to move on with their lives. When suddenly.")
+		saynn("Проходит еще больше времени. Кто-то уходит, кто-то только что заходит. Группа, которую потревожила Рахи, решила жить дальше. Как вдруг...")
 
-		saynn("[say=rahiBarGuy]Uh. I can't find the creds, guys. Where did I put them..[/say]")
+		saynn("[say=rahiBarGuy]Ох... Ребята, я не могу найти кредиты. Куда же я их положила...[/say]")
 
-		saynn("Oops. Rahi looks away and pretends she is a prop.")
+		saynn("Ой. Рахи отводит взгляд и делает вид, что она — просто предмет интерьера.")
 
-		saynn("[say=rahiBarGuy]I swear, they were right here, in this pocket. You all saw it, right?[/say]")
+		saynn("[say=rahiBarGuy]Клянусь, они были прямо здесь, в этом кармане. Вы же все это видели, да?[/say]")
 
-		saynn("Now would be a good time to go breathe some fresh air, it's good for your health. And Rahi decides to do just that. Too bad the alcohol is actually affecting her motions, making them more gracious and flowing. And slow.")
+		saynn("Сейчас самое время выйти подышать свежим воздухом, это полезно для здоровья. И Рахи решает сделать именно это. Жаль только, что алкоголь уже начинает сказываться на её движениях, делая их более грациозными, плавными... и замедленными.")
 
-		saynn("[say=rahiBarGuy]Wait. I think I know where the creds are. Where is that whiskey cat?![/say]")
+		saynn("[say=rahiBarGuy]Погоди-ка. Кажется, я знаю, где кредиты. Где этот вискишный кот?![/say]")
 
-		saynn("Just keep walking, just keep walking..")
+		saynn("Просто иди вперед, просто иди вперед...")
 
-		addButton("Continue", "See what happens", "rahi_gets_grabbed_by_barguy")
+		addButton("Продолжить", "Посмотреть, что будет", "rahi_gets_grabbed_by_barguy")
 	if(state == "rahi_gets_grabbed_by_barguy"):
 		playAnimation(StageScene.Duo, "hurt", {npc="rahiBarGuy", npcAction="shove"})
-		saynn("A dirty paw reaches for Rahi's shoulder and pulls on it, rotating the cat one eighty and leaving a print on the leather. Kitty is swaying a lot.")
+		saynn("Грязная лапа тянется к плечу Рахи и тянет его, разворачивая кота на сто восемьдесят градусов и оставляя след на коже. Котика заметно шатает.")
 
-		saynn("[say=rahiBarGuy]Leaving already? I don't think so.[/say]")
+		saynn("[say=rahiBarGuy]Уже уходите? Не думаю.[/say]")
 
-		saynn("He is certainly not happy, his other paw clenched. Rahi has to raise her chin to look at his face.")
+		saynn("Он явно не в духе, его вторая лапа сжата в кулак. Рахи приходится задрать подбородок, чтобы посмотреть ему в лицо.")
 
-		saynn("[say=pc]I'm go-oing home. And you ca-an't stop me..[/say]")
+		saynn("[say=pc]Я и-иду до-о-омой. И ты не смо-о-ожешь меня остановить..[/say]")
 
-		saynn("He certainly can. The guy furrows his brows and bares his fangs.")
+		saynn("Еще как может. Парень хмурится и скалит клыки.")
 
-		saynn("[say=rahiBarGuy]Give back the credits that you stole, you little junkie.[/say]")
+		saynn("[say=rahiBarGuy]Верни кредиты, которые ты стащила, мелкая торчушка![/say]")
 
-		saynn("Rahi shakes her head, putting extra sway into her neck motions.")
+		saynn("Рахи качает головой, нарочито плавно и кокетливо изгибая шею.")
 
-		saynn("[say=pc]I don't have you-ur credits. So-o-o.. fuck off? Please?[/say]")
+		saynn("[say=pc]У ме-е-еня нет тво-о-их кредитов. Так что... отвали? Ну по-о-ожалуйста?[/say]")
 
-		saynn("Suddenly the guy grabs Rahi's throat and makes her stand on her toes. A very refreshing experience, kitty can suddenly feel the clouds going away. And she is not a fan.")
+		saynn("Внезапно парень хватает Рахи за горло и заставляет её встать на цыпочки. Ощущение весьма «освежающее»: кошечка внезапно чувствует, как перед глазами плывут облака. И, честно говоря, ей это не нравится.")
 
-		saynn("[say=rahiBarGuy]Already wasted it all? You don't get it. I Am getting my credits back no matter what. I don't care how. I will pass your slutty ass around until you earn enough if I have to.[/say]")
+		saynn("[say=rahiBarGuy]Уже всё спустила? Ты не понимаешь. Я заберу свои кредиты любой ценой. И плевать как. Если придется, я пущу твою шлюшью задницу по кругу, пока ты не заработаешь нужную сумму![/say]")
 
-		saynn("That's not a nice thing to say. As the guy reaches for Rahi's clothes, she growls and sinks her claws into his paws, making him yelp and increase the pressure on her throat, choking her out.")
+		saynn("Грубовато сказано. Когда парень тянется к одежде Рахи, она рычит и вонзает когти в его лапы; тот вскрикивает и сильнее сжимает её горло, почти перекрывая ей кислород.")
 
-		saynn("[say=pc]L-let g-go..[/say]")
+		saynn("[say=pc]От-т-пусти..[/say]")
 
-		saynn("People around don't seem to care much, even the bartender guy just focuses on cleaning his glasses and pouring drinks. This conversation just gets lost in the overall noise.")
+		saynn("Окружающим, кажется, почти плевать: даже бармен сосредоточен лишь на протирании стаканов и разливе выпивки. Этот разговор просто тонет в общем шуме.")
 
-		saynn("[say=rahiBarGuy]You little bitch. Prepare to get whored out.[/say]")
+		saynn("[say=rahiBarGuy]Мелкая сучка. Готовься, тебя сейчас пустят по кругу.[/say]")
 
-		saynn("Suddenly a voice from behind him. A very familiar one.")
+		saynn("Внезапно сзади раздался голос. Очень знакомый голос.")
 
-		saynn("[say=rahiRabi]I'd let her go if I were you.[/say]")
+		saynn("[say=rahiRabi]На твоем месте я бы её отпустил.[/say]")
 
-		addButton("Continue", "See what happens next", "rahi_gets_saved_by_rabi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_gets_saved_by_rabi")
 	if(state == "rahi_gets_saved_by_rabi"):
 		addCharacter("rahiRabi")
 		playAnimation(StageScene.Duo, "stand", {pc="rahiBarGuy", npc="rahiRabi"})
-		saynn("The guy lets go of Rahi's neck and turns towards the bold voice. Kitty is coughing and gasping for air.")
+		saynn("Парень разжимает руки на шее Рахи и оборачивается на дерзкий голос. Китти кашляет и судорожно хватает ртом воздух.")
 
-		saynn("[say=rahiBarGuy]And who the fuck are you?[/say]")
+		saynn("[say=rahiBarGuy]А ты еще кто за, блять, такая?[/say]")
 
-		saynn("He then looks at both Rahi and Rabi.")
+		saynn("Затем он переводит взгляд то на Рахи, то на Раби.")
 
-		saynn("[say=rahiBarGuy]You two are clearly working together. You're her pimp, aren't you?[/say]")
+		saynn("[say=rahiBarGuy]Вы двое явно в сговоре. Ты её сутенер, так ведь?[/say]")
 
-		saynn("Rabi shakes his head and crosses his arms. The angry cat steps towards him.")
+		saynn("Раби качает головой и скрещивает руки на груди. Разъяренный кот делает шаг к нему.")
 
-		saynn("[say=rahiRabi]You're gonna say sorry to the kitty that you hurt. Then you just gonna relax and enjoy the rest of your night.[/say]")
+		saynn("[say=rahiRabi]Сначала ты извинишься перед китти, которую обидел. А потом просто расслабишься и будешь наслаждаться остатком ночи.[/say]")
 
-		saynn("That made the other guy furious, he grabs Rabi by the clothing. The conflict is.. quite heated. But Rahi's brother seems to stay calm.")
+		saynn("Это привело другого парня в ярость, он хватает Раби за одежду. Конфликт становится... весьма жарким. Но брат Рахи, кажется, сохраняет спокойствие.")
 
-		saynn("[say=rahiBarGuy]Oh yeah? How about I smash your head, take all your creds and then fuck your stupid slut?[/say]")
+		saynn("[say=rahiBarGuy]Да неужели? Как насчет того, чтобы я размозжил тебе голову, забрал все твои кредиты, а потом трахнул твою тупую шлюху?[/say]")
 
-		saynn("Rabi reaches for something. The other guy was about to punch him when they both suddenly hear a noise of a gun cocking up. Rabi smiles.")
+		saynn("Раби тянется за чем-то. Другой парень уже собирался ударить его, как вдруг они оба слышат звук взводимого курка. Раби улыбается.")
 
-		saynn("[say=rahiRabi]I said. You will say sorry to the kitty and relax.[/say]")
+		saynn("[say=rahiRabi]Я сказал. Ты извинишься перед кошечкой и расслабишься.[/say]")
 
-		saynn("The dude is furious. But only on the inside. Outside, he doesn't look so brave anymore. He grits his teeth and then lets go of Rabi's clothing.")
+		saynn("Парень в ярости. Но только внутри. Снаружи он уже не выглядит таким смелым. Он стискивает зубы и отпускает одежду Раби.")
 
-		saynn("[say=rahiBarGuy]Oh, go fuck yourself then, both of you. This is not worth it.[/say]")
+		saynn("[say=rahiBarGuy]Ох, да идите вы оба на хер. Оно того не стоит.[/say]")
 
-		saynn("The guy joins his group again and plops his butt onto the chair.")
+		saynn("Парень возвращается к своей группе и плюхается задом на стул.")
 
-		saynn("All the while Rabi helps Rahi get up and sit on the stool before taking a seat himself.")
+		saynn("Все это время Раби помогает Рахи подняться и сесть на табурет, после чего усаживается и сам.")
 
-		addButton("Continue", "See what happens next", "rabi_talks_with_rahi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rabi_talks_with_rahi")
 	if(state == "rabi_talks_with_rahi"):
 		removeCharacter("rahiBarGuy")
 		playAnimation(StageScene.Duo, "sit", {npc="rahiRabi", npcAction="sit"})
-		saynn("Rahi rubs her bruised neck.")
+		saynn("Рахи потирает ушибленную шею.")
 
-		saynn("[say=pc]How long have you been here?[/say]")
+		saynn("[say=pc]Ты здесь давно?[/say]")
 
-		saynn("[say=rahiRabi]A few hours, wanted to make sure you're alright. Saw what you did with that guy. Great technique. You have some great skills, sis.[/say]")
+		saynn("[say=rahiRabi]Пару часов, хотел убедиться, что с тобой всё в порядке. Видел, что ты сделала с тем типом. Отличная техника. У тебя есть талант, сестренка.[/say]")
 
-		saynn("Rahi tries to order another whiskey shot but Rabi stops her and orders two himself.")
+		saynn("Рахи пытается заказать еще одну порцию виски, но Раби останавливает ее и заказывает две себе.")
 
-		saynn("[say=pc]Oh yeah? He almost began teaching me other types of skills.. Thanks.. by the way..[/say]")
+		saynn("[say=pc]Да неужели? Он уже почти начал обучать меня другим навыкам... Кстати, спасибо...[/say]")
 
-		saynn("Rabi chuckles and sips some whiskey, the same way that Rahi does, by lapping the contents up with his tongue.")
+		saynn("Раби посмеивается и отхлебывает виски точно так же, как и Рахи — слизывая содержимое языком.")
 
-		saynn("[say=rahiRabi]Don't mention it. The girl at the drugstore has no idea so far, great work there too.[/say]")
+		saynn("[say=rahiRabi]Не за что. Девчонка в аптеке пока ничего не заподозрила, так что и тут отличная работа.[/say]")
 
-		saynn("Rahi empties her glass and sighs. She looks at Rabi.")
+		saynn("Рахи осушает стакан и вздыхает. Она смотрит на Раби.")
 
-		saynn("[say=pc]I have a strange feeling that you wanna offer me something.[/say]")
+		saynn("[say=pc]У меня странное предчувствие, что ты хочешь мне что-то предложить.[/say]")
 
-		saynn("[say=rahiRabi]Yeah, I wanna..[/say]")
+		saynn("[say=rahiRabi]Да, хочу...[/say]")
 
-		saynn("Rahi cuts him off.")
+		saynn("Рахи перебивает его.")
 
-		saynn("[say=pc]But I already said that I wanna have nothing to do with your.. business.. whatever it is.[/say]")
+		saynn("[say=pc]Но я уже сказала, что не хочу иметь ничего общего с твоим... бизнесом... чем бы он там ни был.[/say]")
 
-		saynn("Rabi leans closer to his sister.")
+		saynn("Раби наклоняется ближе к сестре.")
 
-		saynn("[say=rahiRabi]I'm not talking about my business here. I wanna offer you a.. solution. A solution to all your problems.[/say]")
+		saynn("[say=rahiRabi]Я не про свои дела сейчас. Я хочу предложить тебе... решение. Решение всех твоих проблем.[/say]")
 
-		saynn("Rahi tilts her head. But she can't deny that she.. might be slightly intrigued.")
+		saynn("Рахи наклоняет голову набок. Но она не может отрицать, что... её это слегка заинтриговало.")
 
-		addButton("Continue", "See what happens next", "rabi_shows_alphacorp_lady")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rabi_shows_alphacorp_lady")
 	if(state == "rabi_shows_alphacorp_lady"):
 		addCharacter("rahiAlphaCorpLady")
 		playAnimation(StageScene.Solo, "sit", {pc="rahiAlphaCorpLady"})
-		saynn("Rabi sneakily points at a certain lady. A lady that is wearing some fancy suit. She is drinking something, alone in her little corner.")
+		saynn("Раби украдкой указывает на одну даму. Даму в шикарном костюме. Она что-то пьет, сидя в одиночестве в своем уголке.")
 
-		saynn("[say=rahiRabi]See her? The one with the white hair. She comes here every day, orders the most expensive drink that they got, idles for about an hour or so and then leaves.[/say]")
+		saynn("[say=rahiRabi]Видишь её? Ту, что с белыми волосами. Она приходит сюда каждый день, заказывает самый дорогой напиток из имеющихся, бездельничает около часа, а потом уходит.[/say]")
 
-		saynn("Rahi tries to figure out if she ever saw her before but no. All the alcohol made remembering faces hard for her.")
+		saynn("Рахи пытается вспомнить, видела ли она её раньше, но нет. Из-за выпитого алкоголя вспоминать лица ей было трудно.")
 
-		saynn("[say=pc]What about her?[/say]")
+		saynn("[say=pc]А она?[/say]")
 
-		saynn("Rabi leans in even closer, almost whispering.")
+		saynn("Раби наклоняется еще ближе, почти шепча.")
 
-		saynn("[say=rahiRabi]I saw what she had in her wallet. Sis, it's at least ten thousand credits.[/say]")
+		saynn("[say=rahiRabi]Я видел, что у неё в кошельке. Сестренка, там как минимум десять тысяч кредитов.[/say]")
 
-		saynn("Rahi raises a brow.")
+		saynn("Рахи приподнимает бровь.")
 
-		saynn("[say=pc]And you want me to pickpocket her?[/say]")
+		saynn("[say=pc]И ты хочешь, чтобы я обчистила её как карманницу?[/say]")
 
-		saynn("Rahi's brother shakes his head.")
+		saynn("Брат Рахи качает головой.")
 
-		saynn("[say=rahiRabi]Nah, she is smart. Keeps the wallet in her inner pocket. Even your kitty paws won't reach there. But. When she leaves, she always cuts through some dark alleyways.[/say]")
+		saynn("[say=rahiRabi]Не, она умная. Кошелек держит во внутреннем кармане. Даже твоими кошачьими лапками туда не добраться. Но... когда она уходит, она всегда срезает через темные переулки.[/say]")
 
-		saynn("[say=pc]You.. asking me to rob her? You're okay with your head? Need a doctor?[/say]")
+		saynn("[say=pc]Ты... просишь меня ограбить её? Ты головой вообще отвечаешь? Тебе врача позвать?[/say]")
 
-		saynn("Rabi sighs and puts his paw on Rahi's back, caressing.")
+		saynn("Раби вздыхает и кладет лапу на спину Рахи, ласково поглаживая её.")
 
-		saynn("[say=rahiRabi]I'm asking you to help me. Sis, think about it. Ten. Thousand. Credits. That's your education sitting right there. Or a better house. Clothes. You won't have to work ever again. You will be able to drink whiskey as much as you want.[/say]")
+		saynn("[say=rahiRabi]Я прошу тебя помочь мне. Сестренка, подумай об этом. Десять. Тысяч. Кредитов. Это же твоё образование, прямо перед тобой. Или дом получше. Одежда. Тебе больше никогда не придется вкалывать. Сможешь пить виски сколько влезет.[/say]")
 
-		saynn("Rahi is.. quiet. She is deliberating in her head. Her eyes.. focused on that wallet in the lady's pocket.")
+		saynn("Рахи... молчит. Она раздумывает про себя. Её глаза... прикованы к кошельку в кармане дамы.")
 
-		saynn("[say=pc]I.. I can't.. That's too.. dangerous.. And.. That's too much.. I don't wanna ruin her life..[/say]")
+		saynn("[say=pc]Я... я не могу... Это слишком... опасно... И... это слишком много... Я не хочу разрушать ей жизнь...[/say]")
 
-		saynn("Rabi almost rubs cheeks with his sister, his paw kneading her back.")
+		saynn("Раби почти трется щекой о щеку сестры, разминая ей спину лапой.")
 
-		saynn("[say=rahiRabi]Sis, really? Look at her. She is from AlphaCorp. You remember AlphaCorp, right? It's logo on your abysmal paychecks? Or meds that you need to fix your ruined health and that you can't afford? That's the sole reason for everything bad that happened to us. She is the reason father has passed..[/say]")
+		saynn("[say=rahiRabi]Сестренка, ну серьезно? Посмотри на неё. Она из АльфаКорп. Ты же помнишь АльфаКорп, да? Их логотип на твоих жалких зарплатных чеках? Или лекарства, которые тебе нужны, чтобы подлатать твое убитое здоровье, но на которые вечно нет денег? Это единственная причина всего того дерьма, что с нами случилось. Из-за них отец ушел в мир иной...[/say]")
 
-		addButton("Continue", "See what happens next", "alphacorplady_leaves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "alphacorplady_leaves")
 	if(state == "alphacorplady_leaves"):
 		playAnimation(StageScene.Solo, "walk", {pc="rahiAlphaCorpLady"})
-		saynn("The AlphaCorp lady has finally finished her drink and prepares to leave. She heads towards a different exit that everyone enters through.")
+		saynn("Дама из АльфаКорп наконец допивает напиток и готовится уходить. Она направляется к другому выходу — тому самому, через который входят все остальные.")
 
-		saynn("All the while Rahi is sitting there.. almost spaced out. Her eyes.. watery. Her paws.. clenching into fists..")
+		saynn("Все это время Рахи сидит неподвижно... словно в прострации. Её глаза... на мокром месте. Её лапы... сжаты в кулаки...")
 
-		saynn("[say=rahiRabi]She is leaving. This is our chance, sis. Please.[/say]")
+		saynn("[say=rahiRabi]Она уходит. Это наш шанс, сестренка. Пожалуйста.[/say]")
 
-		saynn("[say=pc]Yeah.. okay.. Okay. Let's do this. I'm with you.[/say]")
+		saynn("[say=pc]Да.. ладно.. Хорошо. Давай сделаем это. Я с тобой.[/say]")
 
-		saynn("Rabi smiles and grabs his sister's paw before following the AlphaCorp lady.")
+		saynn("Раби улыбается и хватает сестру за лапу, прежде чем последовать за леди из AlphaCorp.")
 
-		addButton("Continue", "See what happens next", "rabi_rahi_discuss_robberry")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rabi_rahi_discuss_robberry")
 	if(state == "rabi_rahi_discuss_robberry"):
 		aimCameraAndSetLocName("rahi_alleystart")
 		playAnimation(StageScene.Duo, ["holdpistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"], {npc="rahiRabi"})
-		saynn("The feline twins exit the bar through its back exit and begin sneakily following the rich girl. Cold air fills Rahi's lungs yet again.")
+		saynn("Кошкообразные близнецы выходят из бара через черный ход и начинают украдкой следовать за богатой девчонкой. Холодный воздух снова наполняет легкие Рахи.")
 
-		saynn("It's.. dark. Much darker than before Rahi entered the bar. And the lack of any light sources in these alleyways doesn't help. Well, it does. It helps Rahi and Rabi since their eyes can adjust even to a dim light from the two moons. Their blue eyes shine.")
+		saynn("Здесь.. темно. Намного темнее, чем было до того, как Рахи вошла в бар. И отсутствие источников света в этих переулках не помогает. Ну, точнее, помогает. Помогает Рахи и Раби, так как их глаза способны привыкнуть даже к тусклому свету двух лун. Их голубые глаза начинают светиться.")
 
-		saynn("Rabi whispers.")
+		saynn("Раби шепчет.")
 
-		saynn("[say=rahiRabi]See that corner? Perfect spot for it. Here, you're gonna hold this while I frisk her.[/say]")
+		saynn("[say=rahiRabi]Видишь тот угол? Идеальное место. На, подержи это, пока я её обыщу.[/say]")
 
-		saynn("He suddenly pulls out a gun that he was holding under his jacket. A high-caliber pistol. Works great even against armored targets. Rahi gasps seeing it.")
+		saynn("Он внезапно выхватывает пистолет, который держал под курткой. Высококалиберный пистолет. Отлично работает даже против бронированных целей. Рахи ахает, увидев его.")
 
-		saynn("[say=pc]You.. you want me to hold her at gunpoint?! I've never shot a gun in my life. And I don't plan on doing that now.[/say]")
+		saynn("[say=pc]Ты.. ты хочешь, чтобы я держала её под прицелом?! Я в жизни не стреляла из пушки. И не планирую начинать сейчас![/say]")
 
-		saynn("Rabi pats Rahi's back again.")
+		saynn("Раби снова похлопывает Рахи по спине.")
 
-		saynn("[say=rahiRabi]Kitty.. You won't have to shoot anyone. It will be quick, you will see. Just aim it at her and I will do everything else. If she tries to escape.. Whatever, you don't have to do anything.[/say]")
+		saynn("[say=rahiRabi]Китти... Тебе не придется ни в кого стрелять. Все будет быстро, вот увидишь. Просто направь его на нее, а остальное сделаю я. Если она попытается сбежать... Впрочем, неважно, тебе даже делать ничего не придется.[/say]")
 
-		saynn("Rahi is deliberating yet again. But then she sees her future just walking away from her through a dark alleyway. It would only be fair..")
+		saynn("Рахи снова пребывает в раздумьях. Но тут она видит, как ее будущее просто уходит от нее прочь по темному переулку. Было бы справедливо...")
 
-		saynn("[say=pc]Okay.. I will do it.[/say]")
+		saynn("[say=pc]Ладно... Я сделаю это.[/say]")
 
-		saynn("Rabi produces two pieces of dark cloth and offers one to Rahi before tying one around his maw. Rahi does the same.")
+		saynn("Раби достает два куска темной ткани, предлагает один Рахи, а затем повязывает второй на свой пасть. Рахи делает то же самое.")
 
-		saynn("[say=rahiRabi]Let's go.[/say]")
+		saynn("[say=rahiRabi]Пошли.[/say]")
 
-		addButton("Continue", "See what happens next", "rabi_rahi_rob_girl")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rabi_rahi_rob_girl")
 	if(state == "rabi_rahi_rob_girl"):
 		aimCameraAndSetLocName("rahi_darkalley")
 		playAnimation(StageScene.Duo, ["holdpistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"], {npc="rahiAlphaCorpLady"})
-		saynn("Rahi catches up with the rich lady right when she reaches the corner. Rabi follows behind. Time for Rahi to say something..")
+		saynn("Рахи настигает богатую даму как раз в тот момент, когда та сворачивает за угол. Раби следует за ней. Пришло время Рахи что-нибудь сказать...")
 
-		saynn("[say=pc]Hey, you. Not a single step more.[/say]")
+		saynn("[say=pc]Эй, ты. Ни шагу больше.[/say]")
 
-		saynn("The AlphaCorp lady gasps and tries to turn around. That's when Rahi finds the hammer on her gun and cocks it with an audible click.")
+		saynn("Дама из АльфаКорп ахает и пытается обернуться. В этот момент Рахи находит курок на ее пистолете и взводит его с отчетливым щелчком.")
 
-		saynn("[say=pc]Don't. Turn. Around. Bitch. Hands where I can see them.[/say]")
+		saynn("[say=pc]Не. Оборачивайся. Сука. Руки так, чтобы я их видела.[/say]")
 
-		saynn("The lady sighs but stops and slightly raises her hands.")
+		saynn("Женщина вздыхает, но останавливается и слегка поднимает руки.")
 
-		saynn("[say=rahiAlphaCorpLady]I can smell a cat from a mile away. What are you gonna do? Rob me? Good luck.[/say]")
+		saynn("[say=rahiAlphaCorpLady]Я кошку за версту чую. И что ты сделаешь? Ограбишь меня? Удачи.[/say]")
 
-		saynn("The twins slowly approach the lady. Rahi puts a gun right up against her skull, letting her feel the metal.")
+		saynn("Близнецы медленно приближаются к даме. Рахи прижимает ствол пистолета прямо к её черепу, давая ей почувствовать холод металла.")
 
-		saynn("[say=rahiAlphaCorpLady]Do you even know who I am? You can still stop and save yourself from the worst prison in the whole galaxy.[/say]")
+		saynn("[say=rahiAlphaCorpLady]Ты хоть понимаешь, кто я такая? Ты всё ещё можешь остановиться и спасти себя от худшей тюрьмы во всей галактике.[/say]")
 
-		saynn("[say=pc]Shut up, AlphaCorp whore. I know exactly who I'm robbing.[/say]")
+		saynn("[say=pc]Заткнись, шлюха АльфаКорпа. Я прекрасно знаю, кого граблю.[/say]")
 
-		saynn("Rabi reaches his paws into the lady's uniform and starts searching for the wallet. Lady sighs more while her breasts are being groped in the process.")
+		saynn("Раби запускает лапы под форму дамы и начинает искать кошелек. Дама лишь тяжелее вздыхает, пока её грудь вовсю ощупывают.")
 
-		saynn("Suddenly.. The urge.. To cough.. Rahi fights it.. as best as she can. But it's so strong.. Little coughs begin escaping from her.")
+		saynn("Внезапно... этот позыв... кашлянуть... Рахи борется с ним... изо всех сил. Но желание слишком сильное... из неё начинают вырываться короткие смешки-кашлячки.")
 
-		saynn("[say=pc]F-Fuck.. Not now..[/say]")
+		saynn("[say=pc]Б-блять... Только не сейчас...[/say]")
 
-		saynn("Rabi successfully fetches the wallet and steps away from the pair. He taps-taps twice on Rahi's shoulder and prepares to make his escape. But she is busy fighting her cough that only gets worse.")
+		saynn("Раби успешно выуживает кошелек и отходит от пары. Он дважды постукивает Рахи по плечу, готовясь к побегу. Но она слишком занята борьбой с кашлем, который становится только сильнее.")
 
-		saynn("[say=rahiAlphaCorpLady]Hm.. You're a shaft miner, aren't you?[/say]")
+		saynn("[say=rahiAlphaCorpLady]Хм... Ты ведь шахтер, верно?[/say]")
 
-		saynn("[say=pc]Shut up! Fuck..[/say]")
+		saynn("[say=pc]Заткнись! Блять...[/say]")
 
-		saynn("Rahi uses her free paw to try and find the pill bottle. It's somewhere in her jacket.. There it is.. She tries to open it. Fuck, the coughing fit makes Rahi drop it, pills go everywhere. And the cough only gets worse.")
+		saynn("Рахи свободной лапой пытается нащупать баночку с таблетками. Она где-то в кармане куртки... Есть!.. Она пытается её открыть. Блядь, из-за приступа кашля Рахи роняет её, и таблетки разлетаются повсюду. А кашель становится только сильнее.")
 
-		saynn("Rabi stands behind Rahi, really concerned. But quiet. He looks at the wallet in his paws.. And starts to slowly step away..")
+		saynn("Раби стоит позади Рахи, он очень обеспокоен. Но молчит. Он смотрит на кошелек в своих лапах... И начинает медленно отступать...")
 
-		saynn("[say=rahiAlphaCorpLady]So unfortunate. I almost feel bad for you.[/say]")
+		saynn("[say=rahiAlphaCorpLady]Какая жалость. Мне почти тебя жаль.[/say]")
 
-		saynn("Are those.. sirens?.. Already?.. The lady must have pressed something. Rabi shakes his head and quickly makes his escape, abandoning his sister.")
+		saynn("Это что... сирены?.. Уже?.. Дама, должно быть, что-то нажала. Раби качает головой и поспешно сваливает, бросая сестру.")
 
-		addButton("Pills", "Rahi gotta grab one and swallow it!", "rahi_fucks_up")
+		addButton("Таблетки", "Рахи нужно схватить одну и проглотить её!", "rahi_fucks_up")
 	if(state == "rahi_fucks_up"):
 		removeCharacter("rahiRabi")
 		playAnimation(StageScene.Duo, "defeat", {npc="rahiAlphaCorpLady", npcAction=["holdpistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"]})
-		saynn("The cough won't stop. Rahi decides to slowly crouch and try to pick one of the pills off the ground. But as soon as she takes her eyes off the lady, she suddenly turns around and disarms Rahi before aiming the gun at her, all in less than a second.")
+		saynn("Кашель не унимается. Рахи решает медленно присесть и попытаться подобрать одну из таблеток с земли. Но стоит ей отвести взгляд от дамы, как та внезапно разворачивается и обезоруживает Рахи, прежде чем нацелить в неё ствол — и всё это меньше чем за секунду.")
 
-		saynn("[say=pc]Agh!..[/say]")
+		saynn("[say=pc]Агх!..[/say]")
 
-		saynn("Kitty yelps, her hand got twisted uncomfortably during all that. She collapses onto the snow and keeps suffering from the coughing fit, the cold air only makes it worse. Lady rips the cloth off of Rahi's maw.")
+		saynn("Кити вскрикивает — во всей этой суматохе её лапу неприятно вывернуло. Она падает на снег и продолжает мучиться от приступа кашля, от которого холодный воздух становится только хуже. Дама срывает тряпку с пасти Рахи.")
 
-		saynn("[say=rahiAlphaCorpLady]Well-well-well. Seems like your.. boyfriend?.. has decided to betray you. Doesn't matter, we will find him. If not.. you will just have to suffer alone.[/say]")
+		saynn("[say=rahiAlphaCorpLady]Ну-ну-ну. Похоже, твой... бойфренд?.. решил тебя предать. Неважно, мы его найдём. А если нет... тебе придётся страдать в одиночестве.[/say]")
 
-		saynn("Rahi finally grabs one of the pills but the lady kicks it out of her paws. Poor kitty keeps coughing her lungs out.")
+		saynn("Рахи наконец хватает одну таблетку, но дама выбивает её из её лап. Бедная кошечка продолжает кашлять так, будто лёгкие сейчас выскочат.")
 
-		saynn("[say=rahiAlphaCorpLady]You made a huge mistake, pussy cat.. You ruined your life.. congrats.. I guess.[/say]")
+		saynn("[say=rahiAlphaCorpLady]Ты совершила огромную ошибку, киска... Ты разрушила свою жизнь... поздравляю... вроде как.[/say]")
 
-		saynn("[say=pc]Gh-h.. kh-h.. My life is already ruined. Because of you. All of you.. Kh..[/say]")
+		saynn("[say=pc]Гх-х... кх-х... Моя жизнь и так уже разрушена. Из-за тебя. Из-за всех вас... Кх...[/say]")
 
-		saynn("The lady laughs, almost hysterically. All the while the sirens get extremely close. The cops must be here.")
+		saynn("Женщина смеется, почти истерично. Тем временем сирены звучат всё ближе и ближе. Копы, должно быть, уже здесь.")
 
-		saynn("[say=rahiAlphaCorpLady]Haha-Ha.. You can't even imagine how much worse your life is soon gonna become. You're gonna wish you could have continued to hit the rocks with your pickaxe all day.[/say]")
+		saynn("[say=rahiAlphaCorpLady]Ха-ха-ха... Ты даже не представляешь, насколько хуже станет твоя жизнь совсем скоро. Ты будешь мечтать о том, чтобы просто весь день долбить киркой камни.[/say]")
 
-		saynn("Rahi looks up at the girl.")
+		saynn("Рахи смотрит на девушку снизу вверх.")
 
-		saynn("[say=pc]Fuck. You.[/say]")
+		saynn("[say=pc]Да пошел ты нахуй.[/say]")
 
-		saynn("Just to get knocked out a second later by the handle of her own gun.")
+		saynn("И тут же получает удар прикладом собственного пистолета.")
 
-		saynn("Darkness follows soon.")
+		saynn("Вскоре наступает темнота.")
 
-		addButton("Darkness..", "See what happens next", "rahi_visits_police_station")
+		addButton("Темнота...", "Смотреть, что будет дальше", "rahi_visits_police_station")
 	if(state == "rahi_visits_police_station"):
 		removeCharacter("rahiAlphaCorpLady")
 		addCharacter("intro_detective")
 		playAnimation(StageScene.Solo, "sit")
 		aimCameraAndSetLocName("rahi_policestation")
-		saynn("Time passes, Rahi begins to slowly come back to her senses. She opens her eyes and sees a small windowless room. A table. Two chairs. A locked door. Ow, her bruised forehead still makes her dizzy. Rahi tries to get up but her paws are chained to the chair with some cuffs. So thoughtful.")
+		saynn("Проходит время, и Рахи начинает медленно приходить в себя. Она открывает глаза и видит маленькую комнату без окон. Стол. Два стула. Запертая дверь. Ох, от ушибов на лбу всё еще кружится голова. Рахи пытается встать, но её лапы прикованы к стулу какими-то наручниками. Как заботливо.")
 
-		saynn("Oh, there is something else. A security camera seems to acknowledge Rahi's state. Can't be long now.")
+		saynn("О, есть ещё кое-что. Камера наблюдения, кажется, фиксирует состояние Рахи. Видимо, долго ждать не придётся.")
 
-		saynn("And indeed, very soon the door opens and a wolf guy steps in. He is wearing your normal office clothes but he also has an empty weapon holster under his armpit.")
+		saynn("И действительно, совсем скоро дверь открывается, и входит парень-волк. На нем обычная офисная одежда, но под мышкой видна пустая кобура.")
 
-		saynn("He closes the door behind him and locks it before taking a seat between Rahi and the only exit. He is holding a folder with some papers.")
+		saynn("Он закрывает за собой дверь, запирает ее и усаживается между Рахи и единственным выходом. В руках у него папка с какими-то бумагами.")
 
-		saynn("[say=intro_detective]Hello, Miss.. give me a sec.. Miss Haj'jar? Right. My name is Jake, I'm a detective. Or, more specifically, I'm from a threat assessment division. Let me know if you need something. Are you thirsty, miss?[/say]")
+		saynn("[say=intro_detective]Здравствуйте, мисс... секунду... Мисс Хадж'джар? Точно. Меня зовут Джейк, я детектив. А если точнее, из отдела оценки угроз. Дайте знать, если вам что-нибудь понадобится. Не хотите ли пить, мисс?[/say]")
 
-		saynn("The guy seems kind. But Rahi is clearly not buying it.")
+		saynn("Парень кажется добрым. Но Рахи явно на это не ведется.")
 
-		saynn("[say=pc]I doubt you're gonna spoon feed me.. Jake the detective.. Just say what you wanna say.[/say]")
+		saynn("[say=pc]Сомневаюсь, что ты будешь нянчиться со мной... детектив Джейк... Просто говори, что хочешь сказать.[/say]")
 
-		saynn("Jake puts the folder on the table and relaxes in his chair.")
+		saynn("Джейк кладет папку на стол и расслабленно откидывается на спинку стула.")
 
-		saynn("[say=intro_detective]Alright. Let's start from the beginning. Miss Haj'jar, can you tell me how your day started?[/say]")
+		saynn("[say=intro_detective]Хорошо. Давайте начнем с самого начала. Мисс Хадж'джар, расскажите, как начался ваш день?[/say]")
 
-		saynn("[say=pc]It started shitty. And only got progressively worse. You know what I did. And you probably don't care why I did it. So why am I still here and not in a cell?[/say]")
+		saynn("[say=pc]Начался он дерьмово. И с каждым часом становилось только хуже. Ты и так знаешь, что я натворила. И тебе, скорее всего, плевать, почему я это сделала. Так почему я всё еще здесь, а не в камере?[/say]")
 
-		saynn("Jake scritches his chin while Rahi tilts her head and puts on her mean eyes.")
+		saynn("Джейк чешет подбородок, пока Рахи наклоняет голову, глядя на него своим самым колючим взглядом.")
 
-		saynn("[say=intro_detective]I do care, miss. Yes, I know the what. But I'm trying to figure out the why. I wanna hear your story. With the most details possible.[/say]")
+		saynn("[say=intro_detective]Мне не плевать, мисс. Да, я знаю «что». Но я пытаюсь понять «почему». Я хочу услышать вашу историю. Со всеми подробностями.[/say]")
 
-		saynn("Rahi tries to reach her ponytail but her paws being cuffed makes it very awkward. Damn.")
+		saynn("Рахи пытается дотянуться до своего хвоста, но из-за наручников на лапах это получается чертовски неудобно. Проклятье.")
 
-		saynn("[say=pc]I'm not telling you shit.[/say]")
+		saynn("[say=pc]Ни хрена я тебе не скажу.[/say]")
 
-		saynn("Jake sighs and leans towards the feline. Rahi recoils back, now rubbing the back of her head against the wall behind her. The metal pin holding her ponytail.. it seems to shift slightly while she does that.")
+		saynn("Джейк вздыхает и наклоняется к кошке. Рахи отстраняется, теперь уже потирая затылок о стену позади себя. Металлическая шпилька, удерживающая её хвост... кажется, она слегка сдвинулась, пока она это делала.")
 
-		saynn("[say=intro_detective]If you help me figure this thing out, I will try to help you too, as much as I can.[/say]")
+		saynn("[say=intro_detective]Если поможешь мне разобраться с этой штукой, я тоже постараюсь помочь тебе, насколько смогу.[/say]")
 
-		saynn("[say=pc]You're on AlphaCorp's payroll, aren't you?[/say]")
+		saynn("[say=pc]Ты ведь на зарплате у «АльфаКорп», верно?[/say]")
 
-		saynn("Jake quickly flips through some of the folder's pages.")
+		saynn("Джейк быстро пролистывает страницы папки.")
 
-		saynn("[say=intro_detective]So you're saying that your.. deeds.. both of them.. had a political reasoning?[/say]")
+		saynn("[say=intro_detective]То есть ты хочешь сказать, что твои... деяния... оба... имели политический подтекст?[/say]")
 
-		saynn("Rahi looks confused.")
+		saynn("Рахи выглядит растерянной.")
 
-		saynn("[say=pc]What do you mean both?[/say]")
+		saynn("[say=pc]В смысле «оба»?[/say]")
 
-		saynn("Jake holds a paper.")
+		saynn("Джейк держит в руке лист бумаги.")
 
-		saynn("[say=intro_detective]Here is a statement from your employer. It says that you have attacked him. There is a picture included. Looks like claw marks.[/say]")
+		saynn("[say=intro_detective]Вот заявление от твоего работодателя. Там сказано, что ты напала на него. К заявлению приложено фото. Похоже на следы от когтей.[/say]")
 
-		saynn("[say=pc]Oh fuck off, the guy scammed me for my credits.[/say]")
+		saynn("[say=pc]Да пошел он нахуй, этот хмырь просто кинул меня на кредиты![/say]")
 
-		saynn("Jake nods and stays silent for a few seconds after Rahi finishes her sentence until she starts to feel uncomfortable.")
+		saynn("Джейк кивает и молчит несколько секунд после того, как Рахи заканчивает фразу, пока она не начинает чувствовать себя неловко.")
 
-		saynn("[say=pc]What? He underpaid me. I did the hours and he cut half of them. The fucker had it coming.[/say]")
+		saynn("[say=pc]Что? Он недоплатил мне. Я отработала часы, а он отрезал половину. Этот ублюдок это заслужил![/say]")
 
-		saynn("[say=intro_detective]Alright. Well, he is still an AlphaCorp representative. You're saying that this had nothing to do with that?[/say]")
+		saynn("[say=intro_detective]Ладно. Ну, он всё равно представитель «АльфаКорп». Ты хочешь сказать, что это вообще никак не связано?[/say]")
 
-		saynn("[say=pc]I don't care who he is, okay? I said enough. Bring me to my cell and get it over with.[/say]")
+		saynn("[say=pc]Да плевать мне, кто он такой, ясно? Я всё сказала. Веди меня в камеру и покончим с этим.[/say]")
 
-		saynn("Jake nods, he sees that Rahi doesn't want to cooperate.")
+		saynn("Джейк кивает, видя, что Рахи не настроена на сотрудничество.")
 
-		saynn("[say=intro_detective]I'm afraid that's impossible, miss Haj'jar. When any AlphaCorp representatives are involved, such cases must go through the intergalactic trial first.[/say]")
+		saynn("[say=intro_detective]Боюсь, это невозможно, мисс Хадж'джар. Когда замешаны представители «АльфаКорп», такие дела должны сначала проходить через межгалактический трибунал.[/say]")
 
-		saynn("[say=pc]The what?[/say]")
+		saynn("[say=pc]Чего-чего?[/say]")
 
-		saynn("[say=intro_detective]And since you've got two charges plus stacked against you.. I'm gonna be honest. I doubt you will ever see the light of day ever again. I doubt that you will see your home planet honestly.[/say]")
+		saynn("[say=intro_detective]И раз уж на тебя наслоилось сразу два обвинения... буду честен. Сомневаюсь, что ты когда-нибудь снова увидишь дневной свет. И, честно говоря, сомневаюсь, что ты вообще когда-нибудь увидишь свою родную планету.[/say]")
 
-		saynn("That sounds.. intimidating.. to say the least. Rahi looks around the small room, rubbing her ponytail against the wall more.")
+		saynn("Это звучит... мягко говоря, пугающе. Рахи оглядывает маленькую комнату, всё сильнее прижимая хвост к стене.")
 
-		addButton("Continue", "See what happens next", "detective_gets_angry")
+		addButton("Продолжить", "Смотреть, что будет дальше", "detective_gets_angry")
 	if(state == "detective_gets_angry"):
-		saynn("[say=intro_detective]But. I'm ready to close my eyes on your first charge. As long as you cooperate with me, just a bit. And by cooperating I mean just answering a few of my questions. If you do that.. who knows, maybe we can scale this case down to a local one.[/say]")
+		saynn("[say=intro_detective]Но... я готова закрыть глаза на твоё первое преступление. При условии, что ты будешь со мной сотрудничать. Совсем чуть-чуть. И под сотрудничеством я имею в виду просто ответы на несколько моих вопросов. Если так и будет... кто знает, может, нам удастся понизить статус дела до местного.[/say]")
 
-		saynn("Rahi blinks a lot. Her ears droop, her tail wrapping around the leg of the chair.")
+		saynn("Рахи часто моргает. Её уши поникли, а хвост обвил ножку стула.")
 
-		saynn("[say=pc]Well.. shoot..[/say]")
+		saynn("[say=pc]Ну... чёрт возьми...[/say]")
 
-		saynn("Jake moves his chair closer to Rahi.")
+		saynn("Джейк пододвигает свой стул ближе к Рахи.")
 
-		saynn("[say=intro_detective]The woman you stole the credits from said that there were two robbers. And that the credits are with the second one. Who are they?[/say]")
+		saynn("[say=intro_detective]Женщина, у которой ты украла кредиты, сказала, что грабителей было двое. И что кредиты у второго. Кто они?[/say]")
 
-		saynn("Oh-h. That's.. asking for too much.")
+		saynn("О-о-ох. Это... слишком много вопросов.")
 
-		saynn("[say=pc]I'm not gonna tell you that..[/say]")
+		saynn("[say=pc]Я тебе этого не скажу...[/say]")
 
-		saynn("Jake stares Rahi into the eyes.")
+		saynn("Джейк пристально смотрит Рахи прямо в глаза.")
 
-		saynn("[say=intro_detective]It was your brother, wasn't it? It was Rabi Haj'jar? C'mon, you can tell me.[/say]")
+		saynn("[say=intro_detective]Это был твой брат, верно? Раби Хадж'яр? Ну же, ты можешь мне сказать.[/say]")
 
-		saynn("As Jake tries to place his wolf palm on Rahi's leg, she shakes it off.")
+		saynn("Когда Джейк пытается положить свою волчью ладонь на ногу Рахи, она стряхивает её.")
 
-		saynn("[say=pc]It wasn't him. I'm not gonna tell you who it was, okay?![/say]")
+		saynn("[say=pc]Это был не он. И я не собираюсь говорить тебе, кто это был, ясно?![/say]")
 
-		saynn("[say=intro_detective]Why are you protecting him? The guy has betrayed you.[/say]")
+		saynn("[say=intro_detective]Почему ты его защищаешь? Этот парень тебя предал.[/say]")
 
-		saynn("[say=pc]Fuck you, it wasn't him![/say]")
+		saynn("[say=pc]Да пошёл ты, это был не он![/say]")
 
-		saynn("Jake growls and grabs Rahi by the chin, forcing her to look him into the eyes.")
+		saynn("Джейк рычит и хватает Рахи за подбородок, заставляя её смотреть ему прямо в глаза.")
 
-		saynn("[say=intro_detective]You don't understand. If we find the credits, you both might just get away from this with nothing but a slap on the wrist. But if you don't wanna admit it.. you're gonna suffer for both.[/say]")
+		saynn("[say=intro_detective]Ты не понимаешь. Если мы найдём кредиты, вам обоим может всё сойти с рук — отделаетесь лишь лёгким испугом. Но если ты не хочешь признаться... то страдать будете оба.[/say]")
 
-		saynn("Rahi bares her fangs and tries to shake Jake's hand off.")
+		saynn("Рахи скалит клыки и пытается сбросить руку Джейка.")
 
-		saynn("[say=intro_detective]Attempted armed robbery.. Violence against an AlphaCorp representative.. Carry of an unregistered firearm.. Theft of medical drugs, pickpocketing.. All of these are gonna stick, Rahi.[/say]")
+		saynn("[say=intro_detective]Покушение на вооружённое ограбление... Насилие в отношении представителя «АльфаКорп»... Ношение незарегистрированного огнестрела... Кража медикаментов, карманная кража... Всё это приклеится к тебе намертво, Рахи.[/say]")
 
-		saynn("What? How did he.. Rahi looks more confused than ever.")
+		saynn("Что? Как он... Рахи выглядит растеряннее, чем когда-либо.")
 
-		saynn("[say=intro_detective]We followed your trail, Rahi. You had a hell of an evening, didn't you? And since you decided not to cooperate.. I see no other choice.. But to make an example out of you.[/say]")
+		saynn("[say=intro_detective]Мы шли по твоему следу, Рахи. Ну и вечерчик у тебя выдался, а? И раз уж ты решила не сотрудничать... у меня нет другого выбора... кроме как сделать из тебя назидание.[/say]")
 
-		saynn("Jake gets up and heads for the exit door.")
+		saynn("Джейк встает и направляется к выходу.")
 
-		saynn("[say=intro_detective]I will return in a bit.[/say]")
+		saynn("[say=intro_detective]Скоро вернусь.[/say]")
 
-		saynn("He leaves, leaving Rahi to panic.")
+		saynn("Он уходит, оставляя Рахи в панике.")
 
-		addButton("Cuffs!", "Try to get them off", "rahi_tries_to_escape")
+		addButton("Наручники!", "Попытаться снять их", "rahi_tries_to_escape")
 	if(state == "rahi_tries_to_escape"):
 		removeCharacter("intro_detective")
-		saynn("Rahi didn't like any of that. She must escape now while she still can. She starts actively rubbing her head against the wall behind her. It might seem useless but somehow she manages to make the metal pin shift in her ponytail. The only thing that she can do while her paws are cuffed to the chair.")
+		saynn("Рахи это совсем не понравилось. Ей нужно сбежать сейчас, пока есть шанс. Она начинает активно тереться головой о стену позади себя. Это кажется бесполезным, но ей каким-то образом удается сдвинуть металлическую шпильку в своем хвосте. Это единственное, что она может сделать, пока её лапы прикованы наручниками к стулу.")
 
-		saynn("[say=pc]Fuck fuck fuck..[/say]")
+		saynn("[say=pc]Блядь, блядь, блядь...[/say]")
 
-		saynn("Rahi is desperate, she eagerly squirms, trying to get the pin out of her hair any way possible.. until it finally happens.")
+		saynn("Рахи в отчаянии, она нетерпеливо извивается, пытаясь любым способом вытащить шпильку из волос... пока это наконец не удается.")
 
-		saynn("The metal pin starts falling, almost in slow motion.. Rahi opens her paws and tries to catch it.. but fails.. the pin bounces off her cuffs and starts falling further. The panic is real, there is no way Rahi can pick it up if it reaches the floor..")
+		saynn("Металлическая шпилька начинает падать, почти в замедленной съемке... Рахи раскрывает лапы, пытаясь поймать её... но терпит неудачу... шпилька отскакивает от наручников и летит дальше. Паника становится нереальной: если шпилька упадет на пол, Рахи точно не сможет её поднять...")
 
-		saynn("Rahi's tail! There is only one chance to do this. Rahi blindly flicks her tail up.. and manages to bat it back into her paws! There can't be much time left, Rahi bends the pin into a lockpick before blindly finding the keyhole and trying to unlock them.")
+		saynn("Хвост Рахи! У неё есть только один шанс. Рахи вслепую взмахивает хвостом... и умудряется подбросить шпильку обратно в лапы! Времени почти не осталось; Рахи сгибает шпильку, превращая её в отмычку, а затем на ощупь находит замочную скважину и пытается отпереть наручники.")
 
-		saynn("Her ears already pick up on the footsteps getting closer. Her paws keep shaking the lockpick around.. until there is a satisfying click.")
+		saynn("Её уши уже улавливают приближающиеся шаги. Лапки продолжают трясти отмычку... пока не раздается приятный щелчок.")
 
-		saynn("Jake opens the door again.. now is the time to slip past him.. who cares what happens after..")
+		saynn("Джейк снова открывает дверь... сейчас самое время проскользнуть мимо него... и плевать, что будет потом...")
 
-		addButton("Slip past", "Try to slip past Jake", "try_to_slip_past_jake")
+		addButton("Проскользнуть мимо", "Попытаться проскользнуть мимо Джейка", "try_to_slip_past_jake")
 	if(state == "try_to_slip_past_jake"):
 		addCharacter("intro_detective")
 		playAnimation(StageScene.Solo, "defeat")
-		saynn("[say=intro_detective]Alright, the trial has..[/say]")
+		saynn("[say=intro_detective]Ладно, испытание...[/say]")
 
-		saynn("Who cares about his words.. As soon as Jake enters the room, Rahi jumps off her chair before leaping onto the table and jumping off it in one elegant motion, aiming to fit between Jake's head and the doorway.")
+		saynn("Да какая разница, что он там говорит... Как только Джейк входит в комнату, Рахи спрыгивает со стула, запрыгивает на стол и одним элегантным движением отталкивается от него, стараясь проскочить между головой Джейка и дверным проемом.")
 
-		saynn("But, sadly, his reaction was perfect. Jake catches the kitty before she can jump over him and throws her back onto the table, breaking it in half. Ow. Kitty's back didn't like that. She tries to recover but Jake pins her to the broken wooden fragments and growls into her face.")
+		saynn("Но, к сожалению, его реакция оказалась идеальной. Джейк ловит кошечку прежде, чем она успевает перепрыгнуть через него, и швыряет её обратно на стол, отчего тот разламывается пополам. Ой. Заду Рахи это явно не понравилось. Она пытается прийти в себя, но Джейк прижимает её к обломкам дерева и рычит ей прямо в морду.")
 
-		saynn("[say=intro_detective]I'm so sick of your bullshit.[/say]")
+		saynn("[say=intro_detective]Как же меня достало твоё пиздёж![/say]")
 
-		saynn("He tries to cuff Rahi's paws again but she keeps fighting back, leaving countless scratch marks on his hands.")
+		saynn("Он снова пытается сковать лапки Рахи, но она продолжает сопротивляться, оставляя на его руках бесчисленные царапины.")
 
-		saynn("[say=pc]Let me go! I'm not going away for life![/say]")
+		saynn("[say=pc]Отпусти меня! Я не сяду на пожизненное![/say]")
 
-		saynn("[say=intro_detective]Gr-r.. Hah. You're not going.. you're flying away on a rocket, Rahi. To a space prison that no one even knows about.[/say]")
+		saynn("[say=intro_detective]Ррр... Ха. Ты не просто уезжаешь... ты улетаешь на ракете, Рахи. В такую космическую тюрьму, о которой никто даже не слышал.[/say]")
 
-		saynn("Rahi's eyes go wide.")
+		saynn("Глаза Рахи расширяются от ужаса.")
 
-		saynn("[say=intro_detective]A prison made specifically for scum like you. But first, I'm gonna fix your behavior.[/say]")
+		saynn("[say=intro_detective]Тюрьма, созданная специально для такой мразей, как ты. Но сначала я исправлю твоё поведение.[/say]")
 
-		saynn("Suddenly Jake frees one of his hands and pulls out an.. injector.. of sorts.. Inside it, some kind of.. red.. glowing.. drug. Rahi sees it and resists harder, trying to kick the guy off. But he uses his weight to crush kitty's resistance before forcibly stabbing her neck with the thing.")
+		saynn("Внезапно Джейк освобождает одну руку и достает... своего рода... инъектор... Внутри него — какое-то... красное... светящееся... вещество. Заметив это, Рахи начинает сопротивляться еще яростнее, пытаясь сбросить парня с себя. Но он наваливается всем весом, подавляя сопротивление киски, и силой вонзает шприц ей в шею.")
 
-		saynn("[say=pc]Fuck!..[/say]")
+		saynn("[say=pc]Блять!..[/say]")
 
-		saynn("[say=intro_detective]Have fun.[/say]")
+		saynn("[say=intro_detective]Развлекайся.[/say]")
 
-		saynn("Rahi gets weaker and weaker.. She gets cuffed to the chair again.. This time nothing can save her.")
+		saynn("Рахи слабеет всё больше и больше... Её снова приковывают к стулу... На этот раз спасти её уже ничего не сможет.")
 
-		saynn("Suddenly, darkness. Second time this day.")
+		saynn("Внезапно — темнота. Второй раз за сегодня.")
 
-		addButton("Darkness", "Embrace it", "rahi_goes_to_heaven")
+		addButton("Темнота", "Прими её", "rahi_goes_to_heaven")
 	if(state == "rahi_goes_to_heaven"):
 		removeCharacter("intro_detective")
 		addCharacter("rahiFather")
 		playAnimation(StageScene.Duo, "stand", {npc="rahiFather"})
-		saynn("After who knows how long, Rahi wakes up.. As she opens her eyes, the darkness gets replaced by.. a blinding light.. a whole room that's full of it.")
+		saynn("Спустя бог знает сколько времени, Рахи приходит в себя... Когда она открывает глаза, темноту сменяет... ослепительный свет... целая комната, залитая им.")
 
-		saynn("Rahi gets up and looks around. The bright white room has no beginning and no end. There is nothing here.. expect.. another figure.")
+		saynn("Рахи встает и оглядывается. У этой ослепительно белой комнаты нет ни начала, ни конца. Здесь ничего нет... кроме... еще одной фигуры.")
 
-		saynn("[say=pc]Am I.. dead? Is this what heaven looks like..[/say]")
+		saynn("[say=pc]Я что... умерла? Неужели это и есть рай?..[/say]")
 
-		saynn("Rahi starts to approach the figure that is facing away from her. Wait.. that tail.. that.. posture.. old clothes.. brown fur..")
+		saynn("Рахи начинает приближаться к фигуре, стоящей к ней спиной. Погоди... этот хвост... эта... осанка... старая одежда... коричневый мех...")
 
-		saynn("[say=pc]F-f.. f-father?.. Is that you?[/say]")
+		saynn("[say=pc]П-па... папа?.. Это ты?[/say]")
 
-		saynn("There is no way that's him, that's impossible.. But Rahi so wants to believe.. She starts sprinting towards the figure. He turns around. Yes, there is no denying it, that's.. Rahi's father.")
+		saynn("Это не может быть он, это невозможно... Но Рахи так хочет верить... Она срывается на бег навстречу фигуре. Тот оборачивается. Да, отрицать бесполезно — это... отец Рахи.")
 
-		saynn("Rahi tackle-hugs her father and starts nuzzling his cheek, still not believing that this is really happening.")
+		saynn("Рахи налетает на отца с объятиями и начинает уткнуться носом в его щеку, всё еще не веря, что всё это происходит наяву.")
 
-		saynn("[say=pc]You can't imagine how much I missed you, dad.. After you passed my life just wasn't the same anymore.. Where are we.. How are you alive.. I don't care.. Please let this moment last a little longer, please..[/say]")
+		saynn("[say=pc]Ты даже не представляешь, как сильно я скучала по тебе, пап... После того как ты ушел, моя жизнь стала совсем не той... Где мы?.. Как ты жив?.. Да какая разница... Пожалуйста, пусть этот момент длится подольше, ну пожалуйста...[/say]")
 
-		saynn("Rahi hugs her father as tight as she can, lonely tears begin streaming down her cheeks. All the while the old cat raises his paws and puts them on Rahi's shoulders..")
+		saynn("Рахи обнимает отца так крепко, как только может, и одинокие слезы начинают катиться по её щекам. Тем временем старый кот поднимает лапы и кладет их ей на плечи...")
 
-		addButton("Continue", "See what happens next", "samir_breaks_rahi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "samir_breaks_rahi")
 	if(state == "samir_breaks_rahi"):
 		playAnimation(StageScene.Duo, "defeat", {npc="rahiFather", npcAction="shove"})
-		saynn("Suddenly Rahi's father shoves her away, making her collapse, leaving kitty more confused than anything.")
+		saynn("Внезапно отец Рахи отталкивает её, отчего она падает на пол, пребывая в полном замешательстве.")
 
-		saynn("[say=pc]Ow.. Why, d-dad?.. Say something, dad..[/say]")
+		saynn("[say=pc]Ой... Почему, п-папа?.. Скажи хоть что-нибудь, пап!..[/say]")
 
-		saynn("[say=rahiFather]My girl.. How.. how could you..[/say]")
+		saynn("[say=rahiFather]Девочка моя.. Как.. как ты могла..[/say]")
 
-		saynn("He furrows his brows while Rahi is desperate to hug him again. But the guy seems.. quite angry..")
+		saynn("Он хмурится, пока Рахи отчаянно пытается снова обнять его. Но парень кажется.. весьма разгневанным..")
 
-		saynn("[say=rahiFather]How could you do that to me?[/say]")
+		saynn("[say=rahiFather]Как ты могла так со мной поступить?[/say]")
 
-		saynn("[say=pc]Do.. what?.. Dad..[/say]")
+		saynn("[say=pc]Сделать.. что?.. Папа..[/say]")
 
-		saynn("[say=rahiFather]I worked so hard to give you all a future and this is how you act after I'm gone? Injuring, stealing, breaking, robbing. Why would you taint the legacy of the Haj'jar clan like that? Why?![/say]")
+		saynn("[say=rahiFather]Я так вкалывал, чтобы обеспечить вам будущее, и вот как ты ведешь себя после моего ухода? Раны, кражи, разрушения, грабежи. Зачем ты так очернила наследие клана Хадж'яр? Зачем?![/say]")
 
-		saynn("Rahi suddenly breaks down in tears. All the while her dad only gets more annoyed hearing her sobbing.")
+		saynn("Рахи внезапно разрыждается в слезах. И всё это время её отец лишь сильнее раздражается, слыша её рыдания.")
 
-		saynn("[say=pc]I'm sorry!.. I had no choice.. I tried, believe me, dad, I tried.. But..[/say]")
+		saynn("[say=pc]Прости!.. У меня не было выбора.. Я пыталась, поверь мне, папа, я пыталась.. Но..[/say]")
 
-		saynn("He huffs and suddenly slaps Rahi's cheek.")
+		saynn("Он фыркает и внезапно дает Рахи звонкую пощечину.")
 
-		saynn("[say=rahiFather]Listen to yourself. Nothing but pathetic excuses. Only hard work gets you somewhere. What you did.. that's inexcusable. Awful. I'm starting to think.. that you're not my daughter.[/say]")
+		saynn("[say=rahiFather]Послушай себя. Одни лишь жалкие оправдания. Только упорный труд чего-то стоит. То, что ты натворила.. это непростительно. Ужасно. Я начинаю думать.. что ты вовсе не моя дочь.[/say]")
 
-		saynn("Rahi rubs her red cheek and can't stop crying. The last words.. shatter something inside her.. inside you..")
+		saynn("Рахи потирает покрасневшую щеку и не может перестать плакать. Последние слова.. разбивают что-то внутри неё.. внутри тебя..")
 
-		saynn("[say=pc]Wha.. What do you mean.. father.. dad.. please.. d-don't say that..[/say]")
+		saynn("[say=pc]Чт.. Что ты имеешь в виду.. отец.. папа.. пожалуйста.. н-не говори так..[/say]")
 
-		saynn("Samir crosses his arms, his eyes.. show hatred.")
+		saynn("Самир скрещивает руки на груди, в его глазах.. читается ненависть.")
 
-		saynn("[say=rahiFather]You heard me. You don't deserve the name Haj'jar. I don't want to have such a daughter. You're not the Rahi that I knew and loved. You're.. someone else.. Someone I don't want to know.[/say]")
+		saynn("[say=rahiFather]Ты слышала меня. Ты не заслуживаешь имени Хадж'джар. Я не хочу иметь такую дочь. Ты не та Рахи, которую я знал и любил. Ты.. кто-то другой.. Кто-то, кого я не хочу знать.[/say]")
 
-		saynn("[say=pc]D-d.. a.. fathe.. wh.. n-n.. n-no.. ple-..[/say]")
+		saynn("[say=pc]О-о.. те.. па.. па.. н.. н-не.. по-..[/say]")
 
-		saynn("Your father's words.. they echo around your mind.. corrupting your every thought..")
+		saynn("Слова твоего отца.. они эхом отдаются в твоем сознании.. отравляя каждую твою мысль..")
 
-		saynn("[say=rahiFather]What? What do you have to say now? If it's more of your pathetic excuses then just keep them to yourself, couldn't care less anymore. You're not my daughter.[/say]")
+		saynn("[say=rahiFather]Что? И что ты теперь скажешь? Если это очередные твои жалкие оправдания, то оставь их при себе, мне уже плевать. Ты не моя дочь.[/say]")
 
-		saynn("Samir turns around and starts walking away from you. No! You must stop him! You dash forward and grab onto his leg, begging.")
+		saynn("Самир разворачивается и начинает уходить от тебя. Нет! Ты должна остановить его! Ты бросаешься вперед и вцепляешься ему в ногу, умоляя.")
 
-		saynn("[say=pc]P-please!.. I-I'm sorry!.. F-forgive me.. ..your R-Rahi is so sorry..[/say]")
+		saynn("[say=pc]П-пожалуйста!.. Я-я виновата!.. Про-.. прости меня.. ..твоя Р-Рахи так сильно раскаивается..[/say]")
 
-		saynn("Samir just pushes you away. His voice.. couldn't be more strict.. and direct.")
+		saynn("Самир просто отталкивает тебя. Его голос.. не может быть более суровым.. и прямолинейным..")
 
-		saynn("[say=rahiFather]I gave the name Rahi to my daughter, not you. You're not Rahi.[/say]")
+		saynn("[say=rahiFather]Имя Рахи я дал своей дочери, а не тебе. Ты — не Рахи.[/say]")
 
-		saynn("He just keeps walking away while you are breaking down further.. The bright white room suddenly begins to.. get darker and darker.. the further your dad gets from you.")
+		saynn("Он просто продолжает уходить, пока ты окончательно ломаешься.. Ярко-белая комната внезапно начинает.. темнеть и темнеть.. чем дальше отец уходит от тебя.")
 
-		saynn("[say=pc]I.. I'm sorry..[/say]")
+		saynn("[say=pc]П.. простите меня..[/say]")
 
-		saynn("You stay on your knees.. just watching your dad walking away.. But is he even your dad anymore.. You're not sure.. Deep inside you understand now.. There are no more tears to shed.. Your face.. loses any emotion..")
+		saynn("Ты остаешься на коленях.. просто глядя вслед уходящему отцу.. Но отец ли он тебе теперь?.. Ты не уверена.. Глубоко внутри ты понимаешь: слез больше не осталось.. Твое лицо.. теряет всякие эмоции..")
 
-		saynn("[say=pc]I'm not Rahi.. I'm not.. I don't deserve.. I'm not.. me.. t-there is no me.. T-There is o-only..[/say]")
+		saynn("[say=pc]Я не Рахи.. не.. я не заслужила.. Я не.. я.. м-меня больше нет.. П-прекрасного нет, есть т-только..[/say]")
 
-		saynn("The room is about to become pitch-dark. You only manage to add..")
+		saynn("Комната вот-вот погрузится в кромешную тьму. Тебе удается лишь выдавить..")
 
-		saynn("[say=pc]She..[/say]")
+		saynn("[say=pc]Она..[/say]")
 
-		saynn("Before losing your consciousness and hitting the floor.")
+		saynn("Прежде чем ты теряешь сознание и валишься на пол.")
 
-		saynn("Thud.")
+		saynn("Бум.")
 
-		addButton("Continue", "Rough stuff..", "story_ends")
+		addButton("Продолжить", "Жесткая штука..", "story_ends")
 	if(state == "story_ends"):
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
 		removeCharacter("rahiFather")
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("That's where Rahi.. kitty.. stops telling you, the real you, her story.")
+		saynn("Вот здесь Рахи.. кошечка.. перестает рассказывать тебе, твоей истинной сути, свою историю.")
 
-		saynn("[say=rahi]Then they just sent her here..[/say]")
+		saynn("[say=rahi]А потом её просто отправили сюда..[/say]")
 
-		saynn("Your kitty sheds a tear.. but then quickly swipes it away and looks at you.")
+		saynn("Твоя киска роняет слезу.. но тут же смахивает её и смотрит на тебя.")
 
-		saynn("[say=rahi]What do you think, {rahiMaster}?..[/say]")
+		saynn("[say=rahi]Что думаешь, {rahiMaster}?..[/say]")
 
-		saynn("You can.. try to be kind and explain that it's all because of the drug.. Or you can tell her that none of it matters because you're gonna give the kitty a new purpose in life.")
+		saynn("Ты можешь.. попытаться быть добрым и объяснить, что всё это из-за наркотика.. Или можешь сказать ей, что всё это не важно, ведь ты дашь этой киске новую цель в жизни.")
 
-		addButton("Be kind", "Try to explain that it was the drug who made Rahi the way she is", "say_be_kind")
-		addButton("Doesn't matter", "Whatever happened in the past doesn't matter anymore", "say_doesnt_matter")
+		addButton("Быть добрым", "Попытаться объяснить, что Рахи стала такой из-за наркотика", "say_be_kind")
+		addButton("Неважно", "То, что было в прошлом, больше не имеет значения", "say_doesnt_matter")
 	if(state == "say_be_kind"):
 		setFlag("RahiModule.rahiMile4WasKind", true)
 		
-		saynn("You smooch your kitty on the cheek.")
+		saynn("Ты нежно целуешь свою киску в щеку.")
 
-		saynn("[say=pc]Kitty.. Whatever that drug was, it's at fault. It made you hallucinate your father into existence. It wasn't actually him..[/say]")
+		saynn("[say=pc]Киска.. Что бы это ни был за наркотик, виноват он. Он заставил тебя галлюцинировать, создав образ отца. На самом деле это был не он..[/say]")
 
-		saynn("Rahi lowers her chin.")
+		saynn("Рахи опускает подбородок.")
 
-		saynn("[say=rahi]But.. it was her father.. That's exactly what her father would say.. If he would be alive..[/say]")
+		saynn("[say=rahi]Но... это был её отец... Именно так сказал бы её отец... Если бы он был жив...[/say]")
 
-		saynn("You hug your kitty tightly.")
+		saynn("Ты крепко прижимаешь к себе свою кошечку.")
 
-		saynn("[say=pc]No. If he was alive, he wouldn't say that. Trust me. This drug.. whatever it was.. it spawned a bad version of him.. in your mind. Do you understand that? Please, kitty.[/say]")
+		saynn("[say=pc]Нет. Будь он жив, он бы так не сказал. Поверь мне. Этот наркотик... что бы это ни было... он породил в твоём сознании лишь искажённую, плохую версию его образа. Ты понимаешь это? Пожалуйста, кошечка.[/say]")
 
-		saynn("She looks you in the eyes. More tears begin streaming down her cheeks.. many more. Then she looks away and tilts her head again.")
+		saynn("Она смотрит тебе прямо в глаза. По её щекам начинают катиться слёзы... всё новые и новые. Затем она отводит взгляд и снова наклоняет голову.")
 
-		saynn("[say=rahi]Maybe you're right.. maybe not..[/say]")
+		saynn("[say=rahi]Может, ты и прав... а может, и нет...[/say]")
 
-		saynn("Rahi sighs.")
+		saynn("Рахи вздыхает.")
 
-		saynn("[say=rahi]She needs to think about it.. Thank you.. For listening..[/say]")
+		saynn("[say=rahi]Ей нужно всё обдумать... Спасибо... Что выслушал...[/say]")
 
-		saynn("[say=pc]You're very welcome, my kitty.[/say]")
+		saynn("[say=pc]Всегда пожалуйста, моя кошечка.[/say]")
 
-		saynn("You grab your kitty and lie in bed together with her, just cuddling for some time.")
+		saynn("Ты берешь свою кошечку на руки, и вы вместе ложитесь в постель, просто обнимая друг друга какое-то время.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "say_doesnt_matter"):
 		setFlag("RahiModule.rahiMile4WasKind", false)
 		
-		saynn("You scritch your kitty behind the ears.")
+		saynn("Ты чешешь свою кошечку за ушком.")
 
-		saynn("[say=pc]That drug.. whatever it is.. made you like this, kitty. But that doesn't matter. Look at me.[/say]")
+		saynn("[say=pc]Этот наркотик... что бы это ни было... сделал тебя такой, кошечка. Но это не важно. Посмотри на меня.[/say]")
 
-		saynn("Kitty tilts her head down.. before turning towards you.")
+		saynn("Кошечка склоняет голову.. а затем поворачивается к тебе.")
 
-		saynn("[say=pc]That's past. It's not worth crying over the choices you made. Because you would have made them anyway.[/say]")
+		saynn("[say=pc]Это в прошлом. Не стоит плакать о сделанном выборе. Потому что ты бы всё равно поступила именно так.[/say]")
 
-		saynn("[say=rahi]But.. still..[/say]")
+		saynn("[say=rahi]Но.. всё же..[/say]")
 
-		saynn("You hug your kitty tighter.")
+		saynn("Ты крепче прижимаешь кошечку к себе.")
 
-		saynn("[say=pc]I know, it's hard to just forget the past. You tried many times. But instead of trying to fix it, you should look into the future. You like being my kitty, don't you?[/say]")
+		saynn("[say=pc]Я знаю, трудно просто взять и забыть прошлое. Ты пыталась много раз. Но вместо того чтобы пытаться всё исправить, тебе стоит заглянуть в будущее. Тебе ведь нравится быть моей кошечкой, правда?[/say]")
 
-		saynn("She nods subtly. You scritch her behind the ears more until she starts to purr.")
+		saynn("Она едва заметно кивает. Ты продолжаешь чесать её за ушком, пока она не начинает мурлыкать.")
 
-		saynn("[say=pc]One day you will wake up. You will go about your day as normal, doing a task from me before getting rewarded or punished. Then you will idle some more and go prepare for your sleep. And before closing your eyes, you will suddenly realize. You didn't think about it once. You will realize that you can.. in fact.. forget.[/say]")
+		saynn("[say=pc]Однажды ты проснёшься. Проведёшь свой день как обычно: выполнишь моё задание, получишь награду или наказание. Потом немного поблуждаешь в праздности и пойдёшь готовиться ко сну. И прежде чем закрыть глаза, ты вдруг осознаешь. Ты ни разу за весь день о нём не вспомнила. Ты поймёшь, что можешь.. на самом деле.. забыть.[/say]")
 
-		saynn("Kitty looks at you and.. smiles..")
+		saynn("Кошечка смотрит на тебя и.. улыбается..")
 
-		saynn("[say=rahi]Thank you.. for everything..[/say]")
+		saynn("[say=rahi]Спасибо.. за всё..[/say]")
 
-		saynn("[say=pc]You're very welcome, my kitty.[/say]")
+		saynn("[say=pc]Всегда пожалуйста, моя кошечка.[/say]")
 
-		saynn("You grab your kitty and lie in bed together with her, just cuddling for some time.")
+		saynn("Ты берешь свою кошечку на руки, и вы вместе ложитесь в постель, просто обнимая друг друга какое-то время.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

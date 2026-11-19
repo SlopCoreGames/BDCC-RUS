@@ -9,148 +9,148 @@ func _run():
 		playAnimation(StageScene.Duo, "kneel", {npc="maleguard_canine", npcAction="stand"})
 
 	if(state == ""):
-		saynn("A few guards crowd around you, each one holding a weapon or a shock remote. You look at all the armor they are equipped with and realize that you won’t even drop a single one before your neck gets fried. Oops, seems like it’s too late to stop exposing yourself, even after covering yourself the guards don’t back off.")
+		saynn("Несколько охранников обступают тебя, каждый с оружием или электрошокером в руках. Глядя на их снаряжение, ты понимаешь, что не успеешь скинуть даже одну вещь, прежде чем тебе поджарят шею. Ой, похоже, останавливаться уже поздно: даже когда ты пытаешься прикрыться, охранники не отступают.")
 
-		saynn("[say=pc]What do you want?..[/say]")
+		saynn("[say=pc]Чего вам?..[/say]")
 
-		saynn("[say=maleguard_canine]Dunno. You were the one whoring yourself out.[/say]")
+		saynn("[say=maleguard_canine]Да хрен знает. Ты сама тут развлекаешься, как дешевая шлюха.[/say]")
 
-		saynn("[say=pc]So?[/say]")
+		saynn("[say=pc]Ну?[/say]")
 
-		saynn("The guard behind you uses his advantageous position and suddenly grabs your arms and wrenches them behind your back before slapping some cuffs onto them. The one that was talking reaches his paw out to caress your cheek.")
+		saynn("Охранник позади тебя пользуется выгодным положением: он резко хватает тебя за руки и выворачивает их за спину, прежде чем защелкнуть наручники. Тот, что говорил, протягивает свою лапу, чтобы ласково погладить тебя по щеке.")
 
-		saynn("[say=maleguard_canine]So you will suck me off.[/say]")
+		saynn("[say=maleguard_canine]Значит, будешь сосать мне.[/say]")
 
-		saynn("[say=pc]Ow.. And what if I don’t?[/say]")
+		saynn("[say=pc]Ай!.. А если не захочу?[/say]")
 
-		saynn("[say=maleguard_canine]Then the stocks will be a good place to think about that.[/say]")
+		saynn("[say=maleguard_canine]Тогда в колодках тебе будет самое место, чтобы об этом подумать.[/say]")
 
-		saynn("Seems like you don’t have much of a choice.")
+		saynn("Похоже, выбора у тебя немного.")
 
-		addButton("Suck him off", "Better than being put into stocks", "suck_him_off")
-		addButton("Stocks", "Tell them to fuck off", "stocks")
+		addButton("Отсосать ему", "Это лучше, чем торчать в колодках", "suck_him_off")
+		addButton("Колодки", "Сказать им, чтобы шли нахуй", "stocks")
 
 	if(state == "stocks"):
-		saynn("[say=pc]I’d rather be in stocks.[/say]")
+		saynn("[say=pc]Лучше бы меня в колодки засадили.[/say]")
 
-		saynn("The guard hums and wiggles his head slightly, unsure if he agrees or disagrees with such logic. He then just clips a leash to your collar and tugs you off. You grumble but follow behind, each time you try to resist the collar digs into your neck and chokes you.")
+		saynn("Охранник что-то напевает под нос и слегка покачивает головой, не то соглашаясь, не то нет. Затем он просто пристегивает поводок к твоему ошейнику и тянет за собой. Ты ворчишь, но идешь следом; каждый раз, когда ты пытаешься сопротивляться, ошейник впивается в шею и душит тебя.")
 
-		addButton("Follow", "See where they will bring you", "follow")
+		addButton("Следовать", "Посмотреть, куда они тебя приведут", "follow")
 
 	if(state == "follow"):
 		# (runs the parade scene)
 
-		saynn("The guards bring you to the main platform where all the inmates usually hang around. There are also a few sets of stocks, quite convenient to show off punished inmates while also letting others have fun with them.")
+		saynn("Охранники ведут тебя к главной платформе, где обычно тусуются все заключенные. Там же стоят несколько комплектов колодок — весьма удобно: и наказанных заключенных на виду, и другим есть на ком развлечься.")
 
-		saynn("You grumble again as the guard pushes you, making you bend forward and hold your wrists in the stocks before lowering the top part and locking it, sealing your fate.")
+		saynn("Ты снова ворчишь, когда охранник толкает тебя, заставляя наклониться вперед и засунуть запястья в колодки. Затем он опускает верхнюю часть и защелкивает замок, запечатывая твою судьбу.")
 
-		saynn("[say=pc]Hey. When are you gonna unlock me?[/say]")
+		saynn("[say=pc]Эй! Когда вы меня разблокируете?[/say]")
 
-		saynn("The guards just chuckle and give your {pc.thick} ass a smack before leaving you like that.")
+		saynn("Охранники лишь посмеиваются и отвешивают тебе звонкий шлепок по {pc.thick} заднице@@, прежде чем оставить тебя в таком виде.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "startstocks")
+		addButton("Продолжить", "Смотреть, что будет дальше", "startstocks")
 
 	if(state == "suck_him_off"):
 		# (sucks the first one. Then you are given a chance to suck a dickgirl or go to stocks again)
 
-		saynn("You weigh your options and finally make a choice. As you begin to slowly lower yourself, the guards around you chuckle, the one behind you stops holding you. When your knees hit the floor, a red veiny knotted cock is already rubbing its scent into your cheek.")
+		saynn("Ты взвешиваешь все варианты и наконец делаешь выбор. Когда ты начинаешь медленно опускаться, окружающие тебя охранники хихикают, а тот, что стоял сзади, разжимает руки. К тому моменту, как твои колени касаются пола, красный вздутый член уже втирает свой запах тебе в щеку.")
 
-		saynn("As your arms are still cuffed, you can only open your mouth and catch the pointy head of his dick with your lips.")
+		saynn("Поскольку руки всё еще в наручниках, тебе остается только открыть рот и поймать губами острое головку его члена.")
 
-		saynn("[say=maleguard_canine]That was the right choice.[/say]")
+		saynn("[say=maleguard_canine]Это был правильный выбор.[/say]")
 
-		saynn("You look up at the guard’s smug eyes and feel somewhat embarrassed. Still, you show your tongue and drag it over the cock, feeling its texture and coating it with your saliva. As you get under the shaft and reach to give the balls some attention too, a drop of precum lands onto your hair, marking you.")
+		saynn("Ты смотришь в самодовольные глаза охранника и чувствуешь легкое смущение. Тем не менее, ты высовываешь язык и проводишь им по члену, ощущая его текстуру и покрывая его слюной. Когда ты устраиваешься под стволом и тянешься к яичкам, капля предэякулята падает тебе на волосы, помечая тебя.")
 
-		saynn("You nuzzle the guy’s ballsack and stick your tongue into the base of his cock where the knot starts. The guards around you watch the show and smile.")
+		saynn("Ты прижимаешься носом к его мошонке и засовываешь язык в основание члена, там, где начинается утолщение. Охранники вокруг наблюдают за шоу и улыбаются.")
 
 		# (if player red)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=maleguard_canine]Pretty good, makes me wonder why you’re not a lilac. Should we fix that, guys?[/say]")
+			saynn("[say=maleguard_canine]Довольно неплохо, заставляет задуматься, почему ты еще не фиалка. Исправим это, парни?[/say]")
 
 		# (if player orange)
 		elif(GM.pc.getInmateType() == InmateType.General):
-			saynn("[say=maleguard_canine]Inmates from the general block are the best, they aren’t overly slutty and also won’t bite your dick off, it feels so good to use them.[/say]")
+			saynn("[say=maleguard_canine]Заключенные из общего блока — лучшие, они не слишком шлюховатые и при этом не откусят тебе член, ими так приятно пользоваться.[/say]")
 
 		# (if lilac)
 		elif(GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=maleguard_canine]Show us why you’re a lilac.[/say]")
+			saynn("[say=maleguard_canine]Покажи нам, почему ты фиалка.[/say]")
 
-		saynn("The guy doesn’t force you in any way, allowing you to do things at your own pace. You give that cock a good lick, starting from the knot and going up along the length before parting your lips wider and letting his shaft go past your teeth and rub against the walls of your mouth. You try not to look at them anymore as that makes you blush. Though you do feel the guy’s cock reacting, leaking pre onto your tongue.")
+		saynn("Парень не принуждает тебя, позволяя делать всё в твоем собственном темпе. Ты хорошенько облизываешь этот член, начиная от узла и двигаясь вверх по всей длине, прежде чем шире раскрыть губы и позволить стволу пройти между зубов, омывая стенки рта. Ты стараешься больше на него не смотреть, потому что от этого краснеешь. Но ты чувствуешь, как член парня реагирует, выделяя предэякулят тебе на язык.")
 
-		saynn("You start slow, wrapping your lips around the member and sliding your head back and forth at a sluggish pace. You make sure to not use your teeth at all, only using your {pc.masc} lips. You made him feel good, the guy lets out a muffled noise and reaches to place a paw on the back of your head, preventing you from backing off from now on.")
+		saynn("Ты начинаешь медленно, обхватывая член губами и лениво двигая головой вперед-назад. Ты следишь за тем, чтобы совсем не задевать его зубами, используя только свои {pc.masc} губы. Ему нравится: парень издает приглушенный звук и кладет лапу тебе на затылок, не давая тебе отстраниться.")
 
-		saynn("You get a little more eager, forcing yourself onto that cock faster, its length is enough to hit the back of your mouth also making you suppress your gag reflex while you suck him off.")
+		saynn("Ты становишься чуть более азартной, насаживаясь на этот член быстрее; его длины хватает, чтобы доставать до самого горла, заставляя тебя бороться с рвотным рефлексом во время минета.")
 
-		saynn("Your tongue joins and slides along the length, providing extra stimulation. You can’t use your hands but at this point you don’t really need them, you got into a good rhythm, rocking your head back and forth while hearing the guy’s noises of approval.")
+		saynn("В дело вступает язык, скользя вдоль всей длины и добавляя стимуляции. Руки тебе сейчас не нужны — ты поймала отличный ритм, раскачивая головой под его одобрительное рычание.")
 
-		addButton("Cum", "He is gonna cum!", "cum")
+		addButton("Кончить", "Он сейчас кончит!", "cum")
 
 	if(state == "cum"):
-		saynn("The guy pants sometimes, you feel his cock twitching inside your mouth, his knot is slapping against your lips while visibly getting bigger. His hand starts to apply more pressure, inviting you to use your throat. You try to fight that but suddenly both his paws land on your head, followed by him thrusting his hips forward, shoving his canine cock deep down your throat. The feeling of tightness quickly shoots him over the edge, the guy drops a few grunts as his dick throbs and bursts with sticky cum.")
+		saynn("Парень тяжело дышит, ты чувствуешь, как его член дергается у тебя во рту, а его узел на глазах увеличивается, хлопая по твоим губам. Его рука начинает давить сильнее, намекая, что пора использовать горло. Ты пытаешься сопротивляться, но внезапно обе его лапы вцепляются в твою голову, и он резко подается тазом вперед, заталкивая свой звериный член глубоко тебе в глотку. Ощущение тесноты мгновенно доводит его до края; парень срывается на хриплые стоны, пока его член пульсирует, извергая липкую сперму.")
 
-		saynn("You struggle a lot and can’t swallow everything, some of the seed escapes back, creating a mess.")
+		saynn("Ты отчаянно пытаешься справиться, но не можешь проглотить всё — часть семени вытекает наружу, создавая беспорядок.")
 
-		saynn("[say=maleguard_canine]Fuck, swallow better, bitch.[/say]")
+		saynn("[say=maleguard_canine]Блядь, глотай лучше, сучка![/say]")
 
-		saynn("As he pulls his cock out, you are left coughing and panting for air. You can’t even clean your face with your hands, forced to wear his facials.")
+		saynn("Когда он вытаскивает свой член, ты остаешься кашлять и жадно ловить ртом воздух. Ты даже не можешь вытереть лицо руками — тебе приходится принимать его сперму прямо на лицо.")
 
-		saynn("Thinking that you’re done, you try to get up but another guard stops you, pushing his hand into your shoulder, making you hit the floor again. But this guard.. looks quite feminine. It’s a girl. Or is it..")
+		saynn("Думая, что всё закончилось, ты пытаешься встать, но другой охранник останавливает тебя, толкая рукой в плечо так, что ты снова валишься на пол. Но этот охранник... выглядит довольно женственно. Это девушка. Или нет?..")
 
-		saynn("[say=shemaleguard]Hold up, cutie, I’m next.[/say]")
+		saynn("[say=shemaleguard]Погоди, милашка, я следующий![/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("You look at the female guard and watch her remove her crotch armor plate just to then expose a canine cock too! She giggles seeing your surprised face.")
+		saynn("Ты смотришь на женщину-охранника и наблюдаешь, как она снимает защитную пластину с паха, обнажая... тоже собачий член! Она хихикает, видя твое изумленное лицо.")
 
-		saynn("[say=shemaleguard]Never seen a dickgirl, slut?[/say]")
+		saynn("[say=shemaleguard]Что, никогда не видела дикгёрл, шлюшка?[/say]")
 
-		saynn("She takes the place of the first guard and shoves her cock into your face, slapping you with it. Cum drips down from your chin as you think about it.")
+		saynn("Она занимает место первого охранника и засовывает свой член тебе в лицо, хлопая им по щекам. Ты думаешь о том, как с твоего подбородка стекает сперма.")
 
-		saynn("[say=shemaleguard]It’s fine if you don’t want to, stocks are always an option~.[/say]")
+		saynn("[say=shemaleguard]Ничего страшного, если не хочешь, колодки — всегда отличный вариант~.[/say]")
 
-		addButton("Suck her off too", "Might as well..", "suck_her_off_too")
-		addButton("Stocks", "Tell her to fuck off", "stocks1")
+		addButton("Отсосать и ей тоже", "Почему бы и нет...", "suck_her_off_too")
+		addButton("Колодки", "Послать её нахер", "stocks1")
 
 	if(state == "stocks1"):
-		saynn("[say=pc]I’d rather be in stocks.[/say]")
+		saynn("[say=pc]Лучше бы меня в колодки засадили.[/say]")
 
-		saynn("The dickgirl guard giggles and grabs you by the chin. She then just clips a leash to your collar and tugs you off. You grumble but follow behind, each time you try to resist the collar digs into your neck and chokes you.")
+		saynn("Охранница-дикгёрл хихикает и берет тебя за подбородок. Затем она просто пристегивает поводок к твоему ошейнику и тянет за собой. Ты ворчишь, но идешь следом; каждый раз, когда ты пытаешься сопротивляться, ошейник впивается в шею и душит тебя.")
 
-		addButton("Follow", "See where they will bring you", "follow")
+		addButton("Следовать", "Посмотреть, куда они тебя приведут", "follow")
 
 	if(state == "suck_her_off_too"):
-		saynn("You quickly swallow the rest of what you had in your mouth before proceeding to stick out your tongue again and licking the fresh knotted cock. This girl is much less patient though, when you try to tease her by just rubbing your cheek against the shaft, she grabs you and guides her member directly towards your mouthhole, the tip spreads open your lips and slides inside. And she doesn’t stop there, she lets her cock gradually sink in deeper and eventually hit the back wall of your mouth. She then angles herself in a way that would make her cock curve and start stretching your used throat even more. She shoves her cock so deep that your lips kiss her knot.")
+		saynn("Ты быстро проглатываешь остатки того, что была во рту, а затем снова высовываешь язык, слизывая свежий узел на её члене. Эта девчонка куда менее терпелива: когда ты пытаешься дразнить её, просто потирая щекой ствол, она хватает тебя и направляет свой член прямо к твоему рту; головка раздвигает твои губы и скользит внутрь. И она не останавливается на этом — она позволяет своему члену постепенно погружаться всё глубже, пока он наконец не упирается в заднюю стенку твоего горла. Затем она наклоняется так, чтобы её член изогнулся и начал растягивать твою измученную глотку ещё сильнее. Она вгоняет его так глубоко, что твои губы касаются её узла.")
 
-		saynn("[say=shemaleguard]There we go~.. Look at this cock sucker, {pc.he} does it so well.[/say]")
+		saynn("[say=shemaleguard]Вот так~.. Посмотрите на эту соску, {pc.he} делает это просто великолепно.[/say]")
 
-		saynn("After she pulls her paws away from your head, you pick up where she left, proceeding to suck her knotted cock, sliding your lips across its length. You begin to get used to this, not even noticing all the wet noises that you make while your throat gets violated.")
+		saynn("Когда она убирает свои лапы от твоей головы, ты продолжаешь с того места, где она остановилась, принявшись сосать её узловатый член и скользя губами по всей его длине. Ты начинаешь привыкать к этому, даже не замечая всех тех влажных звуков, которые издаёшь, пока твою глотку насилуют.")
 
-		saynn("Your blush is still there, every time you catch somebody’s eyes glued to your work, you quickly look away. What if this is not the last cock either..")
+		saynn("Румянец всё ещё не сходит с твоего лица; каждый раз, когда ты ловишь на себе чей-то заворожённый взгляд, ты быстро отворачиваешься. А что, если это не последний член, который тебе придётся сосать...")
 
-		saynn("The dickgirl moves her hips slightly, helping you to deep throat her cock. The pace gets intense, you can’t help but to start choking and gagging on her dick but that only seems to make her let out moans of pleasure. Her knot visibly inflates, you hit it with your lips each time she thrusts inside.")
+		saynn("Дикгёрл слегка двигает бёдрами, помогая тебе заглотить её член по самые гланды. Темп нарастает, ты невольно начинаешь давиться и задыхаться от её члена, но это, кажется, лишь заставляет её издавать стоны наслаждения. Её узел заметно раздувается, и ты каждый раз натыкаешься на него губами при каждом её толчке.")
 
-		saynn("[say=shemaleguard]C’mon baby, I’m so close~[/say]")
+		saynn("[say=shemaleguard]Ну же, детка, я уже почти~[/say]")
 
-		addButton("Cum", "She is gonna cum!", "cum1")
+		addButton("Кончить", "Она сейчас кончит!", "cum1")
 
 	if(state == "cum1"):
-		saynn("The dickgirl lets out a passionate moan as her cock starts cumming inside your mouth, quickly stuffing your belly with her hot seed. All the while you sit on your knees and swallow her load like a good cock slut, your eyes are closed as you are focused on giving the girl the best experience.")
+		saynn("Дикгерл издает страстный стон, когда её член начинает кончать тебе прямо в рот, быстро наполняя твой живот горячим семенем. Всё это время ты стоишь на коленях и заглатываешь её порцию, как послушная шлюшка, зажмурив глаза и сосредоточившись на том, чтобы доставить девчонке максимальное удовольствие.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your {pc.cock} is hard as your chastity allows, you wish you could stroke yourself at this moment..")
+			saynn("Твой {pc.cock} тверд настолько, насколько позволяет целомудрие; тебе так хочется потеребить его прямо сейчас...")
 		elif(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} is hard as a rock, you wish you could stroke yourself at this moment..")
+			saynn("Твой {pc.cock} тверд как камень; тебе так хочется потеребить его прямо сейчас...")
 
-		saynn("[say=shemaleguard]Ah~.. Such a good little fucktoy.[/say]")
+		saynn("[say=shemaleguard]Ах~.. Какая же ты хорошая маленькая игрушка для секса.[/say]")
 
-		saynn("When she is done, she pulls her messy cock out and cleans it using your face before hiding her sheath.")
+		saynn("Закончив, она вынимает свой испачканный член и вытирает его о твоё лицо, прежде чем спрятать чехол.")
 
-		saynn("The guard removes your cuffs before letting you go. You quickly make your escape before more horny guards decide to try you.")
+		saynn("Охранница снимает с тебя наручники, прежде чем отпустить. Ты поспешно сбегаешь, пока другие похотливые охранники не решили тебя опробовать.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 func _react(_action: String, _args):

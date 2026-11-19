@@ -9,110 +9,110 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="femaleguard_feline"})
 
 	if(state == ""):
-		saynn("You were busy sneakily teasing yourself in front of everyone when you heard a strict female voice behind you.")
+		saynn("Ты увлеченно и украдкой ласкала себя на виду у всех, как вдруг услышала за спиной строгий женский голос.")
 
-		saynn("[say=femaleguard_feline]Hey![/say]")
+		saynn("[say=femaleguard_feline]Эй![/say]")
 
-		saynn("Turning around to face her, you see a guard cat with an exceptionally mean face expression. She is keeping her distance, her paw is resting on her belt that holds all the tools and her weapon.")
+		saynn("Обернувшись, ты видишь кошку-охранницу с исключительно злобным выражением морды. Она держится на расстоянии, а её лапа покоится на ремне, где висят инструменты и оружие.")
 
-		saynn("[say=femaleguard_feline]On your knees, hands behind your head. I won’t ask twice, inmate.[/say]")
+		saynn("[say=femaleguard_feline]На колени, руки за голову. Второй раз просить не стану, заключенная.[/say]")
 
 		# (if cuffed arms)
 		if(GM.pc.hasBoundArms()):
-			saynn("You rattle your chains for her.")
+			saynn("Ты демонстративно звякаешь своими цепями.")
 
-			saynn("[say=pc]Can’t exactly do that.[/say]")
+			saynn("[say=pc]Ну, не так-то просто.[/say]")
 
-			saynn("[say=femaleguard_feline]Quit being a smartass and hit the floor.[/say]")
+			saynn("[say=femaleguard_feline]Хватит умничать, живо на пол![/say]")
 
 			# (end)
 
-		saynn("[say=pc]And what if I don’t wanna do that?[/say]")
+		saynn("[say=pc]А если не захочу?[/say]")
 
-		saynn("Kitty guard shows off her fangs and caresses a button on her shock remote, threatening. She made her point quite clear.")
+		saynn("Кошка-охранница скалится, демонстрируя клыки, и угрожающе поглаживает кнопку на электрошоковом пульте. Свою мысль она донесла предельно ясно.")
 
-		addButton("Obey", "Get on your knees and let her play with you", "obey")
-		addButton("Attack her", "This might go pretty bad. But maybe that’s what you want", "attack_her")
+		addButton("Повиноваться", "Встань на колени и позволь ей поиграть с тобой", "obey")
+		addButton("Напасть на неё", "Это может закончиться хреново. Но, возможно, именно этого ты и хочешь", "attack_her")
 
 	if(state == "attack_her"):
 		playAnimation(StageScene.Duo, "defeat", {npc="femaleguard_feline"})
 		
-		saynn("You track her with your eyes and begin lowering yourself, pretending to behave. But all this time you were just preparing to dash towards her. Kitty seems to calm somewhat after seeing you obey, perfect moment to strike. You suddenly take off and sprint towards the cat, pushing away from the floor and pouncing.")
+		saynn("Ты следишь за ней взглядом и начинаешь медленно опускаться, делая вид, что послушно ведешь себя. Но всё это время ты лишь готовился к рывку. Китти вроде бы немного успокоилась, видя твою покорность — идеальный момент для удара. Ты внезапно срываешься с места и несешься к кошке, отталкиваясь от пола и совершая прыжок.")
 
-		saynn("The guard gasps and swiftly reacts, her clawed digit taps the button on the prepared remote, making your collar send out a powerful shock. Ow. Your muscles tense up, forcing your body to curl up before hitting the cold floor, short of the guard. She taps you softly with her boot to make sure you are breathing.")
+		saynn("Охранница ахает и реагирует мгновенно: её когтистый палец нажимает на кнопку пульта, и твой ошейник посылает мощный разряд тока. Ох... Мышцы сводит судорогой, заставляя тело сжаться в комок, прежде чем ты рухнешь на холодный пол, не долетев до неё. Она слегка толкает тебя носком сапога, проверяя, дышишь ли ты.")
 
-		saynn("[say=femaleguard_feline]Really?[/say]")
+		saynn("[say=femaleguard_feline]Серьезно?[/say]")
 
-		saynn("Kitty guard would shove her boot into your belly and then uncurl you before pinning to the floor. She looks down at you, her face shows disappointment.")
+		saynn("Охранница-кошка впечатывает сапог тебе в живот, а затем заставляет тебя разжаться, прежде чем прижать к полу. Она смотрит на тебя сверху вниз, и на её морде читается разочарование.")
 
-		saynn("[say=femaleguard_feline]Pathetic display. I’d spit on you but that would make you horny.[/say]")
+		saynn("[say=femaleguard_feline]Жалкое зрелище. Я бы плюнула в тебя, но от этого ты только возбудишься.[/say]")
 
-		saynn("She hovers her boot over your belly and then steps over you, forcing all the air out of you as she does it.")
+		saynn("Она заносит сапог над твоим животом, а затем наступает на тебя, выбивая весь воздух из твоих легких.")
 
-		saynn("[say=femaleguard_feline]That will be your punishment.[/say]")
+		saynn("[say=femaleguard_feline]Это и будет твоим наказанием.[/say]")
 
-		saynn("The guard produces some restraints.")
+		saynn("Охранница достает какие-то оковы.")
 
 		# (puts restraints on player)
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 	if(state == "obey"):
 		playAnimation(StageScene.Duo, "kneel", {npc="femaleguard_feline"})
 		
-		saynn("[say=pc]Alright, relax. I’m obeying.[/say]")
+		saynn("[say=pc]Так, расслабься. Я слушаюсь.[/say]")
 
-		saynn("You raise your hands and put them behind your head while getting onto your knees. You tilt your head down and watch the floor while the guard kitty is approaching with something in her paw, some black piece of fabric.")
+		saynn("Ты поднимаешь руки и заводишь их за голову, опускаясь на колени. Ты склоняешь голову и смотришь в пол, пока кошка-охранница приближается к тебе, сжимая в лапе какой-то черный лоскут ткани.")
 
-		saynn("[say=femaleguard_feline]If you resist I will make sure to make your neck regret it.[/say]")
+		saynn("[say=femaleguard_feline]Если будешь сопротивляться, я позабочусь о том, чтобы твоя шея об этом пожалела.[/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("She pulls your head closer using your collar and starts wrapping that fabric around your head, blindfolding you. Even one layer of it leaves you blind and helpless, barely any light is coming through. But the kitty makes sure to wrap a few more layers before tying it up with a tight knot behind your head.")
+		saynn("Она тянет тебя за ошейник, заставляя наклонить голову, и начинает обматывать лицо этой тканью, завязывая тебе глаза. Даже один слой лишает тебя зрения и делает беспомощным — свет почти не пробивается. Но кошка не спешит, она наматывает еще несколько слоев, прежде чем затянуть тугой узел на затылке.")
 
-		saynn("[say=pc]What are you doing?[/say]")
+		saynn("[say=pc]Ты что творишь?[/say]")
 
-		saynn("[say=femaleguard_feline]Shut up.[/say]")
+		saynn("[say=femaleguard_feline]Заткнись.[/say]")
 
-		saynn("She finishes her job and takes a step back. You can only sit still and wait now while holding your hands behind your head. You hear the guard doing something with her armor, her belt gets undone.")
+		saynn("Закончив дело, она делает шаг назад. Теперь тебе остается только сидеть неподвижно, закинув руки за голову, и ждать. Ты слышишь, как охранница возится со своей броней — её пояс расстегивается.")
 
-		saynn("[say=femaleguard_feline]You’re lucky I didn’t decide to just throw your ass into stocks for public indecency.[/say]")
+		saynn("[say=femaleguard_feline]Тебе повезло, что я не решила просто засадить твою задницу в колодки за непристойное поведение на публике.[/say]")
 
-		saynn("Huh, you don’t hear her anymore after that.")
+		saynn("Хм, после этого она больше ничего не говорит.")
 
-		addButton("Continue", "See what happens next", "cummedon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "cummedon")
 
 	if(state == "cummedon"):
-		saynn("Suddenly you feel soft pussy lips pressed against your face. The girl is quite aroused down there, her folds are wet and give off a scent of a horny female cat. The guard isn’t being playful with you, she holds a paw on the back of your head, forcing you harder into her crotch.")
+		saynn("Внезапно ты чувствуешь, как мягкие, влажные губки прижимаются к твоему лицу. Девушка там чертовски возбуждена: её складки мокрые и источают аромат похотливой кошки. Охранница не настроена на игры — она крепко прижимает лапу к твоему затылку, с силой вжимая твое лицо в свою промежность.")
 
-		saynn("[say=femaleguard_feline]Now lick~.[/say]")
+		saynn("[say=femaleguard_feline]А теперь лижи~.[/say]")
 
-		saynn("You’re quite surprised by a sudden slit brushing against your lips, you move back and let out a noise of confusion before the guard delivers a refreshing slap on your cheek and shoves her needy pussy into your face again.")
+		saynn("Ты в замешательстве от внезапного прикосновения щели к своим губам; ты отстраняешься, издавая смущенный звук, но тут же охрана отвешивает тебе освежающую пощечину и снова вжимает свою жаждущую киску тебе в лицо.")
 
-		saynn("[say=femaleguard_feline]Stop fucking around and lick me out.[/say]")
+		saynn("[say=femaleguard_feline]Хватит тупить, лижи меня уже![/say]")
 
-		saynn("She acts rough and sounds angry so you swiftly expose your tongue and begin dragging it over the pussy mound. Your tongue finds the girl’s clit and focuses on it, tracing little circles around with its tip. You can’t see the cat or her pussy which makes it more arousing, you only hear her little moans that she tries to hide and feel her sex producing more juices.")
+		saynn("Она ведет себя грубо и звучит сердито, поэтому ты поспешно высовываешь язык и начинаешь водить им по лобку. Твой язык находит клитор девушки и сосредотачивается на нем, выписывая кончиком маленькие круги. Ты не видишь ни кошку, ни её киску, и это только сильнее возбуждает: ты лишь слышишь её сдавленные стоны и чувствуешь, как её секс выделяет всё больше соков.")
 
-		saynn("[say=femaleguard_feline]Yeah, at least your mouth is good for something.[/say]")
+		saynn("[say=femaleguard_feline]Ну хоть в чем-то твой рот пригодился.[/say]")
 
-		saynn("Kitty then holds your head while dragging her slit all over it, forcing her horny female scent into you, you stick your tongue out and she practically grinds it, sliding herself up and down on it while moaning more.")
+		saynn("Затем Китти обхватывает твою голову руками, размазывая свою щель по твоему лицу и навязывая тебе свой возбужденный женский запах; ты высовываешь язык, и она практически втирается в него, двигаясь вверх-вниз и стоная всё громче.")
 
-		saynn("You feel that she is getting closer, she stops grinding your face and instead hovers above your tongue, its tip finds her needy pussy hole and manages to slip inside as she lowers herself onto it. You tense it up as much as you can and feel her bouncing up and down on it, riding and pleasuring herself with it until suddenly cumming. You feel her inner walls clenching around your tongue, massaging it while a sudden fountain of transparent fluids hits your face as she squirts, making your blindfold wet.")
+		saynn("Ты чувствуешь, что она близка к разрядке; она перестает тереться о твое лицо и вместо этого зависает над твоим языком. Его кончик находит её жаждущее отверстие и успевает проскользнуть внутрь, когда она опускается на него. Ты напрягаешься изо всех сил, чувствуя, как она скачет на твоем языке, ублажая себя, пока внезапно не кончает. Ты ощущаешь, как её внутренние стенки сжимаются вокруг языка, массируя его, а в этот момент фонтан прозрачной жидкости бьет тебе в лицо — она кончает струей, намочив твою повязку.")
 
-		saynn("[say=femaleguard_feline]F-fuck~[/say]")
+		saynn("[say=femaleguard_feline]Б-бля~[/say]")
 
-		saynn("She pulls your face into her sensitive flesh, stealing your ability to breathe for a second while she rides the rest of her orgasmic waves. Then she just shoves you away and takes a step back while trying to catch her own breath.")
+		saynn("Она прижимает твое лицо к своей чувствительной плоти, на мгновение лишая тебя возможности дышать, пока ее накрывают остатки оргазмических волн. Затем она просто отталкивает тебя и делает шаг назад, пытаясь перевести дух.")
 
-		saynn("[say=pc]Ow.. I.. I did everything you asked.[/say]")
+		saynn("[say=pc]Ох.. Я.. Я сделала всё, как ты просила.[/say]")
 
-		saynn("[say=femaleguard_feline]So? That was expected from you.[/say]")
+		saynn("[say=femaleguard_feline]Ну и? Этого от тебя и следовало ожидать.[/say]")
 
-		saynn("And just like that, you hear her grabbing her things and leaving. You stay with your arms raised for a bit longer, just make sure she is not around. Red blush shines on your wet face.")
+		saynn("И вот так просто ты слышишь, как она хватает свои вещи и уходит. Ты еще какое-то время стоишь с поднятыми руками, просто чтобы убедиться, что она не рядом. Твое мокрое лицо горит густым румянцем.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 func _react(_action: String, _args):

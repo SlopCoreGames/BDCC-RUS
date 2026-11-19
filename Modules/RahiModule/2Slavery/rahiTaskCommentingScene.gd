@@ -11,7 +11,7 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		addCharacter("rahi")
-		saynn("Rahi stands still, waiting for something. Until curiosity makes her ask you a question first.")
+		saynn("Рахи стоит неподвижно, словно чего-то ждет. Пока любопытство не заставляет её саму задать тебе вопрос.")
 
 		saynn("[say=rahi]"+RNG.pick([
 			"So.. how did she do today?..",
@@ -19,51 +19,51 @@ func _run():
 			"What do you think about her task, {rahiMaster}?..",
 		])+"[/say]")
 
-		addButton(RNG.pick(["Great", "Good", "Good job", "Amazing"]), "Say that you loved her performance today", "say_great")
-		addButton(RNG.pick(["Could be better", "Meh", "Okay-ish", "Needs improvement"]), "Rahi could have tried better", "say_meh")
-		addButton(RNG.pick(["Bad", "Pathetic", "Awful", "Terrible"]), "Rahi did awful", "say_bad")
+		addButton(RNG.pick(["Great", "Good", "Good job", "Amazing"]), "Сказать, что сегодня она выступила великолепно", "say_great")
+		addButton(RNG.pick(["Could be better", "Meh", "Okay-ish", "Needs improvement"]), "Рахи могла бы постараться получше", "say_meh")
+		addButton(RNG.pick(["Bad", "Pathetic", "Awful", "Terrible"]), "Рахи выступила ужасно", "say_bad")
 	if(state == "say_great"):
-		saynn("[say=pc]You were great today, kitty. Keep this up.[/say]")
+		saynn("[say=pc]Сегодня ты была великолепна, киска. Так держать![/say]")
 
 		if (success):
-			saynn("Kitty smiles and purrs contently.")
+			saynn("Киска довольно улыбается и мурлычет.")
 
-			saynn("[say=rahi]Yay.[/say]")
+			saynn("[say=rahi]Ура![/say]")
 
 		else:
-			saynn("Kitty tilts her head slightly, she looks surprised.")
+			saynn("Киска слегка наклоняет голову, выглядя удивленной.")
 
-			saynn("[say=rahi]Oh?.. She did try her best, yes..[/say]")
+			saynn("[say=rahi]О?.. Она ведь старалась изо всех сил, правда?..[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "say_meh"):
-		saynn("[say=pc]You could have done better, not gonna lie.[/say]")
+		saynn("[say=pc]Не буду врать, ты могла бы и получше.[/say]")
 
 		if (success):
-			saynn("Kitty tilts her head down. You can see her cheeks inflating slightly.")
+			saynn("Китти наклоняет голову. Видно, как её щеки слегка раздуваются.")
 
-			saynn("[say=rahi]But.. But.. Sorry, {rahiMaster}.. You're right..[/say]")
+			saynn("[say=rahi]Но.. Но.. Прости, {rahiMaster}.. Ты прав..[/say]")
 
 		else:
-			saynn("Kitty tilts her head down.")
+			saynn("Китти наклоняет голову.")
 
-			saynn("[say=rahi]Sorry, {rahiMaster}.. She will try harder next time..[/say]")
+			saynn("[say=rahi]Прости, {rahiMaster}.. В следующий раз она постарается лучше..[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "say_bad"):
-		saynn("[say=pc]That was just awful, kitty. Any other slave could have done it better.[/say]")
+		saynn("[say=pc]Это было просто ужасно, китти. Любая другая рабыня справилась бы лучше.[/say]")
 
 		if (success):
-			saynn("Kitty tilts her head a lot, she clearly doesn't understand something.")
+			saynn("Китти сильно наклоняет голову; очевидно, она чего-то не понимает.")
 
-			saynn("[say=rahi]But.. But.. {rahiMaster}.. That's unfair..[/say]")
+			saynn("[say=rahi]Но.. Но.. {rahiMaster}.. Это несправедливо..[/say]")
 
 		else:
-			saynn("Kitty tilts her head down, her ears droop, her tail rubs between her thighs.")
+			saynn("Китти наклоняет голову, её ушки поникают, а хвост трется между бедер.")
 
-			saynn("[say=rahi]Sorry, {rahiMaster}.. Your slave is very sorry for failing..[/say]")
+			saynn("[say=rahi]Прости, {rahiMaster}.. Твоя рабыня очень раскаивается в своей неудаче..[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

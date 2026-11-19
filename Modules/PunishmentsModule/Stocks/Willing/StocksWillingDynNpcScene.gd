@@ -92,18 +92,18 @@ func _run():
 					"[say=npc]Can I offer you a fun time?[/say]",
 				]))
 
-		addButton("Nod", "Let them do it", "startsexsubby")
-		addButton("Shake head", "Maybe they will spare you", "shake_head")
+		addButton("Кивнуть", "Пусть делают, что хотят", "startsexsubby")
+		addButton("Покачать головой", "Может, они тебя пощадят", "shake_head")
 
 	if(state == "shake_head_success"):
 		saynn(RNG.pick([
 			"You shake your head as best as the stocks allow. The person deliberates but decides to leave instead of forcing you.",
 		]))
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "shake_head_fail"):
-		saynn("You shake your head as best as the stocks allow.")
+		saynn("Ты качаешь головой настолько, насколько позволяют колодки.")
 		
 		saynn(RNG.pick([
 			"[say=npc]Well too bad. I’m too horny.[/say]",
@@ -113,13 +113,13 @@ func _run():
 			"[say=npc]It’s not like you can stop me.[/say]",
 		]))
 		
-		addButton("Get fucked", "Well, what can you do", "startsexsubby")
+		addButton("Получи по полной", "Ну, что тут поделаешь...", "startsexsubby")
 
 	if(state == "after_sex"):
-		saynn("After that, {npc.he} just leaves you alone, still trapped in stocks.")
+		saynn("После этого {npc.he} просто оставляет тебя в покое, пока ты всё ещё торчишь в колодах.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 

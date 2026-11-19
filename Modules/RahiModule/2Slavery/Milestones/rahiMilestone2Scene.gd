@@ -7,310 +7,310 @@ func _run():
 	if(state == ""):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("As you step into Rahi's cell, you can't help but to catch hints of a.. strange smell? A quite sharp one at that. The feline is sitting on her bed, her paws moving the pillow and doing something to it.")
+		saynn("Когда ты входишь в камеру Рахи, ты невольно улавливаешь намек на... странный запах? Причем довольно резкий. Кошка сидит на своей кровати, перебирая лапами подушку и что-то с ней вытворяя.")
 
-		saynn("[say=pc]Hey kitty, whatcha doing?[/say]")
+		saynn("[say=pc]Эй, киса, чем занимаешься?[/say]")
 
-		saynn("Your words startle the heck of Rahi, she almost hits the low ceiling that's above her bed. She turns her head towards you and offers you a nervous smile.")
+		saynn("Твои слова чертовски пугают Рахи — она чуть не бьется головой о низкий потолок над кроватью. Она поворачивает к тебе голову и выдавливает нервную улыбку.")
 
-		saynn("[say=rahi]Oh hi, {rahiMaster}.. Nothing, just.. stuff?[/say]")
+		saynn("[say=rahi]О, привет, {rahiMaster}... Да так, ничего особенного... просто вожусь с вещами?[/say]")
 
-		saynn("Huh. Kitty is being quite suspicious to say the least, one of her paws constantly resting on her pillow.. protecting.")
+		saynn("Хм. Кошка ведет себя, мягко говоря, подозрительно: одна её лапа постоянно лежит на подушке... словно защищает её.")
 
-		saynn("As you step closer, kitty's ears lower themselves. And the scent.. the sharp scent gets stronger.")
+		saynn("Когда ты подходишь ближе, ушки кошки прижимаются. И запах... этот резкий запах становится сильнее.")
 
-		saynn("How do you wanna ask it?")
+		saynn("Как ты хочешь спросить?")
 
-		addButton("Kind", "Ask Rahi kindly about what's going on", "ask_kind")
-		addButton("Strict", "Demand the answer from Rahi", "ask_strict")
+		addButton("Добрый", "Любезно расспросить Рахи о том, что происходит", "ask_kind")
+		addButton("Строго", "Потребовать ответа у Рахи", "ask_strict")
 	if(state == "ask_kind"):
-		saynn("[say=pc]So what's that smell, kitty?[/say]")
+		saynn("[say=pc]Ну и что это за запах, киса?[/say]")
 
-		saynn("Rahi scratches the back of her head with her free paw, her eyes jumping from spot to spot.")
+		saynn("Рахи чешет затылок свободной лапой, бегая глазами по сторонам.")
 
-		saynn("[say=rahi]What smell?..[/say]")
+		saynn("[say=rahi]Какой еще запах?..[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=pc]Open your mouth and breathe at me.[/say]")
+		saynn("[say=pc]Открой рот и подыши на меня.[/say]")
 
-		saynn("She keeps her mouth shut and shakes her head instead.")
+		saynn("Она держит рот на замке и вместо этого качает головой.")
 
-		saynn("[say=pc]Kitty.. Please. Do it for me.[/say]")
+		saynn("[say=pc]Киса.. Ну пожалуйста. Сделай это ради меня.[/say]")
 
-		saynn("The feline tilts her head down and just removes the pillow, uncovering a half-full bottle of whiskey. Her ears get even lower, kitty is clearly expecting a punishment.")
+		saynn("Кошка наклоняет голову и просто убирает подушку, обнажая наполовину пустую бутылку виски. Её уши прижимаются ещё сильнее — киса явно ждёт наказания.")
 
-		saynn("[say=pc]What's this? How long have you been drinking it?[/say]")
+		saynn("[say=pc]Это ещё что? И как долго ты её пьешь?[/say]")
 
-		saynn("[say=rahi]Since day one..[/say]")
+		saynn("[say=rahi]С самого первого дня..[/say]")
 
-		saynn("Ooh-h. Kitty is looking guilty as heck. But as you reach for the bottle, the feline grabs your hand and stops you.")
+		saynn("О-о-о. Киса выглядит чертовски виноватой. Но когда ты тянешься к бутылке, кошка хватает тебя за руку и останавливает.")
 
-		saynn("[say=pc]Kitty. You're not allowed to drink, how do you not understand it? You might die if you do that.[/say]")
+		saynn("[say=pc]Китти. Тебе нельзя пить, неужели так трудно понять? Ты можешь сдохнуть, если сделаешь это.[/say]")
 
-		saynn("You slap her paw away and grab the bottle before storing it, taking away hopefully the last of her alcohol. Kitty's whiskers begin to.. shiver. Her eyes.. tearing up.. She looks so sad..")
+		saynn("Вы отшлепываете её лапку и выхватываете бутылку, убирая её подальше — надеясь, что это была последняя порция алкоголя. У Китти начинают дрожать... усы. Глаза... наполняются слезами... Она выглядит такой несчастной...")
 
-		addButton("Continue", "See what happens next", "rahi_breakdown")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_breakdown")
 	if(state == "ask_strict"):
-		saynn("[say=pc]Explain the smell now.[/say]")
+		saynn("[say=pc]А теперь объясни этот запах.[/say]")
 
-		saynn("Rahi scratches the back of her head with her free paw, her eyes jumping from spot to spot. She is close to panicking.")
+		saynn("Рахи чешет затылок свободной лапой, её взгляд мечется с места на место. Она близка к панике.")
 
-		saynn("[say=rahi]There is no smell, {rahiMaster}..[/say]")
+		saynn("[say=rahi]Никакого запаха нет, {rahiMaster}...[/say]")
 
-		saynn("You sigh and reach for her ear before pulling on it, causing the kitty to hiss painfully. And while she does that, the scent gets stronger.")
+		saynn("Вы вздыхаете и тянетесь к её уху, после чего дергаете за него, заставляя кошечку болезненно зашипеть. И пока она это делает, запах становится всё сильнее.")
 
-		saynn("[say=pc]If you're not gonna explain, I will just assume the worst, kitty. And you won't like that. Unruly slaves will have very little say in what happens to them.[/say]")
+		saynn("[say=pc]Если не собираешься объяснять, я просто приму худшее за истину, китти. И тебе это не понравится. У строптивых рабов будет очень мало права голоса в том, что с ними будет происходить.[/say]")
 
-		saynn("She lowers her head.. but keeps silent.")
+		saynn("Она опускает голову... но продолжает молчать.")
 
-		saynn("[say=rahi]It's nothing..[/say]")
+		saynn("[say=rahi]Это пустяки...[/say]")
 
-		saynn("No it's not, you suddenly grab her pillow and take it away, uncovering a.. bottle. A half-finished bottle of whiskey. The feline huffs at you.")
+		saynn("Нет, не пустяки. Вы внезапно хватаете её подушку и отбрасываете её в сторону, обнаруживая... бутылку. Половину выпитой бутылки виски. Кошечка фыркает на вас.")
 
-		saynn("[say=pc]What is this? You've been lying to me all this time, cat? How long have you been drinking?[/say]")
+		saynn("[say=pc]Что это? Ты всё это время лгала мне, кошечка? Как долго ты уже пьешь?[/say]")
 
-		saynn("No response, kitty just tries to distract herself by stroking her tail. But you're not gonna let her do that, your hand slaps Rahi's face before you grab her by the collar and force her to look up at you.")
+		saynn("Ответа нет, кошечка лишь пытается отвлечься, поглаживая свой хвост. Но ты не дашь ей этого сделать: твоя ладонь с размаху хлопает Рахи по лицу, а затем ты хватаешь её за воротник, заставляя поднять на тебя взгляд.")
 
-		saynn("[say=pc]How long. Have you been. Drinking. Slave.[/say]")
+		saynn("[say=pc]Как долго. Ты. Пьешь. Рабыня.[/say]")
 
-		saynn("Kitty gets even quieter for a bit. Her face.. mean.")
+		saynn("Кошечка на мгновение затихает еще сильнее. Её лицо... злое.")
 
-		saynn("[say=rahi]Since day one..[/say]")
+		saynn("[say=rahi]С самого первого дня..[/say]")
 
-		saynn("Wow. That almost makes you furious. Rahi tries to stop you but you grab the bottle and put it away, she has no reason to have it, any alcohol binges will kill her. After you do that, kitty's whiskers begin to.. shiver. Her eyes.. tearing up.. She looks so sad..")
+		saynn("Ого. Это почти приводит тебя в ярость. Рахи пытается тебя остановить, но ты выхватываешь бутылку и убираешь её подальше — ей незачем её держать, любой алкогольный запой её убьёт. После этого у кошечки начинают... дрожать усы. В глазах... наворачиваются слезы... Она выглядит такой печальной...")
 
-		addButton("Continue", "See what happens next", "rahi_breakdown")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_breakdown")
 	if(state == "rahi_breakdown"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="shove"})
-		saynn("But then she suddenly lashes out at you, clawed paws shoving you back and leaving some scratches. Rahi's watery eyes burn with passion. Mean kind of passion.")
+		saynn("Но вдруг она внезапно бросается на тебя, отталкивая когтистыми лапами и оставляя царапины. В полных слез глазах Рахи горит страсть. Злая страсть.")
 
-		saynn("[say=rahi]Give it back.[/say]")
+		saynn("[say=rahi]Верни её.[/say]")
 
-		saynn("Angry kitty bares fangs and growls at you, her paws threatening to leave more wounds.")
+		saynn("Разъяренная кошечка скалит клыки и рычит на тебя, её лапы так и норовят оставить новые раны.")
 
-		saynn("[say=rahi]GIVE HER THE BOTTLE.[/say]")
+		saynn("[say=rahi]ДАЙ ЕЙ БУТЫЛКУ![/say]")
 
-		saynn("[say=pc]That's not what we agreed upon.[/say]")
+		saynn("[say=pc]Мы договаривались не об этом.[/say]")
 
-		saynn("She lashes out at you again. You try to grab her paws but she manages to scratch your cheek, drawing some blood even. And she seems unphased by that.")
+		saynn("Она снова бросается на тебя. Ты пытаешься схватить её за лапки, но ей удается полоснуть тебя по щеке, даже до крови. И, кажется, это её ничуть не смущает.")
 
-		saynn("[say=rahi]SCREW THE AGREEMENT! Just give it to her.. She failed everyone. Her father.. And mother.. Her whole family. She failed that doctor. She failed herself.. And now she has failed you too. WHO THE FUCK CARES ANYMORE?![/say]")
+		saynn("[say=rahi]ДА К ЧЕРТУ ЭТО СОГЛАШЕНИЕ! Просто отдай ей всё... Она подвела всех. Отца... И мать... Всю свою семью. Она подвела того доктора. Она подвела саму себя... А теперь она подвела и тебя. КОМУ, БЛЯДЬ, ТЕПЕРЬ НЕ ВСЕВАНО?![/say]")
 
-		saynn("She screams at the top of her lungs. Tears stream down her cheeks that she quickly swipes away.")
+		saynn("Она кричит во всю глотку. Слезы текут по её щекам, которые она поспешно смахивает.")
 
-		saynn("[say=rahi]Or she is just gonna take it herself.[/say]")
+		saynn("[say=rahi]Или она просто заберет всё сама.[/say]")
 
-		saynn("She lashes out at you again, her claws about to sink into your flesh.")
+		saynn("Она снова бросается на тебя, её когти вот-вот вонзятся в твою плоть.")
 
-		addButton("Embrace", "Hug the kitty and let her scratch you", "do_embrace")
-		addButton("Grab and spank", "Catch the feline and punish her for this act", "do_spank")
+		addButton("Обнять", "Обнять кису и позволить ей поцарапать тебя", "do_embrace")
+		addButton("Схватить и отшлепать", "Поймать кошечку и наказать её за этот выпад", "do_spank")
 	if(state == "do_embrace"):
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
 		setFlag("RahiModule.rahiMile2Embraced", true)
-		saynn("Instead of trying to avoid or attack her back, you meet her with a warm tight hug, wrapping your hands around Rahi. She wasn't too amused by that, her paws leaving countless scratches and cuts on your skin. But you don't stop no matter how much she hurts you.")
+		saynn("Вместо того чтобы уклоняться или атаковать в ответ, ты встречаешь её теплыми крепкими объятиями, обхватив Рахи руками. Это не особо привело её в восторг: её лапки оставляют на твоей коже бесчисленные царапины и порезы. Но ты не останавливаешься, сколько бы боли она тебе ни причиняла.")
 
-		saynn("[say=pc]I care, kitty. I really do.[/say]")
+		saynn("[say=pc]Мне не всё равно, киса. Правда не всё равно.[/say]")
 
-		saynn("[say=rahi]WHY? WHAT'S THE POINT?! SHE IS WORTHLESS.[/say]")
+		saynn("[say=rahi]ЗАЧЕМ? В ЧЕМ СМЫСЛ?! ОНА ЖЕ НИЧТОЖЕСТВО![/say]")
 
-		saynn("Kitty is letting her so much hatred on you, her paws leaving multiple bleeding scratch marks on your back.")
+		saynn("Китти выплескивает на тебя всю свою ненависть, оставляя на твоей спине глубокие кровоточащие царапины.")
 
-		saynn("[say=pc]I wanna prove that you're not.. Agh.. Just hear me out, kitty.[/say]")
+		saynn("[say=pc]Я хочу доказать, что ты не... Агх... Просто послушай меня, китти.[/say]")
 
-		saynn("After doing so much exhausting violence, kitty finally starts to slow down. More tears begin to slide down her cheeks as you only hug her tighter.")
+		saynn("После стольких изнурительных вспышек ярости китти наконец начинает замедляться. По её щекам катятся слезы, пока ты прижимаешь её к себе всё крепче.")
 
-		saynn("[say=pc]You made mistakes, sure. I wanna help. I wanna know what mistakes made you feel worthless.[/say]")
+		saynn("[say=pc]Конечно, ты совершала ошибки. Я хочу помочь. Хочу понять, какие именно ошибки заставили тебя почувствовать себя ничтожной.[/say]")
 
-		saynn("[say=rahi]But why..[/say]")
+		saynn("[say=rahi]Но почему...[/say]")
 
-		saynn("[say=pc]Why? So we can deal with them. You've been trying to avoid your past memories. One bottle of whiskey at a time. I think it's time we change tactics?[/say]")
+		saynn("[say=pc]Почему? Чтобы мы могли с ними разобраться. Ты пыталась убежать от воспоминаний о прошлом. Бутылка за бутылкой, заливая их виски. Думаю, пришло время сменить тактику?[/say]")
 
-		saynn("[say=rahi]She's been trying to forget..[/say]")
+		saynn("[say=rahi]Она пыталась всё забыть...[/say]")
 
-		saynn("She lowers her paws, claws get retracted.")
+		saynn("Она опускает лапы, когти втягиваются.")
 
-		saynn("[say=pc]Using alcohol to cause amnesia? The most sticky memories will stay with you no matter what, kitty. You can't run away from yourself. Because your memories is who you are.[/say]")
+		saynn("[say=pc]Использовать алкоголь, чтобы вызвать амнезию? Самые липкие воспоминания всё равно останутся с тобой, китти. От самой себя не убежишь. Потому что твои воспоминания — это и есть ты.[/say]")
 
-		saynn("Kitty lowers her head, crying.")
+		saynn("Китти опускает голову, плача.")
 
-		saynn("[say=pc]And you know what? I like you, kitty.[/say]")
+		saynn("[say=pc]И знаешь что? Ты мне нравишься, китти.[/say]")
 
-		saynn("The feline stares at all the cuts and wounds that she caused to you.")
+		saynn("Кошка пристально смотрит на все те порезы и раны, которые сама же тебе и нанесла.")
 
-		saynn("[say=rahi]But she brought you so much pain..[/say]")
+		saynn("[say=rahi]Но ведь она принесла тебе столько боли...[/say]")
 
-		saynn("[say=pc]Heh.. Pleasure without pain is worthless. The contrast. The balance. Sharing good and the bad. That's what makes us happy.[/say]")
+		saynn("[say=pc]Хех... Удовольствие без боли ничего не стоит. Контраст. Баланс. Разделение хорошего и плохого. Вот что делает нас счастливыми.[/say]")
 
-		saynn("Kitty carefully observes your {pc.masc} chest. She then leans down and begins licking the most nasty cuts. It feels funny and weird, stings like hell too. Her rough tongue is picking up your blood.")
+		saynn("Китти внимательно осматривает твою {pc.masc} грудь. Затем она наклоняется и начинает вылизывать самые жуткие раны. Ощущения странные и забавные, но при этом чертовски щиплет. Её шершавый язык слизывает твою кровь.")
 
-		saynn("[say=pc]I'd really prefer bandages, kitty..[/say]")
+		saynn("[say=pc]Я бы лучше предпочел бинты, китти...[/say]")
 
-		saynn("[say=rahi]Oh.. of course..[/say]")
+		saynn("[say=rahi]Ох... ну конечно...[/say]")
 
-		saynn("Luckily there were some in that crate full of toys. Kitty quickly starts wrapping them around your chest and arms.")
+		saynn("К счастью, в том ящике с игрушками нашлись бинты. Китти быстро принимается обматывать ими твою грудь и руки.")
 
-		addButton("Continue", "See what happens next", "kitty_bandages_explains")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kitty_bandages_explains")
 	if(state == "kitty_bandages_explains"):
 		playAnimation(StageScene.SexStart, "start", {pc="rahi", npc="pc"})
-		saynn("Kitty takes her time, wrapping the bandage around your chest to stop the worst of the bleedings.")
+		saynn("Китти не торопится, накладывая повязку на твою грудь, чтобы остановить самое сильное кровотечение.")
 
-		saynn("About a minute of silence later.")
+		saynn("Прошла примерно минута тишины.")
 
-		saynn("[say=pc]Tell me about your family, kitty.[/say]")
+		saynn("[say=pc]Расскажи мне о своей семье, кошечка.[/say]")
 
-		saynn("[say=rahi]Right now she only has a brother.. Her father and mother.. aren't alive anymore..[/say]")
+		saynn("[say=rahi]Сейчас у неё есть только брат... Её отца и мать... больше нет...[/say]")
 
-		saynn("That's unfortunate. You're not even sure how should you word your next question.")
+		saynn("Это прискорбно. Вы даже не знаете, как лучше сформулировать следующий вопрос.")
 
-		saynn("[say=pc]Oh. Sorry to hear that. Ow. I'm sure your parents were good people.[/say]")
+		saynn("[say=pc]Ох. Жаль это слышать. Оу... Уверена, твои родители были замечательными людьми.[/say]")
 
-		saynn("[say=rahi]Sorry. She never knew her mother.. Father talked a lot about her.. How she was like..[/say]")
+		saynn("[say=rahi]Прости. Она так и не узнала свою мать... Отец много рассказывал о ней... Какая она была...[/say]")
 
-		saynn("She grabs another bandage and starts treating your arms too.")
+		saynn("Она берет еще один бинт и начинает перевязывать и ваши руки тоже.")
 
-		saynn("[say=pc]How come? Sorry if that's too personal, feel free to not say anything, kitty.[/say]")
+		saynn("[say=pc]Как так вышло? Прости, если это слишком личный вопрос, можешь не отвечать, кошечка.[/say]")
 
-		saynn("Rahi tilts her head down and sighs.")
+		saynn("Рахи склоняет голову и вздыхает.")
 
-		saynn("[say=rahi]She understands.. Her tribe.. before the town.. didn't have the best.. medicine? During her birth.. complications.. Father had to choose..[/say]")
+		saynn("[say=rahi]Она понимает... У её племени... до того, как они пришли в город... была не самая лучшая... медицина? Во время её рождения... возникли осложнения... Отцу пришлось выбирать...[/say]")
 
-		saynn("[say=pc]That's rough. You should know that it's not your fault.[/say]")
+		saynn("[say=pc]Жестко. Но ты должна знать — в этом нет твоей вины.[/say]")
 
-		saynn("She avoids any eye contact and just keeps treating you shoulder. Then she grabs some plasters and starts applying them to all the little cuts that she left around your body.")
+		saynn("Она избегает твоего взгляда, лишь молча придерживая тебя за плечо. Затем она берет пластыри и начинает наклеивать их на все те мелкие порезы, что оставила на твоем теле.")
 
-		saynn("[say=rahi]Doesn't make it any easier.. Father would choose differently if he knew where his.. kitty.. would end up.[/say]")
+		saynn("[say=rahi]От этого не легче... Отец выбрал бы иначе, если бы знал, где окажется его... киска...[/say]")
 
-		saynn("You put your hand on Rahi's shoulder.")
+		saynn("Ты кладешь руку на плечо Рахи.")
 
-		saynn("[say=pc]Do you wanna talk about him?[/say]")
+		saynn("[say=pc]Хочешь поговорить о нем?[/say]")
 
-		saynn("Rahi finishes treating most of your wounds. She just proceeds to stroke her tail.")
+		saynn("Рахи заканчивает обрабатывать большинство твоих ран. Она просто продолжает поглаживать свой хвост.")
 
-		saynn("[say=rahi]Father was kind.. too kind. He was working.. a lot.. So her and her brother would be able to afford education.. Get off that snowy rock.. Find happiness.. That was his dream..[/say]")
+		saynn("[say=rahi]Отец был добрым... слишком добрым. Он много работал... чтобы она и её брат могли получить образование... Свалить с этой снежной скалы... Найти счастье... В этом была его мечта...[/say]")
 
-		saynn("[say=pc]Seems like he was a good person.[/say]")
+		saynn("[say=pc]Похоже, он был хорошим человеком.[/say]")
 
-		saynn("Rahi nods.")
+		saynn("Рахи кивает.")
 
-		saynn("[say=rahi]At some point the work got too much for him.. To the point of becoming paralyzed.. He refused to get treatment.. Because that would mean eternal debt.. No medicine got replaced with a very expensive AlphaCorp's one.. But he.. he even refused when she brought medications to him.. stolen ones..[/say]")
+		saynn("[say=rahi]В какой-то момент работы стало слишком много... до такой степени, что он почти парализовало... Он отказывался от лечения... потому что это означало вечные долги... Обычные лекарства заменили на очень дорогие от АльфаКорп... Но он... он отказывался, даже когда она приносила ему медикаменты... украденные...[/say]")
 
-		saynn("Seems like kitty was doing her best to help her father. Even if that meant doing bad things.")
+		saynn("Похоже, кошечка изо всех сил старалась помочь отцу. Даже если для этого приходилось творить всякую дрянь.")
 
-		saynn("[say=pc]You said that you failed him. Do you wanna talk about that?[/say]")
+		saynn("[say=pc]Ты сказала, что подвела его. Хочешь об этом поговорить?[/say]")
 
-		saynn("Rahi stays silent for some time.")
+		saynn("Рахи какое-то время хранит молчание.")
 
-		saynn("[say=rahi]No..[/say]")
+		saynn("[say=rahi]Нет..[/say]")
 
-		saynn("[say=pc]You should understand that we will have to talk about it at some point. You can't keep it inside you forever.[/say]")
+		saynn("[say=pc]Тебе стоит понять, что рано или поздно нам всё равно придётся это обсудить. Нельзя же держать всё в себе вечно.[/say]")
 
-		saynn("[say=rahi]She understands. Just.. Some other time.. okay?[/say]")
+		saynn("[say=rahi]Она понимает. Просто... как-нибудь в другой раз... ладно?[/say]")
 
-		saynn("Seems like you gotta ask her some other time. Still, she told you quite a lot. You get up and lean towards kitty to give her a small kiss on the cheek. Ow.. Your wounds just reminded you about their existence. For some reason you don't mind these ones.")
+		saynn("Похоже, придётся спросить её в другой раз. И всё же, она выложила тебе немало. Ты поднимаешься и наклоняешься к кошечке, чтобы запечатлеть на её щеке легкий поцелуй. Ох... Раны тут же напомнили о себе. Но почему-то сейчас это тебя даже не беспокоит.")
 
-		saynn("[say=pc]Thank you, kitty. Please try to understand that your mother's death is not your fault. That's just life. And life likes playing unfair. No matter how good your intentions are, it will reward you with nothing but pain sometimes.[/say]")
+		saynn("[say=pc]Спасибо, кошечка. Пожалуйста, постарайся понять, что смерть твоей матери — не твоя вина. Такова жизнь. А жизнь любит играть нечестно. Какими бы благими ни были твои намерения, иногда она вознаграждает лишь болью.[/say]")
 
-		saynn("Rahi nods subtly and just sighs. You offer her another hug and then step out of her cell. To think about it all.")
+		saynn("Рахи едва заметно кивает и лишь вздыхает. Ты обнимаешь её еще раз, а затем выходишь из камеры, чтобы всё обдумать.")
 
-		addButton("Continue", "That was something", "endthescene")
+		addButton("Продолжить", "Это было нечто", "endthescene")
 	if(state == "do_spank"):
 		setFlag("RahiModule.rahiMile2Embraced", false)
 		playAnimation(StageScene.Spanking, "fast", {npc="rahi"})
-		saynn("You easily dodge Rahi's attack, the alcohol in her bloodstream made her motions slow and predictable. After that, you grab her by the most easily accessible part, her ponytail, and yank down, making the kitty trip and collapse. A loud painful hissing noise escapes her lips.")
+		saynn("Ты легко уклоняешься от атаки Рахи — алкоголь в её крови сделал движения медленными и предсказуемыми. Сразу после этого ты хватаешь её за самое доступное место — хвост — и резко дергаешь вниз, заставляя кошечку споткнуться и рухнуть на пол. С её губ срывается громкий болезненный шипящий звук.")
 
-		saynn("The sudden uncomfortable sensations seem to snap kitty out of her state of rage. Her eyes.. They are full of fear now.")
+		saynn("Внезапное неприятное ощущение, кажется, вырывает кошечку из состояния ярости. Её глаза... теперь они полны страха.")
 
-		saynn("[say=pc]Is that what you're gonna do? First you lie to me, then you try to attack me? That's not the kitty that I wanna see.[/say]")
+		saynn("[say=pc]Так ты собираешься поступить? Сначала врешь мне, а потом пытаешься напасть? Это совсем не та кошечка, которую я хочу видеть.[/say]")
 
-		saynn("Time to show her the consequences of her actions, you pull her closer to the bed before sitting on it and dragging her over your lap. Your hand pulls down Rahi's shorts, exposing her round butt.")
+		saynn("Пришло время показать ей последствия её поступков. Ты притягиваешь её ближе к кровати, садишься на край и заставляешь её перекинуться через свои колени. Твоя рука стягивает шорты Рахи, обнажая её округлую задницу.")
 
-		saynn("One of your hands keeps her pinned while the second one swiftly delivers a powerful smack on her ass, forcing a hiss from Rahi. Her fluffy tail quickly tries to protect her rear with itself.")
+		saynn("Одной рукой ты прижимаешь её, а второй резко и мощно шлепаешь по заднице, заставляя Рахи шикнуть. Её пушистый хвост тут же пытается прикрыть ею её тыл.")
 
-		saynn("[say=pc]Move. The tail. Away.[/say]")
+		saynn("[say=pc]Убери. Хвост. С дороги.[/say]")
 
-		saynn("Kitty huffs and refuses to do that. So you smack her ass again with full power. And this time, Rahi's tail absorbed a big part of the impact, causing kitty to jerk to the side and let out a cry. Your hand quickly gets ready to do another smack.")
+		saynn("Кошечка фыркает и отказывается подчиняться. Тогда ты снова со всей силы шлепаешь её по заднице. На этот раз хвост Рахи принимает на себя большую часть удара, отчего кошечку дергает в сторону и она вскрикивает. Твоя рука уже готова к следующему шлепку.")
 
-		saynn("[say=pc]Tail. Now.[/say]")
+		saynn("[say=pc]Хвост. Живо.[/say]")
 
-		saynn("Kitty finally decides to listen and moves the tail out of the way, giving you full access to her butt. So of course you use that opportunity to spank her unruly butt again, making it bounce slightly.")
+		saynn("Кошечка наконец решает послушаться и убирает хвост, открывая тебе полный доступ к своей заднице. Разумеется, ты не упускаешь возможности снова отшлепать её непокорную попку, отчего та слегка подпрыгивает.")
 
-		addButton("Count them", "Make kitty count the spanks", "make_kitty_count")
+		addButton("Считай их", "Заставь кошечку считать шлепки", "make_kitty_count")
 	if(state == "make_kitty_count"):
-		saynn("[say=pc]Count them.[/say]")
+		saynn("[say=pc]Считай их.[/say]")
 
-		saynn("[say=rahi]..w-what?..[/say]")
+		saynn("[say=rahi]Ч-что?..[/say]")
 
-		saynn("You raise your hand and quickly smack her dark buttcheeks again. This time you notice a slight tint appearing on them.")
+		saynn("Ты заносишь руку и снова быстро шлепаешь её по темным ягодицам. На этот раз ты замечаешь, как на них проступает легкий румянец.")
 
-		saynn("[say=rahi]Ah.. O-one..[/say]")
+		saynn("[say=rahi]Ах.. О-одна..[/say]")
 
-		saynn("You quickly raise your hand and spank Rahi again. This time even your palm begins to sting from the impact. Tears stream down Rahi's cheeks.")
+		saynn("Ты резко взмахиваешь рукой и снова даешь Рахи шлепок. На этот раз даже твоя ладонь начинает гореть от удара. По щекам Рахи текут слезы.")
 
-		saynn("[say=rahi]T-two!.. S-she is..[/say]")
+		saynn("[say=rahi]Д-две!.. О-она..[/say]")
 
-		saynn("You cut her off by smacking her poor butt again, making it more red. Kitty is squirming and panting on your lap, each impact makes her produce a noise of pain.")
+		saynn("Ты перебиваешь её очередным шлепком по бедной попе, отчего та становится еще краснее. Китти ерзает и тяжело дышит у тебя на коленях, и каждый удар заставляет её издавать стон боли.")
 
-		saynn("[say=rahi]T-three.. S-she is sorry-y..[/say]")
+		saynn("[say=rahi]Т-три.. О-она просит-сит прощения..[/say]")
 
-		saynn("[say=pc]Are you now?[/say]")
+		saynn("[say=pc]Правда?[/say]")
 
-		saynn("You smack her ass again.")
+		saynn("Ты снова шлепаешь её по заднице.")
 
-		saynn("[say=rahi]F-four.. Y-yes..[/say]")
+		saynn("[say=rahi]Ч-четыре.. Д-да..[/say]")
 
-		saynn("[say=pc]Sorry for what?[/say]")
+		saynn("[say=pc]За что просить прощения?[/say]")
 
-		saynn("Another slap sends her bruises butt bouncing. Kitty is wiggling a lot on your lap, her paws really want to rub her rear but she is too afraid to go against your orders.")
+		saynn("Очередная пощелина заставляет её синяки на заднице подпрыгивать. Китти вовсю ерзает у тебя на коленях; её лапки так и тянутся потереть задницу, но она слишком боится ослушаться твоих приказов.")
 
-		saynn("[say=rahi]F-five.. Sorry for l-lying, {rahiMaster}..[/say]")
+		saynn("[say=rahi]П-пять... П-прости за в-ложь, {rahiMaster}..[/say]")
 
-		saynn("[say=pc]That's right, slave. How can I trust you serving me if you can't even be honest with me?[/say]")
+		saynn("[say=pc]Верно, рабыня. Как я могу доверять тебе, если ты даже не способна быть со мной честной?[/say]")
 
-		saynn("You bring your hand down yet again, delivering another powerful smack on the girl's rear that looks quite red by this point, the feline won't be able to sit for a while.")
+		saynn("Ты снова опускаешь руку, нанося мощный шлепок по заднице девушки, которая к этому моменту уже выглядит довольно красной; кошечке теперь будет больно сидеть какое-то время.")
 
-		saynn("[say=rahi]S-six!.. S-she is sorry for scratching you..[/say]")
+		saynn("[say=rahi]Ш-шесть!.. О-она просит прощения за то, что поцарапала тебя..[/say]")
 
-		saynn("[say=pc]Oh yeah. You're allowed to hurt me only when I order you to do so, kitty.[/say]")
+		saynn("[say=pc]О да. Тебе позволено причинять мне боль только тогда, когда я сама прикажу тебе это сделать, китти.[/say]")
 
-		saynn("You do two quick spanks in a row. After the last one, you keep your hand on her butt.")
+		saynn("Ты наносишь два быстрых шлепка подряд. После последнего ты не убираешь руку с её задницы.")
 
-		saynn("[say=rahi]S-seven.. E-eight.. She is sorry for d-drinking alcohol and disrespecting you..[/say]")
+		saynn("[say=rahi]С-семь.. В-восемь.. Она просит прощения за то, что пьёт алкоголь и проявляет к тебе неуважение..[/say]")
 
-		saynn("[say=pc]Yeah, kitty. Consider these as rules. No lying, no attacking me, no drinking and no disrespecting. I want a well-behaving kitty, not a spoiled brat. That's easy enough for you to understand?[/say]")
+		saynn("[say=pc]Да, китти. Считай это правилами. Никакой лжи, никаких нападений, никакого алкоголя и никакого неуважения. Мне нужна послушная кошечка, а не избалованная девчонка. Тебе ведь не составит труда это понять?[/say]")
 
-		saynn("Rahi tilts her head down. She is still hissing sometimes.")
+		saynn("Рахи склоняет голову. Она всё ещё время от времени шипит.")
 
-		saynn("[say=rahi]Yes, {rahiMaster}.. She is very sorry..[/say]")
+		saynn("[say=rahi]Да, {rahiMaster}... Ей очень жаль...[/say]")
 
-		saynn("You sigh and begin to carefully rub the feline's red butt. Even that causes your kitty to squirm uncomfortably on your lap.")
+		saynn("Ты вздыхаешь и начинаешь осторожно растирать покрасневшую задницу кошечки. Даже от этого твоя киска неуютно ерзает у тебя на коленях.")
 
 		if (getModule("RahiModule").getSkillScore("rahiSkillMasochist") > 5):
-			saynn("You do notice that Rahi's pussy is also incredibly wet. Seems like the masochism training is paying off.")
+			saynn("Ты замечаешь, что киска Рахи тоже невероятно влажная. Похоже, тренировки по мазохизму приносят свои плоды.")
 
-		saynn("[say=pc]I will guide you, train you. I will make the best kitty out of you. You won't have to worry about your past deeds or mistakes. But I need you to obey me. If you don't do that - I will have to apply more and more force. Just like I'm doing now.[/say]")
+		saynn("[say=pc]Я буду направлять тебя, тренировать тебя. Я сделаю из тебя лучшую кошечку. Тебе не придётся беспокоиться о своих прошлых делах или ошибках. Но мне нужно, чтобы ты слушалась меня. Если ты этого не сделаешь — мне придётся применять всё больше и больше силы. Прямо как сейчас.[/say]")
 
-		saynn("Rahi nods quickly. You brush your digits over her private bits too, just as a hint that this could have been a reward instead of a punishment. The feline seems to understand you quite well though.")
+		saynn("Рахи быстро кивает. Ты проводишь пальцами и по её интимным местам — лишь намек на то, что вместо наказания это могло бы стать наградой. Впрочем, кошечка, кажется, прекрасно тебя понимает.")
 
-		saynn("[say=rahi]It w-won't happen again..[/say]")
+		saynn("[say=rahi]Э-это... больше не повторится...[/say]")
 
-		saynn("[say=pc]I hope so.[/say]")
+		saynn("[say=pc]Надеюсь на это.[/say]")
 
-		saynn("You pull her shorts up and let kitty get off your lap. She stands still before you while her paws rub her butt.")
+		saynn("Ты натягиваешь на неё шорты и позволяешь кошечке слезть с колен. Она замирает перед тобой, потирая лапками задницу.")
 
-		saynn("[say=rahi]T-thank you..[/say]")
+		saynn("[say=rahi]Т-спасибо...[/say]")
 
-		saynn("You raise a brow, being somewhat surprised. Her words seem genuine.")
+		saynn("Ты удивленно приподнимаешь бровь. Её слова кажутся искренними.")
 
-		saynn("[say=rahi]F-for.. for this.[/say]")
+		saynn("[say=rahi]П-про... про это.[/say]")
 
-		saynn("[say=pc]I'm always happy to show kitty her place.[/say]")
+		saynn("[say=pc]Я всегда рада показать кошечке её место.[/say]")
 
-		saynn("She nods.")
+		saynn("Она кивает.")
 
-		saynn("Well, you think that you handled this situation pretty well.")
+		saynn("Ну, ты считаешь, что довольно неплохо справился с этой ситуацией.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

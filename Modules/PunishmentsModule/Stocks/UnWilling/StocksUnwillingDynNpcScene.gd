@@ -43,13 +43,13 @@ func _run():
 			"Someone walks up to the stocks, about to have fun with you!",
 		]))
 
-		addButton("Get fucked", "Well, what can you do", "startsexsubby")
+		addButton("Получи по полной", "Ну, что тут поделаешь...", "startsexsubby")
 
 	if(state == "after_sex"):
-		saynn("After that, {npc.he} just leaves you alone, still trapped in stocks.")
+		saynn("После этого {npc.he} просто оставляет тебя в покое, пока ты всё ещё торчишь в колодах.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 

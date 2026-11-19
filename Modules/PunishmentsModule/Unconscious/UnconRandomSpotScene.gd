@@ -9,20 +9,20 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "sleep", {pc="pc"})
 
-		saynn("While you are.. sleeping soundly.. someone has approached you.. and began dragging you off somewhere..")
+		saynn("Пока ты... крепко спишь... кто-то подошел к тебе... и начал утаскивать куда-то прочь...")
 		
-		addButton("Continue", "See what happens next..", "do_drag_pc_off")
+		addButton("Продолжить", "Смотри, что будет дальше...", "do_drag_pc_off")
 	
 	if(state == "do_drag_pc_off"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
 		playAnimation(StageScene.GivingBirth, "idle", {pc="pc"})
 		
-		saynn("After a less-than-comfy sleeping experience, you finally open your eyes.. and realize that you are somewhere else..")
+		saynn("После довольно неуютного сна ты наконец открываешь глаза... и понимаешь, что ты уже в другом месте...")
 		
 		if(pantiesStolen):
-			saynn("For some reason, your bottom area feels a bit more cold too..")
+			saynn("По какой-то причине твоя задница кажется еще более холодной...")
 		
-		addButton("Get up", "Time to go..", "endthescene")
+		addButton("Встать", "Пора идти..", "endthescene")
 
 
 func _react(_action: String, _args):

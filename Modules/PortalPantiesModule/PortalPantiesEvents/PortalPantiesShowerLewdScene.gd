@@ -7,51 +7,51 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.SexStanding, RNG.pick(["sex", "fast"]), {onlySub=true, npc="pc", npcBodyState={naked=true}})
 		
-		saynn("You’re wearing portal panties even while taking a shower, hopefully that won’t break them.")
+		saynn("Ты даже в душе не снимаешь портальные трусики — надеюсь, они от этого не порвутся.")
 
 		# (if pussy)
 		if(GM.pc.hasVagina()):
-			saynn("But that’s not the thing that you should worry about, a bigger problem arises when you suddenly feel your pussy being fingered by someone. Unknown digits are spreading your folds wide and start hammering at your g-spot, forcing moans out of you.")
+			saynn("Но не об этом тебе стоит беспокоиться. Настоящая проблема возникает, когда ты внезапно чувствуешь, как кто-то начинает ласкать твою киску пальцами. Неизвестные пальцы широко раздвигают твои складки и начинают долбить прямо в точку G, вырывая из тебя стоны.")
 
 			saynn(RNG.pick([
 				"[say=pc]H-hey..[/say]",
 				"[say=pc]Not n-now..[/say]",
 			]))
 
-			saynn("You’re so exposed, can’t even cover your pussy while forced to endure the constant pleasure. You bend forward and hold onto the cold wall while the shower washes over your back, more moans escape from you.")
+			saynn("Ты так беззащитна, что даже не можешь прикрыть киску, вынужденная терпеть это непрекращающееся наслаждение. Ты наклоняешься вперед, вцепившись в холодную стену, пока струи душа стекают по твоей спине, а из груди вырываются всё новые стоны.")
 
 		# (if no pussy)
 		else:
-			saynn("But that’s not the thing that you should worry about, a bigger problem arises when you suddenly feel your tailhole being fingered by someone. Unknown digits are spreading your ring wide and start hammering at your pleasure spot, forcing moans out of you.")
+			saynn("Но не об этом тебе стоит беспокоиться. Настоящая проблема возникает, когда ты внезапно чувствуешь, как кто-то начинает ковырять в твоем анусе. Неизвестные пальцы широко раздвигают твое кольцо и начинают долбить в твою эрогенную зону, заставляя тебя стонать.")
 			
 			saynn(RNG.pick([
 				"[say=pc]H-hey..[/say]",
 				"[say=pc]Not n-now..[/say]",
 			]))
 
-			saynn("You’re so exposed, can’t even cover your ass while forced to endure the constant pleasure. You bend forward and hold onto the cold wall while the shower washes over your back, more moans escape from you.")
+			saynn("Ты так беззащитна, что даже не можешь прикрыть задницу, вынужденная терпеть это непрекращающееся наслаждение. Ты наклоняешься вперед, вцепившись в холодную стену, пока струи душа стекают по твоей спине, а из груди вырываются всё новые стоны.")
 
-		addButton("Cum", "Can’t push it away any longer", "cum")
+		addButton("Кончить", "Больше не получается оттолкнуть это", "cum")
 
 	if(state == "cum"):
 		playAnimation(StageScene.SexStanding, RNG.pick(["inside", "fast"]), {onlySub=true, npc="pc", npcBodyState={naked=true}})
 		
 		# (if pussy)
 		if(GM.pc.hasVagina()):
-			saynn("There is simply too much stimulation, the fingers keep fucking your slit until it starts pulsating and twitching around them and also showring them in your juices.")
+			saynn("Стимуляции просто слишком много: пальцы продолжают трахать твою щель до тех пор, пока она не начинает пульсировать и подергиваться вокруг них, заливая их твоей смазкой.")
 
 		# (if no pussy)
 		else:
-			saynn("There is simply too much stimulation, the fingers keep fucking your tailhole until it starts pulsating and twitching around them.")
+			saynn("Стимуляции просто слишком много: пальцы продолжают трахать твой анус до тех пор, пока он не начинает пульсировать и подергиваться вокруг них.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Wherever your cock is, you hope it didn’t attract much attention because the climax made you waste a load and probably make a mess around.")
+			saynn("Где бы там ни был твой член, ты надеешься, что он не привлек лишнего внимания, потому что от оргазма ты кончила и, скорее всего, вокруг стало довольно грязно.")
 
-		saynn("The fingers push you through the orgasm and then just leave you alone, letting you catch your breath and finish showering.")
+		saynn("Пальцы доводят тебя до самого пика оргазма, а затем просто оставляют в покое, давая перевести дух и спокойно закончить мыться.")
 
 		# (scene ends)
-		addButton("Continue", "Even she showers aren't safe", "endthescene")
+		addButton("Продолжить", "Даже душ не гарантирует безопасности", "endthescene")
 
 
 func _react(_action: String, _args):

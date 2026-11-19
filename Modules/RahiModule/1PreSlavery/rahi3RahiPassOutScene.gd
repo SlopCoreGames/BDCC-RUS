@@ -9,186 +9,186 @@ func _run():
 	if(state == ""):
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Another night full of pointless dreams gets spoiled by someone's voice.")
+		saynn("Очередная ночь, полная бессмысленных снов, портится от чьего-то голоса.")
 
-		saynn("[say=avy]Wake up. Don't make me kick you.[/say]")
+		saynn("[say=avy]Просыпайся. Не заставляй меня пинать тебя.[/say]")
 
-		saynn("Whoever this is, you don't like their voice. So your brain just lets you keep your eyes closed.")
+		saynn("Кем бы это ни было, голос тебе явно не нравится. Поэтому мозг просто позволяет тебе не открывать глаза.")
 
-		saynn("That is, until you are suddenly dragged off your bed. A spike of pain echoes around your body as your back hits the floor. That helps you wake up, your eyes open and see an inmate wearing red colors. Did they come to kill you?")
+		saynn("Так продолжается до тех пор, пока тебя внезапно не сдергивают с кровати. Резкая вспышка боли пронзает тело, когда спина встречается с полом. Это помогает прийти в себя: глаза распахиваются, и ты видишь заключенную в красной робе. Неужели она пришла тебя убить?")
 
-		saynn("[say=pc]Ugh.. what do you..[/say]")
+		saynn("[say=pc]Ух... что ты...[/say]")
 
 		if (getFlag("RahiModule.Rahi_CanteenSceneHappened") || getFlag("FightClubModule.AvyIntroduced")):
-			saynn("[say=avy]You forgot about me already? I thought we had a thing going.[/say]")
+			saynn("[say=avy]Ты про меня уже забыл? А я думала, у нас что-то наклевывается.[/say]")
 
 		else:
-			saynn("[say=avy]Get up already, I don't have all day.[/say]")
+			saynn("[say=avy]Давай уже вставай, у меня нет на тебя весь день.[/say]")
 
-		saynn("You slowly raise yourself until you're sitting on the cold floor. Then you use your bed as support while getting up. All the while Avy is just shaking her head, her arms are crossed.")
+		saynn("Ты медленно приподнимаешься, пока не садишься на холодный пол. Затем, опираясь на кровать, пытаешься встать. Всё это время Эви просто качает головой, скрестив руки на груди.")
 
-		saynn("[say=pc]What do you want?[/say]")
+		saynn("[say=pc]Чего ты хочешь?[/say]")
 
-		saynn("[say=avy]I just came to tell you that your cat is lying unconscious near the bench.[/say]")
+		saynn("[say=avy]Я просто пришла сказать, что твой кот лежит без сознания возле скамьи.[/say]")
 
-		saynn("Huh? The senses, all of them suddenly become sharp. She is talking about the kitten. And her mean tone tells you that this fox might have something to do with it.")
+		saynn("А? Все чувства внезапно обостряются. Она говорит о котенке. А её язвительный тон подсказывает, что эта лисица может быть к этому причастна.")
 
-		saynn("[say=pc]What did you do to her?[/say]")
+		saynn("[say=pc]Что ты с ней сделал?[/say]")
 
-		saynn("Avy rolls her eyes and leans against the wall.")
+		saynn("Эви закатывает глаза и прислоняется к стене.")
 
-		saynn("[say=avy]I didn't do nothing. Just said hi. But then your drunk slut hit the floor.[/say]")
+		saynn("[say=avy]Да ничего я не делал. Просто поздоровался. А потом твоя пьяная шлюшка сама грохнулась на пол.[/say]")
 
-		saynn("[say=pc]Where is she?[/say]")
+		saynn("[say=pc]Где она?[/say]")
 
-		saynn("Avy covers her eyes with her palm and just walks out of your cell.")
+		saynn("Эви закрывает глаза ладонью и просто выходит из твоей камеры.")
 
-		saynn("Fuck.")
+		saynn("Блядь.")
 
-		addButton("Rush to Rahi", "She needs help", "rush_to_rahi")
+		addButton("Броситься к Рахи", "Ей нужна помощь", "rush_to_rahi")
 	if(state == "rush_to_rahi"):
 		removeCharacter("avy")
 		addCharacter("rahi")
 		playAnimation(StageScene.SexStart, "defeated", {npc="rahi"})
 		aimCameraAndSetLocName("main_bench2")
-		saynn("You rush out of your cell and quickly climb up the stairs that lead into the main hall. Rahi's bench, you sprint towards it and quickly find the unconscious feline there. The kitty is lying face-down on the cold floor, you're not even sure if she is breathing. There are a few inmates around but no one seems to care enough for a random cat.")
+		saynn("Ты вылетаешь из камеры и быстро взлетаешь по лестнице, ведущей в главный зал. Ты несешься к скамейке Рахи и быстро находишь там бессознательную кошечку. Крошка лежит лицом вниз на холодном полу, и ты даже не уверен, дышит ли она вообще. Вокруг несколько заключенных, но, кажется, никому нет дела до какой-то случайной кошки.")
 
-		saynn("You shake the girl. No reaction.")
+		saynn("Ты трясешь девушку за плечи. Никакой реакции.")
 
-		saynn("[say=pc]Kitty, can you hear me?[/say]")
+		saynn("[say=pc]Кошечка, ты меня слышишь?[/say]")
 
-		saynn("She is still lying on her belly. You slip your hands under her and flip her around to her back. The obvious cause of her state is a whiskey bottle that's in her paw. A completely empty bottle..")
+		saynn("Она всё ещё лежит на животе. Ты просовываешь руки под неё и переворачиваешь на спину. Очевидная причина её состояния — бутылка виски в её лапе. Совершенно пустая бутылка...")
 
-		saynn("You put your ear to her chest.. Nothing? You're not sure.. You gotta get her to the medical wing, fast. Who knows how long she is unconscious already.")
+		saynn("Ты прикладываешь ухо к её груди... Ничего? Ты не уверен... Нужно скорее тащить её в медблок. Кто знает, сколько она уже в беспамятстве.")
 
-		saynn("Your heart beats so fast..")
+		saynn("Сердце бешено колотится...")
 
-		addButton("Call for help", "Rush to the medical and tell nurses about Rahi", "call_for_help")
-		addButtonWithChecks("Carry Rahi", "She is not the heaviest but you still need some strength to do this", "do_carry_rahi", [], [[ButtonChecks.StatCheck, Stat.Strength, 5]])
+		addButton("Позвать на помощь", "Мчаться в медблок и рассказать медсёстрам о Рахи", "call_for_help")
+		addButtonWithChecks("Нести Рахи на руках", "Она не самая тяжёлая, но всё равно понадобятся силы.", "do_carry_rahi", [], [[ButtonChecks.StatCheck, Stat.Strength, 5]])
 	if(state == "do_carry_rahi"):
 		addCharacter("cp_guard")
 		playAnimation(StageScene.Duo, "stand", {npc="cp_guard"})
 		aimCameraAndSetLocName("hall_checkpoint")
 		carrying_rahi = true
-		saynn("You slip your hands under Rahi again and carefully lift her up, using your shoulder to support her head. She is not that heavy, this particular kitty seems to be quite fit. Or maybe that's the alcohol's fault. Either way, you barely feel her weight. The empty bottle falls out of Rahi's paw with a loud ringing sound.")
+		saynn("Ты снова просовываешь руки под Рахи и осторожно поднимаешь её, придерживая голову плечом. Она не такая уж и тяжёлая, эта кошечка кажется довольно подтянутой. Ну, или это всё алкоголь. Так или иначе, ты почти не чувствуешь её веса. Пустая бутылка с громким звоном выпадает из лапы Рахи.")
 
-		saynn("You rush towards the elevator that will bring you to the medical wing.")
+		saynn("Ты несёшься к лифту, который доставит тебя в медблок.")
 
-		saynn("But that's when the checkpoint guard blocks your path.")
+		saynn("Но тут путь тебе преграждает охранник на контрольно-пропускном пункте.")
 
-		saynn("[say=cp_guard]Woah. Why the hurry?[/say]")
+		saynn("[say=cp_guard]Ого. Чего так спешим?[/say]")
 
-		saynn("[say=pc]Get out of the way. My friend is unconscious, I need help to save her.[/say]")
+		saynn("[say=pc]С дороги! Моя подруга в беспамятстве, мне нужна помощь, чтобы спасти её![/say]")
 
-		saynn("The guard keeps blocking the path, his arms crossed.")
+		saynn("Охранник продолжает преграждать путь, скрестив руки на груди.")
 
-		saynn("[say=cp_guard]I don't care what happened but you're being awfully disrespectful to an officer of justice. You're not going anywhere until I frisk both of you.[/say]")
+		saynn("[say=cp_guard]Мне плевать, что там случилось, но ты ведешь себя чертовски неуважительно по отношению к представителю закона. Вы никуда не пойдете, пока я не обыщу вас обоих.[/say]")
 
-		saynn("Fuck. This will take too long. Especially if he will also frisk Rahi.")
+		saynn("Блядь. Это займет слишком много времени. Особенно если он решит обыскать еще и Рахи.")
 
-		saynn("[say=pc]Listen, I really have no time for this. She might die if she doesn't get help. Now.[/say]")
+		saynn("[say=pc]Послушай, у меня реально нет на это времени. Она может сдохнуть, если ей не помогут. Прямо сейчас![/say]")
 
-		saynn("The guy keeps speaking in a monotone voice.")
+		saynn("Парень продолжает говорить монотонным голосом.")
 
-		saynn("[say=cp_guard]Like I said, I don't give a fuck. Hands on the wall, inmate.[/say]")
+		saynn("[say=cp_guard]Как я уже сказал, мне поебать. Руки на стену, заключенная![/say]")
 
-		saynn("You carefully set Rahi on the floor.")
+		saynn("Вы осторожно опускаете Рахи на пол.")
 
-		saynn("He bares his weapon.")
+		saynn("Он обнажает оружие.")
 
-		addButton("Fight", "The guy is asking for it", "start_fight")
-		addButtonWithChecks("Cave his head in", "The guy is being really annoying", "cave_guard_head", [], [[ButtonChecks.StatCheck, Stat.Strength, 8]])
-		addButtonWithChecks("Slip past", "You really have no time for this", "slip_past_guard", [], [[ButtonChecks.StatCheck, Stat.Agility, 10]])
+		addButton("Драться", "Этот парень сам напросился", "start_fight")
+		addButtonWithChecks("Проломить ему череп", "Этот тип дико бесит", "cave_guard_head", [], [[ButtonChecks.StatCheck, Stat.Strength, 8]])
+		addButtonWithChecks("Проскользнуть мимо", "У тебя реально нет на это времени", "slip_past_guard", [], [[ButtonChecks.StatCheck, Stat.Agility, 10]])
 	if(state == "call_for_help"):
 		removeCharacter("rahi")
 		addCharacter("cp_guard")
 		playAnimation(StageScene.Duo, "stand", {npc="cp_guard"})
 		aimCameraAndSetLocName("hall_checkpoint")
-		saynn("Nurses probably know the best way to transport her. But you gotta get to them. You place Rahi on her side so she doesn't choke on something and take off towards the main elevator.")
+		saynn("Медсестры, вероятно, знают лучший способ её транспортировать. Но тебе нужно добраться до них. Ты укладываешь Рахи на бок, чтобы она не подавилась, и бросаешься к главному лифту.")
 
-		saynn("But that's when the checkpoint guard blocks your path.")
+		saynn("Но тут путь тебе преграждает охранник на контрольно-пропускном пункте.")
 
-		saynn("[say=cp_guard]Woah. Why the hurry?[/say]")
+		saynn("[say=cp_guard]Ого. Чего так спешим?[/say]")
 
-		saynn("[say=pc]Get out of the way. My friend is unconscious, I need help to save her.[/say]")
+		saynn("[say=pc]С дороги! Моя подруга в беспамятстве, мне нужна помощь, чтобы спасти её![/say]")
 
-		saynn("The guard keeps blocking the path, his arms crossed.")
+		saynn("Охранник продолжает преграждать путь, скрестив руки на груди.")
 
-		saynn("[say=cp_guard]I don't care what happened but you're being awfully disrespectful to an officer of justice. You're not going anywhere until I frisk you.[/say]")
+		saynn("[say=cp_guard]Мне плевать, что там случилось, но ты ведешь себя чертовски неуважительно по отношению к офицеру правосудия. Ты никуда не уйдешь, пока я тебя не обыщу.[/say]")
 
-		saynn("Fuck. This will take too long.")
+		saynn("Блядь. Это займет слишком много времени.")
 
-		saynn("[say=pc]Listen, I really have no time for this. She might die if she doesn't get help. Now.[/say]")
+		saynn("[say=pc]Послушай, у меня реально нет на это времени. Она может сдохнуть, если ей не помогут. Прямо сейчас![/say]")
 
-		saynn("The guy keeps speaking in a monotone voice.")
+		saynn("Парень продолжает говорить монотонным голосом.")
 
-		saynn("[say=cp_guard]Like I said, I don't give a fuck. Hands on the wall, inmate.[/say]")
+		saynn("[say=cp_guard]Как я уже сказал, мне поебать. Руки на стену, заключенная![/say]")
 
-		saynn("He bares his weapon.")
+		saynn("Он обнажает оружие.")
 
-		addButton("Fight", "The guy is asking for it", "start_fight")
-		addButtonWithChecks("Cave his head in", "The guy is being really annoying", "cave_guard_head", [], [[ButtonChecks.StatCheck, Stat.Strength, 8]])
-		addButtonWithChecks("Slip past", "You really have no time for this", "slip_past_guard", [], [[ButtonChecks.StatCheck, Stat.Agility, 10]])
+		addButton("Драться", "Этот парень сам напросился", "start_fight")
+		addButtonWithChecks("Проломить ему череп", "Этот тип дико бесит", "cave_guard_head", [], [[ButtonChecks.StatCheck, Stat.Strength, 8]])
+		addButtonWithChecks("Проскользнуть мимо", "У тебя реально нет на это времени", "slip_past_guard", [], [[ButtonChecks.StatCheck, Stat.Agility, 10]])
 	if(state == "if_won"):
 		removeCharacter("cp_guard")
 		playAnimation(StageScene.Solo, "stand")
 		if (carrying_rahi):
-			saynn("The guard is defeated. But that's not why you're here so you just shove him away and grab Rahi before rushing for the elevator. You only hear him grunt and shittalk you while the doors close.")
+			saynn("Охранник повержен. Но ты здесь не ради этого, так что ты просто отпихиваешь его в сторону, хватаешь Рахи и несешься к лифту. Слышно лишь его кряхтение и едкие маты в твой адрес, пока двери закрываются.")
 
 		else:
-			saynn("The guard is defeated. But that's not why you're here so you just shove him away and rush to the elevator. You only hear him grunt and shittalk you while the doors of the elevator close.")
+			saynn("Охранник повержен. Но ты здесь не ради этого, так что ты просто отпихиваешь его и бежишь к лифту. Слышно лишь его кряхтение и едкие маты в твой адрес, пока двери лифта закрываются.")
 
-		saynn("[say=cp_guard]Ugh.. what a bitch.[/say]")
+		saynn("[say=cp_guard]Уф... ну и сучка.[/say]")
 
-		addButton("Continue", "See what happens next", "bring_rahi_to_medical")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bring_rahi_to_medical")
 	if(state == "if_lost"):
 		playAnimation(StageScene.Solo, "stand")
 		removeCharacter("cp_guard")
-		saynn("The guard forces you against the wall and proceeds to frisk you, taking away anything illegal.")
+		saynn("Охранник прижимает тебя к стене и начинает обыскивать, отбирая всё запрещенное.")
 
-		saynn("[say=cp_guard]See? Wasn't so fucking hard, bitch.[/say]")
+		saynn("[say=cp_guard]Видишь? Не так уж и сложно, сучка.[/say]")
 
-		saynn("Still, you wasted a lot of time fighting him and then getting frisked. Hopefully Rahi can endure another few minutes.")
+		saynn("Тем не менее, ты потратил кучу времени на драку, а потом еще и на обыск. Остается надеяться, что Рахи продержится еще несколько минут.")
 
 		if (carrying_rahi):
-			saynn("As he lets you go, you grab Rahi again and rush for the elevator. You almost don't feel any pain.")
+			saynn("Когда он тебя отпускает, ты снова хватаешь Рахи и мчишься к лифту. Боли ты почти не чувствуешь.")
 
 		else:
-			saynn("As he lets you go, you rush for the elevator. You almost don't feel any pain.")
+			saynn("Когда он тебя отпускает, ты бежишь к лифту. Боли ты почти не чувствуешь.")
 
-		addButton("Continue", "See what happens next", "bring_rahi_to_medical")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bring_rahi_to_medical")
 	if(state == "cave_guard_head"):
-		saynn("The stupidity of the situation. It angers you. It angers you so much that you just reach your hands out, get a grasp on the guy's hair and slam his head against the metal wall with a satisfying boink.")
+		saynn("Тупость всей этой ситуации бесит тебя. Бесит настолько, что ты просто протягиваешь руки, вцепляешься парню в волосы и с приятным звуком «бум» впечатываешь его голову в металлическую стену.")
 
-		saynn("He yelps before losing all senses of balance and collapsing.")
+		saynn("Он вскрикивает, прежде чем окончательно потерять равновесие и рухнуть на пол.")
 
-		saynn("[say=pc]I really. Really. Have no time for this.[/say]")
+		saynn("[say=pc]Серьезно. Просто нет на это времени.[/say]")
 
-		saynn("The guy seems.. alive. He is breathing at least. You quickly go through his belt and find a personal medkit. Your hands sloppily wrap a bandage around his head before feeding him some painkillers. Now he should be fine for sure.")
+		saynn("Парень кажется... живым. По крайней мере, он дышит. Ты быстро обыскиваешь его пояс и находишь личную аптечку. Неумело обмотав голову бинтом, ты даешь ему обезболивающее. Теперь с ним точно всё должно быть в порядке.")
 
 		if (carrying_rahi):
-			saynn("Then you just carry Rahi into the elevator and hit the button that claims to bring you to the medical wing.")
+			saynn("Затем ты просто тащишь Рахи в лифт и жмешь на кнопку, которая, судя по надписи, ведет в медицинское крыло.")
 
 		else:
-			saynn("Then you rush into the elevator and hit the button that claims to bring you to the medical wing.")
+			saynn("Затем ты бросаешься к лифту и жмешь на кнопку, которая, судя по надписи, ведет в медицинское крыло.")
 
-		addButton("Continue", "See what happens next", "bring_rahi_to_medical")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bring_rahi_to_medical")
 	if(state == "slip_past_guard"):
 		playAnimation(StageScene.Duo, "dodge", {npc="cp_guard", npcAction="defeat"})
 		removeCharacter("cp_guard")
-		saynn("You keep creeping towards the guard, you really have no time for this. His hand clenches the stun baton tighter before his first attack. Your eyes spot it before he even commits to it, you react by recoiling away, causing him to overextend towards you.")
+		saynn("Ты продолжаешь красться к охраннику — времени на это действительно в обрез. Перед первой атакой он крепче сжимает электрошокер. Твой взгляд замечает движение еще до того, как он наносит удар; ты резко отпрядываешь, заставляя его по инерции податься вперед.")
 
-		saynn("That gives you a lot of options. Your hands catch him and pull him towards your direction even harder, causing the guy to trip. You help him by throwing him further. He grunts as he hits the floor and then rolls down the stairs that lead to the checkpoint.")
+		saynn("Это открывает перед тобой массу возможностей. Твои руки хватают его и с еще большей силой тянут на себя, заставляя парня споткнуться. Ты «помогаешь» ему, подталкивая еще сильнее. Он кряхтит, ударяясь о пол, и катится вниз по лестнице, ведущей к контрольно-пропускному пункту.")
 
-		saynn("[say=cp_guard]You.. Argh!..[/say]")
+		saynn("[say=cp_guard]Ты... Аргх!..[/say]")
 
 		if (carrying_rahi):
-			saynn("No time to chat, you grab Rahi again and rush for the elevator before hitting the button that should bring you down to the medical.")
+			saynn("Болтать некогда, ты снова подхватываешь Рахи и несешься к лифту, после чего жмешь на кнопку, которая должна доставить вас в медблок.")
 
 		else:
-			saynn("No time to chat, you rush for the elevator before hitting the button that should bring you down to the medical.")
+			saynn("Болтать некогда, ты бросаешься к лифту и жмешь на кнопку, которая должна доставить вас в медблок.")
 
-		addButton("Continue", "See what happens next", "bring_rahi_to_medical")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bring_rahi_to_medical")
 	if(state == "bring_rahi_to_medical"):
 		removeCharacter("cp_guard")
 		removeCharacter("rahi")
@@ -196,211 +196,211 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		aimCameraAndSetLocName("med_lobby_start")
 		if (carrying_rahi):
-			saynn("You burst into the medical lobby and quickly get the attention of all the idling nurses.")
+			saynn("Ты влетаешь в вестибюль медпункта, мгновенно привлекая внимание всех бездельничающих там медсестер.")
 
-			saynn("[say=pc]She needs help, now![/say]")
+			saynn("[say=pc]Ей нужна помощь, немедленно![/say]")
 
-			saynn("The doctor that was sitting behind the counter instantly springs up and rushes to you, she already gives orders to the sleepy staff.")
+			saynn("Врач, сидевшая за стойкой, мгновенно вскакивает и бросается к вам, уже раздавая приказы сонному персоналу.")
 
-			saynn("[say=eliza]You and you, get her onto the stretcher.[/say]")
+			saynn("[say=eliza]Вы двое, быстро уложите её на каталку![/say]")
 
-			saynn("After that, doctor Quinn checks the pulse of the feline in your hands.")
+			saynn("После этого доктор Куинн проверяет пульс кошкоподобной девицы, которую вы держите на руках.")
 
-			saynn("[say=eliza]Very faint.[/say]")
+			saynn("[say=eliza]Очень слабый.[/say]")
 
-			saynn("[say=pc]Alcohol, she emptied a whole bottle by herself.[/say]")
+			saynn("[say=pc]Алкоголь, она в одиночку опустошила целую бутылку.[/say]")
 
-			saynn("[say=eliza]I see. I fear there is more to it than just heavy intoxication.[/say]")
+			saynn("[say=eliza]Понятно. Боюсь, дело не только в сильном опьянении.[/say]")
 
-			saynn("Nurses bring the stretcher out and wait for you to place unconscious Rahi onto it.")
+			saynn("Медсестры выкатывают каталку и ждут, пока вы переложите бессознательную Рахи на неё.")
 
-			saynn("[say=eliza]Operating room, quick. Prepare her.[/say]")
+			saynn("[say=eliza]В операционную, живо! Готовьте её.[/say]")
 
-			saynn("The nurses then rush the feline somewhere behind the staff only doors. You wanted to follow but Eliza stopped you, her claws digging into your shoulder.")
+			saynn("Затем медсестры уносят кошку куда-то за двери, предназначенные только для персонала. Вы хотели последовать за ними, но Элиза остановила вас, впившись когтями в ваше плечо.")
 
-			saynn("[say=eliza]No you don't.[/say]")
+			saynn("[say=eliza]Как бы не так.[/say]")
 
-			saynn("She then holds her paw onto her headset.")
+			saynn("Затем она прижимает лапу к гарнитуре.")
 
-			saynn("[say=eliza]Quinn speaking, I need the best surgeon we have. No, I don't care that it's the morning shift, there is no time, wake him up now.[/say]")
+			saynn("[say=eliza]Квинн на связи, мне нужен лучший хирург из всех, что у нас есть. Нет, мне плевать, что сейчас утренняя смена, времени нет, поднимайте его немедленно![/say]")
 
-			saynn("She looks at you.")
+			saynn("Она смотрит на тебя.")
 
-			saynn("[say=eliza]You stay and let us take it from here, understand?[/say]")
+			saynn("[say=eliza]Ты оставайся здесь и дай нам разобраться, поняла?[/say]")
 
-			saynn("You nod and watch the doctor go.")
+			saynn("Вы киваете и провожаете взглядом уходящего врача.")
 
-			saynn("What a day huh.")
+			saynn("Ну и денек, а?")
 
 		else:
-			saynn("You burst into the medical lobby and quickly get the attention of all the idling nurses.")
+			saynn("Ты влетаешь в вестибюль медпункта, мгновенно привлекая внимание всех бездельничающих там медсестер.")
 
-			saynn("[say=pc]Main hall, one of the inmates is unconscious. She needs help, now![/say]")
+			saynn("[say=pc]В главный зал! Одна из заключенных без сознания. Ей нужна помощь, живо![/say]")
 
-			saynn("The doctor that was sitting behind the counter instantly springs up and rushes to you, she already gives orders to the sleepy staff.")
+			saynn("Врач, сидевшая за стойкой, мгновенно вскакивает и бросается к вам, уже раздавая приказы сонному персоналу.")
 
-			saynn("[say=eliza]You and you, grab a stretcher and bring her here.[/say]")
+			saynn("[say=eliza]Вы двое, хватайте носилки и тащите её сюда![/say]")
 
-			saynn("The elevator doors hide the two nurses that went after the feline. Eliza looks at you, deeply concerned.")
+			saynn("Двери лифта скрывают двух медсестер, которые побежали за кошкой. Элиза смотрит на вас с глубокой тревогой.")
 
-			saynn("[say=eliza]It's Rahi, isn't it? What happened?[/say]")
+			saynn("[say=eliza]Это Рахи, да? Что случилось?[/say]")
 
-			saynn("[say=pc]Alcohol, a whole bottle of it.[/say]")
+			saynn("[say=pc]Алкоголь, целая бутылка.[/say]")
 
-			saynn("Eliza bares her fangs and growls at you. But then shakes her head and focuses.")
+			saynn("Элиза скалит клыки и рычит на тебя. Но затем качает головой и сосредотачивается.")
 
-			saynn("[say=eliza]I see. I fear there is more to it than just heavy intoxication then.[/say]")
+			saynn("[say=eliza]Понятно. Боюсь, дело не только в сильном опьянении.[/say]")
 
-			saynn("She holds her paw on her headset.")
+			saynn("Она прижимает лапу к гарнитуре.")
 
-			saynn("[say=eliza]Quinn speaking, I need the best surgeon we have. No, I don't care that it's the morning shift, there is no time, wake him up now.[/say]")
+			saynn("[say=eliza]Квинн на связи, мне нужен лучший хирург из всех, что у нас есть. Нет, мне плевать, что сейчас утренняя смена, времени нет, поднимайте его немедленно![/say]")
 
-			saynn("After what feels like a few seconds, the elevator doors open, revealing a stretcher with an unconscious Rahi on it and the same two nurses. Eliza checks her pulse")
+			saynn("Спустя несколько секунд двери лифта открываются, открывая вид на каталку с бессознательной Рахи и тех же двух медсестер. Элиза проверяет её пульс.")
 
-			saynn("[say=eliza]Very faint. Operating room, quick. Prepare her.[/say]")
+			saynn("[say=eliza]Очень слабый. Живо в операционную! Готовьте её.[/say]")
 
-			saynn("The nurses then rush the feline somewhere behind the staff only doors. You wanted to follow but Eliza stopped you, her claws digging into your shoulder.")
+			saynn("Затем медсестры уносят кошку куда-то за двери, предназначенные только для персонала. Вы хотели последовать за ними, но Элиза остановила вас, впившись когтями в ваше плечо.")
 
-			saynn("[say=eliza]No you don't.[/say]")
+			saynn("[say=eliza]Как бы не так.[/say]")
 
-			saynn("You recoil back and look at her.")
+			saynn("Ты отшатнулся и смотришь на неё.")
 
-			saynn("[say=eliza]You stay and let us take it from here, understand?[/say]")
+			saynn("[say=eliza]Ты оставайся здесь и дай нам разобраться, поняла?[/say]")
 
-			saynn("You nod and watch the doctor go.")
+			saynn("Вы киваете и провожаете взглядом уходящего врача.")
 
-			saynn("What a day huh.")
+			saynn("Ну и денек, а?")
 
-		addButton("Continue", "See what happens next", "rahi_in_surgery")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_in_surgery")
 	if(state == "rahi_in_surgery"):
 		removeCharacter("eliza")
 		removeCharacter("rahi")
 		playAnimation(StageScene.Solo, "sit")
 		aimCameraAndSetLocName("med_lobbyse")
 		GM.pc.setLocation("med_lobbyse")
-		saynn("You find the nearest bench and take a seat. You just now realize how shaky your hands are.")
+		saynn("Ты находишь ближайшую скамью и садишься. Только сейчас ты замечаешь, как сильно дрожат твои руки.")
 
-		saynn("Time drags on for what feels like forever. At least nothing is under your control anymore.")
+		saynn("Время тянется, кажется, целую вечность. По крайней мере, теперь уже ничего не зависит от тебя.")
 
-		saynn("You lean forward, supporting your chin with your arms, and just wait..")
+		saynn("Ты наклоняешься вперед, подпирая подбородок руками, и просто ждешь...")
 
-		addButton("Continue", "See what happens next", "eliza_saves_rahi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_saves_rahi")
 	if(state == "eliza_saves_rahi"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("Finally the staff-only automated doors open, revealing doctor Quinn. She approaches you, a datapad in her paws.")
+		saynn("Наконец-то открываются автоматические двери, предназначенные только для персонала, и перед вами предстает доктор Куинн. Она подходит к вам, держа в лапах датапад.")
 
-		saynn("[say=pc]How is she?[/say]")
+		saynn("[say=pc]Как она?[/say]")
 
-		saynn("[say=eliza]Rough. But she will be okay.[/say]")
+		saynn("[say=eliza]Тяжело. Но она будет в порядке.[/say]")
 
-		saynn("That's a relief. Somewhat.")
+		saynn("Это облегчение. В какой-то степени.")
 
-		saynn("[say=eliza]We.. cleaned out her stomach. Gastric lavage is the term. Wasn't enough though.[/say]")
+		saynn("[say=eliza]Мы... промыли ей желудок. Процедура называется гастральный лаваж. Но этого оказалось недостаточно.[/say]")
 
-		saynn("[say=pc]What do you mean?[/say]")
+		saynn("[say=pc]В каком смысле?[/say]")
 
-		saynn("Eliza sighs and scrolls through her datapad. She then flips it and shows you the rough outline of Rahi. There are green areas but most of her body is orange with her brain and stomach being bright red.")
+		saynn("Элиза вздыхает и пролистывает данные на своем датападе. Затем она разворачивает его и показывает вам примерный контур тела Рахи. Там есть зеленые зоны, но большая часть тела окрашена в оранжевый, а мозг и желудок светятся ярко-красным.")
 
-		saynn("[say=eliza]Alcohol binging has a few destructive elements. It kills the liver first and foremost. And sadly, we don't have any transplants that are compatible. A synthetic one.. doesn't make sense for an inmate.. is what they say.[/say]")
+		saynn("[say=eliza]Алкогольные запои несут в себе несколько разрушительных факторов. Прежде всего, они убивают печень. И, к сожалению, у нас нет подходящих для трансплантации органов. Синтетическая печень... для заключенной это якобы не имеет смысла... так они говорят.[/say]")
 
-		saynn("Well that sucks.")
+		saynn("Ну, это хреново.")
 
-		saynn("[say=eliza]So the surgeon had to work with what she had. Should be enough to keep her alive for now.. But another one of these.. and..[/say]")
+		saynn("[say=eliza]Так что хирургу пришлось работать с тем, что было под рукой. Этого должно хватить, чтобы поддерживать в ней жизнь пока что... Но еще один такой срыв... и...[/say]")
 
-		saynn("[say=pc]I understand. Why is her head red too?[/say]")
+		saynn("[say=pc]Понимаю. А почему голова тоже красная?[/say]")
 
-		saynn("[say=eliza]That's the other one. Alcohol has long-lasting effects on neurotransmitters. It destroys the brain cells and connections between them. We didn't dare to touch her brain, too much risk.[/say]")
+		saynn("[say=eliza]Это другое дело. Алкоголь оказывает длительное воздействие на нейромедиаторы. Он разрушает клетки мозга и связи между ними. Мы не рискнули трогать её мозг — слишком велик риск.[/say]")
 
-		saynn("You nod subtly.")
+		saynn("Ты едва заметно киваешь.")
 
-		saynn("[say=pc]Could that be the reason why she talks like she does? Brain damage?..[/say]")
+		saynn("[say=pc]Может, в этом и причина её манеры речи? Повреждение мозга?..[/say]")
 
-		saynn("Eliza scritches her chin and looks at the ceiling for some time.")
+		saynn("Элиза чешет подбородок и какое-то время смотрит в потолок.")
 
-		saynn("[say=eliza]Damage to neurons usually leads to loss of memory. Maybe you're right though. Maybe she just forgot that she is Rahi.[/say]")
+		saynn("[say=eliza]Повреждение нейронов обычно ведет к потере памяти. Но, возможно, ты и прав. Может, она просто забыла, что она Рахи.[/say]")
 
-		saynn("[say=pc]So what now?[/say]")
+		saynn("[say=pc]И что теперь?[/say]")
 
-		saynn("Eliza puts away her datapad.")
+		saynn("Элиза убирает датапад.")
 
-		saynn("[say=eliza]The surgeon is finishing up with her. So she will be out in an hour or two. She will need a lot of attention, okay?[/say]")
+		saynn("[say=eliza]Хирург уже заканчивает с ней. Так что она придет в себя через час или два. Ей понадобится много внимания, договорились?[/say]")
 
-		saynn("You take a seat on the bench again.")
+		saynn("Вы снова садитесь на скамью.")
 
-		saynn("[say=pc]I understand. Thank you.[/say]")
+		saynn("[say=pc]Понимаю. Спасибо.[/say]")
 
-		saynn("Eliza nods and walks away, hiding behind the staff-only doors again.")
+		saynn("Элиза кивает и уходит, снова скрываясь за дверями для персонала.")
 
-		addButton("Continue", "See what happens next", "wait_more_after_surgery")
+		addButton("Продолжить", "Смотреть, что будет дальше", "wait_more_after_surgery")
 	if(state == "wait_more_after_surgery"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Solo, "sit")
-		saynn("You just sit and wait. Sit and wait..")
+		saynn("Вы просто сидите и ждете. Сидите и ждете...")
 
-		saynn("Eventually doctor Quinn returns and sits behind the counter. Can't be long now..")
+		saynn("В конце концов возвращается доктор Куинн и садится за стойку. Похоже, ждать осталось недолго...")
 
-		addButton("Continue", "See what happens next", "rahi_is_alive")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_is_alive")
 	if(state == "rahi_is_alive"):
 		addCharacter("rahi")
 		removeCharacter("cp_guard")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("Finally, the doors open, revealing Rahi, a barely standing one but Rahi nonetheless.")
+		saynn("Наконец двери распахиваются, и входит Рахи — она едва держится на ногах, но это всё же она.")
 
-		saynn("You quickly rush up to her and help her get to the nearest bench before making her sit.")
+		saynn("Ты быстро подбегаешь к ней и помогаешь добраться до ближайшей скамьи, усаживая её.")
 
-		saynn("The feline tilts her head down, her ears turned down.")
+		saynn("Кошка склоняет голову, её уши прижаты.")
 
-		saynn("[say=pc]How are you, kitty?[/say]")
+		saynn("[say=pc]Как ты, киса?[/say]")
 
-		saynn("She nods subtly, her eyes.. emotionless.")
+		saynn("Она едва заметно кивает, но её глаза... совершенно безэмоциональны.")
 
-		saynn("[say=rahi]Could be worse.. She is alright..[/say]")
+		saynn("[say=rahi]Могло быть и хуже... Она в порядке...[/say]")
 
-		saynn("[say=pc]You made us all very worried.[/say]")
+		saynn("[say=pc]Мы все за тебя очень переживали.[/say]")
 
-		saynn("[say=rahi]Sorry..[/say]")
+		saynn("[say=rahi]Прости...[/say]")
 
-		saynn("Rahi unbuttons the lower part of her shirt, revealing a stitched up surgery line. You just carefully wrap your hands around her body and hug.")
+		saynn("Рахи расстегивает нижнюю часть рубашки, обнажая хирургический шов. Ты осторожно обхватываешь её тело руками и прижимаешь к себе в объятиях.")
 
-		saynn("[say=pc]Doctor said..[/say]")
+		saynn("[say=pc]Доктор сказал..[/say]")
 
-		saynn("[say=rahi]No alcohol.. she knows.. Under no circumstances. She is not allowed to drink.. or she will die..[/say]")
+		saynn("[say=rahi]Никакого алкоголя.. она знает.. Ни при каких обстоятельствах. Ей нельзя пить.. иначе она умрет..[/say]")
 
-		saynn("You just nod slightly and embrace the feline harder.")
+		saynn("Ты лишь слегка киваешь и крепче прижимаешь к себе кошечку.")
 
-		saynn("[say=pc]What do you think about that?[/say]")
+		saynn("[say=pc]Что ты об этом думаешь?[/say]")
 
-		saynn("You only get silence back. Kitty hugs you back and then slowly gets up.")
+		saynn("В ответ ты слышишь лишь тишину. Кошечка обнимает тебя в ответ, а затем медленно поднимается.")
 
-		saynn("[say=rahi]She is gonna go rest in her cell.. kitty hopes that's okay..[/say]")
+		saynn("[say=rahi]Она пойдет отдохнет в своей камере.. кошечка надеется, что ты не против..[/say]")
 
-		saynn("[say=pc]Of course. I will help you.[/say]")
+		saynn("[say=pc]Конечно. Я помогу тебе.[/say]")
 
-		saynn("You offer the feline a pat on the head, resulting in her purring.")
+		saynn("Ты гладишь кошечку по голове, отчего она начинает довольно мурлыкать.")
 
-		saynn("Rahi holds onto her stomach while stepping into the elevator with you. Her motions slow. Her face still didn't show much emotion. Probably because of what she had to suffer through.")
+		saynn("Рахи придерживает живот, заходя с тобой в лифт. Её движения замедляются. На лице всё еще почти нет эмоций — вероятно, из-за всего того, через что ей пришлось пройти.")
 
-		addButton("Continue", "See what happens next", "bring_rahi_to_her_cell")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bring_rahi_to_her_cell")
 	if(state == "bring_rahi_to_her_cell"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
 		GM.pc.setLocation("cellblock_orange_nearcell")
-		saynn("You help Rahi get to her cell. The feline turns around and kisses your cheek. This kiss offers you hope, the thing that you lacked.")
+		saynn("Ты помогаешь Рахи добраться до её камеры. Кошечка оборачивается и целует тебя в щеку. Этот поцелуй дарит тебе надежду — то самое чувство, которого тебе так не хватало.")
 
-		saynn("[say=rahi]Thank you.. Sorry for being like that..[/say]")
+		saynn("[say=rahi]Спасибо.. Прости, что я так себя повела..[/say]")
 
-		saynn("[say=pc]Not your fault.[/say]")
+		saynn("[say=pc]Твоей вины здесь нет.[/say]")
 
-		saynn("She stares into your eyes. Her lips, wordless. Sometimes silence speaks louder than words.")
+		saynn("Она пристально смотрит тебе в глаза. Её губы безмолвны. Иногда тишина говорит громче любых слов.")
 
-		saynn("[say=pc]I will check on you tomorrow, okay?[/say]")
+		saynn("[say=pc]Я загляну к тебе завтра, хорошо?[/say]")
 
-		saynn("Again, more silence. Rahi's eyes scan your face for a few seconds. After that she nods subtly and lays down onto her bed.")
+		saynn("Снова тишина. Рахи несколько секунд изучает твоё лицо. Затем она едва заметно кивает и ложится на кровать.")
 
-		saynn("Gotta give her some rest.")
+		saynn("Нужно дать ей отдохнуть.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -17,102 +17,102 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		addCharacter("rahi")
-		saynn("Pick how hard you want the yoga task to be for Rahi.")
+		saynn("Выберите уровень сложности йоги для Рахи.")
 
-		saynn("Easy: "+str(Util.roundF(chanceEasy, 1))+"% chance. Rahi does some simple yoga poses")
+		saynn("Легкий: "+str(Util.roundF(chanceEasy, 1))+"% шанс. Рахи делает простые асаны")
 
-		saynn("Medium: "+str(Util.roundF(chanceMedium, 1))+"% chance. Rahi does yoga naked")
+		saynn("Средний: "+str(Util.roundF(chanceMedium, 1))+"% шанс. Рахи занимается йогой обнаженной")
 
-		saynn("Hard: "+str(Util.roundF(chanceHard, 1))+"% chance. Rahi does yoga naked and with toys")
+		saynn("Тяжелый: "+str(Util.roundF(chanceHard, 1))+"% шанс. Рахи занимается йогой обнаженной и с игрушками")
 
-		addButton("Back", "Pick another task", "endthescene")
-		addButton("Easy", "Rahi does some simple yoga poses", "easy_task")
-		addButton("Medium", "Rahi does yoga naked", "medium_task")
-		addButton("Hard", "Rahi does yoga naked and with toys", "hard_task")
+		addButton("Назад", "Выбрать другое задание", "endthescene")
+		addButton("Легкий", "Рахи делает простые асаны", "easy_task")
+		addButton("Средний", "Рахи занимается йогой обнаженной", "medium_task")
+		addButton("Сложный", "Рахи занимается йогой обнаженной и с игрушками", "hard_task")
 	if(state == "easy_task"):
 		playAnimation(StageScene.Solo, "struggle", {pc="rahi"})
-		saynn("You tell Rahi to do some yoga poses for relaxation. She agrees to give it a try.")
+		saynn("Вы просите Рахи сделать несколько упражнений йоги для расслабления. Она соглашается попробовать.")
 
-		saynn("Rahi starts her yoga practice with some simple stretches, reaching up high and then bending down to touch her toes. She makes sure to focus on her breathing.")
+		saynn("Рахи начинает свою йогу с простых растяжек: она высоко тянется вверх, а затем наклоняется, чтобы коснуться пальцев ног. Она старается сосредоточиться на дыхании.")
 
-		addButton("Continue", "See what happens next", "easy_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "easy_outcome")
 	if(state == "easy_outcome"):
 		playAnimation(StageScene.Yoga, "catcow", {pc="rahi"})
-		saynn("After the simple stretches, Rahi gets on all fours and starts doing some cat-cow poses, arching her back like a cat and then rounding it like a cow. Quite cute and fitting for a kitty like Rahi.")
+		saynn("После простых растяжек Рахи встает на четвереньки и начинает делать упражнение «кошка-корова», выгибая спину, как кошка, а затем округляя её, как корова. Довольно мило и очень подходит такой кошечке, как Рахи.")
 
 		if (success):
-			saynn("After some time, Rahi completes her entire yoga routine, now feeling more relaxed and confident.")
+			saynn("Спустя некоторое время Рахи завершает всю последовательность упражнений, чувствуя себя более расслабленной и уверенной.")
 
-			saynn("Rahi succeeded!")
+			saynn("Рахи справилась!")
 
 		else:
-			saynn("Unfortunately, Rahi spots your gaze directed at her and starts blushing. The embarrassment causes kitty to put her paw in the wrong spot and collapse.")
+			saynn("К несчастью, Рахи замечает твой пристальный взгляд и начинает краснеть. От смущения кошечка ставит лапку не туда и валится с ног.")
 
-			saynn("Rahi fails her task.")
+			saynn("Рахи провалила задание.")
 
-			saynn("[say=rahi]{rahiFP('I', 'She')} couldn't even do the simplest ones.. sorry..[/say]")
+			saynn("[say=rahi]{rahiFP('I', 'She')} даже с простейшими не справилась... жаль...[/say]")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "medium_task"):
 		playAnimation(StageScene.Solo, "struggle", {pc="rahi", bodyState={naked=true}})
-		saynn("You tell Rahi to do some yoga poses for relaxation. She agrees to give it a try. The catch is that she must do it naked.")
+		saynn("Ты предлагаешь Рахи сделать несколько поз йоги для расслабления. Она соглашается попробовать. Подвох в том, что делать это она должна полностью обнаженной.")
 
-		saynn("Kitty takes off her clothes and hands them to you.")
+		saynn("Кошечка снимает одежду и протягивает её тебе.")
 
-		saynn("Rahi starts her yoga practice with some simple stretches, reaching up high and then bending down to touch her toes. While she does that, you walk around her and watch her body in all these compromising positions. She tries not to think about you staring at her private bits and instead focuses on her breathing.")
+		saynn("Рахи начинает йогу с простых растяжек: она тянется высоко вверх, а затем наклоняется, чтобы коснуться пальцев ног. Пока она это делает, ты ходишь вокруг неё, разглядывая её тело во всех этих соблазнительных позах. Она старается не думать о том, что ты пялишься на её интимные места, и вместо этого концентрируется на дыхании.")
 
-		addButton("Continue", "See what happens next", "medium_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "medium_outcome")
 	if(state == "medium_outcome"):
 		playAnimation(StageScene.Yoga, "camel", {pc="rahi", bodyState={naked=true}})
-		saynn("After the simple stretches, Rahi gets on her knees before you. She makes sure to keep her shins flat on the floor while she leans back, arching her spine as far as possible and keeping her paws on her ankles, using them for support.")
+		saynn("После простых растяжек Рахи опускается перед тобой на колени. Она следит за тем, чтобы голени плотно прилегали к полу, пока она отклоняется назад, максимально прогибая позвоночник и опираясь лапками на лодыжки для поддержки.")
 
-		saynn("[say=rahi]A camel pose..[/say]")
+		saynn("[say=rahi]Поза верблюда...[/say]")
 
-		saynn("In this pose Rahi is completely exposed to you.. Her {rahi.breasts}, fluffy belly, tight little pussy slit, everything is on display.")
+		saynn("В этой позе Рахи полностью открыта тебе... Её {rahi.breasts}, пушистый животик, узкая щелочка киски — всё как на ладони.")
 
 		if (success):
-			saynn("She knows that you're staring at her but she does her best not to let that information cloud her mind. Rahi successfully goes through her whole routine naked.")
+			saynn("Она знает, что ты пялишься на неё, но изо всех сил старается не давать этим мыслям сбивать её с толку. Рахи успешно выполняет всю программу нагишом.")
 
-			saynn("Rahi succeeded!")
+			saynn("Рахи справилась!")
 
 		else:
-			saynn("She suddenly realizes how lewd this probably looks from your point of view and gets very shy. Rahi tries to cover herself with her tail but loses balance during that, breaking the pose and collapsing.")
+			saynn("Внезапно она осознаёт, насколько похотливо это, должно быть, выглядит с твоей точки зрения, и сильно смущается. Рахи пытается прикрыться хвостом, но теряет равновесие, сбивается с позы и падает.")
 
-			saynn("[say=rahi]It's hard when someone is staring..[/say]")
+			saynn("[say=rahi]Тяжело, когда на тебя так пялятся...[/say]")
 
-			saynn("Rahi failed her task.")
+			saynn("Рахи провалила задание.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "hard_task"):
 		playAnimation(StageScene.Solo, "struggle", {pc="rahi", bodyState={naked=true}})
-		saynn("You tell Rahi to do some yoga poses for relaxation. But the big catch is that kitty must do it naked and while having buzzing toys on her. She reluctantly agrees to give it a try.")
+		saynn("Ты веляешь Рахи сделать несколько поз йоги для расслабления. Но есть один нюанс: кошечка должна делать это голой и с жужжащими игрушками на себе. Она неохотно соглашается попробовать.")
 
-		saynn("She hands you her clothes and stands in the middle of her cell. You grab a few pink bullet vibrators and slip two down Rahi's pussy slit before taping the last one to her clit. Rahi is already blushing.")
+		saynn("Она протягивает тебе свою одежду и встаёт посреди камеры. Ты берешь несколько розовых вибраторов-пулек, вставляешь два в щелочку киски Рахи, а последний приклеиваешь пластырем к её клитору. Рахи уже вся краснеет.")
 
-		saynn("Rahi starts her usual yoga practice, just some simple stretches, reaching up high and then bending down to touch her toes. While she does that, you turn on all the toys to their lowest setting, causing kitty to suddenly produce a noise of pleasure. The toys buzz against her sensitive spots, making focusing incredibly hard. But Rahi does her best to think about her actions and breathing.")
+		saynn("Рахи начинает свою обычную йогу: простая растяжка, потягивания вверх, затем наклоны к носкам. Пока она это делает, ты включаешь все игрушки на самый минимум, отчего кошечка внезапно издает стон удовольствия. Игрушки вибрируют на её чувствительных точках, из-за чего сосредоточиться становится невероятно трудно. Но Рахи изо всех сил старается следить за своими движениями и дыханием.")
 
-		addButton("Continue", "See what happens next", "hard_outcome")
+		addButton("Продолжить", "Смотреть, что будет дальше", "hard_outcome")
 	if(state == "hard_outcome"):
 		playAnimation(StageScene.Hogtied, "idle", {pc="rahi", bodyState={naked=true}})
-		saynn("After the warm up stretches, Rahi slowly lies on her stomach and reaches back with her paws to grab her ankles. She then tries to lift her chest and legs off the ground, bending her body into a bow shape.")
+		saynn("После разминочной растяжки Рахи медленно ложится на живот и тянется лапами назад, чтобы ухватиться за щиколотки. Затем она пытается оторвать грудь и ноги от пола, выгибая тело дугой.")
 
-		saynn("The hardest part here is holding that pose for a lengthy amount of time. You make it harder by changing the setting on the toys, causing them to buzz louder against Rahi's pussy. She bites her lip and moans quietly, her slit dripping juices onto the floor while she tries to hold the pose the best she can.")
+		saynn("Самое сложное здесь — удерживать эту позу долгое время. Ты усложняешь ей задачу, меняя настройки игрушек, отчего они начинают вибрировать громче, вжимаясь в киску Рахи. Она прикусывает губу и тихо стонет; пока она изо всех сил старается держать позу, из её щелочки на пол капает сок.")
 
 		if (success):
-			saynn("She is fighting against the very pleasurable sensations. Her pussy twitching slightly and leaking more juices but Rahi stays still, just letting the toys vibrate inside her. She is breathing very deeply, her eyes lustful.")
+			saynn("Она борется с невероятным удовольствием. Её киска слегка подергивается и выделяет всё больше смазки, но Рахи остается неподвижной, позволяя игрушкам вибрировать внутри неё. Она дышит очень глубоко, а её взгляд полон похоти.")
 
-			saynn("In the end, Rahi manages to stay like this for a few minutes without cumming! Rahi succeeded!")
+			saynn("В конце концов, Рахи удается продержаться в таком положении несколько минут и не кончить! Рахи справилась!")
 
 		else:
-			saynn("Unfortunately, the pleasure was too much for the poor kitty. She moans and pants heavily until a powerful orgasm suddenly washes over her. Rahi squirms and breaks her pose, letting go of her shaking legs. Her overstimulated pussy squirts girlcum all over her thighs, leaving quite a mess.")
+			saynn("К сожалению, удовольствие оказалось слишком сильным для бедной кошечки. Она стонет и тяжело дышит, пока внезапная мощная оргазма не накрывает её с головой. Рахи извивается и теряет равновесие, её дрожащие ноги бессильно опускаются на пол. Её перестимулированная киска заливает всё вокруг девичьим соком, оставляя после себя настоящий беспорядок на бедрах.")
 
-			saynn("Blushy kitty looks up at you with her sorry eyes.")
+			saynn("Застенчивая кошечка смотрит на тебя своими виноватыми глазками.")
 
-			saynn("[say=rahi]It was too much for {rahiFP('me', 'her')}. Sorry..[/say]")
+			saynn("[say=rahi]Для {rahiFP('me', 'her')} это было слишком. Прости..[/say]")
 
-			saynn("Rahi failed her task.")
+			saynn("Рахи провалила задание.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

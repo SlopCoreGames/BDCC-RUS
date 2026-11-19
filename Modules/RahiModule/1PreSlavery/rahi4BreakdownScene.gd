@@ -8,302 +8,302 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You approach the bench where Rahi is usually spending her time. But she is not there, her favorite bench is empty.")
+		saynn("Вы подходите к скамейке, где обычно проводит время Рахи. Но её нет — её любимое место пустует.")
 
-		saynn("Huh. Maybe she is just still recovering. But the other kinds of thoughts slowly corrupt your mind, the worrying kind of thoughts.")
+		saynn("Хм. Может, она всё ещё восстанавливается? Но другие мысли — тревожные и дурные — начинают медленно отравлять ваш разум.")
 
-		saynn("You look around. Where can Rahi be..")
+		saynn("Вы оглядываетесь по сторонам. Где же может быть Рахи...")
 
-		addButton("Her cell", "Check Rahi's cell", "check_cell")
-		addButton("Medical wing", "Check the medical wing", "check_medical")
-		addButton("Yard area", "Check the waterfall spot", "check_waterfall")
+		addButton("В камере", "Проверить камеру Рахи", "check_cell")
+		addButton("Медблок", "Проверить медблок", "check_medical")
+		addButton("Внутренний двор", "Проверить место у водопада", "check_waterfall")
 	if(state == "check_cell"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
-		saynn("Maybe she is just resting in her cell.")
+		saynn("Может, она просто отдыхает у себя в камере.")
 
-		saynn("You go down into the cellblock and look for Rahi's cell.")
+		saynn("Вы спускаетесь в блок камер и ищете камеру Рахи.")
 
-		saynn("You find it. But there is no Rahi inside. And the bed seems to be made. Means she wasn't dragged away forcefully.")
+		saynn("Вы находите её. Но Рахи внутри нет. Причем кровать заправлена — значит, её не утаскивали силой.")
 
 		if (!visited_medical):
-			addButton("Medical wing", "Check the medical wing", "check_medical")
-		addButton("Yard area", "Check the waterfall spot", "check_waterfall")
+			addButton("Медблок", "Проверить медблок", "check_medical")
+		addButton("Внутренний двор", "Проверить место у водопада", "check_waterfall")
 	if(state == "check_medical"):
 		aimCameraAndSetLocName("med_lobbymain")
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="sit"})
-		saynn("You use the elevator to get to the medical wing. The lobby is as busy as it usually is, there are a few nurses idling around, always on standby.")
+		saynn("Вы садитесь в лифт, чтобы добраться до медицинского крыла. В вестибюле суматоха, как обычно: пара медсестер лениво прохаживаются неподалеку, всегда наготове.")
 
-		saynn("Doctor Quinn is sitting behind the counter. You decide to approach her.")
+		saynn("Доктор Куинн сидит за стойкой. Вы решаете подойти к ней.")
 
-		saynn("[say=eliza]Doctor Quinn, what can I do?[/say]")
+		saynn("[say=eliza]Доктор Куинн, чем могу помочь?[/say]")
 
-		saynn("[say=pc]Is kitty here somewhere?[/say]")
+		saynn("[say=pc]Кошечка где-то здесь?[/say]")
 
-		saynn("The feline shakes her head slightly. Her eyes pick up on something.")
+		saynn("Кошка слегка качает головой. Её взгляд на чем-то задерживается.")
 
-		saynn("[say=eliza]Something happened?[/say]")
+		saynn("[say=eliza]Что-то случилось?[/say]")
 
-		saynn("[say=pc]I hope not.[/say]")
+		saynn("[say=pc]Надеюсь, что нет.[/say]")
 
-		saynn("[say=eliza]If she did something to herself again, you bring her here. Understand?[/say]")
+		saynn("[say=eliza]Если она снова что-то с собой сделает, ты притащишь её сюда. Поняла?[/say]")
 
-		saynn("You nod softly. Well, she is not here either.")
+		saynn("Ты тихо киваешь. Ну, её здесь тоже нет.")
 
 		if (!visited_cell):
-			addButton("Her cell", "Check Rahi's cell", "check_cell")
-		addButton("Yard area", "Check the waterfall spot", "check_waterfall")
+			addButton("В камере", "Проверить камеру Рахи", "check_cell")
+		addButton("Внутренний двор", "Проверить место у водопада", "check_waterfall")
 	if(state == "check_waterfall"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("yard_firstroom")
-		saynn("Maybe she is resting near the waterfall, the other place that she likes to hang out at. You just hope that she isn't back to her old habits of stealing alcohol and binging it.")
+		saynn("Может, она отдыхает у водопада — это ещё одно её любимое местечко. Ты лишь надеешься, что она не вернулась к своим старым привычкам: воровать алкоголь и напиваться в стельку.")
 
-		saynn("As you step through the stone pathways, you can't shake off a strange feeling. A feeling of hope mixed with all sorts of concerns. Rahi knows that she shouldn't drink, especially now, after her operation. You step faster, just in case.")
+		saynn("Пока ты идешь по каменным тропинкам, тебя не покидает странное чувство. Смесь надежды и всевозможной тревоги. Рахи знает, что ей нельзя пить, особенно сейчас, после операции. Ты ускоряешь шаг на всякий случай.")
 
-		saynn("You're almost there. Time to see what fate has prepared for you.")
+		saynn("Ты почти на месте. Пора узнать, что приготовила тебе судьба.")
 
-		addButton("Continue", "See what happens next", "rahi_near_waterfall")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_near_waterfall")
 	if(state == "rahi_near_waterfall"):
 		addCharacter("rahi", ["naked"])
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={naked=true}})
 		aimCameraAndSetLocName("yard_waterfall")
-		saynn("As you get on the path that leads directly to the waterfall, you notice something. Or rather, someone. It's Rahi. A brown feline kitty is standing near the water pond, facing away from you.")
+		saynn("Выйдя на тропу, ведущую прямиком к водопаду, ты что-то замечаешь. Точнее, кого-то. Это Рахи. Коричневая кошечка стоит у пруда, спиной к тебе.")
 
-		saynn("You rush towards her. Then you notice that Rahi is completely naked, you can see her bare back, girly hips, fluffy tail, all of them exposed. Her uniform is there, it's placed in a neat stack on the bench.")
+		saynn("Ты бросаешься к ней. И тут замечаешь, что Рахи совершенно голая: ты видишь её обнаженную спину, девичьи бёдра, пушистый хвост — всё выставлено напоказ. Её униформа лежит аккуратной стопкой на скамье.")
 
-		saynn("[say=pc]Kitty? Why are you out here, naked?[/say]")
+		saynn("[say=pc]Кошечка? Почему ты здесь совсем голышом?[/say]")
 
-		saynn("Her ears perk, hearing your voice. Rahi slowly turns around, awkwardly almost. Her stomach area still has that surgery cut even if it has already begun to heal.")
+		saynn("Услышав твой голос, она навострила ушки. Рахи медленно оборачивается, почти неловко. На её животе всё ещё виден послеоперационный шов, хотя он уже начал затягиваться.")
 
-		saynn("Her body isn't the biggest problem though. Her stare.. empty? Almost lifeless. You suddenly realize..")
+		saynn("Впрочем, её тело — не самая большая проблема. Её взгляд... пустой? Почти безжизненный. И тут тебя пронзает осознание...")
 
-		saynn("Her wrists are tied together with some rope. Her ankles too.. And as you begin stepping towards her, the feline does the same but away from you, getting dangerously close to that water pond behind her.")
+		saynn("Её запястья связаны веревкой. Лодыжки — тоже... И когда ты делаешь шаг к ней, кошечка делает то же самое, но в противоположную сторону, опасно приближаясь к самому краю пруда.")
 
-		saynn("[say=pc]Kitty? I know it's a lot for you. But can we talk?[/say]")
+		saynn("[say=pc]Китти? Я знаю, на тебя всё это свалилось разом. Но мы можем поговорить?[/say]")
 
-		saynn("She just looks at you. Not dropping a single word. If you weren't concerned before, you are now. Your heart beats like hell, a familiar feeling. You try to assume a reassuring posture but Rahi doesn't react, she just keeps tippy-toeing back until reaching the edge. A few tears slid down her cheeks.")
+		saynn("Она просто смотрит на тебя, не проронив ни слова. Если раньше ты ещё сомневалась, то теперь — точно. Сердце бешено колотится, это знакомое чувство. Ты пытаешься принять успокаивающую позу, но Рахи не реагирует: она просто продолжает пятиться на цыпочках, пока не оказывается у самого края. По её щекам скатываются слёзы.")
 
-		saynn("Rahi tilts her head down, a sigh of acceptance leaves her lungs before she finally gets brave enough to plunge into the void. Kitty starts leaning back until she can't stop anymore. The gravity does its thing, pulling the feline into the water pond. It's not the deepest but even a puddle is enough if you're sick of living..")
+		saynn("Рахи склоняет голову, из её груди вырывается вздох смирения, прежде чем она наконец решается шагнуть в пустоту. Китти начинает заваливаться назад, и остановиться уже невозможно. Гравитация делает своё дело, затягивая кошечку в пруд. Он не самый глубокий, но даже лужи достаточно, если тебе осточертело жить...")
 
-		saynn("[say=pc]NO![/say]")
+		saynn("[say=pc]НЕТ![/say]")
 
-		saynn("Your scream echoes throughout the whole station. Soon followed by a loud water splash noise. Rahi sinks under the wet surface. And since she can't use her paws even if she wanted to.. She begins to drown..")
+		saynn("Твой крик эхом разносится по всей станции. Вскоре за ним следует громкий всплеск воды. Рахи уходит под мокрую поверхность. А так как она не может использовать лапы, даже если бы очень захотела... она начинает тонуть...")
 
-		addButton("Save her!", "You can't let her drown herself", "save_rahi_from_drowning")
-		addDisabledButton("Let her die", "Rahi gave up but that doesn't mean that you can give up on her.")
+		addButton("Спасти её!", "Нельзя дать ей утонуть", "save_rahi_from_drowning")
+		addDisabledButton("Дать ей умереть", "Рахи сдалась, но это не значит, что ты должна сдаться за неё.")
 	if(state == "save_rahi_from_drowning"):
 		playAnimation(StageScene.SexStart, "defeated", {npc="rahi", npcBodyState={naked=true}})
-		saynn("Gotta act quick! You sprint towards the edge of the water pond and reach your hands into the cold water, trying to get a grasp on Rahi. But you can't, she is completely motionless, meaning she quickly sinks to the bottom, only a few lonely bubbles of air reach the surface. But something tells you that those will end soon.")
+		saynn("Нужно действовать быстро! Ты срываешься на бег к краю пруда и запускаешь руки в холодную воду, пытаясь схватить Рахи. Но не выходит — она совершенно неподвижна, а значит, стремительно оседает на дно. Лишь несколько одиноких пузырьков воздуха достигают поверхности. Но что-то подсказывает тебе, что скоро они закончатся.")
 
-		saynn("Screw it, you jump into the pond too and get your head under water. Your hands finally reach Rahi and begin to pull her up. Her eyes are already closed, the lack of oxygen made her brain shut down. But it can't end like this, you're not gonna allow it.")
+		saynn("К черту всё, ты тоже прыгаешь в пруд и ныряешь под воду. Твои руки наконец находят Рахи и начинают тянуть её наверх. Её глаза уже закрыты — от нехватки кислорода мозг начал отключаться. Но всё не может закончиться вот так, ты не позволишь этому случиться.")
 
-		saynn("You place your hands under her armpits and push yourself off the concrete bottom floor, quickly rising to the surface. You gasp as the air hits your lungs. But that can't be said for Rahi, she is still limp and unresponsive in your hands, even with her head above water.")
+		saynn("Ты подсовываешь руки ей под подмышки и отталкиваешься от бетонного дна, стремительно вырываясь на поверхность. Ты жадно хватаешь ртом воздух, когда он наполняет твои легкие. Но за Рахи этого не скажешь: она всё еще обмякла и не реагирует на происходящее, даже когда её голова уже над водой.")
 
-		saynn("You quickly pull the poor kitty out of the water and place her onto the stone pathway. You can't allow yourself to panic. You place your hands roughly where the cat's ribcage is and begin to do CPR.")
+		saynn("Ты быстро вытаскиваешь бедную кошечку из воды и кладешь её на каменную дорожку. Паниковать нельзя. Ты грубо прижимаешь ладони к её грудной клетке и начинаешь делать непрямой массаж сердца.")
 
-		saynn("Time passes but you don't give up.")
+		saynn("Проходит время, но ты не сдаешься.")
 
-		addButton("Continue", "See what happens next", "rahi_is_saved")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_is_saved")
 	if(state == "rahi_is_saved"):
-		saynn("Suddenly Rahi gasps for air and then proceeds to cough. Her eyes scan the area around until she notices you. Her stare.. still empty..")
+		saynn("Внезапно Рахи судорожно хватает ртом воздух, а затем начинает кашлять. Её глаза блуждают по сторонам, пока она не замечает тебя. Её взгляд... всё такой же пустой...")
 
-		saynn("[say=rahi]Why..[/say]")
+		saynn("[say=rahi]Почему..[/say]")
 
-		saynn("[say=pc]What do you mean why? I can't let you die, kitty.[/say]")
+		saynn("[say=pc]Что значит «почему»? Я не могу дать тебе умереть, кошечка.[/say]")
 
-		saynn("She looks at her paws, they're still tied up. Better to keep them that way. But you place her uniform under her head as a little cushion.")
+		saynn("Она смотрит на свои лапки — они всё еще связаны. Лучше оставить их так. Но ты подкладываешь её униформу ей под голову, чтобы послужить подушкой.")
 
-		saynn("[say=rahi]There is no point.. Just let it happen..[/say]")
+		saynn("[say=rahi]В этом нет смысла.. Просто дай всему случиться..[/say]")
 
-		saynn("[say=pc]What are you saying, silly. You wanna die because you can't drink anymore? You will be able to, just less. Please, kitty.[/say]")
+		saynn("[say=pc]Что ты такое говоришь, глупенькая? Ты хочешь сдохнуть только потому, что больше не сможешь пить? Ты сможешь, просто чуть меньше. Пожалуйста, кошечка.[/say]")
 
-		saynn("[say=rahi]She wanted to forget.. everything.. and herself.. Not Rahi.. But.. her..[/say]")
+		saynn("[say=rahi]Она хотела забыть... всё... и саму себя... Не Рахи... а... себя...[/say]")
 
-		saynn("That's.. more than confusing.")
+		saynn("Это... больше чем просто путаница.")
 
-		saynn("[say=pc]But you are Rahi.[/say]")
+		saynn("[say=pc]Но ты же Рахи.[/say]")
 
-		saynn("The feline shakes her head slightly and still coughs sometimes.")
+		saynn("Кошка слегка качает головой, всё ещё время от времени посвистывая от кашля.")
 
-		saynn("[say=rahi]No.. she is no Rahi.. Rahi died.. there is only.. her..[/say]")
+		saynn("[say=rahi]Нет... она не Рахи... Рахи умерла... осталась только... она...[/say]")
 
-		saynn("That.. does explain some things.. But also..")
+		saynn("Это... объясняет некоторые вещи... Но также и то...")
 
-		saynn("[say=rahi]And now.. they are gonna place her in a padded room.. keep her sedated.. forever.. forever remembering everything.. While not being able to do anything about it..[/say]")
+		saynn("[say=rahi]И теперь... её запрут в мягкой палате... будут держать под седативами... вечно... вечно помня всё на свете... и не имея возможности ничего с этим поделать...[/say]")
 
-		saynn("[say=pc]Kitty..[/say]")
+		saynn("[say=pc]Кити...[/say]")
 
-		saynn("A fate worse than death. You can't let that happen.")
+		saynn("Судьба хуже смерти. Ты не можешь допустить, чтобы это случилось.")
 
-		saynn("[say=rahi]Go on.. go tell that doctor.. She will know what to do.. She always does..[/say]")
+		saynn("[say=rahi]Иди... иди скажи этому доктору... Она будет знать, что делать... Она всегда знает...[/say]")
 
-		saynn("She stares at you.. with a blank stare.. waiting for her fate.. but not caring about it.")
+		saynn("Она смотрит на тебя.. пустым взглядом.. ожидая своей участи.. но, кажется, ей плевать.")
 
-		saynn("[say=pc]No. I won't. No doctors or padded rooms.[/say]")
+		saynn("[say=pc]Нет. Не стану. Никаких врачей и мягких комнат.[/say]")
 
-		saynn("A few seconds of silence. Seems like Rahi didn't expect that.")
+		saynn("Несколько секунд тишины. Похоже, Рахи этого не ожидала.")
 
-		saynn("[say=rahi]What are you gonna do then..[/say]")
+		saynn("[say=rahi]И что же ты тогда собираешься делать..[/say]")
 
-		addButton("Fix", "Tell Rahi that you will fix her", "tell_fix_rahi")
-		addButton("Break", "Tell Rahi that you breaking her is the best way of fixing her", "tell_break_rahi")
+		addButton("Исправить", "Сказать Рахи, что ты её исправишь", "tell_fix_rahi")
+		addButton("Сломать", "Сказать Рахи, что сломать её — это лучший способ её исправить", "tell_break_rahi")
 	if(state == "tell_fix_rahi"):
 		setFlag("RahiModule.rahi4SaidFix", true)
 		playAnimation(StageScene.SexStart, "start", {npc="rahi", npcBodyState={naked=true}})
-		saynn("[say=pc]I will fix you.[/say]")
+		saynn("[say=pc]Я исправлю тебя.[/say]")
 
-		saynn("The feline tilts her head slightly.")
+		saynn("Кошка слегка наклоняет голову набок.")
 
-		saynn("[say=pc]You will see that life is worth living. You will be accepted the way you are, doesn't matter how perfect or not.[/say]")
+		saynn("[say=pc]Ты увидишь, что жизнь стоит того, чтобы её прожить. Тебя примут такой, какая ты есть, и неважно, идеальна ты или нет.[/say]")
 
-		saynn("Rahi tilts her head down again. You reach out to undo her bindings and store them. Kitty slowly sits down and stares at the going waterfall.")
+		saynn("Рахи снова склоняет голову. Ты протягиваешь руку, чтобы развязать её путы и убрать их. Китти медленно садится и уставилась на уходящий вдаль водопад.")
 
-		saynn("[say=pc]Screw that, perfect or not doesn't even matter in the slightest. Kitty, I just want you to be happy.[/say]")
+		saynn("[say=pc]К черту всё это, идеально ты или нет — это вообще не имеет значения. Китти, я просто хочу, чтобы ты была счастлива.[/say]")
 
-		saynn("She slowly turns her head towards you, her ears lowering.")
+		saynn("Она медленно поворачивает голову к тебе, её ушки поникли.")
 
-		saynn("[say=pc]But I need to know if that's what you want too.[/say]")
+		saynn("[say=pc]Но мне нужно знать, хочешь ли этого и ты тоже.[/say]")
 
-		saynn("You get up and offer her a hand. Rahi stares at it. Her eyes.. still empty.. but now also so shy and innocent.")
+		saynn("Ты встаешь и протягиваешь ей руку. Рахи смотрит на неё. Её глаза... всё ещё пустые... но теперь в них читаются такая робость и невинность.")
 
-		saynn("[say=pc]What do you say, kitty?[/say]")
+		saynn("[say=pc]Ну, что скажешь, китти?[/say]")
 
-		saynn("[say=rahi]But.. she.. she is not worth it..[/say]")
+		saynn("[say=rahi]Но... она... она того не стоит...[/say]")
 
-		saynn("[say=pc]Would I be standing here if you weren't? I know, life is tough. But we will get through everything. I just need your trust.[/say]")
+		saynn("[say=pc]Разве я бы стоял здесь, если бы ты не стоила? Знаю, жизнь — штука тяжелая. Но мы со всем справимся. Мне просто нужно твое доверие.[/say]")
 
-		saynn("Kitty swipes something off her cheeks. But then she reaches her paw out, grabbing your hand. Holding onto it.")
+		saynn("Китти смахивает что-то со щеки. А затем протягивает лапку и хватает тебя за руку. Крепко сжимая её.")
 
-		addButton("Continue", "See what happens", "eliza_walks_in")
+		addButton("Продолжить", "Посмотреть, что будет", "eliza_walks_in")
 	if(state == "tell_break_rahi"):
 		setFlag("RahiModule.rahi4SaidFix", false)
 		playAnimation(StageScene.SexStart, "start", {npc="rahi", npcBodyState={naked=true}})
-		saynn("[say=pc]I will break you.[/say]")
+		saynn("[say=pc]Я сломаю тебя.[/say]")
 
-		saynn("The feline tilts her head a lot, clearly surprised.")
+		saynn("Кошка сильно наклоняет голову, явно пребывая в изумлении.")
 
-		saynn("[say=pc]You're tired of living like this? I will change your whole life around. We will start from scratch, with you, as my slave.[/say]")
+		saynn("[say=pc]Тебе надоело так жить? Я переверну всю твою жизнь с ног на голову. Мы начнем всё с чистого листа, где ты будешь моей рабыней.[/say]")
 
-		saynn("A slight blush appears on Rahi's cheeks.")
+		saynn("На щеках Рахи проступает легкий румянец.")
 
-		saynn("[say=pc]You will experience everything. Not just pleasure. But all sorts of painful sensations too. There will be rewards. But I will also punish you if you're gonna slack. I will apply as much force as needed. Until you break.[/say]")
+		saynn("[say=pc]Ты познаешь всё. Не только удовольствие, но и всевозможные болезненные ощущения. Будут и награды, но я также буду наказывать тебя, если ты начнешь лениться. Я буду применять столько силы, сколько потребуется. Пока ты не сломаешься.[/say]")
 
-		saynn("You reach for her binding and undo them before storing. Ropes could be useful in the future.")
+		saynn("Вы тянетесь к её путам и развязываете их, прежде чем убрать. В будущем веревки могут пригодиться.")
 
-		saynn("[say=pc]Until you break out of this state. And then I will begin to sculpt you from scratch, a better version of you. A version that is happy to obey and do exactly like I say. I will give your life a purpose, to be mine.[/say]")
+		saynn("[say=pc]Пока ты не вырвешься из этого состояния. А затем я начну лепить тебя заново — лучшую версию тебя. Версию, которая будет счастлива повиноваться и делать именно то, что я скажу. Я дам твоей жизни смысл — принадлежать мне.[/say]")
 
-		saynn("Rahi slowly sits down. Her ears listen carefully to your words while she has her head tilted down.")
+		saynn("Рахи медленно садится. Её уши внимательно ловят каждое ваше слово, пока она держит голову опущенной.")
 
-		saynn("[say=pc]But for that, I need your permission first.[/say]")
+		saynn("[say=pc]Но для этого мне сначала нужно твоё согласие.[/say]")
 
-		saynn("You get up and reach your hand out. She slowly looks up at you, her eyes.. empty.. but they also have this.. spark? A spark that you don't remember seeing. Shining brightly.")
+		saynn("Вы встаете и протягиваете ей руку. Она медленно поднимает на вас взгляд... её глаза пустые... но в них есть какая-то... искра? Искра, которую вы раньше не замечали. Сияющая и яркая.")
 
-		saynn("[say=rahi]You..[/say]")
+		saynn("[say=rahi]Ты..[/say]")
 
-		saynn("A few seconds pass, Rahi is clearly struggling to get the first words out. But then..")
+		saynn("Проходит несколько секунд, Рахи явно с трудом выдавливает из себя первые слова. Но затем..")
 
-		saynn("[say=rahi]You have her full permission to do anything you want with her.. Please, don't hold back.. If you have to break her - do it without remorse.. She wants this, please..[/say]")
+		saynn("[say=rahi]Она дает тебе полное разрешение делать с ней всё, что пожелаешь.. Пожалуйста, не сдерживайся.. Если нужно ее сломать — делай это без тени сожаления.. Она сама этого хочет, прошу тебя..[/say]")
 
-		saynn("Seems like you hit just the spot. Rahi grabs your hand with both her paws, caressing it. She tilts her head, in a very submissive way.")
+		saynn("Похоже, ты попал в самую точку. Рахи обхватывает твою руку обеими лапками, лаская её. Она склоняет голову в очень покорном жесте.")
 
-		saynn("[say=rahi]She thinks that you're right.. Right now she is worthless..[/say]")
+		saynn("[say=rahi]Она считает, что ты прав.. Прямо сейчас она — ничто..[/say]")
 
-		saynn("[say=pc]Your self-value will depend on how well both you and I do.[/say]")
+		saynn("[say=pc]Твоя ценность будет зависеть от того, насколько хорошо справимся и ты, и я.[/say]")
 
-		saynn("Kitty nods subtly.")
+		saynn("Кошечка едва заметно кивает.")
 
-		addButton("Continue", "See what happens", "eliza_walks_in")
+		addButton("Продолжить", "Посмотреть, что будет", "eliza_walks_in")
 	if(state == "eliza_walks_in"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You help kitty to get up. Her fur is still wet, you can't find anything better than to just hug her and dry her with your hands.")
+		saynn("Ты помогаешь кошечке подняться. Её шерстка всё еще мокрая, и ты не находишь ничего лучше, кроме как просто обнять её и высушить своими руками.")
 
-		saynn("Suddenly you hear doctor Quinn's voice. A somewhat intimidating version of it..")
+		saynn("Внезапно ты слышишь голос доктора Куинн. На этот раз он звучит довольно устрашающе..")
 
-		saynn("[say=eliza]What happened here?[/say]")
+		saynn("[say=eliza]Что здесь произошло?[/say]")
 
-		saynn("You turn around and see the doctor and a few nurses behind her, forming a triangle formation. Rahi instantly hides behind you and holds onto your arm, tightly.")
+		saynn("Ты оборачиваешься и видишь доктора и нескольких медсестер позади неё, выстроившихся треугольником. Рахи мгновенно прячется за твою спину и крепко вцепляется в твою руку.")
 
-		saynn("[say=pc]Nothing?[/say]")
+		saynn("[say=pc]И ничего?[/say]")
 
-		saynn("Eliza crosses her arms, her eyes scan everything. The naked wet feline, her uniform on the ground, you.")
+		saynn("Элиза скрещивает руки на груди, её взгляд сканирует всё вокруг: мокрую обнаженную кошку, её форму на земле, тебя.")
 
-		saynn("[say=eliza]Then why was there a scream? Your scream in fact.[/say]")
+		saynn("[say=eliza]Тогда почему раздался крик? Твой крик, если быть точным.[/say]")
 
-		saynn("[say=pc]We were just having fun in the water pond. You should relax, doctor Quinn.[/say]")
+		saynn("[say=pc]Мы просто развлекались в пруду. Вам стоит расслабиться, доктор Куинн.[/say]")
 
-		saynn("The feline squints, she begins to slowly approach you. Rahi's claws dig into your arm, causing some discomfort.")
+		saynn("Кошка прищуривается и начинает медленно приближаться к тебе. Когти Рахи впиваются в твою руку, вызывая легкий дискомфорт.")
 
-		saynn("[say=eliza]Is Rahi alright? She couldn't stand being in water last time.[/say]")
+		saynn("[say=eliza]С Рахи всё в порядке? В прошлый раз она терпеть не могла воду.[/say]")
 
-		saynn("[say=pc]Don't call her Rahi, you know that's upsetting her. And yes, she is doing just fine. I've been teaching her how to swim.[/say]")
+		saynn("[say=pc]Не называйте её просто Рахи, вы же знаете, что это её расстраивает. И да, с ней всё отлично. Я учил её плавать.[/say]")
 
-		saynn("Eliza tilts her head slightly, looking through you at Rahi's face. The naked brown feline tries to occupy as little space as possible.")
+		saynn("Элиза слегка наклоняет голову, глядя словно сквозь тебя на лицо Рахи. Нагая коричневошерстная кошка старается занимать как можно меньше места.")
 
-		saynn("[say=eliza]Can I hear that from her? You know, to make sure.[/say]")
+		saynn("[say=eliza]Могу я услышать это от неё самой? Ну, знаете, чтобы убедиться.[/say]")
 
-		saynn("You can feel Rahi's heart beating just from her hugging you. She peeks her head out and looks at Eliza, trying to avoid direct eye contact.")
+		saynn("Ты чувствуешь, как бешено колотится сердце Рахи от того, как сильно она тебя обнимает. Она осторожно высовывает голову и смотрит на Элизу, стараясь избегать прямого зрительного контакта.")
 
-		saynn("[say=rahi]She is doing alright.. Just trying to swim.. just like {pc.name} said..[/say]")
+		saynn("[say=rahi]Она держится неплохо... Просто пытается плыть... как и говорил {pc.name}...[/say]")
 
-		saynn("Eliza nods slowly, a few times, each one with lesser amplitude than the last.")
+		saynn("Элиза медленно кивает, с каждым разом всё более вяло.")
 
-		saynn("[say=eliza]Alright. Be careful then, it's easy to drown when you don't know how to swim. Especially for such fragile kitties like Rahi.[/say]")
+		saynn("[say=eliza]Ладно. Тогда будь осторожна, не умея плавать, легко пойти ко дну. Особенно таким хрупким кискам, как Рахи.[/say]")
 
-		saynn("Rahi furrows her brows. But then hides behind you again.")
+		saynn("Рахи хмурит брови, но затем снова прячется за твоей спиной.")
 
-		saynn("[say=pc]She has great support, okay?[/say]")
+		saynn("[say=pc]У неё отличная поддержка, ясно?[/say]")
 
-		saynn("[say=eliza]Sure, sure. I will leave you to it then. Have fun. Don't push yourself too much, kitty, let the scars heal.[/say]")
+		saynn("[say=eliza]Конечно, конечно. Тогда оставлю вас. Развлекайтесь. Только не перенапрягайся, киса, дай шрамам зажить.[/say]")
 
-		saynn("And just like that, they leave you two alone.")
+		saynn("И вот так просто они оставляют вас двоих наедине.")
 
-		addButton("Continue", "See what happens next", "rahi_is_standing")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_is_standing")
 	if(state == "rahi_is_standing"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Hug, "hug", {npc="rahi", npcBodyState={naked=true}})
-		saynn("You turn back towards Rahi and hug her again.")
+		saynn("Ты поворачиваешься к Рахи и снова обнимаешь её.")
 
-		saynn("[say=rahi]Kitty is not a fan of her..[/say]")
+		saynn("[say=rahi]Киске она не очень-то нравится...[/say]")
 
-		saynn("[say=pc]She is just trying to help. But I can see what you mean. Let's get you dressed up.[/say]")
+		saynn("[say=pc]Она просто пытается помочь. Но я понимаю, о чём ты. Давай, пора одеваться.[/say]")
 
-		saynn("You pick up Rahi's uniform and begin putting it on her. The feline raises her knee slightly, giving you a great view of her bits while you put shorts on her. Then she opens her arms up, exposing her chest while you guide her arms into the shirt's sleeves.")
+		saynn("Вы берете форму Рахи и начинаете одевать её. Кошечка слегка приподнимает колено, открывая вам великолепный вид на её киски, пока вы натягиваете на неё шорты. Затем она разводит руки, обнажая грудь, пока вы продеваете её руки в рукава рубашки.")
 
-		saynn("[say=rahi]Thank you.. She is so tired..[/say]")
+		saynn("[say=rahi]Спасибо.. Она так устала..[/say]")
 
-		saynn("[say=pc]Nothing to thank me for yet, kitty. Yeah, let's get you back to your cell. Everything we talked about starts tomorrow.[/say]")
+		saynn("[say=pc]Пока еще не за что благодарить, киса. Да, давай вернем тебя в камеру. Всё, о чем мы говорили, начнется завтра.[/say]")
 
 		if (!getFlag("RahiModule.rahi4SaidFix", false)):
-			saynn("Then you pull out one of Rahi's bindings and untie them back into a rope. A somewhat short one but this should be enough for this.")
+			saynn("Затем вы достаете одну из связок Рахи и развязываете их обратно в веревку. Она довольно короткая, но для этого должно хватить.")
 
-			saynn("[say=pc]If you want to be my slave, you better start getting used to being on a leash.[/say]")
+			saynn("[say=pc]Если хочешь быть моей рабыней, тебе лучше начать привыкать к поводку.[/say]")
 
-			saynn("Rahi nods a few times and presents her collar. You tie the rope around the little hook and test it by tugging on the other end of the leash. Seems to be sturdy enough.")
+			saynn("Рахи несколько раз кивает и подставляет ошейник. Вы привязываете веревку к маленькому крючку и проверяете её, дернув за другой конец поводка. Кажется, держится достаточно крепко.")
 
-		addButton("Rahi's cell", "Bring Rahi to her cell", "bring_rahi_to_cell")
+		addButton("Камера Рахи", "Отвести Рахи в камеру", "bring_rahi_to_cell")
 	if(state == "bring_rahi_to_cell"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
 		addCharacter("rahi")
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
 		GM.pc.setLocation("cellblock_orange_nearcell")
-		saynn("You follow the stone pathways that lead to the main hall. Rahi steps behind you, her head tilted down.")
+		saynn("Вы идете по каменным дорожкам, ведущим к главному залу. Рахи идет позади вас, низко опустив голову.")
 
-		saynn("Together, you step down the stairs to the cellblock and find Rahi's cell in the general block. Rahi sits on her bed.")
+		saynn("Вместе вы спускаетесь по лестнице к блоку камер и находите камеру Рахи в общем секторе. Рахи сидит на своей кровати.")
 
 		if (!getFlag("RahiModule.rahi4SaidFix", false)):
-			saynn("You untie the leash from her collar and store it.")
+			saynn("Ты отцепляешь поводок от её ошейника и убираешь его.")
 
-		saynn("[say=pc]Have a good rest.[/say]")
+		saynn("[say=pc]Хорошенько отдохни.[/say]")
 
-		saynn("Feline eyes look up at you. But as soon as your gazes collide, she looks away. Seems like it will take a while for all the wounds to heal.")
+		saynn("Кошачьи глаза смотрят на тебя снизу вверх. Но как только ваши взгляды встречаются, она тут же отводит глаза. Похоже, на заживление всех ран потребуется немало времени.")
 
-		saynn("You decide to leave so as to not make the kitty even more uncomfortable.")
+		saynn("Ты решаешь уйти, чтобы не доставлять кошечке лишнего дискомфорта.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

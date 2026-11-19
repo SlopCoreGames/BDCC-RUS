@@ -10,52 +10,52 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You were still sleeping in your cell, enjoying the empty pointless dreams that your mind produces. Little stories that are composed out of familiar elements that seem so meaningless together.")
+		saynn("Ты всё ещё спала в своей камере, наслаждаясь пустыми, бессмысленными снами, которые порождает твой разум. Маленькими историями, собранными из знакомых элементов, которые вместе кажутся совершенно лишенными смысла.")
 
 		# (if pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Oh, but this dream seems particularly interesting. Quite lewd too, someone’s hand is reaching down for your crotch and gives your pussy slit a rub, making you quite wet.")
+			saynn("О, но этот сон кажется особенно интересным. И весьма похотливым: чья-то рука тянется к твоей промежности и ласкает щелочку твоей киски, заставляя тебя намокнуть.")
 
-			saynn("Then the hand gets pulled away, replaced with a dick that brushes against your sex. You begin to wonder if it's still a dream even, the sensations are quite real.")
+			saynn("Затем руку убирают, и на её месте оказывается член, который трется о твою плоть. Ты начинаешь задумываться, сон ли это вообще, ведь ощущения чертовски реальны.")
 
 		# (if no pussy)
 		else:
-			saynn("Oh, but this dream seems particularly interesting. Quite lewd too, someone’s hand is reaching down for your butt and gives your tailhole a rub, making you quite eager.")
+			saynn("О, но этот сон кажется особенно интересным. И весьма похотливым: чья-то рука тянется к твоей заднице и ласкает твой анус, заставляя тебя разгорячиться.")
 
-			saynn("Then the hand gets pulled away, replaced with a dick that brushes against your pucker. You begin to wonder if it's still a dream even, the sensations are quite real.")
+			saynn("Затем руку убирают, и на её месте оказывается член, который трется о твое сжатое отверстие. Ты начинаешь задумываться, сон ли это вообще, ведь ощущения чертовски реальны.")
 
-		addButton("Keep sleeping", "Whatever, you just want your rest", "keep_sleeping")
-		addButton("Wake up!", "That shouldn’t be happening", "wake_up!")
+		addButton("Продолжать спать", "Да какая разница, просто хочется отдохнуть", "keep_sleeping")
+		addButton("Проснуться!", "Этого не должно происходить", "wake_up!")
 
 
 	if(state == "keep_sleeping"):
 		# (if pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You try to really immerse yourself into that dream and push away the awakening. Dream-you spreads {pc.his} legs more for that cock and lets it spread your {pc.pussyStretch} pussy wide before entering it.")
+			saynn("Ты пытаешься по-настоящему погрузиться в этот сон, отгоняя пробуждение. Твоя «сонная версия» шире разводит {pc.his} ноги навстречу члену, позволяя ему широко раздвинуть твою {pc.pussyStretch} киску перед тем, как войти внутрь.")
 
-			saynn("This surreal experience feels so good to you, little passionate moans escape from your lips as the cock starts fucking you in a dream. While the other you is squirming around in {pc.his} bed, reaching for the portal panties. Such a nice dream.")
+			saynn("Этот сюрреалистичный опыт приносит тебе такое наслаждение, что с губ срываются тихие страстные стоны, когда во сне в тебя начинает входить член. Тем временем твоя другая половина ворочается в {pc.his} кровати, нащупывая портальные трусики. Такой приятный сон.")
 
-			saynn("You feel the intruding dream cock approaching its peak, the thrusts become fast and powerful. You both get shoved over the peak and climax. More little sleepy moans escape from you while the cock starts shooting its load deep into your womb.")
+			saynn("Ты чувствуешь, как навязчивый сновный член приближается к пику, толчки становятся быстрыми и мощными. Вас обоих перекидывает через гребень оргазма. С твоих губ срывается еще больше сонных стонов, когда член начинает извергать свою порцию глубоко в твою матку.")
 
 		# (if no pussy)
 		else:
-			saynn("You try to really immerse yourself into that dream and push away the awakening. Dream-you spreads {pc.his} legs more for that cock and lets it prod at your {pc.analStretch} ring before stretching it wide and sliding in.")
+			saynn("Ты пытаешься полностью погрузиться в этот сон, отгоняя пробуждение. Твоя «сонная версия» раздвигает {pc.his} ноги еще шире, подставляясь под член, и позволяет ему поиграть с твоим {pc.analStretch} кольцом, прежде чем он растягивает его и входит целиком.")
 
-			saynn("This surreal experience feels so good to you, little passionate moans escape from your lips as the cock starts fucking you in a dream. While the other you is squirming around in {pc.his} bed, reaching for the portal panties. Such a nice dream.")
+			saynn("Этот сюрреалистичный опыт приносит тебе такое наслаждение, что с губ срываются тихие страстные стоны, когда во сне в тебя начинает входить член. Тем временем твоя другая половина ворочается в {pc.his} кровати, нащупывая портальные трусики. Такой приятный сон.")
 
-			saynn("You feel the intruding dream cock approaching its peak, the thrusts become fast and powerful. You both get shoved over the peak and climax. More little sleepy moans escape from you while the cock starts shooting its load deep inside you.")
+			saynn("Ты чувствуешь, как навязчивый сновный член приближается к пику, толчки становятся быстрыми и мощными. Вас обоих перекидывает через гребень оргазма. С твоих губ срывается еще больше сонных стонов, когда член начинает извергать свою порцию глубоко внутри тебя.")
 
-		addButton("Wake up", "That was a nice dream", "wake_up")
+		addButton("Проснуться", "Это был прекрасный сон", "wake_up")
 
 	if(state == "wake_up"):
-		saynn("When the dream is over, you open your eyes and sit down, still panting from the magical experience. Strange thoughts start going through your head, you reach down for your crotch but only find the portal panties there.")
+		saynn("Когда сон заканчивается, ты открываешь глаза и садишься, все еще тяжело дыша после магического переживания. В голове начинают роиться странные мысли; ты тянешься рукой к паху, но находишь там только портальные трусики.")
 
 		saynn(RNG.pick([
 			"[say=pc]Was I?..[/say]",
 			"[say=pc]Was that..[/say]",
 		]))
 		
-		addButton("Continue", "Wet dreams", "endthescene")
+		addButton("Продолжить", "Влажные сны", "endthescene")
 
 
 	if(state == "wake_up!"):
@@ -63,31 +63,31 @@ func _run():
 		
 		# (if pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You open your eyes and realize that nothing of it was a dream, you indeed feel a cock rubbing against your pussy through the portal panties before suddenly penetrating your sex!")
+			saynn("Ты открываешь глаза и понимаешь, что это был не сон: ты действительно чувствуешь, как член трется о твою киску сквозь портальные трусики, а затем внезапно проникает в твою щелку!")
 
-			saynn("You try to get up but the rough thrusts pin you to the bed. You turn around and get on all fours, moaning while someone’s cock pounds your slit hard, making you shift forward each time.")
+			saynn("Ты пытаешься подняться, но грубые толчки прижимают тебя к кровати. Ты переворачиваешься и встаешь на четвереньки, стоная, пока чей-то член мощно долбит в твою щелку, заставляя тебя каждый раз подаваться вперед.")
 
 			saynn(RNG.pick([
 				"[say=pc]Fuck..[/say]",
 				"[say=pc]So rough..[/say]",
 			]))
 
-			saynn("It doesn’t take long before the orgasm overwhelms your body, little shivers in your limbs cause your top part of the body to flop onto the bed while your {pc.thick} butt gets sticked out more. You moan into the pillow as the cock thrusts harder, powering through your clenching before cumming too and stuffing your pussy full of cum!")
+			saynn("Вскоре оргазм охватывает твое тело; легкая дрожь в конечностях заставляет твою верхнюю часть тела рухнуть на кровать, в то время как твоя {pc.thick} задница выпячивается еще сильнее. Ты стонешь в подушку, когда член начинает входить еще глубже, преодолевая твои спазмы, прежде чем кончить и залить твою киску спермой по самые края!")
 
 		# (if no pussy)
 		else:
-			saynn("You open your eyes and realize that nothing of it was a dream, you indeed feel a cock rubbing against your tailhole through the portal panties before suddenly penetrating your ass!")
+			saynn("Ты открываешь глаза и понимаешь, что это был не сон: ты действительно чувствуешь, как член трется о твое анусное отверстие сквозь портальные трусики, а затем внезапно проникает в твою задницу!")
 
-			saynn("You try to get up but the rough thrusts pin you to the bed. You turn around and get on all fours, moaning while someone’s cock pounds your fuckhole hard, making you shift forward each time.")
+			saynn("Ты пытаешься подняться, но грубые толчки прижимают тебя к кровати. Ты переворачиваешься и встаешь на четвереньки, стоная, пока чей-то член мощно долбит в твою дырку, заставляя тебя каждый раз подаваться вперед.")
 
 			saynn(RNG.pick([
 				"[say=pc]Fuck..[/say]",
 				"[say=pc]So rough..[/say]",
 			]))
 
-			saynn("It doesn’t take long before the orgasm overwhelms your body, little shivers in your limbs cause your top part of the body to flop onto the bed while your {pc.thick} butt gets sticked out more. You moan into the pillow as the cock thrusts harder, powering through your clenching before cumming too and stuffing your ass full of cum!")
+			saynn("Вскоре оргазм охватывает твое тело; легкая дрожь в конечностях заставляет твою верхнюю часть тела рухнуть на кровать, в то время как твоя {pc.thick} задница выпячивается еще сильнее. Ты стонешь в подушку, когда член начинает входить еще глубже, преодолевая твои спазмы, прежде чем кончить и залить твою задницу спермой по самые края!")
 
-		addButton("Continue", "Can't even sleep without getting used", "endthescene")
+		addButton("Продолжить", "Даже поспать спокойно не можешь, чтобы тебя не использовали", "endthescene")
 
 func resolveCustomCharacterName(_charID):
 	if(_charID == "npc"):

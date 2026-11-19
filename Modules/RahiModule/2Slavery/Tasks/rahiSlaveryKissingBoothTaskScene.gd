@@ -23,249 +23,249 @@ func resolveCustomCharacterName(_charID):
 func _run():
 	if(state == ""):
 		addCharacter("rahi")
-		saynn("Pick how hard you want the kissing booth task to be for Rahi.")
+		saynn("Выберите уровень сложности задания «Будка поцелуев» для Рахи.")
 
-		saynn("Easy: "+str(Util.roundF(chanceEasy, 1))+"% chance. Rahi only offers hugs for credits.")
+		saynn("Легкий: "+str(Util.roundF(chanceEasy, 1))+"% шанс. Рахи предлагает только объятия за кредиты.")
 
-		saynn("Medium: "+str(Util.roundF(chanceMedium, 1))+"% chance. Rahi offers kisses and hugs for credits.")
+		saynn("Средний: "+str(Util.roundF(chanceMedium, 1))+"% шанс. Рахи предлагает поцелуи и объятия за кредиты.")
 
-		saynn("Hard: "+str(Util.roundF(chanceHard, 1))+"% chance. Rahi also offers oral sex for credits.")
+		saynn("Тяжелый: "+str(Util.roundF(chanceHard, 1))+"% шанс. Рахи также предлагает оральный секс за кредиты.")
 
-		addButton("Back", "Pick another task", "endthescene")
-		addButton("Easy", "Rahi only offers hugs for credits", "easy_task")
-		addButton("Medium", "Rahi offers kisses and hugs for credits", "medium_task")
-		addButton("Hard", "Rahi also offers oral sex for credits", "hard_task")
+		addButton("Назад", "Выбрать другое задание", "endthescene")
+		addButton("Легкий", "Рахи предлагает только объятия за кредиты", "easy_task")
+		addButton("Средний", "Рахи предлагает поцелуи и объятия за кредиты", "medium_task")
+		addButton("Сложный", "Рахи также предлагает оральный секс за кредиты", "hard_task")
 	if(state == "easy_task"):
-		saynn("Do you wanna see Rahi do it? Or you can just skip to the outcome.")
+		saynn("Хотите посмотреть, как это сделает Рахи? Или можно сразу перейти к результату.")
 
-		addButton("See it", "See how well Rahi does", "easy_see")
-		addButton("Skip", "Skip to the outcome", "skip")
+		addButton("Вижу", "Посмотреть, как справится Рахи", "easy_see")
+		addButton("Пропустить", "Перейти к результату", "skip")
 	if(state == "skip"):
-		saynn("You decide to stay in the cell and just idle for a bit.")
+		saynn("Вы решаете остаться в камере и просто немного поваляться без дела.")
 
 		if (success):
-			saynn("After some time, Rahi returns, looking happy. She succeeded.")
+			saynn("Спустя некоторое время возвращается Рахи, и она выглядит счастливой. У неё всё получилось.")
 
-			saynn("She gives you a chip with your share of Rahi's earnings.")
+			saynn("Она протягивает вам чип с вашей долей заработка Рахи.")
 
 		else:
-			saynn("After some time, Rahi returns, looking very sad. She just couldn't bring herself to do it.")
+			saynn("Спустя некоторое время возвращается Рахи, и она выглядит очень грустной. Она просто не смогла заставить себя это сделать.")
 
-			saynn("She lowers her head.")
+			saynn("Она опускает голову.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "medium_task"):
-		saynn("Do you wanna see Rahi do it? Or you can just skip to the outcome.")
+		saynn("Хотите посмотреть, как это сделает Рахи? Или можно сразу перейти к результату.")
 
-		addButton("See it", "See how well Rahi does", "medium_see")
-		addButton("Skip", "Skip to the outcome", "skip")
+		addButton("Вижу", "Посмотреть, как справится Рахи", "medium_see")
+		addButton("Пропустить", "Перейти к результату", "skip")
 	if(state == "hard_task"):
-		saynn("Do you wanna see Rahi do it? Or you can just skip to the outcome.")
+		saynn("Хотите посмотреть, как это сделает Рахи? Или можно сразу перейти к результату.")
 
-		addButton("See it", "See how well Rahi does", "hard_see")
-		addButton("Skip", "Skip to the outcome", "skip")
+		addButton("Вижу", "Посмотреть, как справится Рахи", "hard_see")
+		addButton("Пропустить", "Перейти к результату", "skip")
 	if(state == "easy_see"):
 		aimCameraAndSetLocName("main_hall_west")
-		saynn("You explain to Rahi that she must earn you some credits using her body. You explain that she doesn't have to do any sex, selling something simple like hugs is enough.")
+		saynn("Вы объясняете Рахи, что она должна заработать вам немного кредитов, используя своё тело. Вы поясняете, что ей не обязательно заниматься сексом — достаточно продавать что-то простое, например, объятия.")
 
-		saynn("She nods understandably and exits the cell, heading somewhere public. You follow.")
+		saynn("Она понимающе кивает и выходит из камеры, направляясь в какое-то людное место. Вы идёте следом.")
 
-		saynn("Rahi finds a random cardboard box and then places it in one of the high-traffic prison places. She produces a black marker and then writes \"Hugs - 1 credit\" on it before sitting behind it and waiting.")
+		saynn("Рахи находит случайную картонную коробку и ставит её в одном из самых оживлённых мест тюрьмы. Достав чёрный маркер, она пишет на ней \"Объятия — 1 кредит\", после чего садится за неё и начинает ждать.")
 
-		saynn("It doesn't take long for someone to show up..")
+		saynn("Не проходит и много времени, как кто-то появляется...")
 
-		addButton("Continue", "See what happens next", "easy_someone")
+		addButton("Продолжить", "Смотреть, что будет дальше", "easy_someone")
 	if(state == "easy_someone"):
 		playAnimation(StageScene.Hug, "hug", {pc="rahi", npc=npc_id})
-		saynn("Some inmate approaches Rahi and asks her about the hand-made booth. Rahi puts on a fake kind smile and explains everything.")
+		saynn("Одна из заключённых подходит к Рахи и спрашивает про самодельную лавочку. Рахи натягивает фальшивую добрую улыбку и всё ей объясняет.")
 
-		saynn("[say=rahi]She is offering hugs for one credit..[/say]")
+		saynn("[say=rahi]Она предлагает объятия за один кредит...[/say]")
 
-		saynn("The inmate chuckles and looks around. Then {npc.he} tosses a single credit chip at Rahi.")
+		saynn("Заключенная посмеивается и оглядывается по сторонам. Затем {npc.he} бросает Рахи одну кредитную чип-карту.")
 
-		saynn("[say=npc]I suppose I could use a good hug.[/say]")
+		saynn("[say=npc]Думаю, мне не помешало бы крепкое объятие.[/say]")
 
 		if (success):
-			saynn("Rahi sees the credit chip and eagerly embraces {npc.him}, wrapping her paws tightly around {npc.his} neck. She squeezes {npc.him} tightly, making the inmate feel the warmth and comfort of her body.")
+			saynn("Заметив кредитную чип-карту, Рахи с энтузиазмом обнимает {npc.him}, крепко обвивая лапами {npc.his} шею. Она сжимает {npc.him} так сильно, что заключенная кожей чувствует тепло и уют её тела.")
 
-			saynn("The inmate chuckles and pats Rahi on the back.")
+			saynn("Заключенная посмеивается и хлопает Рахи по спине.")
 
-			saynn("[say=npc]Worth every credit.[/say]")
+			saynn("[say=npc]Она стоит каждого кредита.[/say]")
 
-			saynn("Rahi beams with pride and excitement.")
+			saynn("Рахи сияет от гордости и восторга.")
 
-			saynn("Time passes. You watch Rahi hug more inmates.")
+			saynn("Проходит время. Вы наблюдаете, как Рахи обнимает всё новых и новых заключенных.")
 
-			addButton("Continue", "See what happens next", "easy_outcome")
+			addButton("Продолжить", "Смотреть, что будет дальше", "easy_outcome")
 		else:
-			saynn("Rahi sees the credit chip and suddenly gets all puzzled and concerned. Then she looks at you.. and the inmate, who's patience is already running out.")
+			saynn("Рахи видит кредитную чип-карту и вдруг выглядит озадаченной и обеспокоенной. Затем она переводит взгляд на вас... и на заключенную, чье терпение уже на исходе.")
 
-			saynn("[say=rahi]Sorry.. she can't do it..[/say]")
+			saynn("[say=rahi]Прости.. она не может..[/say]")
 
-			saynn("{npc.He} shakes {npc.his} head and takes {npc.his} chip back. Sad Rahi approaches and hugs you instead.")
+			saynn("{npc.He} качает {npc.his} головой и забирает {npc.his} чип обратно. Грустная Рахи подходит и вместо этого обнимает вас.")
 
-			saynn("[say=rahi]Sorry..[/say]")
+			saynn("[say=rahi]Прости...[/say]")
 
-			saynn("Wholesome. But still. Rahi failed her task.")
+			saynn("Мило. Но всё же. Рахи провалила своё задание.")
 
-			addButton("Continue", "See what happens next", "stop_task")
+			addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "easy_outcome"):
 		removeCharacter(npc_id)
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
-		saynn("After everyone gets their hugs from Rahi, she returns to you, looking happy. She succeeded.")
+		saynn("После того как все получат свои поцелуи от Рахи, она возвращается к тебе, выглядя счастливой. Она справилась.")
 
-		saynn("She gives you a chip with your share of Rahi's earnings. And then she hugs you too.")
+		saynn("Она протягивает тебе чип с твоей долей заработка Рахи. А затем и тебя обнимает.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "medium_see"):
 		aimCameraAndSetLocName("main_hall_west")
-		saynn("You explain to Rahi that she must earn you some credits using her body. You explain that she doesn't have to do any sex. But you're asking for more than just hugs.")
+		saynn("Ты объясняешь Рахи, что она должна заработать тебе немного кредитов, используя своё тело. Ты поясняешь, что ей не обязательно заниматься сексом, но ты просишь нечто большее, чем просто объятия.")
 
-		saynn("She nods understandably and exits the cell, heading somewhere public. You follow.")
+		saynn("Она понимающе кивает и выходит из камеры, направляясь в какое-то людное место. Вы идёте следом.")
 
-		saynn("Rahi finds a random cardboard box and then places it in one of the high-traffic prison places. She produces a black marker and then writes \"Kisses - 2 credits. Hugs - 1 credit\" on it before sitting behind it and waiting.")
+		saynn("Рахи находит случайную картонную коробку и ставит её в одном из самых людных мест тюрьмы. Она достаёт чёрный маркер и пишет на ней \"Поцелуи — 2 кредита. Объятия — 1 кредит\", после чего садится за неё и начинает ждать.")
 
-		saynn("It doesn't take long for others to start showing up..")
+		saynn("Вскоре начинают подтягиваться и остальные...")
 
-		addButton("Continue", "See what happens next", "medium_someone")
+		addButton("Продолжить", "Смотреть, что будет дальше", "medium_someone")
 	if(state == "medium_someone"):
 		playAnimation(StageScene.Solo, "stand", {pc="rahi"})
 		if (!success):
-			saynn("One by one, inmates begin to show. They make a little queue to Rahi's handmade kissing booth. She sees all the lips and cheeks that she will have to kiss.. and gets very nervous.")
+			saynn("Один за другим начинают появляться заключённые. Они выстраиваются в небольшую очередь к самодельной «будке поцелуев» Рахи. Она видит все эти губы и щеки, которые ей придётся целовать... и начинает сильно нервничать.")
 
-			saynn("So nervous that she doesn't end up kissing anyone. She runs up to you and hugs you instead. The crowd gets annoyed with broken promises and slowly disperses.")
+			saynn("Так сильно, что в итоге она не целует никого. Вместо этого она подбегает к тебе и крепко обнимает. Толпа, раздражённая нарушенными обещаниями, медленно расходится.")
 
-			saynn("[say=rahi]Sorry..[/say]")
+			saynn("[say=rahi]Прости...[/say]")
 
-			saynn("She kisses your cheek. Wholesome. But still. Rahi failed her task.")
+			saynn("Она целует тебя в щеку. Мило. Но всё же. Рахи провалила своё задание.")
 
-			addButton("Continue", "See what happens next", "stop_task")
+			addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 		else:
 			var randVariant = RNG.pick([1,2,3,4,5,6,7])
 			if (randVariant == 1):
-				saynn("As she sits in her hand-made booth, one of the inmates walks by. He smiles when he sees the cardboard box with written options on it and then approaches Rahi.")
+				saynn("Пока она сидит в своей самодельной будке, мимо проходит один из заключённых. Увидев картонную коробку с надписями, он улыбается и направляется к Рахи.")
 
-				saynn("He asks for a kiss, obviously. Rahi nods, a bit nervously, the thought of earning credits was enough to push her out of her comfort zone.")
+				saynn("Очевидно, он просит поцелуй. Рахи немного нервно кивает: одной мысли о заработке кредитов достаточно, чтобы вытолкнуть её из зоны комфорта.")
 
-				saynn("The inmate leans in and Rahi meets him halfway, pressing her lips to his. It was a soft, gentle kiss and Rahi couldn't help but blush a bit before pulling away.")
+				saynn("Заключенный наклоняется, и Рахи отвечает ему навстречу, прижимая свои губы к его губам. Это был мягкий, нежный поцелуй, и Рахи не смогла сдержать легкого румянца, прежде чем отстраниться.")
 
-				saynn("The inmate hands Rahi her well-earned two credits and goes on his way.")
+				saynn("Заключенный вручает Рахи честно заработанные два кредита и отправляется дальше.")
 
 			elif (randVariant == 2):
-				saynn("As she sits in her hand-made booth, one of the inmates walks by. A kind-looking man. He sees Rahi's booth and decides to approach her.")
+				saynn("Пока она сидит в своей самодельной будке, мимо проходит один из заключенных. Мужчина с добрым лицом. Заметив будку Рахи, он решает подойти к ней.")
 
-				saynn("When he asks for a kiss, Rahi hesitates for a moment before leaning in and planting a soft, comforting kiss on his cheek.")
+				saynn("Когда он просит поцелуй, Рахи на мгновение колеблется, но затем наклоняется и оставляет на его щеке мягкий, утешающий поцелуй.")
 
-				saynn("The man's face lights up with a smile, he hands Rahi a chip with two credits, grateful for the small moment of kindness.")
+				saynn("Лицо мужчины озаряется улыбкой; он протягивает Рахи чип с двумя кредитами, благодарный за этот короткий миг доброты.")
 
 			elif (randVariant == 3):
-				saynn("A female inmate approaches Rahi's handmade kissing booth, looking a bit nervous and shy.")
+				saynn("К самодельной будке для поцелуев подходит заключенная, выглядящая немного нервной и застенчивой.")
 
-				saynn("When she asks for a kiss, Rahi can sense her hesitation and decides to make a quick peck on her lips. But when their lips meet, Rahi finds herself wanting to linger a bit longer.. dragging the moment for as long as possible.")
+				saynn("Когда та просит поцелуй, Рахи чувствует её нерешительность и решает лишь быстро чмокнуть её в губы. Но когда их губы соприкасаются, Рахи ловит себя на желании задержаться подольше... растягивая этот момент столько, сколько возможно.")
 
-				saynn("The female inmate hands her two credits and leaves quickly.")
+				saynn("Заключенная вручает ей два кредита и быстро уходит.")
 
 			elif (randVariant == 4):
-				saynn("A group of inmates approaches Rahi's handmade kissing booth, clearly looking to cause trouble. They demand a kiss each but only willing to pay for one time, abusing the fact that the cardboard box says \"Kisses\". Rahi stands her ground and refuses.")
+				saynn("К самодельной будке Рахи подходит группа заключенных, явно настроенных на шалости. Каждый требует поцелуй, но платить они готовы лишь один раз, пользуясь тем, что на картонной коробке написано \"Поцелуи\". Рахи не сдается и отказывает им.")
 
-				saynn("But then one of the inmates grabs her arm and pulls her close, trying to force a kiss.")
+				saynn("Но тут одна из заключенных хватает её за руку и притягивает к себе, пытаясь силой заставить поцеловать её.")
 
-				saynn("You gotta act! You appear out of nowhere and punch the inmate, sending him sprawling to the ground. The rest of the group scatters, leaving you and Rahi alone.")
+				saynn("Нужно действовать! Ты появляешься из ниоткуда и наносишь заключенному мощный удар, от которого тот разлетается по земле. Остальная толпа разбегается, оставляя тебя и Рахи наедине.")
 
-				saynn("Rahi couldn't resist giving you a quick little kiss on the lips. Before she returns to working.")
+				saynn("Рахи не удержалась и быстро чмокнула тебя в губы, прежде чем вернуться к работе.")
 
 			elif (randVariant == 5):
-				saynn("A shy and nervous inmate approaches Rahi's handmade booth, looking like he had never done anything like this before.")
+				saynn("К самодельной лавке Рахи подходит застенчивый и нервный заключенный; кажется, он никогда раньше не делал ничего подобного.")
 
-				saynn("Rahi senses his anxiety and decides to make the experience as gentle as possible. As they share a sweet kiss, you can see the tension in the man's body slowly easing away.")
+				saynn("Рахи чувствует его тревогу и решает сделать всё максимально нежно. Пока они обмениваются сладким поцелуем, ты видишь, как напряжение в теле мужчины постепенно уходит.")
 
-				saynn("When it's over, he hands her a chip with two credits before leaving, now being much more confident in his step.")
+				saynn("Когда всё заканчивается, он протягивает ей чип на два кредита и уходит, теперь шагая куда увереннее.")
 
 			elif (randVariant == 6):
-				saynn("A group of female inmates approaches Rahi's handmade kissing booth, giggling and playfully pushing each other forward.")
+				saynn("Группа заключенных подходит к самодельной лавке поцелуев Рахи, хихикая и игриво подталкивая друг друга вперед.")
 
-				saynn("Rahi couldn't help but to smile at their indecisiveness. She leans in and kisses one of them on the cheek. And as she does that, she is suddenly pulled into a group hug.")
+				saynn("Рахи не смогла сдержать улыбку, глядя на их нерешительность. Она наклоняется и целует одну из них в щеку, и в этот же миг её внезапно затягивает в общие объятия.")
 
-				saynn("The girls all giggle and hug her tightly before handing her some credits and running away.")
+				saynn("Девушки заливаются смехом и крепко обнимают её, прежде чем сунуть ей несколько кредитов и убежать.")
 
 			elif (randVariant == 7):
-				saynn("One of the guards approaches Rahi's handmade kissing booth, looking stern.")
+				saynn("К самодельной лавке Рахи с суровым видом подходит один из охранников.")
 
-				saynn("But when Rahi offers him a kiss, something softens in his expression, and he leans in to give her a little kiss on the lips.")
+				saynn("Но когда Рахи предлагает ему поцелуй, выражение его лица смягчается, и он наклоняется, чтобы слегка коснуться её губ своими.")
 
-				saynn("Before he leaves, he hands Rahi three credits instead of two.")
+				saynn("Перед уходом он протягивает Рахи три кредита вместо двух.")
 
-			saynn("Time passes. You watch Rahi kiss and hug more inmates, intervening when things go too far.")
+			saynn("Проходит время. Вы наблюдаете, как Рахи целует и обнимает всё новых заключенных, вмешиваясь лишь тогда, когда всё заходит слишком далеко.")
 
-			addButton("Continue", "See what happens next", "medium_outcome")
+			addButton("Продолжить", "Смотреть, что будет дальше", "medium_outcome")
 	if(state == "medium_outcome"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("After everyone gets their kisses and hugs from Rahi, she returns to you, looking happy. She succeeded.")
+		saynn("Когда все получают свои поцелуи и объятия от Рахи, она возвращается к вам с сияющим лицом. У неё всё получилось.")
 
-		saynn("She gives you a chip with your share of Rahi's earnings. And then she kisses you too while her paws are wrapped around you.")
+		saynn("Она протягивает вам чип с вашей долей заработка Рахи. А затем, обхватив вас лапками, она и сама вас целует.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 	if(state == "hard_see"):
 		aimCameraAndSetLocName("main_hall_west")
-		saynn("You explain to Rahi that she must earn you some credits using her body. You explain to her that the best to do so is by using her mouth.")
+		saynn("Вы объясняете Рахи, что она должна заработать вам немного кредитов, используя своё тело. Вы поясняете ей, что лучше всего для этого использовать рот.")
 
-		saynn("She nods understandably and exits the cell, heading somewhere public. You follow.")
+		saynn("Она понимающе кивает и выходит из камеры, направляясь в какое-то людное место. Вы идёте следом.")
 
-		saynn("Rahi finds a random cardboard box and then places it in one of the high-traffic prison places. She produces a black marker and then writes \"Oral - 3 credits. Kisses - 2 credits. Hugs - 1 credit\" on it before sitting behind it and waiting.")
+		saynn("Рахи находит случайную картонную коробку и ставит её в одном из самых оживленных мест тюрьмы. Она достает черный маркер и пишет на ней \"Оральный секс — 3 кредита. Поцелуи — 2 кредита. Объятия — 1 кредит\", после чего садится за неё в ожидании клиентов.")
 
-		saynn("It doesn't take long for others to start showing up..")
+		saynn("Вскоре начинают подтягиваться и остальные...")
 
-		addButton("Continue", "See what happens next", "hard_someone")
+		addButton("Продолжить", "Смотреть, что будет дальше", "hard_someone")
 	if(state == "hard_someone"):
 		if (!success):
 			playAnimation(StageScene.Duo, "kneel", {pc="rahi", npc=npc_id, npcBodyState={naked=true, hard=true}})
-			saynn("One by one, inmates begin to show. They make a little queue to Rahi's handmade blowjob booth. She sees all the cocks she has to suck and all the pussies she has to lick.. and gets very nervous.")
+			saynn("Один за другим начинают подходить заключенные. Они выстраиваются в небольшую очередь к самодельной «будке для минета» Рахи. Она видит все члены, которые ей придется сосать, и все киски, которые ей придется лизать... и начинает сильно нервничать.")
 
-			saynn("So nervous that she doesn't end up serving anyone. She runs up to you and hugs you instead. The crowd gets annoyed with broken promises and slowly disperses.")
+			saynn("Она нервничает так сильно, что в итоге не обслуживает никого. Вместо этого она подбегает к вам и крепко обнимает. Толпа, раздраженная нарушенными обещаниями, медленно расходится.")
 
-			saynn("[say=rahi]Sorry..[/say]")
+			saynn("[say=rahi]Прости...[/say]")
 
-			saynn("She kisses your cheek. Wholesome. But still. Rahi failed her task.")
+			saynn("Она целует тебя в щеку. Мило. Но всё же. Рахи провалила своё задание.")
 
-			addButton("Continue", "See what happens next", "stop_task")
+			addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 		else:
 			if (getCharacter(npc_id).hasPenis()):
 				playAnimation(StageScene.SexOral, "sex", {npc="rahi", pc=npc_id, bodyState={exposedCrotch=true,hard=true}})
-				saynn("One of the inmates approaches the booth. {npc.He} reads the price list and then whips out {npc.his} {npc.penis}, surprising Rahi.")
+				saynn("Один из заключенных подходит к будке. {npc.He} читает прайс-лист, а затем выхватывает {npc.his} {npc.penis}, чем приводит Рахи в замешательство.")
 
-				saynn("[say=rahi]Three credits for a blowjob..[/say]")
+				saynn("[say=rahi]Три кредита за отсос..[/say]")
 
-				saynn("{npc.He} hands her the credits and the kitty gets to work. Rahi parts her lips and takes that member deep into her mouth, swirling her tongue around the head, causing the inmate to moan.")
+				saynn("{npc.He} протягивает ей кредиты, и киска принимается за дело. Рахи размыкает губы и глубоко заглатывает член, обводя языком головку, отчего заключенная начинает стонать.")
 
-				saynn("Kitty continues to suck {npc.him} off at a gradually increasing pace, using her paws to gently massage {npc.his} balls. All the while {npc.he} reaches down and strokes her ears, causing Rahi to purr and double her efforts, she is determined to make {npc.him} cum.")
+				saynn("Киска продолжает сосать {npc.him} с постепенно нарастающей скоростью, нежно массируя лапками {npc.his} яички. Тем временем {npc.he} тянется вниз и ласкает её ушки, заставляя Рахи мурлыкать и стараться вдвое сильнее — она полна решимости довести {npc.him} до конч.")
 
-				saynn("Finally, the inmate reaches {npc.his} climax. {npc.He} groans while {npc.his} member shoots strings of {npc.cum} directly into Rahi's mouth. She pulls away and eagerly swallows every drop of {npc.his} seed before showing {npc.him} her empty mouth. Rahi wipes her lips that got some of that stuff on them too.")
+				saynn("Наконец, заключенная достигает {npc.his} оргазма. {npc.He} стонет, пока член {npc.his} извергает струи {npc.cum} прямо в рот Рахи. Она отстраняется и жадно проглатывает каждую каплю {npc.his} семени, прежде чем показать {npc.him} свой пустой рот. Рахи вытирает губы, на которые тоже попало немного этой жижи.")
 
-				saynn("The inmate pats Rahi on the head before putting away {npc.his} cock and walking away.")
+				saynn("Заключенная похлопывает Рахи по голове, после чего убирает {npc.his} член и уходит.")
 
 			else:
 				playAnimation(StageScene.SexOral, "lick", {npc="rahi", pc=npc_id, bodyState={exposedCrotch=true,hard=true}})
-				saynn("A female is walking by and then stops to check out Rahi's offerings. The girl seems quite interested. She approaches the kitty and asks about the different services available.")
+				saynn("Мимо проходит женщина и останавливается, чтобы оценить предложения Рахи. Девушка кажется весьма заинтересованной. Она подходит к киске и расспрашивает о доступных услугах.")
 
-				saynn("Rahi explains the options and the girl seems intrigued by the oral sex one. She asks about the price even though it's written on the box and then agrees, handing the kitty the creds.")
+				saynn("Рахи объясняет варианты, и вариант с оральным сексом явно интригует девушку. Она спрашивает цену, хотя та написана на стенде, а затем соглашается и протягивает киске кредиты.")
 
-				saynn("After that, the girl walks behind the booth and pulls her shorts down, exposing her pussy enough for Rahi to slowly lean in and start licking her out.")
+				saynn("После этого девушка заходит за стенд и спускает шорты, открывая киску так, чтобы Рахи могла медленно наклониться и начать её вылизывать.")
 
-				saynn("As Rahi's skilled tongue explored the girl's sensitive areas, she began to moan from pleasure of having every inch of her pussy stimulated. She puts her hand on Rahi's head and begins to grind her crotch into the offered face, spreading her juices.")
+				saynn("Пока умелый язык Рахи исследовал самые чувствительные зоны девушки, та начала стонать от удовольствия, ощущая, как стимулируется каждый дюйм её киски. Она кладет руку на голову Рахи и начинает вжиматься промежностью в её лицо, обильно смазывая его своим соком.")
 
-				saynn("The girl quickly nears her climax.. And soon enough, the girl tenses up and then proceeds to shiver and shake as her pussy slit showers the kitty with all the lewd juices.")
+				saynn("Девушка быстро приближается к оргазму... Вскоре её тело напрягается, а затем начинает дрожать и содрогаться, пока щель её киски осыпает кошечку потоками похотливого сока.")
 
-			saynn("Time passes. You watch Rahi give blowjobs, licks pussies, kiss and hug more inmates, intervening when things go too far.")
+			saynn("Время идет. Ты наблюдаешь, как Рахи делает минет, лижет киски, целует и обнимает других заключенных, вмешиваясь лишь тогда, когда всё заходит слишком далеко.")
 
-			addButton("Continue", "See what happens next", "hard_outcome")
+			addButton("Продолжить", "Смотреть, что будет дальше", "hard_outcome")
 	if(state == "hard_outcome"):
 		removeCharacter(npc_id)
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("After everyone gets what they wanted from Rahi, she returns to you, looking happy and satisfied. She succeeded.")
+		saynn("Когда все получают от Рахи то, чего хотели, она возвращается к тебе — счастливая и удовлетворенная. Она справилась.")
 
-		saynn("She gives you a chip with your share of Rahi's earnings. And then she kisses you on the cheek while her paws are wrapped around you.")
+		saynn("Она протягивает тебе чип с твоей долей заработка Рахи. А затем целует тебя в щеку, обвивая тебя своими лапками.")
 
-		addButton("Continue", "See what happens next", "stop_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

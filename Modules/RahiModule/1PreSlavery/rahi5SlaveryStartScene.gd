@@ -7,27 +7,27 @@ func _run():
 	if(state == ""):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("You enter Rahi's cell. Her cell is not really that different from any other cell, the inmates aren't really allowed to have much personal stuff. Putting anything out on display quickly leads it to being stolen too. So.. just a cell.")
+		saynn("Вы входите в камеру Рахи. Она мало чем отличается от остальных — заключенным не особо разрешают иметь личные вещи. Стоит что-то выставить напоказ, как это тут же крадут. Так что... просто камера.")
 
-		saynn("Rahi is standing near her bed, looking at you.")
+		saynn("Рахи стоит у своей кровати и смотрит на вас.")
 
-		saynn("[say=rahi]So.. you gonna.. help her?[/say]")
+		saynn("[say=rahi]Значит... ты собираешься... помочь ей?[/say]")
 
-		saynn("[say=pc]I will, kitty. I will do my best.[/say]")
+		saynn("[say=pc]Обязательно, киска. Я сделаю всё, что в моих силах.[/say]")
 
-		saynn("She tilts her head down slightly.")
+		saynn("Она слегка склоняет голову.")
 
-		saynn("[say=rahi]She trusts you.. Please, do what you think is right.. even if she doesn't agree..[/say]")
+		saynn("[say=rahi]Она доверяет тебе... Пожалуйста, поступай так, как считаешь нужным... даже если она будет не согласна...[/say]")
 
-		saynn("Powerful words. From such a weak-looking kitty. The feline completely surrenders herself to you.")
+		saynn("Сильные слова. От такой слабой на вид кошечки. Она полностью отдается вам на волю.")
 
-		saynn("[say=pc]Even if you resist?[/say]")
+		saynn("[say=pc]Даже если ты будешь сопротивляться?[/say]")
 
-		saynn("[say=rahi]Yes..[/say]")
+		saynn("[say=rahi]Да...[/say]")
 
-		saynn("So. This is it. Time to order her to do something and see what happens.")
+		saynn("Ну вот. Пора. Пришло время отдать ей приказ и посмотреть, что из этого выйдет.")
 
-		addButton("Continue", "See what happens next", "pick_task_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pick_task_scene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

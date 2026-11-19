@@ -104,7 +104,7 @@ func _run():
 			]))
 			
 		if(GM.pc.getLust() >= 50):
-			saynn("You whisper to yourself lustfully.")
+			saynn("Ты похотливо шепчешь себе под нос.")
 			
 			saynn(RNG.pick([
 				"[say=pc]F-fuck.. yeah..[/say]",
@@ -115,7 +115,7 @@ func _run():
 				"[say=pc]My pussy is getting used like a fleshlight~[/say]",
 			]))
 		else:
-			saynn("You whisper to yourself quietly.")
+			saynn("Ты тихо шепчешь себе под нос.")
 			
 			saynn(RNG.pick([
 				"[say=pc]It’s happening again..[/say]",
@@ -126,7 +126,7 @@ func _run():
 				"[say=pc]It will never stop, will it..[/say]",
 			]))
 
-		addButton("Continue", "You’re getting fucked!", "vaginal_cum")
+		addButton("Продолжить", "Тебя трахают!", "vaginal_cum")
 		
 	if(state == "vaginal_cum"):
 		playAnimation(StageScene.SexPortal, RNG.pick(["inside", "fast"]), {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
@@ -166,7 +166,7 @@ func _run():
 				"You can’t endure it for long, the {npc.penis} quickly pushes you over the edge and causes your climax to overwhelm you. Your legs shiver and shake while your pussy gets tight around the shaft, causing it to cum soon after, stuffing your womb full of its seed. Then it just gets pulled out, leaving your {pc.pussyStretch} slit to slowly tighten up and leak jizz.",
 			]))
 		
-		addButton("Continue", "So much cum..", "endthescene")
+		addButton("Продолжить", "Так много спермы...", "endthescene")
 
 
 	if(state == "anal"):
@@ -204,7 +204,7 @@ func _run():
 			]))
 			
 		if(GM.pc.getLust() >= 50):
-			saynn("You whisper to yourself lustfully.")
+			saynn("Ты похотливо шепчешь себе под нос.")
 			
 			saynn(RNG.pick([
 				"[say=pc]F-fuck.. yeah..[/say]",
@@ -215,7 +215,7 @@ func _run():
 				"[say=pc]Yeah, use that fleshlight~[/say]",
 			]))
 		else:
-			saynn("You whisper to yourself quietly.")
+			saynn("Ты тихо шепчешь себе под нос.")
 			
 			saynn(RNG.pick([
 				"[say=pc]It’s happening again..[/say]",
@@ -226,7 +226,7 @@ func _run():
 				"[say=pc]It will never stop, will it..[/say]",
 			]))
 
-		addButton("Continue", "You’re getting fucked!", "anal_cum")
+		addButton("Продолжить", "Тебя трахают!", "anal_cum")
 
 	if(state == "anal_cum"):
 		playAnimation(StageScene.SexPortal, RNG.pick(["inside", "fast"]), {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
@@ -266,25 +266,25 @@ func _run():
 				"The hard cock throbs and twitches as it fucks you, a few thrusts later it starts to fill your bowels full of its seed. It was too much for you, your body squirms hard while your tailhole clenches around the shaft, milking it.",
 			]))
 		
-		addButton("Continue", "So much cum..", "endthescene")
+		addButton("Продолжить", "Так много спермы...", "endthescene")
 		
 		
 		
 	if(state == "cockSuck"):
 		playAnimation(StageScene.SexPortalOral, RNG.pick(["suck", "suckfast"]), {pc=npcID, npc="pc", npcBodyState={hard=true}})
 		
-		saynn("You almost forgot that you were wearing these portal panties. But you get reminded of them when you suddenly feel someone’s lips wrapping around the tip of your {pc.cock} and gently sucking on it.")
+		saynn("Ты почти забыла, что на тебе надеты эти портальные трусики. Но ты вспоминаешь о них, когда внезапно чувствуешь, как чьи-то губы обхватывают кончик твоего {pc.cock} и начинают нежно посасывать его.")
 		
-		saynn("Such teasing makes you hard and eager. You look around and hope that nobody is watching. The lips seem to notice your shaft inflating with blood and give it a little kiss before opening wide to let your dick past the teeth. You feel the warm slick walls of someone’s mouth closing around your member and their tongue licking it.")
+		saynn("Такое дразнение заставляет тебя возбуждаться и жаждать большего. Ты оглядываешься по сторонам, надеясь, что никто не смотрит. Кажется, губы замечают, как твой член наполняется кровью, и слегка целуют его, прежде чем широко раскрыться, позволяя члену пройти между зубами. Ты чувствуешь, как теплые, влажные стенки чьего-то рта смыкаются вокруг твоего достоинства, а язык начинает его вылизывать.")
 		
-		saynn("Your cock leaks a few drops of pre and the tongue catches them. Then you feel the lips begin to slide across the surface of your dick, sucking you off so well. You wonder if they even realize that they’re sucking a real cock and not some realistic toy.")
+		saynn("Твой член сочится предэякулятом, и язык ловит каждую каплю. Затем ты чувствуешь, как губы начинают скользить по всей длине твоего члена, высасывая тебя так мастерски, что ты невольно задумываешься: а понимают ли они вообще, что сосут настоящий член, а не какой-то реалистичный секс-игрушку?")
 		
-		addButton("Cum!", "You can’t really control any of this", "cockSuckCum")
+		addButton("Кончай!", "Ты почти не можешь это контролировать", "cockSuckCum")
 		
 	if(state == "cockSuckCum"):
 		playAnimation(StageScene.SexPortalOral, RNG.pick(["hold", "suck", "suckfast"]), {pc=npcID, npc="pc", npcBodyState={hard=true}})
 		
-		saynn("You try to stay calm but the little noises of pleasure come out on their own when the lips suddenly go super deep and meet with the base of your cock, deep throating it. Your toes curl up at the feeling of tight throat walls milking your cock. That quickly pushes you over the edge, your {pc.cock} shoots its load deep down into someone’s throat as you arch your back and let out more muffled noises.")
+		saynn("Ты пытаешься сохранять спокойствие, но невольные стоны удовольствия вырываются сами собой, когда губы внезапно заходят очень глубоко, достигая самого основания твоего члена, заглатывая его целиком. Твои пальцы ног поджимаются от ощущения того, как узкие стенки горла доят твой член. Это быстро подводит тебя к краю: твой {pc.cock} выстреливает порцией глубоко в чье-то горло, пока ты выгибаешься в спине, издавая сдавленные звуки.")
 		
 		saynn(RNG.pick([
 			"[say=pc]Oh fuck..[/say]",
@@ -292,134 +292,134 @@ func _run():
 			"[say=pc]It’s so tight.[/say]",
 		]))
 		
-		saynn("Whoever that is, they seem to eagerly swallow your {pc.cum} before licking your cock until it's clean of any mess.")
+		saynn("Кто бы это ни был, этот человек с жадностью заглатывает твой {pc.cum}, а затем вылизывает твой член дочиста, собирая всю смазку.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 
 
 	if(state == "cockTeaseThighs"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["tease"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("Someone’s digits brush over the surface of your {pc.cock}. They then focus on rubbing the tip, quickly making you hard and lusty, you feel the digits catching your precum and spreading it along the shaft.")
+		saynn("Чьи-то пальцы скользят по поверхности твоего {pc.cock}. Затем они сосредотачиваются на стимуляции головки, быстро заставляя тебя встать колом от похоти; ты чувствуешь, как пальцы собирают предэякулят и размазывают его по стволу.")
 		
-		saynn("After teasing you like that, the digits get pulled away, replaced with something quite more soft. You feel your dick trapped between someone’s thighs that then begin sliding back and forth along it, making you feel so good. They grind your cock with their pussy, the sensitive petals are coating your dick with juices, making your shaft more slick. You feel like you won’t endure this for long, your cock is already throbbing, ready to waste its load.")
+		saynn("После таких дразнящих ласк пальцы убираются, а им на смену приходит нечто гораздо более мягкое. Ты чувствуешь, как твой член оказывается зажат между чьих-то бедер, которые начинают двигаться вперед-назад, доставляя тебе невероятное наслаждение. Они трутся своей киской о твой член, и чувствительные лепестки покрывают его соками, делая ствол еще более скользким. Ты чувствуешь, что долго не продержишься: твой член уже пульсирует, готовый извергнуть свою порцию.")
 		
 		if(RNG.chance(50)):
-			addButton("Cum!", "It's just too much", "cockTeaseThighsCumInside")
+			addButton("Кончай!", "Это просто слишком сильно", "cockTeaseThighsCumInside")
 		else:
-			addButton("Cum!", "It's just too much", "cockTeaseThighsCumOutside")
+			addButton("Кончай!", "Это просто слишком сильно", "cockTeaseThighsCumOutside")
 		
 	if(state == "cockTeaseThighsCumInside"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["sex", "fast", "inside"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("The thighs still brush against your cock. But just when you’re about to cum, you feel their pussy shifting position and pressing against your cock, the sudden move was enough for you to penetrate their pussy folds and slide into their sex. The wet soft inner walls engulf your cock, forcing you to let out a moan as you cum hard, your {pc.cock} starts shooting waves of {pc.cum} directly into their babymaker, stuffing it full. Makes you wonder if they expected a creampie from a random cock attached to a fleshlight today.")
+		saynn("Бедра всё еще трутся о твой член. Но как раз в тот момент, когда ты готов кончить, ты чувствуешь, как их киска смещается и прижимается к твоему стволу; этого резкого движения хватает, чтобы ты вошел в складки их плоти и скользнул внутрь. Влажные мягкие стенки обволакивают твой член, заставляя тебя издать стон, когда ты мощно кончаешь; твоя {pc.cock} начинает извергать волны {pc.cum} прямо в их «машинку для детей», набивая её до краев. Невольно задумываешься: неужели они ожидали кончить в себя от случайного члена, прикрепленного к портативным трусикам?")
 		
-		saynn("The pussy walls milk your cock hard, extracting every last drop. But as their orgasm fades, they just pull your cock out of their stuffed slit and leave you somewhere.")
+		saynn("Стенки киски с силой доят твой член, выжимая последнюю каплю. Но как только их оргазм затихает, они просто вытаскивают твой член из набитой спермой щели и оставляют тебя где-то в стороне.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 		
 	if(state == "cockTeaseThighsCumOutside"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["tease"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("The thighs brush against your cock harder, you feel the pussy squirting all over your length as the stranger on the other end starts to cum. And that’s when you reach your peak and cum too, your {pc.cock} starts shooting strings of {pc.cum} somewhere you can’t see, probably messing up the floor and making whoever uses the toy surprised.")
+		saynn("Бедра сильнее прижимаются к твоему члену; ты чувствуешь, как киска заливает всю твою длину смазкой, когда незнакомка на той стороне начинает кончать. И именно в этот момент ты достигаешь пика и тоже кончаешь; твоя {pc.cock} начинает выстреливать струями {pc.cum} куда-то, куда ты не видишь — вероятно, заливая пол и заставая врасплох того, кто решит воспользоваться этой игрушкой.")
 		
-		saynn("As your orgasm fades, you feel the fleshlight with your cock just placed somewhere.")
+		saynn("Когда оргазм утихает, ты чувствуешь, что «флешлайт» с твоим членом просто где-то оставили.")
 	
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 	
 	
 	if(state == "cockVaginal"):
 		playAnimation(StageScene.SexPortalRide, RNG.pick(["sex", "fast"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("A little noise escapes from you as you feel someone’s tongue suddenly licking your {pc.cock} through the portal panties. Blood quickly starts flowing towards your member, preparing and making it bigger.")
+		saynn("Тихий звук срывается с твоих губ, когда ты чувствуешь, как чей-то язык внезапно начинает лизать твою {pc.cock} сквозь портальные трусики. К члену быстро приливает кровь, подготавливая его и заставляя наливаться еще сильнее.")
 		
-		saynn("Then you feel your cock pressed against a pussy! Wet needy folds are being spread by your dick as you feel somebody lowering themselves onto the fleshlight with your member sticking out. Huh, they seem very eager to get their pussy stuffed.")
+		saynn("Затем ты чувствуешь, как твой член прижимается к киске! Твой член раздвигает влажные, жаждущие складки, когда ты ощущаешь, как кто-то опускается на этот «флешлайт», на который насажен твой член. Хм, похоже, они очень хотят, чтобы их киску набили до отказа.")
 		
-		saynn("They then start bouncing on your cock up and down. They ride you so well that you quickly find yourself panting and arching your back, their inner walls wrap around your shaft in such a pleasurable way.")
+		saynn("Затем они начинают прыгать на твоем члене вверх и вниз. Они седлают тебя так мастерски, что ты быстро начинаешь тяжело дышать и выгибать спину — их внутренние стенки так приятно обхватывают твой ствол.")
 		
-		saynn("The tip of your cock is smashing their cervix, you feel like you’re about to cum!")
+		saynn("Головка твоего члена долбит прямо в шейку матки, и кажется, что ты вот-вот кончишь!")
 		
-		addButton("Cum inside", "It’s not like you have a choice", "cockVaginalCum")
+		addButton("Кончить внутрь", "У тебя всё равно нет выбора", "cockVaginalCum")
 	
 	if(state == "cockVaginalCum"):
 		playAnimation(StageScene.SexPortalRide, RNG.pick(["inside", "fast", "tease"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("Whoever they are, they don’t seem to care about the possibility of getting creampied. Or maybe they don’t expect a randomly found toy to impregnate them so they keep riding you as your cock starts throbbing and shooting {pc.cum} directly into their womb, stuffing it full. You close your mouth and struggle to keep still as your balls are being drained by the twitching pussy.")
+		saynn("Кем бы они ни были, их, кажется, не волнует возможность получить кремпи, забитый семенем. Или, может, они не ожидают, что случайно найденная игрушка сможет их оплодотворить, поэтому они продолжают скакать на тебе, пока твой член начинает пульсировать и извергать {pc.cum} прямо им в матку, наполняя её до краев. Ты плотно сжимаешь губы и изо всех сил стараешься не шевелиться, пока твои яйца опустошаются этой дергающейся киской.")
 		
-		saynn("Then they just pull your cock out of their used hole and leave the fleshlight be.")
+		saynn("Затем они просто вытаскивают твой член из своей использованной дырки и оставляют «флешлайт» в покое.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 		
 	
 	if(state == "cockAnal"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["sex", "fast"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("You stop as you feel somebody grabbing the fleshlight with your cock sticking out and groping your balls. Then they use their tongue to get you hard and make you leak precum just so they can shove your member up their butt a second later.")
+		saynn("Ты замираешь, чувствуя, как кто-то хватает «флешлайт» с торчащим из него членом и начинает ласкать твои яйца. Затем они используют язык, чтобы ты встал еще тверже и у тебя выступила предэякулятина — и всё это лишь для того, чтобы секунду спустя засунуть твой член себе в задницу.")
 		
-		saynn("You let out a little moan as your {pc.cock} is stretching their tight ring and sliding deeper. The hand starts shoving your dick in and out, making it so your shaft is pounding their butt rough and fast, smashing their pleasure spot.")
+		saynn("Ты издаешь тихий стон, когда твой {pc.cock} растягивает их тугое кольцо и скользит всё глубже. Рука начинает двигать твой член туда-сюда, так что твой ствол вбивается в их задницу грубо и быстро, размазывая их точку удовольствия.")
 		
-		addButton("Cum!", "You can’t endure this very long", "cockAnalCum")
+		addButton("Кончай!", "Ты долго это не выдержишь", "cockAnalCum")
 	
 	if(state == "cockAnalCum"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["tease", "inside", "fast"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("The inner walls of that anus start clenching around your cock in a very irregular pattern, you feel them cumming! And soon after, the frictions and the feeling of tightness sends you over the edge too, your member shoots its load inside someone’s nethers, stuffing their butt full of your {pc.cum}.")
+		saynn("Внутренние стенки этой ануса начинают сжиматься вокруг твоего члена в совершенно хаотичном ритме — ты чувствуешь, как они кончают! Вскоре после этого трение и ощущение тесноты доводят и тебя до предела: твой член выбрасывает порцию внутрь чьих-то недр, забивая их задницу твоим {pc.cum}.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 		
 		
 	if(state == "cockCondom"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["sex", "fast"]), {pc=npcID, npc="pc", npcBodyState={hard=true, condom=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("You suddenly feel some kind of rubber object brushing against your cock. Is someone putting a condom on you? Yeah, seems so, the digits stretch-drag the rubber over your whole length before giving your shaft a few strokes and rubs. The teasing does its work, gradually making you harder.")
+		saynn("Внезапно ты чувствуешь, как какой-то резиновый объект скользит по твоему члену. Тебе что, надевают презерватив? Да, похоже на то: пальцы растягивают резину по всей твоей длине, а затем несколько раз проводят по стволу, поглаживая и растирая его. Эти дразнящие ласки делают своё дело, постепенно заставляя тебя вставать ещё тверже.")
 		
-		saynn("Then the stranger grabs the fleshlight and starts using your cock as a dildo, shoving into their pussy and sliding it in and out. Their tight slit feels so pleasurable and the condom is coated in lube, meaning it's so easy for them to use your cock for their pleasure.")
+		saynn("Затем незнакомка хватает твой член, словно флэшлайт, и начинает использовать его как дилдо, втискивая в свою киску и двигая им туда-сюда. Её узкая щель дарит невероятное удовольствие, а презерватив обильно смазан лубрикантом, так что ей очень легко использовать твой член для своего наслаждения.")
 		
 		if(RNG.chance(50)):
-			addButton("Cum!", "Stuff that condom", "cockCondomCumBreak")
+			addButton("Кончай!", "Засунь этот презерватив", "cockCondomCumBreak")
 		else:
-			addButton("Cum!", "Stuff that condom", "cockCondomCumNoBreak")
+			addButton("Кончай!", "Засунь этот презерватив", "cockCondomCumNoBreak")
 		
 	if(state == "cockCondomCumBreak"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside", "tease"]), {pc=npcID, npc="pc", npcBodyState={hard=true, condom=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("You can only endure this for so long before you cum, your {pc.cock} is throbbing as it fills the condom with your {pc.cum} while it's inside someone. Their pussy walls get even tighter as the orgasm overwhelms them too, and that extra stimulation is enough to extend your climax, your cock keeps stuffing the condom until it [b]suddenly breaks, spilling all of its contents[/b]. Oops, seems like you might have knocked them up by accident. Hopefully they don’t mind.")
+		saynn("Ты сможешь терпеть лишь недолго, прежде чем кончишь; твой {pc.cock} пульсирует, наполняя презерватив твоим {pc.cum}, пока ты внутри кого-то. Стенки её киски сжимаются ещё сильнее, когда оргазм накрывает и её, и этой дополнительной стимуляции хватает, чтобы продлить твой климакс; твой член продолжает набивать презерватив, пока он [b]внезапно не рвётся, выплескивая всё содержимое[/b]. Ой, похоже, ты случайно её оплодотворил. Надеемся, она не против.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 		
 	if(state == "cockCondomCumNoBreak"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside", "fast"]), {pc=npcID, npc="pc", npcBodyState={hard=true, condom=true}, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("You can only endure this for so long before you cum, your {pc.cock} is throbbing as it fills the condom with your {pc.cum} while it's inside someone. Their pussy walls get even tighter as the orgasm overwhelms them too, at least you won’t knock them up.")
+		saynn("Ты сможешь терпеть это лишь недолго, прежде чем кончишь; твой {pc.cock} пульсирует, наполняя презерватив твоей {pc.cum}, пока ты внутри кого-то. Стенки их киски сжимаются еще сильнее, когда оргазм накрывает и их тоже — по крайней мере, ты их не оплодотворишь.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 
 
 	if(state == "cockStroking"):
 		playAnimation(StageScene.SexPortalOral, RNG.pick(["hold"]), {pc=npcID, npc="pc", npcBodyState={hard=true}})
 		
-		saynn("Someone’s digits suddenly wrap around your shaft and give it a gentle stroke, to test maybe. Their grasp is quite soft, you can’t help yourself but to slowly get harder as they caress your {pc.cock}. One of the fingers finds the tip and starts rubbing it while another hand joins to play with your balls, making you curl your toes from pleasure.")
+		saynn("Чьи-то пальцы внезапно обхватывают твой член и мягко проводят по нему, словно проверяя на прочность. Хватка довольно нежная, и ты не можешь удержаться от того, чтобы не налиться еще сильнее, пока они ласкают твой {pc.cock}. Один из пальцев находит головку и начинает тереть её, а другая рука присоединяется, чтобы поиграть с твоими яйцами, заставляя тебя поджимать пальцы на ногах от удовольствия.")
 		
-		saynn("Then the palm notices your reaction and tightens its grip around your cock before proceeding to teasingly jack you off. The stroking is too much, you try to hump the hand but there is nothing you can do about it, you have zero control over what happens to you. You’re leaking more precum and the hand then spreads it over your length before gradually picking up the pace, finally getting you closer to your peak.")
+		saynn("Затем ладонь замечает твою реакцию и сжимается вокруг твоего члена крепче, прежде чем начать дразнящую мастурбацию. Эти движения слишком хороши; ты пытаешься податься навстречу руке, но ничего не можешь с собой поделать — у тебя нулевой контроль над происходящим. У тебя выделяется всё больше смазки, и рука размазывает её по всей длине, постепенно ускоряясь и подготавливая тебя к самому пику.")
 		
-		addButton("Cum!", "Hopefully they don’t plan on denying you", "cockStrokingCum")
+		addButton("Кончай!", "Надеемся, они не собираются тебя обделять", "cockStrokingCum")
 
 	if(state == "cockStrokingCum"):
 		playAnimation(StageScene.SexPortalOral, RNG.pick(["hold"]), {pc=npcID, npc="pc", npcBodyState={hard=true}})
 		
-		saynn("You get the feeling of the pressure rising, you don’t care that you’re not fucking someone, one hand is enough to make you feel very good. Your {pc.cock} starts twitching more and more before suddenly shooting a strong thick string of {pc.cum} into the air followed by a few smaller ones after. You moan and squirm slightly while the hand milks your balls dry.")
+		saynn("Ты чувствуешь, как давление нарастает; тебе плевать, что ты ни в кого не трахаешься — одной руки достаточно, чтобы тебе стало чертовски хорошо. Твой {pc.cock} начинает дергаться всё сильнее, а затем внезапно выстреливает мощной густой струей {pc.cum} в воздух, за которой следуют еще несколько более мелких. Ты стонешь и слегка корчишься, пока рука выжимает из твоих яиц всё до последней капли.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 		
 	
 	if(state == "cockWarming"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside"]), {pc=npcID, npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true}})
 		
-		saynn("Huh? You feel someone grabbing the fleshlight with your cock and brushing it against their ass. That causes your member to gradually get harder. The stranger then rubs your rod between their buttcheeks, stroking it that way and causing you to moan quietly. Having your cock hotdogged like that just feels too good, you leak precum all over their butt.")
+		saynn("А? Ты чувствуешь, как кто-то обхватил твой член, словно мастурбатор, и прижимает его к своей заднице. От этого твой орган начинает постепенно твердеть. Незнакомец водит твоим стволом между своих ягодиц, лаская его таким образом, отчего ты тихонько стонешь. Когда твой член так «горяче» зажимают, это приносит слишком много удовольствия, и ты заливаешь их задницу предэякулятом.")
 		
-		saynn("And then they just shove your {pc.cock} up their butt and let it stay there. No movement, no fucking, they just use their tight butt to warm your cock, maybe they were just looking for a good buttplug. Their inner walls clench around your shaft sometimes, making you keep your erection, it seems they’re gonna be your cock warmer for a while.")
+		saynn("А затем они просто засовывают твой {pc.cock} себе в задницу и оставляют там. Ни движений, ни траха — они просто используют свою узкую дырку, чтобы согреть твой член; возможно, они просто искали хорошую пробку. Их внутренние стенки время от времени сжимаются вокруг твоего ствола, поддерживая эрекцию — похоже, они собираются побыть твоей грелкой для члена еще какое-то время.")
 		
-		addButton("Continue", "Fun times", "endthescene")
+		addButton("Продолжить", "Веселое времяпровождение", "endthescene")
 
 	
 func _react(_action: String, _args):
