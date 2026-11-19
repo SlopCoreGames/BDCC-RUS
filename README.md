@@ -21,12 +21,19 @@
 
 ## Скачать и запустить
 
-1. Скачайте готовый архив **[`BDCC_RU_v0.4.1_Win64.zip`](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)** (`65.8 МБ`) для Windows 64-bit.
-2. Распакуйте все файлы в одну папку (`BDCC.exe` и `BDCC.pck` должны лежать рядом) и запустите `BDCC.exe`.
-3. **Portable-режим:** создайте пустую папку `BDCCData` рядом с `BDCC.exe` перед запуском, чтобы хранить сохранения, настройки и моды локально в ней.
+Все сборки доступны на странице **[Release v1.0](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)**:
+
+| Платформа | Файл | Размер | Как запустить |
+| --- | --- | --- | --- |
+| **Windows 64-bit** | `BDCC_RU_v0.4.1_Win64.zip` | `65.8 МБ` | Распакуйте в одну папку (`BDCC.exe` + `BDCC.pck`) и запустите `BDCC.exe` |
+| **Android (APK)** | `BDCC_RU_v0.4.1_Android.apk` | `114.7 МБ` | ARM64 + ARMv7, подпись APK v1/v2/v3 (перед установкой поверх EN-версии удалите оригинал) |
+| **Web / HTML5** | `BDCC_RU_v0.4.1_Web.zip` | `58.1 МБ` | Распакуйте и запустите `start_web_server.bat` или `python3 -m http.server 8060` |
+| **Linux 64-bit** | `BDCC_RU_v0.4.1_Linux64.zip` | `66.4 МБ` | Распакуйте в одну папку, права `+x` уже выставлены; запуск `./BDCC.x86_64` |
+| **macOS** | `BDCC_RU_v0.4.1_macOS.zip` | `75.3 МБ` | Неподписанный `.app`-бандл (`xattr -cr BDCC.app` при срабатывании Gatekeeper) |
 
 > [!TIP]
-> Для **Linux**, **macOS** и **Android** в [`export_presets.cfg`](export_presets.cfg) уже настроены пресеты экспорта и исключения (`AssetsSource/*`, `ru_tools/*`, `build/*`) — сборку можно выполнить из исходников в **Godot Engine 3.6.2**.
+> **Portable-режим (Windows / Linux):** создайте пустую папку `BDCCData` рядом с исполняемым файлом до запуска, чтобы хранить сохранения, настройки и моды прямо в ней.
+> **Web (HTML5):** браузеры блокируют WebAssembly по `file://`, поэтому игру нужно открывать через локальный HTTP-сервер (`http://localhost:8060`).
 
 ---
 
@@ -41,6 +48,7 @@
 | **Статический аудит (`10/10`)** | `0` утечек масок, `0` незакрытых строк, `0` ошибок `{...}` / `[say=...]` / `printf` / Unicode |
 | **Автотест Godot 3.6.2 (`VerifyBDCC.tscn`)** | `VERIFY_PASS`: `3369/3369` `.gd`, `652/652` `.tscn`, `GlobalRegistry` (`679` сцен, `136` предметов, `105` персонажей, `22` модуля) |
 | **Живой запуск `BDCC.exe`** | Проверен в изолированном portable-режиме (`Using portable save directory`, `GlobalRegistry fully initialized`, `0` ошибок) |
+| **Кросс-платформенные сборки** | `apksigner verify` v1/v2/v3 + `zipalign` для `.apk`; HTTP `200 OK` для Web; ELF `+x` для Linux; `.app`-бандл для macOS |
 
 ---
 
