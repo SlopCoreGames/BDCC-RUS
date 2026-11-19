@@ -42,8 +42,8 @@ func updateInfo():
 		levelBar.setText("")
 		levelBar.setProgressBarValue(0)
 	else:
-		levelBar.setTextLeft("Level "+str(skill.getLevel()))
-		levelBar.setText(str(skill.getExperience())+" / "+str(skill.getRequiredExperienceNextLevel())+" exp")
+		levelBar.setTextLeft("Уровень "+str(skill.getLevel()))
+		levelBar.setText(str(skill.getExperience())+" / "+str(skill.getRequiredExperienceNextLevel())+" опыта")
 		levelBar.setProgressBarValue(skill.getLevelProgress())
 	
 	updatePerks()
@@ -86,9 +86,9 @@ func updatePerkText():
 	
 	perkNameLabel.text = perk.getVisibleName()
 	if(GM.pc.getSkillsHolder().hasPerk(perkID)):
-		perkNameLabel.text += " (Learned)"
+		perkNameLabel.text += " (Изучен)"
 	elif(GM.pc.getSkillsHolder().isPerkDisabled(perkID)):
-		perkNameLabel.text += " (Disabled)"
+		perkNameLabel.text += " (Отключён)"
 	
 	perkDescLabel.bbcode_text = perk.getVisibleDescription()
 	var extraText = perk.getMoreDescription()
@@ -96,7 +96,7 @@ func updatePerkText():
 		perkDescLabel.bbcode_text += "\n\n"+extraText
 	
 	if(perk.unlockable()):
-		var reqText = "Requirements:\n"
+		var reqText = "Требования:\n"
 		var perkCost = perk.getCost()
 		if(perkCost == 1):
 			if(GM.pc.getSkillsHolder().getFreePerkPoints(perk.getSkillGroup()) >= perkCost):
@@ -115,9 +115,9 @@ func updatePerkText():
 			if(requiredperk == null):
 				continue
 			if(GM.pc.hasPerk(requiredPerkID)):
-				reqText += "\n"+str(requiredperk.getVisibleName())+" perk"
+				reqText += "\n"+str(requiredperk.getVisibleName())
 			else:
-				reqText += "\n[color=red]"+str(requiredperk.getVisibleName())+" perk[/color]"
+				reqText += "\n[color=red]"+str(requiredperk.getVisibleName())+"[/color]"
 		
 		perkRequirmentsLabel.bbcode_text = reqText
 	else:

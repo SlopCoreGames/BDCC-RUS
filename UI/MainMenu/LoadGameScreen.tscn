@@ -88,7 +88,8 @@ anchor_bottom = 0.0
 margin_left = 258.0
 margin_right = 512.0
 margin_bottom = 26.0
-text = "Удалить сохранение"
+text = "Удалить"
+myTooltipDesc = "Удалить выбранное сохранение"
 myShortcutKey = "2"
 
 [node name="ImportButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 4 )]
@@ -97,7 +98,8 @@ anchor_bottom = 0.0
 margin_left = 516.0
 margin_right = 770.0
 margin_bottom = 26.0
-text = "Импортировать сохранение"
+text = "Импорт"
+myTooltipDesc = "Импортировать сохранение"
 myShortcutKey = "3"
 
 [node name="SavesButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 4 )]
@@ -106,7 +108,8 @@ anchor_bottom = 0.0
 margin_left = 774.0
 margin_right = 1027.0
 margin_bottom = 26.0
-text = "Папка с сохранениями"
+text = "Папка сейвов"
+myTooltipDesc = "Открыть папку с сохранениями"
 myShortcutKey = "4"
 
 [node name="ExportSaveDialog" type="FileDialog" parent="."]

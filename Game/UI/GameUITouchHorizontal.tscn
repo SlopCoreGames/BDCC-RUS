@@ -292,38 +292,38 @@ margin_bottom = 72.0
 unique_name_in_owner = true
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 200.0
+margin_right = 160.0
 margin_bottom = 72.0
-rect_min_size = Vector2( 200, 0 )
+rect_min_size = Vector2( 160, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.59
+size_flags_stretch_ratio = 0.45
 
 [node name="MapAndTimePanel" parent="MainLayout/MainScreenBoxContainer/PanelContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 15 )]
 unique_name_in_owner = true
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 204.0
-margin_right = 404.0
+margin_left = 164.0
+margin_right = 324.0
 margin_bottom = 72.0
-rect_min_size = Vector2( 200, 0 )
+rect_min_size = Vector2( 160, 0 )
 size_flags_horizontal = 1
 compactMode = true
 
 [node name="PrevPageButton" type="Button" parent="MainLayout/MainScreenBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
-margin_left = 408.0
-margin_right = 476.0
+margin_left = 328.0
+margin_right = 376.0
 margin_bottom = 72.0
-rect_min_size = Vector2( 68, 0 )
+rect_min_size = Vector2( 48, 0 )
 shortcut_in_tooltip = false
 shortcut = SubResource( 26 )
 text = "<"
 
 [node name="ButtonGridContainer" type="GridContainer" parent="MainLayout/MainScreenBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
-margin_left = 480.0
-margin_right = 802.0
+margin_left = 380.0
+margin_right = 822.0
 margin_bottom = 72.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -333,10 +333,10 @@ columns = 5
 
 [node name="NextPageButton" type="Button" parent="MainLayout/MainScreenBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
-margin_left = 806.0
+margin_left = 826.0
 margin_right = 874.0
 margin_bottom = 72.0
-rect_min_size = Vector2( 68, 0 )
+rect_min_size = Vector2( 48, 0 )
 shortcut_in_tooltip = false
 shortcut = SubResource( 28 )
 text = ">"

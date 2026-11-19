@@ -26,6 +26,8 @@ func setShortcutPhysicalScancode(code, reqControl:bool = false):
 
 	$KeyLabel.text = ("ctrl+" if reqControl else "")+OS.get_scancode_string(code)
 	savedKey = code
+	if(OPTIONS.shouldShowShortcuts() && text.length() > 0 && !text.begins_with("   ")):
+		text = "   " + text
 
 #func _unhandled_input(event):
 #	if(disabled):

@@ -112,7 +112,7 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 colorGradient = SubResource( 14 )
-propertyName = "Возбужд."
+propertyName = "Возб."
 
 [node name="StaminaBar" parent="." instance=ExtResource( 4 )]
 anchor_right = 0.0

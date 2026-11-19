@@ -40,7 +40,7 @@ func setSceneCreator(newcreator, shouldShowDevCommentaryIcon = false):
 	if(newcreator == null || newcreator == "" || !OPTIONS.shouldShowSceneCreator()):
 		if(shouldShowDevCommentaryIcon):
 			sceneCreatorLabel.visible = true
-			sceneCreatorLabel.text = "[Developer Commentary]"
+			sceneCreatorLabel.text = "[Комментарий разработчика]"
 			return
 		sceneCreatorLabel.visible = false
 		return

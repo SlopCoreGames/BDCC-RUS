@@ -36,7 +36,7 @@ func _on_TextureButton_pressed():
 func _on_TextureButton_mouse_entered():
 	if(perk == null):
 		return
-	GlobalTooltip.showTooltip(self, perk.getVisibleName(), (("Cost: "+str(perk.getCost())+"\n") if showCost else "")+perk.getVisibleDescription())
+	GlobalTooltip.showTooltip(self, perk.getVisibleName(), (("Цена: "+str(perk.getCost())+"\n") if showCost else "")+perk.getVisibleDescription())
 
 
 func _on_TextureButton_mouse_exited():

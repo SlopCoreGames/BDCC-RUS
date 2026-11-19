@@ -30,7 +30,7 @@ func setData(theLevel:int, thePerkList:Array = [], lastSelectedStat:String = "")
 	
 	var nothingButton:Button = Button.new()
 	stat_list.add_child(nothingButton)
-	nothingButton.text = "SKIP"
+	nothingButton.text = "ПРОПУСТИТЬ"
 	statToButton["SKIP"] = nothingButton
 	nothingButton.connect("pressed", self, "onStatButtonPressed", [""])
 
@@ -87,7 +87,7 @@ func updateSelectedStatButton():
 	for statID in statToButton:
 		var theButton:Button = statToButton[statID]
 		var isSelected:bool = (selectedStatButtonID == statID)
-		var buttonName:String = "SKIP"
+		var buttonName:String = "ПРОПУСТИТЬ"
 		if(statID != "SKIP"):
 			var theStat:StatBase = GlobalRegistry.getStat(statID)
 			buttonName = theStat.getVisibleName()

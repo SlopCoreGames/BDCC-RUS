@@ -154,7 +154,7 @@ anchor_bottom = 0.0
 margin_left = 518.0
 margin_right = 772.0
 margin_bottom = 26.0
-text = "Сброс рендеринга"
+text = "Сброс графики"
 myTooltipDesc = "Жесткий сброс настроек рендеринга"
 myShortcutKey = "3"
 

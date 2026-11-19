@@ -63,7 +63,7 @@ func setGithubLabelStr(_simpleText:String, _extraText:String):
 func _ready():
 	OPTIONS.setSupportsVertical(true)
 	updateSidePanelsVisibility()
-	versionLabel.text = "Version: "+GlobalRegistry.getGameVersionString()
+	versionLabel.text = "Версия: "+GlobalRegistry.getGameVersionString()
 
 	donations_label.bbcode_text = GlobalRegistry.getDonationDataString()
 	var _ok = GlobalRegistry.connect("donationDataUpdated", self, "updateDonationData")
@@ -83,7 +83,7 @@ func _ready():
 		for mod in loadedMods:
 			text += "\n"+str(mod)
 		loadedModsLabel.bbcode_text = text
-		verticalModsStr = str(loadedMods.size())+" mod"+("s" if loadedMods.size() != 1 else "")
+		verticalModsStr = "Модов: "+str(loadedMods.size())
 	
 	if(OS.get_name() == "HTML5"):
 		auto_translator_button.disabled = true
@@ -142,7 +142,7 @@ func updateModuleButtons():
 		#[id, name, desc]
 		for theButtonEntry in theButtons:
 			var theButton := BetterButtonScene.instance()
-			theButton.text = theButtonEntry[1]
+			theButton.myButtonText = theButtonEntry[1]
 			theButton.myTooltipDesc = theButtonEntry[2]
 			theButton.myShortcutKey = findFreeShortcutKey()
 			

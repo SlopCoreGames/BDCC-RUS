@@ -11,7 +11,7 @@ static func getVisibleName(contentType):
 	if(contentType == RiskyCondoms):
 		return "Рискованные презервативы"
 	if(contentType == Watersports):
-		return "Watersports"
+		return "Уролагния (Watersports)"
 	if(contentType == CumInflation):
 		return "Инфляция спермы"
 	if(contentType == CumStealing):

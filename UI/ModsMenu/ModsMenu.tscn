@@ -81,7 +81,7 @@ anchor_bottom = 0.0
 margin_left = 257.0
 margin_right = 510.0
 margin_bottom = 20.0
-text = "Открыть папку с модами"
+text = "Папка модов"
 myTooltipDesc = "Показать папку с модами"
 myShortcutKey = "2"
 
@@ -91,7 +91,8 @@ anchor_bottom = 0.0
 margin_left = 514.0
 margin_right = 767.0
 margin_bottom = 20.0
-text = "Импортировать мод"
+text = "Импорт мода"
+myTooltipDesc = "Импортировать мод"
 myShortcutKey = "3"
 
 [node name="RemoveModsButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 3 )]
@@ -100,7 +101,7 @@ anchor_bottom = 0.0
 margin_left = 771.0
 margin_right = 1024.0
 margin_bottom = 20.0
-text = "Удалить ВСЕ моды"
+text = "Удалить моды"
 myTooltipDesc = "(HTML-версия) удалить все моды"
 myShortcutKey = "4"
 

@@ -37,7 +37,7 @@ text = "Экспорт"
 margin_left = 1163.0
 margin_right = 1280.0
 margin_bottom = 26.0
-text = "УДАЛИТЬ НАВСЕГДА"
+text = "Удалить"
 
 [connection signal="pressed" from="LoadButton" to="." method="_on_LoadButton_pressed"]
 [connection signal="pressed" from="ExportButton" to="." method="_on_ExportButton_pressed"]

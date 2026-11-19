@@ -343,7 +343,7 @@ anchor_bottom = 0.0
 margin_left = 304.0
 margin_right = 452.0
 margin_bottom = 26.0
-text = "Загрузить игру"
+text = "Загрузить"
 myTooltipDesc = "Загрузить предыдущую игру"
 myShortcutKey = "3"
 
@@ -373,7 +373,7 @@ anchor_bottom = 0.0
 margin_top = 30.0
 margin_right = 148.0
 margin_bottom = 56.0
-text = "Присоединиться к Discord"
+text = "Discord"
 myTooltipDesc = "Присоединиться к Discord-серверу игры (только 18+)"
 myShortcutKey = "Q"
 
@@ -395,7 +395,7 @@ margin_left = 304.0
 margin_top = 30.0
 margin_right = 452.0
 margin_bottom = 56.0
-text = "Инструменты разработчика"
+text = "Разработчикам"
 myTooltipDesc = "Открыть панель инструментов для разработчиков контента"
 myShortcutKey = "E"
 
@@ -406,7 +406,7 @@ margin_left = 456.0
 margin_top = 30.0
 margin_right = 603.0
 margin_bottom = 56.0
-text = "Список изменений"
+text = "Изменения"
 myTooltipDesc = "Просмотреть список изменений проекта"
 myShortcutKey = "R"
 
@@ -450,7 +450,7 @@ margin_left = 304.0
 margin_top = 60.0
 margin_right = 452.0
 margin_bottom = 86.0
-text = "Устранение неполадок"
+text = "Неполадки"
 myTooltipDesc = "Устранение проблем и ошибок в игре"
 myShortcutKey = "D"
 
@@ -511,7 +511,8 @@ anchor_bottom = 0.0
 margin_left = 304.0
 margin_right = 452.0
 margin_bottom = 26.0
-text = "Генератор симпатий NPC"
+text = "Симпатии NPC"
+myTooltipDesc = "Генератор симпатий NPC"
 myShortcutKey = "3"
 
 [node name="DevCharCreator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -520,7 +521,8 @@ anchor_bottom = 0.0
 margin_left = 456.0
 margin_right = 603.0
 margin_bottom = 26.0
-text = "Редактор персонажа"
+text = "Персонаж"
+myTooltipDesc = "Редактор персонажа"
 myShortcutKey = "4"
 
 [node name="DevModCreator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -538,7 +540,7 @@ anchor_bottom = 0.0
 margin_top = 30.0
 margin_right = 148.0
 margin_bottom = 56.0
-text = "(старый) SceneConverter"
+text = "(старый) Сцены"
 myShortcutKey = "Q"
 
 [node name="SexActivityCreator" type="Button" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer"]
@@ -549,7 +551,7 @@ margin_right = 311.0
 margin_bottom = 56.0
 hint_tooltip = "Упрощает написание кода для секс-сцен"
 size_flags_horizontal = 3
-text = "Создатель секс-активностей"
+text = "Секс-сцены"
 
 [node name="InteractionCreator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
 anchor_right = 0.0
@@ -558,7 +560,8 @@ margin_left = 152.0
 margin_top = 30.0
 margin_right = 300.0
 margin_bottom = 56.0
-text = "Создатель взаимодействий"
+text = "Взаимодействия"
+myTooltipDesc = "Создатель взаимодействий"
 myShortcutKey = "W"
 
 [node name="DevFetishGenerator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -568,8 +571,9 @@ margin_left = 304.0
 margin_top = 30.0
 margin_right = 452.0
 margin_bottom = 56.0
-text = "Генератор фетишей NPC"
-myShortcutKey = "3"
+text = "Фетиши NPC"
+myTooltipDesc = "Генератор фетишей NPC"
+myShortcutKey = "E"
 
 [node name="TroubleshootingScreen" parent="MainHBox/CenterAreaVBox" instance=ExtResource( 12 )]
 unique_name_in_owner = true

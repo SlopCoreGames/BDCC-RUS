@@ -39,7 +39,7 @@ func updatePerkText():
 	
 	perkNameLabel.text = perk.getVisibleName()
 	if(GM.pc.getSkillsHolder().isPerkDisabled(perkID)):
-		perkNameLabel.text += " (Disabled)"
+		perkNameLabel.text += " (Отключён)"
 	
 	perkDescLabel.bbcode_text = perk.getVisibleDescription()
 	var extraText = perk.getMoreDescription()

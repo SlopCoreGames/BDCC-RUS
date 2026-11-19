@@ -20,7 +20,9 @@ var openedSkillTab = null
 var basePerksTabScene = preload("res://UI/SkillsUI/InherentPerksTab.tscn")
 
 func _ready():
-	pass
+	tabContainer.set_tab_title(0, "Характеристики")
+	tabContainer.set_tab_title(1, "Эффекты")
+	tabContainer.set_tab_title(2, "Навыки")
 
 func getAddedStat(statID):
 	if(!addedPoints.has(statID)):
@@ -46,8 +48,8 @@ func updateData():
 	
 	nameLabel.text = GM.pc.getName()
 	
-	levelBar.setTextLeft("Level "+str(GM.pc.getSkillsHolder().getLevel()))
-	levelBar.setText(str(GM.pc.getSkillsHolder().getExperience())+" / "+str(GM.pc.getSkillsHolder().getRequiredExperienceNextLevel())+" exp")
+	levelBar.setTextLeft("Уровень "+str(GM.pc.getSkillsHolder().getLevel()))
+	levelBar.setText(str(GM.pc.getSkillsHolder().getExperience())+" / "+str(GM.pc.getSkillsHolder().getRequiredExperienceNextLevel())+" опыта")
 	levelBar.setProgressBarValue(GM.pc.getSkillsHolder().getLevelProgress())
 
 	createAttribList()
@@ -156,7 +158,7 @@ func updateDamageStatsLabel():
 		text += damName +": " +Util.numberToPercentString(dam)+"\n"
 		
 	text += "\n"
-	text += "Armor:\n"
+	text += "Броня:\n"
 	for damageType in DamageType.getAll():
 		var dam = GM.pc.getArmor(damageType)
 		var damName = DamageType.getName(damageType)
@@ -178,7 +180,7 @@ func updateDamageStatsLabel():
 	text = ""
 	text += "Фоновое вожделение: "+str(GM.pc.getAmbientLust()) +"\n"
 	text += "Фоновая боль: "+str(GM.pc.getAmbientPain()) + "\n"
-	text += "Exposure: "+str(int(GM.pc.getExposure()*100))+"%" + "\n"
+	text += "Обнажённость: "+str(int(GM.pc.getExposure()*100))+"%" + "\n"
 	extraStatsLabel.bbcode_text = text
 
 
