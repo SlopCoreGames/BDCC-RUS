@@ -22,7 +22,7 @@ func getUnlockData() -> Dictionary:
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
-				desc = "Ask if she is brave enough to try her own product. This might be funny or sad, who knows.",
+				desc = "Спросить, хватит ли ей смелости попробовать собственный продукт. Это может быть либо смешно, либо грустно — кто знает.",
 				sceneID = "ElizaDrugTestSpeciesScene",
 			},
 		],
@@ -64,7 +64,7 @@ func getPillOptions() -> Dictionary:
 	var result:Dictionary = {
 		"species": {
 			name = "Вид",
-			desc = "What species should the drug transform you into.",
+			desc = "В какой вид должен превратить тебя препарат?",
 			value = Species.Canine,
 			values = speciesArray,
 		},
@@ -75,7 +75,7 @@ func getPillOptions() -> Dictionary:
 			continue
 		result["no"+bodypartSlot] = {
 			name = "Пропустить "+BodypartSlot.getVisibleNameNoCap(bodypartSlot),
-			desc = "Should this bodypart not be morphed?",
+			desc = "Нужно ли оставить эту часть тела без изменений?",
 			value = false,
 			values = [[false, "No"], [true, "Yes"]]
 		}

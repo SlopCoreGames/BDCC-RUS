@@ -54,7 +54,7 @@ func getPillOptions() -> Dictionary:
 	return {
 		"target": {
 			name = "Цель",
-			desc = "Whats the final penis length should be (This drug can only increase length).",
+			desc = "Какой должна быть итоговая длина пениса (этот препарат увеличивает только длину).",
 			value = 18.0,
 			values = lenArray,
 		},

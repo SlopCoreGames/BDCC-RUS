@@ -7,7 +7,7 @@ func _init():
 
 func _reactInit():
 	GM.main.PSH.storePlayersItems()
-	addMessage("All your items were safely stored")
+	addMessage("Все ваши вещи были надежно спрятаны")
 
 func _run():
 	if(state == ""):
@@ -30,7 +30,7 @@ func _run():
 
 		saynn("[say=luxe]Хм.[/say]")
 
-		saynn("Ты слышишь его хриплый голос... и его шаги."+str(" You already know that your fate is sealed.." if luxeTimes >= 1 else "")+"")
+		saynn("Ты слышишь его хриплый голос... и его шаги."+str(" Вы и так знаете, что ваша судьба предрешена..." if luxeTimes >= 1 else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "luxe_comes_in")
 	if(state == "luxe_comes_in"):

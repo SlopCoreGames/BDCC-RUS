@@ -467,7 +467,7 @@ func loadData(data):
 	condomBroke = SAVE.loadVar(data, "condomBroke", false)
 
 func getDevCommentary():
-	return "I added this scene because I wanted Rahi to have some.. agency? You know, so it's not always just you approaching her and starting scenes. It also means that after completing Rahi's content you will still see her every now and again ^^. The lewd scenes are also handy to reset your lust so they are kinda useful x3."
+	return "Я добавила эту сцену, потому что хотела дать Рахи хоть какую-то... инициативу? Ну, чтобы не только ты постоянно подходил к ней и запускал сцены. А ещё это значит, что даже после прохождения её контента ты всё равно будешь время от времени её встречать ^^. Пошлые сцены к тому же отлично помогают сбросить уровень похоти, так что они довольно полезны x3."
 
 func hasDevCommentary():
 	return true

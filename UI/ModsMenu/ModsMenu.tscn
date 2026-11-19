@@ -41,7 +41,7 @@ margin_top = 24.0
 margin_right = 1280.0
 margin_bottom = 39.0
 bbcode_enabled = true
-bbcode_text = "Mods"
+bbcode_text = "Моды"
 text = "Моды"
 fit_content_height = true
 
@@ -82,7 +82,7 @@ margin_left = 257.0
 margin_right = 510.0
 margin_bottom = 20.0
 text = "Открыть папку с модами"
-myTooltipDesc = "Show the mods folder"
+myTooltipDesc = "Показать папку с модами"
 myShortcutKey = "2"
 
 [node name="AddModButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 3 )]
@@ -101,7 +101,7 @@ margin_left = 771.0
 margin_right = 1024.0
 margin_bottom = 20.0
 text = "Удалить ВСЕ моды"
-myTooltipDesc = "(HTML version) delete all mods"
+myTooltipDesc = "(HTML-версия) удалить все моды"
 myShortcutKey = "4"
 
 [node name="WikiButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 3 )]

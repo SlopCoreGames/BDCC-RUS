@@ -58,5 +58,5 @@ func onButton(_method, _args):
 		if((loot.has("items") && loot["items"].size() > 0) || (loot.has("credits") && loot["credits"] > 0)):
 			runScene("LootingScene", [loot])
 		else:
-			GM.main.addMessage("You didn't find anything")
+			GM.main.addMessage("Вы ничего не нашли")
 			GM.main.reRun()

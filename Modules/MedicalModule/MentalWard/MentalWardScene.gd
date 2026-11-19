@@ -228,7 +228,7 @@ func getDebugActions():
 	return [
 		{
 			"id": "instantEscape",
-			"name": "Instant escape",
+			"name": "Мгновенный побег",
 			"args": [
 			],
 		},

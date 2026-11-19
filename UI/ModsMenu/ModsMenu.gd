@@ -20,13 +20,13 @@ func _ready():
 
 	var text = "[b][url=https://github.com/Alexofp/BDCC/wiki/How-to-install-BDCC-mods]Как установить моды (нажми на меня)[/url][/b]\n\nЧтобы установить мод, перетащите его в папку mods и перезапустите игру. Моды загружаются в алфавитном порядке.\n\n"
 	if(!GlobalRegistry.hasModSupport()):
-		text += "! Mods aren't supported when running the game from the editor, this is godot issue. Export the game and run it standalone to get mod support !\n\n"
+		text += "! При запуске игры из редактора моды не поддерживаются — это баг Godot. Экспортируйте игру и запустите её как отдельное приложение, чтобы моды заработали !\n\n"
 		# read more here: https://github.com/godotengine/godot/issues/19815
 	else:
 		var mods = GlobalRegistry.getLoadedMods()
-		text += "Loaded mods ("+str(mods.size())+"):\n"
+		text += "Загруженные моды ("+str(mods.size())+"):\n"
 		if(mods.size() == 0):
-			text += "None loaded\n"
+			text += "Нет загруженных\n"
 		else:
 			var i = 1
 			for mod in mods:
@@ -35,7 +35,7 @@ func _ready():
 		
 		text += "\n"
 		
-	text += "Currently loaded modules:\n"
+	text += "Текущие загруженные модули:\n"
 	var allModules = GlobalRegistry.getModules()
 	for moduleID in allModules:
 		var module: Module = allModules[moduleID]
@@ -163,7 +163,7 @@ func _on_AddModButton_pressed():
 			var finalDir = externalDir.plus_file("BDCCMods")
 			d.make_dir_recursive(finalDir)
 			#$ImportModDialog.current_dir = finalDir
-			$AndroidPathAlert.dialog_text = "Mods on android are loaded from:\n"+finalDir+"\nPlace them there and restart the game."
+			$AndroidPathAlert.dialog_text = "На Android моды загружаются из:\n"+finalDir+"\nПоложите их туда и перезапустите игру."
 			$AndroidPathAlert.popup_centered()
 			return
 		
@@ -204,7 +204,7 @@ func _on_ModsLabel_meta_clicked(meta):
 
 func _on_SkinsFolderButton_pressed():
 	if(OS.get_name() == "Android"):
-		$AndroidPathAlert.dialog_text = "Custom skins on android are loaded from \"Documents/BDCCMods/custom_skins\"\nCreate that folder if it doesn't exist."
+		$AndroidPathAlert.dialog_text = "Кастомные скины на Android загружаются из \"Documents/BDCCMods/custom_skins\"\nСоздайте эту папку, если её ещё нет."
 		$AndroidPathAlert.popup_centered()
 	else:
 		var _ok = Util.fixed_shell_open(ProjectSettings.globalize_path("user://custom_skins"))

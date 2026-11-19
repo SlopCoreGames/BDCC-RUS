@@ -72,7 +72,7 @@ func _run():
 
 		saynn("Мирри тоже занимает место на подиуме ведущей и готовится.")
 
-		saynn("[say=mirri]"+str(RNG.pick(["Alright. Time to shine.", "Let's get this bread.", "Time to do this.", "No one but us.", "Teamwork makes the dream work."]) )+"[/say]")
+		saynn("[say=mirri]"+str(RNG.pick(["Ладно. Пора зажечь.", "Пора рубить капусту.", "Пора за дело.", "Никто, кроме нас.", "Командная работа — залог успеха."]) )+"[/say]")
 
 		saynn("Аукцион вот-вот начнется...")
 
@@ -145,7 +145,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
 		saynn("Мирри подходит к тебе и протягивает кредитный чип.")
 
-		saynn("[say=mirri]"+str(RNG.pick(["Here is your cut, big {pc.girl}.", "Your cut, pretty {pc.girl}.", "Your "+str(getModule("SlaveAuctionModule").getPCCut()*100)+"%, tough {pc.girl}.", "Please doing business, big {pc.girl}."]))+"[/say]")
+		saynn("[say=mirri]"+str(RNG.pick(["Вот твоя доля, здоровяк {pc.girl}.", "Твоя доля, красавица {pc.girl}.", "Твоя "+str(getModule("SlaveAuctionModule").getPCCut()*100)+"%, tough {pc.girl}.", "Приятно иметь с тобой дело, здоровяк {pc.girl}."]))+"[/say]")
 
 		saynn("Взяв его, кошкодевочка просто уходит обратно в свою комнату.")
 
@@ -213,7 +213,7 @@ func _react(_action: String, _args):
 		removeCharacter(slaveID)
 		getModule("SlaveAuctionModule").sellToSlavery(slaveID)
 		GM.pc.addCredits(creditsToGive)
-		addMessage("You received "+str(creditsToGive)+" credits.")
+		addMessage("Вы получили "+str(creditsToGive)+" credits.")
 
 	setState(_action)
 
@@ -228,7 +228,7 @@ func _react_scene_end(_tag, _result):
 			var pcNewCredits:int = int(round(float(creditsAmount) * getModule("SlaveAuctionModule").getPCCut()))
 			creditsToGive = pcNewCredits
 			if(getModule("SlaveAuctionModule").isReadyToAdvanceRepLevel()):
-				addMessage("You are ready to advance your and Mirri's slaver reputation level. Talk with her when you are ready.")
+				addMessage("Вы готовы повысить свой уровень репутации работорговца и репутацию Мирри. Поговорите с ней, когда будете готовы.")
 			getModule("SlaveAuctionModule").onSlaveSold(getCharacter(slaveID), creditsAmount)
 			setState("after_sold")
 		

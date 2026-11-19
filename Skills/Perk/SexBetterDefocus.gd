@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Медитация"
 
 func getVisibleDescription():
-	return "Having so much experience you now know how to better distance yourself from enemy's [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] attacks, defocussing will now half the amount of lust you receive"
+	return "Благодаря колоссальному опыту вы научились лучше дистанцироваться от атак [color="+DamageType.getColorString(DamageType.Lust)+"]похоти[/color] противников; теперь эффект дефокусировки сокращает получаемую похоть вдвое"
 
 func getSkillTier():
 	return 1

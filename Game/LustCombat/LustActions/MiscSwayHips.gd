@@ -15,7 +15,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Качать бедрами"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Do a little lewd dance and show off your curves"
+	return "Устроить кокетливый танец, демонстрируя свои изгибы"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -24,49 +24,49 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You spread your legs to the width of your shoulders and proceed to sway your {pc.masc} rear to the sides and also up and down, causing your thighs and buttcheeks to follow the movements with small delay. You let your {pc.thick} body do this hypnotic dance for a while."
+		text += "Ты расставляешь ноги на ширине плеч и начинаешь вилять своими {pc.masc} ягодицами из стороны в сторону и вверх-вниз, отчего твои бедра и булки следуют за движениями с небольшой задержкой. Ты позволяешь своему {pc.thick} телу исполнять этот гипнотический танец какое-то время."
 		text += "\n\n"
 	else:
-		text += "You put some extra swing into your hip motions as you do a little sensual dance on the spot. No rush, just slow and sexy movements, you sway your {pc.thick} {pc.masc} hips to the sides while showing off all your curves."
+		text += "Ты добавляешь больше амплитуды в движения бедрами, исполняя соблазнительный танец на месте. Никакой спешки, только медленные и сексуальные движения: ты виляешь своими {pc.thick} {pc.masc} бедрами из стороны в сторону, выставляя напоказ каждый свой изгиб."
 		text += "\n\n"
 		
 	if(RNG.chance(60) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "The cum that’s all over your body slowly drips down from you. As you move around and sway your hips, you leave a messy trail behind. And you don’t mind it, you welcome the sticky messiness."
+		text += "Сперма, покрывающая всё твоё тело, медленно стекает вниз. Когда ты двигаешься и виляешь бедрами, за тобой тянется липкий след. И тебе это даже нравится — ты наслаждаешься этой тягучей грязью."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.isFullyNaked()):
-		text += "So bold, there is absolutely no clothing on you. And you don’t mind, you enjoy the attention that others might have for you and your private spots, it’s very liberating."
+		text += "Какая смелость — на тебе абсолютно нет одежды. И тебя это не смущает; ты наслаждаешься вниманием, которое окружающие уделяют тебе и твоим интимным местам, — это дарит невероятное чувство свободы."
 		text += "\n\n"
 	
 	if(RNG.chance(40) && pc.hasBodypart(BodypartSlot.Breasts) && !pc.isBodypartCovered(BodypartSlot.Breasts)):
-		text += "Your {pc.breasts} are exposed to anyone to see. Hard perky nips follow the body and brush against the air as you shake your butt."
+		text += "Твои {pc.breasts} на виду у всех. Твердые, возбужденные соски двигаются вместе с телом и задевают воздух, пока ты трясешь задницей."
 		text += "\n\n"
 	
 	if(RNG.chance(40) && pc.hasBodypart(BodypartSlot.Penis) && !pc.isBodypartCovered(BodypartSlot.Penis)):
-		text += "Your rock-hard {pc.cock} is out and dripping pre, balls swaying in the air."
+		text += "Твой твердый как камень {pc.cock} выставлен напоказ и сочит предэякулят, а яички покачиваются в воздухе."
 		text += "\n\n"
 		
 	if(RNG.chance(40) && pc.hasBodypart(BodypartSlot.Vagina) && !pc.isBodypartCovered(BodypartSlot.Vagina)):
-		text += "You’re not hiding your pussy slit, you teasingly show the sensitive drippy folds as you turn around and rub your legs together."
+		text += "Ты не прячешь свою щелочку, а дразняще выставляешь напоказ влажные чувствительные складки, когда разворачиваешься и начинаешь тереть бедра друг о друга."
 		text += "\n\n"
 	
 	if(RNG.chance(40) && (pc.hasEffect(StatusEffect.HasCumInsideVagina) || pc.hasEffect(StatusEffect.HasCumInsideAnus))):
-		text += "And wow, someone’s cum is leaking out of your used hole and dripping down your thighs, creating such a mess. It looks so hot though, anyone who sees you would think that you’re a natural cum slut."
+		text += "И вау, чья-то сперма вытекает из твоего использованного отверстия и стекает по бедрам, создавая настоящий беспорядок. Но выглядит это чертовски горячо — любой, кто увидит тебя, решит, что ты прирожденная спермобабка."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.HasTallyMarks)):
-		text += "As you swing around, people that see you might spot that you have some black vertical lines drawn on your body, each one is a mark of somebody using you."
+		text += "Когда ты крутишь задом, окружающие могут заметить на твоём теле чёрные вертикальные линии — каждая из них служит меткой того, кто тебя использовал."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.HasBodyWritings)):
-		text += "Someone left writings on your body and right now anyone can see them clearly."
+		text += "Кто-то оставил надписи на твоём теле, и сейчас любой может их отчётливо разглядеть."
 		text += "\n\n"
 
 	if(_lustState.isInBattle() && pc.hasPerk(Perk.NakedMagicHips) && RNG.chance(20 + sqrt(pc.getStat(Stat.Vitality)))):
 		var enemy:BaseCharacter = _lustState.getEnemyCharacter()
 		if(enemy != null):
 			enemy.addEffect(StatusEffect.Weakness, [2])
-			text += "[b]Enemy is weakened by your hips![/b]"
+			text += "[b]Твои бедра ослабили врага![/b]"
 			text += "\n\n"
 	
 	if(_lustState.isInBattle() && pc.hasPerk(Perk.HypnosisHypnoticAllure) && pc.hasEffect(StatusEffect.Suggestible)):
@@ -75,7 +75,7 @@ func doAction(_lustState: LustCombatState, _args):
 			var enemy:BaseCharacter = _lustState.getEnemyCharacter()
 			if(enemy != null):
 				enemy.addEffect(StatusEffect.Suggestible, [RNG.randi_range(5,15)])
-				text += "[b]Enemy is mesmerized by your hips![/b]"
+				text += "[b]Твои бедра загипнотизировали врага![/b]"
 				text += "\n\n"
 
 	return {

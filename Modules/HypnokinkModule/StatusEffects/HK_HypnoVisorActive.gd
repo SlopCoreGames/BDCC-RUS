@@ -56,10 +56,10 @@ func processTime(seconds: int):
 	addStacks(2 * minutes)
 	
 func getEffectName():
-	return "Under hypnosis"
+	return "Под гипнозом"
 
 func getEffectDesc():
-	return "Your will is being eroded by a hypnotic device."
+	return "Гипнотическое устройство постепенно подтачивает твою волю."
 
 func getEffectImage():
 	return "res://Modules/HypnokinkModule/Icons/StatusEffects/hypno_active.png"

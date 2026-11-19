@@ -1503,13 +1503,13 @@ func _react(_action: String, _args):
 	if(_action == "time1_work"):
 		processTime(6*60*60)
 		GM.pc.addCredits(1)
-		addMessage("1 credit added to you")
+		addMessage("Вам начислено 1 кредита")
 
 	if(_action == "time1_agreetoit"):
-		addMessage("Trust Exercise 1 is now available")
+		addMessage("Доступно «Упражнение на доверие 1»")
 
 	if(_action == "time1_notsosure"):
-		addMessage("Trust Exercise 1 is now available")
+		addMessage("Доступно «Упражнение на доверие 1»")
 
 	if(_action == "time2_alexfalls"):
 		processTime(30*60)
@@ -1520,7 +1520,7 @@ func _react(_action: String, _args):
 	if(_action == "time2_breakroom"):
 		processTime(5*60)
 		setFlag("AlexRynardModule.ch2CanEnterEngineering", true)
-		addMessage("You learned the code to the Engineering block")
+		addMessage("Вы узнали код от инженерного блока")
 
 	if(_action == "time2_waterbottle"):
 		processTime(3*60)
@@ -1528,7 +1528,7 @@ func _react(_action: String, _args):
 	if(_action == "time2_leave"):
 		setFlag("AlexRynardModule.ch2StayedWhenSpineBorked", false)
 		GM.pc.addCredits(1)
-		addMessage("You received 1 credit")
+		addMessage("Вы получили 1 кредит")
 
 	if(_action == "time2_watch"):
 		processTime(60*60*2)
@@ -1539,11 +1539,11 @@ func _react(_action: String, _args):
 
 	if(_action == "time3_wellenough"):
 		processTime(30*60)
-		addMessage("Trust Exercise 2 is unlocked")
+		addMessage("«Упражнение на доверие 2» разблокировано")
 
 	if(_action == "time3_couldbebetter"):
 		processTime(30*60)
-		addMessage("Trust Exercise 2 is unlocked")
+		addMessage("«Упражнение на доверие 2» разблокировано")
 
 	if(_action == "time3_caparrives"):
 		processTime(60*60*3)
@@ -1604,7 +1604,7 @@ func _react(_action: String, _args):
 
 	if(_action == "time7_computer_tested_works"):
 		addExperienceToPlayer(300)
-		addMessage("Trust Exercise 3 is unlocked")
+		addMessage("«Упражнение на доверие 3» разблокировано")
 
 	if(_action == "time7_computer_presslogo"):
 		logoPressed += 1
@@ -1615,13 +1615,13 @@ func _react(_action: String, _args):
 
 	if(_action == "time7_after_give_pills"):
 		GM.pc.addCredits(20)
-		addMessage("You received 20 credits!")
+		addMessage("Вы получили 20 кредитов!")
 
 	if(_action == "time7_after_fuckoffwithpills"):
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
-		addMessage("You managed to recover 3x painkillers")
+		addMessage("Вам удалось раздобыть 3 порции обезболивающего")
 
 	if(_action == "time7_resting_near_water"):
 		processTime(30*60)

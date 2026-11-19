@@ -22,10 +22,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Exhausted"
+	return "Истощение"
 
 func getEffectDesc():
-	return "You are completely out of energy"
+	return "У тебя совсем не осталось сил"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/noenergy.png"

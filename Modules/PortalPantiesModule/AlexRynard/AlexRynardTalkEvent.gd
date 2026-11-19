@@ -14,7 +14,7 @@ func run(_triggerID, _args):
 		if(getFlag("PortalPantiesModule.Alex_BusyDays", 0) > 0):
 			addDisabledButton("Алекс", "Его сегодня здесь нет")
 		else:
-			addButtonUnlessLate("Alex", "Talk to the foxy", "alex")
+			addButtonUnlessLate("Алекс", "Поболтать с этой лисичкой", "alex")
 
 func getPriority():
 	return 0

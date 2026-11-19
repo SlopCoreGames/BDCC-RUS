@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Царапанье"
 	
 func getVisibleDesc(_context = {}):
-	return "You scratch the enemy for "+scaledDmgRangeStr(DamageType.Physical, 5, 15)+" damage. May cause bleeding with 50%"
+	return "Вы царапаете врага на "+scaledDmgRangeStr(DamageType.Physical, 5, 15)+" ед. урона. С вероятностью 50% вызывает кровотечение"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -19,12 +19,12 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		return genericDodgeMessage(_attacker, _receiver, "scratch")
 	
 	var texts = [
-		"{attacker.name} sinks {attacker.his} claws into {receiver.name} and leaves a few good scratch marks",
-		"{attacker.name} scratches {receiver.name} using {attacker.his} claws",
+		"{attacker.name} вонзает {attacker.his} когти в {receiver.name}, оставляя глубокие царапины",
+		"{attacker.name} царапает {receiver.name}, используя {attacker.his} когти",
 	]
 	var text = RNG.pick(texts)
 	if(RNG.chance(50) && !_receiver.hasEffect(StatusEffect.Bleeding) && _receiver.addEffect(StatusEffect.Bleeding)):
-		text += " causing  {receiver.him} to start [color=red]bleeding[/color]"
+		text += " из-за чего у {receiver.him} начинается [color=red]кровотечение[/color]"
 	
 	return {
 		text = text,

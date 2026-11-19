@@ -33,15 +33,15 @@ func _on_DebugConsole_visibility_changed():
 	if(visible):
 		consoleLabel.bbcode_text = savedText
 		$PanelContainer/ConsoleInput.grab_focus()
-		$PanelContainer/HelpLabel.bbcode_text = "Console commands:\n"+Console.getCommandsHelp()
+		$PanelContainer/HelpLabel.bbcode_text = "Команды консоли:\n"+Console.getCommandsHelp()
 	set_process(true)
 
 func _on_ProfileButton_pressed():
 	OPTIONS.toggleShouldProfile()
 	if(OPTIONS.shouldProfile()):
-		printLine("Perfomance profiler enabled")
+		printLine("Профайлер производительности включен")
 	else:
-		printLine("Perfomance profiler disabled")
+		printLine("Профайлер производительности выключен")
 
 func _on_ConsoleInput_gui_input(event):
 	if event is InputEventKey: # hacky but should work and allow toggling the console, and keep the typed character if need be
@@ -55,6 +55,6 @@ func _process(_delta:float):
 	var theStaticMemMax:String = String.humanize_size(int(Performance.get_monitor(Performance.MEMORY_STATIC_MAX)))
 	var theDynMem:String = String.humanize_size(int(Performance.get_monitor(Performance.MEMORY_DYNAMIC)))
 	var theDynMemMax:String = String.humanize_size(int(Performance.get_monitor(Performance.MEMORY_DYNAMIC_MAX)))
-	var theString:String = "FPS: "+str(int(Performance.get_monitor(Performance.TIME_FPS)))+ "\t VRAM: "+theVideoMem+ "\t Static memory: "+theStaticMem+"/"+theStaticMemMax+"\t Dynamic memory: " + theDynMem+"/"+theDynMemMax+"\t Objects: "+str(int(Performance.get_monitor(Performance.OBJECT_COUNT)))+"\t Nodes: "+str(int(Performance.get_monitor(Performance.OBJECT_NODE_COUNT)))+"\t Resources: "+str(int(Performance.get_monitor(Performance.OBJECT_RESOURCE_COUNT)))+"\t Orphan nodes(leaked): "+str(int(Performance.get_monitor(Performance.OBJECT_ORPHAN_NODE_COUNT)))
+	var theString:String = "FPS: "+str(int(Performance.get_monitor(Performance.TIME_FPS)))+ "\t VRAM: "+theVideoMem+ "\t Статическая память: "+theStaticMem+"/"+theStaticMemMax+"\t Динамическая память: " + theDynMem+"/"+theDynMemMax+"\t Objects: "+str(int(Performance.get_monitor(Performance.OBJECT_COUNT)))+"\t Nodes: "+str(int(Performance.get_monitor(Performance.OBJECT_NODE_COUNT)))+"\t Resources: "+str(int(Performance.get_monitor(Performance.OBJECT_RESOURCE_COUNT)))+"\t Утечки узлов (orphan nodes): "+str(int(Performance.get_monitor(Performance.OBJECT_ORPHAN_NODE_COUNT)))
 	
 	mem_label.text = theString

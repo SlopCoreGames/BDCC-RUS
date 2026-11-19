@@ -11,10 +11,10 @@ func run(_triggerID, _args):
 		if(GM.main.getDays() <= getFlag("AlexRynardModule.ch2GotRektDay", -1)):
 			addDisabledButton("Алекс", "Вернись в другой день, чтобы навестить Алекса")
 		else:
-			addButtonUnlessLate("Alex", "Ask about Alex", "startElizaScene")
+			addButtonUnlessLate("Алекс", "Спросить об Алексе", "startElizaScene")
 	
 	if(getFlag("AlexRynardModule.ch2CheckAlexSceneHappened") && getFlag("AlexRynardModule.ch2FoundParts", 0) >= 10 && !getFlag("AlexRynardModule.ch2FinalSceneHappened")):
-		addButtonUnlessLate("Alex", "Give Eliza the parts that you have collected!", "startLastScene")
+		addButtonUnlessLate("Алекс", "Отдать Элизе собранные детали!", "startLastScene")
 
 func getPriority():
 	return 0

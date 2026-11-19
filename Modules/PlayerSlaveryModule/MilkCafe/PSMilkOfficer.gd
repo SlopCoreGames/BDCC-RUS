@@ -22,7 +22,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A strong male wolf."
+	return "Мощный волк-самец."
 
 func getSpecies():
 	return [Species.Canine]

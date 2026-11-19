@@ -56,7 +56,7 @@ func _run():
 		playAnimation(StageScene.SelfSuck, "fast", {pc="artica", bodyState={naked=true, hard=true}})
 		saynn("Издавая жадный приглушенный скулёж, Артика ускорилась, теперь уже активно подавая бедрами, доводя себя до оргазма всё быстрее и быстрее.")
 
-		saynn("Каким-то образом ей удалось поймать идеальный баланс: её задние лапы мастерски работали, компенсируя каждое движение бедер."+str(", allowing her cock to reach the back of her throat, thanks to her trained flexibility.." if !isCaged else ", allowing her to push more of the cage into her mouth, thanks to her trained flexibility..")+"")
+		saynn("Каким-то образом ей удалось поймать идеальный баланс: её задние лапы мастерски работали, компенсируя каждое движение бедер."+str(", позволяя члену достигать самого горла благодаря её натренированной гибкости..." if !isCaged else ", позволяя ей запихивать в рот всё больше клетки благодаря её натренированной гибкости...")+"")
 
 		saynn("В такой позе её мокрая киска выставлена напоказ... можно поспорить, что этим грех не воспользоваться...")
 
@@ -113,13 +113,13 @@ func _run():
 		saynn("[say=pc]Какая шлюха.. Сосёт сама себе, пока её киску разрывают в клочья.[/say]")
 
 		var pcHasKnot = GM.pc.bodypartHasTrait(BodypartSlot.Penis, PartTrait.PenisKnot)
-		saynn("Её член пульсирует у неё во рту"+str(", the blood pressure making her knot into a fat meaty orb" if !isCaged else " while she is thrusting her tongue in any and all holes of her chastity cage")+". Она чувствует приближение оргазма, её тело дрожит... и ты тоже чувствуешь, что близок"+str(", the knot on your cock inflating fast as well" if pcHasKnot else "")+"..")
+		saynn("Её член пульсирует у неё во рту"+str(", от прилива крови её узел раздувается в жирный мясной шар" if !isCaged else " пока она бесцеремонно тычет языком во все отверстия её клетки целомудрия")+". Она чувствует приближение оргазма, её тело дрожит... и ты тоже чувствуешь, что близок"+str(", узел на твоём члене тоже стремительно раздувается" if pcHasKnot else "")+"..")
 
 		addButton("Кончить внутрь", "Оплодотворить эту жаждущую пушистицу", "fuck_artica_cum")
 	if(state == "fuck_artica_cum"):
 		playAnimation(StageScene.SelfSuck, "fuckinside", {pc="artica", npc="pc", npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		var pcHasKnot = GM.pc.bodypartHasTrait(BodypartSlot.Penis, PartTrait.PenisKnot)
-		saynn("Последним глубоким толчком ты вбиваешь свой член до самого упора,"+str(" knotting that needy pussy," if pcHasKnot else " breaking into her womb,")+" прежде чем... кончить внутрь. Твой ствол пульсирует, наполняя её"+str(" busy" if getCharacter("artica").isVisiblyPregnant() else "")+" «машину для деторождения» своим горячим семенем.")
+		saynn("Последним глубоким толчком ты вбиваешь свой член до самого упора,"+str(" заполняя этот жаждущий влагалище узлом," if pcHasKnot else " прорываясь в её матку,")+" прежде чем... кончить внутрь. Твой ствол пульсирует, наполняя её"+str(" busy" if getCharacter("artica").isVisiblyPregnant() else "")+" «машину для деторождения» своим горячим семенем.")
 
 		saynn("[say=artica]МММХХХ-Хх!..[/say]")
 
@@ -171,7 +171,7 @@ func _run():
 			addButton("Неа", "Тебе не стоит этого видеть", "do_put_on_strapon")
 	if(state == "strapon_artica_fuck"):
 		playAnimation(StageScene.SelfSuck, "fuckfast", {pc="artica", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Прежде чем Артика успела среагировать, вы уже нависли над ней, прижимая её к постели и быстро затягивая ремни страпон-ханесса на талии."+str(", the one that is loaded with a special surprise." if (straponHasArticaCum || straponHasCum) else "")+". Её глаза расширились от удивления... но твоя хватка и пылающая похоть в глазах заставили её забыть о протестах.")
+		saynn("Прежде чем Артика успела среагировать, вы уже нависли над ней, прижимая её к постели и быстро затягивая ремни страпон-ханесса на талии."+str(", ту самую, что наполнена особым сюрпризом." if (straponHasArticaCum || straponHasCum) else "")+". Её глаза расширились от удивления... но твоя хватка и пылающая похоть в глазах заставили её забыть о протестах.")
 
 		saynn("[say=artica]МММмммх![/say]")
 
@@ -181,7 +181,7 @@ func _run():
 
 		saynn("[say=pc]Какая шлюха.. Сосёт сама себе, пока её киску разрывают в клочья.[/say]")
 
-		saynn("Её член пульсирует у неё во рту"+str(", the blood pressure making her knot into a fat meaty orb" if !isCaged else " while she is thrusting her tongue in any and all holes of her chastity cage")+". Она чувствовала приближение оргазма, её тело дрожало...")
+		saynn("Её член пульсирует у неё во рту"+str(", от прилива крови её узел раздувается в жирный мясной шар" if !isCaged else " пока она бесцеремонно тычет языком во все отверстия её клетки целомудрия")+". Она чувствовала приближение оргазма, её тело дрожало...")
 
 		if (straponHasArticaCum):
 			saynn("[say=pc]Нхх... Надеюсь, ты не против того, чем я наполнила этот страпон~. Он особенный.[/say]")
@@ -197,7 +197,7 @@ func _run():
 	if(state == "fuck_artica_strapon_cum"):
 		playAnimation(StageScene.SelfSuck, "fuckinside", {pc="artica", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if (straponHasArticaCum || straponHasCum):
-			saynn("Финальным глубоким толчком ты вбиваешь страпон до самого конца, пробиваясь к её матке. Её киска сжимает его так сильно... что это наконец заставляет страпон начать качать в девчонку её "+str(" busy" if getCharacter("artica").isVisiblyPregnant() else "")+" горячее семя прямо в её матку-производитель..."+str(" Her own seed.." if straponHasArticaCum else " Someone else's seed..")+"")
+			saynn("Финальным глубоким толчком ты вбиваешь страпон до самого конца, пробиваясь к её матке. Её киска сжимает его так сильно... что это наконец заставляет страпон начать качать в девчонку её "+str(" busy" if getCharacter("artica").isVisiblyPregnant() else "")+" горячее семя прямо в её матку-производитель..."+str(" Её собственное семя..." if straponHasArticaCum else " Чьё-то чужое семя...")+"")
 
 		else:
 			saynn("Последним мощным толчком ты вбиваешь страпон глубоко внутрь, буквально прорываясь к её матке. Ты не кончил в неё... но её сжимающаяся киска всё равно отчаянно пытается выдоить его до последней капли...")

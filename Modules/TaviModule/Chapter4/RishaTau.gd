@@ -30,7 +30,7 @@ func getPronounGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A very tall and strong lynx with cyan fur."
+	return "Очень высокая и сильная рысь с бирюзовой шерстью."
 
 func getSpecies():
 	return ["feline"]

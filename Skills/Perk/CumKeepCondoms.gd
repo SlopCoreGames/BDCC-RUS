@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Кондомная шлюшка"
 
 func getVisibleDescription():
-	return "Condoms! You love used filled condoms so much that you will actively try to keep them after sex."
+	return "Презервативы! Ты так обожаешь использованные, полные презервативы, что будешь изо всех сил стараться сохранить их после секса."
 
 func getSkillTier():
 	return 1

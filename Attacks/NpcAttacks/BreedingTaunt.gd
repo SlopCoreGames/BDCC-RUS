@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Брачный насмешливый выпад"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "Ты чувствуешь возбуждение, вспоминая то, что сказал(а) {attacker.name}..."
@@ -26,9 +26,9 @@ func getAnticipationText(_attacker, _receiver):
 
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([
-		"If you wanna be bred, just ask.",
-		"Just bend over, you will love it.",
-		"See this? Quit denying yourself the pleasure.",
+		"Если хочешь, чтобы тебя оттрахали, просто попроси.",
+		"Просто наклонись, тебе понравится.",
+		"Видишь это? Хватит лишать себя удовольствия.",
 	])+"[/say]"
 
 	return text

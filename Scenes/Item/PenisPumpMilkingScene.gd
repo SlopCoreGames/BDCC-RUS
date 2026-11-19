@@ -50,7 +50,7 @@ func _reactInit():
 
 	
 	var howMuchTransferred = GM.pc.getBodypart(BodypartSlot.Penis).getFluids().transferTo(item, 1.0)
-	addMessage("The penis pump has collected "+str(Util.roundF(howMuchTransferred))+" ml of your {pc.cum}")
+	addMessage("Насос собрал "+str(Util.roundF(howMuchTransferred))+" мл твоего {pc.cum}")
 	GM.pc.orgasmFrom("pc")
 
 func _run():
@@ -84,7 +84,7 @@ func _run():
 	if(state == "nopenis"):
 		saynn("Ты пытаешься надеть насос... но тут до тебя доходит, что у тебя нет члена... О нет...")
 		
-		saynn("Ты перепроверяешь еще раз... нет, точно нет..."+str(" All you have is a pussy.. You try to pump your pussy.. but this particular pump works by stroking rather than creating negative pressure.. so you fail spectacularly.." if GM.pc.hasReachableVagina() else ""))
+		saynn("Ты перепроверяешь еще раз... нет, точно нет..."+str(" У тебя есть только киска... Ты пытаешься накачать свою киску насосом... но этот конкретный аппарат работает за счет фрикций, а не создания отрицательного давления... так что ты с треском проваливаешься..." if GM.pc.hasReachableVagina() else ""))
 		
 		addButton("Продолжить", "О-о-о...", "endthescene")
 	

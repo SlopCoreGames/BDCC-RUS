@@ -11,10 +11,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Junkie Boss"
+	return "Босс-торчок"
 
 func getEffectDesc():
-	var theText:String = "This junkie is high on something.."
+	var theText:String = "Этот торчок под чем-то мощным..."
 	
 	return theText
 

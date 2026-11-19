@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Бронежилет"
 
 func getVisibleDescription():
-	return "You learned how to block with your hands better. You now receive extra 20 armor when blocking an attack"
+	return "Вы научились лучше блокировать удары руками. Теперь при блоке вы получаете дополнительные 20 единиц брони."
 
 func getRequiredPerks():
 	return [Perk.CombatBetterBlock]

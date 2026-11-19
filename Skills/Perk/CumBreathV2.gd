@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Спермозависимый"
 
 func getVisibleDescription():
-	return "Your body adapted to use cum as a source of protein. Fighting while having cum inside your belly OR ass will additionally remove [color="+DamageType.getColorString(DamageType.Physical)+"]4 pain[/color] each turn"
+	return "Ваше тело адаптировалось к использованию спермы в качестве источника белка. Сражение, когда внутри вашего живота ИЛИ задницы находится сперма, будет дополнительно снимать [color="+DamageType.getColorString(DamageType.Physical)+"]4 ед. боли[/color] каждый ход"
 
 func getRequiredPerks():
 	return [Perk.CumBreath]

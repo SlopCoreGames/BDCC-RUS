@@ -39,7 +39,7 @@ func _run():
 		addButton("Камера", "Привести её в камеру", "in_cell")
 	if(state == "in_cell"):
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
-		saynn("Вы приводите"+str(" pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+" Артику в свою камеру."+str(" She seems to be quite horny.." if isLusty else "")+" Что вы хотите сделать?")
+		saynn("Вы приводите"+str(" pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+" Артику в свою камеру."+str(" Похоже, она чертовски хочет..." if isLusty else "")+" Что вы хотите сделать?")
 
 		if (isNaked):
 			saynn("Форма Артики лежит здесь. Если хотите, можете вернуть её ей.")
@@ -116,19 +116,19 @@ func _run():
 
 		if (!isPreg):
 			if (isSlut):
-				saynn("[say=pc]"+str(RNG.pick(["Can't stop thinking about how good you would look on your knees..", "The way you squirm when desperate and needy is so nice..", "Such a soft body.. such firm breasts.. such tight holes.. such a cute cock."]))+"[/say]")
+				saynn("[say=pc]"+str(RNG.pick(["Не могу перестать думать о том, как шикарно ты бы смотрелась на коленях...", "То, как ты ерзаешь, когда становишься отчаянной и жаждущей... это так мило...", "Какое мягкое тело... такие упругие груди... такие узкие дырочки... такой милый член."]))+"[/say]")
 
 			else:
-				saynn("[say=pc]"+str(RNG.pick(["Such a nice fluffer..", "Your fur is so nice and fluffy..", "Just relax, soft fluff..", "Don't have to be shy with me, precious fluff.."]))+"[/say]")
+				saynn("[say=pc]"+str(RNG.pick(["Отличная разминашка...", "Твой мех такой приятный и пушистый...", "Просто расслабься, пушистик...", "Не нужно стесняться меня, мой драгоценный пушистик..."]))+"[/say]")
 
 		else:
 			if (isSlut):
-				saynn("[say=pc]"+str(RNG.pick(["I love how your body has changed, Artica. Your tits are fuller, your hips wider. You look like you were made to breed..", "You're so fucking hot when you're pregnant, Artica. I love how your body craves cock even more than usual..", "You're going to be such a good mommy, Artica. Taking care of all our little pups while I use your body for my own pleasure..", "Imagine all those little pups squirming inside you, craving their mommy's milk. You're going to be such a hot, slutty mommy.."]))+"[/say]")
+				saynn("[say=pc]"+str(RNG.pick(["Мне нравится, как изменилось твое тело, Артика. Грудь стала пышнее, бедра — шире. Ты выглядишь так, будто тебя создали специально для размножения...", "Ты чертовски сексуальна, когда беременна, Артика. Обожаю то, как твое тело жаждет члена еще сильнее, чем обычно...", "Ты будешь такой послушной мамочкой, Артика. Будешь заботиться о наших щеночках, пока я буду использовать твое тело для своего удовольствия...", "Представь, как все эти малыши копошатся внутри тебя, жаждая маминого молочка. Ты будешь такой горячей, шлюшковатой мамочкой..."]))+"[/say]")
 
 			else:
-				saynn("[say=pc]"+str(RNG.pick(["You're going to be the best mommy, Artica.. I can see the love in your eyes.", "You're so sexy when you're pregnant, Artica. I love seeing you like this..", "I love how your body has changed with your pregnancy, Artica.. You're even more beautiful when carrying a litter.."]))+"[/say]")
+				saynn("[say=pc]"+str(RNG.pick(["Ты будешь лучшей мамочкой, Артика... Я вижу любовь в твоих глазах.", "Ты такая сексуальная, когда беременна, Артика. Обожаю видеть тебя такой...", "Мне нравится, как изменилось твое тело из-за беременности, Артика... Ты становишься еще прекраснее, когда носишь в себе выводок..."]))+"[/say]")
 
-		saynn("Её щеки заливаются румянцем, её"+str(" clothed" if !isNaked else " exposed")+" киска начинает требовать большего, а её член между ног становится всё больше.."+str(" as much as the chastity cage allows.. which is not a lot.." if isCaged else "")+"Потерявшись в моменте, Артика отдается твоим объятиям, её тело дрожит от желания..")
+		saynn("Её щеки заливаются румянцем, её"+str(" clothed" if !isNaked else " exposed")+" киска начинает требовать большего, а её член между ног становится всё больше.."+str(" насколько это позволяет девственная клетка... а позволяет она не особо..." if isCaged else "")+"Потерявшись в моменте, Артика отдается твоим объятиям, её тело дрожит от желания..")
 
 		saynn("Тесный личный контакт заставил Артику жаждать большего.. Но пора возвращаться в главный зал.")
 
@@ -143,33 +143,33 @@ func _run():
 	if(state == "do_start_remove_chast"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="artica", npcBodyState={naked=true, hard=true}})
 		if (cagedDays <= 0):
-			saynn("Артика носит эту клетку уже.. ноль дней.."+str(" and "+str(cagedDaysTotal)+" days in total.." if cagedDaysTotal != cagedDays else "")+" не так уж и много, а?.. она вполне может продержаться еще несколько дней!.. Или недель.")
+			saynn("Артика носит эту клетку уже.. ноль дней.."+str(" and "+str(cagedDaysTotal)+" дней в общей сложности..." if cagedDaysTotal != cagedDays else "")+" не так уж и много, а?.. она вполне может продержаться еще несколько дней!.. Или недель.")
 
 			saynn("Ты показываешь Артике ключ от её клетки целомудрия..")
 
 			saynn("[say=artica]Ох.. уже?..[/say]")
 
 		elif (cagedDays <= 1):
-			saynn("Артика проносила эту клетку всего.. один день.."+str(" and "+str(cagedDaysTotal)+" days in total.." if cagedDaysTotal != cagedDays else "")+" не так уж и много, а?.. она точно может дольше!")
+			saynn("Артика проносила эту клетку всего.. один день.."+str(" and "+str(cagedDaysTotal)+" дней в общей сложности..." if cagedDaysTotal != cagedDays else "")+" не так уж и много, а?.. она точно может дольше!")
 
 			saynn("[say=artica]Ох.. неужели я справилась? Это было не так уж и сложно..[/say]")
 
 		elif (cagedDays <= 5):
-			saynn("Артика проносила эту клетку.. "+str(cagedDays)+" days.."+str(" and "+str(cagedDaysTotal)+" days in total.." if cagedDaysTotal != cagedDays else "")+" Это уже что-то..")
+			saynn("Артика проносила эту клетку.. "+str(cagedDays)+" days.."+str(" and "+str(cagedDaysTotal)+" дней в общей сложности..." if cagedDaysTotal != cagedDays else "")+" Это уже что-то..")
 
 			saynn("[say=artica]Ох-х.. Ты же собираешься меня отпереть, в-верно?..[/say]")
 
 		elif (cagedDays < 10):
-			saynn("Артика проносила эту клетку.. "+str(cagedDays)+" days.."+str(" and "+str(cagedDaysTotal)+" days in total.." if cagedDaysTotal != cagedDays else "")+" Неплохо!")
+			saynn("Артика проносила эту клетку.. "+str(cagedDays)+" days.."+str(" and "+str(cagedDaysTotal)+" дней в общей сложности..." if cagedDaysTotal != cagedDays else "")+" Неплохо!")
 
 			saynn("[say=artica]О-ох.. Это и есть ключ.. в-верно?.. к мое-ому члену?.. п-пожалуйста.. ах..[/say]")
 
 		else:
-			saynn("Артика проносила эту клетку.. "+str(cagedDays)+" days.."+str(" and "+str(cagedDaysTotal)+" days in total.." if cagedDaysTotal != cagedDays else "")+" Ого, ты реально её испытал!")
+			saynn("Артика проносила эту клетку.. "+str(cagedDays)+" days.."+str(" and "+str(cagedDaysTotal)+" дней в общей сложности..." if cagedDaysTotal != cagedDays else "")+" Ого, ты реально её испытал!")
 
 			saynn("[say=artica]О-ох.. Это и есть ключ.. в-верно?.. к мое-ому члену?.. п-пожалуйста.. ах.. Я ч-чувствую, как он пульсирует.. к-каждый божий д-день..[/say]")
 
-		saynn(""+str("She doesn't resist as you pull her shorts down.. exposing her caged cock.." if !isNaked else "You direct your attention towards her caged cock..")+" Когда ключ скребет по металлу, она начинает дергаться, а из препуция сочится предэякулят.. Там внутри дикое давление.."+str(" even if you haven't kept her like this for very long.." if cagedDays < 5 else "")+"")
+		saynn(""+str("Она не сопротивляется, когда ты стягиваешь с неё шорты, обнажая её член в клетке..." if !isNaked else "Ты переводишь взгляд на её член в клетке...")+" Когда ключ скребет по металлу, она начинает дергаться, а из препуция сочится предэякулят.. Там внутри дикое давление.."+str(" даже если ты держишь её в таком состоянии совсем недолго..." if cagedDays < 5 else "")+"")
 
 		addButton(" Открыть", " Снять клетку с её члена", "do_unlock_chastity")
 		addButton(" Открыть ненадолго", " Приучить её меньше полагаться на свой член. Подействует, если она будет в клетке не менее 10 дней", "do_unlock_chastity_tease")

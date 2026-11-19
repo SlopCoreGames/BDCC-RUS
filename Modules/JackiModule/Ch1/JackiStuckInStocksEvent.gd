@@ -10,7 +10,7 @@ func run(_triggerID, _args):
 	if(!getFlag("JackiModule.Jacki_StocksSceneHappened") && getFlag("JackiModule.Jacki_FirstTimeEncountered")):
 		saynn("Вы замечаете кого-то, запертого в одном из колодок. Это человек, которого вы узнаёте. Рядом с ним стоит женщина-охранница.")
 
-		addButtonUnlessLate("Inmate", "(chastity piercings, urethra penetration) See what is happening there", "jackiscene")
+		addButtonUnlessLate("Заключённый", "(пирсинг девственности, уретральное проникновение) Посмотри, что там происходит", "jackiscene")
 
 func getPriority():
 	return 0

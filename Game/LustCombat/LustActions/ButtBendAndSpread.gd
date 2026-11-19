@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Раздвинуть и выгнуть задницу"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Bend forward and spread your ass"
+	return "Наклонись вперед и разведи ягодицы"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,38 +30,38 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(!pc.isBodypartCovered(BodypartSlot.Anus)):
-		text += "You can’t hide your excitement, you turn around and bend your body forward, taking your time, holding your legs together until the moment your tailhole and other privates become visible! Then you spread your legs and use your arms to spread open your butt, showing off everything."
+		text += "Ты не можешь скрыть возбуждения: ты разворачиваешься и медленно наклоняешься вперед, удерживая ноги вместе до того самого момента, пока твое анус и другие интимные места не станут видны! Затем ты разводишь ноги и руками раздвигаешь ягодицы, выставляя всё напоказ."
 		text += "\n\n"
 	else:
-		text += "You can’t hide your excitement, you turn around and bend your body forward, taking your time to show off your curves. Then you spread your legs and use your arms to spread open your butt. Lewd."
+		text += "Ты не можешь скрыть возбуждения: ты разворачиваешься и медленно наклоняешься вперед, наслаждаясь тем, как подчеркиваются твои изгибы. Затем ты разводишь ноги и руками раздвигаешь ягодицы. Пошло."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasBodypart(BodypartSlot.Vagina) && !pc.isBodypartCovered(BodypartSlot.Vagina)):
-		text += "Your pussy is out on display, it looks spread open too, very inviting."
+		text += "Твоя киска выставлена напоказ, она тоже широко раздвинута и выглядит очень маняще."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasBodypart(BodypartSlot.Penis) && !pc.isBodypartCovered(BodypartSlot.Penis)):
-		text += "Your {pc.cock} is hanging between your legs, looking very erect."
+		text += "Твой {pc.cock} болтается между ног, выглядя очень эрегированным."
 		text += "\n\n"
 		
 	if(RNG.chance(60) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "The cum that’s all over your body slowly drips down from you."
+		text += "Сперма, покрывающая всё твое тело, медленно стекает по тебе."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.isFullyNaked()):
-		text += "So bold, there is absolutely no clothing on you. And you don’t mind, you enjoy the attention that others might have for you and your private spots, so nice."
+		text += "Какая смелость — на тебе абсолютно нет одежды. И тебе это даже нравится: ты наслаждаешься вниманием, которое окружающие уделяют тебе и твоим интимным местам, это так мило."
 		text += "\n\n"
 	
 	if(RNG.chance(40) && (pc.hasEffect(StatusEffect.HasCumInsideVagina) || pc.hasEffect(StatusEffect.HasCumInsideAnus))):
-		text += "And wow, someone’s cum is leaking out of your used hole and dripping down your thighs, creating such a mess. It looks so hot though, anyone who sees you would think that you’re a natural cum slut."
+		text += "И вау, чья-то сперма вытекает из твоего использованного отверстия и стекает по бедрам, создавая настоящий беспорядок. Но выглядит это чертовски горячо — любой, кто увидит тебя, решит, что ты прирожденная спермобабка."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.HasTallyMarks)):
-		text += "As you swing around, people that see you might spot that you have some black vertical lines drawn on your body, each one is a mark of somebody using you."
+		text += "Когда ты крутишь задом, окружающие могут заметить на твоём теле чёрные вертикальные линии — каждая из них служит меткой того, кто тебя использовал."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.HasBodyWritings)):
-		text += "Someone left writings on your body and right now anyone can see them clearly."
+		text += "Кто-то оставил надписи на твоём теле, и сейчас любой может их отчётливо разглядеть."
 		text += "\n\n"
 
 	return {

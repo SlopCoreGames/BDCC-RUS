@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Вскочить"
 
 func getVisibleDescription():
-	return "With all your combat practice you have learned how to fall properly. You will get up with a 100% chance and can even do it the same turn you were knocked down"
+	return "Благодаря всей вашей боевой практике вы научились правильно падать. Теперь вы будете подниматься с бонусом % c100%, и даже сможете сделать это в тот же ход, когда вас сбили с ног."
 
 func getSkillTier():
 	return 0

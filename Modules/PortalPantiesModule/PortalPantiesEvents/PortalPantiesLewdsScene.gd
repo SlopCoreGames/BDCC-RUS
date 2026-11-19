@@ -74,33 +74,33 @@ func _run():
 		# (if has pussy)
 		if(cockType == "canine"):
 			saynn(RNG.pick([
-				"A canine cock is brushing against your pussy folds before finding the pussy hole and sliding inside! You feel the knot slapping against your slit as they try to shove it in too.",
-				"Oh, you were busy with something when a knotted canine cock decided to penetrate your pussy through the portal panties!",
-				"A gasp escapes from your lips as you feel your private pussy folds get spread by a canine cock, someone has found the fleshlight!",
+				"Собачий член трется о складки твоей киски, прежде чем найти вход и скользнуть внутрь! Ты чувствуешь, как узел бьется о твою щель, когда они пытаются впихнуть его поглубже.",
+				"О, ты была чем-то занята, когда узловатый собачий член решил трахнуть твою киску прямо через портальные трусики!",
+				"С твоих губ срывается вздох, когда ты чувствуешь, как собачий член раздвигает складки твоей киски — кто-то нашел твой «флешлайт»!",
 			]))
 		if(cockType == "feline"):
 			saynn(RNG.pick([
-				"Someone’s cock suddenly gets thrusted into your pussy slit! It has barbs, causing you to let out a muffled noise of surprise.",
-				"Some person has found a fleshlight with your pussy sticking out and decided to shove their feline cock in! You feel the barbs brushing against your soft flesh.",
-				"A barbed feline cock gets shoved into your {pc.pussyStretch} pussy, spreading its folds! You try to find a good spot nearby to wait it out.",
+				"Чей-то член внезапно врывается в твою киску! Он весь в шипах, отчего ты издаешь приглушенный звук удивления.",
+				"Кто-то нашел флешлайт, из которого торчит твоя киска, и решил вогнать в неё свой кошачий член! Ты чувствуешь, как шипы скребут по твоей нежной плоти.",
+				"Шиповатый кошачий член втискивается в твою {pc.pussyStretch} киску, раздвигая её складки! Ты пытаешься найти место поблизости, чтобы переждать это.",
 			]))
 		if(cockType == "dragon"):
 			saynn(RNG.pick([
-				"A dragon cock teasingly grinds against your pussy folds, letting you feel its ribbed texture, before roughly thrusting inside!",
-				"Your lips let out a moan as a dragon cock finds your pussy and starts fucking you raw!",
-				"Someone’s cock rubs against your pussy before stretching it open and sliding inside! You feel its rubbed texture massaging your soft inner walls.",
+				"Драконий член дразняще трется о складки твоей киски, заставляя тебя почувствовать его ребристую текстуру, а затем грубо врывается внутрь!",
+				"Твои губы издают стон, когда драконий член находит твою киску и начинает трахать тебя до красноты!",
+				"Чей-то член трется о твою киску, прежде чем растянуть её и скользнуть внутрь! Ты чувствуешь, как его текстура массирует твои нежные внутренние стенки.",
 			]))
 		if(cockType == "equine"):
 			saynn(RNG.pick([
-				"A bulky flared cock’s tip is suddenly putting pressure on your {pc.pussyStretch} pussy! You don’t believe that it will fit but the horse cock proves you wrong by stretching you out enough to slide in.",
-				"A huge horse cock is brushing its flared head against your slit before suddenly forcibly spreading the petals aside and proceeding to fuck you through the portal panties!",
-				"Someone has picked up the fleshlight and is now teasing your pussy with their horse cock. The flared head is leaking pre all over your folds before sinking in and stretching your slit  enough to start pounding it.",
+				"Кончик массивного расширяющегося члена внезапно давит на твою {pc.pussyStretch} киску! Ты не веришь, что он влезет, но лошадиный член доказывает твою неправоту, растягивая тебя достаточно широко, чтобы войти внутрь.",
+				"Огромный лошадиный член трется своей расширенной головкой о твою щель, а затем внезапно и грубо раздвигает лепестки, начиная трахать тебя прямо через портативные трусики!",
+				"Кто-то взял флешлайт и теперь дразнит твою киску своим лошадиным членом. Расширенная головка заливает смазкой все твои складки, прежде чем погрузиться внутрь и растянуть щель настолько, чтобы начать мощно вбиваться в тебя.",
 			]))
 		if(cockType == "generic"):
 			saynn(RNG.pick([
-				"A {npc.penis} is rubbing against your sex, making the folds moist before sliding inside and proceeding to fuck you through the portal panties!",
-				"You feel that the fleshlight with your pussy sticking out was picked up by someone! A {npc.penis} is then pressed against your sensitive folds, spreading them open before sliding in and fucking you!",
-				"Someone’s hard cock suddenly gets shoved deep into your pussy through your portal panties!",
+				"{npc.penis} трется о твою промежность, увлажняя складки, а затем скользит внутрь и начинает трахать тебя через портативные трусики!",
+				"Ты чувствуешь, что кто-то подхватил флешлайт, из которого торчит твоя киска! Затем {npc.penis} прижимается к твоим чувствительным складкам, раздвигает их и входит внутрь, начиная трахать тебя!",
+				"Чей-то твердый член внезапно вжимается глубоко в твою киску прямо через портативные трусики!",
 			]))
 			
 		if(GM.pc.getLust() >= 50):
@@ -109,21 +109,21 @@ func _run():
 			saynn(RNG.pick([
 				"[say=pc]F-fuck.. yeah..[/say]",
 				"[say=pc]Yes-s~..[/say]",
-				"[say=pc]Please, fuck me~[/say]",
-				"[say=pc]Yes, go raw on me~[/say]",
-				"[say=pc]I need this so much..[/say]",
-				"[say=pc]My pussy is getting used like a fleshlight~[/say]",
+				"[say=pc]Пожалуйста, трахай меня~[/say]",
+				"[say=pc]Да, трахай меня без презерватива~[/say]",
+				"[say=pc]Мне это так нужно..[/say]",
+				"[say=pc]Мою киску используют как влажную игрушку~[/say]",
 			]))
 		else:
 			saynn("Ты тихо шепчешь себе под нос.")
 			
 			saynn(RNG.pick([
-				"[say=pc]It’s happening again..[/say]",
-				"[say=pc]I’m getting fucked..[/say]",
-				"[say=pc]Oh fuck..[/say]",
-				"[say=pc]Oh no..[/say]",
-				"[say=pc]I’m not a fleshlight..[/say]",
-				"[say=pc]It will never stop, will it..[/say]",
+				"[say=pc]Это происходит снова..[/say]",
+				"[say=pc]Меня трахают..[/say]",
+				"[say=pc]Ох, блядь..[/say]",
+				"[say=pc]О нет...[/say]",
+				"[say=pc]Я не просто игрушка..[/say]",
+				"[say=pc]Это никогда не прекратится, да?..[/say]",
 			]))
 
 		addButton("Продолжить", "Тебя трахают!", "vaginal_cum")
@@ -132,38 +132,38 @@ func _run():
 		playAnimation(StageScene.SexPortal, RNG.pick(["inside", "fast"]), {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
 		
 		saynn(RNG.pick([
-			"The cock gradually picks up the pace, fucking your sex through the portal panties while you can’t do anything about it. Your pussy becomes slick with your juices, allowing your sex to be pounded nice and rough!",
-			"You can’t do anything to stop them even if you wanted to, their eager cock is using your slit as if it's a real fleshlight, delivering you all the pleasure in the process.",
-			"Portal panties means you can’t even see who is fucking you. All you feel is their cock pounding your slit with zero concerns about your opinion. And the pleasure it offers slowly drives you insane. Who would have thought that portal panties can be so hot.",
-			"You can’t help but to moan while having your fuckhole used like you are some kind of fucktoy. A slight bump is moving up and down on your belly as the cock slides inside.",
-			"More pleasure noises escape from you as the cock starts pounding your slit faster. You really hope no one sees you like this.",
-			"You look around, hoping no one sees you getting pounded out in the public like that. Your cheeks blush red, you feel yourself getting close to an orgasm.",
+			"Член постепенно ускоряется, трахая твою киску сквозь портальные трусики, пока ты совершенно беспомощна. Твоя щелка становится скользкой от смазки, позволяя ебать тебя по-настоящему жестко и глубоко!",
+			"Ты ничего не можешь сделать, чтобы остановить их, даже если очень захочешь: их жадные члены используют твою щелку как настоящую мастурбаторную игрушку, даря тебе невероятное наслаждение в процессе.",
+			"Из-за портальных трусиков ты даже не видишь, кто именно тебя трахает. Ты чувствуешь лишь, как член вколачивается в твою щелку, и им плевать на твое мнение. А удовольствие, которое это приносит, медленно сводит тебя с ума. Кто бы мог подумать, что портальные трусики могут быть настолько горячими.",
+			"Ты не можешь сдержать стонов, когда твою дырочку используют так, словно ты какая-то секс-игрушка. Ты чувствуешь, как по животу ходит легкая выпуклость, пока член скользит внутри тебя.",
+			"Из твоих уст вырывается всё больше звуков наслаждения, когда член начинает вколачиваться в твою щель всё быстрее. Ты искренне надеешься, что никто не застукает тебя в таком виде.",
+			"Ты оглядываешься по сторонам, надеясь, что никто не увидит, как тебя жестко трахают на публике. Твои щеки пылают румянцем, и ты чувствуешь, что вот-вот кончишь.",
 		]))
 		
 		if(cockType == "canine"):
 			saynn(RNG.pick([
-				"The canine cock ravages your pussy and then shoves its knot inside. You gasp and cover your mouth while your slit clenches around the meaty orb and squirts with your female juices. A second later you feel your womb getting stuffed with someone’s cum! Someone is breeding you and you don’t even know who!",
-				"The cock pounds at your cervix, quickly sending you over the edge. You cum as your body starts to squirm and shiver from the pleasure waves. And at the same time, you’re getting knotted! The whole canine member fits inside you, twitching and throbbing as it stuffs your womb full of its cum!",
+				"Собачий член неистово разрывает твою киску, а затем втискивает внутрь свой узел. Ты ахаешь и прикрываешь рот рукой, пока твоя щель сжимается вокруг мясистой сферы, заливаясь женскими соками. Секунду спустя ты чувствуешь, как твою матку наполняет чья-то сперма! Кто-то осеменяет тебя, а ты даже не знаешь, кто именно!",
+				"Член долбит прямо в шейку матки, мгновенно доводя тебя до предела. Ты кончаешь, а твое тело начинает корчиться и дрожать от волн наслаждения. И в этот же самый момент тебя завязывает узлом! Весь собачий член входит в тебя целиком, дергаясь и пульсируя, пока забивает твою матку своей спермой!",
 			]))
 		if(cockType == "feline"):
 			saynn(RNG.pick([
-				"The feline cock rakes at your inner walls as it thrusts in and out, causing extra sensations. It doesn’t take long until you feel the peak coming close. And the dick seems to be about to cum too, you feel it throbbing and then suddenly bursting with seed. You shut your mouth and cover it as your pussy starts clenching around the shaft, milking it for all its cum. It feels so good, being bred by some stranger’s cock.",
-				"The cock smashes your cervix and tries to break through it, you feel the barbs getting stiffer as the dick is about to cum. You clench and shut your legs as the orgasm overwhelms you, not making any noises is so hard right now. And a second later, you feel the feline cock penetrating your natural barricade and scratching at your womb as it starts stuffing it full of its virile seed. Fuck, did someone just breed you, thinking your pussy was just a part of a fleshlight?",
+				"Кошачий член скребет по твоим внутренним стенкам при каждом толчке, вызывая невероятное возбуждение. Вскоре ты чувствуешь, что пик уже близко. Кажется, член тоже вот-вот кончит — ты ощущаешь его пульсацию, а затем внезапный взрыв семени. Ты плотно сжимаешь губы, стараясь не взвизгнуть, пока твоя киска судорожно обхватывает ствол, высасывая из него всё до последней капли. Это чертовски приятное чувство — когда тебя осеменяет чей-то чужой член.",
+				"Член с силой бьет в твою шейку, пытаясь пробить её насквозь; ты чувствуешь, как шипы становятся жестче, когда он вот-вот кончит. Ты сжимаешься и плотно сводишь ноги, когда оргазм накрывает тебя с головой — сдержать стоны сейчас невероятно трудно. А мгновение спустя ты чувствуешь, как кошачий член прорывает твой естественный барьер и начинает скрести по матке, наполняя её своим бурлящим семенем. Блядь, неужели тебя только что осеменили, решив, что твоя киска — всего лишь очередная мастурбаторная игрушка?",
 			]))
 		if(cockType == "dragon"):
 			saynn(RNG.pick([
-				"The dragon cock’s thrusts become faster and more powerful, its ribbed structure is quickly sending you over the edge. You bite your lip and let out a passionate moan as your pussy starts clenching around the intruding member. And soon enough, you feel hot sticky cum getting stuffed into your womb completely unceremoniously. Someone really just used you like you were some kind of pleasure toy.",
-				"The cock starts thrusting harder against your cervix, smashing it each time and making your eyes roll up from a sure amount of pleasure. Little shivers quickly turn into full blown squirming, you let out a muffled moan as the orgasmic waves hit your poor mind. Your pussy walls feel the shaft’s ribbed texture as they clench around it, a few seconds later you feel something hot and sticky stuffing your womb full, it’s dragon cum! The cock then quickly gets pulled out, leaving your slit to leak cum until somebody else decides to use you. You just got fucked by some stranger.",
+				"Толчки драконьего члена становятся всё быстрее и мощнее, а его ребристая текстура стремительно подводит тебя к краю. Ты закусываешь губу и издаешь страстный стон, когда твоя киска начинает судорожно сжиматься вокруг вошедшего в неё члена. Вскоре ты чувствуешь, как горячая липкая сперма без всякого церемоний вливается прямо в твою матку. Кто-то действительно использовал тебя просто как какую-то сексуальную игрушку.",
+				"Член начинает вколачиваться всё сильнее, каждый раз ударяясь в твою шейку матки, от чего твои глаза закатываются от невыносимого удовольствия. Легкая дрожь быстро перерастает в настоящую конвульсию; ты издаешь приглушенный стон, когда волны оргазма накрывают твой бедный разум. Стенки твоей киски ощущают ребристую текстуру ствола, сжимаясь вокруг него, а спустя несколько секунд ты чувствуешь, как что-то горячее и липкое наполняет твою матку — это драконья сперма! Затем член резко вырывают наружу, оставляя твою щель сочиться семенем до тех пор, пока кто-нибудь другой не решит тебя использовать. Тебя только что оттрахал какой-то незнакомец.",
 			]))
 		if(cockType == "equine"):
 			saynn(RNG.pick([
-				"The horse cock is pounding at your cervix and smashes your pleasure point each time it slides in. You feel like you won’t be able to endure it for long, your pussy walls start clenching around the fat flared shaft as you both cum! The stranger starts emptying their balls inside you, quickly stuffing your womb to the brim and causing your belly to suddenly look very bumpy. And it feels good, you let your tongue out and drool while some stud is breeding you rough.",
-				"The flared tip of the cock is pounding your cervix, causing a huge spike of pleasure. Your poor {pc.pussyStretch} pussy is stretched open wide for that stallion cock while it slides in and out. You hide your face from everyone and start moaning lustfully as your sex squirts from overstimulation. And a second later you feel the horse cock inflating even more as it starts shooting its sticky virile seed directly into your womb, claiming it. Your legs shake and really want to give up, you’re being bred by someone you can’t see! And just as quick, the flared cock is pulled out of your used fuckhole, leaving the fleshlight to leak cum.",
+				"Лошадиный член долбит прямо в твою шейку матки, каждый раз вбивая точку удовольствия при каждом движении. Кажется, ты скоро не выдержишь — стенки твоей киски начинают судорожно сжиматься вокруг толстого расширенного ствола в момент вашего общего оргазма! Незнакомец начинает опустошать свои яйца внутри тебя, мгновенно заполняя матку до самых краев, отчего твой живот внезапно становится бугристым. И это чертовски приятно: ты высунула язык и пускаешь слюни, пока этот самец грубо тебя осеменяет.",
+				"Расширенная головка члена долбит в твою шейку матки, вызывая мощнейший всплеск наслаждения. Твоя бедная {pc.pussyStretch} киска растянута до предела этим жеребцом, пока он входит и выходит из тебя. Ты прячешь лицо от всех и начинаешь похотливо стонать, а из твоего секса брызжет сквирт от чрезмерной стимуляции. Секунду спустя ты чувствуешь, как лошадиный член раздувается еще сильнее, начиная извергать липкое мужское семя прямо в твою матку, заявляя на нее права. Твои ноги дрожат, и тебе хочется просто сдаться — тебя осеменяет тот, кого ты даже не видишь! И так же быстро расширенный член вылетает из твоей раздолбанной дырочки, оставляя твою плоть сочиться спермой.",
 			]))
 		if(cockType == "generic"):
 			saynn(RNG.pick([
-				"The {npc.penis} ravages your slit nice and fast, the tip is brushing against your natural barricade while also rubbing your pleasure point. You put a palm on your belly and feel it move inside you. You can’t stop the moans from escaping your lips, the orgasm creeps closer until finally overwhelming your body, making you squirm and shiver. The cock cums inside you soon after, stuffing your womb with its seed. Someone just used you as a cum dump.",
-				"You can’t endure it for long, the {npc.penis} quickly pushes you over the edge and causes your climax to overwhelm you. Your legs shiver and shake while your pussy gets tight around the shaft, causing it to cum soon after, stuffing your womb full of its seed. Then it just gets pulled out, leaving your {pc.pussyStretch} slit to slowly tighten up and leak jizz.",
+				"{npc.penis} неистово и быстро кромсает твою щель; его кончик то и дело задевает твой естественный барьер, одновременно лаская точку удовольствия. Ты прижимаешь ладонь к животу, чувствуя, как он движется внутри тебя. Стоны сами срываются с твоих губ, оргазм подступает всё ближе, пока наконец не захлестывает всё тело, заставляя тебя извиваться и дрожать. Вскоре член кончает прямо в тебя, наполняя твою матку своим семенем. Кто-то только что использовал тебя как свалку для кончи.",
+				"Ты не можешь долго это терпеть: {npc.penis} быстро доводит тебя до края, и накрывающая тебя волна оргазма становится невыносимой. Твои ноги дрожат и подкашиваются, а киска сжимается вокруг ствола, заставляя его кончить почти сразу же, наполняя твою матку семенем. Затем его просто выдергивают, оставляя твою щель {pc.pussyStretch} медленно сужаться и сочиться спермой.",
 			]))
 		
 		addButton("Продолжить", "Так много спермы...", "endthescene")
@@ -174,33 +174,33 @@ func _run():
 		
 		if(cockType == "canine"):
 			saynn(RNG.pick([
-				"You grab onto your panties when you realize that someone’s cock has found the portal with your {pc.analStretch} tailhole sticking out. Its canine pointy head is prodding at your sensitive flesh and then applies enough pressure to slide in and start fucking you!",
-				"You feel something happening inside your panties, someone’s knotted cock is brushing against your {pc.analStretch} anus. You let out a small gasp as your butt then gets violated without much prelude.",
-				"Someone has found the fleshlight with your anus! You feel somebody spit on your tailhole soon followed by a canine cock roughly shoving itself down your nethers.",
+				"Ты хватаешься за трусики, когда понимаешь, что чей-то член нашел портал, из которого торчит твой {pc.analStretch} анус. Его заостренная, похожая на собачью головка тычется в твою чувствительную плоть, а затем он надавливает достаточно сильно, чтобы войти внутрь и начать тебя трахать!",
+				"Ты чувствуешь, что в твоих трусиках что-то происходит: чей-то узловатый член прижимается к твоему {pc.analStretch} анусу. Ты издаешь тихий вздох, когда твою задницу начинают грубо насиловать без всяких прелюдий.",
+				"Кто-то нашел флешлайт с твоим анусом! Ты чувствуешь, как кто-то плюет в твою дырочку, а следом за этим собачий член грубо втискивается в твое нутро.",
 			]))
 		if(cockType == "feline"):
 			saynn(RNG.pick([
-				"Someone’s cock is prodding at your tailhole, finding the right angle just to then roughly thrust inside, stretching you out! You feel its tip having barbs, they scratch at your soft inner walls.",
-				"Some person has found a fleshlight that features your anus on it! You feel the barbs brushing against your soft flesh as someone’s cock starts to slide in and out, fucking you.",
-				"You grasp onto the nearby wall as you feel someone suddenly shoving their feline cock down your {pc.analStretch} tailhole, they clearly want to fuck you rough!",
+				"Чей-то член ковыряется в твоей дырочке, подбирая нужный угол, чтобы затем резко войти внутрь, растягивая тебя! Ты чувствуешь, что на его головке есть шипы, которые скребут по твоим нежным внутренним стенкам.",
+				"Кто-то нашел флешлайт, на котором изображен твой анус! Ты чувствуешь, как шипы касаются твоей мягкой плоти, когда чей-то член начинает входить и выходить, трахая тебя.",
+				"Ты хватаешься за ближайшую стену, когда чувствуешь, как кто-то внезапно засовывает свой кошачий член в твой {pc.analStretch} задний проход — они явно хотят трахнуть тебя жестко!",
 			]))
 		if(cockType == "dragon"):
 			saynn(RNG.pick([
-				"A dragon cock teasingly prods at your tailhole before stretching it open and sliding inside, letting you feel its ribbed texture!",
-				"Your lips let out a moan as a dragon cock finds your {pc.analStretch} butthole and starts fucking you raw!",
-				"Someone’s cock rubs against your backdoor, covering it with pre. It then gets pressed against your star and applies enough pressure to sink inside, violating your butt! You feel its rubbed texture massaging your soft inner walls as it starts fucking you.",
+				"Драконий член дразняще тычется в твою дырочку, прежде чем растянуть её и скользнуть внутрь, заставляя тебя почувствовать его ребристую текстуру!",
+				"Твои губы издают стон, когда драконий член находит твой {pc.analStretch} задний проход и начинает трахать тебя до красноты!",
+				"Чей-то член трется о твою задницу, заливая её предэякулятом. Затем он прижимается к твоему анусу и с силой втискивается внутрь, насилуя твою попку! Ты чувствуешь, как его текстура массирует твои мягкие внутренние стенки, когда он начинает в тебя трахаться.",
 			]))
 		if(cockType == "equine"):
 			saynn(RNG.pick([
-				"A muffled gasp escapes from your lips as you feel a flared cock pressed against your tailhole. Its tip is huge but they got enough strength to shove their fat shaft down your star and start fucking it!",
-				"A bulky horse cock is brushing its flared head against your anus before forcibly spreading it wide open and fucking you through the portal in your panties!",
-				"You feel a warm string of pre landing on your butthole a few seconds before someone's horse cock is forcing itself inside, stretching your star wide open.",
+				"Приглушенный вздох срывается с твоих губ, когда ты чувствуешь, как расширенный член прижимается к твоему отверстию. Его головка огромна, но у них хватает сил вогнать свой толстый ствол в твой анус и начать в тебя трахаться!",
+				"Массивный лошадиный член трется своей расширенной головкой о твой анус, прежде чем силой раздвинуть его настежь и начать трахать тебя прямо через портал в твоих трусиках!",
+				"За несколько секунд до того, как чей-то лошадиный член с силой втиснется внутрь, растягивая твой анус, ты чувствуешь на своем задке теплую струйку предэякулята.",
 			]))
 		if(cockType == "generic"):
 			saynn(RNG.pick([
-				"Someone’s {npc.penis} is rubbing against your backdoor, making it moist from precum before sliding inside and proceeding to fuck you through the portal panties!",
-				"A {npc.penis} is pressed against your tailhole, spreading it open before sliding in and proceeding to rail you!",
-				"A hard cock suddenly gets shoved deep into your butthole through your portal panties!",
+				"Чей-то {npc.penis} трется о твою задницу, смазывая её предэякулятом, а затем скользит внутрь и начинает трахать тебя через портальные трусики!",
+				"{npc.penis} прижимается к твоему отверстию, раздвигая его, а затем входит внутрь и начинает жестко в тебя вколачиваться!",
+				"Твердый член внезапно влетает глубоко в твой анус прямо через твои портальные трусики!",
 			]))
 			
 		if(GM.pc.getLust() >= 50):
@@ -209,21 +209,21 @@ func _run():
 			saynn(RNG.pick([
 				"[say=pc]F-fuck.. yeah..[/say]",
 				"[say=pc]Yes-s~..[/say]",
-				"[say=pc]Please, fuck me~[/say]",
-				"[say=pc]Oh no, I’m getting fucked raw again~[/say]",
-				"[say=pc]Yeah, stretch my fuckhole..[/say]",
-				"[say=pc]Yeah, use that fleshlight~[/say]",
+				"[say=pc]Пожалуйста, трахай меня~[/say]",
+				"[say=pc]О нет, меня снова трахают без презерватива~[/say]",
+				"[say=pc]Да, растягивай мою дырочку..[/say]",
+				"[say=pc]Да, используй её как мастурбатор~[/say]",
 			]))
 		else:
 			saynn("Ты тихо шепчешь себе под нос.")
 			
 			saynn(RNG.pick([
-				"[say=pc]It’s happening again..[/say]",
-				"[say=pc]My hole is getting used like I’m some fucktoy..[/say]",
-				"[say=pc]Oh fuck..[/say]",
+				"[say=pc]Это происходит снова..[/say]",
+				"[say=pc]Мою дырку используют так, будто я какая-то секс-игрушка..[/say]",
+				"[say=pc]Ох, блядь..[/say]",
 				"[say=pc]Oh.. wa-ait..[/say]",
-				"[say=pc]I’m not a fleshlight..[/say]",
-				"[say=pc]It will never stop, will it..[/say]",
+				"[say=pc]Я не просто игрушка..[/say]",
+				"[say=pc]Это никогда не прекратится, да?..[/say]",
 			]))
 
 		addButton("Продолжить", "Тебя трахают!", "anal_cum")
@@ -232,38 +232,38 @@ func _run():
 		playAnimation(StageScene.SexPortal, RNG.pick(["inside", "fast"]), {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
 		
 		saynn(RNG.pick([
-			"The cock gradually picks up the pace, fucking your sex through the portal panties while you can’t do anything about it. Your inner walls become slick with all the precum, allowing your sex to be pounded nice and rough!",
-			"You can’t do anything to stop them even if you wanted to, their eager cock is using your tailhole as if it's attached to a real fleshlight, delivering you all the pleasure in the process.",
-			"Portal panties means you can’t even see who is fucking you. All you feel is their cock pounding your ass with very little consideration about it. And the pleasure it offers slowly drives you insane. Who would have thought that portal panties can be so hot.",
-			"You can’t help but to moan while having your fuckhole used like you are some kind of fucktoy. A slight bump is moving up and down on your belly as the cock slides inside.",
-			"More pleasure noises escape from you as the cock starts pounding your butt faster. You really hope no one sees you like this.",
-			"You look around, hoping no one sees you getting pounded out in the public like that. Your cheeks blush red, you feel yourself getting close to an orgasm.",
+			"Член постепенно ускоряется, трахая твою киску через портальные трусики, пока ты совершенно беспомощна. Твои внутренние стенки становятся скользкими от предэякулята, позволяя ебать тебя со всей страстью и грубостью!",
+			"Ты ничего не можешь сделать, чтобы остановить их, даже если очень захочешь: их жадный член использует твой анус так, словно это настоящий мастурбатор, даря тебе невероятное наслаждение.",
+			"Из-за портальных трусиков ты даже не видишь, кто именно тебя трахает. Ты чувствуешь лишь, как член безжалостно долбит в твою задницу, не особо заботясь о тебе. И это удовольствие медленно сводит тебя с ума. Кто бы мог подумать, что портальные трусики могут быть настолько горячими.",
+			"Ты не можешь сдержать стонов, когда твою дырочку используют так, словно ты какая-то секс-игрушка. Ты чувствуешь, как по животу ходит легкая выпуклость, пока член скользит внутри тебя.",
+			"Из твоих уст вырывается всё больше стонов, когда член начинает долбить в твою задницу всё быстрее. Ты искренне надеешься, что никто не застукает тебя в таком виде.",
+			"Ты оглядываешься по сторонам, надеясь, что никто не увидит, как тебя жестко трахают на публике. Твои щеки пылают румянцем, и ты чувствуешь, что вот-вот кончишь.",
 		]))
 		
 		if(cockType == "canine"):
 			saynn(RNG.pick([
-				"The canine cock eagerly pounds your tailhole and even shoves its knot inside with its last thrust. You gasp and try to cover your mouth while your insides are clenching around the meaty orb. You feel your nethers getting stuffed with someone’s seed, they are cumming inside you!",
-				"The knotted cock pounds your butt rough, quickly sending you past the peak. Your body squirms and quivers from the pleasure waves. And at the same time, the round fat orb slips in too, knotting you! The whole canine member fits inside you, twitching and throbbing as it stuffs your ass full of cum!",
+				"Пёсий член жадно долбит в твой анус, и последним толчком он даже заталкивает внутрь своё уплотнение. Ты ахаешь и пытаешься прикрыть рот рукой, пока твои внутренности судорожно сжимаются вокруг мясистой сферы. Ты чувствуешь, как твоё нутро наполняется чьей-то спермой — он кончает прямо в тебя!",
+				"Узловатый член грубо долбит в твою задницу, быстро доводя тебя до пика. Твоё тело корчится и дрожит от волн наслаждения. И в то же самое время внутрь проскальзывает жирная круглая сфера, намертво заклинивая тебя! Весь собачий член входит в тебя целиком, дергаясь и пульсируя, пока забивает твою задницу спермой!",
 			]))
 		if(cockType == "feline"):
 			saynn(RNG.pick([
-				"The feline cock rakes at your soft anal walls as it thrusts in and out, causing extra sensations. You can’t endure that onslaught on your ass for long, sneaky moans escape from you as your tailhole starts pulsating and clenching around the cock. And very soon after, you feel hot sticky cum flowing deep into your nethers, stuffing your ass! The stranger then pulls his dick out, causing the barbs to scratch at your insides for the last time before leaving the fleshlight alone.",
-				"You feel the barbs getting stiffer as the dick inside your butt is about to cum. You clench and close your legs shut as the climax overwhelms you. And as you cum yourself, you feel the feline cock doing a few rough thrusts before stuffing your nethers full of its virile seed. Fuck, did someone just cum inside you, thinking your butthole was just a part of a fleshlight?",
+				"Кошачий член скребёт по твоим мягким анальным стенкам при каждом толчке, вызывая невероятные ощущения. Ты не можешь долго выносить этот натиск на свою задницу; из тебя вырываются вороватые стоны, а анус начинает пульсировать и сжиматься вокруг члена. Вскоре ты чувствуешь, как горячая липкая сперма течёт глубоко в твоё нутро, наполняя задницу! Затем незнакомец вытаскивает свой член, и его шипы в последний раз царапают твои внутренности, прежде чем оставить твою плоть в покое.",
+				"Ты чувствуешь, как шипы становятся жестче — член внутри твоей задницы вот-вот кончит. Ты сжимаешься и плотно сводишь ноги, когда накрывает оргазм. И в тот самый момент, когда кончаешь ты, ты чувствуешь, как кошачий член делает несколько резких толчков, прежде чем залить твое нутро своей мощной семенной жидкостью. Блядь, неужели кто-то только что кончил в тебя, решив, что твоя дырка — это просто очередная игрушка-мастурбатор?",
 			]))
 		if(cockType == "dragon"):
 			saynn(RNG.pick([
-				"The dragon cock’s thrusts become faster and more powerful, you feel its ribbed texture brush against your inner walls so much, sending you over the edge. That's when the intruding member starts stuffing you full of its seed. You bite your lip and let out a passionate moan as your butt starts clenching around the shaft, milking it hard.",
-				"The pace becomes faster, the ribbed cock is fucking you so rough your stretched tailhole probably makes sloppy wet noises. You feel the cock getting twitchy a second before it starts cumming in you, shooting its seed deep down your insides, breeding your ass.",
+				"Толчки драконьего члена становятся быстрее и мощнее; ты чувствуешь, как его ребристая текстура с силой трется о твои внутренние стенки, окончательно сводя тебя с ума. И именно тогда этот бесцеремонный орган начинает набивать тебя своей спермой. Ты закусываешь губу и издаешь страстный стон, пока твоя задница судорожно сжимается вокруг ствола, с силой высасывая из него всё до капли.",
+				"Темп ускоряется, ребристый член трахает тебя так грубо, что твоя растянутая дырка, должно быть, издает хлюпающие, влажные звуки. Ты чувствуешь, как член начинает подергиваться за секунду до того, как он кончает в тебя, выстреливая семенем глубоко внутрь, буквально осеменяя твою задницу.",
 			]))
 		if(cockType == "equine"):
 			saynn(RNG.pick([
-				"The horse cock gets rammed deep down your fuckhole, stretching the inner walls so much as it slides inside. The flared fat head is brushing against your pleasure point, making you whine from pleasure. Suddenly you feel its glands inflate even more as it starts cumming inside, stuffing your tailhole full to the brim with its seed. Then, just as the quick, the cock gets pulled out, leaving you to gape and leak through the portal panties.",
-				"The flared tip of the cock is pounding your ass, providing you with so much pleasure as it smashes your pleasure point. Your poor {pc.analStretch} tailhole is stretched open wide for that stud cock as it rails you. And a second later you feel the horse cock shooting its sticky virile seed deep inside you. Your legs shake and really want to give up, you’re being bred by someone you can’t see! The flared cock is then pulled out of your used fuckhole, leaving the fleshlight to leak cum. Your belly is now way more bumpy than it was.",
+				"Конская херь с силой вбивается глубоко в твою дырочку, так растягивая внутренние стенки при каждом скольжении. Расширенная жирная головка то и дело задевает твою точку удовольствия, заставляя тебя скулить от наслаждения. Внезапно ты чувствуешь, как его желе раздувается еще сильнее — конь начинает кончать прямо в тебя, до краев заполняя твой анус своей семенной жидкостью. А затем, так же резко, член вырывается наружу, оставляя тебя с широко раскрытой, сочащейся дыркой сквозь портативные трусики.",
+				"Расшитый кончик члена неистово долбит в твою задницу, принося невероятное удовольствие и со всей дури впечатываясь в твою точку G. Твоя бедняжка {pc.analStretch} дырочка растянута до предела этим породистым жеребцом, пока он трахает тебя напролет. А секунду спустя ты чувствуешь, как конская херь извергает свою липкую, витальную сперму глубоко внутрь тебя. Ноги дрожат, и тебе хочется просто сдаться — тебя осеменяет кто-то, кого ты даже не видишь! Затем расширенный член вылетает из твоей использованной дырки, оставляя плоть, подобную влагалищу, сочиться кончой. Твой живот теперь стал куда более бугристым, чем прежде.",
 			]))
 		if(cockType == "generic"):
 			saynn(RNG.pick([
-				"The {npc.penis} picks up the pace and fucks you at a crazy speed, sliding in and out and not even giving your insides enough time to tighten up before they are spread wide open again. You drop a few rouge moans as you cum from so much stimulation on your pleasure point. The inner walls clench around the shaft as it starts shooting its load deep inside you. You both came at roughly the same moment!",
-				"The hard cock throbs and twitches as it fucks you, a few thrusts later it starts to fill your bowels full of its seed. It was too much for you, your body squirms hard while your tailhole clenches around the shaft, milking it.",
+				"{npc.penis} ускоряется и трахает тебя с безумной скоростью, то входя, то выходя, даже не давая твоим внутренностям сжаться, прежде чем их снова раздвигает настежь. Ты издаешь несколько непроизвольных стонов, кончая от такой дикой стимуляции своей эрогенной зоны. Внутренние стенки судорожно сжимаются вокруг члена, когда он начинает извергать свою струю глубоко в тебя. Вы оба кончили почти одновременно!",
+				"Твердый член пульсирует и дергается, пока трахает тебя; спустя несколько мощных толчков он начинает заполнять твои кишки своим семенем. Для тебя это оказывается слишком — твое тело бьется в конвульсиях, а анус судорожно сжимается вокруг ствола, выцеживая из него всё до капли.",
 			]))
 		
 		addButton("Продолжить", "Так много спермы...", "endthescene")
@@ -287,9 +287,9 @@ func _run():
 		saynn("Ты пытаешься сохранять спокойствие, но невольные стоны удовольствия вырываются сами собой, когда губы внезапно заходят очень глубоко, достигая самого основания твоего члена, заглатывая его целиком. Твои пальцы ног поджимаются от ощущения того, как узкие стенки горла доят твой член. Это быстро подводит тебя к краю: твой {pc.cock} выстреливает порцией глубоко в чье-то горло, пока ты выгибаешься в спине, издавая сдавленные звуки.")
 		
 		saynn(RNG.pick([
-			"[say=pc]Oh fuck..[/say]",
-			"[say=pc]Cumming..[/say]",
-			"[say=pc]It’s so tight.[/say]",
+			"[say=pc]Ох, блядь..[/say]",
+			"[say=pc]Кончаю...[/say]",
+			"[say=pc]Так тесно...[/say]",
 		]))
 		
 		saynn("Кто бы это ни был, этот человек с жадностью заглатывает твой {pc.cum}, а затем вылизывает твой член дочиста, собирая всю смазку.")

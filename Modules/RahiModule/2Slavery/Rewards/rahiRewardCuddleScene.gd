@@ -79,7 +79,7 @@ func _run():
 
 		saynn("[say=pc]Каждое прикосновение, каждый шепот уводит тебя всё глубже в бездну блаженства. Очисти свой разум, киса, отдайся пьянящим ощущениям, что пробегают волнами по всему твоему существу...[/say]")
 
-		saynn("На самом деле, кажется, ее разум превратился в чистый холст, открытый и восприимчивый к твоим шепотам... Ты продолжаешь дарить ей свое теплое дыхание, пока твои руки расстегивают рубашку и спускают ее с плеча, обнажая красивые упругие соски и округлую грудь. Ты обхватываешь их ладонями и начинаешь едва заметно разминать."+str(" Very soon you begin to feel Rahi's milk dripping over your hands. It's so easy to make her lactate when she is relaxed like this.." if getCharacter("rahi").canBeMilked() else "")+"")
+		saynn("На самом деле, кажется, ее разум превратился в чистый холст, открытый и восприимчивый к твоим шепотам... Ты продолжаешь дарить ей свое теплое дыхание, пока твои руки расстегивают рубашку и спускают ее с плеча, обнажая красивые упругие соски и округлую грудь. Ты обхватываешь их ладонями и начинаешь едва заметно разминать."+str(" Вскоре ты начинаешь чувствовать, как молоко Рахи капает тебе на руки. Когда она так расслаблена, вызвать у неё лактацию проще простого..." if getCharacter("rahi").canBeMilked() else "")+"")
 
 		saynn("[say=pc]Доверься этому пути... Только через это самоотречение ты познаешь истинную глубину своего наслаждения...[/say]")
 
@@ -470,12 +470,12 @@ func _react(_action: String, _args):
 		processTime(10*60)
 		GM.pc.addStamina(50)
 		GM.pc.addPain(-50)
-		addMessage("That was a nice rest..")
+		addMessage("Это был отличный отдых...")
 
 	if(_action == "give_massage"):
 		processTime(10*60)
 		increaseFlag("RahiModule.rahiTired", -1)
-		addMessage("Rahi didn't get any more tired after this..")
+		addMessage("После этого Рахи больше не уставала...")
 
 	if(_action == "gentle_scratches"):
 		processTime(10*60)
@@ -500,7 +500,7 @@ func _react(_action: String, _args):
 		var pump = getCharacter("rahi").getInventory().getItemByUniqueID(breastPumpID)
 		getCharacter("rahi").stimulateLactation()
 		var howMuchTransferred = getCharacter("rahi").getBodypart(BodypartSlot.Breasts).getFluids().transferTo(pump, 1.0)
-		addMessage("The pump managed to milk Rahi's breasts for "+str(Util.roundF(howMuchTransferred))+" ml")
+		addMessage("Насосу удалось сцедить из груди Рахи "+str(Util.roundF(howMuchTransferred))+" ml")
 		GM.pc.addSkillExperience(Skill.Milking, 30)
 		getCharacter("rahi").addEffect(StatusEffect.SoreNipplesAfterMilking)
 		getCharacter("rahi").updateAppearance()
@@ -554,7 +554,7 @@ func loadData(data):
 	breastPumpID = SAVE.loadVar(data, "breastPumpID", "")
 
 func getDevCommentary():
-	return "Cuddling seemed like one of the simplest rewards that can easily lead to lots of possibilities for sex so that's why I decided to add it ^^.\n\nAnd wow, something happened to me while I began writing the hypno massage part. I wanted to just write a simple massage scene but then I thought to myself, why not add a little sensual dialogue to it x3. And then that quickly spiraled out of control into some weird hypno fetish x3. Worst part is that I kinda like it. Did I develop a new fetish while writing a scene??\n\nThe biting scene turned out to be like 1.6k words x3. Mostly because I wrote a few variations depending on how high her masochism skill is. It usually scales from Rahi receiving pain and not liking it to Rahi basically cumming from it x3. Dunno if people even notice that\n\nThe milking scene was fun to write ^^. First time you can use breast pumps on someone else. It's also probably the first way to get someone else's breastmilk? Not sure x3. At least currently it is. So this scene is handy for male characters ^^"
+	return "Обнимашки казались одной из самых простых наград, которые могут легко привести к куче возможностей для секса, поэтому я и решила их добавить ^^.\n\nИ вау, со мной что-то случилось, когда я начала писать часть с гипно-массажем. Я хотела написать просто обычную сцену массажа, но потом подумала: а почему бы не добавить туда немного чувственного диалога x3. И это быстро вышло из-под контроля, превратившись в какой-то странный гипно-фетиш x3. Самое паршивое, что мне это вроде как нравится. Неужели у меня развился новый фетиш, пока я писала эту сцену??\n\nСцена с укусами вышла на целых 1,6к слов x3. В основном потому, что я написала несколько вариаций в зависимости от того, насколько высок её навык мазохизма. Обычно всё варьируется от того, что Рахи чувствует боль и ей это не нравится, до того, что она от этого практически кончает x3. Не знаю, заметят ли это люди\n\nСцену с дойкой было весело писать ^^. Первый раз, когда можно использовать молокоотсосы на ком-то другом. А еще это, наверное, первый способ получить чье-то чужое грудное молоко? Не уверена x3. По крайней мере, на данный момент. Так что эта сцена очень полезна для мужских персонажей ^^"
 
 func hasDevCommentary():
 	return true

@@ -20,10 +20,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Yoga"
+	return "Йога"
 
 func getEffectDesc():
-	return "Doing yoga exercises made you more agile for "+Util.getTimeStringHumanReadable(turns)
+	return "Занятия йогой повысили вашу ловкость на "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/lotus.png"

@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Принудительное кольцо-кляп"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -22,10 +22,10 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	_receiver.getInventory().forceEquipByStoreOtherUnlessRestraint(GlobalRegistry.createItem("ringgag"), _attacker)
 	
 	var text = "{attacker.name} набрасывается на тебя и умудряется [b]засунуть тебе в рот кольцо-кляп[/b]! Тебе удается оттолкнуть {attacker.him} назад.\n\n[say=attacker]"+RNG.pick([
-		"Much better.",
-		"Bite this.",
-		"Behave, inmate.",
-		"What's wrong, cat got your tongue?",
+		"Так гораздо лучше.",
+		"Скушай это.",
+		"Веди себя прилично, зэк.",
+		"Что такое, язык проглотила?",
 	])+"[/say]"
 	return {
 		text = text,
@@ -35,11 +35,11 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return _receiver.isPlayer() && !_receiver.isBitingBlocked()
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} takes a step back and produces a ring gag out of one of {attacker.his} pockets. {attacker.name} plays with it in {attacker.his} hands.\n\n[say=attacker]"+RNG.pick([
-		"You have the right to remain gagged.",
-		"I bet you’re already drooling.",
-		"C’mon, we both know you want this.",
-		"Time to silence the opposition.",
+	return "{attacker.name} делает шаг назад и достает кольцевую кляпу из одного из {attacker.his} карманов. {attacker.name} вертит ее в {attacker.his} руках.\n\n[say=attacker]"+RNG.pick([
+		"У тебя есть право оставаться с кляпом во рту.",
+		"Спорим, у тебя уже слюнки текут?",
+		"Да ладно, мы же обе знаем, что ты этого хочешь.",
+		"Пора заставить оппозицию замолчать.",
 	])+"[/say]"
 
 func getRequirements():

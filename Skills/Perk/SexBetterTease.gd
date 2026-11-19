@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Насмотренность на кинки"
 
 func getVisibleDescription():
-	return "You learn opponent's likes/dislikes faster when teasing"
+	return "При соблазнении вы быстрее узнаете о вкусах и предпочтениях противника"
 
 func getSkillTier():
 	return 0

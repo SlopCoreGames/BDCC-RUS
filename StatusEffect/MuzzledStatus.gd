@@ -23,10 +23,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Muzzled"
+	return "Намордник"
 
 func getEffectDesc():
-	return "You have a dog muzzle on your face!"
+	return "На твоём лице надет собачий намордник!"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/muzzle.png"

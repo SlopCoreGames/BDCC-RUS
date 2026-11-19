@@ -38,7 +38,7 @@ func on_player_statchange():
 
 func updateUI():
 	nameLabel.text = GM.pc.getName() + ", " + GM.pc.getSpeciesFullName()
-	creditsLabel.text = "Work Credits: " + str(GM.pc.getCredits())
+	creditsLabel.text = "Кредиты: " + str(GM.pc.getCredits())
 
 	painBar.setProgressBarValueInt(GM.pc.getPain(), GM.pc.painThreshold())
 	painBar.setText( str(GM.pc.getPain()) + " / " + str(GM.pc.painThreshold()) )

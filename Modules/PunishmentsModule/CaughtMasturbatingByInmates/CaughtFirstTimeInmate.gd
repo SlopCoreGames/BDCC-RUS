@@ -7,7 +7,7 @@ func _reactInit():
 	if(RNG.chance(50)):
 		var zone = BodyWritingsZone.getRandomZone()
 		GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-		addMessage("Although she did also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+		addMessage("Хотя она также оставила тебе память на твоем... "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 
 func _run():
 	if(state == ""):

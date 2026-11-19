@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Кульминация"
 
 func getVisibleDescription():
-	return "You gain an ability to masturbate and cum during fights"
+	return "Вы обретаете способность мастурбировать и кончать прямо во время боя"
 
 func getMoreDescription():
-	return "The ability removes 50 lust but you can only use it if your [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] is above 90%. Enemy gets covered in your cum/girlcum and will receive 10% more [color="+DamageType.getColorString(DamageType.Lust)+"]lust damage[/color] for a few turns"
+	return "Эта способность снимает 50 единиц похоти, но использовать её можно, только если ваша [color="+DamageType.getColorString(DamageType.Lust)+"]похоть[/color] превышает 90%. Враг покрывается вашей спермой/девичьим соком и будет получать на 10% больше [color="+DamageType.getColorString(DamageType.Lust)+"]урона похотью[/color] в течение нескольких ходов"
 
 func getSkillTier():
 	return 1

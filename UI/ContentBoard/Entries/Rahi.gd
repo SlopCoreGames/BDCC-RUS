@@ -8,26 +8,26 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Help a shy brown kitty with her drinking problem. Keep Rahi's body and mind occupied in order to help her cope.\nSilly Rahi sprite drawn by [url=https://silkiedraws.carrd.co/]Silkie! [img=32]res://UI/ContentBoard/Util/heart_silkie2.png[/img][/url]"
-	return "Help a shy brown kitty with her drinking problem."
+		return "Помоги застенчивой коричневой кошечке справиться с её проблемой с алкоголем. Занимай тело и разум Рахи, чтобы ей стало легче.\nМилый спрайт Рахи нарисован [url=https://silkiedraws.carrd.co/]Silkie! [img=32]res://UI/ContentBoard/Util/heart_silkie2.png[/img][/url]"
+	return "Помоги застенчивой коричневой кошечке справиться с её проблемой с алкоголем."
 
 func getKinks() -> Array:
 	return [
-		"Player is dominant",
-		"Vaginal sex/Breeding",
-		"Anal sex",
+		"Игрок доминирует",
+		"Вагинальный секс / Осеменение",
+		"Анальный секс",
 		"Masochism (Rahi)",
-		"Role switch (Dom -> Sub)",
-		"Exhibitionism",
-		"Petplay",
+		"Смена ролей (Доминант -> Сабмиссив)",
+		"Эксгибиционизм",
+		"Петплей",
 		"Prostitution/Sharing (optional)",
 		"Watersports (optional)",
 	]
 
 func getCompletedDesc() -> String:
 	if(getFlag("RahiModule.rahiMile7Proposed")):
-		return "Rahi is now your happy wife! Meow meow."
-	return "Rahi is now your personal slave! Meow meow."
+		return "Теперь Рахи — твоя счастливая жена! Мяу-мяу."
+	return "Теперь Рахи — твоя личная рабыня! Мяу-мяу."
 
 func getStatus() -> int:
 	if(getFlag("RahiModule.rahiMile8Happened", false)):
@@ -42,14 +42,14 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("RahiModule.Rahi_GaveApple"), "Steal an apple from the greenhouses and give it to Rahi at the bench near the stocks."],
-		[completeIf("RahiModule.Rahi_ShowerHappened"), "Find Rahi in the showers and have fun with her there."],
-		[completeIf("RahiModule.rahi1ElizaSceneHappened"), "Sleep in your cell and see what happens."],
-		[completeIf("RahiModule.rahi2SceneHappened"), "Talk with Rahi about her problem."],
-		[completeIf("RahiModule.rahi3SceneHappened"), "Sleep in your cell and see what happens."],
-		[completeIf("RahiModule.rahi4SceneHappened"), "Find Rahi."],
-		[completeIf("RahiModule.rahi5SceneHappened"), "Talk with Rahi in the general population inmate cellblock."],
+		[completeIf("RahiModule.Rahi_GaveApple"), "Укради яблоко в теплицах и отдай его Рахи на скамье возле колодок."],
+		[completeIf("RahiModule.Rahi_ShowerHappened"), "Найди Рахи в душевых и развлекись там с ней."],
+		[completeIf("RahiModule.rahi1ElizaSceneHappened"), "Поспи в своей камере и посмотри, что будет."],
+		[completeIf("RahiModule.rahi2SceneHappened"), "Поговори с Рахи о её проблеме."],
+		[completeIf("RahiModule.rahi3SceneHappened"), "Поспи в своей камере и посмотри, что будет."],
+		[completeIf("RahiModule.rahi4SceneHappened"), "Найди Рахи."],
+		[completeIf("RahiModule.rahi5SceneHappened"), "Поговори с Рахи в общем блоке камер для заключенных."],
 	]
 
 func getProgressText() -> String:
-	return "Train Rahi every day, raise her obedience or affection stats. When you raise either one of them enough, you will get a chance to trigger the next milestone."
+	return "Тренируй Рахи каждый день, повышая её послушание или привязанность. Когда один из этих показателей достигнет нужного уровня, откроется возможность перейти к следующему этапу."

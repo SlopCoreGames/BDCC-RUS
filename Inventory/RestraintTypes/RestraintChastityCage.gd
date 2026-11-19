@@ -31,10 +31,10 @@ func doStruggle(_pc, _minigame:MinigameResult):
 		stamina = 5
 	
 	if(_handsFree && _armsFree && failChance(_pc, 20)):
-		text += " Touching {user.his} caged cock made {user.him} quite aroused."
+		text += " Прикосновение к {user.his} зажатому в клетку члену привело {user.him} в состояние сильного возбуждения."
 		lust = scaleDamage(5)
 	elif(failChance(_pc, 20)):
-		text += " {user.He} accidentally pinched {user.his} balls. Ow."
+		text += " {user.He} случайно прищелкнул {user.his} яйца. Ой!"
 		pain = scaleDamage(5)
 	
 	#damage = calcDamage()

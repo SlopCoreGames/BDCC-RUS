@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Мега-молоко"
 
 func getVisibleDescription():
-	return "Bigger breasts means more milk! And you want more milk! Your breasts can get bigger by one additional size when lactating"
+	return "Большая грудь — значит больше молока! А молока тебе много не бывает! Во время лактации размер твоей груди может увеличиться на один пункт."
 
 func getRequiredPerks():
 	return [Perk.MilkBiggerBreasts]

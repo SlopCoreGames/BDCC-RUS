@@ -10,7 +10,7 @@ func run(_triggerID, _args):
 	if(GM.main.getTime() >= 22*60*60):
 		saynn("Вы замечаете Ришу, сидящую на одной из скамей")
 		
-		addButtonUnlessLate("Risha", "Ask what's up", "risha")
+		addButtonUnlessLate("Риша", "Спросить, как дела", "risha")
 	else:
 		addDisabledButton("Риша", "Приходите после 22:00")
 

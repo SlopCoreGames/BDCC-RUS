@@ -11,7 +11,7 @@ func getGender():
 	return Gender.Other
 	
 func getSmallDescription() -> String:
-	return "Transparent ghost-like hands"
+	return "Прозрачные призрачные руки"
 
 func getSpecies():
 	return ["unknown"]

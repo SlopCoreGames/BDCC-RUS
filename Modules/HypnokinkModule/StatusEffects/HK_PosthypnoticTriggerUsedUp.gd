@@ -14,10 +14,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Trigger used up"
+	return "Триггер израсходован"
 
 func getEffectDesc():
-	return "You are immune to further uses of your hypnotic trigger this combat."
+	return "В этом бою вы невосприимчивы к повторному использованию вашего гипнотического триггера."
 
 func getEffectImage():
 	return "res://Modules/HypnokinkModule/Icons/StatusEffects/empty_circle.png"

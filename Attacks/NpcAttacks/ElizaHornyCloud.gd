@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Похотливое облако"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Lust)):
@@ -30,7 +30,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} fetches some vial off of {attacker.his} belt and throws it at {receiver.name}!"
+	return "{attacker.name} достает из {attacker.his} пояса какой-то флакон и швыряет его в {receiver.name}!"
 
 func getAttackSoloAnimation():
 	return "throw"

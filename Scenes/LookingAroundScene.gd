@@ -10,7 +10,7 @@ func _run():
 		setCharactersEasyList(GM.main.IS.getPawnIDsAt(GM.pc.getLocation()))
 		
 		saynn("Вот что происходит вокруг вас:")
-		addButtonAt(14, "Back", "Enough looking around", "endthescene")
+		addButtonAt(14, "Назад", "Хватит глазеть", "endthescene")
 		
 		var pcLoc:String = GM.pc.getLocation()
 		var allPawns:Array = GM.main.IS.getPawnsAt(pcLoc)
@@ -35,7 +35,7 @@ func _run():
 
 	if(state == "focus"):
 		var pcPawn:CharacterPawn = GM.main.IS.getPawn("pc")
-		addButtonAt(14, "Back", "Go back to the previous menu", "")
+		addButtonAt(14, "Назад", "Назад в предыдущее меню", "")
 		var pawn:CharacterPawn = GM.main.IS.getPawn(pawnID)
 		
 		if(pawn == null):

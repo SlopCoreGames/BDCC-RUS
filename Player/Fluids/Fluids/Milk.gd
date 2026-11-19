@@ -56,14 +56,14 @@ func onGettingHitWith(_pc, _amount):
 	
 	var text = ""
 	if(lustToAdd < 0):
-		text += _pc.getName()+" hated getting splashed with milk!"
+		text += _pc.getName()+" ненавидел, когда на него брызгали молоком!"
 	elif(lustToAdd > 0):
-		text += _pc.getName()+" "+RNG.pick(["loved", "enjoyed", "got lusty from", "liked", "got aroused from"])+" getting splashed with milk!"
+		text += _pc.getName()+" "+RNG.pick(["loved", "enjoyed", "возбудился от", "liked", "завелся от"])+" когда на него брызгают молоком!"
 	
 	if(RNG.chance(2.0 * sqrt(_amount))):
 		if(text != ""):
 			text += " "
-		text += _pc.getName()+" got blinded by the milk!"
+		text += _pc.getName()+" ослеп от молока!"
 		_pc.addEffect(StatusEffect.Blindness, [Util.mini(3, 1 + int(_amount/2000))])
 		
 	return {

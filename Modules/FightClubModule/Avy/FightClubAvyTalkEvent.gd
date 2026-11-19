@@ -17,12 +17,12 @@ func run(_triggerID, _args):
 		addDisabledButton("Эви", "Сначала поговори с ведущим")
 	else:
 		if(!getFlag("FightClubModule.AvyIntroduced")):
-			addButtonUnlessLate("Avy", "Approach the dickgirl", "avyfirst")
+			addButtonUnlessLate("Эви", "Подойти к дикгёрл", "avyfirst")
 		else:
 			if(getFlag("FightClubModule.AvyIsInSlutwall")):
 				addDisabledButton("Эви", "Ави всё ещё застряла в шлюзовой стене")
 			else:
-				addButtonUnlessLate("Avy", "Approach the dickgirl", "avy")
+				addButtonUnlessLate("Эви", "Подойти к дикгёрл", "avy")
 
 func getPriority():
 	return 0

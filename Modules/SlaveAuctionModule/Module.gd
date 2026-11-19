@@ -248,7 +248,7 @@ func unlockUpgrade(_upgradeID:String):
 		return
 	setFlag("SlaveAuctionModule."+_upgradeID+"Can", true)
 	var upgradeName = getUpgrades()[_upgradeID]["name"]
-	GM.main.addMessage("Upgrade '"+upgradeName+"' level "+str(getFlag("SlaveAuctionModule."+_upgradeID, 0)+1)+" is unlocked for purchase!")
+	GM.main.addMessage("Upgrade '"+upgradeName+"' level "+str(getFlag("SlaveAuctionModule."+_upgradeID, 0)+1)+" открыто для покупки!")
 
 func onSlaveSold(_theChar:BaseCharacter, _howMuchCreds:int):
 	increaseFlag("SlaveAuctionModule.totalSlavesSold")
@@ -338,23 +338,23 @@ func getUpgrades():
 	return {
 		"upgradeStartingBid": {
 			name = "Начальная ставка",
-			desc = "Install better seats for bidders. Increases the starting bid.",
+			desc = "Установить более удобные места для участников торгов. Увеличивает стартовую цену.",
 			conds = [
-				"Sell 2 slaves total. Currently: "+str(totalSlaves),#1
-				"Sell 4 slaves total. Currently: "+str(totalSlaves),#2
-				"Sell 7 slaves total. Currently: "+str(totalSlaves),#3
-				"Sell 10 slaves total. Currently: "+str(totalSlaves),#4
-				"Sell 15 slaves total. Currently: "+str(totalSlaves),#5
-				"Sell 20 slaves total. Currently: "+str(totalSlaves),#6
+				"Всего продано рабов: 2. Сейчас: "+str(totalSlaves),#1
+				"Всего продано рабов: 4. Сейчас: "+str(totalSlaves),#2
+				"Всего продано рабов: 7. Сейчас: "+str(totalSlaves),#3
+				"Всего продано рабов: 10. Сейчас: "+str(totalSlaves),#4
+				"Всего продано рабов: 15. Сейчас: "+str(totalSlaves),#5
+				"Всего продано рабов: 20. Сейчас: "+str(totalSlaves),#6
 			],
 			descs = [
-				"Starting bid increased to 60",#1
-				"Starting bid increased to 80",#2
-				"Starting bid increased to 100",#3
-				"Starting bid increased to 150",#4
-				"Starting bid increased to 200",#5
-				"Starting bid increased to 300",#6
-				"Starting bid increased to 500",#7
+				"Стартовая цена увеличена до 60",#1
+				"Стартовая цена увеличена до 80",#2
+				"Начальная ставка повышена до 100",#3
+				"Начальная ставка повышена до 150",#4
+				"Начальная ставка повышена до 200",#5
+				"Начальная ставка повышена до 300",#6
+				"Начальная ставка повышена до 500",#7
 			],
 			prices = [
 				10,#1
@@ -368,23 +368,23 @@ func getUpgrades():
 		},
 		"upgradeBidIncrease": {
 			name = "Шаг ставки",
-			desc = "Make the stage prettier. Increases the bid increase.",
+			desc = "Сделать сцену красивее. Увеличивает темп роста ставок.",
 			conds = [
-				"Sell a slave for at least 100 credits",#1
-				"Sell a slave for at least 150 credits",#2
-				"Sell a slave for at least 200 credits",#3
-				"Sell a slave for at least 300 credits",#4
-				"Sell a slave for at least 500 credits",#5
-				"Sell a slave for at least 1000 credits",#6
+				"Продать рабыню как минимум за 100 кредитов",#1
+				"Продать рабыню как минимум за 150 кредитов",#2
+				"Продать рабыню как минимум за 200 кредитов",#3
+				"Продать рабыню как минимум за 300 кредитов",#4
+				"Продать рабыню минимум за 500 кредитов",#5
+				"Продать рабыню минимум за 1000 кредитов",#6
 			],
 			descs = [
-				"Bid increase is 15 credits",#1
-				"Bid increase is 20 credits",#2
-				"Bid increase is 25 credits",#3
-				"Bid increase is 30 credits",#4
-				"Bid increase is 40 credits",#5
-				"Bid increase is 50 credits",#6
-				"Bid increase is 100 credits",#7
+				"Шаг аукциона — 15 кредитов",#1
+				"Шаг аукциона — 20 кредитов",#2
+				"Шаг аукциона — 25 кредитов",#3
+				"Шаг аукциона — 30 кредитов",#4
+				"Шаг аукциона — 40 кредитов",#5
+				"Шаг аукциона — 50 кредитов",#6
+				"Шаг аукциона — 100 кредитов",#7
 			],
 			prices = [
 				10,#1
@@ -398,23 +398,23 @@ func getUpgrades():
 		},
 		"upgradeSeePrefs": {
 			name = "Раскрыть предпочтения",
-			desc = "Extra intel on the next bidders. Allows to see some preferences of the next bidders.",
+			desc = "Дополнительная разведка о следующих участниках. Позволяет узнать некоторые предпочтения будущих покупателей.",
 			conds = [
-				"Sell an inmate",#1
-				"Sell a slave who is very kind or subby",#2
-				"Sell a slave with one of the skills fully learned",#3
-				"Sell a staff member",#4
-				"Sell a slave who is very mean or dominant",#5
-				"Sell a slave that has 3 skills fully learned",#6
+				"Продать заключенную",#1
+				"Продать очень добрую или покорную рабыню",#2
+				"Продать рабыню с одним полностью изученным навыком",#3
+				"Продать сотрудницу",#4
+				"Продать очень стервозную или доминантную рабыню",#5
+				"Продать рабыню с тремя полностью изученными навыками",#6
 			],
 			descs = [
-				"Reveals 1 preference ahead of time",#1
-				"Reveals 2 preferences ahead of time",#2
-				"Reveals 3 preferences ahead of time",#3
-				"Reveals 4 preferences ahead of time",#4
-				"Reveals 5 preferences ahead of time",#5
-				"Reveals 6 preferences ahead of time",#6
-				"Reveals 7 preferences ahead of time",#7
+				"Раскрывает 1 предпочтение заранее",#1
+				"Раскрывает 2 предпочтения заранее",#2
+				"Раскрывает 3 предпочтения заранее",#3
+				"Раскрывает 4 предпочтения заранее",#4
+				"Раскрывает 5 предпочтений заранее",#5
+				"Раскрывает 6 предпочтений заранее",#6
+				"Раскрывает 7 предпочтений заранее",#7
 			],
 			prices = [
 				5,#1
@@ -428,23 +428,23 @@ func getUpgrades():
 		},
 		"upgradeBetterHearing": {
 			name = "Улучшенный слух",
-			desc = "Install hidden microphones into bidders' seats. Increases the chances of relevant preferences being revealed.",
+			desc = "Установить скрытые микрофоны в кресла участников торгов. Повышает шанс раскрытия соответствующих предпочтений.",
 			conds = [
-				"Sell a slave with slave level 5 or more",#1
-				"Sell a pregnant slave",#2
-				"Sell a slave that has submitted to you",#3
-				"Sell a completely mindbroken slave",#4
-				"Sell a slave with at least 5 pieces of BDSM equipment",#5
-				"Sell a slave with slave level 15 or more",#6
+				"Продать рабыню с уровнем рабства 5 или выше",#1
+				"Продать беременную рабыню",#2
+				"Продать рабыню, которая вам подчинилась",#3
+				"Продать полностью сломленную рабыню",#4
+				"Продать рабыню как минимум с 5 предметами БДСМ-экипировки",#5
+				"Продать рабыню с уровнем рабства 15 или выше",#6
 			],
 			descs = [
-				"Increases the chance that relevant preferences will be revealed by 10%",#1
-				"Increases the chance that relevant preferences will be revealed by 20%",#2
-				"Increases the chance that relevant preferences will be revealed by 30%",#3
-				"Increases the chance that relevant preferences will be revealed by 40%",#4
-				"Increases the chance that relevant preferences will be revealed by 50%",#5
-				"Increases the chance that relevant preferences will be revealed by 60%",#6
-				"Increases the chance that relevant preferences will be revealed by 70%",#6
+				"Шанс раскрытия подходящих предпочтений увеличивается на 10%",#1
+				"Шанс раскрытия подходящих предпочтений увеличивается на 20%",#2
+				"Шанс раскрытия подходящих предпочтений увеличивается на 30%",#3
+				"Шанс раскрытия подходящих предпочтений увеличивается на 40%",#4
+				"Шанс раскрытия подходящих предпочтений увеличивается на 50%",#5
+				"Шанс раскрытия подходящих предпочтений увеличивается на 60%",#6
+				"Шанс раскрытия подходящих предпочтений увеличивается на 70%",#6
 			],
 			prices = [
 				15,#1

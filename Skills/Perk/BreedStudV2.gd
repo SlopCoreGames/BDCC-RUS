@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Конь-производитель"
 
 func getVisibleDescription():
-	return "What a stud, your balls are always so heavy! They swiftly fill up by additional 20% after your every orgasm"
+	return "Ну и жеребец! Яйца у тебя всегда такие тяжелые! После каждого оргазма они мгновенно наполняются еще на 20%."
 
 func getRequiredPerks():
 	return [Perk.BreedStud]

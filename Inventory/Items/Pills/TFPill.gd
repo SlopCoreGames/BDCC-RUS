@@ -96,9 +96,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -164,7 +164,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 func useInSex(_receiver):
 	var _success:bool = pillStartTF(_receiver)[0]
 	return {
-		text = "Сначала ничего не происходит.." if _success else "The pill has no effect.",
+		text = "Сначала ничего не происходит.." if _success else "Таблетка не произвела никакого эффекта.",
 	}
 
 func getItemCategory():

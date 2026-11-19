@@ -8,10 +8,10 @@ func _init():
 #	character.addLust(10)
 
 func getEffectName():
-	return "Slave Candy"
+	return "Рабская конфета"
 
 func getEffectDesc():
-	return "You really want to obey.."
+	return "Ты так и жаждешь повиноваться..."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/love-injection.png"

@@ -4,7 +4,7 @@ func _init():
 	id = Buff.GagBuff
 
 func getVisibleDescription():
-	return "Gags the wearer"
+	return "Надевает на носителя кляп"
 
 func apply(_buffHolder):
 	_buffHolder.gagged = true

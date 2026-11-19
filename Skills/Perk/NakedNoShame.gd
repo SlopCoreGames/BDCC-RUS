@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Голая и гордая"
 
 func getVisibleDescription():
-	return "You no longer feel ashamed when you don't wear any clothes, you are comfortable being naked"
+	return "Вы больше не чувствуете стыда, когда на вас нет одежды; вам комфортно ходить голышом."
 
 func getSkillTier():
 	return 0

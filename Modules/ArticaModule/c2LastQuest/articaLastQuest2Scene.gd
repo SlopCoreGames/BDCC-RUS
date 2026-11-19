@@ -142,7 +142,7 @@ func _run():
 			saynn("[say=rahi]Она п-понимает... кхх... с-сейчас... П-прости... ик...[/say]")
 
 		var masLevel = getModule("RahiModule").getSkillScore("rahiSkillMasochist")
-		saynn("Ты не отводишь взгляда, и в твоих глазах читается чистая злоба."+str(" Strangely enough, her body is clearly aroused, her nips poking through the shirt as you choke her.." if masLevel > 6 else "")+"")
+		saynn("Ты не отводишь взгляда, и в твоих глазах читается чистая злоба."+str(" Как ни странно, её тело явно возбуждено: соски проступают сквозь рубашку, пока ты сжимаешь ей горло..." if masLevel > 6 else "")+"")
 
 		saynn("[say=pc]Правда?[/say]")
 
@@ -325,7 +325,7 @@ func _run():
 
 		saynn("Артика смотрит тебе прямо в глаза... и её взгляд так и искрится...")
 
-		saynn("[say=artica]Ты помог раскрыть мою порочную натуру... И теперь я буду вечно жаждать раздвигать перед тобой ноги..."+str(" And carry your pups.." if GM.pc.hasPenis() else "")+""+str(" All while my useless cock is locked away until you need it.. or be it forever too.." if getCharacter("artica").isWearingChastityCage() else "")+"[/say]")
+		saynn("[say=artica]Ты помог раскрыть мою порочную натуру... И теперь я буду вечно жаждать раздвигать перед тобой ноги..."+str(" И вынашиваешь твоих щенков..." if GM.pc.hasPenis() else "")+""+str(" И всё это время мой бесполезный член заперт, пока он тебе не понадобится... или так и останется запертым навсегда..." if getCharacter("artica").isWearingChastityCage() else "")+"[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "artica_kneels")
 	if(state == "artica_kneels"):
@@ -334,7 +334,7 @@ func _run():
 
 		saynn("[say=artica]Нет ничего, чего бы я желала больше.. чем быть твоей шлюхой.. сучкой на поводке.. племенной сукой.. производительницей щенков.. нюхачкой промежности.. девкой в целомудрии.. секс-игрушкой..[/say]")
 
-		saynn("Застенчивая флафферша.. которая боялась издать даже слишком громкий звук.. теперь унижается перед тобой.. стоя на коленях.. с гордостью выставляя напоказ свои подпрыгивающие сиськи"+str(", pregnant belly " if getCharacter("artica").isVisiblyPregnant() else "")+", член и пизда..")
+		saynn("Застенчивая флафферша.. которая боялась издать даже слишком громкий звук.. теперь унижается перед тобой.. стоя на коленях.. с гордостью выставляя напоказ свои подпрыгивающие сиськи"+str(", беременный живот " if getCharacter("artica").isVisiblyPregnant() else "")+", член и пизда..")
 
 		saynn("[say=artica]Пожалуйста.. Сделай меня своей.. Пометь меня так, как захочешь..[/say]")
 
@@ -386,7 +386,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_crotchface"):
 		playAnimation(StageScene.ChairCrotchSniff, "grind", {pc="artica", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Мечение... ты точно знаешь, как пометить эту девчонку. Ты толкаешь её на кровать... а затем хватаешь её лицо и с силой прижимаешь к своему члену!"+str(" You make sure to grind your wet, needy pussy against that snout, forcing your scent into her fur and also making her breathe it in." if (GM.pc.hasReachableVagina() && !GM.pc.hasReachablePenis()) else "")+""+str(" You make sure to push her snout against your ballsack, forcing your scent into her fur while also making her breathe it in." if (!GM.pc.hasReachableVagina() && GM.pc.hasReachablePenis()) else "")+"")
+		saynn("Мечение... ты точно знаешь, как пометить эту девчонку. Ты толкаешь её на кровать... а затем хватаешь её лицо и с силой прижимаешь к своему члену!"+str(" Ты старательно втираешься своей мокрой, жаждущей киской в её морду, заставляя её впитывать твой запах и вдыхать его." if (GM.pc.hasReachableVagina() && !GM.pc.hasReachablePenis()) else "")+""+str(" Ты старательно прижимаешь её морду к своему мошонке, заставляя её впитывать твой запах и вдыхать его." if (!GM.pc.hasReachableVagina() && GM.pc.hasReachablePenis()) else "")+"")
 
 		saynn("[say=pc]Ты моя шлюшка. Моя личная шлюшка. Поняла?[/say]")
 
@@ -458,7 +458,7 @@ func _react(_action: String, _args):
 		processTime(3*60)
 		setFlag("ArticaModule.LQArticaGotDreamCatcher", true)
 		getCharacter("artica").updateBodyparts()
-		addMessage("Artica + Rahi scene unlocked")
+		addMessage("Сцена Артика + Рахи разблокирована")
 
 	if(_action == "artica_pc_alone"):
 		processTime(3*60)
@@ -466,7 +466,7 @@ func _react(_action: String, _args):
 	if(_action == "artica_kneels"):
 		processTime(3*60)
 		addExperienceToPlayer(500)
-		addMessage("Task completed")
+		addMessage("Задание выполнено")
 
 	if(_action == "do_headpats"):
 		processTime(3*60)

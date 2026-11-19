@@ -278,7 +278,7 @@ func _run():
 			
 			saynn("[say=alexrynard]Ну, мне пора возвращаться. Ты знаешь, где выход и где меня искать.[/say]")
 			
-			saynn("Лисица направляется обратно в коридор, а ты просто откидываешься на спинку стула,"+str(" holding your pregnant belly" if GM.pc.isVisiblyPregnant() else "")+" с признаться, глупой улыбкой на лице, а на языке всё ещё ощущается фантомный привкус сахара.")
+			saynn("Лисица направляется обратно в коридор, а ты просто откидываешься на спинку стула,"+str(" гладить свой беременный живот" if GM.pc.isVisiblyPregnant() else "")+" с признаться, глупой улыбкой на лице, а на языке всё ещё ощущается фантомный привкус сахара.")
 			
 			saynn("Тебе нужно будет сделать что-нибудь приятное для этой лисицы, когда представится случай...")
 			
@@ -393,7 +393,7 @@ func _run():
 			
 			saynn("По его взгляду понятно: убедить его не получится, по крайней мере, пока что.")
 			
-			addMessage("This content isn't done. Sorry about that -Ace")
+			addMessage("Этот контент еще не готов. Сорян — Ace")
 			
 			increaseModuleFlag("AcePregExpac", "Alex_TimesMilkingPlayer", 1)
 			
@@ -440,4 +440,4 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Hello fuckers. This isn't my first devlog but its the one most people are gonna see. Unfortunately I have forgotten most of my past rantings so you're gonna have to find the other dev commentary for them. So instead I will just leave it at 1. Alex is good boy and needs more love and 2. I am aware most of the content he isnt done. Give it time. While you wait Join the BDCC discord and ping me to tell me how much my writing sucks. Or is great. I mean you've probably seen my mod descriptions I couldn't get more insane. BDCC Skibidi Toilet Species Mod confirmed 37th of Febtoberuary."
+	return "Здорово, ублюдки. Это не мой первый девлог, но именно его увидит большинство. К сожалению, я забыл почти все свои прошлые высеры, так что ищите другие комментарии разработчика. Поэтому просто оставлю вот что: 1. Алекс — хороший мальчик, и ему нужно больше любви, и 2. Я в курсе, что большая часть контента еще не готова. Дайте мне время. А пока ждете — залетайте в дискорд BDCC и тегайте меня, чтобы сказать, насколько же херово я пишу. Ну, или насколько круто. В смысле, вы наверняка видели описания моих модов, безумнее уже некуда. Мод на виды Скибиди-туалетов для BDCC подтвержден 37-го февраляря."

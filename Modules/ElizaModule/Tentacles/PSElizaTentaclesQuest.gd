@@ -9,15 +9,15 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Eliza wants you to bring her a single plant egg. She didn't explain why exactly she needs one.")
+	result.append("Элиза хочет, чтобы ты принес ей одно растительное яйцо. Зачем именно оно ей нужно — она толком не объяснила.")
 	
 	if(getFlag("ElizaModule.tent_firstegg", false)):
-		result.append("Eliza needs more plant eggs to be able to create a perfect egg! Each egg is gonna reduce the final cost. You have given her "+str(getFlag("ElizaModule.tent_eggs", 0))+" egg"+("s" if (getFlag("ElizaModule.tent_eggs", 0) != 1) else "")+".")
+		result.append("Элизе нужно больше растительных яиц, чтобы создать идеальное яйцо! Каждое яйцо снижает итоговую стоимость. Ты принес ей "+str(getFlag("ElizaModule.tent_eggs", 0))+" egg"+("s" if (getFlag("ElizaModule.tent_eggs", 0) != 1) else "")+".")
 	
 	if(getFlag("ElizaModule.tent_born", false)):
-		result.append("You now have a tentacle monster in your cell. Enjoy!")
+		result.append("Теперь в твоей камере живет монстр-щупальце. Наслаждайся!")
 	if(getFlag("ElizaModule.tent_elizaAnnoy", false)):
-		result.append("Eliza has given you one of the tentacle eggs that she laid!")
+		result.append("Элиза отдала тебе одно из тех яиц-щупалец, что она отложила!")
 	
 	return result
 

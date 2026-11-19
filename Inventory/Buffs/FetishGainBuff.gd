@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Fetish gain speed "+text+"%"
+	return "Скорость получения фетишей "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.FetishGainSpeed, amount/100.0)

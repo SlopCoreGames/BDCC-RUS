@@ -14,7 +14,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
 		
 		saynn("Розетка показывает список улучшений, которые она может провести в твоей камере.")
-		addButtonAt(14, "Back", "Enough shopping", "endthescene")
+		addButtonAt(14, "Назад", "Хватит покупок", "endthescene")
 		
 		var howManySlavesSpaces = getModule("NpcSlaveryModule").getSlavesSpace()
 		if(howManySlavesSpaces == 0):
@@ -36,7 +36,7 @@ func _run():
 			sayn("Установите сибиан в своей камере — вы сможете использовать её сами или давать в награду своим рабыням.")
 		else:
 			sayn("Установить сибиан в камере.")
-		saynn("Цена: "+((str(sybianPrice)+" credits") if !hasSybian else "Bought!")+"")
+		saynn("Цена: "+((str(sybianPrice)+" credits") if !hasSybian else "Куплено!")+"")
 		if(!hasSybian):
 			addButtonWithChecks("Сибиан", "Оплатить установку сибиана в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasSybian", sybianPrice, "Sybian machine has been installed in your cell"], [[ButtonChecks.HasCredits, sybianPrice]])
 	
@@ -47,7 +47,7 @@ func _run():
 			sayn("Установите в своей камере пыточный аппарат «деревянная лошадка», чтобы наказывать им своих рабынь.")
 		else:
 			sayn("Установить «деревянную лошадку» в своей камере. Просто так, без особой причины.")
-		saynn("Цена: "+((str(horsePrice)+" credits") if !hasHorse else "Bought!")+"")
+		saynn("Цена: "+((str(horsePrice)+" credits") if !hasHorse else "Куплено!")+"")
 		if(!hasHorse):
 			addButtonWithChecks("Деревянная лошадь", "Оплатить установку «деревянной лошадки» в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasWoodenHorse", horsePrice, "Wooden horse has been installed in your cell"], [[ButtonChecks.HasCredits, horsePrice]])
 	

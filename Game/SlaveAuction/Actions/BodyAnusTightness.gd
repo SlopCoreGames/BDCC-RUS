@@ -15,21 +15,21 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("AnusTight") && _slaveTraits["AnusTight"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Now, I know you’ve all been eyeing that ass. Let me tell you, this slave has a tight little asshole just begging for a good stretch.",
-			"Trust me when I say, this slave’s butthole hasn’t seen much action. Tight as a vice, and ready for whoever claims it!",
-			"Take a look at this beauty’s ass. I can guarantee you, {slave.his} hole is untouched, tight as can be - just waiting for the right owner to break it in.",
-			"This slave’s tailhole? A perfect little knot of tension, waiting for a good knot. Haven’t seen one this tight in a long time.",
-			"You might not be able to see it from here, but take my word for it - {slave.his} asshole is tight. This slave’s going to squeeze around you like nothing else.",
-			"This one’s ass? Barely used, barely stretched. Whoever gets {slave.himHer} is going to have the privilege of being the first to really open {slave.himHer} up.",
+			"Так, я знаю, что вы все пялитесь на эту задницу. Позвольте мне сказать: у этой рабыни узенькое анусное отверстие, которое так и просит хорошей растяжки.",
+			"Поверьте мне на слово, задница этой рабыни еще не видела особого применения. Сжата как тиски и готова к тому, кто ее заберет!",
+			"Взгляните на эту красотку. Гарантирую, дырочка {slave.his} еще не тронута и невероятно тугая — она только и ждет достойного хозяина, чтобы тот ее размял.",
+			"Задний проход этой рабыни? Настоящий узел из мышц, ждущий хорошей разрядки. Давно я не видел ничего настолько тугого.",
+			"Отсюда может и не видно, но поверьте мне — анус {slave.his} очень узкий. Эта рабыня будет сжимать вас так, как ни одна другая.",
+			"Задница этой штучки? Почти не использовалась, почти не растягивалась. Тому, кто заберет {slave.himHer}, выпадет честь стать первым, кто по-настоящему раздвинет {slave.himHer}.",
 		]))
 	if(_slaveTraits.has("AnusLoose") && _slaveTraits["AnusLoose"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Now if you’re looking for an ass that’s already been worked over, you’re in luck. This slave’s asshole is loose, very loose. No need to be gentle!",
-			"Take a good look at this ass. This slave’s butthole has seen plenty of action - it’s been stretched and used to the point where it can take anything you throw at it.",
-			"You want a slave who can handle anything back there? This one’s got a loose hole that’s been trained for every size. No complaints, just pure satisfaction.",
-			"If you’re into a well-worn tailhole, look no further. This one’s been stretched far and wide—perfect for those of you who like to play rough.",
-			"This slave’s ass has been through it all. Loose, gaping, and ready to take whatever you’ve got. Trust me, {slave.he} will keep coming back for more.",
-			"Let’s not beat around the bush - {slave.his} butthole is wide open and always ready for more. It’s seen a lot of use, and it’s more than prepared to serve you however you like.",
+			"А если вы ищете задницу, которую уже вовсю использовали, то вам повезло. Анус этой рабыни расслаблен, очень расслаблен. Можно не церемониться!",
+			"Рассмотрите эту задницу получше. Дырка этой рабыни уже повидала виды — ее так растянули и использовали, что она готова принять всё, что вы в нее засунете.",
+			"Хотите рабыню, которая выдержит всё, что вы творите сзади? У этой дырочка уже растянута и натренирована под любой размер. Никаких жалоб — только чистое наслаждение.",
+			"Если вам по душе хорошо раздолбанная задница, то вы по адресу. Эту уже растянули во всех направлениях — идеально для тех, кто любит поиграть пожестче.",
+			"Задница этой рабыни повидала всякое. Свободная, зияющая и готовая принять всё, что вы в неё запихнете. Поверьте, {slave.he} будет просить добавки снова и снова.",
+			"Давайте не будем ходить вокруг да около — анус {slave.his} широко раскрыт и всегда готов к большему. Он повидал немало, и он более чем готов служить вам так, как вам заблагорассудится.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Mind, mightChance())

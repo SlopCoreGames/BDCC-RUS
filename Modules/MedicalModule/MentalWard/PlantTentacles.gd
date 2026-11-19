@@ -11,7 +11,7 @@ func getGender():
 	return Gender.Other
 	
 func getSmallDescription() -> String:
-	return "Some green tentacles that really want to grab you.."
+	return "Какие-то зеленые щупальца, которые так и норовят тебя схватить..."
 
 func getSpecies():
 	return ["unknown"]

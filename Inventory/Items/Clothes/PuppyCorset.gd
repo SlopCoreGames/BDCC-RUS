@@ -23,15 +23,15 @@ func getTags():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "takes off your corset"
+		return "снимает твой корсет"
 	else:
-		return "take off your corset"
+		return "снять корсет"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on your corset"
+		return "надевает твой корсет"
 	else:
-		return "put on your corset"
+		return "надеть корсет"
 
 func getRiggedParts(_character):
 	if(itemState != null && itemState.isRemoved()):

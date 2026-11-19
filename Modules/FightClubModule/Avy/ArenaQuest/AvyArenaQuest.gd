@@ -9,13 +9,13 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Doctor Quinn has asked me to steal a special plant with aphrodisiac properties. She said you can find them in the Green Houses.")
+	result.append("Доктор Куинн попросила меня украсть особенное растение с афродизиакальными свойствами. Она сказала, что их можно найти в теплицах.")
 
 	if(getFlag("FightClubModule.StolePlantForEliza")):
-		result.append("You stole the plant. Time to return to doctor Quinn. You can find her in the lobby of the medical wing.")
+		result.append("Ты украл растение. Пора возвращаться к доктору Куинн. Найти её можно в вестибюле медицинского крыла.")
 
 	if(getFlag("FightClubModule.ReturnedPlantToEliza")):
-		result.append("Doctor Quinn has prepared the drug and gave it to Risha, meaning that Avy should now have it. Go back to Avy and challenge her!")
+		result.append("Доктор Куинн приготовила препарат и отдала его Рише, а значит, теперь он должен быть у Эви. Возвращайся к Эви и брось ей вызов!")
 
 	return result
 

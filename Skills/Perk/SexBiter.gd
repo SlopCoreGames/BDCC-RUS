@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Извращенная шалава"
 
 func getVisibleDescription():
-	return "You know how to use your mouth more effectively, your bites cause more bleeding and do more damage"
+	return "Ты знаешь, как использовать свой рот эффективнее: твои укусы вызывают больше кровотечения и наносят больше урона."
 
 func getSkillTier():
 	return 0

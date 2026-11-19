@@ -61,7 +61,7 @@ func addButton(text: String, tooltip: String = "", method: String = "", args = [
 func addDisabledButton(text: String, tooltip: String = ""):
 	GM.ui.addDisabledButton(text, tooltip)
 
-func addButtonUnlessLate(text: String, tooltip: String = "", method: String = "", args = [], latetext: String = "It's way too late for that"):
+func addButtonUnlessLate(text: String, tooltip: String = "", method: String = "", args = [], latetext: String = "Для этого уже слишком поздно"):
 	if(GM.main.isVeryLate()):
 		addDisabledButton(text, latetext)
 	else:
@@ -115,5 +115,5 @@ func addMessage(theMessage: String):
 
 func addExperienceToPlayer(ex: int, showMessage: bool = true):
 	if(showMessage):
-		addMessage("You received "+str(ex)+" experience")
+		addMessage("Вы получили "+str(ex)+" experience")
 	GM.pc.addExperience(ex)

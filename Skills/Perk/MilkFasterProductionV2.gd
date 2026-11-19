@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Любитель молочка"
 
 func getVisibleDescription():
-	return "You're a very milky cow. Your proud girls began producing milk 50% faster"
+	return "Ты — настоящая молочная корова. Твои гордые девчонки начали давать молоко на 50% f быстрее"
 
 func getRequiredPerks():
 	return [Perk.MilkFasterProduction]

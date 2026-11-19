@@ -79,7 +79,7 @@ func _run():
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.SexPortalOral, "tease", {pc="artica", onlyRight=true, bodyState={naked=true, hard=true}})
 		removeCharacter("alexrynard")
-		saynn("Артика влетает в свою камеру"+str(", quickly throws her clothes on the bed" if !isNaked else "")+"и натягивает неприметные фиолетовые трусики.")
+		saynn("Артика влетает в свою камеру"+str(", быстро швыряет свою одежду на кровать" if !isNaked else "")+"и натягивает неприметные фиолетовые трусики.")
 
 		saynn("[say=artica]..просто трусики?.. По крайней мере, сидят плотно..[/say]")
 

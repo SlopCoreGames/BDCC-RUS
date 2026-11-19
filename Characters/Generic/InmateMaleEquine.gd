@@ -11,7 +11,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Generic male inmate"
+	return "Обычный заключенный-мужчина"
 
 func getSpecies():
 	return ["equine"]

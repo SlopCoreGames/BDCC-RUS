@@ -219,7 +219,7 @@ margin_top = 209.0
 margin_right = 754.0
 margin_bottom = 230.0
 bbcode_enabled = true
-bbcode_text = "[center]An erotic text-based rpg about being a prisoner in a space prison.[/center]"
+bbcode_text = "[center]Эротическая текстовая RPG о жизни заключенного в космической тюрьме.[/center]"
 text = "Эротическая текстовая RPG о жизни заключенного в космической тюрьме."
 fit_content_height = true
 
@@ -255,7 +255,7 @@ margin_right = 726.0
 margin_bottom = 70.0
 custom_fonts/normal_font = SubResource( 5 )
 bbcode_enabled = true
-bbcode_text = "This game contains a lot of adult themes including sexual and fetish content and is meant to be played by adults only"
+bbcode_text = "Эта игра содержит множество взрослых тем, включая сексуальный контент и фетиши, и предназначена только для взрослой аудитории"
 text = "Эта игра содержит множество взрослых тем, включая сексуальный контент и фетиши, и предназначена только для взрослой аудитории"
 fit_content_height = true
 __meta__ = {
@@ -275,7 +275,7 @@ margin_top = 457.0
 margin_right = 754.0
 margin_bottom = 478.0
 bbcode_enabled = true
-bbcode_text = "[right]Created by Rahi[/right]"
+bbcode_text = "[right]Создано Rahi[/right]"
 text = "Создано Rahi"
 fit_content_height = true
 
@@ -324,7 +324,7 @@ anchor_bottom = 0.0
 margin_right = 148.0
 margin_bottom = 26.0
 text = "Продолжить"
-myTooltipDesc = "Load the latest save and continue playing"
+myTooltipDesc = "Загрузить последнее сохранение и продолжить игру"
 myShortcutKey = "1"
 
 [node name="NewGameButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -334,7 +334,7 @@ margin_left = 152.0
 margin_right = 300.0
 margin_bottom = 26.0
 text = "Новая игра"
-myTooltipDesc = "Start a new game"
+myTooltipDesc = "Начать новую игру"
 myShortcutKey = "2"
 
 [node name="LoadGameButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -344,7 +344,7 @@ margin_left = 304.0
 margin_right = 452.0
 margin_bottom = 26.0
 text = "Загрузить игру"
-myTooltipDesc = "Load a previous game"
+myTooltipDesc = "Загрузить предыдущую игру"
 myShortcutKey = "3"
 
 [node name="OptionsButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -354,7 +354,7 @@ margin_left = 456.0
 margin_right = 603.0
 margin_bottom = 26.0
 text = "Настройки"
-myTooltipDesc = "Open the settings menu"
+myTooltipDesc = "Открыть меню настроек"
 myShortcutKey = "4"
 
 [node name="CreditsButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -364,7 +364,7 @@ margin_left = 607.0
 margin_right = 754.0
 margin_bottom = 26.0
 text = "Титры"
-myTooltipDesc = "Check the credits"
+myTooltipDesc = "Посмотреть титры"
 myShortcutKey = "5"
 
 [node name="DiscordButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -374,7 +374,7 @@ margin_top = 30.0
 margin_right = 148.0
 margin_bottom = 56.0
 text = "Присоединиться к Discord"
-myTooltipDesc = "Join the game's discord server (18+ only)"
+myTooltipDesc = "Присоединиться к Discord-серверу игры (только 18+)"
 myShortcutKey = "Q"
 
 [node name="SexToysButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -385,7 +385,7 @@ margin_top = 30.0
 margin_right = 300.0
 margin_bottom = 56.0
 text = "Buttplug.IO"
-myTooltipDesc = "Open the sextoy integration menu"
+myTooltipDesc = "Открыть меню интеграции с секс-игрушками"
 myShortcutKey = "W"
 
 [node name="DevToolsButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -396,7 +396,7 @@ margin_top = 30.0
 margin_right = 452.0
 margin_bottom = 56.0
 text = "Инструменты разработчика"
-myTooltipDesc = "Open the panel with the tools that are useful for content developers"
+myTooltipDesc = "Открыть панель инструментов для разработчиков контента"
 myShortcutKey = "E"
 
 [node name="ChangelogButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -407,7 +407,7 @@ margin_top = 30.0
 margin_right = 603.0
 margin_bottom = 56.0
 text = "Список изменений"
-myTooltipDesc = "View the project's changelog"
+myTooltipDesc = "Просмотреть список изменений проекта"
 myShortcutKey = "R"
 
 [node name="ModsButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -418,7 +418,7 @@ margin_top = 30.0
 margin_right = 754.0
 margin_bottom = 56.0
 text = "Моды"
-myTooltipDesc = "See what modules are loaded currently"
+myTooltipDesc = "Посмотреть список текущих загруженных модулей"
 myShortcutKey = "T"
 
 [node name="AutoTranslatorButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -429,7 +429,7 @@ margin_top = 60.0
 margin_right = 148.0
 margin_bottom = 86.0
 text = "Автопереводчик"
-myTooltipDesc = "Experimental feature that translates scenes on the fly"
+myTooltipDesc = "Экспериментальная функция для перевода сцен на лету"
 myShortcutKey = "A"
 
 [node name="DatapackButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -440,7 +440,7 @@ margin_top = 60.0
 margin_right = 300.0
 margin_bottom = 86.0
 text = "Датапаки"
-myTooltipDesc = "Manage or create datapacks"
+myTooltipDesc = "Управление датапаками или их создание"
 myShortcutKey = "S"
 
 [node name="TroubleshootingButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -451,7 +451,7 @@ margin_top = 60.0
 margin_right = 452.0
 margin_bottom = 86.0
 text = "Устранение неполадок"
-myTooltipDesc = "Troubleshoot problems with the game"
+myTooltipDesc = "Устранение проблем и ошибок в игре"
 myShortcutKey = "D"
 
 [node name="QuitButton" parent="MainHBox/CenterAreaVBox/MainVBox/GridContainer" instance=ExtResource( 11 )]
@@ -462,7 +462,7 @@ margin_top = 60.0
 margin_right = 603.0
 margin_bottom = 86.0
 text = "Выход"
-myTooltipDesc = "See you space cowboy..."
+myTooltipDesc = "Увидимся, космический ковбой..."
 myShortcutKey = "F"
 
 [node name="DevToolsScreen" type="VBoxContainer" parent="MainHBox/CenterAreaVBox"]
@@ -502,7 +502,7 @@ margin_left = 152.0
 margin_right = 300.0
 margin_bottom = 26.0
 text = "Конвертер сцен"
-myTooltipDesc = "A tool that can convert scenes written in a simple text format into code"
+myTooltipDesc = "Инструмент для конвертации сцен из текстового формата в код"
 myShortcutKey = "2"
 
 [node name="DevLikesGenerator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]

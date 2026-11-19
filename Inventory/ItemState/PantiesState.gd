@@ -78,9 +78,9 @@ func coversBodyparts():
 func getStateText():
 	var text = ""
 	if(pulledDown):
-		text += casualName.capitalize()+" are pulled down. "
+		text += casualName.capitalize()+" спущены. "
 	if(removed):
-		text = casualName.capitalize()+" are removed. "
+		text = casualName.capitalize()+" сняты. "
 	return text
 
 func getHidesParts(_character):
@@ -96,7 +96,7 @@ func getHidesParts(_character):
 
 func getDamageDescription():
 	if(clothesDamaged):
-		return "Pieces of fabric are ripped off, exposing private bits"
+		return "Куски ткани оторваны, обнажая интимные места."
 	return ""
 
 func canDamage():
@@ -108,7 +108,7 @@ func isDamaged():
 func receiveDamage():
 	if(!clothesDamaged):
 		clothesDamaged = true
-		return [true, "Huge chunks of the fabric got ripped off, exposing private bits!"]
+		return [true, "Огромные куски ткани оторваны, обнажая самые сокровенные места!"]
 	
 	return .receiveDamage()
 

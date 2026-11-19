@@ -21,7 +21,7 @@ func getProgress():
 	var s6DateHap:bool = getFlag("ElizaModule.s6DateHap", false)
 	var s7hap:bool = getFlag("ElizaModule.s7hap", false)
 
-	result.append("Eliza Quinn has told you to do 3 nursery bounties if you want to get a chance to become her lab assistant.\nApproach the bounty board in the nursery to see today's bounties. You have currently done "+str(amountOfNurseryTasks)+" task"+("s" if amountOfNurseryTasks != 1 else "")+".")
+	result.append("Элиза Куинн велела тебе выполнить 3 заказа в детском отделении, если хочешь получить шанс стать её лаборантом.\nПодойди к доске объявлений в детском отделении, чтобы увидеть сегодняшние заказы. На данный момент ты выполнил(а): "+str(amountOfNurseryTasks)+" task"+("s" if amountOfNurseryTasks != 1 else "")+".")
 	
 	var nurseryTasks:Array = GM.main.SCI.peekNurseryTasks()
 	if(!nurseryTasks.empty()):
@@ -33,31 +33,31 @@ func getProgress():
 		result.append(taskText)
 	
 	if(getFlag("ElizaModule.s0hap") && !s1hap && amountOfNurseryTasks >= 3):
-		result.append("You have completed enough bounties, go see Eliza!")
+		result.append("Ты выполнил(а) достаточно заказов, иди к Элизе!")
 	
 	if(s1hap):
-		result.append("Eliza wants you to find a 'strange pill' and bring it to her. Some of the inmates might have them but they won't share unless you make them. Check the 'Special Bounty' on the bounty board in the nursery to help you find inmates that possess these strange drugs.")
+		result.append("Элиза хочет, чтобы ты нашел(ла) «странную таблетку» и принес(ла) её ей. У некоторых заключенных они могут быть, но они не поделятся ими, пока ты их не заставишь. Проверь раздел «Особый заказ» на доске объявлений в детском отделении, чтобы найти тех, у кого есть эти странные наркотики.")
 	
 	if(s2hap):
-		result.append("You now have access to the chemistry lab! Find more 'strange pills' and use the lab to discover what they do and how to make them. You need at least 3 pills unlocked in order to progress the story. You currently have "+str(amountOfPillsUnlocked)+".")
+		result.append("Теперь тебе открыт доступ в химическую лабораторию! Ищи новые «странные таблетки» и используй лабораторию, чтобы выяснить, что они делают и как их изготовить. Чтобы продвинуться по сюжету, тебе нужно разблокировать как минимум 3 таблетки. Сейчас у тебя: "+str(amountOfPillsUnlocked)+".")
 	
 	if(s3hap):
-		result.append("You can now explore the drug den! You can find the entrance in the yard area. You need at least 8 pills unlocked in order to progress the story. You currently have "+str(amountOfPillsUnlocked)+". [b]You also need at least 1 transformation tested[/b]! To test a transformation, eat the pill yourself or feed it to someone. Wait until the transformation reaches its final stage, then visit Eliza yourself or bring the transformed person. You currently have "+str(amountOfPillsTested)+" pill"+("s" if amountOfPillsTested != 1 else "")+" tested.")
+		result.append("Теперь ты можешь исследовать притон! Вход в него находится во внутреннем дворе. Чтобы продвинуться по сюжету, тебе нужно разблокировать как минимум 8 таблеток. Сейчас у тебя: "+str(amountOfPillsUnlocked)+". [b]Также тебе нужно протестировать как минимум одну трансформацию[/b]! Чтобы протестировать трансформацию, съешь таблетку сам(а) или скорми её кому-нибудь. Дождись, пока трансформация достигнет финальной стадии, а затем приди к Элизе сам(а) или приведи трансформированного человека. Сейчас у тебя: "+str(amountOfPillsTested)+" pill"+("s" if amountOfPillsTested != 1 else "")+" tested.")
 	
 	if(s4hap):
-		result.append("You have met Eliza's mother.. You need at least 12 pills unlocked in order to progress the story. You currently have "+str(amountOfPillsUnlocked)+". You also need at least 3 transformations tested. You currently have "+str(amountOfPillsTested)+".")
+		result.append("Вы встретились с матерью Элизы... Чтобы продвинуться по сюжету, вам нужно разблокировать как минимум 12 таблеток. Сейчас у вас "+str(amountOfPillsUnlocked)+". Также необходимо протестировать как минимум 3 трансформации. Сейчас у вас "+str(amountOfPillsTested)+".")
 	
 	if(s5hap):
-		result.append("Eliza can now automatically milk your slaves if you bring them to her. You need at least 15 pills unlocked in order to progress the story. You currently have "+str(amountOfPillsUnlocked)+". You also need at least 6 transformations tested. You currently have "+str(amountOfPillsTested)+".")
+		result.append("Теперь Элиза может автоматически доить ваших рабынь, если вы приведете их к ней. Чтобы продвинуться по сюжету, нужно разблокировать как минимум 15 таблеток. Сейчас у вас "+str(amountOfPillsUnlocked)+". Также необходимо протестировать как минимум 6 трансформаций. Сейчас у вас "+str(amountOfPillsTested)+".")
 	
 	if(s6hap && !s6DateHap):
-		result.append("Eliza has offered you to meet after her shift ends, so you can rest and get to know each other a little better. Meet her in the medical lobby after 23:00 in order to progress the story.")
+		result.append("Элиза предложила встретиться после окончания смены, чтобы вы могли отдохнуть и получше узнать друг друга. Чтобы продолжить историю, встретьтесь с ней в медицинском лобби после 23:00.")
 	
 	if(s6DateHap):
-		result.append("Eliza needs your help to discover and test all the drugs. Unlock [b]all[/b] of the drugs (You currently have "+str(GM.main.SCI.getUnlockedStrangePillsCount())+"/"+str(GM.main.SCI.getTotalStrangePillCount())+" drugs unlocked) and test at least [b]10[/b] of them (You have "+str(GM.main.SCI.getTestedStrangePillsCount())+"/10 tested). After that, you can approach her to see what happens..")
+		result.append("Элизе нужна ваша помощь, чтобы найти и протестировать все препараты. Разблокируйте [b]все[/b] препараты (сейчас у вас разблокировано "+str(GM.main.SCI.getUnlockedStrangePillsCount())+"/"+str(GM.main.SCI.getTotalStrangePillCount())+" таблеток) и протестируйте как минимум [b]10[/b] из них (у вас протестировано "+str(GM.main.SCI.getTestedStrangePillsCount())+"/10). После этого вы сможете подойти к ней и посмотреть, что будет...")
 	
 	if(s7hap):
-		result.append("Eliza decided to stay for now! You still have full access to her chemistry lab.")
+		result.append("Элиза решила пока остаться! У вас по-прежнему есть полный доступ к её химической лаборатории.")
 	
 	return result
 

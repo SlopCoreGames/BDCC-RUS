@@ -28,7 +28,7 @@ func getChatColor():
 	return "#F26AB5"
 	
 func getSmallDescription() -> String:
-	return "An elegant feline with pastel yellow fur and some small purple marks sprinkled around. Has deep eyes of a mature woman. Wears a lab coat"
+	return "Элегантная кошка с пастельно-жёлтой шерстью, усыпанной мелкими фиолетовыми пятнышками. У неё глубокий взгляд зрелой женщины. Одета в лабораторный халат."
 
 func getSpecies():
 	return ["feline"]

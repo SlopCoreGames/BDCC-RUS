@@ -4,7 +4,7 @@ func _init():
 	sceneID = "Eliza6DateOfferScene"
 
 func _reactInit():
-	addMessage("Task updated!")
+	addMessage("Задача обновлена!")
 
 func _run():
 	if(state == ""):

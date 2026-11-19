@@ -44,9 +44,9 @@ func getA():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" were locked onto your hands"
+		return getAStackNameCapitalize()+" были заперты на твоих руках"
 	else:
-		return getAStackNameCapitalize()+" were locked onto {receiver.nameS} hands"
+		return getAStackNameCapitalize()+" были заперты на руках {receiver.nameS}"
 
 func updateDoll(doll: Doll3D):
 	doll.setState("gloves", "mittens")

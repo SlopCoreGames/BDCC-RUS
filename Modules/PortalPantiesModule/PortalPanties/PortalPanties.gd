@@ -69,15 +69,15 @@ func generateRestraintData():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "temporary disables and slips down your panties"
+		return "временно отключает и сползает по твоим трусикам"
 	else:
-		return "temporary disable and slip down your panties"
+		return "временное отключение и сползание по твоим трусикам"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on the panties"
+		return "надевает трусики"
 	else:
-		return "put on the panties"
+		return "надеть трусики"
 
 func getRiggedParts(_character):
 	return {

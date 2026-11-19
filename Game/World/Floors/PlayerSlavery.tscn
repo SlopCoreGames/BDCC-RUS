@@ -7,35 +7,33 @@
 
 [node name="PSMineRoom" parent="." index="0" instance=ExtResource( 1 )]
 position = Vector2( 128, 0 )
-roomName = "Cages"
+roomName = "Клетки"
 roomID = "psmine_sleep"
-roomDescription = "A wide pit that's carved into black rock. A huge metal cage fills most of the space, its bars heavy and cold.
-
-Inside, rows of worn blankets and shivering bodies. There is where the slaves sleep."
+roomDescription = "Широкая яма, высеченная в черной скале. Большая металлическая клетка занимает почти все пространство, ее прутья тяжелые и холодные.\n\nВнутри — ряды поношенных одеял и дрожащих тел. Здесь спят рабы."
 roomSprite = 10
 gridColor = 6
 
 [node name="PSMineRoom2" parent="." index="1" instance=ExtResource( 1 )]
 position = Vector2( 192, 0 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_meet"
-roomDescription = "A narrow tunnel winds between jagged walls of dark stone. The ground is uneven underfoot and bits of gravel crunch with each step. Faint echoes drift from deeper within the rock."
+roomDescription = "Узкий туннель вьется между зазубренными стенами из темного камня. Почва под ногами неровная, а каждый шаг сопровождается хрустом гравия. Из глубины скал доносится слабое эхо."
 
 [node name="PSMineRoom3" parent="." index="2" instance=ExtResource( 1 )]
 position = Vector2( 192, -64 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_hide"
-roomDescription = "Narrow halls wind through jagged black stone. Sharp walls close in on both sides, and every footstep echoes on the hard, uneven floor."
+roomDescription = "Узкие коридоры петляют среди зазубренного черного камня. Острые стены подступают с обеих сторон, и каждый шаг гулким эхом отдается от твердого, неровного пола."
 
 [node name="PSMineRoom4" parent="." index="3" instance=ExtResource( 1 )]
 position = Vector2( 256, 0 )
-roomName = "Mineshafts"
-roomDescription = "Narrow halls wind through jagged black stone. Sharp walls close in on both sides, and every footstep echoes on the hard, uneven floor."
+roomName = "Шахты"
+roomDescription = "Узкие коридоры петляют среди зазубренного черного камня. Острые стены подступают с обеих сторон, и каждый шаг гулким эхом отдается от твердого, неровного пола."
 
 [node name="PSMineRoom46" parent="." index="4" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 256, 128 )
-roomName = "Landing spot"
+roomName = "Площадка"
 roomID = "psmine_exit"
 canWest = false
 canNorth = false
@@ -48,11 +46,9 @@ gridColor = 2
 [node name="PSMineRoom5" parent="." index="5" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 256, 64 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_boss"
-roomDescription = "A rough hole in the mountain is sealed by a thick voidsteel wall. A reinforced door stands shut in the middle, its surface scarred by some very old blows.
-
-No light seeps through its edges."
+roomDescription = "Грубое отверстие в горе запечатано толстой стеной из пустостали. Посреди нее стоит закрытая усиленная дверь, поверхность которой покрыта шрамами от каких-то очень древних ударов.\n\nС ее краев не пробивается ни единого лучика света."
 roomSprite = 11
 roomColor = 2
 gridColor = 2
@@ -60,9 +56,9 @@ gridColor = 2
 [node name="PSMineRoom6" parent="." index="6" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.8, 0.6, 1 )
 position = Vector2( 192, -128 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_entrance"
-roomDescription = "A gaping hole in the rock face leads into shadow. Rough edges of black stone frame the entrance, hinting at deeper tunnels within."
+roomDescription = "Зияющая дыра в скале уходит в тень. Грубые края черного камня обрамляют вход, намекая на наличие глубоких туннелей внутри."
 roomSprite = 4
 roomColor = 5
 gridColor = 5
@@ -70,105 +66,105 @@ gridColor = 5
 [node name="PSMineRoom7" parent="." index="7" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 192, -192 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_cartspawn"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 7
 
 [node name="PSMineRoom8" parent="." index="8" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, -192 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom9" parent="." index="9" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 256, -192 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom10" parent="." index="10" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 448, -192 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom11" parent="." index="11" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 256, -256 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 canWest = false
 roomColor = 8
 
 [node name="PSMineRoom12" parent="." index="12" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 320, -256 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom13" parent="." index="13" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 512, -192 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom14" parent="." index="14" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 192, -256 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom15" parent="." index="15" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 448, -128 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom16" parent="." index="16" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 192, -320 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 7
 
 [node name="PSMineRoom17" parent="." index="17" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 512, -128 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom18" parent="." index="18" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 192, -384 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom19" parent="." index="19" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, -320 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom20" parent="." index="20" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, -320 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom21" parent="." index="21" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 64, -256 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine5"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 canSouth = false
 roomColor = 7
 gridColor = 8
@@ -176,87 +172,87 @@ gridColor = 8
 [node name="PSMineRoom22" parent="." index="22" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 448, 0 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom23" parent="." index="23" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 512, 0 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom24" parent="." index="24" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 64, -192 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 7
 
 [node name="PSMineRoom25" parent="." index="25" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 0, -192 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom26" parent="." index="26" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( -64, -192 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 7
 
 [node name="PSMineRoom27" parent="." index="27" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, -128 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom28" parent="." index="28" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, -64 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom29" parent="." index="29" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 0, -64 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 7
 
 [node name="PSMineRoom30" parent="." index="30" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 320, -320 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 canWest = false
 roomColor = 7
 
 [node name="PSMineRoom31" parent="." index="31" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 384, -320 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom32" parent="." index="32" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 448, -320 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine8"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 roomColor = 7
 gridColor = 8
 
 [node name="PSMineRoom45" parent="." index="33" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 320, -384 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine7"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 canWest = false
 roomColor = 7
 gridColor = 8
@@ -264,21 +260,21 @@ gridColor = 8
 [node name="PSMineRoom33" parent="." index="34" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 320, -512 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom34" parent="." index="35" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 192, -512 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom35" parent="." index="36" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 256, -384 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine6"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 canEast = false
 roomColor = 7
 gridColor = 8
@@ -286,49 +282,49 @@ gridColor = 8
 [node name="PSMineRoom36" parent="." index="37" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -128, -320 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom37" parent="." index="38" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -192, -320 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom38" parent="." index="39" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -192, -384 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom39" parent="." index="40" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( -128, -192 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine3"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 roomColor = 7
 gridColor = 8
 
 [node name="PSMineRoom40" parent="." index="41" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -64, -256 )
-roomName = "Mineshafts"
-roomDescription = "Stony walls arch overhead in a low ceiling of black rock. Patches of faint light reveal uneven ground and scattered pebbles underfoot."
+roomName = "Шахты"
+roomDescription = "Каменные стены образуют низкий свод из черной породы. Пятна слабого света обнажают неровную землю и разбросанную под ногами гальку."
 roomColor = 8
 
 [node name="PSMineRoom41" parent="." index="42" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -64, -448 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomColor = 8
 
 [node name="PSMineRoom42" parent="." index="43" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 0, -256 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine4"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 canEast = false
 canSouth = false
 roomColor = 7
@@ -337,9 +333,9 @@ gridColor = 8
 [node name="PSMineRoom43" parent="." index="44" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 0, -128 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine1"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 canNorth = false
 canEast = false
 roomColor = 7
@@ -348,16 +344,16 @@ gridColor = 8
 [node name="PSMineRoom44" parent="." index="45" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( -64, -64 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "psmine_mine2"
-roomDescription = "Veins of ore streak the black walls here. Dust hangs in the air, and every surface gleams with mineral shine."
+roomDescription = "По черным стенам здесь тянутся рудные жилы. В воздухе висит пыль, а каждая поверхность блестит от минерального сияния."
 roomColor = 7
 gridColor = 8
 
 [node name="PSMilkCafeRoom" parent="." index="46" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1280, -192 )
-roomName = "Cafe's counter"
+roomName = "Прилавок в кафе"
 roomID = "pscafe_counter"
 roomSprite = 1
 roomColor = 4
@@ -365,7 +361,7 @@ roomColor = 4
 [node name="PSMilkCafeRoom7" parent="." index="47" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 1344, -192 )
-roomName = "Basement"
+roomName = "Подвал"
 roomID = "pscafe_door"
 roomSprite = 3
 roomColor = 8
@@ -374,7 +370,7 @@ gridColor = 7
 [node name="PSMilkCafeRoom8" parent="." index="48" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 1344, -256 )
-roomName = "Basement"
+roomName = "Подвал"
 roomID = "pscafe_cow"
 roomSprite = 1
 roomColor = 7
@@ -383,7 +379,7 @@ gridColor = 7
 [node name="PSMilkCafeRoom9" parent="." index="49" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 1408, -256 )
-roomName = "Small field"
+roomName = "Малое поле"
 roomID = "pscafe_eat"
 roomSprite = 2
 roomColor = 1
@@ -392,7 +388,7 @@ gridColor = 1
 [node name="PSMilkCafeRoom10" parent="." index="50" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 1408, -192 )
-roomName = "Basement"
+roomName = "Подвал"
 roomID = "pscafe_center"
 roomColor = 7
 gridColor = 7
@@ -400,7 +396,7 @@ gridColor = 7
 [node name="PSMilkCafeRoom23" parent="." index="51" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 1472, -192 )
-roomName = "Basement"
+roomName = "Подвал"
 roomID = "pscafe_right"
 roomColor = 7
 gridColor = 7
@@ -408,7 +404,7 @@ gridColor = 7
 [node name="PSMilkCafeRoom24" parent="." index="52" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 1472, -256 )
-roomName = "Small field"
+roomName = "Малое поле"
 roomID = "pscafe_field"
 roomColor = 1
 gridColor = 1
@@ -416,7 +412,7 @@ gridColor = 1
 [node name="PSMilkCafeRoom25" parent="." index="53" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 1472, -320 )
-roomName = "Small field"
+roomName = "Малое поле"
 roomID = "pscafe_field2"
 roomColor = 1
 gridColor = 1
@@ -424,7 +420,7 @@ gridColor = 1
 [node name="PSMilkCafeRoom26" parent="." index="54" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 1408, -320 )
-roomName = "Small field"
+roomName = "Малое поле"
 roomID = "pscafe_field3"
 roomColor = 1
 gridColor = 1
@@ -432,7 +428,7 @@ gridColor = 1
 [node name="PSMilkCafeRoom11" parent="." index="55" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 1344, -128 )
-roomName = "Basement"
+roomName = "Подвал"
 roomID = "pscafe_bull"
 roomSprite = 1
 roomColor = 7
@@ -441,7 +437,7 @@ gridColor = 7
 [node name="PSMilkCafeRoom12" parent="." index="56" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 1408, -128 )
-roomName = "Basement"
+roomName = "Подвал"
 roomID = "pscafe_act"
 canEast = false
 roomSprite = 4
@@ -451,7 +447,7 @@ gridColor = 7
 [node name="PSMilkCafeRoom13" parent="." index="57" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 1472, -128 )
-roomName = "Cells"
+roomName = "Камеры"
 roomID = "pscafe_sleep"
 roomSprite = 10
 roomColor = 7
@@ -460,54 +456,54 @@ gridColor = 7
 [node name="PSMilkCafeRoom2" parent="." index="58" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1216, -192 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomColor = 4
 
 [node name="PSMilkCafeRoom21" parent="." index="59" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.8, 0.6, 1 )
 position = Vector2( 1152, -192 )
-roomName = "Docks"
+roomName = "Доки"
 roomSprite = 3
 roomColor = 5
 
 [node name="PSMilkCafeRoom22" parent="." index="60" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.8, 0.6, 1 )
 position = Vector2( 1088, -192 )
-roomName = "Docks"
+roomName = "Доки"
 roomID = "pscafe_docks"
 roomColor = 5
 
 [node name="PSMilkCafeRoom3" parent="." index="61" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1216, -256 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomSprite = 2
 roomColor = 4
 
 [node name="PSMilkCafeRoom4" parent="." index="62" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1280, -256 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 canEast = false
 roomColor = 4
 
 [node name="PSMilkCafeRoom5" parent="." index="63" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1280, -128 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 canEast = false
 roomColor = 4
 
 [node name="PSMilkCafeRoom14" parent="." index="64" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1280, -64 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomColor = 4
 
 [node name="PSMilkCafeRoom15" parent="." index="65" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1344, -64 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 canNorth = false
 canSouth = false
 roomColor = 4
@@ -515,7 +511,7 @@ roomColor = 4
 [node name="PSMilkCafeRoom16" parent="." index="66" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1408, -64 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 canNorth = false
 canSouth = false
 roomColor = 4
@@ -523,33 +519,33 @@ roomColor = 4
 [node name="PSMilkCafeRoom17" parent="." index="67" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1408, 0 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomSprite = 2
 roomColor = 4
 
 [node name="PSMilkCafeRoom18" parent="." index="68" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1344, 0 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomColor = 4
 
 [node name="PSMilkCafeRoom19" parent="." index="69" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1280, 0 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomSprite = 2
 roomColor = 4
 
 [node name="PSMilkCafeRoom20" parent="." index="70" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1216, -64 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomColor = 4
 
 [node name="PSMilkCafeRoom6" parent="." index="71" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 1216, -128 )
-roomName = "Space-Cafe"
+roomName = "Космо-кафе"
 roomID = "pscafe_table"
 roomSprite = 2
 roomColor = 4
@@ -557,167 +553,167 @@ roomColor = 4
 [node name="PSTentaclesRoom" parent="." index="72" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 0, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom2" parent="." index="73" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 64, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom19" parent="." index="74" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 64, 512 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom20" parent="." index="75" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 64, 448 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom21" parent="." index="76" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -64, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom22" parent="." index="77" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -128, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom23" parent="." index="78" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 0, 768 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom24" parent="." index="79" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 256, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom27" parent="." index="80" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 320, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom28" parent="." index="81" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 384, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom29" parent="." index="82" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 448, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom30" parent="." index="83" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_scientist_1"
 roomColor = 3
 
 [node name="PSTentaclesRoom43" parent="." index="84" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 2496, 64 )
-roomName = "Escape pod"
+roomName = "Побегная капсула"
 roomID = "pstent_escapepod"
 roomColor = 7
 
 [node name="PSTentaclesRoom25" parent="." index="85" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -192, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom26" parent="." index="86" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 64, 384 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_scientist_2"
 roomColor = 3
 
 [node name="PSTentaclesRoom31" parent="." index="87" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom32" parent="." index="88" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 576, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom33" parent="." index="89" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 576, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom34" parent="." index="90" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 512 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom35" parent="." index="91" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 448 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom36" parent="." index="92" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 704 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom37" parent="." index="93" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 768 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom38" parent="." index="94" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 576, 768 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom39" parent="." index="95" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 832 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_near_lastroom"
 roomColor = 3
 
 [node name="PSTentaclesRoom40" parent="." index="96" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 896 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom41" parent="." index="97" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 576, 896 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom42" parent="." index="98" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 576, 832 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_lastroom"
 canWest = false
 canNorth = false
@@ -730,19 +726,19 @@ gridColor = 2
 [node name="PSTentaclesRoom3" parent="." index="99" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 0, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom4" parent="." index="100" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 128, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomColor = 3
 
 [node name="PSTentaclesRoom5" parent="." index="101" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 0, 704 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_entrance"
 roomSprite = 3
 roomColor = 3
@@ -750,13 +746,13 @@ roomColor = 3
 [node name="PSTentaclesRoom6" parent="." index="102" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 192, 576 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_scientists"
 roomColor = 3
 
 [node name="PSTentaclesRoom7" parent="." index="103" instance=ExtResource( 1 )]
 position = Vector2( 64, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_play"
 canWest = false
 canNorth = false
@@ -764,62 +760,62 @@ gridColor = 5
 
 [node name="PSTentaclesRoom8" parent="." index="104" instance=ExtResource( 1 )]
 position = Vector2( 64, 704 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_left"
 canWest = false
 
 [node name="PSTentaclesRoom9" parent="." index="105" instance=ExtResource( 1 )]
 position = Vector2( 64, 768 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_fridge"
 canWest = false
 roomSprite = 6
 
 [node name="PSTentaclesRoom10" parent="." index="106" instance=ExtResource( 1 )]
 position = Vector2( 128, 768 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_bed"
 roomSprite = 10
 
 [node name="PSTentaclesRoom11" parent="." index="107" instance=ExtResource( 1 )]
 position = Vector2( 128, 704 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_middle"
 gridColor = 6
 
 [node name="PSTentaclesRoom12" parent="." index="108" instance=ExtResource( 1 )]
 position = Vector2( 128, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 canNorth = false
 
 [node name="PSTentaclesRoom13" parent="." index="109" instance=ExtResource( 1 )]
 position = Vector2( 192, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_important"
 canNorth = false
 roomSprite = 4
 
 [node name="PSTentaclesRoom14" parent="." index="110" instance=ExtResource( 1 )]
 position = Vector2( 192, 704 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 
 [node name="PSTentaclesRoom15" parent="." index="111" instance=ExtResource( 1 )]
 position = Vector2( 192, 768 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 
 [node name="PSTentaclesRoom16" parent="." index="112" instance=ExtResource( 1 )]
 position = Vector2( 256, 768 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_window"
 roomSprite = 4
 
 [node name="PSTentaclesRoom17" parent="." index="113" instance=ExtResource( 1 )]
 position = Vector2( 256, 704 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 roomID = "pstent_shower"
 roomSprite = 7
 
 [node name="PSTentaclesRoom18" parent="." index="114" instance=ExtResource( 1 )]
 position = Vector2( 256, 640 )
-roomName = "Bio-lab"
+roomName = "Биолаборатория"
 canNorth = false

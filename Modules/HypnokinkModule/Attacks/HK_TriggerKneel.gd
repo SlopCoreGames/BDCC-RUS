@@ -9,11 +9,11 @@ func getVisibleName(_context = {}):
 	return "Триггер: Коленопреклонение"
 	
 func getVisibleDesc(_context = {}):
-	return "Use their posthypnotic suggestion to force them to kneel."
+	return "Использовать их постгипнотический приказ, чтобы заставить их встать на колени."
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var texts = [
-		"{attacker.name} snaps {attacker.his} fingers, triggering {receiver.nameS} hypnotic command."
+		"{attacker.name} щелкает пальцами {attacker.his}, активируя гипнотическую команду {receiver.nameS}."
 	]
 	var text = RNG.pick(texts)
 	
@@ -22,7 +22,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	if(!_receiver.hasEffect(StatusEffect.Collapsed)):
 		if(_receiver.addEffect(StatusEffect.Collapsed)):
-			text += "\n[b]{receiver.name} drops to {receiver.his} knees[/b]."
+			text += "\n[b]{receiver.name} падает на колени {receiver.his}[/b]."
 	
 	_receiver.addEffect(StatusEffect.PosthypnoticTriggerUsedUp)
 	

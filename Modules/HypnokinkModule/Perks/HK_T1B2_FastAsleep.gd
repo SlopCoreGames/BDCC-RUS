@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Крепкий сон"
 
 func getVisibleDescription():
-	return "You can quickly fall into a deep slumber."
+	return "Вы можете мгновенно проваливаться в глубокий сон."
 	
 func getMoreDescription():
-	return 	"Resting in your cell is now twice as effective."+"\n\n"+\
+	return 	"Отдых в камере теперь в два раза эффективнее."+"\n\n"+\
 			"Buffs gained from hypnosis sessions are stronger and last longer."
 
 func getSkillTier():

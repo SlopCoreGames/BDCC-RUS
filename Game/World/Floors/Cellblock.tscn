@@ -9,17 +9,17 @@ script = ExtResource( 3 )
 canMeetNPCs = true
 
 [node name="CellblockRoom" parent="." index="0" instance=ExtResource( 2 )]
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "cellblock_corridor_nearstairs"
-roomDescription = "Two sets of stairs split off in either direction, leading up to the main hall."
+roomDescription = "Две лестницы расходятся в разные стороны, ведя наверх, в главный зал."
 population = 1
 
 [node name="CBStairs1" parent="." index="1" instance=ExtResource( 2 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( -64, 0 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "CBStairs1"
-roomDescription = "These are the Stairs that lead up to the main hall above."
+roomDescription = "Это лестница, ведущая наверх, в главный зал."
 roomSprite = 3
 roomColor = 7
 population = 1
@@ -28,9 +28,9 @@ astarConnectedTo = PoolStringArray( "MainStairs1" )
 [node name="CBStairs2" parent="." index="2" instance=ExtResource( 2 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 64, 0 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "CBStairs2"
-roomDescription = "These are the Stairs that lead up to the main hall above."
+roomDescription = "Это лестница, ведущая наверх, в главный зал."
 roomSprite = 3
 roomColor = 7
 population = 1
@@ -38,73 +38,73 @@ population = 1
 [node name="CellblockRoom4" parent="." index="3" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 0, 192 )
-roomName = "Lilac cellblock"
+roomName = "Сиреневый блок"
 roomID = "cellblock_lilac_nearcell"
-roomDescription = "This is a large spacious area that actually looks pretty nice for a forever-prison. The stacks of cells are lined with white and purple paint. Carpets can be found in the cells and cheap but still nice looking sofas are scattered about. The occasional stain, broken decor or stitched together furniture breaks the illusion of comfort. Still, it’s probably the best one could hope for in a place like this. More cells are further south, down, and all around, you could find anyone’s cell if you really wanted to."
+roomDescription = "Это просторное помещение, которое выглядит на удивление неплохо для тюрьмы пожизненного заключения. Ряды камер выкрашены в белый и фиолетовый цвета. В камерах лежат ковры, а по всему блоку расставлены дешевые, но вполне симпатичные диваны. Иллюзию уюта лишь изредка портят пятна на полу, сломанный декор или сшитая из обносков мебель. И все же, для такого места это, пожалуй, лучшее, на что можно рассчитывать. Еще больше камер находится южнее, ниже и повсюду вокруг — если очень захотеть, здесь можно найти чью угодно камеру."
 roomColor = 4
 population = 1
 
 [node name="CellblockRoom5" parent="." index="4" instance=ExtResource( 2 )]
 position = Vector2( 0, 64 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "cellblock_corridor_middle"
-roomDescription = "You are standing inside a giant sheet metal tube that connects the cellblocks with the rest of the prison. The only noteworthy thing here is the giant open blast door stretched across the hall."
+roomDescription = "Вы стоите внутри гигантской трубы из листового металла, которая соединяет жилые блоки с остальной частью тюрьмы. Единственное, что здесь примечательно, — это огромные открытые гермоворота, растянутые поперек коридора."
 population = 1
 
 [node name="CellblockRoom6" parent="." index="5" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.8, 1 )
 position = Vector2( 0, 256 )
-roomName = "My cell"
+roomName = "Моя камера"
 roomID = "cellblock_pink_playercell"
-roomDescription = "((This will be your potential cell))"
+roomDescription = "((Это может стать вашей камерой))"
 roomColor = 4
 
 [node name="CellblockRoom7" parent="." index="6" groups=["zone_mainpatrol", "zone_poi"] instance=ExtResource( 2 )]
 position = Vector2( 0, 128 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "cellblock_nearcells"
-roomDescription = "This is where the 3 cell blocks branch off into their own sections, there are always a few inmates of all types milling around. Above you there are a number of guards on the catwalks, walls, and posts. From here, the orange, lilac, and red cell blocks lay further ahead."
+roomDescription = "Здесь три блока камер разделяются на отдельные секции; повсюду можно встретить шатающихся заключенных самых разных мастей. Над головой на мостиках, стенах и столбах дежурят охранники. Отсюда впереди виднеются оранжевый, сиреневый и красный блоки."
 population = 1
 
 [node name="CellblockRoom8" parent="." index="7" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 512, 128 )
-roomName = "Solitary"
+roomName = "ШИЗО"
 roomID = "solitary_cell"
-roomDescription = "A tiny cell for very unruly inmates"
+roomDescription = "Крошечная камера для самых буйных заключенных"
 roomColor = 2
 gridColor = 2
 
 [node name="CellblockRoom9" parent="." index="8" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 64, 128 )
-roomName = "High-security cellblock"
+roomName = "Блок строгого режима"
 roomID = "cellblock_red_nearcell"
-roomDescription = "A long open space lined with armored windows and clear automatic doors. Unlike most other places in the prison, it is actually pretty dark in this cell block, with a number of unknown stains and trash lining the halls. Dim and broken lights that randomly dot the walls between cells. A large panopticon with guards hangs from the rock ceiling above, casually monitoring the dark atmosphere with a number of spotlights. The Red trim of the large hallway stretches east towards more cells, with even more to be found if you wanted to seek them out."
+roomDescription = "Длинное открытое пространство, уставленное бронированными окнами и прозрачными автоматическими дверями. В отличие от большинства других мест в тюрьме, здесь довольно темно, а коридоры усыпаны какими-то пятнами и мусором. Тусклые, мигающие лампы хаотично разбросаны по стенам между камерами. С каменного потолка свисает огромный паноптикум с охранниками, которые небрежно патрулируют мрачную атмосферу с помощью прожекторов. Красная отделка длинного коридора тянется на восток к другим камерам, которых можно найти еще больше, если захочется поискать."
 roomColor = 2
 population = 1
 
 [node name="CellblockRoom12" parent="." index="9" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 128, 128 )
-roomName = "My cell"
+roomName = "Моя камера"
 roomID = "cellblock_red_playercell"
-roomDescription = "((This will be your potential cell))"
+roomDescription = "((Это может стать вашей камерой))"
 roomColor = 2
 
 [node name="CellblockRoom10" parent="." index="10" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.8, 0.6, 1 )
 position = Vector2( -64, 128 )
-roomName = "General-security cellblock"
+roomName = "Блок общего режима"
 roomID = "cellblock_orange_nearcell"
-roomDescription = "A long open space with an orange trim, lined with 3 stories of transparent armored windows and clear automatic doors connected with a maze of stairs and catwalks. From down here you can see the highest level of cells actually have a half-wall for privacy, probably a reward for good behavior. Unfortunately, it is just about the only decoration around. Everything else has probably been stolen or vandalized. More Cells lay west of here, and even more probably accessed from… somewhere, but if you need to get someplace other than your own, you can figure it out later."
+roomDescription = "Длинное открытое пространство с оранжевой окантовкой, вдоль которого тянутся три этажа прозрачных бронированных окон и автоматических дверей, соединенных лабиринтом лестниц и технических мостиков. Отсюда видно, что на самом верхнем уровне у камер есть невысокие перегородки для приватности — вероятно, награда за примерное поведение. К сожалению, это, пожалуй, единственное украшение в округе. Всё остальное, скорее всего, уже разворовали или разнесли вандалы. К западу отсюда находится еще больше камер, и доступ к ним, вероятно, осуществляется откуда-то еще… но если вам нужно попасть куда-то, кроме собственной камеры, разберетесь по ходу дела."
 roomColor = 5
 population = 1
 
 [node name="CellblockRoom11" parent="." index="11" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.8, 0.6, 1 )
 position = Vector2( -128, 128 )
-roomName = "My cell"
+roomName = "Моя камера"
 roomID = "cellblock_orange_playercell"
 roomColor = 5
 

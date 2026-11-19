@@ -39,8 +39,7 @@ margin_top = 24.0
 margin_right = 1280.0
 margin_bottom = 87.0
 bbcode_enabled = true
-bbcode_text = "Here you can save your game
-Keep in mind that during the early development save structure might change a lot and so your previous saves might not work anymore, sorry. Your best bet would be saving inside your cell when you wanna switch versions"
+bbcode_text = "Здесь вы можете сохранить игру\nИмейте в виду, что на ранних этапах разработки структура сохранений может сильно меняться, поэтому старые файлы могут перестать работать, сорри. Лучше всего сохраняться прямо в камере, когда захотите переключить версию игры"
 text = "Здесь можно сохранить игру\nИмейте в виду, что на ранних этапах разработки структура сохранений может сильно меняться, поэтому старые файлы могут перестать работать, сорри. Лучше всего сохраняться прямо в камере, когда захотите переключить версию игры"
 fit_content_height = true
 

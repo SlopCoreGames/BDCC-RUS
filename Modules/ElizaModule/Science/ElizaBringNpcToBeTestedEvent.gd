@@ -61,5 +61,5 @@ func onButton(_method, _args):
 		var npcSlave:NpcSlave = character.getNpcSlavery()
 		GM.main.endCurrentScene()
 		npcSlave.startActivity("MilkingInMedical")
-		addMessage("Your slave will now be milked every day!")
+		addMessage("Теперь твою рабыню будут доить каждый день!")
 		# Maybe a scene here

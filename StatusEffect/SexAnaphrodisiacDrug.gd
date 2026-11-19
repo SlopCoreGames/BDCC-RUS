@@ -8,10 +8,10 @@ func processSexTurn():
 	character.addLust(-20)
 
 func getEffectName():
-	return "Anaphrodisiac pill"
+	return "Анафродизиак"
 
 func getEffectDesc():
-	return "You can't get lusty anymore"
+	return "Возбуждение больше не возникает"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/shattered-heart.png"

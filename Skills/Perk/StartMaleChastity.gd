@@ -5,10 +5,10 @@ func _init():
 	skillGroup = Skill.Start
 
 func getVisibleName():
-	return "Мужская целомудренность"
+	return "Пояс верности"
 
 func getVisibleDescription():
-	return "A [b]permanent[/b] chastity cage will be forced upon you during the intake process. Only applies if you have a penis."
+	return "Во время процесса приема на тебя наденут [b]постоянную[/b] клетку целомудрия. Применяется только если у тебя есть пенис."
 
 func hiddenWhenLocked() -> bool:
 	return true

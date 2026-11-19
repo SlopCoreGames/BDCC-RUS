@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Сцеживающий насос Mk2"
 	
 func getDescription():
-	return "Инструмент для извлечения молока из лактирующих грудей. Это продвинутая версия, которая будет автоматически собирать молоко при длительном ношении.\nЕсли надеть во время секса, она извлекает"+str(getMilkSpeedPerMinuteMin())+"-"+str(getMilkSpeedPerMinuteMax())+" of milk per minute."
+	return "Инструмент для извлечения молока из лактирующих грудей. Это продвинутая версия, которая будет автоматически собирать молоко при длительном ношении.\nЕсли надеть во время секса, она извлекает"+str(getMilkSpeedPerMinuteMin())+"-"+str(getMilkSpeedPerMinuteMax())+" мл молока в минуту."
 
 func getBuffs():
 	return [

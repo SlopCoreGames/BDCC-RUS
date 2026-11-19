@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Используй электродубинку"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		return genericDodgeMessage(_attacker, _receiver)
 		
 	var texts = [
-		"{attacker.name} manages to land a strong swing on {receiver.name} sending an incredibly painful shock through {receiver.his} body. "
+		"{attacker.name} умудряется нанести мощный удар по {receiver.name}, от которого по телу {receiver.his} проходит невероятно болезненный разряд тока. "
 	]
 	var text = RNG.pick(texts)
 	

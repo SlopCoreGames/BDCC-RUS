@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Ласкать член"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Tease your cock through the clothing"
+	return "Потеребить член через одежду"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -32,53 +32,53 @@ func doAction(_lustState: LustCombatState, _args):
 	if(pc.isWearingChastityCage()):
 		cantCum = true
 		if(RNG.chance(50)):
-			text += "You move your hand down to your crotch and give your {pc.cock} a little rub through the clothing. Your digits find the spot that feels the best and focus on it. Damn cage makes it impossible to stroke."
+			text += "Ты опускаешь руку к паху и слегка растираешь свой {pc.cock} через ткань. Пальцы находят самое приятное место и сосредотачиваются на нем. Проклятая клетка мешает нормально ласкать его."
 			text += "\n\n"
 		else:
-			text += "You get a feel for your covered up {pc.cock} and stroke your cage slightly through the clothing. Too bad that barely provides any stimulation. Still, after teasing yourself you find your member leaking some pre."
+			text += "Ты ощупываешь свой прикрытый {pc.cock} и слегка поглаживаешь клетку через одежду. Жаль, что это почти не дает стимуляции. Тем не менее, после таких ласк ты чувствуешь, как из члена начинает сочиться смазка."
 			text += "\n\n"
 	else:
 		if(RNG.chance(50)):
-			text += "You move your hand down to your crotch and give your {pc.cock} a little rub through the clothing. Your digits find the sensitive tip and focus on it, making your clothes bulge out more in the process."
+			text += "Ты опускаешь руку к паху и слегка растираешь свой {pc.cock} через ткань. Пальцы находят чувствительную головку и концентрируются на ней, отчего твоя одежда начинает сильнее выпирать."
 			text += "\n\n"
 		else:
-			text += "You get a feel for your covered up {pc.cock} and stroke it slightly through the clothing. The outline of your shaft becomes bigger as you tease yourself more, it’s already leaking some pre."
+			text += "Ты ощупываешь свой прикрытый {pc.cock} и слегка поглаживаешь его через одежду. По мере того как ты ласкаешь себя, контур ствола становится всё отчетливее, и из него уже сочится смазка."
 			text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You offer the enemy a good view of your bulge as you rub yourself. You smirk, hoping that they like the show."
+		text += "Пока ты трешь себя, ты выставляешь свой бугорок напоказ перед врагом. Ты ухмыляешься, надеясь, что им нравится это шоу."
 		text += "\n\n"
 	
 	if(RNG.chance(20) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "So much cum on your body.. You catch some with your fingers and use it as lube, don’t wanna waste the good stuff."
+		text += "Столько спермы на твоем теле... Ты зачерпываешь немного пальцами и используешь её как смазку — не хочется переводить драгоценную жижу."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.getLust() >= 50):
-		text += "Your cock is so drippy, you feel it twitching slightly as it leaks more and more pre, leaving dark spots on your clothing."
+		text += "Твой член такой влажный, что ты чувствуешь его легкое подергивание, когда смазка течет всё сильнее, оставляя темные пятна на твоей одежде."
 		text += "\n\n"
 	
 	if(RNG.chance(20) && pc.hasVagina()):
-		text += "As you tease your cock, your slit is getting more needy and wet, you feel how cloth is digging into it as you rub your crotch. You can’t hide the moans."
+		text += "Пока ты дразнишь свой член, твоя щелка становится всё более жадной и влажной; ты чувствуешь, как ткань впивается в неё, когда ты трешь промежность. Стоны невозможно скрыть."
 		text += "\n\n"
 	
 	if(RNG.chance(50)):
 		if(pc.isWearingChastityCage()):
 			text += RNG.pick([
-				"[say=pc]Huff.. Stupid cage..[/say]",
-				"[say=pc]Fuck, I wanna stroke my cock so much..[/say]",
-				"[say=pc]Anyone can see me doing this..[/say]",
-				"[say=pc]Oh fuck..[/say]",
+				"[say=pc]Хафф.. Тупая клетка..[/say]",
+				"[say=pc]Блядь, как же хочется потеребить свой член..[/say]",
+				"[say=pc]Кто угодно может увидеть меня в таком виде..[/say]",
+				"[say=pc]Ох, блядь..[/say]",
 			])
 		else:
 			text += RNG.pick([
-				"[say=pc]Fuck yeah..[/say]",
-				"[say=pc]Fuck, stroking my cock feels so good..[/say]",
-				"[say=pc]Anyone can see me doing this..[/say]",
-				"[say=pc]Oh fuck..[/say]",
+				"[say=pc]Да, черт возьми..[/say]",
+				"[say=pc]Блядь, как же охеренно ласкать свой член..[/say]",
+				"[say=pc]Кто угодно может увидеть меня в таком виде..[/say]",
+				"[say=pc]Ох, блядь..[/say]",
 			])
 		text += "\n\n"
 		if(_lustState.isInPublic() && !_lustState.isInBattle()):
-			text += "You hope no one heard that.. You try to keep your mouth shut."
+			text += "Ты надеешься, что никто этого не услышал... Пытаешься держать рот на замке."
 			text += "\n\n"
 
 	return {

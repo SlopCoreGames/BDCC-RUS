@@ -7,4 +7,4 @@ func getVisibleName():
 	return "Сила"
 
 func getVisibleDescription():
-	return "Your physical attacks cause more pain"
+	return "Твои физические атаки причиняют больше боли"

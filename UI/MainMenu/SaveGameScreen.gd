@@ -41,7 +41,7 @@ func _on_LoadGameScreen_visibility_changed():
 		if(GM.ui != null && GM.pc != null):
 			saveFileNameInput.text = Util.stripBadFilenameCharacters(GM.pc.getName() + " - Save " + str(GlobalRegistry.currentSave) + " - " + GM.ui.getCurrentLocationName())
 		else:
-			saveFileNameInput.text = "Unknown location"
+			saveFileNameInput.text = "Неизвестная локация"
 
 
 func _on_DeleteButton_pressed():

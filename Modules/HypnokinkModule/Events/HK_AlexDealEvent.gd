@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("HypnokinkModule.Vion_HaveCage")):
-		addButtonUnlessLate("Return datapad", "Give Alex back his datapad and Vion's cage", "finish_deal")
+		addButtonUnlessLate("Вернуть датапад", "Отдать Алексу его датапад и клетку Вион", "finish_deal")
 		return
 	
 	if(not getFlag("HypnokinkModule.VionTopicKnown_Chastity") or getFlag("HypnokinkModule.Vion_HaveDatapad") or getFlag("HypnokinkModule.Vion_FreedFromCage")):
@@ -17,7 +17,7 @@ func run(_triggerID, _args):
 	if(not getFlag("AlexRynardModule.ch1HypnovisorHappened")):
 		addDisabledButton("Проблема Виона", "Лучше подожди, пока Алекс не станет к тебе дружелюбнее")
 	else:
-		addButtonUnlessLate("Vion's issue", "Maybe Alex knows where to get the gizmo Vion wanted", "make_deal")
+		addButtonUnlessLate("Проблема Виона", "Может, Алекс знает, где раздобыть ту штуковину, которую хотела Вион", "make_deal")
 
 func getPriority():
 	return 0

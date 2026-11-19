@@ -10,17 +10,17 @@ func getVisibleName(_context = {}):
 	return "Растяжка"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var texts = [
-		"{attacker.name} takes {attacker.his} time arching {attacker.his} back and stretching. A few cute moans can be heard from {attacker.name} as {attacker.he} does that."
+		"{attacker.name} тратит {attacker.his}, прогибаясь в {attacker.his} и потягиваясь. Пока {attacker.he} это делает, от {attacker.name} слышны несколько милых стонов."
 	]
 	var text = RNG.pick(texts)
 	
 	_attacker.addPain(-30)
 	
-	text += " {attacker.name} is feeling better!"
+	text += " {attacker.name} чувствует себя лучше!"
 	
 	return {
 		text = text,
@@ -32,7 +32,7 @@ func canBeDodgedByPlayer(_attacker, _receiver):
 
 func getAnticipationText(_attacker, _receiver):
 	return RNG.pick([
-		"Looks like {attacker.name} is about to stretch!",
+		"Похоже, {attacker.name} сейчас начнет потягиваться!",
 	])
 
 func getRequirements():

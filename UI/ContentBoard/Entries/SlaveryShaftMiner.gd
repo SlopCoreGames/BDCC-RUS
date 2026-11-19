@@ -8,19 +8,19 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Get sold on a slave auction and become a shaft miner on a godforsaken planet."
-	return "Get sold on a slave auction and become a shaft miner on a godforsaken planet."
+		return "Будь продан на аукционе рабов и стань шахтером на какой-то богом забытой планете."
+	return "Будь продан на аукционе рабов и стань шахтером на какой-то богом забытой планете."
 
 func getKinks() -> Array:
 	return [
-		"Soft bad end",
-		"Non-sexual focus",
-		"Incremental game mechanics",
-		"Mining ore",
+		"Мягкий плохой финал",
+		"Несексуальный акцент",
+		"Механики прогрессии",
+		"Добыча руды",
 	]
 
 func getCompletedDesc() -> String:
-	return "You have managed to escape slavery!"
+	return "Вам удалось сбежать из рабства!"
 
 func getStatus() -> int:
 	if(GM.main.PSH.didComplete("ShaftMiner")):
@@ -33,10 +33,10 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("FightClubModule.BulldogBypassed"), "Find a way to get into the underground arena."],
-		[completeIf("PlayerSlaveryModule.foundMeme"), "Find a credits chip that's glued to the floor in one of the corners. Try to peel it off!"],
-		[completeIfBool(getFlag("PlayerSlaveryModule.mirriTimes", 0)>0||getFlag("PlayerSlaveryModule.luxeTimes", 0)>0), "Get sold away on a slave auction."],
+		[completeIf("FightClubModule.BulldogBypassed"), "Найдите способ попасть на подпольную арену."],
+		[completeIf("PlayerSlaveryModule.foundMeme"), "Найдите кредитный чип, приклеенный к полу в одном из углов. Попробуйте его отклеить!"],
+		[completeIfBool(getFlag("PlayerSlaveryModule.mirriTimes", 0)>0||getFlag("PlayerSlaveryModule.luxeTimes", 0)>0), "Быть проданным на аукционе рабов."],
 	]
 
 func getProgressText() -> String:
-	return "Find a way to escape the slavery."
+	return "Найдите способ сбежать из рабства."

@@ -8,10 +8,10 @@ func getVisibleName():
 	return "H.A.T.S."
 
 func getVisibleDescription():
-	return "You have become accustomed to the subliminal messaging of hypnotic visors."
+	return "Вы привыкли к подсознательным сообщениям гипнотических визоров."
 
 func getMoreDescription():
-	return "While in "+HypnokinkUtil.tranceIcon()+"Trance, the accuracy debuff of hypnosis visors becomes a buff of equivalent value."
+	return "Находясь в "+HypnokinkUtil.tranceIcon()+"Транс: дебафф точности от гипнотических визоров превращается в бафф эквивалентного значения."
 
 func getSkillTier():
 	return 0

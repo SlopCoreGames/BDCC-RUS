@@ -16,7 +16,7 @@ func isPlayable():
 	return true
 
 func getVisibleDescription():
-	return "Studs and mares"
+	return "Жеребцы и кобылы"
 
 func getDefaultHead(_gender):
 	return "horsehead"

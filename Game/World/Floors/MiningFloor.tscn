@@ -10,54 +10,45 @@ canMeetNPCs = true
 
 [node name="MiningRoom" parent="." index="0" groups=["zone_engpatrol", "zone_poi"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "mining_nearentrance"
-roomDescription = "A large open area noticeably more \"industrial\" than the Main Hall. Also everything down here is covered in a fine layer of dirt. Lovely.
-
-Catwalks and grated metal mats over bare stone lead into different directions, one of them being the mineshafts ahead."
+roomDescription = "Обширная открытая зона, заметно более \"индустриальная\", чем Главный зал. Кроме того, всё здесь покрыто тонким слоем пыли. Прелестно.\n\nТехнические мостики и решетчатые металлические настилы над голым камнем расходятся в разных направлениях, одно из которых ведет прямиком в шахты."
 roomColor = 8
 population = 3
 
 [node name="MiningRoom2" parent="." index="1" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -64, 0 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "mining_near_eng"
-roomDescription = "Wall lights and power cables stretch off to the west towards engineering. The heavy steel wall dividing here and the mineshaft terminals grows more rocky further down, with the noise of the mineshafts clanking away behind you. An attempt at a security fence was made, but it looks closer to a flimsy chainlink with a bit of razor wire shoved off to the sides. It looks like the whole thing had to be taken down to fit something large through and was just neglected to sit covered in dust.
-The former gate lays knocked over against the wall with a \"No Inmates Beyond This Point\" sign, failing to do its job."
+roomDescription = "Настенные светильники и силовые кабели тянутся на запад, в сторону инженерного отсека. Тяжелая стальная стена, разделяющая это место и терминалы шахт, дальше становится всё более скалистой, а позади слышится непрерывный лязг работающих шахт. Здесь пытались соорудить охранный забор, но он больше похож на хлипкую сетку-рабицу с кусками колючей проволоки, отброшенными в стороны. Похоже, всю конструкцию пришлось разобрать, чтобы протащить что-то крупное, а потом просто забросили, и теперь она покрыта слоем пыли.\nПрежние ворота валяются, прислонившись к стене, с табличкой \"Заключенным дальше не ходить\", так и не справившись со своей задачей."
 roomColor = 8
 population = 3
 
 [node name="MiningRoom3" parent="." index="2" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -128, 0 )
-roomName = "Engineering lobby"
+roomName = "Вестибюль инженерного отсека"
 roomID = "eng_lobby"
-roomDescription = "This cave looks the same as all the others except the strapped together grated and carved rock floors of the mines become a much more established looking industrial steel plating on the ground. All the wall lights bored into the rock make this place a fair bit brighter than the rest of the mineshafts, with wires and pipes in the trailing the ceiling above. If you squint, you can even see the tether hooks for a zero-gravity environment.
-
-In the reletive silence, you can hear the low rumble of heavy machinery through the rock walls."
+roomDescription = "Эта пещера мало чем отличается от остальных, за исключением того, что грубо скрепленные решетчатые и высеченные в скале полы шахт здесь превращаются в полноценное промышленное стальное покрытие. Благодаря насаженным в породу настенным светильникам здесь заметно светлее, чем в других шахтах, а под потолком тянутся переплетения проводов и труб. Если прищуриться, можно даже разглядеть крюки для крепления тросов, предназначенные для работы в условиях нулевой гравитации.\n\nВ относительной тишине сквозь каменные стены пробивается низкий гул тяжелой техники."
 roomColor = 6
 population = 2
 
 [node name="MiningRoom4" parent="." index="3" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -192, 0 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_bay_corridor"
-roomDescription = "This area pushes up against the bulky walls of the Engineering sector. The cavernous walls spread open into a small chamber and the barren metal floors become a platform on stilts leading into Engineering proper.
-
-A thick metal pneumatic door blocks your way further inside, with a keypad awaiting a code to pass."
+roomDescription = "Эта зона вплотную примыкает к массивным стенам инженерного сектора. Пещерные своды расширяются, образуя небольшую камеру, а пустынный металлический пол переходит в платформу на сваях, ведущую непосредственно в инженерный блок.\n\nПуть дальше преграждает толстая металлическая пневматическая дверь с клавиатурой, ожидающей ввода кода."
 roomColor = 6
 population = 2
 
 [node name="MiningRoom6" parent="." index="4" groups=["zone_engpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -256, 0 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_bay_nearbreakroom"
-roomDescription = "The halls of Engineering are nice and wide, if rather bland with industrial plating and support beams. Scattered on either side of the hallway are all sorts of construction equipment, materials, and the odd cargo loader or forklift. Whatever purpose it all has, it means you get to have plenty of things to sneak behind.
-
-On this side of engineering, the Hall ends with the pneumatic door leading back out into the mineshafts. The keypad awaiting the code that got you in here."
+roomDescription = "Коридоры инженерного отсека довольно широкие, хотя и скучноватые из-за повсеместной промышленной обшивки и опорных балок. По обе стороны коридора разбросано всякое строительное оборудование, материалы и редкие грузовые погрузчики или вилочные форки. Какое бы назначение всё это ни имело, это значит, что вам будет за чем прятаться.\n\nС этой стороны инженерного отсека коридор заканчивается пневматической дверью, ведущей обратно в шахты. На панели управления мигает ожидание кода, который позволил вам сюда попасть."
 canEast = false
 roomColor = 6
 gridColor = 5
@@ -67,13 +58,9 @@ astarConnectedTo = PoolStringArray( "eng_bay_corridor" )
 [node name="MiningRoom7" parent="." index="5" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -384, 0 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_firstjunction"
-roomDescription = "The halls of Engineering are nice and wide, if rather bland with industrial plating and support beams. Scattered on either side of the hallway are all sorts of construction equipment, materials, and the odd cargo loader or forklift. Whatever purpose it all has, it means you get to have plenty of things to sneak behind.
-
-The Comms Relay is labeled to the north, with the path leading back out into the cave.
-
-You also notice an air vent here that you can't quite reach. Maybe you can search for the other end."
+roomDescription = "Коридоры инженерного отсека довольно широкие, хотя и скучноватые из-за повсеместной промышленной обшивки и опорных балок. По обе стороны коридора разбросано всякое строительное оборудование, материалы и редкие грузовые погрузчики или вилочные форки. Какое бы назначение всё это ни имело, это значит, что вам будет за чем прятаться.\n\nНа севере видна табличка «Ретранслятор связи», а тропинка ведет обратно в пещеры.\n\nВы также замечаете здесь вентиляционную шахту, до которой не можете дотянуться. Возможно, стоит поискать её другой конец."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -82,12 +69,9 @@ population = 2
 [node name="MiningRoom12" parent="." index="6" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -320, 0 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor1"
-roomDescription = "The corridor here has a big fortified window looking north into the area where the minecarts come in and are offloaded and sorted with a mess of tracks, catwalks, scanners, conveyor belts, mechanical arms, and scanners with minecarts and rocks rolling across it all in a great big system leading in all sorts of directions. You can’t see all of it, with bits and conveyor lines leading up high above as well as below and under where you can see. Seeing all the parts working at once is almost kind of mesmerizing to watch actually.
-The bulkhead door that would lead out into the area is bolted down with a warning label preventing all access while the machinery is running, which it always is.
-
-The hall reaches further to the west towards the rest of engineering and east back out into in the mines."
+roomDescription = "Коридор здесь пересекает огромное укрепленное окно, выходящее на север, в зону, где прибывают, разгружаются и сортируются вагонетки. Там всё запутано в клуб переплетений путей, технических мостиков, сканеров, конвейерных лент и механических манипуляторов; вагонетки и камни катятся по этой огромной системе, уходящей во всех направлениях. Охватить взглядом всё сразу не получается: части механизмов и линии конвейеров тянутся высоко над головой, а также уходят глубоко вниз, за пределы видимости. На самом деле, наблюдать за тем, как все эти детали работают одновременно, почти гипнотически.\nГермодверь, ведущая в эту зону, наглухо задраена, а на ней красуется предупреждающая табличка, запрещающая вход во время работы оборудования — а работает оно всегда.\n\nКоридор тянется дальше на запад, в сторону инженерного отсека, и на восток — обратно в шахты."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -96,13 +80,9 @@ population = 2
 [node name="MiningRoom13" parent="." index="7" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -448, 0 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor2"
-roomDescription = "To the north there is a big empty space that looks like the ceiling has been sealed over. On the chainlink fence that blocks it off there is a note saying: \"Freight Elevator sealed off from this floor by order of Captain Wright. Use the one in the Main Hall.\".
-
-Your gaze flicks into the empty Elevator shaft and see all sorts of vandalism from inmates that might’ve snuck in.
-
-You understand why the captain would do such a thing, but you can’t help but agree with one particular message scrawled in bright orange in the dark elevator shaft: \"Captain Wright is a worthless cunt.\"."
+roomDescription = "К северу открывается огромное пустое пространство, будто потолок там наглухо запечатали. На сетчатом заборе, перекрывающем проход, висит записка: \"Грузовой лифт отсечен от этого этажа по приказу капитана Райта. Используйте лифт в Главном холле.\".\n\nВаш взгляд скользит по пустому шахтному проему, где видны следы вандализма — похоже, заключенные всё же умудрялись сюда пробираться.\n\nВы понимаете, почему капитан пошел на такой шаг, но не можете не согласиться с одним конкретным посланием, выведенным ярко-оранжевым цветом в темноте шахты: \"Капитан Райт — никчемная сука.\"."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -111,14 +91,9 @@ population = 2
 [node name="MiningRoom16" parent="." index="8" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -512, 0 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor3"
-roomDescription = "The hallways of Engineering veer off to the south here. A sign at the junction notes a few places around.
-
-Bluespace Communitcations Transmitter to the North.
-Mineshafts, Ore Distribution Overlook D, and Staff Breakroom to the East
-Office and Repair Bay C are off to the West.
-Storage Room F, Electronics Salvage, and Secondary Control Center to the South."
+roomDescription = "Здесь коридоры инженерного отсека уходят на юг. На развилке стоит указатель с названиями ближайших объектов.\n\nПередатчик связи «Блюспейс» — на север.\nШахты, смотровая площадка распределения руды D и комната отдыха персонала — на восток.\nОфис и ремонтный отсек C — на запад.\nКладовая F, пункт утилизации электроники и вспомогательный центр управления — на юг."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -127,11 +102,9 @@ population = 2
 [node name="MiningRoom17" parent="." index="9" groups=["zone_engpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -576, 0 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_near_lab"
-roomDescription = "This section of Engineering is much quieter than the everywhere else. It’d be nice if it wasn’t a short, empty hallway with a thin layer of dust and a strip of yellow paint.
-
-Both of the doors here are tucked away and look equally uninteresting, but they are some of the only unlocked doors in this entire department, which makes them perfect in your eyes."
+roomDescription = "Эта часть инженерного отдела куда тише, чем везде остальном. Было бы здорово, если бы она не представляла собой короткий пустой коридор, покрытый тонким слоем пыли и отмеченный полосой желтой краски.\n\nОбе двери здесь спрятаны и выглядят одинаково неприметно, но это одни из немногих незапертых дверей во всем этом отсеке, а значит, в твоих глазах они просто идеальны."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -140,12 +113,9 @@ population = 2
 [node name="MiningRoom18" parent="." index="10" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -512, 64 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor4"
-roomDescription = "Here, just off the junction of hallways there is a staff only elevator with a fancy biometric scanner to deny you access to it.
-A sign on the wall says this is Engineering Floor B1.
-
-The yellow trims of engineering stretch down the halls further south, and north back to the corridor junction."
+roomDescription = "Здесь, сразу за разветвлением коридоров, находится лифт только для персонала с навороченным биометрическим сканером, который так и норовит закрыть тебе доступ.\nНа стене висит табличка: «Инженерный отсек, уровень B1».\n\nЖелтая маркировка инженерного отдела тянется дальше по коридорам на юг и возвращается на север к разветвлению."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -154,11 +124,9 @@ population = 2
 [node name="MiningLoreComputerRoom" parent="." index="11" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -640, 0 )
-roomName = "Office"
+roomName = "Кабинет"
 roomID = "eng_lorecomputerroom"
-roomDescription = "You enter some kind of office. A pretty cramped one, surrounded with metal panels, dimly lit and equipped with a computer on a cluttered desk, a swiveling chair, a cooling unit and a little green plant. The computer monitor is full of neglected notices and messages. Pushed up against the desk is a porthole style window angled down-ish out into space. It doesn't give much of a view without direct light, there’s the underside of the asteroid with a bit of paneling, maybe, visible inside a crater, and a field of scattered asteroids.
-
-At least the stars are kinda nice."
+roomDescription = "Вы входите в какой-то кабинет. Довольно тесный, окруженный металлическими панелями, со скудным освещением. В комнате стоит заваленный хламом стол с компьютером, вращающееся кресло, охладитель и маленькое зеленое растение. Монитор компьютера пестрит заброшенными уведомлениями и сообщениями. Вплотную к столу примыкает иллюминатор, расположенный под углом вниз, в открытый космос. Без прямого света обзор не особо впечатляет: видна нижняя часть астероида с какими-то панелями внутри кратера и поле разбросанных астероидов.\n\nПо крайней мере, звезды выглядят довольно мило."
 roomSprite = 5
 roomColor = 6
 gridColor = 5
@@ -167,11 +135,9 @@ loctag_Offlimits = true
 [node name="MiningRoom20" parent="." index="12" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -576, -64 )
-roomName = "Assembly Lab"
+roomName = "Сборочная лаборатория"
 roomID = "eng_assemblylab"
-roomDescription = "This room seems to be some kind of assembly lab. The first thing you notice is the eerie silence that hangs in the air. The workstations are cluttered with tools, spare parts and half-finished projects. The lighting is dim and flickering, casting long shadows across the room.
-
-You take a closer look at the projects that they are developing here. Some kind of androids? Hard to tell but you see remains of unfinished bodies, legs, heads of different species."
+roomDescription = "Эта комната кажется какой-то сборочной лабораторией. Первое, что бросается в глаза, — это жуткая, повисшая в воздухе тишина. Рабочие места завалены инструментами, запчастями и полуфабрикатами. Освещение тусклое и мерцающее, отбрасывающее длинные тени по всей комнате.\n\nВы присматриваетесь к проектам, которые здесь разрабатывают. Какие-то андроиды? Трудно сказать наверняка, но вы видите останки незаконченных тел: ноги, головы разных видов."
 roomColor = 6
 gridColor = 5
 loctag_Offlimits = true
@@ -182,11 +148,9 @@ lootCredits = 2
 [node name="MiningRoom27" parent="." index="13" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -512, 320 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor7"
-roomDescription = "The halls of engineering are nice and wide, if rather bland with industrial plating and support beams. Scattered on either side of the hallway are all sorts of construction equipment, materials, and the odd cargo loader or forklift. Whatever purpose it all has, it means you get to have plenty of things to sneak behind.
-
-The southern hall ends here with one of those large air vent fans up in the wall."
+roomDescription = "Коридоры инженерного отсека довольно широкие, хотя и выглядят скучновато из-за повсеместной промышленной обшивки и опорных балок. По обе стороны коридора разбросано всякое строительное оборудование, материалы и редкие грузовые погрузчики или вилочные форки. Какую бы цель всё это ни преследовало, для вас это означает наличие множества укрытий, за которыми можно спрятаться.\n\nЮжный коридор заканчивается здесь, у одной из тех огромных вентиляционных решеток в стене."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -195,10 +159,9 @@ population = 2
 [node name="MiningRoom28" parent="." index="14" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -448, 320 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor8"
-roomDescription = "The normal wide halls of Engineering divert off into regular-looking backroom maintenance corridors.
-Wires and cables hung up on walls and support struts lead further east to somewhere."
+roomDescription = "Обычные широкие коридоры инженерного отсека переходят в зауженные служебные технические проходы.\nПровода и кабели, свисающие со стен и опорных конструкций, ведут дальше на восток, в неизвестном направлении."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -207,12 +170,9 @@ population = 2
 [node name="MiningRoom29" parent="." index="15" groups=["zone_engpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -384, 320 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_airventskip"
-roomDescription = "The normal wide halls of Engineering divert off into regular-looking backroom maintenance corridors.
-Wires and cables hung up on walls and support struts lead further east to somewhere.
-
-There is a warmth in the air coming from the south, the door it’s coming from locked open with an air vent absorbing what it can. Seems like you can both reach and fit into the air vent. From your guess, it leads back to the entrance."
+roomDescription = "Обычные широкие коридоры инженерного отсека переходят в зауженные служебные технические проходы.\nПровода и кабели, свисающие со стен и опорных конструкций, ведут дальше на восток, в неизвестном направлении.\n\nС юга веет теплом; дверь, из которой оно идет, заклинило в открытом положении, и вентиляция поглощает всё, что может. Похоже, и вы, и ваш спутник сможете пролезть в это вентиляционное отверстие. Судя по вашим догадкам, оно ведет обратно к входу."
 roomColor = 6
 gridColor = 5
 loctag_Offlimits = true
@@ -221,9 +181,9 @@ population = 2
 [node name="MiningRoom30" parent="." index="16" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -384, 384 )
-roomName = "Control room"
+roomName = "Диспетчерская"
 roomID = "eng_controlroom"
-roomDescription = "This tiny little room is full of all sorts of cables and server equipment. The warmth gets hotter as you enter and the only real light in here is coming from a computer monitor on the far end of the room."
+roomDescription = "Эта крошечная каморка забита всевозможными кабелями и серверным оборудованием. Чем дальше заходишь, тем сильнее становится жара, а единственный источник света здесь — компьютерный монитор в дальнем конце комнаты."
 roomColor = 6
 gridColor = 5
 loctag_Offlimits = true
@@ -231,9 +191,9 @@ loctag_Offlimits = true
 [node name="MiningRoom21" parent="." index="17" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -512, 128 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor5"
-roomDescription = "The halls of Engineering are nice and wide, if rather bland with industrial plating and support beams. Scattered on either side of the hallway are all sorts of construction equipment, materials, and the odd cargo loader or forklift. Whatever purpose it all has, it means you get to have plenty of things to sneak behind."
+roomDescription = "Коридоры инженерного отсека довольно широкие, хотя и выглядят скучновато из-за промышленной обшивки и опорных балок. По обе стороны коридора разбросано всякое строительное оборудование, материалы и редкие грузовые погрузчики или вилочные форки. Какую бы цель всё это ни преследовало, зато здесь полно мест, за которыми можно незаметно спрятаться."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -242,12 +202,9 @@ population = 2
 [node name="MiningRoom22" parent="." index="18" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -576, 128 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_near_storage"
-roomDescription = "This side hall is more of a smaller warehouse packed floor to ceiling with building materials, panels, pipes, glass, sadly empty lockers. There’s even a pallet of spare toilets.
-Still not large enough for a warehouse, more like a furniture store showcase, actually.
-
-A door is unmarked yet unlocked and vulnerable to the west."
+roomDescription = "Этот боковой коридор больше напоминает небольшой склад, забитый от пола до потолка стройматериалами, панелями, трубами, стеклом и, к сожалению, пустыми шкафчиками. Там даже стоит поддон с запасными унитазами.\nВсе же это слишком мало для склада — скорее, похоже на мебельный шоурум.\n\nНа западе находится незамаркированная, но незапертая дверь, которую легко вскрыть."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -256,9 +213,9 @@ population = 2
 [node name="MiningRoom23" parent="." index="19" groups=["zone_engpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -640, 128 )
-roomName = "Engineering Bay Storage"
+roomName = "Склад инженерного отсека"
 roomID = "eng_storage"
-roomDescription = "You notice rows of metallic shelves stacked with tools and equipment. The room is dimly lit, one of the lights flickers a lot."
+roomDescription = "Вы замечаете ряды металлических стеллажей, заставленных инструментами и оборудованием. В комнате царит полумрак, а одна из ламп постоянно мерцает."
 roomSprite = 4
 roomColor = 6
 gridColor = 5
@@ -272,9 +229,9 @@ lootEveryXDays = 7
 [node name="MiningRoom24" parent="." index="20" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -512, 192 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor6"
-roomDescription = "The halls of Engineering are nice and wide, if rather bland with industrial plating and support beams. Scattered on either side of the hallway are all sorts of construction equipment, materials, and the odd cargo loader or forklift. Whatever purpose it all has, it means you get to have plenty of things to sneak behind."
+roomDescription = "Коридоры инженерного отсека довольно широкие, хотя и выглядят скучновато из-за промышленной обшивки и опорных балок. По обе стороны коридора разбросано всякое строительное оборудование, материалы и редкие грузовые погрузчики или вилочные форки. Какую бы цель всё это ни преследовало, зато здесь полно мест, за которыми можно незаметно спрятаться."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -283,9 +240,9 @@ population = 2
 [node name="MiningRoom25" parent="." index="21" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -512, 256 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_nearnura"
-roomDescription = "The halls of Engineering are nice and wide, if rather bland with industrial plating and support beams. Scattered on either side of the hallway are all sorts of construction equipment, materials, and the odd cargo loader or forklift. Whatever purpose it all has, it means you get to have plenty of things to sneak behind."
+roomDescription = "Коридоры инженерного отсека довольно широкие, хотя и выглядят скучновато из-за промышленной обшивки и опорных балок. По обе стороны коридора разбросано всякое строительное оборудование, материалы и редкие грузовые погрузчики или вилочные форки. Какую бы цель всё это ни преследовало, зато здесь полно мест, за которыми можно незаметно спрятаться."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -294,9 +251,9 @@ population = 2
 [node name="MiningRoom26" parent="." index="22" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -576, 256 )
-roomName = "Robotics lab"
+roomName = "Лаборатория робототехники"
 roomID = "eng_robotics"
-roomDescription = "An abandoned robotics lab."
+roomDescription = "Заброшенная лаборатория робототехники."
 roomSprite = 4
 roomColor = 6
 gridColor = 5
@@ -306,11 +263,9 @@ population = 2
 [node name="MiningRoom8" parent="." index="23" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -256, 64 )
-roomName = "Break room"
+roomName = "Комната отдыха"
 roomID = "eng_breakroom"
-roomDescription = "This is where the engineers come in to take a break. It’s a bit cramped, but there are some sofas, a lunch table and bulletin board with pins for all sorts of social events, work orders, reminders to buy more coffee and snacks, and the staff’s BattleGalaxy 55,000 competition.
-
-The vending machines won’t take your worthless Inmate Work Credits, sadly."
+roomDescription = "Здесь инженеры отдыхают от работы. Места маловато, но есть пара диванов, обеденный стол и доска объявлений с кнопками, где висят всякие анонсы вечеринок, рабочие заказы, напоминалки купить побольше кофе и закусок, а также турнирная таблица соревнований персонала по BattleGalaxy 55,000.\n\nК сожалению, торговые автоматы не принимают ваши никчемные рабочие кредиты заключенных."
 canEast = false
 roomColor = 6
 gridColor = 5
@@ -320,9 +275,9 @@ population = 2
 [node name="MiningRoom9" parent="." index="24" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -384, -64 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor_blue1"
-roomDescription = "This hallway leads back out into the usual cavern walls of the prison. Metal floors stretch out over top of the cleared out tunnels leading to a series of grated catwalks and stilted platforms. A series of light poles follow the path into the darkness."
+roomDescription = "Этот коридор выводит обратно к привычным скалистым стенам тюрьмы. Металлические полы настилены над расчищенными туннелями, которые ведут к ряду решетчатых мостиков и приподнятых платформ. Вдоль пути во тьму тянется череда осветительных столбов."
 roomColor = 6
 gridColor = 5
 loctag_EngineersEncounter = true
@@ -331,9 +286,9 @@ population = 2
 [node name="MiningRoom10" parent="." index="25" groups=["zone_engpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -384, -128 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor_blue2"
-roomDescription = "The size of this cave shrinks down to a narrow tunnel as you continue down it. This tunnel is really only able to fit you and the catwalk you're standing on. The slight rattling sounds of your footsteps on the catwalks and the light poles are the only things to accompany you."
+roomDescription = "По мере продвижения пещера сужается, превращаясь в узкий туннель. В этом проходе едва хватает места для вас и мостика, по которому вы идете. Единственное, что сопровождает вас в пути — это легкий дребезжащий звук ваших шагов по металлу и мерцание фонарей."
 roomColor = 6
 gridColor = 5
 loctag_Offlimits = true
@@ -342,9 +297,9 @@ population = 2
 [node name="MiningRoom11" parent="." index="26" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -384, -192 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_corridor_blue3"
-roomDescription = "The claustrophobic tunnel continues further down to a bend off to the west. Despite the size, the sounds of heavy machinery reverb through the tunnels’ walls here."
+roomDescription = "Клаустрофобный туннель тянется дальше, пока не упирается в поворот на запад. Несмотря на тесноту, здесь эхо от работы тяжелой техники гулко отдается в стенах туннеля."
 roomColor = 6
 gridColor = 5
 loctag_Offlimits = true
@@ -353,10 +308,9 @@ population = 2
 [node name="MiningRoom14" parent="." index="27" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -448, -192 )
-roomName = "Engineering bay"
+roomName = "Инженерный отсек"
 roomID = "eng_neartransmitter"
-roomDescription = "This is where the tunnel ends. Before you is the outside of a thick cylindrical wall with a bulky metal door that you can't seem to open no matter how you try. The entire entrance is marked with warning labels and signs saying there are a lot of dangerous things with all sorts of interesting ways to kill you. 
-A number of safety and maintenance check-up clipboards hang on the railing of the catwalk, with the one labeled \"Emergency Singularity Ejector\" being the one stamped the most out of the rest."
+roomDescription = "Здесь туннель заканчивается. Перед вами — массивная цилиндрическая стена с тяжелой металлической дверью, которую никак не получается открыть, как бы вы ни старались. Весь вход обклеен предупреждающими знаками и табличками, гласящими, что внутри полно опасных штук, способных прикончить вас самым изощренным образом. \nНа перилах технического мостика висит несколько планшетов с чек-листами для проверки безопасности и техобслуживания, но больше всего затертым выглядит тот, на котором написано \"Аварийный эжектор сингулярности\"."
 roomColor = 6
 gridColor = 5
 loctag_Offlimits = true
@@ -364,9 +318,9 @@ loctag_Offlimits = true
 [node name="MiningRoom15" parent="." index="28" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( -512, -192 )
-roomName = "Bluespace transmitter"
+roomName = "Передатчик блюспейса"
 roomID = "eng_bluespacetransmitter"
-roomDescription = "A huge cylindrical room with the bluespace transmitter. This transmission center is covered in all sorts of terminals, communication servers, and fancy looking computer stuff. Looking out through the glass of the control center, the middle of the room is a large bluespace crystal installed on the top of an antenna tower with wires from around the room all snaking up to the central tower. A good-sized radar dish looks like it has been embedded into the ceiling, pointing down at the crystal."
+roomDescription = "Огромное цилиндрическое помещение с передатчиком блюспейса. Этот центр связи уставлен всевозможными терминалами, коммуникационными серверами и навороченным компьютерным железом. Если взглянуть сквозь стекло диспетчерской, в центре комнаты виден огромный кристалл блюспейса, установленный на вершине антенной мачты, к которой змеятся провода со всего помещения. В потолок словно вмонтирована внушительная радиолокационная тарелка, направленная прямо на кристалл."
 canEast = false
 roomSprite = 4
 roomColor = 2
@@ -377,33 +331,26 @@ population = 2
 [node name="MiningRoom5" parent="." index="29" groups=["zone_engpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 1, 1, 0.7, 1 )
 position = Vector2( -192, 64 )
-roomName = "Workshop"
+roomName = "Мастерская"
 roomID = "eng_workshop"
-roomDescription = "This workshop has been bored into a nook in the enterance to Engineering. There are a bunch of bins, crates, canisters and trash cans all scattered around. Rather lacking in loose tools too. 
-
-You have no idea what it’s all for, maybe it’s all just the work no one wants to do. 
-That or it all won’t fit in the door.
-
-Your best actual guess is either a repair depot or some kind of salvage yard."
+roomDescription = "Эта мастерская втиснута в нишу у входа в инженерный отсек. Повсюду разбросаны контейнеры, ящики, канистры и мусорные баки. Инструментов тоже катастрофически не хватает. \n\nТы понятия не имеешь, для чего всё это нужно — может, это просто свалка для работы, которую никто не хочет выполнять. \nИли же всё это добро просто не пролезет в дверь.\n\nТвоё самое обоснованное предположение: либо ремонтная база, либо какой-то пункт приема вторсырья."
 roomColor = 6
 population = 2
 
 [node name="MiningTaviRoom" parent="." index="30" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, 0 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "mining_taviroom"
-roomDescription = "A decrepit storage room of all sorts of dusty crates, scrap electronics, and broken mining equipment. Everywhere you look, it all seems somehow beyond worthless."
+roomDescription = "Ветхая кладовая, забитая пыльными ящиками, обломками электроники и сломанным горнодобывающим оборудованием. Куда ни глянь — всё кажется абсолютно бесполезным хламом."
 roomColor = 8
 
 [node name="MiningShafts" parent="." index="31" groups=["zone_engpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 0, -64 )
-roomName = "Mineshafts"
+roomName = "Шахты"
 roomID = "mining_shafts_entering"
-roomDescription = "Pushed up against the steel wall of the prison is a large area with all sorts of holographic screens, showing statistics, ore prices, inmate status... a whole bunch of data for a mineshaft. Under them, a large terminal and reception desk is where inmates clock in and receive their mining gear. The opposite side has the same but for returning inmates to turn in their gear and get their credits.
-
-Off into the distance are the mines proper, the concrete and metal give way to the natural caves and tunnels of the mines."
+roomDescription = "Вплотную к стальной стене тюрьмы примыкает просторная зона с кучей голографических экранов, отображающих статистику, цены на руду, статус заключенных... в общем, гору данных для шахтерского участка. Под ними расположены большой терминал и стойка регистрации, где заключенные отмечаются и получают снаряжение. На противоположной стороне — то же самое, но для возврата снаряжения и получения кредитов.\n\nВдалеке виднеются сами шахты: бетон и металл там постепенно уступают место естественным пещерам и туннелям."
 roomSprite = 4
 roomColor = 7
 population = 3
@@ -411,9 +358,9 @@ population = 3
 [node name="MiningElevator" parent="." index="32" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 0, 64 )
-roomName = "Elevator"
+roomName = "Лифт"
 roomID = "mining_elevator"
-roomDescription = "Spacious elevator that can move people or a huge amount of cargo between floors. Walls are made out of black painted metal, you notice a control panel that has a few buttons."
+roomDescription = "Просторный лифт, способный перевозить людей или огромные партии груза между этажами. Стены выполнены из черного окрашенного металла; вы замечаете панель управления с несколькими кнопками."
 roomSprite = 3
 roomColor = 2
 population = 3

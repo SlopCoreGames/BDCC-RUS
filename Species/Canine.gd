@@ -16,7 +16,7 @@ func isPlayable():
 	return true
 
 func getVisibleDescription():
-	return "The good boys and girls"
+	return "Хорошие мальчики и девочки"
 
 func getDefaultHead(_gender):
 	return "caninehead"

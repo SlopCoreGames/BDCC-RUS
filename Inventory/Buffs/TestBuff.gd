@@ -7,7 +7,7 @@ func initBuff(_args):
 	pass
 
 func getVisibleDescription():
-	return "I'm doing something alright"
+	return "У меня неплохо получается"
 
 func apply(_buffHolder):
 	_buffHolder.receiveDamageMult[DamageType.Physical] += 10

@@ -8,25 +8,25 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Become Tavi's sidekick and find a way to escape the prison together. This route is designed for switch players, ones who are okay with both, dominating and submitting."
-	return "Become Tavi's sidekick and find a way to escape the prison together. Designed for switch players."
+		return "Станьте напарником Тави и найдите способ сбежать из тюрьмы вместе. Этот путь создан для игроков-свитчей — тех, кому одинаково нравится и доминировать, и подчиняться."
+	return "Станьте напарником Тави и найдите способ сбежать из тюрьмы вместе. Для игроков-свитчей."
 
 func getKinks() -> Array:
 	return [
-		"Player will dom and sub",
-		"Every kind of sex",
+		"Игрок будет и доминантом, и сабмиссивом",
+		"Любой вид секса",
 		"BDSM",
-		"Corruption",
+		"Развращение",
 		"Noncon (optional)",
 	]
 
 func getCompletedDesc() -> String:
 	if(getFlag("TaviModule.Ch7NoEnding")):
-		return "You have escaped the prison together with Tavi!"
+		return "Вы вместе с Тави совершили побег из тюрьмы!"
 	if(getFlag("TaviModule.Ch7YesEnding")):
-		return "You and Tavi became captain's best spy agents! You have a nice life now."
+		return "Вы с Тави стали лучшими шпионскими агентами капитана! Теперь у вас прекрасная жизнь."
 	if(getFlag("TaviModule.Ch7KillEnding")):
-		return "You and Tavi became captain's best spy agents! You have a nice life now."
+		return "Вы с Тави стали лучшими шпионскими агентами капитана! Теперь у вас прекрасная жизнь."
 	return ""
 
 func getStatus() -> int:
@@ -42,9 +42,9 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("Mining_IntroducedToMinning"), "Follow Risha's order and go work in the mines."],
-		[completeIf("TaviModule.Tavi_IntroducedTo"), "Meet Tavi and submit to her."],
+		[completeIf("Mining_IntroducedToMinning"), "Выполните приказ Риши и отправляйтесь работать в шахты."],
+		[completeIf("TaviModule.Tavi_IntroducedTo"), "Познакомьтесь с Тави и подчинитесь ей."],
 	]
 
 func getProgressText() -> String:
-	return "Follow the tasks that Tavi gives you."
+	return "Выполняйте задания, которые дает вам Тави."

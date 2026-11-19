@@ -21,7 +21,7 @@ func getUnlockData() -> Dictionary:
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
-				desc = "Ask if she is brave enough to try her own product. She will probably become very milky.",
+				desc = "Спросить, хватит ли ей смелости попробовать собственный продукт. Вероятно, она станет очень молочной.",
 				sceneID = "ElizaDrugTestHuCowScene",
 			},
 		],
@@ -187,7 +187,7 @@ func reactProgressShort(_context:Dictionary, _result:TFResult):
 	.reactProgressShort(_context, _result)
 	
 	if(_result.getField("nipStageInc", false)):
-		addText("{npc.YourHis} nipples are now more sensitive!")
+		addText("{npc.YourHis} соски теперь стали чувствительнее!")
 
 func reactProgress(_context:Dictionary, _result:TFResult):
 	var step:String = _result.getField("step", "")
@@ -195,29 +195,29 @@ func reactProgress(_context:Dictionary, _result:TFResult):
 	#var stage:int = getStage()
 	
 	if(isFirstTime()):
-		addText("Without warning, a jolt of energy surges through your body, leaving you breathless. Confusion and fear grip you as you realize something is happening against your will.")
+		addText("Внезапный прилив энергии пронзает ваше тело, заставляя вас задыхаться. Смятение и страх охватывают вас, когда вы осознаете, что с вашим телом происходит нечто помимо вашей воли.")
 	
 	addText(_result.getAllTFTexts())
 	
 	if(_result.getField("nipStageInc", false)):
 		if(nipsStage == 1):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a warm wave of sensation spreads through {npc.yourHis} breasts. A delightful tingling begins to build in {npc.yourHis} sensitive nipples, making them crave attention and teasing touches.",
+				"{npc.youHim} пробирает дрожь, когда теплая волна ощущений разливается по {npc.yourHis} груди. В {npc.yourHis} чувствительных сосках начинает нарастать восхитительное покалывание, заставляя их жаждать внимания и дразнящих прикосновений.",
 			]))
 		elif(nipsStage == 2):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a thrilling warmth envelops {npc.yourHis} breasts. They swell larger and fuller, itching to be milked. Suddenly, {npc.yourHis} nipples begin to lactate, warm streams of {npc.milk} flowing down, begging for someone to take advantage of this new, delicious bounty. The urge to moo escapes {npc.yourHis} lips, a primal sound of pleasure.",
+				"{npc.youHim} пробирает дрожь, когда волнующее тепло окутывает {npc.yourHis} грудь. Она набухает, становясь всё больше и тяжелее, и буквально зудит от желания, чтобы её подоили. Внезапно {npc.yourHis} соски начинают лактировать, и теплые струйки {npc.milk} текут вниз, словно умоляя кого-нибудь воспользоваться этим новым, восхитительным изобилием. С {npc.yourHis} губ срывается мычание — первобытный звук наслаждения.",
 			]))
 		else:
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as an overwhelming wave of ecstasy washes over {npc.yourHis} breasts. They are now impossibly sensitive, practically begging to be played with and milked. The sweet, creamy {npc.milk} flows freely, and the desire to moo fills {npc.yourHis} mind, embracing the slutty, submissive nature of a true HuCow!"
+				"{npc.youHim} пробирает дрожь, когда непреодолимая волна экстаза захлестывает {npc.yourHis} грудь. Теперь она невероятно чувствительна, практически умоляя о ласках и дойке. Сладкие, кремовые {npc.milk} текут рекой, а разум {npc.yourHis} наполняет желание замычать, полностью принимая похотливую, покорную натуру истинной Челокоровы!"
 			]))
 
 	if(isFirstTime()):
-		addText("What is happening with your body..")
+		addText("Что происходит с вашим телом...")
 	else:
 		if(getPossibleSteps(getChar()).empty()):
-			addText("After all that, a sudden wave of realization washes over {npc.youHim}. {npc.YouHe} {npc.youAreHeIs} now a perfect HuCow! {npc.YouHe} just need to take some MorphIn and make these changes permanent..")
+			addText("После всего этого {npc.youHim} накрывает внезапная волна осознания. {npc.YouHe} {npc.youAreHeIs} теперь идеальная Челококорова! {npc.YouHe} нужно лишь принять немного Морфина, чтобы закрепить эти изменения навсегда..")
 	
 	if(step in ["switchbreasts", "incbreasts", "nipSen"]):
 		playAnim(StageScene.TFLook, "breasts", {bodyState={exposedChest=true}})

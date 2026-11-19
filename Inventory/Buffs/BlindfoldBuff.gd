@@ -4,7 +4,7 @@ func _init():
 	id = Buff.BlindfoldBuff
 
 func getVisibleDescription():
-	return "Blinds the wearer"
+	return "Ослепляет того, кто её носит"
 
 func getBuffColor():
 	return Color.purple

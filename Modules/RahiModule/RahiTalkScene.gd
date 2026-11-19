@@ -37,28 +37,28 @@ func _run():
 
 			if(getCharacter("rahi").isHeavilyPregnant()):
 				saynn("[say=rahi]"+RNG.pick([
-					"Her belly has become so big..",
-					"Her breasts.. They keep itching..",
-					"Can you.. Maybe.. no..",
-					"Hi.. Does she look fat..",
-					"She can’t stop making milk..",
-					"She can feel it.. Not too long left..",
+					"Её животик стал таким огромным...",
+					"Её грудь... Она всё время чешется...",
+					"Может быть ты... Ну, может... нет...",
+					"Привет... Она не кажется толстой?",
+					"Она никак не может перестать кормить молоком...",
+					"Она чувствует это... Осталось совсем немного...",
 				])+"[/say]")
 			elif(getCharacter("rahi").isVisiblyPregnant()):
 				saynn("[say=rahi]"+RNG.pick([
-					"Her breasts are getting bigger..",
+					"Её грудь становится всё больше и больше...",
 					"Pregnant.. kitty.. Meow..",
-					"Look at her belly.. It’s ours..",
-					"Meow.. You want kittens?.. She does..",
-					"You think she would be a good mommy?..",
+					"Посмотри на её живот... Он наш...",
+					"Мяу... Хочешь котят?.. Она хочет...",
+					"Как думаешь, из неё выйдет хорошая мамочка?...",
 				])+"[/say]")
 			else:
 				saynn("[say=rahi]"+RNG.pick([
-					"It’s a quiet day today, isn’t it? It was for her..",
-					"Hey there.. meow..",
-					"Kitty is happy to see you around.",
-					"Meow meow meow..",
-					"Do you think they can give her some tuna?",
+					"Сегодня спокойный день, не так ли? По крайней мере, для неё...",
+					"Эй... мяу...",
+					"Кошечка рада тебя видеть.",
+					"Мяу-мяу-мяу...",
+					"Как думаешь, ей дадут тунца?",
 				])+"[/say]")
 
 		if(getFlag("RahiModule.Rahi_ChillHappened") && !getFlag("RahiModule.rahi1ElizaSceneHappened")):
@@ -264,7 +264,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "This character's name is Rahi.. And the developer's name is Rahi.. hmmmm.. your first thought is probably.. damn self-inserts!\n\nYeah, Rahi is my fursona. Is Rahi -me- though? Not really, we share a loooot of differences. I don't talk in third person x3. Most of the time.. But that's not why people are usually upset at self-inserts.\n\nPeople usually don't like them because self-inserts tend to be the idealized copies of ourselves without any flaws or problems. Nothing ever bad happens to self-inserts, every challenge is easy for them, stuff like that.\n\nDid I deliberately tried to go against that? Nah. I just wanted to portray one of the variants of Rahi that could potentially exist.. This Rahi does have bad things happen to her but not because I wanted to prove that she isn't a self-insert. She is x3\n\nRahi does have a 'built-in' flaw that is the way she speaks. I will be honest, I made her do that because tajarans in space station 13 had to talk like that and Rahi is originally from ss13 x3. I tried to explain why she does that in her dedicated content though, hopefully its logical enough ^^\n\nI hope you get my idea. Rahi is just a shy kitty. But there are no just 'shy kitties' in one of the most secure prisons in the galaxy."
+	return "Этого персонажа зовут Рахи... И разработчика тоже зовут Рахи... хммм... твоя первая мысль, скорее всего... черт, да это же самовлюбленный самоинкерт!\n\nДа, Рахи — это моя фурсона. Но является ли Рахи — мною? Не совсем, у нас куча различий. Я не разговариваю о себе в третьем лице x3. По крайней мере, в большинстве случаев... Но люди обычно злятся на самоинкертов не из-за этого.\n\nЛюдям они не нравятся, потому что самоинксерты обычно представляют собой идеализированные копии нас самих, без каких-либо изъянов или проблем. С самоинкертами никогда не случается ничего плохого, любые испытания даются им легко, и всё в таком духе.\n\nПыталась ли я намеренно пойти против этого стереотипа? Не-а. Я просто хотела изобразить один из вариантов Рахи, который потенциально мог бы существовать... С этой Рахи случаются плохие вещи, но не потому, что я хотела доказать, что она не самоинкерт. Она — самоинкерт x3\n\nУ Рахи есть «врожденный» изъян — это её манера речи. Буду честной: я сделала её такой, потому что таджаранцы в Space Station 13 должны были так разговаривать, а Рахи изначально родом из SS13 x3. Впрочем, я пыталась объяснить причины её манеры речи в её отдельном контенте, надеюсь, это выглядит достаточно логично ^^\n\nНадеюсь, ты понимаешь мою мысль. Рахи — просто застенчивая кошечка. Но в одной из самых охраняемых тюрем галактики просто «застенчивых кошечек» не бывает."
 
 func hasDevCommentary():
 	return true

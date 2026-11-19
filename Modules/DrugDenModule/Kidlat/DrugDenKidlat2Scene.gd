@@ -77,7 +77,7 @@ func _react(_action: String, _args):
 		return
 
 	if(_action == "start_browsing_shop"):
-		addMessage("Task updated! (Task log can be found inside the 'Me' menu during drug den runs)")
+		addMessage("Задача обновлена! (Журнал задач можно найти в меню «Я» во время вылазок в притон)")
 		getModule("DrugDenModule").regenerateKidlatItems()
 		runScene("DrugDenKidlatShopScene")
 		endScene()

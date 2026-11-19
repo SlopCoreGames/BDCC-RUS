@@ -38,10 +38,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Cum Whore Streak"
+	return "Серия куннилингусных забегов"
 
 func getEffectDesc():
-	return "Your current streak: "+str(streak)+"\nTime left: "+Util.getTimeStringHumanReadable(turns)
+	return "Ваша текущая серия: "+str(streak)+"\nОсталось времени: "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/lovedice.png"

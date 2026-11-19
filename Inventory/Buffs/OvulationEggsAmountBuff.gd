@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Maximum egg cells bonus "+text+"%"
+	return "Бонус к максимальному количеству яйцеклеток "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.eggsBonusMod += (amount/100.0)

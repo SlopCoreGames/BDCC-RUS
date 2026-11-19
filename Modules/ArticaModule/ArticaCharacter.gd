@@ -25,7 +25,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Shy lilac that has a very bright white fur"
+	return "Скромная сиреневая лисица с очень ярким белым мехом"
 
 func getChatColor():
 	return '#ff15eff2'

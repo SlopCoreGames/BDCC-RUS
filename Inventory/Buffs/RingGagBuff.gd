@@ -4,7 +4,7 @@ func _init():
 	id = Buff.RingGagBuff
 
 func getVisibleDescription():
-	return "Forces wearer's mouth open and gags"
+	return "Заставляет носителя широко раскрыть рот и вставляет кляп"
 
 func apply(_buffHolder):
 	_buffHolder.gagged = true

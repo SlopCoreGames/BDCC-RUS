@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Яростная атака"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -30,7 +30,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} с молниеносной скоростью бросается вперед, нанося серию мощных ударов по телу {receiver.name}."
 	
 	if(RNG.chance(30) && _receiver.addEffect(StatusEffect.Bleeding)):
-		text += " Sharp claws caused {receiver.name} to start [color=red]bleeding[/color]."
+		text += " Острые когти заставили {receiver.name} начать [color=red]кровоточить[/color]."
 	return {
 		text = text,
 		pain = RNG.randi_range(20, 40),
@@ -40,7 +40,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name}'s eyes narrow as {attacker.he} readies {attacker.his} devastating strike."
+	return "Глаза {attacker.name} сужаются, когда {attacker.he} готовит {attacker.his} сокрушительный удар."
 
 func getAttackSoloAnimation():
 	return "charge"

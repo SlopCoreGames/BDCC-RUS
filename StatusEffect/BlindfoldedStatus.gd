@@ -23,13 +23,13 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Blindfolded"
+	return "Повязка на глазах"
 
 func getEffectDesc():
 	if(character.hasPerk(Perk.BDSMBlindfold)):
-		return "You're blind but not entirely helpless"
+		return "Вы ослеплены, но не совсем беспомощны"
 	
-	return "You can't see. Hitting anything will be very hard"
+	return "Вы ничего не видите. Попасть по цели будет очень сложно"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/blind.png"

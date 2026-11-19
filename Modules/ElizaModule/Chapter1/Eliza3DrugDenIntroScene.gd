@@ -246,6 +246,6 @@ func _react(_action: String, _args):
 
 	if(_action == "near_drugden"):
 		processTime(15*60)
-		addMessage("You can now do raids on the underground drug den!")
+		addMessage("Теперь вы можете проводить рейды на подпольный притон!")
 
 	setState(_action)

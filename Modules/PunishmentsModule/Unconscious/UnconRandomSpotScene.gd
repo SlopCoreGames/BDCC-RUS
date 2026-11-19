@@ -45,34 +45,34 @@ func _react(_action: String, _args):
 			var panties:ItemBase = GM.pc.getInventory().getEquippedItem(InventorySlot.UnderwearBottom)
 			if(!panties.isRestraint()):
 				if(RNG.chance(75)):
-					addMessage("Your "+panties.getVisibleName()+" were stolen..")
+					addMessage("Твоя "+panties.getVisibleName()+" были украдены...")
 					GM.pc.getInventory().removeItemFromSlot(InventorySlot.UnderwearBottom)
 					pantiesStolen = true
 		if(RNG.chance(50)):
 			if(GM.pc.getCredits() > 5):
 				GM.pc.addCredits(RNG.randi_range(2, 5))
-				addMessage("A few of your credits were stolen..")
+				addMessage("Часть твоих кредитов была украдена...")
 		if(RNG.chance(50)):
 			for _i in range(RNG.randi_range(2, 6)):
 				GM.pc.addBodywritingRandom()
-			addMessage("Your body has something scribbled on it..")
+			addMessage("На твоем теле что-то нацарапано...")
 		if(OPTIONS.isContentEnabled(ContentType.Watersports)):
 			if(RNG.chance(10)):
 				GM.pc.pissedOnBy("pc")
-				addMessage("What is that scent.. gross..")
+				addMessage("Что это за запах... мерзость...")
 		if(GM.pc.canBeMilked()):
 			if(RNG.chance(30)):
 				GM.pc.milk()
 				GM.pc.addEffect(StatusEffect.SoreNipplesAfterMilking)
-				addMessage("You find your breasts.. less heavy..")
+				addMessage("Ты чувствуешь, что твоя грудь стала... легче...")
 		if(GM.pc.canBeSeedMilked()):
 			if(RNG.chance(30)):
 				GM.pc.orgasmFrom("pc")
-				addMessage("You feel.. spent..")
+				addMessage("Ты чувствуешь себя... опустошенной...")
 		if(RNG.chance(20)):
 			GM.pc.doWound()
 			GM.pc.addPain(10)
-			addMessage("What are these.. teeth marks..")
+			addMessage("Что это за... следы от зубов...")
 	
 	setState(_action)
 

@@ -67,23 +67,23 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.Gags):
-		return "I wanna hear you moan, suka"
+		return "Хочу слышать твои стоны, сука"
 	if(interest == InterestTopic.ButtPlugs):
-		return "Why don't you use dicks instead?"
+		return "Почему бы тебе не использовать члены вместо этого?"
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "Suka, having both dick and pussy is not normal"
+		return "Сука, иметь и член, и пизду — это ненормально"
 	if(interest == InterestTopic.ExposedPanties):
-		return "Can't wait to cut your panties into little bits"
+		return "Не терпится изрезать твои трусики в клочья"
 	if(interest == InterestTopic.ExposedBra):
-		return "Is that bra armored, suka?"
+		return "Этот лифчик бронированный, сука?"
 	if(interest == InterestTopic.FullyNaked):
-		return "Put something on, suka"
+		return "Надень хоть что-нибудь, сука"
 	if(interest == InterestTopic.CoveredInCum):
-		return "I'm not touching you, suka"
+		return "Я тебя еще даже не трогаю, сука"
 	if(interest == InterestTopic.AndroBody):
-		return "Are you a girl or a boy?"
+		return "Ты девка или пацан?"
 	if(interest == InterestTopic.SmallBreasts):
-		return "Will you squeel if I poke your tits?"
+		return "Будешь визжать, если я пощупаю твои сиськи?"
 		
 func _getName():
 	return "Volk"
@@ -92,7 +92,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A male canine from the general block. Gray fur, short height, lots of scars"
+	return "Самец из общего блока. Серая шерсть, низкий рост, куча шрамов"
 
 func getSpecies():
 	return ["canine"]
@@ -104,11 +104,11 @@ func getFightIntro(_battleName):
 	if(_battleName == "arenafight"):
 		var text = "Волк приседает, еще сильнее пригибаясь к земле. Затем он сплевывает в сторону. Довольно грубо. Голос у него очень хриплый, будто он курил без перерыва лет десять."
 		text += "\n\n"
-		text += "[say=volk]What? Have a problem with that?[/say]"
+		text += "[say=volk]Что? Есть проблемы?[/say]"
 		text += "\n\n"
-		text += "He then stretches his neck and stands up before suddenly pulling out a shiv, a sharp-looking piece of glass that has a handle made out of cloth. No rules policy means he is free to use it."
+		text += "Затем он разминает шею, встает и внезапно выхватывает шив — остро заточенный кусок стекла с обмотанной тряпкой рукояткой. Правило «никаких ограничений» означает, что он волен использовать его когда угодно."
 		text += "\n\n"
-		text += "[say=volk]Surprise. Come here, suka.[/say]"
+		text += "[say=volk]Сюрприз. Иди сюда, сука.[/say]"
 		
 		return text
 	else:
@@ -139,7 +139,7 @@ func createBodyparts():
 
 func getLootTable(_battleName):
 	var loot = InmateLoot.new()
-	loot.addLoot(100, ["Shiv"])
+	loot.addLoot(100, ["Шило"])
 	return loot
 	
 func getDefaultEquipment():

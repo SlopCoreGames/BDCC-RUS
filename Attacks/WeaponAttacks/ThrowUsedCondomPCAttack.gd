@@ -14,7 +14,7 @@ func getVisibleDesc(_context = {}):
 	if(item == null):
 		return "error"
 	
-	return "The effects depend on the contents.\n\n"+item.getVisisbleDescription()
+	return "Эффект зависит от содержимого.\n\n"+item.getVisisbleDescription()
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -26,7 +26,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var item = getItem(_context)
 	
 	var texts = [
-		"{attacker.name} throws a filled used condom at {receiver.name}! The condom breaks when it hits {receiver.him}, spilling all of its contents!",
+		"{attacker.name} швыряет в {receiver.name} наполненный использованный презерватив! При попадании в {receiver.him} он лопается, и всё содержимое выплескивается наружу!",
 	]
 	
 	var howMuchLustToAdd = 0

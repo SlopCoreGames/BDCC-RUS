@@ -14,10 +14,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Posthypnotic trigger"
+	return "Постгипнотический триггер"
 
 func getEffectDesc():
-	return "You have a posthypnotic trigger implanted deep within your subconcious."
+	return "Глубоко в вашем подсознании зашит постгипнотический триггер."
 
 func getEffectImage():
 	return "res://Modules/HypnokinkModule/Icons/StatusEffects/subconcious.png"

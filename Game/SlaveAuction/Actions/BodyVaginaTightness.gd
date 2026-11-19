@@ -15,21 +15,21 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("VaginaTight") && _slaveTraits["VaginaTight"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Now, I know you all have been eyeing that perfect body, but let me draw your attention to {slave.his} crotch! See this little pussy? It’s tight as a vice, untouched by too much wear. Trust me, you won’t find one like it.",
-			"If you’re looking for a pussy that’ll make you work for it, you’re staring right at it. This slave’s incredibly tight down there, I promise, the experience is unforgettable.",
-			"Take a good look, but you’ll have to trust me on the tightness - legs closed or not, this one’s untouched by heavy use. You’ll get a grip you won’t want to let go of.",
-			"Some of you may like a challenge, and this one delivers. {slave.His} tight pussy will feel like you’re breaking new ground, every time.",
-			"You can practically see how tight {slave.his} pussy is, can’t you? Trust me, once you’re in, you won’t want to pull out.",
-			"This one’s as tight as they come, a rare find in the auction house. You’ll never find such a pristine little pussy anywhere else!",
+			"Так, я знаю, вы все облизываетесь на это идеальное тело, но позвольте мне обратить ваше внимание на {slave.his} промежность! Видите эту киску? Она сжата, словно тиски, и её ещё не слишком сильно заездили. Поверьте мне, такой больше не найдёте.",
+			"Если вы ищете киску, ради которой придётся попотеть, то вы смотрите прямо на неё. У этой рабыни там невероятно узко, обещаю, ощущения будут незабываемыми.",
+			"Рассматривайте хорошенько, но насчёт тесноты вам придётся мне поверить — сжаты ноги или нет, эта девка ещё не изношена. Хватка будет такая, что не захочется отпускать.",
+			"Некоторым из вас по душе вызов, и эта штучка его обеспечит. {slave.His} тугая киска будет давать ощущение, будто вы каждый раз открываете новые земли.",
+			"Вы же практически видите, насколько {slave.his} киска узкая, верно? Поверьте, стоит вам войти, вы не захотите выходить.",
+			"Эта — самая тугая из всех, редкая находка для аукциона. Вы нигде больше не встретите такую первозданную маленькую киску!",
 		]))
 	if(_slaveTraits.has("VaginaLoose") && _slaveTraits["VaginaLoose"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Let me get your attention down to {slave.his} crotch. This pussy has seen some real action. It’s stretchy, well-used, and experienced in handling whatever you throw at it!",
-			"Now, you want a slave who knows exactly what they’re doing? Because {slave.his} pussy’s been stretched to perfection - no matter the size, it’s ready for more. Open, welcoming, and eager.",
-			"By the way, with this one? No need to hold back. You can go as deep and rough as you like, and that stretchy pussy will just keep begging for more.",
-			"Don’t let the closed legs fool you - trust me, this slave’s pussy has taken plenty of attention. Loose, but still so responsive and tight in the right moments, you’ll be impressed with how well it handles you.",
-			"Experienced, well-stretched, and very accommodating. This pussy won’t shy away from anything. You won’t have to worry about being too rough or too big.",
-			"If you like a pussy that’s seen some serious use, you’ve found the perfect slave. Stretchy, open, and always ready for the next round.",
+			"А теперь обратите внимание на {slave.his} промежность. Эта киска уже повидала настоящую жару. Она эластичная, натренированная и знает толк в том, как принимать всё, что вы в неё засунете!",
+			"Хочешь рабыню, которая точно знает свое дело? Потому что киска {slave.his} растянута до совершенства — какого бы размера ни был твой член, она готова к большему. Раскрытая, манящая и жаждущая.",
+			"Кстати, с этой штучкой? Можно не сдерживаться. Заходи так глубоко и грубо, как пожелаешь — эта растянутая киска будет только умолять о добавке.",
+			"Не дай сомкнутым ножкам обмануть тебя — поверь, эта рабыня знает толк в удовольствиях. Киска расслабленная, но при этом невероятно отзывчивая и сжимается в нужные моменты так, что ты будешь в восторге от того, как она тебя принимает.",
+			"Опытная, хорошо растянутая и очень податливая. Эта киска не будет капризничать. Тебе не придется беспокоиться о том, что ты слишком груб или слишком велик.",
+			"Если тебе нравятся киски с богатым опытом, ты нашел идеальную рабыню. Растянутая, открытая и всегда готовая к новому раунду.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Mind, mightChance())

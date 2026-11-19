@@ -42,9 +42,9 @@ func generateRestraintData():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was locked onto your penis, making it useless!"
+		return getAStackNameCapitalize()+" была намертво застегнута на твоем члене, сделав его бесполезным!"
 	else:
-		return getAStackNameCapitalize()+" was locked onto {receiver.nameS} penis, making it useless!"
+		return getAStackNameCapitalize()+" была намертво застегнута на члене {receiver.nameS}, сделав его бесполезным!"
 
 func getRiggedParts(_character):
 	return {

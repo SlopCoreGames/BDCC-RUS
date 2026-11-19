@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "gym_weights")
 
 func run(_triggerID, _args):
-	addButtonUnlessLate("Lift weights", "Approach one of the benches", "benches")
+	addButtonUnlessLate("Жать веса", "Подойти к одной из скамей", "benches")
 
 func getPriority():
 	return 0

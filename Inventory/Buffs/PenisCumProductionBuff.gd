@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(Util.roundF(amount, 1))
 	if(amount > 0):
 		text = "+"+text
-	return "Cum production "+text+"%"
+	return "Выработка спермы "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.PenisCumProduction, amount/100.0)

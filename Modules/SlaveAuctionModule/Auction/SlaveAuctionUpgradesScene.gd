@@ -53,7 +53,7 @@ func _react(_action: String, _args):
 		GM.pc.addCredits(-credsToRemove)
 		
 		getModule("SlaveAuctionModule").doBuyUpgrade(upgradeID)
-		addMessage("You bought the upgrade!")
+		addMessage("Улучшение куплено!")
 		return
 
 	setState(_action)
@@ -62,7 +62,7 @@ func getDebugActions():
 	return [
 	{
 		"id": "unlockAll",
-		"name": "Satisfy requirements",
+		"name": "Выполнить требования",
 		"args": [
 		],
 	},

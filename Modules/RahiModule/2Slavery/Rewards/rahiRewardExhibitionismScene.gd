@@ -150,7 +150,7 @@ func _run():
 
 		saynn("[say=pc]У тебя отлично получается.[/say]")
 
-		saynn("Переполненная восторгом, Рахи медленно подходит к тебе, широко покачивая бедрами, чтобы подчеркнуть свою женственность. Когда ты протягиваешь ей конфету, она медленно наклоняется и слизывает её прямо с твоей ладони зубами. При этом её лапки прижаты к бедрам, а значит, она сжимает свою грудь прямо перед твоими глазами."+str(" It doesn't take long for some milk to start coming out of them. So tasty." if getCharacter("rahi").canBeMilked() else "")+"")
+		saynn("Переполненная восторгом, Рахи медленно подходит к тебе, широко покачивая бедрами, чтобы подчеркнуть свою женственность. Когда ты протягиваешь ей конфету, она медленно наклоняется и слизывает её прямо с твоей ладони зубами. При этом её лапки прижаты к бедрам, а значит, она сжимает свою грудь прямо перед твоими глазами."+str(" Не проходит и пары минут, как из них начинает сочиться молочко. Такое вкусное." if getCharacter("rahi").canBeMilked() else "")+"")
 
 		saynn("Поглотив лакомство, Рахи довольно мурлычет. Она выпрямляется, делает легкое пируэт и замирает в позе, демонстрируя тебе свое обнаженное тело; её хвост игриво прикрывает киску, которая уже стала довольно влажной...")
 
@@ -294,7 +294,7 @@ func _run():
 
 		saynn("[say=rahi]Охх.. Что ты.. ах..[/say]")
 
-		saynn("Рахи издает тихий вздох; ее соски прижаты к холодному стеклу, пока ты стоишь позади нее. Твоя рука скользит по ее бедрам вниз к промежности, нащупывая крошечную чувствительную горошину и растирая ее быстрыми движениями из стороны в сторону. В это же время твоя другая рука сжимает грудь Рахи между стеклом и ее телом, обхватывая одну из грудей."+str(" Little milk streams already emerge under your hand, leaving fancy patterns on that window." if getCharacter("rahi").canBeMilked() else "")+"")
+		saynn("Рахи издает тихий вздох; ее соски прижаты к холодному стеклу, пока ты стоишь позади нее. Твоя рука скользит по ее бедрам вниз к промежности, нащупывая крошечную чувствительную горошину и растирая ее быстрыми движениями из стороны в сторону. В это же время твоя другая рука сжимает грудь Рахи между стеклом и ее телом, обхватывая одну из грудей."+str(" Под твоей рукой уже проступают тонкие струйки молока, оставляя причудливые узоры на этом прозрачном окне." if getCharacter("rahi").canBeMilked() else "")+"")
 
 		saynn("По общему блоку ходят заключенные; Рахи привлекает их внимание стонами и тем, что слегка разводит ноги, приглашая тебя к более интимным ласкам. Ты принимаешь вызов, просовывая руку глубже между ее ног и потирая киску, время от времени раздвигая складки, чтобы проверить ее влажность. Рахи довольно мокрая, твои пальцы чувствуют... жар.")
 
@@ -342,22 +342,22 @@ func _run():
 			saynn("Ты выгуливаешь свою кошечку на поводке. Она настолько уверена в себе, что не против ходить совершенно обнаженной, позволяя любому заключенному или сотруднику рассмотреть её во всех подробностях.")
 
 			if (isNotShamed()):
-				var randLine = RNG.pick(["Everyone is looking at her..", "You can't keep your eyes off her, can you?..", "Do you like what you see, {rahiMaster}?..", "She is.. getting so wet..", "Kitty wonders if any camera is seeing her..", "She can feel their eyes on her body..", "She could use to this..", "Do you like the way her breasts bounce when she walks?..", "She wonders what will happen if she rubs her clit right now.. Would you let me?", "She feels like such a slut.. being paraded around like this..", "She.. she loves being your little naked pet.. So naughty and exciting..", "Her pussy is so exposed and vulnerable right now.. ah..", "She wonders if any of the guards will be brave enough..", "Want her to walk in front so you can see her ass?.."])
+				var randLine = RNG.pick(["Все смотрят на неё...", "Ты ведь просто не можешь отвести от неё взгляд, верно?..", "Тебе нравится то, что ты видишь, {rahiMaster}?..", "Она... становится такой мокрой...", "Кошечка гадает, видит ли её хоть одна камера...", "Она кожей чувствует на себе их взгляды...", "Ей это начинает нравиться...", "Тебе нравится, как колышутся её груди, когда она идет?..", "Она гадает, что будет, если она начнет тереть клитор прямо сейчас... Ты бы позволил ей?", "Она чувствует себя такой шлюхой... когда её вот так выставляют напоказ...", "Она... она обожает быть твоей маленькой голой зверушкой... Такой непослушной и возбуждающей...", "Её киска сейчас такая открытая и беззащитная... ах...", "Она гадает, хватит ли у кого-нибудь из охранников смелости...", "Хочешь, чтобы она прошла впереди, и ты мог рассмотреть её задницу?"])
 				saynn("[say=rahi]"+str(randLine)+"[/say]")
 
 			else:
-				var randLine = RNG.pick(["They're all staring at her.. Kitty feels so exposed..", "What if someone remembers her..", "She starts to feel a bit chilly.. Maybe we should head back soon..", "Everyone is probably judging her..", "She feels like such a slut right now..", "This is a bit.. humiliating..", "She can cover herself with her paws.. But everyone is staring at her ass..", "A few more and we go back maybe?..", "She is such a whore.."])
+				var randLine = RNG.pick(["Они все пялятся на неё... Кити чувствует себя такой беззащитной...", "А что, если кто-то её узнает...", "Ей становится немного зябко... Может, нам стоит скоро вернуться?", "Наверняка все её сейчас осуждают...", "Она чувствует себя такой шлюхой прямо сейчас...", "Это немного... унизительно...", "Она может прикрываться лапками... Но все пялятся на её задницу...", "Еще несколько штук, и, может, вернемся?..", "Какая же она сучка..."])
 				saynn("[say=rahi]"+str(randLine)+"[/say]")
 
 		else:
 			saynn("Ты выгуливаешь свою кошечку на поводке. На ней всё еще надеты тюремная футболка и шорты. Ей пока не хватает уверенности, чтобы раздеться догола.")
 
 			if (isNotShamed()):
-				var randLine = RNG.pick(["She is so excited..", "Should we give them something to look at?..", "Wanna see something of hers?..", "She is feeling a little bit naughty today..", "You think she will get a chance to strip completely?..", "The guards are watching..", "Someone is watching..", "She can't wait to see their faces..", "Will she gets in trouble if she.. flashes someone?..", "This uniform.. is so limiting..", "Wanna see her tits, {rahiMaster}?..", "Wanna see how wet she is?..", "Do you like showing her off, {rahiMaster}?..", "She could use to being paraded like this..", "She wants to do something naughty..", "They don't know how much of a dirty slut she is..", "The leash makes this so much more hot..", "Her heart is racing.."])
+				var randLine = RNG.pick(["Она так возбуждена...", "Может, дадим им на что-нибудь посмотреть?..", "Хотите взглянуть на неё?..", "Сегодня она настроена на небольшое шаломанство...", "Думаешь, у неё будет шанс раздеться полностью?..", "Охранники наблюдают...", "Кто-то смотрит...", "Ей не терпится увидеть их лица...", "Будут ли у неё проблемы, если она... покажет кого-нибудь?..", "Эта форма... такая сковывающая...", "Хочешь взглянуть на её сиськи, {rahiMaster}?..", "Хочешь посмотреть, какая она мокрая?..", "Тебе нравится выставлять её напоказ, {rahiMaster}?..", "Она уже привыкла к тому, что её выставляют напоказ...", "Ей хочется сотворить какую-нибудь шалость...", "Они и не подозревают, какая она грязная шлюха...", "С поводком всё становится в разы горячее...", "Её сердце бешено колотится..."])
 				saynn("[say=rahi]"+str(randLine)+"[/say]")
 
 			else:
-				var randLine = RNG.pick(["She didn't do that much.. But she already wants to stop..", "She is blushing like a shy bitch..", "It was fun.. But maybe we should head back soon..", "She is such a slut..", "Will anyone remember her?.. She hopes no..", "Thank you.. but.. meow.."])
+				var randLine = RNG.pick(["Она сделала не так уж много... но уже хочет остановиться...", "Она краснеет, как застенчивая сучка...", "Было весело... но, может, нам стоит скоро вернуться?..", "Какая же она шлюха...", "Вспомнит ли её кто-нибудь?.. Она надеется, что нет...", "Спасибо... но... мяу..."])
 				saynn("[say=rahi]"+str(randLine)+"[/say]")
 
 		saynn("Уверенность Рахи: "+str(Util.roundF(parConf*100.0, 1))+"%")
@@ -965,7 +965,7 @@ func _run():
 
 		saynn("[say=rahi]Ты собираешься..[/say]")
 
-		saynn("Медленным, но уверенным движением ты подаешься тазом вперед, позволяя своему члену легко растянуть вход в киску Рахи и скользнуть внутрь. Из её рта вырывается тихий стон, а её внутренние стенки сжимаются вокруг тебя — её тело инстинктивно принимает тебя, жаждая тебя так, словно она в течке.."+str(" Because she is, in fact, in heat.." if getCharacter("rahi").isInHeat() else "")+"")
+		saynn("Медленным, но уверенным движением ты подаешься тазом вперед, позволяя своему члену легко растянуть вход в киску Рахи и скользнуть внутрь. Из её рта вырывается тихий стон, а её внутренние стенки сжимаются вокруг тебя — её тело инстинктивно принимает тебя, жаждая тебя так, словно она в течке.."+str(" Потому что она, на самом деле, в течке..." if getCharacter("rahi").isInHeat() else "")+"")
 
 		saynn("[say=rahi]Ах.. да, собираешься..[/say]")
 
@@ -1301,7 +1301,7 @@ func _run():
 		aimCameraAndSetLocName(getRandomLoc())
 		saynn("Пока ты выставляешь Рахи напоказ, водя её по тюрьме с места на место, её нагое тело на виду у всех, она не может не возбуждаться от такого внимания. Идя рядом с тобой, она прижимается ближе, её голос звучит мягко и жадно.")
 
-		var randomLine = RNG.pick(["Look at her.. all exposed and vulnerable.. paraded like she is a slave.. And you're holding the leash..", "Every step she takes.. She can feel their hungry eyes on her.. But your eyes are the best..", "Being led on a leash like a submissive pet.. It awakens her inner slut.. She crave to be used..", "Her pussy is dripping wet with anticipation of what you will do to her..", "Having her pussy and tits exposed like this.. makes her feel alive.. Everyone can look.. but nobody can touch.. thanks to you..", "She can hear them whispering.. She can see their eyes on her body..", "Each time she feels the leash tugging at her collar.. It sends shivers down her spine.."])
+		var randomLine = RNG.pick(["Посмотри на неё... вся на виду, такая беззащитная... выставляешь её напоказ, словно рабыню... И поводок в твоих руках...", "С каждым шагом она чувствует на себе их голодные взгляды... Но твой взгляд — самый лучший...", "Когда её ведут на поводке, как покорную зверушку... это пробуждает в ней внутреннюю шлюху. Она жаждет, чтобы её использовали...", "Её киска течет от предвкушения того, что ты с ней сделаешь...", "Когда её пизда и сиськи выставлены напоказ, она чувствует себя живой... Все могут смотреть, но никто не может коснуться... благодаря тебе...", "Она слышит их шепот... Она чувствует на своем теле их взгляды...", "Каждый раз, когда она чувствует натяжение поводка на ошейнике... по её спине пробегает дрожь..."])
 		saynn("[say=rahi]"+str(randomLine)+"[/say]")
 
 		if (isShamed()):
@@ -1352,7 +1352,7 @@ func _run():
 	if(state == "pdirtytalk_whisperback"):
 		saynn("Теперь твоя очередь наклониться поближе, пока твои губы не коснутся уха Рахи. Ты переходишь на чувственный шепот.")
 
-		var randLine = RNG.pick(["Such a naughty little feline.. You love showing off, don't you? Flaunting that dripping pussy and that tight little asshole for me to see.", "You're such a naughty exhibitionist, kitty. The way you bravely display your naked body, showing off every inch to my hungry gaze.. drives me wild.", "You enjoy being on display, don't you, kitty? Knowing that I hold the leash that guides your desires..", "Seeing you show off like this, it's like a drug to me, kitty. I'm addicted to the sight of your body, the way you tease and entice with every move.", "You're such a brave exhibitionist, kitty. Letting everyone see just how much of a dirty little slut you are, how you revel in their lustful gazes.. such a turn-on."])
+		var randLine = RNG.pick(["Какая непослушная кошечка... Тебе ведь нравится выставлять себя напоказ, верно? Хвастаешься своей мокрой киской и тугим анусом специально для меня.", "Ты такая развратная выставушка, киса. То, как ты смело демонстрируешь свое обнаженное тело, подставляя каждый дюйм моему голодному взору... это сводит меня с ума.", "Тебе нравится быть на виду, правда, киса? Знать, что именно ты держишь поводок, направляющий твои желания...", "Видеть, как ты выставляешь себя напоказ, — это как наркотик, кошечка. Я подсел на вид твоего тела, на то, как ты дразнишь и соблазняешь каждым своим движением.", "Ты такая смелая эксгибиционистка, кошечка. Позволяешь всем видеть, какая ты грязная маленькая шлюшка, как ты наслаждаешься их похотливыми взглядами... это так заводит."])
 		saynn("[say=pc]"+str(randLine)+"[/say]")
 
 		saynn("Твои пальцы легко очерчивают изгибы её тела, дразняще скользя по меху и чувствительным местам. Дыхание Рахи сбивается, твои слова лишь разжигают её желание.")
@@ -1716,7 +1716,7 @@ func loadData(data):
 	success = SAVE.loadVar(data, "success", false)
 
 func getDevCommentary():
-	return "The only reason this is a reward and not an activity is because I needed more rewards and this seemed good enough x3.\n\nThe parading stuff took sooo much time, I'm not even sure if it was worth it, there isn't even that much to do. Maybe just having a few fully scripted scenes would be better but who knows x3. But I kinda like that you have a little progression with it. The higher Rahi's skill is, the further you will get."
+	return "Единственная причина, по которой это награда, а не отдельное занятие, заключается в том, что мне нужно было больше наград, и это показалось мне достаточно годным x3.\n\nНа это парадное шествие ушло ооочень много времени, я даже не уверен, стоило ли оно того, ведь делать там особо нечего. Может, лучше было бы просто сделать несколько полностью прописанных сцен, но кто знает x3. Но мне вроде нравится, что здесь есть небольшой прогресс. Чем выше навык Рахи, тем дальше вы продвинетесь."
 
 func hasDevCommentary():
 	return true

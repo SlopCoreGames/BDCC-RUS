@@ -14,11 +14,11 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"You know what's the best part is? This slave has submitted completely to {slave.his} master! No further breaking needed, {slave.he} will obey.",
-		"You know what's the best part is? This slave has submitted completely. {slave.He} {slave.isAre} already devoted and loyal, this one knows {slave.his} place at your feet.",
-		"Fully broken and loyal to the master. This slave has submitted completely, you won’t have to worry about disobedience with {slave.him}.",
-		"This one’s been completely conditioned to submit to {slave.his} owner. No resistance, just obedience.",
-		"Already trained, already submitted. This slave is perfect for those who don’t want to bother with breaking them in.",
+		"Знаете, что самое приятное? Эта рабыня полностью подчинилась {slave.his} хозяину! Больше ломать её не нужно, {slave.he} будет беспрекословно слушаться.",
+		"Знаете, в чём главная фишка? Она полностью сдалась. {slave.He} {slave.isAre} уже предана и верна, она знает своё {slave.his} место у ваших ног.",
+		"Полностью сломлена и предана хозяину. Эта рабыня полностью подчинилась, так что с {slave.him} вам не придётся беспокоиться о непослушании.",
+		"Эту уже полностью приучили подчиняться {slave.his} владельцу. Никакого сопротивления, только покорность.",
+		"Уже обучена, уже подчинена. Эта рабыня — идеальный вариант для тех, кто не хочет тратить время на её «дрессировку».",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

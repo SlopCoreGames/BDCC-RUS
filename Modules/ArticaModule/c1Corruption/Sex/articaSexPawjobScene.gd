@@ -65,7 +65,7 @@ func _run():
 
 		saynn("Артика сидит на твоей кровати, подложив под спину подушку, пока ты устраиваешься на противоположной стороне. Затем она медленно поднимает ноги..")
 
-		saynn("Все её.. сокровища.. теперь действительно перед тобой.. даже больше, чем ты мог пожелать. Её {artica.breasts} с "+str("dark swollen milky nips" if getCharacter("artica").isLactating() else "perky cyan nips")+", её "+str("fluffy" if !getCharacter("artica").isVisiblyPregnant() else "round pregnant")+" животик, её {artica.penis}, обе её жаждущие дырочки.. и, конечно же.. великолепные лапки. Её щеки краснеют от твоего взгляда, а пальцы с коготками слегка поджимаются.")
+		saynn("Все её.. сокровища.. теперь действительно перед тобой.. даже больше, чем ты мог пожелать. Её {artica.breasts} с "+str("темные набухшие молочные соски" if getCharacter("artica").isLactating() else "упругие голубые соски")+", её "+str("fluffy" if !getCharacter("artica").isVisiblyPregnant() else "круглая, беременная")+" животик, её {artica.penis}, обе её жаждущие дырочки.. и, конечно же.. великолепные лапки. Её щеки краснеют от твоего взгляда, а пальцы с коготками слегка поджимаются.")
 
 		saynn("[say=artica]Вот так?..[/say]")
 
@@ -99,7 +99,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "receive_pawjob_cum")
 	if(state == "receive_pawjob_cum"):
 		playAnimation(StageScene.SexPawjob, "fast", {pc="pc", npc="artica", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("С каждым движением ты чувствуешь, как возбуждение нарастает, из твоих уст вырываются короткие стоны удовольствия, пока пальцы и подушечки Артики с нарастающей страстью трутся о твой член, а твои бедра инстинктивно дергаются..."+str(" Her own member is dripping plenty in its little cage, creating a wet spot on your bed sheets together with her needy pussy.." if isCaged else " Her own hard member is dripping plenty, creating a wet spot on your bed sheets together with her needy pussy..")+"")
+		saynn("С каждым движением ты чувствуешь, как возбуждение нарастает, из твоих уст вырываются короткие стоны удовольствия, пока пальцы и подушечки Артики с нарастающей страстью трутся о твой член, а твои бедра инстинктивно дергаются..."+str(" Ее собственный член обильно сочится в своей маленькой клетке, оставляя мокрое пятно на твоих простынях вместе с ее жаждущей киской..." if isCaged else " Ее твердый член обильно сочится, оставляя мокрое пятно на твоих простынях вместе с ее жаждущей киской...")+"")
 
 		saynn("[say=pc]Хах...[/say]")
 
@@ -107,7 +107,7 @@ func _run():
 
 		saynn("[say=artica]По-похоже, ты сейчас... ой!..[/say]")
 
-		saynn("Твой член начинает пульсировать между лап Артики... а затем из пульсирующей головки вырываются струи горячей липкой {pc.cum}, которые попадают прямо на живот и препуций Артики, пачкая мех и "+str("the chastity cage" if isCaged else "the cyan shaft")+"..")
+		saynn("Твой член начинает пульсировать между лап Артики... а затем из пульсирующей головки вырываются струи горячей липкой {pc.cum}, которые попадают прямо на живот и препуций Артики, пачкая мех и "+str("клетка целомудрия" if isCaged else "голубой ствол")+"..")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "after_pawjob")
 	if(state == "after_pawjob"):

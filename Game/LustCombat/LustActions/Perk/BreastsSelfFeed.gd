@@ -35,7 +35,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Кормить себя молоком"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Squeeze your breasts and catch some of the milk into your mouth, relieving pain depending on the amount"
+	return "Сжать грудь и поймать немного молока ртом, облегчая боль в зависимости от количества"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -56,18 +56,18 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(pc.hasBigBreasts()):
-		text += "You quickly reach your hands to your {pc.breasts} and squeeze them very tight while guiding the nipples towards your mouth. Your tits are big enough for you to reach towards one of the nips with your lips and latch onto it."
+		text += "Ты быстро хватаешь свои {pc.breasts} и крепко сжимаешь их, направляя соски к самому рту. Твоя грудь достаточно большая, чтобы ты могла дотянуться губами до одного из сосков и присосаться к нему."
 		text += "\n\n"
 		
-		text += "After enough stimulation, your nipples suddenly shoot a strong stream of {pc.milk} that is aimed directly into your mouth. You let out a moan while tasting your own product."
+		text += "После достаточной стимуляции твои соски внезапно выбрасывают мощную струю {pc.milk} прямо тебе в рот. Ты издаешь стон, пробуя на вкус собственный продукт."
 		text += "\n\n"
 		
 		#pc.addStamina(50)
 	else:
-		text += "You quickly reach your hands to your {pc.breasts} and squeeze them very tight while guiding the nipples towards your mouth. Your tits aren't big enough for you to reach them with your lips so you just knead them harder and open your mouth."
+		text += "Ты быстро прижимаешь руки к своим {pc.breasts} и сжимаешь их изо всех сил, направляя соски прямо к губам. Твоя грудь недостаточно велика, чтобы дотянуться до нее губами, поэтому ты просто сильнее разминаешь ее и широко открываешь рот."
 		text += "\n\n"
 	
-		text += "After enough stimulation, your nipples suddenly shoot a strong stream of {pc.milk} that is aimed directly into your mouth. You let out a moan while tasting your own product."
+		text += "После достаточной стимуляции твои соски внезапно выбрасывают мощную струю {pc.milk} прямо тебе в рот. Ты издаешь стон, пробуя на вкус собственный продукт."
 		text += "\n\n"
 		
 		#pc.addStamina(50)

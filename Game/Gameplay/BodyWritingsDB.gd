@@ -6,51 +6,51 @@ const DBZoneWhitelist = "zones"
 
 const database = {
 	"fuckme": {
-		DBText: "Fuck me",
+		DBText: "Трахни меня",
 	},
 	"rapeme": {
-		DBText: "Rape me",
+		DBText: "Изнасилуй меня",
 	},
 	"useme": {
-		DBText: "Use me",
+		DBText: "Используй меня",
 	},
 	"abuseme": {
-		DBText: "Abuse me",
+		DBText: "Изуверствуй меня",
 	},
 	"freeuse": {
-		DBText: "Free use",
+		DBText: "Свободное использование",
 	},
 	"freesex": {
-		DBText: "Free sex",
+		DBText: "Секс без обязательств",
 	},
 	"makemesqueal": {
-		DBText: "Make me squeal",
+		DBText: "Заставь меня визжать",
 	},
 	"makemecum": {
-		DBText: "Make me cum",
+		DBText: "Доведи меня до конч",
 	},
 	"nomeansyes": {
-		DBText: "No means yes",
+		DBText: "Нет значит да",
 	},
 	"stripme": {
-		DBText: "Strip me",
+		DBText: "Раздень меня",
 	},
 	"punishme": {
-		DBText: "Punish me",
+		DBText: "Накажи меня",
 	},
 	"knotme": {
-		DBText: "Knot me",
+		DBText: "Завяжи меня",
 	},
 	
 	
 	"cute": {
-		DBText: "Cute",
+		DBText: "Мило",
 	},
 	"cutie": {
-		DBText: "Cutie",
+		DBText: "Милашка",
 	},
 	"brat": {
-		DBText: "Brat",
+		DBText: "Дерзкая девчонка",
 	},
 	"lessthanthree": {
 		DBText: "<3",
@@ -60,294 +60,294 @@ const database = {
 	},
 	
 	"criminalscum": {
-		DBText: "Criminal scum",
+		DBText: "Преступная шваль",
 	},
 	"criminal": {
-		DBText: "Criminal",
+		DBText: "Преступница",
 	},
 	"criminalwhore": {
-		DBText: "Criminal whore",
+		DBText: "Шлюха из преступников",
 	},
 	
 	"slut": {
-		DBText: "Slut",
+		DBText: "Шлюха",
 	},
 	"slave": {
-		DBText: "Slave",
+		DBText: "Рабыня",
 	},
 	"whore": {
-		DBText: "Whore",
+		DBText: "Шлюха",
 	},
 	"fucktoy": {
-		DBText: "Fucktoy",
+		DBText: "Ебаная игрушка",
 	},
 	"fuckdoll": {
-		DBText: "Fuckdoll",
+		DBText: "Секс-кукла",
 	},
 	"worthless": {
-		DBText: "Worthless",
+		DBText: "Никчёмная",
 	},
 	"bitch": {
-		DBText: "Bitch",
+		DBText: "Сучка",
 	},
 	"sexaddict": {
-		DBText: "Sex addict",
+		DBText: "Сексоманка",
 	},
 	"publictoy": {
-		DBText: "Public toy",
+		DBText: "Общая игрушка",
 	},
 	"publicslut": {
-		DBText: "Public slut",
+		DBText: "Публичная шлюшка",
 	},
 	"publicpet": {
-		DBText: "Public pet",
+		DBText: "Публичная зверушка",
 	},
 	"sizequeen": {
-		DBText: "Size queen",
+		DBText: "Размерщица",
 	},
 	"submissive": {
-		DBText: "Submissive",
+		DBText: "Покорная",
 	},
 	"subby": {
-		DBText: "Subby",
+		DBText: "Сабби",
 	},
 	"subbyslut": {
-		DBText: "Subby slut",
+		DBText: "Сабмизившая шлюшка",
 	},
 	"pet": {
-		DBText: "Pet",
+		DBText: "Питомец",
 	},
 	"buttslut": {
-		DBText: "Buttslut",
+		DBText: "Жопошлюшка",
 	},
 	"analslut": {
-		DBText: "Anal slut",
+		DBText: "Анал-шлюшка",
 	},
 	"analwhore": {
-		DBText: "Anal whore",
+		DBText: "Анал-блудница",
 	},
 	"analonly": {
-		DBText: "Anal only",
+		DBText: "Только анал",
 	},
 	"pussyslut": {
-		DBText: "Pussy slut",
+		DBText: "Киска-шлюшка",
 	},
 	"pussyonly": {
-		DBText: "Pussy only",
+		DBText: "Только киска",
 	},
 	
 	
 	"soft": {
-		DBText: "Soft",
+		DBText: "Мягкий",
 	},
 	"breedable": {
-		DBText: "Breedable",
+		DBText: "Годная к осеменению",
 	},
 	"breedingbitch": {
-		DBText: "Breeding bitch",
+		DBText: "Сучка для разведения",
 	},
 	"breedingstock": {
-		DBText: "Breeding stock",
+		DBText: "Маточное поголовье",
 	},
 	"breedme": {
-		DBText: "Breed me",
+		DBText: "Оплодотвори меня",
 	},
 	"breed": {
-		DBText: "Breed",
+		DBText: "Спариваться",
 	},
 	"inseminateme": {
-		DBText: "Inseminate me",
+		DBText: "Зашей меня",
 	},
 	"impregnateme": {
-		DBText: "Impregnate me",
+		DBText: "Оплодотвори меня",
 	},
 	"makemepregnant": {
-		DBText: "Make me pregnant",
+		DBText: "Сделай меня беременной",
 	},
 	
 	
 	"cumslut": {
-		DBText: "Cum slut",
+		DBText: "Кончница",
 	},
 	"cumslave": {
-		DBText: "Cum slave",
+		DBText: "Спермораб",
 	},
 	"cumrag": {
-		DBText: "Cum rag",
+		DBText: "Кончная тряпка",
 	},
 	"cumdumpster": {
-		DBText: "Cum dumpster",
+		DBText: "Помойка для спермы",
 	},
 	"cumdump": {
-		DBText: "Cum dump",
+		DBText: "Спермобак",
 	},
 	
 	"taken": {
-		DBText: "Taken",
+		DBText: "Занята",
 	},
 	"property_of_all": {
-		DBText: "Property of All",
+		DBText: "Общая собственность",
 	},
 	"meattoy": {
-		DBText: "Meat Toy",
+		DBText: "Мясная игрушка",
 	},
 	"damaged_goods": {
-		DBText: "Damaged Goods",
+		DBText: "Бракованный товар",
 	},
 	"for_sale": {
-		DBText: "For Sale",
+		DBText: "На продажу",
 	},
 	"trash_pup": {
-		DBText: "Trash Pup",
+		DBText: "Мусорный щенок",
 	},
 	"holetoy": {
-		DBText: "Hole Toy",
+		DBText: "Игрушка-дырка",
 	},
 	"usedgoods": {
-		DBText: "Used Goods",
+		DBText: "Подержанный товар",
 	},
 	"meat": {
-		DBText: "Meat",
+		DBText: "Мясо",
 	},
 	"pawn": {
-		DBText: "Pawn",
+		DBText: "Пешка",
 	},
 	"broken_toy": {
-		DBText: "Broken Toy",
+		DBText: "Сломанная игрушка",
 	},
 	"doll": {
-		DBText: "Doll",
+		DBText: "Кукла",
 	},
 	"trashslut": {
-		DBText: "Trash Slut",
+		DBText: "Мусорная шлюшка",
 	},
 	"broken": {
-		DBText: "Broken",
+		DBText: "Сломленная",
 	},
 	"plaything": {
-		DBText: "Plaything",
+		DBText: "Игрушка",
 	},
 	"brokenpet": {
-		DBText: "Broken pet",
+		DBText: "Сломанный питомец",
 	},
 	"lickthis": {
-		DBText: "Lick this"
+		DBText: "Лизни это"
 	},
 	"bitehere": {
-		DBText: "Bite here"
+		DBText: "Укуси здесь"
 	},
 	"scratchhere": {
-		DBText: "Scratch here"
+		DBText: "Поцарапай здесь"
 	},
 	"kisshere": {
-		DBText: "Kiss here"
+		DBText: "Поцелуй здесь"
 	},
 	"cumwipe": {
-		DBText: "Cum wipe"
+		DBText: "Салфетка для спермы"
 	},
 	"cumaddict": {
-		DBText: "Cum addict"
+		DBText: "Кончэмэн"
 	},
 	"dirtyslave": {
-		DBText: "Dirty Slave"
+		DBText: "Грязная рабыня"
 	},
 	"cocktease": {
-		DBText: "Cock Tease"
+		DBText: "Дразнилка"
 	},
 	"cockaddict": {
-		DBText: "Cock addict"
+		DBText: "Кокэмэн"
 	},
 	"ownme": {
-		DBText: "Own me"
+		DBText: "Владей мной"
 	},
 	"poundme": {
-		DBText: "Pound me"
+		DBText: "Трахни меня"
 	},
 	"fuckpuppet": {
-		DBText: "Fuck Puppet"
+		DBText: "Секс-кукла"
 	},
 	"cumvessel": {
-		DBText: "Cum Vessel"
+		DBText: "Сосуд для кончи"
 	},
 	"holeforhire": {
-		DBText: "Hole For Hire"
+		DBText: "Дырочка напрокат"
 	},
 	"wetpussy": {
-		DBText: "Wet Pussy"
+		DBText: "Мокрая киска"
 	},
 	"slutslave": {
-		DBText: "Slut Slave"
+		DBText: "Шлюха-рабыня"
 	},
 	"cockhungry": {
-		DBText: "Cock-hungry"
+		DBText: "Жаждущая члена"
 	},
 	"gapevme": {
-		DBText: "Gape v me",
+		DBText: "Раздвинься передо мной",
 		DBZoneWhitelist: [BodyWritingsZone.LowerAbdomen, BodyWritingsZone.LowerBack, BodyWritingsZone.ButtcheekLeft, BodyWritingsZone.ButtcheekRight],
 	},
 	"cumdripper": {
-		DBText: "Cum dripper"
+		DBText: "Текучая от спермы"
 	},
 	"fuckjunkie": {
-		DBText: "Fuck Junkie"
+		DBText: "Секс-наркоманка"
 	},
 	"cumcovered": {
-		DBText: "Cum Covered"
+		DBText: "В сперме"
 	},
 	"uselesscunt": {
-		DBText: "Useless Cunt"
+		DBText: "Бесполезная пизда"
 	},
 	"cumwhore": {
-		DBText: "Cum Whore"
+		DBText: "Кончаная шлюха"
 	},
 	"punishmehard": {
-		DBText: "Punish Me Hard"
+		DBText: "Накажи меня жестко"
 	},
 	"tiedandused": {
-		DBText: "Tied & Used"
+		DBText: "Связанная и использованная"
 	},
 	"milkmehard": {
-		DBText: "Milk Me Hard",
+		DBText: "Дой меня посильнее",
 		DBZoneWhitelist: [BodyWritingsZone.Breasts],
 	},
 
 	"caged": {
-		DBText: "Caged",
+		DBText: "В клетке",
 		DBZoneWhitelist: [BodyWritingsZone.LowerAbdomen],
 	},
 	"cageme": {
-		DBText: "Cage me",
+		DBText: "Запри меня в клетку",
 		DBZoneWhitelist: [BodyWritingsZone.LowerAbdomen],
 	},
 	
 	
 	"milkme_breasts": {
-		DBText: "Milk me",
+		DBText: "Дой меня",
 		DBZoneWhitelist: [BodyWritingsZone.Breasts],
 	},
 	"squeeze_breasts": {
-		DBText: "Squeeze These",
+		DBText: "Пожми эти",
 		DBZoneWhitelist: [BodyWritingsZone.Breasts],
 	},
 	"funbags_breasts": {
-		DBText: "Fun Bags",
+		DBText: "Веселые мешочки",
 		DBZoneWhitelist: [BodyWritingsZone.Breasts],
 	},
 	"milkjugs_breasts": {
-		DBText: "Milk Jugs",
+		DBText: "Молочные кувшины",
 		DBZoneWhitelist: [BodyWritingsZone.Breasts],
 	},
 	"pinchtug_breasts": {
-		DBText: "Pinch Tug",
+		DBText: "Щипай и тяни",
 		DBZoneWhitelist: [BodyWritingsZone.Breasts],
 	},
 	"milkyudders_breasts": {
-		DBText: "Milky Udders",
+		DBText: "Молочные вымя",
 		DBZoneWhitelist: [BodyWritingsZone.Breasts],
 	},
 	
 	"mouthpussy": {
-		DBText: "Mouth ^ pussy",
+		DBText: "Рот ^ киска",
 		DBZoneWhitelist: [BodyWritingsZone.Chin],
 	},
 	"whOre": {
@@ -355,16 +355,16 @@ const database = {
 		DBZoneWhitelist: [BodyWritingsZone.Chin],
 	},
 	"cocksucker": {
-		DBText: "Cock sucker",
+		DBText: "Сосцы",
 		DBZoneWhitelist: [BodyWritingsZone.Chin, BodyWritingsZone.CheekLeft, BodyWritingsZone.CheekRight, BodyWritingsZone.Forehead],
 	},
 	
 	"horsecocksonly": {
-		DBText: "Horse cocks only",
+		DBText: "Только лошадиные члены",
 		DBZoneWhitelist: [BodyWritingsZone.LowerAbdomen, BodyWritingsZone.LowerBack, BodyWritingsZone.ButtcheekLeft, BodyWritingsZone.ButtcheekRight],
 	},
 	"knotsonly": {
-		DBText: "Knots only",
+		DBText: "Только узлы",
 		DBZoneWhitelist: [BodyWritingsZone.LowerAbdomen, BodyWritingsZone.LowerBack, BodyWritingsZone.ButtcheekLeft, BodyWritingsZone.ButtcheekRight],
 	},
 }

@@ -18,7 +18,7 @@ func _run():
 
 	if(state == "continue"):
 		aimCamera("med_researchlab")
-		setLocationName("Research lab")
+		setLocationName("Исследовательская лаборатория")
 		
 		saynn("Тебя ведут по бесконечным прямым коридорам.")
 
@@ -345,7 +345,7 @@ func _run():
 		aimCamera("medical_paddedcell_player")
 		GM.pc.setLocation("medical_paddedcell_player")
 		playAnimation(StageScene.Solo, "kneel")
-		setLocationName("Padded cell")
+		setLocationName("Мягкая камера")
 		
 		saynn("Ты ползешь за Элизой, пока она ведет тебя по очередным коридорам; она достаточно добра, чтобы идти медленно, давая тебе возможность не отставать. Медсестры не привыкли видеть заключенных совершенно голыми, поэтому на тебя устремлено множество любопытных взглядов. Ты покачиваешь своими {pc.thick} {pc.masc} бедрами во время ползания, низко склонив голову, демонстрируя свою покорность.")
 
@@ -384,7 +384,7 @@ func _react(_action: String, _args):
 		GM.pc.orgasmFrom("eliza")
 		GM.pc.addSkillExperience(Skill.SexSlave, 20)
 		GM.pc.addCredits(1)
-		addMessage("You received 1 work credit!")
+		addMessage("Вы получили 1 рабочий кредит!")
 		
 		setModuleFlag("MedicalModule", "Mental_ExpObeyDrug", Util.maxi(2, getModuleFlag("MedicalModule", "Mental_ExpObeyDrug", 0)))
 

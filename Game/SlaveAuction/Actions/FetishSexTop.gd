@@ -8,10 +8,10 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"Got a taste for a dominant one? This slave loves to take control in the most delicious ways. Trust me, {slave.he} {slave.isAre} great at fucking!",
-		"Want a toy that will leave you exhausted? This one will leave you begging for more.",
-		"A predator in the sheets, this one lives for the hunt, eager to make {slave.his} owners cum in the most explosive ways.",
-		"This slave thrives on topping, and trust me, {slave.he} knows exactly how to make others surrender to pleasure.",
+		"Захотелось доминантной парочки? Эта рабыня обожает брать контроль в самых изысканных формах. Поверь мне, {slave.he} {slave.isAre} чертовски хороша в трахе!",
+		"Хочешь игрушку, которая выжмет из тебя все соки? Эта заставит тебя умолять о добавке.",
+		"Настоящий хищник в постели; она живет охотой, жаждя довести {slave.his} хозяев до самого взрывного оргазма.",
+		"Эта рабыня просто расцветает, когда доминирует, и поверь мне, {slave.he} точно знает, как заставить других сдаться на милость наслаждения.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

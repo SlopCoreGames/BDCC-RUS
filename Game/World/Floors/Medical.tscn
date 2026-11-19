@@ -9,84 +9,56 @@ script = ExtResource( 3 )
 canMeetNPCs = true
 
 [node name="MedRoom" parent="." index="0" groups=["zone_poi"] instance=ExtResource( 2 )]
-roomName = "Med Lobby"
+roomName = "Медпункт: вестибюль"
 roomID = "med_lobby_start"
-roomDescription = "This is the Medical lobby, and the whole place feels very sterile with the omnipresent smell of antiseptic in the air. Coming off the dark elevator is a little blinding with all the white and incredibly strong lights in here. The waiting room is also here, with a number of benches lined up for inmates to sit.
-
-Either side of the lobby, there are two very secure airlocks that you’re not opening as an inmate. You’ll need someone to bring you into the back if you want to go there.
-"
+roomDescription = "Это вестибюль медпункта; всё вокруг кажется стерильным, а в воздухе стоит вездесущий запах антисептика. После выхода из темного лифта обилие белого цвета и невероятно яркий свет немного слепит глаза. Здесь же находится зал ожидания с рядами скамей для заключенных.\n\nПо обе стороны вестибюля расположены две сверхзащищенные шлюзовые камеры, которые заключенному открыть не под силу. Если захотите попасть внутрь, вам понадобится кто-то, кто проведет вас в служебное помещение.\n"
 population = 3
 
 [node name="MedRoom2" parent="." index="1" groups=["zone_medlobby"] instance=ExtResource( 2 )]
 position = Vector2( -64, 0 )
-roomName = "Med Lobby"
+roomName = "Медпункт: вестибюль"
 roomID = "MedRoom2"
-roomDescription = "This is the Medical lobby, and the whole place feels very sterile with the omnipresent smell of antiseptic in the air. Coming off the dark elevator is a little blinding with all the white and incredibly strong lights in here. The waiting room is also here, with a number of benches lined up for inmates to sit.
-
-Either side of the lobby, there are two very secure airlocks that you’re not opening as an inmate. You’ll need someone to bring you into the back if you want to go there.
-"
+roomDescription = "Это вестибюль медпункта; всё вокруг кажется стерильным, а в воздухе стоит вездесущий запах антисептика. После выхода из темного лифта обилие белого цвета и невероятно яркий свет немного слепит глаза. Здесь же находится зал ожидания с рядами скамей для заключенных.\n\nПо обе стороны вестибюля расположены две сверхзащищенные шлюзовые камеры, которые заключенному открыть не под силу. Если захотите попасть внутрь, вам понадобится кто-то, кто проведет вас в служебное помещение.\n"
 roomSprite = 6
 population = 3
 
 [node name="MedRoom3" parent="." index="2" groups=["zone_medlobby"] instance=ExtResource( 2 )]
 position = Vector2( 64, 0 )
-roomName = "Med Lobby"
+roomName = "Медпункт: вестибюль"
 roomID = "med_lobbyse"
-roomDescription = "This is the Medical lobby, and the whole place feels very sterile with the omnipresent smell of antiseptic in the air. Coming off the dark elevator is a little blinding with all the white and incredibly strong lights in here. The waiting room is also here, with a number of benches lined up for inmates to sit.
-
-Either side of the lobby, there are two very secure airlocks that you’re not opening as an inmate. You’ll need someone to bring you into the back if you want to go there.
-
-This side of the lobby has a reinforced window, looking out over a large drop down. Looks like the same chasm that stretches up above the main hall. From the weird angle you can only really see the punishment platform somewhat normally from here."
+roomDescription = "Это вестибюль медицинского блока, и всё вокруг кажется стерильным из-за вездесущего запаха антисептика в воздухе. После выхода из темного лифта глаза немного режет от обилия белого цвета и невероятно яркого света. Здесь же находится зал ожидания с рядами скамей для заключенных.\n\nПо обе стороны вестибюля расположены два очень защищенных шлюза, которые заключенному без разрешения не открыть. Чтобы попасть внутрь, вам понадобится кто-то, кто проведет вас в задние помещения.\n\nС этой стороны вестибюля находится армированное окно, выходящее на огромную пропасть. Похоже, это тот же разлом, что тянется над главным залом. Из-за странного угла обзора отсюда можно довольно отчетливо рассмотреть платформу для наказаний."
 population = 3
 
 [node name="MedRoom4" parent="." index="3" instance=ExtResource( 2 )]
 position = Vector2( 0, -64 )
-roomName = "Med Lobby"
+roomName = "Медпункт: вестибюль"
 roomID = "med_lobbymain"
-roomDescription = "This is the Medical lobby, and the whole place feels very sterile with the omnipresent smell of antiseptic in the air. Coming off the dark elevator is a little blinding with all the white and incredibly strong lights in here. The waiting room is also here, with a number of benches lined up for inmates to sit.
-
-Either side of the lobby, there are two very secure airlocks that you’re not opening as an inmate. You’ll need someone to bring you in to the back if you want to go back there.
-
-The lobby reception counters are here if you need something, the few nurses here are busy with their stuff or vacant doing something else.
-
-Eliza Quinn’s usual spot is here, marked with a little name placard.
-"
+roomDescription = "Это вестибюль медпункта, и всё здесь пропитано ощущением стерильности и вездесущим запахом антисептика. После выхода из тёмного лифта глаза немного режет от обилия белого цвета и невероятно яркого освещения. Здесь же находится зал ожидания с рядами скамей для заключённых.\n\nПо обе стороны вестибюля расположены две сверхнадёжные шлюзовые камеры, которые заключённому самостоятельно не открыть. Чтобы попасть в заднюю часть корпуса, вам понадобится кто-то, кто проведёт вас внутрь.\n\nЗдесь же находятся стойки регистрации: если вам что-то понадобится, можно обратиться к персоналу, но немногочисленные медсёстры либо заняты своими делами, либо где-то отлучились.\n\nОбычное место Элайзы Куинн находится здесь, оно отмечено небольшой именной табличкой.\n"
 roomSprite = 1
 population = 3
 
 [node name="MedRoom5" parent="." index="4" groups=["zone_medlobby"] instance=ExtResource( 2 )]
 position = Vector2( 64, -64 )
-roomName = "Med Lobby"
+roomName = "Медпункт: вестибюль"
 roomID = "med_lobbyne"
-roomDescription = "This is the Medical lobby, and the whole place feels very sterile with the omnipresent smell of antiseptic in the air. Coming off the dark elevator is a little blinding with all the white and incredibly strong lights in here. The waiting room is also here, with a number of benches lined up for inmates to sit.
-
-One of those airlocks is east of here. You’ll need someone to bring you into the back if you want to go there.
-
-The lobby reception counters are here if you need something, the few nurses here are busy with their stuff or vacant doing something else.
-"
+roomDescription = "Это вестибюль медпункта; всё вокруг кажется стерильным, а в воздухе стоит вездесущий запах антисептика. После выхода из темного лифта обилие белого цвета и невероятно яркий свет немного слепят глаза. Здесь же находится зал ожидания с рядами скамей для заключенных.\n\nОдин из шлюзов находится к востоку отсюда. Чтобы попасть внутрь, вам понадобится кто-то, кто проведет вас в задние помещения.\n\nЗдесь же находятся стойки регистрации — если вам что-то понадобится, обращайтесь, хотя немногие здесь медсестры либо заняты своими делами, либо бездельничают.\n"
 canEast = false
 population = 3
 
 [node name="MedRoom6" parent="." index="5" groups=["zone_medlobby"] instance=ExtResource( 2 )]
 position = Vector2( -64, -64 )
-roomName = "Med Lobby"
+roomName = "Медпункт: вестибюль"
 roomID = "med_lobbynw"
-roomDescription = "This is the Medical lobby, and the whole place feels very sterile with the omnipresent smell of antiseptic in the air. Coming off the dark elevator is a little blinding with all the white and incredibly strong lights in here. The waiting room is also here, with a number of benches lined up for inmates to sit.
-
-One of those airlocks is west of here. You’ll need someone to bring you into the back if you want to go there.
-
-The lobby reception counters are here if you need something, the few nurses here are busy with their stuff or vacant doing something else."
+roomDescription = "Это вестибюль медпункта; всё вокруг кажется стерильным, а в воздухе стоит вездесущий запах антисептика. После выхода из темного лифта обилие белого цвета и невероятно яркий свет немного слепят глаза. Здесь же находится зал ожидания с рядами скамей для заключенных.\n\nОдин из шлюзов находится к западу отсюда. Чтобы попасть внутрь, вам понадобится кто-то, кто проведет вас в задние помещения.\n\nЗдесь же находятся стойки регистрации — если вам что-то понадобится, обращайтесь, хотя немногие здесь медсестры либо заняты своими делами, либо бездельничают."
 canWest = false
 population = 3
 
 [node name="MedNursery" parent="." index="6" groups=["zone_medlobby"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 128, 0 )
-roomName = "Nursery"
+roomName = "Детское отделение"
 roomID = "medical_nursery"
-roomDescription = "The sign on the wall says nursery but this is clearly a maternity ward. The whole room is rather barren, save for a lone nurse behind a dual-screened computer terminal and the ever present light green trim. Behind the nurse is a thick set of overly-armored dual glass doors leading to the delivery rooms. From what little you see through darkened glass, more intensely armored windows to who knows where, a number of doors, and more out of place reinforcements in the walls. Strangely clean too…
-
-For what this place is, it’s definitely strange..."
+roomDescription = "На стене висит табличка «Детская», но это явно родильное отделение. Вся комната выглядит довольно пустой, если не считать одинокой медсестры за компьютером с двумя мониторами и вездесущей светло-зеленой отделки. За спиной медсестры — массивные, избыточно бронированные двойные стеклянные двери, ведущие в родильные палаты. Из того немногo, что видно сквозь затемненное стекло — еще более укрепленные окна, ведущие бог знает куда, — заметно множество дверей и еще больше неуместных укреплений в стенах. И здесь на удивление чисто…\n\nДля такого места всё это выглядит чертовски странно..."
 canNorth = false
 canSouth = false
 roomSprite = 5
@@ -95,200 +67,175 @@ population = 3
 
 [node name="MedRoom7" parent="." index="7" instance=ExtResource( 2 )]
 position = Vector2( -128, -64 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_staffonly_door1"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, every so often you see airlocks that lead to laboratories and other rooms. This part of the corridor seems to be safe for inmates to walk through but you better not go too far or the staff will start asking questions."
+roomDescription = "Вы стоите в широком белом коридоре, который кажется бесконечным; время от времени попадаются шлюзы, ведущие в лаборатории и другие помещения. Кажется, в этой части коридора заключенным ходить разрешено, но лучше не заходить слишком далеко, иначе персонал начнет задавать лишние вопросы."
 gridColor = 3
 population = 2
 astarConnectedTo = PoolStringArray( "med_lobbynw" )
 
 [node name="MedRoom8" parent="." index="8" instance=ExtResource( 2 )]
 position = Vector2( 128, -64 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_staffonly_door2"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, every so often you see airlocks that lead to laboratories and other rooms. This part of the corridor seems to be safe for inmates to walk through but you better not go too far or the staff will start asking questions."
+roomDescription = "Вы стоите в широком белом коридоре, который кажется бесконечным; время от времени попадаются шлюзы, ведущие в лаборатории и другие помещения. Кажется, в этой части коридора заключенным ходить разрешено, но лучше не заходить слишком далеко, иначе персонал начнет задавать лишние вопросы."
 gridColor = 3
 population = 2
 astarConnectedTo = PoolStringArray( "med_lobbyne" )
 
 [node name="MedRoom9" parent="." index="9" instance=ExtResource( 2 )]
 position = Vector2( 128, -128 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "medical_nearconfessionary"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, every so often you see airlocks that lead to laboratories and other rooms. This part of the corridor seems to be safe for inmates to walk through but you better not go too far or the staff will start asking questions."
+roomDescription = "Вы стоите в широком белом коридоре, который кажется бесконечным; время от времени попадаются шлюзы, ведущие в лаборатории и другие помещения. Кажется, в этой части коридора заключенным ходить разрешено, но лучше не заходить слишком далеко, иначе персонал начнет задавать лишние вопросы."
 population = 2
 
 [node name="MedConfessionary" parent="." index="10" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 192, -128 )
-roomName = "Confessionary"
+roomName = "Исповедальня"
 roomID = "medical_confessionary"
-roomDescription = "As you enter the room, you are immediately struck by the contrast between the luxurious furnishings and the rough concrete walls. The wooden floors and plush carpet add to the sense of opulence, as do the richly-styled sofa, chair, and small round table.
-
-But as you look around the room, you can't help but notice the iron hooks hanging from the ceiling. They seem out of place in this otherwise refined space, and a shiver runs down your spine as you wonder what purpose they could possibly serve."
+roomDescription = "Как только вы входите в комнату, вас сразу поражает контраст между роскошной мебелью и грубыми бетонными стенами. Деревянные полы и пушистый ковер усиливают ощущение богатства, как и изысканно оформленные диван, кресло и маленький круглый столик.\n\nНо когда вы оглядываете комнату, вы не можете не заметить железные крюки, свисающие с потолка. Они кажутся неуместными в этом изысканном пространстве, и по вашей спине пробегает холодок от мысли о том, для чего они могут служить."
 roomColor = 3
 population = 2
 
 [node name="MedRoom10" parent="." index="11" instance=ExtResource( 2 )]
 position = Vector2( 128, -192 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_near_staffonly_corridor"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, every so often you see airlocks that lead to laboratories and other rooms. This part of the corridor seems to be safe for inmates to walk through but you better not go too far or the staff will start asking questions.
-
-Going further into medical will draw suspicion from here, away from the more popular or dedicated prisoner rooms."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным; время от времени вам попадаются шлюзы, ведущие в лаборатории и другие помещения. Эта часть коридора кажется безопасной для прогулок заключенных, но лучше не заходить слишком далеко, иначе персонал начнет задавать вопросы.\n\nДальнейшее продвижение вглубь медблока вызовет подозрения, так как это место находится вдали от популярных или специально отведенных для заключенных зон."
 population = 2
 
 [node name="MedRoom11" parent="." index="12" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( 128, -256 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor1"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom12" parent="." index="13" instance=ExtResource( 2 )]
 position = Vector2( 128, -320 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor2"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates.
-
-The path through the halls veers off to the left to loop back in around itself."
+roomDescription = "Вы стоите в широком белом коридоре; он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Кроме белых панелей, здесь особо не на что смотреть. Да и прятаться особо негде.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных.\n\nПуть по коридорам уходит влево, чтобы затем зациклиться и вернуться обратно."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom13" parent="." index="14" instance=ExtResource( 2 )]
 position = Vector2( 64, -320 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor3"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom14" parent="." index="15" instance=ExtResource( 2 )]
 position = Vector2( 0, -320 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "medical_firstcorridorcross"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates.
-
-A set of dual glass doors lead further into the medical ward. Otherwise, the path loops around on itself."
+roomDescription = "Вы стоите в широком белом коридоре; он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Кроме белых панелей, здесь особо не на что смотреть. Да и прятаться особо негде.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных.\n\nПара двойных стеклянных дверей ведет дальше в медицинское отделение. В остальном же путь зацикливается сам на себе."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom21" parent="." index="16" instance=ExtResource( 2 )]
 position = Vector2( 0, -384 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor8"
-roomDescription = "Two sets of glass double doors separate the two loops of Medical. A rather useless window on either side of the hall looks out at the interior rockface about and arms length away.
-
-Going north of here leads to the more serious medical rooms, with signs saying \"Hospital\", \"ICU\", \"Surgery\". All the delicate stuff that requires a good amount of calm and care."
+roomDescription = "Два комплекта двойных стеклянных дверей разделяют два кольцевых маршрута медблока. Довольно бесполезные окна по обе стороны коридора выходят на внутреннюю скальную породу, находящуюся буквально на расстоянии вытянутой руки.\n\nДвижение на север отсюда ведет к более серьезным медицинским помещениям с табличками: \"Больница\", \"Реанимация\", \"Хирургия\". Всё то деликатное, что требует спокойствия и тщательного ухода."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom22" parent="." index="17" instance=ExtResource( 2 )]
 position = Vector2( 0, -448 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor_split2"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates.
-
-A set of dual glass doors lead further into the medical ward. Otherwise, the path loops around on itself."
+roomDescription = "Вы стоите в широком белом коридоре; он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Кроме белых панелей, здесь особо не на что смотреть. Да и прятаться особо негде.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных.\n\nПара двойных стеклянных дверей ведет дальше в медицинское отделение. В остальном же путь зацикливается сам на себе."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom23" parent="." index="18" instance=ExtResource( 2 )]
 position = Vector2( -64, -448 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor9"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom24" parent="." index="19" instance=ExtResource( 2 )]
 position = Vector2( 64, -448 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor17"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom25" parent="." index="20" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( 128, -448 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor16"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom26" parent="." index="21" instance=ExtResource( 2 )]
 position = Vector2( 128, -512 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor15"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom27" parent="." index="22" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( 128, -576 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor14"
-roomDescription = "This is the Hospital corridor, where all the really bad cases and injuries are mended. Kept far away from anyone who wants to finish the job. As such, the vast majority of the doors here are locked with keypads with a monitor displaying patient information hung above the door."
+roomDescription = "Это больничный коридор, где латают самых тяжелых пациентов и лечат серьезные травмы. Его держат подальше от тех, кто хочет «добить» жертву. Из-за этого большинство дверей здесь заперты на кодовые замки, а над каждой висит монитор с информацией о пациенте."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom53" parent="." index="23" instance=ExtResource( 2 )]
 position = Vector2( 64, -640 )
-roomName = "Hospital wards"
+roomName = "Больничные палаты"
 roomID = "medical_hospitalwards"
-roomDescription = "This is one of the hospital rooms. The rows of medical beds currently sits empty, free of any patients. With it empty, the lights are dimmed and all the equipment is missing or turned off, but clean and ready to be used. Seems rather boring though, with a lone decorative plant the only thing of interest. 
-
-If you or anyone you know ends up really bad, they’ll probably end up here."
+roomDescription = "Это одна из больничных палат. Ряды медицинских коек сейчас пусты, пациентов нет. Пока здесь никого нет, свет приглушен, а всё оборудование либо убрано, либо выключено, но оно чистое и готово к работе. Выглядит довольно скучно, разве что одинокое декоративное растение и привлекает внимание. \n\nЕсли вам или кому-то из ваших знакомых станет совсем худо, скорее всего, вы окажетесь именно здесь."
 loctag_Offlimits = true
 population = 2
 
 [node name="MedRoom28" parent="." index="24" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( -128, -448 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor10"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom29" parent="." index="25" instance=ExtResource( 2 )]
 position = Vector2( -128, -512 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_near_storage"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom45" parent="." index="26" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( -192, -512 )
-roomName = "Medical Storage"
+roomName = "Медицинский склад"
 roomID = "medical_storage"
-roomDescription = "You enter a room with a lot of storage cabinets and special types of freezers. It seems this is the room where they keep their equipment and drugs"
+roomDescription = "Вы входите в помещение с множеством шкафов для хранения и специальными морозильными камерами. Похоже, именно здесь хранят медицинское оборудование и препараты."
 roomSprite = 4
 gridColor = 2
 loctag_Offlimits = true
@@ -296,136 +243,133 @@ population = 2
 
 [node name="MedRoom30" parent="." index="27" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( -128, -576 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor11"
-roomDescription = "This is the Hospital corridor, where all the really bad cases and injuries are mended. Kept far away from anyone who wants to finish the job. As such, the vast majority of the doors here are locked with keypads with a monitor displaying patient information hung above the door."
+roomDescription = "Это больничный коридор, где латают самых тяжелых пациентов и лечат серьезные травмы. Его держат подальше от тех, кто хочет «добить» жертву. Из-за этого большинство дверей здесь заперты на кодовые замки, а над каждой висит монитор с информацией о пациенте."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom42" parent="." index="28" instance=ExtResource( 2 )]
 position = Vector2( -64, -576 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor12"
-roomDescription = "This is the Hospital corridor, where all the really bad cases and injuries are mended. Kept far away from anyone who wants to finish the job. As such, the vast majority of the doors here are locked with keypads with a monitor displaying patient information hung above the door."
+roomDescription = "Это больничный коридор, где латают самых тяжелых пациентов и лечат серьезные травмы. Его держат подальше от тех, кто хочет «добить» жертву. Из-за этого большинство дверей здесь заперты на кодовые замки, а над каждой висит монитор с информацией о пациенте."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom43" parent="." index="29" instance=ExtResource( 2 )]
 position = Vector2( 0, -576 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor13"
-roomDescription = "This is the Hospital corridor, where all the really bad cases and injuries are mended. Kept far away from anyone who wants to finish the job. As such, the vast majority of the doors here are locked with keypads with a monitor displaying patient information hung above the door."
+roomDescription = "Это больничный коридор, где латают самых тяжелых пациентов и лечат серьезные травмы. Его держат подальше от тех, кто хочет «добить» жертву. Из-за этого большинство дверей здесь заперты на кодовые замки, а над каждой висит монитор с информацией о пациенте."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom44" parent="." index="30" instance=ExtResource( 2 )]
 position = Vector2( 64, -576 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_near_wards"
-roomDescription = "This is the Hospital corridor, where all the really bad cases and injuries are mended. Kept far away from anyone who wants to finish the job. As such, the vast majority of the doors here are locked with keypads with a monitor displaying patient information hung above the door.
-
-To the north there is a vacant hospital room. It looks unlocked and open."
+roomDescription = "Это коридор госпиталя, где латают самых тяжелых пациентов и лечат серьезные травмы. Его держат подальше от тех, кто хочет довести дело до конца. Поэтому подавляющее большинство дверей здесь заперто на кодовые замки, а над каждой висит монитор с информацией о пациенте.\n\nНа севере находится пустая больничная палата. Похоже, она не заперта и открыта."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom31" parent="." index="31" instance=ExtResource( 2 )]
 position = Vector2( 192, -512 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "med_mental_entrance"
-roomDescription = "This hallway connects the mental wards and the back halls of the medical ward. A number of data readouts here show the status of all the various padded cells. Most are occupied or just locked down. "
+roomDescription = "Этот коридор соединяет психиатрические палаты с задними переходами медицинского блока. На ряде терминалов здесь отображается статус всех мягких камер. Большинство из них заняты или просто заблокированы. "
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom32" parent="." index="32" instance=ExtResource( 2 )]
 position = Vector2( 256, -512 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "med_mental6"
-roomDescription = "This place is definitely more cramped than the rest of the medical ward. The walls, railings, doors, most of everything is painted a dark gray, with dimmer lighting, making the whole area look darker and more neutral than it actually is. It’s a weird effect on your eyes with how… simple it is."
+roomDescription = "Здесь определенно теснее, чем в остальной части медблока. Стены, перила, двери — почти всё выкрашено в темно-серый цвет, а освещение здесь более тусклое, из-за чего всё пространство кажется мрачнее и монотоннее, чем есть на самом деле. Из-за этой... простоты глаза начинают как-то странно ощущать пространство."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom33" parent="." index="33" instance=ExtResource( 2 )]
 position = Vector2( 320, -512 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "med_mental5"
-roomDescription = "This place is definitely more cramped than the rest of the medical ward. The walls, railings, doors, most of everything is painted a dark gray, with dimmer lighting, making the whole area look darker and more neutral than it actually is. It’s a weird effect on your eyes with how… simple it is."
+roomDescription = "Здесь определенно теснее, чем в остальной части медблока. Стены, перила, двери — почти всё выкрашено в темно-серый цвет, а освещение здесь более тусклое, из-за чего всё пространство кажется мрачнее и монотоннее, чем есть на самом деле. Из-за этой... простоты глаза начинают как-то странно ощущать пространство."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom46" parent="." index="34" instance=ExtResource( 2 )]
 position = Vector2( -256, -256 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_nearshower3"
-roomDescription = "This area is pressed up against the patient showers. A wide space used for whatever sorts of things, with a number of storage lockers, benches, and laundry bins. It’s like a regular public shower but with more infrastructure for the injured or disabled. There’s even a rack to hang prosthetics on."
+roomDescription = "Эта зона примыкает к душевым для пациентов. Просторное помещение, используемое для самых разных нужд, со множеством шкафчиков для хранения, скамей и корзин для белья. Это похоже на обычный общественный душ, но с расширенной инфраструктурой для раненых или инвалидов. Здесь даже есть стойка для развешивания протезов."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom47" parent="." index="35" instance=ExtResource( 2 )]
 position = Vector2( -256, -384 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_nearshower2"
-roomDescription = "This area is pressed up against the patient showers. A wide space used for whatever sorts of things, with a number of storage lockers, benches, and laundry bins. It’s like a regular public shower but with more infrastructure for the injured or disabled. There’s even a rack to hang prosthetics on."
+roomDescription = "Эта зона примыкает к душевым для пациентов. Просторное помещение, используемое для самых разных нужд, со множеством шкафчиков для хранения, скамей и корзин для белья. Это похоже на обычный общественный душ, но с расширенной инфраструктурой для раненых или инвалидов. Здесь даже есть стойка для развешивания протезов."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom50" parent="." index="36" instance=ExtResource( 2 )]
 position = Vector2( -320, -384 )
-roomName = "Med Shower"
+roomName = "Меддуш"
 roomID = "medical_shower2"
-roomDescription = "You enter the medical wing shower room. It’s pretty spacious here, the bleak gray design and fixed shower heads show that it’s clearly made for patients rather than staff. There’s hooks in the walls and floors to restrain the rather more violent inmates."
+roomDescription = "Вы входите в душевую медицинского крыла. Здесь довольно просторно; унылый серый дизайн и стационарные душевые лейки явно указывают на то, что помещение предназначено для пациентов, а не для персонала. В стенах и полу установлены крюки, чтобы удерживать особо буйных заключенных."
 roomSprite = 7
 loctag_Offlimits = true
 
 [node name="MedRoom51" parent="." index="37" instance=ExtResource( 2 )]
 position = Vector2( -320, -320 )
-roomName = "Med Shower"
+roomName = "Меддуш"
 roomID = "medical_shower"
-roomDescription = "You enter the medical wing shower room. It’s pretty spacious here, the bleak gray design and fixed shower heads show that it’s clearly made for patients rather than staff. There’s hooks in the walls and floors to restrain the rather more violent inmates."
+roomDescription = "Вы входите в душевую медицинского крыла. Здесь довольно просторно; унылый серый дизайн и стационарные душевые лейки явно указывают на то, что помещение предназначено для пациентов, а не для персонала. В стенах и полу установлены крюки, чтобы удерживать особо буйных заключенных."
 roomSprite = 7
 loctag_Offlimits = true
 
 [node name="MedRoom52" parent="." index="38" instance=ExtResource( 2 )]
 position = Vector2( -320, -256 )
-roomName = "Med Shower"
+roomName = "Меддуш"
 roomID = "medical_shower3"
-roomDescription = "You enter the medical wing shower room. It’s pretty spacious here, the bleak gray design and fixed shower heads show that it’s clearly made for patients rather than staff. There’s hooks in the walls and floors to restrain the rather more violent inmates."
+roomDescription = "Вы входите в душевую медицинского крыла. Здесь довольно просторно; унылый серый дизайн и стационарные душевые лейки явно указывают на то, что помещение предназначено для пациентов, а не для персонала. В стенах и полу установлены крюки, чтобы удерживать особо буйных заключенных."
 roomSprite = 7
 loctag_Offlimits = true
 
 [node name="MedRoom48" parent="." index="39" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( -256, -320 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_nearshower"
-roomDescription = "This area is pressed up against the patient showers. A wide space used for whatever sorts of things, with a number of storage lockers, benches, and laundry bins. It’s like a regular public shower but with more infrastructure for the injured or disabled. There’s even a rack to hang prosthetics on."
+roomDescription = "Эта зона примыкает к душевым для пациентов. Просторное помещение, используемое для самых разных нужд, со множеством шкафчиков для хранения, скамей и корзин для белья. Это похоже на обычный общественный душ, но с расширенной инфраструктурой для раненых или инвалидов. Здесь даже есть стойка для развешивания протезов."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom49" parent="." index="40" instance=ExtResource( 2 )]
 position = Vector2( -192, -320 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor7"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom34" parent="." index="41" instance=ExtResource( 2 )]
 position = Vector2( 256, -384 )
-roomName = "Padded cell"
+roomName = "Мягкая камера"
 roomID = "medical_paddedcell3"
-roomDescription = "This is one of the padded cells of the mental ward. Everything is made with some weird beige padded material you don’t recognise, with a fluorescent light in the ceiling."
-blindRoomDescription = "You have no idea where you are but the walls and the floor feel soft to the touch"
+roomDescription = "Это одна из мягких камер в психиатрическом отделении. Всё здесь оббито каким-то странным бежевым матерчатым материалом, который вам не знаком, а в потолке горит люминесцентная лампа."
+blindRoomDescription = "Вы понятия не имеете, где находитесь, но стены и пол на ощупь кажутся мягкими."
 canWest = false
 canNorth = false
 canSouth = false
@@ -433,55 +377,55 @@ loctag_Offlimits = true
 
 [node name="MedRoom35" parent="." index="42" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( 320, -384 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "med_mental2"
-roomDescription = "This place is definitely more cramped than the rest of the medical ward. The walls, railings, doors, most of everything is painted a dark gray, with dimmer lighting, making the whole area look darker and more neutral than it actually is. It’s a weird effect on your eyes with how… simple it is."
+roomDescription = "Здесь определенно теснее, чем в остальной части медблока. Стены, перила, двери — почти всё выкрашено в темно-серый цвет, а освещение здесь более тусклое, из-за чего всё пространство кажется мрачнее и монотоннее, чем есть на самом деле. Из-за этой... простоты глаза начинают как-то странно ощущать пространство."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom40" parent="." index="43" instance=ExtResource( 2 )]
 position = Vector2( 256, -448 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "med_mental4"
-roomDescription = "This place is definitely more cramped than the rest of the medical ward. The walls, railings, doors, most of everything is painted a dark gray, with dimmer lighting, making the whole area look darker and more neutral than it actually is. It’s a weird effect on your eyes with how… simple it is."
+roomDescription = "Здесь определенно теснее, чем в остальной части медблока. Стены, перила, двери — почти всё выкрашено в темно-серый цвет, а освещение здесь более тусклое, из-за чего всё пространство кажется мрачнее и монотоннее, чем есть на самом деле. Из-за этой... простоты глаза начинают как-то странно ощущать пространство."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom41" parent="." index="44" instance=ExtResource( 2 )]
 position = Vector2( 320, -448 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "med_mental3"
-roomDescription = "This place is definitely more cramped than the rest of the medical ward. The walls, railings, doors, most of everything is painted a dark gray, with dimmer lighting, making the whole area look darker and more neutral than it actually is. It’s a weird effect on your eyes with how… simple it is."
+roomDescription = "Здесь определенно теснее, чем в остальной части медблока. Стены, перила, двери — почти всё выкрашено в темно-серый цвет, а освещение здесь более тусклое, из-за чего всё пространство кажется мрачнее и монотоннее, чем есть на самом деле. Из-за этой... простоты глаза начинают как-то странно ощущать пространство."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom36" parent="." index="45" instance=ExtResource( 2 )]
 position = Vector2( 320, -320 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "medical_near_pccell"
-roomDescription = "This place is definitely more cramped than the rest of the medical ward. The walls, railings, doors, most of everything is painted a dark gray, with dimmer lighting, making the whole area look darker and more neutral than it actually is. It’s a weird effect on your eyes with how… simple it is."
+roomDescription = "Здесь определенно теснее, чем в остальной части медблока. Стены, перила, двери — почти всё выкрашено в темно-серый цвет, а освещение здесь более тусклое, из-за чего всё пространство кажется мрачнее и монотоннее, чем есть на самом деле. Из-за этой... простоты глаза начинают как-то странно ощущать пространство."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom37" parent="." index="46" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( 320, -256 )
-roomName = "Mental Ward"
+roomName = "Психиатрическое отделение"
 roomID = "med_mental1"
-roomDescription = "This place is definitely more cramped than the rest of the medical ward. The walls, railings, doors, most of everything is painted a dark gray, with dimmer lighting, making the whole area look darker and more neutral than it actually is. It’s a weird effect on your eyes with how… simple it is."
+roomDescription = "Здесь определенно теснее, чем в остальной части медблока. Стены, перила, двери — почти всё выкрашено в темно-серый цвет, а освещение здесь более тусклое, из-за чего всё пространство кажется мрачнее и монотоннее, чем есть на самом деле. Из-за этой... простоты глаза начинают как-то странно ощущать пространство."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom38" parent="." index="47" instance=ExtResource( 2 )]
 position = Vector2( 256, -320 )
-roomName = "Padded cell"
+roomName = "Мягкая камера"
 roomID = "medical_paddedcell_player"
-roomDescription = "This is one of the padded cells of the mental ward. Everything is made with some weird beige padded material you don’t recognise, with a fluorescent light in the ceiling."
-blindRoomDescription = "You have no idea where you are but the walls and the floor feel soft to the touch"
+roomDescription = "Это одна из мягких камер в психиатрическом отделении. Всё здесь оббито каким-то странным бежевым матерчатым материалом, который вам не знаком, а в потолке горит люминесцентная лампа."
+blindRoomDescription = "Вы понятия не имеете, где находитесь, но стены и пол на ощупь кажутся мягкими."
 canWest = false
 canNorth = false
 canSouth = false
@@ -489,10 +433,10 @@ loctag_Offlimits = true
 
 [node name="MedRoom39" parent="." index="48" instance=ExtResource( 2 )]
 position = Vector2( 256, -256 )
-roomName = "Padded cell"
+roomName = "Мягкая камера"
 roomID = "medical_paddedcell2"
-roomDescription = "This is one of the padded cells of the mental ward. Everything is made with some weird beige padded material you don’t recognise, with a fluorescent light in the ceiling."
-blindRoomDescription = "You have no idea where you are but the walls and the floor feel soft to the touch"
+roomDescription = "Это одна из мягких камер в психиатрическом отделении. Всё здесь оббито каким-то странным бежевым матерчатым материалом, который вам не знаком, а в потолке горит люминесцентная лампа."
+blindRoomDescription = "Вы понятия не имеете, где находитесь, но стены и пол на ощупь кажутся мягкими."
 canWest = false
 canNorth = false
 canSouth = false
@@ -500,64 +444,60 @@ loctag_Offlimits = true
 
 [node name="MedRoom15" parent="." index="49" instance=ExtResource( 2 )]
 position = Vector2( -64, -320 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor4"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom16" parent="." index="50" instance=ExtResource( 2 )]
 position = Vector2( -128, -320 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor5"
-roomDescription = "The long, wide and empty hallways make it very hard to sneak around back here. Looking around corners and behind your back is a life saver. Even if this place is far less populated with staff than something like the cell blocks, the lack of places to hide makes you feel uneasy. You arent even close enough to anything to convincingly lie about."
+roomDescription = "Длинные, широкие и пустые коридоры делают скрытное передвижение здесь крайне сложным. Привычка заглядывать за углы и оглядываться назад — ваше спасение. Даже если персонала здесь гораздо меньше, чем в блоках с камерами, отсутствие мест, где можно спрятаться, заставляет вас нервничать. Вы даже не находитесь достаточно близко к кому-либо, чтобы можно было убедительно соврать."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom17" parent="." index="51" groups=["zone_medpatrol"] instance=ExtResource( 2 )]
 position = Vector2( -128, -256 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_corridor6"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, and most of the doors you can reach are locked. Other than the white paneling, there isn't much to speak of. Or sneak around.
-This part of the medical wing is marked as [color=red]off-limits[/color] for inmates."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным, и большинство дверей, до которых вы можете дотянуться, заперты. Помимо белых панелей, здесь особо не на что смотреть. Или где бы можно было скрытно прокрасться.\nЭта часть медицинского крыла помечена как [color=red]запретная зона[/color] для заключенных."
 gridColor = 2
 loctag_MentalWard = true
 population = 2
 
 [node name="MedRoom18" parent="." index="52" instance=ExtResource( 2 )]
 position = Vector2( -128, -192 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_nearmilking"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, every so often you see airlocks that lead to laboratories and other rooms. This part of the corridor seems to be safe for inmates to walk through but you better not go too far or the staff will start asking questions.
-
-Going further into medical will draw suspicion from here, away from the more popular or dedicated prisoner rooms."
+roomDescription = "Вы стоите в широком белом коридоре, он кажется довольно длинным; время от времени вам попадаются шлюзы, ведущие в лаборатории и другие помещения. Эта часть коридора кажется безопасной для прогулок заключенных, но лучше не заходить слишком далеко, иначе персонал начнет задавать вопросы.\n\nДальнейшее продвижение вглубь медблока вызовет подозрения, так как это место находится вдали от популярных или специально отведенных для заключенных зон."
 population = 2
 
 [node name="MedRoom19" parent="." index="53" instance=ExtResource( 2 )]
 position = Vector2( -128, -128 )
-roomName = "Med Floor Corridor"
+roomName = "Коридор медблока"
 roomID = "med_nearlab"
-roomDescription = "You stand in a wide white corridor, it looks pretty long, every so often you see airlocks that lead to laboratories and other rooms. This part of the corridor seems to be safe for inmates to walk through but you better not go too far or the staff will start asking questions."
+roomDescription = "Вы стоите в широком белом коридоре, который кажется бесконечным; время от времени попадаются шлюзы, ведущие в лаборатории и другие помещения. Кажется, в этой части коридора заключенным ходить разрешено, но лучше не заходить слишком далеко, иначе персонал начнет задавать лишние вопросы."
 population = 2
 
 [node name="MedLab" parent="." index="54" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -192, -128 )
-roomName = "Research Lab"
+roomName = "Исследовательская лаборатория"
 roomID = "med_researchlab"
-roomDescription = "This is clearly a space where research is done, you notice a lot of scientific equipment, storage drawers and a chemistry station. In the middle of the room there is a special table with a console and a scanner attached to it."
+roomDescription = "Очевидно, что здесь проводят исследования: повсюду научное оборудование, выдвижные ящики для хранения и химический стол. В центре комнаты стоит специальный стол со встроенной консолью и сканером."
 roomColor = 3
 population = 2
 
 [node name="MedMilkingRoom" parent="." index="55" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -64, -192 )
-roomName = "Milking room"
+roomName = "Доильный зал"
 roomID = "med_milkingroom"
-roomDescription = "As soon as you enter this room you notice many milking stalls that are placed along one of the walls in a row. Each stall is made out of metal bars and some plumbing that is connected to the huge milk storage unit near the opposite wall."
+roomDescription = "Как только вы входите, взгляд сразу падает на ряд доильных станций, расположенных вдоль одной из стен. Каждый стан сделан из металлических прутьев и соединен системой труб с огромным резервуаром для хранения молока у противоположной стены."
 canSouth = false
 roomColor = 3
 population = 2
@@ -565,9 +505,9 @@ population = 2
 [node name="MedElevator" parent="." index="56" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 0, 64 )
-roomName = "Elevator"
+roomName = "Лифт"
 roomID = "med_elevator"
-roomDescription = "Spacious elevator that can move people or a huge amount of cargo between floors. Walls are made out of black painted metal, you notice a control panel that has a few buttons."
+roomDescription = "Просторный лифт, способный перевозить людей или огромные партии груза между этажами. Стены выполнены из черного окрашенного металла; вы замечаете панель управления с несколькими кнопками."
 roomSprite = 3
 roomColor = 2
 population = 3

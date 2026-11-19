@@ -16,10 +16,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Rapid Conception"
+	return "Быстрое зачатие"
 
 func getEffectDesc():
-	return "You are more fertile and any pregnancies now progress faster! "+Util.getTimeStringHumanReadable(turns)
+	return "Ваша фертильность повышена, и теперь любая беременность протекает быстрее! "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/nested-hearts2.png"

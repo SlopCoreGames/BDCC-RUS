@@ -226,7 +226,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "after_help")
 	if(state == "avoid_lewds_completely"):
 		playAnimation(StageScene.GeneratorOral, "tease", {pc="socket", npc="pc"})
-		saynn("Это требует немало... сил... но тебе удаётся полностью отключить мозг и даже не думать о той киске. Ты сосредоточен только на том, чтобы генератор работал стабильно."+str(" while your cock stays hard as a rock" if GM.pc.hasReachablePenis() else "")+".")
+		saynn("Это требует немало... сил... но тебе удаётся полностью отключить мозг и даже не думать о той киске. Ты сосредоточен только на том, чтобы генератор работал стабильно."+str(" пока твой член стоит колом" if GM.pc.hasReachablePenis() else "")+".")
 
 		saynn("[say=socket]Почти готово![/say]")
 
@@ -284,7 +284,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "socket_reward_grope"):
 		playAnimation(StageScene.Grope, "grope", {pc="socket", npc="pc"})
-		saynn("Да нет, можно и принять её предложение. Только делай это хитро: твоя рука ложится ей на живот и скользит вниз, к самой промежности."+str("Her pussy is still quite wet after her orgasm. As you spread it, you reveal a few strings of juices that are hanging between her folds." if socketCame else "Her pussy is slightly wet. As you spread it, you reveal a lonely string of juices that is hanging between her folds.")+"")
+		saynn("Да нет, можно и принять её предложение. Только делай это хитро: твоя рука ложится ей на живот и скользит вниз, к самой промежности."+str("После оргазма её киска всё ещё довольно влажная. Когда ты раздвигаешь её губы, между складками тянутся несколько струек сока." if socketCame else "Её киска слегка влажная. Когда ты раздвигаешь её губы, между складками тянется одинокая струйка сока.")+"")
 
 		saynn("Другой рукой ты обхватываешь одну из её грудей и нежно сжимаешь. Всё это время Сокет просто наблюдает за тобой, раздвигая ноги еще шире и слегка покусывая губу.")
 

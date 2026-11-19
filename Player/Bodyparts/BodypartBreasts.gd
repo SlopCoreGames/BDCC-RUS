@@ -114,9 +114,9 @@ func getPickableAttributes():
 		breastVariants.append([breastSize, BreastsSize.breastSizeToString(breastSize), BreastsSize.breastSizeToCupString(breastSize)])
 	
 	result["breastsize"]= {
-		"text": "Change the breast size",
+		"text": "Изменить размер груди",
 		"textButton": "Breast size",
-		"buttonDesc": "Pick the breast size",
+		"buttonDesc": "Выбрать размер груди",
 		"options": breastVariants,
 		"default": size,
 	}

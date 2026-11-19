@@ -242,9 +242,9 @@ func _run():
 			saynn("Но {npc.he} готов(а): он(а) отталкивает тебя и издает яростный рык.")
 
 			saynn(RNG.pick([
-				"[say=npc]Oh, you gonna fucking regret this.[/say]",
-				"[say=npc]I guess I will have to force you then.[/say]",
-				"[say=npc]Bad choice. Prepare for consequences, bitch.[/say]",
+				"[say=npc]О, ты, блять, об этом еще пожалеешь.[/say]",
+				"[say=npc]Значит, придется применить силу.[/say]",
+				"[say=npc]Плохой выбор. Готовься к последствиям, сучка.[/say]",
 			]))
 
 		# (options is fight)
@@ -254,9 +254,9 @@ func _run():
 			saynn("{npc.He} совершенно к этому не был(а) готов(а). Охранник ахает и падает перед тобой замертво.")
 
 			saynn(RNG.pick([
-				"[say=npc]Ow.. Don’t hurt me! You can go.[/say]",
-				"[say=npc]Okay okay, you won.. Do whatever you want..[/say]",
-				"[say=npc]Hey!.. Ow.. you won. What are you gonna do now?..[/say]",
+				"[say=npc]Ой!.. Не делай мне больно! Можешь идти.[/say]",
+				"[say=npc]Ладно, ладно, ты победил... Делай что хочешь...[/say]",
+				"[say=npc]Эй!.. Ой.. ты победил. И что ты теперь будешь делать?..[/say]",
 			]))
 
 			addWonButton()
@@ -265,9 +265,9 @@ func _run():
 			saynn("{npc.He} пошатывается, но быстро восстанавливает равновесие. Охранник явно не в восторге от тебя.")
 
 			saynn(RNG.pick([
-				"[say=npc]Well, I can teach you a lesson or two.[/say]",
-				"[say=npc]Let’s see if this will be enough of a lesson.[/say]",
-				"[say=npc]Resisting will only make this worse for you.[/say]",
+				"[say=npc]Ну, я могу преподать тебе пару уроков.[/say]",
+				"[say=npc]Посмотрим, хватит ли этого урока для тебя.[/say]",
+				"[say=npc]Сопротивление только ухудшит твое положение.[/say]",
 			]))
 
 			addButton("Драться", "Начать бой", "startfight")
@@ -299,9 +299,9 @@ func _run():
 		saynn("Ты прижимаешь поверженного охранника к полу. {npc.He} вроде как не особо сопротивляется.")
 
 		saynn(RNG.pick([
-			"[say=npc]What’s your plan?[/say]",
-			"[say=npc]Don’t leave me like this, inmate.[/say]",
-			"[say=npc]What now? Gonna kiss me at least?[/say]",
+			"[say=npc]Какой план?[/say]",
+			"[say=npc]Не бросай меня так, заключенный.[/say]",
+			"[say=npc]И что теперь? Хоть поцелуешь меня?[/say]",
 		]))
 
 		# (Options are sex or leave them be, Inventory, Struggle)
@@ -399,7 +399,7 @@ func _react(_action: String, _args):
 		else:
 			setState("submit")
 		GM.pc.addCredits(-5)
-		addMessage("5 credits were taken from you")
+		addMessage("У тебя отобрали 5 кредитов")
 		
 		if(GM.pc.hasIllegalItems()):
 			foundIllegalItems = true

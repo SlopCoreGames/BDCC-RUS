@@ -41,9 +41,9 @@ func _run():
 			saynn("Отсюда трудно разобрать, но тебе кажется, что ты уже видел {npc.him} раньше.")
 		
 			if(npcVariation == "subby"):
-				saynn("Ты помнишь, как {npc.him} был"+RNG.pick(["quite shy", "of the nervous type", "shy", "on the shy side", "on the quiet side"])+".")
+				saynn("Ты помнишь, как {npc.him} был"+RNG.pick(["довольно застенчивая", "из нервных типов", "shy", "немного застенчивая", "на тихом фронте"])+".")
 			if(npcVariation == "mean"):
-				saynn("Ты помнишь, как {npc.him} был"+RNG.pick(["one of the mean ones", "quite mean", "one of the rough ones", "mean", "not of the kind type"])+".")
+				saynn("Ты помнишь, как {npc.him} был"+RNG.pick(["одна из тех стерв", "довольно вредная", "один из тех самых отморозков", "mean", "не того типа"])+".")
 		else:
 			saynn("Вы не помните, чтобы встречали {npc.him} раньше.")
 			
@@ -64,22 +64,22 @@ func _run():
 
 		if(npcVariation == "mean"):
 			if(sawBefore):
-				saynn("Охранник "+RNG.pick(["catches your silhouette with {npc.his} gaze", "hears your steps"])+" и оборачивается, его электрошокер {npc.his} уже высекает искры.")
+				saynn("Охранник "+RNG.pick(["ловит твой силуэт {npc.his} взглядом", "слышит твои шаги"])+" и оборачивается, его электрошокер {npc.his} уже высекает искры.")
 				
 				saynn(RNG.pick([
-					"[say=npc]Huh, you again. Are you one of those masochistic bitches?[/say]",
-					"[say=npc]It's you again. Breaking of rules is punished with breaking of bones.[/say]",
-					"[say=npc]Brave. And incredibly stupid. I thought you learned your lesson, inmate.[/say]",
-					"[say=npc]You know I'm not just gonna let you through.[/say]",
+					"[say=npc]Хм, опять ты. Ты из этих мазохистских сучек?[/say]",
+					"[say=npc]Опять ты. Нарушение правил карается переломами костей.[/say]",
+					"[say=npc]Смело. И невероятно тупо. Я думал, ты усвоил урок, зэк.[/say]",
+					"[say=npc]Ты же знаешь, что я просто так тебя не пропущу.[/say]",
 					]))
 			else:
-				saynn("Охранник "+RNG.pick(["catches your silhouette with {npc.his} gaze", "hears your steps"])+" и оборачивается, его электрошокер {npc.his} уже высекает искры. {npc.He} быстро осматривает тебя.")
+				saynn("Охранник "+RNG.pick(["ловит твой силуэт {npc.his} взглядом", "слышит твои шаги"])+" и оборачивается, его электрошокер {npc.his} уже высекает искры. {npc.He} быстро осматривает тебя.")
 				
 				saynn(RNG.pick([
-					"[say=npc]Who do we have here? More painsluts?[/say]",
-					"[say=npc]You're trespassing, inmate. But I guess you like fucking around? Me too.[/say]",
-					"[say=npc]Brave. And incredibly stupid.[/say]",
-					"[say=npc]I'm never tired of fresh faces. They change so fast after a few beatings.[/say]",
+					"[say=npc]И кто тут у нас? Очередная больная шлюха?[/say]",
+					"[say=npc]Ты нарушаешь границы, зэк. Но, полагаю, тебе нравится трахаться с опасностью? Мне тоже.[/say]",
+					"[say=npc]Смело. И невероятно тупо.[/say]",
+					"[say=npc]Мне никогда не надоедают новые лица. Они так быстро меняются после пары хороших взбучек.[/say]",
 					]))
 			
 			saynn("Похоже, с этим типом остается только драться.")
@@ -87,23 +87,23 @@ func _run():
 			addButton("Драться", "Начать бой", "startfight")
 		elif(npcVariation == "subby"):
 			if(sawBefore):
-				saynn("Охранник "+RNG.pick(["gasps", "eeks", "staggers back", "jumps"])+" когда {npc.he} замечает тебя. И тогда {npc.he} краснеет.")
+				saynn("Охранник "+RNG.pick(["gasps", "eeks", "пошатывается назад", "jumps"])+" когда {npc.he} замечает тебя. И тогда {npc.he} краснеет.")
 				
 				saynn("[say=npc]"+RNG.pick([
-					"You wanted something?.. I'm not gonna stop you.",
-					"Oh, hi. I'm just patrolling here..",
-					"Hey there, inmate. How are you doing?",
-					"Oh. You're not supposed to be here. I think? Maybe you are..",
-					"Do you wanna do something with me?..",
+					"Чего-то хотела?.. Ладно, не буду тебе мешать.",
+					"О, привет. Да я так, патрулирую тут...",
+					"Эй, заключенная. Как жизнь?",
+					"Оу. Тебя вроде как не должно здесь быть. Или должна?..",
+					"Может, займемся чем-нибудь?..",
 				])+"[/say]")
 			else:
-				saynn("Охранник "+RNG.pick(["gasps", "eeks", "staggers back", "jumps"])+" когда {npc.he} замечает тебя. Электрошокер чуть не выскальзывает из рук {npc.his}.")
+				saynn("Охранник "+RNG.pick(["gasps", "eeks", "пошатывается назад", "jumps"])+" когда {npc.he} замечает тебя. Электрошокер чуть не выскальзывает из рук {npc.his}.")
 			
 				saynn("[say=npc]"+RNG.pick([
-					"Oh! Another inmate. What are you gonna do with me?..",
-					"You're not supposed to be here.. What should we do?",
-					"Ah! Hey there..",
-					"Don't remember you.. Are you one of the new ones?.."
+					"О! Еще одна заключенная. И что ты со мной сделаешь?..",
+					"Тебе здесь не место... Что же нам делать?",
+					"А! О, привет...",
+					"Не припоминаю тебя... Ты из новеньких?.."
 				])+"[/say]")
 			
 			saynn("Похоже, этот охранник не собирается проламывать тебе череп.")
@@ -111,22 +111,22 @@ func _run():
 			addWonButton()
 		else:
 			if(sawBefore):
-				saynn("Охранник "+RNG.pick(["raises {npc.his} brow at you", "turns around to face you", "gives you a strict look"])+" когда {npc.he} заприметила тебя. Охранник включает {npc.his} электрошокер и внимательно следит за тобой.")
+				saynn("Охранник "+RNG.pick(["вскидывает {npc.his} бровь, глядя на тебя", "разворачивается к тебе лицом", "бросает на тебя строгий взгляд"])+" когда {npc.he} заприметила тебя. Охранник включает {npc.his} электрошокер и внимательно следит за тобой.")
 				
 				saynn("[say=npc]"+RNG.pick([
-					"I remember you. You're not allowed to be here, inmate.",
-					"Hey, you! Craving for more punishments?",
-					"You're not supposed to be here. Now I will have to punish you.",
-					"Gonna surrender? Not as painful for you that way."
+					"А, теперь вспомнил. Тебе здесь не положено находиться, зэк.",
+					"Эй, ты! Что, жаждешь добавки наказаний?",
+					"Тебя здесь быть не должно. Теперь мне придется тебя проучить.",
+					"Сдашься добровольно? Так будет не так больно."
 				])+"[/say]")
 			else:
-				saynn("Охранник "+RNG.pick(["raises {npc.his} brow at you", "turns around to face you", "gives you a strict look"])+" когда {npc.he} заприметила тебя. Охранник включает {npc.his} электрошокер и внимательно разглядывает незнакомое лицо.")
+				saynn("Охранник "+RNG.pick(["вскидывает {npc.his} бровь, глядя на тебя", "разворачивается к тебе лицом", "бросает на тебя строгий взгляд"])+" когда {npc.he} заприметила тебя. Охранник включает {npc.his} электрошокер и внимательно разглядывает незнакомое лицо.")
 				
 				saynn("[say=npc]"+RNG.pick([
-					"Don't recall you. But you're not allowed to be here, inmate.",
-					"Hey! Looking for a punishment?",
-					"You're not supposed to be here. Now I will have to punish you.",
-					"Hey! Hands up. No funny movements."
+					"Что-то не припоминаю тебя. Но тебе здесь не место, зэк.",
+					"Эй! Хочешь наказать себя?",
+					"Тебя здесь быть не должно. Теперь мне придется тебя проучить.",
+					"Эй! Руки вверх. И без лишних движений."
 				])+"[/say]")
 			
 			saynn("Похоже, теперь просто так развернуться и уйти не получится.")
@@ -138,10 +138,10 @@ func _run():
 		saynn("Вместо того чтобы драться, ты просто поднимаешь руки вверх и сдаешься.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Good choice. Now we're gonna have some fun.",
-			"That was the correct choice. Ready to have some fun?",
-			"Good inmate. Now for your punishment.",
-			"That's what I wanna see. I will still punish you for trespassing.",
+			"Хороший выбор. А теперь повеселимся.",
+			"Правильный выбор. Готова повеселиться?",
+			"Послушная зэчка. А теперь — твоё наказание.",
+			"Вот это я люблю. Но за вторжение я тебя всё равно накажу.",
 		])+"[/say]")
 		
 		saynn("Ты полностью во власти {npc.his}.")
@@ -191,27 +191,27 @@ func _run():
 		saynn("Ты подкрадываешься к охраннику со спины и внезапно хватаешь {npc.him} за шею, пока вторая рука шарит по {npc.his} снаряжению.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Eek!",
-			"AH!",
-			"Huh?",
-			"Who..",
-			"Wha..",
+			"Ой!",
+			"А-а!",
+			"А?",
+			"Кто...",
+			"Что..",
 		])+"[/say]")
 		
 		saynn("К твоему удивлению, {npc.he} почти не сопротивляется. Тебе удается найти наручники и быстро защелкнуть их на {npc.his} руках, заставив их завести их за спину.")
 		
 		if(sawBefore):
 			saynn("[say=npc]"+RNG.pick([
-				"Oh, it's you. You could have just asked..",
-				"Oh, hi.. kinky.",
-				"Oh, hey there..",
+				"А, это ты. Мог бы просто спросить..",
+				"О, привет.. а ты с изюминкой.",
+				"О, привет..",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"Uh.. Hi there, new face.",
-				"That's a bit fast, isn't it? I almost don't mind though.",
-				"Who are you now?",
-				"Kinky..",
+				"Э-э.. Привет, новенький.",
+				"Что-то ты быстро. Хотя, я даже не против.",
+				"А ты кто такой?",
+				"Ох, извращения...",
 			])+"[/say]")
 		
 		saynn("{npc.He} сильно краснеет; можно просто оставить {npc.him} в таком виде, а можно немного развлечься.")
@@ -225,20 +225,20 @@ func _run():
 		saynn("Ты подкрадываешься к охраннику со спины и внезапно хватаешь {npc.him} за шею, пока вторая рука шарит по {npc.his} снаряжению.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"The fuck?!",
-			"Hey!",
-			"What?!",
-			"Ugh!",
-			"Huh!?",
+			"Какого хера?!",
+			"Эй!",
+			"Что?!",
+			"Уф!",
+			"А?!",
 		])+"[/say]")
 		
 		saynn("Но {npc.he} успевает быстро убрать твою руку, прежде чем ткнуть {npc.his} локтем тебе в грудь и развернуться.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Now that was rude.",
-			"Big mistake.",
-			"That won't work on me, inmate.",
-			"Seems like you need to be taught a lesson.",
+			"Ну и хамство.",
+			"Большая ошибка.",
+			"На меня это не подействует, зэк.",
+			"Похоже, тебе пора преподать урок.",
 		])+"[/say]")
 	
 		saynn("Ой. Похоже, теперь придется драться.")
@@ -251,26 +251,26 @@ func _run():
 		saynn("Ты подкрадываешься к охраннику со спины и внезапно хватаешь {npc.him} за шею, пока вторая рука шарит по {npc.his} снаряжению.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"The fuck?!",
-			"Hey!",
-			"What?!",
-			"Ugh!",
-			"Huh!?",
+			"Какого хера?!",
+			"Эй!",
+			"Что?!",
+			"Уф!",
+			"А?!",
 		])+"[/say]")
 		
 		saynn("{npc.He} пытается сопротивляться, но один меткий тычок {npc.his} в бок успокаивает {npc.him}. Тебе удается найти наручники, которые быстро защелкиваются на руках {npc.his}, заставляя их оказаться за спиной.")
 		
 		if(sawBefore):
 			saynn("[say=npc]"+RNG.pick([
-				"Really? It's you? Fuck me.",
-				"Oh fuck. What's your plan, inmate?",
-				"Uncuff me right now or you will regret it.",
+				"Серьезно? Опять ты? Твою мать.",
+				"Ох, блядь. Какой у тебя план, зэк?",
+				"Сними наручники прямо сейчас, иначе пожалеешь.",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"Who the fuck are you? Uncuff me.",
-				"Oh fuck. What's your plan, inmate?",
-				"Uncuff me right now or you will regret it.",
+				"Ты ещё кто за хуйня? Сними наручники.",
+				"Ох, блядь. Какой у тебя план, зэк?",
+				"Сними наручники прямо сейчас, иначе пожалеешь.",
 			])+"[/say]")
 		
 		saynn("{npc.He} всё еще сильно сопротивляется. Можно просто оставить {npc.him} как есть, а можно немного развлечься.")
@@ -303,9 +303,9 @@ func _run():
 		saynn("Ты прижимаешь поверженного охранника к полу. {npc.He} вроде как не особо сопротивляется.")
 
 		saynn(RNG.pick([
-			"[say=npc]What’s your plan?[/say]",
-			"[say=npc]Don’t leave me like this, inmate.[/say]",
-			"[say=npc]What now? Gonna kiss me at least?[/say]",
+			"[say=npc]Какой план?[/say]",
+			"[say=npc]Не бросай меня так, заключенный.[/say]",
+			"[say=npc]И что теперь? Хоть поцелуешь меня?[/say]",
 		]))
 
 		addWonButton()
@@ -339,9 +339,9 @@ func _react(_action: String, _args):
 			
 			if(loot.has("items") && loot["items"].size() > 0):
 				runScene("LootingScene", [loot])
-				addMessage("You manage to get into the guard's belt")
+				addMessage("Тебе удается залезть в пояс охранника.")
 			else:
-				addMessage("You manage to get into the guard's belt but didn't find anything useful")
+				addMessage("Тебе удается залезть в пояс охранника, но ничего полезного ты не находишь.")
 			endScene()
 		return
 

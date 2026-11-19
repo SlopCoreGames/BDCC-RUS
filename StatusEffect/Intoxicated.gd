@@ -22,20 +22,20 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Intoxicated"
+	return "Опьянение"
 
 func getEffectDesc():
 	if(!character.isPlayer()):
-		return "You're intoxicated"
+		return "Вы пьяны"
 	
 	var intoxication: float = character.getIntoxicationLevel()
 
 	var text = "Вы в состоянии опьянения на "+str(round(intoxication*100.0))+"%."
 	
 	if(intoxication >= 0.7):
-		text += " You can barely stand on your feet."
+		text += " Вы едва держитесь на ногах."
 	elif(intoxication >= 0.4):
-		text += " You feel drunk."
+		text += " Вы чувствуете алкогольное опьянение."
 	
 	return text
 

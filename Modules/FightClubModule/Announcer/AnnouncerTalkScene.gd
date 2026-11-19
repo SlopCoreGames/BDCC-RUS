@@ -190,7 +190,7 @@ func _react(_action: String, _args):
 		processTime(3*60)
 		setFlag("FightClubModule.CanBuySlaveCollars", true)
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("oldcollar"))
-		addMessage("You got a slave collar!")
-		addMessage("You can now buy more slave collars from Ans")
+		addMessage("Ты получил рабский ошейник!")
+		addMessage("Теперь ты можешь покупать больше рабских ошейников у Анс")
 
 	setState(_action)

@@ -23,17 +23,17 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Cum Inflated"
+	return "Раздутая спермой"
 
 func getEffectDesc():
 	var cumInflationLevel = character.getCumInflationLevel()
 	
 	if(cumInflationLevel <= 1.5):
-		return "Your belly has a slight visible bump"
+		return "Твой живот слегка округлился"
 	if(cumInflationLevel <= 4.5):
-		return "Your belly looks quite inflated!"
+		return "Твой живот выглядит довольно раздутым!"
 	
-	return "Wow, you are stuffed so much that you look pregnant!"
+	return "Ого, ты так набита, что выглядишь как беременная!"
 
 func getEffectImage():
 	var cumInflationLevel = character.getCumInflationLevel()

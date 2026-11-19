@@ -19,7 +19,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "One of the bar visitors. A tall tough cat."
+	return "Один из посетителей бара. Высокий и крепкий кот."
 
 func getSpecies():
 	return ["feline"]

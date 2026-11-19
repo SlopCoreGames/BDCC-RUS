@@ -35,61 +35,61 @@ func _run():
 
 	if(state == ""):
 		saynn(RNG.pick([
-			"{npc.name} walks up to the stocks. {npc.He} is clearly interested in your.. offerings.",
-			"{npc.name} approaches you. {npc.His} eyes are checking you out quite thoroughly.",
+			"{npc.name} подходит к колодкам. {npc.He} явно заинтересована в твоих... подношениях.",
+			"{npc.name} приближается к тебе. {npc.His} во все глаза разглядывает тебя.",
 		]))
 
 		if(npcVariation == "mean"):
 			if(!sawBefore):
 				saynn(RNG.pick([
-					"[say=npc]Fuck yeah, another bitch got put into stocks. Gonna be willing?[/say]",
-					"[say=npc]I see a bitch that needs some punishing. Right?[/say]",
-					"[say=npc]Look at that, the slut got caught. I should punish you.[/say]",
+					"[say=npc]Твою мать, еще одна сучка в колодках! Будешь послушной?[/say]",
+					"[say=npc]Вижу сучку, которую пора наказать. Ну что, верно?[/say]",
+					"[say=npc]Гляньте-ка, шлюху поймали. Пожалуй, я тебя проучу.[/say]",
 				]))
 			else:
 				saynn(RNG.pick([
-					"[say=npc]I remember that slutty ass. Gonna be willing?[/say]",
-					"[say=npc]Bitches like you need to be punished more. Huh?[/say]",
-					"[say=npc]Look at that, the slut got caught again. I should punish you.[/say]",
+					"[say=npc]Помню эту шлюшью задницу. Будешь послушной?[/say]",
+					"[say=npc]Таких сучек, как ты, нужно наказывать еще чаще. А?[/say]",
+					"[say=npc]Смотрите-ка, шлюху снова поймали. Пожалуй, я тебя проучу.[/say]",
 				]))
 		elif(npcVariation == "kind"):
 			if(!sawBefore):
 				saynn(RNG.pick([
-					"[say=npc]Hey there. Mind if I.. use you?[/say]",
-					"[say=npc]Seems you did something bad. Might I do something with you?[/say]",
-					"[say=npc]Hey, I’m kinda horny. May I?[/say]",
+					"[say=npc]Привет. Не против, если я тебя... использую?[/say]",
+					"[say=npc]Похоже, ты натворила дел. Можно мне с тобой кое-что сделать?[/say]",
+					"[say=npc]Эй, что-то меня развезло... Можно?[/say]",
 				]))
 			else:
 				saynn(RNG.pick([
-					"[say=npc]Oh, I know you. Mind if I.. use you?[/say]",
-					"[say=npc]I remember you. Might I do something with you?[/say]",
-					"[say=npc]Hello friend. I’m kinda horny. May I?[/say]",
+					"[say=npc]О, я тебя знаю. Не против, если я тебя... использую?[/say]",
+					"[say=npc]Я тебя помню. Можно мне с тобой кое-что сделать?[/say]",
+					"[say=npc]Привет, дружище. Что-то меня возбуждает... Можно?[/say]",
 				]))
 		elif(npcVariation == "subby"):
 			if(!sawBefore):
 				saynn(RNG.pick([
-					"[say=npc]Oh hi.. Can I..?[/say]",
-					"[say=npc]I know I shouldn’t ask.. But can I?..[/say]",
-					"[say=npc]You seem like you need to be punished.. Can I do that maybe?..[/say]",
+					"[say=npc]О, привет... Можно мне..?[/say]",
+					"[say=npc]Знаю, что не стоит спрашивать... Но можно?..[/say]",
+					"[say=npc]Похоже, тебя нужно наказать... Может, мне это сделать?..[/say]",
 				]))
 			else:
 				saynn(RNG.pick([
-					"[say=npc]Oh, it’s you.. can I maybe..?[/say]",
-					"[say=npc]I kinda wanna play with you a little.. May I?..[/say]",
-					"[say=npc]Can I maybe play with you a little?..[/say]",
+					"[say=npc]О, это ты... Можно мне, может быть..?[/say]",
+					"[say=npc]Мне хочется немного поиграть с тобой... Можно?..[/say]",
+					"[say=npc]Может, мне немного поиграть с тобой?..[/say]",
 				]))
 		else:
 			if(!sawBefore):
 				saynn(RNG.pick([
-					"[say=npc]Can I offer you a fun time?[/say]",
-					"[say=npc]You seem quite exposed. Want me to fuck with you a little?[/say]",
-					"[say=npc]Seems you did some bad things. Wonder if I should fuck you.[/say]",
+					"[say=npc]Может, развлечь тебя?[/say]",
+					"[say=npc]Выглядишь довольно беззащитной. Хочешь, я немного тебя оттрахаю?[/say]",
+					"[say=npc]Похоже, ты натворила дел. Интересно, стоит ли мне тебя трахнуть?[/say]",
 				]))
 			else:
 				saynn(RNG.pick([
-					"[say=npc]Oh, I remember that butt. I’d fuck it again.[/say]",
-					"[say=npc]Hi there. Familiar face. And butt. Wonder if I should screw with you.[/say]",
-					"[say=npc]Can I offer you a fun time?[/say]",
+					"[say=npc]О, я помню эту задницу. Я бы оттрахал её снова.[/say]",
+					"[say=npc]Привет. Знакомое личико. И задница. Интересно, стоит ли мне с тобой поиграть?[/say]",
+					"[say=npc]Может, развлечь тебя?[/say]",
 				]))
 
 		addButton("Кивнуть", "Пусть делают, что хотят", "startsexsubby")
@@ -97,7 +97,7 @@ func _run():
 
 	if(state == "shake_head_success"):
 		saynn(RNG.pick([
-			"You shake your head as best as the stocks allow. The person deliberates but decides to leave instead of forcing you.",
+			"Ты качаешь головой настолько сильно, насколько позволяют колодки. Человек колеблется, но в итоге решает уйти, вместо того чтобы принуждать тебя.",
 		]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -106,11 +106,11 @@ func _run():
 		saynn("Ты качаешь головой настолько, насколько позволяют колодки.")
 		
 		saynn(RNG.pick([
-			"[say=npc]Well too bad. I’m too horny.[/say]",
-			"[say=npc]Your no sounded too fake for me. Don’t mind me.[/say]",
-			"[say=npc]No? What if I do it anyway?[/say]",
-			"[say=npc]I don’t take no for an answer, slut.[/say]",
-			"[say=npc]It’s not like you can stop me.[/say]",
+			"[say=npc]Ну, жаль. А я так возбужден.[/say]",
+			"[say=npc]Твое «нет» прозвучало слишком фальшиво. Не обращай на меня внимания.[/say]",
+			"[say=npc]Нет? А если я всё равно это сделаю?[/say]",
+			"[say=npc]«Нет» меня не интересует, сучка.[/say]",
+			"[say=npc]Всё равно ты не сможешь меня остановить.[/say]",
 		]))
 		
 		addButton("Получи по полной", "Ну, что тут поделаешь...", "startsexsubby")

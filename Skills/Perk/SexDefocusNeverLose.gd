@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Зависание в пространстве"
 
 func getVisibleDescription():
-	return "You learned to control your horny thoughts, while defocusing you will NEVER lose from [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] damage as long as you're not at your peak already"
+	return "Вы научились контролировать свои похотливые мысли: при дефокусировке вы НИКОГДА не потеряете [color="+DamageType.getColorString(DamageType.Lust)+"]урон похоти[/color], если только вы еще не достигли пика"
 
 func getSkillTier():
 	return 0

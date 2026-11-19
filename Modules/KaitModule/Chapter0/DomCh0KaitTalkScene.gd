@@ -228,7 +228,7 @@ func _react(_action: String, _args):
 
 	if(_action == "ask_avy"):
 		setFlag("KaitModule.toldSaved", true)
-		addMessage("You can now join Kait's team!")
+		addMessage("Теперь ты можешь вступить в команду Кейт!")
 
 	setState(_action)
 

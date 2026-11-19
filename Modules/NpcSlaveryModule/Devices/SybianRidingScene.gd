@@ -456,7 +456,7 @@ func _react(_action: String, _args):
 		var condomItem:ItemBase = GlobalRegistry.createItem("UsedCondom")
 		condomItem.breakChance = breakChance
 		GM.pc.getInventory().forceEquipStoreOther(condomItem)
-		addMessage("You put an empty condom on!")
+		addMessage("Ты надеваешь пустой презерватив!")
 		return
 
 	if(_action == "do_cum"):
@@ -489,7 +489,7 @@ func _react(_action: String, _args):
 	if(_action == "endthescene_recovercondom"):
 		if(GM.pc.getWornCondom() != null):
 			GM.pc.getInventory().unequipItem(GM.pc.getWornCondom())
-			addMessage("You store the used condom!")
+			addMessage("Ты сохраняешь использованный презерватив!")
 		playAnimation(StageScene.Solo, "stand")
 		GM.pc.setArousal(0.0)
 		endScene()

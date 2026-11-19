@@ -8,23 +8,23 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"This one right here? Absolutely loves being on display. The more eyes on {slave.him}, the more {slave.he} craves it. Perfect for public performances.",
-		"Exhibitionism runs deep in {slave.him}. Strip {slave.him} down, put {slave.him} in front of an audience, and {slave.he} won’t shy away - {slave.he} will beg for more.",
-		"You’ll never have to worry about this one feeling ashamed. {slave.He} thrives on being watched, showing off that body, and getting all the attention.",
-		"Stage lights, a crowd of onlookers - this slave lives for it. {slave.His} body responds to every gaze, soaking it all in.",
-		"This one’s made for showing off {slave.his} {slave.masc} body! Put {slave.him} on display, and {slave.he} will perform better than you could ever imagine.",
-		"No shame, no fear - just pure excitement from being seen. {slave.He} was born to be an exhibitionist.",
+		"Эта? Она просто обожает быть на виду. Чем больше глаз устремлено на {slave.him}, тем сильнее {slave.he} жаждет внимания. Идеально подходит для публичных выступлений.",
+		"Эксгибиционизм у {slave.him} в крови. Раздень {slave.him}, выставь {slave.him} перед толпой, и {slave.he} не только не смутится — {slave.he} будет умолять о добавке.",
+		"Тебе никогда не придется беспокоиться о том, что эта девчонка засмущается. {slave.He} расцветает под взглядами, выставляя напоказ свое тело и жадно впитывая всё внимание.",
+		"Свет софитов, толпа зрителей — эта рабыня живет ради этого. Тело {slave.His} отзывается на каждый взгляд, жадно впитывая внимание публики.",
+		"Эта создана для того, чтобы выставлять напоказ {slave.his} {slave.masc} тело! Выставь {slave.him} на всеобщее обозрение, и {slave.he} будет отыгрывать лучше, чем ты можешь себе представить.",
+		"Ни стыда, ни страха — только чистый восторг от того, что на нее смотрят. {slave.He} рождена быть эксгибиционисткой.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		"A performer, huh? I’m always up for a good show!",
-		"I want {slave.him} on my stage.",
-		"Public display is my favorite kink.",
-		"Perfect for entertaining guests.",
-		"I’ve got plans for this one.",
+		"Артистка, значит? Я всегда за хорошее шоу!",
+		"Я хочу видеть {slave.him} на своей сцене.",
+		"Публичное раздевание — мой любимый кинк.",
+		"Идеально, чтобы развлечь гостей.",
+		"У меня на эту штучку большие планы.",
 	])
 
 func getTraits() -> Dictionary:

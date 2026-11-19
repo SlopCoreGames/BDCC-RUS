@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Accuracy "+text+"%"
+	return "Точность "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.accuracy += (amount/100.0)

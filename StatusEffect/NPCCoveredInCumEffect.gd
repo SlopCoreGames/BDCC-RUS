@@ -23,10 +23,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Covered with "+cumName
+	return "Покрыт(а) "+cumName
 
 func getEffectDesc():
-	return character.getName()+" is covered with "+cumName+" for " + str(turns) + " more turns"
+	return character.getName()+" весь/вся в "+cumName+" for " + str(turns) + " больше ходов"
 
 func getBuffs():
 	return [

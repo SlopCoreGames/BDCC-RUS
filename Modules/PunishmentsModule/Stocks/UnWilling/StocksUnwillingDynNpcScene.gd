@@ -35,12 +35,12 @@ func _run():
 
 	if(state == ""):
 		saynn(RNG.pick([
-			"Someone walks up to the stocks!",
-			"Someone checks you out for a bit and then decides to use you.",
-			"Someone is about to use you!",
-			"Someone really wants to use you!",
-			"Someone walks up to the stocks, about to punish you!",
-			"Someone walks up to the stocks, about to have fun with you!",
+			"Кто-то подходит к колодкам!",
+			"Кто-то немного разглядывает тебя, а затем решает тебя использовать.",
+			"Кто-то вот-вот тебя использует!",
+			"Кто-то безумно хочет тебя использовать!",
+			"Кто-то подходит к колодкам, собираясь тебя наказать!",
+			"Кто-то подходит к колодкам, собираясь повеселиться с тобой!",
 		]))
 
 		addButton("Получи по полной", "Ну, что тут поделаешь...", "startsexsubby")

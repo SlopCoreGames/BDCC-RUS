@@ -70,19 +70,19 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.BDSMRestraints):
-		return "You're a restriction slut, huh"
+		return "Значит, ты шлюшка, которая обожает ограничения, да?"
 	if(interest == InterestTopic.CoveredInCum):
-		return "Ew, you need a shower right now"
+		return "Фу, тебе нужно срочно в душ"
 	if(interest == InterestTopic.StuffedPussy):
-		return "Yes, you have cum in your cunt, go wash it"
+		return "Да, у тебя там всё в сперме, иди отмойся"
 	if(interest == InterestTopic.BigBreasts):
-		return "I'm jealous of your tits, inmate"
+		return "Завидую твоей сиське, заключенная"
 	if(interest == InterestTopic.ExposedPanties):
-		return "Nice panties~"
+		return "Классные трусики~"
 	if(interest == InterestTopic.BigCock):
-		return "Hm.. That's a great cock though"
+		return "Хм... А член у тебя что надо"
 	if(interest == InterestTopic.MasculineBody):
-		return "Oh wow, you're so hot"
+		return "Ого, а ты горячая"
 	
 func _getName():
 	return "Female guard"
@@ -91,7 +91,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A tall feline wearing a guard uniform."
+	return "Высокая кошка в форме охранницы."
 
 func getSpecies():
 	return ["feline"]
@@ -100,7 +100,7 @@ func _getAttacks():
 	return ["HeatGrenade", "DoubleCuffPC", "CuffPCHands", "ForceGagPC", "ForceMuzzlePC", "stunbatonAttack", "stunbatonOverchargeAttack", "biteattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return "The guard prepares to fight"
+	return "Охранница готовится к бою"
 	
 func getLootTable(_battleName):
 	return GuardLoot.new()

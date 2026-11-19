@@ -23,10 +23,10 @@ func getStraponPleasureForDom():
 	return 0.5
 
 func getCasualName():
-	return "feeldoe strapon"
+	return "страпон Feeldoe"
 
 func getLewdStraponName() -> String:
-	return RNG.pick(["feeldoe strapon", "double-edged strapon", "knotted strapon", "rubber canine cock"])
+	return RNG.pick(["страпон Feeldoe", "двусторонний страпон", "узловатый страпон", "резиновый собачий член"])
 
 func getPrice():
 	return 30

@@ -49,10 +49,10 @@ func _run():
 		saynn("Выбери средство фиксации, на котором хочешь сосредоточиться. Учти, что некоторые из них будет сложнее снять в зависимости от того, что на тебе надето.")
 		
 		if(GM.pc.getInventory().hasItemID("restraintkey")):
-			addButtonAt(13, "Use key", "Use one of your restraint keys to unlock something", "usekey")
+			addButtonAt(13, "Использовать ключ", "Использовать один из ваших ключей от оков, чтобы что-то отпереть", "usekey")
 		else:
-			addDisabledButtonAt(13, "Use key", "You don't have any restraint keys")
-		addButtonAt(14, "Back", "Stop struggling", "endthescenedidnothing")
+			addDisabledButtonAt(13, "Использовать ключ", "У вас нет ключей от оков")
+		addButtonAt(14, "Назад", "Перестать барахтаться", "endthescenedidnothing")
 		
 		for item in GM.pc.getInventory().getEquppedRestraints():
 			var restraintData: RestraintData = item.getRestraintData()
@@ -66,7 +66,7 @@ func _run():
 				sayn(item.getVisibleName()+", С УМНЫМ ЗАМКОМ")
 				var smartLock:SmartLockBase = restraintData.getSmartLock()
 				var canBeSimplyRemoved = smartLock.canBeSimpleRemoved()
-				saynn("- "+smartLock.getName()+": "+smartLock.getUnlockDescription()+(("\nUNLOCKED. Can be removed") if canBeSimplyRemoved else ""))
+				saynn("- "+smartLock.getName()+": "+smartLock.getUnlockDescription()+(("\nОТКРЫТО. Можно снять") if canBeSimplyRemoved else ""))
 				if(canBeSimplyRemoved):
 					var minigameResult = MinigameResult.new()
 					minigameResult.score = 1.0
@@ -314,26 +314,26 @@ func _react(_action: String, _args):
 			GM.pc.addSkillExperience(Skill.BDSM, restraintData.getLevel() * mult)
 			
 		if(fatallFail):
-			addMessage("You tried really hard but you completely failed.")
+			addMessage("Вы очень старались, но потерпели полный провал.")
 		if(damage < 0.0):
 			restraintData.takeDamage(damage)
-			addMessage("You lost "+str(Util.roundF(-damage*100.0, 1))+"% of progress")
+			addMessage("Ты проиграл "+str(Util.roundF(-damage*100.0, 1))+"% oпрогресса")
 		if(damage > 0.0):
 			restraintData.takeDamage(damage)
-			addMessage("You made "+str(Util.roundF(damage*100.0, 1))+"% of progress ("+str(Util.roundF(minigameScore*100.0, 1))+"% efficiency)")
+			addMessage("Вы совершили "+str(Util.roundF(damage*100.0, 1))+"% oпрогресса ("+str(Util.roundF(minigameScore*100.0, 1))+"% efficiency)")
 		if(addLust != 0):
 			addLust = GM.pc.receiveDamage(DamageType.Lust, addLust)
-			addMessage("You received "+str(addLust)+" lust")
+			addMessage("Вы получили "+str(addLust)+" lust")
 		if(addPain != 0):
 			addPain = GM.pc.receiveDamage(DamageType.Physical, addPain)
-			addMessage("You received "+str(addPain)+" pain")
+			addMessage("Вы получили "+str(addPain)+" pain")
 		if(addStamina != 0):
 			GM.pc.addStamina(-addStamina)
 			
 			if(addStamina < 0):
-				addMessage("You gained "+str(-addStamina)+" stamina")
+				addMessage("Вы получили "+str(-addStamina)+" stamina")
 			else:
-				addMessage("You used "+str(addStamina)+" stamina")
+				addMessage("Вы использовали "+str(addStamina)+" stamina")
 		
 		canKeepTheRestraint = false
 		if(restraintData.shouldBeRemoved()):

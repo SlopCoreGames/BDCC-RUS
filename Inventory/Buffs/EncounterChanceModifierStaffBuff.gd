@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Staff Encounters Chance "+text+"%"
+	return "Шанс встречи со стаффом "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.EncounterChanceModifierStaff, amount/100.0)

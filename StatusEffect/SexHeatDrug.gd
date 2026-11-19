@@ -8,10 +8,10 @@ func processSexTurn():
 	character.addLust(10)
 
 func getEffectName():
-	return "Heat pill"
+	return "Таблетка возбуждения"
 
 func getEffectDesc():
-	return "You are incredibly lusty"
+	return "Ты невероятно похотлив(а)"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/love-injection.png"

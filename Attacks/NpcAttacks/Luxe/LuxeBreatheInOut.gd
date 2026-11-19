@@ -9,16 +9,16 @@ func getVisibleName(_context = {}):
 	return "Вдох и выдох"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} чувствует, как {attacker.his} грудь сдавливает. {attacker.He} использует {attacker.his} ход, чтобы закрыть {attacker.his} глаза и выровнять {attacker.his} дыхание."
 	
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([
-		"I learned to control it.",
-		"I won't make it easy for you.",
-		"I'm not gonna die because of you.",
+		"Я научилась это контролировать.",
+		"Легкой прогулки тебе не будет.",
+		"Я не сдохну из-за тебя.",
 		]) + "[/say]"
 	
 	addLuxeRage(_attacker, -2.5)

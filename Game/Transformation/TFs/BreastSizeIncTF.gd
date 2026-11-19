@@ -48,7 +48,7 @@ func getPillOptions() -> Dictionary:
 	return {
 		"stages": {
 			name = "Стадии",
-			desc = "How many times should the breasts be increased.",
+			desc = "Сколько раз нужно увеличить грудь?",
 			value = 3,
 			values = [
 				[1, "1"],

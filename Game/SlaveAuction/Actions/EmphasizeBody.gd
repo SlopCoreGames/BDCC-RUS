@@ -24,41 +24,41 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 		if(isSlim):
 			saynn("{presenter.You} {presenter.youVerb('step')} ближе к {slave.name}, проводя {presenter.yourHis} руками по {slave.hisHer} нежной, стройной фигуре. Крепко сжав, {presenter.youHe} {presenter.youHeVerb('pull')} {slave.himHer} вперед, чтобы дать участникам торгов получше рассмотреть представленную перед ними женскую красоту.")
 			
-			sayPresenter("Look at this slender beauty.. graceful, refined, and perfectly feminine. A body built for elegance and obedience.")
+			sayPresenter("Посмотрите на эту стройную красавицу... грациозную, утонченную и воплощение женственности. Тело, созданное для элегантности и послушания.")
 		if(isAver):
 			saynn("С уверенной улыбкой, {presenter.you} {presenter.youVerb('approach', 'approaches')} рабыню, прежде чем скользнуть {presenter.yourHis} руками по мягким изгибам {slave.hisHer} пропорционального тела. {slave.thick} очертания {slave.hisHer} бедер и талии источают невероятно манящее женское очарование.")
 			
-			sayPresenter("Feast your eyes on these perfect proportions - balanced, girly, and ready to serve in any way you desire.")
+			sayPresenter("Насладитесь этими идеальными пропорциями — сбалансированными, девичьими и готовыми служить вам любым способом, как пожелаете.")
 		if(isThic):
 			saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name}, прежде чем положить {presenter.yourHis} руки на полные, округлые бедра рабыни, проводя ими по пышной фигуре перед толпой. {slave.HeShe} излучает мощную женственность, а мягкие, сочные изгибы так и манят взгляды.")
 			
-			sayPresenter("This one’s body is just impossible to resist.. voluptuous and undeniably feminine. All the softness you could ever want.")
+			sayPresenter("Этому телу просто невозможно сопротивляться... пышное и неоспоримо женственное. В нем есть вся та мягкость, о которой можно только мечтать.")
 	if(isAndr):
 		if(isSlim):
 			saynn("{presenter.You} {presenter.youVerb('step')} к {slave.name}, {presenter.yourHis} руками очерчивая тонкие, андрогинные линии {slave.hisHer} тела. {presenter.YouHe} {presenter.youHeVerb('let')} игра света от проектора на этом подтянутом теле... подчеркивающая все изгибы.")
 			
-			sayPresenter("This is something truly unique - a slender body that walks the line between feminine and masculine, appealing to those with an eye for both.")
+			sayPresenter("Это нечто поистине уникальное — стройное тело, балансирующее на грани между женским и мужским, что придется по вкусу тем, кто ценит обе стороны.")
 		if(isAver):
 			saynn("Стоя вплотную к {slave.name}, {presenter.you} {presenter.youVerb('let')} твои руки скользят по {slave.hisHer} нейтральному, сбалансированному телосложению. {slave.HisHer} тело не слишком женственное и не слишком мужественное, с пропорциями, представляющими собой гармоничную середину... так что {presenter.youHe} {presenter.youHeVerb('make')} не забудь подчеркнуть это.")
 			
-			sayPresenter("A perfect body.. neither too soft nor too firm. This body will adapt to any role, ready to serve however you see fit.")
+			sayPresenter("Идеальное тело... не слишком мягкое, но и не слишком жесткое. Оно адаптируется к любой роли, готовое служить так, как вы сочтете нужным.")
 		if(isThic):
 			saynn("{presenter.You} {presenter.youVerb('place')} {presenter.yourHis} крепко прижимает руки к {slave.name} плотному, крепкому телу, акцентируя внимание на массивном, но равномерно развитом телосложении. Ни особо мужском, ни особо женском...")
 			
-			sayPresenter("Look at this strong, thick build. Balanced in every way.. perfectly suited for any task or role you have in mind.")
+			sayPresenter("Взгляните на это крепкое, плотное телосложение. Сбалансированное во всем... идеально подходящее для любой задачи или роли, которую вы задумали.")
 	if(isMasc):
 		if(isSlim):
 			saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name}, проводя {presenter.yourHis} руками по тугим, твердым линиям {slave.hisHer} подтянутого тела. Мужественные черты едва уловимы, но отчетливы: под стройным телосложением скрывается сила.")
 			
-			sayPresenter("Look at this slim form.. that just radiates raw strength. This body is built for service and endurance.")
+			sayPresenter("Посмотрите на эту стройную фигуру... от которой так и веет первобытной силой. Это тело создано для службы и выносливости.")
 		if(isAver):
 			saynn("{presenter.You} {presenter.youVerb('step')} подходит к {slave.name}, позволяя {presenter.yourHis} рукам скользить по {slave.hisHer} твердой, рельефной груди и плечам. Пропорции сильные и мужественные, с достаточным количеством мышц, обещающим мощь, но без избыточной массивности.")
 			
-			sayPresenter("Strong, balanced, and masculine. This one will serve with power and grace, perfect for those who appreciate a firm hand.")
+			sayPresenter("Сильное, сбалансированное и мужественное. Эта особа будет служить с мощью и грацией — идеал для тех, кто ценит твердую руку.")
 		if(isThic):
 			saynn("{presenter.You} {presenter.youVerb('place')} {presenter.yourHis} кладет руки на широкие, мощные плечи {slave.name}, ведя ими вниз по {slave.hisHer} крепкому, мускулистому телу. Каждый дюйм {slave.himHer} источает силу и доминирование — поистине внушительная фигура.")
 			
-			sayPresenter("Here’s a body built for power and control.. Thick, masculine, and ready to be put to work in every possible way.")
+			sayPresenter("А вот и тело, созданное для власти и контроля... Крепкое, мужественное и готовое к работе любым возможным способом.")
 			
 
 func getTraits() -> Dictionary:
@@ -107,57 +107,57 @@ func isEmphasizeAction() -> bool:
 func getSlaveReaction(_char:BaseCharacter, _reactionType) -> String:
 	if(_reactionType == AuctionSlaveReaction.Obedient):
 		return RNG.pick([
-			"{slave.name} stands perfectly still as {presenter.yourHis} hands glide over {slave.hisHer} body, {slave.hisHer} head bowed in silent submission. {slave.HeShe} accepts the attention without resistance, ready to be shown off.",
-			"{slave.name} doesn’t flinch, merely adjusting {slave.hisHer} posture slightly to make it easier for {presenter.you} to present {slave.himHer} to the crowd. Every movement is deliberate and obedient.",
-			"{slave.name} holds {slave.hisHer} position without protest, standing tall as {presenter.you} {presenter.youVerb('emphasize')} every inch of {slave.hisHer} body for the bidders to see.",
-			"{slave.name} keeps {slave.hisHer} eyes downcast, silently allowing {presenter.you} to show off {slave.hisHer} form, every movement precise and compliant.",
-			"{slave.name} stands firm, shifting only when necessary to give {presenter.you} complete control over the display, perfectly obedient in every way.",
-			"{slave.name} remains completely still, giving {presenter.you} full access to highlight {slave.hisHer} body to the bidders. {slave.HeShe} offers no resistance, accepting {slave.hisHer} role in the auction.",
+			"{slave.name} замер(ла) как вкопанный(ая), пока руки {presenter.yourHis} скользят по телу {slave.hisHer}, а {slave.hisHer} голова покорно склонена в безмолвном подчинении. {slave.HeShe} принимает это внимание без малейшего сопротивления, готовый(ая) предстать перед публикой.",
+			"{slave.name} даже не вздрагивает, лишь слегка поправляет {slave.hisHer} осанку, чтобы {presenter.you} было проще демонстрировать {slave.himHer} толпе. Каждое движение выверено и исполнено с покорностью.",
+			"{slave.name} без протеста принимает позу {slave.hisHer}, выпрямившись во весь рост, пока {presenter.you} {presenter.youVerb('emphasize')} каждый дюйм {slave.hisHer} тела на виду у участников аукциона.",
+			"{slave.name} держит {slave.hisHer} глаза опущенными, молча позволяя {presenter.you} демонстрировать {slave.hisHer} тело; каждое движение выверено и покорно.",
+			"{slave.name} стоит неподвижно, шевелясь лишь тогда, когда это необходимо, чтобы отдать {presenter.you} полный контроль над демонстрацией, проявляя абсолютную покорность во всем.",
+			"{slave.name} замирает, не шевелясь, и позволяет {presenter.you} беспрепятственно демонстрировать {slave.hisHer} тело участникам аукциона. {slave.HeShe} не оказывает никакого сопротивления, смиренно принимая свою {slave.hisHer} роль на торгах.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Confused):
 		return RNG.pick([
-			"{slave.name} glances at {presenter.you} with a soft, confused expression, unsure of what's happening but offering no resistance as {presenter.you} present {slave.hisHer} body to the crowd.",
-			"{slave.name}'s eyes flicker with sadness, but {slave.heShe} stands still, allowing {presenter.you} to highlight {slave.hisHer} form despite the clear confusion in {slave.hisHer} gaze.",
-			"A soft sigh escapes {slave.name}'s lips as {presenter.you} {presenter.youVerb('trace')} {slave.hisHer} form, {slave.hisHer} confusion evident, but {slave.heShe} doesn’t struggle against {presenter.your} touch.",
+			"{slave.name} бросает на {presenter.you} мягкий, растерянный взгляд, не понимая, что происходит, но не оказывая никакого сопротивления, пока {presenter.you} выставляет {slave.hisHer} тело напоказ перед толпой.",
+			"Глаза {slave.name} вспыхивают печалью, но {slave.heShe} замирает, позволяя {presenter.you} подчеркнуть {slave.hisHer} формы, несмотря на явное замешательство во {slave.hisHer} взгляде.",
+			"С губ {slave.name} срывается тихий вздох, когда {presenter.you} {presenter.youVerb('trace')} {slave.hisHer} принимают форму; в {slave.hisHer} читается замешательство, но {slave.heShe} не сопротивляется {presenter.your} прикосновениям.",
 			"{slave.name} bites {slave.hisHer} lip, eyes reflecting sadness as {presenter.you} {presenter.youVerb('show')} off {slave.hisHer} body. Confusion lingers, but {slave.heShe} remains passive under {presenter.your} control.",
-			"{slave.name} stands with a sorrowful expression, clearly unsure of what’s happening, but remains compliant as {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} form for the bidders.",
-			"{slave.name} gazes at the floor, sadness clouding {slave.hisHer} features, but {slave.heShe} doesn’t resist as {presenter.you} {presenter.youVerb('run')} {presenter.your} hands over {slave.hisHer} body.",
+			"{slave.name} стоит с печальным выражением лица, явно не понимая, что происходит, но покорно принимает позу, пока {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} выставляется напоказ перед участниками аукциона.",
+			"{slave.name} уставилась в пол, и печать грусти легла на {slave.hisHer} лицо, но {slave.heShe} не сопротивляется, когда {presenter.you} {presenter.youVerb('run')} {presenter.your} отдает {slave.hisHer} свое тело.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Shy):
 		return RNG.pick([
-			"{slave.name} blushes deeply, a bright red color spreading across {slave.hisHer} cheeks as {presenter.you} {presenter.youVerb('run')} {presenter.your} hands over {slave.hisHer} form. {slave.HeShe} fidgets slightly, clearly embarrassed.",
-			"{slave.name} squirms, {slave.hisHer} face flushed as {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} body for the crowd. {slave.HeShe} can’t hide the shy discomfort that fills {slave.himHer}.",
-			"A soft gasp escapes {slave.name}'s lips, {slave.hisHer} cheeks burning with embarrassment as {presenter.you} {presenter.youVerb('trace')} {slave.hisHer} form, making {slave.himHer} the focus of attention.",
-			"{slave.name} looks away, face flushed with shy embarrassment as {presenter.you} {presenter.youVerb('run')} {presenter.your} hands over {slave.hisHer} body, clearly overwhelmed by the attention.",
-			"{slave.name}'s body trembles slightly as {presenter.you} {presenter.youVerb('highlight')} {slave.hisHer} form, a deep blush creeping up {slave.hisHer} neck, too shy to meet the bidders' gaze.",
-			"{slave.name} turns {slave.hisHer} face away, {slave.hisHer} cheeks glowing red as {presenter.you} {presenter.youVerb('display')} {slave.hisHer} body for the crowd, shy and flustered under the attention.",
+			"{slave.name} густо краснеет, и ярко-алый румянец заливает {slave.hisHer} щеки, пока {presenter.you} {presenter.youVerb('run')} {presenter.your} выставляет напоказ {slave.hisHer} тело. {slave.HeShe} слегка ерзает, явно сгорая от смущения.",
+			"{slave.name} извивается, {slave.hisHer} лицо пылает, пока {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} тело перед толпой. {slave.HeShe} не может скрыть робкого дискомфорта, охватившего {slave.himHer}.",
+			"С губ {slave.name} срывается тихий вздох, {slave.hisHer} щеки горят от стыда, когда {presenter.you} {presenter.youVerb('trace')} {slave.hisHer} тело, делая {slave.himHer} центром всеобщего внимания.",
+			"{slave.name} отводит взгляд, лицо горит от робкого смущения, пока {presenter.you} {presenter.youVerb('run')} {presenter.your} выставляет напоказ {slave.hisHer} тело, явно ошеломленная таким вниманием.",
+			"Тело {slave.name} слегка дрожит, когда {presenter.you} {presenter.youVerb('highlight')} {slave.hisHer} тело; густой румянец ползет вверх по {slave.hisHer} шее — слишком стыдно, чтобы встретиться взглядом с участниками торгов.",
+			"{slave.name} отворачивает лицо {slave.hisHer}, щеки {slave.hisHer} пылают красным, пока {presenter.you} {presenter.youVerb('display')} {slave.hisHer} тело на потеху толпе, смущенная и взволнованная под прицелом взглядов.",
 		])
 	if(_reactionType == AuctionSlaveReaction.MindBroken):
 		return RNG.pick([
-			"{slave.name} stands still, eyes dull and unfocused as {presenter.you} {presenter.youVerb('touch', 'touches')} {slave.hisHer} body. There’s no reaction, {slave.heShe} doesn’t seem to notice what’s happening.",
-			"{slave.name} remains motionless, {slave.hisHer} gaze vacant as {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} form. {slave.HeShe} is completely detached from reality, unresponsive to {presenter.your} touch.",
-			"{slave.name}'s body is limp, {slave.hisHer} mind too far gone to care about being displayed. {slave.HeShe} offers no resistance, no acknowledgment of what’s happening around {slave.himHer}.",
-			"{slave.name} stares blankly into the distance, completely indifferent to {presenter.your} touch. {slave.HeShe} doesn’t react as {presenter.you} {presenter.youVerb('highlight')} {slave.hisHer} body, broken beyond recognition.",
-			"{slave.name} doesn’t move, eyes empty as {presenter.you} {presenter.youVerb('present')} {slave.hisHer} body. {slave.HeShe} stands there like a lifeless doll, unaware of the attention.",
-			"{slave.name} stays utterly still, no emotion crossing {slave.hisHer} face as {presenter.you} {presenter.youVerb('handle')} {slave.hisHer} body. The auction may as well not exist for {slave.himHer}.",
+			"{slave.name} замер(ла), глядя в пустоту тусклым, расфокусированным взглядом, пока {presenter.you} {presenter.youVerb('touch', 'touches')} {slave.hisHer} тело. Никакой реакции, {slave.heShe}, кажется, даже не замечает, что происходит.",
+			"{slave.name} замерла, {slave.hisHer} взгляд {presenter.you} пустой, пока {presenter.youVerb('emphasize')} {slave.hisHer} обретают форму. {slave.HeShe} полностью оторвана от реальности и не реагирует на {presenter.your} прикосновения.",
+			"Тело {slave.name} обмякло, а разум {slave.hisHer} настолько помутился, что ей уже плевать на то, что её выставляют напоказ. {slave.HeShe} не оказывает никакого сопротивления и даже не осознает, что происходит вокруг {slave.himHer}.",
+			"{slave.name} отсутшенно смотрит вдаль, совершенно не замечая прикосновений {presenter.your}. {slave.HeShe} никак не реагирует на то, как {presenter.you} {presenter.youVerb('highlight')} {slave.hisHer} тело, сломленное до неузнаваемости.",
+			"{slave.name} не двигается, взгляд пустой, пока {presenter.you} {presenter.youVerb('present')} {slave.hisHer} тело. {slave.HeShe} стоит как безжизненная кукла, не замечая всеобщего внимания.",
+			"{slave.name} замерла, и ни одна эмоция не отражается на {slave.hisHer} лице, пока {presenter.you} {presenter.youVerb('handle')} {slave.hisHer} тело. Для {slave.himHer} аукциона будто и вовсе не существует.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Desperate):
 		return RNG.pick([
-			"{slave.name} squirms in place, confusion and panic evident in {slave.hisHer} wide eyes as {presenter.you} {presenter.youVerb('display')} {slave.hisHer} body to the bidders. {slave.HeShe} tugs at {slave.hisHer} restraints, but to no avail.",
-			"{slave.name}'s breath quickens, desperation in {slave.hisHer} eyes as {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} form. {slave.HeShe} looks around frantically, clearly not understanding what’s happening.",
-			"{slave.name} glances at {presenter.you} in confusion, breathing heavily as {presenter.youHe} {presenter.youHeVerb('show')} off {slave.hisHer} body. Desperation flickers in {slave.hisHer} eyes, unsure of what to expect.",
-			"{slave.name} shifts uneasily, pulling at {slave.hisHer} chains as {presenter.you} {presenter.youVerb('handle')} {slave.hisHer} body. {slave.HeShe} seems lost and desperate, confused by the attention.",
-			"{slave.name} trembles as {presenter.you} {presenter.youVerb('run')} {presenter.your} hands over {slave.hisHer} form, fear and confusion mixing with the desperation in {slave.hisHer} expression.",
-			"{slave.name} stares at the crowd, {slave.hisHer} chest rising and falling rapidly as {presenter.you} {presenter.youVerb('display')} {slave.hisHer} body, clearly overwhelmed by confusion and panic.",
+			"{slave.name} ерзает на месте, в {slave.hisHer} широко раскрытых глазах читаются замешательство и паника, пока {presenter.you} {presenter.youVerb('display')} {slave.hisHer} тело перед участниками торгов. {slave.HeShe} дергает за {slave.hisHer}, но всё без толку.",
+			"Дыхание {slave.name} учащается, в {slave.hisHer} глазах читается отчаяние, пока {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer}. {slave.HeShe} лихорадочно оглядывается по сторонам, явно не понимая, что происходит.",
+			"{slave.name} в замешательстве смотрит на {presenter.you}, тяжело дыша, пока {presenter.youHe} {presenter.youHeVerb('show')} {slave.hisHer} тело. В глазах {slave.hisHer} мелькает отчаяние — она не знает, чего ожидать.",
+			"{slave.name} беспокойно ерзает, дергая за {slave.hisHer} цепи, пока {presenter.you} {presenter.youVerb('handle')} {slave.hisHer} тело. {slave.HeShe} кажется потерянной и отчаявшейся, сбитой с толку этим вниманием.",
+			"{slave.name} дрожит, когда {presenter.you} {presenter.youVerb('run')} {presenter.your} отдает {slave.hisHer} тело; страх и замешательство смешиваются с отчаянием во {slave.hisHer} взгляде.",
+			"{slave.name} уставилась на толпу, {slave.hisHer} грудь часто вздымается и опускается, пока {presenter.you} {presenter.youVerb('display')} {slave.hisHer} тело; она явно подавлена смятением и паникой.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Angry):
 		return RNG.pick([
-			"{slave.name} glares at {presenter.you} with fury in {slave.hisHer} eyes as {presenter.youHe} {presenter.youHeVerb('run')} {presenter.yourHis} hands over {slave.hisHer} form. {slave.HeShe} pulls against {slave.hisHer} restraints, clearly hating every second of it.",
-			"{slave.name} bares {slave.hisHer} teeth, a growl escaping as {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} body. {slave.HeShe} fights against the chains, anger radiating from {slave.himHer}.",
-			"{slave.name} sneers at the bidders, trying to pull away from {presenter.your} touch as {presenter.youHe} {presenter.youHeVerb('present')} {slave.hisHer} body. Every movement is filled with defiance and rage.",
-			"{slave.name} tugs violently at the restraints, eyes blazing with anger as {presenter.you} {presenter.youVerb('handle')} {slave.hisHer} body. {slave.HeShe} refuses to be passive, fighting every touch.",
-			"{slave.name} growls, hatred burning in {slave.hisHer} gaze as {presenter.you} {presenter.youVerb('display')} {slave.hisHer} body. {slave.HeShe} is clearly not broken, determined to resist even now.",
-			"{slave.name} spits on the floor, fury in {slave.hisHer} eyes as {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} form. {slave.HeShe} pulls at the chains, refusing to submit.",
+			"{slave.name} яростно смотрит на {presenter.you}, в {slave.hisHer} глазах горит гнев, пока {presenter.youHe} {presenter.youHeVerb('run')} {presenter.yourHis} отдает {slave.hisHer} тело. {slave.HeShe} рвется в {slave.hisHer} оковах, явно ненавидя каждую секунду происходящего.",
+			"{slave.name} скалит {slave.hisHer} зубы, издавая рычание, пока {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} тело. {slave.HeShe} борется с цепями, и от {slave.himHer} буквально исходит ярость.",
+			"{slave.name} презрительно смотрит на покупателей, пытаясь вырваться из {presenter.your} рук, пока {presenter.youHe} {presenter.youHeVerb('present')} {slave.hisHer} тело. Каждое движение пропитано непокорством и яростью.",
+			"{slave.name} яростно дергается в оковах, а глаза горят гневом, пока {presenter.you} {presenter.youVerb('handle')} {slave.hisHer} тело. {slave.HeShe} отказывается быть пассивной, сопротивляясь каждому прикосновению.",
+			"{slave.name} рычит, и в {slave.hisHer} взгляде горит ненависть, пока {presenter.you} {presenter.youVerb('display')} {slave.hisHer} тело. {slave.HeShe} явно не сломлена и полна решимости сопротивляться даже сейчас.",
+			"{slave.name} плюет на пол, в {slave.hisHer} глазах читается ярость, пока {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} тело. {slave.HeShe} тянет за цепи, отказываясь подчиняться.",
 		])
 		
-	return "{slave.name} blushes deeply."
+	return "{slave.name} густо краснеет."

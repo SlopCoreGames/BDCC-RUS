@@ -22,4 +22,4 @@ func onButton(_method, _args):
 		var _howMany = GM.pc.unlockAllKeyholderLocksFrom(npcID)
 		
 		if(_howMany > 0):
-			addMessage("The key unlocked "+str(_howMany)+" restraint"+("s" if _howMany != 1 else ""))
+			addMessage("Замок открыт "+str(_howMany)+" restraint"+("s" if _howMany != 1 else ""))

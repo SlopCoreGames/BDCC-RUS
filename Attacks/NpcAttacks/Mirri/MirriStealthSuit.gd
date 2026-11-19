@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Стелс-костюм"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	_attacker.addEffect("MirriRecharge", [3])

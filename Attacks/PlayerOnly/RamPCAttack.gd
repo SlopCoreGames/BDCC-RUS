@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Таран"
 	
 func getVisibleDesc(_context = {}):
-	return "Ram them for "+scaledDmgRangeStr(DamageType.Physical, 10, 15)+" damage. Uses 50 stamina\n\nWill knock the opponent down and stun them for 2 turns.\n\nGood against armored opponents"
+	return "Таран наносит "+scaledDmgRangeStr(DamageType.Physical, 10, 15)+" ед. урона. Расходует 50 выносливости\n\nСбивает противника с ног и оглушает на 2 хода.\n\nЭффективно против бронированных целей"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -24,10 +24,10 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = RNG.pick(texts)
 	
 	if(_receiver.addEffect(StatusEffect.Collapsed)):
-		text += "\n[b]{receiver.name} loses {receiver.his} balance and collapses onto the floor[/b]."
+		text += "\n[b]{receiver.name} теряет {receiver.his} равновесие и валится на пол[/b]."
 		
 	if(_receiver.addEffect(StatusEffect.Stunned, [2])):
-		text += "\n[b]{receiver.name} is stunned![/b]"
+		text += "\n[b]{receiver.name} оглушен![/b]"
 	
 	return {
 		text = text,

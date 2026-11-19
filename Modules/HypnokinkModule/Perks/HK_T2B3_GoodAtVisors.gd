@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Мудрость визора"
 
 func getVisibleDescription():
-	return "You have become intimately familiar with what wearing a hypnotic visor is like."
+	return "Вы досконально изучили все ощущения от ношения гипнотического визора."
 	
 func getMoreDescription():
-	return 	"You can attempt to remove hypnotic visors even in "+HypnokinkUtil.tranceIcon()+"Trance."+"\n\n"+\
+	return 	"Теперь вы можете попытаться снять гипнотический визор даже в "+HypnokinkUtil.tranceIcon()+"трансе."+"\n\n"+\
 			"When forcing an opponent to wear a hypnotic visor, their hypnosis level will immediately rise to 30% if it is lower."
 
 func getSkillTier():

@@ -19,7 +19,7 @@ func isPlayable():
 	return true
 
 func getVisibleDescription():
-	return "Your non-friendly neighbors"
+	return "Твои недружелюбные соседи"
 
 func getDefaultHead(_gender):
 	return "humanhead"

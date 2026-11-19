@@ -73,7 +73,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Tall stallion wearing a red inmate uniform. Brown coat, rich black mane."
+	return "Высокий жеребец в красной робе заключенного. Коричневая масть, густая черная грива."
 
 func getSpecies():
 	return ["equine"]

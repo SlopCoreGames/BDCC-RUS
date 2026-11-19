@@ -46,9 +46,9 @@ func generateRestraintData():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was locked onto your penis, making it useless!"
+		return getAStackNameCapitalize()+" была намертво застегнута на твоем члене, сделав его бесполезным!"
 	else:
-		return getAStackNameCapitalize()+" was locked onto {receiver.nameS} penis, making it useless!"
+		return getAStackNameCapitalize()+" была намертво застегнута на члене {receiver.nameS}, сделав его бесполезным!"
 
 func getRiggedParts(_character):
 	if(currentColor == 1):
@@ -98,9 +98,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Change color",
+			"name": "Сменить цвет",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Toggle between colors of your chastity cage",
+			"description": "Переключать цвета вашей клетки целомудрия",
 		},
 	]
 
@@ -120,13 +120,13 @@ func getDatapackEditVars():
 	var result = .getDatapackEditVars()
 
 	result["currentColor"] = {
-		"name": "Color",
+		"name": "Цвет",
 		"type": "selector",
 		"value": currentColor,
 		"values": [
-			[0, "Red"],
-			[1, "Purple"],
-			[2, "Orange"],
+			[0, "Красный"],
+			[1, "Фиолетовый"],
+			[2, "Оранжевый"],
 		],
 	}
 	return result

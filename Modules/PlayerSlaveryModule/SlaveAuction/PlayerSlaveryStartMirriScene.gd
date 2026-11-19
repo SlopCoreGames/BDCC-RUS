@@ -351,7 +351,7 @@ func _react(_action: String, _args):
 	if(_action == "get_stripped"):
 		processTime(3*60)
 		GM.main.PSH.storePlayersItems()
-		addMessage("All your items were safely stored")
+		addMessage("Все ваши вещи были надежно спрятаны")
 
 	if(_action == "get_tpd"):
 		processTime(3*60)

@@ -38,9 +38,9 @@ func generateRestraintData():
 	
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was forced over your eyes. You are blind!"
+		return getAStackNameCapitalize()+" насильно натянули тебе на глаза. Ты ослеп!"
 	else:
-		return getAStackNameCapitalize()+" was forced over {receiver.nameS} eyes! {receiver.He} {receiver.is} blind!"
+		return getAStackNameCapitalize()+" насильно натянули на глаза {receiver.nameS}! {receiver.He} {receiver.is} слепой!"
 
 func getUnriggedParts(_character):
 	return {

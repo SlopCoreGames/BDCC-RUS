@@ -27,7 +27,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Red block inmate. A very tall feline with a unique purple and green fur pattern and red/green eyes"
+	return "Заключенная «красного блока». Очень высокая кошка с уникальным узором из фиолетовой и зеленой шерсти и красно-зелеными глазами."
 
 func getSpecies():
 	return ["feline"]

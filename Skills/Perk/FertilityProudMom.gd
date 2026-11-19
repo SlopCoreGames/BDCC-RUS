@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Гордая мамочка"
 
 func getVisibleDescription():
-	return "AlphaCorp has noticed your efforts and wants to help you become the best mother you can be.\n" \
+	return "AlphaCorp заметила твои старания и хочет помочь тебе стать лучшей матерью, на которую ты только способна.\n" \
 			+ "You can now visit the nursery to get a free apple once per day.\n" \
 			+ "Chance to get into encounters with staff is lowered by 70% while you are pregnant." #base chance is 30% + exposure, this sets it to 10% + exposure 
 

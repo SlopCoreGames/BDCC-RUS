@@ -53,10 +53,10 @@ func checkAvoidedBuff(_npc):
 	return false
 
 func getEffectName():
-	return "Error bad"
+	return "Ошибка: хреново"
 
 func getEffectDesc():
-	return "Let the developer know"
+	return "Дать знать разработчику"
 
 func getVisisbleDescription():
 	var text = getEffectDesc()

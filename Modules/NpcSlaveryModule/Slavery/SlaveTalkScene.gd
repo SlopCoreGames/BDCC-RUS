@@ -47,7 +47,7 @@ func _run():
 				playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 			
 			if(activity.preventsNormalInteractions()):
-				addButtonAt(14, "Back", "Enough interactions", "endthescene")
+				addButtonAt(14, "Назад", "Взаимодействий достаточно", "endthescene")
 
 				saynn(activity.getActivityText())
 				
@@ -57,7 +57,7 @@ func _run():
 			playAnimation(StageScene.Solo, "stand")
 			
 			saynn("{npc.name} бродит где-то по тюрьме... Подожди, пока {npc.he} {npc.verb('return')}.")
-			addButtonAt(14, "Back", "Enough interactions", "endthescene")
+			addButtonAt(14, "Назад", "Взаимодействий достаточно", "endthescene")
 			return
 		else:
 			playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
@@ -121,9 +121,9 @@ func _run():
 			sayn(npcSlavery.getLevelUpHintText())
 			saynn("Повышение уровня рабыни облегчает тренировки {npc.him} и открывает новые действия.")
 		
-		addButtonAt(12, "Leash", "Leash your slave and see what you can with them around the station", "start_walkies")
-		addButtonWithChecksAt(13, "Forced sex" if npcSlavery.isActivelyResisting() else "Sex", "Start sex with your slave", "do_forced_sex", [], [ButtonChecks.CanStartSex])
-		addButtonAt(14, "Back", "Enough interactions", "endthescene")
+		addButtonAt(12, "Поводок", "Посадите раба на поводок и посмотрите, на что вы сможете рассчитывать, когда он рядом на станции", "start_walkies")
+		addButtonWithChecksAt(13, "Принудительный секс" if npcSlavery.isActivelyResisting() else "Секс", "Начать секс со своим рабом", "do_forced_sex", [], [ButtonChecks.CanStartSex])
+		addButtonAt(14, "Назад", "Взаимодействий достаточно", "endthescene")
 		
 		addButton("Поговорить", "Сказать что-нибудь своей рабыне", "talk_menu")
 		addButtonWithChecks("Тренировать", "Дрессировать рабыню", "do_train", [], [[ButtonChecks.NotLate], [ButtonChecks.NotGagged], [ButtonChecks.NotBlindfolded]])
@@ -217,28 +217,28 @@ func _run():
 		if(activeResistType == "resist_kick"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="kick", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Твой раб сопротивляется, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to cuff {npc.his} ankles to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб сопротивляется, когда ты пытаешься что-то сделать с {npc.him}!"+(" Возможно, стоит сковать лодыжки {npc.his}, чтобы этого избежать." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="kick", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 				saynn("Твой раб попытался пнуть тебя, но оковы {npc.his} помогли избежать удара. Тем не менее, твой раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		elif(activeResistType == "resist_shove"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="shove", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Твой раб отталкивает тебя, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to cuff {npc.his} wrists to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб отталкивает тебя, когда ты пытаешься что-то сделать с {npc.him}!"+(" Возможно, стоит сковать запястья {npc.his}, чтобы этого избежать." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="shove", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 				saynn("Твой раб попытался оттолкнуть тебя, но {npc.his} удерживают его от этого. Тем не менее, раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		elif(activeResistType == "resist_scratch"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="punch", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Твой раб царапает тебя, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to block {npc.his} hands to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб царапает тебя, когда ты пытаешься что-то сделать с {npc.him}!"+(" Возможно, стоит заблокировать руки {npc.his}, чтобы этого избежать." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="punch", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 				saynn("Твой раб попытался поцарапать тебя, но {npc.his} помогли избежать этого. Тем не менее, раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		elif(activeResistType == "resist_bite"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="bite", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Твой раб кусает тебя за руку, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to gag or muzzle {npc.him} to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб кусает тебя за руку, когда ты пытаешься что-то сделать с {npc.him}!"+(" Возможно, стоит заткнуть рот или надеть намордник на {npc.him}, чтобы этого избежать." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="bite", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 				saynn("Твой раб попытался укусить тебя, но {npc.his} слишком коротки, чтобы {npc.him} мог до тебя дотянуться. Тем не менее, раб активно сопротивляется любым твоим действиям с {npc.him}!")
@@ -271,28 +271,28 @@ func _run():
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
 			saynn("[say=npc]"+RNG.pick([
 				"Grr.. Fucker..",
-				"Fuck.. Stupid.. it hurts..",
-				"Stop it, you fuck..",
+				"Блять.. Тупица.. больно..",
+				"Прекрати, ублюдок..",
 				"Ugh.. Fuck.."
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) < -0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"Ow.. Hah.. Using pain.. smart.. ugh..",
-				"You can't beat the dominant out of me..",
-				"It hurts.. Hope you're happy..",
+				"Ой.. Хах.. Используешь боль.. умно.. ух..",
+				"Тебе не выбить из меня эту гордость...",
+				"Больно... Надеюсь, ты доволен...",
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) >= 0.5):
 			saynn("[say=npc]"+RNG.pick([
-				"Ow.. I'm sorry!.. Agh..",
-				"I'm really sorry, please!.. Argh..",
-				"Sorry.. Ow.. argh.. it hurts..",
-				"I will do anything, please.. Argh..",
+				"Ой!.. Прости!.. Агх...",
+				"Мне правда очень жаль, пожалуйста!.. Аргх...",
+				"Прости... Ой... аргх... больно...",
+				"Я сделаю всё что угодно, умоляю!.. Аргх...",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
 				"Fuck.. Argh..",
-				"Stop it already, it hurts..",
-				"Hope you're fucking happy..",
+				"Да хватит уже, больно же...",
+				"Надеюсь, ты, блять, доволен...",
 				"Grr.. argh.. ugh..",
 			])+"[/say]")
 		
@@ -322,31 +322,31 @@ func _run():
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
 			saynn("[say=npc]"+RNG.pick([
-				"You suck! I will make sure you do!",
-				"No-no-no, don't crawl away, slut. Get over here.",
-				"Get over here, stupid whore of an owner.",
-				"Time for me to have some fun with you, stupid whore!",
-				"I'm so fucking mad, get your ass over here."
+				"Ты ничтожество! И я тебе это устрою!",
+				"Нет-нет-нет, не смей уползать, сучка. А ну иди сюда.",
+				"А ну иди сюда, тупая шлюха-владелица.",
+				"Пришло время мне поразвлечься с тобой, тупая шлюха!",
+				"Меня так, блядь, злит всё это, тащи свою задницу сюда."
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) < -0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"Let me show it how it's done.",
-				"Don't worry, I will be gentle. As long as you obey.",
-				"Time to punish you.",
-				"My turn to punish.",
-				"My turn to be an owner.",
+				"Позволь мне показать ей, как это делается.",
+				"Не бойся, я буду нежным. Пока ты слушаешься.",
+				"Пора тебя наказать.",
+				"Моя очередь наказывать.",
+				"Моя очередь быть хозяином.",
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) >= 0.5):
 			saynn("[say=npc]"+RNG.pick([
-				"Um.. I will try to be gentle..",
-				"Can I?.. I think I can.. Please?",
+				"Эм... я постараюсь быть нежным...",
+				"Можно?.. Кажется, смогу... Пожалуйста?",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"My turn. Don't resist.",
-				"Don't get up.",
-				"I'm gonna fuck you for this!",
-				"My turn to have som fun.",
+				"Моя очередь. Не сопротивляйся.",
+				"Не вставай.",
+				"За это я тебя оттрахаю!",
+				"Теперь моя очередь повеселиться.",
 			])+"[/say]")
 		
 		saynn("Это заслуживает [b]наказания[/b]... определенно заслуживает...")
@@ -363,31 +363,31 @@ func _run():
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
 			saynn("[say=npc]"+RNG.pick([
-				"Fuck your shit! It won't keep me from escaping for long.",
-				"See? You can't keep me here! Just fucking let me go already, you stupid bitch.",
-				"I'm so close! Watch me, soon I won't even be here!",
-				"Stupid cunt, I will break you, just like I broke your toys.",
-				"So? Happy now? Want more? I have more!",
+				"Да пошло оно всё! Это не помешает мне сбежать ненадолго.",
+				"Видишь? Тебе не удержать меня здесь! Просто, блядь, отпусти меня уже, тупая сука.",
+				"Я уже так близко! Смотри, скоро меня здесь и след простынет!",
+				"Тупая пизда, я сломаю тебя так же, как сломал твои игрушки.",
+				"Ну что? Довольна теперь? Хочешь еще? У меня еще полно!",
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) < -0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"Nice toys. Mine are better.",
-				"Your toys can't hold me forever.",
-				"Hah. That was easy.",
+				"Славные игрушки. Но мои лучше.",
+				"Твои игрушки не удержат меня вечно.",
+				"Хах. Это было слишком просто.",
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) >= 0.5):
 			saynn("[say=npc]"+RNG.pick([
-				"I broke something.. sorry..",
-				"Oops.. I broke a few things.. sorry..",
-				"I hope you mind.. I broke a few things..",
+				"Я что-то сломала... прости...",
+				"Ой... кажется, я кое-что сломала... прости...",
+				"Надеюсь, ты не против... я тут кое-что сломала...",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"These can't hold me for long.",
-				"I will escape.. You can't stop me.",
-				"Just let me go already, you clearly can't handle me.",
-				"You're too weak. Just let me go.",
-				"Think I will respect you after this?",
+				"Это не удержит меня надолго.",
+				"Я сбегу... Тебе меня не остановить.",
+				"Да просто отпусти меня уже, ты явно не справляешься.",
+				"Ты слишком слаб. Просто отпусти меня.",
+				"Думаешь, после такого я буду тебя уважать?",
 			])+"[/say]")
 		
 		saynn("Это определенно заслуживает наказания.")
@@ -404,33 +404,33 @@ func _run():
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
 			saynn("[say=npc]"+RNG.pick([
-				"You suck!",
-				"Why do you suck so much?",
-				"If I had more time, I wouldn't be here by now!",
-				"Wow, you punch like a slut.",
-				"Beating me up? That was a stupid idea. Almost as dumb as enslaving me in the first place.",
-				"Easy, pal. Don't make me finish you off.",
+				"Ты ничтожество!",
+				"Ну почему ты такой никчемный?",
+				"Будь у меня больше времени, я бы уже давно здесь не торчала!",
+				"Ого, бьешь ты как шлюха.",
+				"Избивать меня? Глупая затея. Почти такая же тупая, как и сама идея сделать меня рабыней.",
+				"Полегче, приятель. Не заставляй меня тебя прикончить.",
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) < -0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"Nice try. But I think it's you who should be the slave here.",
-				"If I had more time.. You'd be kissing my feet by now.. and loving it.",
-				"Damn chains. I love them.. but not when they're on me!",
-				"Call me the owner now, I'm clearly stronger.",
+				"Хорошая попытка. Но мне кажется, здесь рабом должен быть ты.",
+				"Будь у меня больше времени... ты бы уже вовсю целовал мои пятки... и наслаждался этим.",
+				"Черт возьми, эти цепи... они мне нравятся... но не тогда, когда они на мне!",
+				"А теперь зови меня хозяйкой, ведь я явно сильнее.",
 			])+"[/say]")
 		elif(npcSlavery.personalityScore({PersonalityStat.Subby: 1.0}) >= 0.5):
 			saynn("[say=npc]"+RNG.pick([
 				"Um.. sorry..",
-				"Sorry.. I didn't mean to win.. I mean.. Never mind..",
-				"You will be okay, right?..",
-				"I just wanted to protect myself.. sorry..",
+				"Прости.. Я не хотела побеждать.. В смысле.. Забудь..",
+				"Со мной ведь всё будет хорошо, да?..",
+				"Я просто хотела защитить себя.. прости..",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"Maybe you should listen when I say that I don't want to do something?",
-				"I just wanted to protect myself.",
-				"Easy, pal. Don't make me finish you off.",
-				"So? Gonna listen to me better now?",
+				"Может, тебе стоит прислушиваться, когда я говорю, что не хочу чего-то делать?",
+				"Я просто хотела защитить себя.",
+				"Полегче, приятель. Не заставляй меня тебя прикончить.",
+				"Ну что? Теперь будешь слушать меня лучше?",
 			])+"[/say]")
 		
 		saynn("Твоя рабыня избила тебя в честном бою... но это все равно заслуживает небольшого наказания.")
@@ -794,23 +794,23 @@ func getDebugActions():
 	return [
 		{
 			"id": "levelUP",
-			"name": "Slave levelup",
+			"name": "Повышение уровня рабыни",
 			"args": [
 			],
 		},
 		{
 			"id": "skillLevelup",
-			"name": "Skill levelup",
+			"name": "Повышение навыка",
 			"args": [
 			],
 		},
 		{
 			"id": "addExp",
-			"name": "Add exp",
+			"name": "Добавить опыт",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 1000,
 				},
@@ -818,17 +818,17 @@ func getDebugActions():
 		},
 		{
 			"id": "toggleDebug",
-			"name": "Toggle Debug Info",
+			"name": "Переключить отладочную информацию",
 			"args": [
 			],
 		},
 		{
 			"id": "setObedience",
-			"name": "Set obedience",
+			"name": "Установить послушание",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount (%)",
+					"name": "Значение (%)",
 					"type": "number",
 					"value": 100.0,
 				},
@@ -836,11 +836,11 @@ func getDebugActions():
 		},
 		{
 			"id": "setLove",
-			"name": "Set love",
+			"name": "Установить любовь",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount (%)",
+					"name": "Значение (%)",
 					"type": "number",
 					"value": 100.0,
 				},
@@ -848,11 +848,11 @@ func getDebugActions():
 		},
 		{
 			"id": "setBrokenSpirit",
-			"name": "Set broken spirit",
+			"name": "Установить сломленный дух",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount (%)",
+					"name": "Значение (%)",
 					"type": "number",
 					"value": 100.0,
 				},

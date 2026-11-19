@@ -39,13 +39,13 @@ func doStruggle(_pc, _minigame:MinigameResult):
 
 func processStruggleTurn(_pc, _isActivelyStruggling):
 	if(failChance(_pc, 10) || _isActivelyStruggling):
-		return {"text": RNG.pick(["{user.nameS} rope harness rubs against one of {user.his} nips", "{user.nameS} rope harness digs into {user.his} crotch"]), "lust": scaleDamage(5)}
+		return {"text": RNG.pick(["веревочная сбруя {user.nameS} трется об один из {user.his} сосков", "веревочная сбруя {user.nameS} впивается в {user.his} промежность"]), "lust": scaleDamage(5)}
 
 func getTightLockRequiredItemID() -> String:
-	return "Shiv"
+	return "Шило"
 
 func getTightLockUnlockMessage() -> String:
-	return "The lock is impossible to remove so you just use a shiv to cut through the ropes of the harness, slowly freeing yourself from its embrace until you are able to just step out of it."
+	return "Замок невозможно снять, поэтому тебе приходится использовать шило, чтобы перерезать веревки сбруи, медленно освобождаясь из ее объятий, пока ты наконец не сможешь просто вышагнуть из нее."
 
 func getForceOnCombatAnim() -> String:
 	return "RestraintBody"

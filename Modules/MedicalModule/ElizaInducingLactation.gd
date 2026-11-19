@@ -26,7 +26,7 @@ func _run():
 
 	if(state == "follow"):
 		aimCamera("med_researchlab")
-		setLocationName("Research lab")
+		setLocationName("Исследовательская лаборатория")
 		playAnimation(StageScene.Solo, "sit")
 		
 		saynn("Вы входите в ярко-белую комнату — очевидно, здесь проводят испытания. Вы замечаете нечто похожее на химический стол, множество шкафчиков и специальный стол. Этот стол на самом деле является частью машины; на нем видны какие-то датчики, экран с клавиатурой и железные крюки, к которым можно приковать заключенных. Элиза подводит вас к нему и пристегивает другой конец поводка к крюкам, сильно ограничивая вашу подвижность.")
@@ -126,7 +126,7 @@ func _run():
 		playAnimation(StageScene.Solo, "walk")
 		aimCamera("med_nearlab")
 		GM.pc.setLocation("med_nearlab")
-		setLocationName("Med corridor")
+		setLocationName("Медблок")
 		
 		saynn("Элиза выводит тебя из лаборатории, а затем отпускает.")
 
@@ -155,7 +155,7 @@ func _react(_action: String, _args):
 		GM.pc.addIntoxication(0.5)
 		GM.pc.addLust(50)
 		processTime(60)
-		addMessage("You're lactating! The drug has intoxicated you")
+		addMessage("У тебя течет молоко! Препарат ударил в голову")
 
 	if(_action == "endthescene"):
 		endScene()

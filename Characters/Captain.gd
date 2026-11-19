@@ -78,7 +78,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Canine with black fur. Very formal clothing"
+	return "Пёс с чёрной шерстью. Одет в очень официальную форму"
 
 func getSpecies():
 	return ["canine"]
@@ -112,39 +112,39 @@ func reactRestraint(restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"Stop trying, please.",
-				"Some inmate will never be able to stop me.",
+				"Прекрати пытаться, умоляю.",
+				"Какому-то заключённому никогда не удастся меня остановить.",
 			])
 		
 		return RNG.pick([
-			"These won't keep me forever.",
-			"I was trying to be kind with you. Many times.",
+			"Эти стены не удержат меня вечно.",
+			"Я пытался быть с тобой добрым. Много раз.",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
-				"Huh. Ever thought of becoming a guard here?",
-				"Would you be able to tie up inmates like that?",
-				"This is getting out of control. I must stop you.",
+				"Хм. Не думал о том, чтобы стать здесь охранником?",
+				"Ты бы смог связать заключённых вот так?",
+				"Всё выходит из-под контроля. Я должна тебя остановить.",
 			])
 		
 		if(restraintType == RestraintType.Gag):
 			return RNG.pick([
-				"Hah. So that's how it feels.",
-				"My ways of controlling others goes beyond just words.",
+				"Хах. Так вот каково это на вкус.",
+				"Мои способы контроля над другими выходят далеко за рамки простых слов.",
 			])
 		if(restraintType == RestraintType.Muzzle):
 			return RNG.pick([
-				"A muzzle? Was I barking orders by accident?",
+				"Намордник? Я что, случайно начала лаять приказами?",
 			])
 		if(restraintType == RestraintType.ButtPlug):
 			return RNG.pick([
-				"Ow. How did you..",
+				"Ой! Как ты умудрился...",
 			])
 	
 		return RNG.pick([
-			"You're only making it worse for yourself.",
+			"Ты только делаешь себе хуже.",
 		])
 	return null
 

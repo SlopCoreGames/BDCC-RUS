@@ -237,7 +237,7 @@ func _react(_action: String, _args):
 		if(RNG.chance(50)):
 			var zone = BodyWritingsZone.getRandomZone()
 			GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-			addMessage("They also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+			addMessage("Они также оставили сувенир на твоей "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 
 	if(_action == "creampies"):
 		processTime(60*6)
@@ -256,12 +256,12 @@ func _react(_action: String, _args):
 		GM.pc.cummedOnBy("inmateMale2")
 		GM.pc.addSkillExperience(Skill.SexSlave, 10, "caught_inmate_spitroast")
 		
-		addMessage("They drew some tallymarks on you")
+		addMessage("Они нацарапали на тебе зарубки")
 		
 		if(RNG.chance(50)):
 			var zone = BodyWritingsZone.getRandomZone()
 			GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-			addMessage("They also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+			addMessage("Они также оставили сувенир на твоей "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 
 	if(_action == "endthescene"):
 		endScene()

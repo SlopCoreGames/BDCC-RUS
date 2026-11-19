@@ -35,10 +35,10 @@ func react(_triggerID, _args):
 		var howMuchTransferred = GM.pc.getBodypart(BodypartSlot.Penis).getFluids().transferTo(penisPump, 1.0)
 		GM.pc.orgasmFrom("pc")
 		if(howMuchTransferred > 0.0):
-			GM.main.addMessage("Your penis pump engages, milking your cock until you orgasm hard! It collects "+str(Util.roundF(howMuchTransferred))+" ml of {pc.cum} during your orgasm.")
+			GM.main.addMessage("Твой пенисный насос включается, выкачивая сок из твоего члена, пока ты не кончишь на полную катушку! Он собирает "+str(Util.roundF(howMuchTransferred))+" мл {pc.cum} во время твоего оргазма.")
 			
 			if(penisPump.getFluids().isFull()):
-				GM.main.addMessage("Your penis pump is now full!")
+				GM.main.addMessage("Твой пенисный насос теперь полон!")
 		
 
 	return false

@@ -42,10 +42,10 @@ func _reactInit():
 	if(ambushType == "canteendrugged_lust"):
 		GM.pc.addLust(GM.pc.lustThreshold())
 		GM.pc.forceIntoHeat()
-		addMessage("You feel VERY lusty..")
+		addMessage("Ты чувствуешь НЕВЕРОЯТНОЕ вожделение...")
 	if(ambushType == "normaldrugged_stamina"):
 		GM.pc.addStamina(-GM.pc.getMaxStamina())
-		addMessage("You feel VERY weak..")
+		addMessage("Ты чувствуешь СТРАШНУЮ слабость...")
 	if(ambushType == "normalshiv"):
 		GM.pc.addPain(30)
 		GM.pc.doWound(npcMain)
@@ -55,11 +55,11 @@ func _reactInit():
 		possibleRestraints.shuffle()
 		var addedList := GM.pc.getInventory().forceRestraintsList(possibleRestraints, 2)
 		if(addedList.empty()):
-			addMessage("Looks like they didn't really manage to add more bondage gear onto you..")
+			addMessage("Похоже, им не особо удалось навесить на тебя больше снаряжения для связывания...")
 		elif(addedList.size() == 1):
-			addMessage("Looks like they only managed to add one piece of bondage gear onto you..")
+			addMessage("Похоже, им удалось надеть на тебя лишь одну вещь для связывания...")
 		else:
-			addMessage("You got some bondage gear forced onto you..")
+			addMessage("На тебя силой нацепили снаряжение для связывания...")
 	
 	willSoftSlavery = RNG.chance(75)
 	
@@ -96,9 +96,9 @@ func _run():
 		saynn("И тут до тебя доходит... ты окружен тремя фигурами.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"What's the rush. Slow down. Remember me?",
-			"It's not poison, don't worry. Do you know who I am?",
-			"You're not looking so hot, pal. Remember me?",
+			"Чего так спешишь? Помедленнее. Помнишь меня?",
+			"Это не яд, не бойся. Знаешь, кто я?",
+			"Вид у тебя не очень, приятель. Помнишь меня?",
 		])+"[/say]")
 		
 		saynn("Это {npc.him}... твой заклятый враг. Что бы ни было в этом шприце, с каждой секундой ты чувствуешь себя всё слабее и слабее.")
@@ -108,9 +108,9 @@ func _run():
 		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"You will do as I say. And we won't have any problems.",
-			"Don't do anything stupid, please.",
-			"Don't be stupid. It's three against one.",
+			"Будешь делать всё, что я скажу. И тогда у нас не будет проблем.",
+			"Только не делай глупостей, умоляю.",
+			"Не тупи. Нас трое, а ты один.",
 		])+"[/say]")
 		
 		saynn("Что-то подсказывает тебе, что они не дадут тебе просто прилечь вздремнуть, чтобы восстановить силы...")
@@ -128,11 +128,11 @@ func _run():
 		saynn("Внезапная жгучая боль пронзает бок. Ты опускаешь взгляд и видишь, как на одежде расплывается тонкая струйка крови. Тебя ударили ножом...")
 			
 		saynn("[say=npc]"+RNG.pick([
-			"Ohh. That hurt, didn't it?",
-			"Remember me?",
-			"Oops.",
-			"You're not looking too hot, buddy.",
-			"Should I do it again?",
+			"О-о-о. Больно было, да?",
+			"Помнишь меня?",
+			"Ой.",
+			"Вид у тебя не очень, приятель.",
+			"Повторить?",
 		])+"[/say]")
 		
 		saynn("Это {npc.him}... твой заклятый враг... в руках у него заточка. Удар был не слишком глубоким... но рана всё равно кровоточит.")
@@ -142,9 +142,9 @@ func _run():
 		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"You will do as I say. And we won't have any problems.",
-			"Don't do anything stupid, please.",
-			"Don't be stupid. It's three against one.",
+			"Будешь делать всё, что я скажу. И тогда у нас не будет проблем.",
+			"Только не делай глупостей, умоляю.",
+			"Не тупи. Нас трое, а ты один.",
 		])+"[/say]")
 		
 		saynn("Что-то подсказывает тебе, что бинта, чтобы остановить кровь, они тебе не дадут...")
@@ -173,9 +173,9 @@ func _run():
 		saynn("Ты поднимаешься... и видишь, что тебя окружили три фигуры. Лидер делает шаг вперед.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"You were sleeping so soundly, I didn't want to wake you up.",
-			"Good morning, sunshine. Remember me?",
-			"Nice cell you got here. I left you some gifts. Remember who I am?",
+			"Ты так сладко спал, что мне не хотелось тебя будить.",
+			"Доброе утро, солнышко. Помнишь меня?",
+			"Классная у тебя камера. Я оставил тебе кое-какие подарки. Помнишь, кто я?",
 		])+"[/say]")
 		
 		saynn("Это {npc.him}... твой заклятый враг. Ты понимаешь, что часть твоих вещей пропала...")
@@ -185,9 +185,9 @@ func _run():
 		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"You will do as I say. And we won't have any problems.",
-			"Don't do anything stupid, please.",
-			"Don't be stupid. It's three against one.",
+			"Будешь делать всё, что я скажу. И тогда у нас не будет проблем.",
+			"Только не делай глупостей, умоляю.",
+			"Не тупи. Нас трое, а ты один.",
 		])+"[/say]")
 		
 		saynn("Что-то подсказывает тебе, что они не дадут тебе времени, чтобы вырваться из твоего нового снаряжения для связывания...")
@@ -211,8 +211,8 @@ func _run():
 			saynn("Внезапно ты чувствуешь такую острую нужду...")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Feeling hot, huh?",
-			"Enjoying the food?",
+			"Жарковато стало, а?",
+			"Вкусно поела?",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "canteendrugged_lust_reveal")
@@ -226,8 +226,8 @@ func _run():
 		saynn("Ты поднимаешься... и видишь, что тебя окружили три фигуры. Лидер делает шаг вперед.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"I asked the chef to make your food a little.. spicier.",
-			"I asked the chef to add a little something into your meal.",
+			"Я попросил шефа сделать твою еду капельку... острее.",
+			"Я попросил шефа добавить в твою порцию кое-что особенное.",
 		])+"[/say]")
 		
 		saynn("Это {npc.him}... твой заклятый враг.")
@@ -237,9 +237,9 @@ func _run():
 		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"You will do as I say. And we won't have any problems.",
-			"Don't do anything stupid, please.",
-			"Don't be stupid. It's three against one.",
+			"Будешь делать всё, что я скажу. И тогда у нас не будет проблем.",
+			"Только не делай глупостей, умоляю.",
+			"Не тупи. Нас трое, а ты один.",
 		])+"[/say]")
 		
 		saynn("Что-то подсказывает тебе, что они не дадут тебе времени разобраться со своим вожделением...")
@@ -264,9 +264,9 @@ func _run():
 		saynn("Внезапно в комнату входят три фигуры и окружают тебя. Лидер делает шаг ближе.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Hi. Remember me?",
-			"How is the water?",
-			"Hey there. Missed me?",
+			"Привет. Помнишь меня?",
+			"Ну как водичка?",
+			"Эй. Соскучилась?",
 		])+"[/say]")
 		
 		saynn("Это {npc.him}... твой заклятый враг.")
@@ -276,9 +276,9 @@ func _run():
 		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"You will do as I say. And we won't have any problems.",
-			"Don't do anything stupid, please.",
-			"Don't be stupid. It's three against one.",
+			"Будешь делать всё, что я скажу. И тогда у нас не будет проблем.",
+			"Только не делай глупостей, умоляю.",
+			"Не тупи. Нас трое, а ты один.",
 		])+"[/say]")
 		
 		saynn("Ты оставил все свои вещи в шкафчике. Что-то подсказывает тебе, что к ним тебя просто так не подпустят...")
@@ -314,10 +314,10 @@ func _run():
 		saynn("Ты готовишься дать отпор.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"That a dumb decision.",
-			"Really? You think you can win?",
-			"What do you think will happen when you lose?",
-			"You're only making it worse for yourself.",
+			"Тупое решение.",
+			"Серьезно? Думаешь, сможешь победить?",
+			"И как думаешь, что будет, когда ты проиграешь?",
+			"Ты только делаешь себе хуже.",
 		])+"[/say]")
 		
 		saynn("{npc.name} решает сначала дать {npc.his} друзьям тебя размять.")
@@ -341,12 +341,12 @@ func _run():
 		saynn("Оба друга {npc.nameS} повержены.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Alright. Lets dance.",
-			"Alright. Lets see what you can do.",
-			"Alright. Lets play.",
-			"This is not over yet.",
-			"How are you feeling? Maybe you should just give up already.",
-			"I guess it's time to show you your place.",
+			"Ладно. Потанцуем.",
+			"Ну что ж. Посмотрим, на что ты способен.",
+			"Ладно. Поиграем.",
+			"Это еще не конец.",
+			"Ну как ты там? Может, тебе уже пора просто сдаться?",
+			"Думаю, пора показать тебе твое место.",
 		])+"[/say]")
 		
 		saynn("Последний бой. Твой заклятый враг.")
@@ -359,9 +359,9 @@ func _run():
 		saynn("Ты победил! Твой враг рушится на пол, не в силах продолжать бой.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Hey.. Listen.. Let's talk.",
+			"Эй... Послушай... Давай поговорим.",
 			"Argh.. you.. bitch..",
-			"Fuck you.. whatever..",
+			"Да пошел ты... впрочем, плевать...",
 		])+"[/say]")
 		
 		addButton("Уйти", "Просто оставь их в покое", "decideLeave")
@@ -386,12 +386,12 @@ func _run():
 		saynn("Вы лежите на полу, пытаясь отдышаться.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"That was dumb.",
-			"Was it worth it?",
-			"You tried. But you're too weak.",
-			"Pathetic display.",
-			"That was way too easy.",
-			"Time for the fun part.",
+			"Это было тупо.",
+			"Стоило ли оно того?",
+			"Ты старался. Но ты слишком слаб.",
+			"Жалкое зрелище.",
+			"Это было слишком просто.",
+			"Пришло время для самого веселого.",
 		])+"[/say]")
 		
 		saynn("{npc.name} подходит к вам и быстро вонзает шприц вам в шею...")
@@ -406,10 +406,10 @@ func _run():
 		saynn("Вы встаете на колени перед {npc.name}... и ждете следующего решения {npc.his}.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Good {pc.boy}. You won't regret it.",
-			"Maybe you're not as dumb as I thought.",
-			"Thank you. Thank you for making it easy for me.",
-			"That was a smart choice. Thank you.",
+			"Хороший {pc.boy}. Ты еще не пожалеешь об этом.",
+			"Может, ты не такой уж и тупой, как я думал(а).",
+			"Спасибо. Спасибо за то, что всё так облегчил(а) мне.",
+			"Умный выбор. Спасибо.",
 		])+"[/say]")
 		
 		saynn("{npc.name} подходит к вам и быстро вонзает шприц вам в шею...")
@@ -429,10 +429,10 @@ func _run():
 		saynn("Последнее, что ты слышишь, это..")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"This is just the beginning.",
-			"Enjoy your new life.",
-			"Let's hope I won't see you ever again.",
-			"We're almost done here. Only one last thing left.",
+			"Это только начало.",
+			"Наслаждайся своей новой жизнью.",
+			"Будем надеяться, что мы больше никогда не встретимся.",
+			"Мы почти закончили. Осталось последнее дело.",
 		])+"[/say]")
 		
 		saynn("А затем всё погружается во тьму..")
@@ -443,7 +443,7 @@ func _react(_action: String, _args):
 	if(_action == "endthescene"):
 		transferAllItems(getCharacter("TempAmbushStash"), GM.pc)
 		if(ambushType == "showeritems"):
-			addMessage("All your items were returned to your inventory.")
+			addMessage("Все ваши предметы возвращены в инвентарь.")
 		endScene()
 		return
 	if(_action == "start_first_fight"):
@@ -491,10 +491,10 @@ func _react_scene_end(_tag, _result):
 			if(ambushType == "canteendrugged_lust"):
 				GM.pc.addLust(GM.pc.lustThreshold())
 				GM.pc.forceIntoHeat()
-				addMessage("You still feel VERY lusty..")
+				addMessage("Вы всё ещё чувствуете ОГРОМНОЕ возбуждение...")
 			if(ambushType == "normaldrugged_stamina"):
 				GM.pc.addStamina(-GM.pc.getMaxStamina())
-				addMessage("You still feel VERY weak..")
+				addMessage("Вы всё ещё чувствуете СИЛЬНУЮ слабость...")
 		else:
 			setState("lost_fight")
 	if(_tag == "second_fight"):
@@ -506,10 +506,10 @@ func _react_scene_end(_tag, _result):
 			if(ambushType == "canteendrugged_lust"):
 				GM.pc.addLust(GM.pc.lustThreshold())
 				GM.pc.forceIntoHeat()
-				addMessage("You still feel VERY lusty..")
+				addMessage("Вы всё ещё чувствуете ОГРОМНОЕ возбуждение...")
 			if(ambushType == "normaldrugged_stamina"):
 				GM.pc.addStamina(-GM.pc.getMaxStamina())
-				addMessage("You still feel VERY weak..")
+				addMessage("Вы всё ещё чувствуете СИЛЬНУЮ слабость...")
 		else:
 			setState("lost_fight")
 	if(_tag == "third_fight"):

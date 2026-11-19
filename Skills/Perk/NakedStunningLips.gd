@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Ошеломляющие губы"
 
 func getVisibleDescription():
-	return "Licking your lips when the opponent is above 30% lust may cause them to be distracted with lewd thoughts, stunning them with 10% chance! Chance scales up with your sexiness"
+	return "Облизывание губ, когда похоть противника превышает 30%, может отвлечь его непристойными мыслями, оглушая его с усилением на 10% c! Шанс растет вместе с вашей сексуальностью"
 
 func getSkillTier():
 	return 0

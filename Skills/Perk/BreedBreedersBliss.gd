@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Блаженство заводчицы"
 
 func getVisibleDescription():
-	return "Heat is the prime state for breeding. Orgasming inside someone's pussy while they are in heat will relieve 20 pain and give you 20 stamina back!"
+	return "Течка — идеальное состояние для размножения. Кончая в течку, ты снимаешь 20 единиц боли и восстанавливаешь 20 единиц выносливости!"
 
 func getSkillTier():
 	return 0
@@ -29,4 +29,4 @@ func onSexEvent(_event:SexEvent):
 				_event.getSourceChar().addPain(-20)
 				_event.getSourceChar().addStamina(20)
 				if(_event.getSourceChar().isPlayer()):
-					GM.main.addMessage("Feels so good to cum inside someone who is in heat!")
+					GM.main.addMessage("Как же охеренно кончать в ту, у которой течка!")

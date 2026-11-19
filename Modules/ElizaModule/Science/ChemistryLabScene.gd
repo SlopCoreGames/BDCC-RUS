@@ -299,7 +299,7 @@ func _run():
 		var entries:Dictionary = {}
 		entries["1"] = {
 			name = "= УЛУЧШЕНИЯ =",
-			desc = "This list shows the upgrades that you have unlocked",
+			desc = "В этом списке показаны разблокированные улучшения",
 		}
 		
 		var upgradesInfo:Dictionary = GM.main.SCI.getUpgrades()
@@ -318,13 +318,13 @@ func _run():
 			#sayn(" - Улучшений не найдено")
 			entries["noup_"] = {
 				name = "Улучшений не найдено",
-				desc = "Get some upgrades first!",
+				desc = "Сначала получи несколько улучшений!",
 			}
 		#sayn("")
 		
 		entries["2"] = {
 			name = "= ПРЕПАРАТЫ =",
-			desc = "This list shows the special drugs that you have found",
+			desc = "В этом списке показаны найденные тобой особые препараты",
 		}
 		#sayn("Трансформирующие препараты:")
 		var _i:int = 1
@@ -338,8 +338,8 @@ func _run():
 			if(!isUnlocked):
 				#sayn(" - "+str(_i)+": Неизвестно")
 				entries["drug_"+tfID] = {
-					name = str(_i)+": Unknown",
-					desc = "You haven't found this drug yet",
+					name = str(_i)+": Неизвестно",
+					desc = "Ты еще не нашел этот препарат",
 				}
 			else:
 				#sayn(" - "+str(_i)+": "+(tf.getPillName() if isUnlocked else "Unknown")+". "+(tf.getName()+". Untested" if !isTested else tf.getName()+". Tested"))
@@ -419,7 +419,7 @@ func _run():
 			#sayn("- Больше улучшений нет! AlphaCorp вами гордится!")
 			entries["1"] = {
 				name = "= Улучшений больше нет =",
-				desc = "No upgrades left to unlock! AlphaCorp is proud of you!",
+				desc = "Улучшений больше нет! АльфаКорп гордится тобой!",
 			}
 	
 		var inventory = genericInventoryScreenScene.instance()
@@ -618,7 +618,7 @@ func _react(_action: String, _args):
 				GM.main.SCI.addPoints(-craftInfo["science"])
 			GM.main.SCI.useFluidsToMakeSomething(craftInfo["fluids"])
 			
-			addMessage("You have created '"+itemRef.getVisibleName()+"'!")
+			addMessage("Ты создал «"+itemRef.getVisibleName()+"'!")
 			
 			if(tfID == "TFPill"):
 				GM.main.SCI.madeStrangePills += 1
@@ -642,7 +642,7 @@ func _react(_action: String, _args):
 		
 		var newPill:ItemBase = GM.main.SCI.useFluidsToMakePill(tfID)
 		if(newPill != null):
-			addMessage("You have created a "+tf.getPillName()+" pill!")
+			addMessage("Ты создал "+tf.getPillName()+" таблетку!")
 			GM.pc.getInventory().addItem(newPill)
 		
 		setState("")
@@ -668,7 +668,7 @@ func _react(_action: String, _args):
 					configDescAr.append(option["name"]+": "+currentOptionName)
 			newPill.setConfigDesc(Util.join(configDescAr, "\n"))
 			
-			addMessage("You have created a "+tf.getPillName()+" pill!")
+			addMessage("Ты создал "+tf.getPillName()+" таблетку!")
 			GM.pc.getInventory().addItem(newPill)
 		
 		setState("")
@@ -680,7 +680,7 @@ func _react(_action: String, _args):
 		var fluidName:String = fluidOBJ.getVisibleName() if fluidOBJ != null else fluidID
 		
 		GM.main.SCI.clearFluid(fluidID)
-		addMessage("'"+fluidName+"' fluid tank got cleared!")
+		addMessage("'"+fluidName+"Резервуар с жидкостью очищен!")
 		return
 		
 	if(_action == "tank_pickFillFrom"):
@@ -699,7 +699,7 @@ func _react(_action: String, _args):
 			
 			var howMuchAdded:float = GM.main.SCI.addFluid(fluidID, fluidsByType[fluidID])
 			if(howMuchAdded > 0.0):
-				addMessage(str(Util.roundF(howMuchAdded, 1))+" ml of "+theFluidOBJ.getVisibleName()+" was deposited into the fluids tanks.")
+				addMessage(str(Util.roundF(howMuchAdded, 1))+" мл "+theFluidOBJ.getVisibleName()+" было слито в резервуары с жидкостью.")
 		fluids.clear()
 		
 		return
@@ -748,11 +748,11 @@ func getDebugActions():
 	return [
 	{
 		"id": "addPoints",
-		"name": "Add Science",
+		"name": "Добавить науку",
 		"args": [
 			{
 				"id": "points",
-				"name": "Points",
+				"name": "Очки",
 				"type": "number",
 				"value": 100,
 			},
@@ -760,18 +760,18 @@ func getDebugActions():
 	},
 	{
 		"id": "addFluid",
-		"name": "Add Fluid",
+		"name": "Добавить жидкость",
 		"args": [
 			{
 				"id": "fluidID",
-				"name": "Fluid",
+				"name": "Жидкость",
 				"type": "list",
 				"value": "Milk",
 				"values": fluidValues,
 			},
 			{
 				"id": "ml",
-				"name": "How much ml",
+				"name": "Сколько мл?",
 				"type": "number",
 				"value": 100,
 			},
@@ -779,11 +779,11 @@ func getDebugActions():
 	},
 	{
 		"id": "unlockTF",
-		"name": "Unlock TF",
+		"name": "Разблокировать ТФ",
 		"args": [
 			{
 				"id": "tf",
-				"name": "TF id",
+				"name": "ID ТФ",
 				"type": "list",
 				"value": "Demonification",
 				"values": tfValues,
@@ -792,11 +792,11 @@ func getDebugActions():
 	},
 	{
 		"id": "testTF",
-		"name": "Test TF",
+		"name": "Тест ТФ",
 		"args": [
 			{
 				"id": "tf",
-				"name": "TF id",
+				"name": "ID ТФ",
 				"type": "list",
 				"value": "Demonification",
 				"values": tfValues,
@@ -805,19 +805,19 @@ func getDebugActions():
 	},
 	{
 		"id": "unlockAll",
-		"name": "Unlock ALL TFs",
+		"name": "Разблокировать ВСЕ ТФ",
 		"args": [
 		],
 	},
 	{
 		"id": "testAll",
-		"name": "Test ALL TFs",
+		"name": "Тест ВСЕХ ТФ",
 		"args": [
 		],
 	},
 	{
 		"id": "lockAll",
-		"name": "Lock ALL TFs",
+		"name": "Заблокировать ВСЕ ТФ",
 		"args": [
 		],
 	},

@@ -326,7 +326,7 @@ func _run():
 
 func _react(_action: String, _args):
 	if(_action == "continue2"):
-		addMessage("2 new tasks added")
+		addMessage("Добавлено 2 новых задания")
 		addExperienceToPlayer(100)
 	
 	if(_action == "announcements"):

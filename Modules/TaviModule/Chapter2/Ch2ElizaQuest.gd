@@ -9,10 +9,10 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("You must go to the medical and find a way to steal the mind-melting drugs before they use them on Tavi. Talk to Eliza.")
+	result.append("Тебе нужно отправиться в медпункт и найти способ украсть эти выносящие мозг препараты, пока их не вкололи Тави. Поговори с Элизой.")
 	
 	if(GM.main.getFlag("TaviModule.ch2PCFailedToStealDuringCheckup")):
-		result.append("Your only way to steal the drugs now is to find the room they are stored in. Should be somewhere in the medical.")
+		result.append("Единственный способ украсть лекарства сейчас — это найти комнату, где они хранятся. Где-то в медпункте.")
 
 	return result
 

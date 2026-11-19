@@ -23,7 +23,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Драть член"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Begin stroking your shaft"
+	return "Начать ласкать свой член"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -33,10 +33,10 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You wrap your digits around your {pc.cock} and begin sliding your hand back and forth at a steady pace, stroking yourself off!"
+		text += "Ты обхватываешь свой {pc.cock} пальцами и начинаешь ритмично водить рукой вверх-вниз, сочно дроча!"
 		text += "\n\n"
 	else:
-		text += "You get a grasp on your {pc.cock} and give its tip a good rub with your digits, catching some precum that you then spread over the shaft as you stroke yourself!"
+		text += "Ты обхватываешь свой {pc.cock} и хорошенько растираешь головку пальцами, собирая смазку, которую затем размазываешь по стволу, продолжая дрочить!"
 		text += "\n\n"
 
 	return {

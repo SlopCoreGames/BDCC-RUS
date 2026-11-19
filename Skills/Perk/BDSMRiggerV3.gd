@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Профессиональный риггер"
 
 func getVisibleDescription():
-	return "You're a real pro at making rope bunnies out of people. Even if they never asked for it. Your chances at forcing a restraint onto someone are increased by 30% and you also recover additional 30% of the restraints during fights."
+	return "Ты настоящий профи в превращении людей в «канатных кроликов». Даже если они об этом не просили. Твои шансы насильно наложить на кого-то путы увеличиваются на 30%, а во время боев ты также восстанавливаешь дополнительные 30% o% ограничений."
 
 func getRequiredPerks():
 	return [Perk.BDSMRigger, Perk.BDSMRiggerV2]

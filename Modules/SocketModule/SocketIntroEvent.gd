@@ -24,7 +24,7 @@ func run(_triggerID, _args):
 	if(checkCharacterBusy("SocketBusy", "Seems like Socket is not here", "Socket")):
 		return
 	
-	addButtonUnlessLate("Socket", "Talk with the fennec", "talk")
+	addButtonUnlessLate("Гнездо", "Поболтать с феннеком", "talk")
 
 func getPriority():
 	return 11

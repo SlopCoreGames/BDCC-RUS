@@ -14,10 +14,10 @@ func shouldApplyTo(_npc):
 	return false
 
 func getEffectName():
-	return "In Heat"
+	return "В течке"
 
 func getEffectDesc():
-	return "You have a huge urge to mate with someone.."
+	return "У тебя дикое желание спариться с кем-нибудь..."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/heartburn.png"

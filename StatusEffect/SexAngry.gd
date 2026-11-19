@@ -18,10 +18,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Extremely angry"
+	return "Запредельная ярость"
 
 func getEffectDesc():
-	return "This person will be mean during sex no matter what."
+	return "Этот человек будет вести себя грубо во время секса, несмотря ни на что."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/shattered-heart.png"

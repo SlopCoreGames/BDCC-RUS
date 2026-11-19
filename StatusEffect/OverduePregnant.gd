@@ -24,10 +24,10 @@ func shouldApplyTo(_npc):
 	return false
 
 func getEffectName():
-	return "Ready to pop"
+	return "Вот-вот родишь"
 
 func getEffectDesc():
-	return "Its getting hard to walk and there is signifigant strain in and around your belly. You should probably go give birth in the nursery."
+	return "Тебе становится всё труднее ходить, а в области живота ощущается сильное напряжение. Тебе стоит отправиться в родильное отделение, чтобы принять роды."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/mother.png"

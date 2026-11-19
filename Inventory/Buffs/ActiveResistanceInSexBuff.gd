@@ -9,7 +9,7 @@ func initBuff(_args):
 	amount = _args[0]
 
 func getVisibleDescription():
-	return "Actively resisting"
+	return "Активное сопротивление"
 
 func apply(_buffHolder):
 	pass

@@ -54,7 +54,7 @@ func getPillOptions() -> Dictionary:
 	return {
 		"target": {
 			name = "Цель",
-			desc = "Whats the final thickness should be like (This drug can only lower thickness).",
+			desc = "Каким должен быть итоговый объем (этот препарат может только уменьшать толщину).",
 			value = 50,
 			values = posVals,
 		},

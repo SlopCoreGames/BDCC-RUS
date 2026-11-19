@@ -18,9 +18,9 @@ func canUseInCombat():
 func getPossibleActions():
 	return [
 		{
-			"name": "Draw on self",
+			"name": "Нарисовать на себе",
 			"scene": "PermanentMarkerScene",
-			"description": "Use the marker to draw something on yourself!",
+			"description": "Используй маркер, чтобы что-нибудь на себе нарисовать!",
 		},
 	]
 

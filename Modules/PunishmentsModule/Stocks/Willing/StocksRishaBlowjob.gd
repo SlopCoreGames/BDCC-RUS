@@ -117,7 +117,7 @@ func _react(_action: String, _args):
 		
 		if(rishaPayed):
 			GM.pc.addCredits(1)
-			addMessage("You received 1 credit")
+			addMessage("Вы получили 1 кредит")
 		
 		if(GM.pc.isOralBlocked()):
 			rishaRemovedGag = true
@@ -126,7 +126,7 @@ func _react(_action: String, _args):
 		if(RNG.chance(40)):
 			var zone = BodyWritingsZone.getRandomZone()
 			GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-			addMessage("Risha also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+			addMessage("Риша также оставила памятный след на твоей "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 			
 		GM.pc.addTallymarkFace()
 		GM.pc.cummedInMouthBy("risha")

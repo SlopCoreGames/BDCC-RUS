@@ -57,14 +57,14 @@ func onGettingHitWith(_pc, _amount):
 	
 	var text = ""
 	if(lustToAdd < 0):
-		text += _pc.getName()+" hated getting splashed with girlcum!"
+		text += _pc.getName()+" ненавидела, когда на неё брызгали девичьей спермой!"
 	elif(lustToAdd > 0):
-		text += _pc.getName()+" "+RNG.pick(["loved", "enjoyed", "got lusty from", "liked", "got aroused from"])+" getting splashed with girlcum!"
+		text += _pc.getName()+" "+RNG.pick(["loved", "enjoyed", "возбудился от", "liked", "завелся от"])+" когда на неё брызгают девичьей спермой!"
 	
 	if(RNG.chance(4.0 * sqrt(_amount)) && !_pc.hasEffect(StatusEffect.Collapsed)):
 		if(text != ""):
 			text += " "
-		text += _pc.getName()+" slipped on girlcum, ow!"
+		text += _pc.getName()+" поскользнулась на девичьей сперме, ой!"
 		_pc.addEffect(StatusEffect.Collapsed)
 		painToAdd = 10
 		

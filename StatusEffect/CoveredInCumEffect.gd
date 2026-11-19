@@ -23,7 +23,7 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Messy"
+	return "Заляпан(а)"
 
 func getEffectDesc():
 	var fluids = character.getFluids()
@@ -43,7 +43,7 @@ func getEffectDesc():
 		if(messDesc != null && messDesc != ""):
 			resultMessage.append(messDesc)
 	
-	resultMessage.append("On your body:\n"+Util.join(fluids.getContentsHumanReadableArray(), "\n"))
+	resultMessage.append("На твоем теле:\n"+Util.join(fluids.getContentsHumanReadableArray(), "\n"))
 
 	return Util.join(resultMessage, "\n\n")
 

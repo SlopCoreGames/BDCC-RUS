@@ -12,8 +12,8 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Test test")
-	result.append("mew mew")
+	result.append("Тест тест")
+	result.append("мяу-мяу")
 	
 	return result
 

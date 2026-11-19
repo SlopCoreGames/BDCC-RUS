@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Сила природы"
 
 func getVisibleDescription():
-	return "Embrace your role as the ultimate breeder. Your balls now produce seed 50% faster plus an additional 10% for each point in Strength! Your cum production now has no limits!"
+	return "Прими свою роль совершенного заводчика. Теперь твои яйца производят на 50% f быстрее плюс дополнительные 10% f за каждую единицу Силы! Твоя выработка спермы теперь не знает границ!"
 
 func getRequiredPerks():
 	return [Perk.BreedCumProductionV2]

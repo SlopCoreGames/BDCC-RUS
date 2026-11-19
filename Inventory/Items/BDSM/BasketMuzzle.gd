@@ -41,9 +41,9 @@ func generateRestraintData():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was forced onto you. No more biting for you!"
+		return getAStackNameCapitalize()+" на тебя нацепили силой. Больше никаких укусов!"
 	else:
-		return getAStackNameCapitalize()+" was forced onto {receiver.name}! No more biting for {receiver.him}!"
+		return getAStackNameCapitalize()+" на {receiver.name} нацепили силой! Больше никаких укусов для {receiver.him}!"
 
 func updateDoll(doll: Doll3D):
 	doll.setState("muzzle", "muzzled")

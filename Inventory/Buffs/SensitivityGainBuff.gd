@@ -30,15 +30,15 @@ func getVisibleDescription():
 	if(amount > 0):
 		text = "+"+text
 	
-	var theText := "Sensitivity gain"
+	var theText := "Повышение чувствительности"
 	if(sensType == BuffAttribute.SensitivityGainPenis):
-		theText = "Penis sensitivity gain"
+		theText = "Повышение чувствительности члена"
 	elif(sensType == BuffAttribute.SensitivityGainNipples):
-		theText = "Nipples sensitivity gain"
+		theText = "Повышение чувствительности сосков"
 	elif(sensType == BuffAttribute.SensitivityGainVagina):
-		theText = "Pussy sensitivity gain"
+		theText = "Повышение чувствительности киски"
 	elif(sensType == BuffAttribute.SensitivityGainAnus):
-		theText = "Anus sensitivity gain"
+		theText = "Повышение чувствительности ануса"
 		
 	return theText+" "+text+"%"
 

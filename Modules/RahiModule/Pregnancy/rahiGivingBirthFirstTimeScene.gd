@@ -336,7 +336,7 @@ func loadData(data):
 	bornChildAmount = SAVE.loadVar(data, "bornChildAmount", 0)
 
 func getDevCommentary():
-	return "I'm more of a 'pls breed - no preg' kind of person x3. For some reason the nature has decided that giving birth for us humans needed to be super painful. But oh well, what can you do. That's why I yada-yada most of this stuff. But some people are really into it so might as well keep some fun parts like cradling your kids.."
+	return "Я скорее из тех, кто за формат «пожалуйста, трахай, но не беременяй» x3. По какой-то причине природа решила, что роды у нас, людей, должны быть дико болезненными. Но ладно, что поделаешь. Поэтому я в этом деле в основном просто «яда-яда-яда» (ну, вы поняли). Но некоторым это реально в кайф, так что можно оставить парочку приятных моментов — типа как прижимаешь к себе своих деток..."
 
 func hasDevCommentary():
 	return true

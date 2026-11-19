@@ -87,7 +87,7 @@ func createAttribList():
 func updateAttribList():
 	var myAddedPoints = getAddedStatsAmount()
 	var freeStatPoints = GM.pc.getSkillsHolder().getFreeStatPoints() - myAddedPoints
-	freeStatsLabel.text = "Free stat points: "+str(freeStatPoints)
+	freeStatsLabel.text = "Свободных очков характеристик: "+str(freeStatPoints)
 	var canAddPoints = true
 	if(freeStatPoints <= 0):
 		canAddPoints = false
@@ -149,7 +149,7 @@ func updateDamageStatsLabel():
 		text += damName +": " +Util.numberToPercentString(dam)+"\n"
 		
 	text += "\n"
-	text += "Recieved damage multiplier:\n"
+	text += "Множитель полученного урона:\n"
 	for damageType in DamageType.getAll():
 		var dam = GM.pc.getRecieveDamageMultiplier(damageType)
 		var damName = DamageType.getName(damageType)
@@ -163,12 +163,12 @@ func updateDamageStatsLabel():
 		text += damName +": " +str(dam)+"\n"
 		
 	text += "\n"
-	text += "Dodge chance: "
+	text += "Шанс уклонения: "
 	var dodgeChance = GM.pc.getDodgeChance()
 	text += str(dodgeChance*100)+"%"+"\n"
 		
 	text += "\n"
-	text += "Attack accuracy: "
+	text += "Точность атаки: "
 	var accuracy = GM.pc.getAttackAccuracy() + 1.0
 	text += str(accuracy * 100.0)+"%\n"
 		
@@ -176,8 +176,8 @@ func updateDamageStatsLabel():
 
 
 	text = ""
-	text += "Ambient lust: "+str(GM.pc.getAmbientLust()) +"\n"
-	text += "Ambient pain: "+str(GM.pc.getAmbientPain()) + "\n"
+	text += "Фоновое вожделение: "+str(GM.pc.getAmbientLust()) +"\n"
+	text += "Фоновая боль: "+str(GM.pc.getAmbientPain()) + "\n"
 	text += "Exposure: "+str(int(GM.pc.getExposure()*100))+"%" + "\n"
 	extraStatsLabel.bbcode_text = text
 
@@ -206,5 +206,5 @@ func _on_Skills_openBasePerks():
 	tabContainer.add_child(skillTab)
 	#skillTab.setSkillID(skillID)
 	openedSkillTab = skillTab
-	tabContainer.set_tab_title(tabID, "Base perks")
+	tabContainer.set_tab_title(tabID, "Базовые перки")
 	tabContainer.current_tab = tabID

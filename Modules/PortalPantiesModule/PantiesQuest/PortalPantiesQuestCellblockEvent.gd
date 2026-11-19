@@ -10,7 +10,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("PortalPantiesModule.Panties_FleshlightsAskedAlex") && !getFlag("PortalPantiesModule.Panties_FleshlightsFoundFleshlights")):
-		addButtonUnlessLate("Search around", "Look around for your fleshlights", "searchfleshlights")
+		addButtonUnlessLate("Осмотреться вокруг", "Поискать свои флешлайты", "searchfleshlights")
 
 func getPriority():
 	return 0
@@ -18,7 +18,7 @@ func getPriority():
 func onButton(_method, _args):
 	if(_method == "searchfleshlights"):
 		if(GM.pc.getLocation() in ["cellblock_orange_nearcell", "cellblock_lilac_nearcell"]):
-			GM.main.addMessage("You look around but unable to find anyone with your fleshlights. They might be in another block")
+			GM.main.addMessage("Ты оглядываешься по сторонам, но никого с твоими флешлайтами не находишь. Возможно, они в другом блоке")
 			GM.main.reRun()
 		else:
 			runScene("PortalPantiesQuestCellblockScene")

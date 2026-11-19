@@ -18,10 +18,10 @@ func _run():
 		addButton("Мужское", "Сгенерировать случайное мужское имя", "generate_name_masc")
 
 		if(randomName != ""):
-			addButtonAt(10, "Confirm", "Proceed with selected name", "confirm")
+			addButtonAt(10, "Подтвердить", "Использовать выбранное имя", "confirm")
 		else:
-			addDisabledButtonAt(10, "Confirm", "You need to generate a name first")
-		addButtonAt(11, "Cancel", "Enter a name manually", "cancel")
+			addDisabledButtonAt(10, "Подтвердить", "Сначала нужно сгенерировать имя")
+		addButtonAt(11, "Отмена", "Ввести имя вручную", "cancel")
 
 func _react(_action: String, _args):
 	if(_action == "confirm"):

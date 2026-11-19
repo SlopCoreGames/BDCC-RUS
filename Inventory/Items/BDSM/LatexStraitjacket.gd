@@ -89,9 +89,9 @@ func getPossibleActions():
 		return []
 	return [
 		{
-			"name": "Toggle belt",
+			"name": "Застегнуть ремень",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Choose if you want to combo the straitjacket with a chastity belt",
+			"description": "Выбрать, хотите ли вы дополнить смирительную рубашку поясом целомудрия",
 		},
 	]
 

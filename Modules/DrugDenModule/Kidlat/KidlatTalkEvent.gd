@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(getFlag("DrugDenModule.Kidlat7Hap")):
-		addButtonUnlessLate("Kidlat", "Talk with the kitty", "talk")
+		addButtonUnlessLate("Кидлат", "Поболтать с кошечкой", "talk")
 	
 func getPriority():
 	return 0

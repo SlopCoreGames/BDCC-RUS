@@ -57,10 +57,10 @@ func getResistAnimation():
 	return "struggle_gag"
 
 func getTightLockRequiredItemID() -> String:
-	return "Shiv"
+	return "Шило"
 
 func getTightLockUnlockMessage() -> String:
-	return "The lock is impossible to remove so you just cut through the thick cloth of the blindfold with a shiv until it falls apart."
+	return "Замок не поддается, поэтому остается только кромсать плотную ткань повязки заточенной костью или ножом, пока она не развалится на куски."
 
 func getForceOnCombatAnim() -> String:
 	return "RestraintEyes"

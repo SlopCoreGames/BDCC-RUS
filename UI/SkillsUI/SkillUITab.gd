@@ -61,7 +61,7 @@ func updatePerks():
 	if(skill.scripted()):
 		perksLabel.text = ""
 	else:
-		perksLabel.text = "Free perk points: "+str(GM.pc.getSkillsHolder().getFreePerkPoints(skillID))
+		perksLabel.text = "Свободных очков перков: "+str(GM.pc.getSkillsHolder().getFreePerkPoints(skillID))
 	
 	var tiers = skill.getPerkTiers()
 	
@@ -100,14 +100,14 @@ func updatePerkText():
 		var perkCost = perk.getCost()
 		if(perkCost == 1):
 			if(GM.pc.getSkillsHolder().getFreePerkPoints(perk.getSkillGroup()) >= perkCost):
-				reqText += str(perkCost)+" perk point"
+				reqText += str(perkCost)+" очко перка"
 			else:
-				reqText += "[color=red]"+str(perkCost)+" perk point[/color]"
+				reqText += "[color=red]"+str(perkCost)+" очко перка[/color]"
 		else:
 			if(GM.pc.getSkillsHolder().getFreePerkPoints(perk.getSkillGroup()) >= perkCost):
-				reqText += str(perkCost)+" perk points"
+				reqText += str(perkCost)+" очков перков"
 			else:
-				reqText += "[color=red]"+str(perkCost)+" perk points[/color]"
+				reqText += "[color=red]"+str(perkCost)+" очков перков[/color]"
 				
 		var requiredPerks = perk.getRequiredPerks()
 		for requiredPerkID in requiredPerks:

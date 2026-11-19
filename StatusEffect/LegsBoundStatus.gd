@@ -23,10 +23,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Bound legs"
+	return "Связанные ноги"
 
 func getEffectDesc():
-	return "Your legs are bound. You can still walk but it's harder to dodge attacks"
+	return "Ваши ноги связаны. Вы всё ещё можете ходить, но уклоняться от атак стало сложнее"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/manacles.png"

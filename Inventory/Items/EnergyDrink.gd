@@ -24,9 +24,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Drink it!",
+			"description": "Вкусно пошло!",
 		},
 	]
 

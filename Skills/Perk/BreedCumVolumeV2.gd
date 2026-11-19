@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Божественная выносливость"
 
 func getVisibleDescription():
-	return "You have worked hard. And now it begins to pay off. You balls now hold 10% more seed for each point in Agility"
+	return "Ты не зря старался. И теперь это начинает приносить плоды. Теперь твои яйца вмещают на 10% больше семени за каждый пункт Ловкости."
 
 func getRequiredPerks():
 	return [Perk.BreedCumVolume]

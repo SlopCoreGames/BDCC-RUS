@@ -19,7 +19,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A very tall demon-feline with a unique purple and green fur pattern and shining red/green eyes"
+	return "Очень высокий демон-кошка с необычным окрасом шерсти в фиолетово-зеленых тонах и сияющими красно-зелеными глазами"
 
 func getSpecies():
 	return ["feline", "demon"]

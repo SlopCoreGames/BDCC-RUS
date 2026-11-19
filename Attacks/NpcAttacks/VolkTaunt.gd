@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Насмешка Волка"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(RNG.chance(60)):
@@ -33,9 +33,9 @@ func getAnticipationText(_attacker, _receiver):
 
 	text += "\n\n"
 	text += "[say=volk]"+RNG.pick([
-		"Volk will be gentle with prey.",
-		"Wanna know about the scars? I can show you.",
-		"You’re stuck here. With me. Afraid yet? Well you should.",
+		"Волк будет нежен со своей добычей.",
+		"Хочешь узнать про шрамы? Могу показать.",
+		"Ты застрял здесь. Со мной. Уже боишься? Что ж, тебе стоит.",
 	])+"[/say]"
 
 	return text

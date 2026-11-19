@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Страсть к похоти"
 
 func getVisibleDescription():
-	return "You love sex! Each time you have oral, vaginal or anal sex you recover 20 [color="+DamageType.getColorString(DamageType.Stamina)+"]stamina[/color] back!"
+	return "Ты обожаешь секс! Каждый раз, когда ты занимаешься оральным, вагинальным или анальным сексом, ты восстанавливаешь 20 [color="+DamageType.getColorString(DamageType.Stamina)+"]единиц выносливости[/color]!"
 
 func getRequiredPerks():
 	return [Perk.SexLustPassion]

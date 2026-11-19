@@ -240,7 +240,7 @@ func _react(_action: String, _args):
 
 	if(_action == "egg_boom"):
 		processTime(3*60)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 
 	setState(_action)
 

@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Безрассудные желания"
 
 func getVisibleDescription():
-	return "Your lustful cravings are so intense that you deliberately try to sabotage condoms, increasing the chance of them breaking during intimate encounters with you by 3 times.\n"\
+	return "Твоя похотливая жажда настолько сильна, что ты намеренно пытаешься саботировать использование презервативов, увеличивая шанс их разрыва во время интимной близости с тобой в 3 раза.\n"\
 			+ "Each sabotaged condom sends a rush of adrenaline through you that removes [color="+DamageType.getColorString(DamageType.Physical)+"]20 pain[/color]!"
 
 func getSkillTier():

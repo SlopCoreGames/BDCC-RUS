@@ -576,7 +576,7 @@ func _run():
 
 		saynn("Ты {pc.undressMessage}. Взгляд Алекса следует за плавными движениями твоих рук. Когда ты заканчиваешь, на тебе не остается никакой одежды... только твой массивный металлический ошейник.")
 
-		saynn(""+str("Your {pc.breasts} are now on full display. You're not sure if you're allowed to cover yourself up with your hands.. probably not." if GM.pc.hasNonFlatBreasts() else "Your {pc.breasts} are now visible but that's okay.")+" "+str("Your {pc.penis} is also out, just like your {pc.pussyStretch} pussy." if (GM.pc.hasPenis() && GM.pc.hasVagina()) else "")+""+str("Your {pc.penis} is also out.." if (GM.pc.hasPenis() && !GM.pc.hasVagina()) else "")+""+str("Your {pc.pussyStretch} pussy is also not hidden anymore.." if (!GM.pc.hasPenis() && GM.pc.hasVagina()) else "")+"")
+		saynn(""+str("Твои {pc.breasts} теперь выставлены напоказ. Ты не уверена, можно ли прикрыться руками... скорее всего, нельзя." if GM.pc.hasNonFlatBreasts() else "Твои {pc.breasts} теперь на виду, но это даже неплохо.")+" "+str("Твои {pc.penis} тоже наружу, прямо как твоя {pc.pussyStretch} киска." if (GM.pc.hasPenis() && GM.pc.hasVagina()) else "")+""+str("Твои {pc.penis} тоже наружу..." if (GM.pc.hasPenis() && !GM.pc.hasVagina()) else "")+""+str("Твоя {pc.pussyStretch} киска тоже больше не спрятана..." if (!GM.pc.hasPenis() && GM.pc.hasVagina()) else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "6")
 	if(state == "6"):
@@ -586,7 +586,7 @@ func _run():
 
 		saynn("Да уж... ты уже много раз была голой. Но сейчас всё иначе. Алекс ограничивается нежными ласками: его ладонь ложится на твое тело, осторожно очерчивая его изгибы и вызывая дрожь по всему телу...")
 
-		saynn("Время от времени его пальцы проходят и по твоей"+str(" rich" if GM.pc.hasBigBreasts() else " modest")+" груди, его когти находят твои упругие соски и слегка покалывают их..."+str(" Until some {pc.milk} comes out.." if GM.pc.canBeMilked() else "")+"")
+		saynn("Время от времени его пальцы проходят и по твоей"+str(" rich" if GM.pc.hasBigBreasts() else " modest")+" груди, его когти находят твои упругие соски и слегка покалывают их..."+str(" Пока не вылезет какая-нибудь {pc.milk}..." if GM.pc.canBeMilked() else "")+"")
 
 		if (GM.pc.isWearingChastityCage()):
 			saynn("Очевидно, его руки также тянутся к твоей девственной клетке, чтобы немного поиграть с ней. Его когти цепляются за металлическую оправу... и тянут её, проверяя, насколько плотно она сидит. Одна из его ладоней нежно обхватывает твои яйца.")
@@ -754,7 +754,7 @@ func _run():
 
 		saynn("[say=alexrynard]Нет, мелкая дрянь. Ты всего лишь рабыня. Никчемная маленькая рабыня, которой пора показать её место.[/say]")
 
-		saynn("Ты продолжаешь терпеть его болезненную хватку, даже когда из твоего рта то и дело вырывается стон. Ты чувствуешь себя униженной... но почему же тогда от этих слов так приятно?"+str(" Your pussy is soaking wet even though he didn't touch it.." if GM.pc.hasReachableVagina() else "")+""+str(" Your {pc.penis} is rock hard, dripping precum non-stop.." if GM.pc.hasReachablePenis() else "")+"")
+		saynn("Ты продолжаешь терпеть его болезненную хватку, даже когда из твоего рта то и дело вырывается стон. Ты чувствуешь себя униженной... но почему же тогда от этих слов так приятно?"+str(" Твоя киска насквозь промокла, хотя он её даже не трогал..." if GM.pc.hasReachableVagina() else "")+""+str(" Твой {pc.penis} стоит колом, не переставая сочась предэякулятом..." if GM.pc.hasReachablePenis() else "")+"")
 
 		saynn("[say=alexrynard]Верно, ты моя игрушка. Моя вещь, которой я распоряжаюсь как хочу.[/say]")
 
@@ -777,7 +777,7 @@ func _run():
 
 		saynn("[say=pc]Да, сэр! Я рабыня! Ваша рабыня![/say]")
 
-		saynn("Ты продолжаешь терпеть его болезненную хватку, даже если из твоего рта время от времени вырывается стон. Ты чувствуешь себя униженной... но почему же тогда произносить эти слова так приятно?"+str(" Your pussy is soaking wet even though he didn't touch it.." if GM.pc.hasReachableVagina() else "")+""+str(" Your {pc.penis} is rock hard, dripping precum non-stop.." if GM.pc.hasReachablePenis() else "")+"")
+		saynn("Ты продолжаешь терпеть его болезненную хватку, даже если из твоего рта время от времени вырывается стон. Ты чувствуешь себя униженной... но почему же тогда произносить эти слова так приятно?"+str(" Твоя киска насквозь промокла, хотя он её даже не трогал..." if GM.pc.hasReachableVagina() else "")+""+str(" Твой {pc.penis} стоит колом, не переставая сочась предэякулятом..." if GM.pc.hasReachablePenis() else "")+"")
 
 		saynn("[say=alexrynard]Верно, ты моя игрушка. Моя вещь, которой я распоряжаюсь как хочу.[/say]")
 
@@ -1024,7 +1024,7 @@ func _react(_action: String, _args):
 	if(_action == "3_red_hug"):
 		processTime(3*60)
 		GM.pc.addPain(-20)
-		addMessage("Hugs are nice!")
+		addMessage("Обнимашки — это так мило!")
 
 	if(_action == "4_brat"):
 		bratCounter += 1

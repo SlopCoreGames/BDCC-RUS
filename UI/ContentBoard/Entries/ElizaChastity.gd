@@ -8,24 +8,24 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Go through an experimental obedience training program created by Eliza Quinn. It's available only for inmates who posses the primary male reproductive organ, a penis. This little storyline is focused around chastity, anal sex and submission."
-	return "Go through an obedience training program created by Eliza Quinn, focused all around male chastity"
+		return "Пройдите экспериментальную программу тренировки послушания, созданную Элайзой Куинн. Она доступна только заключенным, обладающим основным мужским репродуктивным органом — пенисом. Этот сюжет сосредоточен на целомудрии, анальном сексе и подчинении."
+	return "Пройди программу дрессировки послушания от Элизы Куинн, полностью сосредоточенную на мужском целомудрии."
 
 func getKinks() -> Array:
 	return [
-		"Forced submission (pc is sub)",
-		"Chastity cages",
-		"Anal sex/Pegging (pc is bottom)",
-		"Cum eating",
-		"Permanent chastity (optional)",
+		"Принудительное подчинение (ПК — саб)",
+		"Корсеты целомудрия",
+		"Анальный секс / Пеггинг (ПК — боттом)",
+		"Поедание спермы",
+		"Постоянное целомудрие (опционально)",
 	]
 
 func getCompletedDesc() -> String:
 	if(getFlag("MedicalModule.Chastity_Event5LockedForever", false)):
-		return "You went through the whole program and even agreed to be locked forever!"
+		return "Вы прошли всю программу и даже согласились на пожизненную блокировку!"
 	if(getFlag("MedicalModule.Chastity_Event5BredEliza", false)):
-		return "You went through the whole program and decided to decline eternal chastity and breed Eliza at the end!"
-	return "You went through the whole program!"
+		return "Вы прошли всю программу, но в конце решили отказаться от вечного целомудрия и осеменить Элайзу!"
+	return "Вы прошли всю программу!"
 
 func getStatus() -> int:
 	if(getFlag("MedicalModule.Chastity_EventNumber", 0) >= 7):
@@ -46,10 +46,10 @@ func getStartConditions() -> Array:
 		ppCond = ContentBoardCondition.Impossible
 	
 	return [
-		[ppCond, "Have a penis."],
-		[completeIf("MedicalModule.PC_ReceivedPermanentCage"), "Find Eliza in the medbay and enroll into her obedience training program."],
-		[completeIfBool(getFlag("MedicalModule.Chastity_EventNumber", 0) > 0), "Sleep in your cell while wearing chastity. Scenes happen every 5 days."],
+		[ppCond, "Наличие пениса."],
+		[completeIf("MedicalModule.PC_ReceivedPermanentCage"), "Найди Элизу в медпункте и запишись в её программу тренировки послушания."],
+		[completeIfBool(getFlag("MedicalModule.Chastity_EventNumber", 0) > 0), "Спи в своей камере в девственном поясе. Новые сцены происходят каждые 5 дней."],
 	]
 
 func getProgressText() -> String:
-	return "Keep sleeping in your cell while wearing a chastity cage. New scenes happen every 5 days."
+	return "Продолжай спать в своей камере в девственном поясе. Новые сцены происходят каждые 5 дней."

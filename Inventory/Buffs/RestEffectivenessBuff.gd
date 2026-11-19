@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Rest effectiveness "+text+"%"
+	return "Эффективность отдыха "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.RestEffectiveness, amount/100.0)

@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Глотательница"
 
 func getVisibleDescription():
-	return "You love cum so much you can lick-clean yourself during a battle and swallow it all!"
+	return "Ты так обожаешь сперму, что можешь вылизать себя дочиста прямо во время боя и проглотить всё до последней капли!"
 
 func getMoreDescription():
-	return "You unlock a new ability 'Lick self clean' that you can use during fights. Swallowing different fluids will provide different effects. For example, licking cum will restore some stamina back depending on the amount."
+	return "Вы открываете новую способность «Вылизать себя», которую можно использовать в бою. Проглатывание различных жидкостей дает разные эффекты. Например, слизывание спермы восстанавливает часть выносливости в зависимости от её количества."
 
 func getSkillTier():
 	return 0

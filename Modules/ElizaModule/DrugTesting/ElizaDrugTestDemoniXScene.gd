@@ -381,7 +381,7 @@ func _react(_action: String, _args):
 		processTime(3*60)
 		if(!getFlag("ElizaModule.tfcan_demon", false)):
 			setFlag("ElizaModule.tfcan_demon", true)
-			addMessage("You can now tell Eliza to transform into a half-demon at any time.")
+			addMessage("Теперь вы можете в любой момент приказать Элизе превратиться в полудемона.")
 
 	if(_action == "resist_table"):
 		processTime(5*60)
@@ -404,7 +404,7 @@ func _react(_action: String, _args):
 		processTime(3*60)
 		if(!getFlag("ElizaModule.tfcan_demon", false)):
 			setFlag("ElizaModule.tfcan_demon", true)
-			addMessage("You can now tell Eliza to transform into a half-demon at any time.")
+			addMessage("Теперь вы можете в любой момент приказать Элизе превратиться в полудемона.")
 
 	if(_action == "resist_grind_after_unlock"):
 		processTime(3*60)

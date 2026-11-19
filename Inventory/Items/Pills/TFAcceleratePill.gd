@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Таблетка «Быстрая смена»"
 	
 func getDescription():
-	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]accelerate the progression of any transformation.[/color]"
+	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]ускоряет процесс любой трансформации.[/color]"
 
 func canUseInCombat():
 	return true
@@ -20,9 +20,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -69,7 +69,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "QuickShift",
+		"name": "Быстрая Смена",
 		"usedName": "a QuickShift pill",
 		"desc": getDescription(),
 		"scoreOnSub": 0.5 if sub.hasActiveTransformations() else 0.0,#_domInfo.goalsScoreMax({SexGoal.FuckVaginal: 1.0, SexGoal.FuckAnal: 0.5}, _subInfo.charID)*_domInfo.fetishScore({Fetish.Breeding: 1.0}),

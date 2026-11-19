@@ -23,11 +23,11 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Creampie"
+	return "Кримпэй"
 
 func getEffectDesc():
 	if(!character.hasBodypart(BodypartSlot.Vagina)):
-		return "Something is wrong"
+		return "Что-то не так"
 	var vagina = character.getBodypart(BodypartSlot.Vagina)
 	var womb: Orifice = vagina.getOrifice()
 	var stuffLevel = womb.getStuffedLevel()
@@ -37,9 +37,9 @@ func getEffectDesc():
 	var messFluids = womb.getFluidListNames()
 	var humanReadableString = Util.humanReadableList(messFluids)
 	
-	var message = "You got fucked and now your womb is stuffed with " + str(fluidAmountRounded) + " ml of "+humanReadableString
+	var message = "Тебя оттрахали, и теперь твоё чрево забито " + str(fluidAmountRounded) + " мл "+humanReadableString
 	if(stuffLevel > 1.0):
-		message += ". Your womb is filled to the brim"
+		message += ". Твоё чрево наполнено до самых краёв"
 	
 	var uniqueUsers = womb.getUniqueCharactersAmount()
 	if(uniqueUsers > 1):

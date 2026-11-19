@@ -36,9 +36,7 @@ margin_top = 24.0
 margin_right = 1268.0
 margin_bottom = 69.0
 bbcode_enabled = true
-bbcode_text = "Automatic text translator. Requires access to internet.
-
-This is a very experimental feature, expect things not to work properly."
+bbcode_text = "Автоматический переводчик текста. Требуется доступ к интернету.\n\nЭто экспериментальная функция, поэтому возможны сбои в работе."
 text = "Автоматический переводчик текста. Требуется доступ в интернет.\n\nЭто экспериментальная функция, поэтому возможны ошибки в работе."
 fit_content_height = true
 

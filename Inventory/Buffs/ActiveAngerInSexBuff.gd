@@ -9,7 +9,7 @@ func initBuff(_args):
 	amount = _args[0]
 
 func getVisibleDescription():
-	return "Anger"
+	return "Гнев"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.AngerInSex, amount/100.0)

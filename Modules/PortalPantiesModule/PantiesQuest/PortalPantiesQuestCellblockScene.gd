@@ -702,10 +702,10 @@ func _react(_action: String, _args):
 			GM.pc.addTallymarkButt()
 			
 		GM.pc.addSkillExperience(Skill.SexSlave, 10, "portalpanties_gangfuck")
-		addMessage("Someone keeps track of the amount of times you were fucked")
+		addMessage("Кто-то ведет учет того, сколько раз тебя трахали")
 		var zone = BodyWritingsZone.getRandomZone()
 		GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-		addMessage("Someone also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+		addMessage("Кто-то также оставил сувенир на твоих "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 	
 	if(_action == "continue3"):
 		var pickedInmate = getSomeoneWithDick()
@@ -734,7 +734,7 @@ func _react(_action: String, _args):
 			
 		var zone = BodyWritingsZone.getRandomZone()
 		GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-		addMessage("Someone also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+		addMessage("Кто-то также оставил сувенир на твоих "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 	
 	if(_action == "more"):
 		for _i in range(RNG.randi_range(3,5)):
@@ -758,7 +758,7 @@ func _react(_action: String, _args):
 				
 				var zone = BodyWritingsZone.getRandomZone()
 				GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-				addMessage("Someone left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+				addMessage("Кто-то оставил сувенир на твоих "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 	
 	if(_action == "cum_inside_self"):
 		randomSexShouldStop = true
@@ -776,7 +776,7 @@ func _react(_action: String, _args):
 		femaleNpcID = getAFemale()
 	
 	if(_action in ["continue4", "leave!", "offer_20_creds"]):
-		addMessage("Task was updated")
+		addMessage("Задача обновлена")
 		addExperienceToPlayer(50)
 		
 	if(_action == "offer_20_creds"):
@@ -797,13 +797,13 @@ func _react_scene_end(_tag, _result):
 		if(battlestate == "win"):
 			setState("if_won")
 			addExperienceToPlayer(60)
-			addMessage("Task was updated")
+			addMessage("Задача обновлена")
 		else:
 			setState("if_lost")
 			addExperienceToPlayer(30)
 
 func getDevCommentary():
-	return "This scene is fun x3. Just because one of the options involves you fucking yourself. Why can't you do that outside of this scene?.. Because I'm lazy.. It would require me to change the logic a little.. have the fleshlight be an actual item.. or like.. one for each hole/dick?.. Just like, thinking about how I should implement it is kinda exhausting already. But if you wanna write that yourself, go ahead ^^."
+	return "Эта сцена — просто кайф в кубе. Просто потому, что один из вариантов подразумевает, что ты трахаешь сама себя. Почему нельзя сделать это вне этой сцены?.. Да потому что мне лень.. Пришлось бы немного менять логику.. сделать флешлайт полноценным предметом.. или типа того.. по одному на каждое отверстие/член?.. От одних только мыслей о том, как это реализовать, уже наступает истощение. Но если хочешь прописать это сама — валяй ^^."
 
 func hasDevCommentary():
 	return true

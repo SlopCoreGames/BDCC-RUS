@@ -15,28 +15,28 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("PenisSmall") && _slaveTraits["PenisSmall"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Take a look at {slave.his} cute little thing between {slave.his} legs. Not much to work with, but perfect for those of you who prefer a slave with a little bit of shame.",
-			"This one comes with a modest package, but don’t underestimate the entertainment value. After all, it’s not always about size - sometimes it’s about how little they have to offer.",
-			"Look at {slave.his} dick! Small, yes, but it makes for a more submissive experience, doesn’t it? Who doesn’t enjoy seeing a slave embarrassed by what little they’re packing?",
-			"For those of you who enjoy a slave that knows their place - this tiny cock will make sure they never forget it.",
-			"You won’t find much between {slave.his} legs.. that {slave.penis} is honestly pathetic.. but that just means there’s plenty of room for {slave.him} to focus on other things!",
-			"A small cock can be quite the advantage, especially if you want a slave that’s easy to humiliate and control. Just imagine the blush on their face every time you remind them!",
+			"Взгляните на эту милую штучку между ножек {slave.his}. Работать особо не с чем, но в самый раз для тех из вас, кто предпочитает рабов с капелькой стыдливости. {slave.his}",
+			"У этого экземпляра скромный комплект, но не стоит недооценивать развлекательный потенциал. В конце концов, дело не всегда в размере — иногда всё дело в том, как мало им есть что предложить.",
+			"Посмотри на член {slave.his}! Маленький, да, но это делает процесс подчинения еще слаще, не так ли? Кому не в радость видеть, как раб краснеет от того, как мало у него в штанах?",
+			"Для тех, кто обожает рабов, знающих своё место: этот крошечный член позаботится о том, чтобы они об этом никогда не забывали.",
+			"Между ног у {slave.his} не особо-то и много... {slave.penis}, честно говоря, выглядит жалко... но это лишь значит, что у {slave.him} полно места, чтобы сосредоточиться на чем-то другом!",
+			"Маленький член может стать настоящим преимуществом, особенно если тебе нужен раб, которого легко унижать и контролировать. Только представь, как они будут краснеть каждый раз, когда ты напоминаешь им об этом!",
 		]))
 	if(_slaveTraits.has("PenisAverage") && _slaveTraits["PenisAverage"] > 0.0):
 		sayPresenter(RNG.pick([
-			"This one’s packing a nice, average-sized cock. Not too big, not too small - just the right size to get the job done!",
-			"An nice average cock for a versatile experience. Whether you want them topping or bottoming, {slave.he} will perform quite well.",
-			"Look at that {slave.penis}. There’s nothing special here in terms of size, but that just means they’re reliable in any role you put them in!",
-			"Look at that juicy cock, isn't it just perfect? Nothing special.. but sometimes you don't need special. Sometimes you just need a good juicy cock!",
+			"У этого вполне приличный, средненький член. Не слишком большой, не слишком маленький — в самый раз, чтобы сделать дело!",
+			"Приличный средний член для самого разного опыта. Хочешь ли ты, чтобы они были сверху или снизу, {slave.he} справится на отлично.",
+			"Посмотри на этот {slave.penis}. В плане размера здесь нет ничего особенного, но это лишь значит, что они будут надежны в любой роли!",
+			"Посмотри на этот сочный член, разве он не идеален? Ничего особенного... но иногда особенное и не нужно. Иногда тебе просто нужен хороший сочный член!",
 		]))
 	if(_slaveTraits.has("PenisLong") && _slaveTraits["PenisLong"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Now here’s something that’ll grab your attention - this slave is packing. Long and thick, ready for action at any time!",
-			"Check this out! With a cock this size, this slave is built to please. It’s the kind of tool you don’t often find in the market, folks.",
-			"Look at {slave.his} cock! Impressive, isn’t it? This long cock is perfect for those of you who want a slave that can pleasure even the most demanding of owners.",
-			"Look between {slave.his} legs. A cock like this is more than just a weapon - it’s an asset. Long, thick, and ready to serve your every desire.",
-			"This slave’s cock is big enough to satisfy even the most demanding bidder. A real prize for those who want more than just average.",
-			"Look between {slave.his} legs. You don’t come across a cock like this every day. It’s long, it’s thick, and it’s ready for action. This alone deserves to get some high bids!",
+			"А вот это уже то, что заставит тебя обратить внимание — у этого раба есть чем поживиться. Длинный и толстый, готовый к действию в любое время!",
+			"Зацени! С таким членом этот раб создан для удовольствия. Ребята, такой инструмент на рынке встретишь нечасто.",
+			"Взгляни на член {slave.his}! Впечатляет, не так ли? Этот длинный член идеально подходит для тех, кто хочет раба, способного доставить удовольствие даже самым требовательным хозяевам.",
+			"Загляни между ног {slave.his}. Такой член — это больше, чем просто оружие, это настоящий актив. Длинный, толстый и готовый исполнить любое твое желание.",
+			"Член этого раба достаточно велик, чтобы удовлетворить даже самого требовательного участника торгов. Настоящий приз для тех, кому мало среднего.",
+			"Загляни между ног {slave.his}. Не каждый день выпадает шанс увидеть такой член. Он длинный, толстый и уже готов к делу. Одно только это заслуживает того, чтобы за него выставили бешеные ставки!",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Mind, mightChance())

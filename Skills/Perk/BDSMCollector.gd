@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Коллекционер снаряжения"
 
 func getVisibleDescription():
-	return "You learned how to struggle out of restraints without breaking them, you can now store them for later use"
+	return "Вы научились выбираться из пут, не повреждая их, и теперь можете припрятать их для использования в будущем."
 
 func getSkillTier():
 	return 0

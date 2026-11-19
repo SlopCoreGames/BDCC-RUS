@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Мать года"
 
 func getVisibleDescription():
-	return "The corporation has noticed your efforts and wants to reward you!\n" \
+	return "Корпорация заметила твои старания и хочет вознаградить тебя!\n" \
 			+ "You receive a 'Maternal Glow' status effect for 2 days after giving birth.\n" \
 			+ "AlphaCorp will transfer credits to you for each birth (up to 20 per birth)."
 	

@@ -21,10 +21,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Artificial Heat"
+	return "Искусственное тепло"
 
 func getEffectDesc():
-	return "3 lust per turn. " + str(turns) + " more turns"
+	return "3 похоти за ход. " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/smoke-bomb.png"

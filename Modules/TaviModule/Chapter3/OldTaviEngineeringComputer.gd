@@ -12,33 +12,33 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				var tolearn = _args[0]
 				
 				if(tolearn == "disconnect"):
-					return "Closes the connection"
+					return "Разрывает соединение"
 				elif(tolearn == "mode"):
-					return "Changes the operation mode of the door.\n'mode 0' is normal operation\n'mode 9' is maintenance mode"
-				return "No help found for that command"
+					return "Изменяет режим работы двери.\n'mode 0' — обычный режим\n'mode 9' — режим обслуживания"
+				return "Для этой команды справка не найдена"
 			learnCommand("disconnect")
 			learnCommand("mode")
-			return "Available commands:\ndisconnect\nmode"
+			return "Доступные команды:\ndisconnect\nmode"
 		
 		if(_command == "disconnect"):
 			if(_args.size() == 0):
 				connectedTo = ""
 				return "Disconnecting... Success"
 			else:
-				return "'disconnect' command expects 0 arguments"
+				return "Команда 'disconnect' ожидает 0 аргументов"
 		
 		if(_command == "mode"):
 			if(_args.size() == 1):
 				var modeStr = _args[0]
 				if(modeStr == "0"):
-					return "The door is already operating in this mode"
+					return "Дверь уже работает в этом режиме"
 				elif(modeStr == "9"):
 					markFinished()
-					return "Switching the door to the maintenance mode! Warning, anyone will be able to open it. Switch back to mode 0 when done."
-				return "Error, unsupported mode. Type 'help mode' for more information"
+					return "Переключение двери в режим обслуживания! Внимание: теперь её сможет открыть кто угодно. По завершении верните режим на 0."
+				return "Ошибка: неподдерживаемый режим. Введите 'help mode' для подробностей"
 			else:
-				return "'mode' command expects 1 argument. Type 'help mode' for more information"
-		return "Error, unknown command. Use 'help' to list all available commands"
+				return "Команда 'mode' ожидает 1 аргумент. Введите 'help mode' для подробностей"
+		return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 	
 	if(connectedTo == "127.0.69"):
 		if(_command == "help"):
@@ -46,22 +46,22 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				learnCommand("disconnect")
 				learnCommand("ls")
 				learnCommand("cat")
-				return "Available commands:\ndisconnect\nls\ncat"
+				return "Доступные команды:\ndisconnect\nls\ncat"
 			else:
-				return "'help' command expects 0 arguments. Server owner is too lazy to write descriptions for each command."
+				return "Команда 'help' ожидает 0 аргументов. Владелец сервера слишком ленив, чтобы писать описания к каждой команде."
 		
 		if(_command == "disconnect"):
 			if(_args.size() == 0):
 				connectedTo = ""
 				return "Disconnecting... Success"
 			else:
-				return "'disconnect' command expects 0 arguments"
+				return "Команда 'disconnect' ожидает 0 аргументов"
 		
 		if(_command == "ls"):
 			if(_args.size() == 0):
-				return "Found files:\n1 - porn.png\n2 - sex.png\n3 - mouwse.png\n4 - railme.png"
+				return "Найденные файлы:\n1 - porn.png\n2 - sex.png\n3 - mouwse.png\n4 - railme.png"
 			else:
-				return "'ls' command expects 0 arguments"
+				return "Команда 'ls' ожидает 0 аргументов"
 			
 		if(_command == "cat"):
 			if(_args.size() == 1):
@@ -74,11 +74,11 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 					return "mouwse.png\n\n[font=res://Fonts/smallconsolefont.tres]"+Util.readFile("res://Images/asciiporn/taviquest/mouwse.txt")+"[/font]"
 				if(fileToShow in ["4", "railme.png"]):
 					return "railme.png\n\n[font=res://Fonts/smallconsolefont.tres]"+Util.readFile("res://Images/asciiporn/taviquest/railme.txt")+"[/font]"
-				return "No file found with such index!"
+				return "Файл с таким индексом не найден!"
 			else:
-				return "'cat' command expects 1 argument"
+				return "Команда 'cat' ожидает 1 аргумент"
 		
-		return "Error, unknown command. Use 'help' to list all available commands"
+		return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 	
 	
 	
@@ -89,11 +89,11 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				if(server in ["127.0.69", "127.0.10"]):
 					connectedTo = server
 					if(server == "127.0.69"):
-						return "Connecting to "+server+"... Connected!\nWelcome to horny bread's secret lair. We have a strict NO PANTS policy. Please enjoy yourself!\nTo see what commands this server supports type 'help'"
+						return "Подключение к "+server+"... Подключено!\nДобро пожаловать в секретное логово horny bread. У нас строгий дресс-код: БЕЗ ШТАНОВ. Повеселитесь!\nЧтобы увидеть список доступных команд, введите 'help'"
 					if(server == "127.0.10"):
-						return "Connecting to "+server+"... Connected!\nDoor status: LOCKED\nLast maintenance: [cuss]9999999[/cuss] days ago"
+						return "Подключение к "+server+"... Подключено!\nСтатус двери: ЗАБЛОКИРОВАНА\nПоследнее обслуживание: [cuss]9999999[/cuss] дн. назад"
 				else:
-					return "Connecting to "+server+"... Connection failed!"
+					return "Подключение к "+server+"... Соединение разорвано!"
 			else:
 				return "'connect' expects 1 argument"
 		
@@ -101,50 +101,50 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 			if(_args.size() == 0):
 				return "Found 2 files:\n1 - readme.txt\n2 - forum.html"
 			else:
-				return "This command expects 0 arguments"
+				return "Команде требуется 0 аргументов"
 		if(_command == "cat"):
 			if(_args.size() == 1):
 				var fileIndex = _args[0]
 				if(fileIndex in ["1", "readme.txt"]):
-					return "Useful shit:\n1[cuss]27.0.69[/cuss] - Server with some porn, I know you would find it eventually, you degenerates\n127.0.10 - bluespace transmitter door, don't touch it unless you were told to\n\nDon't bug me about how to connect to these, RTFM. Or type 'help connect' if you never worked with a terminal before."
+					return "Полезное дерьмо:\n1[cuss]27.0.69[/cuss] - Сервер с порнухой, знаю, вы всё равно рано или поздно его найдёте, дегенераты\n127.0.10 - дверь передатчика блюспейса, не трогай, если тебе не велели\n\nИ не ебите мне мозг вопросами о том, как к ним подключиться, читайте мануалы, блять. Или введите 'help connect', если вы до этого ни разу с терминалом не работали."
 				elif(fileIndex in ["2", "forum.html"]):
-					return "...**[corrupt]corrupted data[/corrupt]**...\n\n<message>Why the fuck are we using such outdated hardware?</message>\n<message>If it works, don't fix it. It's a piece of shit but you're not gonna play doom on it, this machine supports telnet and that's all we need.</message>\n<message>The fuck is telnet?</message>\n<message>It's what we used before bluespace got discovered. Just read the fucking readme already.</message>\n\n...**[corrupt]more corrupted data[/corrupt]**..."
+					return "...**[corrupt]повреждённые данные[/corrupt]**...\n\n<message>Какого хуя мы юзаем такое устаревшее железо?</message>\n<message>Работает — не трогай. Это кусок говна, но ты же не собираешься запускать на нём Doom, эта машина поддерживает telnet, и этого нам за глаза.</message>\n<message>Что ещё за telnet?</message>\n<message>То, чем мы пользовались ещё до открытия блюспейса. Просто прочитай уже этот ебаный readme.</message>\n\n...**[corrupt]ещё больше повреждённых данных[/corrupt]**..."
 				elif(fileIndex in ["tuna", "tunya"]):
-					return "cat program thanks you for tunya :3"
+					return "cat говорит тебе «туня» :3"
 				else:
-					return "Error. File with such index wasn't found"
+					return "Ошибка. Файл с таким индексом не найден"
 			else:
 				learnCommand("tunya")
-				return "'cat' expects 1 argument (or tunya)"
+				return "'cat' ожидает 1 аргумент (или tunya)"
 		
 		if(_command == "help"):
 			if(_args.size() == 1):
 				var tolearn = _args[0]
 				if(tolearn == "help"):
-					return "This command outputs all other commands and can also provide help for certain command by typing 'help <COMMAND>'"
+					return "Эта команда выводит список всех остальных команд, а также может помочь с определённой командой, если ввести 'help <КОМАНДА>'"
 				elif(tolearn == "ls"):
-					return "This command outputs the contents of your harddrive"
+					return "Эта команда выводит содержимое вашего жёсткого диска"
 				elif(tolearn == "cat"):
-					return "This command outputs file's contents into the console.\nSyntax 'cat <FILE INDEX>' where file index is a [b]number[/b] that can be obtained by using the ls command"
+					return "Эта команда выводит содержимое файла в консоль.\nСинтаксис: 'cat <ИНДЕКС_ФАЙЛА>', где индекс файла — это [b]число[/b], которое можно получить с помощью команды ls"
 				elif(tolearn == "connect"):
-					return "This command lets you connect to the remote server by using its ip.\nSyntax 'connect <IP>'. An example of an ip is 127.0.1"
+					return "Эта команда позволяет подключиться к удаленному серверу по его IP-адресу.\nСинтаксис: 'connect <IP>'. Пример IP-адреса: 127.0.1"
 				elif(tolearn == "tunya"):
-					return "What are you doing? Give the tunya to the cat!"
+					return "Ты что творишь? Отдай туню коту!"
 				else:
-					return "Couldn't find command '"+str(tolearn)+"'. To see all the available commands type 'help'"
+					return "Команда '"+str(tolearn)+"' не найдена. Чтобы увидеть все доступные команды, введите 'help'"
 				
 			elif(_args.size() == 0):
 				learnCommand("help")
 				learnCommand("ls")
 				learnCommand("cat")
 				learnCommand("connect")
-				return "Available commands are: ls, cat, connect, help.\nTo learn more about a command type 'help <COMMAND>'"
+				return "Доступные команды: ls, cat, connect, help.\nЧтобы узнать больше о команде, введите 'help <КОМАНДА>'"
 			else:
 				learnCommand("help")
 				return "'help' expects 0 or 1 arguments"
 			
 		learnCommand("help")
-		return "Error, unknown command. Use 'help' to list all available commands"
+		return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 
 var tutorialData = [
 	["*", "This minigame simulates a simple console. If you ever used cmd or bash, you will feel right at home. Otherwise, just follow this tutorial.", "type anything"],

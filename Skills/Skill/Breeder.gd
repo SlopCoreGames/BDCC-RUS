@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Осеменитель"
 
 func getVisibleDescription():
-	return "Shows how much you like to cum inside others and breed them"
+	return "Показывает, насколько сильно вам нравится кончать в других и оплодотворять их"
 
 func getPerkTiers():
 	return [

@@ -131,7 +131,7 @@ func _react(_action: String, _args):
 
 	if(_action == "talk_it_out"):
 		GM.pc.addPain(20)
-		addMessage("Ow, that was slightly painful")
+		addMessage("Ой, было немного больно")
 
 	if(_action == "endthescene"):
 		endScene()

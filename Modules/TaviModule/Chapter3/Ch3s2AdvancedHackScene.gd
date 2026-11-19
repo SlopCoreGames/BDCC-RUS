@@ -42,7 +42,7 @@ func _react_scene_end(_tag, _result):
 		if(_result is Array):
 			if(_result[0] == true):
 				processTime(10*60)
-				addMessage("You got 50 credits! But there is something else too..")
+				addMessage("Ты получил 50 кредитов! Но есть и кое-что ещё...")
 				addItemToSavedItems(GlobalRegistry.createItem("HorsecockDildo"))
 				GM.pc.addCredits(50)
 				addExperienceToPlayer(100)

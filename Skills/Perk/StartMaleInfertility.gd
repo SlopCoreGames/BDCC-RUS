@@ -5,10 +5,10 @@ func _init():
 	skillGroup = Skill.Start
 
 func getVisibleName():
-	return "Мужское бесплодие"
+	return "Бесплодие (М)"
 
 func getVisibleDescription():
-	return "Your cum can't get anyone pregnant no matter what"
+	return "Твоя сперма не может никого зачать, что бы ты ни делал"
 	
 func hiddenWhenLocked() -> bool:
 	return true

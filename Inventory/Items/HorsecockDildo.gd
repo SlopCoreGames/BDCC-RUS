@@ -12,14 +12,14 @@ func getDescription():
 func getPossibleActions():
 	return [
 		{
-			"name": "Transfer fluids",
+			"name": "Перекачать жидкость",
 			"scene": "FluidTransferScene",
-			"description": "Transfer the fluids between fluid containers",
+			"description": "Перелить жидкость из одного контейнера в другой",
 		},
 		{
-			"name": "Ride it!",
+			"name": "Оседлай его!",
 			"scene": "HorsecockDildoScene",
-			"description": "Use it for your pleasure",
+			"description": "Используй его для своего удовольствия",
 			"onlyWhenCalm": true,
 		},
 	]

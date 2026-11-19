@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Фиксация на ключевых словах"
 
 func getVisibleDescription():
-	return "You find your thoughts lingering on certain words as they are spoken."
+	return "Вы замечаете, что ваши мысли задерживаются на определенных словах, когда они произносятся."
 	
 func getMoreDescription():
-	return "While in "+HypnokinkUtil.tranceIcon()+"Trance, hearing one of the keywords slightly deepens your hypnosis and increases your [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] and arousal by a small amount."
+	return "Находясь в "+HypnokinkUtil.tranceIcon()+"трансе, услышав одно из ключевых слов, вы чувствуете, как гипноз слегка усиливается, а ваша [color="+DamageType.getColorString(DamageType.Lust)+"]похоть[/color] и возбуждение немного возрастают."
 
 func getSkillTier():
 	return 0

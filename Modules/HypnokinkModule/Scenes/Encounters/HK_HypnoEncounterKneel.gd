@@ -44,20 +44,20 @@ func _run():
 		if(!(npcVariation in ["mean", "kind"])):
 
 			saynn("[say=npc]"+RNG.pick([
-				"Now kneel.",
-				"Be a good {pc.boy} and kneel for me.",
-				"Get on your knees.",
-				"Your place is on your knees.",
-				"You'd look a lot better on your knees."
+				"А теперь — на колени.",
+				"Будь хорошей {pc.boy} и преклони колени перед мной.",
+				"Встань на колени.",
+				"Твое место — на коленях.",
+				"На коленях ты будешь смотреться куда лучше."
 			])+"[/say]")
 			
 			saynn("Ты медленно опускаешься на колени перед {npc.him}.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"I'll be back. Wait here.",
-				"Now stay.",
-				"Wait right here.",
-				"Don't go anywhere.",
+				"Я скоро вернусь. Жди здесь.",
+				"А теперь — стой смирно.",
+				"Жди прямо здесь.",
+				"Никуда не уходи.",
 			])+"[/say]")
 			
 			saynn("{npc.Name} разворачивается и уходит, оставляя тебя стоять на коленях на земле.")
@@ -66,22 +66,22 @@ func _run():
 		if(npcVariation == "mean"):
 
 			saynn("[say=npc]"+RNG.pick([
-				"Now kneel.",
-				"Be a good toy and get down on your knees.",
-				"Kneel, bitch.",
-				"Kneel, you slut.",
-				"On your knees, whore.",
-				"You belong on your knees.",
+				"А теперь — на колени.",
+				"Будь хорошей игрушкой и встань на колени.",
+				"На колени, сучка.",
+				"На колени, шлюха.",
+				"На колени, блядь.",
+				"Твое место — на коленях.",
 			])+"[/say]")
 			
 			saynn("{npc.He} {npc.verb('push', 'pushes')} тебя на колени.")
 
 			saynn("[say=npc]"+RNG.pick([
-				"Wait here, if you know what's good for you.",
-				"Don't even think about going anywhere.",
-				"Now stay, slut.",
-				"Be a good pet and stay right here.",
-				"Don't go anywhere, or you'll regret it.",
+				"Жди здесь, если не хочешь проблем.",
+				"Даже не вздумай куда-то уходить.",
+				"А теперь сиди смирно, шлюшка.",
+				"Будь послушным питомцем и стой прямо здесь.",
+				"Не смей двигаться, иначе пожалеешь.",
 			])+"[/say]")
 			
 			saynn("{npc.Name} разворачивается и вальяжно уходит.")
@@ -90,20 +90,20 @@ func _run():
 		if(npcVariation == "kind"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Would you be a good {pc.boy} and kneel for me?",
-				"Wouldn't you like to kneel for me?",
-				"Be good and kneel for me.",
-				"Get on your knees, please?",
+				"Будешь хорошей {pc.boy} и встанешь предо мной на колени?",
+				"Разве тебе не хочется опуститься передо мной на колени?",
+				"Будь паинькой и встань на колени.",
+				"Встань на колени, пожалуйста.",
 			])+"[/say]")
 			
 			saynn("Ты чувствуешь непреодолимое желание подчиниться, когда {npc.he} мягко направляет тебя на колени.")
 				
 			saynn("[say=npc]"+RNG.pick([
-				"I'll be back before you can blink, okay?",
-				"Back in just a moment!",
-				"Now just wait right there...",
-				"Now don't wander off while I'm gone!",
-				"Be good and wait here for me."
+				"Я вернусь быстрее, чем ты успеешь моргнуть, идет?",
+				"Вернусь через мгновение!",
+				"А теперь просто жди здесь...",
+				"И не вздумай уйти, пока меня нет!",
+				"Будь послушной и жди меня здесь."
 			])+"[/say]")
 			
 			saynn("{npc.He} {npc.verb('shoot')} тебе улыбку и {npc.verb('run')} куда-то прочь.")
@@ -120,19 +120,19 @@ func _run():
 		playAnimation(StageScene.Solo, "kneel")
 		
 		saynn(RNG.pick([
-				"You remain on your knees.",
-				"You could stand up and walk away at any time, yet you continue kneeling.",
-				"You kneel.",
-				"You stay on your knees.",
-				"You can't seem to get up.",
+				"Ты остаешься на коленях.",
+				"Ты могла бы встать и уйти в любой момент, но продолжаешь стоять на коленях.",
+				"Ты опускаешься на колени.",
+				"Ты остаешься на коленях.",
+				"Кажется, ты никак не можешь подняться.",
 			]))
 		
 		saynn(RNG.pick([
-				"Why are you still here? You should stand up and move on, but you...",
-				"At any time, you could...",
-				"Now. Now's the time to...",
-				"You want to be a good {pc.boy} for {npc.him} and...",
-				"You really should just...",
+				"Почему ты всё еще здесь? Тебе стоит встать и идти дальше, но ты...",
+				"В любой момент ты могла бы...",
+				"Сейчас. Самое время...",
+				"Ты хочешь быть послушной {pc.boy} для {npc.him} и...",
+				"Тебе действительно стоит просто...",
 			]))
 			
 		HypnokinkUtil.addHypnoButtons(self, "kneel", "resist", ["Kneel", "Remain", "Stay", "Not move"], ["Get up", "Resist", "Stand"])
@@ -147,9 +147,9 @@ func _run():
 		if(!(npcVariation in ["mean", "kind"])):
 
 			saynn("[say=npc]"+RNG.pick([
-				"Still here? Good {pc.boy}.",
-				"You're pretty deep, huh?",
-				"I see you're good at staying put."
+				"Всё еще здесь? Хорошая {pc.boy}.",
+				"Ты довольно глубоко зашла, а?",
+				"Вижу, ты умеешь сидеть смирно."
 			])+"[/say]")
 			
 			
@@ -175,9 +175,9 @@ func _run():
 		if(npcVariation == "mean"):
 
 			saynn("[say=npc]"+RNG.pick([
-				"Knew you were a bitch.",
-				"Still here? Good pet.",
-				"Heh. You're such a slut.",
+				"Знала, что ты еще та сучка.",
+				"Все еще здесь? Хорошая зверушка.",
+				"Хех. Ну ты и шлюшка.",
 			])+"[/say]")
 			
 			if(!(GM.pc.buffsHolder.hasBuff(Buff.RingGagBuff))):
@@ -202,10 +202,10 @@ func _run():
 		if(npcVariation == "kind"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"What a good {pc.boy}!",
-				"Just where I left you.",
-				"Aw, still waiting for me? Good {pc.boy}!",
-				"I'm back! Did you miss me?",
+				"Какая послушная {pc.boy}!",
+				"Прямо там, где я тебя оставила.",
+				"Оу, все еще ждешь меня? Умница, {pc.boy}!",
+				"Я вернулась! Скучала?",
 			])+"[/say]")
 			
 			saynn("[say=npc]Если будешь послушной, я приготовила для тебя небольшой приз.[/say]")
@@ -257,18 +257,18 @@ func _run():
 			if(npc.hasPenis()):
 				saynn("{npc.He} {npc.verb('place')} {npc.his} "+dickWord+" прямо перед твоим ртом, совершенно не заботясь о твоем комфорте, с силой втискивается внутрь. {npc.His}"+dickWord+" легко скользит по твоему языку и уже через несколько мгновений упирается в заднюю стенку горла.")
 				saynn("[say=npc]"+RNG.pick([
-					"Don't stop there, you can do better than that.",
-					"Open wider, slut~",
-					"It's gonna go a lot deeper than this.",
-					"Be obedient and take it deeper for me."
+					"Не останавливайся, ты можешь лучше.",
+					"Открой ротик пошире, шлюшка~",
+					"Всё будет куда глубже, чем это.",
+					"Будь послушной и заглоти поглубже для меня."
 					])+"[/say]")
 				saynn("Твой разум погружается в океан покорности. Ты жаждешь продолжать пробовать на вкус {npc.his}"+dickWord+", это так приятно...")
 			else:
 				saynn("{npc.He} {npc.verb('place')} {npc.his} подставляет свою мокрую киску прямо перед твоим ртом, совершенно не заботясь о твоем комфорте, и {npc.verb('clamp')} твою голову между своих {npc.his} бедер. Поняв намек, ты высовываешь язык и начинаешь слизывать влагу.")
 				saynn("[say=npc]"+RNG.pick([
-					"More. You can do better than that.",
-					"Work that tongue, slut~",
-					"I'm gonna make you my personal toy.",	
+					"Ещё. Ты можешь лучше.",
+					"Работай язычком, сучка~",
+					"Я сделаю тебя своей личной игрушкой.",	
 					])+"[/say]")
 				saynn("Твой разум погружается в океан покорности. Тебе хочется продолжать пробовать {npc.his} киску, это так приятно...")
 				sucking = false
@@ -278,10 +278,10 @@ func _run():
 			#always uses strapon
 			saynn("Не теряя ни секунды, {npc.he} {npc.verb('thrust')} {npc.his} "+dickWord+"прямо тебе в рот. Не тратя времени впустую, {npc.he} {npc.verb('begin')} начинает вколачивать свой член тебе в лицо, с каждым толчком заталкивая его всё глубже в твое горло.")
 			saynn("[say=npc]"+RNG.pick([
-				"Gag on it, bitch.",
-				"Take it deep, slut.",
-				"Fits like a glove. Am I right, pet?",
-				"You're my personal fuckhole now."
+				"Давись им, сука.",
+				"Принимай глубоко, шлюшка.",
+				"Сидит как влитой. Я прав, питомец?",
+				"Теперь ты моя личная дырка для траха."
 				])+"[/say]")
 			saynn("Ты чувствуешь, как {npc.his} "+dickWord+"скользит в твоем рту, а нити слюны стекают на пол. Твой разум сдается под натиском удовольствия, когда ты...")
 				
@@ -290,18 +290,18 @@ func _run():
 			if(npc.hasPenis()):
 				saynn("{npc.He} осторожно {npc.verb('position')} {npc.his} "+dickWord+"перед твоим ртом, и медленно, нежно {npc.verb('push', 'pushes')} вводит его, давая тебе массу времени, чтобы ласкать его языком и наслаждаться вкусом. Когда {npc.he} {npc.isAre} удовлетворена, {npc.he} запускает пальцы в твои волосы на затылке, чтобы привлечь твое внимание.")
 				saynn("[say=npc]"+RNG.pick([
-					"Are you ready for me?",
-					"Let's go a bit deeper now.",
-					"You can take it, right?",
-					"Open wide now~",
-					"Here it comes...",
+					"Ты готова ко мне?",
+					"А теперь давай зайдём чуть глубже.",
+					"Ты ведь справишься, верно?",
+					"А теперь широко~",
+					"Сейчас будет...",
 					])+"[/say]")
 			else:
 				saynn("{npc.He} {npc.verb('place')} {npc.his} подставляет свою мокрую киску перед твоим ртом и мягко {npc.verb('pulls')} твою голову между своих {npc.his} бедер. Поняв намек, ты высовываешь язык и начинаешь вылизывать {npc.his} влажные складки.")
 				saynn("[say=npc]"+RNG.pick([
-					"Got started right away, what a good {pc.boy}!",
-					"Show me what you can do with that tongue.",
-					"Very good, just like that...",
+					"Сразу же принялась за дело, какая послушная {pc.boy}!",
+					"Покажи мне, на что способен твой язычок.",
+					"Очень хорошо, вот так...",
 					])+"[/say]")
 				sucking = false
 			saynn("Ты пускаешь в ход язык. Твои мысли растворяются в блаженном послушании, и вскоре всё, что ты можешь — это...")
@@ -323,18 +323,18 @@ func _run():
 			if(npc.hasPenis()):
 				saynn("Ты обретаешь подобие сознания, когда {npc.nameS} рука сжимает затылок.")
 				saynn("[say=npc]"+RNG.pick([
-					"Anybody home?",
-					"No lights on in there...",
-					"Don’t tell me you’ve passed out on me already.",
-					"Going deeper? So am I!",
+					"Есть кто дома?",
+					"Там совсем темно...",
+					"Только не говори мне, что ты уже отключилась.",
+					"Уходишь глубже? Я тоже!",
 				])+"[/say]")		
 				saynn("{npc.He} {npc.verb('pick')} темп, каждый толчок становится всё настойчивее. Пока кончик {npc.his} "+dickWord+"проникает всё глубже и глубже в твое горло, за ним следует приятное онемение, позволяющее принимать это с удивительной легкостью и без протеста. Где-то на подсознательном уровне ты понимаешь, что в какой-то момент тебе, вероятно, придется вдохнуть...")			
 			else:
 				saynn("{npc.He} {npc.verb('shiver')} и крепко {npc.verb('squeeze')} твою голову между {npc.his} {npc.masc} бедер, вжимая твое лицо так, что ты едва можешь дышать. Потерявшись в моменте, ты усердно облизываешь {npc.his} складки и сосешь {npc.his} клитор.")
 				saynn("[say=npc]"+RNG.pick([
-					"You- you're pretty good at this~",
-					"Ooh, that hits the spot!",
-					"Don't you dare fucking stop, slut.",
+					"Ты... ты чертовски хороша в этом~",
+					"О-о, прямо в точку!",
+					"Только попробуй, блять, остановиться, сучка.",
 					])+"[/say]")
 				sucking = false	
 			saynn("Ты просто не можешь остановиться! Ты хочешь и дальше быть хорошей {pc.boy} для {npc.him}! Ты хочешь...")
@@ -343,10 +343,10 @@ func _run():
 		if(npcVariation == "mean"):
 			saynn("Ты обретаешь подобие сознания, когда {npc.nameS} рука болезненно сжимает твой затылок.")
 			saynn("[say=npc]"+RNG.pick([
-				"Don't pass out on me yet, pet.",
-				"I'm nowhere near done, slut.",
-				"Hey whore, no sleeping on the job, keep sucking!",
-				"Be a good bitch and work that tongue!",
+				"Не вздумай отключаться, питомец.",
+				"Я еще даже близко не закончил, шлюха.",
+				"Эй, шлюха, не дрыхни на работе, соси давай!",
+				"Будь хорошей сучкой и работай языком!",
 			])+"[/say]")
 			saynn("Ты чувствуешь, как {npc.him} заходит еще глубже, чем прежде. Тебе нравится ощущение того, что тебя используют исключительно для [i]{npc.his}[/i] удовольствия. Ты могла бы это прекратить, но ты хочешь быть хорошей сучкой для {npc.him}, ты хочешь...")
 				
@@ -355,18 +355,18 @@ func _run():
 			if(npc.hasPenis()):
 				saynn("Ты обретаешь подобие сознания, когда {npc.nameS} рука поглаживает твой затылок.")
 				saynn("[say=npc]"+RNG.pick([
-					"Wakey wakey...",
-					"Hey now, don't pass out on me.",
-					"Are you okay? You want to keep going, right?",
-					"Looks like you're having fun~",
+					"Просыпайся, соня...",
+					"Ну же, не отключайся прямо на мне.",
+					"Ты в порядке? Хочешь продолжать, да?",
+					"Похоже, тебе весело~",
 				])+"[/say]")
 				saynn("{npc.He} {npc.verb('pick')} темп, каждый толчок становится всё настойчивее. Пока кончик {npc.his} "+dickWord+"проникает всё глубже и глубже в твое горло, за ним следует приятное онемение, позволяющее принимать это с удивительной легкостью и без протеста. Где-то на подсознательном уровне ты понимаешь, что в какой-то момент тебе, вероятно, придется вдохнуть...")
 			else:
 				saynn("{npc.He} {npc.verb('shiver')} и крепко {npc.verb('squeeze')} твою голову между {npc.his} {npc.masc} бедер, вжимая твое лицо так, что ты едва можешь дышать. Потерявшись в моменте, ты усердно облизываешь {npc.his} складки и сосешь {npc.his} клитор.")
 				saynn("[say=npc]"+RNG.pick([
-						"You're pretty good at this~",
-						"Ooh, that hits the spot!",
-						"K-keep going, just like that.",
+						"А ты неплохо справляешься~",
+						"О-о, прямо в точку!",
+						"П-продолжай, вот так же.",
 					])+"[/say]")
 				sucking = false
 			saynn("Ты просто не можешь остановиться! Ты хочешь и дальше быть хорошей {pc.boy} для {npc.him}! Ты хочешь...")
@@ -386,16 +386,16 @@ func _run():
 		if(!(npcVariation in ["mean", "kind"])):
 			if(npc.hasPenis()):
 				saynn("[say=npc]"+RNG.pick([
-					"I’m gonna-",
-					"Get ready-",
-					"Nnnh! Swallow for me!",
+					"Я сейчас...",
+					"Приготовься...",
+					"Нннх! Глотай для меня!",
 				])+"[/say]")
 				saynn("Края твоего зрения начинают расплываться. {npc.He} {npc.verb('grip')} твою голову, и последним мощным толчком он кончает тебе прямо в глотку. Покорно ты сглатываешь, пока {npc.he} {npc.verb('pump')} глубоко внутри тебя; всё происходит почти механически, ты инстинктивно заглатываешь каждую каплю. Прямо перед тем, как ты теряешь сознание от нехватки воздуха, {npc.name} наконец {npc.verb('pull')}. Ты остаешься тяжело дышать, всё еще стоя на коленях и выглядя как жадная шлюшка, а остатки спермы стекают с твоего языка.")	
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"Ah! Y-you're gonna make me cum!",
-					"Keep at it! I'm gonna burst soon!",
-					"Get ready for me, I'm gonna cum!",
+					"Ах! Т-ты меня сейчас доведешь!",
+					"Так держать! Я сейчас кончу!",
+					"Готовься, я сейчас кончу!",
 				])+"[/say]")
 				saynn("Ты готовишься, когда {npc.he} {npc.verb('grip')} твою голову, вжимая тебя в {npc.his} похотливую влажность, пока {npc.he} {npc.verb('cum')} наотмашь. {npc.His} соки вливаются тебе в глотку, а несколько капель вырываются по краям твоего кляпа; {npc.name} крепко сжимает затылок, пока {npc.he} {npc.verb('orgasm')}, оставляя тебя тяжело дышащей и жаждущей добавки...")	
 			saynn("Ты сделала это! Надеешься, что была хорошей {pc.boy} для {npc.him}, проглотив всю эту вкусную влагу, пока ты продолжаешь...")		
@@ -403,12 +403,12 @@ func _run():
 		# (mean version)
 		if(npcVariation == "mean"):
 			saynn("[say=npc]"+RNG.pick([
-				"Oh fuck! Your mouth-pussy is gonna make me cum!",
+				"Охуеть! Твой рот-писька меня сейчас сведет с ума!",
 				"...",
-				"Ready to take my load, you stupid fuckdoll?",
-				"Now be a good bitch in heat and make me cum!",
-				"Take it all, whore!",
-				"I'm gonna leave you begging for more!",
+				"Готова принять мой груз, тупая ты кукла?",
+				"А теперь будь хорошей сучкой в течке и доведи меня до конча!",
+				"Принимай всё до последней капли, шлюха!",
+				"Я заставлю тебя умолять о добавке!",
 			])+"[/say]")
 			if(npc.hasPenis()):
 				saynn("У тебя почти нет времени подготовиться, как {npc.he} {npc.verb('shove')} {npc.his} "+dickWord+" так глубоко в твой рот, насколько он физически может, отчего твои глаза закатываются, когда ты чувствуешь, как {npc.his} член начинает пульсировать, посылая одну волну спермы за другой глубоко в твою глотку. Ты инстинктивно всё заглатываешь — ты хочешь удовлетворить {npc.him}.")	
@@ -421,16 +421,16 @@ func _run():
 		if(npcVariation == "kind"):
 			if(npc.hasPenis()):
 				saynn("[say=npc]"+RNG.pick([
-					"Swallow for me, beautiful~",
-					"Get ready to take it all!",
-					"Ah! I'm gonna cum soon, prepare yourself!",
+					"Сглотни для меня, красавица~",
+					"Готовься принять всё подчистую!",
+					"Ах! Я сейчас кончу, готовься!",
 				])+"[/say]")
 				saynn("Края твоего зрения начинают расплываться. {npc.He} {npc.verb('grip')} прижимает твою голову крепче и последним мощным толчком {npc.verb('cum')} вгоняет прямо тебе в глотку. Послушно ты сглатываешь, когда {npc.he} {npc.verb('pump')} глубоко в тебя; это движение почти механическое — ты инстинктивно заглатываешь каждую каплю. Стараясь не дать тебе отключиться от нехватки воздуха, {npc.name} быстро вытаскивает стрэп-он. Ты остаешься тяжело дышать, все еще стоя на коленях и выглядя как изрядно использованный питомец, с остатками спермы, стекающими с твоего языка.")
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"Ahh! You feel so fucking good!",
-					"Get ready to take it all!",
-					"Ah! I'm gonna cum!",
+					"Ааа! Ты чертовски приятная!",
+					"Готовься принять всё до капли!",
+					"Ах! Сейчас кончу!",
 				])+"[/say]")
 				saynn("Ты готовишься, пока {npc.he} {npc.verb('grip')} твою голову, вжимая тебя в {npc.his} похотливую влагу, пока {npc.he} {npc.verb('cum')} твердеет. {npc.His} соки заставляют глотать, пара капель вырывается из уголков твоего кляпа, {npc.name} поглаживая затылок, пока {npc.he} {npc.verb('orgasm')}, пока наконец ты не остаешься тяжело дышащей и жаждущей добавки...")	
 			saynn("Ты сделала это! Надеюсь, ты была хорошей {pc.boy} для {npc.him}, проглотив всю эту вкусную влагу. Ты смотришь вверх на {npc.him}, на твоем лице читается полная покорность, пока ты продолжаешь...")	
@@ -481,11 +481,11 @@ func _run():
 	if(state == "resist"):
 		saynn("Ты начинаешь подниматься, находясь на грани того, чтобы разрушить чары.")
 		saynn("[say=pc]"+RNG.pick([
-			"Wait, what am I...", 
-			"Where am I...", 
-			"Why am I...", 
-			"Wait a minute-", 
-			"But why should I-"
+			"Погоди, что я...", 
+			"Где я...", 
+			"Почему я...", 
+			"Погоди-ка...", 
+			"Но почему это я должен..."
 			])+"[/say]")
 		
 		saynn("Но теперь, когда ты знаешь, что [i]можешь[/i] уйти, тебе действительно стоит просто...")

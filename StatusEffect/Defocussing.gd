@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Defocussing"
+	return "Рассеивание внимания"
 
 func getEffectDesc():
-	return "You do your best to avoid getting aroused. " + str(turns) + " more turns"
+	return "Вы изо всех сил стараетесь не возбуждаться. " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/ice-iris.png"

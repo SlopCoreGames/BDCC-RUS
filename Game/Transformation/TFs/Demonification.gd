@@ -48,7 +48,7 @@ func getUnlockData() -> Dictionary:
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
-				desc = "(Submissive sex) Ask if she is brave enough to try her own product. She will probably become horny and dominant.. very dominant..",
+				desc = "(Покорный секс) Спросить, хватит ли ей смелости попробовать собственный продукт. Вероятно, она возбудится и станет доминантной... очень доминантной...",
 				sceneID = "ElizaDrugTestDemoniXScene",
 			},
 		],

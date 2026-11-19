@@ -251,6 +251,6 @@ func _react(_action: String, _args):
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_hucow", false)):
 			setFlag("ElizaModule.tfcan_hucow", true)
-			addMessage("Eliza can grow big udders if you tell her to.")
+			addMessage("Элиза может отрастить огромные вымя, если ты ей прикажешь.")
 
 	setState(_action)

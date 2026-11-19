@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Cross species compatibility "+text+"%"
+	return "Межвидовая совместимость "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.extraCrossSpeciesCompatibility += (amount/100.0)

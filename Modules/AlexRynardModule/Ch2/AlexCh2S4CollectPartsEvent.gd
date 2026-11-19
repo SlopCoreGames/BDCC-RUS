@@ -9,7 +9,7 @@ func registerTriggers(es):
 
 func arun(_triggerID, _args):
 	if(!GM.main.getModuleFlag("CellblockModule", "Cellblock_GreenhouseLooted", false)):
-		addButtonUnlessLate("Steal", "Try and steal something", "steal_apple")
+		addButtonUnlessLate("Украсть", "Попробовать что-нибудь украсть", "steal_apple")
 	else:
 		addDisabledButton("Украсть", "Слишком опасно делать это снова сегодня")
 	
@@ -36,9 +36,9 @@ func onButton(_method, _args):
 		setFlag("AlexRynardModule.ch2StolePartsStorageDay", GM.main.getDays())
 		increaseFlag("AlexRynardModule.ch2FoundParts", 5)
 		addExperienceToPlayer(50)
-		addMessage("You have found 5 parts that Alex needs. You now have.. "+str(getFlag("AlexRynardModule.ch2FoundParts", 0)))
+		addMessage("Вы нашли 5 деталей, которые нужны Алексу. Теперь у вас.. "+str(getFlag("AlexRynardModule.ch2FoundParts", 0)))
 		if(getFlag("AlexRynardModule.ch2FoundParts", 0) >= 10):
-			addMessage("You have all the required parts, go talk to Eliza!")
+			addMessage("У вас есть все необходимые детали, идите поговорить с Элизой!")
 		GM.main.reRun()
 	
 	if(_method == "checkparts"):
@@ -46,7 +46,7 @@ func onButton(_method, _args):
 		increaseFlag("AlexRynardModule.ch2FoundParts")
 		
 		addExperienceToPlayer(10)
-		addMessage("You have found one of the parts that Alex needs. You now have.. "+str(getFlag("AlexRynardModule.ch2FoundParts", 0)))
+		addMessage("Вы нашли одну из деталей, которые нужны Алексу. Теперь у вас.. "+str(getFlag("AlexRynardModule.ch2FoundParts", 0)))
 		if(getFlag("AlexRynardModule.ch2FoundParts", 0) >= 10):
-			addMessage("You have all the required parts, go talk to Eliza!")
+			addMessage("У вас есть все необходимые детали, идите поговорить с Элизой!")
 		GM.main.reRun()

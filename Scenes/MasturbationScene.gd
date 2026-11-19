@@ -42,17 +42,17 @@ func _run():
 					saynn("Твое лицо краснеет еще сильнее, пока ты пытаешься как можно лучше прикрыть свои обнаженные прелести. [b]Тебе не хватает смелости, чтобы заняться чем-то сексуальным.[/b]")
 				
 				saynn(RNG.pick([
-					"[say=pc]What am I doing..[/say]",
-					"[say=pc]Should I stop.. But..[/say]",
-					"[say=pc]I’m gonna get caught.. I can’t..[/say]",
+					"[say=pc]Что же я делаю..[/say]",
+					"[say=pc]Может, стоит остановиться.. Но..[/say]",
+					"[say=pc]Меня же заметят.. Нельзя..[/say]",
 				]))
 			elif(GM.pc.getSkillLevel(Skill.Exhibitionism) < 2):
 				saynn("Это общественное место, вокруг люди, занятые своими делами. Ты гадаешь, как много тебе сойдет с рук; мысль о том, чтобы выставиться напоказ, проносится в голове, и ты не можешь ей сопротивляться — возбуждение уже нарастает. Если будешь осторожна, люди тебя даже не заметят... А может, ты как раз хочешь, чтобы они заметили... Ты не хочешь прятаться и решаешь оставаться почти на виду — как рискованно...")
 				
 				saynn(RNG.pick([
-					"[say=pc]I can’t believe myself..[/say]",
-					"[say=pc]Why do I want this so much..[/say]",
-					"[say=pc]Why does it feel so nice..[/say]",
+					"[say=pc]Самой себе не верю..[/say]",
+					"[say=pc]Почему мне этого так хочется..[/say]",
+					"[say=pc]Почему это так приятно..[/say]",
 				]))
 			else:
 				saynn("Мысль о том, чтобы заняться чем-то непристойным на людях, безумно тебя заводит. Вокруг полно народу, но тебе плевать на них — ты слишком возбуждена!")
@@ -60,9 +60,9 @@ func _run():
 				saynn("У тебя так и чешутся руки начать раздеваться, а может, и не только. После всей этой практики ты чувствуешь себя очень уверенно, демонстрируя свое тело. Щеки горят, и тебе не терпится поскорее начать.")
 				
 				saynn(RNG.pick([
-					"[say=pc]I so wanna touch myself..[/say]",
-					"[say=pc]Everyone’s watching.. Good.[/say]",
-					"[say=pc]Wonder how long will it take before I get noticed~.[/say]",
+					"[say=pc]Как же хочется потрогать себя..[/say]",
+					"[say=pc]Все смотрят.. И хорошо.[/say]",
+					"[say=pc]Интересно, сколько времени пройдет, прежде чем меня заметят~.[/say]",
 				]))
 			
 	if(state == "doLustAction"):
@@ -72,8 +72,8 @@ func _run():
 			saynn(spottedText)
 				
 	if(state == "" || state == "doLustAction"):
-		addButtonAt(13, "Do nothing", "Try not to attract any attention", "doidle")
-		addButtonAt(14, "Stop", "Enough horny", "endthescene")
+		addButtonAt(13, "Ничего не делать", "Стараться не привлекать внимания", "doidle")
+		addButtonAt(14, "Стой", "Хватит уже течь", "endthescene")
 		
 		
 		var lustCombatState:LustCombatState = GM.pc.getLustCombatState()
@@ -226,24 +226,24 @@ func spottedMessages():
 						spottedText = "One of the inmates exposes his canine cock and starts stroking himself while watching the show that you’re offering."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
-							"[sayMale]Yeah, wiggle that ass![/sayMale]",
-							"[sayMale]What a slut![/sayMale]",
-							"[sayMale]Don’t stop, whore. Give us a good show.[/sayMale]",
+							"[sayMale]Да, тряси этой задницей![/sayMale]",
+							"[sayMale]Ну и шлюшка![/sayMale]",
+							"[sayMale]Не останавливайся, сучка. Устрой нам шоу.[/sayMale]",
 						])
 					2:
 						spottedText = "A group of inmates turn around and catch the glimpses of your hands doing lewd things."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
-							"[sayMale]Look at {pc.him}, should we go help?[/sayMale]",
-							"[sayMale]Wow, {pc.he} {pc.isAre} making me want to fuck {pc.him}.[/sayMale]",
-							"[sayFemale]The boys can do whatever they want with that ass, {pc.his} face is mine~.[/sayFemale]",
+							"[sayMale]Глянь на {pc.him}, может, поможем ей?[/sayMale]",
+							"[sayMale]Охренеть, {pc.he} {pc.isAre} так и тянет оттрахать {pc.him}.[/sayMale]",
+							"[sayFemale]Пацаны могут делать с этой жопой что угодно, но лицо {pc.his} принадлежит мне~.[/sayFemale]",
 						])
 					3:
 						spottedText = "One of the inmate girls walks past and then spots what you are doing before taking a step back, blushing."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
-							"[sayFemale]H-hey, you can’t do that![/sayFemale]",
-							"[sayFemale]Um-m.. my bad.[/sayFemale]",
+							"[sayFemale]Э-эй, так нельзя![/sayFemale]",
+							"[sayFemale]М-м.. виновата.[/sayFemale]",
 						])
 					4:
 						spottedText = "An inmate creeps closer to you and watches you play with yourself, smiling."
@@ -251,11 +251,11 @@ func spottedMessages():
 						spottedText = "You notice the eyes of many inmates attached to you, it seems you are attracting quite an audience."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
-							"[sayMale]I wanna fuck {pc.him} first![/sayMale]",
-							"[sayMale]That ass is so {pc.thick}, makes me wanna stretch it.[/sayMale]",
-							"[sayMale]Hey, look at that slut whoring {pc.herself} out![/sayMale]",
-							"[sayFemale]Sweetie, why don’t you lick me out?[/sayFemale]",
-							"[sayFemale]What a slut![/sayFemale]",
+							"[sayMale]Я хочу первым трахнуть {pc.him}![/sayMale]",
+							"[sayMale]Эта задница такая {pc.thick}, так и хочется её растянуть.[/sayMale]",
+							"[sayMale]Эй, гляньте, какая шлюха выставляет свою {pc.herself} напоказ![/sayMale]",
+							"[sayFemale]Милая, почему бы тебе не вылизать меня?[/sayFemale]",
+							"[sayFemale]Ну и шлюха![/sayFemale]",
 						])
 			if(randomPop == WorldPopulation.Guards):
 				var randI = RNG.randi_range(0, 7)
@@ -268,9 +268,9 @@ func spottedMessages():
 						spottedText = "A few staff members walk past but one of them stops and stares at you."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
-							"[sayMale]Hey, should we go punish {pc.him}?[/sayMale]",
-							"[sayMale]Look at that slut.[/sayMale]",
-							"[sayFemale]Hey, stop that or we will have to use force.[/sayFemale]",
+							"[sayMale]Эй, может, пойдем проучим {pc.him}?[/sayMale]",
+							"[sayMale]Посмотрите на эту шлюху.[/sayMale]",
+							"[sayFemale]Эй, прекращай, а то придется применить силу.[/sayFemale]",
 						])
 					3:
 						spottedText = "One of the guards sees your actions and starts walking towards you with a stun baton in his hand. Luckily, he stops to watch you some more."
@@ -278,10 +278,10 @@ func spottedMessages():
 						spottedText = "One of the female staff members raises her brow at you."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
-							"[sayFemale]Are you a lilac? That would explain it.[/sayFemale]",
-							"[sayFemale]Someone begs to be punished.[/sayFemale]",
-							"[sayFemale]Hey, don’t complain later when people start passing you around.[/sayFemale]",
-							"[sayFemale]Someone’s horny, huh~?[/sayFemale]",
+							"[sayFemale]Ты что, сирень? Это бы всё объяснило.[/sayFemale]",
+							"[sayFemale]Кто-то так и просит, чтобы его наказали.[/sayFemale]",
+							"[sayFemale]Эй, только не ной потом, когда тебя начнут передавать из рук в руки.[/sayFemale]",
+							"[sayFemale]Кто-то разгорячился, а~?[/sayFemale]",
 						])
 					5:
 						spottedText = "Staff starts crowding around you but that only makes you more eager, you’ve been spotted."

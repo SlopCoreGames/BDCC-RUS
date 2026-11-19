@@ -45,7 +45,7 @@ anchor_bottom = 0.0
 margin_top = 54.0
 margin_right = 1280.0
 margin_bottom = 82.0
-collapseName = "Saved blocks"
+collapseName = "Сохраненные блоки"
 keepText = true
 
 [node name="VBoxContainer" parent="PackVarsCollapsableRegion" index="0"]

@@ -67,14 +67,14 @@ func checkDone():
 		return
 
 func getEffectName():
-	return "Reprogramming"
+	return "Перепрограммирование"
 
 func getEffectDesc():
 	var visor = findProgrammedVisor(character)
 	if(visor == null):
 		return "ERROR: This status effect should have dissapeared!"
 	var targetPerk: PerkBase = GlobalRegistry.getPerk(visor.programmedToSuppressPerk())
-	return "Your visor is suppressing your "+targetPerk.getVisibleName()+" drawback.\n\nProgress: "+str(progress / getRequiredProgressMult())+"%"
+	return "Твой визор подавляет твои "+targetPerk.getVisibleName()+" drawback.\n\nProgress: "+str(progress / getRequiredProgressMult())+"%"
 
 func getEffectImage():
 	return "res://Modules/HypnokinkModule/Icons/Perks/visor3.png"

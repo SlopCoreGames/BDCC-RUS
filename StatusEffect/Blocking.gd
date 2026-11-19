@@ -25,10 +25,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Blocking"
+	return "Блокирование"
 
 func getEffectDesc():
-	return "You are actively blocking any physical attacks. " + str(turns) + " more turns"
+	return "Вы активно блокируете любые физические атаки. " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/blocking.png"

@@ -10,7 +10,7 @@ func getShortName():
 	return "Выставить напоказ."
 	
 func getVisibleDescription():
-	return "Shows how used you are to being completely naked in public"
+	return "Показывает, насколько вы привыкли к полному отсутствию одежды на публике"
 
 func getPerkTiers():
 	return [

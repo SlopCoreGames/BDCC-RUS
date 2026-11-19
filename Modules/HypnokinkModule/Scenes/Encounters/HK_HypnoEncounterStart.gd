@@ -38,25 +38,25 @@ func _run():
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			
 			saynn(RNG.pick([
-				"You stop in your tracks at the sound of someone snapping their fingers. You turn towards the source of the sound, facing an inmate standing in a commanding pose.",
+				"Звук щелчка пальцев заставляет вас замереть на месте. Вы оборачиваетесь на звук и видите перед собой заключенную, застывшую в властной позе.",
 			]))
 
 			# (if never met)
 			if(!sawBefore):
 				saynn("[say=npc]"+RNG.pick([
-					"That's right, attention on me.",
-					"You're mine for a while.",
-					"Ready to obey?",
-					"It's time to play~",
+					"Вот так, всё внимание на меня.",
+					"Теперь ты в моей власти.",
+					"Готов(а) повиноваться?",
+					"Пора поиграть~",
 				])+"[/say]")
 
 			# (if met before)
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"That's right, attention on me.",
-					"You're mine for a while.",
-					"Ready to obey?",
-					"It's time to play~",
+					"Вот так, всё внимание на меня.",
+					"Теперь ты в моей власти.",
+					"Готов(а) повиноваться?",
+					"Пора поиграть~",
 				])+"[/say]")
 				
 			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
@@ -66,15 +66,15 @@ func _run():
 		# (mean version)
 		if(npcVariation == "mean"):
 			saynn(RNG.pick([
-				"An inmate pins you up against the wall and stares deeply into your eyes. You try to struggle, but your attention's been captured.",
+				"Заключенная прижимает вас к стене и пристально заглядывает в глаза. Вы пытаетесь вырваться, но ваше внимание уже полностью захвачено.",
 			]))
 
 			# (if never saw or saw)
 			saynn("[say=npc]"+RNG.pick([
-				"Guess what, bitch? You're mine.",
-				"There's the plaything I've heard so much about.",
-				"Quiet. Time to obey.",
-				"Don't bother squirming.",
+				"Угадай что, сучка? Теперь ты моя.",
+				"Вот она, та самая игрушка, о которой столько говорили.",
+				"Тихо. Пора подчиняться.",
+				"Не трать силы на брыкания.",
 			])+"[/say]")
 
 			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
@@ -84,23 +84,23 @@ func _run():
 		# (kind version)
 		if(npcVariation == "kind"):
 			saynn(RNG.pick([
-				"An inmate flags you down. You recognize that look - this is someone that's heard about your experience with hypnosis.",
+				"Одна из заключенных машет тебе рукой. Ты узнаешь этот взгляд — похоже, она наслышана о твоих опытах с гипнозом.",
 			]))
 			
 			# (if never met)
 			if(!sawBefore):
 				saynn("[say=npc]"+RNG.pick([
-					"Hey there. Wanna play?",
-					"Want me to take that malleable mind of yours for a spin?",
-					"Would you like some time in trance?",
+					"Эй, привет. Хочешь поиграть?",
+					"Хочешь, я прокручу твой податливый разум?",
+					"Не желаешь провести немного времени в трансе?",
 				])+"[/say]")
 			
 		# (if met before)
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"Hey there. Wanna play?",
-					"Want me to take that malleable mind of yours for a spin?",
-					"Would you like some time in trance?",
+					"Эй, привет. Хочешь поиграть?",
+					"Хочешь, я прокручу твой податливый разум?",
+					"Не желаешь провести немного времени в трансе?",
 				])+"[/say]")
 				
 			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
@@ -110,23 +110,23 @@ func _run():
 		# (subby version)
 		if(npcVariation == "subby"):
 			saynn(RNG.pick([
-				"An inmate seems to be heading in the same direction. In fact, {npc.he} matches your pace, staying just ahead of you, deliberately swaying {npc.his} hips for your benefit. It proves quite effective at attracting your attention, as you watch {npc.him} wag {npc.his} booty back and forth...\n\nBack and forth...\n\nYour pace slows and you come to a halt as {npc.he} {npc.verb('turn')} around to face you.",
+				"Кажется, одна из заключенных идет в ту же сторону. Более того, {npc.he} подстраивается под твой шаг, держась чуть впереди и нарочито виляя {npc.his} бедрами, чтобы привлечь твое внимание. Это срабатывает безотказно: ты завороженно наблюдаешь, как {npc.him} виляет {npc.his} задом...\n\nТуда-сюда...\n\nТвой шаг замедляется, и ты замираешь, когда {npc.he} {npc.verb('turn')} к тебе лицом.",
 			]))
 
 			# (if never saw)
 			if(!sawBefore):
 				saynn("[say=npc]"+RNG.pick([
-					"Tee~hee, that was easy!",
-					"You know you want me...",
-					"Works every time.",
+					"Хи-хи, это было слишком просто!",
+					"Ты же знаешь, что хочешь меня...",
+					"Работает каждый раз.",
 				])+"[/say]")
 
 			# (if saw before)
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"Tee~hee, that was easy!",
-					"You know you want me...",
-					"Works every time.",
+					"Хи-хи, это было слишком просто!",
+					"Ты же знаешь, что хочешь меня...",
+					"Работает каждый раз.",
 				])+"[/say]")
 				
 			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
@@ -144,10 +144,10 @@ func _run():
 		saynn("Ты отмахиваешься от наваждения и отталкиваешь {npc.him} от себя. Заключенная рычит и вскакивает, готовая к драке.")
 
 		saynn("[say=npc]"+RNG.pick([
-			"Big mistake, bitch.",
-			"This won’t end well for you, bitch.",
-			"You're gonna regret that.",
-			"Fine. I'll break you the old fashioned way."
+			"Большая ошибка, сучка.",
+			"Для тебя это плохо кончится, сучка.",
+			"Ты об этом пожалеешь.",
+			"Ладно. Я сломаю тебя по старинке."
 		])+"[/say]")
 
 		addButton("Драться", "Начать бой", "startfight")
@@ -172,9 +172,9 @@ func _run():
 		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
-			"Go fuck yourself.",
-			"Get off me, whore.",
-			"Nnh! Dammit.",
+			"Иди нахуй.",
+			"Слезь с меня, шлюха.",
+			"Ннх! Черт возьми.",
 		])+"[/say]")
 
 		addWonButton()
@@ -183,11 +183,11 @@ func _run():
 		saynn("Ты отмахиваешься от наваждения и прогоняешь заключенную.")
 
 		saynn("[say=npc]"+RNG.pick([
-			"Aw.",
-			"I knew it was too good to be true.",
-			"For a second there I thought it was working.",
-			"Maybe next time, then?",
-			"Aw, come on..."
+			"Оу.",
+			"Так и знал, что всё слишком хорошо, чтобы быть правдой.",
+			"На секунду мне показалось, что это работает.",
+			"Может, в следующий раз?",
+			"Ну же, ну..."
 		])+"[/say]")
 
 		# (scene ends)

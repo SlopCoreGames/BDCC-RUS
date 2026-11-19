@@ -154,7 +154,7 @@ func setName(newname: String):
 	newname = newname.replace("]", "")
 	newname = newname.replace("\"", "")
 	if(newname == ""):
-		newname = "Player"
+		newname = "Игрок"
 	
 	gamename = newname
 	emit_signal("stat_changed")
@@ -548,22 +548,22 @@ func getFightState(_battleName):
 		var mypain = getPainLevel() * 100
 		
 		if(mypain >= 70):
-			return "Everything hurts, you are barely able to continue fighting."
+			return "Всё болит, ты едва способен продолжать бой."
 		if(mypain >= 50):
-			return "The pain begins to take over your body, it's hard to concentrate on fighting"
+			return "Боль начинает сковывать тело, сосредоточиться на сражении становится всё труднее."
 		if(mypain >= 10):
-			return "You got bruised but doing fine otherwise"
+			return "Ты получил пару синяков, но в остальном всё в порядке."
 	else:
 		var mylust = getLustLevel() * 100
 		
 		if(mylust >= 70):
-			return "You feel so horny, you just can't stop thinking about your opponent, your hands sneak down to your privates and tease them"
+			return "Тебя так штырит от возбуждения, что ты не можешь перестать думать о противнике; твои руки сами собой сползают вниз, лаская твою киску/член."
 		if(mylust >= 50):
-			return "You feel very lusty, you find your opponent to be quite hot"
+			return "Ты чувствуешь сильное вожделение, твой противник кажется тебе чертовски горячим."
 		if(mylust >= 10):
-			return "You are slightly aroused but you manage to control it just fine"
+			return "Ты слегка возбужден, но тебе удается держать себя в руках."
 		
-	return "You seem to be doing just fine during this moment in a fight"
+	return "В данный момент боя ты чувствуешь себя превосходно."
 
 func getBodypartTooltipName(_bodypartSlot):
 	if(hasBodypart(_bodypartSlot)):
@@ -594,7 +594,7 @@ func afterSleeping(restoreStats:bool = true):
 		statusEffects[statusEffectID].onSleeping()
 	
 	if(isPregnant(true, false) && getPregnancyProgress() <= 0.5 && RNG.chance(30)):
-		GM.main.addLogMessage("Nausea", "You wake up and feel kinda nauseous.")
+		GM.main.addLogMessage("Тошнота", "Ты просыпаешься с легким чувством тошноты.")
 		addEffect(StatusEffect.PregnancySickness)
 
 func afterSleepingInBed():
@@ -659,31 +659,31 @@ func getPickableAttributes():
 #
 	return {
 		"femininity": {
-			"text": "Pick how feminine or masculine you are",
-			"textButton": "Femininity",
-			"buttonDesc": "Pick how feminine or masculine you are",
+			"text": "Выбери степень своей женственности или мужественности",
+			"textButton": "Женственность",
+			"buttonDesc": "Выбери степень своей женственности или мужественности",
 			"options": [
-				[0, "Very masculine", "Fully masculine"],
-				[25, "Masculine", "75% Masculine"],
-				[50, "Androgynous", "Half-way between feminine and masculine"],
-				[75, "Feminine", "75% Feminine"],
-				[100, "Very feminine", "Fully feminine"],
+				[0, "Очень мужественный", "Абсолютно мужественный"],
+				[25, "Мужское", "75% мужественности"],
+				[50, "Андрогинный", "Что-то среднее между женственным и мужественным"],
+				[75, "Женское", "75% женственности"],
+				[100, "Очень женственный", "Абсолютно женственный"],
 			]
 		},
 		"thickness": {
-			"text": "Pick how thick you are",
-			"textButton": "Thickness",
-			"buttonDesc": "Pick how thick you are",
+			"text": "Выберите степень своей пышности",
+			"textButton": "Пышность форм",
+			"buttonDesc": "Выберите степень своей пышности",
 			"options": [
-				[0, "Skinny", "0% thick"],
-				[25, "Slim", "25% thick"],
-				[50, "Average", "50% thick"],
-				[75, "Thick", "75% thick"],
-				[100, "Very thick", "100% thicc"],
-				[125, "125% thick", "Sooo thicc"],
-				[150, "150% thick", "Sooo thicc"],
-				[175, "175% thick", "Sooo thicc"],
-				[200, "200% thick", "Sooo thicc"],
+				[0, "Худой", "0% объёма"],
+				[25, "Худощавая", "25% объёма"],
+				[50, "Средне", "50% объёма"],
+				[75, "Пышная", "75% объёма"],
+				[100, "Очень пышная", "100% сочная"],
+				[125, "125% объёма", "Просто охренительно сочная"],
+				[150, "Толщина 150%", "Просто охренительно сочная"],
+				[175, "Толщина 175%", "Просто охренительно сочная"],
+				[200, "Толщина 200%", "Просто охренительно сочная"],
 			]
 		},
 #		"skin": {
@@ -734,8 +734,8 @@ func applyAttribute(_attrID: String, _attrValue):
 
 func getAttributesText():
 	return [
-		["Femininity", str(pickedFemininity)+"%"],
-		["Thickness", str(pickedThickness)+"%"],
+		["Женственность", str(pickedFemininity)+"%"],
+		["Пышность форм", str(pickedThickness)+"%"],
 	]
 
 func freeMouthDeleteAll(includeRingGag:bool = false):
@@ -872,12 +872,12 @@ func useWorstCondom():
 
 func onPlayerVisiblyPregnant():
 	if(isEggStuffedWithOffspring()): # Unique message?
-		GM.main.addLogMessage("Uh oh", "You notice that your belly is more inflated that normal. You can't deny it anymore, you are pregnant..")
+		GM.main.addLogMessage("Ой-ой...", "Вы замечаете, что ваш живот раздулся сильнее обычного. Отрицать это больше невозможно — вы беременны...")
 	else:
-		GM.main.addLogMessage("Uh oh", "You notice that your belly is more inflated that normal. You can't deny it anymore, you are pregnant..")
+		GM.main.addLogMessage("Ой-ой...", "Вы замечаете, что ваш живот раздулся сильнее обычного. Отрицать это больше невозможно — вы беременны...")
 
 func onPlayerReadyToGiveBirth():
-	GM.main.addLogMessage("It's time..", "Your belly is so swollen, it's hard to walk! You feel ready to give birth, maybe it's time to visit the nursery.")
+	GM.main.addLogMessage("Пришло время...", "Ваш живот так раздулся, что ходить становится трудно! Вы чувствуете, что готовы к родам; возможно, пора заглянуть в детское отделение.")
 
 func getLustCombatState():
 	return lustCombatState
@@ -933,7 +933,7 @@ func giveBirth():
 		var paycheck = Util.mini(20, bornChildAmount * 2)
 		addCredits(paycheck)
 		
-		GM.main.addMessage("AlphaCorp has transferred "+str(paycheck)+" credits to you for being a good mother.")
+		GM.main.addMessage("Корпорация AlphaCorp перевела "+str(paycheck)+" спасибо тебе за то, что ты хорошая мать.")
 	
 	if(bornChildAmount > 0):
 		SexToyManager.sendTrigger(SexToyTrigger.OnGivingBirth, [bornChildAmount])

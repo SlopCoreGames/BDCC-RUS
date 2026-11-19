@@ -15,21 +15,21 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("PersSubby") && _slaveTraits["PersSubby"] > 0.0):
 		sayPresenter(RNG.pick([
-			"You will be surprised by how well {slave.he} bends to commands. A perfect submissive, always ready to obey.",
-			"{slave.He} thrives under control. There's nothing {slave.heShe} loves more than being put in {slave.hisHer} place. A perfect submissive.",
-			"This one is built for submission. Give {slave.himHer} an order, and you'll see just how fast {slave.heShe} obeys.",
-			"{slave.He} craves structure and discipline. Keep {slave.himHer} in line, and {slave.heShe}'ll be your perfect servant.",
-			"{slave.HeShe} lives to be controlled. The more power you take, the happier {slave.heShe} becomes.",
-			"There's nothing but obedience in {slave.his} heart. Give {slave.himHer} the order, and watch {slave.himHer} submit.",
+			"Вы удивитесь, насколько послушно {slave.he} исполняет команды. Идеальная подчиненная, всегда готовая повиноваться.",
+			"{slave.He} расцветает под контролем. Нет ничего, что {slave.heShe} любила бы больше, чем когда её ставят на {slave.hisHer} место. Идеальная подчиненная.",
+			"Эта особа буквально создана для подчинения. Дайте {slave.himHer} приказ, и вы увидите, как быстро {slave.heShe} подчинится.",
+			"{slave.He} жаждет структуры и дисциплины. Держите {slave.himHer} в узде, и {slave.heShe} станет вашей идеальной служанкой.",
+			"{slave.HeShe} живет ради того, чтобы ею управляли. Чем больше власти вы забираете, тем счастливее становится {slave.heShe}.",
+			"В сердце {slave.his} нет ничего, кроме покорности. Дайте {slave.himHer} приказ и наблюдайте, как {slave.himHer} склоняется перед вами.",
 		]))
 	if(_slaveTraits.has("PersDominant") && _slaveTraits["PersDominant"] > 0.0):
 		sayPresenter(RNG.pick([
-			"{slave.He} isn’t one to be commanded. {slave.heShe} thrives on control and power. But that might be exactly what you want.",
-			"For those of you seeking a leader among slaves, {slave.he} {slave.isAre} the one to dominate the rest.",
-			"{slave.HeShe} knows exactly what {slave.heShe} wants and isn't afraid to take it. Did you know that dominant slaves are incredibly rare?",
-			"This one won’t bend easily. {slave.he} enjoys being in charge, and you'll feel that strength. Not for everyone.. but breaking dominant slaves is just so much fun.",
-			"Power flows through {slave.hisHer} veins. Give {slave.himHer} a chance, and {slave.heShe} will test you. Show {slave.him} who's boss!",
-			"{slave.name} may be a slave, but deep down, {slave.heShe}'s the one that craves control over others. And that's the perfect thing to tease {slave.him} with.",
+			"{slave.He} не из тех, кому привыкли отдавать приказы. {slave.heShe} жаждет контроля и власти. Но, возможно, это именно то, что вам нужно.",
+			"Для тех, кто ищет лидера среди рабов: {slave.he} — {slave.isAre} та самая, кто будет доминировать над остальными.",
+			"{slave.HeShe} точно знает, чего {slave.heShe} хочет, и не боится брать это сама. А вы знали, что доминантные рабы — невероятная редкость?",
+			"Эта особа не так-то просто прогнется. {slave.he} обожает командовать, и ты почувствуешь эту силу. Под силу не каждому... но ломать доминантных рабов — это чертовски весело.",
+			"В жилах {slave.hisHer} течет власть. Дай {slave.himHer} шанс, и {slave.heShe} устроит тебе проверку. Покажи {slave.him}, кто здесь настоящий босс!",
+			"{slave.name} может и рабыня, но в глубине души именно {slave.heShe} жаждет контроля над другими. И это идеальный повод, чтобы поиздеваться над {slave.him}.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Fetish, mightChance())

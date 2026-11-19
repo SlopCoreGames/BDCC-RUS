@@ -74,7 +74,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A male guard with wolf features and a scarred face. His arms, eyes and lower jaw are replaced with prosthetics."
+	return "Мужчина-охранник с волчьими чертами лица и шрамами. Его руки, глаза и нижняя челюсть заменены протезами."
 
 func getSpecies():
 	return [Species.Canine]
@@ -83,7 +83,7 @@ func _getAttacks():
 	return ["HeatGrenade", "ForceMuzzlePC", "stunbatonAttack", "stunbatonStrongAttack", "stunbatonOverchargeAttack", "simplekickattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return "The guard holds his weapon tightly and waits for you to do the first move.\n\n"+formatSay("You know it’s only gonna end one way for you.")
+	return "Охранник крепко сжимает оружие, ожидая твоего первого шага.\n\n"+formatSay("Ты понимаешь, что всё это закончится только одним способом.")
 
 func getThickness() -> int:
 	return 90
@@ -113,33 +113,33 @@ func reactRestraint(_restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"To hell with these",
-				"Easy",
-				"That was too easy",
+				"К черту всё это",
+				"Легкий",
+				"Слишком просто",
 			])
 		
 		return RNG.pick([
 			"Grr-r",
-			"Grr",
-			"Not funny",
-			"So fucking humiliating",
+			"Ррр...",
+			"Не смешно",
+			"Как же это, блядь, унизительно",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
-				"Fucking hell",
-				"I have enough metal in me already",
-				"Quit it already",
-				"Fuck you",
+				"Твою же мать",
+				"Во мне и так уже достаточно металла",
+				"Да хорош уже",
+				"Да пошел ты",
 			])
 		
 		return RNG.pick([
-			"Is that how you gonna play?",
-			"You think it's funny?",
-			"Where did you stole these",
-			"Oh c'mon, I don't need this",
-			"Fuck off",
+			"Так, значит, будем так играть?",
+			"Думаешь, это смешно?",
+			"Где ты это спер?",
+			"Да ладно тебе, только этого не хватало",
+			"Отъебись",
 		])
 	return null
 

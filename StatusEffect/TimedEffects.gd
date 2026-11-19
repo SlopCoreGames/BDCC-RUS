@@ -23,7 +23,7 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Timed effects"
+	return "Временные эффекты"
 
 func getEffectDesc():
 	var theTexts:Array = []
@@ -35,7 +35,7 @@ func getEffectDesc():
 		var theBuffNames:Array = []
 		for theBuff in theBuffs:
 			theBuffNames.append(theBuff.getVisibleDescription())
-		theTexts.append(Util.join(theBuffNames, ", ")+" expire in "+str(Util.getTimeStringHumanReadable(theTime)))
+		theTexts.append(Util.join(theBuffNames, ", ")+" осталось до истечения "+str(Util.getTimeStringHumanReadable(theTime)))
 	
 #	var time = character.timedBuffsDurationSeconds
 #

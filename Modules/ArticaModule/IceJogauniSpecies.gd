@@ -10,4 +10,4 @@ func isPlayable():
 	return false
 
 func getVisibleDescription():
-	return "A race of tribal elemental canines, this particular focussed on the ice element"
+	return "Раса племенных элементальных псов, специализирующаяся на стихии льда."

@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Ambient lust "+text
+	return "Фоновое вожделение "+text
 
 func apply(_buffHolder):
 	_buffHolder.ambientLust += amount

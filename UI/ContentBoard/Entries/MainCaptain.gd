@@ -8,11 +8,11 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Become captain's most trusted inmate and help him on his quest. This route is designed for submissive players. (Work on this route will begin after Kait's route completion)"
-	return "Become captain's most trusted inmate. Designed for submissive players. (Planned)"
+		return "Стань самым доверенным заключенным капитана и помоги ему в его поисках. Этот маршрут предназначен для игроков, предпочитающих подчиняющуюся роль. (Работа над этим маршрутом начнется после завершения ветки Кейт)"
+	return "Стань самым доверенным заключенным капитана. Предназначено для игроков с сабмиссивным стилем игры. (В планах)"
 
 func getCompletedDesc() -> String:
-	return "You did the impossible!"
+	return "Ты сделал невозможное!"
 
 func getStatus() -> int:
 	if(GM.main.MRH.didCompleteCaptainRouteBefore() && !GM.main.hasCommittedToCaptainMainRoute()):
@@ -23,9 +23,9 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[ContentBoardCondition.InProgress, "Be kind to Rahi and wait until this route is released."],
-		[ContentBoardCondition.Incomplete, "Enjoy the route."],
+		[ContentBoardCondition.InProgress, "Будь добр к Рахи и жди выхода этого маршрута."],
+		[ContentBoardCondition.Incomplete, "Наслаждайся прохождением."],
 	]
 
 func getProgressText() -> String:
-	return "Complete tasks that the captain will give you."
+	return "Выполняй задания, которые будет давать тебе капитан."

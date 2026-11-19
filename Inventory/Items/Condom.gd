@@ -50,9 +50,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Stretch one",
+			"name": "Растянуть один",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Turn one of the condoms into a used one",
+			"description": "Сделать один из презервативов использованным",
 		},
 	]
 

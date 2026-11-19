@@ -15,11 +15,11 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn("Занавес медленно расходится, открывая взору {presenter.name}, которая уверенно стоит на возвышении, а на {presenter.hisHer} губах играет многозначительная улыбка.")
 
-	sayPresenter("Welcome, esteemed guests, to the Blacktail Market! I know many of you are here looking for something.. specific.")
+	sayPresenter("Добро пожаловать, почтенные гости, на рынок Блэктейл! Я знаю, что многие из вас пришли сюда в поисках чего-то... особенного.")
 
 	saynn("Взгляд {presenter.hisHer} скользит по толпе и останавливается на одном конкретном участнике торгов... Связь неоспорима: из-за их непрерывного зрительного контакта остальные участники словно растворяются на заднем плане.")
 
-	sayPresenter("Allow me to introduce our most specially crafted product, someone who I believe will catch your particular interest.")
+	sayPresenter("Позвольте представить вам наш самый изысканный товар — экземпляр, который, я уверен, пробудит ваш особый интерес.")
 
 	saynn("Свет прожектора становится ярче, фокусируясь почти целиком на рабыне. {slave.heShe} стоит во весь рост, и каждый дюйм {slave.hisHer} тела выставлен на критический осмотр выбранного покупателя.")
 
@@ -27,7 +27,7 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 
 	saynn("Другие участники переглядываются, но хранят молчание, наблюдая за происходящим, в то время как главный претендент подается вперед, прищурив глаза. Вы стараетесь не упустить ни единой интересной детали.")
 	
-	sayPresenter("The starting bet is "+str(_auction.startingBid)+" credits.")
+	sayPresenter("Начальная ставка составляет "+str(_auction.startingBid)+" credits.")
 	
 	_auction.unlockPercentageOfTraitsRandomBidder(0.75, 1.0)
 

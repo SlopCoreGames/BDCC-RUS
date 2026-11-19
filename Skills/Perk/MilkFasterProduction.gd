@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Любительница молока"
 
 func getVisibleDescription():
-	return "You are being milked so much that your breasts began producing milk 30% faster"
+	return "Тебя доят так часто, что твоя грудь начала вырабатывать молоко на 30% fасте"
 
 func getSkillTier():
 	return 0

@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Received Lust "+text+"%"
+	return "Полученный похотливый урон "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.receiveDamageMult[DamageType.Lust] += (amount/100.0)

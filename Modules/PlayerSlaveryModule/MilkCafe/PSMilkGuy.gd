@@ -98,7 +98,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A soft dragon guy."
+	return "Мягкий парень-дракон."
 
 func getSpecies():
 	return [Species.Dragon]

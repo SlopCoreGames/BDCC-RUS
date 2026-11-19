@@ -884,7 +884,7 @@ func _react(_action: String, _args):
 		processTime(20*60)
 		setFlag("TaviModule.ch2ElizaDeclinedFullCheckup", true)
 		setFlag("TaviModule.ch2PCFailedToStealDuringCheckup", true)
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 		addExperienceToPlayer(20)
 
 	if(_action == "resetElizaAndescape"):
@@ -893,14 +893,14 @@ func _react(_action: String, _args):
 
 	if(_action == "escape"):
 		setFlag("TaviModule.ch2PCStoleDrugs", true)
-		addMessage("Task completed!")
+		addMessage("Задание выполнено!")
 		addExperienceToPlayer(100)
 		setFlag("MedicalModule.Eliza_BusyDays", 2)
 		
 	if(_action == "leave1"):
 		setFlag("TaviModule.ch2PCStoleDrugs", true)
 		setFlag("TaviModule.ch2PCPutDrugsInsideSelf", true)
-		addMessage("Task completed!")
+		addMessage("Задание выполнено!")
 		addExperienceToPlayer(100)
 
 	if(_action == "be_rough"):

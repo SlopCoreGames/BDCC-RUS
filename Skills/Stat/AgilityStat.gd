@@ -7,4 +7,4 @@ func getVisibleName():
 	return "Ловкость"
 
 func getVisibleDescription():
-	return "Gives you more stamina"
+	return "Увеличивает запас выносливости"

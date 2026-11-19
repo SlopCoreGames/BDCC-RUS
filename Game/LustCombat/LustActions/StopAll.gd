@@ -17,7 +17,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Остановить действия"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Stop groping yourself and free your hands"
+	return "Хватит лапать себя, освободи руки!"
 
 func doAction(_lustState: LustCombatState, _args):
 	_lustState.stopActivities()

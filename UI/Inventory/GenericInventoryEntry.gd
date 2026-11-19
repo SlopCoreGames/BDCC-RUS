@@ -31,7 +31,7 @@ func setSelected(isNewSelected):
 
 func setEntry(_entry:Dictionary):
 	#savedEntry = _entry
-	label.text = _entry["name"] if _entry.has("name") else "Unknown entry"
+	label.text = _entry["name"] if _entry.has("name") else "Неизвестная запись"
 	if(_entry.has("icon")):
 		texture_rect.visible = true
 		v_separator.visible = true

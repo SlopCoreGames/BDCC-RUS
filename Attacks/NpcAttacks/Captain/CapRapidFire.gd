@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Скорострельность"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -21,7 +21,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var amountOfShots = RNG.randi_range(1, 5) + RNG.randi_range(1, 5)
 	
-	var text = "{attacker.name} выпускает серию стремительных энергетических выстрелов, поражая {receiver.name} "+str(amountOfShots)+" times. Each impact sends jolts of pain through {receiver.his} body."
+	var text = "{attacker.name} выпускает серию стремительных энергетических выстрелов, поражая {receiver.name} "+str(amountOfShots)+" раз. Каждый удар пронзает тело {receiver.his} вспышками боли."
 	
 	return {
 		text = text,
@@ -32,7 +32,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} holds {attacker.his} finger on the trigger of {attacker.his} energy pistol, about to unleash a barrage of shots toward {receiver.name}." 
+	return "{attacker.name} держит {attacker.his} палец на спусковом крючке {attacker.his} энергетического пистолета, готовая обрушить шквал выстрелов на {receiver.name}." 
 
 func getAttackSoloAnimation():
 	return "firepistol"

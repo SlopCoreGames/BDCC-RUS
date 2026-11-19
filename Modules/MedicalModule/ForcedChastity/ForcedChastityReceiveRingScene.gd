@@ -27,7 +27,7 @@ func _react(_action: String, _args):
 	if(_action == "read_note"):
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("RingOfDevotion"))
 		GM.pc.addCredits(10)
-		addMessage("You received a ring and 10 credits")
+		addMessage("Вы получили кольцо и 10 кредитов")
 
 	if(_action == "endthescene"):
 		endScene()
@@ -36,7 +36,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "If you haven't realized it yet.. the ring is made out of the broken key x3. I hinted at it in Rahi's content, Eliza gave the pieces to Alex and he melted them and created a ring for you ^^. No one mentioned that, maybe I should have been even more obvious.. or not.. dunnyo.. If you realized that before reading this - good job ^^"
+	return "Если вы еще не догадались... кольцо сделано из тех самых трех сломанных ключей. Я намекала на это в контенте с Рахи: Элиза отдала кусочки Алексу, а он их расплавил и сделал для вас кольцо ^^. Никто об этом не сказал, может, мне стоило намекнуть еще явнее... а может и нет... хз... Если вы поняли это еще до прочтения — отличная работа ^^"
 
 func hasDevCommentary():
 	return true

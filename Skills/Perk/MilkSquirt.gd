@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Боевая корова"
 
 func getVisibleDescription():
-	return "You gain the ability to squeeze your breasts to blind the opponent with your milk!"
+	return "Вы обретаете способность сжимать грудь, чтобы ослепить противника струями молока!"
 
 func getSkillTier():
 	return 0

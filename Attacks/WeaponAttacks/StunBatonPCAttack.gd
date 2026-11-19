@@ -35,7 +35,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		item.useCharge()
 	
 	var texts = [
-		"{attacker.name} strikes {receiver.name} with the stun baton.",
+		"{attacker.name} бьет {receiver.name} электрошоковой дубинкой.",
 	]
 	var text = RNG.pick(texts)
 	

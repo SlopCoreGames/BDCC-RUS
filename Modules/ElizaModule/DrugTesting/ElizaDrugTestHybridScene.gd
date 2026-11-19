@@ -233,7 +233,7 @@ func _react(_action: String, _args):
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_catgirl", false)):
 			setFlag("ElizaModule.tfcan_catgirl", true)
-			addMessage("Eliza can now transform into a catgirl. If you ask her.")
+			addMessage("Теперь Элиза может превращаться в кошкодевочку. Если ты её об этом попросишь.")
 
 	if(_action == "after_pat"):
 		processTime(3*60)
@@ -241,6 +241,6 @@ func _react(_action: String, _args):
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_catgirl", false)):
 			setFlag("ElizaModule.tfcan_catgirl", true)
-			addMessage("Eliza can now transform into a catgirl. If you ask her.")
+			addMessage("Теперь Элиза может превращаться в кошкодевочку. Если ты её об этом попросишь.")
 
 	setState(_action)

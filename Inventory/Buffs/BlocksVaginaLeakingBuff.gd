@@ -4,7 +4,7 @@ func _init():
 	id = Buff.BlocksVaginaLeakingBuff
 
 func getVisibleDescription():
-	return "Keeps cum from leaking from pussy"
+	return "Предотвращает вытекание спермы из киски"
 
 func apply(_buffHolder):
 	_buffHolder.blockedOrifices[OrificeType.Vagina] = true

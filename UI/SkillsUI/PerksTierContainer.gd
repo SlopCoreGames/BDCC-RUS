@@ -20,7 +20,7 @@ func setSkillAndTier(theskill, theTierData, thetierIndex):
 	tierIndex = thetierIndex
 	level = tierData[0]
 	
-	levelLabel.text = "Unlocks at skill level "+str(level)
+	levelLabel.text = "Открывается на уровне навыка "+str(level)
 	
 	updatePerks()
 

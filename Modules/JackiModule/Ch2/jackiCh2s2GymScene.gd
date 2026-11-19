@@ -31,9 +31,9 @@ func _run():
 		else:
 			saynn("Гнев Джеки: "+str(Util.roundF(anger*100.0, 1))+"% ("+str(getModule("JackiModule").getAngerText())+")")
 
-		saynn("Развращенность Джеки: "+str(Util.roundF(corruption*100.0, 1))+"% ("+str(getModule("JackiModule").getCorruptionText())+")"+("\nJacki is broken, her anger will now go down from mean actions." if (corruption >= 1.0 && anger >= 0.0) else ""))
+		saynn("Развращенность Джеки: "+str(Util.roundF(corruption*100.0, 1))+"% ("+str(getModule("JackiModule").getCorruptionText())+")"+("\nДжеки сломлена, теперь её гнев будет утихать после дерзких действий." if (corruption >= 1.0 && anger >= 0.0) else ""))
 
-		saynn("Похоть Джеки: "+str(Util.roundF(lust*100.0, 1))+"% ("+str(getModule("JackiModule").getLustText())+")"+("\nJacki is so lusty that any lewd action will now corrupt her." if (lust >= 1.0 && corruption < 1.0) else ""))
+		saynn("Похоть Джеки: "+str(Util.roundF(lust*100.0, 1))+"% ("+str(getModule("JackiModule").getLustText())+")"+("\nДжеки настолько похотлива, что любое развратное действие теперь будет развращать её." if (lust >= 1.0 && corruption < 1.0) else ""))
 
 		playAnimation(StageScene.Solo, "kneel", {pc="jacki", bodyState={underwear=hasUnderwear}})
 		if (anger >= 0.1):
@@ -47,7 +47,7 @@ func _run():
 			saynn("Ты устраиваешься возле высокого куста и просто наблюдаешь за её тренировкой.")
 
 		else:
-			saynn("Ты подходишь к Джеки. Она улыбается"+str(" very kindly" if anger < -0.5 else "")+" когда видит тебя.")
+			saynn("Ты подходишь к Джеки. Она улыбается"+str(" очень ласково" if anger < -0.5 else "")+" когда видит тебя.")
 
 			saynn("[say=jacki]О, привет. Гав![/say]")
 
@@ -165,7 +165,7 @@ func _run():
 		else:
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "catcow", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("Джеки грациозно опускается на четвереньки, готовясь к йога-позе «кошка-корова». Её подтянутые, стройные изгибы предстают во всей красе."+str("It seems she even found a uniform that is a few sizes smaller than she is supposed to wear, allowing the cloth to tightly wrap around her nice butt and small tits." if !hasUnderwear else "It seems the sporty underwear that you gave her are helping with that.")+"")
+				saynn("Джеки грациозно опускается на четвереньки, готовясь к йога-позе «кошка-корова». Её подтянутые, стройные изгибы предстают во всей красе."+str("Кажется, она даже нашла форму на пару размеров меньше своей, из-за чего ткань плотно облегает её шикарную задницу и маленькую грудь." if !hasUnderwear else "Похоже, спортивное белье, которое ты ей дал, идет ей на пользу.")+"")
 
 				saynn("Волчица прогибает спину настолько низко, насколько может; её скромная грудь подаётся вперёд, а взгляд устремлён высоко вверх. Прямо как хвост. Джеки дрожит и тихонько стонет, а её задница слегка подергивается... так и манит.")
 
@@ -566,7 +566,7 @@ func _run():
 			addButton("Просто отдать", "Отдать ей кредиты безвозмездно", "gift_credits_free")
 			addButtonWithChecks("Ручной секс", "Сначала попросить об услуге", "gift_credits_handjob", [], [ButtonChecks.HasReachablePenis])
 		elif (anger > -0.1):
-			saynn("Джеки смотрит на них... а затем хмурится."+str(" Even though you do notice a slight hesitation at first." if corruption > 0.2 else "")+"")
+			saynn("Джеки смотрит на них... а затем хмурится."+str(" Хотя поначалу ты замечаешь легкое колебание." if corruption > 0.2 else "")+"")
 
 			saynn("[say=jacki]Что это?[/say]")
 
@@ -582,7 +582,7 @@ func _run():
 
 			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		else:
-			saynn("Джеки смотрит на них... а затем слегка хмурится."+str(" Even though you do notice a slight hesitation at first." if corruption > 0.2 else "")+"")
+			saynn("Джеки смотрит на них... а затем слегка хмурится."+str(" Хотя поначалу ты замечаешь легкое колебание." if corruption > 0.2 else "")+"")
 
 			saynn("[say=jacki]Такое чувство, будто ты пытаешься мне за что-то заплатить.[/say]")
 
@@ -614,7 +614,7 @@ func _run():
 
 		saynn("[say=jacki]Что?[/say]")
 
-		saynn("Твой взгляд опускается к твоему паху."+str(" A crotch that has a visible bump, outlining your boner." if !GM.pc.isFullyNaked() else "")+"Джеки прослеживает за твоим взглядом... и дует губы еще сильнее.")
+		saynn("Твой взгляд опускается к твоему паху."+str(" Промежность с заметным бугром, очерчивающим твой стояк." if !GM.pc.isFullyNaked() else "")+"Джеки прослеживает за твоим взглядом... и дует губы еще сильнее.")
 
 		saynn("[say=jacki]..ладно.[/say]")
 
@@ -814,11 +814,11 @@ func _run():
 
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "camel", {pc="jacki"})
-				saynn("Последняя поза интересует вас больше всего. Её гибкое тело изящно прогибается назад, лапы тянутся к ногам. То, как она растягивается, чертовски завораживает."+str(" This pose must be quite hard having to carry around a pregnancy but Jacki seems to be fine with it." if getCharacter("jacki").isVisiblyPregnant() else "")+"")
+				saynn("Последняя поза интересует вас больше всего. Её гибкое тело изящно прогибается назад, лапы тянутся к ногам. То, как она растягивается, чертовски завораживает."+str(" Должно быть, в такой позе непросто — таскать на себе живот, но Джеки, кажется, вполне комфортно." if getCharacter("jacki").isVisiblyPregnant() else "")+"")
 
 			else:
 				playAnimation(StageScene.Yoga, "warrior", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("Последняя поза интересует вас больше всего. Её гибкое тело изящно прогибается назад, лапы тянутся высоко вверх."+str(" while stumbling a bit from trying to keep balance with her pregnancy." if getCharacter("jacki").isVisiblyPregnant() else ". ")+"То, как она растягивается, чертовски завораживает.")
+				saynn("Последняя поза интересует вас больше всего. Её гибкое тело изящно прогибается назад, лапы тянутся высоко вверх."+str(" слегка спотыкаясь, пытаясь удержать равновесие из-за своей беременности." if getCharacter("jacki").isVisiblyPregnant() else ". ")+"То, как она растягивается, чертовски завораживает.")
 
 			saynn("[say=pc]О, по-моему, у тебя неплохо получается![/say]")
 
@@ -839,7 +839,7 @@ func _run():
 
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "dog", {pc="jacki"})
-				saynn("На этот раз она решает сосредоточиться на позе под названием «собака мордой вниз». Её бёдра высоко взмывают в воздух."+str(", rounded belly tucked between her legs," if getCharacter("jacki").isVisiblyPregnant() else "")+" пока её ладони крепко прижаты к коврику. Она замирает в этой позе, демонстрируя все изгибы своей подтянутой задницы и глядя куда-то в пол.")
+				saynn("На этот раз она решает сосредоточиться на позе под названием «собака мордой вниз». Её бёдра высоко взмывают в воздух."+str(", её округлившийся живот поджат между ног," if getCharacter("jacki").isVisiblyPregnant() else "")+" пока её ладони крепко прижаты к коврику. Она замирает в этой позе, демонстрируя все изгибы своей подтянутой задницы и глядя куда-то в пол.")
 
 				saynn("[say=pc]Очень хорошо.[/say]")
 
@@ -1032,7 +1032,7 @@ func _run():
 
 		saynn("[say=jacki]Ох.. А это звучит довольно заманчиво.[/say]")
 
-		saynn("Здесь не особо много места для этого... так что ты просто помогаешь ей лечь на коврик."+str(" It's a bit awkward with Jacki's pregnancy but you manage to help get her in a good position." if getCharacter("jacki").isVisiblyPregnant() else "")+"Затем ты опускаешься на колени рядом и кладешь руки ей на спину.")
+		saynn("Здесь не особо много места для этого... так что ты просто помогаешь ей лечь на коврик."+str(" Из-за беременности Джеки всё немного неудобно, но тебе удаётся помочь ей принять подходящую позу." if getCharacter("jacki").isVisiblyPregnant() else "")+"Затем ты опускаешься на колени рядом и кладешь руки ей на спину.")
 
 		saynn("Ты начинаешь с простого: разминаешь напряжение в её плечах, а затем проходишься тем же самым по лопаткам и мышцам спины.")
 
@@ -1073,7 +1073,7 @@ func _run():
 
 		saynn("[say=pc] Заткнись, шлюха.[/say]")
 
-		saynn("У этой сучки киска всё ещё зашита и спрятана за густыми красными зарослями лобковых волос, поэтому ты решаешь взяться за другую дырочку... её грязный анус, который кажется весьма {jackiButt}."+str(" Which gives you a good reason to stretch that ring more." if buttScore < 5 else " Which makes you wonder why is that buttslut even resisting.")+"")
+		saynn("У этой сучки киска всё ещё зашита и спрятана за густыми красными зарослями лобковых волос, поэтому ты решаешь взяться за другую дырочку... её грязный анус, который кажется весьма {jackiButt}."+str(" Что даёт тебе отличный повод хорошенько растянуть её анус." if buttScore < 5 else " Отчего невольно задаёшься вопросом: нахрена эта жопошлёпка вообще сопротивляется?")+"")
 
 		saynn("[say=jacki] Помогите! Кто-нибудь![/say]")
 
@@ -1123,7 +1123,7 @@ func _run():
 
 		saynn("[say=pc] Заткнись, шлюха.[/say]")
 
-		saynn("У этой сучки киска всё ещё зашита и спрятана за густыми красными зарослями лобковых волос, поэтому ты решаешь взяться за другую дырочку... её грязный анус, который кажется весьма {jackiButt}."+str(" Which gives you a good reason to stretch that ring more." if buttScore < 5 else " Which makes you wonder why is that buttslut even resisting.")+"")
+		saynn("У этой сучки киска всё ещё зашита и спрятана за густыми красными зарослями лобковых волос, поэтому ты решаешь взяться за другую дырочку... её грязный анус, который кажется весьма {jackiButt}."+str(" Что даёт тебе отличный повод хорошенько растянуть её анус." if buttScore < 5 else " Отчего невольно задаёшься вопросом: нахрена эта жопошлёпка вообще сопротивляется?")+"")
 
 		saynn("[say=jacki] Помогите! Кто-нибудь![/say]")
 

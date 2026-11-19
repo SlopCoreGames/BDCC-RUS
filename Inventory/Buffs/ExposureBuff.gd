@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Exposure "+text+"%"
+	return "Обнажение "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.exposure += (amount/100.0)

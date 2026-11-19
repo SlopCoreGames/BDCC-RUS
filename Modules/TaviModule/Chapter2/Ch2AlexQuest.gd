@@ -9,13 +9,13 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("You must find Alex Rynard somewhere in the mines level and get information about the location of the bluespace transmitter.")
+	result.append("Тебе нужно найти Алекса Ринарда где-то на уровне шахт и разузнать, где находится передатчик блюспейса.")
 	
 	if(GM.main.getFlag("TaviModule.ch2AlexTalkedTo")):
-		result.append("Apparently the bluespace transmitter is somewhere in the engineering. Search there.")
+		result.append("Судя по всему, передатчик блюспейса спрятан где-то в инженерном отсеке. Ищи там.")
 
 	if(GM.main.getFlag("TaviModule.ch2EscapedSymbian")):
-		result.append("There must be something in the break room that will let you get access to the secure wing of the engineering.")
+		result.append("В комнате отдыха должно быть что-то, что позволит тебе получить доступ в охраняемое крыло инженерного отсека.")
 
 	return result
 

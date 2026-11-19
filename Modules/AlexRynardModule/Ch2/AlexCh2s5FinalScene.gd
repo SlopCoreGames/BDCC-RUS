@@ -864,8 +864,8 @@ func _react(_action: String, _args):
 		didAny = true
 
 	if(_action == "enough_bus"):
-		addMessage("Task completed!")
-		addMessage("Last Trust Exercise is unlocked")
+		addMessage("Задание выполнено!")
+		addMessage("Разблокировано последнее упражнение на доверие")
 		addExperienceToPlayer(500)
 
 	if(_action == "avy_find"):

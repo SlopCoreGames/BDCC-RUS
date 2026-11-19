@@ -67,7 +67,7 @@ func _react(_action: String, _args):
 	if(_action == "grabAllAndLeave"):
 		if(savedCredits > 0):
 			GM.pc.addCredits(savedCredits)
-			addMessage("You looted a chip with "+str(savedCredits)+" "+Util.multipleOrSingularEnding(savedCredits, "credit"))
+			addMessage("Вы обыскали и нашли чип с "+str(savedCredits)+" "+Util.multipleOrSingularEnding(savedCredits, "credit"))
 			savedCredits = 0
 		
 		var items = inv.getItems()
@@ -85,7 +85,7 @@ func _react(_action: String, _args):
 			
 			inv.removeItem(item)
 			GM.pc.getInventory().addItem(item)
-			addMessage("You looted "+item.getAStackName())
+			addMessage("Вы обыскали и нашли "+item.getAStackName())
 		endScene()
 		return
 	

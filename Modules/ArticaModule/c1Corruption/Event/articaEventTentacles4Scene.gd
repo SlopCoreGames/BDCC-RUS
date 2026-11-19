@@ -80,7 +80,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		saynn("Ты решаешь просто подождать в вестибюле.")
 
-		saynn("И вскоре... Артика и доктор Куинн возвращаются к тебе, при этом живот Артики снова стал плоским!"+str(" Well.. a flatter one.. It's clearly still round, just a bit less." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+		saynn("И вскоре... Артика и доктор Куинн возвращаются к тебе, при этом живот Артики снова стал плоским!"+str(" Ну... более плоский... Он всё ещё явно круглый, просто чуть меньше." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 		saynn("[say=eliza]Вот, держи! Я оставила немного для... лаборатории.[/say]")
 
@@ -124,7 +124,7 @@ func _run():
 
 		saynn("[say=eliza]Подожди-и-и, я еще всё не настроила![/say]")
 
-		saynn("Похоже, пока придется обойтись без этого стола."+str(" You quickly undress Artica and make her spread her legs wide, giving you a view of her slick holes" if !isNaked else " You make Artica spread her legs wide, giving you a view of her slick holes")+".")
+		saynn("Похоже, пока придется обойтись без этого стола."+str(" Ты быстро раздеваешь Артику и заставляешь её широко раздвинуть ноги, открывая вид на её влажные дырочки" if !isNaked else " Ты заставляешь Артику широко раздвинуть ноги, открывая вид на её влажные дырочки")+".")
 
 		saynn("[say=artica]Ааах-х.. ахх.. это.. п-происходит..[/say]")
 
@@ -134,7 +134,7 @@ func _run():
 
 		saynn("[say=artica]Нх-хх.. хх-х.. ААх-х![/say]")
 
-		saynn("Артика продолжала тужиться.. пока первое яйцо наконец не выскользнуло из её киски с влажным хлюпаньем! Ощущения явно оказались слишком сильными для бедняжки: её глаза закатились, когда её "+str("locked cock is throbbing in its cage, eagerly leaking pre" if isCaged else "hard canine cock throbbed, a long line of pre hanging from the tip already")+"..")
+		saynn("Артика продолжала тужиться.. пока первое яйцо наконец не выскользнуло из её киски с влажным хлюпаньем! Ощущения явно оказались слишком сильными для бедняжки: её глаза закатились, когда её "+str("запертый член пульсирует в клетке, жадно выделяя предэякулят" if isCaged else "твердый, как камень, член пульсировал, и с кончика уже свисала длинная капля смазки")+"..")
 
 		saynn("[say=pc]Куинн?[/say]")
 
@@ -142,7 +142,7 @@ func _run():
 
 		saynn("Ты хватаешь яйцо... о-о, оно скользкое, вся его поверхность покрыта соками Артики... и откладываешь его в сторону.")
 
-		saynn("Следующее яйцо следует незамедлительно, это давит в тугой задний проход Артики. Она выгибает спину, издавая очередной стон боли и наслаждения, пока её задница растягивается всё шире... Похоже, это так сильно стимулирует её простату, что она не может сдержаться; глаза Артики снова закатываются, когда она..."+str("locked cock shoots thick ropes of cum onto the floor, her balls tensing up as the egg finally leaves her butt.." if isCaged else "throbbing cock starts shooting thick ropes of cum onto the floor, her balls tensing up as the egg finally leaves her butt..")+"")
+		saynn("Следующее яйцо следует незамедлительно, это давит в тугой задний проход Артики. Она выгибает спину, издавая очередной стон боли и наслаждения, пока её задница растягивается всё шире... Похоже, это так сильно стимулирует её простату, что она не может сдержаться; глаза Артики снова закатываются, когда она..."+str("запертый член мечет густые струи спермы на пол, её яички напрягаются, когда яйцо наконец покидает её задницу..." if isCaged else "пульсирующий член начинает метать густые струи спермы на пол, её яички напрягаются, когда яйцо наконец покидает её задницу...")+"")
 
 		saynn("[say=artica]Ааахх... Како-о-ое же оно б-б-большое...[/say]")
 
@@ -168,7 +168,7 @@ func _run():
 
 		saynn("[say=artica]..ах..[/say]")
 
-		saynn("Она кажется совершенно изможденной... её живот теперь"+str(" not as round as it was before.. but still somewhat round.." if getCharacter("artica").isVisiblyPregnant() else " completely flat again..")+"")
+		saynn("Она кажется совершенно изможденной... её живот теперь"+str(" уже не такой круглый, как раньше... но всё ещё более-менее круглый..." if getCharacter("artica").isVisiblyPregnant() else " снова совершенно плоский...")+"")
 
 		saynn("[say=eliza]Какой отличный урожай![/say]")
 
@@ -231,7 +231,7 @@ func _react(_action: String, _args):
 			howMuch = getCharacter("artica").getEffect(StatusEffect.ArticaFullWithPlantEggs).eggAmount
 			getCharacter("artica").removeEffect(StatusEffect.ArticaFullWithPlantEggs)
 		var willReceive:int = int(float(howMuch) / 2)
-		addMessage("You received "+str(willReceive)+" tasty plant eggs!")
+		addMessage("Вы получили "+str(willReceive)+" вкусные растительные яйца!")
 		if(willReceive > 0):
 			var anEgg = GlobalRegistry.createItem("PlantEgg")
 			anEgg.whoGaveBirth = "artica"
@@ -252,7 +252,7 @@ func _react(_action: String, _args):
 			howMuch = getCharacter("artica").getEffect(StatusEffect.ArticaFullWithPlantEggs).eggAmount
 			getCharacter("artica").removeEffect(StatusEffect.ArticaFullWithPlantEggs)
 		var willReceive:int = int(float(howMuch) / 2)
-		addMessage("You received "+str(willReceive)+" tasty plant eggs!")
+		addMessage("Вы получили "+str(willReceive)+" вкусные растительные яйца!")
 		if(willReceive > 0):
 			var anEgg = GlobalRegistry.createItem("PlantEgg")
 			anEgg.whoGaveBirth = "artica"

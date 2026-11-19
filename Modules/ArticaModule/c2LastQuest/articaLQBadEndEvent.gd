@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("ArticaModule.lastQuestStarted") && !getFlag("ArticaModule.LQArticaGotDreamCatcher") && !getFlag("ArticaModule.LQArticaGotBrainwashed")):
-		addButtonUnlessLate("Artica", "See if doctor Quinn can help Artica", "badend")
+		addButtonUnlessLate("Артика", "Попробуй узнать, сможет ли доктор Куинн помочь Артике", "badend")
 
 func getPriority():
 	return 0

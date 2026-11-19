@@ -64,7 +64,7 @@ func _on_SaveDebugToFileButton_pressed():
 	var finalDir = externalDir.plus_file("BDCCDebug.txt")
 	Util.writeFile(finalDir, debugText)
 	
-	debug_text_edit.text = "FILE IS SAVED TO: "+str(finalDir)+"\nPlease send this file to Rahi"
+	debug_text_edit.text = "ФАЙЛ СОХРАНЕН ПО ПУТИ: "+str(finalDir)+"\nПожалуйста, отправьте этот файл Рахи"
 
 
 onready var view_logs_container = $"%ViewLogsContainer"
@@ -146,19 +146,19 @@ func _on_ManageFileList_item_selected(index:int):
 		file_info_label.text += "\nSize: "+ String.humanize_size(theSize)
 		file.close()
 	else:
-		file_info_label.text += "\nUnable to read the file! Is it missing?"
+		file_info_label.text += "\nНе удалось прочитать файл! Он отсутствует?"
 	
 func _on_DeleteFileButton_pressed():
 	if(selectedManageFile == ""):
 		return
 	var d:Directory = Directory.new()
 	if(!d.file_exists(selectedManageFile)):
-		showMessage("Error: File doesn't exist")
+		showMessage("Ошибка: Файл не существует")
 		return
 	d.remove(selectedManageFile)
 	selectedManageFile = ""
 	updateManageFileList()
-	showMessage("File removed!")
+	showMessage("Файл удален!")
 
 func _on_ExportFileButton_pressed():
 	if(selectedManageFile == ""):
@@ -167,10 +167,10 @@ func _on_ExportFileButton_pressed():
 	var finalDir:String = externalDir.plus_file(selectedManageFile.get_file())
 	var d:Directory = Directory.new()
 	if(!d.file_exists(selectedManageFile)):
-		showMessage("Error: File doesn't exist")
+		showMessage("Ошибка: Файл не существует")
 		return
 	d.copy(selectedManageFile, finalDir)
-	showMessage("File copied to: "+str(finalDir))
+	showMessage("Файл скопирован в: "+str(finalDir))
 
 func showMessage(mes:String):
 	file_info_label.text = mes
@@ -180,7 +180,7 @@ func _on_EditFileContentsButton_pressed():
 		return
 	var d:Directory = Directory.new()
 	if(!d.file_exists(selectedManageFile)):
-		showMessage("Error: File doesn't exist")
+		showMessage("Ошибка: Файл не существует")
 		return
 	startEditingFile(selectedManageFile)
 
@@ -216,7 +216,7 @@ func showAlert(_text:String):
 
 func _on_ResetRenderButton_pressed():
 	OPTIONS.resetRenderSettings()
-	showAlert("Restart the game for this to have an effect.")
+	showAlert("Чтобы изменения вступили в силу, перезапустите игру.")
 
 onready var alert_window_dialog = $"%AlertWindowDialog"
 onready var alert_label = $"%AlertLabel"

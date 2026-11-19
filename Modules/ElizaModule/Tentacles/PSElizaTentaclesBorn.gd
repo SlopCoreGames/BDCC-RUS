@@ -582,11 +582,11 @@ func _react(_action: String, _args):
 		processTime(5*60)
 		
 	if(_action == "just_let_leave"):
-		addMessage("Task completed!")
+		addMessage("Задание выполнено!")
 		addExperienceToPlayer(100)
 		
 	if(_action == "after_sex_alone"):
-		addMessage("Task completed! You feel like you should take a rest..")
+		addMessage("Задача выполнена! Кажется, тебе пора немного отдохнуть...")
 		addExperienceToPlayer(100)
 
 	if(_action == "after_sex_alone"):

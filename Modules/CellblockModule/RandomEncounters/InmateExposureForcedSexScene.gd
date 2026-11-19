@@ -39,30 +39,30 @@ func _run():
 		# (default)
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			saynn(RNG.pick([
-				"You were going somewhere when you suddenly feel someone reaching out and groping your {pc.thick} {pick('ass', 'butt')}! You turn around and see one of the inmates staring at your curves.",
-				"A hand spanks your {pc.thick} {pick('ass', 'butt')}. You turn around and see one of the inmates with a cheeky smile on {npc.his} face.",
-				"An inmate blocks your path! {npc.He} rubs {npc.his} chin while eyeing you out. You try to walk around {npc.him} but {npc.he} blocks you again.",
-				"One of the inmates gets into your way. {npc.He} is clearly not interested in letting you pass, {npc.his} hungry eyes are {pick('fucking', 'molesting', 'teasing')} you already.",
+				"Ты куда-то шла, как вдруг почувствовала, что чья-то рука потянулась к твоей {pc.thick} {pick('ass', 'butt')} и начала бесстыдно ощупывать её! Обернувшись, ты видишь одного из заключенных, который вовсю пялится на твои изгибы.",
+				"Чья-то ладонь отвешивает шлепок по твоей {pc.thick} {pick('ass', 'butt')}. Ты оборачиваешься и видишь одного из заключенных с наглой ухмылкой на {npc.his} лице.",
+				"Один из заключенных преграждает тебе путь! {npc.He} потирает {npc.his} подбородок, оценивающе разглядывая тебя. Ты пытаешься обойти {npc.him}, но {npc.he} снова встает у тебя на пути.",
+				"Один из заключенных вклинивается прямо перед тобой. {npc.He} явно не собирается давать тебе пройти, а {npc.his} голодные глаза уже вовсю {pick('fucking', 'molesting', 'teasing')} тебя.",
 			]))
 
 			# (if never met)
 			if(!sawBefore):
 				saynn("[say=npc]"+RNG.pick([
-					"Hey there, babe. I need to fuck someone and you look quite fuckable.",
-					"Fresh blood? I need a piece of that ass.",
-					"Think you can just walk around like that, new bitch? I’m gonna fuck you.",
-					"Where are you going, bitch? Think I will let you go? You’re practically begging to be fucked.",
-					"Fresh sex toys have arrived? I won’t let you go without a fuck.",
+					"Эй, детка. Мне нужно с кем-нибудь трахнуться, и ты выглядишь чертовски подходящей для этого.",
+					"Свежая кровь? Мне нужен кусочек этой жопы.",
+					"Думаешь, можно вот так просто разгуливать здесь, новая сучка? Я тебя оттрахаю.",
+					"Куда это ты собралась, сучка? Думаешь, я тебя отпущу? Ты практически сама умоляешь, чтобы тебя трахнули.",
+					"Прибыли новенькие секс-игрушки? Я не отпущу тебя без хорошего траха.",
 				])+"[/say]")
 
 			# (if met before)
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"It’s you again. I need to fuck someone and you look quite fuckable.",
-					"I need a piece of that ass.",
-					"Think you can just walk around like that, bitch? I’m gonna fuck you.",
-					"Where are you going, bitch? Think I will let you go? You’re practically begging to be fucked.",
-					"I won’t let you go without a fuck.",
+					"Опять ты. Мне нужно с кем-нибудь трахнуться, и ты выглядишь чертовски подходящей для этого.",
+					"Мне нужен кусочек этой жопы.",
+					"Думаешь, можно вот так просто разгуливать, сучка? Я тебя оттрахаю.",
+					"Куда это ты собралась, сучка? Думаешь, я тебя отпущу? Ты практически сама умоляешь, чтобы тебя трахнули.",
+					"Я тебя просто так не отпущу, пока не трахну.",
 				])+"[/say]")
 				
 			addButton("Даться траху", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
@@ -79,17 +79,17 @@ func _run():
 			# (if never met)
 			if(!sawBefore):
 				saynn("[say=npc]"+RNG.pick([
-					"Hey there, beautiful. I’m kinda horny and you look slutty. Wanna fuck?",
-					"You seem to be open for casual sex. Wanna fuck?",
-					"Hi there, little slut. Wanna fuck?",
+					"Привет, красавица. Что-то меня развезло, а ты выглядишь такой шлюхой. Хочешь трахнуться?",
+					"Похоже, ты не против случайного секса. Хочешь трахнуться?",
+					"Привет, маленькая шлюшка. Хочешь трахнуться?",
 				])+"[/say]")
 			
 		# (if met before)
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"I remember you. I’m kinda horny and you are still slutty. Wanna fuck?",
-					"You seem to be open for casual sex. Wanna fuck?",
-					"Wanna fuck?",
+					"Я тебя помню. Я уже в возбуждении, а ты всё такая же шлюха. Хочешь трахнуться?",
+					"Похоже, ты не против случайного секса. Хочешь трахнуться?",
+					"Хочешь трахнуться?",
 				])+"[/say]")
 			
 			addButton("Согласиться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
@@ -99,18 +99,18 @@ func _run():
 		# (mean version)
 		if(npcVariation == "mean"):
 			saynn(RNG.pick([
-				"One of the inmates grabs you by the shoulder and tries to pin you against the floor!",
-				"One of the inmates blocks your path and then tackles you!",
-				"An inmate suddenly shoves you before trying to wrench your arm and pin to the floor.",
+				"Один из заключенных хватает тебя за плечо и пытается прижать к полу!",
+				"Один из заключенных преграждает вам путь, а затем сбивает с ног!",
+				"Заключенный внезапно толкает вас, пытаясь вывернуть руку и прижать к полу.",
 			]))
 
 			# (if never saw or saw)
 			saynn("[say=npc]"+RNG.pick([
-				"Don’t move, bitch. Or it will get worse.",
-				"Don’t resist, slut. I know you want it.",
-				"Scream all you want, slut. No one cares.",
-				"Look at you. You’re begging to be used.",
-				"Shut up and let me fuck you.",
+				"Не дергайся, сучка. А то будет только хуже.",
+				"Не сопротивляйся, шлюха. Я же знаю, что ты сама этого хочешь.",
+				"Ори сколько влезет, шлюха. Всем плевать.",
+				"Посмотри на себя. Ты же сама умоляешь, чтобы тебя использовали.",
+				"Заткнись и дай мне тебя оттрахать.",
 			])+"[/say]")
 
 			saynn("{npc.He} пытается вас оттрахать!")
@@ -122,25 +122,25 @@ func _run():
 		# (subby version)
 		if(npcVariation == "subby"):
 			saynn(RNG.pick([
-				"One of the inmates catches your attention. {npc.He} walks up to you, holding {npc.his} hands behind {npc.him} and looking down at the floor.",
-				"An inmate approaches you and wiggles {npc.his} butt seductively at you.",
-				"Someone gets your attention. You turn around to face {npc.him} and see a subby-looking inmate.",
+				"Один из заключенных привлекает ваше внимание. {npc.He} подходит к вам, держа {npc.his} за руки за {npc.him} и глядя в пол.",
+				"Заключенный подходит к вам и соблазнительно виляет перед вами {npc.his} задом.",
+				"Кто-то привлекает ваше внимание. Вы оборачиваетесь и видите {npc.him} — заключенную с видом покорной сабмиссивной сучки.",
 			]))
 
 			# (if never saw)
 			if(!sawBefore):
 				saynn("[say=npc]"+RNG.pick([
-					"Oh, hi.. You look lewd. Wanna have some fun maybe?..",
-					"Hello-o.. I’m horny.. Wanna fuck?",
-					"Never saw you before.. Want some sex?",
+					"О, привет.. Выглядишь похотливо. Может, повеселимся?..",
+					"Привееет.. Я так возбуждена.. Хочешь трахнуться?",
+					"Раньше тебя не видела.. Хочешь секса?",
 				])+"[/say]")
 
 			# (if saw before)
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"Oh, I remember you. Wanna have some fun maybe?..",
-					"I’m horny again.. Wanna fuck?",
-					"Heya.. Want some sex?",
+					"О, я тебя помню. Может, повеселимся?..",
+					"Опять меня штырит.. Хочешь трахнуться?",
+					"Хей.. Хочешь секса?",
 				])+"[/say]")
 
 			#addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
@@ -167,10 +167,10 @@ func _run():
 			saynn("Вы наносите удар {npc.him} и отталкиваете его! Заключенный в ответ рычит и готовится к драке.")
 
 			saynn("[say=npc]"+RNG.pick([
-				"Fine, we can play rough.",
-				"I will force you if I have to.",
-				"Sure, I will rough you up a bit before we fuck.",
-				"Bad idea, slut.",
+				"Ладно, можем поиграть грубо.",
+				"Если придется, я возьму тебя силой.",
+				"Конечно, я тебя немного отыграю, прежде чем мы трахнемся.",
+				"Плохая идея, сучка.",
 			])+"[/say]")
 
 		# (if mean)
@@ -178,11 +178,11 @@ func _run():
 			saynn("Вы собрав все силы, отталкиваете {npc.him} от себя. Заключенный рычит и поднимается, готовый к драке.")
 
 			saynn("[say=npc]"+RNG.pick([
-				"Huge mistake, bitch.",
-				"This won’t end well for you, bitch.",
-				"You should have just let me fuck you.",
-				"What a whore. It’s your fault you gonna get fucked senseless.",
-				"Hope you like pain, bitch. Actually, I hope you don’t.",
+				"Огромная ошибка, сучка.",
+				"Для тебя это плохо кончится, сучка.",
+				"Тебе стоило просто дать мне трахнуть тебя.",
+				"Ну и шлюха. Сама виновата, что тебя сейчас оттрахают до беспамятства.",
+				"Надеюсь, тебе нравится боль, сучка. Хотя нет, надеюсь, что нет.",
 			])+"[/say]")
 
 		addButton("Драться", "Начать бой", "startfight")
@@ -207,9 +207,9 @@ func _run():
 		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
-			"What a slut.",
-			"Ugh.. Bitch.",
-			"Go fuck yourself.",
+			"Ну и шлюшка.",
+			"Уф.. Сучка.",
+			"Иди нахуй.",
 		])+"[/say]")
 
 		# (Options are sex or leave them be, Inventory, Struggle)
@@ -224,9 +224,9 @@ func _run():
 			saynn("Вы достаете чип номиналом 5 кредитов и предлагаете его заключенному.")
 
 			saynn("[say=npc]"+RNG.pick([
-				"Huh, consider yourself lucky.",
-				"That works too. See you around.",
-				"Fine. I can find a more willing slut with that.",
+				"Хм, считай, что тебе повезло.",
+				"И так сойдет. Еще увидимся.",
+				"Ладно. Найду себе шлюху и посговорчивее.",
 			])+"[/say]")
 
 			saynn("{npc.He} выхватывает его и оставляет вас в покое.")
@@ -239,8 +239,8 @@ func _run():
 			saynn("Но {npc.he} отбивает вашу руку и вместо этого заводит её вам за спину.")
 
 			saynn("[say=npc]"+RNG.pick([
-				"You think you can bribe me? Bitch, you’re gonna get fucked.",
-				"Keep that for the doctor, bitch. You will need one after I’m done with you.",
+				"Думаешь, сможешь меня подкупить? Сучка, тебя всё равно оттрахают.",
+				"Прибереги это для врача, сучка. Он тебе понадобится, когда я с тобой закончу.",
 			])+"[/say]")
 
 			# (options are get fucked and attack)
@@ -252,9 +252,9 @@ func _run():
 			saynn("Вы вежливо отказываетесь. Заключенный пожимает плечами.")
 
 			saynn("[say=npc]"+RNG.pick([
-				"Sure, I won’t force you.",
-				"Well, take care then.",
-				"Be careful around here.",
+				"Ладно, не буду тебя принуждать.",
+				"Ну, тогда береги себя.",
+				"Тут будь осторожнее.",
 			])+"[/say]")
 
 		# (scene ends)
@@ -265,9 +265,9 @@ func _run():
 			saynn("Вы вежливо отказываетесь. Заключенный громко вздыхает и шарит по {npc.his} карманам, прежде чем протянуть вам "+subOffered+".")
 
 			saynn("[say=npc]"+RNG.pick([
-				"Pretty please?..",
-				"Maybe that will change your mind?..",
-				"I’m very horny..",
+				"Ну пожалуйста?..",
+				"Может, это заставит тебя передумать?..",
+				"Я так возбуждена...",
 			])+"[/say]")
 
 			# (Options are the same but starting sex will give you a pill or credits)
@@ -321,11 +321,11 @@ func _react(_action: String, _args):
 				"HeatPill",
 			]))
 			GM.pc.getInventory().addItem(item)
-			addMessage("You received "+item.getAStackName())
+			addMessage("Вы получили "+item.getAStackName())
 		if(subOffered == "some credits"):
 			var credAmount = RNG.randi_range(2, 5)
 			GM.pc.addCredits(credAmount)
-			addMessage("You received "+str(credAmount)+" credits")
+			addMessage("Вы получили "+str(credAmount)+" credits")
 	
 	if(_action == "openinventory"):
 		runScene("InventoryScene")
@@ -349,7 +349,7 @@ func _react(_action: String, _args):
 	if(_action == "decline"):
 		if(npcVariation == "subby"):
 			if(RNG.chance(50)):
-				subOffered = RNG.pick(["some pill", "some credits"])
+				subOffered = RNG.pick(["какая-нибудь таблетка", "какие-нибудь кредиты"])
 
 	setState(_action)
 

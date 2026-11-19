@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Знаменитая внушаемость"
 
 func getVisibleDescription():
-	return "Word is getting around about your hypnotic experiences."
+	return "Слухи о твоих гипнотических опытах начинают распространяться."
 
 func getMoreDescription():
-	return 	"You can now encounter inmates that know your mind is vulnerable to suggestion (the chance inceases the more you are hypnotized)."+"\n\n"+\
+	return 	"Теперь тебе могут встретиться заключенные, знающие о твоей уязвимости к внушению (шанс возрастает по мере того, как тебя всё чаще гипнотизируют)."+"\n\n"+\
 			"Keyword Fixation is now in effect whenever you are "+HypnokinkUtil.hypnosisIcon()+"Hypnotised."
 
 func getSkillTier():

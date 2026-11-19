@@ -8,19 +8,19 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(!getFlag("PortalPantiesModule.Panties_AskedAlex")):
-		addButtonUnlessLate("Credits", "Ask if you can help somehow", "startpanties")
+		addButtonUnlessLate("Титры", "Спросить, может ли он чем-то помочь", "startpanties")
 	else:
 		if(!getFlag("PortalPantiesModule.Panties_GavePantiesToAlex")):
 			if(GM.pc.getInventory().hasItemID("plainPanties")):
-				addButtonUnlessLate("Give panties", "Give Alex the female panties that he wanted", "givepanties")
+				addButtonUnlessLate("Отдать трусики", "Отдать Алексу женские трусики, которые он хотел", "givepanties")
 			else:
 				addDisabledButton("Отдать трусики", "В твоём инвентаре нет обычных женских трусиков")
 
 		if(getFlag("PortalPantiesModule.Panties_FleshlightsGotStolen") && !getFlag("PortalPantiesModule.Panties_FleshlightsAskedAlex")):
-			addButtonUnlessLate("Panties!", "Ask what the heck is happening", "alexpantieswtf")
+			addButtonUnlessLate("Трусики!", "Спросить, какого черта вообще происходит", "alexpantieswtf")
 
 		if(getFlag("PortalPantiesModule.Panties_FleshlightsFoundFleshlights") && !getFlag("PortalPantiesModule.Panties_FleshlightsReturnedToAlex")):
-			addButtonUnlessLate("Fleshlights", "Return him the fleshlights", "alexreturnpanties")
+			addButtonUnlessLate("Флешлайты", "Вернуть ему флешлайты", "alexreturnpanties")
 
 
 

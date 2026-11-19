@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(!GM.main.getModuleFlag("CellblockModule", "Cellblock_GreenhouseLooted", false)):
-		addButtonUnlessLate("Steal", "Try and steal something", "steal_apple")
+		addButtonUnlessLate("Украсть", "Попробовать что-нибудь украсть", "steal_apple")
 	else:
 		addDisabledButton("Украсть", "Слишком опасно делать это снова сегодня")
 

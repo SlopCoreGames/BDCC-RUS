@@ -513,7 +513,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "The first scene where you get some agency. Kinda x3. It's still linear af but you do get a good dilemma. Do you accept that you maybe enjoy anal or not??\n\nIt's also a scene that I had to animate the horsecock dildo for. Just like fuckmachine, its a separate rigged object that has a skeleton and stuff. Just so I would be able to bend it and stuff x3. Otherwise it would probably look kinda stiff."
+	return "Первая сцена, где у тебя появляется хоть какая-то свобода действий. Ну, типа того x3. Она всё ещё линейная до усрачки, но перед тобой встаёт реальная дилемма. Признаешь ли ты, что тебе, возможно, нравится анал, или нет??\n\nА ещё это сцена, ради которой мне пришлось анимировать фаллоимитатор-лошадь. Как и фукмашина, это отдельный риг с костями и всем таким. Просто чтобы я могла его гнуть и всё прочее x3. Иначе он, скорее всего, выглядел бы каким-то дубовым."
 
 func hasDevCommentary():
 	return true

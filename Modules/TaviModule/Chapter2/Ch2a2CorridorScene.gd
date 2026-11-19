@@ -752,7 +752,7 @@ func _react(_action: String, _args):
 		processTime(2*60)
 		setFlag("TaviModule.ch2AlexUsedStunbaton", true)
 		setFlag("TaviModule.ch2PCLearnedCode", true)
-		addMessage("Task completed!")
+		addMessage("Задание выполнено!")
 		addExperienceToPlayer(100)
 		GM.pc.getInventory().removeXOfOrDestroy("StunBaton", 1)
 		setFlag("PortalPantiesModule.Alex_BusyDays", 1)
@@ -760,13 +760,13 @@ func _react(_action: String, _args):
 	if(_action == "board"):
 		setFlag("TaviModule.ch2PCLearnedCode", true)
 		setFlag("TaviModule.ch2EscapedSymbian", true)
-		addMessage("Task completed!")
+		addMessage("Задание выполнено!")
 		addExperienceToPlayer(150)
 	
 	if(_action == "learn_code_before_stocks"):
 		setFlag("TaviModule.ch2PCLearnedCode", true)
 		setFlag("TaviModule.ch2EnduredSymbian", true)
-		addMessage("Task completed!")
+		addMessage("Задание выполнено!")
 		addExperienceToPlayer(100)
 
 	if(_action == "fight_guard"):
@@ -811,7 +811,7 @@ func _react(_action: String, _args):
 		GM.pc.addStamina(50)
 		GM.pc.addPain(-10)
 		setState("sybian")
-		addMessage("You got some strength back")
+		addMessage("Ты немного прибавила в силе")
 		return
 	
 	if(_action == "struggle"):
@@ -838,7 +838,7 @@ func _react(_action: String, _args):
 
 func _react_scene_end(_tag, _result):
 	if(_tag == "strugglesybian"):
-		addMessage("The sybian makes it very hard to concentrate")
+		addMessage("Из-за сибиян очень трудно сосредоточиться")
 		GM.pc.addLust(20)
 		setState("sybian")
 	
@@ -862,7 +862,7 @@ func _react_scene_end(_tag, _result):
 			setState("if_won")
 			setFlag("TaviModule.ch2AlexAttackedAndWon", true)
 			setFlag("TaviModule.ch2PCLearnedCode", true)
-			addMessage("Task completed!")
+			addMessage("Задание выполнено!")
 			addExperienceToPlayer(100)
 			setFlag("PortalPantiesModule.Alex_BusyDays", 1)
 		else:

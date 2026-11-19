@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Возбуждающий наркотик"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Lust)):
@@ -28,7 +28,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} grabs a syringe with a pink-colored drug inside off {attacker.his} belt and pounces at you."
+	return "{attacker.name} хватает с {attacker.his} пояса шприц с розовым препаратом внутри и набрасывается на тебя."
 
 func getRequirements():
 	return [AttackRequirement.FreeArms, AttackRequirement.FreeHands]

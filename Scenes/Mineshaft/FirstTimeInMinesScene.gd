@@ -95,7 +95,7 @@ func _react(_action: String, _args):
 		
 		processTime(2*60)
 		
-		addMessage("You earned 1 work credit also completed your task")
+		addMessage("Вы заработали 1 рабочий кредит и успешно выполнили задание")
 		addExperienceToPlayer(20)
 
 	if(_action == "endthescene"):

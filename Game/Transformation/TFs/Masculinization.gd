@@ -54,25 +54,25 @@ func getPillOptions() -> Dictionary:
 	return {
 		"addPenis": {
 			name = "Рост пениса",
-			desc = "Should the drug grow a fully-functional penis",
+			desc = "Должен ли препарат вырастить полноценный пенис",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],
 		},
 		"removeVag": {
 			name = "Удаление пизды",
-			desc = "Should the drug remove the vagina",
+			desc = "Должен ли препарат удалить влагалище",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],
 		},
 		"switchBreasts": {
 			name = "Мужские груди",
-			desc = "Should the drug morph female breasts to male pecs",
+			desc = "Должен ли препарат превратить женскую грудь в мужские грудные мышцы",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],
 		},
 		"switchHair": {
 			name = "Смена прически",
-			desc = "Should the drug grow male hair (only if it's not male already)",
+			desc = "Должен ли препарат вырастить мужские волосы (только если персонаж еще не мужчина)",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],
 		},
@@ -273,12 +273,12 @@ func reactProgress(_context:Dictionary, _result:TFResult):
 	#var stage:int = getStage()
 	
 	if(isFirstTime()):
-		addText("Without warning, a jolt of energy surges through your body, leaving you breathless. Confusion and fear grip you as you realize something is happening against your will.")
+		addText("Внезапный прилив энергии пронзает ваше тело, заставляя вас задыхаться. Смятение и страх охватывают вас, когда вы осознаете, что с вашим телом происходит нечто помимо вашей воли.")
 	
 	addText(_result.getAllTFTexts())
 	
 	if(isFirstTime()):
-		addText("What is happening with your body..")
+		addText("Что происходит с вашим телом...")
 	
 	
 	if(step in ["extendpenis", "remvagina", "vagtopenis", "growpenis"]):

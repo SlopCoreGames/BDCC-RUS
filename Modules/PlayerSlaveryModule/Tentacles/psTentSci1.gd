@@ -25,7 +25,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A wolf scientist."
+	return "Ученый-волк."
 
 #func getChatColor():
 #	return "#D8D500"

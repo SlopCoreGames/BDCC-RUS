@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Плодовитость"
 
 func getVisibleDescription():
-	return "Shows how much you are used to being impregnated by local inhabitants"
+	return "Показывает, насколько вы привыкли к тому, что вас оплодотворяют местные обитатели"
 
 func getPerkTiers():
 	return [

@@ -7,7 +7,7 @@ func _init():
 	id = "inmateuniform"
 
 func getVisibleName():
-	return InmateType.getOfficialName(inmateType).capitalize() + " inmate uniform"
+	return InmateType.getOfficialName(inmateType).capitalize() + " тюремная роба"
 	
 func setPrisonerNumber(newnumber):
 	prisonerNumber = newnumber
@@ -19,7 +19,7 @@ func getDescription():
 	var text = "Короткая рубашка с коротким рукавом и шорты, оба предмета сделаны из черной ткани с "+InmateType.getColorName(inmateType)+" trim."
 
 	if(prisonerNumber != null && prisonerNumber != ""):
-		text += " The shirt has a prisoner number attached to it that says \""+prisonerNumber+"\""
+		text += " К рубашке прикреплен номер заключенного: \""+prisonerNumber+"\""
 	
 	return text
 
@@ -51,22 +51,22 @@ func loadData(data):
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "takes off your inmate shirt and pulls down the shorts"
+		return "снимает тюремную рубашку и стягивает шорты"
 	else:
-		return "take off your inmate shirt and pull down the shorts"
+		return "снять тюремную рубашку и стянуть шорты"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on your inmate shirt and the shorts"
+		return "надевает тюремную рубашку и шорты"
 	else:
-		return "put on your inmate shirt and the shorts"
+		return "надеть тюремную рубашку и шорты"
 
 func generateItemState():
 	itemState = ShirtAndShortsState.new()
 	itemState.canActuallyBeDamaged = true # Is hack because there are many clothes that use this state already and don't support damaging..
 
 func useInCombat(_attacker, _receiver):
-	var text := "You toggle!"
+	var text := "Переключить!"
 	
 	if(itemState is ShirtAndShortsState):
 		itemState.noShirt = !itemState.noShirt
@@ -85,9 +85,9 @@ func getPossibleActions():
 		return []
 	return [
 		{
-			"name": "Toggle shirt",
+			"name": "Переключить рубашку",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Choose if you want to wear the shirt too or just the shorts",
+			"description": "Выбрать, хотите ли вы надеть рубашку или только шорты",
 		},
 	]
 

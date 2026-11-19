@@ -11,7 +11,7 @@ func _run():
 	if(state == ""):
 		aimCamera("medical_near_pccell")
 		GM.pc.setLocation("medical_near_pccell")
-		setLocationName("Near cells")
+		setLocationName("Возле камер")
 		
 		saynn("Элиза держит поводок; ты пытаешься выглядеть храбрым, даже несмотря на смирительную рубашку.")
 
@@ -81,7 +81,7 @@ func _run():
 		aimCamera("medical_paddedcell_player")
 		GM.pc.setLocation("medical_paddedcell_player")
 		playAnimation(StageScene.Solo, "kneel")
-		setLocationName("Padded cell")
+		setLocationName("Мягкая камера")
 		
 		saynn("Ты просыпаешься в своей мягкой камере. В голове немного побаливает — до боли знакомое чувство.")
 

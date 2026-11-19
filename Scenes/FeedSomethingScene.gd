@@ -43,7 +43,7 @@ func _react(_action: String, _args):
 		var theItem:ItemBase = _args[0]
 		var theResult:Dictionary = theItem.doFeedToNpc(theChar)
 		
-		addMessage("You used '"+str(theItem.getVisibleName())+"' on "+theChar.getName()+"!")
+		addMessage("Вы использовали '"+str(theItem.getVisibleName())+"' on "+theChar.getName()+"!")
 		
 		if(!theResult.get("noConsume", false)):
 			theItem.removeXOrDestroy(1)

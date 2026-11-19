@@ -39,8 +39,8 @@ func _run():
 			say(">")
 			var textBox:LineEdit = addTextbox("textcommand")
 			var _ok = textBox.connect("text_entered", self, "onTextBoxEnterPressed")
-			addButtonAt(0, "SEND", "Send the command", "sendkeyboard")
-			addButtonAt(14, "COMMANDS", "Switch to the commands", "buttons")
+			addButtonAt(0, "SEND", "Отправить команду", "sendkeyboard")
+			addButtonAt(14, "COMMANDS", "Перейти к командам", "buttons")
 		
 		elif(inputMode == "buttons"):
 			saynn("> "+ getCurrentCommandString())
@@ -48,13 +48,13 @@ func _run():
 			#	TextTransitionSettings.transitions[key].fade_in()
 			
 			if(currentCommand.size() > 0):
-				addButtonAt(0, "SEND", "Send the command", "send")
-				addButtonAt(9, "CLEAR", "Clear the command", "clearcommand")
+				addButtonAt(0, "SEND", "Отправить команду", "send")
+				addButtonAt(9, "CLEAR", "Очистить команду", "clearcommand")
 			else:
-				addDisabledButtonAt(0, "SEND", "Nothing to send")
-				addDisabledButtonAt(9, "CLEAR", "Nothing to clear")
-			addButtonAt(13, "NUMPAD", "Switch to the numpad", "numpad")
-			addButtonAt(14, "KEYBOARD", "Switch to the keyboard that lets you type in the full command yourself", "keyboard")
+				addDisabledButtonAt(0, "SEND", "Нечего отправлять")
+				addDisabledButtonAt(9, "CLEAR", "Нечего очищать")
+			addButtonAt(13, "NUMPAD", "Перейти к цифровой панели", "numpad")
+			addButtonAt(14, "KEYBOARD", "Перейти к клавиатуре для ручного ввода команды", "keyboard")
 			
 			var words = computer.getCommands()
 			if(words.size() == 0):
@@ -65,25 +65,25 @@ func _run():
 		elif(inputMode == "numpad"):
 			saynn("> "+getCurrentCommandString())
 			
-			addButtonAt(1, "7", "Type this", "addnumpad", ["7"])
-			addButtonAt(2, "8", "Type this", "addnumpad", ["8"])
-			addButtonAt(3, "9", "Type this", "addnumpad", ["9"])
-			addButtonAt(6, "4", "Type this", "addnumpad", ["4"])
-			addButtonAt(7, "5", "Type this", "addnumpad", ["5"])
-			addButtonAt(8, "6", "Type this", "addnumpad", ["6"])
-			addButtonAt(11, "1", "Type this", "addnumpad", ["1"])
-			addButtonAt(12, "2", "Type this", "addnumpad", ["2"])
-			addButtonAt(13, "3", "Type this", "addnumpad", ["3"])
-			addButtonAt(10, "0", "Type this", "addnumpad", ["0"])
-			addButtonAt(5, ".", "Type this", "addnumpad", ["."])
+			addButtonAt(1, "7", "Печатать это", "addnumpad", ["7"])
+			addButtonAt(2, "8", "Печатать это", "addnumpad", ["8"])
+			addButtonAt(3, "9", "Печатать это", "addnumpad", ["9"])
+			addButtonAt(6, "4", "Печатать это", "addnumpad", ["4"])
+			addButtonAt(7, "5", "Печатать это", "addnumpad", ["5"])
+			addButtonAt(8, "6", "Печатать это", "addnumpad", ["6"])
+			addButtonAt(11, "1", "Печатать это", "addnumpad", ["1"])
+			addButtonAt(12, "2", "Печатать это", "addnumpad", ["2"])
+			addButtonAt(13, "3", "Печатать это", "addnumpad", ["3"])
+			addButtonAt(10, "0", "Печатать это", "addnumpad", ["0"])
+			addButtonAt(5, ".", "Печатать это", "addnumpad", ["."])
 			
 			if(currentCommand.size() > 0):
-				addButtonAt(0, "SEND", "Send the command", "send")
-				addButtonAt(9, "CLEAR", "Clear the command", "clearcommand")
+				addButtonAt(0, "SEND", "Отправить команду", "send")
+				addButtonAt(9, "CLEAR", "Очистить команду", "clearcommand")
 			else:
-				addDisabledButtonAt(0, "SEND", "Nothing to send")
-				addDisabledButtonAt(9, "CLEAR", "Nothing to clear")
-			addButtonAt(14, "COMMANDS", "Switch to the commands", "buttons")
+				addDisabledButtonAt(0, "SEND", "Нечего отправлять")
+				addDisabledButtonAt(9, "CLEAR", "Нечего очищать")
+			addButtonAt(14, "COMMANDS", "Перейти к командам", "buttons")
 			
 
 		#addButton("Уйти", "Работа выполнена!", "endthescene")
@@ -206,7 +206,7 @@ func getDebugActions():
 	return [
 		{
 			"id": "instantWin",
-			"name": "Skip computer hack",
+			"name": "Пропустить взлом компьютера",
 			"args": [
 			],
 		},

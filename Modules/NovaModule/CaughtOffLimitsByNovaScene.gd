@@ -238,7 +238,7 @@ func _run():
 		saynn("Затем Нова начинает водить тебя по тюремному блоку, сильнее дергая за поводок каждый раз, когда ты останавливаешься или медлишь. Ты идешь позади нее, низко опустив голову. Ты пытаешься избежать взглядов других заключенных: кто-то хихикает, кто-то разглядывает тебя, наверняка представляя секс с тобой, а кто-то просто молча наблюдает.")
 
 
-		saynn(RNG.pick(["[sayMale]Let me try that mouth![/sayMale]", "[sayMale]I’m gonna be first[/sayMale]", "[sayMale]Look, what a slave![/sayMale]"]))
+		saynn(RNG.pick(["[sayMale]Дай-ка я попробую этот ротик![/sayMale]", "[sayMale]Я буду первой![/sayMale]", "[sayMale]Смотрите, какая рабыня![/sayMale]"]))
 
 		if(RNG.chance(50)):
 			saynn("К вам подходит другой охранник — высокая дева, похожая на рысь с бирюзовой шерстью. Она крепко шлепает вас по заднице и посмеивается.")
@@ -295,9 +295,9 @@ func _react(_action: String, _args):
 		GM.pc.addLust(20)
 		
 		for item in GM.pc.getInventory().getItemsWithTag(ItemTag.Illegal):
-			addMessage(item.getStackName()+" was taken away")
+			addMessage(item.getStackName()+" забрали")
 		for item in GM.pc.getInventory().getEquippedItemsWithTag(ItemTag.Illegal):
-			addMessage(item.getStackName()+" was taken away")
+			addMessage(item.getStackName()+" забрали")
 
 	if(_action == "humiliateAngel"):
 		runScene("HumiliateNovaScene")
@@ -319,7 +319,7 @@ func _react(_action: String, _args):
 		
 	if(_action == "agree_to_suck"):
 		if(GM.pc.freeMouthDeleteAll()):
-			addMessage("Nova was nice enough to remove your gag before this")
+			addMessage("Нова была достаточно добра, чтобы снять твой кляп перед этим")
 		runScene("SuckNovaCockScene")
 		endScene()
 		return
@@ -380,7 +380,7 @@ func _react_scene_end(_tag, _result):
 			addExperienceToPlayer(5)
 
 func getDevCommentary():
-	return "Probably one of the first.. encounter scenes.. that I wrote. Has one of the most earliest lewd scenes too in the game ^^. So if they suck - thats why x3. Before, the idea was to have every encounter type have many scenes like this one.. with a unique character and stuff.. But after writing one such scene I was like.. nope x3 we doing something simpler or we doin nothing!"
+	return "Пожалуй, это одна из самых первых... сцен встреч... которые я написала. В ней же одна из самых ранних пошлых сцен в игре ^^. Так что если они косячные — то в этом причина x3. Раньше идея заключалась в том, чтобы у каждого типа встреч было много таких сцен... с уникальными персонажами и всё такое... Но написав одну такую сцену, я подумала... ну нафиг x3, будем делать что-то попроще, иначе вообще ничего не будем делать!"
 
 func hasDevCommentary():
 	return true

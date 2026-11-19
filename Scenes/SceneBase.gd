@@ -228,7 +228,7 @@ func addButtonAt(index:int, text: String, tooltip: String = "", method: String =
 func addDisabledButtonAt(index:int, text: String, tooltip: String = ""):
 	GM.ui.addDisabledButtonAt(index, text, tooltip)
 
-func addButtonUnlessLate(text: String, tooltip: String = "", method: String = "", args = [], latetext: String = "It's way too late for that"):
+func addButtonUnlessLate(text: String, tooltip: String = "", method: String = "", args = [], latetext: String = "Для этого уже слишком поздно"):
 	if(GM.main.isVeryLate()):
 		addDisabledButton(text, latetext)
 	else:
@@ -274,16 +274,16 @@ func addMessage(text: String):
 
 func addExperienceToPlayer(ex: int, showMessage: bool = true):
 	if(showMessage):
-		addMessage("You received "+str(ex)+" experience")
+		addMessage("Вы получили "+str(ex)+" experience")
 	GM.pc.addExperience(ex)
 
 func friskPlayer():
 	var foundAnything = false
 	for item in GM.pc.getInventory().getItemsWithTag(ItemTag.Illegal):
-		addMessage(item.getStackName()+" was taken away")
+		addMessage(item.getStackName()+" забрали")
 		foundAnything = true
 	for item in GM.pc.getInventory().getEquippedItemsWithTag(ItemTag.Illegal):
-		addMessage(item.getStackName()+" was taken away")
+		addMessage(item.getStackName()+" забрали")
 		foundAnything = true
 	return foundAnything
 

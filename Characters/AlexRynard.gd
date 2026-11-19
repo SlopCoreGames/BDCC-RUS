@@ -73,29 +73,29 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.Pregnant):
-		return "Having kids in prison? Are you out of your mind?"
+		return "Рожать детей в тюрьме? Ты что, совсем с катушек съехал?"
 	if(interest == InterestTopic.Bodywritings):
-		return "I do like art. I guess even the body art."
+		return "Искусство мне нравится. Даже татухи на теле."
 	if(interest == InterestTopic.CoveredInCum):
-		return "Go get a shower, kiddo."
+		return "Иди в душ, малявка."
 	if(interest == InterestTopic.LoosePussy):
-		return "What makes you fuck so much. Go fix your libido."
+		return "Чего ты так постоянно трахаешься? Сходи, подлечи свое либидо."
 	if(interest == InterestTopic.LooseAnus):
-		return "I don't need to see your destroyed ass."
+		return "Мне не нужно видеть твою избитую задницу."
 	if(interest == InterestTopic.BDSMRestraints):
-		return "Bondage rigging is my biggest pleasure. I will leave breeding to others."
+		return "Связывание — мое самое большое удовольствие. А размножением пусть занимаются другие."
 	if(interest == InterestTopic.AndroBody):
-		return "I never cared how people look. What inside matters more."
+		return "Мне никогда не было дела до внешности. Важнее то, что внутри."
 	if(interest == InterestTopic.FullyNaked):
-		return "Put some clothes on, this is embarrassing."
+		return "Надень хоть что-нибудь, а то стыдно смотреть."
 	if(interest == InterestTopic.LactatingBreasts):
-		return "Are you a cow? Go eat grass."
+		return "Ты что, корова? Иди траву жуй."
 	if(interest == InterestTopic.BigCock):
-		return "How are you even.. whatever"
+		return "Как ты вообще... да хрен с тобой."
 	if(interest == InterestTopic.StuffedPussy):
-		return "Breeding is all you can think about? Do you have dreams?"
+		return "Только о размножении и думаешь? У тебя вообще есть мечты?"
 	if(interest == InterestTopic.StuffedAss):
-		return "I didn't need to see that."
+		return "Только этого зрелища мне не хватало."
 	
 func _getName():
 	return "Alex Rynard"
@@ -104,7 +104,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Male fox with a cold stare. Wears an engineer uniform"
+	return "Самец лиса с холодным взглядом. Одет в форму инженера."
 
 func getSpecies():
 	return ["canine"]
@@ -142,7 +142,7 @@ func _getAttacks():
 	return ["NpcScratch", "StrongBite", "simplekickattack", "HeatGrenade", "BolaThrow", "ForceBlindfoldPC", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return "Alex grunts as he gets into a fighting stance, his prosthetic spine is not meant for combat. But he seems tough even with that handicap."
+	return "Алекс кряхтит, принимая боевую стойку; его протез позвоночника не предназначен для сражений, но даже с такой помехой он выглядит крепким орешком."
 
 func getLootTable(_battleName):
 	return EngineerLoot.new()
@@ -151,48 +151,48 @@ func reactRestraint(restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"You can't tie me up so easily",
-				"Try harder next time",
-				"What now?",
-				"You can't tie up a rigger",
+				"Тебе не так-то просто меня связать.",
+				"В следующий раз постарайся получше.",
+				"Что на этот раз?",
+				"Риггера просто так не свяжешь.",
 			])
 		
 		return RNG.pick([
-			"I will break your toys",
-			"These can't hold me back forever",
+			"Я сломаю все твои игрушки.",
+			"Эти путы не удержат меня вечно.",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
-				"Stop with this crap",
-				"Enough, save these for lilacs and reds",
-				"How many more do you have?",
+				"Кончай эту херню.",
+				"Хватит, оставь это для сирени и красных роз",
+				"Сколько у тебя еще осталось?",
 			])
 		
 		if(restraintType == RestraintType.Gag):
 			return RNG.pick([
-				"Hey! Don't fucking gag me",
-				"You think gagging me will save you?",
+				"Эй! Не затыкай мне, блядь, рот!",
+				"Думаешь, если заткнешь меня, это тебя спасет?",
 			])
 		if(restraintType == RestraintType.Muzzle):
 			return RNG.pick([
-				"Hey! Don't fucking muzzle me",
-				"You think muzzling me will save you?",
+				"Эй! Не надевай на меня, сука, намордник!",
+				"Думаешь, намордник тебя спасет?",
 			])
 		if(restraintType == RestraintType.ButtPlug):
 			return RNG.pick([
-				"Hey! Not my ass!",
-				"Don't touch my fucking ass",
+				"Эй! Только не в задницу!",
+				"Не трогай мою ебаную задницу!",
 			])
 	
 		return RNG.pick([
-			"Hey! Restraints are my thing!",
-			"The fuck are you doing?",
-			"You are making me real mad",
-			"You can't win like this",
-			"Fight me instead of this shit",
-			"Keep that shit away from me",
+			"Эй! Ограничители — это по моей части!",
+			"Какого хуя ты творишь?",
+			"Ты меня реально бесишь",
+			"Так ты не победишь",
+			"Сражайся со мной, а не занимайся этой хернёй",
+			"Убери от меня это дерьмо",
 		])
 	return null
 

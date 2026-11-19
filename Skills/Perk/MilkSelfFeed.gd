@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Молочный наркоман"
 
 func getVisibleDescription():
-	return "You gain the ability to self-feed yourself by squeezing milk into your mouth, relieving pain depending on the amount!"
+	return "Вы обретаете способность кормить себя самостоятельно, выдавливая молоко прямо в рот, что облегчает боль в зависимости от количества съеденного!"
 
 func getSkillTier():
 	return 1

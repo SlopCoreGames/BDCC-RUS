@@ -21,7 +21,7 @@ func getUnlockData() -> Dictionary:
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
-				desc = "Ask if she is brave enough to try her own product. She will probably end up in a milking machine..",
+				desc = "Спросить, хватит ли ей смелости попробовать собственный продукт. Скорее всего, в итоге она окажется в доильном аппарате...",
 				sceneID = "ElizaDrugTestRandomCockScene",
 			},
 		],
@@ -66,13 +66,13 @@ func getPillOptions() -> Dictionary:
 	return {
 		"specificPartID": {
 			name = "Тип члена",
-			desc = "What kind of cock the drug will grow.",
+			desc = "Какого размера член вырастет под действием препарата.",
 			value = "",
 			values = dicks,
 		},
 		"targetLen": {
 			name = "Длина",
-			desc = "How long should the new cock be.",
+			desc = "Какой длины должен быть новый член.",
 			value = 12.0,
 			values = lenArray,
 		},
@@ -130,7 +130,7 @@ func doProgress(_context:Dictionary) -> Dictionary:
 
 func reactProgress(_context:Dictionary, _result:TFResult):
 	if(getStage() == 0):
-		addText("{npc.YouHe} {npc.youHeVerb('feel')} a strange warmth spreading through {npc.yourHis} lower abdomen, as if something new is starting to take shape beneath the surface.")
+		addText("{npc.YouHe} {npc.youHeVerb('feel')} странное тепло разливается по {npc.yourHis} нижней части живота, словно под кожей начинает обретать форму что-то новое.")
 		return
 	addText(_result.getAllTFTexts())
 	

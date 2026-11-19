@@ -61,7 +61,7 @@ func loadData(_data):
 func getLewdSizeAdjective():
 	var theCharacter = getCharacter()
 	if(theCharacter != null && theCharacter.isWearingChastityCage()):
-		return RNG.pick(["caged up", "locked away"])
+		return RNG.pick(["в клетке", "заперт"])
 	
 	if(lengthCM <= 5.0):
 		return RNG.pick(["tiny", "minuscule"])
@@ -87,9 +87,9 @@ func getLewdName():
 func getPickableAttributes():
 	var result = .getPickableAttributes()
 	result["cocksize"] = {
-		"text": "Pick your cock's length",
+		"text": "Выберите длину своего члена",
 		"textButton": "Length",
-		"buttonDesc": "Pick the cock's length",
+		"buttonDesc": "Выберите длину члена",
 		"options": [
 			[5, Util.cmToString(5), "Pick this length"],
 			[8, Util.cmToString(8), "Pick this length"],
@@ -107,9 +107,9 @@ func getPickableAttributes():
 		"floatinput": true,
 	}
 	result["ballsscale"] = {
-		"text": "Pick your balls scale",
+		"text": "Выберите размер яичек",
 		"textButton": "Balls",
-		"buttonDesc": "Pick the cock's balls scale",
+		"buttonDesc": "Выберите размер яичек и члена",
 		"options": [
 			[0.0, "0%", "Pick this scale"],
 			[0.3, "30%", "Pick this scale"],

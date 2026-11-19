@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Бак с кончей"
 
 func getVisibleDescription():
-	return "You feel your balls becoming heavier after so much cumming. They now hold 50% more seed!"
+	return "После такого количества кончи ты чувствуешь, как яички наливаются тяжестью. Теперь они вмещают на 50% больше семени!"
 
 func getSkillTier():
 	return 0

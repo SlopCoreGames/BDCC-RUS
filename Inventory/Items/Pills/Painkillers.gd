@@ -23,9 +23,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the painkillers",
+			"description": "Принять обезболивающее",
 		},
 	]
 
@@ -72,9 +72,9 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	#var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "Painkillers",
+		"name": "Обезболивающее",
 		"usedName": "a painkiller pill",
-		"desc": "Helps with the pain.",
+		"desc": "Помогает унять боль.",
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": float(_domInfo.getChar().getPainLevel() >= 0.5) if !GM.main.isInDungeon() else 0.0,
 		"scoreSubScore": 1.0,

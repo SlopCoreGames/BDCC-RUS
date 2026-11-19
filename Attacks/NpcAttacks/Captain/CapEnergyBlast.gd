@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Энергетический залп"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -30,9 +30,9 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} charges up energy in {attacker.his} pistol for a single powerful blast before aiming directly at {receiver.name}. This one [b]will[/b] hurt." \
+	return "{attacker.name} заряжает энергию в {attacker.his} пистолете, готовясь выпустить мощный залп прямо в {receiver.name}. Этот выстрел [b]точно[/b] будет болезненным." \
 	+ "\n\n"\
-	+ "[say=attacker]"+RNG.pick(["I don't wanna kill you. But you crossed the line.", "You went too far. Time for the consequences."])+"[/say]"
+	+ "[say=attacker]"+RNG.pick(["Я не хочу тебя убивать. Но ты перешел черту.", "Ты зашел слишком далеко. Пора платить по счетам."])+"[/say]"
 
 func getAttackSoloAnimation():
 	return "firepistol"

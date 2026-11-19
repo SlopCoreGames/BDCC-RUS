@@ -20,7 +20,7 @@ func getVisibleName():
 	return "Электрошокер"
 
 func getDescription():
-	var text = "Стандартное оружие охранника.\nНаносит "+Util.dmgRangeArrayStr(getDamageRange())+" physical damage.\nHas "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "charge")+" left"
+	var text = "Стандартное оружие охранника.\nНаносит "+Util.dmgRangeArrayStr(getDamageRange())+" физический урон.\nИмеет "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "charge")+" left"
 
 	return text
 

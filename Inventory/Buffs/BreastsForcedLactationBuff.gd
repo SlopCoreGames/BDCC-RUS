@@ -4,7 +4,7 @@ func _init():
 	id = Buff.BreastsForcedLactationBuff
 
 func getVisibleDescription():
-	return "Forced lactation"
+	return "Принудительная лактация"
 
 func getBuffColor():
 	return DamageType.getColor(DamageType.Lust)

@@ -213,7 +213,7 @@ func _react(_action: String, _args):
 	if(_action == "exit_lab"):
 		processTime(5*60)
 		addExperienceToPlayer(100)
-		addMessage("Task updated")
-		addMessage("Bounty board in the nursery can now help you find inmates that have transformation drugs on them.")
+		addMessage("Задача обновлена")
+		addMessage("Доска объявлений в детской теперь поможет вам найти заключенных, у которых при себе есть трансформирующие наркотики.")
 
 	setState(_action)

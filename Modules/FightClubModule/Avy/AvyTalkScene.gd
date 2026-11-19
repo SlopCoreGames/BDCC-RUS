@@ -252,12 +252,12 @@ func _react_scene_end(_tag, _result):
 				addExperienceToPlayer(arenaFighter.getWinExperience())
 				var addCredits = arenaFighter.getWinCredits()
 				GM.pc.addCredits(addCredits)
-				addMessage("You received "+str(addCredits)+" "+Util.multipleOrSingularEnding(addCredits, "credit"))
+				addMessage("Вы получили "+str(addCredits)+" "+Util.multipleOrSingularEnding(addCredits, "credit"))
 			else:
 				addExperienceToPlayer(arenaFighter.getRepeatWinExperience())
 				var addCredits = arenaFighter.getRepeatWinCredits()
 				GM.pc.addCredits(addCredits)
-				addMessage("You received "+str(addCredits)+" "+Util.multipleOrSingularEnding(addCredits, "credit")+" for a rematch")
+				addMessage("Вы получили "+str(addCredits)+" "+Util.multipleOrSingularEnding(addCredits, "credit")+" на реванш")
 				
 			FightClubModule.markFighterAsDefeated(savedFighterID)
 			FightClubModule.raisePCRankTo(arenaFighter.getRank())
@@ -280,7 +280,7 @@ func getDebugActions():
 	return [
 		{
 			"id": "instantWin",
-			"name": "Win all fights",
+			"name": "Побеждать во всех боях",
 			"args": [
 			],
 		},
@@ -291,7 +291,7 @@ func doDebugAction(_id, _args = {}):
 		getModule("FightClubModule").forceWinEveryoneExpectAvy()
 
 func getDevCommentary():
-	return "Avy.. Avy, Avy, Avy.. Is that even a good name for her? x3\n\nAvy is.. a bitch. Like Risha x3. But Avy is sliiiiightly more complex than that. Avy is the only shemale static character currently ^^. Is she suffering from that somehow? Nah, this is the future where everyone just accepted -all- the genders, utopia if you will x3. And if you don't like your gender/private bits then there are ways to change that. If you look at real life, I think that's where it's all heading. At some point everyone will just.. stop giving a fuck about what's between your legs or how you identify as. Personality > Body. Hopefully ^^. People are still allowed to have preferences obviously, straight/gay/bi/pan is an entirely different thing..\n\nWhy did I write that.. Right, Avy is a dickgirl x3. Why is she a dickgirl? Because its more fun to have someone with a dick at the top of the chain. They think they will always be at the top and dick others ^^.\n\nRisha is mean because she is horny. Avy is.. more of a bully I guess? She wants power over you. What would she do with that power? She doesn't know. But she needs to see -everyone- be her sub"
+	return "Эви.. Эви, Эви, Эви.. Вообще, это подходящее ей имя? x3\n\nЭви.. сука. Как и Риша x3. Но Эви чуть-чуть сложнее. Эви — единственный статический персонаж-шимейл на данный момент ^^. Страдает ли она от этого как-то? Да нет, это будущее, где все просто приняли — вообще — все гендеры, утопия, если хотите x3. И если тебе не нравится твой пол или твои «приватные места», то есть способы это изменить. Если посмотреть на реальную жизнь, мне кажется, всё к этому и идет. В какой-то момент всем просто станет.. глубоко насрать, что у тебя там между ног и кем ты себя идентифицируешь. Личность > Тело. Надеюсь ^^. Людям, конечно, всё еще можно иметь предпочтения, гетеро/гомо/би/пан — это совсем другое дело..\n\nЗачем я это вообще написал.. Точно, Эви — дикгёрл x3. Почему она дикгёрл? Потому что веселее, когда на вершине пищевой цепочки кто-то с членом. Они думают, что всегда будут на вершине и будут поиметь остальных ^^.\n\nРиша злая, потому что она похотливая. Эви.. скорее задира, что ли? Она хочет власти над тобой. Что бы она сделала с этой властью? Она и сама не знает. Но ей нужно, чтобы — вообще все — были её сабами"
 
 func hasDevCommentary():
 	return true

@@ -475,7 +475,7 @@ func getCurrentLocationName():
 
 
 func _on_SkillsButton_pressed():
-	skillsButton.text = "Skills"
+	skillsButton.text = "Навыки"
 	if(!skillsScreen.visible):
 		hideAllScreens()
 		skillsScreen.visible = true
@@ -484,7 +484,7 @@ func _on_SkillsButton_pressed():
 		mainGameScreen.visible = true
 
 func makeSkillsButtonFlash():
-	skillsButton.text = "[!]Skills"
+	skillsButton.text = "[!]Навыки"
 
 
 func _on_Player_animation_changed(newanim):
@@ -614,7 +614,7 @@ func translateText(manualButton = false):
 				toTranslateFinal[str(optionID)+"_desc_extra"] = extraOptions[optionID][2]
 				
 		
-		translateStatusLabel.text = "Translating.."
+		translateStatusLabel.text = "Перевод.."
 		currentTranslationTask += 1
 		var rememberedTask = currentTranslationTask
 		
@@ -633,7 +633,7 @@ func translateText(manualButton = false):
 			return
 		
 		if(!(result is Dictionary)):
-			translateStatusLabel.text = "Failed to translate"
+			translateStatusLabel.text = "Ошибка перевода"
 		else:
 			var theText:String = result["text"] if result.has("text") else textOutput.bbcode_text
 			
@@ -699,7 +699,7 @@ func setSceneArtWork(imageData):
 		pass
 	else:
 		if(imageData.has("artist") && imageData["artist"] != ""):
-			full_art_label.text = "Art by "+str(imageData["artist"])
+			full_art_label.text = "Арт: "+str(imageData["artist"])
 		else:
 			full_art_label.text = ""
 		fullArtWorkRect.textures = imageData["imagePath"]

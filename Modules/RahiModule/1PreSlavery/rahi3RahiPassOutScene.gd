@@ -459,7 +459,7 @@ func loadData(data):
 	carrying_rahi = SAVE.loadVar(data, "carrying_rahi", false)
 
 func getDevCommentary():
-	return "Another one of those Rahi's 'self-destruction' scenes.. Yeah, it all happens a little too fast maybe but otherwise it would be boring to read. The 'stakes' need to get higher each time. If Rahi's approach isn't changing - something else must change."
+	return "Очередная сцена «саморазрушения» Рахи... Да, всё происходит, пожалуй, слишком стремительно, но иначе читать было бы скучно. Ставки должны расти с каждым разом. Если подход самой Рахи не меняется — значит, должно измениться что-то другое."
 
 func hasDevCommentary():
 	return true

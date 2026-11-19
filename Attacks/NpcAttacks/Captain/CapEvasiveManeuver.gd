@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Уклоняющийся маневр"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} шире расставляет {attacker.his} ноги и руки, готовясь уклониться от любых входящих атак."

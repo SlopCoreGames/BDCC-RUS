@@ -18,7 +18,7 @@ func getPriority():
 
 func onButton(_method, _args):
 	if(_method == "nura"):
-		GM.main.addMessage("You grab the syringe tool and store it. Maybe someone here can use it. But not you.")
+		GM.main.addMessage("Ты хватаешь шприц и убираешь его. Может, кому-то здесь он пригодится. Но только не тебе.")
 		
 		GM.main.setFlag("CellblockModule.NuraFoundTool", true)
 		GM.main.reRun()

@@ -7,4 +7,4 @@ func getVisibleName():
 	return "Ошибка"
 
 func getVisibleDescription():
-	return "Error"
+	return "Ошибка"

@@ -95,29 +95,29 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "You're a herm, huh~"
+		return "Значит, ты герма, да~?"
 	if(interest == InterestTopic.ExposedPanties):
-		return "Take those panties off before I rip them off, slut"
+		return "Снимай трусики сама, пока я их не сорвала, шлюха"
 	if(interest == InterestTopic.TallyMarks):
-		return "Oh my~. I love when sluts have tally marks"
+		return "О боже~. Обожаю, когда у шлюх есть зарубки на теле"
 	if(interest == InterestTopic.Bodywritings):
-		return "Can I leave some words on you too~?"
+		return "Можно я тоже оставлю на тебе пару словечек~?"
 	if(interest == InterestTopic.BigCock):
-		return "Pff-f, how do you even have enough blood for your cock to get hard?"
+		return "Пфф, да у тебя вообще крови хватит, чтобы член встал?"
 	if(interest == InterestTopic.LoosePussy):
-		return "Meh, your cunt is too ruined already, it's not fun."
+		return "Мда, твоя киска уже слишком раздолбана, даже не весело"
 	if(interest == InterestTopic.LooseAnus):
-		return "Can you ride less horsecocks with that ass maybe?"
+		return "Может, будешь скакать на лошадиных членах чуть пореже со своей задницей?"
 	if(interest == InterestTopic.StuffedThroat):
-		return "Oh yeah, I love when sluts drool cum~"
+		return "О да, обожаю, когда шлюхи пускают слюни из спермы~"
 	if(interest == InterestTopic.CoveredInLotsOfCum):
-		return "You're such a cum dump~"
+		return "Ну ты и спермобак~"
 	if(interest == InterestTopic.SlimBody):
-		return "Oh, you're so slim I think I can hold you hovering while fucking~"
+		return "Ох, ты такая худая, что, кажется, я смогу удерживать тебя в воздухе, пока трахаю~"
 	if(interest == InterestTopic.Pregnant):
-		return "Someone knocked you up, huh~. Was it me by any chance?"
+		return "Кто-то тебя обрюхатил, а~? Это случайно не был я?"
 	if(interest == InterestTopic.ExposedCock):
-		return "Hide that cock, slut, you won't need it with me"
+		return "Спрячь свой член, шлюха, со мной он тебе не понадобится"
 	
 	
 func _getName():
@@ -130,7 +130,7 @@ func getPronounGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Red inmate, medium-height fox with a black fur and a feminine look."
+	return "Заключенная по кличке Ред — лисица среднего роста с черным мехом и женственной внешностью."
 
 func getSpecies():
 	return ["canine"]
@@ -140,8 +140,8 @@ func _getAttacks():
 
 func getFightIntro(_battleName):
 	if(_battleName == "arenafight"):
-		return "Avy stands tall, her foxy tail swishing behind her. It seems she is waiting for you to do the first move.."
-	return "Avy stands straight, her hands slightly behind her, clawed digits spread out."
+		return "Ави стоит в полный рост, помахивая своим лисьим хвостом. Кажется, она ждет, когда ты сделаешь первый ход..."
+	return "Ави стоит прямо, слегка заложив руки за спину и расставив когтистые пальцы."
 
 func getThickness() -> int:
 	return 75

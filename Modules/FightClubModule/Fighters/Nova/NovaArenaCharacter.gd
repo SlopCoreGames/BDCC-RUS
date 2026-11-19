@@ -36,7 +36,7 @@ func getPronounGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Gray husky that wears hi-tech guard armor. Medium height, fit body"
+	return "Серая хаски в высокотехнологичной броне охраны. Среднего роста, подтянутое телосложение"
 
 func getSpecies():
 	return ["canine"]
@@ -60,7 +60,7 @@ func getFightIntro(_battleName):
 		return mes
 	var mes = "Nova’s power armor lights up as she grabs her trusty stun baton and directs her attention to you."
 	mes += "\n\n"
-	return mes+formatSay("You have no right to remain silent, anything I say will be used against you. Come here, sweetie~")
+	return mes+formatSay("У тебя нет права молчать: всё, что я скажу, будет использовано против тебя. Иди сюда, сладенькая~")
 
 func getChatColor():
 	return '#90A9F4'

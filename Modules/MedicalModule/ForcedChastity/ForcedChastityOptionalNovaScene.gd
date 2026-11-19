@@ -350,7 +350,7 @@ func loadData(data):
 	isFuckYou = SAVE.loadVar(data, "isFuckYou", false)
 
 func getDevCommentary():
-	return "Nova's optional scene is probably the most.. sissification-like. Why? Well, why not x3. Might as well explore that concept a little bit. And Nova fits for that role pretty well."
+	return "Дополнительная сцена Новы, пожалуй, самая... сиссификационная. Почему? Ну, а почему бы и нет x3. Вполне можно немного исследовать эту концепцию. И Нова на эту роль подходит как нельзя лучше."
 
 func hasDevCommentary():
 	return true

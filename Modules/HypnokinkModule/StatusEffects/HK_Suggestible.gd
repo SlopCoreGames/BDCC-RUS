@@ -51,11 +51,11 @@ func isInTrance():
 		
 func getEffectName():
 	if(!isHypnotized()):
-		return "Suggestible"
+		return "Внушаемость"
 	elif(!isInTrance()):
-		return "Hypnotized"
+		return "Гипноз"
 	else:
-		return "Entranced"
+		return "Транс"
 
 func getEffectDesc():
 	var text

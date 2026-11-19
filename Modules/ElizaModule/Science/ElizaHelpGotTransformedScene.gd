@@ -132,7 +132,7 @@ func _react(_action: String, _args):
 		GM.pc.addCredits(-15)
 		GM.pc.getTFHolder().undoAllTransformations()
 		setFlag("ElizaModule.firstHelpTFHap", true)
-		addMessage("You paid 15 credits")
+		addMessage("Вы заплатили 15 кредитов")
 
 	if(_action == "get_red"):
 		GM.pc.getTFHolder().makeAllTransformationsPermanent()

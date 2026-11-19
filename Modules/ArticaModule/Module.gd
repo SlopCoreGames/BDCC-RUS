@@ -183,9 +183,9 @@ func removeShy(howMuch, showMessage = true):
 	var newValue = clamp(oldShyness - howMuch, 0.0, 1.0)
 	if(oldShyness != newValue && showMessage):
 		if(newValue > oldShyness):
-			GM.main.addMessage("Artica's shyness has increased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Застенчивость Артики выросла до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 		else:
-			GM.main.addMessage("Artica's shyness has decreased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Застенчивость Артики снизилась до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 	
 	setFlag("ArticaModule.shyness", newValue)
 	
@@ -200,9 +200,9 @@ func addPawslut(howMuch, showMessage = true):
 	var newValue = clamp(oldPawslut + howMuch, 0.0, 1.0)
 	if(oldPawslut != newValue && showMessage):
 		if(newValue > oldPawslut):
-			GM.main.addMessage("Artica's interest in paws has increased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Интерес Артики к лапкам вырос до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 		else:
-			GM.main.addMessage("Artica's interest in paws has decreased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Интерес Артики к лапкам снизился до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 	
 	setFlag("ArticaModule.pawslut", newValue)
 
@@ -214,9 +214,9 @@ func addCorruption(howMuch, showMessage = true):
 	var newValue = clamp(oldCorruption + howMuch, 0.0, 1.0)
 	if(oldCorruption != newValue && showMessage):
 		if(newValue > oldCorruption):
-			GM.main.addMessage("Artica's corruption has increased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Развращенность Артики выросла до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 		elif(newValue < oldCorruption):
-			GM.main.addMessage("Artica's corruption has decreased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Развращенность Артики снизилась до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 	
 	setFlag("ArticaModule.corruption", newValue)
 
@@ -238,9 +238,9 @@ func addChastity(howMuch, showMessage = true):
 	var newValue = clamp(oldChastity + howMuch, 0.0, 1.0)
 	if(oldChastity != newValue && showMessage):
 		if(newValue > oldChastity):
-			GM.main.addMessage("Artica's acceptance of chastity has increased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Склонность Артики к целомудрию выросла до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 		else:
-			GM.main.addMessage("Artica's acceptance of chastity has decreased to "+str(Util.roundF(newValue*100.0, 1))+"%!")
+			GM.main.addMessage("Склонность Артики к целомудрию снизилась до "+str(Util.roundF(newValue*100.0, 1))+"%!")
 	
 	setFlag("ArticaModule.chastity", newValue)
 
@@ -302,19 +302,19 @@ func getCorruptionEventScenes():
 	return {
 		"eventTentacles": [
 			{
-				"name": "Scouting greenhouses",
+				"name": "Разведка теплиц",
 				"scene": "articaEventTentacles1Scene",
 				"canstart": !isElizaBusy,
 				"hint": "Eliza Quinn must be available",
 			},
 			{
-				"name": "Small tentacles",
+				"name": "Маленькие щупальца",
 				"scene": "articaEventTentacles2Scene",
 				"canstart": !isElizaBusy && getFlag("ArticaModule.TentaclesArticaHasFlower", false),
 				"hint": ("Artica needs a special flower. Steal one from the greenhouses and give it to her! " if !getFlag("ArticaModule.TentaclesArticaHasFlower", false) else "")+("Eliza Quinn must be available" if isElizaBusy else ""),
 			},
 			{
-				"name": "Big tentacles",
+				"name": "Огромные щупальца",
 				"scene": "articaEventTentacles3Scene",
 				"canstart": !isElizaBusy,
 				"hint": "Eliza Quinn must be available",
@@ -322,41 +322,41 @@ func getCorruptionEventScenes():
 		],
 		"eventSelfsuck": [
 			{
-				"name": "First Yoga",
+				"name": "Первая йога",
 				"scene": "articaEventSelfsuck1Scene",
 			},
 			{
-				"name": "Gym conflict",
+				"name": "Конфликт в спортзале",
 				"scene": "articaEventSelfsuck2Scene",
 			},
 			{
-				"name": "Bending deep..",
+				"name": "Глубокий прогиб...",
 				"scene": "articaEventSelfsuck3Scene",
 			}
 		],
 		"eventDildo": [
 			{
-				"name": "Creating a mold",
+				"name": "Создание формы",
 				"scene": "articaEventDildo1Scene",
 			},
 			{
-				"name": "Dildo royale!",
+				"name": "Дилдо-рояль!",
 				"scene": "articaEventDildo2Scene",
 			},
 			{
-				"name": "Big reward",
+				"name": "Большая награда",
 				"scene": "articaEventDildo3Scene",
 			}
 		],
 		"eventPortalPanties": [
 			{
-				"name": "Hypnovisor",
+				"name": "Гипновизор",
 				"scene": "articaEventPortalPanties1Scene",
 				"canstart": !isAlexBusy,
 				"hint": "Alex Rynard must be available",
 			},
 			{
-				"name": "Portal panties",
+				"name": "Портальные трусики",
 				"scene": "articaEventPortalPanties2Scene",
 				"canstart": !isAlexBusy && !GlobalRegistry.getCharacter("artica").isWearingChastityCage(),
 				"hint": ("Artica can not be wearing a chastity cage. " if GlobalRegistry.getCharacter("artica").isWearingChastityCage() else "")+("Alex Rynard must be available." if isAlexBusy else ""),
@@ -454,21 +454,21 @@ func getReplayMenuScenes():
 			if(!canStart):
 				possible[eventID]["scenes"].append({
 					"name": theSceneInfo["name"],
-					"desc": "Can't replay this scene!\n\n"+theSceneInfo["hint"],
+					"desc": "Эту сцену нельзя повторить!\n\n"+theSceneInfo["hint"],
 					"canstart": canStart,
 					"scene": theSceneInfo["scene"],
 				})
 			elif(flagValue <= _i):
 				possible[eventID]["scenes"].append({
 					"name": theSceneInfo["name"],
-					"desc": "This scene hasn't happened yet",
+					"desc": "Эта сцена еще не наступила",
 					"canstart": false,
 					"scene": theSceneInfo["scene"],
 				})
 			elif(canStart):
 				possible[eventID]["scenes"].append({
 					"name": theSceneInfo["name"],
-					"desc": "Replay this scene",
+					"desc": "Повторить эту сцену",
 					"canstart": canStart,
 					"scene": theSceneInfo["scene"],
 				})
@@ -550,9 +550,9 @@ func getReaction():
 			gaveBirthReaction = "Heys.. gods.. another litter. I love being a kitten factory, a breeding bitch, a pup maker.. P-please, m-more.. I want to be filled, to give b-birth again and again.."
 		else:
 			gaveBirthReaction = RNG.pick([
-				"Hey-heys.. Gave b-birth to more kids.. and I s-still love it. I love being a pup factory, a slut for breeding. I crave more i-impregnations.. I need it. Please, make me a breeding slut forever..",
-				"H-heya-s.. I g-gave birth to so many.. I'm s-such a.. b-breeding slut.. it has b-became my purpose..",
-				"Heys.. I l-lost track how m-many times I g-gave birth by n-now.. m-more than ten f-for sure.. I c-can't h-help it.. I w-want more..",
+				"Приве-етик.. Снова р-родила деток.. и мне всё ещё н-нравится. Обожаю быть фабрикой щенков, шлюхой для размножения. Жажду новых оплодотворений.. мне это н-нужно. Пожалуйста, сделай меня своей сучкой для вязки навеки..",
+				"П-приве-етик.. Я столько раз р-рожала.. Я такая.. р-размножающаяся шлюшка.. это с-стало моим предназначением..",
+				"Приветик.. Я уже сбилась со счёта, с-сколько раз я р-родила к этому м-моменту.. Точно б-больше десяти.. Н-не могу с собой ч-что поделать.. х-хочу ещё..",
 			])
 		
 		setFlag("ArticaModule.canReactGaveBirth", false)
@@ -572,74 +572,74 @@ func getReaction():
 		if(GlobalRegistry.getCharacter("artica").isVisiblyPregnantFromPlayer()):
 			if(gaveBirthAmount <= 0):
 				return RNG.pick([
-					"Oh.. h-hi.. I t-think.. I'm p-pregnant.. from you.. I've never b-been pregnant b-before..",
-					"Hello.. I.. I'm.. p-pregnant.. f-from you I t-think.. w-what do I do..",
-					"H-hey.. I'm g-gonna be a m-mommy s-soon.. f-for the first t-time.. I'm s-scared..",
+					"Ох.. п-привет.. Кажется.. я б-беременна.. от тебя.. Раньше я н-ни разу не б-была беременной..",
+					"Привет.. Я.. я.. б-беременна.. кажется, от т-тебя.. ч-что же мне делать..",
+					"П-привет.. Скоро я с-стану м-мамочкой.. в п-первый раз.. Мне с-страшно..",
 				])
 			elif(gaveBirthAmount <= 3):
 				return RNG.pick([
-					"Hh-hey.. I’m pregnant again. It’s.. still scary, but I’m getting used to it.. They move so much, and my.. my nipples are so sensitive..",
-					"My body’s changing so much.. M-my b-breasts look s-so swollen.. and my b-belly.. so big.. w-with your l-litter..",
-					"My b-belly is so big.. I c-can barely m-move.. ah.. t-they are k-kicking inside sometimes..",
+					"П-привет.. Я снова беременна. Это.. всё ещё пугает, но я п-привыкаю.. Они там так много дёргаются, а мои.. мои соски такие чувствительные..",
+					"Моё тело так сильно меняется.. М-моя грудь выглядит такой надутой.. а п-живот.. такой большой.. с твоим п-потомком..",
+					"Мой ж-живот такой огромный.. я ед-едва могу д-двигаться.. ах.. они иногда п-пинаются внутри..",
 				])
 			elif(gaveBirthAmount <= 6):
 				return RNG.pick([
-					"I.. I think I’m starting to enjoy feeling them i-inside me..",
-					"Hey-heys.. I’m full of your pups again. Haha.. I.. I can’t help but feel excited. I’m starting to love this f-feeling..",
-					"M-my nipples are so itchy and s-sensitive. I think.. I think I’m starting to crave this.."
+					"Я.. кажется, мне начинает н-нравиться это ощущение внутри меня..",
+					"Эй... во мне снова полно твоих щенков. Ха-ха... Я... я просто не могу сдержать возбуждения. Кажется, мне начинает н-нравиться это чувство...",
+					"М-мои соски так чешутся и они такие ч-чувствительные. Думаю... думаю, я начинаю к этому т-тяготеть..."
 				])
 			else:
 				return RNG.pick([
-					"Please, make me your breeding bitch.. always full of your pups..",
-					"I l-love being stuffed full.. and I l-love carrying your l-litter..",
-					"L-look.. it's y-your p-pups in me..",
+					"Пожалуйста, сделай меня своей сукой для разведения... чтобы я всегда была полна твоих щенков...",
+					"Я о-обожаю, когда меня набивают до отказа... и о-обожаю вынашивать твой помет...",
+					"С-смотри... это т-твои щенки внутри меня...",
 				])
 		else:
 			if(gaveBirthAmount <= 0):
 				return RNG.pick([
-					"Oh.. h-hi.. I t-think.. I'm p-pregnant.. and I d-don't even know from w-who.. I've never b-been pregnant b-before..",
-					"Hello.. I.. I'm.. p-pregnant.. f-from s-someone.. I d-don't k-know.. w-what do I do..",
-					"H-hey.. I'm g-gonna be a m-mommy s-soon.. f-for the first t-time.. I'm s-scared..",
+					"Ох... п-привет... Кажется... я б-беременна... и даже не з-знаю от к-кого... Раньше я н-ни разу не б-беременела...",
+					"Привет... Я... я... б-беременна... от к-кого-то... я д-даже не з-знаю... ч-что же мне делать...",
+					"П-привет.. Скоро я с-стану м-мамочкой.. в п-первый раз.. Мне с-страшно..",
 				])
 			elif(gaveBirthAmount <= 3):
 				return RNG.pick([
-					"Hh-hey.. I’m pregnant again. It’s.. still scary, but I’m getting used to it.. They move so much, and my.. my nipples are so sensitive..",
-					"My body’s changing so much.. M-my b-breasts look s-so swollen.. and my b-belly.. so big.. w-with someone's l-litter..",
-					"My b-belly is so big.. I c-can barely m-move.. ah.. t-they are k-kicking inside sometimes.. a-and I don't e-even know the f-father..",
+					"П-привет.. Я снова беременна. Это.. всё ещё пугает, но я п-привыкаю.. Они там так много дёргаются, а мои.. мои соски такие чувствительные..",
+					"Моё тело так сильно меняется... М-моя грудь выглядит такой распухшей... а мой живот... такой большой... в нем ч-чей-то помет...",
+					"М-мой живот такой огромный... я е-едва могу д-двигаться... ах... иногда они т-толчками шевелятся внутри... и я д-даже не з-знаю отца...",
 				])
 			elif(gaveBirthAmount <= 6):
 				return RNG.pick([
-					"I.. I think I’m starting to enjoy feeling them i-inside me..",
-					"Hey-heys.. I’m full of pups again. S-someone's.. Haha.. I.. I can’t help but feel excited. I’m starting to love this f-feeling..",
-					"M-my nipples are so itchy and s-sensitive. I think.. I think I’m starting to crave this.."
+					"Я.. кажется, мне начинает н-нравиться это ощущение внутри меня..",
+					"Эй... во мне снова полно щенков. Ч-чьих-то... Ха-ха... Я... просто не могу сдержать возбуждения. Кажется, мне начинает н-нравиться это чувство...",
+					"М-мои соски так чешутся и они такие ч-чувствительные. Думаю... думаю, я начинаю к этому т-тяготеть..."
 				])
 			else:
 				return RNG.pick([
-					"I l-love being a breeding bitch.. always full of pups..",
-					"I l-love being stuffed full.. and I l-love carrying l-litter after litter..",
-					"I'm c-carrying someone's pups.. f-feels so good..",
+					"Я о-очень люблю быть сучкой для разведения... вечно набитой щенками...",
+					"Я о-обожаю, когда меня набивают до отказа... и о-обожаю вынашивать помёт за помётом...",
+					"Я н-ношу чьих-то щенков... о-ощущения просто божественные...",
 				])
 	
 	# Corruption based, last resort
 	var theCorruption = getCorruption()
 	if(theCorruption > 0.8):
 		return RNG.pick([
-			"Hey there..",
-			"Heya.. Hope you're doing well, haha.",
-			"Hello..",
-			"Hellos..",
+			"Привет...",
+			"Приветик... Надеюсь, у тебя всё путём, ха-ха.",
+			"Привет...",
+			"Приветики...",
 		])
 	elif(theCorruption > 0.4):
 		return RNG.pick([
-			"Hey there.. Always good to see you..",
-			"Hello..",
-			"Heya..",
+			"О, привет... Всегда рада тебя видеть...",
+			"Здравствуй...",
+			"Приветик...",
 		])
 	else:
 		return RNG.pick([
 			"Oh.. hey..",
-			"Hello..",
-			"Hey..",
+			"Здравствуй...",
+			"Эй...",
 		])
 
 func getLastQuestHints():

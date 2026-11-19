@@ -22,10 +22,10 @@ func getStraponLength():
 	return 30.0
 
 func getCasualName():
-	return "giant horsecock strapon"
+	return "гигантский страпон-лошадь"
 
 func getLewdStraponName() -> String:
-	return RNG.pick(["giant rubber horsecock", "horsecock strapon", "giant strapon", "giant flared-tip strapon", "huge rubber cock"])
+	return RNG.pick(["гигантский резиновый конский член", "страпон-лошадь", "гигантский страпон", "гигантский страпон с расширяющимся кончиком", "огромный резиновый член"])
 
 func getPrice():
 	return 50

@@ -17,6 +17,6 @@ func getPriority():
 func onButton(_method, _args):
 	if(_method == "stealplant"):
 		setFlag("ArticaModule.TentaclesPcHasFlower", true)
-		addMessage("You stole the flower that Artica needs. Go give it to her!")
+		addMessage("Ты украл цветок, который так нужен Артике. Иди и отдай его ей!")
 		addExperienceToPlayer(50)
 		GM.main.reRun()

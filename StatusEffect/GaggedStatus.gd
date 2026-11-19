@@ -23,10 +23,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Gagged"
+	return "С кляпом во рту"
 
 func getEffectDesc():
-	return "Something in your mouth prevents you from biting and also garbles your speech"
+	return "Что-то во рту мешает тебе кусаться и превращает твою речь в невнятное бормотание"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/gag.png"

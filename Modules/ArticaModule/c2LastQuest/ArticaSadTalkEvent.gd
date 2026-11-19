@@ -11,7 +11,7 @@ func run(_triggerID, _args):
 		if(checkCharacterBusy("ArticaBusy", "Seems like the fluff is not here", "Artica")):
 			return
 
-		addButtonUnlessLate("Artica", "Talk with the herm fluff", "talk")
+		addButtonUnlessLate("Артика", "Поболтать с пушистой гермой", "talk")
 		return
 	
 func getPriority():

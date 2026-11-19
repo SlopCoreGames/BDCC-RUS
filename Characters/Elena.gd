@@ -22,7 +22,7 @@ func getGender():
 	return Gender.Other
 	
 func getSmallDescription() -> String:
-	return "A hologram of a cute girl."
+	return "Голограмма милой девушки."
 
 func getSpecies():
 	return ["human"]

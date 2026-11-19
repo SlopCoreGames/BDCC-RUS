@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Яростный удар"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -23,7 +23,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "С яростным ревом {attacker.name} хватает тебя за руку и швыряет в ближайшую стену. От удара по поверхности разлетаются трещины, а по твоему телу проносится взрыв боли, заставляя тебя задыхаться и терять ориентацию."
 	
 	if(_receiver.addEffect(StatusEffect.Stunned, [1])):
-		text += " [b]You got stunned![/b]"
+		text += " [b]Ты оглушен![/b]"
 		
 	return {
 		text = text,

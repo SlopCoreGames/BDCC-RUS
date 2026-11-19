@@ -104,9 +104,9 @@ func addCorruption(howMuch, showMessage = true):
 	if(showMessage):
 		var diff = currentCorruption - oldCor
 		if(diff > 0.0):
-			GM.main.addMessage("Jacki's corruption has increased to "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
+			GM.main.addMessage("Уровень развращенности Джеки вырос до "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
 		elif(diff < 0.0):
-			GM.main.addMessage("Jacki's corruption has decreased to "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
+			GM.main.addMessage("Уровень развращенности Джеки снизился до "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
 
 func addLust(howMuch, showMessage = true):
 	howMuch /= 100.0
@@ -126,9 +126,9 @@ func addLust(howMuch, showMessage = true):
 	if(showMessage):
 		var diff = currentLust - oldLust
 		if(diff > 0.0):
-			GM.main.addMessage("Jacki's lust has increased to "+str(Util.roundF(currentLust * 100.0, 1))+"%")
+			GM.main.addMessage("Уровень похоти Джеки вырос до "+str(Util.roundF(currentLust * 100.0, 1))+"%")
 		elif(diff < 0.0):
-			GM.main.addMessage("Jacki's lust has decreased to "+str(Util.roundF(currentLust * 100.0, 1))+"%")
+			GM.main.addMessage("Уровень похоти Джеки снизился до "+str(Util.roundF(currentLust * 100.0, 1))+"%")
 
 
 func addAnger(howMuch, showMessage = true):
@@ -155,14 +155,14 @@ func addAnger(howMuch, showMessage = true):
 		
 		if(currentAnger > 0.0):
 			if(diff > 0.0):
-				GM.main.addMessage("Jacki's anger has increased to "+str(Util.roundF(currentAnger * 100.0, 1))+"%")
+				GM.main.addMessage("Уровень гнева Джеки вырос до "+str(Util.roundF(currentAnger * 100.0, 1))+"%")
 			elif(diff < 0.0):
-				GM.main.addMessage("Jacki's anger has decreased to "+str(Util.roundF(currentAnger * 100.0, 1))+"%")
+				GM.main.addMessage("Уровень гнева Джеки снизился до "+str(Util.roundF(currentAnger * 100.0, 1))+"%")
 		else:
 			if(diff < 0.0):
-				GM.main.addMessage("Jacki's kindness has increased to "+str(Util.roundF(-currentAnger * 100.0, 1))+"%")
+				GM.main.addMessage("Уровень доброты Джеки вырос до "+str(Util.roundF(-currentAnger * 100.0, 1))+"%")
 			elif(diff > 0.0):
-				GM.main.addMessage("Jacki's kindness has decreased to "+str(Util.roundF(-currentAnger * 100.0, 1))+"%")
+				GM.main.addMessage("Уровень доброты Джеки снизился до "+str(Util.roundF(-currentAnger * 100.0, 1))+"%")
 
 func shouldWearSportsBra():
 	return getFlag("JackiModule.jackiReceivedBra", false)

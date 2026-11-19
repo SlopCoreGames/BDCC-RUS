@@ -11,7 +11,7 @@ func getVisibleName(_context = {}):
 	return "Удар ногой"
 	
 func getVisibleDesc(_context = {}):
-	return "Kick them for "+scaledDmgRangeStr(DamageType.Physical, 10, 15)+" damage.\n\nMay knock the opponent down with a low chance.\n\nGood against armored opponents"
+	return "Удар ногой, наносящий "+scaledDmgRangeStr(DamageType.Physical, 10, 15)+" ед. урона.\n\nС небольшим шансом может сбить противника с ног.\n\nЭффективно против бронированных целей"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -27,7 +27,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	if(RNG.chance(20) && !_receiver.hasEffect(StatusEffect.Collapsed)):
 		if(_receiver.addEffect(StatusEffect.Collapsed)):
-			text += "\n[b]{receiver.name} loses {receiver.his} balance and collapses onto the floor[/b]."
+			text += "\n[b]{receiver.name} теряет {receiver.his} равновесие и валится на пол[/b]."
 	
 	return {
 		text = text,

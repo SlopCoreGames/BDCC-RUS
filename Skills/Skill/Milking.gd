@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Дойка"
 
 func getVisibleDescription():
-	return "Shows how much you like being milked"
+	return "Показывает, насколько вам нравится, когда вас доят"
 
 func getPerkTiers():
 	return [

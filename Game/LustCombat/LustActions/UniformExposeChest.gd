@@ -26,7 +26,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Обнажить сиськи"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Open up your shirt and expose what’s behind it"
+	return "Расстегни рубашку и покажи, что под ней"
 
 func doAction(_lustState: LustCombatState, _args):
 	var _item:ItemBase = getItem(_lustState, _args)
@@ -38,30 +38,30 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(!pc.isBodypartCovered(BodypartSlot.Breasts)):
-		text += "You grab onto your uniform’s shirt and begin to sneakily unbutton it, enjoying yourself as your chest is slowly getting exposed. You feel your hard nips brushing against the fabric as you do it. Eventually you reach the bottom and then move the cloth to the sides, exposing your {pc.breasts} completely!"
+		text += "Ты хватаешься за рубашку своей униформы и начинаешь украдкой расстегивать пуговицы, наслаждаясь тем, как твоя грудь постепенно открывается миру. Ты чувствуешь, как твердые соски трутся о ткань. Наконец, дойдя до самого низа, ты раздвигаешь края одежды, полностью обнажая свои {pc.breasts}!"
 		text += "\n\n"
 		
 		if(RNG.chance(50) && pc.hasNonFlatBreasts()):
 			text += RNG.pick([
-				"[say=pc]Oh fuck, my tits are exposed. Anyone can see them if they look at me, makes me so horny~[/say]",
-				"[say=pc]Showing off my tits feels so good, I should do it more often~.[/say]",
-				"[say=pc]So liberating~. Can’t wait to rub my perky nips.[/say]",
+				"[say=pc]Ох черт, мои сиськи на виду. Любой может их заметить, если посмотрит на меня... это так возбуждает~[/say]",
+				"[say=pc]Так приятно выставлять свои сиськи напоказ, надо делать это почаще~[/say]",
+				"[say=pc]Какая свобода~. Не терпится потереть свои упругие соски.[/say]",
 			])
 			text += "\n\n"
 	else:
-		text += "You grab onto your uniform’s shirt and begin to sneakily unbutton it, enjoying yourself as your chest is slowly getting more exposed. You feel your hard nips brushing against the fabric as you do it. Eventually you reach the bottom and then move the cloth to the sides, exposing what's underneath."
+		text += "Ты хватаешься за рубашку своей униформы и начинаешь украдкой расстегивать пуговицы, наслаждаясь тем, как твоя грудь постепенно открывается. Ты чувствуешь, как твердые соски трутся о ткань. Наконец, дойдя до самого низа, ты раздвигаешь края одежды, обнажая то, что под ней."
 		text += "\n\n"
 
 	if(pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "Opening the shirt up reveals how much cum you also have underneath it on your {pc.breasts}, you’re so messy~"
+		text += "Расстегнутая рубашка открывает вид на то, сколько спермы размазано по твоим {pc.breasts}, ну ты и грязнуля~"
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.isVisiblyPregnant()):
-		text += "Your belly is looking quite pregnant, with no shirt it’s even more obvious that you’re carrying someone’s litter!"
+		text += "Твой живот выглядит совсем как у беременной; без рубашки еще очевиднее, что ты носишь чье-то потомство!"
 		text += "\n\n"
 	
 	if(_lustState.isInBattle()):
-		text += "The enemy seems to be watching your hands carefully. And you’re ready to make a show for them."
+		text += "Враг, кажется, внимательно следит за твоими руками. И ты готов устроить ему настоящее шоу."
 		text += "\n\n"
 	
 	return {

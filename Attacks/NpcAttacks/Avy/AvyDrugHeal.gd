@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Лечебный препарат"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "Глаза {attacker.name} ярко вспыхивают красным, когда {attacker.he} черпает силу из наркотика, в результате чего {attacker.him} становится сильнее."

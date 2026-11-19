@@ -168,116 +168,116 @@ func calculateScore(_id:String, _char:BaseCharacter) -> float:
 func getBidderOutbidReactions(_id:String, _char:BaseCharacter) -> Array:
 	if(_id == "BodySlim"):
 		return [
-			"That slim frame will look perfect in my collar.",
-			"I'll enjoy bending that slender body to my will.",
-			"That tight little body is all mine.",
-			"That slim waist will look perfect against me.",
+			"Эта стройная фигурка будет идеально смотреться в моем ошейнике.",
+			"Мне понравится подчинять это изящное тело своей воле.",
+			"Это тугое маленькое тельце теперь полностью мое.",
+			"Эта тонкая талия будет идеально смотреться в моих объятиях.",
 		]
 	if(_id == "BodyAverage"):
 		return [
-			"Strong and flexible, exactly my type.",
-			"That body is just what I need.",
+			"Сильное и гибкое — как раз в моем вкусе.",
+			"Это тело — именно то, что мне нужно.",
 		]
 	if(_id == "BodyThick"):
 		return [
-			"That thick body is built for pleasure, and it’ll be mine.",
-			"Those hips will be perfect under my hands.",
-			"That ass and hips belong to me, and no one else.",
+			"Это пышное тело создано для наслаждения, и оно будет моим.",
+			"Эти бедра будут идеально ощущаться под моими руками.",
+			"Эта задница и эти бедра принадлежат мне, и больше никому.",
 		]
 	if(_id == "Masculine"):
 		return [
-			"That strong, masculine body will submit to me soon.",
-			"I'll make that brute strength kneel before me.",
-			"I need that body.",
+			"Это сильное мужское тело скоро склонится предо мной.",
+			"Я заставлю эту гору мышц преклонить передо мной колени.",
+			"Мне нужно это тело.",
 		]
 	if(_id == "Androgynous"):
 		return [
-			"I need that body.",
-			"I'll savor it.",
+			"Мне нужно это тело.",
+			"Я буду смаковать это.",
 		]
 	if(_id == "Feminine"):
 		return [
-			"That beauty will be under me soon.",
-			"No one will touch that soft, delicate body but me.",
-			"I’ll own that girly figure.",
-			"I'll be the one to enjoy {slave.him}.",
+			"Эта красотка скоро окажется подо мной.",
+			"Никто не прикоснется к этому нежному, изысканному телу, кроме меня.",
+			"Эта девчачья фигурка будет моей.",
+			"Именно я буду наслаждаться {slave.him}.",
 		]
 	if(_id == "BreastsSmall"):
 		return [
-			"Those small tits are perfect for my hands.",
-			"That petite chest is exactly what I want.",
-			"Those tiny breasts are all mine.",
-			"Those small, perky tits will look perfect beneath me.",
+			"Эти маленькие сиськи просто созданы для моих рук.",
+			"Эта миниатюрная грудь — именно то, что мне нужно.",
+			"Эта крошечная грудь будет только моей.",
+			"Эти маленькие, упругие сиськи будут идеально смотреться под моим телом.",
 		]
 	if(_id == "BreastsAverage"):
 		return [
-			"Those perfect tits will be mine soon.",
-			"Those breasts will be all mine.",
-			"Perfect tits, and they’ll be in my hands soon.",
+			"Эти идеальные сиськи скоро станут моими.",
+			"Эта грудь будет полностью моей.",
+			"Идеальные сиськи, и скоро они будут в моих руках.",
 		]
 	if(_id == "BreastsHuge"):
 		return [
-			"Those massive tits are mine.",
-			"I'll be the one enjoying those huge tits.",
-			"Those tits are worth every credit, back off.",
-			"Those big, soft tits will belong to me soon.",
+			"Эти огромные сиськи — мои.",
+			"Именно я буду наслаждаться этими гигантскими сиськами.",
+			"Эти сиськи стоят каждого кредита, так что отвалите.",
+			"Эти большие, мягкие сиськи скоро будут принадлежать мне.",
 		]
 	if(_id == "PenisSmall"):
 		return [
-			"That tiny cock will be fun to humiliate.",
-			"I’ll break that little cock personally.",
-			"That small thing will be begging for release.",
-			"I’ll put that little cock to proper use.",
+			"Этим крошечным членом будет весело помыкать.",
+			"Этот крошечный член я сломаю лично.",
+			"Эта малявка будет умолять о разрядке.",
+			"Я найду этому маленькому члену достойное применение.",
 		]
 	if(_id == "PenisAverage"):
 		return [
-			"That cock will serve me perfectly.",
-			"That cock is mine to use however I want.",
-			"I’ll make sure that cock knows who it belongs to.",
-			"A solid cock like that will obey my whims soon.",
+			"Этот член будет служить мне идеально.",
+			"Этот член принадлежит мне, и я буду делать с ним всё, что захочу.",
+			"Я заставлю этот член запомнить, кому он принадлежит.",
+			"Такой крепкий член скоро будет повиноваться любому моему капризу.",
 		]
 	if(_id == "PenisLong"):
 		return [
-			"That cock will be mine to control.",
-			"No one else is getting their hands on that juicy cock.",
-			"That thick, long cock is going to be mine.",
-			"I’ll ride that long cock until it’s mine completely.",
+			"Этот член будет полностью под моим контролем.",
+			"Никто больше не прикоснётся к этому сочному члену.",
+			"Этот толстый длинный член станет моим.",
+			"Я буду скакать на этом длинном члене, пока он полностью не станет моим.",
 		]
 	if(_id == "VaginaTight"):
 		return [
-			"That tight little pussy will belong to me soon.",
-			"I’ll stretch that tight pussy until it’s mine.",
-			"I will claim that tight little pussy.",
-			"That pussy will squeeze perfectly around me.",
-			"I’ll be the one to claim that tight cunt.",
+			"Эта узкая киска скоро будет принадлежать мне.",
+			"Я растяну эту тесную киску, пока она не станет моей.",
+			"Я заберу эту узкую киску себе.",
+			"Эта киска будет идеально сжиматься вокруг меня.",
+			"Именно я заберу эту тесную щель.",
 		]
 	if(_id == "VaginaLoose"):
 		return [
-			"That pussy will be perfect for me.",
-			"That pussy’s going to take me in all the way.",
-			"I’ll bid for that cunt until it’s mine.",
-			"That pussy will learn what it’s made for soon.",
+			"Эта киска будет идеальна для меня.",
+			"Эта киска примет меня целиком и полностью.",
+			"Я буду торговаться за эту щель, пока она не станет моей.",
+			"Эта киска скоро узнает, для чего она была создана.",
 		]
 	if(_id == "AnusTight"):
 		return [
-			"That tight ass is mine to claim.",
-			"I’ll break that tight hole to my will.",
-			"That tight little hole will be begging for more.",
-			"That ass is going to feel every inch of me.",
+			"Эта тугая жопка теперь принадлежит мне.",
+			"Я подчиню себе это узкое отверстие.",
+			"Эта крошечная дырочка будет умолять о добавке.",
+			"Эта задница прочувствует каждый мой дюйм.",
 		]
 	if(_id == "AnusLoose"):
 		return [
-			"That ass will take all I give it.",
-			"I’ll make that hole remember it.",
-			"That ass will be stretched to perfection.",
-			"That hole will be mine, no question.",
+			"Эта жопка примет всё, что я ей дам.",
+			"Я заставлю эту дырочку запомнить этот день.",
+			"Эту задницу растянут до совершенства.",
+			"Эта дырка будет моей, без вариантов.",
 		]
 	if(_id == "Pregnant"):
 		return [
-			"A pregnant slut like that is rare, and I’ll have her.",
-			"I’ll take care of that pregnant body soon enough.",
-			"Pregnant and obedient? She’s all mine.",
-			"That round belly and swollen tits will be mine to enjoy.",
+			"Такая беременная шлюха — редкость, и она будет моей.",
+			"Я скоро займусь этим беременным тельцем.",
+			"Беременная и покорная? Она полностью моя.",
+			"Этот круглый животик и налитая грудь будут принадлежать только мне.",
 		]
 		
 	return []

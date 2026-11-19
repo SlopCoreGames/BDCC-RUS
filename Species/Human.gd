@@ -13,7 +13,7 @@ func isPlayable():
 	return true
 
 func getVisibleDescription():
-	return "Your ordinary human"
+	return "Обычный человек"
 
 func getDefaultEars(_gender):
 	return "humanears"

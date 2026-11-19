@@ -165,7 +165,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var damage = 0
 	var stamina = 0
 	
-	text = "{user.name} бьется в путах, пытаясь..."+getItem().getVisibleName()+" slip off"
+	text = "{user.name} бьется в путах, пытаясь..."+getItem().getVisibleName()+" соскальзывает"
 	damage = calcDamage(_pc, _minigame)
 	stamina = 10
 	
@@ -178,24 +178,24 @@ func processStruggleTurn(_pc, _isActivelyStruggling):
 
 func getVisibleTightness():
 	if(tightness > 0.9):
-		return "sits very tight"
+		return "сидит очень плотно"
 	if(tightness > 0.8):
-		return "sits tight"
+		return "сидит плотно"
 	if(tightness > 0.7):
-		return "sits kinda tight"
+		return "сидит довольно плотно"
 	if(tightness > 0.6):
-		return "gives in a little bit"
+		return "немного провисает"
 	if(tightness > 0.5):
-		return "gives some leeway"
+		return "есть небольшой люфт"
 	if(tightness > 0.4):
-		return "quite a bit of leeway"
+		return "довольно большой люфт"
 	if(tightness > 0.3):
-		return "feels slightly loose"
+		return "сидит слегка свободно"
 	if(tightness > 0.2):
-		return "kinda loose"
+		return "довольно свободно"
 	if(tightness > 0.1):
-		return "pretty loose"
-	return "extremely loose"
+		return "сидит очень свободно"
+	return "чрезвычайно свободное"
 
 func getTightnessPercentString():
 	return str(round(tightness*100.0))+"%"
@@ -227,7 +227,7 @@ func getTightLockRequiredItemID() -> String:
 	return "StunBaton"
 
 func getTightLockUnlockMessage() -> String:
-	return "You press the blunt tip of the stun baton against the tight lock and engage it.\n\nElectrical shock fries the electric board inside, causing the lock to disengage and just simple fall off."
+	return "Вы прижимаете тупой конец электрошокера к плотному замку и нажимаете на спуск.\n\nЭлектрический разряд поджаривает плату внутри, из-за чего замок расстегивается и просто отваливается."
 
 func getForceOnCombatAnim() -> String:
 	return ""

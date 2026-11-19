@@ -22,7 +22,7 @@ func updateSkills():
 	if(basePerksAmount == 0):
 		basePerksInfo.visible = false
 	else:
-		basePerksLabel.text = "You have "+str(basePerksAmount)+" base perk"+("s" if basePerksAmount > 1 else "")
+		basePerksLabel.text = "У тебя есть "+str(basePerksAmount)+" базовый перк"+("s" if basePerksAmount > 1 else "")
 		basePerksInfo.visible = true
 
 func _on_SkillsOverviewTab_visibility_changed():

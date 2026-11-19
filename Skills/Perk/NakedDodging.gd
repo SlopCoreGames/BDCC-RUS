@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Обнажённая ловкость"
 
 func getVisibleDescription():
-	return "The less clothes on you, the harder for them to grab you! You gain 5% additional dodge chance when you are COMPLETELY naked"
+	return "Чем меньше на тебе одежды, тем сложнее тебя схватить! Ты получаешь дополнительные 5% к шансу уклонения, когда на тебе ВООБЩЕ нет одежды."
 
 func getSkillTier():
 	return 0

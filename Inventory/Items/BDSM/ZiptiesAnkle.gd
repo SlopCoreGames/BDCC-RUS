@@ -37,9 +37,9 @@ func getUnriggedParts(_character):
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return "Some zip ties were forced onto your legs, forcing you to waddle or hop around!"
+		return "Тебе на ноги натянули пластиковые стяжки, из-за чего теперь приходится передвигаться только вразвалочку или прыжками!"
 	else:
-		return "Some zip ties were forced onto {receiver.nameS} legs, forcing {receiver.him} to waddle or hop around!"
+		return "На ноги {receiver.nameS} натянули пластиковые стяжки, из-за чего {receiver.him} теперь приходится передвигаться только вразвалочку или прыжками!"
 
 func getChains():
 	return [["cableshort", "ankle.L", "ankle.R"]]

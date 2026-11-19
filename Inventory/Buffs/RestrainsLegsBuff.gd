@@ -4,7 +4,7 @@ func _init():
 	id = Buff.RestrainedLegsBuff
 
 func getVisibleDescription():
-	return "Restrains legs"
+	return "Сковывает ноги"
 
 func getBuffColor():
 	return Color.purple

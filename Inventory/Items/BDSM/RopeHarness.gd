@@ -43,21 +43,21 @@ func generateRestraintData():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "unties all the knots and removes your rope harness"
+		return "развязывает все узлы и снимает твою верёвочную портупею"
 	else:
-		return "untie all the knots and remove your rope harness"
+		return "развязать все узлы и снять твою верёвочную портупею"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "ties your body up with ropes"
+		return "связывает твоё тело верёвками"
 	else:
-		return "tie your body up with ropes"
+		return "связать твоё тело верёвками"
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was forced onto you. The ropes keep rubbing against your sensitive spots"
+		return getAStackNameCapitalize()+" была навязана тебе силой. Верёвки продолжают тереться о твои чувствительные места"
 	else:
-		return getAStackNameCapitalize()+" was forced onto {receiver.name}. The ropes keep rubbing against {receiver.his} sensitive spots"
+		return getAStackNameCapitalize()+" была навязана на {receiver.name} силой. Верёвки продолжают тереться о чувствительные места {receiver.his}"
 
 func getRiggedParts(_character):
 	return {

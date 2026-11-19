@@ -9,17 +9,17 @@ func getVisibleName(_context = {}):
 	return "Мощный удар ногой"
 	
 func getVisibleDesc(_context = {}):
-	return "Sacrifice 25 stamina to do a very powerful kick doing "+scaledDmgStr(DamageType.Physical, 20)+" damage and knocking the opponent"
+	return "Потратьте 25 единиц выносливости, чтобы нанести сокрушительный удар ногой, наносящий "+scaledDmgStr(DamageType.Physical, 20)+" урон и сбивающий противника"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var attackerName = _attacker.getName()
 	var receiverName = _receiver.getName()
 	
-	var text = attackerName + " uses "+_attacker.hisHer()+" full strength to kick " + receiverName + ". "
+	var text = attackerName + " uses "+_attacker.hisHer()+" всей мощью удара, лишая его " + receiverName + ". "
 	
 	if(!_receiver.hasEffect(StatusEffect.Collapsed)):
 		if(_receiver.addEffect(StatusEffect.Collapsed)):
-			text += "\n[b]"+receiverName+" loses "+_receiver.hisHer()+" balance and collapses onto the floor[/b]"
+			text += "\n[b]"+receiverName+" loses "+_receiver.hisHer()+" равновесия, отчего он падает на пол[/b]"
 		
 	
 	return {

@@ -94,7 +94,7 @@ func getChatColor():
 	return "#E866f4"
 	
 func getSmallDescription() -> String:
-	return "A lilac dragon inmate. Supposedly a licensed hypnotherapist"
+	return "Заключенная — лиловый дракон. По слухам, дипломированный гипнотерапевт."
 
 func getSpecies():
 	return ["dragon"]

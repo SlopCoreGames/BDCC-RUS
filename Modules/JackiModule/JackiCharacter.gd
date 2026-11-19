@@ -23,7 +23,7 @@ func getGender():
 	return Gender.Female
 
 func getSmallDescription() -> String:
-	return "General pop inmate, medium-height feminine wolfy with dark fur and a fit body."
+	return "Обычная заключенная, волчица среднего роста с темным мехом и подтянутым телом."
 
 func getSpecies():
 	return ["canine"]

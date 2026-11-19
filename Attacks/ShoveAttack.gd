@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Толкнуть"
 	
 func getVisibleDesc(_context = {}):
-	return "An attempt to shove the enemy away for "+scaledDmgStr(DamageType.Physical, 5)+" damage. 30% chance to miss. Will cause the opponent to collapse"
+	return "Попытка оттолкнуть врага, нанося "+scaledDmgStr(DamageType.Physical, 5)+" урон. 30% c к шансу промаха. Заставляет противника потерять"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical, 0.7, 0.5)):
@@ -20,12 +20,12 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		return genericDodgeMessage(_attacker, _receiver, "shove")
 	
 	var texts = [
-		"{attacker.name} shoves {receiver.name} away."
+		"{attacker.name} равновесие и отлетает на {receiver.name}."
 	]
 	var text = RNG.pick(texts)
 	
 	if(!_receiver.hasEffect(StatusEffect.Collapsed) && _receiver.addEffect(StatusEffect.Collapsed)):
-		text += "\n[b]{receiver.name} loses {receiver.his} balance and collapses onto the floor[/b]"
+		text += "\n[b]{receiver.name} теряет {receiver.his} равновесие и падает на пол[/b]"
 	
 	return {
 		text = text,

@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Сковал руки наручниками"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -22,13 +22,13 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	_receiver.getInventory().forceEquipByStoreOtherUnlessRestraint(GlobalRegistry.createItem("inmatewristcuffs"), _attacker)
 	
 	var text = "{attacker.name} прижимает тебя к стене, а затем [b]с силой заламывает руки за спину и застегивает наручники[/b]! Тебе удается вырваться.\n\n[say=attacker]"+RNG.pick([
-		"Cease resisting.",
-		"Now what are you gonna do?",
-		"Give up, this is your last warning.",
-		"Slowly, get on your knees.",
-		"That's it.",
-		"Surrender, bitch.",
-		"Now hit the ground.",
+		"Хватит сопротивляться.",
+		"Ну и что ты теперь сделаешь?",
+		"Сдавайся, это последнее предупреждение.",
+		"Медленно, вставай на колени.",
+		"Вот так.",
+		"Сдавайся, сучка.",
+		"А теперь — лицом в пол.",
 	])+"[/say]"
 	return {
 		text = text
@@ -38,7 +38,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return _receiver.isPlayer() && !_receiver.hasBoundArms()
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} rushes towards you and tries to apprehend you, cuffs in {attacker.his} hands!"
+	return "{attacker.name} несется к тебе, пытаясь схватить, с наручниками в {attacker.his} руках!"
 
 func getRequirements():
 	return [AttackRequirement.FreeArms, AttackRequirement.FreeHands]

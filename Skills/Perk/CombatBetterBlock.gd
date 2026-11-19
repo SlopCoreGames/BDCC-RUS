@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Стена"
 
 func getVisibleDescription():
-	return "You learned how to block with your hands better. You now receive extra 10 armor when blocking an attack. Each 50 armor halves the incoming damage."
+	return "Вы научились лучше блокировать удары руками. Теперь при блоке вы получаете дополнительные 10 единиц брони. Каждые 50 единиц брони уменьшают входящий урон вдвое."
 
 func getSkillTier():
 	return 0

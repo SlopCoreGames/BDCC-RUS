@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Быстрые перекаты"
 
 func getVisibleDescription():
-	return "All that clothing only slows you down, you get 50 extra stamina if you're COMPLETELY naked"
+	return "Вся эта одежда тебя только тормозит; если ты СОВСЕМ голышом, получаешь дополнительные 50 единиц выносливости."
 
 func getSkillTier():
 	return 1

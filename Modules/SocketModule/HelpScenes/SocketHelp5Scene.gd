@@ -1343,12 +1343,12 @@ func _react(_action: String, _args):
 		setFlag("SocketModule.removedWombImplant", false)
 
 	if(_action == "after_say_keep_womb_implant"):
-		addMessage("Socket's content ends here. Thank you for playing <3")
+		addMessage("На этом контент Сокета заканчивается. Спасибо за игру <3")
 		getCharacter("socket").resetEquipment()
 		getCharacter("socket").updateBodyparts()
 
 	if(_action == "after_say_free_womb"):
-		addMessage("Socket's content ends here. Thank you for playing <3")
+		addMessage("На этом контент Сокета заканчивается. Спасибо за игру <3")
 		getCharacter("socket").resetEquipment()
 		getCharacter("socket").updateBodyparts()
 

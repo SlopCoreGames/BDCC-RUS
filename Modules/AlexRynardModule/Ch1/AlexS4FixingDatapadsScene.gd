@@ -323,12 +323,12 @@ func _react(_action: String, _args):
 		if(GM.main.isVeryLate()):
 			setState("toolate")
 			GM.pc.addCredits(1)
-			addMessage("You received 1 credit!")
+			addMessage("Вы получили 1 кредит!")
 		else:
 			setState("aftersomefixing")
 			if(getFlag("AlexRynardModule.ch1CommentedPay")):
 				GM.pc.addCredits(1)
-				addMessage("You received 1 credit!")
+				addMessage("Вы получили 1 кредит!")
 		return
 
 	if(_action == "time3_tie"):

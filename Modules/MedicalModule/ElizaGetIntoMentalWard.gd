@@ -70,7 +70,7 @@ func _run():
 		addButton("Продолжить", "Жизнь — штука суровая", "continue")
 
 	if(state == "continue"):
-		setLocationName("Padded cell")
+		setLocationName("Мягкая камера")
 		aimCamera("medical_paddedcell_player")
 		GM.pc.setLocation("medical_paddedcell_player")
 		playAnimation(StageScene.Solo, "kneel")

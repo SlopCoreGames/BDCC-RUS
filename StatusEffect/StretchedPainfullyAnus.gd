@@ -4,15 +4,15 @@ func _init():
 	id = StatusEffect.StretchedPainfullyAnus
 
 func getEffectName():
-	return "Anus painfully stretched x"+str(stacks)
+	return "Анус болезненно растянут на x"+str(stacks)
 
 func getEffectDesc():
 	if(stacks <= 1):
-		return "Your anus looks bruised and kinda hurts.. A day of rest might help"
+		return "Твой анус выглядит в синяках и довольно сильно болит... День отдыха может помочь"
 	if(stacks <= 2):
-		return "Your anus got so bruised that it won't heal on its own.. You should find a doctor"
+		return "Твой анус настолько весь в синяках, что сам не заживет... Тебе стоит найти врача"
 	
-	return "Your anus sustained a lot of damage and won't heal on its own.. You should find a doctor"
+	return "Твой анус получил серьезные повреждения и сам не заживет... Тебе стоит найти врача"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/donut.png"

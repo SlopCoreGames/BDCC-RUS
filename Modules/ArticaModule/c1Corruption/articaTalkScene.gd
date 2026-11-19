@@ -25,17 +25,17 @@ func _run():
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
 		if (getModule("ArticaModule").isLusty() || getFlag("ArticaModule.LQArticaGotBrainwashed")):
-			saynn("Артика заметно ерзает и покачивается, её щеки слегка покраснели."+str(" Her heavy belly is protruding out a lot, her paws support and caress it lovingly.." if getCharacter("artica").isVisiblyPregnant() else "")+""+str(" Her eyes are sparkling with lust and eternal obedience as she is looking at you.." if getFlag("ArticaModule.LQArticaGotBrainwashed") else "")+"")
+			saynn("Артика заметно ерзает и покачивается, её щеки слегка покраснели."+str(" Её тяжелый живот сильно выпирает вперед, она ласково поддерживает его и поглаживает своими лапами..." if getCharacter("artica").isVisiblyPregnant() else "")+""+str(" Её глаза сияют похотью и вечным послушанием, пока она смотрит на тебя..." if getFlag("ArticaModule.LQArticaGotBrainwashed") else "")+"")
 
 		else:
 			if (nakedAndShy):
-				saynn("Артика старается прикрыться как можно сильнее, её нагота заставляет её краснеть."+str(" Her heavy belly is protruding out a lot, clearly carrying a whole litter.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+				saynn("Артика старается прикрыться как можно сильнее, её нагота заставляет её краснеть."+str(" Её тяжелый живот сильно выпирает вперед — очевидно, внутри целый выводок..." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 			elif (isNaked):
-				saynn("Артика покачивается, как обычно, её лапки почти не скрывают интимные места, позволяя любому разглядеть их... Включая тебя."+str(" Her heavy belly is protruding out a lot, clearly carrying a whole litter.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+				saynn("Артика покачивается, как обычно, её лапки почти не скрывают интимные места, позволяя любому разглядеть их... Включая тебя."+str(" Её тяжелый живот сильно выпирает вперед — очевидно, внутри целый выводок..." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 			else:
-				saynn("Артика постоянно в движении, она редко замирает дольше чем на пару секунд."+str(" Her heavy belly is protruding out a lot, her paws caressing it gently.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+				saynn("Артика постоянно в движении, она редко замирает дольше чем на пару секунд."+str(" Её тяжелый живот сильно выпирает вперед, она нежно поглаживает его лапами..." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 		saynn("[say=artica]"+str(getModule("ArticaModule").getReaction())+"[/say]")
 
@@ -435,17 +435,17 @@ func _run():
 
 			saynn("[say=pc]Мне просто.. так.. нравится.. смотреть на твои сиськи.. на твой член.. на твою киску.. когда всё это выставлено напоказ для меня.[/say]")
 
-			saynn(""+str("She is not naked right now.. but you can still see her nipples becoming perky and stiff behind the shirt" if !isNaked else "You notice her nipples becoming perky and stiff as you say that..")+"")
+			saynn(""+str("Сейчас она не раздета... но сквозь рубашку всё равно видно, как её соски становятся твердыми и возбужденными" if !isNaked else "Ты замечаешь, как её соски твердеют и приподнимаются, когда ты это говоришь...")+"")
 
 			saynn("[say=artica]Мм-м.. с-спасибо.. за к-комплимент..[/say]")
 
 			saynn("[say=pc]Ты такая послушная зверушка. Всегда готова выставить свое тело напоказ для меня.[/say]")
 
 			if (!isNaked):
-				saynn("Ее дыхание становится глубже, "+str("something in her shorts twitching" if isCaged else "her shorts bulging")+"..")
+				saynn("Ее дыхание становится глубже, "+str("что-то дергается в её шортах" if isCaged else "её шорты раздуваются")+"..")
 
 			else:
-				saynn("Ее дыхание становится глубже, "+str("her caged up cock becoming all cute and drippy" if isCaged else "her cock peeking out of its sheath, the tip leaking pre..")+"")
+				saynn("Ее дыхание становится глубже, "+str("её запертый в клетку член становится таким милым и сочащимся смазкой" if isCaged else "её член слегка выглядывает из препуция, кончик уже сочится предэякулятом...")+"")
 
 			saynn("[say=artica]Д-да.. д-да.. Я.. я.. обожаю.. обожаю быть такой.. э-экзальтированной маленькой шлюшкой-экспонатом..[/say]")
 
@@ -456,7 +456,7 @@ func _run():
 			saynn("Ее подбородок опущен.. но ее"+str(" naked" if isNaked else "")+" грудь вздымается, а задница соблазнительно покачивается, пока лапки скользят по белому меху на боках.")
 
 		elif (theTopic == "whore"):
-			saynn("[say=pc]Ты такая покорная, Артика. Всегда готова раздвинуть ноги для меня.. или вообще для любого.. кто захочет тебя использовать."+str(". Always ready to offer me your cock to play with too~." if GM.pc.hasVagina() else "")+"[/say]")
+			saynn("[say=pc]Ты такая покорная, Артика. Всегда готова раздвинуть ноги для меня.. или вообще для любого.. кто захочет тебя использовать."+str(". Всегда готова подставить мне свой член, чтобы я с ним поиграл~." if GM.pc.hasVagina() else "")+"[/say]")
 
 			saynn("От твоих слов она часто хлопает ресницами, а ее щеки заливаются густым румянцем, когда она встает на цыпочки.")
 
@@ -464,7 +464,7 @@ func _run():
 
 			saynn("[say=artica]Я.. ну.. м-может быть..[/say]")
 
-			saynn("Ты её совсем не трогаешь... но твой взгляд буквально впивается в неё, заставляя белый пушок на её теле подёргиваться.."+str(" while her nips are becoming visibly aroused behind the shirt." if !isNaked else " while her nips become visibly hard and stiff..")+"")
+			saynn("Ты её совсем не трогаешь... но твой взгляд буквально впивается в неё, заставляя белый пушок на её теле подёргиваться.."+str(" в то время как её соски под рубашкой становятся заметно возбужденными." if !isNaked else " в то время как её соски становятся заметно твердыми и острыми...")+"")
 
 			saynn("[say=pc]Может быть? Да ладно тебе, ты можешь лучше.[/say]")
 
@@ -502,10 +502,10 @@ func _run():
 			saynn("[say=artica]Я.. л-люблю.. сосать пальцы на лапах.. а-а.. лизать подушечки.. а.. аа.. и.. и когда мой член ласкают задними лапами..[/say]")
 
 			if (isNaked):
-				saynn("Она сглатывает снова.. и снова.. но во рту всё равно скапливается слюна.."+str(" Her caged cock twitching in its tight little prison.." if isCaged else " Her cock getting out of the sheath and becoming erect fast..")+"")
+				saynn("Она сглатывает снова.. и снова.. но во рту всё равно скапливается слюна.."+str(" Её запертый в клетку член подергивается в своей тесной маленькой тюрьме..." if isCaged else " Её член быстро выходит из препуция и становится эрегированным...")+"")
 
 			else:
-				saynn("Она сглатывает снова.. и снова.. но во рту всё равно скапливается слюна.."+str(" Something in her shorts is twitching.." if isCaged else " Her shorts bulging fast, there is wet spot on the cloth already..")+"")
+				saynn("Она сглатывает снова.. и снова.. но во рту всё равно скапливается слюна.."+str(" Что-то в её шортах подергивается..." if isCaged else " Её шорты быстро надуваются, на ткани уже появилось влажное пятно...")+"")
 
 			saynn("[say=artica]Я-я.. огромная.. шлюшка.. по лапкам.. л-люблю, когда на меня наступают.. с-сосать.. лизать.. ах.. п-пожалуйста.. хх-хх..[/say]")
 
@@ -564,10 +564,10 @@ func _run():
 			saynn("[say=artica]Я.. я.. я д-даже не знаю.. Я.. я к-кажется, мне это н-нравится.. М-мне н-нравится, к-когда меня п-трахают огромные члены, к-когда чувствую, как они р-раздвигают меня.. р-разрывают мои д-дырочки.. н-наполняя мой ж-живот этой.. т-толстой, м-мужской спермой.. ахх-х..[/say]")
 
 			if (isNaked):
-				saynn("Она дрожит, её "+str("caged up cock is pulsing wildly inside.. her pussy is so needy she is making the floor wet." if isCaged else "canine cock leaves its sheath and is pulsing wildly.. her pussy is so needy that she is making the floor wet.")+"")
+				saynn("Она дрожит, её "+str("запертый член бешено пульсирует внутри... её киска настолько жаждет секса, что она уже заливает пол смазкой." if isCaged else "собачий член выходит из препуция и бешено пульсирует... её киска настолько жаждет секса, что она уже заливает пол смазкой.")+"")
 
 			else:
-				saynn("Она дрожит, её "+str("caged up cock is pulsing wildly inside her shorts.. her pussy is so needy it's making a big wet spot on the cloth." if isCaged else "canine cock is pulsing wildly inside her shorts.. her pussy is so needy it's making a big wet spot on the cloth.")+"")
+				saynn("Она дрожит, её "+str("запертый в шортах член бешено пульсирует... её киска так жаждет его, что на ткани расплывается огромное мокрое пятно." if isCaged else "собачий член бешено пульсирует в её шортах... её киска так изголодалась, что на ткани расплывается огромное мокрое пятно.")+"")
 
 			saynn("[say=artica]Я.. я.. грязная с-спермотека.. П-п.. ах.. шлюха для б-брэдинга, которая жаждет ч-члена.. к-которая умоляет, ч-чтобы её н-наполнили спермой.. Я.. я.. л-люблю, когда меня используют.. трахают.. о-оплодотворяют.. любым с-способом, к-какой захочешь..[/say]")
 
@@ -585,7 +585,7 @@ func _run():
 		if (isPregnant):
 			saynn("Вид беременной Артики... ты просто не можешь удержаться, чтобы не сделать это первым..")
 
-			saynn("Без лишних предупреждений, твои руки"+str(" undo the buttons of her shirt and open it. They then" if !isNaked else "")+" ложатся на её раздутые сиськи и обхватывают их; её тёмно-бирюзовые соски начинают сочиться молоком даже от малейшего нажатия.")
+			saynn("Без лишних предупреждений, твои руки"+str(" расстегивают пуговицы на её рубашке и распахивают её. Затем они" if !isNaked else "")+" ложатся на её раздутые сиськи и обхватывают их; её тёмно-бирюзовые соски начинают сочиться молоком даже от малейшего нажатия.")
 
 			saynn("[say=artica]Ааах..[/say]")
 
@@ -604,7 +604,7 @@ func _run():
 			saynn("[say=artica]Ннхх-х.. ах.. д-да.. ха-ха.. ах.. Я т-такая.. производительница щенков..[/say]")
 
 		else:
-			saynn("Без лишних предупреждений, твои руки"+str(" undo the buttons of her shirt and open it. They then" if !isNaked else "")+" приземляются на {artica.breasts} Артики, и ты обхватываешь их ладонями, подчеркивая их форму."+str(" Some lonely drops of breast milk leak from her dark cyan nips as you do that.." if getCharacter("artica").canBeMilked() else "")+"")
+			saynn("Без лишних предупреждений, твои руки"+str(" расстегивают пуговицы на её рубашке и распахивают её. Затем они" if !isNaked else "")+" приземляются на {artica.breasts} Артики, и ты обхватываешь их ладонями, подчеркивая их форму."+str(" когда вы это делаете, из её темно-бирюзовых сосков просачиваются одинокие капли молока..." if getCharacter("artica").canBeMilked() else "")+"")
 
 			saynn("[say=artica]Ой...[/say]")
 
@@ -612,7 +612,7 @@ func _run():
 
 			saynn("[say=pc]Боишься, что кто-то увидит? Или, может... ты хочешь, чтобы тебя заметили?[/say]")
 
-			saynn("Одна рука остается на её сосках, дразня их и играя с изысканными фиолетовыми пирсингами, которые носит эта девчонка... в то время как другая скользит вниз вдоль живота... очерчивая пупок... прежде чем обхватить и внезапно потянуть"+str(" her shorts down and yanking her tail high" if !isNaked else " on her tail")+", обнажая пушистую задницу Артики перед любыми случайными прохожими. Её хвост пытается поджаться... но ты держишь его высоко и используешь вторую руку, чтобы раздвинуть её ягодицы, следя за тем, чтобы её тугой анус и"+str(" creamed dripping cunt" if getCharacter("artica").hasEffect(StatusEffect.HasCumInsideVagina) else "wet need cunt")+" были хорошо видны.")
+			saynn("Одна рука остается на её сосках, дразня их и играя с изысканными фиолетовыми пирсингами, которые носит эта девчонка... в то время как другая скользит вниз вдоль живота... очерчивая пупок... прежде чем обхватить и внезапно потянуть"+str(" спускают её шорты, высоко задрав хвост" if !isNaked else " на её хвосте")+", обнажая пушистую задницу Артики перед любыми случайными прохожими. Её хвост пытается поджаться... но ты держишь его высоко и используешь вторую руку, чтобы раздвинуть её ягодицы, следя за тем, чтобы её тугой анус и"+str(" сочащаяся слизью киска" if getCharacter("artica").hasEffect(StatusEffect.HasCumInsideVagina) else "влажная, изголодавшаяся киска")+" были хорошо видны.")
 
 			saynn("[say=artica]Ах!..[/say]")
 
@@ -684,11 +684,11 @@ func getDebugActions():
 	return [
 	{
 	"id": "setCorruption",
-	"name": "Set Corruption",
+	"name": "Установить уровень разврата",
 	"args": [
 	{
 	"id": "corruption",
-	"name": "How much (0-100)",
+	"name": "Уровень (0-100)",
 	"type": "number",
 	"value": 100,
 	},

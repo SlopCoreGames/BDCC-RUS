@@ -10,7 +10,7 @@ func _run():
 
 		saynn("[say=pc]В последнее время ты отлично справляешься, киса. Считай, что сегодня у тебя выходной.[/say]")
 
-		var randomResponce = RNG.pick(["Nya.. Thank you, {rahiMaster}..", "Oh.. I like being lazy sometimes..", "Thank you.. We can still do something if you want..", "You are the best, {rahiMaster}.."])
+		var randomResponce = RNG.pick(["Ня.. Спасибо, {rahiMaster}..", "Ох.. Иногда мне так нравится бездельничать..", "Спасибо.. Если хочешь, мы всё ещё можем чем-нибудь заняться..", "Ты лучший, {rahiMaster}.."])
 		saynn("[say=rahi]"+str(randomResponce)+"[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "stop_task")

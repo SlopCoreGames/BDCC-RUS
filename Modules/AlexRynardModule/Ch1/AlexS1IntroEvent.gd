@@ -15,27 +15,27 @@ func run(_triggerID, _args):
 		return
 	
 	if(getFlag("AlexRynardModule.ch2SceneNum", 0) >= 1):
-		addButtonUnlessLate("Trust exercises", "Check them out", "do_trust")
+		addButtonUnlessLate("Упражнения на доверие", "Оценить их", "do_trust")
 	
 	
 	if(!getFlag("AlexRynardModule.ch1IntroSceneHappened")):
-		addButtonUnlessLate("Lewd?", "Ask if he would be up for some sexy stuff", "startIntro")
+		addButtonUnlessLate("Пошловато?", "Спросить, не хочет ли он чего-нибудь эдакого", "startIntro")
 		return
 	
 	if(!getFlag("AlexRynardModule.ch1FirstFuckup")):
-		addButtonUnlessLate("Watch", "Watch Alex work", "watchWork")
+		addButtonUnlessLate("Смотреть", "Наблюдать за работой Алекса", "watchWork")
 		return
 	
 	if(getFlag("AlexRynardModule.ch1NextDaySceneHappened") && !getFlag("AlexRynardModule.ch1HypnovisorHappened")):
-		addButtonUnlessLate("Help", "Help him repair the datapads", "helpRepair")
+		addButtonUnlessLate("Помочь", "Помочь ему починить датапады", "helpRepair")
 		return
 	
 	if(getFlag("AlexRynardModule.ch2SceneNum", 0) <= 6):
-		addButtonUnlessLate("Help", "Help him repair the datapads", "helpRepair2")
+		addButtonUnlessLate("Помочь", "Помочь ему починить датапады", "helpRepair2")
 		return
 		
 	if(!getFlag("AlexRynardModule.ch2GotRektHappened")):
-		addButtonUnlessLate("Help", "Help him repair the datapads", "helpRepair3")
+		addButtonUnlessLate("Помочь", "Помочь ему починить датапады", "helpRepair3")
 	
 func react(_triggerID, _args):
 	if(getFlag("AlexRynardModule.ch1FirstFuckup") && !getFlag("AlexRynardModule.ch1NextDaySceneHappened")):

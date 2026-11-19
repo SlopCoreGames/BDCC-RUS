@@ -15,8 +15,8 @@ func _run():
 		playAnimation(StageScene.Solo, "stand")
 		
 		if(getFlag("SlaveAuctionModule.s1hap")):
-			addButtonAt(13, "Blacktail Market", "Place where you can sell your slaves", "go_market")
-		addButtonAt(14, "CLOSE", "Enough interactions", "endthescene")
+			addButtonAt(13, "Рынок Блэктейл", "Место, где можно продать своих рабов", "go_market")
+		addButtonAt(14, "CLOSE", "Взаимодействий достаточно", "endthescene")
 		
 		saynn("За кем ты хочешь проверить?")
 		
@@ -46,7 +46,7 @@ func _react(_action: String, _args):
 			else:
 				GM.pc.setLocation("market_intro")
 			#GM.pc.setLocation("market_intro")
-			addMessage("You use your bluespace relay-tag to teleport to the Blacktail Market.")
+			addMessage("Вы используете свой релей-тег синего пространства, чтобы телепортироваться на рынок Блэктейл.")
 			
 		return
 	

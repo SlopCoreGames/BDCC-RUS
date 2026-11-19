@@ -28,7 +28,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Взять "+itemState.casualName+" off"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Take it off fully!"
+	return "Снимай всё до нитки!"
 
 func doAction(_lustState: LustCombatState, _args):
 	var _item:ItemBase = getItem(_lustState, _args)
@@ -44,7 +44,7 @@ func doAction(_lustState: LustCombatState, _args):
 	var text := "You take off your "+itemState.casualName+" completely! "
 
 	if(pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "Opening up reveals how messy you are~."
+		text += "Когда ты расстегиваешься, становится видно, какая ты грязнуля~."
 		text += "\n\n"
 	
 #	if(RNG.chance(50) && pc.isVisiblyPregnant()):
@@ -52,7 +52,7 @@ func doAction(_lustState: LustCombatState, _args):
 #		text += "\n\n"
 	
 	if(_lustState.isInBattle()):
-		text += "The enemy seems to be watching your hands carefully. And you’re ready to make a show for them."
+		text += "Враг, кажется, внимательно следит за твоими руками. И ты готов устроить ему настоящее шоу."
 		text += "\n\n"
 	
 	return {

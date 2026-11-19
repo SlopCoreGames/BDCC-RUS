@@ -16,37 +16,37 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("BreastsSmall") && _slaveTraits["BreastsSmall"] > 0.0):
 		if(!_char.hasNonFlatBreasts()):
 			sayPresenter(RNG.pick([
-				"Oh yeah, I want you all to admire this perfectly flat chest - toned and strong, a canvas of pure potential!",
-				"Take a look at {slave.his} chest. Some prefer curves, but others appreciate the clean, firm lines of a flat, sculpted front.",
-				"Take a look at those {slave.breasts}. Not everyone wants softness. For those who prefer raw muscle and definition, this slave is perfection.",
-				"For ownsers who like a more athletic look, this slave's chest is as flat and firm as they come.",
+				"О да, я хочу, чтобы вы все полюбовались этой идеально плоской грудью — подтянутой и сильной, настоящим холстом чистых возможностей!",
+				"Взгляните на грудь {slave.his}. Кто-то предпочитает изгибы, но другие ценят чистые, упругие линии плоского, скульптурного тела.",
+				"Взгляните на эти {slave.breasts}. Не всем нужна мягкость. Для тех, кто предпочитает голые мышцы и рельеф, эта рабыня — само совершенство.",
+				"Для владельцев, которым нравится атлетичный вид: грудь этой рабыни максимально плоская и твердая.",
 			]))
 		else:
 			sayPresenter(RNG.pick([
-				"I want you all to take a good look at these small, perky breasts. Perfectly formed and oh-so-sensitive.",
-				"Some of you prefer a more subtle, delicate chest, and this slave delivers in spades with these petite beauties.",
-				"Aren't these {slave.breasts} just perfect. Tight little orbs that fit right in the palm of your hand",
-				"Some say bigger is better, but for those with refined tastes, these {slave.breasts} are a rare, delicate treat.",
-				"Look at {slave.his} chest. Petite and soft, these are the breasts of someone who knows how to please without overwhelming. Subtle, yet unforgettable.",
-				"Look at {slave.his} chest. For those who crave precision and finesse, these small, pert breasts will be exactly what you're after.",
+				"Я хочу, чтобы вы все хорошенько рассмотрели эту маленькую, упругую грудь. Идеально сформированную и такую чувствительную.",
+				"Некоторые из вас предпочитают более скромную, изящную грудь, и эта рабыня превзойдет все ожидания со своими миниатюрными красавицами.",
+				"Разве эти {slave.breasts} не идеальны? Тугие маленькие шарики, которые так и просятся на ладонь.",
+				"Говорят, чем больше, тем лучше, но для людей с утонченным вкусом эти {slave.breasts} — редкое и изысканное лакомство.",
+				"Посмотрите на грудь {slave.his}. Миниатюрная и мягкая — это грудь той, кто умеет доставлять удовольствие, не перегружая чувства. Тонкая, но незабываемая.",
+				"Посмотрите на грудь {slave.his}. Для тех, кто жаждет точности и изящества: эта маленькая, подтянутая грудь — именно то, что вы ищете.",
 			]))
 	if(_slaveTraits.has("BreastsAverage") && _slaveTraits["BreastsAverage"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Take a look at these perfect breasts. Full, supple, and made to be touched.",
-			"Take a look at {slave.his} chest. Not too small, not too big - {slave.his} breasts are just the right size for any taste. The perfect handful.",
-			"I want you all to look where I'm looking. These soft, rounded breasts are ideal for any scenario. Not overwhelming, but certainly impossible to ignore.",
-			"Tits! If you're looking for balance, these are exactly what you need. Perfectly average, but oh-so-enticing.",
-			"Look at {slave.his} beaties. With breasts like these, you get the best of both worlds. Full enough to tease, but not so large as to be a burden.",
-			"Well-rounded and supple, {slave.his} {slave.breasts} will satisfy your every touch. They’re made for attention.",
+			"Взгляните на эту идеальную грудь. Налитая, нежная, созданная для прикосновений.",
+			"Взгляните на грудь {slave.his}. Не слишком маленькая, не слишком большая — {slave.his} грудь как раз на любой вкус. Идеально ложится в ладонь.",
+			"Хочу, чтобы вы все смотрели туда же, куда и я. Эти мягкие, округлые формы идеальны для любого сценария. Не слишком вызывающие, но на них просто невозможно не смотреть.",
+			"Сиськи! Если вы ищете золотую середину, то это именно то, что вам нужно. Идеально средние, но чертовски соблазнительные.",
+			"Посмотрите на {slave.his} красотки. С такой грудью ты получаешь лучшее из двух миров: достаточно пышная, чтобы дразнить, но не настолько огромная, чтобы стать обузой.",
+			"Округлые и податливые, {slave.his} {slave.breasts} будут радовать каждое ваше прикосновение. Они просто созданы для того, чтобы ими любовались.",
 		]))
 	if(_slaveTraits.has("BreastsHuge") && _slaveTraits["BreastsHuge"] > 0.0):
 		sayPresenter(RNG.pick([
-			"These massive, heavy breasts are something you won’t forget. Overflowing and begging for attention.",
-			"For those of you who like a lot to handle, these huge, luscious breasts will be your dream come true!",
-			"Look at {slave.his} {slave.breasts}. Full, heavy, and impossible to ignore!",
-			"Look at {slave.his} {slave.breasts}. These massive beauties are everything you’re looking for.",
-			"See {slave.his} {slave.breasts}? Huge, soft, and overflowing. Perfect for anyone who can handle a lot.",
-			"Take a moment to admire the sheer size and weight of {slave.his} {slave.breasts} - luxury at its finest.",
+			"Эти массивные, тяжелые груди вы точно не забудете. Переполненные и так и просящие внимания.",
+			"Для тех, кто любит, чтобы было за что ухватиться: эти огромные, сочные груди — воплощение вашей мечты!",
+			"Посмотрите на {slave.his} {slave.breasts}. Пышные, тяжелые, мимо них невозможно пройти!",
+			"Посмотрите на {slave.his} {slave.breasts}. Эти массивные красавицы — всё, что вы так долго искали.",
+			"Посмотреть на {slave.his} {slave.breasts}? Огромные, мягкие и переполненные. Идеально для тех, кто способен совладать с таким объемом.",
+			"Замереть на мгновение, любуясь невероятным размером и тяжестью {slave.his} {slave.breasts} — истинная роскошь в чистом виде.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Mind, mightChance())

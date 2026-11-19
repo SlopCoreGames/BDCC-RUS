@@ -72,7 +72,7 @@ func _ready():
 	if(OPTIONS.shouldFetchGithubRelease()):
 		getNewRelease()
 	else:
-		setGithubLabelStr("Latest github release: DISABLED", "")
+		setGithubLabelStr("Последний релиз на GitHub: ОТКЛЮЧЕН", "")
 		gutHubReleaseLabel.visible = false
 		gitHubReleaseButton.visible = false
 	updateVerticalGithubReleaseVisibility()
@@ -128,7 +128,7 @@ func findFreeShortcutKey() -> String: # Yeah, sorry
 
 func updateModuleButtons():
 	if(!grid_container): # In case something is fucked
-		Log.error("Couldn't update the module buttons, the grid reference is missing!")
+		Log.error("Не удалось обновить кнопки модулей: отсутствует ссылка на сетку!")
 		return
 	for theButton in moduleButtons:
 		theButton.myShortcutKey = "" # Free the key first
@@ -214,18 +214,18 @@ func getNewRelease():
 	var error = http_request.request("https://api.github.com/repos/Alexofp/BDCC/releases")
 	if error != OK:
 		Log.printerr("[MainMenu] An error occurred in the HTTP request.")
-		setGithubLabelStr("Latest github release: Error", "")
+		setGithubLabelStr("Последний релиз на GitHub: Ошибка", "")
 
 func _on_HTTPRequest_request_completed(result, _response_code, _headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:
 		Log.printerr("[MainMenu] Couldn't get the latest release from github")
-		setGithubLabelStr("Latest github release: Error", "")
+		setGithubLabelStr("Последний релиз на GitHub: Ошибка", "")
 		return
 	
 	var jsonResult = JSON.parse(body.get_string_from_utf8())
 	if(jsonResult.error != OK):
 		Log.printerr("[MainMenu] Couldn't parse json data from github.")
-		setGithubLabelStr("Latest github release: Error", "")
+		setGithubLabelStr("Последний релиз на GitHub: Ошибка", "")
 		return
 	
 	var releasesData = jsonResult.result
@@ -233,7 +233,7 @@ func _on_HTTPRequest_request_completed(result, _response_code, _headers, body):
 	if(!(releasesData is Array)):
 		Log.printerr("[MainMenu] Bad data from github")
 		Log.printerr(body.get_string_from_utf8())
-		setGithubLabelStr("Latest github release: Error", "")
+		setGithubLabelStr("Последний релиз на GitHub: Ошибка", "")
 		return
 		
 	for release in releasesData:
@@ -253,14 +253,14 @@ func _on_HTTPRequest_request_completed(result, _response_code, _headers, body):
 		
 		var theSimpleText:String = ""
 		var theAdvancedText:String = ""
-		theSimpleText = "Latest github release: "+str(release["tag_name"])
+		theSimpleText = "Последний релиз на GitHub: "+str(release["tag_name"])
 		#if(time != null):
 		theAdvancedText += "\n" + Time.get_datetime_string_from_unix_time(publishedAtLocal, true)
 		
-		theAdvancedText += "\n\nYour current version: "+GlobalRegistry.getGameVersionString()
+		theAdvancedText += "\n\nВаша текущая версия: "+GlobalRegistry.getGameVersionString()
 		setGithubLabelStr(theSimpleText, theAdvancedText)
 		return
-	setGithubLabelStr("Latest github release: Nothing found", "")
+	setGithubLabelStr("Последний релиз на GitHub: Ничего не найдено", "")
 
 func _on_GithubReleasesButton_pressed():
 	var _ok = Util.fixed_shell_open("https://github.com/Alexofp/BDCC/releases")

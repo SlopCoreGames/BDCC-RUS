@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Maternal glow"
+	return "Материнское сияние"
 
 func getEffectDesc():
-	return "Giving birth made you feel more accomplished and worthy for "+Util.getTimeStringHumanReadable(turns)
+	return "Роды заставили тебя почувствовать себя более реализованной и достойной для "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/Invigoration.png"

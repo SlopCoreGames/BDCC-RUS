@@ -67,29 +67,29 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.Gags):
-		return "GAGS ARE AMAZING! I love grinding gagged bitches while they can't do anything!"
+		return "КЛЕВАТЬ — ЭТО ПРОСТО ВОСТОРГ! Обожаю трахать заклеенных сучек, когда они ничего не могут сделать!"
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "EWW! Which hole are you pissing from!?"
+		return "ФУ! Из какой дырки ты вообще ссышь?!"
 	if(interest == InterestTopic.TightAnus):
-		return "BITCH, I SO WANT THAT ASS. Would give anything to get a chance to train my dirty asshole again."
+		return "СУЧКА, КАК ЖЕ Я ХОЧУ ЭТУ ЖОПУ. Отдал бы всё, чтобы снова потренировать свой грязный анус."
 	if(interest == InterestTopic.TightPussy):
-		return "SLUT! GET THAT BEATIFUL CUNT OUT OF HERE"
+		return "ШЛЮХА! УБЕРИ ЭТУ ПРЕКРАСНУЮ ПИПКУ ОТСЮДА!"
 	if(interest == InterestTopic.ExposedPanties):
-		return "FUCK YOUR PANTIES, mine are yet to survive a single day"
+		return "ДА ПОШЛО ТВОЁ ТРУСЕЛЬЕ, моё и дня не выдерживает!"
 	if(interest == InterestTopic.ExposedBra):
-		return "Why are you hiding your tits!? That's stupid! I wanna see them!"
+		return "Чего ты там сиськи прячешь?! Это же тупо! Я хочу их видеть!"
 	if(interest == InterestTopic.FullyNaked):
-		return "WHAT A BRAVE SLUT! I LOVE YOU!!"
+		return "КАКАЯ СМЕЛАЯ ШЛЮХА! ОБОЖАЮ ТЕБЯ!!"
 	if(interest == InterestTopic.SmallCock):
-		return "Oh.. hmm.. oof.. oh, sorry. It's not your fault, you were born like that"
+		return "Ох.. хмм.. уф.. ой, прости. Это не твоя вина, ты такой родилась."
 	if(interest == InterestTopic.BigCock):
-		return "THEY DON'T CALL ME A SIZE QUEEN FOR NOTHING, LET ME RIDE IT!"
+		return "МЕНЯ НЕ ЗРЯ НАЗЫВАЮТ КОРОЛЕВОЙ РАЗМЕРОВ, ДАЙ МНЕ НАСАДИТЬ НА ЭТО!"
 	if(interest == InterestTopic.Pregnant):
-		return "ALWAYS PREG-O IS MY CREDO"
+		return "ВСЕГДА БЕРЕМЕННАЯ — МОЁ КРЕДО"
 	if(interest == InterestTopic.CoveredInLotsOfCum):
-		return "FUCK YEAH, LET ME LICK YOU! OHH!! CAN I GET PREGO BY RUBBING MY PUSSY AGAINST YOU?"
+		return "ДА, БЛЯТЬ, ДАЙ МНЕ ТЕБЯ ОБЛИЗАТЬ! О-О-О!! МОЖНО МНЕ ЗАЛЕТЕТЬ, ЕСЛИ Я ПОТРУСУСЬ О ТЕБЯ ПИСЬКОЙ?"
 	if(interest == InterestTopic.StuffedThroat):
-		return "Can we kiss and share that cum?!!"
+		return "Мы можем поцеловаться и разделить эту сперму?!!"
 	
 	
 func _getName():
@@ -99,13 +99,13 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Red inmate, has a red band on her head."
+	return "Заключенная в красной форме, на голове красная повязка."
 
 func getFightIntro(_battleName):
 	var text = "Девушка смотрит на тебя безумным взглядом, облизывая свой заточенный кусок металла, отчего тот даже слегка кровоточит."
 	text += "\n\n"
 	text += "[say=gymbully3]"+RNG.pick([
-		"A wrong girl with a right knife can do a lot of good stuff in a bad world. It's crazy how they think they are the sane ones~",
+		"Неправильная девчонка с правильным ножом может натворить много добра в этом дерьмовом мире. С ума сойти, как они все считают себя нормальными~",
 	])+"[/say]"
 	
 	return text
@@ -146,61 +146,61 @@ func reactRestraint(restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"NOW STOP IT!",
-				"TO THE TRASH IT GOES",
-				"TIE YOUR ANUS UP, BITCH",
-				"You can't stop me!",
+				"А ТЕПЕРЬ ХВАТИТ!",
+				"ВСЁ ЭТО — В ПОМОЙКУ!",
+				"ЗАЖАТЬ АНУС, СУЧКА!",
+				"Тебе меня не остановить!",
 			])
 		
 		return RNG.pick([
-			"THIS IS NOT FUN!",
-			"WHAT A BUZZKILL",
-			"Huff!",
-			"It's only fun when others are tied up!",
+			"ЭТО ВООБЩЕ НЕ ВЕСЕЛО!",
+			"НУ И ОБЛОМ!",
+			"Хафф!",
+			"Веселье начинается только тогда, когда остальные связаны!",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
-				"SHIT SHIT SHIT",
-				"FUCK FUCK FUCK",
-				"OH SHIT OH FUCK",
-				"BITCH ASS PUSSY FUCK SLUT",
+				"БЛЯТЬ, БЛЯТЬ, БЛЯТЬ",
+				"СУКА, СУКА, СУКА",
+				"ОХ, БЛЯТЬ, ОХ, ПИЗДЕЦ",
+				"СУЧЬЯ ПОПА, ПИЗДА, СУКА, ШЛЮХА",
 			])
 		
 		if(restraintType == RestraintType.Gag):
 			return RNG.pick([
 				"AHHH! FUUUCK",
-				"BITCH MY GAGTALK IS PERFECT, I WAS TRAINING FOR YEARS",
+				"СУЧКА, МОЙ ГАГ-ТЕЛК ПРОСТО ИДЕАЛЕН, Я ГОДЫ ТРЕНИРОВАЛСЯ!",
 			])
 		if(restraintType == RestraintType.Muzzle):
 			return RNG.pick([
-				"RAAAWR. Wait, what the fuck",
-				"HOW AM I GONNA SUCK A COCK NOW?!",
+				"РРРРААААРР! Стоп, какого хуя?",
+				"КАК МНЕ ТЕПЕРЬ СОСАТЬ ЧЛЕН?!",
 			])
 		if(restraintType == RestraintType.ButtPlug):
 			return RNG.pick([
-				"WHY IS IT SO SMALL?",
-				"I NEED THREE OF THEM AT LEAST TO FEEL ANYTHING",
-				"BITCH, I USED TO COSPLAY AS A KITSUNE",
+				"ПОЧЕМУ ОН ТАКОЙ МАЛЕНЬКИЙ?",
+				"МНЕ НУЖНО КАК МИНИМУМ ТРИ, ЧТОБЫ ХОТЬ ЧТО-ТО ПОЧУВСТВОВАТЬ!",
+				"СУЧКА, Я РАНЬШЕ В КОСПЛЕЕ КИТСУНЕ ХОДИЛА!",
 			])
 		if(restraintType == RestraintType.VaginalPlug):
 			return RNG.pick([
-				"If it's not a horsecock dildo I can't feel shit!",
-				"Oh, cute!",
+				"Если это не фаллос размером с лошадиный член, я нихера не почувствую!",
+				"Ой, мило!",
 			])
 		if(restraintType == RestraintType.Straitjacket):
 			return RNG.pick([
-				"NOT AGAIN! FUCK THAT ASYLUM!",
-				"NO NO NO, THIS REMINDS ME OF MY TIME IN ASYLUM TOO MUCH",
+				"ТОЛЬКО НЕ СНОВА! ДА ПОШЛА ОНА НАХУЙ, ЭТА ПСИХУШКА!",
+				"НЕТ-НЕТ-НЕТ, ЭТО СЛИШКОМ НАПОМИНАЕТ МНЕ О ВРЕМЕНАХ В ПСИХУШКЕ!",
 			])
 	
 		return RNG.pick([
-			"THE FUCK IS THIS SHIT",
-			"OH MY FUCKING GOD",
-			"Are you for real!?",
-			"FUCK!",
-			"Fight fair, bitch!",
+			"ЧТО ЭТО ЗА ХУЙНЯ?",
+			"ОХ, ЕБАНЫЙ В РОТ!",
+			"Ты это серьезно?!",
+			"БЛЯТЬ!",
+			"Драться честно надо, сучка!",
 		])
 	return null
 

@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Насмешка повстанца"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "Насмешки повстанца никак не задели вас"
@@ -25,8 +25,8 @@ func getAnticipationText(_attacker, _receiver):
 
 	text += "\n\n"
 	text += "[say=rebel]"+RNG.pick([
-		"Look at these. You are screwed.",
-		"Bitch, I will crush you.",
+		"Гляньте на них. Вам крышка.",
+		"Сучка, я тебя раздавлю.",
 	])+"[/say]"
 
 	return text

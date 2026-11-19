@@ -289,6 +289,6 @@ func _react(_action: String, _args):
 		processTime(3*60)
 		GM.pc.setLocation(GM.pc.getCellLocation())
 		GM.main.stopPlayerSlavery()
-		addMessage("All your items were returned to you.")
+		addMessage("Все ваши вещи были возвращены вам.")
 
 	setState(_action)

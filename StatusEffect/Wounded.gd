@@ -28,11 +28,11 @@ func getEffectName():
 
 func getEffectDesc():
 	if(stacks <= 1):
-		return "Your chest kinda hurts.. You should rest"
+		return "Грудь как-то ноет... Стоит отдохнуть"
 	if(stacks <= 2):
-		return "Something inside your chest kinda hurts. And it won't heal on its own.. You should find a doctor"
+		return "В груди что-то неприятно ноет. Само это не пройдет... Тебе нужно найти врача"
 	
-	return "Something inside your chest hurts a lot. And it won't heal on its own.. You should find a doctor"
+	return "В груди всё сильно болит. Само это не пройдет... Тебе нужно срочно найти врача"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/open-wound.png"

@@ -10,4 +10,4 @@ func isPlayable():
 	return false
 
 func getVisibleDescription():
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"

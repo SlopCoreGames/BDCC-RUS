@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Lust threshold "+text
+	return "Порог похоти "+text
 
 func apply(_buffHolder):
 	_buffHolder.extraLust += amount

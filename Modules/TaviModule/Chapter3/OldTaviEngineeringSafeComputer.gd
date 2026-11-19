@@ -16,16 +16,16 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				var tolearn = _args[0]
 				
 				if(tolearn == "disconnect"):
-					return "Closes the connection"
+					return "Разрывает соединение"
 				elif(tolearn == "login"):
-					return "Allows you to login as an admin. Syntax: login <password>"
+					return "Позволяет войти под учетной записью администратора. Синтаксис: login <пароль>"
 				elif(tolearn == "open"):
-					return "Opens the safe"
-				return "No help found for that command"
+					return "Открыть сейф"
+				return "Для этой команды справка не найдена"
 			learnCommand("disconnect")
 			learnCommand("login")
 			learnCommand("open")
-			return "Available commands:\ndisconnect\nlogin\nopen"
+			return "Доступные команды:\ndisconnect\nlogin\nopen"
 		
 		if(_command == "disconnect"):
 			if(_args.size() == 0):
@@ -33,28 +33,28 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				loggedAsAdmin = false
 				return "Disconnecting... Success"
 			else:
-				return "'disconnect' command expects 0 arguments"
+				return "Команда 'disconnect' ожидает 0 аргументов"
 		
 		if(_command == "open"):
 			if(loggedAsAdmin):
 				markFinished()
-				return "Opening the safe..."
+				return "Открытие сейфа..."
 			else:
-				return "Error, Access denied!"
+				return "Ошибка, доступ запрещен!"
 		
 		if(_command == "login"):
 			if(loggedAsAdmin):
-				return "Already logged in"
+				return "Вы уже вошли в систему"
 			
 			if(_args.size() == 1):
 				var modeStr = _args[0]
 				if(modeStr == "5327"):
 					loggedAsAdmin = true
-					return "Logged in as admin successfully. Welcome, Bob"
-				return "Error, wrong password"
+					return "Вы успешно вошли как админ. Добро пожаловать, Боб"
+				return "Ошибка, неверный пароль"
 			else:
-				return "'login' command expects 1 argument. Type 'help login' for more information"
-		return "Error, server doesn't support this command. Use 'help' to list all available commands"
+				return "Команда 'login' ожидает 1 аргумент. Введите 'help login' для подробностей"
+		return "Ошибка, сервер не поддерживает эту команду. Используйте 'help', чтобы увидеть список всех команд"
 	
 	if(connectedTo == "127.0.53"):
 		if(_command == "help"):
@@ -62,18 +62,18 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				var tolearn = _args[0]
 				
 				if(tolearn == "disconnect"):
-					return "Closes the connection"
+					return "Разрывает соединение"
 				elif(tolearn == "login"):
-					return "Allows you to login as an admin. Syntax: login <password>"
+					return "Позволяет войти под учетной записью администратора. Синтаксис: login <пароль>"
 				elif(tolearn == "ls"):
-					return "This command outputs the contents of your harddrive"
+					return "Эта команда выводит содержимое вашего жёсткого диска"
 				elif(tolearn == "cat"):
-					return "This command outputs file's contents into the console.\nSyntax 'cat <FILE INDEX>' where file index is a [b]number[/b] that can be obtained by using the ls command"
+					return "Эта команда выводит содержимое файла в консоль.\nСинтаксис: 'cat <ИНДЕКС_ФАЙЛА>', где индекс файла — это [b]число[/b], которое можно получить с помощью команды ls"
 				elif(tolearn == "wget"):
-					return "Download a file from the server. Syntax 'wget <FILE INDEX>' where file index is a [b]number[/b] that can be obtained by using the ls command"
+					return "Скачать файл с сервера. Синтаксис: 'wget <ИНДЕКС ФАЙЛА>', где индекс файла — это [b]число[/b], которое можно получить с помощью команды ls"
 				elif(tolearn == "withdraw" && loggedAsAdmin):
-					return "Transfers credits to your console where you can withdraw them."
-				return "No help found for that command"
+					return "Переводит кредиты на ваш консольный счет, откуда их можно снять."
+				return "Для этой команды справка не найдена"
 			learnCommand("disconnect")
 			learnCommand("login")
 			learnCommand("ls")
@@ -81,16 +81,16 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 			learnCommand("wget")
 			if(loggedAsAdmin):
 				learnCommand("withdraw")
-				return "Available commands:\ndisconnect\nlogin\nls\ncat\nwget\nwithdraw"
-			return "Available commands:\ndisconnect\nlogin\nls\ncat\nwget"
+				return "Доступные команды:\ndisconnect\nlogin\nls\ncat\nwget\nwithdraw"
+			return "Доступные команды:\ndisconnect\nlogin\nls\ncat\nwget"
 		
 		if(_command == "withdraw" && loggedAsAdmin):
 			if(transferredCredits):
-				return "The account is empty, ask people to donate more often or we will go out of bussiness and be forced to close :("
+				return "Счет пуст. Просите людей жертвовать чаще, иначе мы разоримся и будем вынуждены закрыться :("
 			else:
 				transferredCredits = true
 				GM.pc.addCredits(10)
-				return "Transferring 10 credits to your account.. success!"
+				return "Перевод 10 кредитов на ваш счет... успешно!"
 		
 		if(_command == "disconnect"):
 			if(_args.size() == 0):
@@ -98,46 +98,46 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				loggedAsAdmin = false
 				return "Disconnecting... Success"
 			else:
-				return "'disconnect' command expects 0 arguments"
+				return "Команда 'disconnect' ожидает 0 аргументов"
 		
 		if(_command == "login"):
 			if(loggedAsAdmin):
-				return "Already logged in"
+				return "Вы уже вошли в систему"
 			
 			if(_args.size() == 1):
 				var modeStr = _args[0]
 				if(modeStr == "42069"):
 					loggedAsAdmin = true
-					return "Logged in as admin successfully. Welcome, xxxDark-Masterxxx"
-				return "Error, wrong password"
+					return "Вы успешно вошли под учетной записью admin. Добро пожаловать, xxxDark-Masterxxx"
+				return "Ошибка, неверный пароль"
 		
 		if(_command == "wget"):
 			if(_args.size() == 1):
 				var programtodownload = _args[0]
 				if(programtodownload in ["2", "forum.html"]):
-					return "Error, unable to download html files"
+					return "Ошибка: не удалось скачать html-файл"
 				if(loggedAsAdmin && (programtodownload in ["69", "babe.png", "123", "petplay.png"])):
-					return "Error, unable to download png files"
+					return "Ошибка: не удалось скачать png-файл"
 				if(programtodownload in ["1", "brute.exe"]):
 					if(downloadedBrute):
-						return "You already have this file"
+						return "Этот файл у вас уже есть"
 					else:
 						downloadedBrute = true
 						learnCommand("brute.exe")
-						return "Downloading brute.exe... Success!"
+						return "Загрузка brute.exe... Успешно!"
 				if(programtodownload in ["420", "brutev2.exe"]):
 					if(!loggedAsAdmin):
-						return "ACCESS DENIED"
+						return "ДОСТУП ЗАПРЕЩЕН"
 					
 					if(downloadedBruteV2):
-						return "You already have this file"
+						return "Этот файл у вас уже есть"
 					else:
 						downloadedBruteV2 = true
 						learnCommand("brutev2.exe")
-						return "Downloading brutev2.exe... Success!"
-				return "FILE NOT FOUND"
+						return "Загрузка brutev2.exe... Успешно!"
+				return "ФАЙЛ НЕ НАЙДЕН"
 			else:
-				return "This command expects 0 arguments"
+				return "Команде требуется 0 аргументов"
 		
 		if(_command == "ls"):
 			if(_args.size() == 0):
@@ -145,28 +145,28 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 					return "Found 5 files:\n1 - brute.exe\n2 - forum.html\n69 - babe.png\n123 - petplay.png\n420 - brutev2.exe"
 				return "Found 2 files:\n1 - brute.exe\n2 - forum.html"
 			else:
-				return "This command expects 0 arguments"
+				return "Команде требуется 0 аргументов"
 	
 	
 		if(_command == "cat"):
 			if(_args.size() == 1):
 				var fileIndex = _args[0]
 				if(fileIndex in ["1", "brute.exe"]):
-					return "Error, unable to display a binary file"
+					return "Ошибка: невозможно отобразить бинарный файл"
 				elif(fileIndex in ["2", "forum.html"]):
 					learnCommand("wget")
-					return "<message>Guys, how do I use the brute.exe program?</message>\n<message>Super simple. [cuss]Download it from the server[/cuss] using wget [cuss]and then run like so[/cuss] 'brute.exe SERVER_IP'. [cuss]It will try to bruteforce the password[/cuss].</message>"
+					return "<message>Пацаны, как пользоваться программой brute.exe?</message>\n<message>Все супер просто. [cuss]Скачай её с сервера[/cuss] через wget [cuss]а затем запусти вот так[/cuss] 'brute.exe SERVER_IP'. [cuss]Она попытается подобрать пароль методом брутфорса[/cuss].</message>"
 				elif(loggedAsAdmin && (fileIndex in ["69", "babe.png"])):
 					return "babe.png\n\n[font=res://Fonts/smallconsolefont.tres]"+Util.readFile("res://Images/asciiporn/taviquest/babe.txt")+"[/font]"
 				elif(loggedAsAdmin && (fileIndex in ["123", "petplay.png"])):
 					return "petplay.png\n\n[font=res://Fonts/smallconsolefont.tres]"+Util.readFile("res://Images/asciiporn/taviquest/petplay.txt")+"[/font]"
 				else:
-					return "Error. File with such index wasn't found"
+					return "Ошибка. Файл с таким индексом не найден"
 			else:
 				learnCommand("tunya")
 				return "'cat' expects 1 argument"
 				
-		return "Error, server doesn't support this command"
+		return "Ошибка: сервер не поддерживает эту команду"
 	
 	if(connectedTo == ""):
 		if(_command == "connect"):
@@ -175,11 +175,11 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				if(server in ["127.0.24", "127.0.53"]):
 					connectedTo = server
 					if(server == "127.0.24"):
-						return "Connecting to "+server+"... Connected!\nSafe server status: Operational.\nDoor status: Closed"
+						return "Подключение к "+server+"... Подключено!\nСтатус сейфового сервера: Работает.\nСтатус двери: Закрыта"
 					if(server == "127.0.53"):
-						return "Connecting to "+server+"... Connected!\nLogged in as guest. Welcome to our public server, feel free to share anything you want.\nAlso, feel free to donate, we only have 10 credits out of a 100 that we need for hosting"
+						return "Подключение к "+server+"... Подключено!\nВошли как гость. Добро пожаловать на наш публичный сервер, делитесь чем угодно.\nА еще не стесняйтесь донатить: у нас всего 10 кредитов из 100, необходимых для хостинга"
 				else:
-					return "Connecting to "+server+"... Connection failed!"
+					return "Подключение к "+server+"... Соединение разорвано!"
 			else:
 				return "'connect' expects 1 argument"
 		
@@ -187,66 +187,66 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 			if(_args.size() == 1):
 				var iptohack = _args[0]
 				if(iptohack == "127.0.24"):
-					return "Connecting... success..\nAttempting to bruteforce the password..\nError, this server has a protection against simple bruteforcing.\n\nSmart bruteforcing required\nBuy our brand new brutev2.exe to be able to hack any server!\nPrice: only 99999 credits\nSend to our dumcoin account [cuss]5329751923[/cuss]\n\nUnable to bruteforce the password.\nShutting down.."
+					return "Подключение... успешно..\nПопытка брутфорса пароля..\nОшибка: на этом сервере стоит защита от простого перебора.\n\nТребуется умный брутфорс\nКупи нашу новенькую brutev2.exe, чтобы взламывать любой сервер!\nЦена: всего 99999 кредитов\nОтправляй на наш dumcoin-аккаунт [cuss]5329751923[/cuss]\n\nНе удалось подобрать пароль методом брутфорса.\nЗавершение работы.."
 				if(iptohack == "127.0.53"):
-					return "Connecting... success..\nAttempting to bruteforce the password..\nSuccess!!! Password is '42069'.\nShutting down.."
+					return "Подключение... успешно..\nПопытка брутфорса пароля..\nУспех!!! Пароль: '42069'.\nЗавершение работы.."
 				
-				return "Error, Unable to connect to this ip"
+				return "Ошибка: не удалось подключиться к этому IP"
 			else:
-				return "Syntax: brute.exe ip"
+				return "Синтаксис: brute.exe ip"
 		
 		if(_command == "brutev2.exe" && downloadedBruteV2):
 			if(_args.size() == 1):
 				var iptohack = _args[0]
 				if(iptohack == "127.0.24"):
-					return "Connecting... success..\nAttempting to bruteforce the password..\nSuccess!!! Password is '5327'.\nShutting down.."
+					return "Подключение... успешно..\nПопытка брутфорса пароля..\nУспех!!! Пароль: '5327'.\nЗавершение работы.."
 				if(iptohack == "127.0.53"):
-					return "Connecting... success..\nAttempting to bruteforce the password..\nSuccess!!! Password is '42069'.\nShutting down.."
+					return "Подключение... успешно..\nПопытка брутфорса пароля..\nУспех!!! Пароль: '42069'.\nЗавершение работы.."
 				
-				return "Error, Unable to connect to this ip"
+				return "Ошибка: не удалось подключиться к этому IP"
 			else:
-				return "Syntax: brutev2.exe ip"
+				return "Синтаксис: brutev2.exe ip"
 		
 		if(_command == "ls"):
 			if(_args.size() == 0):
 				return "Found 2 files:\n1 - safe.txt\n2 - forum.html"
 			else:
-				return "This command expects 0 arguments"
+				return "Команде требуется 0 аргументов"
 		if(_command == "cat"):
 			if(_args.size() == 1):
 				var fileIndex = _args[0]
 				if(fileIndex in ["1", "safe.txt"]):
-					return "The safe has a few credit chips that we confiscated from the inmates. Somehow they found a way to duplicate them which caused all sorts of problems. Hopefully there are no more of them going around.\n\nThe safe's ip is 127.0.24\nYou should know the admin's password. If you forgot it - you will have to hack it.\nGood luck"
+					return "В сейфе лежит несколько кредитных чипов, которые мы конфисковали у заключенных. Каким-то образом они нашли способ их дублировать, что вызвало кучу проблем. Надеюсь, больше их нигде не валяется.\n\nIP сейфа: 127.0.24\nТы должен знать пароль администратора. Если забыл — придется его взломать.\nУдачи!"
 				elif(fileIndex in ["2", "forum.html"]):
-					return "...**[corrupt]corrupted data[/corrupt]**...\n\n<message>Hey guys. What do I do if I forgot my password to one of the servers and I can't login anymore?</message>\n<message>lol noob</message>\n<message>I had such problem. But I just remembered the password one day</message>\n<message>I heard there is a program that can bruteforce password, check this server 127.0.55</message>\n<message>Thanks for the answers guys, real helpful. And I'm not gonna download some shady crap.</message>\n<message>Oh, btw, the ip's last 2 numbers are [corrupt]53[/corrupt], not 55.</message>\n\n...**[corrupt]more corrupted data[/corrupt]**..."
+					return "...**[corrupt]поврежденные данные[/corrupt]**...\n\n<message>Эй, ребят. Что делать, если я забыл пароль от одного из серверов и теперь не могу залогиниться?</message>\n<message>лол, нуб</message>\n<message>У меня была такая же проблема. Но в один прекрасный день я просто вспомнил пароль</message>\n<message>Слышал, есть прога, которая может подобрать пароль брутфорсом, глянь сервер 127.0.55</message>\n<message>Спасибо за ответы, ребят, очень помогли. И я не собираюсь качать всякое мутное дерьмо.</message>\n<message>О, кстати, последние две цифры IP — [corrupt]53[/corrupt], а не 55.</message>\n\n...**[corrupt]еще больше поврежденных данных[/corrupt]**..."
 				elif(fileIndex in ["tuna", "tunya"]):
-					return "cat program thanks you for tunya :3"
+					return "cat говорит тебе «туня» :3"
 				else:
-					return "Error. File with such index wasn't found"
+					return "Ошибка. Файл с таким индексом не найден"
 			else:
 				learnCommand("tunya")
-				return "'cat' expects 1 argument (or tunya)"
+				return "'cat' ожидает 1 аргумент (или tunya)"
 		if(_command == "quit"):
 			markFinishedFail()
-			return "Shutting down.."
+			return "Завершение работы..."
 		
 		if(_command == "help"):
 			if(_args.size() == 1):
 				var tolearn = _args[0]
 				if(tolearn == "help"):
-					return "This command outputs all other commands and can also provide help for certain command by typing 'help <COMMAND>'"
+					return "Эта команда выводит список всех остальных команд, а также может помочь с определённой командой, если ввести 'help <КОМАНДА>'"
 				elif(tolearn == "ls"):
-					return "This command outputs the contents of your harddrive"
+					return "Эта команда выводит содержимое вашего жёсткого диска"
 				elif(tolearn == "cat"):
-					return "This command outputs file's contents into the console.\nSyntax 'cat <FILE INDEX>' where file index is a [b]number[/b] that can be obtained by using the ls command"
+					return "Эта команда выводит содержимое файла в консоль.\nСинтаксис: 'cat <ИНДЕКС_ФАЙЛА>', где индекс файла — это [b]число[/b], которое можно получить с помощью команды ls"
 				elif(tolearn == "connect"):
-					return "This command lets you connect to the remote server by using its ip.\nSyntax 'connect <IP>'. An example of an ip is 127.0.1"
+					return "Эта команда позволяет подключиться к удаленному серверу по его IP-адресу.\nСинтаксис: 'connect <IP>'. Пример IP-адреса: 127.0.1"
 				elif(tolearn == "tunya"):
-					return "What are you doing? Give the tunya to the cat!"
+					return "Ты что творишь? Отдай туню коту!"
 				elif(tolearn == "quit"):
-					return "Shutdown the console"
+					return "Выключить консоль"
 				else:
-					return "Couldn't find command '"+str(tolearn)+"'. To see all the available commands type 'help'"
+					return "Команда '"+str(tolearn)+"' не найдена. Чтобы увидеть все доступные команды, введите 'help'"
 				
 			elif(_args.size() == 0):
 				learnCommand("help")
@@ -254,13 +254,13 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 				learnCommand("cat")
 				learnCommand("connect")
 				learnCommand("quit")
-				return "Available commands are: ls, cat, connect, help, quit.\nTo learn more about a command type 'help <COMMAND>'"
+				return "Доступные команды: ls, cat, connect, help, quit.\nЧтобы узнать больше о команде, введите 'help <КОМАНДА>'"
 			else:
 				learnCommand("help")
 				return "'help' expects 0 or 1 arguments"
 			
 		learnCommand("help")
-		return "Error, unknown command. Use 'help' to list all available commands"
+		return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 
 func saveData():
 	var data = .saveData()

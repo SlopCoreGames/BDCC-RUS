@@ -35,13 +35,13 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Luxe's Rage"
+	return "Ярость Люкса"
 
 func getEffectDesc():
 	var theText:String = "Rage: "+str(Util.roundF(rage*100.0, 1))+"%"
 	if(rage >= 0.5):
 		theText = "[color=red]"+theText+"[/color]"
-	theText += "\n\nLuxe gets more enraged when he takes damage or misses his attack. The more enraged he is, the more damage he takes. But high rage also unlocks different attacks for him."
+	theText += "\n\nЛюкс впадает в еще большую ярость, когда получает урон или промахивается атакой. Чем сильнее его ярость, тем больше урона он получает. Однако высокий уровень ярости также открывает ему новые виды атак."
 	
 	return theText
 

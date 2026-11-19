@@ -25,10 +25,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Primed Attack"
+	return "Заряженная атака"
 
 func getEffectDesc():
-	return "Your next attack is gonna do way more damage. Expires if not used in the next turn."
+	return "Твоя следующая атака нанесет гораздо больше урона. Эффект пропадет, если не использовать его в следующем ходу."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/crosshair.png"

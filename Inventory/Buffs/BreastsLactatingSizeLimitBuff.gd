@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Lactating breasts size limit "+text
+	return "Лимит размера при лактации груди "+text
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.BreastsMaxLactatingSize, amount)

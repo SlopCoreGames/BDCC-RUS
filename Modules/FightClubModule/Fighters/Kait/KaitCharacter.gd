@@ -70,27 +70,27 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "I fucking hate herms"
+		return "Как же я, блядь, ненавижу герм"
 	if(interest == InterestTopic.ExposedBreasts):
-		return "Nice tits, I will admit"
+		return "Сиськи классные, признаю"
 	if(interest == InterestTopic.LoosePussy):
-		return "Wow, your cunt is ruined"
+		return "Охренеть, твоя киска просто в хлам"
 	if(interest == InterestTopic.LooseAnus):
-		return "Really? Your ass is destroyed"
+		return "Серьезно? Твоя жопа просто уничтожена"
 	if(interest == InterestTopic.BigBreasts):
-		return "Don't fucking shake your udders"
+		return "Не тряси своими вымями, блядь"
 	if(interest == InterestTopic.LactatingBreasts):
-		return "Are you a fucking cow or something"
+		return "Ты что, блядь, корова какая-то?"
 	if(interest == InterestTopic.ExposedCock):
-		return "Mmm.. nice cock"
+		return "Ммм.. классный член"
 	if(interest == InterestTopic.FullyNaked):
-		return "Wow, you have no shame. I'm jealous"
+		return "Охренеть, у тебя вообще нет стыда. Даже завидно"
 	if(interest == InterestTopic.Pregnant):
-		return "Someone bred you? Gross."
+		return "Тебя кто-то осеменил? Мерзость"
 	if(interest == InterestTopic.MasculineBody):
-		return "Mm.. You're so manly.."
+		return "Мм.. Ты такой мужественный..."
 	if(interest == InterestTopic.SmallCock):
-		return "Hah, that's a pathetic cock."
+		return "Ха, какой жалкий член."
 	
 func _getName():
 	return "Kait"
@@ -99,7 +99,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Snow leopard girl wearing a lilac uniform. Medium height, slim body build."
+	return "Девушка-снежный барс в сиреневой униформе. Среднего роста, стройного телосложения."
 
 func getSpecies():
 	return ["feline"]

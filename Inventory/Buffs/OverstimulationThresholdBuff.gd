@@ -30,15 +30,15 @@ func getVisibleDescription():
 	if(amount > 0):
 		text = "+"+text
 	
-	var theText := "Overstimulation threshold"
+	var theText := "Порог гиперстимуляции"
 	if(sensType == BuffAttribute.OverstimulationThresholdPenis):
-		theText = "Penis overstimulation threshold"
+		theText = "Порог гиперстимуляции пениса"
 	elif(sensType == BuffAttribute.OverstimulationThresholdNipples):
-		theText = "Nipples overstimulation threshold"
+		theText = "Порог гиперстимуляции сосков"
 	elif(sensType == BuffAttribute.OverstimulationThresholdVagina):
-		theText = "Pussy overstimulation threshold"
+		theText = "Порог гиперстимуляции киски"
 	elif(sensType == BuffAttribute.OverstimulationThresholdAnus):
-		theText = "Anus overstimulation threshold"
+		theText = "Порог гиперстимуляции ануса"
 		
 	return theText+" "+text+"%"
 

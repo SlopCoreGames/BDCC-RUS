@@ -42,11 +42,11 @@ func _run():
 			saynn("Ты не особо понимаешь, есть ли кто-то рядом, но всё равно умоляешь.")
 
 		saynn("[say=pc]"+RNG.pick([
-			"Can someone help me?",
-			"Someone, please, unlock me.",
-			"I’m stuck here, can someone help me?",
-			"I can’t move, I’m stuck here.",
-			"A little help?",
+			"Кто-нибудь, помогите мне!",
+			"Кто-нибудь, пожалуйста, освободите меня.",
+			"Я застряла здесь, кто-нибудь может помочь?",
+			"Я не могу пошевелиться, я застряла.",
+			"Поможете немножко?",
 		])+"[/say]")
 
 		# (forced random interaction)
@@ -161,7 +161,7 @@ func getDebugActions():
 	return [
 		{
 			"id": "instantEscape",
-			"name": "Instant escape",
+			"name": "Мгновенный побег",
 			"args": [
 			],
 		},

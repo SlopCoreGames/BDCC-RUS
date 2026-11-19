@@ -23,12 +23,12 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Fetishes"
+	return "Фетиши"
 
 func getEffectDesc():
 	var fetishHolder: FetishHolder = character.getFetishHolder()
 	if(fetishHolder == null):
-		return "Error"
+		return "Ошибка"
 	
 	var texts = []
 	for fetishID in fetishHolder.getFetishes():

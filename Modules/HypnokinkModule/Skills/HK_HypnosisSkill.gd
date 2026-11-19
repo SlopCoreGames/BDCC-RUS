@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Гипноз"
 
 func getVisibleDescription():
-	return "Shows the control you display over your own subconscious."
+	return "Демонстрирует ваш уровень контроля над собственным подсознанием."
 
 func getPerkTiers():
 	return [
@@ -44,4 +44,4 @@ func flashDrawbackMessage(drawbackPerk: PerkBase):
 	if(npc != GM.pc):
 		return;
 	if(GM.ui):
-		GM.main.addMessage("You have gained a new drawback: "+drawbackPerk.getVisibleName()+"!")
+		GM.main.addMessage("Вы получили новый недостаток: "+drawbackPerk.getVisibleName()+"!")

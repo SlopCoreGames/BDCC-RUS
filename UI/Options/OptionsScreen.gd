@@ -144,7 +144,7 @@ func setTab(_tab:int):
 	display_cat_button.disabled = (_tab == OPTIONS.TAB_DISPLAY)
 	interface_cat_button.disabled = (_tab == OPTIONS.TAB_INTERFACE)
 	
-	category_name_label.text = TAB_TO_LABELTEXT[currentTab] if TAB_TO_LABELTEXT.has(currentTab) else "Unknown options"
+	category_name_label.text = TAB_TO_LABELTEXT[currentTab] if TAB_TO_LABELTEXT.has(currentTab) else "Неизвестные настройки"
 	
 	updateOptions()
 

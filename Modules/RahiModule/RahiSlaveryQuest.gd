@@ -9,19 +9,19 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Rahi seems to have problems with alcohol. You should talk with her about that.")
+	result.append("Похоже, у Рахи проблемы с алкоголем. Тебе стоит поговорить с ней об этом.")
 
 	if(getFlag("RahiModule.rahi3SceneHappened")):
-		result.append("Rahi had a strong case of alcohol poisoning. Visit her bench the next day to see if she is okay.")
+		result.append("Рахи сильно отравилась алкоголем. Загляни к ней на скамейку на следующий день, чтобы проверить, всё ли с ней в порядке.")
 
 	if(getFlag("RahiModule.rahi4SceneHappened")):
-		result.append("You saved Rahi. But now you gotta help her. Visit her cell after she gets some rest.")
+		result.append("Ты спас Рахи. Но теперь тебе нужно ей помочь. Навести её в камере, когда она немного отдохнёт.")
 
 	if(getFlag("RahiModule.rahi5SceneHappened")):
-		result.append("Visit Rahi every day to give her a task.")
+		result.append("Заходи к Рахи каждый день, чтобы давать ей поручения.")
 
 	if(getFlag("RahiModule.rahiMile8Happened")):
-		result.append("Rahi is now happy. Good job.")
+		result.append("Теперь Рахи счастлива. Отличная работа.")
 
 	return result
 

@@ -381,9 +381,8 @@ margin_right = -124.0
 margin_bottom = -179.0
 custom_styles/panel = SubResource( 16 )
 contentID = "MainKait"
-contentName = "Kait Main Route"
-contentDesc = "Dominate the whole prison! A route for dominant players
-(work in progress)"
+contentName = "Основная ветка Кейт"
+contentDesc = "Покори всю тюрьму! Сюжет для доминантных игроков\n(в разработке)"
 bgColor = Color( 0.741176, 0, 0, 1 )
 borderColor = Color( 0.0509804, 0.0431373, 0, 1 )
 
@@ -416,8 +415,8 @@ margin_right = 48.0
 margin_bottom = -130.0
 custom_styles/panel = SubResource( 17 )
 contentID = "MainTavi"
-contentName = "Tavi Main Route"
-contentDesc = "Become Tavi's sidekick and find a way to escape the prison together. A route for switch players."
+contentName = "Основной маршрут Тави"
+contentDesc = "Стань напарником Тави и найдите способ сбежать из тюрьмы вместе. Сюжет для свитчей."
 bgColor = Color( 0.470588, 0, 0.537255, 1 )
 borderColor = Color( 0, 0.933333, 0.0784314, 1 )
 
@@ -443,8 +442,8 @@ margin_right = 240.0
 margin_bottom = -174.0
 custom_styles/panel = SubResource( 15 )
 contentID = "MainCaptain"
-contentName = "Captain Route"
-contentDesc = "Become captain's most trusted inmate. A route for submissive players. (Planned)"
+contentName = "Капитан Роут"
+contentDesc = "Стань самым доверенным заключенным капитана. Сюжет для сабмиссивных игроков. (В планах)"
 
 [node name="Pin15" type="Sprite" parent="CaptainRoute"]
 modulate = Color( 0.376471, 0.647059, 1, 1 )
@@ -468,8 +467,8 @@ margin_right = -383.0
 margin_bottom = -99.0
 custom_styles/panel = SubResource( 18 )
 contentID = "Rahi"
-contentName = "Rahi"
-contentDesc = "Help a shy brown kitty with her drinking problem."
+contentName = "Рахи"
+contentDesc = "Помоги застенчивой коричневой кошечке справиться с её проблемой с алкоголем."
 bgColor = Color( 0.74902, 0.376471, 0.301961, 1 )
 borderColor = Color( 0.458824, 0.14902, 0.0862745, 1 )
 
@@ -495,8 +494,8 @@ margin_right = -449.0
 margin_bottom = 47.0
 custom_styles/panel = SubResource( 19 )
 contentID = "Jacki"
-contentName = "Jacki Northstar"
-contentDesc = "Have fun with a kind wolfo that is wearing unique chastity piercings."
+contentName = "Джеки Нортстар"
+contentDesc = "Развлекись с доброй волчицей, украшенной уникальными пирсингами целомудрия."
 bgColor = Color( 0.137255, 0.137255, 0.137255, 1 )
 borderColor = Color( 0.537255, 0, 0, 1 )
 
@@ -522,8 +521,8 @@ margin_right = -95.0
 margin_bottom = 160.0
 custom_styles/panel = SubResource( 20 )
 contentID = "Artica"
-contentName = "Artica"
-contentDesc = "Corrupt a very shy herm fluff."
+contentName = "Артика"
+contentDesc = "Разврати очень скромного пушистого герма."
 bgColor = Color( 1, 1, 1, 1 )
 borderColor = Color( 0.0823529, 0.937255, 0.94902, 1 )
 
@@ -549,8 +548,8 @@ margin_right = -36.0
 margin_bottom = 288.0
 custom_styles/panel = SubResource( 21 )
 contentID = "Vion"
-contentName = "Vion"
-contentDesc = "Find a way to help a lizard with his stallion problem."
+contentName = "Вион"
+contentDesc = "Найди способ помочь ящеру с его проблемой «жеребца»."
 bgColor = Color( 0.804688, 0.226318, 0.64654, 1 )
 borderColor = Color( 0.737255, 0.392157, 1, 1 )
 
@@ -576,8 +575,8 @@ margin_right = -247.0
 margin_bottom = 289.0
 custom_styles/panel = SubResource( 22 )
 contentID = "AlexRynard"
-contentName = "Alex Rynard"
-contentDesc = "Offer your company to a lonely engineer foxy guy who has trust issues."
+contentName = "Алекс Райнард"
+contentDesc = "Составь компанию одинокому лисоподобному инженеру, который привык никому не доверять."
 bgColor = Color( 0.878431, 0.478431, 0.207843, 1 )
 borderColor = Color( 0.27451, 0.0509804, 0, 1 )
 
@@ -603,8 +602,8 @@ margin_right = 601.0
 margin_bottom = -81.0
 custom_styles/panel = SubResource( 23 )
 contentID = "ElizaChastity"
-contentName = "Obedience Training"
-contentDesc = "Go through an obedience training program created by Eliza Quinn, focused all around male chastity"
+contentName = "Тренировка послушания"
+contentDesc = "Пройди программу дрессировки послушания от Элизы Куинн, полностью сосредоточенную на мужском целомудрии."
 bgColor = Color( 0.777344, 0.838226, 1, 1 )
 borderColor = Color( 0.0156863, 0, 0.486275, 1 )
 
@@ -629,8 +628,8 @@ margin_right = 436.0
 margin_bottom = -83.0
 custom_styles/panel = SubResource( 24 )
 contentID = "ElizaLab"
-contentName = "BioLab Assistant"
-contentDesc = "Become Eliza's assistant and get a chance to work in her lab, researching new transformation drugs"
+contentName = "Ассистент биолаборатории"
+contentDesc = "Стань ассистентом Элизы и получи шанс работать в её лаборатории, исследуя новые препараты для трансформации."
 bgColor = Color( 0.85098, 1, 0.823529, 1 )
 borderColor = Color( 0.2, 0.34902, 0, 1 )
 
@@ -663,8 +662,8 @@ margin_right = -273.0
 margin_bottom = 117.0
 custom_styles/panel = SubResource( 25 )
 contentID = "Kidlat"
-contentName = "Kidlat"
-contentDesc = "Find a cute cat that got stuck in the endless maintenance tunnels and see if you can help her out."
+contentName = "Кидлат"
+contentDesc = "Найди милую кошечку, застрявшую в бесконечных технических туннелях, и попробуй ей помочь."
 bgColor = Color( 0.121569, 0, 0.160784, 1 )
 borderColor = Color( 0.00784314, 0.894118, 0.862745, 1 )
 
@@ -690,8 +689,8 @@ margin_right = -442.0
 margin_bottom = 248.0
 custom_styles/panel = SubResource( 26 )
 contentID = "Socket"
-contentName = "Socket"
-contentDesc = "Meet a fennec engineer with a very interesting outfit. Help her with her tasks all around the prison."
+contentName = "Гнездо"
+contentDesc = "Познакомься с инженером-феннеком в очень интересном наряде. Помогай ей с делами по всей тюрьме."
 bgColor = Color( 0.870588, 0.694118, 0.572549, 1 )
 borderColor = Color( 0.513726, 0.301961, 0.207843, 1 )
 
@@ -717,8 +716,8 @@ margin_right = 438.0
 margin_bottom = 100.0
 custom_styles/panel = SubResource( 27 )
 contentID = "Arena"
-contentName = "Arena"
-contentDesc = "Become the Grand Champion of the hidden underground arena that has only rule: No Rules!"
+contentName = "Арена"
+contentDesc = "Стань великим чемпионом скрытой подземной арены, где действует только одно правило: никаких правил!"
 bgColor = Color( 0.819608, 0.247059, 0.2, 1 )
 borderColor = Color( 0.52549, 0, 0, 1 )
 
@@ -744,8 +743,8 @@ margin_right = 604.0
 margin_bottom = 95.0
 custom_styles/panel = SubResource( 28 )
 contentID = "Mirri"
-contentName = "Blacktail Market"
-contentDesc = "Meet Mirri and Luxe from the Blacktail family who are running a slave auction. Sell your slaves here!"
+contentName = "Рынок Блэктейл"
+contentDesc = "Встреться с Мирри и Люкс из семьи Блэктейл, которые проводят аукцион рабов. Продавай своих рабов здесь!"
 bgColor = Color( 0.0352941, 0, 0, 1 )
 borderColor = Color( 1, 0.352941, 0, 1 )
 
@@ -771,8 +770,8 @@ margin_right = 227.0
 margin_bottom = 301.0
 custom_styles/panel = SubResource( 29 )
 contentID = "SlaveryShaftMiner"
-contentName = "Shaft Miner"
-contentDesc = "Get sold on a slave auction and become a shaft miner on a godforsaken planet."
+contentName = "Шахтер шахты"
+contentDesc = "Будь продан на аукционе рабов и стань шахтером на какой-то богом забытой планете."
 bgColor = Color( 0.266667, 0.0745098, 0, 1 )
 borderColor = Color( 1, 0.513726, 0, 1 )
 
@@ -799,8 +798,8 @@ margin_right = 393.0
 margin_bottom = 301.0
 custom_styles/panel = SubResource( 30 )
 contentID = "SlaveryMilkCafe"
-contentName = "The Daily Drip"
-contentDesc = "Get sold on a slave auction to a lovely couple that runs a cafe in dire need of milk and cum."
+contentName = "Ежедневная капля"
+contentDesc = "Будь продан на аукционе рабов очаровательной паре, которая держит кафе и отчаянно нуждается в молоке и конче."
 bgColor = Color( 0, 0.898039, 0.898039, 1 )
 borderColor = Color( 1, 1, 1, 1 )
 
@@ -826,8 +825,8 @@ margin_right = 558.0
 margin_bottom = 302.0
 custom_styles/panel = SubResource( 31 )
 contentID = "SlaveryTentacles"
-contentName = "Tentacles Biolab"
-contentDesc = "Get sold on a slave auction to a biolab where you will help grow your own tentacle monster!"
+contentName = "Биолаборатория щупалец"
+contentDesc = "Будь продан на аукционе рабов в биолабораторию, где тебе предстоит вырастить собственного монстра с щупальцами!"
 bgColor = Color( 0.0235294, 0.8, 0, 1 )
 borderColor = Color( 0.239216, 0.403922, 0, 1 )
 

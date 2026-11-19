@@ -29,9 +29,9 @@ func _run():
 			var item = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 			if(item != null):
 				if(item.coversPenis):
-					saynn("Твои портальные трусики также будут создавать портал для твоего члена."+(" (If you'd had one)" if !GM.pc.hasPenis() else ""))
+					saynn("Твои портальные трусики также будут создавать портал для твоего члена."+(" (Если бы у тебя был один)" if !GM.pc.hasPenis() else ""))
 				else:
-					saynn("Твои портальные трусики не скрывают член, позволяя им пользоваться им."+(" (If you'd had one)" if !GM.pc.hasPenis() else ""))
+					saynn("Твои портальные трусики не скрывают член, позволяя им пользоваться им."+(" (Если бы у тебя был один)" if !GM.pc.hasPenis() else ""))
 			
 			addButton("Снять", "Снять портальные трусики", "takeoff")
 			addButton("Сменить режим", "Изменить частоту событий", "changemode")

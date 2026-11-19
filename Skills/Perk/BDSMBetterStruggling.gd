@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Дева Успеха"
 
 func getVisibleDescription():
-	return "You learned how to shake restraints off in the most efficient ways, if you complete the struggling minigame perfectly your struggling is twice as effective"
+	return "Вы научились максимально эффективно сбрасывать с себя путы: если пройти мини-игру на сопротивление идеально, эффективность ваших попычек удвоится."
 
 func getSkillTier():
 	return 1

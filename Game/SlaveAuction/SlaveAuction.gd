@@ -91,23 +91,23 @@ func getText() -> String:
 			slavesTraitsTexts.append(theName)
 		
 	if(isStart):
-		theTexts.append("The auction is about to start. Your job is to sell your slave for as many credits as possible by making bidders outbid each other.")
-		theTexts.append("Bidders have different preferences that you can learn while presenting your slave. Try to avoid highlighting the traits that the bidders dislike and focus on the traits that they do like.")
-		theTexts.append("The auction will end in 3 rounds (soft end) unless you manage to keep the bid war going. If you get at least 2 new bids after an action, you get an ability to do another action.")
+		theTexts.append("Аукцион вот-вот начнется. Ваша задача — продать своего раба за максимальное количество кредитов, заставляя участников торгов перебивать ставки друг друга.")
+		theTexts.append("У покупателей разные предпочтения, которые можно узнать во время презентации раба. Старайтесь не акцентировать внимание на чертах, которые им не нравятся, и делайте упор на то, что им по душе.")
+		theTexts.append("Аукцион закончится через 3 раунда (мягкий финал), если только вам не удастся поддерживать азарт торгов. Если после вашего действия поступит как минимум 2 новые ставки, вы получите возможность совершить еще одно действие.")
 		theTexts.append("")
-		theTexts.append("Starting Bid: "+str(getStartingBid())+" credits. Minimum Bid Increment: "+str(getBidIncrease())+" credits.")
-		theTexts.append("{slave.name}'s traits: "+Util.join(slavesTraitsTexts, ", "))
+		theTexts.append("Начальная ставка: "+str(getStartingBid())+" кредитов. Минимальный шаг ставки: "+str(getBidIncrease())+" credits.")
+		theTexts.append("Черты {slave.name}: "+Util.join(slavesTraitsTexts, ", "))
 		theTexts.append("")
 		theTexts.append(getBidderInfo())
 		theTexts.append("")
-		theTexts.append("How do you want to introduce your slave?")
+		theTexts.append("Как вы хотите представить своего раба?")
 	else:
-		theTexts.append("Round №"+str(roundNumber)+((". Soft end at round "+str(bettingBeginsRound)+".") if roundNumber < bettingBeginsRound else ". Soft end is reached. Auction will end if you get less than 2 new bids."))
-		theTexts.append("{slave.name}'s traits: "+Util.join(slavesTraitsTexts, ", "))
+		theTexts.append("Round №"+str(roundNumber)+((". Мягкий финал на раунде "+str(bettingBeginsRound)+".") if roundNumber < bettingBeginsRound else ". Достигнут мягкий финал. Аукцион завершится, если вы получите менее 2 новых ставок."))
+		theTexts.append("Черты {slave.name}: "+Util.join(slavesTraitsTexts, ", "))
 		theTexts.append("")
 		theTexts.append(getBidderInfo())
 		theTexts.append("")
-		theTexts.append("How do you want to present your slave?")
+		theTexts.append("Как вы хотите представить своего раба?")
 	
 	return Util.join(theTexts, "\n")
 
@@ -161,9 +161,9 @@ func getActions() -> Array:
 	var result:Array = []
 	
 	if(state == "react"):
-		result.append(GlobalRegistry.getAuctionAction("Continue"))
+		result.append(GlobalRegistry.getAuctionAction("Продолжить"))
 	elif(state == "ended"):
-		result.append(GlobalRegistry.getAuctionAction("Continue"))
+		result.append(GlobalRegistry.getAuctionAction("Продолжить"))
 	elif(state == "start"):
 		for actionID in GlobalRegistry.getAuctionActions():
 			var theAction:AuctionAction = GlobalRegistry.getAuctionAction(actionID)
@@ -345,9 +345,9 @@ func doAction(_auctionAction:AuctionAction):
 			bidder.say(_auctionAction.getNegativeReaction(getChar(), slaveTraits))
 	if(!didPositiveReact && !didNegativeReact && _auctionAction.getActionType() != AuctionActionType.Intro && _auctionAction.getActionType() != AuctionActionType.Ungrouped):
 		RNG.pick(bidders).say(RNG.pick([
-			"Hmm..",
-			"..hm.. anyone has any feedback?",
-			"Hm.. I don't know..",
+			"Хмм...",
+			"..хм.. есть у кого какие мысли?",
+			"Хм.. даже не знаю..",
 		]))
 		
 	if(!_auctionAction.isEmphasizeAction()):
@@ -381,9 +381,9 @@ func doAction(_auctionAction:AuctionAction):
 			disDisLikesTexts.append("[color=#"+bidder.getTraitColor(traitID).to_html(false)+"]"+traitObj.getName(traitID)+"[/color]")
 		
 		if(disLikesTexts.size() > 0):
-			disTexts.append("prefers slaves with "+Util.humanReadableList(disLikesTexts)+" trait"+("s" if disLikesTexts.size() > 1 else ""))
+			disTexts.append("предпочитает рабов с "+Util.humanReadableList(disLikesTexts)+" trait"+("s" if disLikesTexts.size() > 1 else ""))
 		if(disDisLikesTexts.size() > 0):
-			disTexts.append("dislikes slaves with "+Util.humanReadableList(disDisLikesTexts)+" trait"+("s" if disDisLikesTexts.size() > 1 else ""))
+			disTexts.append("не любит рабов с "+Util.humanReadableList(disDisLikesTexts)+" trait"+("s" if disDisLikesTexts.size() > 1 else ""))
 
 		sayn("[i]"+getSlaverName()+" узнал(а), что "+bidder.name+" "+Util.join(disTexts, " and ")+".[/i]")
 		hadAnyLearns = true
@@ -636,57 +636,57 @@ func getSlaveBiddingReactionText() -> String:
 	var _reactionType = getSlaveReactionType()
 	if(_reactionType == AuctionSlaveReaction.Obedient):
 		return RNG.pick([
-			"{slave.name} lowers {slave.his} head even further, accepting the frenzy of bids with silent submission.",
-			"{slave.name} glances up briefly, the rapid bidding only confirming {slave.his} place, {slave.he} waits patiently for it to end.",
-			"{slave.name}'s breathing remains steady, though {slave.his} fingers twitch subtly in response to the intense focus.",
-			"{slave.name} closes {slave.his} eyes momentarily, as if resigned to the outcome, allowing the chaos to continue.",
-			"A faint nod comes from {slave.name}'s head, as if silently acknowledging {slave.his} worth to the bidders.",
-			"{slave.name} stands perfectly still, offering no visible reaction as the bidding war rages on, fully accepting {slave.his} fate.",
+			"{slave.name} еще ниже склоняет голову {slave.his}, с молчаливой покорностью принимая неистовый поток ставок.",
+			"{slave.name} на мгновение поднимает взгляд; стремительные ставки лишь подтверждают положение {slave.his}, пока {slave.he} терпеливо ждет окончания торгов.",
+			"Дыхание {slave.name} остается ровным, хотя пальцы {slave.his} едва заметно подергиваются в ответ на пристальное внимание.",
+			"{slave.name} на мгновение закрывает {slave.his} глаза, словно смирившись с исходом и позволяя хаосу продолжаться.",
+			"{slave.name} едва заметно кивает, словно безмолвно подтверждая {slave.his} ценность в глазах участников аукциона.",
+			"{slave.name} стоит совершенно неподвижно, не подавая никаких видимых признаков реакции, пока разгорается аукционная война, полностью смирившись с судьбой {slave.his}.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Confused):
 		return RNG.pick([
-			"{slave.name}'s eyes widen slightly as the bids escalate, the confusion in {slave.his} gaze deepening.",
-			"{slave.name} looks around anxiously, the desperation in {slave.his} eyes growing with each new offer.",
-			"{slave.name} bites {slave.his} lip, a mix of sadness and uncertainty creeping into {slave.his} expression.",
-			"{slave.name} winces at every new bid, the rising numbers making {slave.him} feel more and more lost.",
-			"{slave.name} blinks rapidly, as if trying to understand why so much attention is on {slave.him}.",
-			"A small, quiet gasp escapes {slave.name}'s lips, overwhelmed by the growing intensity of the bid war.",
+			"Глаза {slave.name} слегка расширяются по мере того, как ставки растут, а замешательство во взгляде {slave.his} становится всё глубже.",
+			"{slave.name} тревожно озирается по сторонам, и с каждым новым предложением отчаяние в глазах {slave.his} становится всё сильнее.",
+			"{slave.name} прикусывает {slave.his} губу, и в выражении {slave.his} лица проскальзывает смесь грусти и неуверенности.",
+			"{slave.name} вздрагивает при каждой новой ставке, и от растущих цифр {slave.him} чувствует себя всё более и более потерянной.",
+			"{slave.name} часто моргает, словно пытаясь понять, почему {slave.him} уделяют столько внимания.",
+			"Тихий, едва слышный вздох срывается с губ {slave.name}, ошеломленной нарастающим накалом аукционной войны.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Shy):
 		return RNG.pick([
-			"{slave.name}'s cheeks flush deeper with every rising bid, clearly overwhelmed by the attention.",
-			"{slave.name} looks away, {slave.his} body trembling slightly as {slave.he} tries to hide {slave.his} embarrassment.",
-			"{slave.name} stifles a whimper, clearly unused to being fought over like this.",
-			"{slave.name}'s entire face burns crimson as the bids keep coming, {slave.his} shy nature causing {slave.him} to shift nervously.",
-			"{slave.name}'s breath quickens, the intensity of the bids making {slave.him} feel even more exposed.",
-			"{slave.name} squeezes {slave.his} eyes shut for a moment, trying to cope with the barrage of attention.",
+			"Щеки {slave.name} краснеют всё сильнее с каждым новым повышением ставки — она явно ошеломлена таким вниманием.",
+			"{slave.name} отводит взгляд, {slave.his} тело слегка дрожит, пока {slave.he} пытается скрыть {slave.his} смущение.",
+			"{slave.name} подавляет всхлип, явно не привыкшая к тому, что за неё так сражаются.",
+			"Всё лицо {slave.name} пылает багровым цветом, пока ставки продолжают расти, а из-за застенчивого нрава {slave.his}, {slave.him} нервно переминается с ноги на ногу.",
+			"Дыхание {slave.name} учащается; от азарта торгов {slave.him} чувствует себя ещё более обнажённой.",
+			"{slave.name} на мгновение зажмуривает {slave.his} глаза, пытаясь справиться с этим шквалом внимания.",
 		])
 	if(_reactionType == AuctionSlaveReaction.MindBroken):
 		return RNG.pick([
-			"{slave.name} remains utterly still, the increasing bids seeming to have no impact on {slave.him}.",
-			"{slave.name} stares blankly into the distance, oblivious to the intense bid war erupting around {slave.him}.",
-			"{slave.name}'s body sways slightly, but there is no awareness in {slave.his} eyes as the numbers rise.",
-			"{slave.name} doesn’t blink or respond, the frantic bidding as meaningless to {slave.him} as anything else.",
-			"{slave.name}'s head hangs loosely, no sign of recognition in {slave.his} empty gaze.",
-			"{slave.name} stands in place like a lifeless doll, completely unaffected by the chaos around {slave.him}.",
+			"{slave.name} замерла как вкопанная; кажется, растущие ставки никак не влияют на {slave.him}.",
+			"{slave.name} безучастно смотрит вдаль, совершенно не замечая яростной войны ставок, разгоревшейся вокруг {slave.him}.",
+			"Тело {slave.name} слегка покачивается, но в глазах {slave.his} нет и тени осознания происходящего, пока цифры на табло растут.",
+			"{slave.name} не моргает и не реагирует; лихорадочные торги для {slave.him} так же бессмысленны, как и всё остальное.",
+			"Голова {slave.name} бессильно опущена, а в пустом взгляде {slave.his} нет ни малейшего признака узнавания.",
+			"{slave.name} стоит на месте, словно безжизненная кукла, совершенно не затронутая хаосом вокруг {slave.him}.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Desperate):
 		return RNG.pick([
-			"{slave.name}'s breath quickens in panic as the bidding intensifies, {slave.his} eyes darting between the bidders.",
-			"{slave.name} pulls against the chains, the desperation building with every bid, a silent plea for it to stop.",
-			"A soft sob escapes {slave.name}'s lips, the rapidly rising bids only heightening {slave.his} confusion and fear.",
-			"{slave.name} gasps, shaking {slave.his} head as if trying to deny what’s happening, unable to make sense of the chaos.",
-			"{slave.name} twists in the restraints, visibly panicked, the rising offers making {slave.his} situation feel more hopeless.",
-			"{slave.name}'s entire body trembles as the bids soar higher, clearly feeling trapped with no way out.",
+			"Дыхание {slave.name} срывается на паническое, когда торги усиливаются, а глаза {slave.his} мечутся между участниками аукциона.",
+			"{slave.name} рвется в цепях, и с каждой новой ставкой ее отчаяние растет — безмолвная мольба о том, чтобы всё это поскорее закончилось.",
+			"С губ {slave.name} срывается тихий всхлип; стремительно растущие ставки лишь усиливают замешательство и страх {slave.his}.",
+			"{slave.name} ахает, качая {slave.his} головой, словно пытаясь отрицать происходящее и не в силах осознать воцарившийся хаос.",
+			"{slave.name} извивается в оковах, заметно паникуя; от того, как растут ставки, ситуация для {slave.his} кажется всё более безнадёжной.",
+			"Все тело {slave.name} дрожит, пока ставки взлетают всё выше — очевидно, что она чувствует себя загнанной в ловушку, из которой нет выхода.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Angry):
 		return RNG.pick([
-			"{slave.name}'s jaw clenches tighter with every new bid, fury building in {slave.his} gaze.",
-			"{slave.name} glares at the crowd, hate-filled eyes daring the bidders to keep going, as if ready to fight them all.",
+			"Челюсти {slave.name} сжимаются всё сильнее с каждой новой ставкой, а во взгляде {slave.his} разгорается ярость.",
+			"{slave.name} свирепо смотрит на толпу; в её глазах кипит ненависть, и она словно бросает вызов аукционистам, готовая в любой момент броситься на них в драку.",
 			"{slave.name} growls under {slave.his} breath, the rising bids only fueling {slave.his} anger further.",
-			"{slave.name} spits on the ground, the aggressive bidding war enraging {slave.him} even more.",
-			"{slave.name}'s eyes burn with defiance as the numbers climb, clearly refusing to accept {slave.his} fate quietly.",
-			"{slave.name} jerks against {slave.his} restraints, every new bid making {slave.him} more determined to resist.",
+			"{slave.name} сплевывает на землю, и агрессивная борьба за ставки бесит {slave.him} еще сильнее.",
+			"Глаза {slave.name} горят вызовом по мере того, как растут ставки; она явно не собирается смиренно принимать {slave.his} судьбу.",
+			"{slave.name} дергается в {slave.his} оковах, и с каждой новой ставкой {slave.him} все решительнее пытается сопротивляться.",
 		])
 	return ""
 
@@ -775,60 +775,60 @@ func getGoingOnceText() -> String:
 	if(RNG.chance(50)):
 		return ""
 	return " "+RNG.pick([
-		"Come on, don’t let this rare chance slip by!",
-		"This is your moment to steal the prize!",
-		"Any more offers maybe?",
-		"Don’t hesitate, or you’ll regret it!",
-		"Are we really going to stop here?",
-		"This is your last chance to outbid the competition!",
-		"You won’t find another slave like {slave.him}, I assure you.",
-		"A slave of this caliber deserves a little more enthusiasm!",
-		"Anyone willing to go higher?",
-		"Any more bids?",
-		"More bids?",
-		"Will you give me more?",
-		"Can you give me more?",
+		"Да ладно тебе, не упусти такой редкий шанс!",
+		"Это твой шанс урвать главный приз!",
+		"Будут еще предложения?",
+		"Не медли, а то пожалеешь!",
+		"Мы что, реально на этом остановимся?",
+		"Это ваш последний шанс перебить ставку конкурентов!",
+		"Уверяю вас, вы больше не найдете такой рабыни, как {slave.him}.",
+		"Рабыня такого калибра заслуживает чуть больше энтузиазма!",
+		"Кто готов предложить больше?",
+		"Будут еще ставки?",
+		"Еще ставки?",
+		"Неужели вы дадите мне больше?",
+		"Сможете предложить больше?",
 	])
 
 func getGoingTwiceText() -> String:
 	return " "+RNG.pick([
-		"C'mon, it's your last chance to bid!",
-		"Last chance! Don’t say I didn’t warn you!",
-		"Speak now, or lose this fucktoy forever!",
-		"I can feel someone’s hesitation - make the call now!",
-		"Anyone daring enough?",
-		"This is your final moment to claim this gem!",
-		"Surely you won’t let them walk away this easily?",
-		"The clock’s ticking, any last-minute offers?",
-		"Is that truly your best? Show me a final bid!",
-		"Will you make it count, or let it go?"
+		"Да ладно вам, это ваш последний шанс сделать ставку!",
+		"Последний шанс! Не говорите потом, что я не предупреждал!",
+		"Говорите сейчас, или потеряете эту шлюху навсегда!",
+		"Я чувствую чьи-то колебания — решайтесь прямо сейчас!",
+		"Есть тут кто достаточно смелый?",
+		"Это ваш последний миг, чтобы забрать этот бриллиант!",
+		"Неужели вы так легко позволите им уйти?",
+		"Время тикает, есть последние предложения?",
+		"Это правда всё, на что вы способны? Покажите мне финальную ставку!",
+		"Вы сделаете этот ход решающим или упустите всё?"
 	])
 
 func getGoingOnceTextNoBids() -> String:
 	return " "+RNG.pick([
-		"This is such an opportunity, c'mon!",
-		"Not a single bid yet? You’re missing out!",
-		"This slave is worth far more than silence - who’ll start us off?",
-		"Don’t let this end without a single offer!",
-		"Are you really going to pass on such a fine specimen?",
-		"This is your moment to start the bidding - don’t hold back!",
-		"Surely, someone sees the potential here?",
-		"First bid wins the advantage - who’s going to take it?",
-		"Don’t be shy. A first bid can make all the difference!",
-		"I’m surprised.. no bids for such a rare find?",
+		"Такой шанс выпадает не каждый день, ну же!",
+		"Ни одной ставки? Вы упускаете выгоду!",
+		"Этот раб стоит гораздо больше, чем тишина — кто начнет?",
+		"Не позволяйте этому аукциону закончиться без единого предложения!",
+		"Вы серьезно собираетесь пропустить такой прекрасный экземпляр?",
+		"Это ваш момент, чтобы начать торги — не сдерживайте себя!",
+		"Неужели никто не видит здесь потенциал?",
+		"Первая ставка дает преимущество — кто ее сделает?",
+		"Не стесняйтесь. Первая ставка может изменить всё!",
+		"Я удивлена... неужели на такую редкость нет ставок?",
 	])
 
 func getGoingTwiceTextNoBids() -> String:
 	return " "+RNG.pick([
-		"This is it! Someone start the bidding or lose this fucktoy for good!",
-		"Last chance! Are you all going to let this one go?",
-		"The auction’s about to end, who will place the first bid?",
-		"I can’t believe there’s no interest - prove me wrong!",
-		"This rare opportunity will slip away - don’t be the one to regret it!",
-		"I can feel hesitation in the room - just one bid to change everything!",
-		"This slave deserves better than silence - who will start the bidding?",
-		"Almost gone! You’ll kick yourselves for missing out!",
-		"No bids yet? Make one now before the auction ends!",
+		"Пора! Кто-нибудь, начните торги, иначе вы потеряете эту шлюшку навсегда!",
+		"Последний шанс! Неужели вы все упустите эту красотку?",
+		"Аукцион подходит к концу, кто сделает первую ставку?",
+		"Поверить не могу, что всем плевать — докажите, что я ошибаюсь!",
+		"Такой редкий шанс вот-вот ускользнет — не будьте теми, кто будет локти кусать!",
+		"Я прямо чувствую ваше колебание в воздухе — всего одна ставка, и всё изменится!",
+		"Эта рабыня заслуживает большего, чем просто молчание — кто начнет торги?",
+		"Почти всё! Вы еще будете проклинать себя за то, что упустили её!",
+		"Ставок всё еще нет? Делайте ставку прямо сейчас, пока аукцион не закрылся!",
 	])
 
 func saveData():

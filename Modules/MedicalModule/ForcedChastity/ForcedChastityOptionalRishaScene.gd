@@ -279,7 +279,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Writing conflicts is kinda fun. Dunno why. But if you ever saw any movie or read any book.. There is always a conflict. No, not just one conflict. Many of them. BDCC has a huge core conflict in its lore (AlphaCorp vs Syndicate). The gameplay has a big conflict too (inmates vs staff vs other inmates). And then most of the scenes also have conflicts in them x3.\n\nBasically you always gotta search for those interesting conflicts. They don't have to be obvious like characters hating each other. Silent conflicts are the beeeeest. If you can make one character say 'have a good day' but actually mean 'hope you die bitch' and the reader can pick up on that, you are golden. It's also called subtext ^^. I'm not really that good at it, my writing isn't perfect, I know that.."
+	return "Писать конфликты — это типа весело. Не знаю почему. Но если вы когда-нибудь смотрели кино или читали книгу... Там всегда есть конфликт. Нет, не один конфликт. Их много. В лоре BDCC есть огромный центральный конфликт (АльфаКорп против Синдиката). В геймплее тоже есть серьезный конфликт (заключенные против персонала против других заключенных). Да и в большинстве сцен тоже есть свои конфликты x3.\n\nВ общем, нужно всегда искать эти интересные конфликты. Они не обязательно должны быть очевидными, типа персонажи ненавидят друг друга. Тихие конфликты — самые луууучшие. Если ты можешь заставить одного персонажа сказать «хорошего дня», но на самом деле иметь в виду «сдохни, сучка», и читатель это уловит — ты в шоколаде. Это еще называют подтекстом ^^. Я не особо в этом силен, мое письмо не идеально, я знаю.."
 
 func hasDevCommentary():
 	return true

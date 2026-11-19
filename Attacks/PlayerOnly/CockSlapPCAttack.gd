@@ -22,7 +22,7 @@ func calculateDamageFor(character):
 	return 5 + cumDamage
 	
 func getVisibleDesc(_context = {}):
-	return "Smack them with your cock for "+scaledDmgRangeStr(DamageType.Physical, 5, calculateDamageFor(GM.pc))+" damage. Wastes 20% of stored cum.\n\nMaximum damage scales based on the amount of cum in your balls.\n\nBrings you 5 pain too since slapping people with your cock is painful"
+	return "Хлопните их своим членом, нанося "+scaledDmgRangeStr(DamageType.Physical, 5, calculateDamageFor(GM.pc))+" единиц урона. Тратит 20% o накопленной спермы.\n\nМаксимальный урон зависит от количества спермы в ваших яйцах.\n\nВы также получаете 20 единиц боли, ведь хлопать кого-то членом — то еще удовольствие."
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -33,17 +33,17 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var maxDamage = calculateDamageFor(_attacker)
 	var texts = [
-		"{attacker.name} whips out {attacker.his} {attacker.penis} and cockslaps {receiver.name} with it!"
+		"{attacker.name} выхватывает {attacker.his} {attacker.penis} и отвешивает {receiver.name} звонкий хлопок членом!"
 	]
 	var text = RNG.pick(texts)
 	
 	_attacker.addPain(5)
 	
 	if(RNG.chance(min(20.0,maxDamage / 2.0)) && _receiver.addEffect(StatusEffect.Collapsed)):
-		text += "\n[b]{receiver.name} loses {receiver.his} balance and collapses onto the floor[/b]."
+		text += "\n[b]{receiver.name} теряет {receiver.his} равновесие и валится на пол[/b]."
 		
 	if(RNG.chance(min(7.0, sqrt(maxDamage))) && _receiver.addEffect(StatusEffect.Stunned, [1])):
-		text += "\n[b][color=red]CRITICAL SLAP![/color] {receiver.name} got stunned because of the weight of that thing![/b]"
+		text += "\n[b][color=red]КРИТИЧЕСКИЙ ХЛОПОК![/color] {receiver.name} ошеломлен весом этой дуры![/b]"
 	
 	var lustInterests:LustInterests = _receiver.getLustInterests()
 	var likesBigCock = lustInterests.getTopicValue(InterestTopic.BigCock, _attacker)
@@ -58,13 +58,13 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var addLust = 0
 	if(biggestAbsoluteValue >= 0.5):
-		text += "\n{receiver.name} liked the sight."
+		text += "\n{receiver.name} понравилось зрелище."
 		addLust = int(ceil(abs(biggestAbsoluteValue) * 10.0))
 		
 		if(RNG.chance(30 * biggestAbsoluteValue) && _receiver.addEffect(StatusEffect.Weakness)):
-			text += "\n{receiver.name} got weak for {attacker.yourHis} cock!"
+			text += "\n{receiver.name} потек от {attacker.yourHis} члена!"
 	elif(biggestAbsoluteValue <= 0.5):
-		text += "\n{receiver.name} didn't like the sight."
+		text += "\n{receiver.name} зрелище не понравилось."
 		addLust = -int(ceil(abs(biggestAbsoluteValue) * 10.0))
 
 	if(_attacker.hasBodypart(BodypartSlot.Penis)):

@@ -69,25 +69,25 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.ButtPlugs):
-		return "Buttplugs, fuck yeahhh~"
+		return "Клизмы в задницу, вот это дааа~"
 	if(interest == InterestTopic.ThickBody):
-		return "Sorry, I'm not interested"
+		return "Извини, мне не интересно"
 	if(interest == InterestTopic.MasculineBody):
-		return "Oh, I love strong types~"
+		return "О, обожаю крепких типов~"
 	if(interest == InterestTopic.BigBreasts):
-		return "Oh yeah, make those funbags bounce"
+		return "О да, заставь эти сиськи прыгать"
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "I'm not a fan of herms, too much things cramped in one place"
+		return "Не фанатка гермафродитов, слишком много всего в одном месте"
 	if(interest == InterestTopic.ExposedCock):
-		return "Nice dick~"
+		return "Классный член~"
 	if(interest == InterestTopic.BigCock):
-		return "Oh, I don't want my insides rearranged"
+		return "Ой, только не надо выворачивать меня наизнанку"
 	if(interest == InterestTopic.Pregnant):
-		return "Slut, I don't wanna fight a pregnant bitch"
+		return "Шлюха, я не хочу драться с беременной сукой"
 	if(interest == InterestTopic.LactatingBreasts):
-		return "I can pretend to be a kitten if you let me suck on those~"
+		return "Могу прикинуться кошечкой, если позволишь мне пососать эти~"
 	if(interest == InterestTopic.SmallCock):
-		return "How the fuck am I gonna feel anything with that cock?"
+		return "Как, блядь, я вообще что-то почувствую с таким хералом?"
 	
 func _getName():
 	return "Rubi"
@@ -96,7 +96,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Slim lilac femboy. His feline body is of a medium height and is quite fit, narrow shoulders, wide hips."
+	return "Стройный фимбой с сиреневой кожей. У него кошачье телосложение среднего роста, довольно подтянутое, с узкими плечами и широкими бедрами."
 
 func getSpecies():
 	return ["feline"]
@@ -107,11 +107,11 @@ func _getAttacks():
 func getFightIntro(_battleName):
 	var text = "Руби — заключенный с лиловым оттенком кожи, он без рубашки, так что видна его рельефная мускулатура. Но, несмотря на это, его телосложение скорее женственное: узкие плечи, стройная плоская грудь с парой заметных сосков, широкие бедра, миловидное лицо и длинные волосы."
 	text += "\n\n"
-	text += "He straightens his posture and taunts you."
+	text += "Он выпрямляется и вызывающе смотрит на тебя."
 	text += "\n\n"
-	text += "[say=rubi]You gonna fight with me? I’ve been training for years, you have no chance. Don’t worry though, I will go easy on you~.[/say]"
+	text += "[say=rubi]Ну что, будешь драться со мной? Я тренировался годами, так что у тебя нет ни единого шанса. Но не переживай, я буду с тобой нежен~.[/say]"
 	text += "\n\n"
-	text += "A cheeky smile can be seen on his face, one of the arms rests on his waist while another gestures to you to come closer."
+	text += "На его лице играет дерзкая ухмылка; одна рука лежит на бедре, а другой он манит тебя подойти поближе."
 	
 	return text
 

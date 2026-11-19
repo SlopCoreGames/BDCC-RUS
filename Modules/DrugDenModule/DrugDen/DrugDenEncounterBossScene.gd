@@ -27,13 +27,13 @@ func _run():
 		saynn("Вокруг {npc.him} пол усеян полубессознательными телами других торчков, которые стонут, улетев в свои кайфы.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"You lost, dipshit? This is MY fucking lab. Crawl back to whatever pisshole you came from.",
-			"Hhhhnngh.. Fresh meat. You here to trade? Maybe I let you sniff some - if you ain't a little BITCH about it!",
-			"Haaaah.. You smell clean. Too clean. Either you take a hit, or I break your fuckin’ legs.",
-			"Heh. HEH. Ohhh, you’re fucked, buddy. You don’t walk into my kingdom and just leave. I don’t like SHARING.",
-			"Hey, guys! Look at this dumb fuck. Thinks {pc.he} can just waltz in and take my shit! HAH! Let’s see if you can still breathe after I’m done with you!",
-			"Mmmnnghh. My head’s buzzing, my hands are itching, and you look like a fucking punching bag. Lucky you!",
-			"YOU WANT TO STEAL MY HIT FROM ME? YOU FUCKER, NO ONE STEALS MY HIT FROM ME!",
+			"Что, проиграл, дебил? Это МОЯ, блять, лаборатория. Ползи обратно в ту дыру, из которой вылез!",
+			"Хххнннгх... Свежее мясо. Пришел поторговать? Может, я и дам тебе принюхаться — если ты не будешь вести себя как мелкая СУЧКА!",
+			"Хаааах... От тебя пахнет чистотой. Слишком чисто. Либо ты закидываешься, либо я тебе, блять, ноги переломаю.",
+			"Хех. ХЕХ. Оооо, тебе пиздец, приятель. Ты не можешь просто зайти в мое королевство и так просто уйти. Я не люблю ДЕЛИТЬСЯ.",
+			"Эй, пацаны! Гляньте на этого тупорылого ублюдка. Думает, что {pc.he} может просто завалиться сюда и заграбастать моё дерьмо! ХА! Посмотрим, сможешь ли ты дышать, когда я с тобой закончу!",
+			"Мммнннгх. В голове гудит, руки чешутся, а ты выглядишь как гребаная боксерская груша. Везунчик!",
+			"ТЫ ХОЧЕШЬ УКРАСТЬ МОЮ ДОЗУ? ТЫ, СУКА, НИКТО НЕ КРАДЕТ МОЮ ДОЗУ!",
 		])+"[/say]")
 		
 		saynn("Похоже, придется сразиться с {npc.him}...")
@@ -70,7 +70,7 @@ func _run():
 				if(uniformLevel < 0):
 					drugDen.setFlag("kidlatUniformFloor", drugDen.level + 3)
 					
-					addMessage("One of the half-conscious junkies mentions that Kidlat's uniform might somewhere on Drug Den level "+str(drugDen.getFlag("kidlatUniformFloor", 0)))
+					addMessage("Один из полубессознательных торчков упоминает, что форма Кидлата может быть где-то на уровне Притона "+str(drugDen.getFlag("kidlatUniformFloor", 0)))
 				if(uniformLevel == drugDen.level):
 					saynn("[b]Вы замечаете здесь чью-то униформу.[/b]")
 					
@@ -113,7 +113,7 @@ func _react(_action: String, _args):
 		var newPill:ItemBase = GlobalRegistry.createItem("TFPill")
 		newPill.makePillStrangeIfCan()
 		GM.pc.getInventory().addItem(newPill)
-		addMessage("You have created a strange pill")
+		addMessage("Вы создали странную таблетку")
 		GM.main.increaseFlag("DrugDenModule.RaidedLabs")
 		
 	if(_action == "do_science"):
@@ -124,18 +124,18 @@ func _react(_action: String, _args):
 	if(_action == "make_painkillers"):
 		processTime(5*60)
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
-		addMessage("You have created some painkillers")
+		addMessage("Вы создали обезболивающее")
 		GM.main.increaseFlag("DrugDenModule.RaidedLabs")
 		
 	if(_action == "make_anaphrodisiac"):
 		processTime(5*60)
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("AnaphrodisiacPill"))
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("AnaphrodisiacPill"))
-		addMessage("You have created some anaphrodisiacs")
+		addMessage("Вы создали несколько анафродизиаков")
 		GM.main.increaseFlag("DrugDenModule.RaidedLabs")
 		
 	if(_action == "take_kidlat_uniform"):
-		addMessage("You find a uniform that looks a lot like Kidlat's! Better find her now or you will lose it.")
+		addMessage("Вы нашли униформу, которая очень похожа на ту, что носит Кидлат! Лучше найдите её скорее, иначе она ускользнет.")
 		GM.main.DrugDenRun.setFlag("hasKidlatUniform", true)
 		return
 		

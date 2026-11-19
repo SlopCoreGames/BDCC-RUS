@@ -40,30 +40,30 @@ func _run():
 		var canMine:bool = canMineInfo[0]
 		
 		if(GM.world.canGoID(roomID, GameWorld.Direction.NORTH)):
-			addButtonAt(6, "North", "Go north", "go", [GameWorld.Direction.NORTH, Direction.North])
+			addButtonAt(6, "Север", "Идти на север", "go", [GameWorld.Direction.NORTH, Direction.North])
 		else:
-			addDisabledButtonAt(6, "North", "Can't go north")
+			addDisabledButtonAt(6, "Север", "Нельзя пройти на север")
 		if(GM.world.canGoID(roomID, GameWorld.Direction.WEST)):
-			addButtonAt(10, "West", "Go west", "go", [GameWorld.Direction.WEST, Direction.West])
+			addButtonAt(10, "Запад", "Идти на запад", "go", [GameWorld.Direction.WEST, Direction.West])
 		else:
-			addDisabledButtonAt(10, "West", "Can't go west")
+			addDisabledButtonAt(10, "Запад", "Нельзя пройти на запад")
 		if(GM.world.canGoID(roomID, GameWorld.Direction.SOUTH)):
-			addButtonAt(11, "South", "Go south", "go", [GameWorld.Direction.SOUTH, Direction.South])
+			addButtonAt(11, "Юг", "Идти на юг", "go", [GameWorld.Direction.SOUTH, Direction.South])
 		else:
-			addDisabledButtonAt(11, "South", "Can't go south")
+			addDisabledButtonAt(11, "Юг", "Нельзя пройти на юг")
 		if(GM.world.canGoID(roomID, GameWorld.Direction.EAST)):
-			addButtonAt(12, "East", "Go east",  "go", [GameWorld.Direction.EAST, Direction.East])
+			addButtonAt(12, "Восток", "Идти на восток",  "go", [GameWorld.Direction.EAST, Direction.East])
 		else:
-			addDisabledButtonAt(12, "East", "Can't go east")
+			addDisabledButtonAt(12, "Восток", "Нельзя пройти на восток")
 		if(GM.main.PS.dudes.size() > 0):
-			addButtonAt(7, "Idle", "Just idle around, letting other slaves work", "justIdle")
+			addButtonAt(7, "Бездействие", "Просто бездельничать, пока другие рабы вкалывают", "justIdle")
 		
 		if(GM.main.PS.canRefresh()):
-			addButtonAt(13, "Refreshments", "Use the minecart's refreshments", "useRefresh")
+			addButtonAt(13, "Перекус", "Перекусить из запасов в вагонетке", "useRefresh")
 		
 		if(GM.main.PS.nuggetsCarrying > 0):
 			if(GM.pc.getLocation() != GM.main.PS.LOC_ENTRANCE):
-				addButtonAt(14, "Drop nuggets", "Drop all the nuggets that you are holding", "dropNuggets")
+				addButtonAt(14, "Сбросить самородки", "Сбросить все самородки, которые вы держите", "dropNuggets")
 			else:
 				addButton("Сбросить самородки", "Сбросить все самородки, которые вы держите", "dropNuggets")
 		
@@ -119,7 +119,7 @@ func _run():
 				else:
 					addDisabledButton("Свобода!", "Ты добыл недостаточно руды, чтобы заслужить свободу...")
 				
-				addButtonAt(14, "Mine", "Do some mining here", "do_mine_boss")
+				addButtonAt(14, "Добывать руду", "Покопаться здесь", "do_mine_boss")
 		
 		var theTexts:Array = GM.main.PS.getTextsForLocFinal(roomID)
 		if(!theTexts.empty()):
@@ -207,9 +207,9 @@ func _run():
 		saynn("Здесь "+("is" if amountOfNuggets == 1 else "are")+" "+str(amountOfNuggets)+" "+("nugget" if amountOfNuggets == 1 else "nuggets")+" валяется на земле!")
 		
 		for btnxIndx in nuggetButtons:
-			addButtonAt(btnxIndx, "Nugget", "Pick up the nugget!", "doPickUpNugget", [btnxIndx])
+			addButtonAt(btnxIndx, "Самородок", "Поднять самородок!", "doPickUpNugget", [btnxIndx])
 		
-		addButtonAt(14, "Enough picking up", "Stop picking up the nuggets", "roam")
+		addButtonAt(14, "Хватит подбирать", "Перестать собирать самородки", "roam")
 		
 	if(state == "doSleep"):
 		saynn("Измотанный, ты забираешься в клетку и среди всей толпы рабов ищешь свободное место, чтобы забиться в угол.")
@@ -276,7 +276,7 @@ func _run():
 		if(!GM.main.PS.upgrades.empty()):
 			entries["=placeholderbuy="] = {
 				name = " === Открытые улучшения ===",
-				desc = "A list of what you have upgraded.",
+				desc = "Список твоих улучшений.",
 			}
 			for upgradeID in GM.main.PS.upgrades:
 				var upgradeInfo:Dictionary = GM.main.PS.UpgradesDB[upgradeID]
@@ -368,11 +368,11 @@ func _react(_action: String, _args):
 		return
 	if(_action == "startpush"):
 		GM.main.PS.pushingMinecart = true
-		addMessage("You have started pushing the minecart!")
+		addMessage("Вы начали толкать вагонетку!")
 		return
 	if(_action == "stoppush"):
 		GM.main.PS.pushingMinecart = false
-		addMessage("You have stopped pushing the minecart!")
+		addMessage("Вы перестали толкать вагонетку!")
 		return
 
 	if(_action == "justIdle"):
@@ -412,7 +412,7 @@ func _react(_action: String, _args):
 	
 	if(_action == "do_mine_boss"):
 		if(!GM.main.PS.hasUpgrade("pick5")):
-			addMessage("You try to hit the reinforced door but your current tool bounces right off.")
+			addMessage("Вы пытаетесь ударить по усиленной двери, но ваш текущий инструмент просто отскакивает от неё.")
 		else:
 			endScene()
 			runScene("PSShaftMinerEnding2")
@@ -448,7 +448,7 @@ func _react(_action: String, _args):
 		npc1ID = ""
 		clearCharacter()
 		setState("roam")
-		addMessage("You have hired a shaft miner slave for one day!")
+		addMessage("Вы наняли рабыню-шахтёрку на один день!")
 		GM.main.PS.spawnDude(true)
 		return
 	if(_action == "first_offer_sex"):
@@ -467,42 +467,42 @@ func _react(_action: String, _args):
 		npc1ID = ""
 		clearCharacter()
 		setState("roam")
-		addMessage("You have hired a shaft miner slave for one day!")
+		addMessage("Вы наняли рабыню-шахтёрку на один день!")
 		GM.main.PS.spawnDude(true)
 		return
 	if(_action == "hire1_pick_carrier"):
 		npc1ID = ""
 		clearCharacter()
 		setState("roam")
-		addMessage("You have hired an ore carrier slave for one day!")
+		addMessage("Вы наняли рабыню-носильщицу руды на один день!")
 		GM.main.PS.spawnDude(false)
 		return
 	if(_action == "hire2_pick_miner"):
 		npc1ID = ""
 		clearCharacter()
 		setState("hire2_2_after_sex")
-		addMessage("You have hired a shaft miner slave for one day!")
+		addMessage("Вы наняли рабыню-шахтёрку на один день!")
 		GM.main.PS.spawnDude(true)
 		return
 	if(_action == "hire2_pick_carrier"):
 		npc1ID = ""
 		clearCharacter()
 		setState("hire2_2_after_sex")
-		addMessage("You have hired an ore carrier slave for one day!")
+		addMessage("Вы наняли рабыню-носильщицу руды на один день!")
 		GM.main.PS.spawnDude(false)
 		return
 	if(_action == "hire2_2_pick_miner"):
 		npc2ID = ""
 		clearCharacter()
 		setState("roam")
-		addMessage("You have hired a shaft miner slave for one day!")
+		addMessage("Вы наняли рабыню-шахтёрку на один день!")
 		GM.main.PS.spawnDude(true)
 		return
 	if(_action == "hire2_2_pick_carrier"):
 		npc2ID = ""
 		clearCharacter()
 		setState("roam")
-		addMessage("You have hired an ore carrier slave for one day!")
+		addMessage("Вы наняли рабыню-носильщицу руды на один день!")
 		GM.main.PS.spawnDude(false)
 		return
 	if(_action == "hire2_do"):
@@ -510,7 +510,7 @@ func _react(_action: String, _args):
 		npc2ID = ""
 		clearCharacter()
 		setState("roam")
-		addMessage("You have hired a shaft miner and an ore carrier slaves for one day!")
+		addMessage("Вы наняли рабов — шахтёра и носильщика руды — на один день!")
 		GM.main.PS.spawnDude(true)
 		GM.main.PS.spawnDude(false)
 		return

@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Тупая сила"
 
 func getVisibleDescription():
-	return "You like using melee weapons to get that extra edge in combat. You do 15% more damage with melee weapons."
+	return "Вам нравится использовать холодное оружие, чтобы получить преимущество в бою. Вы наносите на 15% больше урона в ближнем бою."
 
 func getSkillTier():
 	return 0

@@ -23,44 +23,44 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 		if(vagTight && anusTight):
 			saynn("{presenter.You} {presenter.youVerb('step')} стоит позади {slave.name}, хватая {slave.hisHer} за бедра и слегка оттягивая {slave.himHer} назад, чтобы продемонстрировать {slave.hisHer} идеально подтянутое тело. Медленно, {presenter.youHe} {presenter.youHeVerb('spread')} {slave.hisHer} разводит ягодицы в стороны, открывая торгующимся как {slave.hisHer} тугую, манящую киску, так и сжатый анус.")
 			
-			sayPresenter("Take a look, folks! This slave comes with two tightly wrapped packages for your pleasure. You won’t find anything as snug as this, built to grip and squeeze every inch you give.")
+			sayPresenter("Взгляните, господа! Эта рабыня идет в комплекте с двумя туго сжатыми свертками для вашего удовольствия. Вы не найдете ничего более узкого — она создана, чтобы обхватывать и сжимать каждый дюйм, который вы в нее вставите.")
 			
 			saynn("{presenter.YouHe} {presenter.youHeVerb('run')} дразняще водит пальцами вокруг {slave.hisHer} отверстий, подчеркивая, насколько они тугие и нетронутые.")
 			
-			sayPresenter("Both holes, perfectly tight, perfectly ready for whatever you choose.")
+			sayPresenter("Оба отверстия идеально узкие и полностью готовы к любым вашим желаниям.")
 		elif(vagTight || anusTight):
 			saynn("Уверенной рукой {presenter.you} {presenter.youVerb('take')} хватает {slave.name} за бедра, притягивая {slave.himHer} назад и широко разводя {slave.hisHer} ягодицы, открывая участникам аукциона идеальный вид на киску и анус.")
 			
-			sayPresenter("Let’s get a good look at what’s on offer. {slave.He} {slave.isAre} ready from both ends, eager and waiting for whatever you decide to fill.")
+			sayPresenter("Давайте хорошенько разглядим, что тут у нас на торги. {slave.He} {slave.isAre} готовы с обеих сторон, жаждут и ждут, чем именно вы решите их наполнить.")
 			
 			saynn("{presenter.YouHe} {presenter.youHeVerb('make')} чтобы все участники аукциона могли разглядеть всё до мельчайших подробностей, проводя {presenter.yourHis} пальцами возле {slave.hisHer} отверстий.")
 			
-			sayPresenter("Two perfect holes, versatile and ready for all kinds of play.")
+			sayPresenter("Два идеальных отверстия, универсальных и готовых к любым видам ласк.")
 		else:
 			saynn("{presenter.You} уверенно {presenter.youVerb('step')} позади рабыни, крепко сжимая {slave.hisHer} бедра и широко разводя {slave.hisHer} ягодицы, чтобы продемонстрировать торгующимся изрядно растянутые, зияющие дырки и {slave.hisHer} киски, и ануса.")
 			
-			sayPresenter("Here we have a slave who’s clearly seen some use! Look at how loose these holes are, ready to take whatever you throw at them.")
+			sayPresenter("А вот перед нами рабыня, которую явно уже не раз использовали! Посмотрите, насколько эти дырки расслаблены — они готовы принять всё, что вы в них засунете.")
 		
 			saynn("{presenter.YouHe} {presenter.youHeVerb('trace')} края обоих зияющих отверстий, показывая, насколько они открыты и манящи.")
 
-			sayPresenter("Plenty of space to fill, whether you choose the front or the back. It’s all ready for more!")
+			sayPresenter("Там полно места, чтобы заполниться, выбирайте — спереди или сзади. Всё уже готово к продолжению!")
 	else:
 		if(anusTight):
 			saynn("{presenter.You} {presenter.youVerb('step')} заходит со спины рабыни, кладет обе руки на {slave.hisHer} бедра и разводит {slave.hisHer} ягодицы, выставляя перед участниками аукциона тугое, сморщенное анус.")
 			
-			sayPresenter("Here we have a perfectly tight hole, ready for anyone who enjoys a little resistance. Just look at how clenched {slave.hisHer} little back door is.")
+			sayPresenter("А здесь у нас идеально узкое отверстие, готовое для тех, кто любит небольшое сопротивление. Только посмотрите, как плотно сжата эта маленькая задняя дверца {slave.hisHer}.")
 			
 			saynn("{presenter.YouHe} слегка разводит {presenter.youHeVerb('press', 'presses')} по краям, позволяя участникам аукциона отчетливо рассмотреть, насколько всё там туго.")
 			
-			sayPresenter("Perfectly tight, ready to grip every inch you give.")
+			sayPresenter("Идеально узкое, готово обхватить каждый дюйм вашего достоинства.")
 		else:
 			saynn("Уверенным хватом {presenter.you} отводит {presenter.youVerb('pull')} бедра рабыни назад и {presenter.youVerb('spread')} широко разводит {slave.hisHer}, демонстрируя всем участникам аукциона её расслабленный, привыкший к использованию анус.")
 			
-			sayPresenter("Now, this one here’s seen some use! Just look at how open this hole is, no need to worry about tightness here.")
+			sayPresenter("Ну, а вот эта девчонка уже повидала виды! Посмотрите, насколько широко раскрыто это отверстие — о тесноте здесь можно не беспокоиться.")
 			
 			saynn("{presenter.YouHe} растягивает {presenter.youHeVerb('trace')} по краям, чтобы участники аукциона могли увидеть, как много там места.")
 			
-			sayPresenter("Plenty of space for any kind of play. This one’s ready to take whatever you’ve got!")
+			sayPresenter("Там полно места для любых извращений. Эта штучка готова принять всё, что у вас есть!")
 	
 func getTraits() -> Dictionary:
 	return {

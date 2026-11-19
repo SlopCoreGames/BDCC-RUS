@@ -109,7 +109,7 @@ func _react(_action: String, _args):
 		GM.pc.addCredits(-sellItemsData[itemID]["price"] * amount)
 
 		
-		addMessage(""+itemName+" was added to your inventory")
+		addMessage(""+itemName+" добавлено в ваш инвентарь")
 		
 		if(lockedInto):
 			endScene()
@@ -127,7 +127,7 @@ func _react(_action: String, _args):
 		GM.pc.addCredits(item.getSellPrice() * howMuch)
 		GM.pc.getInventory().removeXFromItemOrDelete(item, howMuch)
 		
-		addMessage(howMuchStr+item.getVisibleName()+" was sold for "+str(item.getSellPrice() * howMuch) + " credits")
+		addMessage(howMuchStr+item.getVisibleName()+" продано за "+str(item.getSellPrice() * howMuch) + " credits")
 		
 		setState("")
 		if(lockedInto):
@@ -152,7 +152,7 @@ func _react(_action: String, _args):
 
 		var howMuchStr = str(howMuch)+"x"
 		resultAdd = int(resultAdd)
-		addMessage(howMuchStr+item.getVisibleName()+" was sold for "+str(resultAdd) + " credits")
+		addMessage(howMuchStr+item.getVisibleName()+" продано за "+str(resultAdd) + " credits")
 		GM.pc.addCredits(resultAdd)
 		
 		setState("")

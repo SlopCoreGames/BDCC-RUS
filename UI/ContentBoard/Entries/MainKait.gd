@@ -8,18 +8,18 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Dominate the whole prison together with your team! Break anyone who is gonna stand in your way. This route is designed for dominant players. (This route is not fully complete yet)"
-	return "Dominate the whole prison! Designed for dominant players.\n(work in progress)"
+		return "Покорите всю тюрьму вместе со своей командой! Сломайте любого, кто встанет у вас на пути. Этот маршрут создан для доминантных игроков. (Этот маршрут еще не полностью завершен)"
+	return "Покорите всю тюрьму! Создано для доминантных игроков.\n(в процессе разработки)"
 
 func getKinks() -> Array:
 	return [
-		"Player is dominant",
-		"Every dominant kink",
+		"Игрок доминирует",
+		"Все виды доминантных кинков",
 	]
 
 func getCompletedDesc() -> String:
 	#return "You made the captain your bitch!"
-	return "You have completed all currently available main missions."
+	return "Вы завершили все доступные на данный момент основные миссии."
 
 func getStatus() -> int:
 	if(GM.main.MRH.didCompleteKaitRouteBefore() && !GM.main.hasCommittedToKaitMainRoute()):
@@ -36,10 +36,10 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[ContentBoardCondition.Complete if(getFlag("KaitModule.gotMetByKait", false) || getFlag("KaitModule.talkedKaitArena", false)) else ContentBoardCondition.Incomplete, "Find Kait by going mining and then beating Tavi up. Alternatively, find Kait in the hidden arena."],
-		[completeIf("KaitModule.talkedKaitArena"), "Talk with Kait about teaming up."],
-		[completeIf("KaitModule.joinedTeam"), "Team up with Kait."],
-	] + ([] if !GM.main.MS.didCompleteAllMainMissions() else [[ContentBoardCondition.InProgress, "Wait until Rahi makes more missions.."]] )
+		[ContentBoardCondition.Complete if(getFlag("KaitModule.gotMetByKait", false) || getFlag("KaitModule.talkedKaitArena", false)) else ContentBoardCondition.Incomplete, "Найдите Кейт: отправляйтесь на добычу ресурсов, а затем изобьйте Тави. Или же найдите Кейт на скрытой арене."],
+		[completeIf("KaitModule.talkedKaitArena"), "Поговорите с Кейт о том, чтобы объединиться."],
+		[completeIf("KaitModule.joinedTeam"), "Объединитесь с Кейт."],
+	] + ([] if !GM.main.MS.didCompleteAllMainMissions() else [[ContentBoardCondition.InProgress, "Ждите, пока Рахи добавит новые миссии..."]] )
 
 func getProgressText() -> String:
-	return "Complete missions that the mission board in your hideout gives you."
+	return "Выполняйте миссии, которые дает вам доска заданий в вашем убежище."

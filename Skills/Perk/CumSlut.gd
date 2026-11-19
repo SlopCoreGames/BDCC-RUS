@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Куни-сучка"
 
 func getVisibleDescription():
-	return "You ~love~ being covered in cum and no longer feel ashamed of it! Instead of debuffs, being covered with various lewd fluids will now provide you with various buffs, depending on the fluid!"
+	return "Ты просто ~обожаешь~ когда тебя заливают спермой, и чувство стыда окончательно покинуло тебя! Теперь вместо дебаффов покрытие различными похотливыми жидкостями будет давать тебе различные баффы, в зависимости от вида жидкости!"
 
 func getSkillTier():
 	return 1

@@ -7,10 +7,10 @@ func getVisibleName():
 	return "Инъектор Нейро-Линк"
 	
 func getDescription():
-	var theText:String = "A single-use injector that holds a small chip that, if injected, will let you control an organic form that it was designed for."
+	var theText:String = "Одноразовый инъектор с крошечным чипом внутри. При введении он позволяет взять под контроль органическую форму, для которой был предназначен."
 
 	if(GM.main.getFlag("ElizaModule.tent_neurolink", false)):
-		theText += "\n\n[i]Somehow you managed to keep an extra injector. It is completely useless now. But you should probably still keep it.[/i]"
+		theText += "\n\n[i]Каким-то образом вам удалось сохранить лишний инъектор. Сейчас он совершенно бесполезен, но, пожалуй, его всё же стоит оставить.[/i]"
 
 	return theText
 

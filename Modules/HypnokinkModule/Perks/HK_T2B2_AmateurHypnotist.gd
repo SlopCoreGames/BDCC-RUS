@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Гипнотизер-любитель"
 
 func getVisibleDescription():
-	return "You've learned the basics of the hypnotic arts."
+	return "Вы освоили основы гипнотического искусства."
 
 func getMoreDescription():
 	return """You can hypnotize a willing or adequately subdued subject. You can implant posthypnotic suggestions and trigger them in later encounters to affect the subject with one of the following effects:

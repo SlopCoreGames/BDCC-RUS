@@ -14,10 +14,10 @@ func shouldApplyTo(_npc):
 	return false
 
 func getEffectName():
-	return "Frequent Milking"
+	return "Частое доение"
 
 func getEffectDesc():
-	return "Your body is being stress-tested by frequent milking. The lower your stamina is, the less milk/seed you will be producing."
+	return "Ваше тело подвергается стрессовым нагрузкам из-за частого доения. Чем ниже ваш уровень выносливости, тем меньше молока/семени вы будете производить."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/lactation.png"

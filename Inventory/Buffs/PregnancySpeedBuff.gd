@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Pregnancy speed "+text+"%"
+	return "Скорость беременности "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.PregnancySpeed, amount/100.0)

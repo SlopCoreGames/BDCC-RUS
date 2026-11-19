@@ -266,7 +266,7 @@ func _react(_action: String, _args):
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_felinecock", false)):
 			setFlag("ElizaModule.tfcan_felinecock", true)
-			addMessage("Eliza can now grow a feline cock if you tell her to.")
+			addMessage("Теперь Элиза может отрастить кошачий член, если ты ей прикажешь.")
 
 	if(_action == "begin_stroke_her"):
 		processTime(5*60)
@@ -285,13 +285,13 @@ func _react(_action: String, _args):
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_felinecock", false)):
 			setFlag("ElizaModule.tfcan_felinecock", true)
-			addMessage("Eliza can now grow a feline cock if you tell her to.")
+			addMessage("Теперь Элиза может отрастить кошачий член, если ты ей прикажешь.")
 
 	if(_action == "no_facials_relax"):
 		setFlag("ElizaModule.elizatf_cock", "")
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_felinecock", false)):
 			setFlag("ElizaModule.tfcan_felinecock", true)
-			addMessage("Eliza can now grow a feline cock if you tell her to.")
+			addMessage("Теперь Элиза может отрастить кошачий член, если ты ей прикажешь.")
 
 	setState(_action)

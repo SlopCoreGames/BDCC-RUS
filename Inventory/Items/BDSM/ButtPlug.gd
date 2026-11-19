@@ -44,21 +44,21 @@ func generateRestraintData():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "pulls the buttplug out from your butt"
+		return "вытаскивает пробку из твоей задницы"
 	else:
-		return "pull the buttplug out from your butt"
+		return "вытащить пробку из твоей задницы"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "inserts the buttplug into your butt"
+		return "вставляет пробку в твою задницу"
 	else:
-		return "insert the buttplug into your butt"
+		return "вставить пробку в твою задницу"
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was stuffed into your "+RNG.pick(["anus", "rear hole", "rear", "butt", "tailhole"])+". It shifts around while you move!"
+		return getAStackNameCapitalize()+" была затолкана в твою "+RNG.pick(["anus", "заднюю дырочку", "rear", "butt", "tailhole"])+". Она шевелится, когда ты двигаешься!"
 	else:
-		return getAStackNameCapitalize()+" was stuffed into {receiver.nameS} "+RNG.pick(["anus", "rear hole", "rear", "butt", "tailhole"])+". It shifts around while {receiver.he} {receiver.verbS('move')}!"
+		return getAStackNameCapitalize()+" была затолкана в {receiver.nameS} "+RNG.pick(["anus", "заднюю дырочку", "rear", "butt", "tailhole"])+". Она шевелится, когда {receiver.he} {receiver.verbS('move')}!"
 
 func getInventoryImage():
 	return "res://Images/Items/bdsm/anal-plug.png"

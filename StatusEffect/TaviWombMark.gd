@@ -15,13 +15,13 @@ func shouldApplyTo(_npc):
 
 func getEffectName():
 	if(character.isPregnant()):
-		return "Glowing Womb Mark"
-	return "Womb Mark"
+		return "Сияющая метка утробы"
+	return "Метка утробы"
 
 func getEffectDesc():
 	if(character.isPregnant()):
-		return "A symbol of "+character.getName()+"'s eternal lust. And it's glowing.."
-	return "A symbol of "+character.getName()+"'s eternal lust."
+		return "Символ "+character.getName()+"вечной похоти. И она светится..."
+	return "Символ "+character.getName()+"вечной похоти."
 
 func getEffectImage():
 	if(character.isPregnant()):

@@ -517,7 +517,7 @@ func _run():
 
 		saynn("[say=eliza]Ммм~.. Ты заставил меня.. чувствовать именно то, что я хотела~.[/say]")
 
-		saynn("А кошечка-то всё такая же дерзкая."+str(" Little does she know that your strapon has a secret to it.." if hasCumInStrapon else "")+"")
+		saynn("А кошечка-то всё такая же дерзкая."+str(" Она и не подозревает, что у твоего страпона есть свой секрет..." if hasCumInStrapon else "")+"")
 
 		addButton("Трахнуть внутрь", "Заставь её это почувствовать", "vag_sex_sex")
 	if(state == "vag_sex_sex"):
@@ -538,7 +538,7 @@ func _run():
 
 		saynn("[say=eliza]Мммхх..[/say]")
 
-		saynn("Очередная пощечина по заднице заставляет её запрокинуть голову и застонать, а её внутренние стенки обхватывают тебя "+str("your shaft" if !isStrapon else "that shaft between your legs")+"так сладко.")
+		saynn("Очередная пощечина по заднице заставляет её запрокинуть голову и застонать, а её внутренние стенки обхватывают тебя "+str("твой член" if !isStrapon else "этот ствол между твоих ног")+"так сладко.")
 
 		saynn("[say=eliza]То, как твой член трахает меня..[/say]")
 
@@ -609,9 +609,9 @@ func _run():
 		saynn("[say=eliza]А-а-ахх!..[/say]")
 
 		if (!isStrapon || hasCumInStrapon):
-			saynn("Индикатор показывает, что и боль, и похоть Элизы зашкаливают за все пределы... в то время как твой"+str(" strapon [b]suddenly begins to throb inside her[/b]" if isStrapon else " member throbs inside her")+" выпускает струи густого, мощного семени прямо в её утробу, наполняя её до краёв.")
+			saynn("Индикатор показывает, что и боль, и похоть Элизы зашкаливают за все пределы... в то время как твой"+str(" страпон [b]внезапно начинает пульсировать внутри неё[/b]" if isStrapon else " член пульсирует внутри неё")+" выпускает струи густого, мощного семени прямо в её утробу, наполняя её до краёв.")
 
-			saynn("Волны "+str("your {pc.cum}" if !isStrapon else "that stuff")+" продолжают извергаться внутри неё, словно прилив, затопляя всё нутро; она уже переполнена, и на меху её бёдер расплываются похотливые, липкие пятна. Влажная, горячая киска Элизы плотно обхватывает твой пульсирующий член, "+str("milking your balls with each desperate, rhythmic squeeze" if !isStrapon else "trying to milk it with each desperate, rhythmic squeeze")+".")
+			saynn("Волны "+str("your {pc.cum}" if !isStrapon else "эта жижа")+" продолжают извергаться внутри неё, словно прилив, затопляя всё нутро; она уже переполнена, и на меху её бёдер расплываются похотливые, липкие пятна. Влажная, горячая киска Элизы плотно обхватывает твой пульсирующий член, "+str("выдавливая сперму из твоих яичек каждым отчаянным ритмичным сжатием" if !isStrapon else "пытаясь выдавить её каждым отчаянным ритмичным сжатием")+".")
 
 			saynn("[say=eliza]Ммм-х.. б-бля.. ах.. ааах.. ах~.. хххфф..[/say]")
 
@@ -622,7 +622,7 @@ func _run():
 
 		saynn("Механическое жужжание смешивается с её громкими стонами и тяжёлым дыханием; манипуляторы едва справляются с её страстью.")
 
-		saynn(""+str("As you pass over your peak" if !isStrapon else "After all this")+".. ты просто остаёшься внутри неё, наслаждаясь влажной теснотой.")
+		saynn(""+str("Когда ты переходишь пик" if !isStrapon else "После всего этого")+".. ты просто остаёшься внутри неё, наслаждаясь влажной теснотой.")
 
 		saynn("И ты, и она тяжело дышите. Дисплей показывает, что её похоть стремительно падает.. в то время как боль остается почти на том же уровне.")
 
@@ -672,7 +672,7 @@ func _run():
 
 			saynn("[say=pc]Хорошая девочка.[/say]")
 
-			saynn("Вы похлопываете её и помогаете натянуть трусики обратно, чтобы прикрыть её "+str("stuffed slit" if !sexDidPullout else "wet slit and a messy butt")+".")
+			saynn("Вы похлопываете её и помогаете натянуть трусики обратно, чтобы прикрыть её "+str("набитая щель" if !sexDidPullout else "мокрая щель и грязная задница")+".")
 
 			saynn("[say=eliza]Спасибочки~.[/say]")
 
@@ -812,7 +812,7 @@ func _run():
 		addButton("Следовать", "Посмотреть, куда она вас приведет", "s1_follow")
 	if(state == "s1_follow"):
 		aimCameraAndSetLocName("cd_near_office2")
-		setLocationName("Private Quarters")
+		setLocationName("Личные покои")
 		saynn("Ты заходишь в лифт. Элиза прикладывает свой бейдж к панели управления и выбирает один из самых верхних этажей...")
 
 		saynn("Когда двери открываются, перед тобой предстает уютный коридор с множеством закрытых дверей, ведущих в разные комнаты.")
@@ -842,7 +842,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "s1_reveal")
 	if(state == "s1_reveal"):
 		aimCameraAndSetLocName("cd_office2")
-		setLocationName("Scarlet's room")
+		setLocationName("Комната Скарлет")
 		removeCharacter("eliza")
 		addCharacter("elizaMom", ["naked"])
 		addCharacter("eliza")
@@ -1531,7 +1531,7 @@ func _run():
 		removeCharacter("eliza")
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("cd_near_office2")
-		setLocationName("Private Quarters")
+		setLocationName("Личные покои")
 		saynn("Вы едете в лифте с Элизой на один из самых высоких этажей... в частные апартаменты.")
 
 		saynn("Элиза тихонько напевает что-то под нос, ведя вас по роскошным коридорам... пропуская мимо множества дверей, пока вы не останавливаетесь у нужной.")
@@ -1573,7 +1573,7 @@ func _run():
 		addCharacter("elizaMom", ["naked"])
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("cd_office2")
-		setLocationName("Scarlet's room")
+		setLocationName("Комната Скарлет")
 		playAnimation(StageScene.Duo, "stand", {pc="eliza", npc="elizaMom", bodyState={underwear=true}, npcBodyState={underwear=true}})
 		saynn("Вы открываете дверь и входите внутрь.")
 
@@ -1592,7 +1592,7 @@ func _run():
 		if (!GM.pc.hasReachablePenis()):
 			saynn("[say=elizaMom]{pc.his} член за мной![/say]")
 
-			saynn("[say=eliza]Ну... а если у {pc.he} его нет.."+str(" One that isn't locked with a cute chastity cage.." if GM.pc.isWearingChastityCage() else "")+"[/say]")
+			saynn("[say=eliza]Ну... а если у {pc.he} его нет.."+str(" Тот, что не заперт на милую девчочью клетки..." if GM.pc.isWearingChastityCage() else "")+"[/say]")
 
 			saynn("Скарлет улыбается.")
 
@@ -1624,7 +1624,7 @@ func _run():
 
 		saynn("Весь обзор заслоняет... черт возьми, какой же шикарный вид! Горячая розовая киска Элизы... она дразняще зависла прямо перед твоим лицом... Ты кожей чувствуешь тепло, исходящее от этих сочных лепестков.")
 
-		saynn("[say=elizaMom]Не волнуйся. "+str("We're in an open relationship, darling~." if !isStrapon else "It's only a strapon. And also, we're in an open relationship, darling~.")+"[/say]")
+		saynn("[say=elizaMom]Не волнуйся. "+str("У нас свободные отношения, дорогуша~." if !isStrapon else "Это всего лишь страпон. И вообще, у нас свободные отношения, дорогуша~.")+"[/say]")
 
 		saynn("[say=eliza]О? С каких это пор?[/say]")
 
@@ -1633,7 +1633,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "s3_rng_sex")
 	if(state == "s3_rng_sex"):
 		playAnimation(StageScene.SexDoubleDown, "sex", {pc="pc", npc="elizaMom", npc2="eliza", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2BodyState={naked=true, hard=true}})
-		saynn("Медленно Скарлет опускается на твой "+str("cock" if !isStrapon else "new cock")+", позволяя ему раздвинуть ее красные чувствительные складки и скользнуть вглубь ее туннеля любви. Из ее груди вырывается тихий звук, когда она начинает скакать на тебе... направляя свою киску вдоль "+str("your" if !isStrapon else "that")+" члена вверх и вниз... позволяя ему исследовать ее жаждущие глубины...")
+		saynn("Медленно Скарлет опускается на твой "+str("cock" if !isStrapon else "новый член")+", позволяя ему раздвинуть ее красные чувствительные складки и скользнуть вглубь ее туннеля любви. Из ее груди вырывается тихий звук, когда она начинает скакать на тебе... направляя свою киску вдоль "+str("your" if !isStrapon else "that")+" члена вверх и вниз... позволяя ему исследовать ее жаждущие глубины...")
 
 		saynn("[say=elizaMom]Вот так~..[/say]")
 
@@ -1647,7 +1647,7 @@ func _run():
 
 		saynn("[say=eliza]И я тоже..[/say]")
 
-		saynn("Всего мгновение спустя Скарлет и Элиза наклоняются друг к другу для жаркого, нежного поцелуя. Их губы сталкиваются.. языки проскальзывают между зубами, начиная свой танец и обмениваясь слюной.. в то время как Скарлет продолжает опускаться всем телом на твой "+str("hard" if !isStrapon else "rubber")+"член, так искусно разминая "+str("your shaft" if !isStrapon else "it")+"свои влажные стенки..")
+		saynn("Всего мгновение спустя Скарлет и Элиза наклоняются друг к другу для жаркого, нежного поцелуя. Их губы сталкиваются.. языки проскальзывают между зубами, начиная свой танец и обмениваясь слюной.. в то время как Скарлет продолжает опускаться всем телом на твой "+str("hard" if !isStrapon else "rubber")+"член, так искусно разминая "+str("твой член" if !isStrapon else "it")+"свои влажные стенки..")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "s3_rng_hold_hands")
 	if(state == "s3_rng_hold_hands"):
@@ -1667,7 +1667,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "s3_rng_fast")
 	if(state == "s3_rng_fast"):
 		playAnimation(StageScene.SexDoubleDown, "fast", {pc="pc", npc="elizaMom", npc2="eliza", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2BodyState={naked=true, hard=true}})
-		saynn("Темп Скарлет становится неистовым... она с силой опускается на "+str("your cock" if !isStrapon else "your strapon")+" всё жестче и глубже, отпуская руки дочери, чтобы опереться на себя. "+str("You can feel her pussy walls clenching around you, offering you so much pleasurable friction, it makes you want to meet her motions with yours." if !isStrapon else "You can't really feel through the rubber.. but you do feel some pleasurable pressure that the friction puts on your crotch.. it makes you want to meet her motions with yours.")+"")
+		saynn("Темп Скарлет становится неистовым... она с силой опускается на "+str("твой член" if !isStrapon else "твой страпон")+" всё жестче и глубже, отпуская руки дочери, чтобы опереться на себя. "+str("Ты чувствуешь, как стенки её киски сжимаются вокруг тебя, создавая такое приятное трение, что тебе нестерпимо хочется двигаться ей навстречу." if !isStrapon else "Сквозь резину сложно прочувствовать всё до конца... но ты ощущаешь приятное давление трения на свой член... и это заставляет тебя подстраиваться под её ритм.")+"")
 
 		saynn("[say=elizaMom]Ах... мммм~... Я чувствую, как этот "+str("cock" if !isStrapon else "toy")+" целует мою матку...[/say]")
 
@@ -1675,7 +1675,7 @@ func _run():
 
 		saynn("[say=eliza]И я чувствую, как {pc.his} язык лижет меня внутри... хах... Нхх...[/say]")
 
-		saynn("Напряжение нарастает всё сильнее и сильнее... Обе девушки получают удовольствие от тебя... выжимая из себя всё до самого пика..."+str(" while yours is drawing close too.." if !isStrapon else "")+"")
+		saynn("Напряжение нарастает всё сильнее и сильнее... Обе девушки получают удовольствие от тебя... выжимая из себя всё до самого пика..."+str(" в то время как твой тоже вот-вот кончит..." if !isStrapon else "")+"")
 
 		addButton("Оргазм", "Вот-вот грянет буря оргазмов...", "s3_rng_cum")
 	if(state == "s3_rng_cum"):
@@ -1686,9 +1686,9 @@ func _run():
 		else:
 			saynn("И вскоре они окончательно теряют способность сдерживаться...")
 
-		saynn("Тело Скарлет вздрагивает от оргазма, и она тяжело опускается на твой "+str("{pc.penis}" if !isStrapon else "knotted rubber toy")+" твердый член, позволяя ему остаться внутри во всю длину... пока её пульсирующие стенки бесчисленными волнами сжимают твой ствол."+str(". the extreme pressure triggering something in your strapon!" if isStrapon else "")+"")
+		saynn("Тело Скарлет вздрагивает от оргазма, и она тяжело опускается на твой "+str("{pc.penis}" if !isStrapon else "резиновая игрушка с узлом")+" твердый член, позволяя ему остаться внутри во всю длину... пока её пульсирующие стенки бесчисленными волнами сжимают твой ствол."+str(". экстремальное давление пробуждает нечто внутри твоего страпона!" if isStrapon else "")+"")
 
-		saynn("[say=elizaMom]"+str("Breed me~.." if !isStrapon else "Get that knot in~..")+" Да-а-а~.[/say]")
+		saynn("[say=elizaMom]"+str("Оплодотвори меня~..." if !isStrapon else "Засунь в меня свой узел...")+" Да-а-а~.[/say]")
 
 		saynn("Почти одновременно твой язык доводит Элизу до мощного, содрогающегося оргазма. Её киска подергивается... прежде чем обрушить на твоё лицо фонтан соков; от чрезмерной стимуляции её начинает сквиртовать.")
 
@@ -1735,7 +1735,7 @@ func _run():
 
 		saynn("[say=elizaMom]И я здесь шлюха?[/say]")
 
-		saynn("Элиза ловит часть спермы"+str("-like substance" if isStrapon else "")+" на свои пальцы... и подносит их к губам матери. Скарлет высовывает язык и начинает ими сосать..")
+		saynn("Элиза ловит часть спермы"+str("-подобная субстанция" if isStrapon else "")+" на свои пальцы... и подносит их к губам матери. Скарлет высовывает язык и начинает ими сосать..")
 
 		saynn("[say=eliza]Да~. Моя мамка — настоящая cum-шлюха~.[/say]")
 
@@ -1786,7 +1786,7 @@ func _run():
 		addCharacter("elizaMom", ["naked"])
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("cd_office2")
-		setLocationName("Scarlet's room")
+		setLocationName("Комната Скарлет")
 		playAnimation(StageScene.Duo, "stand", {pc="eliza", npc="elizaMom", bodyState={naked=true}, npcBodyState={naked=true}})
 		saynn("Когда ты открываешь дверь и переступаешь порог... тебя встречает... весьма зрелищная сцена.")
 
@@ -1802,7 +1802,7 @@ func _run():
 
 		saynn("Элиза следует за матерью. Вместе они окружают тебя, а Скарлет игривым толчком бедра подталкивает тебя в самый центр комнаты... её пышное тело делает это чертовски легким делом.")
 
-		saynn("Их руки начинают блуждать по твоей {pc.masc} фигуре... срывая всё, что только можно сорвать, и дразня твои изгибы..."+str("Your cock has gotten hard in an instant.. but you get a feeling that you won't get to use it much.." if (hasPP && !GM.pc.isWearingChastityCage()) else "")+""+str("Your cock tries to get hard in its cage.. but the metal prevents it from doing so.." if (hasPP && GM.pc.isWearingChastityCage()) else "")+"")
+		saynn("Их руки начинают блуждать по твоей {pc.masc} фигуре... срывая всё, что только можно сорвать, и дразня твои изгибы..."+str("Твой член мгновенно встал колом... но у тебя есть предчувствие, что использовать его по назначению тебе не удастся..." if (hasPP && !GM.pc.isWearingChastityCage()) else "")+""+str("Твой член пытается встать в клетке... но металл мешает ему это сделать..." if (hasPP && GM.pc.isWearingChastityCage()) else "")+"")
 
 		saynn("Скарлет наклоняется к самому твоему уху, её голос звучит почти как мурлыканье...")
 
@@ -1933,7 +1933,7 @@ func _run():
 		addButton("Продолжить", "Посмотри, что будет с твоими дырочками дальше", "s3_spit_sex")
 	if(state == "s3_spit_sex"):
 		playAnimation(StageScene.SexSpitroast, "sex", {pc="pc", npc="elizaMom", npc2="eliza", bodyState={naked=true, caged=true}, npcBodyState={naked=true, hard=true}, npc2BodyState={naked=true, hard=true}})
-		saynn("Одним мощным рывком Скарлет вбивает свой страпон в твою "+str("asshole" if isAnal else "cunt")+", кончик растягивает твою "+str("anal ring" if isAnal else "pussy folds")+" так широко, что ты невольно ахаешь, а твое тело бьется в их хватках..")
+		saynn("Одним мощным рывком Скарлет вбивает свой страпон в твою "+str("asshole" if isAnal else "cunt")+", кончик растягивает твою "+str("анальное кольцо" if isAnal else "складки киски")+" так широко, что ты невольно ахаешь, а твое тело бьется в их хватках..")
 
 		saynn("[say=pc]Ах-хх![/say]")
 
@@ -1949,7 +1949,7 @@ func _run():
 
 		saynn("[say=pc]Нхх.. хх.. кхх.. гхх!..[/say]")
 
-		saynn("Элиза обхватывает одну из своих лап вокруг твоего горла, чувствуя, как её резиновый член ходит туда-сюда по нему... В комнате стоят влажные звуки твоего рвотного рефлекса и шлепки бедер Скарлет о твою задницу."+str(" Your locked away cock squirts with precum as your prostate gets smashed.. again and again.." if (hasPP && isAnal) else "")+""+str(" Your locked away cock squirts with precum as your g-spot gets smashed.. again and again.." if (hasPP && !isAnal) else "")+"")
+		saynn("Элиза обхватывает одну из своих лап вокруг твоего горла, чувствуя, как её резиновый член ходит туда-сюда по нему... В комнате стоят влажные звуки твоего рвотного рефлекса и шлепки бедер Скарлет о твою задницу."+str(" Твой запертый член брызжет предэякулятом, пока твою простату разминают... снова и снова..." if (hasPP && isAnal) else "")+""+str(" Твой запертый член брызжит предэякулятом, пока твою точку G разминают... снова и снова..." if (hasPP && !isAnal) else "")+"")
 
 		saynn("[say=eliza]Вижу, тебе это нравится~.[/say]")
 
@@ -1968,7 +1968,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "s3_spit_fast")
 	if(state == "s3_spit_fast"):
 		playAnimation(StageScene.SexSpitroast, "fast", {pc="pc", npc="elizaMom", npc2="eliza", bodyState={naked=true, caged=true}, npcBodyState={naked=true, hard=true}, npc2BodyState={naked=true, hard=true}})
-		saynn("По мере того как их темп ускоряется, два страпона начинают с нарастающей яростью долбить вам в глотку и "+str("asshole" if isAnal else "cunt")+" с удвоенной силой. С каждым быстрым, мощным движением толстые узлы их страпонов впечатываются в ваши губы и "+str("anal ring" if isAnal else "pussy petals")+" , пытаясь растянуть их как можно шире..")
+		saynn("По мере того как их темп ускоряется, два страпона начинают с нарастающей яростью долбить вам в глотку и "+str("asshole" if isAnal else "cunt")+" с удвоенной силой. С каждым быстрым, мощным движением толстые узлы их страпонов впечатываются в ваши губы и "+str("анальное кольцо" if isAnal else "лепестки киски")+" , пытаясь растянуть их как можно шире..")
 
 		saynn("Пышная грудь Скарлет сильно подпрыгивает, пока она трахает вас... и кажется, Элиза не может оторвать от этого взгляда. Обе их киски насквозь промокли, и тугие кожаные ремни портупей слишком сильно трутся о их чувствительные складки..")
 
@@ -1997,7 +1997,7 @@ func _run():
 
 		saynn("В один синхронный миг они подают бедра вперед, с силой вгоняя свои резиновые члены в тебя; жирные резиновые узлы упираются в твои губы и "+str("ass" if isAnal else "cunt")+".. но растягивают их достаточно широко, чтобы войти внутрь с сочным шлепком..")
 
-		saynn("Пока их узлы растягивают тебя за пределы возможного, твое тело достигает пика.. Все твои мышцы начинают непроизвольно напрягаться и расслабляться, ты захлебываешься этим жирным узлом,"+str(" as your locked cock shoots a weak torrent of {pc.cum} through that little hole in the cage, sending desperate strings of your seed that land on your belly" if hasPP else " hard")+".. Внутренние стенки твоей "+str("ass" if isAnal else "squirting pussy are")+" с силой сжимаются вокруг этого огромного шара, от этого ощущения разум полностью отключается..")
+		saynn("Пока их узлы растягивают тебя за пределы возможного, твое тело достигает пика.. Все твои мышцы начинают непроизвольно напрягаться и расслабляться, ты захлебываешься этим жирным узлом,"+str(" пока твой запертый член выпускает слабую струю {pc.cum} через это маленькое отверстие в клетке, выстреливая отчаянными каплями семени, которые попадают тебе на живот" if hasPP else " hard")+".. Внутренние стенки твоей "+str("ass" if isAnal else "брызжущие киски")+" с силой сжимаются вокруг этого огромного шара, от этого ощущения разум полностью отключается..")
 
 		saynn("[say=elizaMom]Это еще не конец~.[/say]")
 
@@ -2011,7 +2011,7 @@ func _run():
 			saynn("Твой оргазм не прекращается.. твои яйца дергаются, пока запертый член сочится остатками семени.. твой "+str("prostate" if isAnal else "g-spot")+" кажется полностью уничтоженным.. жирный узел постоянно выжимает из него всё до капли..")
 
 		else:
-			saynn("Твой оргазм не прекращается.. Твоя эрогенная зона кажется полностью уничтоженной.. пока жирный узел постоянно сжимает её.."+str(" Your pussy is gushing with juices until there is nothing for it to squirt with.." if !isAnal else "")+"")
+			saynn("Твой оргазм не прекращается.. Твоя эрогенная зона кажется полностью уничтоженной.. пока жирный узел постоянно сжимает её.."+str(" Твоя киска извергает соки до тех пор, пока они совсем не иссякнут..." if !isAnal else "")+"")
 
 		saynn("Горло тоже перекрыто.. из-за чего кислород быстро заканчивается.. мир начинает расплываться всеми цветами радуги..")
 
@@ -2104,7 +2104,7 @@ func _run():
 		addCharacter("elizaMom", ["naked"])
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("cd_office2")
-		setLocationName("Scarlet's room")
+		setLocationName("Комната Скарлет")
 		playAnimation(StageScene.Duo, "stand", {pc="eliza", npc="elizaMom", bodyState={underwear=true}, npcBodyState={underwear=true}})
 		saynn("Когда ты входишь в комнату, твоему взору открывается... весьма любопытный вид.")
 
@@ -2453,11 +2453,11 @@ func _run():
 		playAnimation(StageScene.SexMatingPress, "tease", {pc="eliza", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("В следующее мгновение ты понимаешь, что уже на столе! Используя свою кошачью ловкость, Элиза запрыгивает на него и придавливает тебя весом своего тела. Её руки проскальзывают под твои колени и задирают их к самым плечам, открывая её члену полный доступ к твоему "+str("pussy" if !isAnal else "ass")+"..")
 
-		saynn("Ты чувствуешь жар, зависший совсем рядом с твоим "+str("sex" if !isAnal else "anal star")+".. несколько капель её предэякулята уже встречаются с твоим чувствительным "+str("folds" if !isAnal else "flesh")+".")
+		saynn("Ты чувствуешь жар, зависший совсем рядом с твоим "+str("sex" if !isAnal else "анальная звезда")+".. несколько капель её предэякулята уже встречаются с твоим чувствительным "+str("folds" if !isAnal else "flesh")+".")
 
-		saynn("[say=eliza]"+str("Since I have a pussy myself" if !isAnal else "Since I've been fucked before")+".. Я точно знаю, что тебе нравится~.[/say]")
+		saynn("[say=eliza]"+str("Раз уж у меня самой есть киска" if !isAnal else "Раз уж меня уже трахали")+".. Я точно знаю, что тебе нравится~.[/say]")
 
-		saynn("Она приставляет кончик к твоему "+str("slit" if !isAnal else "star")+" и позволяет ему раздвинуть твою "+str("slick petals" if !isAnal else "needy fuckhole")+"."+str(" You can feel the soft barbs brushing against your flesh." if isBarbs else "")+"")
+		saynn("Она приставляет кончик к твоему "+str("slit" if !isAnal else "star")+" и позволяет ему раздвинуть твою "+str("скользкие лепестки" if !isAnal else "жаждущая траха «дырочка»")+"."+str(" Ты чувствуешь, как мягкие шипы щекочут твою плоть." if isBarbs else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "futa_sex_sex")
 	if(state == "futa_sex_sex"):
@@ -2466,29 +2466,29 @@ func _run():
 
 		saynn("[say=pc]Ах.. ах..[/say]")
 
-		saynn("Она прижимает тебя и начинает двигаться внутри, совершая грубые, медленные толчки, позволяя тебе прочувствовать всю длину её члена, направленного так, чтобы он бил прямо в твою "+str("g-spot" if !isAnal else "")+""+str("p-spot" if (isAnal && GM.pc.hasPenis()) else "")+""+str("pleasure spot" if (isAnal && !GM.pc.hasPenis()) else "")+".")
+		saynn("Она прижимает тебя и начинает двигаться внутри, совершая грубые, медленные толчки, позволяя тебе прочувствовать всю длину её члена, направленного так, чтобы он бил прямо в твою "+str("g-spot" if !isAnal else "")+""+str("p-spot" if (isAnal && GM.pc.hasPenis()) else "")+""+str("точка удовольствия" if (isAnal && !GM.pc.hasPenis()) else "")+".")
 
 		saynn("[say=eliza]Да.. тебе ведь нравится мой член, правда?[/say]")
 
-		saynn("Элиза мурлычет тебе на ухо, трахая твою "+str("{pc.vaginaStretch} pussy" if !isAnal else "{pc.anusStretch} tailhole")+", её горячий член покрывает твои внутренние стенки предэякулятом, делая их скользкими и податливыми."+str(" Her barbs are gently scratching you on the inside, adding to the stimulation." if isBarbs else "")+"")
+		saynn("Элиза мурлычет тебе на ухо, трахая твою "+str("{pc.vaginaStretch} pussy" if !isAnal else "{pc.anusStretch} tailhole")+", её горячий член покрывает твои внутренние стенки предэякулятом, делая их скользкими и податливыми."+str(" Её шипы нежно скребут тебя изнутри, усиливая стимуляцию." if isBarbs else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "futa_sex_fast")
 	if(state == "futa_sex_fast"):
 		playAnimation(StageScene.SexMatingPress, "fast", {pc="eliza", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("В следующих толчках она вкладывает гораздо больше энергии, её головка "+str("grazing your cervix" if !isAnal else "reaching deep")+" с каждым резким движением. Её дыхание становится глубоким, когда она по-настоящему ускоряется, раз за разом вонзая свой {eliza.penis} глубоко в тебя.")
+		saynn("В следующих толчках она вкладывает гораздо больше энергии, её головка "+str("задевая шейку матки" if !isAnal else "проникая глубоко")+" с каждым резким движением. Её дыхание становится глубоким, когда она по-настоящему ускоряется, раз за разом вонзая свой {eliza.penis} глубоко в тебя.")
 
-		saynn("Твои ноги дрожат, твоя "+str("pussy" if !isAnal else "anal ring")+" крепко обхватывает этот скользящий член. Твои стоны становятся всё жарче... Элиза заставила тебя оказаться именно там, где ты и хотел быть... уязвимым, широко раздвинутым, неспособным ни на что, кроме как терпеть её беспощадную трахню."+str(" The knot at the base of her member inflates with blood.. and she is trying to squeeze it in." if isKnot else "")+"")
+		saynn("Твои ноги дрожат, твоя "+str("pussy" if !isAnal else "анальное кольцо")+" крепко обхватывает этот скользящий член. Твои стоны становятся всё жарче... Элиза заставила тебя оказаться именно там, где ты и хотел быть... уязвимым, широко раздвинутым, неспособным ни на что, кроме как терпеть её беспощадную трахню."+str(" Узел у основания её члена раздувается от крови... и она пытается втиснуть его внутрь." if isKnot else "")+"")
 
-		saynn("[say=eliza]С тем, как твоя "+str("pussy" if !isAnal else "needy hole")+" сжимается вокруг меня... Думаю, у меня нет выбора~... ммм... Пожалуй, стоит посмотреть, что будет, верно~?[/say]")
+		saynn("[say=eliza]С тем, как твоя "+str("pussy" if !isAnal else "голодная дырочка")+" сжимается вокруг меня... Думаю, у меня нет выбора~... ммм... Пожалуй, стоит посмотреть, что будет, верно~?[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "futa_sex_cum")
 	if(state == "futa_sex_cum"):
 		playAnimation(StageScene.SexMatingPress, "inside", {pc="eliza", npc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Когда твоя "+str("pussy" if !isAnal else "asshole")+" доводит её до предела, Элиза в последний раз влетает в тебя, вбивая свой член так глубоко, как только может твоя "+str("slit" if !isAnal else "ass")+" allows"+str(", her knot stretching you wide and slipping inside" if isKnot else "")+". Её член начинает пульсировать в такт её бешеному сердцебиению."+str(" Her barbs are stiff like needles, preventing her from pulling out.." if isBarbs else "")+""+str(" The flat tip of her cock flares up inside you, becoming even more fat." if isHorse else "")+"")
+		saynn("Когда твоя "+str("pussy" if !isAnal else "asshole")+" доводит её до предела, Элиза в последний раз влетает в тебя, вбивая свой член так глубоко, как только может твоя "+str("slit" if !isAnal else "ass")+" allows"+str(", её узел растягивает тебя и скользит внутрь" if isKnot else "")+". Её член начинает пульсировать в такт её бешеному сердцебиению."+str(" Её шипы становятся жесткими, как иглы, не давая ей вытащиться..." if isBarbs else "")+""+str(" Плоская головка её члена раздувается внутри тебя, становясь еще массивнее." if isHorse else "")+"")
 
 		saynn("[say=eliza]Кончай для меня...[/say]")
 
-		saynn("Она рычит, изливаясь внутри тебя, её яички напрягаются, когда её семя мощным потоком устремляется глубоко в твою "+str("womb" if !isAnal else "nethers")+" в густых, горячих струях. Ты чувствуешь каждую пульсацию её оргазма, когда её член, полностью скрытый внутри тебя, подёргивается. От содрогания твой собственный пик настигает тебя, и волны наслаждения проносятся сквозь тело, заставляя конечности дрожать"+str(", your own {pc.penis} shooting spurts of {pc.cum}, wasting it" if GM.pc.hasPenis() else "")+".")
+		saynn("Она рычит, изливаясь внутри тебя, её яички напрягаются, когда её семя мощным потоком устремляется глубоко в твою "+str("womb" if !isAnal else "nethers")+" в густых, горячих струях. Ты чувствуешь каждую пульсацию её оргазма, когда её член, полностью скрытый внутри тебя, подёргивается. От содрогания твой собственный пик настигает тебя, и волны наслаждения проносятся сквозь тело, заставляя конечности дрожать"+str(", твои собственные {pc.penis} фонтаны {pc.cum}, разлетающиеся во все стороны," if GM.pc.hasPenis() else "")+".")
 
 		saynn("[say=pc]Ах-х.. ммх.. аах.. нхх..[/say]")
 
@@ -2500,7 +2500,7 @@ func _run():
 
 		saynn("[say=pc]Всё.. хорошо.. ах..[/say]")
 
-		saynn("Она медленно выходит, а с твоего набитого спермой "+str("slit, mingling with your juices on the table surface below." if !isAnal else "ass, pooling up on the table surface below.")+"")
+		saynn("Она медленно выходит, а с твоего набитого спермой "+str("разрез, смешивающийся с твоей смазкой на поверхности стола под тобой." if !isAnal else "задница, залитая соками на поверхности стола под тобой.")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "futa_cuddle")
 	if(state == "futa_cuddle"):
@@ -2515,7 +2515,7 @@ func _run():
 
 		saynn("[say=pc]Не за что..[/say]")
 
-		saynn("[say=eliza]Использовать твой "+str("pussy" if !isAnal else "little tailhole")+" куда веселее, чем вакуумный насос.[/say]")
+		saynn("[say=eliza]Использовать твой "+str("pussy" if !isAnal else "маленькое анальное отверстие")+" куда веселее, чем вакуумный насос.[/say]")
 
 		saynn("Она целует тебя в шею и слегка прикусывает её.")
 

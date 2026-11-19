@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Тепловая граната"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Lust)):
@@ -29,7 +29,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} pulls out some kind of grenade and pulls the pin. Then {attacker.he} throws it in your direction. You see a [b]pink smoke[/b] trail following it in the air!"
+	return "{attacker.name} достает какую-то гранату и выдергивает чеку. Затем {attacker.he} бросает ее в твою сторону. Ты видишь, как в воздухе за ней тянется [b]розовый дымный[/b] шлейф!"
 
 func getAttackSoloAnimation():
 	return "throw"

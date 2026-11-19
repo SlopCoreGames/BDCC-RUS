@@ -24,7 +24,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Кончить на врага"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Use 40 stamina to tackle the enemy and cum all over them, covering their body in your cum/juices!"
+	return "Потратьте 40 выносливости, чтобы сбить врага с ног и кончить прямо на него, покрывая всё его тело своей спермой/соками!"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -44,23 +44,23 @@ func doAction(_lustState: LustCombatState, _args):
 	var theAnim:String = "LustRubAttackFast"
 	var text = ""
 	if(pc.hasPenis()):
-		text += "You feel your climax taking over your body. But instead of just being still, you pounce at your opponent, knocking them off their feet and pinning to the floor. Then you use this opportunity to stroke yourself further over the edge!"
+		text += "Вы чувствуете, как оргазм захватывает ваше тело. Но вместо того чтобы просто замереть, вы набрасываетесь на противника, сбивая его с ног и прижимая к полу. Затем вы используете эту возможность, чтобы довести себя до самого края!"
 		text += "\n\n"
 	
-		text += "Your {pc.cock} starts throbbing and shooting ropes of hot sticky {pc.cum} all over the opponent, covering them from head to feet. You feel your balls being drained as each second the shaft fires off more and more {pc.cum} until you’re spent."
+		text += "Ваш {pc.cock} начинает пульсировать, выбрасывая струи горячей липкой {pc.cum} прямо на противника, покрывая его с головы до ног. Вы чувствуете, как ваши яички опустошаются, пока ствол каждую секунду извергает всё больше и больше {pc.cum}, пока вы окончательно не изверглись."
 		text += "\n\n"
 	
-		text += "Opponent’s confusion gives you enough time to get off them and calm down after your climax."
+		text += "Замешательство противника дает вам достаточно времени, чтобы слезть с него и прийти в себя после оргазма."
 		text += "\n\n"
 		theAnim = "LustStrokeAttackFast"
 	elif(pc.hasVagina()):
-		text += "You feel your climax taking over your body. But instead of just being still, you pounce at your opponent, knocking them off their feet and pinning to the floor. Then you use this opportunity to rub your pussy, forcing yourself over the edge."
+		text += "Вы чувствуете, как оргазм захватывает ваше тело. Но вместо того чтобы просто замереть, вы набрасываетесь на противника, сбивая его с ног и прижимая к полу. Затем вы используете эту возможность, чтобы тереть свою киску, заставляя себя дойти до самого края."
 		text += "\n\n"
 	
-		text += "You let out a couple passionate moans as your pussy starts squirting with girlcum all over your enemy, covering them from head to feet. You legs shake, body shivers, you arch your back and endure the pleasure waves while humiliating the opponent by cumming on them in the process."
+		text += "Вы издаете несколько страстных стонов, когда ваша киска начинает заливать врага сквиртом, покрывая его с головы до ног. Ваши ноги дрожат, тело бьет озноб, вы выгибаете спину, наслаждаясь волнами удовольствия и унижая противника тем, что кончаете прямо на него."
 		text += "\n\n"
 		
-		text += "Opponent’s confusion gives you enough time to get off them and calm down after your orgasm."
+		text += "Смятение противницы дает тебе достаточно времени, чтобы слезть с нее и прийти в себя после оргазма."
 		text += "\n\n"
 		theAnim = "LustRubAttackFast"
 

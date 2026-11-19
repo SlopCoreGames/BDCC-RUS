@@ -14,12 +14,12 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"{slave.He} stands tall, even in chains. Bravery like {slave.hisHer} is rare in a slave.",
-		"This one’s got courage, even in the face of submission. That kind of bravery makes for a strong servant.",
-		"{slave.HeShe} won’t back down from a challenge. Brave slaves like {slave.him} will endure anything for their master.",
-		"Bravery is a rare quality in slaves. {slave.He} will hold {slave.hisHer} head high, no matter the situation.",
-		"If you’re looking for someone strong-willed yet obedient, {slave.his} bravery makes {slave.himHer} an excellent choice.",
-		"Even in submission, {slave.he} shows no fear. That courage will serve you well.",
+		"{slave.He} держится гордо, даже в цепях. Такая храбрость, как у {slave.hisHer}, — редкость среди рабов.",
+		"У этой штучки есть стержень, даже перед лицом подчинения. Такая смелость делает слугу по-настоящему сильным.",
+		"{slave.HeShe} не отступит перед трудностями. Храбрые рабы вроде {slave.him} вынесут всё ради своего хозяина.",
+		"Храбрость — редкое качество для раба. {slave.He} будет держать {slave.hisHer} голову высоко, в какой бы ситуации ни оказалась.",
+		"Если вы ищете кого-то волевого, но при этом послушного, то храбрость {slave.his} делает {slave.himHer} отличным выбором.",
+		"Даже подчиняясь, {slave.he} не выказывает страха. Это мужество вам еще пригодится.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Fetish, mightChance())

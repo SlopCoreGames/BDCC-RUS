@@ -40,7 +40,7 @@ func _run():
 			sayn("[b]Инфо для отладки[/b]:")
 			saynn(Util.join(pawn.getDebugInfo(), "\n"))
 		
-		addButtonAt(14, "End", "Enough spying", "endthescene")
+		addButtonAt(14, "Конец", "Хватит шпионить", "endthescene")
 		
 		if(OPTIONS.shouldSeePawnActionChances() && !interaction.shouldHideRelativeActionChances()):
 			var theRelativeActionsInfo:Array = interaction.getActionsRelativeChanceInfo()

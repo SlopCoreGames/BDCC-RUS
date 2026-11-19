@@ -851,7 +851,7 @@ func getVisibleTime():
 	else:
 		text = Util.getTimeStringHHMM(timeOfDay)
 	
-	text += ", day " + str(currentDay)
+	text += ", день " + str(currentDay)
 	return text
 
 func getFormattedTimeFromSeconds(howManySeconds:int):
@@ -1117,7 +1117,7 @@ func updateStuff():
 func _on_Player_levelChanged():
 	if(GM.ui):
 		GM.ui.makeSkillsButtonFlash()
-		addMessage("You reached a new level!")
+		addMessage("Ты достиг нового уровня!")
 
 
 func _on_Player_skillLevelChanged(_skillID):
@@ -1127,23 +1127,23 @@ func _on_Player_skillLevelChanged(_skillID):
 		
 		var skill: SkillBase = GM.pc.getSkillsHolder().getSkill(_skillID)
 		
-		addMessage("Your '"+skill.getVisibleName()+"' skill has increased to level "+str(skill.getLevel())+"!")
+		addMessage("Your '"+skill.getVisibleName()+"уровень навыка повышен до "+str(skill.getLevel())+"!")
 		
 
 func _on_Player_orificeBecomeMoreLoose(orificeName, _newvalue, _oldvalue):
-	addMessage("Your "+orificeName+" is stretched and is now more used to the insertions")
+	addMessage("Твоя "+orificeName+" растянута и теперь привыкла к введениям")
 
 func _on_Player_exchangedCumDuringRubbing(senderName, receiverName):
-	addMessage(receiverName + " stole some cum from "+senderName+" during tribbing")
+	addMessage(receiverName + " стащила немного спермы у "+senderName+" во время триббинга")
 
 func _on_Player_holePinafullyStretched(bodypart, _who):
 	if(bodypart == BodypartSlot.Vagina):
-		addMessage("OW! Your pussy [b]hurts[/b]..")
+		addMessage("АЙ! Твоя [b]киска болит[/b]..")
 	if(bodypart == BodypartSlot.Anus):
-		addMessage("OW! Your anus [b]hurts[/b]..")
+		addMessage("АЙ! Твой анус [b]болит[/b]..")
 
 func _on_Player_gotWoundedBy(_who):
-	addMessage("OW! That [b]really[/b] hurt..")
+	addMessage("ОЙ! Вот этот [b]реально[/b] больно ударил..")
 
 func getRandomSceneFor(sceneType):
 	var resultScenes = []
@@ -1243,17 +1243,17 @@ func getDebugActions():
 	return [
 		{
 			"id": "giveItem",
-			"name": "Give player item",
+			"name": "Выдать игроку предмет",
 			"args": [
 				{
 					"id": "itemID",
-					"name": "Item id",
+					"name": "ID предмета",
 					"type": "smartlist",
 					"item": true,
 				},
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 1,
 					"onlyPositive": true,
@@ -1262,11 +1262,11 @@ func getDebugActions():
 		},
 		{
 			"id": "addPain",
-			"name": "Add pain PC",
+			"name": "Добавить боль ПК",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 10,
 				},
@@ -1274,11 +1274,11 @@ func getDebugActions():
 		},
 		{
 			"id": "addLust",
-			"name": "Add lust PC",
+			"name": "Добавить похоть ПК",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 10,
 				},
@@ -1286,11 +1286,11 @@ func getDebugActions():
 		},
 		{
 			"id": "addStamina",
-			"name": "Add stamina PC",
+			"name": "Добавить выносливость ПК",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 100,
 				},
@@ -1298,11 +1298,11 @@ func getDebugActions():
 		},
 		{
 			"id": "addCredits",
-			"name": "Add Credits PC",
+			"name": "Добавить кредиты ПК",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 10,
 				},
@@ -1310,17 +1310,17 @@ func getDebugActions():
 		},
 		{
 			"id": "healPC",
-			"name": "Heal PC",
+			"name": "Исцелить ПК",
 			"args": [
 			]
 		},
 		{
 			"id": "addExp",
-			"name": "Add experience PC",
+			"name": "Добавить опыт ПК",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 100,
 				},
@@ -1328,17 +1328,17 @@ func getDebugActions():
 		},
 		{
 			"id": "addSkillExp",
-			"name": "Add skill exp. PC",
+			"name": "Добавить опыт навыка ПК",
 			"args": [
 				{
 					"id": "skillID",
-					"name": "Skill",
+					"name": "Навык",
 					"type": "list",
 					"skill": true,
 				},
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 100,
 				},
@@ -1346,41 +1346,41 @@ func getDebugActions():
 		},
 		{
 			"id": "lactatePC",
-			"name": "Make PC lactate",
+			"name": "Заставить ПК лактировать",
 			"args": [
 			]
 		},
 		{
 			"id": "resetPCPerks",
-			"name": "Reset picked perks",
+			"name": "Сбросить выбранные перки",
 		},	
 		{
 			"id": "resetPCStats",
-			"name": "Reset picked stats",
+			"name": "Сбросить выбранные статы",
 		},
 		{
 			"id": "characterCreator",
-			"name": "Open character creator",
+			"name": "Открыть редактор персонажа",
 		},
 		{
 			"id": "runScene",
-			"name": "Run scene",
+			"name": "Запустить сцену",
 			"args": [
 				{
 					"id": "sceneID",
-					"name": "Scene ID",
+					"name": "ID сцены",
 					"type": "string",
 					"value": "",
 				},
 				{
 					"id": "sceneTag",
-					"name": "Scene tag",
+					"name": "Тег сцены",
 					"value": "",
 					"type": "string",
 				},
 				{
 					"id": "sceneArgs",
-					"name": "Scene arguments\n(must start and end\nwith brackets)",
+					"name": "Аргументы сцены\n(должны начинаться и заканчиваться\nскобками)",
 					"value": "",
 					"type": "string",
 				},
@@ -1388,30 +1388,30 @@ func getDebugActions():
 		},
 		{
 			"id": "removePCRestraints",
-			"name": "Remove all restraints",
+			"name": "Снять все путы",
 		},
 		{
 			"id": "openConsole",
-			"name": "Open console",
+			"name": "Открыть консоль",
 		},
 		{
 			"id": "animBrowser",
-			"name": "Animation browser",
+			"name": "Просмотр анимаций",
 		},
 		{
 			"id": "skinEditor",
-			"name": "Skin editor",
+			"name": "Редактор кожи",
 			"args": [
 				{
 					"id": "npcID",
-					"name": "NPC ID",
+					"name": "ID NPC",
 					"value": "pc",
 					"type": "smartlist",
 					"npc": true,
 				},
 				{
 					"id": "cnpcID",
-					"name": "Custom ID",
+					"name": "Пользовательский ID",
 					"value": "",
 					"type": "string",
 				},
@@ -1419,15 +1419,15 @@ func getDebugActions():
 		},
 		{
 			"id": "enslaveRandom",
-			"name": "Enslave random npc",
+			"name": "Поработить случайного NPC",
 		},
 		{
 			"id": "duplicateAndEnslave",
-			"name": "Duplicate and enslave static npc",
+			"name": "Дублировать и поработить статического NPC",
 			"args": [
 				{
 					"id": "npcID",
-					"name": "NPC ID",
+					"name": "ID NPC",
 					"value": "pc",
 					"type": "smartlist",
 					"npc": true,
@@ -1440,33 +1440,33 @@ func getDebugActions():
 #				},
 				{
 					"id": "pooltype",
-					"name": "Character pool",
+					"name": "Пул персонажей",
 					"type": "list",
 					"value": "inmate",
 					"values": [
-						["inmate", "Inmate (gen)"],
-						["inmatehigh", "Inmate (highsec)"],
-						["inmatesex", "Inmate (sexdeviant)"],
-						["guard", "Guard"],
-						["engineer", "Engineer"],
-						["nurse", "Nurse"],
+						["inmate", "Заключенный (ген.)"],
+						["inmatehigh", "Заключенный (хайсек)"],
+						["inmatesex", "Заключенный (секс-девиант)"],
+						["guard", "Охранник"],
+						["engineer", "Инженер"],
+						["nurse", "Медсестра"],
 					],
 				},
 				{
 					"id": "resequip",
-					"name": "Reset equipment",
+					"name": "Сбросить снаряжение",
 					"value": true,
 					"type": "checkbox",
 				},
 				{
 					"id": "pcpers",
-					"name": "Copy player's personality",
+					"name": "Скопировать личность игрока",
 					"value": true,
 					"type": "checkbox",
 				},
 				{
 					"id": "pcfetish",
-					"name": "Copy player's fetishes",
+					"name": "Скопировать фетиши игрока",
 					"value": true,
 					"type": "checkbox",
 				},
@@ -1474,34 +1474,34 @@ func getDebugActions():
 		},
 		{
 			"id": "damageClothes",
-			"name": "Damage pc clothes",
+			"name": "Испортить одежду ПК",
 		},
 		{
 			"id": "repairClothes",
-			"name": "Repair pc clothes",
+			"name": "Починить одежду ПК",
 		},
 		{
 			"id": "forceSmartlock",
-			"name": "Force smart lock",
+			"name": "Принудительно закрыть смарт-замок",
 		},
 		{
 			"id": "spyRandom",
-			"name": "Spy on pawn",
+			"name": "Шпионить за пешкой",
 		},
 		{
 			"id": "addRep",
-			"name": "Add reputation",
+			"name": "Добавить репутацию",
 			"args": [
 				{
 					"id": "rep",
-					"name": "Rep",
+					"name": "Реп",
 					"type": "list",
 					"value": RepStat.Whore,
 					"values": RepStat.getAllWithNames(),
 				},
 				{
 					"id": "amount",
-					"name": "How much (rep score)",
+					"name": "Значение (очки репутации)",
 					"type": "number",
 					"value": 1.0,
 					"float": true,
@@ -1510,18 +1510,18 @@ func getDebugActions():
 		},
 		{
 			"id": "setRep",
-			"name": "Set reputation",
+			"name": "Установить репутацию",
 			"args": [
 				{
 					"id": "rep",
-					"name": "Rep",
+					"name": "Реп",
 					"type": "list",
 					"value": RepStat.Whore,
 					"values": RepStat.getAllWithNames(),
 				},
 				{
 					"id": "level",
-					"name": "Level",
+					"name": "Уровень",
 					"type": "number",
 					"value": 0,
 				},
@@ -1529,40 +1529,40 @@ func getDebugActions():
 		},
 		{
 			"id": "toggleISDebug",
-			"name": "Toggle IS debug",
+			"name": "Вкл/выкл режим отладки",
 		},
 		{
 			"id": "undoTFs",
-			"name": "Undo All TFs",
+			"name": "Отменить все ТФ",
 		},
 		{
 			"id": "applyTFs",
-			"name": "Make TFs permanent",
+			"name": "Сделать ТФ постоянными",
 		},
 		{
 			"id": "forceProgressTFs",
-			"name": "Force-progress TFs",
+			"name": "Принудительный прогресс ТФ",
 		},
 		{
 			"id": "accelerateTFs",
-			"name": "Accelerate TFs",
+			"name": "Ускорить ТФ",
 		},
 		{
 			"id": "startTF",
-			"name": "Start TF",
+			"name": "Начать ТФ",
 			"args": [
 				{
 					"id": "tfid",
-					"name": "TF id",
+					"name": "ID ТФ",
 					"type": "list",
-					"value": "Feminization",
+					"value": "Феминизация",
 					"values": TFUtil.getTFListCanStart(),
 				},
 			],
 		},
 		{
 			"id": "startSlavery",
-			"name": "Start Player Slavery",
+			"name": "Начать рабство игрока",
 			"args": [
 #				{
 #					"id": "slaveryID",
@@ -1575,11 +1575,11 @@ func getDebugActions():
 		},
 		{
 			"id": "startSlaveryFast",
-			"name": "Start Player Slavery FAST",
+			"name": "Начать рабство игрока БЫСТРО",
 			"args": [
 				{
 					"id": "slaveryID",
-					"name": "Slavery id",
+					"name": "ID рабства",
 					"type": "list",
 					"value": GlobalRegistry.getPlayerSlaveryDefs().keys().front(),
 					"values": TFUtil.getPlayerSlaveryStartList(),
@@ -1588,17 +1588,17 @@ func getDebugActions():
 		},
 		{
 			"id": "stopSlavery",
-			"name": "Stop Player Slavery",
+			"name": "Прекратить рабство игрока",
 			"args": [
 			],
 		},
 		{
 			"id": "addBodywritings",
-			"name": "Add bodywritings",
+			"name": "Добавить надписи на теле",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Amount",
+					"name": "Количество",
 					"type": "number",
 					"value": 10,
 				},
@@ -1606,36 +1606,36 @@ func getDebugActions():
 		},
 		{
 			"id": "clearBodywritings",
-			"name": "Clear writings",
+			"name": "Очистить записи",
 			"args": [
 			],
 		},
 		{
 			"id": "startSoftSlavery",
-			"name": "Start soft slavery",
+			"name": "Начать мягкое рабство",
 			"args": [
 			],
 		},
 		{
 			"id": "makefriend",
-			"name": "Make a friend",
+			"name": "Завести друга",
 			"args": [
 			],
 		},
 		{
 			"id": "becomeNPC",
-			"name": "Become NPC",
+			"name": "Стать NPC",
 			"args": [
 				{
 					"id": "npcID",
-					"name": "NPC ID",
+					"name": "ID NPC",
 					"value": "pc",
 					"type": "smartlist",
 					"npc": true,
 				},
 				{
 					"id": "cnpcID",
-					"name": "Custom ID",
+					"name": "Пользовательский ID",
 					"value": "",
 					"type": "string",
 				},
@@ -1643,33 +1643,33 @@ func getDebugActions():
 		},
 		{
 			"id": "stuffEgg",
-			"name": "Stuff Egg",
+			"name": "Набить яйцо",
 			"args": [
 				{
 					"id": "eggType",
-					"name": "Egg type",
+					"name": "Тип яйца",
 					"type": "list",
 					"value": BigEggType.Plant,
 					"values": [
-						[BigEggType.Plant, "Plant egg"],
-						[BigEggType.Unfertilized, "Unfertilized egg"],
-						[BigEggType.Latex, "Latex egg (unused)"],
+						[BigEggType.Plant, "Посадить яйцо"],
+						[BigEggType.Unfertilized, "Неоплодотворенное яйцо"],
+						[BigEggType.Latex, "Латексное яйцо (не исп.)"],
 					],
 				},
 				{
 					"id": "hole",
-					"name": "Which hole",
+					"name": "Какую дырку?",
 					"type": "list",
 					"value": BodypartSlot.Anus,
 					"values": [
-						[BodypartSlot.Anus, "Anus"],
-						[BodypartSlot.Vagina, "Vagina"],
-						[BodypartSlot.Head, "Throat"],
+						[BodypartSlot.Anus, "В анус"],
+						[BodypartSlot.Vagina, "Вагина"],
+						[BodypartSlot.Head, "Глотка"],
 					],
 				},
 				{
 					"id": "time",
-					"name": "Seconds until lay",
+					"name": "Секунд до траха",
 					"type": "number",
 					"value": 12*60*60,
 				},
@@ -1677,17 +1677,17 @@ func getDebugActions():
 		},
 		{
 			"id": "accelerateEggs",
-			"name": "Accelerate eggs",
+			"name": "Ускорить яйца",
 			"args": [
 			],
 		},
 		{
 			"id": "startRecruit",
-			"name": "Start recruit",
+			"name": "Начать вербовку",
 			"args": [
 				{
 					"id": "who",
-					"name": "Who",
+					"name": "Кто",
 					"type": "list",
 					"value": GM.main.RCS.recruits.keys()[0],
 					"values": GM.main.RCS.getDebugActionOptions(),
@@ -1696,11 +1696,11 @@ func getDebugActions():
 		},
 		{
 			"id": "startMission",
-			"name": "Start mission",
+			"name": "Начать миссию",
 			"args": [
 				{
 					"id": "mission",
-					"name": "Mission",
+					"name": "Миссия",
 					"type": "list",
 					"value": GlobalRegistry.missions.keys()[0] if GlobalRegistry.missions.size() > 0 else "",
 					"values": MS.getDebugMissionList(),
@@ -1709,7 +1709,7 @@ func getDebugActions():
 		},
 		{
 			"id": "allowMainRouteReset",
-			"name": "Allow Main Route reset",
+			"name": "Разрешить сброс основной ветки",
 			"args": [
 			],
 		},
@@ -1728,7 +1728,7 @@ func doDebugAction(id, args = {}):
 		return
 	if(id == "startRecruit"):
 		if(GM.main.RCS.hasCurrent()):
-			addMessage("Can't start a recruiting scene. Already recruiting someone!")
+			addMessage("Нельзя начать сцену вербовки. Кто-то уже вербуется!")
 			return
 		
 		GM.main.RCS.setCurrent(args["who"], true)
@@ -1779,7 +1779,7 @@ func doDebugAction(id, args = {}):
 		GM.pc.getTFHolder().accelerateAllFull()
 	elif(id == "startTF"):
 		if(!GM.pc.getTFHolder().canStartTransformation(args["tfid"])):
-			addMessage(args["tfid"] +" transformation is currently not possible.")
+			addMessage(args["tfid"] +" трансформация сейчас невозможна.")
 		else:
 			GM.pc.getTFHolder().startTransformation(args["tfid"])
 	elif(id == "startSlavery"):
@@ -1809,9 +1809,9 @@ func doDebugAction(id, args = {}):
 	elif(id == "toggleISDebug"):
 		isDebuggingIS = !isDebuggingIS
 		if(isDebuggingIS):
-			addMessage("Interaction System debug info is now Enabled")
+			addMessage("Отладочная информация системы взаимодействия включена")
 		else:
-			addMessage("Interaction System debug info is now Disabled")
+			addMessage("Отладочная информация системы взаимодействия отключена")
 	
 	elif(id == "addRep"):
 		GM.pc.getReputation().addRep(args["rep"], args["amount"])
@@ -2006,11 +2006,11 @@ func consoleSetFlagBool(flagID, valuestr):
 	elif(valuestr in ["false", "FALSE", "False", "0"]):
 		value = false
 	else:
-		Console.printLine("Accept values are true or false")
+		Console.printLine("Допустимые значения: true или false")
 		return
 		
 	setFlag(flagID, value)
-	Console.printLine("Flag set")
+	Console.printLine("Флаг установлен")
 
 func consoleSetModuleFlagBool(moduleID, flagID, valuestr):
 	var value = false
@@ -2019,19 +2019,19 @@ func consoleSetModuleFlagBool(moduleID, flagID, valuestr):
 	elif(valuestr in ["false", "FALSE", "False", "0"]):
 		value = false
 	else:
-		Console.printLine("Accept values are true or false")
+		Console.printLine("Допустимые значения: true или false")
 		return
 		
 	setModuleFlag(moduleID, flagID, value)
-	Console.printLine("Flag set")
+	Console.printLine("Флаг установлен")
 
 func consoleClearFlag(flagID):
 	clearFlag(flagID)
-	Console.printLine("Flag cleared")
+	Console.printLine("Флаг сброшен")
 
 func consoleClearModuleFlag(moduleID, flagID):
 	clearModuleFlag(moduleID, flagID)
-	Console.printLine("Flag cleared")
+	Console.printLine("Флаг сброшен")
 
 func consoleBecome(charID):
 	if charID == "pc":

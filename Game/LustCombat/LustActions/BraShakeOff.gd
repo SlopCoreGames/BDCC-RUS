@@ -23,7 +23,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	#var itemState: BraState = _args["itemState"]
-	return "Since you can’t reach with your hands, you have to shake it off"
+	return "Раз уж руками дотянуться не получается, приходится просто стряхнуть это"
 
 func doAction(_lustState: LustCombatState, _args):
 	var _item:ItemBase = getItem(_lustState, _args)
@@ -35,28 +35,28 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(_lustState.isInBattle() && pc.hasNonFlatBreasts()):
-		text += "You act quick and use your time to try and shake off your <casualName>. The opponent seems to be quite intrigued by what you are trying to do. Your {pc.breasts} sway in the air and playfully bounce until finally escaping from under the fabric. You pant softly after such an arousing act, your nips felt quite some friction while you were shaking your chest."
+		text += "Ты действуешь быстро, пытаясь стряхнуть свою <casualName>. Противник, кажется, заинтригован твоими стараниями. Твои {pc.breasts} колышутся в воздухе и игриво подпрыгивают, пока наконец не выскальзывают из-под ткани. После такого возбуждающего действия ты тихонько дышишь, чувствуя, как соски терлись о ткань, пока ты трясла грудью."
 		text += "\n\n"
 	elif(_lustState.isInBattle() && !pc.hasNonFlatBreasts()):
-		text += "You act quick and use your time to try and shake off your <casualName>. The opponent seems to be quite intrigued by what you are trying to do. It is quite a struggle but in the end you manage to make the cloth slip up enough to uncover your {pc.breasts}. You pant softly after such an arousing act, your nips felt quite some friction while you were shaking your chest."
+		text += "Ты действуешь быстро, пытаясь стряхнуть свою <casualName>. Противник, кажется, заинтригован твоими стараниями. Это дается нелегко, но в итоге тебе удается сдвинуть ткань достаточно высоко, чтобы обнажить свои {pc.breasts}. После такого возбуждающего действия ты тихонько дышишь, чувствуя, как соски терлись о ткань, пока ты трясла грудью."
 		text += "\n\n"
 	elif(!_lustState.isInBattle() && pc.hasNonFlatBreasts()):
-		text += "You look around to make sure that there are no obvious spying eyes before proceeding to shake off your <casualName>, struggling quite a bit with it. Your {pc.breasts} sway in the air and playfully bounce until finally escaping from under the fabric. You pant softly after such an arousing act, your nips felt quite some friction while you were shaking your chest."
+		text += "Ты оглядываешься по сторонам, чтобы убедиться, что за тобой никто не подглядывает, и приступаешь к тому, чтобы стряхнуть свою <casualName>, прилагая немало усилий. Твои {pc.breasts} колышутся в воздухе и игриво подпрыгивают, пока наконец не выскальзывают из-под ткани. После такого возбуждающего действия ты тихонько дышишь, чувствуя, как соски терлись о ткань, пока ты трясла грудью."
 		text += "\n\n"
 	elif(!_lustState.isInBattle() && !pc.hasNonFlatBreasts()):
-		text += "You look around to make sure that there are no obvious spying eyes before proceeding to shake off your <casualName>, struggling quite a bit with it. In the end you manage to make the cloth slip up enough to uncover your {pc.breasts}. You pant softly after such an arousing act, your nips felt quite some friction while you were shaking your chest."
+		text += "Оглядевшись по сторонам, чтобы убедиться, что за тобой никто не подглядывает, ты принимаешься стряхивать свою <casualName>, изрядно с этим намучившись. В конце концов тебе удается сдвинуть ткань достаточно высоко, чтобы обнажить свои {pc.breasts}. После такого возбуждающего действа ты тихонько дышишь, чувствуя, как соски ощутимо горели от трения, пока ты трясла грудью."
 		text += "\n\n"
 	
 	if(RNG.chance(40) && pc.canBeMilked()):
-		text += "Your breasts seem to have quite some weight to them, you can spot a few drops of {pc.milk} streaming down them. They are itching to be milked."
+		text += "Твоя грудь кажется довольно тяжелой, по ней можно заметить несколько капель {pc.milk}. Она так и просится, чтобы её подоили."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasBodywritings()):
-		text += "While undressing yourself, you expose more of your body writings for anyone to see, kinky."
+		text += "Раздеваясь, ты выставляешь напоказ всё больше своих татуировок на теле — как пошло."
 		text += "\n\n"
 		
 	if(RNG.chance(20) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "Cum is dripping from your {pc.breasts} as you stand still even, it’s obvious at a glance that you had quite some fun with others."
+		text += "С твоих {pc.breasts} капает сперма, даже когда ты стоишь неподвижно; с первого взгляда очевидно, что ты неплохо развлеклась с другими."
 		text += "\n\n"
 	
 	return {

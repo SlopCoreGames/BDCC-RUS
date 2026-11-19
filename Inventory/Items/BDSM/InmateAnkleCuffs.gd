@@ -38,9 +38,9 @@ func generateRestraintData():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" were forced onto your legs, they are connected by a chain, forcing you to waddle or hop around!"
+		return getAStackNameCapitalize()+" их намертво затянули на твоих ногах; соединенные цепью, они заставляют тебя переваливаться с ноги на ногу или прыгать на одной ножке!"
 	else:
-		return getAStackNameCapitalize()+" were forced onto {receiver.nameS} legs, they are connected by a chain, forcing {receiver.him} to waddle or hop around!"
+		return getAStackNameCapitalize()+" их надели на ноги {receiver.nameS}, соединив цепью, из-за чего {receiver.him} приходится переваливаться с ноги на ногу или прыгать!"
 
 func getUnriggedParts(_character):
 	return {

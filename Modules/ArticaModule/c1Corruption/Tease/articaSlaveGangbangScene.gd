@@ -62,7 +62,7 @@ func _run():
 		var howManySlaves = pickedSlaves.size()
 		saynn("Ты просишь Артику немного подождать... и подзываешь своих рабов, чтобы они подошли к тебе.")
 
-		saynn("[say=pc]Повеселись с ней."+str(" I will watch." if !pcIncluded else " I will join too.")+"[/say]")
+		saynn("[say=pc]Повеселись с ней."+str(" Я буду наблюдать." if !pcIncluded else " Я тоже присоединюсь.")+"[/say]")
 
 		saynn("Артика растерянно оглядывается... как будто "+str(howManySlaves)+" люди окружают её, перекрывая единственный выход из твоей камеры..")
 
@@ -89,7 +89,7 @@ func _run():
 
 			saynn("[say=artica]И-ип.. п-полегче.. п-подож-.. ой..[/say]")
 
-			saynn("Пока пушистая пытается освободить руки, её шорты тоже стягивают вниз, обнажая её "+str("caged up cock" if isCaged else "sheath")+".. и киску, что прячется за яичками.. Кто-то дергает за хвост, заставляя Артику выпятить зад, пока её узкое анальное отверстие подергивается..")
+			saynn("Пока пушистая пытается освободить руки, её шорты тоже стягивают вниз, обнажая её "+str("запертый в клетке член" if isCaged else "sheath")+".. и киску, что прячется за яичками.. Кто-то дергает за хвост, заставляя Артику выпятить зад, пока её узкое анальное отверстие подергивается..")
 
 			if (isVerySlut):
 				saynn("[say=artica]П-пожалуйста.. ах.. в-трахай меня н-насухую..[/say]")
@@ -164,10 +164,10 @@ func _run():
 		saynn("[say=artica]Ммм... моя... зад-д-ница... ахх-хх..[/say]")
 
 		if (!didFirst):
-			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+" а её анус и киска туго сжимают"+str(" rubber" if onlyStrapons else "")+" члены.")
+			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" внутри клетки" if isCaged else "")+" а её анус и киска туго сжимают"+str(" rubber" if onlyStrapons else "")+" члены.")
 
 		else:
-			saynn("Похоже, Артика вот-вот снова кончит, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+" а её анус и киска туго сжимают"+str(" rubber" if onlyStrapons else "")+" члены.")
+			saynn("Похоже, Артика вот-вот снова кончит, её член бешено пульсирует,"+str(" внутри клетки" if isCaged else "")+" а её анус и киска туго сжимают"+str(" rubber" if onlyStrapons else "")+" члены.")
 
 		# (( Double penetration SEX FAST with {npc1.name} on the bottom and {npc2.name} behind. ))
 		addButton("Продолжить", "Смотреть, что будет дальше", "dp_cum")
@@ -178,7 +178,7 @@ func _run():
 		#var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		#var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		#var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("С каждым двойным толчком её киска и анус растягивались до предела... пока плоть просто не начала сдаваться. Её губы издали страстный стон... за которым последовал взрыв её члена, извергающего густые струи спермы"+str(" through the little hole in a chastity cage" if isCaged else "")+" прямо на пол.")
+		saynn("С каждым двойным толчком её киска и анус растягивались до предела... пока плоть просто не начала сдаваться. Её губы издали страстный стон... за которым последовал взрыв её члена, извергающего густые струи спермы"+str(" через маленькое отверстие в девственной клетке" if isCaged else "")+" прямо на пол.")
 
 		if (getCharacter(npc1).isWearingStrapon()):
 			saynn("Её киска выжимала страпон, который трахал её... пока игрушка наконец не решила выпустить свой запас смазки-спермы глубоко в матку девушки...")
@@ -265,10 +265,10 @@ func _run():
 		saynn("Приглушенные стоны наслаждения вырываются из неё, пока два"+str(" rubber" if onlyStrapons else "")+" члена насильно втискивались в неё с обоих концов; ощущения захлестывали её, она пыталась дышать, а её тело сотрясалось от каждого мощного толчка.")
 
 		if (!didFirst):
-			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", её глотка и киска сжимают "+str(cocksText)+" urgently.")
+			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" внутри клетки" if isCaged else "")+", её глотка и киска сжимают "+str(cocksText)+" urgently.")
 
 		else:
-			saynn("Похоже, Артика вот-вот снова кончит, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", её киска судорожно обхватывает {npc1.strapon} жестко.")
+			saynn("Похоже, Артика вот-вот снова кончит, её член бешено пульсирует,"+str(" внутри клетки" if isCaged else "")+", её киска судорожно обхватывает {npc1.strapon} жестко.")
 
 		# (( Spitroast SEX FAST with {npc1.name} fucking pussy and {npc2.name} fucking throat. ))
 		addButton("Продолжить", "Смотреть, что будет дальше", "spit_cum")
@@ -364,10 +364,10 @@ func _run():
 		saynn("Отверстия Артики долбили всё быстрее и сильнее; {npc1.your} {npc1.strapon} вбивается вверх под напором {npc1.youHim}, скользкие голубые складки плотно обхватывают его, в то время как другой {npc2.strapon} молотит по заднице девушки, а внутренние стенки туго сжимают его.. точно так же, как глотка девушки сжимает {npc3.your} {npc3.strapon}.")
 
 		if (!didFirst):
-			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", все её отверстия сжимают "+str(cocksText)+" urgently.")
+			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" внутри клетки" if isCaged else "")+", все её отверстия сжимают "+str(cocksText)+" urgently.")
 
 		else:
-			saynn("Следующий оргазм Артики приближается стремительно, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", все её отверстия сжимают "+str(cocksText)+" urgently.")
+			saynn("Следующий оргазм Артики приближается стремительно, её член бешено пульсирует,"+str(" внутри клетки" if isCaged else "")+", все её отверстия сжимают "+str(cocksText)+" urgently.")
 
 		# (( Gangbang FAST with {npc1.name} fucking pussy, {npc2.name} fucking ass and {npc3.name} fucking throat. ))
 		addButton("Продолжить", "Смотреть, что будет дальше", "gang_cum")
@@ -378,7 +378,7 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("горло, киску и задницу Артики спазмировали вокруг трёх "+str(cocksText)+" глубоко застрявших в ней, выцеживая из них каждую каплю спермы,"+str("lube" if  onlyStrapons else "")+" пока её накрывало волнами наслаждения."+str(". for the first time.. but certainly not the last." if !didFirst else "")+"")
+		saynn("горло, киску и задницу Артики спазмировали вокруг трёх "+str(cocksText)+" глубоко застрявших в ней, выцеживая из них каждую каплю спермы,"+str("lube" if  onlyStrapons else "")+" пока её накрывало волнами наслаждения."+str(". в первый раз... но точно не в последний." if !didFirst else "")+"")
 
 		saynn("Практически в тот же самый момент её собственный {artica.penis} извергся, выбрасывая густые струи спермы, в то время как её киска выпустила фонтан прозрачной девичьей смазки... Её тело дергается и дрожит, ноги трясутся, а пальцы ног сильно поджимаются.")
 

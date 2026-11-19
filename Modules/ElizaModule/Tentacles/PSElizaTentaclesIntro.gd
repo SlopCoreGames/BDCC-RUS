@@ -128,7 +128,7 @@ func _react(_action: String, _args):
 
 	if(_action == "eliza_stands"):
 		processTime(5*60)
-		addMessage("New task added!")
+		addMessage("Добавлена новая задача!")
 
 	setState(_action)
 

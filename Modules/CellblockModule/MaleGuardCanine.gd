@@ -75,7 +75,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A buff canine wearing a guard uniform and armor, this one don’t look kind"
+	return "Мускулистый пёс в форме охранника и броне — и вид у него явно не из добрых."
 
 func getSpecies():
 	return ["canine"]
@@ -84,7 +84,7 @@ func _getAttacks():
 	return ["DoubleCuffPC", "CuffPCHands", "ForceGagPC", "ForceMuzzlePC", "stunbatonAttack", "stunbatonOverchargeAttack", "simplekickattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return "The guard prepares to fight"
+	return "Охранница готовится к бою"
 	
 func getLootTable(_battleName):
 	return GuardLoot.new()

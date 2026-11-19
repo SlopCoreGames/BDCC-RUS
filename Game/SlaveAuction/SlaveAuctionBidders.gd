@@ -7,7 +7,7 @@ func generateBidders():
 	bidders.clear()
 	for _i in range(3):
 		var newBidder:AuctionBidder = AuctionBidder.new()
-		newBidder.name = "Bidder "+str(_i + 1)
+		newBidder.name = "Участник торгов"+str(_i + 1)
 		newBidder.bidderID = "bidder"+str(_i + 1)
 		newBidder.index = _i
 		#newBidder.setAuction(self)

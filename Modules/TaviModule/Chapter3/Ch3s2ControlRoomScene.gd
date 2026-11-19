@@ -38,7 +38,7 @@ func _react(_action: String, _args):
 func _react_scene_end(_tag, _result):
 	if(_tag == "computerhack"):
 		processTime(10*60)
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 		addExperienceToPlayer(100)
 		setState("after_completed")
 	

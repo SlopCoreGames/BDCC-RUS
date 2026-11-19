@@ -880,7 +880,7 @@ func loadData(data):
 	condomBroke = SAVE.loadVar(data, "condomBroke", false)
 
 func getDevCommentary():
-	return "Petplay is fun. If you ever played TiTs, that game had a really fun scene where you walk one of the cuties around the station. It was pure text but still fun to read. Very lewd too. It probably what planted a seed in my head and made me enjoy that particular kink ^^. But yeah, I tried to replicate that fun in this scene. To lesser success probably.. If you want better petplay scene, try Rahi's content, I tried to go all-out in those scenes.."
+	return "Петплей — это весело. Если вы когда-нибудь играли в TiTs, то помните там одну офигенную сцену, где можно было выгуливать одну из этих милашек по станции. Там был чистый текст, но читать было дико интересно. И очень похотливо. Наверное, именно тогда у меня и зародился этот фетиш ^^. В общем, я попытался воссоздать тот драйв в этой сцене. Но, скорее всего, получилось не так круто... Если захотите петплей получше, зацените контент Рахи — в тех сценах я выложился по полной."
 
 func hasDevCommentary():
 	return true

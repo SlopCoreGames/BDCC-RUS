@@ -12,11 +12,11 @@ func _run():
 		saynn("Из тени позади тебя доносится хриплый мужской голос.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
-			"Hey, you’re not supposed to be here.",
-			"You got lost, didn’t you.",
-			"Someone is feeling risky today, huh.",
-			"I see a stray inmate.",
-			"Inmates never learn, do they.",
+			"Эй, тебе здесь не место.",
+			"Заблудился, да?",
+			"Кто-то сегодня решил рискнуть, а?",
+			"Вижу бродячего зэка.",
+			"Заключенные вечно ничему не учатся, верно?",
 		])+"[/say]")
 
 		saynn("Ты оборачиваешься и видишь тюремного охранника — судя по синей униформе и броне, это точно он. У него явно выраженные звериные черты: стоячие волчьи уши, длинная морда с грубым носом и виляющий хвост.")
@@ -24,10 +24,10 @@ func _run():
 		saynn("Он хватает электрошокер и небрежно приближается к тебе, оглядывая тебя хищным взглядом.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
-			"What are we gonna do about this?",
-			"Care to explain yourself?",
-			"Why shouldn’t I report you right here and now?",
-			"I don’t like your odds.",
+			"И что нам с этим делать?",
+			"Не хочешь объясниться?",
+			"Почему я не должен доложить на тебя прямо здесь и сейчас?",
+			"Шансов у тебя мало.",
 		])+"[/say]")
 
 		saynn("Похоже, назревает драка.")
@@ -43,10 +43,10 @@ func _run():
 		saynn("Охранница подходит к тебе вплотную.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
-			"Time to dispense some justice",
-			"Let’s see if this will be enough of a lesson.",
-			"Resisting will only make this worse for you.",
-			"This is gonna serve as a punishment.",
+			"Пришло время вершить правосудие.",
+			"Посмотрим, хватит ли этого, чтобы преподать тебе урок.",
+			"Сопротивление сделает только хуже.",
+			"Это послужит тебе наказанием.",
 		])+"[/say]")
 
 		saynn("Он достает какие-то средства фиксации и пытается надеть их на тебя!")
@@ -63,9 +63,9 @@ func _run():
 			saynn("Ты используешь его же наручники, чтобы сковать его, делая его практически беспомощным.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
-			"What’s your plan?",
-			"Don’t leave me like this, inmate.",
-			"A short goodbye fuck before you leave would be nice.",
+			"Какой у тебя план?",
+			"Не оставляй меня так, заключенная.",
+			"Было бы неплохо разок трахнуться на прощание, перед тем как ты свалишь.",
 		])+"[/say]")
 
 		addButton("Оставить его в покое", "Просто обчистить его и свалить, пока тебя не заметили", "endthescene")

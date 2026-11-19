@@ -17,7 +17,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "щупать задницу"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Begin groping your rear"
+	return "Начать ощупывать свою задницу"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -27,14 +27,14 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You shift one of your hands down to your {pc.thick} butt and get a good grasp on it. Yeah, you have a good ass, the palm of your hand slides along the surface and explores it."
+		text += "Ты опускаешь одну руку к своей {pc.thick} заднице и крепко сжимаешь её. Да уж, жопа у тебя что надо — ладонь скользит по коже, исследуя каждый изгиб."
 		text += "\n\n"
 	else:
-		text += "You put your free hand on your rear and give it a little rub. Your {pc.thick} ass is on display."
+		text += "Ты кладешь свободную руку на задницу и слегка её потираешь. Твоя {pc.thick} жопа выставлена напоказ."
 		text += "\n\n"
 
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.HasCumInsideAnus)):
-		text += "Some cum leaks out of your tailhole, a sign of your previous sex."
+		text += "Из твоего ануса сочится немного спермы — след твоего недавнего секса."
 		text += "\n\n"
 
 	return {

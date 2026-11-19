@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Теребить киску"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Begin rubbing your kitty"
+	return "Начать теребить киску"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,10 +30,10 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You slide your hand down to your crotch and find your cute pussy. You give the sensitive folds a few rubs to make sure they’re all nice and wet."
+		text += "Ты ведешь рукой вниз к промежности и нащупываешь свою милую киску. Ты несколько раз проводишь пальцами по чувствительным складкам, чтобы убедиться, что они стали совсем мокрыми."
 		text += "\n\n"
 	else:
-		text += "Your hand lands on your pussy and gives your clit a little rub. You moan and close your legs slightly with the stuck hand still teasing your slit."
+		text += "Твоя рука ложится на киску и слегка ласкает клитор. Ты стонешь и слегка сводишь ноги, пока зажатая между ними рука продолжает дразнить твою щелочку."
 		text += "\n\n"
 
 	return {

@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Используй электродубинку"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -19,9 +19,9 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		return genericDodgeMessage(_attacker, _receiver)
 	
 	var texts = [
-		"{attacker.name} lands a strike on {receiver.name} with a stun baton, sending a painful shock through {receiver.his} body",
-		"{attacker.name}’s stun baton hits {receiver.name} causing a huge spike of pain.",
-		"{attacker.name} lands {attacker.his} attack, sending an electric shock through {receiver.name}’s body.",
+		"{attacker.name} наносит удар электрошоковой дубинкой по {receiver.name}, пропуская болезненный разряд через всё тело {receiver.his}",
+		"Электрошокер {attacker.name} бьет по {receiver.name}, вызывая резкую вспышку боли.",
+		"{attacker.name} наносит {attacker.his} атаку, пропуская электрический разряд через тело {receiver.name}.",
 	]
 	var text = RNG.pick(texts)
 	
@@ -35,9 +35,9 @@ func _canUse(_attacker, _receiver, _context = {}):
 
 func getAnticipationText(_attacker, _receiver):
 	return RNG.pick([
-		"{attacker.name} increases the grip on {attacker.his} stun baton and lunges forward, weapon first.",
+		"{attacker.name} крепче сжимает {attacker.his} электродубинку и делает выпад вперед, нанося удар оружием.",
 		"{attacker.name} swings {attacker.his} stun baton at {receiver.name}, aiming for {receiver.his} exposed areas where it would have the most effect.",
-		"{attacker.name}’s stun baton makes sparks as {attacker.he} prepares to strike {receiver.name}.",
+		"Световой дубинка {attacker.name} высекает искры, пока {attacker.he} готовится нанести удар по {receiver.name}.",
 	])
 
 func getRequirements():

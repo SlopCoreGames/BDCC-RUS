@@ -8,18 +8,18 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Find a way to help a hypnotist dragon with his stallion problem. Also, get a chance to explore Vion's hypnosis skills. This content was submitted by PeteTimesSix."
-	return "Find a way to help a hypnotist dragon with his stallion problem. (By PTS)"
+		return "Найдите способ помочь дракону-гипнотизеру с его проблемой «жеребца». Также получите шанс изучить навыки гипноза Виона. Этот контент был предоставлен пользователем PeteTimesSix."
+	return "Найдите способ помочь дракону-гипнотизеру с его проблемой «жеребца». (От PTS)"
 
 func getKinks() -> Array:
 	return [
-		"Player will be both, a dom and a sub",
-		"Hypnosis",
-		"Violence",
+		"Игрок будет выступать в обеих ролях: и доминанта, и сабмиссива",
+		"Гипноз",
+		"Насилие",
 	]
 
 func getCompletedDesc() -> String:
-	return "You managed to helped Vion with Rush!"
+	return "Вам удалось помочь Виону с Рашем!"
 
 func getStatus() -> int:
 	if(getFlag("HypnokinkModule.RushSubdued", false)):
@@ -30,11 +30,11 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIfBool(GM.main.getDays() >= 4), "Let at least 4 days pass."],
-		[completeIf("HypnokinkModule.DidVionGlance"), "Explore the prison until you stumble upon Vion randomly."],
-		[completeIf("HypnokinkModule.DidVionIntroduction"), "Find Vion in the lilac cellblock."],
-		[completeIf("HypnokinkModule.KnowAboutRush"), "Ask him about Rush."],
+		[completeIfBool(GM.main.getDays() >= 4), "Подождите, пока пройдет как минимум 4 дня."],
+		[completeIf("HypnokinkModule.DidVionGlance"), "Исследуйте тюрьму, пока случайно не наткнетесь на Виона."],
+		[completeIf("HypnokinkModule.DidVionIntroduction"), "Найдите Виона в сиреневом блоке камер."],
+		[completeIf("HypnokinkModule.KnowAboutRush"), "Расспросите его о Раше."],
 	]
 
 func getProgressText() -> String:
-	return "Follow the \"Stallion for time\" task."
+	return "Выполните задание \"Стать жеребцом на время\"."

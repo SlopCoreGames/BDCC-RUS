@@ -21,10 +21,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Bleeding"
+	return "Кровотечение"
 
 func getEffectDesc():
-	return "I'm losing 3 health a turn. " + str(turns) + " more turns"
+	return "Я теряю 3 единицы здоровья за ход. " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/bleeding-wound.png"

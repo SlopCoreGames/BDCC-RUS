@@ -8,18 +8,18 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Become the Grand Champion of the hidden underground arena that has only rule: No Rules!"
-	return "Become the Grand Champion of the hidden underground arena that has only rule: No Rules!"
+		return "Стань великим чемпионом скрытой подземной арены, где действует только одно правило: никаких правил!"
+	return "Стань великим чемпионом скрытой подземной арены, где действует только одно правило: никаких правил!"
 
 func getKinks() -> Array:
 	return [
-		"Violence",
-		"Noncon",
-		"Sex (pc can be top or bottom)",
+		"Насилие",
+		"Нонкон",
+		"Секс (ПК может быть как сверху, так и снизу)",
 	]
 
 func getCompletedDesc() -> String:
-	return "You defeated Avy and became the Grand Champion!"
+	return "Вы победили Эви и стали Великим Чемпионом!"
 
 func getStatus() -> int:
 	if(getFlag("FightClubModule.AvyGotRekt", false)):
@@ -32,14 +32,14 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("FightClubModule.BulldogFirstTimeHappened"), "Find the hidden entrance to the underground arena somewhere near the gym."],
-		[completeIf("FightClubModule.BulldogBypassed"), "Get into the arena by paying off the bulldog or fighting him."],
-		[completeIf("FightClubModule.AnnouncerIntroduced"), "Talk with the Announcer."],
-		[completeIf("FightClubModule.AvyIntroduced"), "Talk with Avy."],
-		[completeIf("FightClubModule.FightClubFirstArenaIntroduction"), "Start your first fight at the arena!"],
+		[completeIf("FightClubModule.BulldogFirstTimeHappened"), "Найдите скрытый вход в подземную арену где-то неподалеку от спортзала."],
+		[completeIf("FightClubModule.BulldogBypassed"), "Попадите на арену, подкупив бульдога или сразившись с ним."],
+		[completeIf("FightClubModule.AnnouncerIntroduced"), "Поговорить с Диктором."],
+		[completeIf("FightClubModule.AvyIntroduced"), "Поговорить с Эви."],
+		[completeIf("FightClubModule.FightClubFirstArenaIntroduction"), "Начните свой первый бой на арене!"],
 	]
 
 func getProgressText() -> String:
 	if(getFlag("FightClubModule.GotTaskToStealPlant", false) && !getFlag("FightClubModule.AvyGotRekt", false)):
-		return "Complete the \"The Fallen Champion\" task in order to defeat Avy."
-	return "Progress through the arena ranks by winning fights."
+		return "Выполните задание \"Падший Чемпион\", чтобы победить Эви."
+	return "Продвигайтесь по рангам арены, побеждая в боях."

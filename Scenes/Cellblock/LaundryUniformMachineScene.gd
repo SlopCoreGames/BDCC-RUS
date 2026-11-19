@@ -142,7 +142,7 @@ func _react(_action: String, _args):
 			uniform.setInmateType(GM.pc.getInmateType())
 			GM.pc.getInventory().addItem(uniform)
 			
-			addMessage("A fresh uniform was added to your inventory")
+			addMessage("В ваш инвентарь добавлена свежая униформа")
 			
 			setState("afterPrinting")
 		return

@@ -25,7 +25,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "An elegant feline with pastel yellow fur. Wears a lab coat and carries quite a few medical tools on her belt"
+	return "Элегантная кошка с пастельно-жёлтой шерстью. Носит лабораторный халат, а на её поясе висит немало медицинских инструментов"
 
 func getSpecies():
 	return ["feline"]

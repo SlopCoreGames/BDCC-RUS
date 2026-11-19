@@ -151,7 +151,7 @@ func _react_scene_end(_tag, _result):
 			#addExperienceToPlayer(5)
 
 func getDevCommentary():
-	return "I was.. pretty out of it while writing this scene. That's why its so short and doesn't have any sex scenes and is kinda bad.\n\nThis scene is why I shouldn't write anything while I'm sad/depressed, heh. Should I remove it/rewrite it? Maybe. But to get rid of these bullies completely I would probably try to make a quest. Something about you and Nova teaming up and trying to destroy their gang.. or getting gangbanged x3 why not both"
+	return "Когда я писал эту сцену, я был... в довольно помутненном состоянии. Поэтому она такая короткая, в ней нет секса, и она какая-то паршивая.\n\n Эта сцена — наглядный пример того, почему не стоит писать что-либо, когда тебе грустно или ты в депрессии, хех. Стоит ли её удалить или переписать? Возможно. Но чтобы избавиться от этих хулиганов окончательно, я бы, наверное, попытался сделать квест. Что-то вроде того, как ты и Нова объединяетесь, чтобы разнести их банду... или чтобы вас самих загангангпаили x3, а почему бы и нет, сразу оба варианта?"
 
 func hasDevCommentary():
 	return true

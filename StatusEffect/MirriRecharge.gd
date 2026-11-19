@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Recharging.."
+	return "Перезарядка..."
 
 func getEffectDesc():
-	return "Mirri's suit is recharging. She can't use her abilities for " + str(turns) + " more turn"+("s" if turns != 1 else "")
+	return "Костюм Мирри перезаряжается. Она не может использовать свои способности в течение " + str(turns) + " хода"+("s" if turns != 1 else "")
 
 func getEffectImage():
 	return "res://Images/StatusEffects/battery-empty.png"

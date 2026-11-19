@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Теребить клитор"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Give your sensitive bean some love"
+	return "Удели немного внимания своей чувствительной бусинке"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,26 +30,26 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "Your finger switches focus to your cute clit and rubs it in a smooth circular motion. It makes your neglected pussy folds get wet with even more fluids. The desire fills your mind."
+		text += "Твой палец переключается на милый клитор, совершая плавные круговые движения. От этого твои заброшенные складки киски намокают всё сильнее. Мысли наполняются желанием."
 		text += "\n\n"
 	else:
-		text += "You quickly rub your nub from side to side, producing a cute moan as your pussy juices drip down your {pc.masc} thighs."
+		text += "Ты быстро трешь свой бугорок из стороны в сторону, издавая милый стон, пока соки твоей киски стекают по {pc.masc} бедрам."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You make sure to show off how much pleasure teasing your clit brings you to hopefully drive your opponent desperate."
+		text += "Ты стараешься показать, какое наслаждение приносит тебе ласка клитора, надеясь довести противницу до отчаяния."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasEffect(StatusEffect.HasCumInsideVagina)):
-		text += "As you play with your pussy, old cum leaks out of your used fuckhole, creating a mess."
+		text += "Пока ты играешь со своей киской, из твоей использованной дырочки вытекает старая сперма, создавая грязь."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasPenis()):
-		text += "Your {pc.cock} is throbbing and leaking pre as you pleasure your other set of bits."
+		text += "Твоя {pc.cock} пульсирует и течет от предэякулята, пока ты ласкаешь другие свои эрогенные зоны."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.getLust() >= 50):
-		text += "You feel really close, your drippy cunt visibly pulsates and squirts with your juices."
+		text += "Ты чувствуешь невероятную близость; твоя мокрая щелка заметно пульсирует и брызжет соками."
 		text += "\n\n"
 
 	return {

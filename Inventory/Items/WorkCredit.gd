@@ -21,9 +21,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Credit in",
+			"name": "Зачислить кредиты",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Push the credits to your account",
+			"description": "Перевести кредиты на свой счет",
 		},
 	]
 

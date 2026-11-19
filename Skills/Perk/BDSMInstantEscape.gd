@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Мгновенное удовлетворение"
 
 func getVisibleDescription():
-	return "You know exactly where to tug to take that damn gag off. The struggling minigame now has an extra small spot that will unlock the restraint instantly if hit."
+	return "Ты точно знаешь, за какой край дернуть, чтобы снять этот чертов кляп. В мини-игре с сопротивлением появится крошечная зона: если попасть в нее, путы расстегнутся мгновенно."
 
 func getSkillTier():
 	return 2

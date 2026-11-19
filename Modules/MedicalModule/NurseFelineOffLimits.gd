@@ -12,11 +12,11 @@ func _run():
 		saynn("Ты натыкаешься на медсестру. Ты пытаешься спрятаться, но уже слишком поздно.")
 
 		saynn("[say=nurse]"+RNG.pick([
-			"This is a mental ward, you can't be here without a leash.",
-			"You got lost? I can help you.",
-			"You can't be here.",
-			"Hey, you. Did you escape?",
-			"Whacha doin’ there.",
+			"Это психиатрическое отделение, здесь нельзя находиться без поводка.",
+			"Заблудился? Я могу тебе помочь.",
+			"Тебе здесь не место.",
+			"Эй, ты! Ты что, сбежал?",
+			"Ну и чем это ты тут занимаешься?",
 		])+"[/say]")
 
 		saynn("Её голос звучит женственно, и хотя она всего лишь медсестра, она выхватывает электрошокер. Она выглядит высокой и довольно подтянутой, как и большинство фелинок.")
@@ -24,10 +24,10 @@ func _run():
 		saynn("Она замирает на мгновение, готовясь к прыжку.")
 
 		saynn("[say=nurse]"+RNG.pick([
-			"Give up and I won't hurt you. Too much",
-			"Get on the floor. I give you one chance.",
-			"Don’t make me use my claws, just surrender.",
-			"Time to teach you a lesson.",
+			"Сдавайся, и я не буду причинять тебе боль. Ну, слишком сильно.",
+			"На пол! Даю тебе один шанс.",
+			"Не заставляй меня выпускать когти, просто сдавайся.",
+			"Пора преподать тебе урок.",
 		])+"[/say]")
 
 		saynn("Похоже, назревает драка.")
@@ -43,10 +43,10 @@ func _run():
 		saynn("Медсестра подходит к тебе. Она достает средства фиксации и пытается надеть их на тебя!")
 
 		saynn("[say=nurse]"+RNG.pick([
-			"Now get out of here.",
-			"This will be a lesson for you. Now go away.",
-			"Resisting will only make this worse for you.",
-			"This is gonna serve as a punishment.",
+			"А теперь — брысь отсюда.",
+			"Это будет тебе уроком. А теперь проваливай.",
+			"Сопротивление сделает только хуже.",
+			"Это послужит тебе наказанием.",
 		])+"[/say]")
 
 		# (scene ends)
@@ -61,9 +61,9 @@ func _run():
 			saynn("Ты используешь её же наручники, чтобы сковать её, делая её практически беспомощной.")
 
 		saynn("[say=nurse]"+RNG.pick([
-			"Nice moves. What’s your plan?",
-			"Don’t leave me like this, inmate.",
-			"A little kiss before you leave?",
+			"Хорошие движения. Какой у тебя план?",
+			"Не оставляй меня так, заключенная.",
+			"Маленький поцелуй перед уходом?",
 		])+"[/say]")
 
 		addButton("Оставь её в покое", "Просто обчисти её и свали, пока тебя не заметили", "endthescene")

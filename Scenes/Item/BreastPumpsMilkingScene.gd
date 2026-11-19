@@ -52,7 +52,7 @@ func _reactInit():
 		return
 	
 	var howMuchTransferred = GM.pc.getBodypart(BodypartSlot.Breasts).getFluids().transferTo(item, 1.0)
-	addMessage("You managed to milk your breasts for "+str(Util.roundF(howMuchTransferred))+" ml")
+	addMessage("Тебе удалось подоить грудь в течение "+str(Util.roundF(howMuchTransferred))+" ml")
 
 func _run():
 	if(state == ""):

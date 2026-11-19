@@ -34,10 +34,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Aura Of Dominance"
+	return "Аура доминирования"
 
 func getEffectDesc():
-	return character.getName() + "'s dominant aura makes them feel stronger!"
+	return character.getName() + "доминирующая аура заставляет их чувствовать себя сильнее!"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/grab.png"

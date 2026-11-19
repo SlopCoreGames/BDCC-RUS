@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Жажда власти"
 
 func getVisibleDescription():
-	return "Fuck feeling tired. Having 100 or more stamina means you do 20% more [color="+DamageType.getColorString(DamageType.Physical)+"]Physical damage[/color]."
+	return "К черту усталость. Если запас выносливости составляет 100 или более, вы наносите на 20% больше [color="+DamageType.getColorString(DamageType.Physical)+"]физического урона[/color]."
 
 func getSkillTier():
 	return 1

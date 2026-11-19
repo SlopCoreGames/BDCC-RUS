@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Чесать-чесать!"
 
 func getVisibleDescription():
-	return "You learned to use your claws in a fight, sometimes you will cause bleeding when punching somebody"
+	return "Вы научились использовать когти в бою, поэтому иногда ваши удары кулаками будут вызывать кровотечение."
 
 func getSkillTier():
 	return 0

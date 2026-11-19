@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Сильный укус"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -30,7 +30,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} lunges forward at {receiver.name}, trying to sink {attacker.his} sharp fangs into {receiver.him}!"
+	return "{attacker.name} бросается на {receiver.name}, пытаясь вонзить {attacker.his} острые клыки в {receiver.him}!"
 
 func getRecieverArmorScaling(_attacker, _receiver, _damageType) -> float:
 	if(_attacker.hasPerk(Perk.SexBiter)):

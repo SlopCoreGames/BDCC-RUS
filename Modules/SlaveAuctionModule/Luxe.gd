@@ -74,7 +74,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A wolf with dark fur and a very mean stare."
+	return "Волк с темной шерстью и очень свирепым взглядом."
 
 func getChatColor():
 	return "#D8D500"

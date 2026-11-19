@@ -11,9 +11,9 @@ func _run():
 		saynn("Элиза входит в твою камеру и опускается перед тобой на корточки. Она хватает поводок и пытается пристегнуть его к твоему ошейнику.")
 
 		saynn("[say=eliza]"+RNG.pick([
-			"Shower time~.",
-			"Let’s get you showered.",
-			"Follow me to the shower.",
+			"Время душа~.",
+			"Давай-ка тебя помоем.",
+			"Иди за мной в душ.",
 		])+"[/say]")
 
 		addButton("Душ!", "Идти за Элизой", "shower!")
@@ -33,7 +33,7 @@ func _run():
 	if(state == "shower!"):
 		aimCamera("medical_shower")
 		playAnimation(StageScene.Solo, "walk")
-		setLocationName("Shower")
+		setLocationName("Душ")
 		
 		saynn("Она приводит тебя в душевую. Безликий серый пол, плитка на стенах и несколько рядов душевых леек.")
 
@@ -149,19 +149,19 @@ func _run():
 
 		# (if has pussy and cock)
 		if(GM.pc.hasVagina() && GM.pc.hasPenis()):
-			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо, {pc.pussyStretch} киску и {pc.cock} — полный комплект!")
+			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("демонстрируя тяжелый живот между твоих ног" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо, {pc.pussyStretch} киску и {pc.cock} — полный комплект!")
 
 		# (if has just pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо и {pc.pussyStretch} киску, все твои девчачьи местечки!")
+			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("демонстрируя тяжелый живот между твоих ног" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо и {pc.pussyStretch} киску, все твои девчачьи местечки!")
 
 		# (if just cock)
 		elif(GM.pc.hasPenis()):
-			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо и {pc.cock}, все твои запчасти!")
+			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("демонстрируя тяжелый живот между твоих ног" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо и {pc.cock}, все твои запчасти!")
 
 		# (else)
 		else:
-			saynn("Ты решаешься на смелый шаг: наклоняешься вперед, широко расставляя ноги,"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо, все твои интимные места!")
+			saynn("Ты решаешься на смелый шаг: наклоняешься вперед, широко расставляя ноги,"+str("демонстрируя тяжелый живот между твоих ног" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо, все твои интимные места!")
 
 		saynn("Элиза кажется совершенно шокированной; ты оглядываешься и видишь, как она краснеет. Ты тихонько посмеиваешься и начинаешь сильнее покачивать своей {pc.thick} задницей перед ней, делая вид, что моешься, пока вода стекает по твоей спине.")
 
@@ -202,7 +202,7 @@ func _react(_action: String, _args):
 		GM.pc.afterTakingAShower()
 		processTime(60 * 10)
 		
-		addMessage("You feel fresh and clean")
+		addMessage("Ты чувствуешь себя свежим и чистым")
 		
 		if(_action == "be_watched"):
 			GM.pc.addSkillExperience(Skill.Exhibitionism, 10)

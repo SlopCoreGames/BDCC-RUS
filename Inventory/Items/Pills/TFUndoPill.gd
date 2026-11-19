@@ -10,7 +10,7 @@ func getVisibleName():
 	return "Таблетка «Морфинг вовне»"
 	
 func getDescription():
-	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]undo any temporary transformation effects and return your body to its old self.[/color]"
+	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]отменяет любые временные эффекты трансформации и возвращает ваше тело в прежнее состояние.[/color]"
 
 func canUseInCombat():
 	return true
@@ -23,9 +23,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -71,7 +71,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "MorphAway",
+		"name": "Морф-отмена",
 		"usedName": "a MorphAway pill",
 		"desc": getDescription(),
 		"scoreOnSub": 0.0,

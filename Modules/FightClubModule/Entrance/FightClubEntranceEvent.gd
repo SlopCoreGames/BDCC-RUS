@@ -10,10 +10,10 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(!getFlag("FightClubModule.BulldogFirstTimeHappened")):
 		if(_triggerID == Trigger.EnteringRoom):
-			addButtonUnlessLate("Bulldog", "Approach the guy", "bulldog")
+			addButtonUnlessLate("Бульдог", "Подойди к парню", "bulldog")
 	elif(!getFlag("FightClubModule.BulldogBypassed")):
 		if(_triggerID == Trigger.EnteringRoom):
-			addButtonUnlessLate("Bulldog", "Approach the guy", "bulldogtalk")
+			addButtonUnlessLate("Бульдог", "Подойди к парню", "bulldogtalk")
 	else:
 		addButton("Подполье", "Спуститься в бойцовский клуб", "fightclub")
 

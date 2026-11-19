@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Быстрое зачатие"
 
 func getVisibleDescription():
-	return "Your seed posseses incredible properties. Cumming inside someone's pussy when you have full stamina and your balls are [b]full[/b] will give them a fertility boost and speed up any pregnanices!"
+	return "Ваше семя обладает невероятными свойствами. Если кончить в киску, когда у вас полная выносливость, а яйца [b]полны[/b], это даст им мощный толчок к фертильности и ускорит любое зачатие!"
 
 func getSkillTier():
 	return 1
@@ -34,4 +34,4 @@ func onSexEvent(_event:SexEvent):
 					if(loadSize >= cumProduction.getCapacity()):
 						_event.getTargetChar().addEffect(StatusEffect.RapidConception)
 						if(_event.getSourceChar().isPlayer()):
-							GM.main.addMessage("Your quality seed makes them more fertile!")
+							GM.main.addMessage("Ваше качественное семя делает их более плодовитыми!")

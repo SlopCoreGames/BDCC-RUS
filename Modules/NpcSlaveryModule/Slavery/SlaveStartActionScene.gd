@@ -42,7 +42,7 @@ func _run():
 			addDisabledButton("Погнали!", actionCanStartInfo[1])
 		else:
 			addDisabledButton("Погнали!", "Условия для этого действия не выполнены!")
-		addButtonAt(14, "Cancel", "You changed your mind", "endthescene_cancel")
+		addButtonAt(14, "Отмена", "Вы передумали", "endthescene_cancel")
 		
 		sayn("Действие: "+action.getVisibleName())
 		if(mainSlave != ""):

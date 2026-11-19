@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Мууу"
 
 func getVisibleDescription():
-	return "Your breasts got so used to milking that they no longer feel sore after it. Milk all you want!"
+	return "Твоя грудь так привыкла к дойке, что после неё больше не болит. Доись сколько влезет!"
 
 func getSkillTier():
 	return 2

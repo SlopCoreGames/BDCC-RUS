@@ -90,7 +90,7 @@ func _run():
 
 func _react(_action: String, _args):
 	if(_action in ["take_them_off", "keep_them"]):
-		addMessage("Quest completed!")
+		addMessage("Квест выполнен!")
 		addExperienceToPlayer(50)
 	
 	if(_action == "take_them_off"):

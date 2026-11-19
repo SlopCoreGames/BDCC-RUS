@@ -435,7 +435,7 @@ func _run():
 		saynn("Её голос звучит демонически, за ним следует глубокое злобное эхо. Кажется, будто твоя душа вибрирует в такт её смеху. Тави выглядит горячей, в буквальном смысле... Но это не может быть правдой. Это должно быть сном!")
 
 		saynn("[say=pc]Э-это безумие... Это всё из-за наркотиков. Я под кайфом, ничего из этого не реально![/say]")
-		saynn("Из-за спины Тави широко раскинулись два гигантских крыла. С их помощью она прыгает к тебе и прижимает тебя копытом к полу." +   ( " The hoof that starts burning any clothes that you are wearing, leaving you quite exposed. Her green flames don’t seem to be hurting you though." if(!GM.pc.isFullyNaked())   else " Your naked chest looks like it’s on fire but her green flames don’t seem to be hurting you though.")   )
+		saynn("Из-за спины Тави широко раскинулись два гигантских крыла. С их помощью она прыгает к тебе и прижимает тебя копытом к полу." +   ( " Копыто, которое начинает прожигать любую твою одежду, оставляя тебя практически нагим. Впрочем, её зелёное пламя, кажется, совсем не причиняет тебе боли." if(!GM.pc.isFullyNaked())   else " Твоя обнажённая грудь выглядит так, будто она в огне, но её зелёное пламя, кажется, совсем не причиняет тебе боли.")   )
 
 		saynn("[say=tavi]Ха-ха. Думаешь, это всего лишь сон? Но кто сказал, что ты проснешься? ГЛУПЫШКА.[/say]")
 
@@ -452,7 +452,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "continue7")
 
 	if(state == "continue7"):
-		saynn("Тави убирает копыто от твоей груди и делает шаг назад."+ (", her massive hard horsecock sways a lot from each movement" if(getFlag("TaviModule.ch2DrugsPickedFuta")) else "") +".")
+		saynn("Тави убирает копыто от твоей груди и делает шаг назад."+ (", её массивный, твёрдый лошачий член сильно раскачивается при каждом движении" if(getFlag("TaviModule.ch2DrugsPickedFuta")) else "") +".")
 		
 		saynn("[say=tavi]А теперь. На колени, слуга.[/say]")
 
@@ -466,7 +466,7 @@ func _run():
 
 		saynn("[say=pc]П-прости...[/say]")
 
-		saynn("Демоническая Тави приближается к тебе и " + ("plops her flared member onto your forehead, letting it drip hot glowing precum" if(getFlag("TaviModule.ch2DrugsPickedFuta")) else "lets her slit drip hot girlcum") + " на твою голову и спину.")
+		saynn("Демоническая Тави приближается к тебе и " + ("шлёпает своим раздутым членом тебе на лоб, позволяя горячей светящейся предэякуляту капать на тебя" if(getFlag("TaviModule.ch2DrugsPickedFuta")) else "позволяет своей щели сочиться горячей девичьей смазкой") + " на твою голову и спину.")
 
 		saynn("[say=tavi]Прости кого?[/say]")
 

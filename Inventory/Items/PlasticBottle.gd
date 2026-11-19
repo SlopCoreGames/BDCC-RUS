@@ -36,19 +36,19 @@ func generateFluids():
 func getPossibleActions():
 	return [
 		{
-			"name": "Transfer fluids",
+			"name": "Перекачать жидкость",
 			"scene": "FluidTransferScene",
-			"description": "Transfer the fluids between fluid containers",
+			"description": "Перелить жидкость из одного контейнера в другой",
 		},
 		{
-			"name": "Drink from",
+			"name": "Выпить из",
 			"scene": "DrinkFromScene",
-			"description": "Swallow the contents of this item",
+			"description": "Проглотить содержимое этого предмета",
 		},
 		{
-			"name": "Collect fluids from you",
+			"name": "Собрать выделяющуюся жидкость",
 			"scene": "CatchBodyFluidsScene",
-			"description": "Catch some of the fluids that you are covered with",
+			"description": "Собрать часть жидкости, которой ты покрыта",
 		},
 	]
 

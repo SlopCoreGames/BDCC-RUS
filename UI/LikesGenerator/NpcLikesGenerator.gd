@@ -39,7 +39,7 @@ func updateText():
 		if(uiLine.getCurrentValue() == Interest.Neutral):
 			continue
 		
-		result += "\t\t"+"InterestTopic."+uiLine.getInterestID()+": "+"Interest."+str(uiLine.getCurrentValue())+",\n"
+		result += "\t\t"+"Тема интереса."+uiLine.getInterestID()+": "+"Интерес."+str(uiLine.getCurrentValue())+",\n"
 		
 	result += "\t}"
 	

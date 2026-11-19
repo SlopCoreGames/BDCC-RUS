@@ -16,7 +16,7 @@ func isPlayable():
 	return true
 
 func getVisibleDescription():
-	return "They roar and stuff"
+	return "Они там рычат и всё такое"
 
 func getDefaultArms(_gender):
 	return "anthroarms"

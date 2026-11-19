@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Restraint forcing chance "+text+"%"
+	return "Шанс на успешное навязывание ограничений "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.RestraintForcingSuccess, amount/100.0)

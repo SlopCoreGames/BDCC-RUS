@@ -14,7 +14,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Кончить"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Embrace the orgasm.. If you are in a fight, you will lose and succumb to your enemy"
+	return "Отдайся оргазму... Если ты в бою, ты проиграешь и полностью подчинишься врагу"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -24,18 +24,18 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You feel your climax approaching fast and decide to let it happen. You produce a series of passionate moans before going over the peak and finally cumming. The orgasmic waves overtake your whole body and cause you to shiver and squirm as you ride off each one."
+		text += "Ты чувствуешь, как приближается пик, и решаешь не сопротивляться. Ты издаешь серию страстных стонов, прежде чем перевалить за вершину и наконец кончить. Волны оргазма захлестывают всё тело, заставляя тебя дрожать и извиваться, проживая каждую из них."
 		text += "\n\n"
 	else:
-		text += "The ecstatic waves suddenly wash over you, leaving you no choice but to cum. You let out some long moans as your body betrays you, most muscles begin flexing and tensing up, legs and arms shiver, you’re shaking and quivering as your eyes shine brightly with lust and desire."
+		text += "Экстатические волны внезапно накрывают тебя, не оставляя выбора, кроме как кончить. Ты издаешь долгие стоны, пока тело предает тебя: мышцы начинают сокращаться и напрягаться, руки и ноги дрожат, а глаза сияют от похоти и желания."
 		text += "\n\n"
 	
 	if(pc.hasPenis()):
-		var ejacPlace : String = "all over the floor"
+		var ejacPlace : String = "по всему полу"
 		var condom:ItemBase = pc.getWornCondom()
 		var broke : bool = false
 		if(condom != null):
-			ejacPlace = "into your condom"
+			ejacPlace = "в свой презерватив"
 			var breakChance:float = condom.getCondomBreakChance()
 			broke = (RNG.chance(breakChance)) # condom broke
 			if(broke):
@@ -44,33 +44,33 @@ func doAction(_lustState: LustCombatState, _args):
 				pc.cumInItem(condom)
 		var ppump = pc.getWornPenisPump()
 		if(ppump!=null):
-			ejacPlace = "into the penis pump"
+			ejacPlace = "в пенис-помпу"
 			pc.cumInItem(ppump)
 			var penis:BodypartPenis = pc.getBodypart(BodypartSlot.Penis)
 			penis.getFluidProduction().drain()
 		
 		
 		if(_lustState.isDoingActivity(LustActivity.StrokingCock)):
-			text += "You stroke yourself just past the orgasm until your {pc.cock} starts throbbing and " + ("shooting ropes of hot sticky {pc.cum} " if pc.getWornChastityCage()==null else "squirting strings of {pc.cum} weakly through its cage ") + ejacPlace+"." + (" The condom breaks, pouring its contents onto the floor." if broke else "") + " You feel your balls being drained as each second the shaft erupts again and again."
+			text += "Ты ласкаешь себя, доходя до самого пика, пока твой {pc.cock} не начинает пульсировать и " + ("выстреливать струями горячей липкой {pc.cum} " if pc.getWornChastityCage()==null else "слабо брызгать струйками {pc.cum} сквозь клетку ") + ejacPlace+"." + (" Презерватив рвется, и всё содержимое выливается на пол." if broke else "") + " Ты чувствуешь, как твои яйца опустошаются, пока ствол извергается снова и снова каждую секунду."
 			text += "\n\n"
 		else:
-			text += "Your {pc.cock} starts throbbing and " + ("shooting ropes of hot sticky {pc.cum} " if pc.getWornChastityCage()==null else "squirting strings of {pc.cum} weakly through its cage ") + ejacPlace+" without you even stroking it." + (" The condom breaks, pouring its contents onto the floor." if broke else "") + " You feel your balls being drained until you’re completely spent."
+			text += "Твой {pc.cock} начинает пульсировать, " + ("выстреливать струями горячей липкой {pc.cum} " if pc.getWornChastityCage()==null else "слабо брызгать струйками {pc.cum} сквозь клетку ") + ejacPlace+" даже когда ты его не ласкаешь." + (" Презерватив рвется, и всё содержимое выливается на пол." if broke else "") + " Ты чувствуешь, как твои яйца выжимают досуха, пока ты не кончишь окончательно."
 			text += "\n\n"
 	
 	if(pc.canBeMilked() && _lustState.isDoingActivity(LustActivity.GropingChest)):
-		text += "Your nipples squirt with your {pc.milk} as you grope them through the orgasm! An almost constant flow of {pc.milk} spawns from your {pc.breasts} and flows down your curves as you’re squirming from orgasm."
+		text += "Твои соски брызжут вместе с твоим {pc.milk}, пока ты тискаешь их во время оргазма! Почти непрерывный поток {pc.milk} хлещет из твоей {pc.breasts} и стекает по твоим изгибам, пока ты корчишься от удовольствия."
 		text += "\n\n"
 	
 	if(pc.hasVagina()):
 		if(_lustState.isDoingActivity(LustActivity.SpreadingPussy)):
-			text += "Your pussy squirts with your girly juices all over your fingers and the floor. You close your legs around your hand and feel your slit pulsate and leak more girlcum, coating your {pc.masc} thighs with it too. You pull your digits out of your snatch and let out another moan."
+			text += "Твоя киска брызжет девичьими соками на твои пальцы и пол. Ты сжимаешь ноги вокруг руки, чувствуя, как твоя щелка пульсирует и из нее течет еще больше девичьей спермы, покрывая твои {pc.masc} бедра. Ты вынимаешь пальцы из своей щели и издаешь очередной стон."
 			text += "\n\n"
 		else:
-			text += "Your pussy pulsates and sprays your girly juices all over your thighs and floor."
+			text += "Твоя киска пульсирует и разбрызгивает девичьи соки по твоим бедрам и полу."
 			text += "\n\n"
 
 	if(_lustState.isDoingActivity(LustActivity.ProddingAnal)):
-		text += "Your {pc.analStretch} ring is clenching around your digits. Muscles spasming uncontrollably and putting pressure on your fingers brings you so much extra pleasure."
+		text += "Кольцо твоего {pc.analStretch} сжимается вокруг пальцев. Неконтролируемые спазмы мышц, сдавливающие пальцы, приносят тебе невероятное дополнительное наслаждение."
 		text += "\n\n"
 
 	return {

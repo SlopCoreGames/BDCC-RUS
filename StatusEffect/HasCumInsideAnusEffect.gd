@@ -23,11 +23,11 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Anal Creampie"
+	return "Анальный кримпэй"
 
 func getEffectDesc():
 	if(!character.hasBodypart(BodypartSlot.Anus)):
-		return "Something is wrong"
+		return "Что-то не так"
 	var bodypart = character.getBodypart(BodypartSlot.Anus)
 	var orifice: Orifice = bodypart.getOrifice()
 	var stuffLevel = orifice.getStuffedLevel()
@@ -37,9 +37,9 @@ func getEffectDesc():
 	var messFluids = orifice.getFluidListNames()
 	var humanReadableString = Util.humanReadableList(messFluids)
 	
-	var message = "You got fucked in the ass and now your butt is stuffed with " + str(fluidAmountRounded) + " ml of "+humanReadableString
+	var message = "Тебя оттрахали в задницу, и теперь твоя жопа набита " + str(fluidAmountRounded) + " мл "+humanReadableString
 	if(stuffLevel > 1.0):
-		message += ". Your anus is completely filled"
+		message += ". Твой анус полностью заполнен"
 	
 	var uniqueUsers = orifice.getUniqueCharactersAmount()
 	if(uniqueUsers > 1):

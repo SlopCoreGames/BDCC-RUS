@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "шлепнуть по заднице"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Send your butt to bounce"
+	return "Заставить свою задницу подпрыгивать"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,22 +30,22 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You give your {pc.thick} ass a powerful smack, sending it to jiggle! Ow, you drop a lustful noise as your rear gets a slight red tint."
+		text += "Ты с силой шлепаешь свою {pc.thick} задницу, заставляя её колыхаться! Ох, ты издаешь похотливый звук, а твоя попка слегка краснеет."
 		text += "\n\n"
 	else:
-		text += "You rub your cute butt and then slap it with full force, making it bounce. You let out a moan and caress the area that you smacked so it doesn’t sting as much."
+		text += "Ты ласкаешь свою милую попку, а затем со всей силы хлопаешь по ней, заставляя её подпрыгивать. Ты издаешь стон и поглаживаешь место удара, чтобы оно не так сильно жгло."
 		text += "\n\n"
 	
 	if(RNG.chance(40) && (pc.hasEffect(StatusEffect.HasCumInsideVagina) || pc.hasEffect(StatusEffect.HasCumInsideAnus))):
-		text += "And as you spank yourself, more cum is leaking out of your used hole and dripping down your thighs, creating a mess."
+		text += "И пока ты шлепаешь себя, из твоего использованного отверстия вытекает всё больше спермы, она стекает по твоим бедрам, создавая настоящий беспорядок."
 		text += "\n\n"
 	
 	if(_lustState.isInBattle()):
-		text += "You made sure to show off how your butt jiggles after your smacks."
+		text += "Ты позаботилась о том, чтобы продемонстрировать, как твоя задница колышется после твоих шлепков."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.getLust() >= 50):
-		text += "You pant softly and give your butt another smack. Huff, you feel like you can get off from that."
+		text += "Ты тихонько дышишь и снова шлепаешь себя по заднице. Хафф, кажется, от этого можно даже кончить."
 		text += "\n\n"
 
 	return {

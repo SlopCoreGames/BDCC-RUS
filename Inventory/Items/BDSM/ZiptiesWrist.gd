@@ -37,9 +37,9 @@ func getUnriggedParts(_character):
 	
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return "Some zip ties were forced onto your arms"
+		return "Тебе силой надели на руки пластиковые стяжки"
 	else:
-		return "Some zip ties were forced onto {receiver.nameS} arms"
+		return "Тебе силой надели на {receiver.nameS} руки пластиковые стяжки"
 
 func getInventoryImage():
 	return "res://Images/Items/bdsm/ZipTies.png"

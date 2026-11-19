@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Удар хвостом"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -33,7 +33,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} uses {attacker.his} tail to swipe the ground from under {receiver.name}’s feet!"
+	return "{attacker.name} использует {attacker.his} хвост, чтобы полоснуть по земле прямо из-под ног {receiver.name}!"
 
 func getRequirements():
 	return [AttackRequirement.FreeLegs]

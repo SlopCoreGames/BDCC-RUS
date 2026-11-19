@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Dodge chance "+text+"%"
+	return "Шанс уклонения "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.dodgeChance += (amount/100.0)

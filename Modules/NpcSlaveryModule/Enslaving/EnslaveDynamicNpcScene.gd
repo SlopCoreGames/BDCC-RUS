@@ -98,7 +98,7 @@ func _react(_action: String, _args):
 	if(_action == "stopquest_endthescene"):
 		var theChar:DynamicCharacter = getCharacter(npcID)
 		theChar.setEnslaveQuest(null)
-		addMessage("You stopped trying to enslave "+theChar.getName())
+		addMessage("Вы перестали пытаться поработить "+theChar.getName())
 		endScene()
 		return
 	
@@ -137,7 +137,7 @@ func getDebugActions():
 	return [
 		{
 			"id": "quickEnslave",
-			"name": "Quick Enslave",
+			"name": "Быстрое порабощение",
 			"args": [
 			],
 		},

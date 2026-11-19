@@ -33,6 +33,6 @@ func _react(_action: String, _args):
 		GM.pc.setLocation(_args[0])
 		aimCameraAndSetLocName(_args[0])
 		GM.pc.addStamina(-20)
-		addMessage("Climbing took some of your stamina")
+		addMessage("Восхождение немного истощило вашу выносливость")
 	
 	setState(_action)

@@ -29,7 +29,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Lilac inmate. Pure human with a black skin and a very smooth voice"
+	return "Заключенная по прозвищу Сирень. Чистокровная человечиха с темной кожей и очень бархатистым голосом"
 
 func getChatColor():
 	return "#EE3EFF"
@@ -41,7 +41,7 @@ func _getAttacks():
 	return ["biteattack", "simplekickattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return getName() + " gets into the combat stance and prepares for a fight."
+	return getName() + " принимает боевую стойку и готовится к драке."
 
 func getThickness() -> int:
 	return 60

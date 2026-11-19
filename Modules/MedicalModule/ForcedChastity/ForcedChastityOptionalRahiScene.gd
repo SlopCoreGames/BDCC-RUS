@@ -294,7 +294,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "This is the first scene that I wrote where Rahi acts like a dom ^^. This was way before the dedicated content for Rahi was written. Kind of a test to see if people would like domme Rahi. And I think it was a success ^^\n\nJust so you know, in-game Rahi is not me, not even close. Yes, she is shy. And I'm shy too. That's about it, heh. I used to add lots of dots.. at the end of my chat messages.. people were asking if I'm sad.. I don't think I was.. x3 I still do use them in my writing when I feel like they fit. They help to slow down the scene a little without adding extra words. Like..\n\nSpace.. Stars.. Sky.. Clouds.. Trees.. Rahi.. walking home.."
+	return "Это первая сцена, которую я написала, где Рахи ведет себя как домина ^^. Это было задолго до того, как был написан полноценный контент для неё. Своего рода тест, чтобы понять, понравится ли людям домина Рахи. И, кажется, он прошел успешно ^^\n\nПросто чтобы вы знали: игровая Рахи — это не я, даже близко. Да, она скромница. И я тоже скромница. Вот и всё, хех. Раньше я ставила кучу точек.. в конце своих сообщений в чате.. люди спрашивали, не грущу ли я.. Не думаю, что это было так.. x3 Я до сих пор использую их в текстах, когда чувствую, что они подходят. Они помогают немного замедлить темп сцены, не добавляя лишних слов. Типа..\n\nПространство.. Звезды.. Небо.. Облака.. Деревья.. Рахи.. идет домой.."
 
 func hasDevCommentary():
 	return true

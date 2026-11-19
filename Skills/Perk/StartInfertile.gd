@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Бесплодие"
 
 func getVisibleDescription():
-	return "No matter what you will never be able to get pregnant"
+	return "Что бы ты ни делала, забеременеть тебе всё равно не удастся"
 
 func hiddenWhenLocked() -> bool:
 	return true

@@ -15,30 +15,30 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("Masculine") && _slaveTraits["Masculine"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Take a good look at this strong frame. Built for hard work and endurance, you won’t find a better asset anywhere.",
-			"Broad shoulders, powerful arms, the kind of strength that speaks for itself. Imagine what {slave.he} can do for you.",
-			"Solid and reliable - this one’s a prime example of masculine perfection, capable of handling any task you give {slave.him}.",
-			"Muscle for days, perfect for labor or protection. You’re not just buying a slave, you’re buying power.",
-			"Look at that chiseled physique! Raw strength and endurance packed into a body ready to serve.",
-			"{slave.He} {slave.isAre} built like a beast, strong and commanding. Exactly what any discerning bidder needs in their collection.",
+			"Взгляните на это крепкое телосложение. Созданная для тяжелого труда и выносливости, эта заготовка — лучший актив, который вы когда-либо найдете.",
+			"Широкие плечи, мощные руки — сила, которая говорит сама за себя. Только представьте, на что способен {slave.he} ради вас.",
+			"Крепкий и надежный — этот экземпляр является эталоном мужского совершенства, способным справиться с любой задачей, которую вы поставите перед {slave.him}.",
+			"Гора мышц, идеально подходящая для рабского труда или охраны. Вы покупаете не просто раба, вы покупаете мощь.",
+			"Посмотрите на этот рельеф! Грубая сила и выносливость, заключенные в тело, готовое к служению.",
+			"{slave.He} {slave.isAre} — сложен как зверь, сильный и внушительный. Именно то, что нужно любому искушенному покупателю в его коллекцию.",
 		]))
 	if(_slaveTraits.has("Androgynous") && _slaveTraits["Androgynous"] > 0.0):
 		sayPresenter(RNG.pick([
-			"A rare find - this one walks the line between male and female, a blend of elegance and strength.",
-			"Beautifully balanced, neither too soft nor too rough. The perfect combination of masculine and feminine traits.",
-			"Versatile, alluring - this body offers the best of both worlds, ready to please in any way you desire.",
-			"This one’s fluid form will keep you guessing, a unique addition to any bidder’s collection.",
-			"Not quite one, not quite the other. A true enigma, adaptable and captivating in every way.",
-			"Graceful yet strong, this one carries an aura of mystery that will keep you coming back for more.",
+			"Редкая находка — этот экземпляр балансирует на грани между мужским и женским, сочетая в себе элегантность и силу.",
+			"Прекрасный баланс: не слишком мягкий, но и не слишком грубый. Идеальное сочетание мужских и женских черт.",
+			"Универсальное и манящее тело, предлагающее лучшее из обоих миров и готовое угождать вам любым способом.",
+			"Его изменчивые формы заставят вас гадать, что именно ждет вас впереди — уникальное дополнение к коллекции любого ценителя.",
+			"Ни то, ни другое. Настоящая загадка, гибкая и пленительная во всех смыслах.",
+			"Грациозная, но при этом сильная; её аура таинственности заставит вас возвращаться к ней снова и снова.",
 		]))
 	if(_slaveTraits.has("Feminine") && _slaveTraits["Feminine"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Delicate and soft, this one’s feminine beauty is undeniable - perfect for those with refined tastes.",
-			"Look at those curves, the very embodiment of grace and allure, ready to captivate any master.",
-			"Elegant curves, girly, and all too eager to please - this is the kind of slave you’ll never get enough of.",
-			"A flawless example of femininity, this one’s beauty alone could start a bidding war.",
-			"Gentle curves, soft skin, and an innocent face. You won’t find a more perfect feminine form.",
-			"Sweet, delicate, and oh-so-girly. Perfect for those seeking a softer touch in their collection.",
+			"Нежная и мягкая, её женская красота неоспорима — идеальный выбор для обладателей утонченного вкуса.",
+			"Только взгляните на эти изгибы — само воплощение грации и соблазна, готовое покорить любого господина.",
+			"Элегантные формы, девчачья миловидность и жажда угодить — такая рабыня никогда не надоест.",
+			"Безупречный образец женственности; одной её красоты достаточно, чтобы развязать настоящую войну ставок.",
+			"Мягкие изгибы, нежная кожа и невинное лицо. Вы вряд ли найдете более совершенную женскую фигуру.",
+			"Милая, хрупкая и такая девчачья. Идеально подходит для тех, кто ищет в своей коллекции нежность и мягкость.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Mind, mightChance())

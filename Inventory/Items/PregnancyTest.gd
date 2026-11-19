@@ -18,18 +18,18 @@ func useInCombat(_attacker, _receiver):
 	var text = "Вы следуете инструкции по применению теста и замираете в ожидании результата...\n\n"
 	
 	if(_attacker.isPregnant()):
-		text += "The little screen shows [b]two black lines[/b]."
+		text += "На маленьком экране видны [b]две черные полоски[/b]."
 	else:
-		text += "The little screen shows [b]one black line[/b]. Phew."
+		text += "На маленьком экране видна [b]одна черная полоска[/b]. Фух."
 	
 	return text
 
 func getPossibleActions():
 	return [
 		{
-			"name": "Use",
+			"name": "Использовать",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Use the test",
+			"description": "Использовать тест",
 		},
 	]
 

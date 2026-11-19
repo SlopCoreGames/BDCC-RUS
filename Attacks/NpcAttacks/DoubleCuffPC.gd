@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Сковывает руки и ноги"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -32,11 +32,11 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return _receiver.isPlayer() && !_receiver.hasBoundArms() && !_receiver.hasBoundLegs()
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} grabs you by the collar and tries to pin you to the ground!\n\n[say=attacker]"+RNG.pick([
-		"Use of restraining force is authorized.",
-		"This will go great together with that collar.",
-		"Give up and you might even get to enjoy it.",
-		"Ready to be pacified?",
+	return "{attacker.name} хватает тебя за воротник и пытается прижать к земле!\n\n[say=attacker]"+RNG.pick([
+		"Применение сдерживающей силы разрешено.",
+		"Это будет отлично смотреться вместе с тем ошейником.",
+		"Сдайся, и, возможно, тебе даже понравится.",
+		"Готов к усмирению?",
 	])+"[/say]"
 
 func getRequirements():

@@ -35,77 +35,77 @@ func generateTransformText(_result:Dictionary):
 	var text:String = ""
 	if(newLen > oldLen):
 		text += RNG.pick([
-			"{npc.YourHis} {penis} is growing longer!",
+			"{npc.YourHis} {penis} становится длиннее!",
 		])
 		text += RNG.pick([
-			" The shaft elongates, gaining both length and girth.",
-			" {npc.YouHe} can feel the weight of it shifting as it grows longer.",
-			" A tingling sensation runs through it as it continues to extend.",
-			" The skin stretches smoothly as it grows, becoming more pronounced.",
-			" {npc.YouHe} can see it lengthening before {npc.yourHis} eyes.",
+			" Ствол удлиняется, становясь одновременно длиннее и толще.",
+			" {npc.YouHe} чувствует, как тяжесть смещается по мере того, как он становится длиннее.",
+			" По мере того как он продолжает удлиняться, по нему пробегает покалывающее ощущение.",
+			" Кожа плавно натягивается по мере роста, становясь всё более выраженной.",
+			" {npc.YouHe} может видеть, как он удлиняется прямо на глазах у {npc.yourHis}.",
 		])
-		text += " {npc.YourHis} {npc.penis} is now "+Util.cmToString(newLen)+" long."
+		text += " {npc.YourHis} {npc.penis} теперь составляет "+Util.cmToString(newLen)+" long."
 		if(newLen >= 25):
 			text += RNG.pick([
-				" It's so fucking huge!",
-				" Holy shit!",
-				" That's probably enough, no?!",
-				" That's one heck of a bitchbreaker!",
-				" How can one even carry that thing around?",
+				" Он просто охеренно огромный!",
+				" Твою мать!",
+				" Наверное, хватит, а?!",
+				" Вот это настоящий ломатель девственности!",
+				" Как вообще можно с такой хреновиной ходить?",
 			])
 		elif(newLen >= 15):
 			text += RNG.pick([
-				" Very solid cock.",
-				" Not bad.",
-				" That's a pretty big cock.",
-				" Nice.",
-				" Decent size.",
+				" Очень солидный член.",
+				" Неплохо.",
+				" Довольно крупный член.",
+				" Класс.",
+				" Приличный размер.",
 			])
 		
 		addText(text)
 	elif(newLen < oldLen):
 		text += RNG.pick([
-			"{npc.YourHis} {penis} is shrinking!",
-			"{npc.YourHis} {penis} is shrinking! Oh no.",
+			"{npc.YourHis} {penis} уменьшается!",
+			"{npc.YourHis} {penis} уменьшается! О нет.",
 		])
 		text += RNG.pick([
-			" The shaft retracts, losing both length and girth.",
-			" {npc.YouHe} can feel it becoming lighter as it gets smaller.",
-			" A tingling sensation runs through it as it continues to shrink.",
-			" The skin tightens around it, becoming less pronounced.",
-			" {npc.YouHe} can see it diminishing before {npc.yourHis} very eyes.",
+			" Ствол втягивается, теряя и в длину, и в обхвате.",
+			" {npc.YouHe} чувствует, как он становится легче, уменьшаясь в размерах.",
+			" По нему пробегает покалывающее ощущение, пока он продолжает сжиматься.",
+			" Кожа натягивается вокруг него, и он становится всё менее выраженным.",
+			" {npc.YouHe} видит, как он уменьшается на глазах у {npc.yourHis}.",
 		])
-		text += " {npc.YourHis} {npc.penis} is now only " + Util.cmToString(newLen) + " long."
+		text += " {npc.YourHis} {npc.penis} теперь всего лишь " + Util.cmToString(newLen) + " long."
 		if(newLen <= 5):
 			text += RNG.pick([
-				" It's so tiny now!",
-				" How did it get this small?",
-				" That's almost cute!",
-				" It's practically non-existent!",
-				" How can one even notice that?",
-				" It's like a little button now!",
-				" You can barely see it!",
-				" It's almost like it vanished!",
-				" That's definitely not what it used to be!",
-				" It's so small, it feels like a toy!",
+				" Он такой крошечный!",
+				" Как он мог стать таким маленьким?",
+				" Это даже мило!",
+				" Его практически не осталось!",
+				" Как его вообще можно заметить?",
+				" Теперь он как маленькая пуговка!",
+				" Его почти не видно!",
+				" Такое ощущение, что он совсем исчез!",
+				" Это определенно не то, что было раньше!",
+				" Он такой крошечный, прямо как игрушечный!",
 			])
 		elif(newLen <= 10):
 			text += RNG.pick([
-				" Quite a small size.",
-				" Not much to work with.",
-				" That's a little on the small side.",
-				" Adorable, really.",
-				" A modest size.",
-				" It's definitely more compact now.",
-				" You can feel the difference; it's much less imposing.",
-				" It's shrinking down to a more delicate size.",
-				" That's a significant reduction in size.",
-				" It feels more manageable now.",
+				" Довольно маленький размер.",
+				" Работать особо не с чем.",
+				" Маловато будет.",
+				" Прямо прелесть, честное слово.",
+				" Скромный размер.",
+				" Теперь он определенно стал компактнее.",
+				" Разница ощутима; он выглядит куда менее внушительно.",
+				" Он уменьшается, становясь более изящным.",
+				" Это весьма значительное уменьшение в размерах.",
+				" Теперь с ним гораздо проще управляться.",
 			])
 		addText(text)
 	else:
 		text += RNG.pick([
-			"{npc.YouHe} {npc.youHeVerb('feel')} a tingling in {npc.yourHis} {penis} but nothing about it has seemingly changed.",
+			"{npc.YouHe} {npc.youHeVerb('feel')} в {npc.yourHis} {penis} покалывает, но, кажется, в остальном ничего не изменилось.",
 		])
 		addText(text)
 #

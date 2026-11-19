@@ -21,7 +21,7 @@ func run(_triggerID, _args):
 		addDisabledButton("Джеки", "Её сегодня нет. Приходи в другой раз.")
 		return
 	saynn("Похоже, Джеки здесь занимается йогой.")
-	addButtonUnlessLate("Jacki", "Talk to the wolfie", "talk")
+	addButtonUnlessLate("Джеки", "Поболтай с волчицей", "talk")
 
 func getPriority():
 	return 0

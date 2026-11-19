@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Размер имеет значение"
 
 func getVisibleDescription():
-	return "Harness the strength of your cock to slap enemies into submission! You get a new Special 'Cock Slap' attack that scales depending on how heavy your cock is (how much cum is in it)!"
+	return "Используй мощь своего члена, чтобы вбивать врагов в землю! Ты получаешь новую особую атаку «Шлепок членом», сила которой зависит от веса твоего достоинства (то есть от того, сколько в нем накопилось спермы)!"
 
 func getSkillTier():
 	return 1

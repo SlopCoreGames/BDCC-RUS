@@ -11,7 +11,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Just looking at them makes you want to hide the disk.. What disk?"
+	return "Просто глядя на них, хочется спрятать диск... Какой ещё диск?"
 
 func getSpecies():
 	return ["canine"]

@@ -109,7 +109,7 @@ func _react(_action: String, _args):
 			var howMuch = GM.pc.cumInItem(item, FluidSource.Pissing)
 			usedItemName = item.getVisibleName()
 			
-			addMessage("You fill the "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" ml of your piss")
+			addMessage("Ты наполняешь "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" мл своей мочи")
 	
 	if(_action == "pushcumvaginamenudo"):
 		processTime(10*60)
@@ -119,7 +119,7 @@ func _react(_action: String, _args):
 			var howMuch = GM.pc.getBodypart(BodypartSlot.Vagina).getFluids().transferTo(item, RNG.randf_range(0.1, 0.3))
 			usedItemName = item.getVisibleName()
 			
-			addMessage("You manage to fill the "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" ml of stuff")
+			addMessage("Тебе удалось наполнить "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" мл всякой жижи")
 	
 	if(_action == "pushcumanusmenudo"):
 		processTime(10*60)
@@ -129,7 +129,7 @@ func _react(_action: String, _args):
 			var howMuch = GM.pc.getBodypart(BodypartSlot.Anus).getFluids().transferTo(item, RNG.randf_range(0.1, 0.3))
 			usedItemName = item.getVisibleName()
 			
-			addMessage("You manage to fill the "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" ml of stuff")
+			addMessage("Тебе удалось наполнить "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" мл всякой жижи")
 	
 	
 	if(_action == "endthescene"):

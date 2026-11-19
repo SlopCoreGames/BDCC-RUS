@@ -40,7 +40,7 @@ func _run():
 			saynn("[say=eliza]На связи доктор Куинн. Что-то нужно?[/say]")
 		
 		if(getModule("ElizaModule").canTFEliza()):
-			addButtonAt(14, "TF menu", "Tell Eliza to use or stop using certain transformation drugs!", "openTFMenu")
+			addButtonAt(14, "Меню ТФ", "Прикажите Элизе принимать или прекратить прием определенных препаратов для трансформации!", "openTFMenu")
 		
 		addButton("Поговорить", "Задать ей несколько вопросов", "talk")
 		addButton("Внешность", "Рассмотреть поближе", "appearance")

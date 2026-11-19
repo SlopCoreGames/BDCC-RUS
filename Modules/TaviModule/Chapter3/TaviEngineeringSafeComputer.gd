@@ -5,8 +5,8 @@ func _init():
 	
 	# create local server & files
 	var locals = NetworkedComputerServer.new("",["connect","quit"])
-	addFileToServer(locals,newCompFile("safe.txt","The safe has a few credit chips that we confiscated from the inmates. Somehow they found a way to duplicate them which caused all sorts of problems. Hopefully there are no more of them going around.\n\nThe safe's ip is 127.0.24\nYou should know the admin's password. If you forgot it - you will have to hack it.\nGood luck","",true,1))
-	addFileToServer(locals,newCompFile("forum.html","...**[corrupt]corrupted data[/corrupt]**...\n\n<message>Hey guys. What do I do if I forgot my password to one of the servers and I can't login anymore?</message>\n<message>lol noob</message>\n<message>I had such problem. But I just remembered the password one day</message>\n<message>I heard there is a program that can bruteforce password, check this server 127.0.55</message>\n<message>Thanks for the answers guys, real helpful. And I'm not gonna download some shady crap.</message>\n<message>Oh, btw, the ip's last 2 numbers are [corrupt]53[/corrupt], not 55.</message>\n\n...**[corrupt]more corrupted data[/corrupt]**...","",true,2))
+	addFileToServer(locals,newCompFile("safe.txt","В сейфе лежит несколько кредитных чипов, которые мы конфисковали у заключенных. Каким-то образом они нашли способ их дублировать, что вызвало кучу проблем. Надеюсь, больше их нигде не валяется.\n\nIP сейфа: 127.0.24\nТы должен знать пароль администратора. Если забыл — придется его взломать.\nУдачи!","",true,1))
+	addFileToServer(locals,newCompFile("forum.html","...**[corrupt]поврежденные данные[/corrupt]**...\n\n<message>Эй, ребят. Что делать, если я забыл пароль от одного из серверов и теперь не могу залогиниться?</message>\n<message>лол, нуб</message>\n<message>У меня была такая же проблема. Но в один прекрасный день я просто вспомнил пароль</message>\n<message>Слышал, есть прога, которая может подобрать пароль брутфорсом, глянь сервер 127.0.55</message>\n<message>Спасибо за ответы, ребят, очень помогли. И я не собираюсь качать всякое мутное дерьмо.</message>\n<message>О, кстати, последние две цифры IP — [corrupt]53[/corrupt], а не 55.</message>\n\n...**[corrupt]еще больше поврежденных данных[/corrupt]**...","",true,2))
 	
 	# create safe server
 	var safes = NetworkedComputerServer.new("127.0.24",["login","open","disconnect","help"],"Safe server status: Operational.\nDoor status: Closed",false,{},{},"Bob","5327")
@@ -14,11 +14,11 @@ func _init():
 	
 	# create public server & files
 	var publics = NetworkedComputerServer.new("127.0.53",["login","wget","disconnect"],"Logged in as guest. Welcome to our public server, feel free to share anything you want.\nAlso, feel free to donate, we only have 10 credits out of a 100 that we need for hosting",true,{"credits":10},{},"xxxDark-Masterxxx","42069",["withdraw"])
-	addFileToServer(publics,newCompFile("brute.exe","Error, unable to display a binary file","font",true,1,"brute"))
-	addFileToServer(publics,newCompFile("forum.html","<message>Guys, how do I use the brute.exe program?</message>\n<message>Super simple. [cuss]Download it from the server[/cuss] using wget [cuss]and then run like so[/cuss] 'brute.exe SERVER_IP'. [cuss]It will try to bruteforce the password[/cuss].</message>","font",true,2))
+	addFileToServer(publics,newCompFile("brute.exe","Ошибка: невозможно отобразить бинарный файл","font",true,1,"brute"))
+	addFileToServer(publics,newCompFile("forum.html","<message>Пацаны, как пользоваться программой brute.exe?</message>\n<message>Все супер просто. [cuss]Скачай её с сервера[/cuss] через wget [cuss]а затем запусти вот так[/cuss] 'brute.exe SERVER_IP'. [cuss]Она попытается подобрать пароль методом брутфорса[/cuss].</message>","font",true,2))
 	addFileToServer(publics,newCompFile("babe.png",Util.readFile("res://Images/asciiporn/taviquest/babe.txt"),"res://Fonts/smallconsolefont.tres",true,69),true)
 	addFileToServer(publics,newCompFile("petplay.png",Util.readFile("res://Images/asciiporn/taviquest/petplay.txt"),"res://Fonts/smallconsolefont.tres",true,123),true)
-	addFileToServer(publics,newCompFile("brutev2.exe","Error, unable to display a binary file","font",true,420,"brutev2"),true)
+	addFileToServer(publics,newCompFile("brutev2.exe","Ошибка: невозможно отобразить бинарный файл","font",true,420,"brutev2"),true)
 	
 	# add servers
 	servers = {

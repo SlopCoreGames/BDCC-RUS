@@ -29,7 +29,7 @@ func _reactInit():
 	processTime(10*60)
 	var amount = GM.pc.getFluids().transferTo(item, RNG.randf_range(0.1, 0.2))
 	
-	addMessage("You managed to collect "+str(Util.roundF(amount))+" ml")
+	addMessage("Тебе удалось собрать "+str(Util.roundF(amount))+" ml")
 
 func _run():
 	if(state == ""):

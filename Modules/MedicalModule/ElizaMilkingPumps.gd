@@ -26,7 +26,7 @@ func _run():
 
 	if(state == "follow"):
 		aimCamera("med_milkingroom")
-		setLocationName("Milking heaven")
+		setLocationName("Райское доение")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={exposedChest=true}})
 		
 		saynn("Ты входишь в помещение, предназначенное для дойки; Элиза заводит тебя в одну из клеток и привязывает твой поводок к одной из металлических перекладин. Ты оглядываешься: в комнате царит уютная, но мрачноватая атмосфера, а освещение здесь не слишком яркое.")
@@ -130,7 +130,7 @@ func _run():
 
 	if(state == "follow1"):
 		aimCamera("med_nearmilking")
-		setLocationName("Corridor")
+		setLocationName("Коридор")
 		GM.pc.setLocation("med_nearmilking")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
@@ -167,14 +167,14 @@ func _react(_action: String, _args):
 		increaseModuleFlag("MedicalModule", "Med_milkedMilkTimes")
 		GM.main.SCI.handleBountyFluid(GM.pc.getFluidType(FluidSource.Breasts), howMuchMilked)
 		
-		addMessage(str(round(howMuchMilked / 10.0)*10.0)+" ml of milk was milked from your breasts")
+		addMessage(str(round(howMuchMilked / 10.0)*10.0)+" из твоей груди было подоено мл молока")
 
 		GM.pc.addSkillExperience(Skill.Milking, 80, "eliza_milkingpumps")
 		
 		if(howMuchMilked >= 400.0):
 			var credits = Util.maxi(1, int(floor(sqrt(howMuchMilked / 100.0) / 2.0)))
 			GM.pc.addCredits(credits)
-			addMessage("You received "+str(credits)+" work "+Util.multipleOrSingularEnding(credits, "credit")+"!")
+			addMessage("Вы получили "+str(credits)+" work "+Util.multipleOrSingularEnding(credits, "credit")+"!")
 
 	if(_action == "endthescene"):
 		endScene()

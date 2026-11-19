@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "теребить булки"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Give your rear some love!"
+	return "Удели внимание своей попке!"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,18 +30,18 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You let out a noise of pleasure as you give your rear some playful rubs."
+		text += "Ты издаешь стон удовольствия, игриво потирая свою задницу."
 		text += "\n\n"
 	else:
-		text += "You fondle your {pc.thick} ass and give it a good grope."
+		text += "Ты ласкаешь свою {pc.thick} задницу и хорошенько ее сжимаешь."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You present your butt to your opponent, maybe your curves will make it harder to focus."
+		text += "Ты подставляешь свою задницу противнику — возможно, твои изгибы собьют его с толку."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.getLust() >= 50):
-		text += "You let out some passionate moans as you rub your rear more and more, you’re almost desperate for some stimulation."
+		text += "Ты издаешь страстные стоны, всё сильнее потирая задницу; ты почти в отчаянии от жажды стимуляции."
 		text += "\n\n"
 
 	return {

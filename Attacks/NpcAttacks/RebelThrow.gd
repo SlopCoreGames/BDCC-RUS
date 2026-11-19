@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Бросок повстанца"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -21,9 +21,9 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} умудряется крепко схватить {receiver.name}, рывком поднимает с пола и швыряет на несколько метров назад!"
 	text += "\n\n"
 	text += RNG.pick([
-		"[say=attacker]And don’t get up.[/say]",
-		"[say=attacker]And stay like that.[/say]",
-		"[say=attacker]Who said you can stand.[/say]",
+		"[say=attacker]И не вздумай вставать.[/say]",
+		"[say=attacker]И лежи так дальше.[/say]",
+		"[say=attacker]Кто разрешил тебе вставать?[/say]",
 	])
 	text += "\n\n"
 	
@@ -40,7 +40,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} tries to grab {receiver.name}!"
+	return "{attacker.name} пытается схватить {receiver.name}!"
 
 func getRequirements():
 	return [AttackRequirement.FreeArms, AttackRequirement.FreeHands]

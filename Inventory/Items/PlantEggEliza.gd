@@ -17,5 +17,5 @@ func getDescription():
 	var theDesc:String = .getDescription()
 	
 	if(whoGaveBirth == "eliza"):
-		return theDesc + "\n\n\"[i]Treasure it. Or eat it the moment I leave. But if you get poisoned, don’t come to me.[/i] \""
+		return theDesc + "\n\n\"[i]Береги его. Или сожри в ту же секунду, как я уйду. Но если отравишься — ко мне не суйся.[/i] \""
 	return theDesc

@@ -19,9 +19,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -71,9 +71,9 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	#var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "Breeder pill",
+		"name": "Пилюля плодовитости",
 		"usedName": "a breeder pill",
-		"desc": "Makes you more fertile and your cum more virile.",
+		"desc": "Повышает вашу фертильность, а ваша сперма становится более мощной.",
 		"scoreOnSub": _domInfo.goalsScoreMax({SexGoal.ReceiveVaginal: 1.0, SexGoal.ReceiveAnal: 0.2}, _subInfo.charID)*_domInfo.fetishScore({Fetish.BeingBred: 1.0}),
 		"scoreOnSelf": _domInfo.goalsScoreMax({SexGoal.FuckVaginal: 1.0, SexGoal.FuckAnal: 0.2}, _subInfo.charID)*_domInfo.fetishScore({Fetish.Breeding: 1.0}),
 		"scoreSubScore": _subInfo.fetishScore({Fetish.Breeding: 1.0}),

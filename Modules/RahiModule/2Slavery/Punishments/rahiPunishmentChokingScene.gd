@@ -248,7 +248,7 @@ func _react(_action: String, _args):
 		var skillToForget = _args[0]
 		var skillInfo = getModule("RahiModule").getSkillInfo(skillToForget)
 		getModule("RahiModule").forgetSkill(skillToForget)
-		addMessage("Rahi forgot the "+str(skillInfo["name"])+" skill due to the lack of oxygen to her brain..")
+		addMessage("Рахи забыла свой "+str(skillInfo["name"])+" навык из-за нехватки кислорода в мозгу..")
 
 	if(_action == "forget_wakeup"):
 		processTime(30*60)

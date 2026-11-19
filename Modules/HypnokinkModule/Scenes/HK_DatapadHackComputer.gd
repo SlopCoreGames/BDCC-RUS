@@ -11,7 +11,7 @@ func _init():
 func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 	if(_command == "skiptut"):
 		currentTutorialStep = 9999
-		return "Tutorial skipped."
+		return "Обучение пропущено."
 	if(connectedTo == ""):
 		return reactToCommandLocalhost(_command, _args, _commandStringRaw)
 	elif(connectedTo == "deloxekarat_default"):

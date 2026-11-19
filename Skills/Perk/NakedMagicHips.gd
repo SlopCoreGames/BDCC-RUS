@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Магические бёдра"
 
 func getVisibleDescription():
-	return "Swaying your hips at the opponent may make them weak for your body with 20% chance! Chance scales up with vitality"
+	return "Покачивание бедрами перед противником может заставить его ослабить волю перед вашим телом с усилением на 20% c! Шанс растет вместе с показателем витальности"
 
 func getSkillTier():
 	return 0

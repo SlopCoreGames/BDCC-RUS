@@ -30,10 +30,10 @@ func setDecision(_missionID:String, _decisionID:String, _decisionDict:Dictionary
 	storedDecision = _decisionDict
 	storedValue = _value
 	
-	label.text = decisionID+" - "+_decisionDict.get("name", "Unknown")
+	label.text = decisionID+" - "+_decisionDict.get("name", "Неизвестно")
 	
 	option_button.clear()
-	option_button.add_item("- Nothing selected -")
+	option_button.add_item("- Ничего не выбрано -")
 	option_button.select(0)
 	var _i:int = 1
 	cachedVals.clear()

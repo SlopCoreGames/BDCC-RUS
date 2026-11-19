@@ -298,9 +298,9 @@ func _react(_action: String, _args):
 	if(_action == "skip"):
 		processTime(30*60)
 		if(earnedCredits == 1):
-			addMessage("You received 1 credit")
+			addMessage("Вы получили 1 кредит")
 		elif(earnedCredits > 1):
-			addMessage("You received "+str(earnedCredits)+" credits")
+			addMessage("Вы получили "+str(earnedCredits)+" credits")
 		if(earnedCredits > 0):
 			GM.pc.addCredits(earnedCredits)
 
@@ -317,9 +317,9 @@ func _react(_action: String, _args):
 	if(_action == "easy_outcome"):
 		processTime(10*60)
 		if(earnedCredits == 1):
-			addMessage("You received 1 credit")
+			addMessage("Вы получили 1 кредит")
 		elif(earnedCredits > 1):
-			addMessage("You received "+str(earnedCredits)+" credits")
+			addMessage("Вы получили "+str(earnedCredits)+" credits")
 		if(earnedCredits > 0):
 			GM.pc.addCredits(earnedCredits)
 
@@ -331,9 +331,9 @@ func _react(_action: String, _args):
 	if(_action == "medium_outcome"):
 		processTime(10*60)
 		if(earnedCredits == 1):
-			addMessage("You received 1 credit")
+			addMessage("Вы получили 1 кредит")
 		elif(earnedCredits > 1):
-			addMessage("You received "+str(earnedCredits)+" credits")
+			addMessage("Вы получили "+str(earnedCredits)+" credits")
 		if(earnedCredits > 0):
 			GM.pc.addCredits(earnedCredits)
 
@@ -351,9 +351,9 @@ func _react(_action: String, _args):
 	if(_action == "hard_outcome"):
 		processTime(10*60)
 		if(earnedCredits == 1):
-			addMessage("You received 1 credit")
+			addMessage("Вы получили 1 кредит")
 		elif(earnedCredits > 1):
-			addMessage("You received "+str(earnedCredits)+" credits")
+			addMessage("Вы получили "+str(earnedCredits)+" credits")
 		if(earnedCredits > 0):
 			GM.pc.addCredits(earnedCredits)
 

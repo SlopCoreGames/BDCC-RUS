@@ -56,37 +56,37 @@ func _run():
 		var personality:Personality = npc.getPersonality()
 		if(personality.getStat(PersonalityStat.Mean) > 0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"Hey, what the fuck are you doing. I will break your face, let me go.",
-				"What the fuck is this, I ain't coming with you, no way, fuck off.",
-				"Hey, what the fuck are you doing? I'll break your face if you think I'm just gonna follow you. Let me go, you piece of shit.",
-				"What the fuck is this? I ain't coming with you, no way in hell. Just back off, you moron.",
-				"Oh, fantastic. You think a leash is gonna make me your puppet? Fuck off, I'm not your plaything.",
-				"Get your hands off me! Who the hell do you think you are? Leashing me won't make me your lapdog.",
-				"Nice try with the leash, but I'm not your prisoner. You're gonna regret this, asshole.",
-				"You seriously think leashing me will make me obedient? You're delusional. Let go, or things are gonna get ugly.",
-				"You really thought I'd submit just because of a leash? Think again. Release me before I make you regret it.",
-				"This leash won't change a damn thing. Let me make this crystal clear: I don't follow orders from fools. Unleash me, dumbass.",
+				"Эй, какого хуя ты творишь?! Я тебе рожу в лепёшку разнесу, отпусти меня!",
+				"Что это за хуйня? Я с тобой никуда не пойду, ни за что, отъебись!",
+				"Эй, ты какого хуя делаешь? Я тебе ебало разобью, если думаешь, что я просто так за тобой пойду. Отпусти меня, кусок дерьма!",
+				"Что это за хуйня? Я с тобой никуда не пойду, ни в коем случае. Просто отвали, дебил!",
+				"О, просто фантастика. Думаешь, если наденешь поводок, я стану твоей марионеткой? Пошёл нахуй, я тебе не игрушка.",
+				"Руки убрал! Ты вообще, блядь, кто такой? То, что ты меня на поводок посадил, не сделает из меня свою шавочку!",
+				"Хорошая попытка с поводком, но я тебе не пленница. Ты ещё пожалеешь об этом, мудак.",
+				"Ты реально думаешь, что если наденешь на меня поводок, я стану послушной? Ты бредишь. Отпусти, а то всё закончится очень хреново.",
+				"Ты правда думал, что я подчинюсь только из-за поводка? Посчитай ещё раз. Отпусти меня, пока я не заставила тебя пожалеть об этом.",
+				"Этот поводок нихера не изменит. Давай проясним раз и навсегда: я не слушаю приказы идиотов. Сними его с меня, тупица!",
 			])+"[/say]")
 		elif(personality.getStat(PersonalityStat.Subby) < -0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"Well, well, what do we have here? Trying to play the dominant card, huh? Good luck with that, loser.",
-				"Oh, how cute, you think a leash will make me your submissive? Save your amateur hour for someone who cares.",
-				"Is this your attempt at dominance? Sorry, but it's gonna take more than that to impress me.",
-				"Nice try, rookie. A leash doesn't make you an alpha. You'll need more than props to handle someone like me.",
-				"Leashing a dominant? That's a new level of stupidity. Release me before I lose my patience with your nonsense.",
-				"Impressive attempt, but leashing me won't change a thing. You've got a lot to learn about domination. Now, release me.",
+				"Ну надо же, что тут у нас? Решил поиграть в доминанта, а? Удачи, неудачник.",
+				"Ой, как мило, ты думаешь, что поводок сделает меня покорной? Оставь свои любительские замашки для тех, кому не плевать.",
+				"Это твоя попытка доминировать? Извини, но чтобы впечатлить меня, одного этого мало.",
+				"Хорошая попытка, новичок. Поводок не делает тебя альфой. Тебе понадобится нечто большее, чем просто реквизит, чтобы совладать с такой, как я.",
+				"Надеть поводок на доминанта? Это новый уровень тупости. Отпусти меня, пока я не потеряла терпение от твоего бреда.",
+				"Впечатляющая попытка, но поводок ничего не изменит. Тебе еще многому предстоит научиться в искусстве доминирования. А теперь — отпусти меня.",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"Um, what's happening? Why are you leashing me? I didn't do anything wrong. Please, let me understand.",
-				"I-I don't think I deserve this. Why are you leashing me? Can we talk about it, maybe?",
-				"Oh, um, I didn't expect this. Why the leash? Did I do something to upset you? Please, let's talk it out.",
-				"Wait, is this necessary? I'll follow you, but leashing seems a bit extreme. Can we discuss it first?",
-				"Please, I don't even know you. Let me go, I won't cause any trouble, I promise.",
-				"I don't understand. Why are you taking me? I'll do whatever you want, just don't hurt me.",
-				"I don't want any trouble. Please, release me. I won't tell anyone, I promise.",
-				"Who are you, and why are you doing this? I can't believe this is happening. Let me go, I'm not your property!",
-				"What's happening? Where are you taking me? I don't even know you! Let me go, please!",
+				"Эм, что происходит? Почему ты надеваешь на меня поводок? Я же ничего плохого не сделала. Пожалуйста, объясни...",
+				"Я... я не думаю, что заслужила это. Зачем мне поводок? Может, мы сможем это обсудить?",
+				"Ой, эм, я этого не ожидала. Зачем поводок? Я чем-то тебя рассердила? Пожалуйста, давай просто поговорим.",
+				"Погоди, это обязательно? Я пойду за тобой, но поводок — это как-то слишком радикально. Можно сначала обсудить?",
+				"Пожалуйста, мы же даже не знакомы. Отпусти меня, обещаю, я не буду доставлять хлопот!",
+				"Я не понимаю... Зачем ты меня забираешь? Я сделаю всё, что захочешь, только не причиняй мне боли.",
+				"Я не хочу проблем. Пожалуйста, отпусти меня. Обещаю, я никому не скажу!",
+				"Кто ты такой и зачем это делаешь? Не верится, что это происходит наяву. Отпусти меня, я тебе не вещь!",
+				"Что происходит? Куда ты меня тащишь? Мы же даже не знакомы! Отпусти меня, пожалуйста!",
 			])+"[/say]")
 		
 		saynn("Пора возвращать {npc.him} в вашу камеру...")
@@ -104,37 +104,37 @@ func _run():
 		var personality:Personality = npc.getPersonality()
 		if(personality.getStat(PersonalityStat.Mean) > 0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"What the hell is this?",
-				"Are you fucking kidding me?",
-				"Seriously? This is messed up.",
-				"You've gotta be shitting me.",
-				"Is this some sick joke?",
-				"Un-fucking-believable.",
-				"This better be a damn nightmare.",
-				"This is fucked up beyond words.",
+				"Что это, черт возьми, такое?",
+				"Ты что, блядь, издеваешься?",
+				"Серьезно? Это какой-то пиздец.",
+				"Да ты, должно быть, ебёшься!",
+				"Это что, какая-то больная шутка?",
+				"Просто пиздец какой-то.",
+				"Надеюсь, это всего лишь гребаный кошмар.",
+				"Это ебануться можно, слов нет.",
 			])+"[/say]")
 		elif(personality.getStat(PersonalityStat.Subby) < -0.4):
 			saynn("[say=npc]"+RNG.pick([
-				"Seriously? This won't end well for you.",
-				"Are you for real?",
-				"What the hell is this?",
-				"You've got to be kidding me.",
-				"This some sick joke?",
-				"Is this your idea of a good time?",
-				"I don't have time for your shit.",
-				"Unbelievable.",
-				"You're out of your damn mind.",
+				"Серьезно? Для тебя это плохо кончится.",
+				"Ты это сейчас серьезно?",
+				"Что это, черт возьми, такое?",
+				"Да ты, должно быть, издеваешься.",
+				"Это что, какая-то ебанутая шутка?",
+				"Это, по-твоему, весело?",
+				"У меня нет времени на твое дерьмо.",
+				"Невероятно.",
+				"Ты совсем ебнулся, что ли?",
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"Um... where am I?",
-				"Hey, what's going on?",
-				"Uh, why am I here?",
-				"Hey... why did you bring me here?",
-				"Hey, let me go!",
-				"Um... who are you?",
-				"Hey, this is not cool.",
-				"Uh, this isn't right.",
+				"Эм... где я?",
+				"Эй, что тут происходит?",
+				"А... почему я здесь?",
+				"Эй... зачем ты меня сюда притащил?",
+				"Эй, отпусти меня!",
+				"Эм... ты кто такой?",
+				"Эй, это вообще не дело.",
+				"А... это как-то неправильно.",
 			])+"[/say]")
 		
 		saynn("Теперь {npc.he} принадлежит тебе! Главное — следи, чтобы {npc.he} не сбежала.")

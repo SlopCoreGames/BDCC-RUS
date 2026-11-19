@@ -8,24 +8,24 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Have fun with a kind wolfo that is wearing unique chastity piercings that keep her pussy lips always shut. This content is focused around corruption and anal sex."
-	return "Have fun with a kind wolfo that is wearing unique chastity piercings."
+		return "Развлекись с милой волчицей, на которой надеты уникальные пирсинги для целомудрия, держащие её половые губы всегда плотно сомкнутыми. Этот контент сосредоточен на развращении и анальном сексе."
+	return "Развлекись с доброй волчицей, украшенной уникальными пирсингами целомудрия."
 
 func getKinks() -> Array:
 	return [
-		"Player is dominant",
+		"Игрок доминирует",
 		"Noncon/Stalking",
-		"Anal sex only (pc is top)",
-		"Hole stretching",
-		"Corruption",
+		"Только анальный секс (игрок — топ)",
+		"Растяжка отверстия",
+		"Развращение",
 	]
 
 func getCompletedDesc() -> String:
 	if(getFlag("JackiModule.Jacki_ch2GotPussyFreed")):
-		return "Jacki is now yours! You have freed her pussy too!"
+		return "Джеки теперь твоя! Ты освободил и её киску тоже!"
 	if(getFlag("JackiModule.Jacki_ch2GotExtraPiercings")):
-		return "Jacki is now yours! You even added some extra piercings!"
-	return "Jacki is now yours!"
+		return "Джеки теперь твоя! Ты даже добавил ей несколько лишних пирсингов!"
+	return "Джеки теперь твоя!"
 
 func getStatus() -> int:
 	if(getFlag("JackiModule.Jacki_ch2GotEnslaved", false)):
@@ -40,11 +40,11 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIfBool(GM.pc.getSkillsHolder().getLevel() >= 5), "Reach level 5."],
-		[completeIf("JackiModule.Jacki_FirstTimeEncountered"), "Head towards the yard area to run into Jacki for the first time."],
-		[completeIf("JackiModule.Jacki_StocksSceneHappened"), "Find Jacki stuck in stocks and decide what to do with her."],
-		[completeIf("JackiModule.Jacki_ch2IntroSceneHappened"), "Talk with Jacki at the gym!"],
+		[completeIfBool(GM.pc.getSkillsHolder().getLevel() >= 5), "Достигните 5-го уровня."],
+		[completeIf("JackiModule.Jacki_FirstTimeEncountered"), "Отправляйтесь во двор, чтобы впервые встретить Джеки."],
+		[completeIf("JackiModule.Jacki_StocksSceneHappened"), "Найдите Джеки, зажатую в колодах, и решите, что с ней делать."],
+		[completeIf("JackiModule.Jacki_ch2IntroSceneHappened"), "Поговорите с Джеки в спортзале!"],
 	]
 
 func getProgressText() -> String:
-	return "Raise Jacki's lust and corruption stats by interacting with her, unlocking new options and scenes as you do."
+	return "Повышайте показатели похоти и разврата Джеки, взаимодействуя с ней, и открывайте новые варианты действий и сцен по мере прогресса."

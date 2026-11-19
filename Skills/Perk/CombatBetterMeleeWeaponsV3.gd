@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Сила Разрушения"
 
 func getVisibleDescription():
-	return "You love watching your foes fall before you. And knowing how to wield a weapon sure helps with that. You do [b]50%[/b] more damage with melee weapons."
+	return "Вы обожаете смотреть, как враги падают к вашим ногам. А умение мастерски владеть оружием определенно помогает в этом деле. Вы наносите на [b]50%[/b] больше урона в ближнем бою."
 
 func getRequiredPerks():
 	return [Perk.CombatBetterMeleeWeapons, Perk.CombatBetterMeleeWeaponsV2]

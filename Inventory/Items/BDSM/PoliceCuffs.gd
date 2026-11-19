@@ -41,9 +41,9 @@ func generateRestraintData():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" were locked onto your arms, chaining them together"
+		return getAStackNameCapitalize()+" защелкнулись на твоих руках, сковав их вместе"
 	else:
-		return getAStackNameCapitalize()+" were locked onto {receiver.nameS} arms, chaining them together"
+		return getAStackNameCapitalize()+" защелкнулись на руках {receiver.nameS}, сковав их вместе"
 
 func getUnriggedParts(_character):
 	return {

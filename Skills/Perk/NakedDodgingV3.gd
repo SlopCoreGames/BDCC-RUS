@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Обнаженное веселье"
 
 func getVisibleDescription():
-	return "Let's get naked! You gain [b]10%[/b] additional dodge chance when you are COMPLETELY naked"
+	return "Давай раздеваться! Вы получаете [b]10%[/b] дополнительного шанса уклонения, когда вы ПОЛНОСТЬЮ голы"
 
 func getRequiredPerks():
 	return [Perk.NakedDodging, Perk.NakedDodgingV2]

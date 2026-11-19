@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Латексный удар"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	#if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -20,7 +20,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var text = "{attacker.name} делает резкий выпад, нанося быстрый и мощный удар {attacker.his} покрытым латексом кулаком, причиняя острую боль при столкновении."
 	if(RNG.chance(10) && _receiver.addEffect(StatusEffect.Bleeding)):
-		text += " Sharp edges of {attacker.name}'s fist caused {receiver.name} to start [color=red]bleeding[/color]."
+		text += " Острые края кулака {attacker.name} заставили {receiver.name} начать [color=red]кровоточить[/color]."
 	return {
 		text = text,
 		pain = 30,

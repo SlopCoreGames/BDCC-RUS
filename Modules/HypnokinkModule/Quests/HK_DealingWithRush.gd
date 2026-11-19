@@ -9,13 +9,13 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Vion needs help dealing with Rush, an equine-dragon hybrid making increasingly insistent demands.")
+	result.append("Виону нужна помощь в обращении с Рашем — гибридом лошади и дракона, чьи требования становятся всё более настойчивыми.")
 	if(GM.main.getFlag("HypnokinkModule.RushDealStruckAtLeastOnce", false)):
-		result.append("You've struck a deal with Rush that should get him off Vion's back for a while.")
+		result.append("Вы заключили сделку с Рашем, которая должна на время отвязаться от Виона.")
 	if(GM.main.getFlag("HypnokinkModule.RushCausingMoreTrouble", false)):
-		result.append("Your solution for the Rush problem is proving to be only temporary. Perhaps a more permanent one is possible?")
+		result.append("Ваше решение проблемы с Рашем оказывается лишь временной мерой. Возможно, стоит найти что-то более постоянное?")
 	if(GM.main.getFlag("HypnokinkModule.RushSubdued", false)):
-		result.append("Rush has been dealt with permanently.")
+		result.append("С Рашем покончено раз и навсегда.")
 	
 	return result
 

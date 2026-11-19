@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Развести киски"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Part your sensitive folds to show off how needy you are"
+	return "Разведи свои чувствительные складки, чтобы показать, как сильно ты жаждешь секса"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,22 +30,22 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "Feeling incredibly lusty, you put two fingers onto your folds and spread them open. There is a visible line of transparent fluids connecting them as you hold your pussy spread for anyone who might be lucky to see it."
+		text += "Охваченная неистовым желанием, ты вставляешь два пальца в складки и раздвигаешь их. Между ними тянется видимая нить прозрачной смазки, пока ты держишь киску раздвинутой на радость любому счастливчику, который может это увидеть."
 		text += "\n\n"
 	else:
-		text += "You use two digits to spread your needy pussy open, giving an incredible view of your pussy with strings of juices stretching down lower the longer you hold your fingers like that."
+		text += "Ты раздвигаешь свою изголодавшуюся киску двумя пальцами, открывая невероятный вид; чем дольше ты держишь их так, тем длиннее становятся тянущиеся вниз струйки соков."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You provide such a great view of your fuckhole, there is no way your opponent’s attention wasn’t stolen by your lewd action."
+		text += "Ты открываешь такой великолепный вид на свою дырку, что противник просто не может не засмотреться на это непристойное зрелище."
 		text += "\n\n"
 	
 	if(RNG.chance(60) && pc.hasEffect(StatusEffect.HasCumInsideVagina)):
-		text += "Wow, as you hold your slit spread open, more and more jizz leaks out of it, messing up your thighs and dripping down to the floor."
+		text += "Ого, пока ты держишь щелочку раздвинутой, из неё всё больше и больше вытекает спермы, пачкая твои бёдра и капая на пол."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.getLust() >= 50):
-		text += "You are so horny that you move your digits down to your pussy entering directly and stretch that one instead. Your digits slip due to the amount of juices there but you manage to provide a great view of your inner walls being all drippy and even show off the fuckable cervix."
+		text += "Ты настолько возбуждена, что опускаешь пальцы глубже в киску, раздвигая уже её саму. Пальцы скользят из-за обилия смазки, но тебе удается открыть потрясающий вид на влажные внутренние стенки и даже продемонстрировать готовую к траху шейку матки."
 		text += "\n\n"
 
 	return {

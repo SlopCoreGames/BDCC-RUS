@@ -14,12 +14,12 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"Oh yeah, by the way.. this one has been completely broken. No thoughts, no resistance, just pure obedience.",
-		"Oh yeah, by the way.. {slave.He} {slave.isAre} mindbroken and ready to follow any command without question. This one has no will left to resist.",
-		"This slave’s mind is gone. {slave.He} {slave.isAre} yours to mold however you see fit, without hesitation. A blank canvas!",
-		"Oh yeah, by the way.. {slave.he} {slave.is} nothing but a blank slate. But that's good. This mindbroken slave will follow your every whim without question.",
-		"Oh yeah, by the way.. {slave.He} {slave.isAre} completely obedient, completely mindbroken. This one won’t resist anything you ask.",
-		"Oh yeah, by the way.. this one has been completely broken. A perfect doll, no thoughts, just action. Every command will be followed without question.",
+		"Ах да, кстати... эту совсем сломали. Ни мыслей, ни сопротивления — только чистое послушание.",
+		"Ах да, кстати... {slave.He} {slave.isAre} сломлена и готова беспрекословно выполнять любую команду. У этой больше нет воли, чтобы сопротивляться.",
+		"Разум этой рабыни стерт. {slave.He} {slave.isAre} она в твоем распоряжении, лепи из нее что хочешь, не колеблясь. Чистый холст!",
+		"Ах да, кстати... {slave.he} {slave.is} просто чистый лист. Но это даже хорошо. Эта сломленная рабыня будет исполнять любой твой каприз без лишних вопросов.",
+		"Ах да, кстати... {slave.He} {slave.isAre} абсолютно послушная, полностью сломленная. Эта не станет сопротивляться ни одному твоему требованию.",
+		"Ах да, кстати... эту сломали окончательно. Идеальная кукла: никаких мыслей, только действия. Любая команда будет исполнена без единого вопроса.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())
@@ -31,21 +31,21 @@ func getTraits() -> Dictionary:
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		"I like me a blank slate.",
-		"Saves me time.",
-		"Dolls are fun.",
-		"I could use a good fuckdoll.",
-		"Sounds like the perfect obedient doll.",
-		"Means I don't have to wipe their mind myself."
+		"Обожаю чистые листы.",
+		"Экономит мне время.",
+		"Куклы — это весело.",
+		"Мне бы не помешала хорошая кукла для траха.",
+		"Похоже на идеальную послушную куклу.",
+		"Значит, мне не придется самому выносить им мозг."
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		"Are you serious? That's awful.",
-		"Are you selling us a broken slave? Wow..",
-		"What the fuck am I gonna do with a doll.",
-		"I need personality, I don't need a fucking doll.",
-		"Yeah, I hate that.",
+		"Ты серьезно? Это же ужасно.",
+		"Вы что, продаете нам сломленную рабыню? Офигеть...",
+		"Нахрена мне сдалась эта кукла?",
+		"Мне нужна личность, а не ебаная кукла.",
+		"Да, бесит неимоверно.",
 	])
 	
 func getPassiveDesireGain() -> float:

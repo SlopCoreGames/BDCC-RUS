@@ -16,7 +16,7 @@ func _reactInit():
 		var theApple = GlobalRegistry.createItem("appleitem")
 		theApple.setIsLegal(true)
 		GM.pc.getInventory().addItem(theApple)
-		addMessage("You recieved an apple")
+		addMessage("Вы получили яблоко")
 		setFlag("MedicalModule.Nursery_hadFreeAppleFromPerkToday", true)
 		receivedApple = true
 
@@ -331,7 +331,7 @@ func _run():
 
 		saynn("Как только подтверждается, что ты получила подходящее обезболивающее, старшая акушерка запускает процесс родов, позволяя всему идти своим чередом, пока завершаются последние приготовления и большинство остальных медсестер покидают зал.")
 		
-		saynn("Ты просто позволяешь им делать свою работу, лежа на кровати и делая глубокие вдохи, пока в твоем животе начинаются первые схватки." + (" Someone asks if they need to use the heavy restraints on you but someone else dismisses them." if(GM.pc.getInmateType() == InmateType.HighSec) else "") )
+		saynn("Ты просто позволяешь им делать свою работу, лежа на кровати и делая глубокие вдохи, пока в твоем животе начинаются первые схватки." + (" Кто-то спрашивает, не стоит ли надеть на вас тяжелые фиксаторы, но другой человек отмахивается от этой мысли." if(GM.pc.getInmateType() == InmateType.HighSec) else "") )
 		
 		saynn("Когда начинаются воды, все окончательно распределяются по местам. Ты следуешь инструкциям старшей акушерки, пока природа берет свое. А под «природой» здесь подразумевается невероятная боль и дискомфорт.")
 		
@@ -428,7 +428,7 @@ func _react(_action: String, _args):
 		
 		bornChildString = GM.CS.getChildBigReportString(allNewChilds)
 		
-		addMessage(str(addedAm)+" egg"+("s" if addedAm != 1 else "")+" got added to the database!")
+		addMessage(str(addedAm)+" egg"+("s" if addedAm != 1 else "")+" добавлен(а) в базу данных!")
 		
 		if(pcFatherAm > 0):
 			GM.pc.addSkillExperience(Skill.Breeder, 10*pcFatherAm)

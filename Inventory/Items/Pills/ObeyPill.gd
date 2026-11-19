@@ -78,9 +78,9 @@ func getSexEngineInfo(_sexEngine, _domInfo:SexDomInfo, _subInfo):
 		didUnlockThese = true
 	
 	return {
-		"name": "Slave Candy",
+		"name": "Рабская конфета",
 		"usedName": "a suspicious pill",
-		"desc": "Forces submission. Auto-completes any slave-breaking tasks. Has a potential bad effect on the mind.",
+		"desc": "Навязывает покорность. Автоматически завершает любые задачи по слому воли раба. Может негативно сказаться на рассудке.",
 		"scoreOnSub": _domInfo.personalityScore({PersonalityStat.Subby:-0.2}) if didUnlockThese else 0.0,
 		"scoreOnSelf": 0.0,
 		"scoreSubScore": _subInfo.fetishScore({Fetish.DrugUse: 1.0}) - 0.5,

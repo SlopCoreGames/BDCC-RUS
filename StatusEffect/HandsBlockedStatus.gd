@@ -23,10 +23,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Blocked hands"
+	return "Руки заблокированы"
 
 func getEffectDesc():
-	return "You can't use your hands. You can still punch but most tasks that require you to use your fingers are impossible"
+	return "Вы не можете пользоваться руками. Вы всё ещё можете бить кулаками, но большинство задач, требующих работы пальцами, становятся невыполнимыми"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/mittens.png"

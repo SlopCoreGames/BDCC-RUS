@@ -35,7 +35,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Сжимать соски"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Pinch your nipples with great force, forcing them to squirt milk and blind the enemy. Can be done through clothing with weaker effect."
+	return "С силой сдавите соски, заставляя их брызгать молоком и ослепляя противника. Можно делать это через одежду, но эффект будет слабее."
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -46,20 +46,20 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(pc.isBodypartCovered(BodypartSlot.Breasts)):
-		text += "You quickly reach your hands to your {pc.breasts} and squeeze them very tight while pinching your nipples through all the cloth. It’s arousing, you’re barely standing on your feet as you knead your breasts and let out some passionate moans."
+		text += "Вы быстро прижимаете руки к своим {pc.breasts} и сжимаете их изо всех сил, щипая соски прямо через ткань. Это возбуждает; вы едва стоите на ногах, разминая грудь и издавая страстные стоны."
 		text += "\n\n"
 		
-		text += "After enough stimulation, your nipples suddenly shoot a strong stream of {pc.milk} that goes through the clothing and is aimed directly at your opponent."
+		text += "После достаточной стимуляции из ваших сосков внезапно вырывается мощная струя {pc.milk}, которая пропитывает одежду и летит прямо в противника."
 		text += "\n\n"
 		
 		var enemy:BaseCharacter = _lustState.getEnemyCharacter()
 		if(enemy != null):
 			enemy.addEffect(StatusEffect.Blindness, [2])
 	else:
-		text += "You quickly reach your hands to your {pc.breasts} and squeeze them very tight while pinching your exposed nipples. It’s arousing, you’re barely standing on your feet as you knead your breasts and let out some passionate moans."
+		text += "Вы быстро прижимаете руки к своим {pc.breasts} и сжимаете их изо всех сил, щипая обнаженные соски. Это возбуждает; вы едва стоите на ногах, разминая грудь и издавая страстные стоны."
 		text += "\n\n"
 	
-		text += "After enough stimulation, your nipples suddenly shoot a strong stream of {pc.milk} that is aimed directly at your opponent."
+		text += "После достаточной стимуляции из ваших сосков внезапно вырывается мощная струя {pc.milk}, направленная прямо в противника."
 		text += "\n\n"
 		
 		var enemy:BaseCharacter = _lustState.getEnemyCharacter()

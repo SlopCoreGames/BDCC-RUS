@@ -22,15 +22,15 @@ func getTags():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "takes off your armor"
+		return "снимает твою броню"
 	else:
-		return "take off your armor"
+		return "снять броню"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on your armor"
+		return "надевает твою броню"
 	else:
-		return "put on your armor"
+		return "надеть броню"
 
 #func generateItemState():
 #	itemState = ShirtAndShortsState.new()

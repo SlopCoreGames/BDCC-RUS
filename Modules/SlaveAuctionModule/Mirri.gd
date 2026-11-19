@@ -116,7 +116,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A ginger guard who is wearing a very skimpy armor"
+	return "Рыжеволосая охранница в очень откровенной броне"
 
 func getChatColor():
 	return "#E24F4D"
@@ -139,7 +139,7 @@ func _getAttacksForBattle(_battlename):
 	return res
 
 func getFightIntro(_battleName):
-	return getName() + " gets into the combat stance and prepares for a fight."
+	return getName() + " принимает боевую стойку и готовится к драке."
 
 func getThickness() -> int:
 	return 100

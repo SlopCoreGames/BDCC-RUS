@@ -21,7 +21,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A cute slave with a naive stare"
+	return "Милая рабыня с наивным взглядом"
 
 #func getChatColor():
 #	return "#E24F4D"

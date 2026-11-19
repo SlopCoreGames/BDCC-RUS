@@ -34,9 +34,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Eat one!",
+			"name": "Съесть!",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Eat the egg",
+			"description": "Съесть яйцо",
 		},
 	]
 

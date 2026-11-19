@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Pain threshold "+text
+	return "Порог боли "+text
 
 func apply(_buffHolder):
 	_buffHolder.extraPain += amount

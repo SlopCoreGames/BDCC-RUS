@@ -101,7 +101,7 @@ func _react(_action: String, _args):
 		getCharacter("kidlat").resetEquipment()
 
 	if(_action == "a_hug"):
-		addMessage("Kidlat will now sell 4 items instead of 3. Task updated!")
+		addMessage("Теперь Кидлат будет продавать 4 предмета вместо 3. Задача обновлена!")
 		setFlag("DrugDenModule.KidlatCustomShopGreet", "I don't have more to sell right now.. 'cause I was cuffed.. duh..")
 
 	if(_action == "start_browsing_shop"):

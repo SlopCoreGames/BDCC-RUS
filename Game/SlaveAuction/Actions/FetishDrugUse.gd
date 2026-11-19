@@ -8,28 +8,28 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"This slave has quite the habit - always looking for the next high. Drugs? {slave.he} can’t live without them.",
-		"Drugs are {slave.his} weakness, and that makes {slave.him} easy to control. Keep {slave.him} supplied, and {slave.he} will obey like no other.",
-		"Addicted and eager, {slave.he} won’t say no to any substance you offer. Drugs are {slave.his} true master.",
-		"Hooked on every substance imaginable, this one is practically begging for the next high. Keep {slave.him} supplied, and {slave.he} will do anything.",
+		"У этой рабыни есть одна привычка — она вечно ищет новую дозу. Наркотики? {slave.he} без них просто не может жить.",
+		"Наркотики — это {slave.his} слабость, а это значит, что {slave.him} легко контролировать. Обеспечь {slave.him} поставками, и {slave.he} будет подчиняться как никто другой.",
+		"Одержимая и жаждущая, {slave.he} не скажет «нет» ни одному веществу, которое ты ей предложишь. Наркотики — вот её истинный господин {slave.his}.",
+		"Подсевшая на всё, что только можно вообразить, она практически умоляет о новой дозе. Обеспечь {slave.him} добавкой, и {slave.he} пойдет на всё.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		"Could be fun to play with.",
-		"Perfect. I’ll get this one addicted to my favorite drug.",
-		"This one will be crawling for the next hit.",
-		"A junkie slave means easy control.",
-		"I can see the potential here.",
+		"С этим можно весело поиграть.",
+		"Идеально. Подсажу-ка я этого на свой любимый наркотик.",
+		"Эта будет ползать в поисках новой дозы.",
+		"Раб-торчок — значит, им легко управлять.",
+		"Здесь виден потенциал.",
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		"You're trying to sell us a drug junkie? Really?",
-		"A junkie slave? Ugh.",
-		"I like my slaves low rather than high.",
+		"Ты серьезно пытаешься впарить нам торчка?",
+		"Раб-торчок? Фу, мерзость.",
+		"Мне больше нравятся покорные рабы, чем обдолбанные.",
 	])
 
 func getTraits() -> Dictionary:

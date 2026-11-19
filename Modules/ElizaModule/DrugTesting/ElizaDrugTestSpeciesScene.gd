@@ -157,6 +157,6 @@ func _react(_action: String, _args):
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_species", false)):
 			setFlag("ElizaModule.tfcan_species", true)
-			addMessage("Eliza can now transform into a dragon or a human. If you ask her.")
+			addMessage("Теперь Элиза может превращаться в дракона или человека. Если, конечно, ты её об этом попросишь.")
 
 	setState(_action)

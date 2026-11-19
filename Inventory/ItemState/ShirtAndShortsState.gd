@@ -100,9 +100,9 @@ func coversBodyparts():
 func getStateText():
 	var text = ""
 	if(isShirtOpened()):
-		text += "Shirt is opened. "
+		text += "Рубашка расстегнута. "
 	if(shortsPulledDown):
-		text += "Shorts are pulled down. "
+		text += "Шорты спущены. "
 	return text
 
 func canDamage():
@@ -129,13 +129,13 @@ func getDamageState() -> int:
 func receiveDamage():
 	if(!halfDamage):
 		halfDamage = true
-		return [true, "The uniform's fabric got scratched and now has holes in a few places!"]
+		return [true, "Ткань униформы поцарапана, и теперь в нескольких местах появились дыры!"]
 	elif(!clothesDamaged):
 		clothesDamaged = true
-		return [true, "Pieces of the uniform's fabric got ripped off, exposing privates!"]
+		return [true, "Куски ткани оторваны, обнажая интимные места!"]
 	elif(!superDamage):
 		superDamage = true
-		return [true, "The uniform's fabric got scratched even further, forming huge gaping holes!"]
+		return [true, "Ткань униформы разодрана еще сильнее, образовались огромные зияющие дыры!"]
 	
 	return .receiveDamage()
 
@@ -149,11 +149,11 @@ func repairDamage():
 
 func getDamageDescription():
 	if(superDamage):
-		return "Lots of gaping holes in the fabric, exposing privates"
+		return "В ткани полно зияющих дыр, обнажающих интимные места"
 	if(clothesDamaged):
-		return "Pieces of fabric are ripped off, exposing privates"
+		return "Куски ткани оторваны, обнажая интимные места"
 	if(halfDamage):
-		return "Fabric has holes in a few places"
+		return "В ткани есть дыры в нескольких местах"
 	return ""
 
 func getHidesParts(_character):

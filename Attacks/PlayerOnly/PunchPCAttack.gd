@@ -18,7 +18,7 @@ func getVisibleName(_context = {}):
 	return "Удар"
 	
 func getVisibleDesc(_context = {}):
-	return "You do a combo of 2 punches, each one dealing "+scaledDmgRangeStr(DamageType.Physical, 5, 10)+" damage"
+	return "Вы проводите серию из 2 ударов, каждый из которых наносит "+scaledDmgRangeStr(DamageType.Physical, 5, 10)+" damage"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -28,13 +28,13 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		return genericDodgeMessage(_attacker, _receiver)
 
 	var texts = [
-		"{attacker.name} manages to land a few "+("strong punches" if !canScratch(_attacker) else "good scratches")+" on {receiver.name}.",
+		"{attacker.name} удается нанести несколько "+("сильных ударов" if !canScratch(_attacker) else "хороших царапин")+" on {receiver.name}.",
 	]
 	var text = RNG.pick(texts)
 	
 	if(RNG.chance(50)):
 		if(canScratch(_attacker) && _receiver.addEffect(StatusEffect.Bleeding)):
-			text += " Sharp claws caused {receiver.him} to start [color=red]bleeding[/color]."
+			text += " Острые когти заставили {receiver.him} начать [color=red]кровоточить[/color]."
 		
 	return {
 		text = text,

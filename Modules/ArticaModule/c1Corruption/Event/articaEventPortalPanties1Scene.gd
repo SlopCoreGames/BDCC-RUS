@@ -24,7 +24,7 @@ func _run():
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Solo, "walk", {pc="artica"})
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("Артика направляется к главному лифту, словно просто осматривает станцию..."+str(" She keeps covering her private bits though.. which doesn't help much because she has quite a lot that she needs to cover.." if nakedAndShy else "")+"")
+		saynn("Артика направляется к главному лифту, словно просто осматривает станцию..."+str(" Она всё пытается прикрывать свои интимные места... но это мало помогает, ведь прикрывать ей приходится очень многое..." if nakedAndShy else "")+"")
 
 		saynn("Она проходит мимо контрольно-пропускного пункта и заходит в лифт. Издалека трудно разглядеть, какую кнопку она нажимает... но вы замечаете, что она жмет самую нижнюю — ту, что ведет на этаж со всеми шахтными стволами...")
 
@@ -141,13 +141,13 @@ func _run():
 
 		saynn("То, что происходит после этого вопроса... странно...")
 
-		saynn("Лапки Артики начинают скользить по её меху"+str(", sliding under her shorts and shirt, slowly taking them off.." if !isNaked else ", not covering or hiding any of her private bits anymore..")+"")
+		saynn("Лапки Артики начинают скользить по её меху"+str(", скользя под её шортами и футболкой, медленно стягивая их..." if !isNaked else ", больше не прикрывая и не пряча свои интимные места...")+"")
 
 		saynn("Фокси приподнимает бровь, пока пушистый мех... начинает ласкать её грудь, поглаживая мягкие полушария и играя с упругими сосками"+str(" swollen" if getCharacter("artica").isLactating() else "")+" nips..")
 
 		saynn("[say=alexrynard]Ты вот что чувствуешь?[/say]")
 
-		saynn("Она кивает. Что ж, она чувствует... саму себя... её лапы исследуют пушистый живот, скользя вниз, к мокрой киске, и "+str("hard trobbing cock" if !isCaged else "drippy locked cock")+"..")
+		saynn("Она кивает. Что ж, она чувствует... саму себя... её лапы исследуют пушистый живот, скользя вниз, к мокрой киске, и "+str("твердый, пульсирующий член" if !isCaged else "сочащийся смазкой напряженный член")+"..")
 
 		saynn("[say=alexrynard]Так, что-то здесь не так. Стой.[/say]")
 

@@ -14,14 +14,14 @@ func _run():
 		saynn("Рахи стоит неподвижно, словно чего-то ждет. Пока любопытство не заставляет её саму задать тебе вопрос.")
 
 		saynn("[say=rahi]"+RNG.pick([
-			"So.. how did she do today?..",
-			"So.. how was her performance today, {rahiMaster}?..",
-			"What do you think about her task, {rahiMaster}?..",
+			"Ну и.. как она сегодня справилась?..",
+			"Ну и.. как её сегодня выступила, {rahiMaster}?..",
+			"Что думаешь о её задании, {rahiMaster}?..",
 		])+"[/say]")
 
-		addButton(RNG.pick(["Great", "Good", "Good job", "Amazing"]), "Сказать, что сегодня она выступила великолепно", "say_great")
-		addButton(RNG.pick(["Could be better", "Meh", "Okay-ish", "Needs improvement"]), "Рахи могла бы постараться получше", "say_meh")
-		addButton(RNG.pick(["Bad", "Pathetic", "Awful", "Terrible"]), "Рахи выступила ужасно", "say_bad")
+		addButton(RNG.pick(["Отлично", "Хорошо", "Молодец", "Потрясающе"]), "Сказать, что сегодня она выступила великолепно", "say_great")
+		addButton(RNG.pick(["Могло быть и лучше", "Так себе", "Так себе", "Нужно подтянуть"]), "Рахи могла бы постараться получше", "say_meh")
+		addButton(RNG.pick(["Плохо", "Жалкое зрелище", "Ужасно", "Ужасно"]), "Рахи выступила ужасно", "say_bad")
 	if(state == "say_great"):
 		saynn("[say=pc]Сегодня ты была великолепна, киска. Так держать![/say]")
 

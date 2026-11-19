@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Таранный удар"
 
 func getVisibleDescription():
-	return "A bull is trapped inside you. You get a special ability to ram enemies and stun them for 50 stamina"
+	return "Внутри тебя заперт разъяренный бык. Ты обретаешь особую способность таранить врагов и оглушать их ценой в 50 единиц выносливости."
 
 func getSkillTier():
 	return 1

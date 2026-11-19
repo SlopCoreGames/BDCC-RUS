@@ -632,7 +632,7 @@ func loadData(data):
 	gotPayed = SAVE.loadVar(data, "gotPayed", false)
 
 func getDevCommentary():
-	return "I needed some repeatable way to encounter Risha so this is that way. Gives you some insight into Risha. Yeah, she is a horny bitch. But maybe she is slightly more than that? Naaaah x3"
+	return "Мне нужен был какой-то способ регулярно сталкиваться с Ришей, так что вот он. Это даст вам представление о ней. Да, она та еще похотливая сучка. Но, может, в ней есть что-то еще? Не-а, х3"
 
 func hasDevCommentary():
 	return true

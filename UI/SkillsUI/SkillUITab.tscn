@@ -52,7 +52,7 @@ margin_top = 18.0
 margin_right = 1266.0
 margin_bottom = 34.0
 colorGradient = SubResource( 1 )
-propertyName = "Level 1"
+propertyName = "Уровень 1"
 
 [node name="DescLabel" type="Label" parent="ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 38.0
@@ -132,7 +132,7 @@ margin_right = 624.0
 margin_bottom = 42.0
 mouse_filter = 1
 bbcode_enabled = true
-bbcode_text = "Description will be shown here"
+bbcode_text = "Здесь будет представлено описание"
 text = "Здесь будет представлено описание"
 fit_content_height = true
 
@@ -148,7 +148,7 @@ margin_right = 624.0
 margin_bottom = 70.0
 mouse_filter = 1
 bbcode_enabled = true
-bbcode_text = "Requirements will be shown here"
+bbcode_text = "Здесь будут указаны требования"
 text = "Здесь будут указаны требования"
 fit_content_height = true
 

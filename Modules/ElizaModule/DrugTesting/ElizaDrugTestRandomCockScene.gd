@@ -242,6 +242,6 @@ func _react(_action: String, _args):
 		getCharacter("eliza").updateBodyparts()
 		if(!getFlag("ElizaModule.tfcan_cocks", false)):
 			setFlag("ElizaModule.tfcan_cocks", true)
-			addMessage("Eliza can now grow almost any cock if you tell her to.")
+			addMessage("Теперь Элиза может отрастить почти любой член, если ты ей прикажешь.")
 
 	setState(_action)

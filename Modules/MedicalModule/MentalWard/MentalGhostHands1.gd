@@ -101,7 +101,7 @@ func _run():
 
 		saynn("[say=eliza]А себя ты видишь?[/say]")
 
-		saynn("Вы опускаете взгляд на себя. Да, вроде всё на месте. Ваше {pc.masc} тело, смирительная рубашка,"+str(" your growing belly," if GM.pc.isVisiblyPregnant() else "")+"цепь-поводок, испытательный стол, на котором вы сидите — всё на месте.")
+		saynn("Вы опускаете взгляд на себя. Да, вроде всё на месте. Ваше {pc.masc} тело, смирительная рубашка,"+str(" твой растущий живот," if GM.pc.isVisiblyPregnant() else "")+"цепь-поводок, испытательный стол, на котором вы сидите — всё на месте.")
 
 		saynn("[b]Внезапно чья-то рука касается вашего подбородка[/b]. Вы вздрагиваете, заставляя цепи загреметь; рука полупрозрачная, совершенно бесцветная и ни к чему не прикреплена — она просто парит в воздухе! И так же внезапно, как появилась, рука исчезает в небытии, словно её резко отдернули от вас.")
 
@@ -232,7 +232,7 @@ func _react(_action: String, _args):
 		GM.pc.orgasmFrom("eliza")
 		GM.pc.addSkillExperience(Skill.SexSlave, 20)
 		GM.pc.addCredits(1)
-		addMessage("You received 1 work credit!")
+		addMessage("Вы получили 1 рабочий кредит!")
 		
 		setModuleFlag("MedicalModule", "Mental_ExpGhostHands", Util.maxi(1, getModuleFlag("MedicalModule", "Mental_ExpGhostHands", 0)))
 
@@ -244,7 +244,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Ghost hands is kinda an interesting concept. But it doesn't really fit the sci-fi setting because ghosts.. But I made it fit anyway x3. I had an idea for such drug a loooong time ago, even before I started writing this game. I hope it was interesting to read at least. Basically it just makes you blind for anything that's not static. But you still see anything that touches you and only it. Or maybe you feel the heat or something. And then your brain visualizes that as transparent ghost-like entities"
+	return "«Призрачные руки» — концепция довольно любопытная. Она не совсем вписывается в научно-фантастический сеттинг, потому что призраки... Но я всё равно умудрилась это обыграть x3. Идея такого препарата пришла мне в голову ооочень давно, ещё до того, как я начала писать эту игру. Надеюсь, читать об этом было хотя бы интересно. По сути, этот препарат делает тебя слепым ко всему, что находится в движении. Но ты всё равно видишь всё, что касается тебя, и только это. Или, может, ты чувствуешь тепло или что-то в этом роде. И тогда твой мозг визуализирует это как прозрачные призракоподобные сущности."
 
 func hasDevCommentary():
 	return true

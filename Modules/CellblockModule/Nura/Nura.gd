@@ -19,7 +19,7 @@ func getGender():
 	return Gender.Other
 	
 func getSmallDescription() -> String:
-	return "A feature-less android."
+	return "Безликий андроид."
 
 func getSpecies():
 	return ["human"]

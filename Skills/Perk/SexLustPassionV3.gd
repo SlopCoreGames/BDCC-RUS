@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Похоть как зависимость"
 
 func getVisibleDescription():
-	return "You can't live without sex! Each time you have oral, vaginal or anal sex you recover 50 [color="+DamageType.getColorString(DamageType.Stamina)+"]stamina[/color] back!"
+	return "Без секса жизнь не мила! Каждый раз, когда вы занимаетесь оральным, вагинальным или анальным сексом, вы восстанавливаете 50 [color="+DamageType.getColorString(DamageType.Stamina)+"]единиц выносливости[/color]!"
 
 func getRequiredPerks():
 	return [Perk.SexLustPassion, Perk.SexLustPassionV2]

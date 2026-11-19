@@ -10,8 +10,8 @@ func initBuff(_args):
 
 func getVisibleDescription():
 	if(amount < 0.0):
-		return "Hides inflated belly"
-	return "Inflated belly!"
+		return "Скрывает раздутый живот"
+	return "Раздутый живот!"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.InflatedBelly, amount/100.0)

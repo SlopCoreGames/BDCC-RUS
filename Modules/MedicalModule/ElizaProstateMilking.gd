@@ -28,7 +28,7 @@ func _run():
 
 	if(state == "follow"):
 		aimCamera("med_milkingroom")
-		setLocationName("Milking heaven")
+		setLocationName("Райское доение")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={exposedCrotch=true,hard=true}})
 		
 		saynn("Она приводит тебя в комнату, которую можно назвать только райским местом для дойки. Ты замечаешь огромный резервуар для хранения жидкости и немало специальных доильных станков — не для животных, а для людей. Элиза направляет тебя в один из них. Сам станок представляет собой набор металлических труб, предназначенных для того, чтобы держать быка или корову неподвижно; Элиза привязывает твой поводок к раме станка.")
@@ -159,7 +159,7 @@ func _run():
 
 	if(state == "follow1"):
 		aimCamera("med_nearmilking")
-		setLocationName("Corridor")
+		setLocationName("Коридор")
 		GM.pc.setLocation("med_nearmilking")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
@@ -193,14 +193,14 @@ func _react(_action: String, _args):
 		increaseModuleFlag("MedicalModule", "Med_milkedSeedTimes")
 		GM.main.SCI.handleBountyFluid(GM.pc.getFluidType(FluidSource.Penis), howMuchMilked)
 		
-		addMessage(str(round(howMuchMilked / 10.0)*10.0)+" ml of cum was milked from your cock")
+		addMessage(str(round(howMuchMilked / 10.0)*10.0)+" из твоего члена было подоено [число] мл спермы")
 
 		GM.pc.addSkillExperience(Skill.Milking, 60, "eliza_prostatemilking")
 		
 		if(howMuchMilked >= 60.0):
 			var credits = Util.maxi(1, int(floor(sqrt(howMuchMilked / 50.0) / 1.0)))
 			GM.pc.addCredits(credits)
-			addMessage("You received "+str(credits)+" work "+Util.multipleOrSingularEnding(credits, "credit")+"!")
+			addMessage("Вы получили "+str(credits)+" work "+Util.multipleOrSingularEnding(credits, "credit")+"!")
 
 	if(_action == "endthescene"):
 		endScene()

@@ -151,7 +151,7 @@ func updateSelectedHighlight():
 
 func updateSelectedInfo():
 	if(selectedItem == null):
-		itemNameLabel.text = "Pick an item"
+		itemNameLabel.text = "Выберите предмет"
 		itemDescLabel.bbcode_text = ""
 		return
 	itemNameLabel.text = selectedItem.getStackName()

@@ -19,11 +19,11 @@ func _run():
 			saynn("Вы слышите цокот каблуков мимо вас. Кто бы это ни был, кажется, этот человек заметил вас и остановился.")
 
 		saynn("[say=eliza]"+RNG.pick([
-			"Oh hey there. Nice to see you again.",
-			"Should I free and grab you for some experiments? Hmmm..",
-			"Don’t mind me, I just wanted to look at you~.",
-			"Looking cute there. How many already used you? I guess I should look behind.",
-			"Hey there, inmate.",
+			"О, привет. Рада тебя снова видеть.",
+			"Может, мне освободить тебя и затащить на пару экспериментов? Хммм...",
+			"Не обращай на меня внимания, я просто хотела на тебя посмотреть~.",
+			"Выглядишь мило. И сколько тебя уже использовали? Наверное, стоит заглянуть тебе за спинку.",
+			"Привет, заключенный.",
 		])+"[/say]")
 
 		# (if gagged)

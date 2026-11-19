@@ -261,12 +261,12 @@ func _react(_action: String, _args):
 
 	if(_action == "leave_confess"):
 		processTime(6*60)
-		addMessage("Task added")
+		addMessage("Задача добавлена")
 
 	setState(_action)
 
 func getDevCommentary():
-	return "This scene just shows that Rahi has problems. Basically just exposition.. But I also hint at Eliza being interested in that."
+	return "Эта сцена просто показывает, что у Рахи есть проблемы. По сути, просто экспозиция... Но я также намекаю на то, что Элизе это интересно."
 
 func hasDevCommentary():
 	return true

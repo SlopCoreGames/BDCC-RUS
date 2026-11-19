@@ -100,11 +100,11 @@ func _run():
 	if(state == "do_cum_inside"):
 		playAnimation(StageScene.SexMissionary, "inside", {pc="pc", npc="artica", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true}})
 		var pcHasKnot = GM.pc.bodypartHasTrait(BodypartSlot.Penis, PartTrait.PenisKnot)
-		saynn("Наконец, ты с силой вгоняешь свой член глубоко внутрь,"+str(" knotting her pussy and" if pcHasKnot else "")+"пробивая её матку.")
+		saynn("Наконец, ты с силой вгоняешь свой член глубоко внутрь,"+str(" завязывая её киску и" if pcHasKnot else "")+"пробивая её матку.")
 
 		saynn("[say=artica]Ммм..[/say]")
 
-		saynn("Тело Артики слегка дрожит... пока ты продолжаешь заливать её шлюшью щель своим горячим семенем, крепко удерживая её руками,"+str(" and primed for breeding" if !getCharacter("artica").isVisiblyPregnant() else "")+"")
+		saynn("Тело Артики слегка дрожит... пока ты продолжаешь заливать её шлюшью щель своим горячим семенем, крепко удерживая её руками,"+str(" подготовленная к осеменению" if !getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 		saynn("[say=pc]Чем быстрее ты будешь двигаться, тем лучше. Иначе мне придётся промыть тебе мозги, чтобы ты стал идеальным чехлом для члена.[/say]")
 

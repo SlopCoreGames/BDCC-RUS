@@ -14,12 +14,12 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"This one’s been an inmate of one of the AlphaCorp prisons, tucked away deep. Toughened, but now completely broken down!",
-		"Once a prisoner of an AlphaCorp prison, now a prized possession. How many bidders can claim that?",
-		"Fresh from the prison cells of an AlphaCorp prison, this inmate has seen it all, and now is ready to serve.",
-		"This one spent years behind bars of an AlphaCorp prison, and now {slave.he} is ready to serve on the other side.",
-		"An AlphaCorp ex-inmate who has already been trained to submit, perfect for those looking for a truly experienced slave.",
-		"Captured, punished, and now owned. This AlphaCorp ex-inmate will obey any command you give.",
+		"Эта девчонка сидела в одной из глубоко запрятанных тюрем AlphaCorp. Закаленная, но теперь она полностью сломлена!",
+		"Когда-то заключенная тюрьмы AlphaCorp, а теперь — ценный трофей. Сколько участников торгов смогут похвастаться таким?",
+		"Только что из тюремных камер AlphaCorp; эта заключенная повидала всякое и теперь готова служить.",
+		"Эта проторчала годы за решеткой в тюрьме AlphaCorp, а теперь {slave.he} готова служить на «той» стороне.",
+		"Бывшая заключенная AlphaCorp, уже обученная покорности — идеальный вариант для тех, кто ищет по-настоящему опытной рабыню.",
+		"Плененная, наказанная и теперь — в собственности. Эта бывшая узница AlphaCorp будет исполнять любую вашу команду.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

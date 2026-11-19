@@ -10,20 +10,20 @@ func getVisibleName(_context = {}):
 	
 func getVisibleDesc(_context = {}):
 	var amount = HypnokinkUtil.getSuggestibleStacks(GM.pc) / 2
-	return "Recite a short mantra to regain "+str(round(amount * 0.65))+" to "+str(round(amount))+" stamina. Amount scales with how hypnotized you currently are."
+	return "Произнести короткую мантру, чтобы восстановить "+str(round(amount * 0.65))+" to "+str(round(amount))+" выносливость. Количество зависит от текущей степени гипноза."
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var texts = [
-		"{attacker.name} recites a short, relaxing mantra.",
-		"{attacker.name} mutters a short, relaxing mantra.",
-		"{attacker.name} whispers a short, relaxing mantra.",
+		"{attacker.name} произносит короткую, расслабляющую мантру.",
+		"{attacker.name} бормочет короткую, расслабляющую мантру.",
+		"{attacker.name} шепчет короткую, расслабляющую мантру.",
 	]
 	var text = RNG.pick(texts)
 	
 	var amount = HypnokinkUtil.getSuggestibleStacks(_attacker) / 2
 	amount = RNG.randi_range(amount * 0.65, amount)
 	
-	text += "\n[b]{attacker.name} is revitalised! (+"+str(amount)+" stamina)[/b]"
+	text += "\n[b]{attacker.name} бодрится! (+"+str(amount)+" stamina)[/b]"
 		
 	_attacker.addStamina(amount)
 	_attacker.addEffect(StatusEffect.MantraUsed)

@@ -38,15 +38,15 @@ func _run():
 		# (if naked)
 		if(GM.pc.isFullyNaked()):
 			saynn(RNG.pick([
-				"You can’t help but to feel like someone is watching you. You look around a spot one of the inmates checking you out. {npc.His} stare makes you tactically cover your privates a bit.",
-				"You’re completely naked so obviously eyes are gonna be attracted to you. One set in particular is quite curious in your {pc.masc} curves.",
+				"Ты невольно чувствуешь, будто за тобой наблюдают. Оглядевшись, ты замечаешь, как один из заключенных пялится на тебя. От его {npc.His} взгляда тебе хочется поскорее прикрыться.",
+				"Ты совершенно голая, так что взгляды неизбежно прикованы к тебе. Один взгляд, в особенности, с любопытством изучает твои {pc.masc} изгибы.",
 			]))
 
 		# (if not naked)
 		else:
 			saynn(RNG.pick([
-				"You can’t help but to feel like someone is watching you. You look around a spot one of the inmates checking you out. {npc.His} stare makes your heart beat a bit harder.",
-				"You’re quite exposed so eyes are gonna be attracted to you. One set in particular is quite curious in your {pc.masc} curves.",
+				"Ты невольно чувствуешь, будто за тобой наблюдают. Оглядевшись, ты замечаешь, как один из заключенных пялится на тебя. От его {npc.His} взгляда сердце начинает биться чуть быстрее.",
+				"Ты слишком открыта, так что взгляды неизбежно прикованы к тебе. Один взгляд, в особенности, с любопытством изучает твои {pc.masc} изгибы.",
 			]))
 
 		var ehibit = GM.pc.getSkillLevel(Skill.Exhibitionism)
@@ -84,10 +84,10 @@ func _run():
 		saynn("Но прежде чем вы успеваете уйти, заключенный хватает вас за воротник и пытается лапать ваше тело!")
 		
 		saynn(RNG.pick([
-			"[say=npc]Where are you going, slut? Your job is to serve inmates like me.[/say]",
-			"[say=npc]Hold it right there, whore. I’m not letting you go unless we fuck right here.[/say]",
-			"[say=npc]Think I will just let you go, little fucktoy? Think again.[/say]",
-			"[say=npc]Think I will let you go after what I saw? I’m gonna fuck you.[/say]",
+			"[say=npc]Куда это ты собралась, шлюха? Твоя работа — обслуживать таких зэков, как я.[/say]",
+			"[say=npc]А ну стоять, сучка. Я тебя не отпущу, пока мы не трахнемся прямо здесь.[/say]",
+			"[say=npc]Думаешь, я просто так тебя отпущу, маленькая игрушка для секса? Как бы не так.[/say]",
+			"[say=npc]Думаешь, я отпущу тебя после того, что увидел? Я тебя сейчас оттрахаю.[/say]",
 		]))
 
 		addButton("Атаковать", "Чего они хотят?", "attack")
@@ -102,8 +102,8 @@ func _run():
 			
 			saynn(RNG.pick([
 				"[say=npc]You.. fucker..[/say]",
-				"[say=npc]What a bitch..[/say]",
-				"[say=npc]Ugh.. you whore..[/say]",
+				"[say=npc]Ну и сучка...[/say]",
+				"[say=npc]Тьфу... ну ты и шлюха...[/say]",
 				
 			]))
 
@@ -117,8 +117,8 @@ func _run():
 			saynn("От этого {npc.him} начинает кашлять, но {npc.he} всё еще стоит на ногах. И {npc.he} всё еще в ярости.")
 
 			saynn(RNG.pick([
-				"[say=npc]Ugh.. Prepare to be my bitch.[/say]",
-				"[say=npc]You little bitch. You will learn your place soon.[/say]",
+				"[say=npc]Уф.. Готовься, сейчас ты будешь моей сучкой.[/say]",
+				"[say=npc]Мелкая сучка. Скоро ты узнаешь своё место.[/say]",
 				
 			]))
 
@@ -144,9 +144,9 @@ func _run():
 		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
-			"What a slut.",
-			"Ugh.. Bitch.",
-			"Go fuck yourself.",
+			"Ну и шлюшка.",
+			"Уф.. Сучка.",
+			"Иди нахуй.",
 		])+"[/say]")
 
 		addWonButton()

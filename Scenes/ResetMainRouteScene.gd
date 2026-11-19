@@ -101,8 +101,8 @@ func _react(_action: String, _args):
 		GM.main.startNewDay()
 
 	if(_action == "wake_fine"):
-		addMessage("New task added!")
+		addMessage("Добавлена новая задача!")
 	if(_action == "wake_fuck_off"):
-		addMessage("New task added!")
+		addMessage("Добавлена новая задача!")
 
 	setState(_action)

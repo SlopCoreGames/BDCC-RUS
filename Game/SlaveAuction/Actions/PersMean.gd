@@ -15,21 +15,21 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("PersMean") && _slaveTraits["PersMean"] > 0.0):
 		sayPresenter(RNG.pick([
-			"{slave.He} has a sharp tongue and a mean attitude to match. But with the right hand, that cruelty can be harnessed and used for your entertainment.",
-			"If you’re looking for a challenge, {slave.he} will push you to your limits with {slave.hisHer} mean spirit.",
-			"Mean-spirited and rebellious. This one won’t bow without a fight.. but that's half the fun, isn't it?",
-			"Want a slave with some bite? {slave.He} won’t shy away from showing you {slave.hisHer} teeth and claws. A little challenge is always fun.",
-			"Taming {slave.his} mean personality will take work, but the reward will be oh-so-sweet when you succeed.",
-			"{slave.HeShe} may seem vicious now, but break {slave.himHer} down, and you’ll have something truly special. It will be fun, trust me.",
+			"У {slave.He} острый язык и соответствующий ему скверный нрав. Но в правильных руках эта жестокость может стать вашим главным развлечением.",
+			"Если вы ищете вызов, {slave.he} заставит вас выложиться на полную благодаря {slave.hisHer} злобному характеру.",
+			"Злобная и непокорная. Эта особа не склонится без боя... но ведь в этом и заключается половина удовольствия, не так ли?",
+			"Хотите рабыню с характером? {slave.He} не побоится показать вам {slave.hisHer} зубы и когти. Маленькая проверка на прочность — это всегда весело.",
+			"Укрощение скверного нрава {slave.his} потребует усилий, но награда будет невероятно сладкой, когда вы добьетесь своего.",
+			"Сейчас {slave.HeShe} может казаться злобной, но сломайте {slave.himHer}, и вы получите нечто поистине особенное. Поверьте, это будет весело.",
 		]))
 	if(_slaveTraits.has("PersKind") && _slaveTraits["PersKind"] > 0.0):
 		sayPresenter(RNG.pick([
-			"{slave.He} has a heart of gold. Kind, gentle, and eager to please, {slave.heShe} will make a wonderful companion.",
-			"You won’t find a more obedient or gentle spirit than {slave.him}. Always eager to help and make life easier.",
-			"This slave doesn’t need harsh orders. {slave.HeShe} will willingly serve with kindness in {slave.hisHer} eyes.",
-			"{slave.His} soft nature will win your heart. A perfect match for anyone who values loyalty and compassion.",
-			"With {slave.himHer}, you’ll get more than just obedience.. you’ll have a slave who genuinely cares for {slave.hisHer} master.",
-			"A kind heart and a gentle touch. {slave.He} will make a wonderful addition to your household.",
+			"У {slave.He} золотое сердце. Добрая, нежная и стремящаяся угодить, {slave.heShe} станет чудесной спутницей.",
+			"Вы не найдете более послушной и кроткой души, чем {slave.him}. Всегда готова помочь и облегчить вам жизнь.",
+			"Этой рабыне не нужны суровые приказы. {slave.HeShe} будет служить с готовностью и добротой в {slave.hisHer} глазах.",
+			"Мягкая натура {slave.His} покорит ваше сердце. Идеальный выбор для любого, кто ценит верность и сострадание.",
+			"С {slave.himHer} вы получите не просто послушание... у вас будет рабыня, которая искренне заботится о своем {slave.hisHer} хозяине.",
+			"Доброе сердце и нежные руки. {slave.He} станет прекрасным дополнением к вашему дому.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Fetish, mightChance())

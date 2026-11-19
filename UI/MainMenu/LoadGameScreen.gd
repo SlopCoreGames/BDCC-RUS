@@ -189,7 +189,7 @@ func readSaveFileHTML5():
 
 func _on_ImportButton_pressed():
 	import_save_panel_container.visible = true
-	import_label.text = "Save import"
+	import_label.text = "Сохранить импорт"
 
 func doActuallyImportFromFile():
 	if OS.get_name() == "HTML5":
@@ -262,16 +262,16 @@ func _on_DoImportFromFileButton_pressed():
 func _on_DoImportFromClipboardButton_pressed():
 	var theText:String = OS.clipboard
 	if(theText.empty()):
-		import_label.text = "Clipboard is empty"
+		import_label.text = "Буфер обмена пуст"
 		return
 	var theStuff:Array = Util.splitOnFirst(theText, "|")
 	if(theStuff.size() <= 1):
-		import_label.text = "Clipboard doesn't have a save"
+		import_label.text = "В буфере обмена нет сохранения"
 		return
 	var theFileName:String = theStuff[0]
 	var theSaveText:String = Marshalls.base64_to_raw(theStuff[1]).decompress_dynamic(-1, File.COMPRESSION_DEFLATE).get_string_from_utf8()
 	if(theSaveText.empty()):
-		import_label.text = "Clipboard has a corrupted/bad save"
+		import_label.text = "В буфере обмена поврежденное сохранение"
 		return
 	#print(Marshalls.base64_to_raw(theStuff[1]).decompress(File.COMPRESSION_DEFLATE))
 	SAVE.saveGameFromText(theFileName, theSaveText)

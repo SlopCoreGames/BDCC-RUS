@@ -24,7 +24,7 @@ func _run():
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Solo, "walk", {pc="artica"})
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("Похоже, Артика направляется к главному лифту"+str(", covering her private bits with her paws at all times" if nakedAndShy else "")+".")
+		saynn("Похоже, Артика направляется к главному лифту"+str(", постоянно прикрывая лапками свои интимные места" if nakedAndShy else "")+".")
 
 		saynn("Ты позволяешь ей уйти, решая подождать следующего раза. Кажется, она спускается на самый нижний этаж... туда, где находятся все шахты.")
 
@@ -51,7 +51,7 @@ func _run():
 	if(state == "sudden_socket"):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="socket"})
-		saynn("..полуголая феннек приближается к ней."+str(" Artica jumps and quickly tries to pull her shorts up.. failing at that spectacularly.." if !isNaked else " Artica jumps and quickly covers herself up..")+"")
+		saynn("..полуголая феннек приближается к ней."+str(" Артика подпрыгивает и пытается быстро натянуть шорты... но делает это чертовски неуклюже..." if !isNaked else " Артика подпрыгивает и поспешно прикрывается...")+"")
 
 		saynn("[say=socket]Меня зовут Сокет. Но если хочешь, можешь звать меня просто Ик![/say]")
 
@@ -65,7 +65,7 @@ func _run():
 
 		saynn("Она говорит так тихо, что почти невозможно разобрать ни слова..")
 
-		saynn("[say=socket]О, это моя униформа! Она всегда такая была.."+str(" But where is yours?" if isNaked else "")+"[/say]")
+		saynn("[say=socket]О, это моя униформа! Она всегда такая была.."+str(" Но где же твой?" if isNaked else "")+"[/say]")
 
 		if (nakedAndShy):
 			saynn("Сокет наклоняет голову, пока Артика испуганно пищит и снова пытается прикрыться.")
@@ -177,7 +177,7 @@ func _run():
 
 			saynn("[say=socket]Клетка? Пфф, пустяки. У тебя случайно нет обертки от презерватива?[/say]")
 
-			saynn(""+str("Naked " if isNaked else "")+"Артика в ответ на этот вопрос склоняет голову набок.")
+			saynn(""+str("Голая " if isNaked else "")+"Артика в ответ на этот вопрос склоняет голову набок.")
 
 			saynn("[say=socket]Нет? Тогда я воспользуюсь своим гаечным ключом... Не дергайся![/say]")
 

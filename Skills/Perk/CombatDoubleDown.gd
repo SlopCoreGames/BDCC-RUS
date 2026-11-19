@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Двойная ставка"
 
 func getVisibleDescription():
-	return "Your reflexes are insane, you get the ability to react to the enemy's attack by doing your basic physical attack a second time while spending 10 stamina"
+	return "Твои рефлексы просто запредельные: теперь ты можешь реагировать на атаку противника, нанося повторный базовый физический удар ценой 10 единиц выносливости."
 
 func getSkillTier():
 	return 1

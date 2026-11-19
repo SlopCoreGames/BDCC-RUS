@@ -158,10 +158,10 @@ func getTooltipInfo():
 
 func getAttributesText():
 	var result = [
-		["Producing", BodilyFluids.getFluidName(getFluidType())],
-		["Capacity", str(round(getFluidAmount() * 10.0)/10.0)+"/"+ str(round(getCapacity() * 10.0)/10.0)+" ml"],		
-		["Production speed", str(round(getProductionSpeedPerHour() * 10.0)/10.0)+" ml/hour"],
-		["Currently producing", str(shouldProduce())],
+		["Производство", BodilyFluids.getFluidName(getFluidType())],
+		["Ёмкость", str(round(getFluidAmount() * 10.0)/10.0)+"/"+ str(round(getCapacity() * 10.0)/10.0)+" ml"],		
+		["Скорость производства", str(round(getProductionSpeedPerHour() * 10.0)/10.0)+" ml/hour"],
+		["Производится сейчас", str(shouldProduce())],
 	]
 
 	if(!fluids.isEmpty()):

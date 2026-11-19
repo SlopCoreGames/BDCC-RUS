@@ -10,7 +10,7 @@ func initBuff(_args):
 	pass
 
 func getVisibleDescription():
-	return "Please change me"
+	return "Пожалуйста, измени меня"
 
 func apply(_buffHolder):
 	pass

@@ -14,16 +14,16 @@ func shouldApplyTo(_npc):
 	return false
 
 func getEffectName():
-	return "Transformations"
+	return "Трансформации"
 
 func getEffectDesc():
 	var tfHolder:TFHolder = character.getTFHolder()
 	if(tfHolder == null):
-		return "You shouldn't see this.."
+		return "Этого не должно быть видно..."
 	var tfCount:int = tfHolder.getActiveTransformationsCount()
 	
 	#var theText:String = "You are under the effects of "+str(tfCount)+" unknown transformation"+("s" if tfCount != 1 else "")+".."
-	var theText:String = "You are under the effects of "+str(tfCount)+" drug"+("s" if tfCount != 1 else "")+":"
+	var theText:String = "На вас действует эффект: "+str(tfCount)+" drug"+("s" if tfCount != 1 else "")+":"
 	
 	for tfa in tfHolder.transformations:
 		var tf:TFBase = tfa
@@ -34,11 +34,11 @@ func getEffectDesc():
 		var canBeTestedIfUnlocked:bool = tf.canBeTested()
 		var reachedLastStage:bool = !tf.canTransformFurther()
 		
-		theText += "\n - "+(pillName if isUnlocked else "Unknown drug")
+		theText += "\n - "+(pillName if isUnlocked else "Неизвестный препарат")
 		if(!isTested && isUnlocked && canBeTestedIfUnlocked):
-			theText += " (Can be scanned by Eliza!)"
+			theText += " (Можно просканировать Элизой!)"
 		elif(reachedLastStage):
-			theText += " (Last stage reached)"
+			theText += " (Достигнута последняя стадия)"
 		elif(tf.getStage() >= 1):
 			theText += " (stage "+str(tf.getStage())+")"
 	

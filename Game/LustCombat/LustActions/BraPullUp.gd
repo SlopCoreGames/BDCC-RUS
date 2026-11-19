@@ -23,7 +23,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	#var itemState: BraState = _args["itemState"]
-	return "Expose your tits completely"
+	return "Полностью обнажить сиськи"
 
 func doAction(_lustState: LustCombatState, _args):
 	var _item:ItemBase = getItem(_lustState, _args)
@@ -35,28 +35,28 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(_lustState.isInBattle() && pc.hasNonFlatBreasts()):
-		text += "You make sure to get the opponents attention by cupping your {pc.breasts}, emphasizing their volume. Then you sink your fingers under the <casualName> and casually pull it up, making your lovely tits pop out from underneath it. You squeeze them together using your arms, giving a great look of your chest."
+		text += "Ты решаешь привлечь внимание противника, обхватив свои {pc.breasts} ладонями и подчеркивая их пышность. Затем ты просовываешь пальцы под <casualName> и небрежно задираешь его вверх, заставляя свои прелестные титьки выпрыгнуть наружу. Ты сжимаешь их локтями, демонстрируя свою грудь во всей красе."
 		text += "\n\n"
 	elif(_lustState.isInBattle() && !pc.hasNonFlatBreasts()):
-		text += "You make sure to get the opponents attention by putting your hands over your {pc.breasts}, covering them. Then you sink your finger under the <casualName> and casually pull it up, exposing your flat chest with nice little nipples."
+		text += "Ты решаешь привлечь внимание противника, накрыв свои {pc.breasts} ладонями. Затем ты просовываешь палец под <casualName> и небрежно задираешь его вверх, обнажая свою плоскую грудь с милыми маленькими сосками."
 		text += "\n\n"
 	elif(!_lustState.isInBattle() && pc.hasNonFlatBreasts()):
-		text += "You look around to make sure that there are no spying eyes before sinking your fingers under the <casualName> and sneakily pulling it up until the {pc.breasts} pop out from underneath it. So naughty, you cover the nips up and squeeze them together using your arms. The feel of them bouncing freely, fully exposed for anyone to see, makes you incredibly horny."
+		text += "Ты оглядываешься по сторонам, проверяя, нет ли лишних глаз, а затем просовываешь пальцы под <casualName> и воровато задираешь его вверх, пока {pc.breasts} не выскочат наружу. Такая шалунья! Ты прикрываешь соски и сжимаешь их руками. Ощущение того, как они свободно колышутся, полностью обнаженные на виду у всех, заводит тебя до безумия."
 		text += "\n\n"
 	elif(!_lustState.isInBattle() && !pc.hasNonFlatBreasts()):
-		text += "You look around to make sure that there are no spying eyes before sinking your fingers under the <casualName> and sneakily pulling it up until your {pc.breasts} are totally exposed. You still hold the nips covered for a bit with your fingers before removing those too. So kinky, constant risk is making you incredibly horny."
+		text += "Оглядевшись по сторонам, чтобы убедиться, что лишних глаз нет, ты запускаешь пальцы под <casualName> и незаметно задираешь её вверх, пока твои {pc.breasts} не оказываются полностью на виду. Ты еще какое-то время прикрываешь соски пальцами, прежде чем обнажить и их. Это так пошло — постоянный риск заставляет тебя невероятно возбуждаться."
 		text += "\n\n"
 		
 	if(RNG.chance(40) && pc.canBeMilked()):
-		text += "Your breasts seem to have quite some weight to them, you can spot a few drops of {pc.milk} streaming down them. They are itching to be milked."
+		text += "Твоя грудь кажется довольно тяжелой, по ней можно заметить несколько капель {pc.milk}. Она так и просится, чтобы её подоили."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasBodywritings()):
-		text += "While undressing yourself, you expose more of your body writings for anyone to see, kinky."
+		text += "Раздеваясь, ты выставляешь напоказ всё больше своих татуировок на теле — как пошло."
 		text += "\n\n"
 		
 	if(RNG.chance(20) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "Cum is dripping from your {pc.breasts} as you stand still even, it’s obvious at a glance that you had quite some fun with others."
+		text += "С твоих {pc.breasts} капает сперма, даже когда ты стоишь неподвижно; с первого взгляда очевидно, что ты неплохо развлеклась с другими."
 		text += "\n\n"
 	
 	return {

@@ -16,7 +16,7 @@ func isPlayable():
 	return true
 
 func getVisibleDescription():
-	return "Cute fluffballs"
+	return "Милые пушистики"
 
 func getDefaultHead(_gender):
 	return "felinehead"

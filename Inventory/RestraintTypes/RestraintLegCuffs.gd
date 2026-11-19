@@ -34,7 +34,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 		stamina = 10
 		
 		if(failChance(_pc, 10)):
-			text += " Ow! {user.name} accidently smashed them against "+RNG.pick(["the wall", "the ground", "something"])
+			text += " Ой! {user.name} случайно ударил ими о "+RNG.pick(["стену", "землю", "something"])
 			pain = scaleDamage(RNG.randi_range(5, 10))
 	
 	#damage = calcDamage()
@@ -46,12 +46,12 @@ func getResistAnimation():
 
 func getTightLockRequiredItemID() -> String:
 	if(tightlockShiv):
-		return "Shiv"
+		return "Шило"
 	return .getTightLockRequiredItemID()
 
 func getTightLockUnlockMessage() -> String:
 	if(tightlockShiv):
-		return "The lock is impossible to remove so you just use a shiv to cut through the restraint, slowly freeing your ankles."
+		return "Замок не поддается, поэтому приходится орудовать шилом, чтобы перерезать ремни и медленно освободить лодыжки."
 	return .getTightLockUnlockMessage()
 
 func getForceOnCombatAnim() -> String:

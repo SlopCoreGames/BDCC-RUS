@@ -30,13 +30,13 @@ func _run():
 
 		saynn("Когда вы впервые её нашли, она была такой застенчивой пушистиком. Но посмотрите на неё сейчас: такая счастливая, так и виляет своей"+str(" naked" if isNaked else "")+"попкой рядом с вами. Её глаза так и искрятся самым разным... драйвом.")
 
-		saynn("Впрочем, некоторые вещи никогда не меняются. Стоит вам установить прямой зрительный контакт, как девушка тут же отводит взгляд, а её щеки заливает нежный румянец."+str(" Her paws are proudly caressing her big pregnant belly.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+		saynn("Впрочем, некоторые вещи никогда не меняются. Стоит вам установить прямой зрительный контакт, как девушка тут же отводит взгляд, а её щеки заливает нежный румянец."+str(" Её лапки с гордостью ласкают её большой беременный живот..." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 		saynn("[say=artica]Х-хочешь чего-нибудь?..[/say]")
 
 		saynn("[say=pc]Просто пялюсь. Внаглую.[/say]")
 
-		saynn("Она хихикает и прикусывает губу, демонстрируя себя с разных ракурсов: то наклоняется, то придерживает руками свою"+str(" milky" if getCharacter("artica").canBeMilked() else " perky")+"грудь, покачиваясь и виляя перед вами своей пушистой задницей."+str(", her locked useless cock always out and visible to you" if (isCaged && isNaked) else "")+".")
+		saynn("Она хихикает и прикусывает губу, демонстрируя себя с разных ракурсов: то наклоняется, то придерживает руками свою"+str(" milky" if getCharacter("artica").canBeMilked() else " perky")+"грудь, покачиваясь и виляя перед вами своей пушистой задницей."+str(", её запертый бесполезный член всегда снаружи и на виду у тебя" if (isCaged && isNaked) else "")+".")
 
 		saynn("[say=artica]Можешь просто пялиться... или не просто пялиться... ха-ха...[/say]")
 
@@ -50,7 +50,7 @@ func _run():
 
 		saynn("[say=artica]Д..да..[/say]")
 
-		saynn("Твоя свободная рука ложится ей на талию, собственнически поглаживая её"+str(", already sliding into her shorts and.." if !isNaked else ", already sliding close to her inner thighs and..")+"")
+		saynn("Твоя свободная рука ложится ей на талию, собственнически поглаживая её"+str(", уже скользя в её шорты и..." if !isNaked else ", уже скользя к её внутренней стороне бёдер и...")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "sudden_risha")
 	if(state == "sudden_risha"):
@@ -322,10 +322,10 @@ func _react(_action: String, _args):
 		processTime(3*60)
 
 	if(_action == "do_comfort"):
-		addMessage("New task added!")
+		addMessage("Добавлена новая задача!")
 
 	if(_action == "no_trust"):
-		addMessage("New task added!")
+		addMessage("Добавлена новая задача!")
 
 	setState(_action)
 

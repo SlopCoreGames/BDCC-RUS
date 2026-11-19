@@ -135,7 +135,7 @@ func _react(_action: String, _args):
 			rahi.getInventory().equipItem(GlobalRegistry.createItem("bondagemittens"))
 		else:
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem("appleitem"))
-			addMessage("You receive an apple")
+			addMessage("Вы получили яблоко")
 
 	if(_action == "stop_task"):
 		getCharacter("rahi").resetEquipment()
@@ -163,7 +163,7 @@ func _react(_action: String, _args):
 			]
 			var randomItem = RNG.pick(possibleItems)
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem(randomItem[1]))
-			addMessage("You receive "+str(randomItem[0]))
+			addMessage("Вы получили "+str(randomItem[0]))
 
 	if(_action == "hard_outcome"):
 		processTime(30*60)
@@ -174,7 +174,7 @@ func _react(_action: String, _args):
 				rahi.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
 		else:
 			var creditAmount = RNG.randi_range(2, 5)
-			addMessage("You receive "+str(creditAmount)+" credits!")
+			addMessage("Вы получили "+str(creditAmount)+" кредитами!")
 			GM.pc.addCredits(creditAmount)
 
 	setState(_action)

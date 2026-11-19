@@ -9,22 +9,22 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Find some generic female panties and bring them to Alex Rynard. He said you can buy some in the laundry.")
+	result.append("Найди обычные женские трусики и принеси их Алексу Ринарду. Он сказал, что их можно купить в прачечной.")
 	
 	if(GM.main.getFlag("PortalPantiesModule.Panties_GavePantiesToAlex")):
-		result.append("You are now wearing the portal panties. Alex said you will be awarded a single credit after each test they do with you.")
+		result.append("Теперь на тебе портативные трусики. Алекс сказал, что за каждый тест, который они с тобой проведут, ты будешь получать по одному кредиту.")
 	
 	if(GM.main.getFlag("PortalPantiesModule.Panties_PcDenied")):
-		result.append("You denied his offer.")
+		result.append("Ты отклонила его предложение.")
 	
 	if(GM.main.getFlag("PortalPantiesModule.Panties_FleshlightsGotStolen")):
-		result.append("Someone fucked you through the portal panties! You gotta return to Alex and ask why that happened.")
+		result.append("Тебя трахнули прямо через портативные трусики! Тебе нужно вернуться к Алексу и выяснить, как такое случилось.")
 	
 	if(GM.main.getFlag("PortalPantiesModule.Panties_FleshlightsAskedAlex")):
-		result.append("Somehow the fleshlights with your private bits were stolen! Alex said you can look for them in the cellblock, near the cells.")
+		result.append("Каким-то образом флешлайты с твоими интимными частями украли! Алекс сказал, что их можно поискать в жилом блоке, рядом с камерами.")
 	
 	if(GM.main.getFlag("PortalPantiesModule.Panties_FleshlightsFoundFleshlights")):
-		result.append("You got the fleshlights! Return them to Alex so he can unlock your portal panties.")
+		result.append("Ты раздобыла флешлайты! Верни их Алексу, чтобы он разблокировал твои портативные трусики.")
 	
 	return result
 

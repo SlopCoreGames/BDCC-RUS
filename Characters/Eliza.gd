@@ -66,25 +66,25 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.Bodywritings):
-		return "I'd love to use your body to keep some medical notes~"
+		return "Я бы с удовольствием использовала твоё тело для медицинских заметок~"
 	if(interest == InterestTopic.ThickButt):
-		return "You should lose some weight, having such huge ass is unhealthy"
+		return "Тебе стоит подсушиться, такая огромная задница — это нездорово"
 	if(interest == InterestTopic.NoBreasts):
-		return "Flat chests don't turn me on, sorry"
+		return "Плоская грудь меня не возбуждает, прости"
 	if(interest == InterestTopic.BigBreasts):
-		return "Such udders are only useful for milking, ugh"
+		return "Такие вымени годятся только для дойки, фу~"
 	if(interest == InterestTopic.ExposedCock):
-		return "Oh~, now we're talking"
+		return "О~, вот теперь мы заговорили"
 	if(interest == InterestTopic.BigCock):
-		return "Oh my, you're so big~"
+		return "О боже, какой же ты огромный~"
 	if(interest == InterestTopic.SmallCock):
-		return "That's a cute cock~"
+		return "Какой милый член~"
 	if(interest == InterestTopic.Pregnant):
-		return "Come to us when you're ready to give birth~"
+		return "Приходи к нам, когда будешь готов рожать~"
 	if(interest == InterestTopic.TightPussy):
-		return "I like a good tight-looking slit, looks so clean and sexy"
+		return "Люблю узкие, тугие щелочки, выглядят так чисто и сексуально"
 	if(interest == InterestTopic.LactatingBreasts):
-		return "Ohhh! Can I milk those? I really want to~"
+		return "Оооо! А можно их подоить? Прямо очень хочется~"
 	
 func _getName():
 	return "Eliza Quinn"
@@ -93,7 +93,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "An elegant feline with pastel yellow fur. Wears a lab coat and carries quite a few medical tools on her belt"
+	return "Элегантная кошка с пастельно-жёлтой шерстью. Носит лабораторный халат, а на её поясе висит немало медицинских инструментов"
 
 func getSpecies():
 	return ["feline"]
@@ -102,10 +102,10 @@ func getFightIntro(_battleName):
 	var text = "Элиза аккуратно собирает волосы в хвост и расстегивает лабораторный халат, демонстрируя на поясе целый арсенал шприцев, инъекторов, баночек с таблетками и флаконов с препаратами."
 	text += "\n\n"
 	text += "[say=eliza]"+RNG.pick([
-		"I’m doctor Quinn. But you can call me Queen.",
-		"I can show you everything. Just ask me nicely.",
-		"We have so many drugs to test, don’t be silly.",
-		"Did I ever tell you I blew up a whole lab once?",
+		"Я доктор Куинн. Но можешь звать меня Королевой.",
+		"Я могу показать тебе всё что угодно. Только попроси меня вежливо.",
+		"У нас столько препаратов для испытаний, не глупи.",
+		"Я тебе рассказывала, что однажды умудрилась взорвать целую лабораторию?",
 	])+"[/say]"	
 	
 	return text
@@ -318,57 +318,57 @@ func reactRestraint(restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"That was a cute attempt",
-				"Adorable~",
-				"Got any more of these?",
-				"That's going into my collection",
+				"Милая попытка",
+				"Прелестно~",
+				"Есть ещё такие?",
+				"Это пойдёт в мою коллекцию",
 			])
 		
 		return RNG.pick([
 			"Ah..",
-			"This is too much",
+			"Это уже слишком",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
-				"Oh wow, am I gonna be the rope bunny today?",
-				"Is it weird that I kinda like this?",
-				"How many more do you have?",
+				"Ого, неужели сегодня я буду твоей веревочной зайкой?",
+				"Странно, что мне это даже нравится?",
+				"Сколько у тебя еще осталось?",
 			])
 		
 		if(restraintType == RestraintType.Gag):
 			return RNG.pick([
-				"C'mooon, I can't stop drooling",
-				"This feels weird.. oh, don't listen to me",
+				"Ну же-е-е, у меня уже слюни текут!",
+				"Как-то странно ощущается... а, ладно, не слушай меня",
 			])
 		if(restraintType == RestraintType.Muzzle):
 			return RNG.pick([
-				"I'm not a dog!",
-				"Why did you muzzle a cat",
+				"Я тебе не собака!",
+				"Зачем ты надела на кошку намордник?",
 			])
 		if(restraintType == RestraintType.ButtPlug):
 			return RNG.pick([
-				"Ow.. My butt",
-				"Ow! Did you not lube it up?",
+				"Ой... Моя задница",
+				"Ай! Ты что, смазки не добавил?",
 			])
 		if(restraintType == RestraintType.VaginalPlug):
 			return RNG.pick([
 				"Oh.. kinky",
-				"I like playing with toys. But my toys usually talk and squirm.",
+				"Люблю играть с игрушками. Но обычно мои игрушки умеют разговаривать и извиваться.",
 			])
 		if(restraintType == RestraintType.Straitjacket):
 			return RNG.pick([
-				"Hey! Where did you get that? It's our stuff!",
-				"Straitjacket? Really? You're a patient here!",
+				"Эй! Ты где это взял? Это же наше!",
+				"Смирительная рубашка? Серьёзно? Ты же здесь пациент!",
 			])
 	
 		return RNG.pick([
-			"Are we fighting or doing kinky stuff? Both?",
-			"Kinky..",
-			"I'm not a rope bunny. Am I a bondage cat?",
-			"You're into bondage, huh",
-			"Drugs go well with bondage",
+			"Мы будем драться или заниматься всякими извращениями? Или и то, и другое?",
+			"Ох, извращения...",
+			"Я тебе не раб на верёвках. Я что, кошечка для бондажа?",
+			"Значит, тебя тянет на бондаж, да?",
+			"Наркотики отлично сочетаются с бондажом",
 		])
 	return null
 

@@ -20,20 +20,20 @@ func _run():
 		saynn("Вы находите Кидлат, стоящую за своей картонной коробкой.")
 
 		if (buyLine != ""):
-			saynn("[say=kidlat]"+str(buyLine if !isBound else "I hope you didn't just take it without paying.. This kitty kinda needs the creds.")+"[/say]")
+			saynn("[say=kidlat]"+str(buyLine if !isBound else "Надеюсь, ты не просто так его сцапал, не заплатив?.. Этой кошечке очень нужны кредиты.")+"[/say]")
 
 			buyLine = ""
 		elif (customGreet != ""):
 			saynn("[say=kidlat]"+str(customGreet)+"[/say]")
 
 		elif (isOutOfItems):
-			saynn("[say=kidlat]"+str("You bought everything I have, hun! See you around." if !isBound else "Uh.. I think I don't have anything to sell anymore.. Find me again later!")+"[/say]")
+			saynn("[say=kidlat]"+str("Ты скупила всё, что у меня было, дорогуша! Еще увидимся." if !isBound else "Э-э... кажется, мне больше нечего продать... Загляни ко мне попозже!")+"[/say]")
 
 		elif (isFirstTimeThisRun || isFirstTimeThisFloor):
-			saynn("[say=kidlat]"+str("Hey, luv. Wanna trade?" if !isBound else "Oh, hey.. Welcome to my shop, don't mind how I look..")+"[/say]")
+			saynn("[say=kidlat]"+str("Эй, любовь моя. Хочешь поторговаться?" if !isBound else "О, привет... Добро пожаловать в мой лавочку, не обращай внимания на мой вид...")+"[/say]")
 
 		else:
-			saynn("[say=kidlat]"+str("Welcome back, hun." if !isBound else "Welcome back.. I think?")+"[/say]")
+			saynn("[say=kidlat]"+str("С возвращением, милая." if !isBound else "С возвращением... вроде как?")+"[/say]")
 
 		saynn("Вот что она продает:")
 

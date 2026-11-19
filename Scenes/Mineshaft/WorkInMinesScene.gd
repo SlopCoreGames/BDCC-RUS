@@ -28,7 +28,7 @@ func _react(_action: String, _args):
 			endScene()
 			return
 		
-		addMessage("You earned 1 work credit")
+		addMessage("Вы заработали 1 рабочий кредит")
 
 	if(_action == "endthescene"):
 		endScene()

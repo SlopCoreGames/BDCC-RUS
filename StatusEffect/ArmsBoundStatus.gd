@@ -23,10 +23,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Bound arms"
+	return "Связанные руки"
 
 func getEffectDesc():
-	return "Your arms are bound together. You can't use them for combat but you can still do most tasks that require them"
+	return "Ваши руки связаны вместе. Вы не можете использовать их в бою, но всё ещё способны выполнять большинство повседневных задач"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/handcuffed.png"

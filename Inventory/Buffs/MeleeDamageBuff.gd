@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Melee weapons damage "+text+"%"
+	return "Урон холодного оружия "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.MeleeWeaponsDamage, amount/100.0)

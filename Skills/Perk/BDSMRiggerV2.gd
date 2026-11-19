@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Жаждущая Риггерша"
 
 func getVisibleDescription():
-	return "You got more experienced at tying up people. Your chances at forcing a restraint onto someone are increased by 10% and you also recover 20% of the restraints when the enemy struggles out of them."
+	return "Вы стали опытнее в связывании людей. Шанс принудительно надеть на кого-то средство фиксации увеличивается на 10%, а также вы восстанавливаете 20% of фиксаторов, когда враг вырывается из них."
 
 func getRequiredPerks():
 	return [Perk.BDSMRigger]

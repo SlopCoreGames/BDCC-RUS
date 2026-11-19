@@ -20,7 +20,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A male human of older age with a cold piercing gaze."
+	return "Пожилой мужчина-человек с холодным, пронзительным взглядом."
 
 func getSpecies():
 	return ["human"]

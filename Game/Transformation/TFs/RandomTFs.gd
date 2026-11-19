@@ -54,7 +54,7 @@ func getPillOptions() -> Dictionary:
 	return {
 		"howOftenTime": {
 			name = "Частота",
-			desc = "How often should the changes happen",
+			desc = "Как часто должны происходить изменения",
 			value = 60*60*25,
 			values = [
 				[60*10, "10 minutes"],
@@ -204,7 +204,7 @@ func reactProgressShort(_context:Dictionary, _result:TFResult):
 	addText(_result.getAllTFTexts(" ", false))
 	var step:String = _result.getField("step", "")
 	if(step == "skin"):
-		addText("{npc.YourHis} colors begin to change rapidly.. making {npc.youHim} look very different.")
+		addText("Цвета {npc.YourHis} начинают стремительно меняться... из-за чего {npc.youHim} выглядит совсем иначе.")
 	
 func reactProgress(_context:Dictionary, _result:TFResult):
 	var step:String = _result.getField("step", "")
@@ -212,16 +212,16 @@ func reactProgress(_context:Dictionary, _result:TFResult):
 	#var stage:int = getStage()
 	
 	if(isFirstTime()):
-		addText("Without warning, a jolt of energy surges through your body, leaving you breathless. Confusion and fear grip you as you realize something is happening against your will.")
+		addText("Внезапный прилив энергии пронзает ваше тело, заставляя вас задыхаться. Смятение и страх охватывают вас, когда вы осознаете, что с вашим телом происходит нечто помимо вашей воли.")
 	
 	addText(_result.getAllTFTexts())
 	if(step == "skin"):
-		addText("{npc.YourHis} colors begin to change rapidly.. making {npc.youHim} look very different.")
+		addText("Цвета {npc.YourHis} начинают стремительно меняться... из-за чего {npc.youHim} выглядит совсем иначе.")
 	
 	if(isFirstTime()):
-		addText("What is happening with your body..")
+		addText("Что происходит с вашим телом...")
 	elif(getStage() % 5 == 0):
-		addText("There is no pattern to these transformations.. they seem completely random..")
+		addText("У этих трансформаций нет никакой закономерности... они кажутся совершенно случайными...")
 	
 	if(step in ["hair"]):
 		playAnim(StageScene.TFLook, "head")

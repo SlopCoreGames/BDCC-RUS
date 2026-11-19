@@ -30,7 +30,7 @@ func _run():
 
 	if(state == "follow"):
 		aimCamera("med_researchlab")
-		setLocationName("Research lab")
+		setLocationName("Исследовательская лаборатория")
 		
 		saynn("Ты идешь за Элизой по длинным ярко освещенным коридорам, пока она не приводит тебя в лабораторию; ты замечаешь табличку с надписью «Биоинкубатор». Перед тобой две двери, одна из них — усиленный двойной шлюз.")
 
@@ -178,7 +178,7 @@ func _run():
 		aimCamera("medical_paddedcell_player")
 		GM.pc.setLocation("medical_paddedcell_player")
 		playAnimation(StageScene.Solo, "kneel")
-		setLocationName("Padded cell")
+		setLocationName("Мягкая камера")
 		
 		saynn("Ты просыпаешься в другом месте. Ты слышишь Элизу: она берет твою повязку на глазах и осторожно снимает её. Затем она делает то же самое с кляпом. Ты щуришься от яркого света и выкашливаешь порцию черной слизи. Элиза хихикает. Ты в своей мягкой камере. Доктор продолжает снимать путы, созданные паразитом. Затем она берет скальпель, аккуратно разрезает латексный костюм на тебе и снимает его.")
 
@@ -238,7 +238,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "It would be really cool to have a tentacle monster animated. But I don't even know how to start with that.. Do I just need a few tentacles? Or an entire.. monster?.. I dunno. I would need to rig and animate each tentacle.. just for this one scene x3. Would it be worth it?.. Lemme know down in the comments.. smash like.."
+	return "Было бы реально круто сделать анимированного монстра с тентаклями. Но я даже не знаю, с чего к этому подступиться... Мне хватит просто пары щупалец? Или нужен целый... монстр?.. Хз. Придется ригать и анимировать каждое щупальце... и всё это ради одной единственной сцены x3. Стоит ли оно того?.. Пишите в комментариях... и не забывайте про лайки..."
 
 func hasDevCommentary():
 	return true

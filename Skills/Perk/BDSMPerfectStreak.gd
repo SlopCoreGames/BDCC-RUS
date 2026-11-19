@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Идеальная серия"
 
 func getVisibleDescription():
-	return "Time to say RED to your restraints, you can continue the struggling minigame as long as you keep hitting the red zone perfectly. Each perfect hit makes your struggling 25% more efficient."
+	return "Пора сказать «КРАСНЫЙ» своим путам! Ты можешь продолжать мини-игру с вырыванием, пока идеально попадаешь в красную зону. Каждое идеальное попадание повышает эффективность твоих попыток вырваться на 25%."
 
 func getSkillTier():
 	return 1

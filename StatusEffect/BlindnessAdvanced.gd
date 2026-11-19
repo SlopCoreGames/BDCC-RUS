@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Blindness"
+	return "Слепота"
 
 func getEffectDesc():
-	return "You're blind! " + str(turns) + " more turns"
+	return "Ты ничего не видишь! " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/blind.png"

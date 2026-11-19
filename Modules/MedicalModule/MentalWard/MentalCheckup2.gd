@@ -144,12 +144,12 @@ func _react(_action: String, _args):
 	if(_action in ["bark", "meow", "moo"]):
 		MedicalModule.addPCBehavior(0.05)
 		GM.pc.addStamina(50)
-		addMessage("That treat gave you some energy!")
+		addMessage("Это лакомство придало тебе сил!")
 	
 	if(_action == "moo"):
 		var milkAmount = GM.pc.milk(0.1)
 		if(milkAmount > 0.01):
-			addMessage(str(Util.roundF(milkAmount, 1))+" ml leaked from your breasts")
+			addMessage(str(Util.roundF(milkAmount, 1))+" мл вытекло из твоей груди")
 	
 	if(_action == "growl_at"):
 		MedicalModule.addPCBehavior(-0.1)

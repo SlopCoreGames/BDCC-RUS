@@ -55,10 +55,10 @@ func _run():
 			addButton("Пропустить", "Пропустить прогулку", "skipwalk")
 		else:
 			addButton("Пропустить", "Пропустить прогулку", "endthescene")
-		addButtonAt(6, "Follow", "Follow the leash", "follow")
-		addDisabledButtonAt(10, "Leashed", "Can't escape from the leash")
-		addDisabledButtonAt(11, "Leashed", "Can't escape from the leash")
-		addDisabledButtonAt(12, "Leashed", "Can't escape from the leash")
+		addButtonAt(6, "Следовать", "Идти на поводке", "follow")
+		addDisabledButtonAt(10, "На поводке", "От поводка не сбежать")
+		addDisabledButtonAt(11, "На поводке", "От поводка не сбежать")
+		addDisabledButtonAt(12, "На поводке", "От поводка не сбежать")
 	if (state == "skipwalk"):
 		aimCamera(endLocation)
 		GM.pc.setLocation(endLocation)

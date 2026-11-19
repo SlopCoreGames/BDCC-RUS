@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Плохой квест"
 
 func getProgress():
-	return ["Bad quest, let the developer know"]
+	return ["Плохой квест, сообщите разработчику"]
 
 func isVisible():
 	return false

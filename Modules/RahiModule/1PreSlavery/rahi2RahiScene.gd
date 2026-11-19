@@ -483,7 +483,7 @@ func _react_scene_end(_tag, _result):
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem("EnergyDrink"))
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem("EnergyDrink"))
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem("EnergyDrink"))
-			addMessage("You receive 3 energy drinks for free")
+			addMessage("Вы получаете 3 бесплатных энергетика")
 			setFlag("RahiModule.rahi2WonGuard", true)
 		else:
 			setState("if_lost")
@@ -506,7 +506,7 @@ func loadData(data):
 	guard_id = SAVE.loadVar(data, "guard_id", "")
 
 func getDevCommentary():
-	return "This is the payoff for the other 'chill' scene x3. Ideally, this time, different thoughts should be going through your head. Thoughts like 'maybe she shouldn't do that'.\n\nBut basically I'm just speedrunning Rahi's self-destruction here, to set her up for the anti-climax.. is that even a term? x3"
+	return "Это отдача за ту другую «расслабленную» сцену, умноженная на три. В идеале, на этот раз у тебя в голове должны крутиться совсем другие мысли. Что-то вроде «может, ей не стоит этого делать».\n\nНо, по сути, я просто спидраном веду Рахи к саморазрушению, чтобы подготовить почву для антиклимакса... это вообще нормальный термин? x3"
 
 func hasDevCommentary():
 	return true

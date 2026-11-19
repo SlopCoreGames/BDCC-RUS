@@ -205,7 +205,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Why did I write this? I mean.. There aren't that many games that just explore chastity play. Yes, there are games that have it. They usually also have feminization/sissification in them. I have zero problems with those kinks ^^ just wanted to write some femdom + chastity fun. These scenes also explore anal orgasms ^^. They are notoriously hard to achieve for some people so I kinda tried to show that in this content."
+	return "Зачем я вообще это написал? Ну, то есть... Игр, которые исследуют исключительно тему целомудрия, не так уж много. Да, такие игры есть, но обычно в них еще замешаны феминизация или сиссификация. У меня к этим кинкам вообще никаких претензий ^^, просто захотелось написать что-то веселое про фемдом и частити. В этих сценах также исследуются анальные оргазмы ^^. Известно, что некоторым людям их добиться чертовски сложно, так что я попытался отразить это в контенте."
 
 func hasDevCommentary():
 	return true

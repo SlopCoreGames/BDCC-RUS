@@ -20,6 +20,6 @@ func getPriority():
 func onButton(_method, _args):
 	if(_method == "stealplant"):
 		setFlag("FightClubModule.StolePlantForEliza", true)
-		addMessage("You stole the pink plant, task updated!")
+		addMessage("Ты украл розовое растение, задание обновлено!")
 		addExperienceToPlayer(50)
 		GM.main.reRun()

@@ -33,9 +33,9 @@ func generateRestraintData():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return "There are " + getAStackName() + " cuffs keeping your ankles together. When did those get there?"
+		return "Доступно " + getAStackName() + " кандалы, стягивающие твои лодыжки. Когда они успели появиться?"
 	else:
-		return "There are " + getAStackName() + " cuffs keeping {receiver.nameS} ankles together. When did those get there?"
+		return "Доступно " + getAStackName() + " кандалы, стягивающие лодыжки {receiver.nameS}. Когда они успели появиться?"
 		
 func getUnriggedParts(_character):
 	return {

@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Дикая атака"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -31,7 +31,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	if(RNG.chance(30) && !_receiver.hasEffect(StatusEffect.Collapsed)):
 		if(_receiver.addEffect(StatusEffect.Collapsed)):
-			text += " The furious attack made {receiver.name} [b]fall[/b]."
+			text += " Яростная атака заставила {receiver.name} [b]пошатнуться[/b]."
 	return {
 		text = text,
 		pain = RNG.randi_range(30, 50),
@@ -41,7 +41,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name}'s eyes turn wild as a surge of uncontrollable rage consumes {attacker.him}."
+	return "Глаза {attacker.name} дичают, когда волна неудержимой ярости поглощает {attacker.him}."
 
 func getAttackSoloAnimation():
 	return "punch"

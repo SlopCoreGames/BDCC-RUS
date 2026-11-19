@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Без гибридов"
 
 func getVisibleDescription():
-	return "You will never give birth to a hybrid. Others that are impregnated by your cum will never give birth to a hybrid either. Hybrid is a mix of two species"
+	return "Ты никогда не родишь гибрида. Другие женщины, оплодотворенные твоей спермой, тоже никогда не родят гибридов. Гибрид — это смесь двух разных видов."
 	
 func hiddenWhenLocked() -> bool:
 	return true

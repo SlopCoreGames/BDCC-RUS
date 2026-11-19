@@ -8,12 +8,12 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"{slave.HeShe} craves the feeling of being restrained. Ropes, cuffs, chains, you name it. Tie {slave.him} up and watch {slave.him} squirm, it's so fun!",
-		"If you want a slave that thrives in submission, look no further. Binding {slave.him} is as natural as breathing for {slave.him}. The more restrained, the better.",
-		"Cuffs clinking, ropes tightening.. this slave loves the tension and helplessness of being completely at your mercy!",
-		"Tie {slave.him} down, cuff {slave.him} up, and you’ll witness pure bliss. The more immobile {slave.he} is, the deeper the obedience goes.",
-		"{slave.HeShe} doesn’t just tolerate being bound - {slave.heShe} needs it. Restraints are more than just tools against {slave.him}, they're a gateway to total surrender.",
-		"Whether it's silk ropes or heavy chains, the tighter the better for this one. Restraints unlock {slave.his} true nature.",
+		"{slave.HeShe} жаждет ощущения скованности. Верёвки, наручники, цепи — что угодно. Свяжи {slave.him} и наблюдай, как {slave.him} извивается, это так весело!",
+		"Если вам нужна рабыня, которая расцветает в подчинении, то вы ее нашли. Связывание {slave.him} для {slave.him} так же естественно, как дыхание. Чем сильнее ограничения, тем лучше.",
+		"Звон кандалов, натяжение веревок... эта рабыня обожает это чувство напряжения и беспомощности, когда она полностью в твоей власти!",
+		"Привяжи {slave.him}, сковывай {slave.him} наручниками, и ты увидишь истинное блаженство. Чем неподвижнее будет {slave.he}, тем глубже станет её послушание.",
+		"{slave.HeShe} не просто терпит путы — {slave.heShe} в них нуждается. Оковы для {slave.him} — это не просто способ контроля, это путь к полному самоотречению.",
+		"Будь то шелковые веревки или тяжелые цепи — чем туже, тем лучше. Оковы пробуждают истинную натуру {slave.his}.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

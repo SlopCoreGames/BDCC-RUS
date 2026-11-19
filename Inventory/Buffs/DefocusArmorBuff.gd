@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Extra armor when defocusing "+text
+	return "Дополнительная броня при дефокусировке "+text
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.DefocusArmor, amount)

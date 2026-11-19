@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Отстраненность"
 
 func getVisibleDescription():
-	return "You've become good enough at being a hypnotic subject to partially disassociate even from physical pain."
+	return "Вы настолько преуспели в роли объекта гипноза, что научились частично отстраняться даже от физической боли."
 	
 func getMoreDescription():
-	return  "Reduces the penalties of being hypnotized by an additional 20%." + "\n\n" + \
+	return  "Снижает штрафы от гипноза еще на 20%." + "\n\n" + \
 			"While "+HypnokinkUtil.hypnosisIcon()+"Hypnotized or in "+HypnokinkUtil.tranceIcon()+"Trance, you gain +10% resistance to pain."
 
 func getSkillTier():

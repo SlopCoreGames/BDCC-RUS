@@ -7,4 +7,4 @@ func getVisibleName():
 	return "Живучесть"
 
 func getVisibleDescription():
-	return "Raises your pain threshold"
+	return "Повышает ваш болевой порог"

@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Physical armor "+text
+	return "Физическая броня "+text
 
 func apply(_buffHolder):
 	_buffHolder.armor[DamageType.Physical] += amount

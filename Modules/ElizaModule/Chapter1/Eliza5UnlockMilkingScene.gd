@@ -4,7 +4,7 @@ func _init():
 	sceneID = "Eliza5UnlockMilkingScene"
 
 func _reactInit():
-	addMessage("You can now bring your slaves to Eliza so that she will automatically milk them every morning")
+	addMessage("Теперь вы можете приводить своих рабынь к Элизе, чтобы она автоматически доила их каждое утро")
 
 func _run():
 	if(state == ""):

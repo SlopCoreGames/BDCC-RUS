@@ -9,25 +9,25 @@ func getVisibleName():
 func getProgress():
 	var result:Array = []
 	
-	result.append("You got approached by Kait, the snow leopard lilac. It looks like she wants to overtake the captain and is looking for people who can help.")
-	result.append("Kait wants you to find her down in the underground arena that is hidden somewhere near the gym.")
+	result.append("К тебе подошла Кейт, снежный барс цвета сирени. Похоже, она хочет сместить капитана и ищет людей, готовых ей помочь.")
+	result.append("Кейт хочет, чтобы ты нашел её на подземной арене, которая спрятана где-то неподалеку от спортзала.")
 	
 	var amountWon:int = GlobalRegistry.getModule("FightClubModule").getAmountFightersWon()
 	
 	if(getFlag("KaitModule.talkedKaitArena")):
-		result.append("You've met Kait in the underground arena. She wants you to prove yourself by winning 3 fights in the arena!\nYou have currently won: "+str(amountWon))
+		result.append("Ты встретил Кейт на подземной арене. Она хочет, чтобы ты доказал свою силу, выиграв 3 боя на арене!\nНа данный момент побед: "+str(amountWon))
 	
 		if(amountWon >= 3 && !getFlag("KaitModule.joinedTeam")):
-			result.append("Kait is ready to offer you to join the team! Go talk with her.")
+			result.append("Кейт готова предложить тебе вступить в команду! Поговори с ней.")
 	
 	if(getFlag("KaitModule.joinedTeam")):
 		if(GlobalRegistry.getModule("RahiModule").isInSlavery()):
-			result.append("Go find Rahi and recruit her! She is probably in your cell.")
+			result.append("Найди Рахи и завербуй её! Скорее всего, она у тебя в камере.")
 		else:
-			result.append("Go find Rahi and recruit her! She is probably somewhere near the stocks.")
+			result.append("Найди Рахи и завербуй её! Скорее всего, она где-то рядом с колодками.")
 	
 	if(getFlag("KaitModule.caughtRahi")):
-		result.append("You got Rahi! Now you just need to recruit her.")
+		result.append("Рахи твоя! Теперь тебе осталось только завербовать её.")
 	
 	return result
 

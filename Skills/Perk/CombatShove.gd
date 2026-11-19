@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Толкание"
 
 func getVisibleDescription():
-	return "You gain the ability to shove the opponent away with your shoulder, possible making them trip."
+	return "Вы получаете способность отталкивать противника плечом, что может привести к его падению."
 
 func getSkillTier():
 	return 0

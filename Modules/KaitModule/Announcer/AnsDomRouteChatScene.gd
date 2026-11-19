@@ -14,13 +14,13 @@ func _run():
 		saynn("[say=announcer]Валяй.[/say]")
 
 		addButton("Назад", "Хватит болтать", "endthescene")
-		addButton("Ans", "Попросить его рассказать о себе", "ask_ans")
+		addButton("Диктор", "Попросить его рассказать о себе", "ask_ans")
 		addButton("Арена", "Спросить его об этом месте", "ask_arena")
 		addButton("Эви", "Спросить его об Эви", "ask_avy")
 		addButton("Будущее", "Спросить, что он будет делать, если она выйдет на свободу", "ask_future")
 		addButton("Земля", "Спросить его о родной планете", "ask_planet")
 		if (getModule("KaitModule").hasHideoutAccess()):
-			addButton("Team", "Спросить, что он думает о вашем убежище", "ask_team")
+			addButton("Команда", "Спросить, что он думает о вашем убежище", "ask_team")
 	if(state == "ask_ans"):
 		saynn("[say=pc]Можешь рассказать что-нибудь о себе?[/say]")
 

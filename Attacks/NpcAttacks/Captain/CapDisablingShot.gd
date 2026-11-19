@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Обезоруживающий выстрел"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -22,9 +22,9 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} делает обезоруживающий выстрел, попадая {receiver.name} по ногам и причиняя невыносимую боль."
 	if(!_receiver.hasEffect(StatusEffect.Collapsed)):
 		if(_receiver.addEffect(StatusEffect.Collapsed)):
-			text += " {receiver.name} [b]collapses[/b] after the attack."
+			text += " {receiver.name} [b]сваливается[/b] после атаки."
 			text += "\n\n"
-			text += "[say=attacker]"+RNG.pick(["Watch your legs, inmate.", "And stay down.", "That's where you belong, below me."])+"[/say]"
+			text += "[say=attacker]"+RNG.pick(["Береги ноги, зэк.", "И лежи смирно.", "Твое место именно там — у моих ног."])+"[/say]"
 	
 	return {
 		text = text,
@@ -35,7 +35,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} lines up a shot, aiming for {receiver.name}'s legs."
+	return "{attacker.name} прицеливается, чтобы выстрелить {receiver.name} по ногам."
 	
 func getAttackSoloAnimation():
 	return "firepistol"

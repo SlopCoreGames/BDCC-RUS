@@ -15,7 +15,7 @@ func getVisibleDesc(_context = {}):
 		return "error"
 	var charges = item.getCharges()
 	
-	return "Use 2 stun baton's charges to stun the enemy for 2 turns and do "+scaledDmgRangeStr(DamageType.Physical, 5, 10)+" damage. 30% accuracy penalty."+"\n"+"Has "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "charge")+" left"
+	return "Использует 2 заряда электрошокера, чтобы оглушить врага на 2 хода и нанести "+scaledDmgRangeStr(DamageType.Physical, 5, 10)+" урон. Штраф к точности 30%."+"\n"+"Обладает: "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "charge")+" left"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical, 0.7)):
@@ -29,7 +29,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		item.useCharge(2)
 	
 	var texts = [
-		"{attacker.name} switches the mode of {attacker.his} stun baton to 'incapacitate' and strikes {receiver.name}!",
+		"{attacker.name} переключает режим {attacker.his} электрошокера на «оглушение» и бьет {receiver.name}!",
 	]
 	_receiver.addEffect(StatusEffect.Stunned, [2])
 	

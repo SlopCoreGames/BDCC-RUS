@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Weakness"
+	return "Слабость"
 
 func getEffectDesc():
-	return "You feel weak. " + str(turns) + " more turns"
+	return "Ты чувствуешь слабость. " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/kneeling.png"

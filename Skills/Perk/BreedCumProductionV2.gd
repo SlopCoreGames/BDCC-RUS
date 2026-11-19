@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Фабрика семян"
 
 func getVisibleDescription():
-	return "You just can't breed them enough. Your balls are now generating cum 75% faster."
+	return "Тебе всё мало их разводить. Теперь твои яйца производят сперму на 75% f быстрее."
 
 func getRequiredPerks():
 	return [Perk.BreedCumProduction]

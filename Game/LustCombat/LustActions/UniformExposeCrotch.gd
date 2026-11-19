@@ -30,7 +30,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Обнажить промежность"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Pull down the shorts of your uniform"
+	return "Спустить шорты униформы"
 
 func doAction(_lustState: LustCombatState, _args):
 	var _item:ItemBase = getItem(_lustState, _args)
@@ -42,29 +42,29 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(!pc.isBodypartCovered(BodypartSlot.Anus)):
-		text += "You sneak two digits under your shorts and proceed to teasingly pull it down, exposing your {pc.thick} {pc.masc} butt."
+		text += "Ты просовываешь два пальца под шорты и начинаешь дразняще стягивать их вниз, обнажая свою {pc.thick} {pc.masc} задницу."
 		text += "\n\n"
 		
 		if(pc.hasPenis()):
-			text += "As you do it, the tip of your {pc.cock} catches on the ribbon, gets tugged down by it and then springs back as your shorts fall onto the floor. Your cock is completely exposed and your other privates too."
+			text += "В процессе кончик твоей {pc.cock} цепляется за ленту, она тянет его вниз, а затем он резко отскакивает, когда шорты падают на пол. Твой член полностью обнажен, как и все остальное хозяйство."
 			text += "\n\n"
 		elif(pc.hasVagina()):
-			text += "As your shorts are pulled down, your wet needy slit gets completely exposed too. So naughty~. The thought of your privates being exposed to anyone to see fills you with so much desire."
+			text += "Когда шорты сползают, твоя влажная, жаждущая щелочка тоже оказывается на виду. Как неприлично~. Мысль о том, что твои интимные места может увидеть кто угодно, наполняет тебя диким желанием."
 			text += "\n\n"
 	else:
-		text += "You sneak two digits under your shorts and proceed to teasingly pull them down, exposing the underwear. The fabric brushing against your {pc.thick} thighs as it slides down feels nice, maybe you should strip more often."
+		text += "Ты просовываешь два пальца под шорты и начинаешь дразняще стягивать их вниз, обнажая нижнее белье. Приятно чувствовать, как ткань скользит по твоим {pc.thick} бедрам; возможно, тебе стоит раздеваться почаще."
 		text += "\n\n"
 	
 	if(pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "Pulling down the shorts reveals how much cum you also have underneath, so messy."
+		text += "Когда ты стягиваешь шорты, становится видно, сколько спермы скопилось у тебя внутри — так грязно."
 		text += "\n\n"
 	
 	if(!pc.isBodypartCovered(BodypartSlot.Anus) && (pc.hasEffect(StatusEffect.HasCumInsideVagina) || pc.hasEffect(StatusEffect.HasCumInsideAnus))):
-		text += "And your used fuckhole seems to be stuffed with someone’s cum, seeing it drip down onto the floor is so lewd."
+		text += "Твоя использованная дырочка, кажется, набита чьей-то спермой; то, как она капает на пол, выглядит невероятно похотливо."
 		text += "\n\n"
 	
 	if(_lustState.isInBattle()):
-		text += "The enemy seems to be watching you carefully as you do a little striptease dance for them~"
+		text += "Кажется, враг внимательно наблюдает за тобой, пока ты исполняешь для него этот маленький стриптиз~"
 		text += "\n\n"
 	
 	return {

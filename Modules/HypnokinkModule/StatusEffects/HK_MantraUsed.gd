@@ -14,10 +14,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Mantra Used"
+	return "Мантра использована"
 
 func getEffectDesc():
-	return "You have already used your mantra this combat."
+	return "Вы уже использовали свою мантру в этом бою."
 
 func getEffectImage():
 	return "res://Modules/HypnokinkModule/Icons/StatusEffects/empty_circle.png"

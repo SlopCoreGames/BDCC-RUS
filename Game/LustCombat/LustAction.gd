@@ -22,7 +22,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "ERROR"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 
 func doAction(_lustState: LustCombatState, _args):
 	return {

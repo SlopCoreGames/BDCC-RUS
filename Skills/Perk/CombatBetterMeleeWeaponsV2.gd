@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Множитель силы"
 
 func getVisibleDescription():
-	return "Why use your fists when the prison is littered with all those contraband weapons. You do 35% more damage with melee weapons."
+	return "Зачем махать кулаками, когда тюрьма буквально усыпана контрабандным оружием? Вы наносите на 35% больше урона в ближнем бою."
 
 func getRequiredPerks():
 	return [Perk.CombatBetterMeleeWeapons]

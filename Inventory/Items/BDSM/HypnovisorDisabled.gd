@@ -27,9 +27,9 @@ func getTags():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was forced over your eyes."
+		return getAStackNameCapitalize()+" насильно надели тебе на глаза."
 	else:
-		return getAStackNameCapitalize()+" was forced over {receiver.nameS} eyes!"
+		return getAStackNameCapitalize()+" насильно надели на глаза {receiver.nameS}!"
 
 func getUnriggedParts(_character):
 	return {

@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Используй электродубинку"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -20,12 +20,12 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		return genericDodgeMessage(_attacker, _receiver)
 		
 	var texts = [
-		"{attacker.name}’s overcharged weapon manages to hit {receiver.name}. The strike itself wasn’t that strong but the electrical shock that came after was incredibly strong and painful, causing {receiver.name}’s muscles to tense uncontrollably.",
+		"Перегруженное оружие {attacker.name} всё же достигает цели — {receiver.name}. Сам удар был не таким уж сильным, но последовавший за ним электрический разряд оказался невероятно мощным и болезненным, отчего мышцы {receiver.name} непроизвольно свело судорогой.",
 	]
 	var text = RNG.pick(texts)
 	
 	if(!_receiver.hasEffect(StatusEffect.Collapsed) && _receiver.addEffect(StatusEffect.Collapsed)):
-		text += "\n{receiver.name} couldn’t withstand the attack and [b]dropped to the floor[/b]!"
+		text += "\n{receiver.name} не выдержала атаки, и [b]рухнула на пол[/b]!"
 	
 	return {
 		text = text,
@@ -38,7 +38,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 
 func getAnticipationText(_attacker, _receiver):
 	return RNG.pick([
-		"{attacker.name} overcharges {attacker.his} stun baton, you see it spawning a great amount of sparks and making a buzzy noise. {attacker.name} then lunges at {receiver.name}. This one will hurt a lot.",
+		"{attacker.name} перегружает электрошокер {attacker.his}; вы видите, как из него сыплется град искр и раздается жужжащий звук. Затем {attacker.name} бросается на {receiver.name}. Это будет чертовски больно.",
 	])
 
 func getRequirements():

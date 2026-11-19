@@ -131,7 +131,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "You might have noticed that for some reason only Kait, Avy and Ferri have portraits drawn by me x3. Kait and Avy make sense, they play a part in the story. But Ferri.. She is just a cute brat.\n\nWell, Ferri is one of the 'invited' characters ^^. She is not my OC but they allowed me to use her and write for her ^^.\n\nWill she get more content? I doubt it. Since the community is slowly becoming bigger, the characters are also becoming more popular. And Ferri doesn't want that. And I will respect that ^^. She is a cute little brat still ^^"
+	return "Вы могли заметить, что почему-то только Кейт, Эви и Ферри нарисованы мной x3. Кейт и Эви это объяснимо, они играют важную роль в сюжете. Но Ферри... Она просто милая вредина.\n\nНу, Ферри — одна из «приглашенных» героинь ^^. Она не мой ОС, но мне разрешили использовать её и писать от её лица ^^.\n\nБудет ли у неё больше контента? Сомневаюсь. Поскольку комьюнити постепенно растет, персонажи тоже становятся популярнее. А Ферри этого не хочет. И я буду это уважать ^^. Она всё еще просто милая маленькая вредина ^^"
 
 func hasDevCommentary():
 	return true

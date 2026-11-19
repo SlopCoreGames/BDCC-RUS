@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Бондаж-сучка"
 
 func getVisibleDescription():
-	return "You love any cuffs, blindfolds, ropes and gags! Freedom is achieved through restriction, if you're wearing at least one piece of BDSM equipment you receive 15% less physical damage in combat"
+	return "Ты обожаешь любые наручники, повязки на глаза, верёвки и кляпы! Свобода обретается через ограничение: если на тебе надето хотя бы одно изделие из BDSM-атрибутики, ты получаешь на 15% меньше физического урона в бою."
 
 func getSkillTier():
 	return 0

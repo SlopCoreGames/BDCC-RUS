@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Тепловая граната"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Lust)):
@@ -21,7 +21,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var text = "Ты вдыхаешь розовый туман и чувствуешь, как тебя накрывает дикое возбуждение, в голове роятся грязные мысли. Может, сдаться — это не такая уж плохая идея..."
 	text += "\n\n"
-	text += "[say=attacker]"+RNG.pick(["Target is hit.", "Attack successful.", "Intruder is almost ready.", "Lust damage inflicted successfully."])+"[/say]"
+	text += "[say=attacker]"+RNG.pick(["Цель поражена.", "Атака прошла успешно.", "Взломщик почти готов.", "Урон похоти успешно нанесен."])+"[/say]"
 	return {
 		text = text,
 		lust = RNG.randi_range(30, 80),
@@ -31,7 +31,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} pulls out one of the prototype grenades out of {attacker.his} chest cavity! {attacker.He} throws it in your direction. You see a [b]big pink smoke[/b] trail following it in the air!"
+	return "{attacker.name} выхватывает одну из прототипных гранат прямо из грудной полости {attacker.his}! {attacker.He} бросает её в твою сторону. Ты видишь, как в воздухе за ней тянется [b]густой розовый дымный[/b] шлейф!"
 
 func getAttackSoloAnimation():
 	return "throw"

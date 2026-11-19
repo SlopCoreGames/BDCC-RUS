@@ -64,25 +64,25 @@ func getPillOptions() -> Dictionary:
 	return {
 		"skin": {
 			name = "Кожа",
-			desc = "The new skin.",
+			desc = "Новая кожа.",
 			value = "EmptySkin",
 			values = skinsArray,
 		},
 		"color_r": {
 			name = "Основной цвет",
-			desc = "The primary color.",
+			desc = "Основной цвет.",
 			value = "#FF0000",
 			color = true,
 		},
 		"color_g": {
 			name = "Вторичный цвет",
-			desc = "The secondary color.",
+			desc = "Вторичный цвет.",
 			value = "#FFFF00",
 			color = true,
 		},
 		"color_b": {
 			name = "Третий цвет",
-			desc = "The third color.",
+			desc = "Третий цвет.",
 			value = "#FF00FF",
 			color = true,
 		},
@@ -117,11 +117,11 @@ func reactProgressShort(_context:Dictionary, _result:TFResult):
 
 func reactProgress(_context:Dictionary, _result:TFResult):
 	if(isFirstTime()):
-		addText("Right before {npc.yourHis} eyes, the colors of {npc.yourHis} skin begin to change. Subtly.. but it's still obvious. Warm glow pulses inside {npc.youHim}.. This is probably just the beginning.")
+		addText("Прямо на глазах у {npc.yourHis} цвета кожи {npc.yourHis} начинают меняться. Едва заметно... но всё же очевидно. Внутри {npc.youHim} пульсирует теплое сияние... И это, вероятно, только начало.")
 	elif(prog >= 1.0):
-		addText("The colors of {npc.yourHis} skin shift.. and the glow fades, signaling that the transformation has finished.")
+		addText("Цвета кожи {npc.yourHis} смещаются... и сияние гаснет, сигнализируя о том, что трансформация завершена.")
 	else:
-		addText("The colors of {npc.yourHis} skin change more and more, slowly shifting towards their final state.")
+		addText("Цвета кожи {npc.yourHis} меняются всё сильнее, медленно приближаясь к своему финальному состоянию.")
 	
 	playAnim(StageScene.TFLook, "hands", {bodyState={naked=true}})
 	

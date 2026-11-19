@@ -181,7 +181,7 @@ func updateModList():
 	launchModEntries.clear()
 	Util.delete_children(modVList)
 	var modsCount:int = currentModOrder.size()
-	modCountLabel.text = "Mod order"+(" ("+str(modsCount)+")" if modsCount else "")
+	modCountLabel.text = "Порядок загрузки модов"+(" ("+str(modsCount)+")" if modsCount else "")
 	for modEntryIdx in range(modsCount): # need the idx, save processing power (hopefully?)
 		var modEntry:Dictionary = currentModOrder[modEntryIdx]
 		var theModName:String = modEntry["name"]
@@ -248,17 +248,17 @@ func onModEntryClicked(entry):
 
 func updateSelectedEntry():
 	if(selectedEntry == null):
-		modDescriptionLabel.bbcode_text = "No mod selected"
+		modDescriptionLabel.bbcode_text = "Мод не выбран"
 		return
-	modDisableButton.text = "Enable" if(selectedEntry['disabled']) else "Disable"
+	modDisableButton.text = "Включить" if(selectedEntry['disabled']) else "Отключить"
 	
 	var desc:String = ""
 	
 	if(selectedEntry.has("broken") && selectedEntry["broken"]):
-		desc += "( This mod is reported to be broken or cause huge issues on this game version. It's best to disable/delete it. )\n\n"
+		desc += "( По сообщениям, этот мод сломан или вызывает серьезные проблемы в данной версии игры. Рекомендуется отключить или удалить его. )\n\n"
 	
-	desc += "Mod name: "+selectedEntry["name"]+"\n"
-	desc += "Full path: "+selectedEntry["path"]+"\n"
+	desc += "Название мода: "+selectedEntry["name"]+"\n"
+	desc += "Полный путь: "+selectedEntry["path"]+"\n"
 	
 	desc += "\n"
 	var jsonResult = tryToPopulateFilesList()
@@ -267,10 +267,10 @@ func updateSelectedEntry():
 	else:
 		desc += "Author: " + str(jsonResult["author"])+"\n"
 		if(!GlobalRegistry.isVersionListHasCompatible(str(jsonResult["gameversion"]))):
-			desc += "[color=red]Game version: " + str(jsonResult["gameversion"])+" (You are running version "+GlobalRegistry.getGameVersionString()+")[/color]\n"
+			desc += "[color=red]Версия игры: " + str(jsonResult["gameversion"])+" (Вы используете версию "+GlobalRegistry.getGameVersionString()+")[/color]\n"
 		else:
-			desc += "Game version: " + str(jsonResult["gameversion"])+"\n"
-		desc += "Mod version: " + str(jsonResult["modversion"])+"\n"
+			desc += "Версия игры: " + str(jsonResult["gameversion"])+"\n"
+		desc += "Версия мода: " + str(jsonResult["modversion"])+"\n"
 		desc += "Description: " + str(jsonResult["description"])+"\n"
 
 	modDescriptionLabel.bbcode_text = desc
@@ -283,8 +283,8 @@ func tryToPopulateFilesList():
 	var zipToLoad = selectedEntry["path"]
 	if(zipToLoad.get_file() == "BDCC.pck"):
 		if(OS.get_name() == "Android"):
-			return "This file is stored internally now and can be safely deleted."
-		return "This file is required for mods to function on Android version. On other platforms this file is Not required and will be disabled automatically"
+			return "Этот файл теперь хранится внутри системы, его можно безопасно удалить."
+		return "Этот файл необходим для работы модов на Android. На других платформах он не требуется и будет отключен автоматически"
 	
 	var gdunzip = GDUnzip.new()
 	
@@ -298,30 +298,30 @@ func tryToPopulateFilesList():
 		if(gdunzip.files.has(jsonFile)):
 			var uncompressed = gdunzip.uncompress(jsonFile)
 			if !uncompressed:
-				return "'"+str(jsonFile)+"' is wrong or corrupted"
+				return "'"+str(jsonFile)+"' поврежден или имеет неверный формат"
 			else:
 				var stuff = uncompressed.get_string_from_utf8()
 				
 				var jsonResult = JSON.parse(stuff)
 				if(jsonResult.error != OK):
-					return "'"+str(jsonFile)+"' is wrong or corrupted"
+					return "'"+str(jsonFile)+"' поврежден или имеет неверный формат"
 				
 				var jsonData = jsonResult.result
 				if(!(jsonData is Dictionary)):
-					return "'"+str(jsonFile)+"' is wrong or corrupted"
+					return "'"+str(jsonFile)+"' поврежден или имеет неверный формат"
 				
 				var fieldsMustHave = ["author", "gameversion", "modversion", "description"]
 				for field in fieldsMustHave:
 					if(!jsonData.has(field)):
-						return "'"+str(jsonFile)+"' is missing one of the fields. Must have: "+str(fieldsMustHave)
+						return "'"+str(jsonFile)+"' содержит пропущенное поле. Обязательно должно быть: "+str(fieldsMustHave)
 						
 				return jsonData
 		else:
-			return "No '"+str(jsonFile)+"' file provided inside the mod"
+			return "No '"+str(jsonFile)+"' файл, предоставленный внутри мода"
 	else:
 		Log.print('Failed loading zip file')
-		modFileList.add_item("Couldn't load any files")
-	return "Failed to load info"
+		modFileList.add_item("Не удалось загрузить файлы")
+	return "Ошибка загрузки информации"
 
 func toggleModEntryDisabled(entry:Dictionary=selectedEntry) -> void:
 	if(!entry || entry["name"] == "BDCC.pck"):
@@ -384,7 +384,7 @@ func _on_DeleteModButton_pressed():
 		return
 	
 	$ConfirmationDialog.visible = true
-	$ConfirmationDialog.dialog_text = "Remove mod?\n"+str(selectedEntry["path"])
+	$ConfirmationDialog.dialog_text = "Удалить мод?\n"+str(selectedEntry["path"])
 
 
 func _on_ConfirmationDialog_confirmed():
@@ -585,11 +585,11 @@ func setBusyPanel(_text:String, _canClose:bool = false):
 	busy_close_button.visible = _canClose
 
 func _on_CheckBrokenModsButton_pressed():
-	setBusyPanel("[center]Checking mods..[/center]")
+	setBusyPanel("[center]Проверка модов..[/center]")
 	
 	var error:int = http_request_mods.request("https://raw.githubusercontent.com/Alexofp/BDCCMods/main/outdated_mods.json")
 	if error != OK:
-		setBusyPanel("[center]An error occurred in the HTTP request.[/center]", true)
+		setBusyPanel("[center]Произошла ошибка при HTTP-запросе.[/center]", true)
 		return
 	
 func _on_BusyCloseButton_pressed():
@@ -600,17 +600,17 @@ func _on_BusyLabel_meta_clicked(meta):
 
 func _on_HTTPRequestMods_request_completed(_result: int, _response_code: int, _headers: PoolStringArray, _body: PoolByteArray):
 	if _result != HTTPRequest.RESULT_SUCCESS:
-		setBusyPanel("[center]Couldn't download a broken mods list from github.[/center]", true)
+		setBusyPanel("[center]Не удалось скачать битый список модов с GitHub.[/center]", true)
 		return
 	
 	var jsonResult = JSON.parse(_body.get_string_from_utf8())
 	if(jsonResult.error != OK):
-		setBusyPanel("[center]Failed to parse broken mods list from github.[/center]", true)
+		setBusyPanel("[center]Ошибка парсинга списка битых модов с GitHub.[/center]", true)
 		return
 	
 	var modsDataA = jsonResult.result
 	if(!(modsDataA is Dictionary)):
-		setBusyPanel("[center]Bad broken mod list.[/center]", true)
+		setBusyPanel("[center]Некорректный список битых модов.[/center]", true)
 		return
 	var modsData:Dictionary = modsDataA
 	#print(modsData)
@@ -638,7 +638,7 @@ func _on_HTTPRequestMods_request_completed(_result: int, _response_code: int, _h
 			modEntry["broken"] = true
 			amBroken += 1
 		
-	setBusyPanel("FOUND "+str(amBroken)+" BROKEN MOD"+("S" if amBroken != 1 else "")+"\n\nIf you wanna report a broken mod, go here: [url="+reportLink+"]"+reportLink+"[/url]", true)
+	setBusyPanel("FOUND "+str(amBroken)+" БИТЫЙ МОД"+("S" if amBroken != 1 else "")+"\n\nЕсли хочешь сообщить о битом моде, переходи сюда: [url="+reportLink+"]"+reportLink+"[/url]", true)
 	if(amBroken > 0):
 		updateModList()
 		updateSelectedEntry()

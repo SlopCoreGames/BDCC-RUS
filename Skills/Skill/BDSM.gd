@@ -7,7 +7,7 @@ func getVisibleName():
 	return "BDSM"
 
 func getVisibleDescription():
-	return "Shows how used you are to restraints"
+	return "Показывает, насколько вы привыкли к ограничению подвижности"
 
 func getPerkTiers():
 	return [

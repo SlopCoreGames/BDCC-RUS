@@ -8,17 +8,17 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Become Eliza's assistant and get a chance to work in her lab, researching new transformation drugs. Upgrade the lab to get access to new prototypes."
-	return "Become Eliza's assistant and get a chance to work in her lab, researching new transformation drugs"
+		return "Станьте ассистентом Элизы и получите шанс работать в её лаборатории, исследуя новые препараты для трансформации. Улучшайте лабораторию, чтобы получить доступ к новым прототипам."
+	return "Стань ассистентом Элизы и получи шанс работать в её лаборатории, исследуя новые препараты для трансформации."
 
 func getKinks() -> Array:
 	return [
-		"Transformation drugs",
-		"Roguelike element (optional)",
+		"Препараты для трансформации",
+		"Элемент рогалика (опционально)",
 	]
 
 func getCompletedDesc() -> String:
-	return "You now have a cool chemistry lab!"
+	return "Теперь у вас есть крутая химическая лаборатория!"
 
 func getStatus() -> int:
 	if(getFlag("ElizaModule.storyCompleted", false)):
@@ -29,8 +29,8 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("ElizaModule.s0hap"), "Find Eliza Quinn in the medbay and ask if you can become her lab assistant."],
+		[completeIf("ElizaModule.s0hap"), "Найдите Элизу Куинн в медпункте и спросите, можете ли вы стать её лаборантом."],
 	]
 
 func getProgressText() -> String:
-	return "Follow the \"Queen of Alchemy\" task!"
+	return "Выполните задание \"Королева алхимии\"!"

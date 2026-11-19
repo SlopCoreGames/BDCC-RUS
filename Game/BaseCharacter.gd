@@ -516,136 +516,140 @@ func theyre() -> String:
 	var gender = getPronounGender()
 	
 	if(gender == Gender.Male):
-		return "he's"
+		return "он"
 	if(gender == Gender.Female):
-		return "she's"
+		return "она"
 	if(gender == Gender.Androgynous):
-		return "they're"
+		return "они"
 	if(gender == Gender.Other):
-		return "it's"
+		return "оно"
 	return "theyre():BAD_GENDER"
 
 func theyve() -> String:
 	var gender = getPronounGender()
 	
 	if(gender == Gender.Male):
-		return "he's"
+		return "у него"
 	if(gender == Gender.Female):
-		return "she's"
+		return "у неё"
 	if(gender == Gender.Androgynous):
-		return "they've"
+		return "у них"
 	if(gender == Gender.Other):
-		return "it's"
+		return "у него"
 	return "theyve():BAD_GENDER"
 
 func doesntDont() -> String:
 	var gender = getPronounGender()
 	
 	if(gender in [Gender.Male,Gender.Female,Gender.Other]):
-		return "doesn't"
+		return "не"
 	if(gender == Gender.Androgynous):
-		return "don't"
+		return "не"
 	return "doesntDont():BAD_GENDER"
 
 func doesDo() -> String:
 	var gender = getPronounGender()
 	
 	if(gender in [Gender.Male,Gender.Female,Gender.Other]):
-		return "does"
+		return ""
 	if(gender == Gender.Androgynous):
-		return "do"
+		return ""
 	return "doesDo():BAD_GENDER"
 
 func heShe() -> String:
 	var gender = getPronounGender()
 	
 	if(gender == Gender.Male):
-		return "he"
+		return "он"
 	if(gender == Gender.Female):
-		return "she"
+		return "она"
 	if(gender == Gender.Androgynous):
-		return "they"
+		return "они"
 	if(gender == Gender.Other):
-		return "it"
+		return "оно"
 	return "heShe():BAD_GENDER"
 		
 func hisHer() -> String:
 	var gender = getPronounGender()
 	
 	if(gender == Gender.Male):
-		return "his"
+		return "его"
 	if(gender == Gender.Female):
-		return "her"
+		return "её"
 	if(gender == Gender.Androgynous):
-		return "their"
+		return "их"
 	if(gender == Gender.Other):
-		return "its"
+		return "его"
 	return "hisHer():BAD_GENDER"
 		
 func hisHers() -> String:
 	var gender = getPronounGender()
 	
 	if(gender == Gender.Male):
-		return "his"
+		return "его"
 	if(gender == Gender.Female):
-		return "hers"
+		return "её"
 	if(gender == Gender.Androgynous):
-		return "theirs"
+		return "их"
 	if(gender == Gender.Other):
-		return "its"
+		return "его"
 	return "hisHers():BAD_GENDER"
 		
 func himHer() -> String:
 	var gender = getPronounGender()
 	
 	if(gender == Gender.Male):
-		return "him"
+		return "его"
 	if(gender == Gender.Female):
-		return "her"
+		return "её"
 	if(gender == Gender.Androgynous):
-		return "them"
+		return "их"
 	if(gender == Gender.Other):
-		return "it"
+		return "его"
 	return "himHer():BAD_GENDER"
 
 func wasWere() -> String:
 	var gender = getPronounGender()
 	
-	if(gender in [Gender.Male,Gender.Female,Gender.Other]):
-		return "was"
+	if(gender == Gender.Male):
+		return "был"
+	if(gender == Gender.Female):
+		return "была"
 	if(gender == Gender.Androgynous):
-		return "were"
+		return "были"
+	if(gender == Gender.Other):
+		return "было"
 	return "wasWere():BAD_GENDER"
 
 func isAre() -> String:
 	var gender = getPronounGender()
 	
 	if(gender in [Gender.Male,Gender.Female,Gender.Other]):
-		return "is"
+		return ""
 	if(gender == Gender.Androgynous):
-		return "are"
+		return ""
 	return "himHer():BAD_GENDER"
 
 func hasHave() -> String:
 	var gender = getPronounGender()
 	
 	if(gender in [Gender.Male,Gender.Female,Gender.Other]):
-		return "has"
+		return "есть"
 	if(gender == Gender.Androgynous):
-		return "have"
+		return "есть"
 	return "hasHave():BAD_GENDER"
 
 func himselfHerself() -> String:
 	var gender = getPronounGender()
 	
 	if(gender == Gender.Male):
-		return "himself"
+		return "себя"
 	if(gender == Gender.Female):
-		return "herself"
+		return "себя"
 	if(gender == Gender.Androgynous):
-		return "themself"
+		return "себя"
 	if(gender == Gender.Other):
-		return "itself"
+		return "себя"
 	return "himselfHerself():BAD_GENDER"
 
 func verbS(verbWithNoS:String, verbWithS:String = "") -> String:

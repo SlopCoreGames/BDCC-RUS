@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Глубокий транс"
 
 func getVisibleDescription():
-	return "You now fall into deeper hypnotic trances and do not snap out of them nearly as easily."
+	return "Теперь вы погружаетесь в более глубокий гипнотический транс и выходите из него гораздо труднее."
 	
 func getMoreDescription():
-	return 	"Suffering pain now reduces your hypnosis level by 25% of the pain taken, instead of 150%."+"\n\n"+ \
+	return 	"Теперь боль снижает ваш уровень гипноза лишь на 25% o часть полученной боли, вместо прежних 150%."+"\n\n"+ \
 			"Additionaly, your hypnosis level can stack up to 125%." +"\n\n"+\
 			"Keyword Fixation is now [b]always[/b] in effect."
 

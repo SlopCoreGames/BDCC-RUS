@@ -22,7 +22,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Your wife"
+	return "Твоя жена"
 
 #func getChatColor():
 #	return "#E24F4D"

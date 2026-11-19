@@ -104,7 +104,7 @@ func _run():
 		removeCharacter("mirri")
 		playAnimation(StageScene.Duo, "stand", {npc="luxe", npcAction="sit"})
 		aimCamera("market_luxe")
-		setLocationName("Office")
+		setLocationName("Кабинет")
 		saynn("Ты идешь за ним в его огромный кабинет, где на главной стене красуется большая голографическая карта, а повсюду расставлена дорогая деревянная мебель.")
 
 		saynn("Волк сидит за столом, закидывает в рот какую-то таблетку и откидывается в своем величественном кресле.")
@@ -558,18 +558,18 @@ func _react(_action: String, _args):
 		getModule("SlaveAuctionModule").addMirriAffection(-0.5)
 
 	if(_action == "mirri_kiss_hate"):
-		addMessage("You can now talk with Luxe at his office")
+		addMessage("Теперь вы можете поговорить с Люксом у него в кабинете")
 		getModule("SlaveAuctionModule").addMirriAffection(0.2)
 
 	if(_action == "mirri_silenttreatment"):
-		addMessage("You can now talk with Luxe at his office")
+		addMessage("Теперь вы можете поговорить с Люксом у него в кабинете")
 		getModule("SlaveAuctionModule").addMirriAffection(-0.5)
 
 	if(_action == "mirri_nohate"):
-		addMessage("You can now talk with Luxe at his office")
+		addMessage("Теперь вы можете поговорить с Люксом у него в кабинете")
 
 	if(_action == "mirri_listendad"):
-		addMessage("You can now talk with Luxe at his office")
+		addMessage("Теперь вы можете поговорить с Люксом у него в кабинете")
 
 	setState(_action)
 

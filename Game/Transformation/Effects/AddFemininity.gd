@@ -35,64 +35,64 @@ func generateTransformText(_result:Dictionary):
 		var text:String = ""
 		if(oldFemininity < 100):
 			text += RNG.pick([
-				"{npc.YourHis} body is becoming more feminine.",
+				"Тело {npc.YourHis} становится более женственным.",
 			])
 			text += RNG.pick([
-				" {npc.YourHis} skin begins to soften, becoming smoother and more delicate.",
-				" {npc.YourHis} hips widen slightly, creating sexier curves.",
-				" Even {npc.yourHis} voice sounds softer now.",
-				" {npc.YourHis} voice sounds softer, more melodic.",
-				" {npc.YourHis} muscles are softening as they take on a more graceful shape.",
-				" {npc.YourHis} thighs begin to soften and round out, losing any muscular definition.",
-				" {npc.YouHe} {npc.youHeVerb('feel')} a deep, internal shift in {npc.yourHis} pelvis as it adjusts to a more feminine structure.",
-				" {npc.YourHis} jawline softens, and {npc.yourHis} cheekbones rise, creating a more delicate and feminine face.",
-				" {npc.YourHis} brow smooths out, and {npc.yourHis} lips plump slightly, becoming fuller and sexier.",
-				" A new, subtle scent begins to emanate from {npc.yourHis} skin, sweet and floral.",
+				" Кожа {npc.YourHis} начинает смягчаться, становясь более гладкой и нежной.",
+				" Бедра {npc.YourHis} слегка расширяются, создавая более сексуальные изгибы.",
+				" Даже голос {npc.yourHis} теперь звучит мягче.",
+				" Голос {npc.YourHis} звучит мягче, более мелодично.",
+				" Мускулы {npc.YourHis} смягчаются, приобретая более изящную форму.",
+				" Бедра {npc.YourHis} начинают смягчаться и округляться, теряя любую мускулистость.",
+				" {npc.YouHe} {npc.youHeVerb('feel')} ощущается глубокий внутренний сдвиг в тазу {npc.yourHis}, когда он подстраивается под более женственную структуру.",
+				" Линия челюсти {npc.YourHis} смягчается, а {npc.yourHis} скулы приподнимаются, создавая более нежное и женственное лицо.",
+				" Брови {npc.YourHis} разглаживаются, а {npc.yourHis} губы слегка пухнут, становясь более полными и сексуальными.",
+				" От кожи {npc.yourHis} начинает исходить новый, едва уловимый аромат — сладкий и цветочный.",
 			])
 			text += " {npc.YouHe} {npc.youAreHeIs} now "+str(Util.roundF(newFemininity, 0))+"% feminine."
 				
 			if(newFemininity >= 100):
-				text += " {npc.YourHis} femininity has hit its peak!"
+				text += " Женственность {npc.YourHis} достигла своего пика!"
 		else:
 			text += RNG.pick([
-				"{npc.YourHis} body is trying to become more feminine but {npc.yourHis} femininity has already reached its peak!",
+				"Тело {npc.YourHis} всё ещё пытается стать более женственным, но женственность {npc.yourHis} уже достигла своего предела!",
 			])
 			text += RNG.pick([
-				" But still, {npc.yourHis} skin softens a bit more.",
-				" But still, {npc.yourHis} voice starts to sound a little softer now.",
-				" But still, {npc.yourHis} muscles soften as they take on a more graceful shape.",
+				" И всё же, кожа {npc.yourHis} становится ещё немного мягче.",
+				" И всё же, голос {npc.yourHis} теперь начинает звучать чуть нежнее.",
+				" И всё же, мышцы {npc.yourHis} размягчаются, приобретая более изящные очертания.",
 			])
 		addText(text)
 	elif(newFemininity < oldFemininity):
 		var text:String = ""
 		if(oldFemininity > 0):
 			text += RNG.pick([
-				"{npc.YourHis} body is becoming more masculine.",
+				"Тело {npc.YourHis} становится более мужественным.",
 			])
 			text += RNG.pick([
-				" {npc.YourHis} skin begins to thicken, taking on a rougher texture.",
-				" {npc.YourHis} shoulders broaden, creating a more powerful silhouette.",
-				" Even {npc.yourHis} voice sounds deeper now.",
-				" {npc.YourHis} voice sounds deeper, more resonant.",
-				" {npc.YourHis} muscles are firming up, gaining definition and strength.",
-				" {npc.YourHis} thighs begin to harden, losing any softness.",
-				" {npc.YouHe} {npc.youHeVerb('feel')} a deep, internal shift in {npc.yourHis} pelvis as it adjusts to a more masculine structure.",
-				" {npc.YourHis} jawline sharpens, and {npc.yourHis} brow becomes more pronounced, creating a more rugged and masculine face.",
-				" {npc.YourHis} brow furrows slightly, and {npc.yourHis} lips become thinner and more defined.",
-				" A new, subtle scent begins to emanate from {npc.yourHis} skin, musky and earthy.",
+				" Кожа {npc.YourHis} начинает грубеть, становясь более шершавой на ощупь.",
+				" Плечи {npc.YourHis} расширяются, создавая более мощный силуэт.",
+				" Даже голос {npc.yourHis} теперь звучит глубже.",
+				" Голос {npc.YourHis} звучит глубже и резонирующе.",
+				" Мышцы {npc.YourHis} становятся тверже, обретая рельеф и силу.",
+				" Бедра {npc.YourHis} начинают твердеть, теряя всякую мягкость.",
+				" {npc.YouHe} {npc.youHeVerb('feel')} ощущает глубокий внутренний сдвиг в {npc.yourHis} тазу, когда тот подстраивается под более мужественную структуру.",
+				" Линия челюсти {npc.YourHis} становится острее, а {npc.yourHis} надбровные дуги — выразительнее, придавая лицу более суровый и мужественный вид.",
+				" Брови {npc.YourHis} слегка хмурятся, а {npc.yourHis} губы становятся тоньше и четче очерченными.",
+				" От кожи {npc.yourHis} начинает исходить новый, едва уловимый мускусный и землистый аромат.",
 			])
-			text += " {npc.YouHe} {npc.youAreHeIs} now " + str(Util.roundF(100.0 - newFemininity, 0)) + "% masculine."
+			text += " {npc.YouHe} {npc.youAreHeIs} now " + str(Util.roundF(100.0 - newFemininity, 0)) + "% мужественный."
 
 			if(newFemininity <= 0):
-				text += " {npc.YourHis} masculinity has hit its peak!"
+				text += " Мужественность {npc.YourHis} достигла своего пика!"
 		else:
 			text += RNG.pick([
-				"{npc.YourHis} body is trying to become more masculine, but {npc.yourHis} masculinity has already reached its peak!",
+				"Тело {npc.YourHis} пытается стать еще мужественнее, но {npc.yourHis} мужественность уже достигла своего пика!",
 			])
 			text += RNG.pick([
-				" But still, {npc.yourHis} skin thickens a bit more.",
-				" But still, {npc.yourHis} voice starts to sound a little deeper now.",
-				" But still, {npc.yourHis} muscles gain a bit more definition.",
+				" Но всё же кожа {npc.yourHis} становится чуть грубее.",
+				" Но всё же голос {npc.yourHis} начинает звучать немного ниже.",
+				" Но всё же мышцы {npc.yourHis} становятся чуть рельефнее.",
 			])
 		addText(text)
 

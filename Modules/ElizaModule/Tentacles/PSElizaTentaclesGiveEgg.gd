@@ -36,7 +36,7 @@ func _react(_action: String, _args):
 	if(_action == "give_egg"):
 		getModule("ElizaModule").addTentacleEgg()
 		GM.pc.getInventory().removeXOfOrDestroy("PlantEgg", 1)
-		addMessage("Total amount of eggs given is "+str(getFlag("ElizaModule.tent_eggs", 0)))
+		addMessage("Всего выдано яиц: "+str(getFlag("ElizaModule.tent_eggs", 0)))
 
 	if(_action == "begin_stuff"):
 		GM.pc.addCredits(-getModule("ElizaModule").getTentaclesCost())

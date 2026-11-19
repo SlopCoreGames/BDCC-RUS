@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Матка-настоятельница"
 
 func getVisibleDescription():
-	return "Your womb is ripe for breeding, ready to bear the offspring of anyone dominant enough to claim you. \n"  \
+	return "Твоя утроба созрела для размножения, готовая выносить потомство любого, кто окажется достаточно доминантным, чтобы заявить на тебя права. \n"  \
 			+ "Pregnancy debuffs are reduced by 50%. \n" \
 			+ "Fertility debuffs are reduced by 70%.\n" \
 			+ "Cross-species impregnation is now just as likely for you as an impregnation from the same species!" 

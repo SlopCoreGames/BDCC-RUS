@@ -7,12 +7,12 @@ func _init():
 	isBattleOnly = true
 
 func getEffectName():
-	return "Collapsed"
+	return "Сбит с ног"
 
 func getEffectDesc():
-	var message = "You're on the ground. Can still fight but it's almost impossible to dodge physical attacks"
+	var message = "Вы лежите на земле. Все еще можете сражаться, но уклоняться от физических атак почти невозможно"
 	if(!canStandup):
-		message += "\n[color=red]Can't stand up right after you were knocked down[/color]"
+		message += "\n[color=red]Не можете подняться сразу после того, как вас сбили с ног[/color]"
 	return message
 
 func getEffectImage():

@@ -242,7 +242,7 @@ func _react(_action: String, _args):
 	if(_action == "ask_about_kait"):
 		processTime(3*60)
 		setFlag("FightClubModule.GotTaskToStealPlant", true)
-		addMessage("New task added!")
+		addMessage("Добавлена новая задача!")
 
 	if(_action == "follow_eliza"):
 		runScene("ParadedOnALeashScene", ["eliza", "medical_hospitalwards", "med_lobbyne", []])
@@ -266,7 +266,7 @@ func loadData(data):
 	isBeaten = SAVE.loadVar(data, "isBeaten", false)
 
 func getDevCommentary():
-	return "This is just a glue scene, yeah. But still, I think it's kinda nice. It does some world building, shows Eliza's character and also hints at some interesting stuff. Is Avy actually stealing those drugs? Well, what do you think? :p"
+	return "Это просто связующая сцена, ну да. Но всё равно, по-моему, она довольно милая. Она немного расширяет лор, раскрывает характер Элизы и подкидывает пару интересных зацепок. Неужели Эви и правда ворует эти препараты? Ну, а вы как думаете? :p"
 
 func hasDevCommentary():
 	return true

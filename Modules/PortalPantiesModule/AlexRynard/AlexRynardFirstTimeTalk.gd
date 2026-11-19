@@ -107,7 +107,7 @@ func _react(_action: String, _args):
 		
 	if(_action == "refuse"):
 		GM.pc.addPain(100)
-		addMessage("Ow, that really hurt")
+		addMessage("Ой, как же больно!")
 	
 	if(_action == "endthescene"):
 		endScene()

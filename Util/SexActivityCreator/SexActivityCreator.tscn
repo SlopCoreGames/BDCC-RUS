@@ -157,7 +157,7 @@ anchor_bottom = 0.0
 margin_top = 4.0
 margin_right = 1076.0
 margin_bottom = 128.0
-labelText = "Every turn actions"
+labelText = "Действия каждый ход"
 
 [node name="StateDefaultAnimPicker" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/StatePropertiesList" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -202,7 +202,7 @@ anchor_bottom = 0.0
 margin_top = 22.0
 margin_right = 1076.0
 margin_bottom = 146.0
-labelText = "Conditions (And)"
+labelText = "Условия (И)"
 smallContainer = true
 
 [node name="ActionActionsList" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList" instance=ExtResource( 3 )]
@@ -211,7 +211,7 @@ anchor_bottom = 0.0
 margin_top = 150.0
 margin_right = 1076.0
 margin_bottom = 274.0
-labelText = "What happens"
+labelText = "Что происходит"
 
 [node name="ActivitySettingsScreen" type="ScrollContainer" parent="VBoxContainer"]
 visible = false
@@ -247,7 +247,7 @@ anchor_bottom = 0.0
 margin_right = 638.0
 margin_bottom = 124.0
 size_flags_horizontal = 3
-labelText = "Can start conditions"
+labelText = "Условия начала"
 smallContainer = true
 
 [node name="StartActionsList" parent="VBoxContainer/ActivitySettingsScreen/VBoxContainer/VBoxContainer" instance=ExtResource( 3 )]
@@ -257,7 +257,7 @@ margin_top = 128.0
 margin_right = 638.0
 margin_bottom = 252.0
 size_flags_horizontal = 3
-labelText = "On start actions"
+labelText = "Действия при старте"
 
 [node name="CustomCodeTab" type="VBoxContainer" parent="VBoxContainer"]
 visible = false

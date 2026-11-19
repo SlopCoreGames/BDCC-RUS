@@ -34,7 +34,7 @@ func _run():
 		if(true):
 			return
 		if(false):
-			addButtonAt(14, "End", "REMOVE ME IN RELEASE", "endthescene")
+			addButtonAt(14, "Конец", "УДАЛИТЬ В РЕЛИЗЕ", "endthescene")
 
 		if(slaveAuction.getState() == "act"):
 			if(currentActionType != AuctionActionType.NoType):

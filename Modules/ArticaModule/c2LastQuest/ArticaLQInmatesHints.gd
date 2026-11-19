@@ -26,13 +26,13 @@ func onButton(_method, _args):
 		var allClues = getModule("ArticaModule").getLastQuestHints()
 
 		if(clueNumber < allClues.size()):
-			addMessage("The inmate told you some information about Artica's dreamcatcher. New hint is:")
+			addMessage("Заключенный поведал тебе кое-что о ловце снов Артики. Новая подсказка:")
 			addMessage("'"+allClues[clueNumber]+"'")
-			addMessage("You can see all your learned hints in the task list.")
+			addMessage("Все изученные подсказки можно найти в списке задач.")
 			addExperienceToPlayer(10)
 			increaseFlag("ArticaModule.lqClues")
 		else:
-			addMessage("This inmate doesn't know anything new.. Looks like that's all the hints you're gonna get!")
-			addMessage("You can see all your learned hints in the task list.")
+			addMessage("Этот заключенный больше ничего не знает... Похоже, это все подсказки, которые тебе светит!")
+			addMessage("Все изученные подсказки можно найти в списке задач.")
 		
 		GM.main.reRun()

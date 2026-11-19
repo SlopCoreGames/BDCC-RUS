@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Desperate"
+	return "Отчаяние"
 
 func getEffectDesc():
-	return "You didn't cum when you really wanted to, you are feeling so desperate! " + str(turns) + " more turns"
+	return "Ты так и не кончил, хотя безумно этого хотел, и теперь ты чувствуешь полное отчаяние! " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/armor-punch.png"

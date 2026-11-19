@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(GM.QS.isActive("Ch2AlexQuest") && getFlag("TaviModule.ch2AlexTalkedTo") && !getFlag("TaviModule.ch2AlexCapturedSpying")):
-		addButtonUnlessLate("Corridor", "Is this the right corridor?", "startch2quest")
+		addButtonUnlessLate("Коридор", "Это тот самый коридор?", "startch2quest")
 
 func getPriority():
 	return 0

@@ -44,30 +44,30 @@ func _run():
 		
 		if(!sexEngine.hasSexEnded()):
 			if(sexEngine.canEndSexAnyTime()):
-				addExtraButtonAt(4, "END SEX", "Enough fun for now", "stopsex")
+				addExtraButtonAt(4, "ЗАКОНЧИТЬ СЕКС", "На сегодня хватит", "stopsex")
 			else:
-				addExtraButtonAt(4, "QUICK SEX", "Simulate the sex for a while until it ends", "simulatesex")
+				addExtraButtonAt(4, "БЫСТРЫЙ СЕКС", "Прокрутить секс до самого конца", "simulatesex")
 			var canSelectTarget:bool = sexEngine.canSwitchPCTarget()
 			if(canSelectTarget):
-				addExtraButtonAt(3, "TARGET", "Switch the target of your new activities", "switchtarget")
+				addExtraButtonAt(3, "TARGET", "Сменить объект страсти", "switchtarget")
 			
 			var canToggleDynJoiners:bool = sexEngine.canToggleDynamicJoiners()
 			if(canToggleDynJoiners):
 				if(sexEngine.didPCAllowDynamicJoiners()):
-					addExtraButton("Disallow joiners", "Disallow people around you from dynamically joining the sex.", "toggle_dynamic_join")
+					addExtraButton("Запретить подселение", "Окружающие не смогут динамически присоединиться к сексу.", "toggle_dynamic_join")
 				else:
-					addExtraButton("Allow joiners", "Allow people around you to join the sex.", "toggle_dynamic_join")
+					addExtraButton("Разрешить подселение", "Окружающие могут присоединиться к сексу.", "toggle_dynamic_join")
 			
 			if(sexEngine.canChooseDomAutonomy()):
 				if(!sexEngine.isDomAutonomyEnabled()):
-					addExtraButton("Enable dom autonomy", "Allow other doms to do things with the sub", "toggle_dom_autonomy")
+					addExtraButton("Включить автономию доминантов", "Позволить другим доминантам что-то делать с сабмиссивом", "toggle_dom_autonomy")
 				else:
-					addExtraButton("Disable dom autonomy", "Disallow other doms to do things with the sub", "toggle_dom_autonomy")
+					addExtraButton("Отключить автономию доминантов", "Запретить другим доминантам взаимодействовать с сабмиссивом", "toggle_dom_autonomy")
 			
 			if(currentCategory != []):
 				addButton("Назад", "Назад в предыдущее меню", "backbutton")
 				if(GM.ui.getCurrentPage() > 0):
-					addExtraButton("Back", "Back to the previous menu", "backbutton")
+					addExtraButton("Назад", "Назад в предыдущее меню", "backbutton")
 			
 				
 			var theTargetID:String = sexEngine.getPCTarget()
@@ -86,11 +86,11 @@ func _run():
 					actionCategory = actionInfo["category"]
 				
 				if(currentCategory == actionCategory):
-					var desc = "No description provided"
+					var desc = "Описание отсутствует"
 					if(actionInfo.has("desc")):
 						desc = actionInfo["desc"]
 					if(actionInfo.has("chance") && actionInfo["chance"] != null):
-						desc = "Success chance: "+str(Util.roundF(actionInfo["chance"], 1))+"%\n"+desc
+						desc = "Шанс успеха:"+str(Util.roundF(actionInfo["chance"], 1))+"%\n"+desc
 					addButton(actionInfo["name"], desc, "doAction", [actionInfo])
 			
 			addCategoryButtons(theActions)
@@ -120,17 +120,17 @@ func _react(_action: String, _args):
 	if(_action == "toggle_dom_autonomy"):
 		sexEngine.toggleDomAutonomy()
 		if(sexEngine.isDomAutonomyEnabled()):
-			addMessage("Other doms now have action autonomy.")
+			addMessage("Другие доминанты теперь действуют автономно.")
 		else:
-			addMessage("Other doms won't do any new actions anymore.")
+			addMessage("Другие доминанты больше не будут совершать новых действий.")
 		return
 	
 	if(_action == "toggle_dynamic_join"):
 		sexEngine.toggleDynamicJoiners()
 		if(sexEngine.didPCAllowDynamicJoiners()):
-			addMessage("Pawns around you might decide to join now.")
+			addMessage("Окружающие пешки могут решить присоединиться.")
 		else:
-			addMessage("Pawns around you will no longer join.")
+			addMessage("Окружающие пешки больше не будут присоединяться.")
 		return
 	
 	if(_action == "recoverandleave"):
@@ -219,7 +219,7 @@ func getDebugActions():
 	return [
 		{
 			"id": "forceEnd",
-			"name": "Force end sex",
+			"name": "Принудительно завершить секс",
 			"args": [
 			],
 		},

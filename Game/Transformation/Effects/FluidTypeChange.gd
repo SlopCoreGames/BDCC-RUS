@@ -35,19 +35,19 @@ func generateTransformText(_result:Dictionary):
 	
 	if(bodypartSlot == BodypartSlot.Breasts):
 		text += RNG.pick([
-			"Something changes within {npc.yourHis} mammary glands. {npc.YourHis} breasts are now producing " + newFluidName + " during lactation!",
+			"Что-то меняется в молочных железах {npc.yourHis}. Теперь грудь {npc.YourHis} вырабатывает " + newFluidName + " во время лактации!",
 		])
 	elif(bodypartSlot == BodypartSlot.Penis):
 		text += RNG.pick([
-			"Something happens within {npc.yourHis} testicles. {npc.YourHis} penis will now release "+newFluidName+" during ejaculation!",
+			"Что-то происходит в яичках {npc.yourHis}. Теперь член {npc.YourHis} будет выделять "+newFluidName+" во время эякуляции!",
 		])
 	elif(bodypartSlot == BodypartSlot.Vagina):
 		text += RNG.pick([
-			"Something changes inside the glands of {npc.yourHis} vagina. {npc.YourHis} pussy will now squirt "+newFluidName+" during orgasms!",
+			"Что-то меняется в железах влагалища {npc.yourHis}. Теперь киска {npc.YourHis} будет сочиться "+newFluidName+" во время оргазмов!",
 		])
 	else:
 		text += RNG.pick([
-			"{npc.YourHis} "+slotName+" is now producing "+newFluidName+"!",
+			"{npc.YourHis} "+slotName+" теперь вырабатывает "+newFluidName+"!",
 		])
 
 	addText(text)

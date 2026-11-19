@@ -19,7 +19,7 @@ func getShortName():
 	return getVisibleName()
 
 func getVisibleDescription():
-	return "Error, bad description"
+	return "Ошибка: некорректное описание"
 
 static func getRequiredExperience(_level) -> int:
 	return 100 + _level * 10 + int(sqrt(max(0,_level))) * 10

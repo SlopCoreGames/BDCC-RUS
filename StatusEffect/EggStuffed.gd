@@ -19,7 +19,7 @@ func getEffectName():
 func getEffectDesc():
 	var theMenstrualCycle:MenstrualCycle = character.getMenstrualCycle()
 	if(!theMenstrualCycle):
-		return "You are stuffed with eggs.."
+		return "Ты набит яйцами..."
 	
 	var theTimeUntilEggs:int = theMenstrualCycle.getTimeUntilNextEggLaying()
 	var eggAm:int = theMenstrualCycle.bigEggs.size()
@@ -33,7 +33,7 @@ func getEffectDesc():
 		helpfulPlugMessage = " Plug your "+Util.humanReadableList(unpluggedHolesTexts)+" if you don't want that."
 	
 	if(unpluggedHoles.empty()):
-		return "You are stuffed with "+str(eggAm)+" egg"+("s" if eggAm != 1 else "")+"..."
+		return "Ты набита "+str(eggAm)+" egg"+("s" if eggAm != 1 else "")+"..."
 	var timeLeftString:String
 	if(theTimeUntilEggs >= 10000000):
 		timeLeftString = ""
@@ -41,7 +41,7 @@ func getEffectDesc():
 		timeLeftString = Util.getTimeStringHumanReadable(theTimeUntilEggs)+" left until you will want to lay "+("the first one." if eggAm != 1 else "it.")
 	else:
 		timeLeftString = "You wanna lay "+("the first one" if eggAm != 1 else "it")+" NOW!"
-	return "You are stuffed with "+str(eggAm)+" egg"+("s" if eggAm != 1 else "")+".. "+timeLeftString+helpfulPlugMessage
+	return "Ты набита "+str(eggAm)+" egg"+("s" if eggAm != 1 else "")+".. "+timeLeftString+helpfulPlugMessage
 
 func getEffectImage():
 	return "res://Images/StatusEffects/mother.png"

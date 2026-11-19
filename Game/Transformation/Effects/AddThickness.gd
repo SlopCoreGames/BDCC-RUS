@@ -35,50 +35,50 @@ func generateTransformText(_result:Dictionary):
 	if(newThickness > oldThickness):
 		var text:String = ""
 		text += RNG.pick([
-			"{npc.YourHis} hips begin to widen.",
-			"{npc.YourHis} hips begin to noticeably widen.",
+			"{npc.YourHis} бедра начинают расширяться.",
+			"{npc.YourHis} бедра начинают заметно расширяться.",
 		])
 		if(newThickness < 40):
 			text += RNG.pick([
-				" But only just a bit.",
-				" But the overall form is still quite slim.",
-				" That slim butt might not be so slim soon.",
-				" {npc.YourHis} butt gets more jiggly with each pound.",
-				" Muscles are not so visible anymore.",
-				" Change is barely noticeable.. but it's there, for sure.",
-				" {npc.YourHis} body is still maintaining its sleekness.",
+				" Но лишь самую малость.",
+				" Но в целом фигура всё еще остается довольно стройной.",
+				" Эта стройная задница скоро может перестать быть такой уж стройной.",
+				" {npc.YourHis} задница становится всё более дряйловой с каждым новым фунтом.",
+				" Мышцы больше не так заметны.",
+				" Перемены едва уловимы... но они определенно есть.",
+				" {npc.YourHis} тело всё еще сохраняет свою изящность.",
 			])
 		else:
 			text += RNG.pick([
-				" {npc.yourHis} butt is becoming more full and round.",
-				" It looks like {npc.youHe} gained some weight.",
-				" {npc.YourHis} curves become more pronounced.",
-				" {npc.YouHe} {npc.youAreHeIs} getting thicker and thicker.",
-				" {npc.YourHis} thighs are starting to fill out nicely.",
-				" {npc.YourHis} body is receiving a more voluptuous shape.",
-				" {npc.YourHis} butt is developing a delightful roundness.",
+				" {npc.yourHis} задница становится всё более полной и округлой.",
+				" Похоже, {npc.youHe} немного прибавила в весе.",
+				" Изгибы {npc.YourHis} становятся всё более выразительными.",
+				" {npc.YouHe} становится всё более {npc.youAreHeIs} пышной и сочной.",
+				" Бёдра {npc.YourHis} начинают аппетитно округляться.",
+				" Тело {npc.YourHis} обретает всё более женственные, пышные формы.",
+				" Попа {npc.YourHis} становится восхитительно круглой.",
 			])
 			
 		if(newThickness >= 150):
-			text += " {npc.YourHis} thickness has hit its peak! {npc.YourHis} hips have expanded to their fullest, creating an undeniably striking silhouette."
+			text += " Пышность {npc.YourHis} достигла своего пика! {npc.YourHis} бёдра раздались до предела, создавая неоспоримо эффектный силуэт."
 		addText(text)
 	elif(newThickness < oldThickness):
 		var text:String = ""
 		text += RNG.pick([
-			"{npc.YourHis} hips begin to lose some of their thickness.",
+			"Бёдра {npc.YourHis} начинают понемногу терять объём.",
 		])
 		text += RNG.pick([
-			" {npc.YouHe} can feel a slight reduction in fullness.",
-			" {npc.YourHis} curves are becoming less pronounced.",
-			" {npc.YouHe} {npc.youHeVerb('notice')} that {npc.yourHis} hips are not as wide as before.",
-			" The change is subtle, but {npc.youHe} {npc.youHeVerb('feel')} a bit slimmer.",
-			" {npc.YourHis} body is returning to a more streamlined shape.",
-			" {npc.YouHe} {npc.youHeVerb('feel')} lighter, as if some of the weight has lifted.",
-			" {npc.YourHis} silhouette is less curvy than it was moments ago.",
-			" {npc.YouHe} can sense a shift, as {npc.yourHis} form becomes more delicate."
+			" {npc.YouHe} чувствует, как тело становится чуть менее полным.",
+			" Изгибы {npc.YourHis} становятся менее выраженными.",
+			" {npc.YouHe} {npc.youHeVerb('notice')} что {npc.yourHis} бедра стали не такими широкими, как раньше.",
+			" Изменения едва заметны, но {npc.youHe} {npc.youHeVerb('feel')} выглядит немного стройнее.",
+			" Тело {npc.YourHis} постепенно принимает более обтекаемую форму.",
+			" {npc.YouHe} {npc.youHeVerb('feel')} легче, словно часть веса спала с плеч.",
+			" {npc.YourHis} силуэт стал менее извилистым, чем мгновение назад.",
+			" {npc.YouHe} чувствует перемены: форма {npc.yourHis} становится всё более хрупкой."
 		])
 		if(newThickness <= 0):
-			text += " {npc.YourHis} thickness has hit the lowest possible point! {npc.YourHis} body is now extremely slim and sleek."
+			text += " {npc.YourHis} толщина достигла минимально возможной отметки! {npc.YourHis} тело теперь невероятно стройное и изящное."
 		addText(text)
 
 func saveData() -> Dictionary:

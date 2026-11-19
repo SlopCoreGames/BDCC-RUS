@@ -23,9 +23,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Apply",
+			"name": "Применить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Apply the lube",
+			"description": "Использовать лубрикант",
 		},
 	]
 
@@ -55,9 +55,9 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "Lube",
+		"name": "Смазка",
 		"usedName": "lube",
-		"desc": "Makes your holes more sensitive.",
+		"desc": "Делает твои дырочки более чувствительными.",
 		"scoreOnSub": _sexEngine.hasGoalScore(_domInfo, SexGoal.SubOptionalApplyLubeOnSub, _subInfo)*(0.1-_domInfo.fetishScore({Fetish.Sadism: 0.1})),
 		"scoreOnSelf": _sexEngine.hasGoalScore(_domInfo, SexGoal.SubOptionalApplyLubeOnDom, _subInfo)*(0.1-_domInfo.fetishScore({Fetish.Masochism: 0.1})),
 		"scoreSubScore": _subInfo.getComplyScore(),

@@ -510,14 +510,14 @@ func _react(_action: String, _args):
 		addExperienceToPlayer(100)
 		
 		GM.pc.addCredits(int(creditsToGive))
-		addMessage("You got "+str(creditsToGive)+" credits!")
+		addMessage("Получено: "+str(creditsToGive)+" кредитами!")
 		#GM.main.removeDynamicCharacter(slaveID)
 		getModule("SlaveAuctionModule").sellToSlavery(slaveID)
 
 	if(_action == "follow_back"):
 		processTime(3*60)
-		addMessage("Task updated")
-		addMessage("You can now teleport between the Blacktail Market and your prison cell")
+		addMessage("Задача обновлена")
+		addMessage("Теперь вы можете телепортироваться между рынком Блэктейл и своей тюремной камерой")
 
 	setState(_action)
 

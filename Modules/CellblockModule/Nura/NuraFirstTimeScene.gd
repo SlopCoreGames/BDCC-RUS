@@ -59,7 +59,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Nur-A. Short for Nurse Android if you didn't realize it x3.\n\nNura was just a quick test of a new scene converter that converts raw text from Google Docs into basically complete coded scenes for the game. I wrote her stuff in one day thanks to that.\n\nIs there future for Nura? Maybe.. If you wanna expand her yourself - go ahead, this character is a complete blank slate x3"
+	return "Нур-А. Сокращенно от Nurse Android (Медсестра-Андроид), если вы вдруг не догадались x3.\n\nНура была просто быстрым тестом нового конвертера сцен, который превращает сырой текст из Google Docs практически в готовые программные сцены для игры. Благодаря ему я расписал её за один день.\n\nЕсть ли будущее у Нуры? Возможно... Если захотите развить её сами — дерзайте, этот персонаж — чистый лист x3"
 
 func hasDevCommentary():
 	return true

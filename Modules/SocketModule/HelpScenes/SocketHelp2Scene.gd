@@ -230,7 +230,7 @@ func _run():
 
 		saynn("[say=pc]Конечно. Только убедись, что я в них не застряну.[/say]")
 
-		saynn("Она хихикает и начинает убегать легким бегом"+str(", her pussy still dripping your seed" if fuckedPussy else "")+".")
+		saynn("Она хихикает и начинает убегать легким бегом"+str(", её киска всё ещё сочит твою сперму" if fuckedPussy else "")+".")
 
 		saynn("[say=socket]Кстати, спасибо! Думаю, я смогу найти дорогу назад.[/say]")
 
@@ -733,7 +733,7 @@ func _react(_action: String, _args):
 
 	if(_action == "unlock_fast_travel"):
 		processTime(3*60)
-		addMessage("You can now ask Socket to modify the station's vents to make them traversable")
+		addMessage("Теперь вы можете попросить Сокета переделать вентиляцию станции, чтобы по ней можно было перемещаться")
 
 	if(_action == "socket_rough_pussy_fast"):
 		processTime(6*60)
@@ -745,7 +745,7 @@ func _react(_action: String, _args):
 		setFlag("SocketModule.punishReason", "stuckroughfuck")
 
 	if(_action == "unlock_fasttravel_rough"):
-		addMessage("You can now ask Socket to modify the station's vents to make them traversable")
+		addMessage("Теперь вы можете попросить Сокета переделать вентиляцию станции, чтобы по ней можно было перемещаться")
 
 	if(_action == "socket_rough_ass_cum"):
 		processTime(3*60)

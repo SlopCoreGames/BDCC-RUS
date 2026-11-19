@@ -18,7 +18,7 @@ func _run():
 
 	if(state == "follow"):
 		aimCamera("med_researchlab")
-		setLocationName("Research lab")
+		setLocationName("Исследовательская лаборатория")
 		playAnimation(StageScene.Solo, "sit")
 		
 		saynn("Вы идете по белым коридорам; персонал здесь явно привык видеть связанных и на поводках заключенных, которых передают из рук в руки, хотя некоторые медсестры заглядывают вам в глаза, словно пытаясь понять, насколько сильно вы сломлены ментально.")
@@ -244,7 +244,7 @@ func _react(_action: String, _args):
 		GM.pc.orgasmFrom("eliza")
 		GM.pc.addSkillExperience(Skill.SexSlave, 20)
 		GM.pc.addCredits(1)
-		addMessage("You received 1 work credit!")
+		addMessage("Вы получили 1 рабочий кредит!")
 		
 		setModuleFlag("MedicalModule", "Mental_ExpObeyDrug", Util.maxi(1, getModuleFlag("MedicalModule", "Mental_ExpObeyDrug", 0)))
 
@@ -256,7 +256,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Obedience drug. Probably the most generic drug that a horny person can come up with x3. I know at least one lewd movie that has it.. well, a form of it.\n\nBut basically I tried to ground it in reality somewhat, explain why it works. Humans are simple really, we do what we wanna do and avoid doing what we don't wanna do x3. I know, shocking. But just because its obvious it doesn't mean that its wrong. So the point it.. if any action is met with pain, we will try to avoid doing that action ^^. And what if that 'action' is a 'disobey' action.. x3"
+	return "Препарат послушания. Пожалуй, самый банальный наркотик, который только может выдумать похотливый человек x3. Я знаю как минимум один пошлый фильм, где он есть... ну, его разновидность.\n\nНо, в общем, я попыталась хоть как-то обосновать это реальностью, объяснить, почему он работает. Люди ведь на самом деле простые: мы делаем то, что хотим, и избегаем того, чего не хотим x3. Знаю, шокирует. Но то, что это очевидно, еще не значит, что это неправильно. Так вот, суть в том... если любое действие сопровождается болью, мы постараемся избегать этого действия ^^. А что, если этим «действием» будет «непослушание»... x3"
 
 func hasDevCommentary():
 	return true

@@ -45,7 +45,7 @@ func setSceneCreator(newcreator, shouldShowDevCommentaryIcon = false):
 		sceneCreatorLabel.visible = false
 		return
 	sceneCreatorLabel.visible = true
-	sceneCreatorLabel.text = "Scene by "+str(newcreator)
+	sceneCreatorLabel.text = "Сценарий: "+str(newcreator)
 	if(shouldShowDevCommentaryIcon):
 		sceneCreatorLabel.text = "[DC] "+sceneCreatorLabel.text
 

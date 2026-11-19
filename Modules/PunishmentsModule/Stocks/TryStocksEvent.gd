@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "main_punishment_spot")
 
 func run(_triggerID, _args):
-	addButtonUnlessLate("Try stocks", "Stick your head into them out of curiosity", "stocks")
+	addButtonUnlessLate("Попробовать колодки", "Просунуть в них голову из любопытства", "stocks")
 
 func getPriority():
 	return 0

@@ -17,7 +17,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Отказ себе"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Go against your will and use 20 stamina to deny yourself the orgasm."
+	return "Идя наперекор собственному желанию, вы тратите 20 единиц выносливости, чтобы подавить оргазм."
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -31,10 +31,10 @@ func doAction(_lustState: LustCombatState, _args):
 
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You feel yourself on the edge of your peak. You only need so little extra stimulation to get that sweet release.. but instead you hold completely still and let that feeling calm down. You are denying yourself the climax that you wanted so much, you’re squirming desperate!"
+		text += "Вы чувствуете, что находитесь на самом пике. Вам нужно лишь еще капельку стимуляции, чтобы получить это сладкое облегчение... но вместо этого вы замираете и позволяете возбуждению утихнуть. Вы лишаете себя долгожданного оргазма, и от этого нетерпеливо извиваетесь в отчаянии!"
 		text += "\n\n"
 	else:
-		text += "The climax is so close, all you need is a little more.. But no, using a huge chunk of your will you manage to go against your desires and deny yourself the orgasm. You stay completely still while waiting for the pleasurable feelings to soften up. You skipped this one and it makes you feel desperate for another one.."
+		text += "Разрядка уже так близко, нужно лишь еще совсем чуть-чуть... Но нет, собрав всю свою волю в кулак, вы идете против своих желаний и подавляете оргазм. Вы замираете, ожидая, пока волна удовольствия спадет. Вы пропустили этот раз, и теперь от этого желания получить следующий становится просто невыносимым!"
 		text += "\n\n"
 
 	return {

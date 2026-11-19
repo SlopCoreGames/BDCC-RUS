@@ -14,7 +14,7 @@ func getVisibleDescription():
 	var text = str(Util.roundF(displayAmount, 1))
 	if(amount > 0):
 		text = "+"+text
-	return "Fertility Modifier "+text+"%"
+	return "Модификатор фертильности "+text+"%"
 
 func apply(_buffHolder):
 	var modifier = 1.0

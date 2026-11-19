@@ -14,10 +14,10 @@ func shouldApplyTo(_npc):
 	return false
 
 func getEffectName():
-	return "Breasts full"
+	return "Грудь полная"
 
 func getEffectDesc():
-	return "Your breasts feel so heavy, they're full of milk! They are itching to be milked"
+	return "Твоя грудь кажется такой тяжелой, она переполнена молоком! Она так и просится, чтобы её подоили"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/lactation.png"

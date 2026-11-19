@@ -24,15 +24,15 @@ func getTags():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "takes off your inmate shirt and pulls down the shorts"
+		return "снимает тюремную рубашку и стягивает шорты"
 	else:
-		return "take off your inmate shirt and pull down the shorts"
+		return "снять тюремную рубашку и стянуть шорты"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on your inmate shirt and the shorts"
+		return "надевает тюремную рубашку и шорты"
 	else:
-		return "put on your inmate shirt and the shorts"
+		return "надеть тюремную рубашку и шорты"
 
 func generateItemState():
 	itemState = SimpleRemoveState.new()

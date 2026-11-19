@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Выстрел из пистолета"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(!_attacker.hasEffect("MirriAmmo")):
@@ -26,7 +26,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var text = "{attacker.name} стреляет из {attacker.his}. Пуля с ужасающей точностью вгрызается в тебя, оставляя на своем пути зияющую дыру."
 	if(RNG.chance(50) && _receiver.addEffect(StatusEffect.Bleeding)):
-		text += " [b]You begin bleeding![/b]"
+		text += " [b]Ты начинаешь истекать кровью![/b]"
 	
 	return {
 		text = text,

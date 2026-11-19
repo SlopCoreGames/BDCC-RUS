@@ -67,7 +67,7 @@ func _run():
 
 func _react(_action: String, _args):
 	if(_action == "emp?"):
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 		addExperienceToPlayer(10)
 	
 	if(_action == "endthescene"):

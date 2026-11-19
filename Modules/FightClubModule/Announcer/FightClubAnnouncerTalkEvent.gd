@@ -11,9 +11,9 @@ func run(_triggerID, _args):
 		addDisabledButton("Диктор", "Нельзя делать это во время миссии")
 		return
 	if(!getFlag("FightClubModule.AnnouncerIntroduced")):
-		addButtonUnlessLate("Announcer", "Approach the guy", "announcerfirst")
+		addButtonUnlessLate("Диктор", "Подойди к парню", "announcerfirst")
 	else:
-		addButtonUnlessLate("Announcer", "Approach the guy", "announcer")
+		addButtonUnlessLate("Диктор", "Подойди к парню", "announcer")
 
 func getPriority():
 	return 0

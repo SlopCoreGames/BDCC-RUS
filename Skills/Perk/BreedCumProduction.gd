@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Плодовитый сеятель"
 
 func getVisibleDescription():
-	return "Your balls begin to adapt to your breeder lifestyle and are now filling up 25% faster"
+	return "Твои яйца начинают адаптироваться к образу жизни заводчика и теперь наполняются на 25% f быстрее"
 
 func getSkillTier():
 	return 0

@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Эджинг"
 
 func getVisibleDescription():
-	return "You love being on the edge. You do 50% more [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] damage when your lust level is above 90%"
+	return "Вы обожаете балансировать на грани. Вы наносите на 50% больше [color="+DamageType.getColorString(DamageType.Lust)+"]возбуждения[/color], когда ваш уровень желания превышает 90%"
 
 func getSkillTier():
 	return 0

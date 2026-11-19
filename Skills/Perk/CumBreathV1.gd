@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Экспериментатор с жидкостями"
 
 func getVisibleDescription():
-	return "Why stop at just eating cum, they are so many other flavors to try. Having different fluids in your belly will provide you with different (or better) buffs."
+	return "Зачем ограничиваться только поеданием спермы, ведь можно попробовать и другие вкусы. Разные жидкости в твоем животе будут давать тебе разные (или даже более мощные) баффы."
 
 func getRequiredPerks():
 	return [Perk.CumBreath]

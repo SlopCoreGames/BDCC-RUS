@@ -10,15 +10,15 @@ func run(_triggerID, _args):
 	if(GM.QS.isActive("Ch2ElizaQuest") && !getFlag("TaviModule.ch2PCStoleDrugs")):
 		saynn("Вы замечаете ящик, в котором лежат флаконы с тем самым красным наркотиком, который вам нужно украсть.")
 		
-		addButtonUnlessLate("Tavi drugs", "Steal the drugs!", "stealdrugs")
+		addButtonUnlessLate("Наркотики Тави", "Стибрить наркоту!", "stealdrugs")
 
 func getPriority():
 	return 0
 
 func onButton(_method, _args):
 	if(_method == "stealdrugs"):
-		GM.main.addMessage("You open the crate and steal the special vials!")
-		GM.main.addMessage("Task completed!")
+		GM.main.addMessage("Ты открываешь ящик и воруешь особые флаконы!")
+		GM.main.addMessage("Задание выполнено!")
 		GM.pc.addExperience(100)
 		setFlag("TaviModule.ch2PCStoleDrugs", true)
 		GM.main.reRun()

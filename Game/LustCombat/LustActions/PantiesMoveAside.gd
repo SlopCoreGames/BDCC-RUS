@@ -22,8 +22,8 @@ func getVisibleName(_lustState: LustCombatState, _args):
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	if(_args.has("itemName")):
-		return "Shift your "+_args["itemName"]+" aside"
-	return "Shift your panties aside"
+		return "Сдвинь свои "+_args["itemName"]+" aside"
+	return "Сдвинь трусики в сторону"
 
 func doAction(_lustState: LustCombatState, _args):
 	var _item:ItemBase = getItem(_lustState, _args)
@@ -35,33 +35,33 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(true):
-		text += "Overwhelmed with lust, you grab onto the side of your panties and move it aside, exposing what’s underneath."
+		text += "Охваченная похотью, ты хватаешься за края своих трусиков и отодвигаешь их, обнажая то, что под ними."
 		text += "\n\n"
 		
 	if(pc.hasPenis()):
-		text += "Your {pc.cock} quickly springs up after it is freed, a drop of precum shines as it slides down from the tip."
+		text += "Твой {pc.cock} быстро выпрыгивает на свободу, и капля предэякулята блестит, скатываясь с кончика."
 		text += "\n\n"
 	
 	if(pc.hasVagina()):
-		text += "Your cute pussy slit is now totally exposed for anyone who might see you, so lewd! Your inviting sensitive folds feel the light breeze of fresh air."
+		text += "Твоя милая щелочка теперь полностью открыта для любого, кто может тебя увидеть, как же это похотливо! Твои манящие чувствительные складки ощущают легкий ветерок свежего воздуха."
 		text += "\n\n"
 		
 	if(RNG.chance(50) && (pc.hasEffect(StatusEffect.HasCumInsideVagina) || pc.hasEffect(StatusEffect.HasCumInsideAnus))):
-		text += "As soon as you move the panties, cum starts leaking from your used fuckhole, reminding you of your past lewd adventures and displaying how big of a cum slut you are."
+		text += "Как только ты сдвигаешь трусики, из твоей использованной дырочки начинает сочиться сперма, напоминая о твоих прошлых похотливых приключениях и демонстрируя, какая ты настоящая спермостручка."
 		text += "\n\n"
 		
 	if(RNG.chance(70) && pc.getLust() >= 50 && pc.hasVagina()):
-		text += "Wow, your pussy is very much drenched with your juices, all the horny thoughts in your head only make you drip more."
+		text += "Ого, твоя киска насквозь пропитана соками, а все эти возбуждающие мысли в голове заставляют тебя течь еще сильнее."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasVagina() && pc.hasEffect(StatusEffect.InHeat)):
-		text += "The heat is driving you insane, you spread your pussy lips for a second and a flow of your juices starts running down your fingers. Fuck, you really want to be used."
+		text += "Жар сводит тебя с ума; ты на мгновение раздвигаешь половые губы, и поток твоих соков начинает стекать по пальцам. Блядь, тебе так хочется, чтобы тебя использовали."
 		text += "\n\n"
 		
 	if(RNG.chance(30) && pc.hasVagina()):
 		text += RNG.pick([
-			"[say=pc]Huh, should I spread my legs.. I really want to..[/say]",
-			"[say=pc]My pussy is so wet..[/say]",
+			"[say=pc]Хм, может, раздвинуть ноги?.. Очень хочется...[/say]",
+			"[say=pc]Моя киска такая мокрая...[/say]",
 			"[say=pc]Yes-s~[/say]",
 		])
 		text += "\n\n"

@@ -69,19 +69,19 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.BigCock):
-		return "I love me a good stallion cock"
+		return "Обожаю крепкие жеребьи члены"
 	if(interest == InterestTopic.LooseAnus):
-		return "Hah! Your ass is stretched already. But we always go futher"
+		return "Ха! Твоя задница уже растянута. Но мы всегда идем дальше"
 	if(interest == InterestTopic.TightAnus):
-		return "Training your ass will take a while"
+		return "Подготовка твоей жопки займет немало времени"
 	if(interest == InterestTopic.Pregnant):
-		return "Why did you come here pregnant?"
+		return "Зачем ты пришла сюда беременной?"
 	if(interest == InterestTopic.ButtPlugs):
-		return "Oh yeah, I see you love training your butt"
+		return "О да, я вижу, ты обожаешь тренировать свою задницу"
 	if(interest == InterestTopic.ExposedPanties):
-		return "Take off the panties, sweetie"
+		return "Снимай трусики, милашка"
 	if(interest == InterestTopic.AverageButt):
-		return "Shake that ass, sweetie~"
+		return "Тряси этой попой, сладкая~"
 
 func _getName():
 	return "Rebel"
@@ -90,7 +90,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A tall horse from the red block. Looks very buff for a female, thick body, clearly defined muscles, huge tits."
+	return "Высокая кобылка из красного блока. Выглядит очень мускулистой для самки: плотное тело, четко очерченные мышцы, огромные сиськи."
 
 func getSpecies():
 	return ["equine"]
@@ -101,13 +101,13 @@ func _getAttacks():
 func getFightIntro(_battleName):
 	var text = "Бунтарка — настоящая рестлерша: она поворачивается к зрителям и взревывает, играя мускулами на всеобщее обозрение. А затем переключает всё своё внимание на тебя."
 	text += "\n\n"
-	text += "[say=rebel]See this?[/say]"
+	text += "[say=rebel]Видишь это?[/say]"
 	text += "\n\n"
-	text += "Rebel points at you and then clenches her hand into a fist."
+	text += "Рэбел указывает на тебя, а затем сжимает руку в кулак."
 	text += "\n\n"
-	text += "[say=rebel]When you lose, this will go inside your ass, sweetie. My entire fucking arm. I will turn you into a hand puppet.[/say]"
+	text += "[say=rebel]Когда ты проиграешь, это засунут тебе прямо в задницу, дорогуша. Всю мою гребаную руку целиком. Я превращу тебя в куклу на руке.[/say]"
 	text += "\n\n"
-	text += "The idea of being fisted by this lady is scary. Seems like the stakes were never this high."
+	text += "Мысль о том, что эта дамочка сделает мне фистинг, пугает. Кажется, ставки еще никогда не были такими высокими."
 		
 	return text
 

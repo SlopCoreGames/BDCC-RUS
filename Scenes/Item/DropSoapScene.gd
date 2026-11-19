@@ -21,7 +21,7 @@ func _run():
 		addButton("Оставить как есть", "Этому мылу уже крышка", "leave_soap")
 	if(state == "do_bend"):
 		playAnimation(StageScene.Yoga, "dog", {pc="pc", bodyState={naked=true, hard=true}})
-		saynn("Ты наклоняешься за мылом максимально преувеличенно и драматично: прогибаешь спину, покачиваешь бедрами, растягивая каждое движение, выставляя напоказ всё своё сокровище... твой {pc.analStretch} анус.. "+str(" your pussy.." if GM.pc.hasReachableVagina() else "")+""+str(" your {pc.penis}" if GM.pc.hasPenis() else "")+"")
+		saynn("Ты наклоняешься за мылом максимально преувеличенно и драматично: прогибаешь спину, покачиваешь бедрами, растягивая каждое движение, выставляя напоказ всё своё сокровище... твой {pc.analStretch} анус.. "+str(" твоя киска.." if GM.pc.hasReachableVagina() else "")+""+str(" your {pc.penis}" if GM.pc.hasPenis() else "")+"")
 
 		saynn("Ты замираешь в этой открытой позе, ожидая... чего-то.")
 

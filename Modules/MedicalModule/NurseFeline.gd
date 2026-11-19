@@ -75,7 +75,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A tall feline wearing a nurse uniform."
+	return "Высокая кошка в форме медсестры."
 
 func getSpecies():
 	return ["feline"]
@@ -84,7 +84,7 @@ func _getAttacks():
 	return ["HeatGrenade", "DoubleCuffPC", "CuffPCHands", "ForceGagPC", "ForceMuzzlePC", "stunbatonAttack", "stunbatonOverchargeAttack", "biteattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return "The nurse prepares to fight"
+	return "Медсестра готовится к бою"
 	
 func getLootTable(_battleName):
 	return MedicalLoot.new()

@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Бой"
 
 func getVisibleDescription():
-	return "Shows how well you are at a physical hand-to-hand combat"
+	return "Показывает, насколько хорошо вы владеете навыками рукопашного боя"
 
 func getPerkTiers():
 	return [

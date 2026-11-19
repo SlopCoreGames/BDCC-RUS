@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Stunned"
+	return "Оглушение"
 
 func getEffectDesc():
-	return "You are stunned. " + str(turns) + " more turns"
+	return "Вы оглушены. " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/knocked-out-stars.png"

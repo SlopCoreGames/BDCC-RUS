@@ -17,7 +17,7 @@ func run(_triggerID, _args):
 	if(GM.main.getModuleFlag("NovaModule", "Nova_NotThereToday", false)):
 		addDisabledButton("Нова", "Сегодня её здесь нет")
 	else:
-		addButtonUnlessLate("Nova", "Talk to the husky", "talk")
+		addButtonUnlessLate("Нова", "Поговорить с хаски", "talk")
 
 func getPriority():
 	return 0

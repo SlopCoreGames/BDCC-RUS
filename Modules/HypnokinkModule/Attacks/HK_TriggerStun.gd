@@ -9,16 +9,16 @@ func getVisibleName(_context = {}):
 	return "Триггер: Тихий час"
 	
 func getVisibleDesc(_context = {}):
-	return "Use their posthypnotic suggestion to trigger a short-lived blackout."
+	return "Использовать их постгипнотический приказ, чтобы вызвать кратковременную потерю сознания."
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var texts = [
-		"{attacker.name} snaps {attacker.his} fingers, triggering {receiver.nameS} hypnotic command."
+		"{attacker.name} щелкает пальцами {attacker.his}, активируя гипнотическую команду {receiver.nameS}."
 	]
 	var text = RNG.pick(texts)
 	
 	if(_receiver.addEffect(StatusEffect.Stunned, [RNG.randi_range(1,2)])):
-		text += "\n[b]{receiver.name} is briefly too disoriented to act![/b]"
+		text += "\n[b]{receiver.name} на мгновение теряет ориентацию и не может действовать![/b]"
 	
 	_receiver.addEffect(StatusEffect.PosthypnoticTriggerUsedUp)
 	

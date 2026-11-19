@@ -11,7 +11,7 @@ func getGender():
 	return Gender.Other
 	
 func getSmallDescription() -> String:
-	return "A dense crowd of guards"
+	return "Плотная толпа охранников"
 
 func getSpecies():
 	return ["canine"]

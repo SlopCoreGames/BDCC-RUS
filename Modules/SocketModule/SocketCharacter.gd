@@ -56,7 +56,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Cute fennec that wears a very revealing armor."
+	return "Милая фенек в очень откровенных доспехах."
 
 func getChatColor():
 	return '#FFC700'

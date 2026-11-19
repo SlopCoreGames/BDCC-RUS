@@ -9,17 +9,17 @@ func getVisibleName(_context = {}):
 	return "Насмешка (Унижение)"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var attackerName = _attacker.getName()
 	var receiverName = _receiver.getName()
 	
 	var texts = [
-		attackerName + " laughs at " + receiverName +" and taunts "+_attacker.formatSay("C'mon, you're too soft to win against me"),
-		attackerName + " rubs " + _attacker.hisHer() +" hands together and says "+_attacker.formatSay("You will be kneeling before me and begging for me to touch you~"),
-		attackerName + " points at " + receiverName +" and taunts "+_attacker.formatSay("You're so cute, why are you even trying to fight"),
-		attackerName + " says "+_attacker.formatSay("Hit me, come on. You're so adorable when you're angry"),
+		attackerName + " смеется над " + receiverName +" и издевается над "+_attacker.formatSay("Да ладно тебе, ты слишком слабенькая, чтобы победить меня!"),
+		attackerName + " rubs " + _attacker.hisHer() +" хлопает в ладоши и говорит "+_attacker.formatSay("Ты будешь стоять передо мной на коленях и умолять, чтобы я тебя коснулась~"),
+		attackerName + " тычет пальцем в " + receiverName +" и издевается над "+_attacker.formatSay("Ты такая милашка, зачем ты вообще пытаешься драться?"),
+		attackerName + " says "+_attacker.formatSay("Ну же, ударь меня! Ты такая прелесть, когда злишься"),
 	]
 	var text = RNG.pick(texts)
 	

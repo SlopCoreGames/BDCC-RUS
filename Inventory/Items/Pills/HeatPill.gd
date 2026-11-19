@@ -21,9 +21,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -67,9 +67,9 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "Heat pill",
+		"name": "Таблетка возбуждения",
 		"usedName": "a heat-inducing pill",
-		"desc": "Makes you very horny and primes for breeding by forcing heat.",
+		"desc": "Вызывает сильнейшее возбуждение и подготавливает к размножению, провоцируя течку.",
 		"scoreOnSub": _domInfo.goalsScoreMax({SexGoal.FuckVaginal: 1.0, SexGoal.FuckAnal: 0.5}, _subInfo.charID)*_domInfo.fetishScore({Fetish.Breeding: 1.0}),
 		"scoreOnSelf": _domInfo.goalsScoreMax({SexGoal.ReceiveVaginal: 1.0, SexGoal.ReceiveAnal: 0.5}, _subInfo.charID)*_domInfo.fetishScore({Fetish.BeingBred: 1.0}),
 		"scoreSubScore": _subInfo.fetishScore({Fetish.BeingBred: 1.0}),

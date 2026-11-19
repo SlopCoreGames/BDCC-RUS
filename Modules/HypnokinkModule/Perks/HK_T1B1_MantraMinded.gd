@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Мантра-разум"
 
 func getVisibleDescription():
-	return "You've learned a set of short, relaxing mantras."
+	return "Вы выучили набор коротких расслабляющих мантр."
 	
 func getMoreDescription():
-	return "Reduces the penalties of being hypnotized by 10%.\n\nYou gain an ability to regain an amount of stamina depending on how hypnotized you currently are.\nUsable once per combat."
+	return "Снижает штрафы от гипноза на 10%.\n\nВы получаете способность восстанавливать определенное количество выносливости в зависимости от текущей степени гипноза.\nМожно использовать один раз за бой."
 
 func getSkillTier():
 	return 0

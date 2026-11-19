@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Режим ускоренного размножения"
 
 func getVisibleDescription():
-	return "Your reproductive organs are pushing themselves to the limit for you to bear as many children as possible. \n" \
+	return "Ваши репродуктивные органы работают на пределе возможностей, чтобы вы могли зачать как можно больше детей. \n" \
 			+ "Maximum of the egg cells you release during each ovulation phase is increased even further and fertility is improved by 20%"
 	
 func getRequiredPerks():

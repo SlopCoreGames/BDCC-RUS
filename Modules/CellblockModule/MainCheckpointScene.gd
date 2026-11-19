@@ -56,7 +56,7 @@ func _run():
 
 		saynn("Что будете делать?")
 	if(state == ""):
-		addButtonUnlessLate("Get frisked", "Let him frisk you", "get_frisked")
+		addButtonUnlessLate("Пройти обыск", "Позволить ему обыскать тебя", "get_frisked")
 		addButtonWithChecks("Предложить рукоблудие", "Может, он пропустит тебя, если ты дашь ему выпустить член?", "offer_handjob", [], [
 			ButtonChecks.NotHandsBlocked,
 			ButtonChecks.NotLate,
@@ -343,9 +343,9 @@ func addWonButton():
 func _react(_action: String, _args):
 	if(_action == "get_frisked"):
 		for item in GM.pc.getInventory().getItemsWithTag(ItemTag.Illegal):
-			addMessage(item.getStackName()+" was taken away")
+			addMessage(item.getStackName()+" забрали")
 		for item in GM.pc.getInventory().getEquippedItemsWithTag(ItemTag.Illegal):
-			addMessage(item.getStackName()+" was taken away")
+			addMessage(item.getStackName()+" забрали")
 	
 	if(_action == "friskAndEndthescene"):
 		GM.pc.getInventory().removeItemsList(GM.pc.getInventory().getItemsWithTag(ItemTag.Illegal))
@@ -431,7 +431,7 @@ func _react_scene_end(_tag, _result):
 				addMessage(item.getForcedOnMessage())
 
 func getDevCommentary():
-	return "This checkpoint.. I dunno if its even needed x3. It's more a sandbox element. A boring one that gets in the way. That's why I made it so the scene doesn't even run unless you have something illegal (the guard would always stop you before).\n\nIs it possible to make it fun? I dunno.. Maybe the checkpoint guard should be more fleshed out into an actual character that you can dominate to make him let you pass every time. Dunno."
+	return "Этот КПП... даже не знаю, нужен ли он вообще x3. Это скорее элемент песочницы. Скучный элемент, который только мешает. Поэтому я сделал так, чтобы сцена даже не запускалась, если у тебя нет чего-то незаконного (раньше охранник всегда тебя останавливал).\n\nМожно ли сделать это интересным? Не знаю... Может, стоит проработать охранника на КПП как полноценного персонажа, которого можно подчинить, чтобы он пропускал тебя каждый раз? Хз."
 
 func hasDevCommentary():
 	return true

@@ -451,7 +451,7 @@ func _run():
 
 		saynn("[say=pc]Вот как? У тебя был каждый шанс остановить меня, хитрая лисица.[/say]")
 
-		saynn("Ты не просто садишься на него, ты начинаешь медленно тереться о его пах, а затем переходишь к полноценному фрикционному езде, поднимая тело и снова опускаясь на него, пока его плоть полностью не входит в тебя."+str(", the condom providing enough lube to allow for that" if usedCondom else ", his precum mixing with your juices, lowering friction")+".")
+		saynn("Ты не просто садишься на него, ты начинаешь медленно тереться о его пах, а затем переходишь к полноценному фрикционному езде, поднимая тело и снова опускаясь на него, пока его плоть полностью не входит в тебя."+str(", презерватив обеспечивал достаточно смазки для этого" if usedCondom else ", его предэякулят смешивался с твоей смазкой, уменьшая трение")+".")
 
 		saynn("[say=alexrynard]Возможно, мне просто хотелось посмотреть, что из этого выйдет.[/say]")
 
@@ -642,7 +642,7 @@ func _run():
 
 		saynn("[say=pc]Вот как? У тебя был каждый шанс остановить меня, хитрая лисица.[/say]")
 
-		saynn("Ты не просто садишься на него, ты начинаешь медленно тереться о его пах, а затем переходишь к полноценному фрикционному езде, поднимая тело и снова опускаясь на него, пока его плоть полностью не входит в тебя."+str(", the condom providing enough lube to allow for that" if usedCondom else ", his precum lowering friction")+".")
+		saynn("Ты не просто садишься на него, ты начинаешь медленно тереться о его пах, а затем переходишь к полноценному фрикционному езде, поднимая тело и снова опускаясь на него, пока его плоть полностью не входит в тебя."+str(", презерватив обеспечивал достаточно смазки для этого" if usedCondom else ", его предэякулят уменьшал трение")+".")
 
 		saynn("[say=alexrynard]Возможно, мне просто хотелось посмотреть, что из этого выйдет.[/say]")
 
@@ -1816,7 +1816,7 @@ func _react(_action: String, _args):
 	if(_action == "after_work_check"):
 		processTime(RNG.randi_range(3,5) * 60 * 60)
 		GM.pc.addCredits(2)
-		addMessage("You received 2 credits")
+		addMessage("Вы получили 2 кредита")
 		
 		if(GM.main.isVeryLate()):
 			setState("toolate")
@@ -1833,7 +1833,7 @@ func _react(_action: String, _args):
 		processTime(60*60*2)
 		addExperienceToPlayer(100)
 		GM.pc.addCredits(10)
-		addMessage("You received 10 credits!")
+		addMessage("Вы получили 10 кредитов!")
 
 	if(_action == "time3_cel_od"):
 		GM.main.processTimeUntil(23*60*60)

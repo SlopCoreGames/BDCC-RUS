@@ -64,14 +64,14 @@ signal closePressed
 const FAVORITES_PATH:String = "user://FavMods.json"
 
 func _ready():
-	ai_option_button.add_item("Hide AI")
-	ai_option_button.add_item("Show AI")
-	ai_option_button.add_item("Only AI")
+	ai_option_button.add_item("Скрыть ИИ")
+	ai_option_button.add_item("Показать ИИ")
+	ai_option_button.add_item("Только ИИ")
 	ai_option_button.select(aiFilter)
 	
-	filter_option_button.add_item("Newest first")
-	filter_option_button.add_item("Oldest first")
-	filter_option_button.add_item("Sort by name")
+	filter_option_button.add_item("Сначала новые")
+	filter_option_button.add_item("Сначала старые")
+	filter_option_button.add_item("Сортировать по имени")
 	filter_option_button.select(0)
 
 func _on_ModBrowser_visibility_changed():
@@ -119,7 +119,7 @@ func updateModList():
 	if((page+1) >= theMaxPages):
 		page = theMaxPages-1
 	
-	page_label.text = "Page "+str(page+1)+"/"+str(theMaxPages)
+	page_label.text = "Страница "+str(page+1)+"/"+str(theMaxPages)
 	prev_page_button.disabled = (page <= 0)
 	next_page_button.disabled = ((page+1) >= theMaxPages)
 	page_selector_option_button.clear()
@@ -180,10 +180,10 @@ func _on_HTTPRequest_request_completed(result, _response_code, _headers, body):
 		
 		var newModEntry = ModEntry.new()
 		newModEntry.id = readSafeString(theModEntry, "id", "")
-		newModEntry.name = readSafeString(theModEntry, "name", "Unknown")
-		newModEntry.author = readSafeString(theModEntry, "author", "Unknown")
+		newModEntry.name = readSafeString(theModEntry, "name", "Неизвестно")
+		newModEntry.author = readSafeString(theModEntry, "author", "Неизвестно")
 		newModEntry.authorsData = parseAuthorField(newModEntry.author)
-		newModEntry.description = readSafeString(theModEntry, "description", "Missing description")
+		newModEntry.description = readSafeString(theModEntry, "description", "Описание отсутствует")
 		newModEntry.modversion = readSafeString(theModEntry, "modversion", "0.0")
 		newModEntry.gameversion = readSafeString(theModEntry, "gameversion", "0.0")
 		newModEntry.download = readSafeString(theModEntry, "download")
@@ -221,8 +221,8 @@ func _on_HTTPRequest_request_completed(result, _response_code, _headers, body):
 	loadFavMods()
 	
 	category_option_button.clear()
-	category_option_button.add_item("All categories")
-	category_option_button.add_item("Favorites")
+	category_option_button.add_item("Все категории")
+	category_option_button.add_item("Избранное")
 	category_option_button.select(0)
 	var _ii:int = 2
 	for theCat in categories:
@@ -273,20 +273,20 @@ func updatePickedModEntry():
 			visualModEntry.makeInactive()
 	
 	if(pickedModEntry == null):
-		modDescriptionLabel.bbcode_text = "Select a mod on the left"
+		modDescriptionLabel.bbcode_text = "Выберите мод слева"
 	else:
 		var linkedAuthors:Dictionary = getLinkedAuthors(pickedModEntry.authorsData)
 		var text = ""
 		text += "Name: "+str(pickedModEntry.name)+"\n"
-		text += "Author"+("s" if(linkedAuthors.isMultiple) else "")+": "+linkedAuthors.bbcode+"\n"
-		text += "Mod version: "+str(pickedModEntry.modversion)+"\n"
+		text += "Автор"+("s" if(linkedAuthors.isMultiple) else "")+": "+linkedAuthors.bbcode+"\n"
+		text += "Версия мода: "+str(pickedModEntry.modversion)+"\n"
 		if(!GlobalRegistry.isVersionListHasCompatible(str(pickedModEntry.gameversion))):
-			text += "[color=red]Game version: " + str(pickedModEntry.gameversion)+" (You are running version "+GlobalRegistry.getGameVersionString()+")[/color]\n"
+			text += "[color=red]Версия игры: " + str(pickedModEntry.gameversion)+" (Вы используете версию "+GlobalRegistry.getGameVersionString()+")[/color]\n"
 		else:
 			if(pickedModEntry.gameversion == "*"):
-				text += "Game version: Any\n"
+				text += "Версия игры: Любая\n"
 			else:
-				text += "Game version: " + str(pickedModEntry.gameversion)+"\n"
+				text += "Версия игры: " + str(pickedModEntry.gameversion)+"\n"
 		if(!pickedModEntry.categories.empty()):
 			if(pickedModEntry.categories.size() == 1):
 				text += "Category: "+str(Util.join(pickedModEntry.categories, ", ")+"\n")
@@ -295,7 +295,7 @@ func updatePickedModEntry():
 		text += "Filename: "+str(pickedModEntry.download.get_file())+"\n"
 		if(!pickedModEntry.reqs.empty()):
 			var _i:int = 1
-			text += "Mod dependencies:\n"
+			text += "Зависимости мода:\n"
 			for theModID in pickedModEntry.reqs:
 				var theFind:ModEntry = findModByIDOrName(theModID)
 				if(!theFind):
@@ -305,14 +305,14 @@ func updatePickedModEntry():
 					text += str(_i)+") [color=#BBCCFF][url="+ViewModByNameUriPreview+theReqMod.name+"]"+theReqMod.name+"[/url][/color]\n"
 				_i += 1
 		if(pickedModEntry.hasAI):
-			text += "[center][b]Most likely contains AI-created art or code[/b][/center]\n"
+			text += "[center][b]Скорее всего, содержит арт или код, созданный ИИ[/b][/center]\n"
 		
 		text += "\n"
 		text += str(pickedModEntry.description)
 		
 		if(!pickedModEntry.id.empty() && modIDUsedByMods.has(pickedModEntry.id)):
 			var _i:int = 1
-			text += "\n\nThis mod is a requirement for these mods:\n"
+			text += "\n\nЭтот мод необходим для следующих модов:\n"
 			for theReqMod in modIDUsedByMods[pickedModEntry.id]:
 				text += str(_i)+") [color=#BBCCFF][url="+ViewModByNameUriPreview+theReqMod.name+"]"+theReqMod.name+"[/url][/color]\n"
 				_i += 1
@@ -467,7 +467,7 @@ func doDownloadModActually():
 	var error = http_request_mod.request(theModEntry.download)
 	if error != OK:
 		Log.printerr("[ModBrowser] An error occurred in the HTTP request.")
-		showMessage("An error occurred in the HTTP request.")
+		showMessage("Произошла ошибка при HTTP-запросе.")
 	else:
 		Log.print("Downloading mod: "+str(theModEntry.download))
 		download_name_label.text = "Downloading ("+str(downloadQueue.size()+1)+" left) "+str(theModEntry.download.get_file())
@@ -477,7 +477,7 @@ func _on_HTTPRequestMod_request_completed(result, _response_code, _headers, _bod
 
 	if result != HTTPRequest.RESULT_SUCCESS:
 		Log.printerr("[ModBrowser] Couldn't download mod")
-		showMessage("Couldn't download mod")
+		showMessage("Не удалось скачать мод")
 		return
 	
 	Log.print("Mod downloaded")

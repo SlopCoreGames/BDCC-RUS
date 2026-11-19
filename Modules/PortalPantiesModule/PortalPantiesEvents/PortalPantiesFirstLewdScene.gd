@@ -185,7 +185,7 @@ func _react(_action: String, _args):
 		GM.pc.addSkillExperience(Skill.SexSlave, 10, "portalpanties_firstsex")
 		
 	if(_action == "continue"):
-		addMessage("Task was updated")
+		addMessage("Задача обновлена")
 	
 	if(_action == "endthescene"):
 		endScene()

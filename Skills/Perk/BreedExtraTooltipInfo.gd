@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Твое озарение"
 
 func getVisibleDescription():
-	return "Your sense of smell has evolved into an ultimate sixth sense, allowing you to detect the subtle differences in scents that reveal the current phase of a female's menstrual cycle. Bodypart tooltips now show that info. You can also now roughly guess how many cubs/kids someone has in their belly (stacks with the Maternal Intuition perk)."
+	return "Ваше обоняние эволюционировало в совершенное шестое чувство, позволяющее улавливать тончайшие нюансы запахов, по которым можно определить текущую фазу менструального цикла самки. Теперь эта информация отображается в подсказках к частям тела. Также вы можете примерно определить, сколько детенышей носит в утробе та или иная особь (эффект суммируется с перком «Материнская интуиция»)."
 
 func getSkillTier():
 	return 0

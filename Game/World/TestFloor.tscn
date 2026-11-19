@@ -12,17 +12,16 @@ script = ExtResource( 4 )
 
 [node name="Cell209" parent="." index="1" instance=ExtResource( 1 )]
 position = Vector2( 64, 0 )
-roomDescription = "You go here and meow
-[b]nya[/b] mew"
+roomDescription = "Ты приходишь сюда и мяу\n[b]ня[/b] мяу"
 roomColor = 1
 
 [node name="RoomAction" parent="Cell209" index="0" instance=ExtResource( 5 )]
-ActionName = "Do the nya"
+ActionName = "Сделать ня"
 ActionTooltip = "asdasd"
 ActionScene = "TestScene"
 
 [node name="RoomAction2" parent="Cell209" index="1" instance=ExtResource( 5 )]
-ActionName = "Do the nya 2"
+ActionName = "Сделать ня 2"
 ActionTooltip = "asdasd 2"
 ActionScene = "TestScene"
 

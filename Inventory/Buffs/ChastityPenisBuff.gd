@@ -4,7 +4,7 @@ func _init():
 	id = Buff.ChastityPenisBuff
 
 func getVisibleDescription():
-	return "Blocks penis in sex"
+	return "Блокирует член во время секса"
 
 func getBuffColor():
 	return Color.red

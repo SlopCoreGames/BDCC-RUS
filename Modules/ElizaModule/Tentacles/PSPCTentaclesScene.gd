@@ -260,7 +260,7 @@ func _react(_action: String, _args):
 		processTime(20*60)
 		setFlag("ElizaModule.tent_neurolink", true)
 		GM.pc.getInventory().removeXOfOrDestroy("TentNeuroLink", 1)
-		addMessage("You can now choose to control the tentacles before the sex starts!")
+		addMessage("Теперь вы можете управлять щупальцами еще до начала секса!")
 
 	if(_action == "pick_name"):
 		setFlag("ElizaModule.tent_name", _args[0])
@@ -275,19 +275,19 @@ func _react(_action: String, _args):
 
 	if(_action == "mood_pat"):
 		setFlag("ElizaModule.tent_mood", "kind")
-		addMessage("The tentacles won't do anything mean anymore.")
+		addMessage("Щупальца больше не будут вести себя жестоко.")
 
 	if(_action == "mood_slap"):
 		setFlag("ElizaModule.tent_mood", "mean")
-		addMessage("The tentacles will now act very mean during sex.")
+		addMessage("Теперь во время секса щупальца будут вести себя очень грубо.")
 
 	if(_action == "mood_tease"):
 		setFlag("ElizaModule.tent_mood", "lusty")
-		addMessage("The tentacles are now incredibly breed-hungry.")
+		addMessage("Теперь щупальца невероятно жаждут осеменения.")
 
 	if(_action == "mood_chat"):
 		setFlag("ElizaModule.tent_mood", "")
-		addMessage("The tentacles now don't have any preference during sex.")
+		addMessage("Теперь у щупалец нет никаких предпочтений во время секса.")
 
 	if(_action == "pick_slave"):
 		slaveID = _args[0]

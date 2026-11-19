@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Extra stamina "+text
+	return "Дополнительная выносливость "+text
 
 func apply(_buffHolder):
 	_buffHolder.extraStamina += amount

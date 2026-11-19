@@ -10,17 +10,17 @@ func getVisibleName(_context = {}):
 	return "лизать раны"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var texts = [
-		"{attacker.name} licks {attacker.his} bruises, it helps to soothe the pain by quite a bit."
+		"{attacker.name} вылизывает синяки {attacker.his}, что заметно облегчает боль."
 	]
 	var text = RNG.pick(texts)
 	
 	_attacker.addPain(-30)
 	
-	text += " {attacker.name} is feeling better!"
+	text += " {attacker.name} чувствует себя лучше!"
 	
 	return {
 		text = text,

@@ -52,7 +52,7 @@ const DIFFICULTY_VERY_HARD = 3
 var upgradesInfo:Dictionary = {
 	"TFAcceleratePill": {
 		name = "Таблетка «Быстрая смена»",
-		desc = "Allows you to make 'QuickShift' pills that speed up the process of transformation greatly.",
+		desc = "Позволяет создавать таблетки «QuickShift», которые значительно ускоряют процесс трансформации.",
 		cost = 15,
 		requiredUpgrades = [],
 		items = {
@@ -65,7 +65,7 @@ var upgradesInfo:Dictionary = {
 	},
 	"TFApplyPill": {
 		name = "Таблетка «Морфинг внутрь»",
-		desc = "Allows you to make 'MorphIn' pills that make all transformations permanent.",
+		desc = "Позволяет создавать таблетки «MorphIn», которые делают все трансформации необратимыми.",
 		cost = 30,
 		requiredUpgrades = ["TFAcceleratePill"],
 		items = {
@@ -79,7 +79,7 @@ var upgradesInfo:Dictionary = {
 	},
 	"TFUndoPill": {
 		name = "Таблетка «Морфинг вовне»",
-		desc = "Allows you to make 'MorphAway' pills that undo all transformations.",
+		desc = "Позволяет создавать таблетки «MorphAway», которые отменяют все трансформации.",
 		cost = 50,
 		requiredUpgrades = ["TFAcceleratePill"],
 		items = {
@@ -95,7 +95,7 @@ var upgradesInfo:Dictionary = {
 	
 	"BasicPills": {
 		name = "Базовые таблетки",
-		desc = "Lets you use fluids to create some of the non-transformative drugs: Heat pills, Breeder pills, Birth control pills, Anaphrodisiac pills.",
+		desc = "Позволяет использовать жидкости для создания некоторых нетрансформирующих препаратов: таблеток жара, таблеток заводчика, таблеток контрацепции и таблеток-анафродизиаков.",
 		cost = 25,
 		requiredUpgrades = [],
 		items = {
@@ -124,7 +124,7 @@ var upgradesInfo:Dictionary = {
 	},
 	"EnergyDrink": {
 		name = "Энергетик",
-		desc = "Download a recipe of the most generic energy drink, allowing you to create them.",
+		desc = "Скачать рецепт самого обычного энергетического напитка, что позволит вам их производить.",
 		cost = 25,
 		requiredUpgrades = ["BasicPills"],
 		items = {
@@ -138,7 +138,7 @@ var upgradesInfo:Dictionary = {
 	},
 	"painkillers": {
 		name = "Обезболивающее",
-		desc = "Allows you to make painkillers.",
+		desc = "Позволяет создавать обезболивающие.",
 		cost = 25,
 		requiredUpgrades = ["BasicPills"],
 		items = {
@@ -152,7 +152,7 @@ var upgradesInfo:Dictionary = {
 	},
 	"AdvancedPills": {
 		name = "Продвинутые таблетки",
-		desc = "Allows you to make some advanced pills.",
+		desc = "Позволяет создавать некоторые продвинутые таблетки.",
 		cost = 35,
 		requiredUpgrades = ["EnergyDrink", "painkillers"],
 		items = {
@@ -166,7 +166,7 @@ var upgradesInfo:Dictionary = {
 	},
 	"strangepill": {
 		name = "Странная таблетка",
-		desc = "As you unlock more and more pills, it's becoming harder to find ones that you haven't seen before. This upgrade allows you to spend some Science Points and a lot of fluids to try to create a new strange pill from scratch by generating and assembling random molecular structures. Each pill will cost more than the last!",
+		desc = "По мере того как вы открываете всё больше и больше таблеток, находить новые становится всё труднее. Это улучшение позволяет тратить очки науки и огромное количество жидкости, чтобы попытаться создать новую странную таблетку с нуля, генерируя и собирая случайные молекулярные структуры. Каждая следующая таблетка будет стоить дороже предыдущей!",
 		cost = 50,
 		requiredUpgrades = ["painkillers", "EnergyDrink"],
 		main = true,
@@ -185,7 +185,7 @@ var upgradesInfo:Dictionary = {
 	
 	"cheaperCrafts1": {
 		name = "Эффективность лаборатории 1",
-		desc = "Lowers the amount of fluids you need to create something by 10%.",
+		desc = "Снижает количество жидкости, необходимое для создания чего-либо, на 10%.",
 		cost = 10,
 		drugAmount = 2,
 		requiredUpgrades = ["TFAcceleratePill"],
@@ -194,14 +194,14 @@ var upgradesInfo:Dictionary = {
 	
 	"shower1": {
 		name = "Умный душ",
-		desc = "Install a special shower that will wash off any fluids from your body and deposit them into the fluid tanks.",
+		desc = "Установить специальный душ, который будет смывать любую жидкость с вашего тела и собирать её в резервуары.",
 		cost = 20,
 		requiredUpgrades = ["cheaperCrafts1"],
 	},
 	
 	"cheaperCrafts2": {
 		name = "Эффективность лаборатории 2",
-		desc = "Lowers the amount of fluids you need to create something by an additional 15%.",
+		desc = "Снижает количество жидкости, необходимой для крафта, еще на 15%.",
 		cost = 35,
 		drugAmount = 5,
 		requiredUpgrades = ["cheaperCrafts1"],
@@ -210,7 +210,7 @@ var upgradesInfo:Dictionary = {
 	
 	"shower2": {
 		name = "Душ для заключенных",
-		desc = "Upgrade the shower, allowing it to also collect fluids from inside your holes!",
+		desc = "Улучшите душ, чтобы он мог собирать жидкости и из ваших дырочек тоже!",
 		cost = 20,
 		requiredUpgrades = ["shower1", "cheaperCrafts2"],
 		main = true,
@@ -218,7 +218,7 @@ var upgradesInfo:Dictionary = {
 	
 	"soap": {
 		name = "Био-очищающее мыло",
-		desc = "Unlock a recipe for the bio-scrub soap that is capable of removing permanent bodywritings.",
+		desc = "Разблокирует рецепт био-скраб мыла, способного смывать перманентные татуировки на теле.",
 		cost = 15,
 		requiredUpgrades = ["shower2", "AdvancedPills"],
 		items = {
@@ -233,7 +233,7 @@ var upgradesInfo:Dictionary = {
 	
 	"cheaperCrafts3": {
 		name = "Эффективность лаборатории 3",
-		desc = "Lowers the amount of fluids you need to create something by an additional 25%.",
+		desc = "Снижает количество жидкости, необходимой для крафта, еще на 25%.",
 		cost = 60,
 		drugAmount = 10,
 		requiredUpgrades = ["cheaperCrafts2"],
@@ -242,7 +242,7 @@ var upgradesInfo:Dictionary = {
 	
 	"configurableDrugs": {
 		name = "Кастомные препараты",
-		desc = "Allows you to 'configure' certain types of drugs when making them.",
+		desc = "Позволяет «настраивать» определенные виды наркотиков в процессе их изготовления.",
 		cost = 100,
 		requiredUpgrades = ["cheaperCrafts3"],
 		main = true,
@@ -251,7 +251,7 @@ var upgradesInfo:Dictionary = {
 	
 	"tanksUpgrade1": {
 		name = "Объем танков 1",
-		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
+		desc = "Расширьте лабораторию и установите более крупные резервуары для хранения большего объема жидкости.",
 		cost = 20,
 		requiredUpgrades = [],
 		main = true,
@@ -259,14 +259,14 @@ var upgradesInfo:Dictionary = {
 	
 	"fluidInspector": {
 		name = "Инспектор жидкостей",
-		desc = "Install a special scanner that will allow you to closely inspect any fluid container. It will show you the DNA of every fluid in the selected container",
+		desc = "Установите специальный сканер, который позволит детально изучать любой контейнер с жидкостью. Он покажет ДНК каждой жидкости в выбранной емкости.",
 		cost = 20,
 		requiredUpgrades = ["tanksUpgrade1"],
 	},
 	
 	"tanksUpgrade2": {
 		name = "Объем танков 2",
-		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
+		desc = "Расширьте лабораторию и установите более крупные резервуары для хранения большего объема жидкости.",
 		cost = 40,
 		requiredUpgrades = ["tanksUpgrade1"],
 		main = true,
@@ -274,20 +274,20 @@ var upgradesInfo:Dictionary = {
 	
 	"fluidFilter": {
 		name = "Фильтр жидкости",
-		desc = "Install a special fluid filter machine that will allow you to filter out selected fluids from your fluid containers.",
+		desc = "Установите специальный фильтр, который позволит отфильтровывать выбранные виды жидкостей из ваших контейнеров.",
 		cost = 20,
 		requiredUpgrades = ["tanksUpgrade2"],
 	},
 	"bluespaceStash": {
 		name = "Заначка в блюспейсе",
-		desc = "Allows you to access your private stash from inside the lab!",
+		desc = "Позволяет получить доступ к вашим личным запасам прямо из лаборатории!",
 		cost = 30,
 		requiredUpgrades = ["tanksUpgrade2"],
 	},
 	
 	"tanksUpgrade3": {
 		name = "Емкость баков: 3",
-		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
+		desc = "Расширьте лабораторию и установите более крупные резервуары для хранения большего объема жидкости.",
 		cost = 60,
 		requiredUpgrades = ["tanksUpgrade2"],
 		main = true,
@@ -295,32 +295,32 @@ var upgradesInfo:Dictionary = {
 	
 	"advBreastPump": {
 		name = "Сцеживающий насос Mk2",
-		desc = "Unlocks a prototype of an advanced breast pump that you can buy in the medical vendomat.",
+		desc = "Разблокирует прототип продвинутого молокоотсоса, который можно купить в медицинском вендомате.",
 		cost = 50,
 		requiredUpgrades = ["tanksUpgrade3"],
 	},
 	"advPenisPump": {
 		name = "Насос для пениса Mk2",
-		desc = "Unlocks a prototype of an advanced penis pump that you can buy in the medical vendomat.",
+		desc = "Разблокирует прототип продвинутого помпового эректора, который можно купить в медицинском вендомате.",
 		cost = 50,
 		requiredUpgrades = ["tanksUpgrade3"],
 	},
 	"advPlasticBottle": {
 		name = "Пластиковая бутылка Bluespace",
-		desc = "Unlocks a bluespace plastic bottle that you can buy in the medical vendomat. This bottle can store 100x as much fluids!",
+		desc = "Разблокирует синепространственную пластиковую бутыль, которую можно купить в медицинском вендомате. Эта бутыль вмещает в 100 раз больше жидкости!",
 		cost = 50,
 		requiredUpgrades = ["advBreastPump", "advPenisPump"],
 	},
 	"advStrapon": {
 		name = "Страпон Bluespace",
-		desc = "Unlocks an advanced strapon and a portal chastity cage! The advanced strapon has a portal ring on it that allows it to 'project' any penis that is available in the bluespace. Keep in mind that these are highly unstable.",
+		desc = "Разблокирует продвинутый страпон и портальную девайс-клетку для целомудрия! Продвинутый страпон оснащен портальным кольцом, которое позволяет «проецировать» любой пенис, доступный в синем пространстве. Имейте в виду, что они крайне нестабильны.",
 		cost = 50,
 		requiredUpgrades = ["bluespaceStash", "advPenisPump"],
 	},
 	
 	"tanksUpgrade4": {
 		name = "Емкость баков: 4",
-		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
+		desc = "Расширьте лабораторию и установите более крупные резервуары для хранения большего объема жидкости.",
 		cost = 100,
 		requiredUpgrades = ["tanksUpgrade3"],
 		main = true,
@@ -328,20 +328,20 @@ var upgradesInfo:Dictionary = {
 	
 	"milkingBetter1": {
 		name = "Эффективность сцеживания 1",
-		desc = "Install a better equipment in the milking room. Unlocks more ways for Eliza to milk you, makes ALL kinds of milking 25% more efficient.",
+		desc = "Установить улучшенное оборудование в доильном зале. Открывает новые способы дойки Элизой, повышая эффективность ВСЕХ видов дойки на 25%.",
 		cost = 20,
 		requiredUpgrades = [],
 	},
 	"milkingBetter2": {
 		name = "Эффективность сцеживания 2",
-		desc = "Install an even more better equipment in the milking room. Unlocks more ways for Eliza to milk you, makes ALL kinds of milking 75% more efficient.",
+		desc = "Установить еще более совершенное оборудование в доильном зале. Открывает новые способы дойки Элизой, повышая эффективность ВСЕХ видов дойки на 75%.",
 		cost = 30,
 		drugAmount = 5,
 		requiredUpgrades = ["milkingBetter1"],
 	},
 	"milkingBetter3": {
 		name = "Эффективность сцеживания 3",
-		desc = "Install the best equipment in the milking room. Unlocks ability for Eliza to 'quick milk' you, makes ALL kinds of milking 100% more efficient.",
+		desc = "Установить лучшее оборудование в доильном зале. Открывает Элизе возможность «быстрой дойки», повышая эффективность ВСЕХ видов дойки на 100%.",
 		cost = 50,
 		drugAmount = 10,
 		requiredUpgrades = ["milkingBetter2"],
@@ -350,20 +350,20 @@ var upgradesInfo:Dictionary = {
 	
 	"unlimitedFluidStorage": {
 		name = "Емкость баков: +БЕСКОНЕЧНОСТЬ!",
-		desc = "Install special BLUESPACE fluid tanks that will hold a shit ton of fluids!",
+		desc = "Установить специальные резервуары для жидкости из СИНЕГО ПРОСТРАНСТВА, которые вмещают чертову уйму жидкости!",
 		cost = 250,
 		requiredUpgrades = ["milkingBetter3", "tanksUpgrade4", "advPlasticBottle", "configurableDrugs", "strangepill", "bluespaceStash"],
 	},
 	"drugDenLoot": {
 		name = "Мощные наноботы!",
-		desc = "Upgrade Eliza's nanobots, allowing them to extract you with ALL items that you have found during the drug den exploration!",
+		desc = "Улучшить наноботов Элизы, позволяя им извлекать из вас ВСЕ предметы, найденные во время исследования наркопритона!",
 		cost = 250,
 		requiredUpgrades = ["milkingBetter3", "tanksUpgrade4", "advPlasticBottle", "configurableDrugs", "strangepill", "bluespaceStash"],
 	},
 	
 	"tentNeuroLink": {
 		name = "Нейролинк",
-		desc = "Unlocks a recipe for a special device that will let you temporarily gain control of a tentacle monster.",
+		desc = "Открывает рецепт специального устройства, которое позволит вам на время взять под контроль монстра-щупальца.",
 		cost = 50,
 		requiredUpgrades = [],
 		items = {
@@ -377,14 +377,14 @@ var upgradesInfo:Dictionary = {
 	},
 	"oviStrapons": {
 		name = "Страпы-овипозиторы",
-		desc = "Unlocks 2 prototype strapons that are capable of doing oviposition! You will be able to buy them from the medical vendomat.",
+		desc = "Открывает 2 прототипа страпонов, способных к овипозиции! Их можно будет купить в медицинском вендомате.",
 		cost = 30,
 		requiredUpgrades = [],
 		moduleCheck = "ElizaModule",
 	},
 	"eggPills": {
 		name = "Яйцевые капсулы",
-		desc = "Unlocks two new pills: first one dramatically accelerates egg development, while the other one constructs a shell around any fetus, transforming live birth into egg-laying.",
+		desc = "Открывает две новые таблетки: первая резко ускоряет развитие яиц, а вторая формирует оболочку вокруг любого плода, превращая живые роды в откладывание яиц.",
 		cost = 20,
 		requiredUpgrades = [],
 		items = {
@@ -604,9 +604,9 @@ func addPoints(howMuch:int, showMessage:bool = true):
 	points += howMuch
 	if(showMessage):
 		if(howMuch > 0):
-			GM.main.addMessage("You received "+str(howMuch)+" science point"+("s" if howMuch != 1 else "")+"!")
+			GM.main.addMessage("Вы получили "+str(howMuch)+" очко науки"+("s" if howMuch != 1 else "")+"!")
 		if(howMuch < 0):
-			GM.main.addMessage("You lost "+str(-howMuch)+" science point"+("s" if howMuch != -1 else "")+"")
+			GM.main.addMessage("Ты проиграл "+str(-howMuch)+" очко науки"+("s" if howMuch != -1 else "")+"")
 		
 func getPoints() -> int:
 	return points
@@ -635,7 +635,7 @@ func doUnlockTF(TFID:String, givePoints:bool = true):
 		if(tfBase != null):
 			addPoints(tfBase.getUnlockPointsAward())
 	if(tfBase != null):
-		GM.main.addMessage(tfBase.getPillName()+" pills will now be visible to you in the wild.")
+		GM.main.addMessage(tfBase.getPillName()+" теперь таблетки можно будет найти в дикой природе.")
 
 func doTestTF(TFID:String, givePoints:bool = true):
 	if(!unlockedTFs.has(TFID)):
@@ -650,7 +650,7 @@ func doTestTF(TFID:String, givePoints:bool = true):
 		if(tfBase != null):
 			addPoints(tfBase.getTestingPointsAward())
 	if(tfBase != null):
-		GM.main.addMessage("The database now contains full info about "+tfBase.getPillName()+" pills.")
+		GM.main.addMessage("База данных теперь содержит полную информацию о "+tfBase.getPillName()+" pills.")
 
 func doTestTFsOf(theChar:BaseCharacter):
 	var holder:TFHolder = theChar.getTFHolder()
@@ -809,7 +809,7 @@ func canMakeGetFluidsDescription(fluidsNeed:Dictionary) -> String:
 		
 		if(result != ""):
 			result += "\n"
-		result += "- "+(fluidObj.getVisibleName() if fluidObj != null else fluidID)+": "+str(round(howMuchNeed))+"ml  (You have "+str(Util.roundF(howMuchWeHave, 1))+"ml)"
+		result += "- "+(fluidObj.getVisibleName() if fluidObj != null else fluidID)+": "+str(round(howMuchNeed))+"мл  (У вас есть "+str(Util.roundF(howMuchWeHave, 1))+"ml)"
 	return result
 
 func useFluidsToMakeSomething(fluidsNeed:Dictionary):
@@ -844,10 +844,10 @@ func getMakePillDescription(tfID:String) -> String:
 		var howMuchNeed:float = round(fluidsNeed[fluidID] * costMod)
 		var howMuchWeHave:float = getFluidAmount(fluidID)
 		
-		result += "\n- "+(fluidObj.getVisibleName() if fluidObj != null else fluidID)+": "+str(round(howMuchNeed))+"ml  (You have "+str(Util.roundF(howMuchWeHave, 1))+"ml)"
+		result += "\n- "+(fluidObj.getVisibleName() if fluidObj != null else fluidID)+": "+str(round(howMuchNeed))+"мл  (У вас есть "+str(Util.roundF(howMuchWeHave, 1))+"ml)"
 	
 	if(canConfigureDrugs() && tf.getPillCanConfigure()):
-		result += "\n\nThis pill can be configured!"
+		result += "\n\nЭту таблетку можно настроить!"
 	
 	return result
 
@@ -976,7 +976,7 @@ func doMilkCharacterCustom(theChar:BaseCharacter, bodypartSlot, howMuch:float = 
 			if(!fluidObj):
 				continue
 			var fluidAmStr:String = str(Util.roundF(fluidsGot[fluidType], 1))
-			GM.main.addMessage(fluidAmStr+" ml of "+fluidObj.getVisibleName()+" got collected from "+theChar.getName())
+			GM.main.addMessage(fluidAmStr+" мл "+fluidObj.getVisibleName()+" было собрано из "+theChar.getName())
 	
 	if(theChar.isPlayer()):
 		if(bodypartSlot == BodypartSlot.Penis && totalFluid > 100.0):
@@ -1099,7 +1099,7 @@ func doPCShowerRaw(fluidObjs:Array):
 			
 			var howMuchAdded:float = GM.main.SCI.addFluid(fluidID, fluidsByType[fluidID])
 			if(howMuchAdded > 0.0):
-				GM.main.addMessage(str(Util.roundF(howMuchAdded, 1))+" ml of "+theFluidOBJ.getVisibleName()+" was deposited into the fluids tanks.")
+				GM.main.addMessage(str(Util.roundF(howMuchAdded, 1))+" мл "+theFluidOBJ.getVisibleName()+" было слито в резервуары с жидкостью.")
 		fluidObj.clear()
 
 func doPCShower():

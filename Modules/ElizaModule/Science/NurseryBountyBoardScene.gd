@@ -133,7 +133,7 @@ func getDebugActions():
 	return [
 	{
 		"id": "completeTasks",
-		"name": "Complete all tasks",
+		"name": "Выполнить все задания",
 		"args": [
 		],
 	},

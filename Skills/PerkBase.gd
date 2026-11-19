@@ -10,7 +10,7 @@ func getVisibleName():
 	return "Ошибка"
 
 func getVisibleDescription():
-	return "Error bad"
+	return "Ошибка: хреново"
 
 func getMoreDescription():
 	return ""

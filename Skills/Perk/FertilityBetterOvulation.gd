@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Улучшенная овуляция"
 
 func getVisibleDescription():
-	return "Your body is adapting to produce more offspring. Amount of the egg cells you release during each ovulation phase is increased."
+	return "Ваше тело адаптируется к производству большего количества потомства. Количество яйцеклеток, выбрасываемых во время каждой фазы овуляции, увеличилось."
 
 func getSkillTier():
 	return 0

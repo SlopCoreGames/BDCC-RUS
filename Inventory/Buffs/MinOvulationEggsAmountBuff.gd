@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Minimum egg cells bonus "+text+""
+	return "Бонус к минимальному количеству яйцеклеток "+text+""
 
 func apply(_buffHolder):
 	_buffHolder.minEggsAmount += amount

@@ -14,10 +14,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Drenched in piss"
+	return "Пропитан мочой"
 
 func getEffectDesc():
-	return "Somebody pissed on you and now your carry their scent. So gross"
+	return "Кто-то обоссал тебя, и теперь от тебя несет этим запахом. Какая мерзость!"
 
 func getBuffs():
 	return [

@@ -498,14 +498,14 @@ func _react(_action: String, _args):
 			setState(_action)
 			return
 		
-		addMessage("You feel fresh and clean")
+		addMessage("Ты чувствуешь себя свежим и чистым")
 
 	if(_action == "cold_shower"):
 		GM.pc.addLust(-50)
 
 	if(_action == "clean_inside"):
 		if(!GM.pc.clearOrificeFluidsCheckBlocked()):
-			addMessage("Something prevented you from clearing every hole")
+			addMessage("Что-то помешало тебе вымыть каждую дырочку")
 		processTime(60 * 10)
 
 	if(_action == "masturbate_peniscum"):

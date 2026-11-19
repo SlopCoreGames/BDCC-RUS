@@ -67,27 +67,27 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.TallyMarks):
-		return "What a whore~"
+		return "Ну и шлюха~"
 	if(interest == InterestTopic.CoveredInCum):
-		return "I don't wanna taste cum while biting you!"
+		return "Не хочу чувствовать вкус спермы, когда кусаю тебя!"
 	if(interest == InterestTopic.Pregnant):
-		return "I don't wanna bite a pregnant slut! Grr!"
+		return "Не хочу кусать беременную сучку! Грр!"
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "Herms? Hot!"
+		return "Гермы? Горячо!"
 	if(interest == InterestTopic.BDSMRestraints):
-		return "Yes-yes! Need more restraints!"
+		return "Да-да! Нужно больше пут!"
 	if(interest == InterestTopic.Gags):
-		return "Drool for me, gagged slut~"
+		return "Пускай слюни для меня, заклеванная сучка~"
 	if(interest == InterestTopic.Blindfolds):
-		return "Can't see me? What a shame~"
+		return "Не видишь меня? Какая жалость~"
 	if(interest == InterestTopic.LactatingBreasts):
-		return "Huff, I wanna be lactating too.."
+		return "Хафф, я бы тоже не прочь кормить грудью.."
 	if(interest == InterestTopic.MediumBreasts):
-		return "Nice funbags, can I play with them~?"
+		return "Классные буфера, можно с ними поиграть~?"
 	if(interest == InterestTopic.FullyNaked):
-		return "So much skin to bite~"
+		return "Столько кожи, которую можно облизать и укусить~"
 	if(interest == InterestTopic.TightPussy):
-		return "That's a nice pussy~"
+		return "Какая классная киска~"
 		
 func _getName():
 	return "Ferri"
@@ -96,7 +96,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Feline-dragon female hybrid of a medium build. Spots cyan fur with some dark blue and white accents. High-security block inmate."
+	return "Гибрид кошки и дракона среднего телосложения. Циановый мех с темно-синими и белыми акцентами. Заключенная блока строгого режима."
 
 func getSpecies():
 	return ["feline", "dragon"]
@@ -107,9 +107,9 @@ func _getAttacks():
 func getFightIntro(_battleName):
 	var text = "Ферри скалится, обнажая свои опасные клыки, и игриво рычит на тебя. Затем она выпускает острые когти и дразняще облизывает один из них. Её длинный драконий хвост мерно покачивается позади неё."
 	text += "\n\n"
-	text += "[say=ferri]You don’t stand a chance against the all mighty dracat~.[/say]"
+	text += "[say=ferri]У тебя нет ни единого шанса против великой дракатки~.[/say]"
 	text += "\n\n"
-	text += "She gets into a combat stance and taunts you to come closer."
+	text += "Она принимает боевую стойку и подначивает тебя подойти поближе."
 	
 	return text
 
@@ -149,49 +149,49 @@ func reactRestraint(restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"Oh, I broke it. Aw",
-				"Your stuff won't work on a mighty dracat!",
-				"Aww. Do you have more?",
-				"Is that all? Mew..",
+				"Ой, я её сломала. Какая жалость.",
+				"Твои штучки не сработают на могучей дракатке!",
+				"Оууу. У тебя есть ещё?",
+				"И это всё? Мяу...",
 			])
 		
 		return RNG.pick([
-			"I will bite chu for this!",
-			"There are no such chains that can stop me!",
-			"Your stuff won't work on a mighty dracat!",
+			"Я тебя за это укушу!",
+			"Нет таких цепей, что смогут меня удержать!",
+			"Твои штучки не сработают на могучей дракатке!",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
 				"Oh.. mew..",
-				"I will so bite you.. when I can, mew..",
-				"You are actually tying me up, huff",
-				"Meeew",
+				"Я тебя так укушу... как только смогу, мяу...",
+				"Ты что, реально меня связываешь? Хафф...",
+				"Мяяяу...",
 			])
 		
 		if(restraintType == RestraintType.Gag):
 			return RNG.pick([
-				"Huff. I don't wanna drool!",
-				"I wanted to bite you, not the gag. Mew..",
+				"Хафф. Только не хочу пускать слюни!",
+				"Я хотела укусить тебя, а не кляп. Мяу...",
 			])
 		if(restraintType == RestraintType.Muzzle):
 			return RNG.pick([
-				"Huff. But I wanna bite you..",
-				"Did you just muzzle a mighty dracat.. mew..",
+				"Хафф. Но я всё равно хочу тебя укусить...",
+				"Ты что, только что нацепил намордник на могучего драката?.. Мяу...",
 			])
 		if(restraintType == RestraintType.Straitjacket):
 			return RNG.pick([
-				"Oh.. this is comfy..",
+				"Ох... а это удобно...",
 			])
 	
 		return RNG.pick([
-			"Try to tie me up, I dare you!",
-			"Cute!",
-			"You're very cute!",
-			"Why are you so soft and adorable",
-			"I bet you can't tie up a mighty dracat",
-			"I'm too powerful to be tied up so easily",
+			"Попробуй свяжи меня, слабо?!",
+			"Милашка!",
+			"Ты такая милашка!",
+			"Почему ты такая мягкая и очаровательная?",
+			"Спорим, ты не сможешь связать могучего драката?",
+			"Я слишком сильна, чтобы меня так легко связали!",
 		])
 	return null
 

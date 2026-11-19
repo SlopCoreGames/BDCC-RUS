@@ -41,7 +41,7 @@ func initArgs(_args = []):
 			addMark(getBestZone(_args[0]))
 
 func getEffectName():
-	return "Tally marks"
+	return "Зарубки"
 
 func getEffectDesc():
 	var text = "Твои зарубки:"

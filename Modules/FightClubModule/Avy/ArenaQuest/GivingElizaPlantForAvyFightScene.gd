@@ -415,7 +415,7 @@ func _react(_action: String, _args):
 
 	if(_action == "no_lewds_ready"):
 		processTime(10*60)
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 
 	if(_action == "distract_and_lewd"):
 		processTime(5*60)
@@ -444,7 +444,7 @@ func _react(_action: String, _args):
 		GM.pc.addSkillExperience(Skill.SexSlave, 50)
 
 	if(_action == "after_cowgirl_sex"):
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 
 	if(_action == "chastity_cum"):
 		processTime(5*60)
@@ -452,7 +452,7 @@ func _react(_action: String, _args):
 		GM.pc.addSkillExperience(Skill.SexSlave, 30)
 
 	if(_action == "after_tease"):
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 
 	if(_action == "trib_start"):
 		processTime(3*60)
@@ -478,7 +478,7 @@ func loadData(data):
 	kickedMask = SAVE.loadVar(data, "kickedMask", false)
 
 func getDevCommentary():
-	return "This scene.. was supposed to be quite simple. Maybe even just one screen where you give Eliza the plant or whatever ^^\n\nBut I had this idea.. wouldn't it be cool to use this plant against Eliza too somehow? And this is how this scene was born. I dunno, I should have finished this update long time ago but I just can't stop myself when I get a good idea, I just gotta write it.. The idea of Eliza getting incredibly horny but still trying to be as confident as she can sounded hot to me ^^\n\nI wrote all 4 sex scenes in one sitting.. 2k words in like.. 5 hours. But they were fairly simple ^^. Before I used to write half a scene a day instead.. and then I had to manually code it into the game.. But now I'm using a little scene converter tool that lets me turn text into a scene in one click ^^. It even supports adding code to buttons and stuff like writing dev commentary. I'm writing this text in google docs for example ^^"
+	return "Эта сцена.. должна была быть довольно простой. Может, даже всего один экран, где ты отдаешь Элизе растение или типа того ^^\n\nНо у меня возникла идея.. а не будет ли круто как-то использовать это растение и против самой Элизы? Так эта сцена и родилась. Не знаю, мне стоило закончить это обновление давным-давно, но я просто не могу остановиться, когда приходит классная идея — мне просто необходимо её записать.. Идея о том, что Элиза дико возбуждается, но при этом изо всех сил старается сохранять уверенный вид, показалась мне чертовски горячей ^^\n\n Все 4 секс-сцены я написал за один присест.. 2 тысячи слов где-то за.. 5 часов. Но они были довольно простыми ^^. Раньше я писал по полсцены в день.. а потом мне приходилось вручную прописывать код в игре.. Но теперь я использую небольшую утилиту-конвертер сцен, которая позволяет превратить текст в сцену одним кликом ^^. Она даже поддерживает добавление кода в кнопки и прочее, типа авторских комментариев. Этот текст, например, я пишу в Google Docs ^^"
 
 func hasDevCommentary():
 	return true

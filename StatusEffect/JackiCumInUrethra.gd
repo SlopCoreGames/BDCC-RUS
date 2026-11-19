@@ -14,10 +14,10 @@ func shouldApplyTo(_npc):
 	return false
 
 func getEffectName():
-	return "Urethral creampie"
+	return "Уретральный кримпэй"
 
 func getEffectDesc():
-	return "You got fucked and your bladder is now stuffed with cum.."
+	return "Тебя оттрахали, и теперь твой мочевой пузырь забит спермой..."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/bladder.png"

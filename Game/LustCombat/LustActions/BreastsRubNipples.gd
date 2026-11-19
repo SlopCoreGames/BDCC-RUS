@@ -26,7 +26,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Теребить соски"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Give your buttons a massage"
+	return "Устроить массаж своим булкам"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -35,30 +35,30 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "The desire is too much, your digits press against your sensitive nips and softly caress them while using the whole palm to cup your {pc.breasts}. The sensations are great, you let out a quiet moan while your nips harden from the stimulation."
+		text += "Желание становится невыносимым: твои пальцы прижимаются к чувствительным соскам, нежно лаская их, а ладонь полностью обхватывает твою {pc.breasts}. Ощущения великолепны, ты издаешь тихий стон, пока соски твердеют от стимуляции."
 		text += "\n\n"
 	else:
-		text += "Your fingertips land on your perky nipples and give them a little rub. These spots are so sensitive, instinctively you squeeze your {pc.breasts} a little harder and knead your nips while moaning for anyone to hear."
+		text += "Твои кончики пальцев ложатся на упругие соски и начинают их слегка тереть. Эти точки настолько чувствительны, что ты инстинктивно сжимаешь свою {pc.breasts} чуть сильнее, разминая соски и стоная на весь зал."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "Your body is so messy, the view of you playing with your nips while someone’s cum is dripping from them is so lewd."
+		text += "Твое тело всё в смазке; вид того, как ты ласкаешь свои соски, пока с них капает чья-то сперма, выглядит невероятно похотливо."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "The opponent is watching you and you hope you’re offering a good show for them."
+		text += "Противник наблюдает за тобой, и ты надеешься, что устраиваешь ему достойное шоу."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasVagina()):
-		text += "Having your nips rubbed makes your cute {pc.pussyStretch} pussy get wet with even more pussy juices."
+		text += "От того, что твои соски трут, твоя милая {pc.pussyStretch} пропитывается еще большим количеством соков."
 		text += "\n\n"
 	
 	if(RNG.chance(20) && !pc.canBeMilked()):
-		text += "You are not lactating but you feel like you can get used to these kinds of sensations, it feels so good to have your nips stimulated like this."
+		text += "Ты еще не кормишь грудью, но чувствуешь, что можешь привыкнуть к таким ощущениям — это так приятно, когда соски стимулируют подобным образом."
 		text += "\n\n"
 
 	if(pc.stimulateLactation()):
-		text += "[b]Your {pc.breasts} leak with some {pc.milk}, you began lactating![/b]"
+		text += "[b]Твоя {pc.breasts} протекает, выделяя немного {pc.milk}, ты начала лактацию![/b]"
 		text += "\n\n"
 
 	return {

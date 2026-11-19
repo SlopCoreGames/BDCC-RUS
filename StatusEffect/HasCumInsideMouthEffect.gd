@@ -27,7 +27,7 @@ func getEffectName():
 
 func getEffectDesc():
 	if(!character.hasBodypart(BodypartSlot.Head)):
-		return "Something is wrong"
+		return "Что-то не так"
 	var bodypart = character.getBodypart(BodypartSlot.Head)
 	var orifice: Orifice = bodypart.getOrifice()
 	var stuffLevel = orifice.getStuffedLevel()
@@ -37,9 +37,9 @@ func getEffectDesc():
 	var messFluids = orifice.getFluidListNames()
 	var humanReadableString = Util.humanReadableList(messFluids)
 	
-	var message = "Your last lover came down your throat and now your belly is stuffed with " + str(fluidAmountRounded) + " ml of "+humanReadableString
+	var message = "Твой последний любовник кончил тебе прямо в глотку, и теперь твой живот раздуло от " + str(fluidAmountRounded) + " мл "+humanReadableString
 	if(stuffLevel > 1.0):
-		message += ". Your belly is completely filled"
+		message += ". Твой живот набит до отказа"
 	
 	var uniqueUsers = orifice.getUniqueCharactersAmount()
 	if(uniqueUsers > 1):

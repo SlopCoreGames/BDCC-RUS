@@ -212,7 +212,7 @@ func _react(_action: String, _args):
 		
 		var howMuch = fluids.transferAmountTo(item2, _args[0])
 		
-		addMessage("You transferred "+str(Util.roundF(howMuch))+" ml from "+item.getVisibleName()+" to "+item2.getVisibleName() )
+		addMessage("Вы перекачали "+str(Util.roundF(howMuch))+" мл из "+item.getVisibleName()+" to "+item2.getVisibleName() )
 		
 		setState("")
 		return
@@ -227,7 +227,7 @@ func _react(_action: String, _args):
 		
 		var howMuch = fluids.transferAmountTo(item, _args[0])
 		
-		addMessage("You transferred "+str(Util.roundF(howMuch))+" ml from "+item2.getVisibleName()+" to "+item.getVisibleName() )
+		addMessage("Вы перекачали "+str(Util.roundF(howMuch))+" мл из "+item2.getVisibleName()+" to "+item.getVisibleName() )
 		
 		setState("")
 		return
@@ -236,7 +236,7 @@ func _react(_action: String, _args):
 		item.getFluids().clear()
 		setState("")
 		
-		addMessage("You emptied "+item.getVisibleName())
+		addMessage("Вы опустошили "+item.getVisibleName())
 		return
 	
 	setState(_action)

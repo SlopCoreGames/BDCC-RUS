@@ -262,41 +262,41 @@ func getAdvanceStageScene():
 func getSkillsInfo():
 	return {
 		"rahiSkillLabor": {
-			"name": "Labor",
-			"desc": "How well Rahi can do tedious tasks",
+			"name": "Труд",
+			"desc": "Насколько хорошо Рахи справляется с нудной работой",
 			"defaultSkill": true,
 		},
 		"rahiSkillSex": {
-			"name": "Sex",
-			"desc": "Allows you to train Rahi to do more types of sexual-activities rather than just boring vanilla sex",
+			"name": "Секс",
+			"desc": "Позволяет обучать Рахи различным видам секса, чтобы она не ограничивалась только скучной классикой",
 		},
 		"rahiSkillAnal": {
-			"name": "Anal",
-			"desc": "Allows you to train Rahi the secrets of anal sex",
+			"name": "Анальный",
+			"desc": "Позволяет обучить Рахи секретам анального секса",
 		},
 		"rahiSkillMasochist": {
-			"name": "Masochism",
-			"desc": "Allows you to turn Rahi into a painslut",
+			"name": "Мазохизм",
+			"desc": "Позволяет превратить Рахи в мазохистку, обожающую боль",
 		},
 		"rahiSkillExhibit": {
-			"name": "Exhibitionism",
-			"desc": "Allows you to teach Rahi to feel more confident while being nude in public",
+			"name": "Эксгибиционизм",
+			"desc": "Позволяет научить Рахи чувствовать себя увереннее, будучи обнаженной на людях",
 		},
 		"rahiSkillPetplay": {
-			"name": "Petplay",
-			"desc": "Allows you to train Rahi into a cute kitty/puppy pet",
+			"name": "Петплей",
+			"desc": "Позволяет дрессировать Рахи, превращая её в милую кошечку или щеночка",
 		},
 		"rahiSkillDominance": {
-			"name": "Dominance",
-			"desc": "Allows you to train Rahi into a domme",
+			"name": "Доминирование",
+			"desc": "Позволяет обучить Рахи навыкам доминантки",
 		},
 		"rahiSkillProstitution": {
-			"name": "Prostitution",
-			"desc": "Allows you to share Rahi with others, making her into a slut",
+			"name": "Проституция",
+			"desc": "Позволяет делиться Рахи с другими, превращая её в настоящую шлюху",
 		},
 		"rahiSkillWatersports": {
-			"name": "Watersports",
-			"desc": "Allows you to turn Rahi into a piss-slut",
+			"name": "Водные игры",
+			"desc": "Позволяет превратить Рахи в любительницу пописаться (пис-слут)",
 			"requiredContent": [ContentType.Watersports],
 		}
 	}

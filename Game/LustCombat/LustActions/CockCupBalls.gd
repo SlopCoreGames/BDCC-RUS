@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Сжать яички в ладонях"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Give your testicles some love"
+	return "Удели внимание своим яйцам"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,26 +30,26 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "Focusing on your pleasure, you give your balls a gentle squeeze while still masturbating with the other hand. You produce a muffled noise of pleasure and keep massaging your balls while your {pc.cock} leaks more of your precum."
+		text += "Сосредоточившись на удовольствии, ты нежно сжимаешь яички, продолжая мастурбировать другой рукой. Ты издаешь приглушенный стон наслаждения и продолжаешь массировать свои яйца, пока твой {pc.cock} выделяет всё больше предэякулята."
 		text += "\n\n"
 	else:
-		text += "Your {pc.cock} trickles with precum while you wrap your fingers around the balls and give them a squeeze."
+		text += "Твой {pc.cock} сочится предэякулятом, пока ты обхватываешь пальцами яички и сжимаешь их."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You make sure to show off your balls and how you’re fondling them to the opponent."
+		text += "Ты стараешься напоказ продемонстрировать противнику свои яйца и то, как ласкаво ты их перебираешь."
 		text += "\n\n"
 		
 	if(RNG.chance(10) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "You’re so messy, the cum of your previous lovers trickles down your body and drips from the tip of your cock."
+		text += "Ты такой неряшливый: сперма твоих предыдущих любовниц стекает по твоему телу и капает с кончика твоего члена."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.getLust() >= 50):
-		text += "You feel that you’re not that far, your cock is so throbbing and twitching a lot, each time you squeeze your nuts a drop of precum appears at the tip and slides down your fingers."
+		text += "Ты чувствуешь, что финиш уже близко: твой член так и пульсирует и дергается, и каждый раз, когда ты сжимаешь свои яйца, на кончике появляется капля предэякулята, которая скользит по твоим пальцам."
 		text += "\n\n"
 	
 	if(RNG.chance(20) && pc.hasVagina()):
-		text += "As you tease your cock, your slit is getting more needy and wet, you feel it dripping juices as you focus on your other set of bits. You can’t hide the moans."
+		text += "Пока ты дразнишь свой член, твоя щель становится всё более жадной и влажной; ты чувствуешь, как из неё сочатся соки, пока ты фокусируешься на другом наборе своих бубенцов. Стоны невозможно скрыть."
 		text += "\n\n"
 
 	return {

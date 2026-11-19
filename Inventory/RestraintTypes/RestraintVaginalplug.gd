@@ -56,29 +56,29 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	if(damage < 1.0):
 		if(_pc.isPlayer() && failChance(_pc, 40) && _pc.getInventory().hasSlotEquipped(InventorySlot.UnderwearBottom)):
 			if(_pc.getInventory().getEquippedItem(InventorySlot.UnderwearBottom).coversBodypart(BodypartSlot.Vagina)):
-				text += " The plug presses into your panties."
+				text += " Пробка впивается в твои трусики."
 				damage /= 2.0
 				
 				if(failChance(_pc, 30)):
-					text += " [b]Your panties slipped down, oops.[/b]"
+					text += " [b]Ой, твои трусики сползли![/b]"
 					_pc.getInventory().unequipSlot(InventorySlot.UnderwearBottom)
 		
 		if(!turnedOn && failChance(_pc, 40)):
-			text += " {user.name} accidentally turns on the plug inside {user.him} and it starts vibrating!"
+			text += " {user.name} случайно включает пробку внутри {user.him}, и та начинает вибрировать!"
 			turnedOn = true
 		elif(turnedOn && failChance(_pc, 20)):
-			text += " {user.name} managed to randomly turn off the vibrating plug."
+			text += " {user.name} удалось случайно выключить вибрирующую пробку."
 			turnedOn = false
 	
 	return {"text": text, "damage": damage, "lust": lust, "pain": pain, "stamina": stamina}
 
 func processStruggleTurn(_pc, _isActivelyStruggling):
 	if(turnedOn):
-		return {"text": "The vaginal plug strongly vibrates inside {user.nameS} pussy", "lust": scaleDamage(5)}
+		return {"text": "Вагинальная пробка сильно вибрирует внутри киски {user.nameS}", "lust": scaleDamage(5)}
 	else:
 		if(failChance(_pc, 5) || (_isActivelyStruggling && failChance(_pc, 30))):
 			turnedOn = true
-			return {"text": "[b]The plug inside {user.nameS} pussy accidentally turns on[/b]. It vibrates, bringing {user.him} pleasure!"}
+			return {"text": "[b]Пробка внутри киски {user.nameS} случайно включается[/b]. Она вибрирует, доставляя {user.him} удовольствие!"}
 	
 	
 func resetOnNewDay():

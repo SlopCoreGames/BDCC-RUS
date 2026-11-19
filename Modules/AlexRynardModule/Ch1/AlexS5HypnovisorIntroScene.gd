@@ -494,6 +494,6 @@ func _react(_action: String, _args):
 
 	if(_action == "in_trance"):
 		GM.pc.getInventory().clearSlot(InventorySlot.Eyes)
-		addMessage("You can now buy a Hypnovisor mk1 from Alex")
+		addMessage("Теперь у Алекса можно купить Гипновизор mk1")
 
 	setState(_action)

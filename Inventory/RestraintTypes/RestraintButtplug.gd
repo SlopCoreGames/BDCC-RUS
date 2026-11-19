@@ -53,18 +53,18 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	if(damage < 1.0):
 		if(_pc.isPlayer() && failChance(_pc, 40) && _pc.getInventory().hasSlotEquipped(InventorySlot.UnderwearBottom)):
 			if(_pc.getInventory().getEquippedItem(InventorySlot.UnderwearBottom).coversBodypart(BodypartSlot.Anus)):
-				text += " The plug presses into your panties."
+				text += " Пробка впивается в твои трусики."
 				damage /= 2.0
 				
 				if(failChance(_pc, 30)):
-					text += " [b]Your panties slipped down, oops.[/b]"
+					text += " [b]Ой, твои трусики сползли![/b]"
 					_pc.getInventory().unequipSlot(InventorySlot.UnderwearBottom)
 	
 	return {"text": text, "damage": damage, "lust": lust, "pain": pain, "stamina": stamina}
 
 func processStruggleTurn(_pc, _isActivelyStruggling):
 	if(failChance(_pc, 10) || _isActivelyStruggling):
-		return {"text": "The buttplug shifts inside {user.name} while {user.he} {user.verbS('squirm')}", "lust": scaleDamage(5)}
+		return {"text": "Пробка смещается внутри {user.name}, пока {user.he} {user.verbS('squirm')}", "lust": scaleDamage(5)}
 	
 func getForceOnCombatAnim() -> String:
 	return "RestraintCrotch"

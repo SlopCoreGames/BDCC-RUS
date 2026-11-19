@@ -11,12 +11,12 @@ func getActionType():
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"For those with refined tastes, this fucktoy offers something far beyond the ordinary.",
-		"This one is a real gem for those of you who crave something a little.. unconventional.. in their bed.",
-		"{slave.He} has a passion for the unusual. Trust me, you’ll never be bored with what {slave.he} can do in bed.",
-		"Exotic fetishes, extreme pleasures, this slave will meet desires you didn’t even know you had.",
-		"From feetplay to rimming, {slave.he} is ready to explore every corner of your fantasies.",
-		"This one’s got a taste for the more.. experimental. If you want a sextoy with unique kinks, this is the one.",
+		"Для обладателей утонченного вкуса эта секс-игрушка предлагает нечто гораздо большее, чем просто обыденный секс.",
+		"Эта штучка — настоящий бриллиант для тех из вас, кто жаждет чего-то... слегка нетрадиционного... в своей постели.",
+		"{slave.He} обожает всё необычное. Поверьте, с тем, что {slave.he} творит в постели, скучно вам точно не будет.",
+		"Экзотические фетиши, запредельные удовольствия — эта рабыня удовлетворит желания, о которых вы даже не подозревали.",
+		"От футплея до римминга — {slave.he} готова исследовать каждый уголок ваших фантазий.",
+		"У этой девчонки вкус к... экспериментам. Если вам нужна секс-игрушка с уникальными кинками, то это она.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

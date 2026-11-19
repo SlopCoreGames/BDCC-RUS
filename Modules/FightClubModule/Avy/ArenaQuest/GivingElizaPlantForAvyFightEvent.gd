@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("FightClubModule.StolePlantForEliza") && !getFlag("FightClubModule.ReturnedPlantToEliza")):
-		addButtonUnlessLate("Pink plant", "Give Eliza the plant to create drugs", "giveplant")
+		addButtonUnlessLate("Розовое растение", "Отдай Элизе растение, чтобы она сделала наркоту", "giveplant")
 
 func getPriority():
 	return 0

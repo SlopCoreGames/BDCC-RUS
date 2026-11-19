@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Гипнотическое очарование"
 
 func getVisibleDescription():
-	return "You can make yourself alluring to the point of ensnaring minds."
+	return "Вы способны стать настолько притягательной, что будете буквально завороживать умы."
 	
 func getMoreDescription():
-	return "Swaying your hips will now have a truly hypnotic effect, increasing your opponent's hypnosis level with a chance equal to your own hypnosis level."
+	return "Теперь покачивание бедрами будет оказывать настоящий гипнотический эффект, повышая уровень гипноза противника с вероятностью, равной вашему собственному уровню гипноза."
 
 func getSkillTier():
 	return 2

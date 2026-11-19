@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Сцеживающий молоконик"
 	
 func getDescription():
-	return "Инструмент для извлечения молока из лактирующих грудей. Это базовая версия, у которой есть свои недостатки.\nЕсли использовать его во время секса, он высасывает "+str(getMilkSpeedPerMinuteMin())+"-"+str(getMilkSpeedPerMinuteMax())+" of milk per minute."
+	return "Инструмент для извлечения молока из лактирующих грудей. Это базовая версия, у которой есть свои недостатки.\nЕсли использовать его во время секса, он высасывает "+str(getMilkSpeedPerMinuteMin())+"-"+str(getMilkSpeedPerMinuteMax())+" мл молока в минуту."
 
 func getClothingSlot():
 	return InventorySlot.UnderwearTop
@@ -69,19 +69,19 @@ func updatePcIfNeeded(_oldFluidAmount, _newFluidAmount):
 func getPossibleActions():
 	return [
 		{
-			"name": "Milk self",
+			"name": "Собственное молоко",
 			"scene": "BreastPumpsMilkingScene",
-			"description": "Turn on the breast pumps",
+			"description": "Включить молокоотсосы",
 		},
 		{
-			"name": "Transfer fluids",
+			"name": "Перекачать жидкость",
 			"scene": "FluidTransferScene",
-			"description": "Transfer the fluids between fluid containers",
+			"description": "Перелить жидкость из одного контейнера в другой",
 		},
 		{
-			"name": "Drink from",
+			"name": "Выпить из",
 			"scene": "DrinkFromScene",
-			"description": "Swallow the contents of this item",
+			"description": "Проглотить содержимое этого предмета",
 		},
 	]
 

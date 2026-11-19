@@ -6,20 +6,20 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Taunting Snarl"
+	return "Издевательский рык"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name} growls, his words biting deep."
+	var text = "{attacker.name} рычит, и его слова жалят, словно клинки."
 	
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([
-		"Fight me properly, or crawl like the coward you are.",
-		"You are weak.",
-		"Dumb, weak, disposable.",
-		"Is that how you fight?",
+		"Сражайся со мной по-человечески, или ползай, как трус.",
+		"Ты слабак.",
+		"Тупой, слабый, расходный материал.",
+		"И это всё, на что ты способен?",
 		]) + "[/say]"
 	
 	addLuxeRage(_attacker, RNG.randf_rangeX2(0.2, 0.4))

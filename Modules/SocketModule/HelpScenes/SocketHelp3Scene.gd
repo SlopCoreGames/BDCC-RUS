@@ -640,7 +640,7 @@ func _run():
 
 		saynn("Почему бы и нет. Ты подносишь её ближе к губам и начинаешь дразнить клитор кончиком языка, водя им влево-вправо. От этого Сокет вцепляется в своё устройство-портал в паху и тихо стонет, а её киска становится невероятно влажной.")
 
-		saynn("Наконец ты решаешься на долгий лизь, проводя языком вдоль её лепестков и прощупывая их. Да, всё ещё чувствуется слабый привкус сидра... но он смешан с чем-то ещё."+str("that makes your own pussy wet in seconds too.." if GM.pc.hasReachableVagina() else "that makes you really horny in seconds too..")+"")
+		saynn("Наконец ты решаешься на долгий лизь, проводя языком вдоль её лепестков и прощупывая их. Да, всё ещё чувствуется слабый привкус сидра... но он смешан с чем-то ещё."+str("от которой твоя киска тоже намокнет за считанные секунды..." if GM.pc.hasReachableVagina() else "от которой тебя тоже развезет по возбуждению за считанные секунды...")+"")
 
 		saynn("[say=socket]Мм-м..[/say]")
 
@@ -814,13 +814,13 @@ func _react(_action: String, _args):
 
 	if(_action == "no_spike_drink"):
 		setFlag("SocketModule.hasPortalPussy", true)
-		addMessage("Socket's pussy is now available through the portal fleshlight")
+		addMessage("Теперь киска Сокета доступна через портальный флешлайт")
 
 	if(_action == "spike_socket_drink"):
 		setFlag("SocketModule.socketWillPunish", true)
 		setFlag("SocketModule.punishReason", "spikeddrink")
 		setFlag("SocketModule.hasPortalPussy", true)
-		addMessage("Socket's pussy is now available through the portal fleshlight")
+		addMessage("Теперь киска Сокета доступна через портальный флешлайт")
 
 	if(_action == "socket_gets_very_horny"):
 		processTime(3*60)
@@ -862,4 +862,4 @@ func _react_scene_end(_tag, _result):
 			setState("lost_risha")
 			addExperienceToPlayer(5)
 			GM.pc.addCredits(-3)
-			addMessage("You lost 3 credits")
+			addMessage("Вы потеряли 3 кредита")

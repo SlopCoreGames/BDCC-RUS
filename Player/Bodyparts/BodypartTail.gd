@@ -38,9 +38,9 @@ func loadData(_data):
 func getPickableAttributes():
 	var result = .getPickableAttributes()
 	result["tailscale"] = {
-		"text": "Pick your tail's scale",
+		"text": "Выберите масштаб хвоста",
 		"textButton": "Tail scale",
-		"buttonDesc": "Pick the tail's scale",
+		"buttonDesc": "Выберите масштаб хвоста",
 		"options": [
 			[0.3, "30%", "Pick this scale"],
 			[0.4, "40%", "Pick this scale"],

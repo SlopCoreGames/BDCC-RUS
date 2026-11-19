@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Stamina recover after sex "+text
+	return "Восстановление выносливости после секса "+text
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.StaminaRecoverAfterSex, amount)

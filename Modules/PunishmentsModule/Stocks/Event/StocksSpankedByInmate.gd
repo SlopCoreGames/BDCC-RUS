@@ -10,7 +10,7 @@ func _reactInit():
 	if(RNG.chance(50)):
 		var zone = BodyWritingsZone.getRandomZone()
 		GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-		addMessage("Someone also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+		addMessage("Кто-то также оставил сувенир на твоих "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 		
 
 func _run():
@@ -36,13 +36,13 @@ func _run():
 		# (another)
 		else:
 			saynn("[sayMale]"+RNG.pick([
-				"Want another one?",
-				"Just look at this slut with {pc.his} ass out like that.",
-				"Beg and I might just fuck you. Haha.",
-				"You deserve it.",
-				"So how did you end up there. Wait, I don’t care.",
-				"Let me just tender some meat.",
-				"Your butt is pretty soft.",
+				"Хочешь еще?",
+				"Только посмотрите на эту шлюху с выпяченной {pc.his} задницей.",
+				"Попрошайничай, и, может быть, я тебя трахну. Ха-ха.",
+				"Ты это заслужила.",
+				"Так как же ты там оказалась? Хотя погоди, мне плевать.",
+				"Дай-ка я размягчу это мясо.",
+				"Твоя жопка довольно мягкая.",
 			])+"[/sayMale]")
 
 		saynn("Заключенный кладет на тебя руки и начинает тискать твою задницу, а затем отвешивает еще один крепкий шлепок, от которого твои ягодицы затряслись. Ты издаешь приглушенный стон.")

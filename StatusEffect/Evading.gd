@@ -23,10 +23,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Evading"
+	return "Уклонение"
 
 func getEffectDesc():
-	return "You are focused on dodging enemy attacks. " + str(turns) + " more turns"
+	return "Вы сосредоточены на том, чтобы уворачиваться от атак противника. " + str(turns) + " больше ходов"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/dodging.png"

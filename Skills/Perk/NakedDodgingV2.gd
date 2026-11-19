@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Голый ниндзя"
 
 func getVisibleDescription():
-	return "Oops, you forgot your clothes. But that's their problem! You gain 5% additional dodge chance when you are COMPLETELY naked"
+	return "Ой, ты забыл одежду. Но это их проблемы! Вы получаете +5% к шансу уклонения, когда вы ПОЛНОСТЬЮ голышом."
 
 func getRequiredPerks():
 	return [Perk.NakedDodging]

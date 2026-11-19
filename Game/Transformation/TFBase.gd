@@ -151,7 +151,7 @@ func reactProgress(_context:Dictionary, _result:TFResult):
 	if(resultText != ""):
 		addText(resultText)
 	else:
-		addText("Nothing happened")
+		addText("Ничего не произошло")
 	
 func reactProgressFinal(_context:Dictionary, _result:TFResult):
 	tfTexts.clear()
@@ -179,68 +179,68 @@ func getReactionDialogueLine(_context:Dictionary, _result:TFResult) -> String:
 	if(isFirstTime() || RNG.chance(30)):
 		if(charLovesTF()):
 			return RNG.pick([
-				"Oh, sweet!",
-				"This is amazing!",
-				"I can't believe this is happening!",
-				"Yes! Finally!",
-				"This feels incredible!",
-				"This feels nice..",
-				"More! I want more of this.",
-				"I'm such a slut for transformations..",
-				"Yes, transform me, change my body until I can't recognize it..",
-				"I love how it feels..",
-				"I crave more..",
-				"I hope this will never end..",
+				"О, божественно!",
+				"Это потрясающе!",
+				"Не верится, что это происходит!",
+				"Да! Наконец-то!",
+				"Ощущения просто невероятные!",
+				"Это так приятно...",
+				"Еще! Я хочу еще!",
+				"Какая же я шлюха, когда дело касается трансформаций...",
+				"Да, трансформируй меня, меняй мое тело, пока я сама его не перестану узнавать...",
+				"Обожаю это ощущение...",
+				"Хочу еще...",
+				"Надеюсь, это никогда не закончится...",
 			])
 		elif(charLikesTF()):
 			return RNG.pick([
-				"Interesting..",
-				"Quite fascinating..",
-				"I didn’t expect this..",
+				"Интересно...",
+				"Довольно любопытно...",
+				"Не ожидала такого...",
 				"Hmm.. wow..",
-				"I changed..",
-				"Hah.. that feels funny.",
-				"Doesn't feel too bad..",
-				"Could I get used to this?",
-				"A bit odd.. but nothing I can't handle.",
-				"I'm curious to see what happens next.",
-				"I can see the appeal..",
-				"Not too bad.",
+				"Я изменилась...",
+				"Хах... забавно ощущается.",
+				"Не так уж и плохо...",
+				"Неужели я смогу к этому привыкнуть?",
+				"Странновато... но я справлюсь.",
+				"Любопытно, что будет дальше.",
+				"В этом есть свое очарование...",
+				"Неплохо.",
 			])
 		elif(charHatesTF()):
 			return RNG.pick([
-				"No, no no, fuck no!",
-				"What the fuck is happening?",
-				"No, no, no, I hate it!",
-				"Fuck.. Give me my old self back!",
-				"NO! What the fuck!?",
-				"Stop.. I hate how it feels..",
-				"Ugh, this makes me sick.",
-				"What the.. Undo this.. How do I undo this shit..",
-				"Really.. This is the worst.",
+				"Нет, нет, нет, блядь, нет!",
+				"Что за хуйня происходит?",
+				"Нет, нет, нет, как же это бесит!",
+				"Блядь... Верните мне меня прежнего!",
+				"НЕТ! Что за хуйня?!",
+				"Хватит... Бесит это ощущение...",
+				"Уф, аж тошно становится.",
+				"Что за... Отменить это... Как, блядь, это отменить...",
+				"Серьезно... Это просто пиздец.",
 			])
 		elif(charDislikesTF()):
 			return RNG.pick([
-				"I don't.. like this.",
-				"This.. doesn't feel good already..",
-				"Oh no, how do I stop this..",
-				"This isn't what I wanted..",
-				"I don't want to go through this..",
-				"How do I undo this.. I want my old body..",
-				"What is happening.. That's not what I signed up for.",
-				"Oh.. how do I.. become normal again..",
-				"What is happening.. Why.. ",
+				"Мне это... не нравится.",
+				"Это... уже не сулит ничего хорошего...",
+				"О нет, как это остановить...",
+				"Это совсем не то, чего я хотел...",
+				"Я не хочу через это проходить...",
+				"Как это вернуть назад... Я хочу свое прежнее тело...",
+				"Что происходит... На это я точно не подписывался.",
+				"Ох... как мне... снова стать нормальной...",
+				"Что происходит... Почему... ",
 			])
 		else:
 			return RNG.pick([
-				"What is happening..",
-				"I don't understand..",
-				"What? How did this happen?",
-				"This is so weird..",
-				"Feels so strange.. what is happening..",
-				"I feel like I'm losing my mind.",
-				"What kind of madness is this?",
-				"This is beyond strange..",
+				"Что происходит...",
+				"Я не понимаю...",
+				"Что? Как это случилось?",
+				"Это так странно...",
+				"Такое странное чувство... что происходит...",
+				"Кажется, я схожу с ума.",
+				"Что это за безумие?",
+				"Это за гранью странного...",
 			])
 	return ""
 

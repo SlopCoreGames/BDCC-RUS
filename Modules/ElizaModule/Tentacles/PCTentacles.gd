@@ -38,7 +38,7 @@ func getGender():
 	return Gender.Other
 	
 func getSmallDescription() -> String:
-	return "A tentacle monster made out of multiple slick green tendrils.."
+	return "Монстр из щупалец, состоящий из множества скользких зеленых отростков..."
 
 func getSpecies():
 	return ["unknown"]

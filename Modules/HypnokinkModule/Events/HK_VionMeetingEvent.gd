@@ -9,9 +9,9 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(getFlag("Mining_IntroducedToMinning", false)):
 		if(!getFlag("HypnokinkModule.DidVionIntroduction")):
-			addButtonUnlessLate("Random cell", "Take a peek in a random cell", "enter_cell")
+			addButtonUnlessLate("Случайная камера", "Заглянуть в случайную камеру", "enter_cell")
 		else:
-			addButtonUnlessLate("Vion's cell", "Talk to Vion", "enter_cell")
+			addButtonUnlessLate("Камера Виона", "Поговорить с Вионом", "enter_cell")
 
 func getPriority():
 	return 0

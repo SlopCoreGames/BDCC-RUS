@@ -44,21 +44,21 @@ func generateRestraintData():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "slides the vaginal plug out from your pussy"
+		return "плавно вытаскивает вагинальную пробку из твоей киски"
 	else:
-		return "slide the vaginal plug out from your pussy"
+		return "вытащи вагинальную пробку из своей киски"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "inserts the vaginal plug into your pussy"
+		return "вставляет вагинальную пробку в твою киску"
 	else:
-		return "insert the vaginal plug into your pussy"
+		return "вставь вагинальную пробку в свою киску"
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was stuffed into your "+RNG.pick(["pussy", "pussy", "cunt", "slit"])+". It can accidentally start vibrating!"
+		return getAStackNameCapitalize()+" была затолкана в твою "+RNG.pick(["pussy", "pussy", "cunt", "slit"])+". Она может внезапно начать вибрировать!"
 	else:
-		return getAStackNameCapitalize()+" was stuffed into {receiver.nameS} "+RNG.pick(["pussy", "pussy", "cunt", "slit"])+". It can accidentally start vibrating!"
+		return getAStackNameCapitalize()+" была затолкана в {receiver.nameS} "+RNG.pick(["pussy", "pussy", "cunt", "slit"])+". Она может внезапно начать вибрировать!"
 
 func getInventoryImage():
 	return "res://Images/Items/bdsm/plug.png"

@@ -189,7 +189,7 @@ func _on_NameLabel_mouse_entered():
 		var charData = characters[currentCharacter]
 		
 		if(charData.has("imageArtist") && charData["imageArtist"]):
-			GlobalTooltip.showTooltip(nameLabel, character.getName() + ", " + character.getSpeciesFullName(), character.getSmallDescriptionWithRelationship()+"\n\n[i]Art drawn by "+str(charData["imageArtist"])+"[/i]", true)
+			GlobalTooltip.showTooltip(nameLabel, character.getName() + ", " + character.getSpeciesFullName(), character.getSmallDescriptionWithRelationship()+"\n\n[i]Рисунок: "+str(charData["imageArtist"])+"[/i]", true)
 			return
 	
 	GlobalTooltip.showTooltip(nameLabel, character.getName() + ", " + character.getSpeciesFullName(), character.getSmallDescriptionWithRelationship(), true)

@@ -554,7 +554,7 @@ func _react(_action: String, _args):
 	
 	if(_action == "preparetogo"):
 		addExperienceToPlayer(50)
-		addMessage("Tasks updated")
+		addMessage("Задачи обновлены")
 
 	if(_action == "endthescene"):
 		endScene()

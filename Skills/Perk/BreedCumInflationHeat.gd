@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Принудительная овуляция"
 
 func getVisibleDescription():
-	return "Maybe the cum will reach their ovaries if you keep stuffing their womb. Cumming inside someone who is cum-inflated has a chance to trigger heat and, in turn, ovulation."
+	return "Возможно, сперма достигнет их яичников, если ты продолжишь набивать их утробу. Конча в кого-то, кто уже раздут от спермы, дает шанс спровоцировать течку и, как следствие, овуляцию."
 
 func getSkillTier():
 	return 0
@@ -34,11 +34,11 @@ func onSexEvent(_event:SexEvent):
 					targetChar.forceIntoHeat()
 				if(_event.getSourceChar().isPlayer()):
 					if(RNG.chance(1)):
-						GM.main.addMessage("PLAP PLAP PLAP PLAP")
+						GM.main.addMessage("ШЛЁП ШЛЁП ШЛЁП ШЛЁП")
 					elif(RNG.chance(5)):
-						GM.main.addMessage("GET PREGNANT GET PREGNANT GET PREGNANT GET PREGNANT")
+						GM.main.addMessage("ЗАБЕРЕМЕНЕЙ ЗАБЕРЕМЕНЕЙ ЗАБЕРЕМЕНЕЙ ЗАБЕРЕМЕНЕЙ")
 					else:
 						if(isOvul):
-							GM.main.addMessage("You are making them ovulate!")
+							GM.main.addMessage("Ты вызываешь у них овуляцию!")
 						else:
-							GM.main.addMessage("You are triggering their heat!")
+							GM.main.addMessage("Ты провоцируешь у них течку!")

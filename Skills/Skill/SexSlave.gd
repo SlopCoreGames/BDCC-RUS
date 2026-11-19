@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Секс-рабыня"
 
 func getVisibleDescription():
-	return "Shows how skilled you are at sex with others"
+	return "Показывает, насколько хорошо вы умеете трахаться с другими"
 
 func getPerkTiers():
 	return [

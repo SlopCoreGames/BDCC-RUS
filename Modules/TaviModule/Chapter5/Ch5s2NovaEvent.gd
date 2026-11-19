@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("TaviModule.Ch5NewPlanSceneHappend") && !getFlag("TaviModule.Ch5StoleDatapadFromNova") && !getFlag("TaviModule.Ch5StoleDatapadFromGuard")):
-		addButtonUnlessLate("Mission", "You must get her datapad for Tavi", "startnova")
+		addButtonUnlessLate("Миссия", "Тебе нужно раздобыть её датапад для Тави", "startnova")
 
 func getPriority():
 	return 0

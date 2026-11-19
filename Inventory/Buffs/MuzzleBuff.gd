@@ -4,7 +4,7 @@ func _init():
 	id = Buff.MuzzleBuff
 
 func getVisibleDescription():
-	return "Prevents biting and the usage of mouth"
+	return "Предотвращает укусы и использование рта"
 
 func apply(_buffHolder):
 	#_buffHolder.gagged = true

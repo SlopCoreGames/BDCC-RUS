@@ -20,9 +20,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -69,9 +69,9 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "Anaphrodisiac pill",
+		"name": "Анафродизиак",
 		"usedName": "an anaphrodisiac pill",
-		"desc": "Kills your libido. Use it if you want to ruin the sex for them.",
+		"desc": "Убивает либидо. Используй, если хочешь испортить им весь секс.",
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": 0.0,
 		"scoreSubScore": 0.0,

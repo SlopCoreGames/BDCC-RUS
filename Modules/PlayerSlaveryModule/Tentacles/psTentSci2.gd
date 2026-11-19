@@ -25,7 +25,7 @@ func getGender():
 #	return "#F26AB5"
 	
 func getSmallDescription() -> String:
-	return "A cat scientist."
+	return "Учёная кошка."
 	
 func getSpecies():
 	return ["feline"]

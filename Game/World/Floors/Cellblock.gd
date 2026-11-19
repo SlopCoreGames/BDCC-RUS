@@ -51,11 +51,11 @@ func _on_CellblockRoom11_onReact(_room, key):
 
 func _on_CellblockRoom11_onPreEnter(room):
 	if(GM.pc.getLocation() == GM.pc.getCellLocation()):
-		room.roomDescription = "Your cell is nothing special. An automatic door that can be opened and closed remotely and an armored window that anyone can see through. Walls are made out of some metal, using a spoon on them would only leave a visible scratch. Everything is well lit at least."
+		room.roomDescription = "Твоя камера — ничего особенного. Автоматическая дверь, которой можно управлять дистанционно, и бронированное окно, сквозь которое всё видно. Стены сделаны из какого-то металла: если ударить по ним ложкой, останется лишь заметная царапина. По крайней мере, здесь светло."
 		room.roomDescription += "\n\n"
-		room.roomDescription += "One stiff-looking bed in the corner and a stool is all you get. You can rest here or hide something so you don't lose it during the personal searches."
+		room.roomDescription += "В углу стоит жесткая кровать и табурет — вот и всё, что тебе положено. Здесь можно отдохнуть или спрятать что-нибудь, чтобы не потерять вещи во время личного досмотра."
 		
-		room.roomName = "My cell"
+		room.roomName = "Моя камера"
 		
 		room.addButton("Заначка", "В своей камере можно что-нибудь спрятать", "stash")
 		
@@ -66,5 +66,5 @@ func _on_CellblockRoom11_onPreEnter(room):
 		#room.addButton("Очистить", "Очистить ПК", "clearover")
 		#room.addButton("Тестовое воспоминание", "Тест", "flashback")
 	else:
-		room.roomDescription = "This is not your cell"
-		room.roomName = "Cell"
+		room.roomDescription = "Это не твоя камера"
+		room.roomName = "Камера"

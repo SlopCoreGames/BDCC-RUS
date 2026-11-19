@@ -5,10 +5,10 @@ func _init():
 	skillGroup = Skill.Start
 
 func getVisibleName():
-	return "Без внимания"
+	return "Без течки"
 
 func getVisibleDescription():
-	return "You don't experience a periodic desire to be bred. Only applies if you have a womb"
+	return "У тебя не возникает периодического желания быть осемененной. Действует только при наличии матки."
 
 func hiddenWhenLocked() -> bool:
 	return true

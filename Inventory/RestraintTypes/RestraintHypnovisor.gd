@@ -74,23 +74,23 @@ func processStruggleTurn(_pc, _isActivelyStruggling):
 	var text = "ОШИБКА! По какой-то причине не был выбран текст для гипновизора"
 	if(getItem().id == "HypnovisorMk0"):
 		text = RNG.pick([
-			"Pretty spiral..",
-			"Need to be useful..",
-			"{user.name} should keep {user.his} visor on, for {user.his} own safety..",
-			"{user.name} wants to be a good {user.boy}..",
-			"Must.. Obey?",
-			"{user.name} struggles to look away from the flashing images.",
-			"{user.name} struggles to look away from the spinning spiral.",
+			"Такая симпатичная спираль...",
+			"Нужно быть полезной...",
+			"{user.name} стоит носить визор {user.his} ради собственной безопасности {user.his}...",
+			"{user.name} хочет быть хорошей {user.boy}...",
+			"Нужно... подчиняться?",
+			"{user.name} изо всех сил пытается не отводить взгляд от мелькающих картинок.",
+			"{user.name} изо всех сил пытается не отводить взгляд от вращающейся спирали.",
 		])
 	else:
 		text = RNG.pick([
-			"The lights are so colorful..",
+			"Огни такие яркие и разноцветные...",
 			"Toy.. pet.. Toy.. pet..",
-			"{user.name} wants to be a good pet..",
-			"{user.name} wants to be a good toy..",
-			"Colorful lights are so hypnotizing..",
-			"Must.. Obey?",
-			"{user.name} struggles to look away from the colorful lights.",
+			"{user.name} хочет быть хорошим питомцем...",
+			"{user.name} хочет быть хорошей игрушкой...",
+			"Эти разноцветные огни так гипнотизируют...",
+			"Нужно... подчиняться?",
+			"{user.name} изо всех сил пытается не отрывать взгляд от разноцветных огней.",
 		])
 		
 	if(failChance(_pc, 30) || _isActivelyStruggling):

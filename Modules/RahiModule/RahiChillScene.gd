@@ -214,7 +214,7 @@ func _react(_action: String, _args):
 	if(_action == "bring_her_home"):
 		if(GM.pc.getPain() > 0):
 			GM.pc.addPain(-40)
-			addMessage("That made you feel better")
+			addMessage("Это заставило тебя почувствовать себя лучше")
 			
 		setModuleFlag("RahiModule", "Rahi_NotThereToday", true)
 
@@ -225,7 +225,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "I didn't really know at that point where I would go with Rahi while writing this chill scene. But I'm glad I included the stealing and drinking bits, they both are kinda hinting about Rahi's problems ^^.\n\nBut yeah. The game has a lot of.. conflicts. And I just wanted something calm to happen at least once. And Rahi seemed perfect for that. But you know what they say, the good stuff never lasts long..\n\nBtw, I literally never drank alcohol a single time irl x3. I have many other addictions and problems though, so don't worry"
+	return "На тот момент я толком не знала, куда заведет меня сюжет с Рахи во время написания этой спокойной сцены. Но я рада, что включила моменты с воровством и выпивкой — и то, и другое как бы намекает на проблемы Рахи ^^.\n\nНо да. В игре полно... конфликтов. И мне просто хотелось, чтобы хоть раз произошло что-то спокойное. И Рахи казалась идеальным персонажем для этого. Но, как говорится, хорошее не длится долго..\n\nКстати, в реальной жизни я вообще ни разу в жизни не пила алкоголь x3. Хотя у меня полно других зависимостей и проблем, так что не переживайте"
 
 func hasDevCommentary():
 	return true

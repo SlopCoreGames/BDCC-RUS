@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Соблазнительный шепот"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
@@ -29,11 +29,11 @@ func getAnticipationText(_attacker, _receiver):
 
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([
-		"Let me show you pleasure you've never known..",
-		"No need to be shy..",
-		"Imagine the ecstasy that awaits if you surrender to me, body and soul..",
-		"Why resist me? Let go and lets embrace these sensations together..",
-		"Wanna touch me? Just promise that you're gonna be a good {receiver.boy}.."
+		"Позволь мне подарить тебе наслаждение, которого ты еще никогда не знал...",
+		"Не нужно стесняться...",
+		"Представь, какой экстаз ждет тебя, если ты отдашься мне телом и душой...",
+		"Зачем сопротивляться? Расслабься, и давай вместе отдадимся этим ощущениям...",
+		"Хочешь потрогать меня? Только пообещай, что будешь послушным {receiver.boy}..."
 	])+"[/say]"
 
 	return text

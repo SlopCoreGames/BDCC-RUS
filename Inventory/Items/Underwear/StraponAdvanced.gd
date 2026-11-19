@@ -17,7 +17,7 @@ func getVisibleName():
 		var theChar:BaseCharacter = thePenis.getCharacter()
 		if(GM.main && penisID != "pc"): # HAAAAAAAAAACK
 			GM.main.updateCharacterUntilNow(penisID)
-		return theChar.getName()+"'s penis"
+		return theChar.getName()+"член"
 	return "Страпон (продвинутый)"
 	
 func getDescription():
@@ -48,7 +48,7 @@ func getLewdStraponName() -> String:
 	var thePenis = getPenisBodypart()
 	if(thePenis):
 		return thePenis.getLewdAdjective()+" strapon"
-	return RNG.pick(["hologram strapon"])
+	return RNG.pick(["голографический страпон"])
 
 func getPrice():
 	return 35
@@ -85,14 +85,14 @@ func getInventoryImageColor():
 func getPossibleActions():
 	return [
 		{
-			"name": "Transfer fluids", # Too funny so I didn't remove, embrace the jank
+			"name": "Перекачать жидкость", # Too funny so I didn't remove, embrace the jank
 			"scene": "FluidTransferScene",
-			"description": "Transfer the fluids between fluid containers",
+			"description": "Перелить жидкость из одного контейнера в другой",
 		},
 		{
-			"name": "Select target",
+			"name": "Выбрать цель",
 			"scene": "StraponAdvancedPickTarget",
-			"description": "Select who's penis should this strapon's portal use. You can only select characters that are wearing portal panties or a portal chastity cage",
+			"description": "Выберите, чей член будет использовать портал этого страпона. Можно выбирать только тех персонажей, на которых надеты портальные трусики или портальная девственная клетка",
 		},
 	]
 

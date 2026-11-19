@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Речь при кляпе"
 
 func getVisibleDescription():
-	return "You got used to talking through the gag and people can understand you better now, including yourself. You still drool as much though"
+	return "Ты привык говорить сквозь кляп, и теперь люди понимают тебя лучше — да и ты сам тоже. Правда, слюни всё так же текут ручьём."
 
 func getSkillTier():
 	return 0

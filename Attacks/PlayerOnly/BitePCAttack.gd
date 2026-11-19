@@ -11,7 +11,7 @@ func getVisibleName(_context = {}):
 	return "Укус"
 	
 func getVisibleDesc(_context = {}):
-	return "60% chance to do "+scaledDmgRangeStr(DamageType.Physical, 15, 20)+" damage and cause bleeding.\n\nCan't miss if the opponent is on the ground.\n\nVery weak against armored opponents"
+	return "60% cшансов сделать "+scaledDmgRangeStr(DamageType.Physical, 15, 20)+" наносит урон и вызывает кровотечение.\n\nНевозможно промахнуться, если противник лежит на земле.\n\nОчень слабо против бронированных противников"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical, 0.6)):
@@ -22,17 +22,17 @@ func _doAttack(_attacker, _receiver, _context = {}):
 
 	var texts = [
 		"{attacker.name} bites {receiver.name}",
-		"{attacker.name} pounces at {receiver.name} and bites {receiver.his} neck"
+		"{attacker.name} набрасывается на {receiver.name} и впивается зубами в {receiver.his} шею"
 	]
 	var text = RNG.pick(texts)
 	
 	if(!_receiver.hasEffect(StatusEffect.Bleeding)):
 		if(_attacker.hasPerk(Perk.SexBiter)):
 			if(_receiver.addEffect(StatusEffect.Bleeding, [5])):
-				text += " causing {receiver.him} to start [color=red]bleeding[/color]"
+				text += " из-за чего у {receiver.him} начинается [color=red]кровотечение[/color]"
 		else:
 			if(_receiver.addEffect(StatusEffect.Bleeding)):
-				text += " causing {receiver.him} to start [color=red]bleeding[/color]"
+				text += " из-за чего у {receiver.him} начинается [color=red]кровотечение[/color]"
 	
 	return {
 		text = text,

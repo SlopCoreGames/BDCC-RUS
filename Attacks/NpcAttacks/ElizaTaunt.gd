@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Насмешка Элизы"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "Мысли о том, что сказала Элиза, вызывают у вас возбуждение..."
@@ -26,10 +26,10 @@ func getAnticipationText(_attacker, _receiver):
 
 	text += "\n\n"
 	text += "[say=eliza]"+RNG.pick([
-		"I can make you feel pleasure like you never did, you gonna cum so much that you will forget everything else~",
-		"I see that you don’t like this place, I can turn it into a better one with a gas mask and one special gas, just quit fighting~",
-		"So many prototypes to try, don’t deny yourself the opportunity to feel good, raise your hands up~.",
-		"I can give you a true purpose, to produce milk, like a good cow. It will feel so-o good, I promise~. And I get better coffee in the mornings~.",
+		"Я заставлю тебя познать такое наслаждение, какого ты еще никогда не чувствовал... Ты кончишь так много, что забудешь обо всем на свете~",
+		"Вижу, это место тебе не по душе. Но я могу сделать его куда лучше — всего лишь противогаз и один особенный газ, так что просто перестань сопротивляться~",
+		"Столько прототипов, которые нужно опробовать... Не лишай себя возможности получить удовольствие, подними руки~.",
+		"Я могу дать тебе истинное предназначение — давать молоко, как хорошая коровка. Обещаю, это будет о-о-очень приятно~. А по утрам у меня будет кофе получше~.",
 	])+"[/say]"
 
 	return text

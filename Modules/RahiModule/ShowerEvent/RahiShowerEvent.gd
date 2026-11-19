@@ -14,7 +14,7 @@ func run(_triggerID, _args):
 		return
 	
 	saynn("Вы замечаете, что та самая знакомая коричневая кошечка тоже принимает здесь душ.")
-	addButtonUnlessLate("Rahi", "Approach the kitty", "talk")
+	addButtonUnlessLate("Рахи", "Подойди к кошечке", "talk")
 
 func getPriority():
 	return 0

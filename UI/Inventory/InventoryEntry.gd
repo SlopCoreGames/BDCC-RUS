@@ -40,25 +40,25 @@ func setItem(theItem:ItemBase, theMode):
 	updateInfo()
 	
 	if(isBuy):
-		$HBoxContainer/HBoxContainer/InteractButton.text = "Buy"
+		$HBoxContainer/HBoxContainer/InteractButton.text = "Купить"
 	if(isSell):
-		$HBoxContainer/HBoxContainer/InteractButton.text = "Sell"
+		$HBoxContainer/HBoxContainer/InteractButton.text = "Продать"
 	if(isLoot):
-		$HBoxContainer/HBoxContainer/InteractButton.text = "Take"
+		$HBoxContainer/HBoxContainer/InteractButton.text = "Забрать"
 	if(isStash):
-		$HBoxContainer/HBoxContainer/InteractButton.text = "Stash"
+		$HBoxContainer/HBoxContainer/InteractButton.text = "Заначка"
 	if(isTake):
-		$HBoxContainer/HBoxContainer/InteractButton.text = "Take"
+		$HBoxContainer/HBoxContainer/InteractButton.text = "Забрать"
 	if(isGive):
-		$HBoxContainer/HBoxContainer/InteractButton.text = "Give"
+		$HBoxContainer/HBoxContainer/InteractButton.text = "Дать"
 	if(isEquipTake):
 		if(!item.getClothingSlotSafe().empty()):
 			if(item.isWornByWearer()):
-				$HBoxContainer/HBoxContainer/InteractButton.text = "Unequip"
+				$HBoxContainer/HBoxContainer/InteractButton.text = "Снять"
 			else:
-				$HBoxContainer/HBoxContainer/InteractButton.text = "Equip"
+				$HBoxContainer/HBoxContainer/InteractButton.text = "Надеть"
 		else:
-			$HBoxContainer/HBoxContainer/InteractButton.text = "Take"
+			$HBoxContainer/HBoxContainer/InteractButton.text = "Забрать"
 		
 func getItem():
 	return item

@@ -11,7 +11,7 @@ func _initScene(_args = []):
 func _run():
 	if(state == ""):
 		aimCamera("intro_corridor")
-		setLocationName("IBS \"Integrity\"")
+		setLocationName("ИБС \"Целостность\"")
 		playAnimation(StageScene.Solo, "stand")
 		
 		addCharacter("intro_detective")
@@ -27,7 +27,7 @@ func _run():
 
 	if(state == "take_a_sit"):
 		aimCamera("intro_interogation")
-		setLocationName("Interrogation room")
+		setLocationName("Комната для допросов")
 		playAnimation(StageScene.Solo, "sit")
 		
 		saynn("Вы садитесь на второй стул, тот, что подальше от единственного выхода. Вы внимательнее разглядываете парня. Он явно волк: довольно высокий, лет сорока, с серой шерстью, в чёрных штанах и белой футболке.")
@@ -51,7 +51,7 @@ func _run():
 		var _ok = textBox.connect("text_entered", self, "onTextBoxEnterPressed")
 		
 		addButton("Подтвердить", "Выбрать это имя", "setname")
-		addButtonAt(4, "Random?", "Help choose a random name", "randomname")
+		addButtonAt(4, "Случайно?", "Выбрать случайное имя", "randomname")
 		
 
 	if(state == "donecreating"):
@@ -289,7 +289,7 @@ func _run():
 	if(state == "gocell"):
 		removeCharacter("intro_detective")
 		aimCamera("intro_ship")
-		setLocationName("Transport shuttle")
+		setLocationName("Транспортный шаттл")
 		
 		saynn("В следующее мгновение ты понимаешь, что сидишь в небольшом транспортном шаттле, в грузовом отсеке. Похоже, сюда влезет человек десять заключенных, но сейчас здесь только один охранник, стерегущий тебя, да пилот за металлической перегородкой. Сквозь прозрачные иллюминаторы виден космос с его далекими звездами и астероидами — похоже, шаттл летит сквозь пояс астероидов. Благодаря своим малым размерам он легко маневрирует между ними. Охранник ухмыляется, наблюдая за тобой.")
 
@@ -387,7 +387,7 @@ func _react_scene_end(_tag, _result):
 		setState("donecreating")
 
 func getDevCommentary():
-	return "Heya, today is the 16th of May, 2023, the day that I (Rahi) added support for developer commentary ^^\n\nThis might be the first one you read.. or not.. depends on if you started a new game after turning that option on. But I will try to make these readable out of order so no worries ^^.\n\nWhy did I add this? Isn't this a waste of my time? Isn't this a waste of your time? I dunno, I just felt like adding this.. I like to ramble sometimes and, since my game brings up lots of topics, dark or not, there is a lot to talk about ^^\n\nWill this waste my time and keep you from getting more content? Ideally it shouldn't. Here is a spoiler for you, I only work on my game for a few hours a day x3, usually about 3-4 hours. So like, finishing the work day and then just spilling my thoughts out into the commentary of some scene could be a nice way to.. stay balanced.. I dunno.\n\nI just wanna.. explain some of my choices in these, you know? So expect spoilers in these, lots of them x3\n\nBut yeah. Fun fact, this whole scene was actually rewritten just before I posted the first public version. It was worse before, trust me x3.\n\nI watched a lot of JCS - Criminal Psychology videos on youtube back then and I kinda wanted the game to start with you getting interrogated by seemingly a kind/understanding cop that then suddenly turns into a 'bad cop'. I think it's a good way to introduce the players to this dark world.. get them immersed.. or something."
+	return "Приветик! Сегодня 16 мая 2023 года — день, когда я (Рахи) добавил(а) поддержку комментариев разработчика ^^\n\nВозможно, это первый комментарий, который ты читаешь... а может и нет... всё зависит от того, начал(а) ли ты новую игру после включения этой опции. Но я постараюсь писать так, чтобы их можно было читать вразнобой, так что не парься ^^.\n\nЗачем я это сделал(а)? Разве это не пустая трата моего времени? И не пустая ли это трата твоего времени? Хрен знает, просто захотелось... Люблю иногда поболтать, а так как в моей игре поднимается куча тем, мрачных или не очень, то и поговорить есть о чем ^^\n\nБудет ли это отнимать у меня время, которое можно потратить на новый контент? В идеале — нет. Лови спойлер: я работаю над игрой всего несколько часов в день x3, обычно около 3-4 часов. Так что, типа, закончить рабочий день и просто вывалить свои мысли в комментариях к какой-нибудь сцене — это может быть неплохим способом... держать баланс... хрен знает.\n\nЯ просто хочу... объяснить некоторые свои решения в игре, понимаешь? Так что готовься к спойлерам, их будет много x3\n\nНо да. Забавный факт: всю эту сцену на самом деле переписали прямо перед тем, как я выложил(а) первую публичную версию. Раньше было хуже, поверь мне на слово x3.\n\nТогда я смотрел(а) кучу видео JCS - Criminal Psychology на ютубе, и мне типа хотелось, чтобы игра начиналась с того, что тебя допрашивает вроде бы добрый и понимающий коп, который внезапно превращается в «плохого копа». Думаю, это отличный способ познакомить игроков с этим мрачным миром... погрузить их в него... или типа того."
 
 func hasDevCommentary():
 	return true

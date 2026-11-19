@@ -9,7 +9,7 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="captain", npcAction="stand"})
 		aimCamera("intro_arrive")
-		setLocationName("Spaceship hangar")
+		setLocationName("Ангар космического корабля")
 		
 		addCharacter("captain")
 		addCharacter("risha")
@@ -36,7 +36,7 @@ func _run():
 		
 	if(state == "whatnow"):
 		aimCamera("intro_nearcaptain")
-		setLocationName("Spaceship hangar")
+		setLocationName("Ангар космического корабля")
 		
 		saynn("[say=pc]Ну что. Пришли меня забрать?[/say]")
 		
@@ -79,7 +79,7 @@ func _run():
 		
 	if(state == "follow"):
 		aimCamera("intro_intakearea")
-		setLocationName("Intake area")
+		setLocationName("Зона приема")
 		
 		playAnimation(StageScene.Solo, "walk")
 		
@@ -152,7 +152,7 @@ func _run():
 		saynn("Тебя трясет, слова охранников бесят тебя еще сильнее, и когда ты замахиваешься оружием, вдруг чувствуешь мощный разряд, прошивающий всё тело. Офицер переключил режим своего пистолета на электрошокер и выстрелил. Внезапно каждая твоя мышца начинает напрягаться, боль становится невыносимой. Ты кричишь от агонии и валишься на пол. Офицер медленно приближается к тебе, всё еще целясь из ствола, и отпинывает дубинку в сторону. Затем он приседает рядом с тобой.")
 	
 	if(state == "losttorisha" || state == "wonrisha"):
-		saynn("[say=captain]Какая же ты дура. И на что ты рассчитывала?" + ("Even if you would have won, what would you do?" if state=="losttorisha" else "Even though you won, what now?") + "Кораблей здесь нет, те немногие, что прилетают, лишь привозят новых заключенных и тут же улетают. Ты уверен, что сможешь навалять каждому охраннику в этом месте? Ты застрял на этой скале до конца своих дней. Хочешь превратить свою жизнь в сущий ад? Не глупи, ты только что прибыл, не заставляй меня отправить тебя в космос.[/say]")
+		saynn("[say=captain]Какая же ты дура. И на что ты рассчитывала?" + ("Даже если бы ты победила, что бы ты делала?" if state=="losttorisha" else "Раз уж ты победила, что теперь?") + "Кораблей здесь нет, те немногие, что прилетают, лишь привозят новых заключенных и тут же улетают. Ты уверен, что сможешь навалять каждому охраннику в этом месте? Ты застрял на этой скале до конца своих дней. Хочешь превратить свою жизнь в сущий ад? Не глупи, ты только что прибыл, не заставляй меня отправить тебя в космос.[/say]")
 		
 		saynn("[say=pc]Твою мать.. да пошел ты..[/say]")
 		
@@ -175,7 +175,7 @@ func _run():
 
 	if(state == "shower"):
 		aimCamera("intro_shower")
-		setLocationName("Shower")
+		setLocationName("Душ")
 		
 		playAnimation(StageScene.Solo, "walk", {bodyState={naked=true}})
 		
@@ -209,7 +209,7 @@ func _run():
 		
 	if(state == "aftershower"):
 		aimCamera("intro_aftershower")
-		setLocationName("Intake area")
+		setLocationName("Зона приема")
 		
 		playAnimation(StageScene.Solo, "walk")
 		
@@ -281,7 +281,7 @@ func _react(_action: String, _args):
 		processTime(10 * 60)
 		
 		GM.pc.getInventory().equipItem(GlobalRegistry.createItem("basketmuzzle"))
-		addMessage("A basket cage muzzle was forced on you!")
+		addMessage("Тебе насильно надели на морду корзинку-клетку!")
 		
 	if(_action == "cuffs"):
 		processTime(10 * 60)
@@ -289,8 +289,8 @@ func _react(_action: String, _args):
 		GM.pc.getInventory().equipItem(GlobalRegistry.createItem("inmatecollar"))
 		GM.pc.getInventory().equipItem(GlobalRegistry.createItem("inmateanklecuffs"))
 		GM.pc.getInventory().equipItem(GlobalRegistry.createItem("inmatewristcuffs"))
-		addMessage("A bulky collar gets locked around your neck with a satisfying click")
-		addMessage("Your wrists and ankles get cuffed")
+		addMessage("Массивный ошейник защелкивается на твоей шее с приятным щелчком")
+		addMessage("Твои запястья и лодыжки сковывают наручники")
 		GM.pc.updateAppearance()
 		
 	if(_action == "aftershower"):
@@ -303,7 +303,7 @@ func _react(_action: String, _args):
 		
 		GM.pc.getInventory().forceEquipRemoveOther(uniform)
 		
-		addMessage("You're wearing an inmate uniform now")
+		addMessage("Теперь на тебе тюремная роба")
 		
 	if(_action == "shower"):
 		processTime(25 * 60)
@@ -333,7 +333,7 @@ func _react_scene_end(_tag, _result):
 			addExperienceToPlayer(20)
 
 func getDevCommentary():
-	return "So this is probably the earliest actual written scene if you don't count the fighting one ^^. If you ever been on RRDC, a place in second life, you will find all of this very familiar.. Because this is pretty much how intakes work in there x3. RRDC is basically a place for rp if you didn't know. I will be honest, I just wanted to turn that rp place into a game x3. Why? To tell my own stories I guess.. I only copied the prison idea itself, all the lore and characters and stories are fully written by me.\n\nBut yeah ^^. This scene introduces you to the captain, probably one of the most powerful people on the station. So of course he has to be kind ^^. But also strict and all that. He is balanced out by his bloodthirsty hornythirsty guard Risha. Risha is a bitch x3 she is clearly enjoying the power she has over inmates. Would be cool to maybe write some content for her where you somehow set her up, making it so she is caught and turned into an inmate herself. But that would require so much thinking.. I basically have to write 2 games then, where Risha is guard or inmate. And that sounds ehhhhhhh.. would be cool though"
+	return "Так, это, пожалуй, самая ранняя из реально написанных сцен, если не считать ту, где все дерутся ^^. Если вы когда-нибудь бывали на RRDC (это место во Второй жизни), то всё это покажется вам очень знакомым... Потому что именно так там и проходит прием заключенных x3. Если вы не знали, RRDC — это, по сути, место для ролеплея. Буду честен: я просто захотел превратить это место для РП в игру x3. Зачем? Наверное, чтобы рассказывать свои собственные истории... Я скопировал только саму идею тюрьмы, а весь лор, персонажи и сюжеты полностью написаны мной.\n\nНо да ^^. Эта сцена знакомит вас с капитаном, пожалуй, одним из самых влиятельных людей на станции. Так что, конечно, он должен быть добрым ^^. Но при этом строгим и всё такое. Его уравновешивает кровожадная и похотливая Риша, его охранница. Риша та еще сучка x3, она явно наслаждается своей властью над заключенными. Было бы круто написать для неё какой-нибудь контент, где вы её как-то подставляете, и в итоге её саму ловят и превращают в заключенную. Но для этого нужно столько размышлений... Мне тогда, по сути, придется писать две игры: где Риша — охранница, а где — заключенная. А это звучит как-то эээээээх... хотя было бы круто."
 
 func hasDevCommentary():
 	return true

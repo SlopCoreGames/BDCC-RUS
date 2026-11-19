@@ -9,7 +9,7 @@ func initBuff(_args):
 	amount = _args[0]
 
 func getVisibleDescription():
-	return "Unable to act or talk during sex"
+	return "Невозможно действовать или говорить во время секса"
 
 func apply(_buffHolder):
 	pass

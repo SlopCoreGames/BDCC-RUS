@@ -43,7 +43,7 @@ func _run():
 	if(state == "start_walkies"):
 		saynn("Вы с Рахи начинаете свой путь.")
 
-		addButtonAt(6, "Walk", "Walk to the destination", "do_walkies")
+		addButtonAt(6, "Идти", "Идти к месту назначения", "do_walkies")
 		if (false):
 			addButton("Идти", "Тебе не стоит этого видеть", "do_walkies")
 	if(state == "walkies"):
@@ -58,12 +58,12 @@ func _run():
 		else:
 			saynn(RNG.pick(rareBarks))
 		saynn(_roomInfo.getDescription())
-		addButtonAt(6, "Walk", "Walk to the destination", "do_walkies")
+		addButtonAt(6, "Идти", "Идти к месту назначения", "do_walkies")
 	if(state == "ev1"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="maleguard_canine", npc="rahi", npcAction="stand", npcBodyState={naked=true}})
 		saynn("Пока вы с вашей щеночком пробираетесь через тюрьму, путь вам внезапно преграждает охранник. Он сверху вниз смотрит на Рахи, а затем переводит взгляд на вас.")
 
-		var possibleLine = RNG.pick(["Does your pet bite?", "I've heard reports of some aggressive pets in the prison, can your pet be trusted not to bite?", "Is your pet aggressive? She doesn't have a muzzle on.", "Are you sure your pet is safe to be around others? Does she bite?"])
+		var possibleLine = RNG.pick(["Ваш питомец кусается?", "До меня доходили слухи, что в тюрьме есть агрессивные питомцы. Можно ли вашему доверять, что он не укусит?", "Ваш питомец агрессивен? На ней ведь нет намордника.", "Вы уверены, что с вашим питомцем безопасно находиться рядом с другими? Она кусается?"])
 		saynn("[say=maleguard_canine]"+str(possibleLine)+"[/say]")
 
 		saynn("Рука охранника не покидает рукоятку электрошокера.")
@@ -73,12 +73,12 @@ func _run():
 		if (getModule("RahiModule").getSkillScore("rahiSkillMasochist") > 5):
 			addButton("Мазохистка", "(Мазохизм) Сказать охраннику, что Рахи обожает получать боль вместо того, чтобы причинять её", "ev1_masochist")
 	if(state == "ev1_no"):
-		var pcLine = RNG.pick(["No, she is a good girl. She won't hurt anyone.", "No, she's very friendly. She loves attention.", "No, she's very docile. She won't cause any trouble.", "No, she's well-trained. She knows not to bite anyone.", "No, she's never shown any aggression. She's a harmless pet.", "No, she's just a playful puppy. She's never bitten anyone."])
+		var pcLine = RNG.pick(["Нет, она послушная девочка. Она никому не причинит вреда.", "Нет, она очень дружелюбная. Она обожает внимание.", "Нет, она очень кроткая. Она не доставит никаких хлопот.", "Нет, она хорошо обучена. Она знает, что кусаться нельзя.", "Нет, она никогда не проявляла агрессии. Совершенно безобидный питомец.", "Да нет, она просто игривый щенок. Она еще никого не кусала."])
 		saynn("[say=pc]"+str(pcLine)+"[/say]")
 
 		saynn("Охранник подозрительно прищуривается после ваших слов.")
 
-		var guardLine = RNG.pick(["Well, I hope you're telling the truth, inmate.", "I've had a few run-ins with vicious mutts in my day.", "I've seen some nasty bites from dogs like this before.", "I hope you know what you're doing with that thing.", "You better have control over that animal, or else."])
+		var guardLine = RNG.pick(["Ну, надеюсь, ты не врешь, заключенная.", "В свое время мне уже попадались злобные дворняги.", "Я и раньше видел жуткие следы укусов от таких собачек.", "Надеюсь, ты понимаешь, что творишь с этой штукой.", "Лучше держи это животное в узде, иначе пожалеешь."])
 		saynn("[say=maleguard_canine]"+str(guardLine)+"[/say]")
 
 		saynn("Он делает шаг ближе к Рахи, затем осторожно протягивает руку и начинает её поглаживать. Рахи возбужденно виляет хвостом и обнюхивает бронированную ладонь охранника, даже не думая кусаться.")
@@ -116,7 +116,7 @@ func _run():
 		playAnimation(StageScene.PuppyDuo, "stand", {pc=npc_id, npc="rahi", npcAction="stand", npcBodyState={naked=true}})
 		saynn("Пока вы гуляете с Рахи по тюрьме, вам попадается одна из заключенных, которая проявляет явный интерес к вашему питомцу.")
 
-		var randomAsk = RNG.pick(["Aww, what a cute little puppy you have there. Can I pet her?", "Excuse me, could I please pet your puppy?", "Mmm, that's a fine looking pup you've got there. Mind if I give her a little pat?", "Aww, what a cute little puppy! Can I give her a scratch behind the ears?", "I wanna pet that pup of yours. And you wouldn't want to say no to me, would you?", "Hey, why is your puppy naked? Can I touch her fur?"])
+		var randomAsk = RNG.pick(["Оу, какой милый щеночек! Можно её погладить?", "Простите, можно мне погладить вашу собачку?", "Ммм, а щеночек-то хорошенький. Не возражаешь, если я её немного потискаю?", "Ой, какая милая щеночек! Можно ей за ушком почесать?", "Хочу потискать твою псинку. И ты ведь не захочешь мне отказывать, а?", "Эй, а почему твоя собачка голышом? Можно потрогать её шёрстку?"])
 		saynn("[say=npc]"+str(randomAsk)+"[/say]")
 
 		addButton("No", "Не позволять никому гладить Рахи", "ev2_no")
@@ -979,7 +979,7 @@ func _run():
 		playAnimation(StageScene.PuppyDuo, "stand", {pc=npc_id, npc="rahi", npcAction="stand", npcBodyState={naked=true}})
 		saynn("Пока ты ведешь Рахи на поводке к месту назначения, одна из заключенных медленно приближается к тебе, {npc.his} её взгляд словно приклеен к твоему питомцу, к её девичьим изгибам и милым местечкам.")
 
-		var firstLine = RNG.pick(["Hey, I couldn't help but notice your little pet over here.", "You have such a cute pet. She is a puppy, right?", "Hey, I couldn't help but notice your pet. What an adorable puppy."])
+		var firstLine = RNG.pick(["Слушай, не мог не заметить твою питомицу.", "У тебя такая милая зверушка. Это щенок, да?", "Эй, глаз не мог оторвать от твоего питомца. Какая очаровательная собачка."])
 		saynn("[say=npc]"+str(firstLine)+"[/say]")
 
 		saynn("Ты невольно чувствуешь, как всё тело напрягается, готовое защитить Рахи, если потребуется.")
@@ -988,7 +988,7 @@ func _run():
 
 		saynn("Ты уже собирался пройти мимо них, когда заключенная удивила тебя, достав маленький кредитный чип.")
 
-		var secondLine = RNG.pick(["I will pay you.. 5 creds if you let me have some fun with her.", "I'm willing to pay you 5 credits if you let me have a go at her.", "How much would it cost to get some fun time with her? Would 5 credits be enough?", "Would you be willing to let me use her? I pay 5 creds.", "I wanna fuck her so much. I have 5 credits here. Deal?"])
+		var secondLine = RNG.pick(["Я заплачу тебе... 5 кредитов, если позволишь мне немного развлечься с ней.", "Я готов отвалить 5 кредитов, если дашь мне с ней немного поиграть.", "Сколько будет стоить немного развлечься с ней? Пяти кредитов хватит?", "Ты не против, если я её использую? Плачу 5 кредитов.", "Хочу трахнуть её до безумия. У меня есть пять кредитов. Идёт?"])
 		saynn("[say=npc]"+str(secondLine)+"[/say]")
 
 		saynn("{npc.His} её глаза мечутся между тобой и твоим питомцем.")

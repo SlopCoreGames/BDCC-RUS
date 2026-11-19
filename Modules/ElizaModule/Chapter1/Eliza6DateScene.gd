@@ -144,7 +144,7 @@ func _run():
 		addButton("Бар", "Войти внутрь", "in_bar")
 	if(state == "in_bar"):
 		aimCameraAndSetLocName("cd_office3")
-		setLocationName("Staff bar")
+		setLocationName("Бар для персонала")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={leashedBy="eliza"}})
 		saynn("Ты заходишь в бар... и снова попадаешь в совершенно иную, контрастную обстановку.")
 
@@ -196,7 +196,7 @@ func _run():
 
 		saynn("[say=pc]Ты это заслужил.[/say]")
 
-		saynn("На её лице появляется легкая улыбка. Она делает глоток вина и издает прерывистый вздох... почти стон."+str(" You take a sip too.. the fruity taste is so good, you can barely contain it.." if isWine else " You take a sip too.. the taste is so good, you can barely contain it..")+"")
+		saynn("На её лице появляется легкая улыбка. Она делает глоток вина и издает прерывистый вздох... почти стон."+str(" Ты тоже делаешь глоток... фруктовый вкус настолько хорош, что ты едва можешь сдержаться..." if isWine else " Ты тоже делаешь глоток... вкус настолько хорош, что ты едва можешь сдержаться...")+"")
 
 		saynn("[say=eliza]Отдых не был бы таким приятным.. если бы он не был таким паршивым, хах. Наверное, я мазохистка.[/say]")
 
@@ -245,7 +245,7 @@ func _run():
 
 		saynn("[say=eliza]Это... ну, это определенно так.[/say]")
 
-		saynn("[say=pc]Время есть. Я вся во внимании."+str(" and some wine" if isWine else " and some juice")+".[/say]")
+		saynn("[say=pc]Время есть. Я вся во внимании."+str(" и немного вина" if isWine else " и немного сока")+".[/say]")
 
 		saynn("[say=eliza]Ха. Не уверена, что могу доверить тебе такое, мой помощник.[/say]")
 
@@ -271,7 +271,7 @@ func _run():
 
 		saynn("[say=eliza]Это... это такая штука.[/say]")
 
-		saynn("[say=pc]Время есть. Я вся во внимании."+str(" and some wine" if isWine else " and some juice")+".[/say]")
+		saynn("[say=pc]Время есть. Я вся во внимании."+str(" и немного вина" if isWine else " и немного сока")+".[/say]")
 
 		saynn("[say=eliza]Ха. Не уверена, что могу доверить тебе такое, мой помощник.[/say]")
 
@@ -348,7 +348,7 @@ func _run():
 
 		saynn("[say=eliza]Может, ты могла бы?..[/say]")
 
-		saynn("Ты здесь ассистент... так что ты, естественно, киваешь."+str(" You grab the wine bottle and fill both glasses, not until edges.. but pretty close." if isWine else " You grab the wine bottle and fill her glass. Yours gets topped with juice instead.")+"")
+		saynn("Ты здесь ассистент... так что ты, естественно, киваешь."+str(" Ты хватаешь бутылку вина и наполняешь оба бокала — не до самых краев, но почти доверху." if isWine else " Ты хватаешь бутылку вина и наполняешь её бокал. Твой же вместо этого наполняют соком.")+"")
 
 		saynn("Но прежде чем ты успеваешь вернуться к выпивке и отдыху, она накрывает твой бокал своей лапкой.")
 
@@ -372,7 +372,7 @@ func _run():
 
 		saynn("[say=eliza]Но сможешь ли ты доказать свои слова~?[/say]")
 
-		saynn("Она достает маленькую таблетку... на ней нет никаких явных надписей. Она вертит её пальцами, пока та не падает прямо в твой стакан."+str(" of wine" if isWine else " of juice")+" с приятным шлепком.")
+		saynn("Она достает маленькую таблетку... на ней нет никаких явных надписей. Она вертит её пальцами, пока та не падает прямо в твой стакан."+str(" вина" if isWine else " сока")+" с приятным шлепком.")
 
 		saynn("Почти сразу она начинает растворяться. Ты невольно вскидываешь брови.")
 
@@ -1093,7 +1093,7 @@ func _react(_action: String, _args):
 		GM.pc.getInventory().clearSlot(InventorySlot.Eyes)
 
 	if(_action == "after_questions_end"):
-		addMessage("Sex scenes with Eliza are now unlocked for successfully answering all her questions!")
+		addMessage("Секс-сцены с Элизой теперь разблокированы, так как вы успешно ответили на все её вопросы!")
 
 	setState(_action)
 

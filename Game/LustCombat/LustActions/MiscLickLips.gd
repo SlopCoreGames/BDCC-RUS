@@ -17,7 +17,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Облизывать губы"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Show off your tongue and mouth"
+	return "Показать свой язычок и губки"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -25,29 +25,29 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You part your lips and let your tongue peek out. You drag it full circle around your mouth and then smooch the air."
+		text += "Ты слегка приоткрываешь губы, позволяя языку высунуться наружу. Ты проводишь им по всему контуру рта, а затем игриво чмокаешь воздух."
 		text += "\n\n"
 	else:
-		text += "You teasingly bite your lower lip and shift your gaze to the side, putting on a cute lewd expression."
+		text += "Ты дразняще прикусываешь нижнюю губу и отводишь взгляд в сторону, принимая милое и похотливое выражение лица."
 		text += "\n\n"
 	
 	if(RNG.chance(70) && pc.hasEffect(StatusEffect.HasCumInsideMouth)):
-		text += "Some cum is dripping down from your lip. It’s quite obvious to anyone who sees you that you did oral sex not that long ago."
+		text += "По твоей губе стекает капля спермы. Любому, кто на тебя посмотрит, будет очевидно, что ты не так давно занималась оральным сексом."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "Your face is covered with someone’s fluids, you’re looking like quite a wet mess right now. When you stick out your tongue, you get a little taste of it."
+		text += "Твое лицо покрыто чьей-то смазкой, сейчас ты выглядишь как настоящая мокрая распутная девчонка. Когда ты высовываешь язык, ты чувствуешь её на вкус."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.isBlindfolded()):
-		text += "The fact that you’re blindfolded only makes your actions look more hot."
+		text += "Тот факт, что ты с повязкой на глазах, делает твои движения еще более горячими."
 		text += "\n\n"
 
 	if(_lustState.isInBattle() && pc.hasPerk(Perk.NakedStunningLips) && RNG.chance(10 + sqrt(pc.getStat(Stat.Sexiness)))):
 		var enemy:BaseCharacter = _lustState.getEnemyCharacter()
 		if(enemy != null && enemy.getLustLevel() >= 0.3):
 			enemy.addEffect(StatusEffect.Stunned, [1])
-			text += "[b]Enemy is stunned by your lips![/b]"
+			text += "[b]Враг ошеломлен твоими губами![/b]"
 			text += "\n\n"
 
 	return {

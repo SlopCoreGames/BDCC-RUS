@@ -20,7 +20,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Wears a general block uniform with number P-12406. She is of medium height, has brown fur and a ponytail. Her naive eyes are blue."
+	return "Носит стандартную робу заключенной с номером P-12406. Она среднего роста, покрыта коричневым мехом, волосы собраны в хвост. У неё наивные голубые глаза."
 
 func getSpecies():
 	return ["feline"]

@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(Util.roundF(amount, 1))
 	if(amount > 0):
 		text = "+"+text
-	return "Pregnant belly size "+text+"%"
+	return "Размер живота при беременности "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.BellySizeModifier, amount/100.0)

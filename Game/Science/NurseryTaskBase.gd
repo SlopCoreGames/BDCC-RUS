@@ -28,7 +28,7 @@ func getRewardString() -> String:
 	if(sciPoints != 0):
 		if(result != ""):
 			result += ", "
-		result += str(sciPoints)+" science point"+("s" if sciPoints != 1 else "")
+		result += str(sciPoints)+" очко науки"+("s" if sciPoints != 1 else "")
 	return result
 
 func getDeadlineString() -> String:
@@ -57,7 +57,7 @@ func completeSelf():
 		GM.pc.addCredits(credits)
 		GM.main.SCI.addPoints(sciPoints, false)
 		GM.main.SCI.nurseryTasksCompleted += 1
-		GM.main.addMessage("Nursery bounty '"+getName()+"' got completed! Received "+getRewardString())
+		GM.main.addMessage("Награда детского сада '"+getName()+"' получена! Вы получили "+getRewardString())
 
 func handleBountyFluid(_fluidType:String, _amount:float):
 	pass
@@ -104,12 +104,12 @@ static func getCharDescription(theCharID:String) -> String:
 		var pawn:CharacterPawn = GM.main.IS.getPawn(theCharID)
 		var room = GM.world.getRoomByID(pawn.getLocation())
 		if(room == null):
-			desc += "\nCurrent location: Error.."
+			desc += "\nТекущее местоположение: Ошибка.."
 		else:
 			var floorID:String = room.getFloorID()
-			desc += "\nCurrent location: "+getFloorName(floorID)
+			desc += "\nТекущее местоположение: "+getFloorName(floorID)
 	else:
-		desc += "\nCurrent location: Resting (Can meet through the Encounters menu)"
+		desc += "\nТекущее местоположение: Отдых (можно встретить через меню Случайных встреч)"
 	
 	return desc
 

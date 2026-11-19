@@ -5,13 +5,13 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "M1nd H4X"
+	return "ВЗЛОМ РАЗУМА"
 
 func getVisibleDescription():
-	return "You discovered where the config menu button is hidden on hypnotic visors."
+	return "Вы обнаружили, где спрятана кнопка меню конфигурации на гипнотических визорах."
 
 func getMoreDescription():
-	return 	"You can program hypnotic visors to suppress your hypnotic drawbacks."+"\n\n"+\
+	return 	"Теперь вы можете программировать гипнотические визоры так, чтобы они подавляли ваши недостатки гипноза."+"\n\n"+\
 			"When forcing an opponent to wear a hypnotic visor, their hypnosis level will immediately rise to 50% if it is lower."
 
 func getSkillTier():

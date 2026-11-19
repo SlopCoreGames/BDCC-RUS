@@ -1638,7 +1638,7 @@ func _react(_action: String, _args):
 	if(_action == "middle_mirri_leaves"):
 		processTime(3*60)
 		GM.pc.addCredits(250)
-		addMessage("You received 250 credits!")
+		addMessage("Вы получили 250 кредитов!")
 		setFlag("SlaveAuctionModule.mirriNotBlacktail", true)
 		addExperienceToPlayer(250)
 
@@ -1731,12 +1731,12 @@ func _react(_action: String, _args):
 	if(_action == "luxe_badauction_after"):
 		processTime(3*60)
 		GM.pc.addCredits(250)
-		addMessage("You got 250 credits!")
+		addMessage("Вы отхватили 250 кредитов!")
 
 	if(_action == "luxe_mirrisold_good"):
 		processTime(3*60)
 		GM.pc.addCredits(creditsToGive)
-		addMessage("You received "+str(creditsToGive)+" credits!")
+		addMessage("Вы получили "+str(creditsToGive)+" кредитами!")
 
 	if(_action == "badend_restart_luxe"):
 		GM.pc.addPain(-GM.pc.getPain())

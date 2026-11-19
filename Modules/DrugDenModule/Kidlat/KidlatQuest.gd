@@ -30,14 +30,14 @@ func getProgress():
 		else:
 			whatDoStr = "Meet her during a [b]new[/b] drug den run to progress the story."
 	
-	result.append("You found Kidlat, a kitty that runs her little shop down in the drug den. You have currently bought "+str(curPurAm)+" item"+("s" if curPurAm != 1 else "")+" from her.")
+	result.append("Вы нашли Кидлат — кошечку, которая держит свою лавочку в притоне. На данный момент вы купили у неё "+str(curPurAm)+" item"+("s" if curPurAm != 1 else "")+" товаров.")
 	
 	if(s2hap && !s3hap):
 		whatDoStr = ""
-		result.append("Some junkie in the drug den stole Kidlat's uniform! Find it to progress the story. You will probably find some info by beating up one of the boss junkies.")
+		result.append("Какой-то торчок в притоне украл форму Кидлат! Найдите её, чтобы продвинуться по сюжету. Скорее всего, вы узнаете кое-что полезное, если изобьёте одного из главных наркоманов.")
 	
 	if(s3hap):
-		result.append("You returned Kidlat her uniform! She will now sell better items.")
+		result.append("Вы вернули Кидлат её форму! Теперь она будет продавать более качественные вещи.")
 	
 		if(curPurAm < 6):
 			var diff:int = 6 - curPurAm
@@ -47,10 +47,10 @@ func getProgress():
 	
 	if(s4hap && !s5hap):
 		whatDoStr = ""
-		result.append("Kidlat triggered a trap that locked some restraints onto her. Find 2 restraint keys and give them to her in order to progress the story.")
+		result.append("Кидлат сработала на ловушку, и на неё защёлкнулись оковы. Найдите 2 ключа и отдайте их ей, чтобы продвинуться по сюжету.")
 	
 	if(s5hap):
-		result.append("You helped unlock Kidlat's restraints! She will now sell more items.")
+		result.append("Вы помогли освободить Кидлат из оков! Теперь у неё в продаже будет больше товаров.")
 		
 		if(curPurAm < 9):
 			var diff:int = 9 - curPurAm
@@ -60,10 +60,10 @@ func getProgress():
 	
 	if(s6knows && !s6hap):
 		whatDoStr = ""
-		result.append("Kidlat is very horny from alcohol. Find and feed her an anaphrodisiac pill in order to progress the story.")
+		result.append("Кидлат дико развезло от алкоголя, и она чертовски хочет секса. Найдите и дайте ей таблетку-антиафродизиак, чтобы продвинуться по сюжету.")
 		
 	if(s6hap):
-		result.append("You helped to cool Kidlat down! Kidlat will now have better prices for you.")
+		result.append("Вы помогли Кидлат остыть! Теперь цены у неё для вас станут лучше.")
 		
 		if(curPurAm < 12):
 			var diff:int = 12 - curPurAm
@@ -73,18 +73,18 @@ func getProgress():
 	
 	if(s7knows && !s7hap):
 		whatDoStr = ""
-		result.append("Kidlat needs to be protected from the junkie in order to progress the story.")
+		result.append("Чтобы продвинуться по сюжету, вам нужно защитить Кидлат от торчков.")
 		
 	if(s7hap):
 		whatDoStr = ""
-		result.append("You have protected Kidlat from the booze junkie!")
+		result.append("Вы защитили Кидлат от алкашей-наркоманов!")
 		
 		if(!s8hap):
 			whatDoStr = "Find Kidlat in the cellblock in order to progress the story!"
 	
 	if(s8hap):
 		whatDoStr = ""
-		result.append("You can now find Kidlat in the lilac cellblock!")
+		result.append("Теперь Кидлата можно найти в сиреневом блоке камер!")
 	
 	if(whatDoStr != "" && !result.empty()):
 		result[result.size() - 1] += (" " + whatDoStr)

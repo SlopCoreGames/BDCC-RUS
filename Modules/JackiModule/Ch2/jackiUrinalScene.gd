@@ -44,7 +44,7 @@ func _run():
 		addCharacter("gymbully2")
 		addCharacter("gymbully3")
 		playAnimation(StageScene.UrinalPeeing, "idle", {pc="jacki", npc="gymbully", bodyState={naked=true}})
-		saynn("Ты заходишь и застаёшь весьма любопытную сцену. Джеки прикована к одному из писсуаров, а рядом стоит банда из трёх человек..."+str("Quite a familiar group in fact.." if sawBefore else "")+""+str(" You remember them chaining you to one of those urinals too.." if wasRektBefore else "")+"")
+		saynn("Ты заходишь и застаёшь весьма любопытную сцену. Джеки прикована к одному из писсуаров, а рядом стоит банда из трёх человек..."+str("На самом деле, весьма знакомая компания..." if sawBefore else "")+""+str(" Ты помнишь, как они приковали тебя к одному из этих писсуаров..." if wasRektBefore else "")+"")
 
 		saynn("Один из них явно лидер. Пока Джеки изо всех сил пытается вырваться, он зазывает проходящих мимо заключенных, рекламируя её.")
 
@@ -440,7 +440,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "after_first_two")
 	if(state == "after_first_two"):
 		playRandomSexAnim()
-		saynn("И очень скоро заключенные начали обращать на тебя внимание и на услуги, которые ты предоставляешь... Девушки, парни — все интересовались новым «мясным туалетом». Банда наверняка на этом наживалась, забирая по несколько кредитов с каждого, кто решал кончить на тебя..."+str(" Or use you as a piss toilet.." if(OPTIONS.isContentEnabled(ContentType.Watersports)) else "")+"")
+		saynn("И очень скоро заключенные начали обращать на тебя внимание и на услуги, которые ты предоставляешь... Девушки, парни — все интересовались новым «мясным туалетом». Банда наверняка на этом наживалась, забирая по несколько кредитов с каждого, кто решал кончить на тебя..."+str(" Или использовали тебя как стоячий туалет..." if(OPTIONS.isContentEnabled(ContentType.Watersports)) else "")+"")
 
 		saynn("[say=gymbully]Не упусти эту уникальную возможность! Специальный туалет, жаждущий удовлетворить твои самые базовые потребности! Всего 5 кредитов за использование![/say]")
 
@@ -1084,7 +1084,7 @@ func _react(_action: String, _args):
 	if(_action == "after_first_two"):
 		processTime(30*60)
 		GM.pc.addCredits(5)
-		addMessage("You got 5 credits for being a meat toilet..")
+		addMessage("Тебе даже дали 5 кредитов за то, что ты был живым унитазом...")
 
 	if(_action == "pick_stroke"):
 		didAnything = true

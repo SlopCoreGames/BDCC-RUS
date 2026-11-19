@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Таблетка «Морфинг внутрь»"
 	
 func getDescription():
-	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]turn any temporary transformation effects into permanent ones, meaning there will be no way to undo them anymore![/color]"
+	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]превращает любые временные эффекты трансформации в постоянные, а значит, отменить их будет уже невозможно![/color]"
 
 func canUseInCombat():
 	return true
@@ -20,9 +20,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -68,7 +68,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "MorphIn",
+		"name": "Морфинг",
 		"usedName": "a [b][color=#"+Color.cyan.to_html()+"]MorphIn[/color][/b] pill",
 		"desc": getDescription(),
 		"scoreOnSub": 0.1*sqrt(float(sub.getTFTotalStagesSum())) if OPTIONS.isContentEnabled(ContentType.ForcedPermanentTFs) && sub.hasActiveTransformations() else 0.0,

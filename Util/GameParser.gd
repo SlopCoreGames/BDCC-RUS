@@ -27,13 +27,13 @@ func callFuncWrapper(_command: String, _args: Array):
 	if(_command == "pick"):
 		return str(RNG.pick(_args))
 	if(_command in ["penis", "cock", "dick"]):
-		return RNG.pick(["cock", "dick", "member"])
+		return RNG.pick(["член", "ствол", "пенис"])
 	if(_command in ["vagina", "pussy"]):
-		return RNG.pick(["pussy", "cunt", "vagina"])
+		return RNG.pick(["киска", "пизда", "влагалище"])
 	if(_command in ["ass", "butt"]):
-		return RNG.pick(["ass", "butt"])
+		return RNG.pick(["задница", "попа"])
 	if(_command in ["asshole", "tailhole", "butthole", "anus"]):
-		return RNG.pick(["asshole", "tailhole", "anus"])
+		return RNG.pick(["анус", "дырочка", "задний проход"])
 	if(_command == "rahiMaster"):
 		return GM.main.getFlag("RahiModule.rahiPCName", GM.pc.getName())
 	if(_command == "rahiFP" && _args.size() == 2):
@@ -48,11 +48,11 @@ func callFuncWrapper(_command: String, _args: Array):
 	if(_command == "psTentacles"):
 		if(GM.main.PS && GM.main.PS.has_method("getMonsterName")):
 			return GM.main.PS.getMonsterName()
-		return "tentacles"
+		return "щупальца"
 	if(_command == "pcTentacles"):
 		if(GM.main):
 			return GM.main.getCharacter("PCTentacles").getName()
-		return "tentacles"
+		return "щупальца"
 	
 	return "[color=red]!RUNTIME ERROR NO COMMAND FOUND "+_command+" "+str(_args)+"![/color]"
 	
@@ -115,120 +115,120 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 	if(_command == "name" && _args.size() == 0):
 		return object.getName()		
 	if(_command == "nameS" && _args.size() == 0):
-		return object.getName()+"'s"
+		return object.getName()
 	if(_command in ["nameOrYou", "you"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "you"
+			return "ты"
 		else:
 			return object.getName()
 	if(_command in ["youHe"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "you"
+			return "ты"
 		else:
 			return object.heShe()
 	if(_command in ["himYou", "youHim"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "you"
+			return "тебя"
 		else:
 			return object.himHer()
 	if(_command in ["hisYour", "hisYou", "yourHis", "yourTheir", "youHis"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "your"
+			return "твой"
 		else:
 			return object.hisHer()
 	if(_command in ["nameSOrYou", "your"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "your"
+			return "твой"
 		else:
-			return object.getName()+"'s"
+			return object.getName()
 	if(_command in ["yours"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "yours"
+			return "твой"
 		else:
-			return object.getName()+"'s"
+			return object.getName()
 	if(_command in ["hisYours", "yoursHis", "yoursTheirs"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "yours"
+			return "твой"
 		else:
 			return object.hisHers()
 	if(_command in ["youWere"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "were"
+			return "был"
 		else:
-			return "was"
+			return "был"
 	if(_command in ["youWereHeWas", "youHeWas"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "were"
+			return "был"
 		else:
 			return object.wasWere()
 	if(_command in ["youWerent"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "weren't"
+			return "не был"
 		else:
-			return "wasn't"
+			return "не был"
 	if(_command in ["youWerentHeWasnt", "youHeWasnt"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "weren't"
+			return "не был"
 		else:
-			return object.wasWere() + "n't"
+			return "не " + object.wasWere()
 	if(_command in ["youAre"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "are"
+			return ""
 		else:
-			return "is"
+			return ""
 	if(_command in ["youAreHeIs", "youHeIs"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "are"
+			return ""
 		else:
 			return object.isAre()
 	if(_command in ["youArent"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "aren't"
+			return "не"
 		else:
-			return "isn't"
+			return "не"
 	if(_command in ["youArentHeIsnt", "youHeIsnt"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "aren't"
+			return "не"
 		else:
-			return object.isAre() + "n't"
+			return "не"
 	if(_command == "youHave" && _args.size() == 0):
 		if(object.isPlayer()):
-			return "have"
+			return "есть"
 		else:
-			return "has"
+			return "есть"
 	if(_command in ["youHaveHeHas", "youHeHas"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "have"
+			return "есть"
 		else:
 			return object.hasHave()
 	if(_command == "youHavent" && _args.size() == 0):
 		if(object.isPlayer()):
-			return "haven't"
+			return "нет"
 		else:
-			return "hasn't"
+			return "нет"
 	if(_command in ["youHaventHeHasnt", "youHeHasnt"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "haven't"
+			return "нет"
 		else:
-			return object.hasHave() + "n't"
+			return "нет"
 	if(_command == "youDo" && _args.size() == 0):
 		if(object.isPlayer()):
-			return "do"
+			return ""
 		else:
-			return "does"
+			return ""
 	if(_command in ["youDoHeDoes", "youHeDoes"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "do"
+			return ""
 		else:
 			return object.doesDo()
 	if(_command == "youDont" && _args.size() == 0):
 		if(object.isPlayer()):
-			return "don't"
+			return "не"
 		else:
-			return "doesn't"
+			return "не"
 	if(_command in ["youDontHeDoesnt", "youHeDoesnt"] && _args.size() == 0):
 		if(object.isPlayer()):
-			return "don't"
+			return "не"
 		else:
 			return object.doesntDont()
 	if(_command == "youVerb"):
@@ -247,7 +247,7 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 			return object.verbS(str(_args[0]), str(_args[1]))
 	if((_command in ["yourself", "yourselfHimself", "yourselfThemself"]) && _args.size() == 0):
 		if(object.isPlayer()):
-			return "yourself"
+			return "себя"
 		return object.himselfHerself()
 	if(_command == "inmateNumber" && _args.size() == 0 && object.has_method("getInmateNumber")):
 		return object.getInmateNumber()		
@@ -268,15 +268,15 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 	if((_command in ["was", "were", "wasWere"]) && _args.size() == 0):
 		return object.wasWere()
 	if((_command in ["wasnt", "werent", "wasntWerent"]) && _args.size() == 0):
-		return object.wasWere() + "n't"
+		return "не " + object.wasWere()
 	if((_command in ["is", "are", "isAre"]) && _args.size() == 0):
 		return object.isAre()
 	if((_command in ["isnt", "arent", "isntArent"]) && _args.size() == 0):
-		return object.isAre() + "n't"
+		return "не"
 	if((_command in ["has", "have", "hasHave"]) && _args.size() == 0):
 		return object.hasHave()
 	if((_command in ["hasnt", "havent", "hasntHavent"]) && _args.size() == 0):
-		return object.hasHave() + "n't"
+		return "нет"
 	if((_command in ["himself", "herself", "himselfHerself", "themself", "itself"]) && _args.size() == 0):
 		return object.himselfHerself()
 	if(_command in ["verbS", "verb"]):
@@ -287,7 +287,7 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 			
 	if(_command in ["strapon"] && _args.size() == 0 && object.has_method("getBodypartLewdDescriptionAndName")):
 		if(object.isWearingStrapon()):
-			return RNG.pick(["slick ", "rubber ", "shiny rubber ", ""])+"strapon"
+			return RNG.pick(["гладкий ", "резиновый ", "блестящий резиновый ", ""])+"страпон"
 		else:
 			return object.getBodypartLewdDescriptionAndName(BodypartSlot.Penis)
 	if(_command in ["penis", "cock", "dick"] && _args.size() == 0 && object.has_method("getBodypartLewdDescriptionAndName")):
@@ -298,23 +298,23 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 				var theStrapon = object.getWornStrapon()
 				if(theStrapon && theStrapon.has_method("getLewdStraponName")):
 					return theStrapon.getLewdStraponName()
-			return RNG.pick(["strapon", "rubber cock", "rubber dick", "rubber toy"])
+			return RNG.pick(["страпон", "резиновый член", "резиновый ствол", "резиновая игрушка"])
 		return object.getBodypartLewdDescriptionAndName(BodypartSlot.Penis)
 	if(_command in ["penisStraponShort", "penisShort"] && _args.size() == 0 && object.has_method("getBodypartLewdDescriptionAndName")):
 		if(object.isWearingStrapon()):
-			return RNG.pick(["strapon", "rubber cock", "rubber dick", "rubber toy"])
+			return RNG.pick(["страпон", "резиновый член", "резиновый ствол", "резиновая игрушка"])
 		if(object.isWearingChastityCage()):
-			return RNG.pick(["caged ", "caged ", "locked away "])+RNG.pick(["cock", "dick", "member"])
+			return RNG.pick(["запертый ", "запертый в клетке ", "спрятанный в клетку "])+RNG.pick(["член", "ствол", "пенис"])
 		if(object.hasPenis()):
 			if(RNG.chance(50) && object.isReadyToPenetrate()):
-				return RNG.pick(["hard ", "pulsing ", "exposed ", "twitching "]) + RNG.pick(["cock", "dick", "member"])
-			return RNG.pick(["cock", "dick", "member"])
+				return RNG.pick(["твёрдый ", "пульсирующий ", "оголённый ", "подрагивающий "]) + RNG.pick(["член", "ствол", "пенис"])
+			return RNG.pick(["член", "ствол", "пенис"])
 		return "[color=red]NO PENIS OR STRAPON[/color]"
 	if(_command in ["penisType"] && _args.size() == 0 && object.has_method("getBodypartLewdDescriptionAndName")):
 		if(object.isWearingStrapon()):
-			return RNG.pick(["strapon"])
+			return RNG.pick(["страпон"])
 		if(object.hasPenis()):
-			return RNG.pick(["cock", "dick", "member"])
+			return RNG.pick(["член", "ствол", "пенис"])
 		return "[color=red]NO PENIS OR STRAPON[/color]"
 	if(_command in ["aPenis", "aCock", "aDick"] && _args.size() == 0 && object.has_method("getBodypartLewdDescriptionAndNameWithA")):
 		return object.getBodypartLewdDescriptionAndNameWithA(BodypartSlot.Penis)
@@ -380,9 +380,9 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 	
 	# Stubs for the future
 	if(_command == "girlcum" && _args.size() == 0):
-		return "girlcum"
+		return "девичья конча"
 	if(_command == "piss" && _args.size() == 0):
-		return "piss"
+		return "моча"
 	
 	if(_command in ["analStretch", "anusStretch"] && _args.size() == 0):
 		if(!object.hasBodypart(BodypartSlot.Anus)):
@@ -420,7 +420,7 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 	if(_command in ["bodyContents", "bodyMess"] && _args.size() == 0):
 		var thetext = Util.humanReadableList(object.getFluids().getFluidListNames())
 		if(thetext == null || thetext == ""):
-			return "nothing"
+			return "ничего"
 		return thetext
 	
 	if(_command in ["pussyContents", "vaginaContents"] && _args.size() == 0):
@@ -434,7 +434,7 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 			return "[color=red]ERROR:NOVAGINA[/color]"
 		var thetext = Util.humanReadableList(orifice.getFluidListNames())
 		if(thetext == null || thetext == ""):
-			return "nothing"
+			return "ничего"
 		return thetext
 	
 	if(_command in ["buttContents", "assContents", "anusContents"] && _args.size() == 0):
@@ -448,7 +448,7 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 			return "[color=red]ERROR:NOANUS[/color]"
 		var thetext = Util.humanReadableList(orifice.getFluidListNames())
 		if(thetext == null || thetext == ""):
-			return "nothing"
+			return "ничего"
 		return thetext
 	
 	if(_command in ["throatContents"] && _args.size() == 0):
@@ -462,7 +462,7 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 			return "[color=red]ERROR:NOTHROAT[/color]"
 		var thetext = Util.humanReadableList(orifice.getFluidListNames())
 		if(thetext == null || thetext == ""):
-			return "nothing"
+			return "ничего"
 		return thetext
 	
 	if(_command in ["straponContents"] && _args.size() == 0):
@@ -481,12 +481,12 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 				var orifice:Orifice = bodypart.getOrifice()
 				if(orifice == null):
 					continue
-				result.append(orifice.getLoosenessString()+" pussy")
+				result.append(orifice.getLoosenessString()+" киска")
 			elif(partID == BodypartSlot.Anus):
 				var orifice:Orifice = bodypart.getOrifice()
 				if(orifice == null):
 					continue
-				result.append(orifice.getLoosenessString()+" anus")
+				result.append(orifice.getLoosenessString()+" анус")
 			else:
 				result.append(object.getBodypartLewdDescriptionAndName(partID))
 		
@@ -494,72 +494,72 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 	
 	if(_command in ["boy", "boyGirl", "girl"] && _args.size() == 0):
 		if(object.getGender() == Gender.Male):
-			return "boy"
+			return "парень"
 		elif(object.getGender() == Gender.Female):
-			return "girl"
+			return "девушка"
 		elif(object.getGender() == Gender.Other):
-			return "thing"
+			return "существо"
 		else:
 			if(object.getFemininity() >= 50):
-				return "girl"
+				return "девушка"
 			else:
-				return "boy"
+				return "парень"
 	
 	if(_command in ["pcOwner", "pcMaster", "owner"] && _args.size() == 0):
 		if(object.isSlaveToPlayer()):
 			return object.getNpcSlavery().getOwnerName()
-		return "owner"
+		return "хозяин"
 	
 	if(_command in ["slave"] && _args.size() == 0):
 		if(object.isSlaveToPlayer()):
 			return object.getNpcSlavery().getSlaveTypeName().to_lower()
-		return "slave"
+		return "рабыня"
 		
 	if(_command in ["npcSlave"] && _args.size() == 0):
 		var theSpecial = GM.main.RS.getSpecialRelationship(object.getID())
 		if(theSpecial && theSpecial.id=="SoftSlavery" && theSpecial.npcOwner):
 			return theSpecial.npcOwner.getPCName()
-		return "slave"
+		return "рабыня"
 	if(_command in ["cellRoom", "cell"] && _args.size() == 0):
 		if(object.isStaff()):
-			return "room"
+			return "комната"
 		else:
-			return "cell"
+			return "камера"
 	
 	if(_command in ["foot"] && _args.size() == 0):
 		var isDigi = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsDigi)
 		var isHoofs = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsHoofs)
 		if(isDigi):
-			return "paw"
+			return "лапа"
 		if(isHoofs):
-			return "hoof"
-		return "foot"
+			return "копыто"
+		return "нога"
 	
 	if(_command in ["feet"] && _args.size() == 0):
 		var isDigi = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsDigi)
 		var isHoofs = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsHoofs)
 		if(isDigi):
-			return "paws"
+			return "лапы"
 		if(isHoofs):
-			return "hoofs"
-		return "feet"
+			return "копыта"
+		return "ноги"
 	
 	if(_command in ["toes"] && _args.size() == 0):
 		var isDigi = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsDigi)
 		var isHoofs = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsHoofs)
 		if(isDigi):
-			return "toes"
+			return "пальцы"
 		if(isHoofs):
-			return "soles"
-		return "toes"
+			return "копыта"
+		return "пальцы"
 	
 	if(_command in ["toe"] && _args.size() == 0):
 		var isDigi = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsDigi)
 		var isHoofs = object.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsHoofs)
 		if(isDigi):
-			return "toe"
+			return "палец"
 		if(isHoofs):
-			return "sole"
-		return "toe"
+			return "подошва"
+		return "палец"
 	
 	return "[color=red]!RUNTIME ERROR NO COMMAND FOUND "+_obj+"."+_command+" "+str(_args)+"![/color]"

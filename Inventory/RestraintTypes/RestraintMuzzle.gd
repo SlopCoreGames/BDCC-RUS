@@ -31,7 +31,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 		stamina = 5
 	
 		if(failChance(_pc, 40)):
-			text += " Shaking {user.his} head so much makes {user.him} disoriented."
+			text += " От того, что {user.his} так сильно трясет головой, {user.him} дезориентирует."
 			pain = scaleDamage(5)
 	
 	return {"text": text, "damage": damage, "lust": lust, "pain": pain, "stamina": stamina}
@@ -40,10 +40,10 @@ func getResistAnimation():
 	return "struggle_gag"
 
 func getTightLockRequiredItemID() -> String:
-	return "Shiv"
+	return "Шило"
 
 func getTightLockUnlockMessage() -> String:
-	return "The lock is impossible to remove so you just cut through the leather straps that hold the muzzle on your face with a shiv, being careful as to not hurt yourself in the process."
+	return "Замок практически невозможно снять, поэтому приходится просто перерезать шилом кожаные ремни, удерживающие намордник на лице, стараясь при этом не пораниться."
 
 func getForceOnCombatAnim() -> String:
 	return "RestraintFace"

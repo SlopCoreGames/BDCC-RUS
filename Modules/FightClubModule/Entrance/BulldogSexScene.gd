@@ -395,7 +395,7 @@ func _react(_action: String, _args):
 			GM.pc.addTallymarkButt()
 		GM.pc.addSkillExperience(Skill.SexSlave, 50)
 		GM.pc.orgasmFrom("bulldog")
-		addMessage("Bulldog left a tally mark on you..")
+		addMessage("Булдог оставил на тебе зарубку...")
 	
 	if(_action == "heatdrug"):
 		GM.pc.forceIntoHeat()
@@ -413,12 +413,12 @@ func _react(_action: String, _args):
 		GM.pc.addSkillExperience(Skill.SexSlave, 50)
 		GM.pc.orgasmFrom("inmateMale")
 		
-		addMessage("The inmate left a tally mark on your body..")
+		addMessage("Заключенный оставил на твоем теле зарубку...")
 		
 		if(RNG.chance(100)):
 			var zone = BodyWritingsZone.getRandomZone()
 			GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-			addMessage("Somebody also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+			addMessage("Кто-то также оставил сувенир на твоем "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 			
 		
 		GM.pc.addLust(100)
@@ -434,11 +434,11 @@ func _react(_action: String, _args):
 		GM.pc.addTallymarkFace()
 		GM.pc.addTallymarkFace()
 		
-		addMessage("More tally marks are drawn on you, yay")
+		addMessage("На тебе рисуют всё больше зарубок, ура!")
 		if(RNG.chance(100)):
 			var zone = BodyWritingsZone.getRandomZone()
 			GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-			addMessage("Somebody also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+			addMessage("Кто-то также оставил сувенир на твоем "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 			
 	if(_action == "inmatesSecondLoad"):
 		GM.pc.cummedOnBy("inmateMale")
@@ -469,7 +469,7 @@ func _react(_action: String, _args):
 		for _i in range(2):
 			var zone = BodyWritingsZone.getRandomZone()
 			GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-		addMessage("Inmates draw more tally marks and body writings on your body..")
+		addMessage("Заключенные рисуют на твоем теле всё новые зарубки и надписи...")
 			
 	if(_action == "sleep_time"):
 		GM.pc.orgasmFrom("inmateMale")
@@ -508,7 +508,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "I can't really display gangbangs because I lack the animations so you will have to use your imagination during these (more than usually x3). But yeah, it's probably one of the first gang-bangs.. and there are probably not that many of them?..\n\nI don't really remember anything about writing this one x3. But my usual approach is to start pulling down on the details when more than 2 characters are fucking. Otherwise.. takes too long to write, takes too long to read, etc. But it's still more than 'you got gangbanged, try harder next time, lol'. Hopefully these are hot, I don't even know, I rarely get aroused from my own writing.. Sometimes I do ^^ when the situation is just too good/hot"
+	return "Я не могу полноценно отображать гангбэнги из-за нехватки анимаций, так что в эти моменты (которые случаются в 3 раза чаще обычного) тебе придется включать воображение. Но да, это, вероятно, один из первых гангбэнгов... и их, наверное, не так уж много?..\n\n Я толком не помню, как писал эту сцену (в 3 раза больше, чем обычно). Мой привычный подход — прописывать детали подробнее, когда трахаются больше двух персонажей. Иначе... слишком долго писать, слишком долго читать и всё такое. Но это всё равно лучше, чем просто «тебя оттрахали толпой, в следующий раз постарайся лучше, лол». Надеюсь, это получится горячо, хотя я даже не знаю — меня редко возбуждает собственное писательство... Иногда всё же да ^^, когда ситуация получается ну слишком хорошей/горячей."
 
 func hasDevCommentary():
 	return true

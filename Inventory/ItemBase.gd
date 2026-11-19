@@ -96,13 +96,13 @@ func getVisisbleDescription():
 	if(canDye()):
 		text += "\n[color=gray]Color: "+str(clothesColor.to_html(false))+"[/color]"+" [color=#"+clothesColor.to_html(false)+"]###[/color]"
 	if(hasTag(ItemTag.Illegal)):
-		text += "\n[color=red]This item is illegal![/color]"
+		text += "\n[color=red]Этот предмет нелегален![/color]"
 	if(addsIntoxication() > 0.0):
-		text += "\n[color=red]Adds "+str(round(addsIntoxicationToPC()*100.0))+"% intoxication[/color]"
+		text += "\n[color=red]Добавляет "+str(round(addsIntoxicationToPC()*100.0))+"% intoxication[/color]"
 	
 	if(fluids != null):
 		if(fluids.isCapacityLimited()):
-			text += "\n\nMax volume: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml"
+			text += "\n\nМакс. объем: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml"
 		else:
 			text += "\n"
 		if(!fluids.isEmpty()):
@@ -115,7 +115,7 @@ func getVisisbleDescription():
 		var t = getBuffsDurationSeconds()
 		var tstring = Util.getTimeStringHumanReadable(t)
 		
-		text += "\n- For the next "+tstring+":"
+		text += "\n- На следующие "+tstring+":"
 		for buff in timedBuffs:
 			text += "\n" + "[color=#"+buff.getBuffColor().to_html(false)+"]" + buff.getVisibleDescription() + "[/color]"
 	
@@ -123,7 +123,7 @@ func getVisisbleDescription():
 	if(turnBuffs.size() > 0):
 		var duration = getBuffsDurationTurns()
 		
-		text += "\n- Next "+str(duration)+" turns (in-fight only):"
+		text += "\n- Next "+str(duration)+" ходов (только в бою):"
 		for buff in turnBuffs:
 			text += "\n" + "[color=#"+buff.getBuffColor().to_html(false)+"]" + buff.getVisibleDescription() + "[/color]"
 	
@@ -349,33 +349,33 @@ func canSell():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "takes off your "+getVisibleName().to_lower()
+		return "снимает с вас "+getVisibleName().to_lower()
 	else:
-		return "take off your "+getVisibleName().to_lower()
+		return "снимите "+getVisibleName().to_lower()
 
 func getTakingOffVerb(withS):
 	if(withS):
-		return "takes off"
+		return "снимает"
 	else:
-		return "take off"
+		return "снять"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on your "+getVisibleName().to_lower()
+		return "надевает на вас "+getVisibleName().to_lower()
 	else:
-		return "put on your "+getVisibleName().to_lower()
+		return "надеть "+getVisibleName().to_lower()
 
 func getPuttingOnVerb(withS):
 	if(withS):
-		return "puts on"
+		return "надевает"
 	else:
-		return "put on"
+		return "надеть"
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was forced on you!"
+		return getAStackNameCapitalize()+" на тебя нацепили силой!"
 	else:
-		return getAStackNameCapitalize()+" was forced on {receiver.name}!"
+		return getAStackNameCapitalize()+" на {receiver.name} нацепили силой!"
 
 func coversBodyparts():
 	if(itemState != null):
@@ -531,7 +531,7 @@ func addSmartLock(_lockID, _forcer, _addMessage = true):
 	
 	if(_addMessage && getWearer() == GM.pc):
 		if(GM.main != null):
-			GM.main.addMessage("A smartlocked restraint got forced onto you.")
+			GM.main.addMessage("Тебе силой надели смарт-замок.")
 	return true
 
 func getUnriggedParts(_character):
@@ -731,13 +731,13 @@ func getDatapackEditVars():
 		}
 	if(isRestraint() && restraintData != null):
 		result["restraintLevel"] = {
-			"name": "Restraint level",
+			"name": "Уровень фиксации",
 			"type": "number",
 			"int": true,
 			"value": restraintData.getLevel(),
 		}
 		result["aiWontResist"] = {
-			"name": "Disable ai struggle",
+			"name": "Отключить сопротивление ИИ",
 			"type": "checkbox",
 			"value": restraintData.aiWontResist,
 		}
@@ -758,21 +758,21 @@ func getDisplaceActionsFinal(_context:Dictionary) -> Array:
 	var _shouldIncludeDefault:bool = shouldIncludeDefaultTakeOffAction(_context)
 	
 	var result:Array = [
-		displaceAction("def_takeoff", "Take off "+str(getCasualName()), "Take off this item completely", 1.0),
+		displaceAction("def_takeoff", "Снять "+str(getCasualName()), "Полностью снять этот предмет", 1.0),
 	] if _shouldIncludeDefault else []
 	
 	if(_shouldIncludeDefault):
 		if(itemState is ShirtAndShortsState):
 			if(!itemState.isShirtOpened()):
-				result.append(displaceAction("def_openShirt", "Open shirt", "Open the shirt, revealing the breasts"))
+				result.append(displaceAction("def_openShirt", "Расстегнуть рубашку", "Расстегнуть рубашку, обнажая грудь"))
 			if(!itemState.areShortsPulledDown()):
-				result.append(displaceAction("def_pullShorts", "Pull shorts down", "Pull the shorts down, revealing the crotch"))
+				result.append(displaceAction("def_pullShorts", "Спустить шорты", "Спустить шорты, обнажая промежность"))
 		elif(itemState is BraState):
 			if(!itemState.isBraPulledUp()):
-				result.append(displaceAction("def_pullBra", "Pull "+itemState.casualName+" up", "Reveal the breasts!"))
+				result.append(displaceAction("def_pullBra", "Тянуть"+itemState.casualName+" up", "Обнажить грудь!"))
 		elif(itemState is PantiesState):
 			if(!itemState.arePantiesPulledDown()):
-				result.append(displaceAction("def_pullPanties", "Pull "+itemState.casualName+" down", "Reveal the crotch!"))
+				result.append(displaceAction("def_pullPanties", "Тянуть"+itemState.casualName+" down", "Обнажить промежность!"))
 	
 	result.append_array(getDisplaceActions(_context))
 	
@@ -801,7 +801,7 @@ func doDisplaceActionFinal(_id:String, _action:Array, _context:Dictionary) -> Di
 		return {text="{<ACTOR>.You} {<ACTOR>.youVerb('open')} {<TARGET>.yourHis} shirt.",}
 	if(_id == "def_pullShorts"):
 		itemState.pullDownShorts()
-		return {text="{<ACTOR>.You} {<ACTOR>.youVerb('pull')} down {<TARGET>.yourHis} shorts.",}
+		return {text="{<ACTOR>.You} {<ACTOR>.youVerb('pull')} спускает {<TARGET>.yourHis} шорты.",}
 	if(_id == "def_pullBra"):
 		itemState.pullBraUp()
 		return {text="{<ACTOR>.You} {<ACTOR>.youVerb('pull')} {<TARGET>.yourHis} "+itemState.getCasualName()+" up.",}

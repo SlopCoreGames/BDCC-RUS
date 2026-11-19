@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Покорная и плодовитая"
 
 func getVisibleDescription():
-	return "You are a famous breeding toy. Doms will fuck you longer and will never pull out of you during vaginal or anal sex."
+	return "Ты — знаменитая игрушка для размножения. Домы будут трахать тебя дольше обычного и никогда не будут кончать в себя во время вагинального или анального секса."
 
 func getRequiredPerks():
 	return [Perk.FertilityDesireToBreed]

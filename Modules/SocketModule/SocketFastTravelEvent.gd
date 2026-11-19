@@ -11,7 +11,7 @@ func run(_triggerID, _args):
 		return
 
 	if(getModule("SocketModule").hasAnyVentsUnlocked()):
-		addButtonUnlessLate("Vents", "See where you can get to through quickly", "fasttravel")
+		addButtonUnlessLate("Вентиляция", "Посмотрите, куда можно добраться в мгновение ока", "fasttravel")
 
 func getPriority():
 	return 11

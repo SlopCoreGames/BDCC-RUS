@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Запах спермы"
 
 func getVisibleDescription():
-	return "You're used to the taste of cum and even kinda like it. Fighting while having cum inside your belly will remove [color="+DamageType.getColorString(DamageType.Physical)+"]1 pain[/color] each turn"
+	return "Ты уже привыкла к вкусу спермы и даже почти наслаждаешься им. Сражение, когда внутри тебя полно спермы, будет снимать [color="+DamageType.getColorString(DamageType.Physical)+"]1 единицу боли[/color] каждый ход"
 
 func getSkillTier():
 	return 0

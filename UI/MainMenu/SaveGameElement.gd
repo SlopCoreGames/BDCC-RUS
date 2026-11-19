@@ -64,7 +64,7 @@ func setShowLoadButton(m):
 	updateButtons()
 
 func setPickMode():
-	$LoadButton.text = "Pick this save"
+	$LoadButton.text = "Выбрать это сохранение"
 	$LoadButton.visible = true
 	$ExportButton.visible = false
 	$DeleteButton.visible = false

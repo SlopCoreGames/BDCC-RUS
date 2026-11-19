@@ -18,15 +18,15 @@ func getBuffs():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "takes off your jacket and pulls down the pants"
+		return "снимает твою куртку и стягивает штаны"
 	else:
-		return "take off your jacket and pull down the pants"
+		return "снять куртку и стянуть штаны"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on your jacket and the pants"
+		return "надевает твою куртку и штаны"
 	else:
-		return "put on your jacket and the pants"
+		return "надеть куртку и штаны"
 
 func generateItemState():
 	itemState = SimpleRemoveState.new()

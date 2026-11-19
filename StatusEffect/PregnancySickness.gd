@@ -16,10 +16,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Morning sickness"
+	return "Утреннее недомогание"
 
 func getEffectDesc():
-	return "You feel dizzy.. "+Util.getTimeStringHumanReadable(turns)
+	return "Голова идет кругом... "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/headache.png"

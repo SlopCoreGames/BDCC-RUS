@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Осознанный транс"
 
 func getVisibleDescription():
-	return "You've become so accustomed to being hypnotized that a casual observer might not even be able to tell."
+	return "Вы настолько привыкли к гипнозу, что случайный наблюдатель может этого даже не заметить."
 
 func getMoreDescription():
-	return "Reduces the penalties of being hypnotized by an additional 30%.\n\nWhile in "+HypnokinkUtil.tranceIcon()+"Trance, you gain a 10% chance to dodge attacks."
+	return "Снижает штрафы от гипноза еще на 30%.\n\nНаходясь в "+HypnokinkUtil.tranceIcon()+"трансе, вы получаете % c% к шансу уклонения от атак."
 	
 
 func getSkillTier():

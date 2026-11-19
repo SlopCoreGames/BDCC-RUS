@@ -21,7 +21,7 @@ var selectedPerk:String = ""
 func setData(theLevel:int, thePerkList:Array = [], lastSelectedStat:String = ""):
 	statToButton = {}
 	perkToButton = {}
-	level_label.text = "You have reached level "+str(theLevel)+"!"
+	level_label.text = "Вы достигли уровня "+str(theLevel)+"!"
 	
 	selectedStat = lastSelectedStat
 	perkList = thePerkList

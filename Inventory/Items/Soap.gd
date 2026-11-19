@@ -25,21 +25,21 @@ func getPossibleActions():
 	if(GM.pc.getLocation() in ["main_shower1", "main_shower2"]): #Tshhh
 		return [
 			{
-				"name": "Use",
+				"name": "Использовать",
 				"scene": "UseItemLikeInCombatScene",
-				"description": "Use the soap",
+				"description": "Использовать мыло",
 			},
 			{
-				"name": "Drop",
+				"name": "Выбросить",
 				"scene": "DropSoapScene",
-				"description": "Drop the soap",
+				"description": "Выбросить мыло",
 			},
 		]
 	return [
 		{
-			"name": "Use",
+			"name": "Использовать",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Use the soap",
+			"description": "Использовать мыло",
 		},
 	]
 
@@ -72,9 +72,9 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	#var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "Bio-Scrub Soap",
+		"name": "Био-очищающее мыло",
 		"usedName": "soap",
-		"desc": "Cleans the body. Is able to get rid of permanent writings.",
+		"desc": "Очищает тело. Позволяет избавиться от постоянных надписей.",
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": 0.0,
 		"scoreSubScore": 0.5 + _subInfo.getComplyScore(),

@@ -21,11 +21,11 @@ func _run():
 		isVerySlut = getModule("ArticaModule").isVerySlut()
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
-		saynn("Артика так напряжена, что её лапы всё время"+str(" sliding under her uniform and boldly rubbing herself in various places, her shorts bulging as she does it" if !isNaked else " sliding along her curves and rubbing herself in various places, her cock twitching slightly as she does it")+". Ей точно не помешает разрядка... да и тебе тоже, на самом деле.")
+		saynn("Артика так напряжена, что её лапы всё время"+str(" проскальзывает под её униформу и нагло ласкает её в разных местах, при этом её шорты заметно выпирают" if !isNaked else " скользит по её изгибам, лаская её в разных местах, а её член при этом слегка подергивается")+". Ей точно не помешает разрядка... да и тебе тоже, на самом деле.")
 
 		saynn("[say=pc]Давай расслабимся, Артика.[/say]")
 
-		saynn("[say=artica]Размотать?.. Ты хочешь.. ис-использовать меня?.. Ммм-м.."+str(" Make me your c-cock s-sleeve?.." if GM.pc.hasReachablePenis() else " Maybe do s-something with my c-cock or p-pussy..")+"[/say]")
+		saynn("[say=artica]Размотать?.. Ты хочешь.. ис-использовать меня?.. Ммм-м.."+str(" Сделай меня своей з-залубой?.." if GM.pc.hasReachablePenis() else " Может, с-сделаешь что-нибудь с моим ч-членом или п-пиской..")+"[/say]")
 
 		saynn("Такая непринужденная..")
 
@@ -43,15 +43,15 @@ func _run():
 
 		saynn("[say=artica]Свежий воздух.. И повсюду трава..[/say]")
 
-		saynn("[say=pc]Почему бы тебе не лечь? Давай насладимся этим."+str(" Just don't get your uniform dirty, better take it off." if !isNaked else "")+"[/say]")
+		saynn("[say=pc]Почему бы тебе не лечь? Давай насладимся этим."+str(" Только не испачкай униформу, лучше сними её." if !isNaked else "")+"[/say]")
 
-		saynn("[say=artica]Ох.."+str(" Yeah, you're right.. haha." if !isNaked else "")+"[/say]")
+		saynn("[say=artica]Ох.."+str(" Да, ты прав.. ха-ха." if !isNaked else "")+"[/say]")
 
-		saynn(""+str("You help Artica strip her clothes off and then place them on the bench nearby.. After that, you and Artica" if !isNaked else "You and Artica find a good spot and")+" лежали на сочной траве, лицом друг к другу.")
+		saynn(""+str("Ты помогаешь Артике раздеться, а затем кладешь её вещи на ближайшую скамью.. После этого вы с Артикой" if !isNaked else "Вы с Артикой находите подходящее место и")+" лежали на сочной траве, лицом друг к другу.")
 
 		saynn("[say=artica]Почему.. так далеко..[/say]")
 
-		saynn("Её понимает твоё намерение, когда ты осторожно опускаешь одну из своих {pc.feet} на её"+str(" round pregnant" if getCharacter("artica").isVisiblyPregnant() else " slim fluffy")+" живот.. в нижнюю часть.. опасно близко к её щели, из которой уже выглядывает голубой член..")
+		saynn("Её понимает твоё намерение, когда ты осторожно опускаешь одну из своих {pc.feet} на её"+str(" круглая, беременная" if getCharacter("artica").isVisiblyPregnant() else " стройная, пушистая")+" живот.. в нижнюю часть.. опасно близко к её щели, из которой уже выглядывает голубой член..")
 
 		saynn("[say=pc]Понимаешь почему?[/say]")
 
@@ -99,7 +99,7 @@ func _run():
 
 		saynn("[say=pc]Нх.. ах.. да, продолжай ласкать меня лапками..[/say]")
 
-		saynn("Когда ваши движения синхронизируются, вас обоих накрывает волной теплого наслаждения, ваши тела и ноги двигаются в идеальной гармонии... Узел на члене Артики начинает раздуваться, пока ты продолжаешь сжимать его своей {pc.feet}."+str(" At the same time, the fluff feels your cock growing harder under her paw." if GM.pc.hasReachablePenis() else "")+"")
+		saynn("Когда ваши движения синхронизируются, вас обоих накрывает волной теплого наслаждения, ваши тела и ноги двигаются в идеальной гармонии... Узел на члене Артики начинает раздуваться, пока ты продолжаешь сжимать его своей {pc.feet}."+str(" В то же время пушистая чувствует, как твой член твердеет под её лапой." if GM.pc.hasReachablePenis() else "")+"")
 
 		addButton("Быстрее", "Драть её член быстрее", "stroke_cum")
 	if(state == "stroke_cum"):

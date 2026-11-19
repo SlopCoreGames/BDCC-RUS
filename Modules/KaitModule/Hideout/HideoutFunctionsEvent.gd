@@ -37,7 +37,7 @@ func onButton(_method, _args):
 	if(_method == "missionboard"):
 		runScene("KaitMissionSelectorScene")
 	if(_method == "cancelMission"):
-		addMessage("You have cancelled the current mission!")
+		addMessage("Вы отменили текущую миссию!")
 		GM.main.MS.cancelCurrentMission()
 	if(_method == "kaittalk"):
 		runScene("KaitTalkScene")

@@ -8,22 +8,22 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Offer your company to a lonely engineer foxy guy who has trust issues. This content is focused around wholesome interactions and safe BDSM practices."
-	return "Offer your company to a lonely engineer foxy who has trust issues."
+		return "Составьте компанию одинокому инженеру — чертовски обаятельному парню, который привык никому не доверять. Этот контент сосредоточен на милых взаимодействиях и безопасной практике БДСМ."
+	return "Составьте компанию одинокому инженеру — чертовски обаятельному парню, который привык никому не доверять."
 
 func getKinks() -> Array:
 	return [
-		"Player is sub",
+		"Игрок — саб",
 		"BDSM",
-		"Soft submission",
-		"Sex machines",
-		"Milking",
-		"Hypnosis",
-		"Sex (pc is bottom)",
+		"Мягкое подчинение",
+		"Секс-машины",
+		"Дойка",
+		"Гипноз",
+		"Секс (ПК — снизу)",
 	]
 
 func getCompletedDesc() -> String:
-	return "You helped Alex become a better version of himself!"
+	return "Вы помогли Алексу стать лучшей версией себя!"
 
 func getStatus() -> int:
 	if(getFlag("AlexRynardModule.ch2FinalSceneHappened", false)):
@@ -36,12 +36,12 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("Mining_IntroducedToMinning"), "Follow Risha's order and go work in the mines."],
-		[completeIf("PortalPantiesModule.Alex_FirstTimeTalked"), "Talk with Alex Rynard near the entrance to the mines."],
-		[completeIf("PortalPantiesModule.Panties_AskedAlex"), "Ask Alex Rynard if he can help you with credits."],
-		[completeIfBool(getFlag("PortalPantiesModule.Panties_FleshlightsReturnedToAlex", false) || getFlag("PortalPantiesModule.Panties_PcDenied", false)), "Complete the 'portal panties' task that Alex Rynard gives fully or decline him after trying them once."],
-		[completeIf("AlexRynardModule.ch1IntroSceneHappened"), "Ask Alex Rynard in the workshop if he is up for lewd stuff!"],
+		[completeIf("Mining_IntroducedToMinning"), "Выполните приказ Риши и отправляйтесь работать в шахты."],
+		[completeIf("PortalPantiesModule.Alex_FirstTimeTalked"), "Поговорите с Алексом Ринардом у входа в шахты."],
+		[completeIf("PortalPantiesModule.Panties_AskedAlex"), "Спросите Алекса Ринарда, не может ли он помочь вам с кредитами."],
+		[completeIfBool(getFlag("PortalPantiesModule.Panties_FleshlightsReturnedToAlex", false) || getFlag("PortalPantiesModule.Panties_PcDenied", false)), "Полностью выполни задание с «трусиками-порталами», которое дает Алекс Ринард, или откажи ему после первой же попытки."],
+		[completeIf("AlexRynardModule.ch1IntroSceneHappened"), "Спроси Алекса Ринарда в мастерской, не хочет ли он чего-нибудь пошленького!"],
 	]
 
 func getProgressText() -> String:
-	return "Keep visiting Alex Rynard in the workshop and helping him."
+	return "Регулярно навещай Алекса Ринарда в мастерской и помогай ему."

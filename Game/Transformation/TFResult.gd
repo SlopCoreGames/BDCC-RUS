@@ -54,17 +54,17 @@ func getAllTFTexts(connectorStr:String = "\n\n", addMiddleParts:bool = true) -> 
 		actualResults.append(resultText)
 		if(!isLast):
 			actualResults.append(RNG.pick([
-				"But that's not all..",
-				"Something else is happening..",
-				"Just when {npc.youHe} {npc.youHeVerb('think')} that this is over..",
-				"Wait.. More?",
-				"It's not stopping..",
-				"It doesn't stop there..",
-				"This isn't even {npc.yourHis} final form..",
-				"Something else is stirring..",
-				"More surprises await..",
-				"Was that it? No.",
-				"At the same time, something else is happening..",
+				"Но это еще не всё...",
+				"Происходит что-то еще..",
+				"Как раз тогда, когда {npc.youHe} {npc.youHeVerb('think')} кажется, что всё закончилось..",
+				"Погоди.. Еще?",
+				"Оно не останавливается..",
+				"И на этом всё не заканчивается..",
+				"Это даже не {npc.yourHis} финальная форма..",
+				"Что-то еще пробуждается..",
+				"Впереди еще больше сюрпризов..",
+				"Это всё? Нет.",
+				"В то же самое время происходит что-то еще..",
 			]))
 		resLen -=1
 	

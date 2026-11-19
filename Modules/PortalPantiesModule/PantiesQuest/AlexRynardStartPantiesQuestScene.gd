@@ -61,7 +61,7 @@ func _run():
 
 func _react(_action: String, _args):
 	if(_action == "continue"):
-		addMessage("New task has been added")
+		addMessage("Добавлено новое задание")
 	
 	if(_action == "endthescene"):
 		endScene()

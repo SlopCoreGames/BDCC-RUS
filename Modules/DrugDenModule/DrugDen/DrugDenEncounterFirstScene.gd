@@ -22,18 +22,18 @@ func _run():
 		saynn("{npc.His} взгляд резко впивается в тебя, и на мгновение воцаряется нервная тишина.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"The fuck are you lookin’ at, fresh meat? You ain’t one of us. Ain’t got the shakes. The fuck are you doing here?",
-			"You ain't twitchin', ain't sweatin'.. yeah, you ain't one of us. That’s a problem.",
-			"Wrong fuckin’ turn, asshole. Now you’re mine.",
-			"You smell too clean. Let’s fix that with a little blood.",
-			"You think you can just walk in here and not pay the toll? Cute.",
-			"You ain’t here to get high, so that means you’re here to steal. And I hate thieves.",
-			"New fish in the tank, huh? Let's break you in.",
-			"Walkin’ down here like you own the place. Let’s see how cocky you are when you’re beggin’.",
-			"Ain’t nothin’ good waitin’ for you down here, buddy. Just pain.",
-			"Gimme a reason, motherfucker. Just one.",
-			"Oh-ho, fresh meat in the pit? You must be lost, dumbass.",
-			"The fuck you doin’ down here, tourist? Lookin’ for a good time or a bad one?",
+			"Че уставился, свежее мясо? Ты не из наших. Тебя не трясет. Какого хера ты тут забыл?",
+			"Не дергаешься, не потеешь... ага, точно, ты не из наших. Это проблема.",
+			"Не туда, блядь, свернул, мудила. Теперь ты мой.",
+			"От тебя слишком чисто пахнет. Давай исправим это капелькой крови.",
+			"Думаешь, можно просто зайти сюда и не заплатить пошлину? Мило.",
+			"Ты здесь не для того, чтобы кайфануть, значит, пришел воровать. А воров я ненавижу.",
+			"Новенькая рыбка в аквариуме, а? Давай-ка тебя приручим.",
+			"Шагаешь тут так, будто это твое королевство. Посмотрим, какой ты будешь дерзкий, когда начнешь умолять.",
+			"Ничего хорошего тебя здесь не ждет, дружок. Только боль.",
+			"Дай мне повод, ублюдок. Всего один.",
+			"О-хо, свежее мясо в яме? Ты, видать, заблудился, тупица.",
+			"Какого хера ты тут забыл, турист? Ищешь, где развлечься, или где огрести проблем?",
 		])+"[/say]")
 		
 		saynn("Сложно слиться с толпой, если ты сам не торчок... Похоже, тебе придется сразиться с {npc.him}...")

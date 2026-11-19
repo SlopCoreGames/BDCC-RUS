@@ -8,10 +8,10 @@ func getVisibleName():
 	return "Второй сорт"
 
 func getVisibleDescription():
-	return "You love being used as a cum dumpster by different people."
+	return "Тебе обожает, когда разные люди используют тебя как спермоприемник."
 
 func getMoreDescription():
-	return "If you have cum inside your pussy/ass from 2+ different people you get a +20% bonus to your [color="+DamageType.getColorString(DamageType.Lust)+"]Lust damage[/color]."
+	return "Если в твоей киске или заднице находится сперма от 2 и более разных людей, ты получаешь +20% бонус к урону [color="+DamageType.getColorString(DamageType.Lust)+"]Похоти[/color]."
 
 func getSkillTier():
 	return 0

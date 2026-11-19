@@ -11,9 +11,9 @@ func getName():
 	return "Шлюхлок"
 
 func getUnlockDescription():
-	var theText = "Unable to struggle off. Little screen shows this:\n"
+	var theText = "Сбросить не получается. На маленьком экране горит:\n"
 	theText += getQuestProgressText()
-	theText += "\nAlternatively, there are "+str(keyAmount)+" keyholes."
+	theText += "\nКроме того, существуют "+str(keyAmount)+" keyholes."
 	return theText
 
 func getKeysAmountToUnlock() -> int:
@@ -109,7 +109,7 @@ func onSlutTaskCompleted(_theTask):
 		canRemoveReminded = true
 		
 		if(GM.main != null):
-			GM.main.addMessage("One of your SlutLocks beeps and turns green!")
+			GM.main.addMessage("Один из твоих Шлюх-замков пискнул и загорелся зеленым!")
 
 func handleSexEvent(sexEvent:SexEvent):
 	var theChar = getWearer()

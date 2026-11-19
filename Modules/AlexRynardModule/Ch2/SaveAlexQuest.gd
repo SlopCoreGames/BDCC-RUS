@@ -9,13 +9,13 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Alex's prosthetic spine is heavily damaged and requires parts to be repaired. Beat up engineers or raid the engineering bay storage. You need at least 10 parts. You have currently collected "+str(getFlag("AlexRynardModule.ch2FoundParts", 0))+" parts.")
+	result.append("Протез позвоночника Алекса сильно поврежден, и для его ремонта нужны запчасти. Избей инженеров или соверши налет на склад инженерного отсека. Тебе нужно как минимум 10 деталей. Сейчас собрано: "+str(getFlag("AlexRynardModule.ch2FoundParts", 0))+" parts.")
 
 	if(getFlag("AlexRynardModule.ch2FoundParts", 0) >= 10):
-		result.append("You have all the parts required! Go talk to Eliza in the medical lobby!")
+		result.append("Все необходимые детали на месте! Иди и поговори с Элизой в медицинском вестибюле!")
 
 	if(getFlag("AlexRynardModule.ch2FinalSceneHappened")):
-		result.append("Alex can walk again. Good job.")
+		result.append("Алекс снова может ходить. Отличная работа.")
 
 	return result
 

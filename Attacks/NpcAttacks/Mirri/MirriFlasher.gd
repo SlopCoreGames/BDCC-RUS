@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Вспышка"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	_attacker.addEffect("MirriRecharge", [2])
@@ -22,7 +22,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var text = "{attacker.name} сует вам в лицо {attacker.his} флашер и включает его. В глазах всё белеет, вы спотыкаетесь, окончательно дезориентированный."
 	if(_receiver.addEffect("BlindnessAdvanced", [2])):
-		text += " [b]You are blind![/b]"
+		text += " [b]Вы ослепли![/b]"
 	
 	return {
 		text = text,

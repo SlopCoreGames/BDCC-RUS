@@ -24,4 +24,4 @@ func onButton(_method, _args):
 	if(_method == "doTakePill"):
 		GM.main.SCI.clearRandomNpcIDForStrangeDrug()
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("TFPill"))
-		addMessage("You search through their pockets and find a weird-looking pill!")
+		addMessage("Ты шаришь по их карманам и находишь странную на вид таблетку!")

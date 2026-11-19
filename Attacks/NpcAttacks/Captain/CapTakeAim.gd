@@ -10,12 +10,12 @@ func getVisibleName(_context = {}):
 	return "Прицелиться"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} готовится к следующей атаке."
 	text += "\n\n"
-	text += "[say=attacker]"+RNG.pick(["Can't hide from me. I control Everything.", "My aim is always steady.", "How can you not understand? I own you.", "I built this prison with my own tears and blood!"])+"[/say]"
+	text += "[say=attacker]"+RNG.pick(["От меня не спрятаться. Я контролирую всё.", "Мой прицел всегда точен.", "Как ты можешь не понимать? Ты принадлежишь мне.", "Я построил эту тюрьму на своих слезах и крови!"])+"[/say]"
 	
 	_attacker.addEffect(StatusEffect.PrimedAttack, [100])
 	

@@ -20,7 +20,7 @@ func run(_triggerID, _args):
 		saynn("Вы видите какую-то неизвестную кошку, сидящую на скамейке")
 	else:
 		saynn("Вы видите Кошечку, сидящую на скамейке")
-	addButtonUnlessLate("Rahi", "Talk to the feline", "talk")
+	addButtonUnlessLate("Рахи", "Поговорить с кошкообразной", "talk")
 
 func getPriority():
 	return 0

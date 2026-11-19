@@ -10,14 +10,14 @@ func getVisibleName(_context = {}):
 	return "Разрушение оков"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "С сокрушительной мощью, {attacker.name} [b] вырывается из всех БДСМ-оков[/b], сковывавших тело {attacker.his}. Цепи разлетаются вдребезги, а путы рассыпаются под непреклонной силой {attacker.his}, оставляя {attacker.name} на свободе и без всяких преград."
 	text += "\n\n"
-	text += "[say=attacker]"+RNG.pick(["Fuck your shit.", "You think this will stop me? You're so stupid.", "HAHAHA, PATHETIC."])+"[/say]"
+	text += "[say=attacker]"+RNG.pick(["Да пошло всё это дерьмо.", "Думаешь, это меня остановит? Ну ты и тупица.", "ХА-ХА-ХА, ЖАЛКОЕ ЗРЕЛИЩЕ."])+"[/say]"
 	text += "\n\n"
-	text += "{attacker.name} prepares to avoid any other attack."
+	text += "{attacker.name} готовится уклониться от любой другой атаки."
 	
 	_attacker.removeAllRestraints()
 	_attacker.addEffect(StatusEffect.Evading, [1])

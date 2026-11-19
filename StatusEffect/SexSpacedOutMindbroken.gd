@@ -23,10 +23,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Spaced out"
+	return "Рассеянность"
 
 func getEffectDesc():
-	return "Your mind is somewhere else, you are unable to do anything."
+	return "Твой разум где-то далеко, ты совершенно ничего не можешь делать."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/hypnosis.png"

@@ -20,7 +20,7 @@ func getVisibleName():
 	return "Ошибка"
 	
 func getVisibleDescription():
-	return "Not implemented, Let the developer know"
+	return "Не реализовано, сообщите разработчику"
 
 func getDefaultLegs(_gender):
 	return "plantilegs"

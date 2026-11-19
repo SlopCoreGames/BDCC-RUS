@@ -221,7 +221,7 @@ func _react(_action: String, _args):
 
 	if(_action == "accept_task"):
 		processTime(10*60)
-		addMessage("Tasks added!")
+		addMessage("Задачи добавлены!")
 
 	setState(_action)
 
@@ -242,7 +242,7 @@ func loadData(data):
 	askedGrenades = SAVE.loadVar(data, "askedGrenades", false)
 
 func getDevCommentary():
-	return "This scene.. It just shows that Tavi is a bit strange x3. She is not yandere no. But she doesn't exactly know how to act normal. She is doing her best though x3.\n\nWhy did Tavi make so many plans and why did all of them fail? Well, it's a complicated topic, heh. Obviously I wanted to make the game take longer than 20 minutes to complete x3. And if you actually think about it, you and Tavi do make some progress each time ^^. You learn more about the prison, the captain, the staff, Tavi, the world.\n\nIs the world that I'm showing that deep though? I mean.. I went pretty generic with it x3. Megacorporation vs evil group that tries to destroy it. The point of AlphaCorp is that all of the power is in one person's hands. Since the Alpha x3. And Syndicate.. is made out of a few families. Dictatorship vs Oligarchy basically.. Strong vision vs Strong bond. What about democracy?? We're constantly trying to make democracy work but someone always abuses it, sabotaging the voting process or eliminating other candidates. I'm not saying democracy is bad, I think it's great.. Let people choose what they want. But modern tech proved that we are fooled too easily ;-;. And that will only get worse in the future.\n\nSorry about the politics rant x3. I'm not really a political person. I just wanna be happy ;-;"
+	return "Эта сцена... Она просто показывает, что Тави немного странная x3. Она не яндере, нет. Но она не совсем понимает, как вести себя нормально. Хотя она очень старается x3.\n\nПочему Тави построила столько планов и почему все они провалились? Ну, это сложная тема, хех. Очевидно, я хотел, чтобы прохождение игры занимало больше 20 минут x3. И если вдуматься, вы с Тави действительно продвигаетесь вперед каждый раз ^^. Вы узнаете больше о тюрьме, о капитане, о персонале, о Тави, о мире.\n\nНо настолько ли глубок мир, который я показываю? В смысле... я сделал его довольно типичным x3. Мегакорпорация против злой группировки, которая пытается её уничтожить. Суть АльфаКорп в том, что вся власть сосредоточена в руках одного человека. Раз уж он Альфа x3. А Синдикат... состоит из нескольких семей. По сути, диктатура против олигархии... Сильное видение против крепких связей. А как же демократия?? Мы постоянно пытаемся заставить демократию работать, но кто-то всегда злоупотребляет ею, саботируя процесс голосования или устраняя других кандидатов. Я не говорю, что демократия — это плохо, я думаю, она прекрасна... Дайте людям самим выбирать то, что они хотят. Но современные технологии доказали, что нас слишком легко обмануть ;-;. И в будущем всё станет только хуже.\n\nПростите за этот политический поток сознания x3. Я не то чтобы политик. Я просто хочу быть счастливым ;-;"
 
 func hasDevCommentary():
 	return true

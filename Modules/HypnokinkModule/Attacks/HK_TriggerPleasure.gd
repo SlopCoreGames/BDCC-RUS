@@ -9,11 +9,11 @@ func getVisibleName(_context = {}):
 	return "Триггер: Наслаждение"
 	
 func getVisibleDesc(_context = {}):
-	return "Use their posthypnotic suggestion to trigger a wave of pleasure."
+	return "Используйте их постгипнотическое внушение, чтобы вызвать волну наслаждения."
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var texts = [
-		"{attacker.name} snaps {attacker.his} fingers, triggering {receiver.nameS} hypnotic command."
+		"{attacker.name} щелкает пальцами {attacker.his}, активируя гипнотическую команду {receiver.nameS}."
 	]
 	var text = RNG.pick(texts)
 	

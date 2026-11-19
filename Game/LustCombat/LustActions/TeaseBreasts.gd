@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Ласкать грудь"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Rub and squeeze your breasts through the clothing"
+	return "Потирать и сжимать грудь через одежду"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -28,39 +28,39 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "Feeling lusty, you grab your covered {pc.breasts} in your hands and gently squeeze them, letting the finger sink into the cloth. You let out a subtle noise of pleasure as you find your hard nips to be poking out and rubbing against your palms through the clothing. So arousing."
+		text += "Охваченная похотью, ты хватаешь свои прикрытые одеждой {pc.breasts} и нежно сжимаешь их, позволяя пальцам погружаться в ткань. Ты издаешь тихий звук удовольствия, чувствуя, как твердые соски проступают сквозь одежду и трутся о твои ладони. Как же это возбуждает."
 		text += "\n\n"
 	else:
-		text += "You run your hands along your {pc.masc} sides and cup your {pc.breasts}. While massaging your tits, you feel your nipples rubbing against the fabric that covers them, it’s so arousing. You let out some quiet moans and keep rubbing your covered up breasts."
+		text += "Ты проводишь руками по бокам своих {pc.masc} и обхватываешь {pc.breasts}. Массируя сиськи, ты чувствуешь, как соски трутся о ткань, прикрывающую их — это так возбуждает. Ты тихонько стонешь, продолжая теребить свою грудь через одежду."
 		text += "\n\n"
 
 	if(RNG.chance(30) && _lustState.isInBattle()):
-		text += "You try to be turned slightly away from the enemy, just so your teasing has a bigger effect, they don’t have to see you kneading your tits, your noises alone would make anyone horny."
+		text += "Ты стараешься слегка отвернуться от врага, чтобы твоё дразнение произвело больший эффект: им не обязательно видеть, как ты разминаешь свои сиськи, одних твоих звуков хватит, чтобы любого свело с ума от похоти."
 		text += "\n\n"
 		
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "You are covered in cum, including your tits, it feels so good to knead them while little drops of cum slide down your fingers."
+		text += "Ты вся покрыта спермой, в том числе и твоя грудь; так приятно разминать её, пока капли семени стекают по твоим пальцам."
 		text += "\n\n"
 	
 	if(pc.hasVagina() && pc.getLust() >= 50):
-		text += "Teasing your breasts makes you so wet down there, your pussy is leaking with so much female juices.. You don’t stop, you can’t help but to let out a quiet moan."
+		text += "От того, что ты дразнишь свою грудь, там, внизу, становится так мокро, твоя киска буквально течет от женских соков... Ты не останавливаешься, не в силах сдержать тихий стон."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.canBeMilked()):
-		text += "You spot a few dark spots appearing on your clothing, your {pc.breasts} are lactating! You find your nips and press on them a little more, squeezing out more {pc.milk} and making the damp spots bigger."
+		text += "Ты замечаешь несколько темных пятен на своей одежде — твои {pc.breasts} лактируют! Ты находишь свои соски и чуть сильнее надавливаешь на них, выдавливая еще больше {pc.milk} и увеличивая влажные пятна."
 		text += "\n\n"
 	
 	if(RNG.chance(50)):
 		text += RNG.pick([
-			"[say=pc]Feels so good..[/say]",
-			"[say=pc]Fuck yes, I want more..[/say]",
-			"[say=pc]My tits, anyone can see me touching myself.. so hot.[/say]",
-			"[say=pc]Oh fuck..[/say]",
+			"[say=pc]Как же хорошо..[/say]",
+			"[say=pc]Черт возьми, да, хочу еще..[/say]",
+			"[say=pc]Моя сиська... кажется, все видят, как я ласкаю себя... так горячо.[/say]",
+			"[say=pc]Ох, блядь..[/say]",
 		])
 		text += "\n\n"
 		
 		if(_lustState.isInPublic() && !_lustState.isInBattle()):
-			text += "You hope no one heard that.. You try to keep your mouth shut but it feels so good.."
+			text += "Ты надеешься, что никто этого не услышал... Пытаешься держать рот на замке, но ощущения просто зашкаливают..."
 			text += "\n\n"
 
 	return {

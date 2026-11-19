@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(GM.QS.isCompleted("Ch2ElizaQuest") && !getFlag("TaviModule.ch2DrugsGaveToTavi")):
-		addButtonUnlessLate("Drugs", "Show her the drugs you stole", "tavidrugs")
+		addButtonUnlessLate("Наркотики", "Покажи ей украденные наркотики", "tavidrugs")
 
 func getPriority():
 	return 0

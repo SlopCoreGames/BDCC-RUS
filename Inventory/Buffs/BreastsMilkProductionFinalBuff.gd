@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(Util.roundF(amount, 1))
 	if(amount > 0):
 		text = "+"+text
-	return "Milk overall production "+text+"%"
+	return "Общий объем выработки молока "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.BreastsMilkProductionFinal, amount/100.0)

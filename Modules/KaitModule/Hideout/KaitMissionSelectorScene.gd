@@ -24,8 +24,8 @@ func _run():
 		saynn("Ты стоишь перед импровизированной доской заданий. Кейт стоит неподалеку. Что будешь делать?")
 
 		#addButtonAt(9, "Kait", "Talk with the snow leopard", "endthescene")
-		addButtonAt(9, "History", "Look at the history of your missions!", "history_menu")
-		addButtonAt(14, "Step away", "You changed your mind", "endthescene")
+		addButtonAt(9, "История", "Взгляни на историю своих миссий!", "history_menu")
+		addButtonAt(14, "Отойти", "Вы передумали", "endthescene")
 		
 		saynn("[b]=== Миссии ====[/b]")
 		
@@ -100,7 +100,7 @@ func getDebugActions():
 	return [
 	{
 	"id": "completeNext",
-	"name": "Complete next main mission",
+	"name": "Выполнить следующее основное задание",
 	"args": [
 	],
 	},

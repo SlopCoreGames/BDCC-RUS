@@ -9,9 +9,9 @@ script = ExtResource( 3 )
 
 [node name="FightClubRoom" parent="." index="0" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
-roomName = "Entrance"
+roomName = "Вход"
 roomID = "fight_entrance"
-roomDescription = "This dark narrow corridor that was previously used for maintenance, judging from many tubes and wires sprawling around the walls. It leads down to a dark area, with what's clearly a ladder for Zero-Gravity environments on the ceiling."
+roomDescription = "Этот темный узкий коридор, судя по обилию трубок и проводов, разбросанных по стенам, раньше использовался для технического обслуживания. Он ведет вниз, в темную зону, где на потолке отчетливо видна лестница для условий нулевой гравитации."
 roomSprite = 3
 roomColor = 8
 population = 1
@@ -19,28 +19,27 @@ population = 1
 [node name="FightClubRoom2" parent="." index="1" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 0, -64 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_nearentrance"
-roomDescription = "This abandoned maintenance space has had a fence built up around the lower center and used as a fight club arena. Standing here gives you the best view of it."
+roomDescription = "В этом заброшенном техническом помещении в нижней центральной части возвели ограждение, превратив его в арену для бойцовского клуба. Отсюда открывается лучший вид на происходящее."
 roomColor = 8
 population = 1
 
 [node name="FightClubRoom3" parent="." index="2" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -64, -64 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_corner_sw"
-roomDescription = "This whole side of the Underground is covered in all sorts of colorful graffiti, crude art, insults, adverts from lonely inmates looking for love, and of course, slurs. The dim lighting makes further details fade into the darkness."
+roomDescription = "Вся эта часть Подземелья покрыта всевозможными разноцветными граффити: грубыми рисунками, оскорблениями, рекламой одиноких заключенных, ищущих любви, и, конечно же, всяческими ругательствами. Тусклое освещение заставляет мелкие детали растворяться во тьме."
 roomColor = 8
 population = 1
 
 [node name="FightClubRoom4" parent="." index="3" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -64, -128 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_wall_west"
-roomDescription = "This area borders the fence of the arena. On the opposite wall the usual graffiti changes to one’s referencing other former arena fighters. Some describe their fates, others just mentioning their fights, or just plainly admitting they want to knock up or be knocked up by them. Strangely, Whoever was the champion before Avy had their name erased off the wall. A few others stand out too. Nova, obviously, for being a guard. One fighter apparently turned himself in to keep this place a secret. Another would just masturbate every fight. One former champion was known for getting herself pregnant from everyone who lost to her. Another two would keep taking the title of champion from each other for a few years.
-Avy herself is written up here, although from the various surrounding insults, nobody seems to like her more than necessary."
+roomDescription = "Эта зона прилегает к ограждению арены. На противоположной стене привычные граффити сменяются надписями, посвященными бывшим бойцам арены. Одни описывают свои судьбы, другие просто упоминают о своих боях, а третьи в открытую признаются, что хотят трахнуть кого-то или чтобы их трахнули. Странно, но имя того, кто был чемпионом до Авви, стерли со стены. Еще несколько имен бросаются в глаза. Нова — очевидно, из-за того, что она охранница. Один боец, судя по всему, сам сдался властям, чтобы сохранить это место в секрете. Другой просто мастурбировал во время каждого боя. Одна бывшая чемпионка была известна тем, что умудрялась забеременеть от каждого, кто проигрывал ей. Еще двое годами перехватывали титул чемпиона друг у друга.\nСамо имя Авви тоже здесь красуется, хотя, судя по окружающим её оскорблениям, никто не относится к ней теплее, чем того заслуживает."
 roomColor = 8
 population = 1
 
@@ -48,9 +47,9 @@ population = 1
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 0, -128 )
 scale = Vector2( 1, 1 )
-roomName = "The Arena"
+roomName = "Арена"
 roomID = "fight_arena"
-roomDescription = "Abandoned maintenance space that is now made into an arena."
+roomDescription = "Заброшенное техническое помещение, переоборудованное под арену."
 canWest = false
 canNorth = false
 canEast = false
@@ -62,27 +61,27 @@ population = 1
 [node name="FightClubRoom6" parent="." index="5" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -64, -192 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_corner_nw"
-roomDescription = "This whole side of the Underground is covered in all sorts of colorful graffiti, crude art, insults, adverts from lonely inmates looking for love, and of course, slurs. The dim lighting makes further details fade into the darkness."
+roomDescription = "Вся эта часть Подземелья покрыта всевозможными разноцветными граффити: грубыми рисунками, оскорблениями, рекламой одиноких заключенных, ищущих любви, и, конечно же, всяческими ругательствами. Тусклое освещение заставляет мелкие детали растворяться во тьме."
 roomColor = 8
 population = 1
 
 [node name="FightClubRoom13" parent="." index="6" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -128, -192 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_meme"
-roomDescription = "This whole side of the Underground is covered in all sorts of colorful graffiti, crude art, insults, adverts from lonely inmates looking for love, and of course, slurs. The dim lighting makes further details fade into the darkness."
+roomDescription = "Вся эта часть Подземелья покрыта всевозможными разноцветными граффити: грубыми рисунками, оскорблениями, рекламой одиноких заключенных, ищущих любви, и, конечно же, всяческими ругательствами. Тусклое освещение заставляет мелкие детали растворяться во тьме."
 roomColor = 8
 population = 1
 
 [node name="FightClubRoom7" parent="." index="7" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 0, -192 )
-roomName = "Announcer's Balcony"
+roomName = "Ложа комментатора"
 roomID = "fight_announcer"
-roomDescription = "This area of the Underground is raised far above the rest, overlooking the arena fence and the surrounding viewing areas."
+roomDescription = "Эта часть Подземелья возвышается над остальными, позволяя сверху смотреть на ограждение арены и зрительские зоны вокруг."
 roomSprite = 1
 roomColor = 7
 population = 1
@@ -90,18 +89,18 @@ population = 1
 [node name="FightClubRoom8" parent="." index="8" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, -192 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_corner_ne"
-roomDescription = "This corner here is a bit barren, pipes and paint have been stripped from the walls. A few rusted over oxygen canisters are hooked up to the walls and pipes. An old and faded sign says “E.V.A. Lockers” and points to the right."
+roomDescription = "Этот угол выглядит довольно пустым: со стен содрали и краску, и трубы. К стенам и трубам подсоединены несколько проржавевших кислородных баллонов. Старая выцветшая вывеска гласит «Шкафчики Э.В.А.» и указывает направо."
 roomColor = 8
 population = 1
 
 [node name="FightClubRoom9" parent="." index="9" groups=["zone_fightclub", "zone_poi"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, -128 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_neararena"
-roomDescription = "This abandoned maintenance space has had a fence built up around the lower center and used as a fight club arena. Standing here gives you the best view of it. Off to the side is the place where Avy keeps track of the active arena fighters with drawings on the wall. "
+roomDescription = "В этом заброшенном техническом помещении в центре возвели ограждение, превратив его в арену для бойцовского клуба. Отсюда открывается лучший вид на происходящее. Чуть в стороне находится место, где Эви отмечает активных бойцов арены рисунками на стене. "
 roomSprite = 1
 roomColor = 8
 population = 1
@@ -109,29 +108,27 @@ population = 1
 [node name="FightClubRoom10" parent="." index="10" groups=["zone_fightclub"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, -64 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_corner_se"
-roomDescription = "This abandoned maintenance space has had a fence built up around the lower center and used as a fight club arena. Standing here gives you the best view of it, with the most room for inmates to pile in around it."
+roomDescription = "В этом заброшенном техническом помещении в центре возвели ограждение, превратив его в арену для бойцовского клуба. Отсюда открывается лучший вид, и здесь больше всего места, чтобы заключенные могли толпиться вокруг арены."
 roomColor = 8
 population = 1
 
 [node name="FightClubRoom11" parent="." index="11" groups=["zone_fightclub", "zone_prostitution"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, -128 )
-roomName = "The Underground"
+roomName = "Подполье"
 roomID = "fight_wall_east"
-roomDescription = "This old maintence area ends here and the open stone of the yard above is visible here."
+roomDescription = "Здесь эта старая техническая зона заканчивается, и впереди открывается вид на каменный двор сверху."
 roomColor = 8
 population = 1
 
 [node name="FightClubRoom12" parent="." index="12" groups=["zone_fightclub", "zone_poi"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, -192 )
-roomName = "Slutwall"
+roomName = "Стенка для шлюх"
 roomID = "fight_slutwall"
-roomDescription = "This little side area of the arena is so beat up or scrapped it is hard to tell whatever it used to be.
-
-One of the walls here has a row of big round holes in them roughly at your waist level. There are also a few smaller holes near each big one and many chains dangling, ready to be used. Your best guess is.. pretty lewd."
+roomDescription = "Эта небольшая боковая зона арены настолько избита и разорена, что трудно понять, чем она была раньше.\n\nВ одной из стен здесь проделан ряд больших круглых отверстий примерно на уровне талии. Рядом с каждым большим отверстием есть несколько маленьких, а сверху свисает множество цепей, готовых к использованию. Ваше самое точное предположение... довольно пошлое."
 roomColor = 8
 population = 1
 

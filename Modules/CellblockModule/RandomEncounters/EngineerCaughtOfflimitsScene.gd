@@ -131,17 +131,17 @@ func _run():
 		
 	if(state == "intimidate_success"):
 		saynn(RNG.pick([
-			"[say=pc]I think it’s in your best interests to let me go. Understand what I’m saying?[/say]",
-			"[say=pc]If you’re not gonna let me go, I won’t hold back.[/say]",
-			"[say=pc]Trying to stop me will end badly for you. Mhm?[/say]",
+			"[say=pc]Думаю, тебе будет лучше, если ты меня отпустишь. Понимаешь, о чем я?[/say]",
+			"[say=pc]Если не собираешься меня отпускать, я не стану сдерживаться.[/say]",
+			"[say=pc]Попытка остановить меня плохо кончится для тебя. А?[/say]",
 		]))
 		
 		saynn("Инженер слышит твои слова и опускает {npc.his} голову.")
 		
 		saynn(RNG.pick([
-			"[say=npc]Okay, okay, I hear you. Just don’t hit me..[/say]",
-			"[say=npc]I won’t stop you then, you can go..[/say]",
-			"[say=npc]Fine, just don’t break anything..[/say]",
+			"[say=npc]Ладно, ладно, я тебя услышал(а). Только не бей..[/say]",
+			"[say=npc]Тогда я не буду тебя задерживать, иди..[/say]",
+			"[say=npc]Ладно, только ничего не сломай..[/say]",
 			]))
 		
 		saynn("Похоже, уговорить {pc.him} немного развлечься не составит труда.")
@@ -150,17 +150,17 @@ func _run():
 	
 	if(state == "intimidate_fail"):
 		saynn(RNG.pick([
-			"[say=pc]I think it’s in your best interests to let me go. Understand what I’m saying?[/say]",
-			"[say=pc]If you’re not gonna let me go, I won’t hold back.[/say]",
-			"[say=pc]Trying to stop me will end badly for you. Mhm?[/say]",
+			"[say=pc]Думаю, тебе будет лучше, если ты меня отпустишь. Понимаешь, о чем я?[/say]",
+			"[say=pc]Если не собираешься меня отпускать, я не стану сдерживаться.[/say]",
+			"[say=pc]Попытка остановить меня плохо кончится для тебя. А?[/say]",
 		]))
 		
 		saynn("Инженер слышит твои слова и принимает боевую стойку.")
 	
 		saynn(RNG.pick([
-			"[say=npc]I can’t let you go, I’m sorry.[/say]",
-			"[say=npc]If I have to fight you I will.[/say]",
-			"[say=npc]I’m not afraid. I must protect the equipment![/say]",
+			"[say=npc]Я не могу тебя отпустить, прости.[/say]",
+			"[say=npc]Если придется драться — я буду драться.[/say]",
+			"[say=npc]Я не боюсь! Я должен защитить оборудование![/say]",
 		]))
 		
 		saynn("Похоже, назревает драка.")
@@ -178,9 +178,9 @@ func _run():
 			saynn("Но {npc.he} готов(а): он(а) отталкивает тебя и издает яростный рык.")
 
 			saynn(RNG.pick([
-				"[say=npc]Oh, you gonna fucking regret this.[/say]",
-				"[say=npc]I guess I will have to force you then.[/say]",
-				"[say=npc]Bad choice. Prepare for consequences, bitch.[/say]",
+				"[say=npc]О, ты, блять, об этом еще пожалеешь.[/say]",
+				"[say=npc]Значит, придется применить силу.[/say]",
+				"[say=npc]Плохой выбор. Готовься к последствиям, сучка.[/say]",
 			]))
 
 		# (options is fight)
@@ -190,9 +190,9 @@ func _run():
 			saynn("{npc.He} совершенно к этому не был(а) готов(а). Охранник ахает и падает перед тобой замертво.")
 
 			saynn(RNG.pick([
-				"[say=npc]Ow.. Don’t hurt me! You can go.[/say]",
-				"[say=npc]Okay okay, you won.. Do whatever you want..[/say]",
-				"[say=npc]Hey!.. Ow.. you won. What are you gonna do now?..[/say]",
+				"[say=npc]Ой!.. Не делай мне больно! Можешь идти.[/say]",
+				"[say=npc]Ладно, ладно, ты победил... Делай что хочешь...[/say]",
+				"[say=npc]Эй!.. Ой.. ты победил. И что ты теперь будешь делать?..[/say]",
 			]))
 
 			addWonButton()
@@ -201,9 +201,9 @@ func _run():
 			saynn("{npc.He} пошатывается, но быстро восстанавливает равновесие. Охранник явно не в восторге от тебя.")
 
 			saynn(RNG.pick([
-				"[say=npc]Well, I can teach you a lesson or two.[/say]",
-				"[say=npc]Let’s see if this will be enough of a lesson.[/say]",
-				"[say=npc]Resisting will only make this worse for you.[/say]",
+				"[say=npc]Ну, я могу преподать тебе пару уроков.[/say]",
+				"[say=npc]Посмотрим, хватит ли этого урока для тебя.[/say]",
+				"[say=npc]Сопротивление только ухудшит твое положение.[/say]",
 			]))
 
 			addButton("Драться", "Начать бой", "startfight")
@@ -216,16 +216,16 @@ func _run():
 		# (default)
 		if(npcVariation != "mean"):
 			saynn(RNG.pick([
-				"[say=npc]Huh. I think we should have some fun first.[/say]",
-				"[say=npc]We’re gonna have some fun before I throw you out of engineering.[/say]",
-				"[say=npc]I’m gonna throw you out of the engineering block. But first..[/say]",
+				"[say=npc]Хм. Думаю, сначала нам стоит немного развлечься.[/say]",
+				"[say=npc]Мы сейчас повеселимся, прежде чем я вышвырну тебя из инженерного блока.[/say]",
+				"[say=npc]Я вышвырну тебя из инженерного блока. Но сначала...[/say]",
 			]))
 
 		# (if mean)
 		else:
 			saynn(RNG.pick([
-				"[say=npc]You really thought you could win? What a slut.[/say]",
-				"[say=npc]Stupid bitch. Getting fucked is the least of your problems.[/say]",
+				"[say=npc]Ты реально думала, что сможешь победить? Ну и шлюха.[/say]",
+				"[say=npc]Тупая сучка. То, что тебя сейчас оттрахают — это меньшая из твоих проблем.[/say]",
 			]))
 
 		saynn("Раз уж ты больше не можешь сопротивляться, твой единственный выход — сдаться.")
@@ -238,9 +238,9 @@ func _run():
 		saynn("Ты прижимаешь поверженного инженера к полу. {npc.He}, кажется, особо и не сопротивляется.")
 
 		saynn(RNG.pick([
-			"[say=npc]So, what now?[/say]",
-			"[say=npc]You won, fine. Have it your way.[/say]",
-			"[say=npc]Gonna fuck me already?[/say]",
+			"[say=npc]Ну и что теперь?[/say]",
+			"[say=npc]Ладно, ты победила. Будь по-твоему.[/say]",
+			"[say=npc]Уже собираешься меня оттрахать?[/say]",
 		]))
 
 		# (Options are sex or leave them be, Inventory, Struggle)

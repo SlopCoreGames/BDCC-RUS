@@ -12,11 +12,11 @@ func _run():
 		saynn("Позади раздаются шаги — тяжелые, как от массивных сапог. Ты пытаешься спрятаться, но они выдают присутствие преследователя; голос звучит по-женски.")
 
 		saynn("[say=femaleguard_feline]"+RNG.pick([
-			"Hey there~.",
-			"I see a new prey.",
-			"How did you end up here, silly.",
-			"Excuse you.",
-			"Whacha doin’ there.",
+			"Приветик~.",
+			"Вижу новую добычу.",
+			"Как же ты здесь оказался, глупыш?",
+			"С дороги!",
+			"Ну и чем это ты тут занимаешься?",
 		])+"[/say]")
 
 		saynn("Ты оборачиваешься и видишь тюремную стражницу — судя по синей униформе и броне, она из охраны. Она высокая и довольно подтянутая, как и большинство фелинок.")
@@ -24,10 +24,10 @@ func _run():
 		saynn("Она хватает электрошокер и осторожно приближается к тебе.")
 
 		saynn("[say=femaleguard_feline]"+RNG.pick([
-			"Hmmm.. Just give up.",
-			"Put your hands up for me. I give you one chance.",
-			"Don’t make me use my claws, just surrender.",
-			"Time to teach you a lesson.",
+			"Хммм... Просто сдавайся.",
+			"Руки вверх. Даю тебе один шанс.",
+			"Не заставляй меня выпускать когти, просто сдавайся.",
+			"Пора преподать тебе урок.",
 		])+"[/say]")
 
 		saynn("Похоже, назревает драка.")
@@ -43,10 +43,10 @@ func _run():
 		saynn("Охранница подходит к тебе вплотную.")
 
 		saynn("[say=femaleguard_feline]"+RNG.pick([
-			"Time to dispense some justice",
-			"Let’s see if this will be enough of a lesson.",
-			"Resisting will only make this worse for you.",
-			"This is gonna serve as a punishment.",
+			"Пришло время вершить правосудие.",
+			"Посмотрим, хватит ли этого, чтобы преподать тебе урок.",
+			"Сопротивление сделает только хуже.",
+			"Это послужит тебе наказанием.",
 		])+"[/say]")
 
 		saynn("Она достает средства фиксации и пытается надеть их на тебя!")
@@ -63,9 +63,9 @@ func _run():
 			saynn("Ты используешь её же наручники, чтобы сковать её, делая её практически беспомощной.")
 
 		saynn("[say=femaleguard_feline]"+RNG.pick([
-			"Nice moves. What’s your plan?",
-			"Don’t leave me like this, inmate.",
-			"A little kiss before you leave?",
+			"Хорошие движения. Какой у тебя план?",
+			"Не оставляй меня так, заключенная.",
+			"Маленький поцелуй перед уходом?",
 		])+"[/say]")
 
 		addButton("Оставь её в покое", "Просто обчисти её и свали, пока тебя не заметили", "endthescene")

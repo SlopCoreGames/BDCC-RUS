@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Lubed up"
+	return "Смазанная"
 
 func getEffectDesc():
-	return "Your orifices stretch less from insertions and recover faster for "+Util.getTimeStringHumanReadable(turns)
+	return "Ваши отверстия меньше растягиваются при проникновении и быстрее восстанавливаются после "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/transparent-slime.png"

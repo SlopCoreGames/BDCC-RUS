@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Подразнить"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "От задов {attacker.name} у тебя встает."
@@ -29,11 +29,11 @@ func getAnticipationText(_attacker, _receiver):
 	var text = "{attacker.name} соблазнительно наклоняется, демонстрируя свои полосатые трусики."
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([
-		"You don’t really want to fight me, do you?",
-		"Do you like my ass?",
-		"Isn't my butt cute?",
-		"Do you really want to hurt me?",
-		"I'm a kitty cat.. I go meow meow meow.."
+		"Ты ведь на самом деле не хочешь со мной драться, верно?",
+		"Тебе нравится моя задница?",
+		"Разве моя попка не милашка?",
+		"Ты и правда хочешь причинить мне боль?",
+		"Я кошечка... Мяу-мяу-мяу..."
 	])+"[/say]"
 
 	return text

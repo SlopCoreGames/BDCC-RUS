@@ -12,7 +12,7 @@ func run(_triggerID, _args):
 	else:
 		saynn("Здесь можно украсть немного лекарств.")
 		
-		addButtonUnlessLate("Search", "Look around for things to steal", "stealdrugs")
+		addButtonUnlessLate("Искать", "Осмотреться в поисках чего-нибудь ценного", "stealdrugs")
 
 func getPriority():
 	return 0
@@ -28,7 +28,7 @@ func onButton(_method, _args):
 		
 		if(loot.has("items") && loot["items"].size() > 0):
 			runScene("LootingScene", [loot])
-			GM.main.addMessage("You found some drugs to steal")
+			GM.main.addMessage("Вы нашли немного наркоты, которую можно стянуть")
 		else:
-			GM.main.addMessage("You didn't find anything")
+			GM.main.addMessage("Вы ничего не нашли")
 			GM.main.reRun()

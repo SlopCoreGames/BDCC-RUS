@@ -7,7 +7,7 @@ func getName() -> String:
 	return "Наполни меня"
 
 func getDesc(_isFull:bool) -> String:
-	return "Write the description here!"
+	return "Напишите описание здесь!"
 
 func getCompletedDesc() -> String:
 	return ""
@@ -17,13 +17,13 @@ func getKinks() -> Array:
 
 func getStartConditions() -> Array:
 	return [
-		[ContentBoardCondition.Incomplete, "Do a hecking meow"],
-		[ContentBoardCondition.InProgress, "Meow meow"],
-		[ContentBoardCondition.Complete, "Meow meow!!"],
+		[ContentBoardCondition.Incomplete, "Сделай чертовское мяу"],
+		[ContentBoardCondition.InProgress, "Мяу-мяу"],
+		[ContentBoardCondition.Complete, "Мяу-мяу!!"],
 	]
 
 func getProgressText() -> String:
-	return "Do something I dunno"
+	return "Сделай что-нибудь, хрен знает что"
 
 func getStatus() -> int:
 	return ContentBoardStatus.Unknown

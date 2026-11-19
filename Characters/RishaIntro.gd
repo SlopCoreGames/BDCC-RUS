@@ -27,7 +27,7 @@ func getPronounGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A very tall lynx with cyan fur. Usually wears her bulky guard armor. Her feline face features a huge amount of piercings"
+	return "Очень высокая рысь с бирюзовой шерстью. Обычно носит громоздкую стражниковскую броню. Её кошачье лицо украшено кучей пирсинга"
 
 func getSpecies():
 	return ["feline"]
@@ -36,7 +36,7 @@ func _getAttacks():
 	return ["aitaunthumiliate", "stunbatonAttack", "stunbatonStrongAttack", "biteattack", "simplekickattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return getName() + " eyes you out and licks her lips.\n\n"+("[say=risha]You're an easy prey for me. Why don't you just undress and we can have some fun instead~[/say]")+"\n\nRisha then gets into a combat stance and gestures you to come closer. Her heavy armor doesn't seem to impact her mobility one bit, her hand holds the stun baton very tightly\n\nSeems the first move is yours"
+	return getName() + " оглядывает тебя и облизывает губы.\n\n"+("[say=risha]Ты для меня — легкая добыча. Почему бы тебе просто не раздеться, чтобы мы могли повеселиться~[/say]")+"\n\nРиша встает в боевую стойку и жестом приглашает тебя подойти ближе. Её тяжелая броня, кажется, ни капли не мешает подвижности, а руку она крепко сжимает на электрошоковой дубинке\n\nПохоже, первый ход за тобой"
 
 func getThickness() -> int:
 	return 110

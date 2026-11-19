@@ -29,12 +29,12 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Personality"
+	return "Личность"
 
 func getEffectDesc():
 	var personality: Personality = character.getPersonality()
 	if(personality == null):
-		return "Error"
+		return "Ошибка"
 	
 	var texts = []
 	for statID in PersonalityStat.getAll():
@@ -49,15 +49,15 @@ func getEffectDesc():
 		var enslaveQuest:NpcEnslavementQuest = character.getEnslaveQuest()
 		var isQuestCompleted = enslaveQuest.isEverythingCompleted()
 		
-		result += "\n\n[color="+("yellow" if !isQuestCompleted else "green")+"]Enslavement progress:[/color]\n"
+		result += "\n\n[color="+("yellow" if !isQuestCompleted else "green")+"]Прогресс порабощения:[/color]\n"
 		result += enslaveQuest.getQuestProgressText()
 		if(isQuestCompleted):
-			result += "\nReady to be enslaved!"
+			result += "\nГотова к порабощению!"
 
 	if(character.isSlaveToPlayer()):
 		var npcSlave:NpcSlave = character.getNpcSlavery()
 		if(npcSlave.isReadyToBeLeveledUp()):
-			result += "\n\n[color=yellow]Slave level-up progress:[/color]\n"
+			result += "\n\n[color=yellow]Прогресс повышения уровня рабыни:[/color]\n"
 			result += npcSlave.getLevelupTaskProgressText()
 	
 	if(character.isPlayer()):
@@ -74,7 +74,7 @@ func getEffectDesc():
 					result += "\n\n[color="+("yellow" if !isQuestCompleted else "green")+"]"+theOwner.getName()+" tasks:[/color]\n"
 					result += theNpcOwner.getQuestProgressText()
 					if(isQuestCompleted):
-						result += "\nYour owner will be satisfied!"
+						result += "\nТвой хозяин будет доволен!"
 	
 	var specialRelationship = GM.main.RS.getSpecialRelationship(character.getID())
 	if(specialRelationship && specialRelationship.id == "SoftSlavery"):
@@ -85,7 +85,7 @@ func getEffectDesc():
 			result += "\n\n[color="+("yellow" if !isQuestCompleted else "green")+"]"+character.getName()+" needs:[/color]\n"
 			result += theNpcOwner.getOwnerQuestProgressText()
 			if(isQuestCompleted):
-				result += "\nYour owner is satisfied!"
+				result += "\nТвой хозяин доволен!"
 	
 	return result
 

@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Нимфоманка"
 
 func getVisibleDescription():
-	return "Being drunk and having sex is what you love. Preferably at the same time. You get less negative effects from being intoxicated"
+	return "Секс в состоянии опьянения — это то, что ты обожаешь. Желательно — одновременно. Теперь негативные эффекты от алкоголя бьют по тебе слабее."
 
 func getSkillTier():
 	return 1

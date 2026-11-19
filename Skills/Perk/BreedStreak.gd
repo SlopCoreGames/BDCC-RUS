@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Серия заводчика"
 
 func getVisibleDescription():
-	return "Cum inside anyone to start a streak! Each new unique partner extends that streak. The higher your streak, the stronger you become. But your streak ends if you haven't came inside anyone new in 6 hours."
+	return "Кончай в любого партнера, чтобы начать серию! Каждый новый уникальный партнер продлевает твою серию. Чем выше серия, тем ты сильнее. Но серия прерывается, если ты не кончил в кого-то нового в течение 6 часов."
 
 func getSkillTier():
 	return 2

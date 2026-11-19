@@ -94,7 +94,7 @@ margin_top = 48.0
 margin_right = 620.0
 margin_bottom = 70.0
 colorGradient = SubResource( 1 )
-propertyName = "Level 1"
+propertyName = "Уровень 1"
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 74.0
@@ -107,7 +107,7 @@ margin_right = 620.0
 margin_bottom = 103.0
 mouse_filter = 1
 bbcode_enabled = true
-bbcode_text = "Test data"
+bbcode_text = "Тестовые данные"
 text = "Тестовые данные"
 fit_content_height = true
 

@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(getFlag("ElizaModule.s0hap")):
-		addButtonUnlessLate("Bounty board", "Look at the bounty board", "board")
+		addButtonUnlessLate("Доска объявлений", "Посмотреть на доску объявлений", "board")
 	else:
 		addDisabledButton("Доска объявлений", "У вас нет доступа к этому... Может, кто-нибудь здесь сможет его вам дать?")
 

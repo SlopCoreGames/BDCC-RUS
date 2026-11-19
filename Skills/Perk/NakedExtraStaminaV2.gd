@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Первобытная мощь"
 
 func getVisibleDescription():
-	return "You can do so much more when the clothes don't get in the way, you get [b]100[/b] extra stamina if you're COMPLETELY naked"
+	return "Когда одежда не мешает, можно гораздо больше: вы получаете [b]100[/b] дополнительной выносливости, если вы ПОЛНОСТЬЮ голышом"
 
 func getRequiredPerks():
 	return [Perk.NakedExtraStamina]

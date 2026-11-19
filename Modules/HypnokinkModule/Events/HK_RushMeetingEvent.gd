@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(GM.main.getFlag("HypnokinkModule.KnowAboutRush", false) and GM.main.getFlag("HypnokinkModule.OnTheHouseSessions", 0) <= 0):
-		addButtonUnlessLate("Find Rush", "Time to be a hero", "find_rush")
+		addButtonUnlessLate("Найти Раша", "Пора стать героем", "find_rush")
 
 func getPriority():
 	return 0

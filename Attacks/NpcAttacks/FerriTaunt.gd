@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Насмешка Ферри"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "Насмешки Ферри на тебя никак не подействовали"
@@ -25,11 +25,11 @@ func getAnticipationText(_attacker, _receiver):
 
 	text += "\n\n"
 	text += "[say=ferri]"+RNG.pick([
-		"I won’t stop biting, give up!",
-		"My claws are gonna leave some nice scratch marks on your back.",
-		"You won’t break me!",
-		"You are a brat! Not me!",
-		"I won’t stop resisting even if you tie me up and put a vibe to my crotch! Well, maybe I will.. Mew..",
+		"Я не перестану кусаться, сдавайся!",
+		"Мои когти оставят на твоей спине отличные царапины.",
+		"Тебе меня не сломить!",
+		"Это ты ещё сопляк! А не я!",
+		"Я не перестану сопротивляться, даже если ты свяжешь меня и засунешь вибратор мне в промежность! Ну, может, и перестану... Мяу...",
 	])+"[/say]"
 
 	return text

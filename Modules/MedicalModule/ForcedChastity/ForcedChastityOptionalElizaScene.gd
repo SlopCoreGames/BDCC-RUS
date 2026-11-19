@@ -306,7 +306,7 @@ func loadData(data):
 	howMuchMilked = SAVE.loadVar(data, "howMuchMilked", 10.0)
 
 func getDevCommentary():
-	return "I thought the idea of drinking your own cum is kinda cute x3. That's why I used it two times even, heh. But basically I just needed something extra for Eliza to do and couldn't come up with anything interesting x3"
+	return "Мне кажется, идея выпить собственную сперму — это типа мило x3. Поэтому я даже два раза её использовала, хех. Но, по сути, мне просто нужно было подкинуть Элизе какое-нибудь дополнительное занятие, а ничего поинтереснее в голову не пришло x3"
 
 func hasDevCommentary():
 	return true

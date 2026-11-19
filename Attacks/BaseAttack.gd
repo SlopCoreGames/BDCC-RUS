@@ -21,7 +21,7 @@ func getVisibleName(_context = {}):
 	return "Плохая атака"
 	
 func getVisibleDesc(_context = {}):
-	return "Bad attack, let the developer know"
+	return "Плохая атака, сообщите разработчику"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	return {
@@ -36,7 +36,7 @@ func doAttack(_attacker, _receiver, _context = {}):
 	doRequirements(_attacker, _receiver)
 	var result = _doAttack(_attacker, _receiver, _context)
 	if(result is String):
-		result = {text="!OLD STYLE!"+result}
+		result = {text="!СТАРЫЙ СТИЛЬ!"+result}
 	elif(!result.has("text")):
 		result["text"] = "!No attack text provided!"
 	
@@ -133,32 +133,32 @@ func doRequirements(_attacker, _receiver):
 func getRequirementText(req):
 	var reqtype = req[0]
 	if(reqtype == AttackRequirement.Stamina):
-		return "Uses " + str(req[1]) + " stamina"
+		return "Использует " + str(req[1]) + " stamina"
 	if(reqtype == AttackRequirement.FreeArms):
-		return "Arms must be free"
+		return "Руки должны быть свободны"
 	if(reqtype == AttackRequirement.FreeHands):
-		return "Hands must be free"
+		return "Кисти должны быть свободны"
 	if(reqtype == AttackRequirement.FreeLegs):
-		return "Legs must be free"
+		return "Ноги должны быть свободны"
 	if(reqtype == AttackRequirement.CanTalk):
-		return "Mouth must be free"
+		return "Рот должен быть свободен"
 	if(reqtype == AttackRequirement.CanBite):
-		return "Must be able to bite"
+		return "Должна быть возможность кусаться"
 	if(reqtype == AttackRequirement.CanSee):
-		return "Must be able to see"
+		return "Должна быть возможность видеть"
 	if(reqtype == AttackRequirement.CoveredInCum):
-		return "Must be covered in cum/girlcum"
+		return "Должна быть залита спермой/девичьим соком"
 	if(reqtype == AttackRequirement.LustAbove):
-		return "Lust must be above "+str(req[1])
+		return "Похоть должна быть выше "+str(req[1])
 	if(reqtype == AttackRequirement.LustAbovePercent):
 		#return "Lust must be above "+str(int(req[1]*100))+"%"
-		return "Lust must be above "+str(int(req[1]*GM.pc.lustThreshold())) +" ("+str(int(req[1]*100))+"%)"
+		return "Похоть должна быть выше "+str(int(req[1]*GM.pc.lustThreshold())) +" ("+str(int(req[1]*100))+"%)"
 	if(reqtype == AttackRequirement.HasMilk):
-		return "Must have at least "+str(Util.roundF(req[1], 1))+"ml of milk stored in breasts"
+		return "Должно быть минимум "+str(Util.roundF(req[1], 1))+"мл молока в груди"
 	if(reqtype == AttackRequirement.HasReachablePenis):
-		return "Needs a reachable penis"
+		return "Нужен доступный пенис"
 			
-	return "Error: bad requirement:" + reqtype
+	return "Ошибка: неверное условие:" + reqtype
 	
 func getRequirementsColorText(_attacker, _receiver):
 	var reqs = getRequirements()
@@ -207,13 +207,13 @@ func canBeDodgedByPlayer(_attacker, _receiver):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "You're about to be bonked by "+getVisibleName()
+	return "Тебя сейчас отлупит "+getVisibleName()
 
 func canSeeAnticipationTextWhenBlind():
 	return false
 
 func canBlindAnticipationText(_attacker, _receiver):
-	return "{attacker.name} is about to do something but you can't tell what"
+	return "{attacker.name} собирается что-то сделать, но пока неясно что"
 
 func getAIScore(_attacker, _receiver):
 	if(aiCategory == AICategory.Unspecified):
@@ -364,8 +364,8 @@ func getExperience():
 
 func genericMissMessage(_attacker, _receiver, _optionalVerb = "attack"):
 	var randomText = RNG.pick([
-		"{attacker.name} tried to "+_optionalVerb+" {receiver.name} but missed!",
-		"{attacker.name} missed {attacker.his} attack!",
+		"{attacker.name} попыталась "+_optionalVerb+" {receiver.name}, но промахнулась!",
+		"Атака {attacker.his} промахнулась мимо {attacker.name}!",
 		])
 	
 	return {
@@ -375,10 +375,10 @@ func genericMissMessage(_attacker, _receiver, _optionalVerb = "attack"):
 	
 func genericDodgeMessage(_attacker, _receiver, _optionalVerb = "attack"):
 	var randomText = RNG.pick([
-		"{receiver.name} managed to dodge the "+_optionalVerb+".",
-		"{receiver.name} managed to dodge the "+_optionalVerb+" at the last second.",
-		"{receiver.name} managed to avoid being hit.",
-		"{receiver.name} dodged the "+_optionalVerb+" masterfully.",
+		"{receiver.name} удалось уклониться от "+_optionalVerb+".",
+		"{receiver.name} удалось уклониться от "+_optionalVerb+" в последнюю секунду.",
+		"{receiver.name} удалось избежать удара.",
+		"{receiver.name} уклонился от "+_optionalVerb+" masterfully.",
 	])
 	
 	return {

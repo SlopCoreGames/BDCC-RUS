@@ -20,10 +20,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Work out"
+	return "Тренировка"
 
 func getEffectDesc():
-	return "Doing weights exercises made you more powerful for "+Util.getTimeStringHumanReadable(turns)
+	return "Упражнения с весами увеличили вашу силу на "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/biceps.png"

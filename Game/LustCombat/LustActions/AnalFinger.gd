@@ -26,7 +26,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Палец в анус"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Pleasure your backdoor"
+	return "Ублажать свою задницу"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -35,22 +35,22 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "A quiet moan escapes from your lips as you slide your digits back and forth in your butt. The more you do it, the less resistance your {pc.analStretch} anal ring gives you."
+		text += "Тихий стон срывается с твоих губ, когда ты водишь пальцами туда-сюда в своей попке. Чем дольше ты это делаешь, тем меньше сопротивления оказывает твой {pc.analStretch} анальный сфинктер."
 		text += "\n\n"
 	else:
-		text += "You push your digits deeper down your {pc.analStretch} ring, exploring yourself and then pull them back, leaving empty space that slowly closes up."
+		text += "Ты проталкиваешь пальцы глубже в свой {pc.analStretch} анус, исследуя себя, а затем вынимаешь их, оставляя пустоту, которая медленно стягивается."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You make sure to give your enemy the best view of your {pc.thick} ass and {pc.masc} thighs as you finger yourself."
+		text += "Ты стараешься, чтобы враг мог во всех деталях рассмотреть твою {pc.thick} задницу и {pc.masc} бёдра, пока ты ласкаешь себя пальцами."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasEffect(StatusEffect.HasCumInsideAnus)):
-		text += "Your digits get coated with cum of your previous lovers, it acts great as a lube, allowing you to thrust your fingers in and out with greater force."
+		text += "Твои пальцы покрываются спермой твоих прошлых любовников; она служит отличной смазкой, позволяя тебе входить и выходить с еще большей силой."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasPenis()):
-		text += "Your {pc.cock} throbbing as you occasionally brush over your pleasure spot."
+		text += "Твой {pc.cock} пульсирует, когда ты время от времени задеваешь свою точку удовольствия."
 		text += "\n\n"
 
 	return {

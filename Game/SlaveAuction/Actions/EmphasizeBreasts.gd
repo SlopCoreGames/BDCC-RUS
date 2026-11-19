@@ -17,19 +17,19 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 		if(!_char.hasNonFlatBreasts()):
 			saynn("{presenter.You} нежно {presenter.youVerb('cup')} грудные мышцы раба, слегка приподнимая их и привлекая внимание к мужским соскам. {presenter.YourHis} руки скользят по ним, касаясь их так, что это одновременно обнажает и подчеркивает их красоту.")
 			
-			sayPresenter("Neat, aren’t they? For those of you who appreciate raw powerful forms, these are perfect.")
+			sayPresenter("Аккуратные, правда? Для тех, кто ценит мощные, выразительные формы — это идеальный вариант.")
 		else:
 			saynn("{presenter.You} нежно {presenter.youVerb('cup')} {slave.breasts} раба, слегка приподнимая их и привлекая внимание к их изящному размеру. {presenter.YourHis} руки скользят по ним, касаясь их так, что это одновременно обнажает и подчеркивает их красоту.")
 			
-			sayPresenter("Petite, aren’t they? For those of you who appreciate a more subtle form, these are perfect.")
+			sayPresenter("Миленькие, не так ли? Для тех, кто предпочитает более изящные формы — самое то.")
 	if(_slaveTraits.has("BreastsAverage") && _slaveTraits["BreastsAverage"] > 0.0):
 		saynn("{presenter.You} {presenter.youVerb('move')} ближе к {slave.name}, обхватывая {slave.hisHer} {slave.breasts} в {presenter.YourHis} руках и слегка приподнимая их, чтобы дать участникам торгов четкий обзор. {presenter.YouHe} {presenter.youHeVerb('run')} большими пальцами по {slave.hisHer} соскам, чтобы подчеркнуть их упругость.")
 	
-		sayPresenter("These are some beatiful, firm little babies. Trust me, they are incredibly fun to grope.")
+		sayPresenter("Какие же красивые, упругие крошки. Поверьте мне, их невероятно приятно тискать.")
 	if(_slaveTraits.has("BreastsHuge") && _slaveTraits["BreastsHuge"] > 0.0):
 		saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name}, прежде чем сжать {slave.hisHer} {slave.breasts} обеими руками, слегка приподнимая и сжимая их, чтобы подчеркнуть их пышность. {presenter.YouHe} {presenter.youHeVerb('smile')} на участников торгов, продолжая демонстрировать им эти тяжелые изгибы.")
 	
-		sayPresenter("Look at the size of these! Full, soft, and incredibly fun to squeeze. You won’t find a better pair, trust me.")
+		sayPresenter("Вы только гляньте на этот размер! Налитые, мягкие, их так и хочется сжать. Поверьте, лучше пары вы не найдете.")
 
 func getTraits() -> Dictionary:
 	return {

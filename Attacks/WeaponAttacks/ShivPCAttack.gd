@@ -40,7 +40,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = RNG.pick(texts)
 	
 	if(_receiver.addEffect(StatusEffect.Bleeding)):
-		text += " {receiver.name} is now [color=red]bleeding[/color]"
+		text += " {receiver.name} теперь [color=red]кровоточит[/color]"
 
 	return {
 		text = text,

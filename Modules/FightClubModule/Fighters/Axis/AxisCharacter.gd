@@ -72,7 +72,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Muscular white wolf with red eyes. Wears lilac uniform"
+	return "Мускулистый белый волк с красными глазами. Одет в лиловую форму"
 
 func getSpecies():
 	return ["canine"]

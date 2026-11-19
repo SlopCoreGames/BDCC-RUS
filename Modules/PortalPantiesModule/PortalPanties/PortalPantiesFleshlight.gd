@@ -12,9 +12,9 @@ func getDescription():
 func getPossibleActions():
 	return [
 		{
-			"name": "Activate",
+			"name": "Активировать",
 			"scene": "UsePortalPantiesFleshlight",
-			"description": "See what the fleshlight can do",
+			"description": "Посмотреть, на что способна эта игрушка",
 			"onlyWhenCalm": true,
 		},
 	]

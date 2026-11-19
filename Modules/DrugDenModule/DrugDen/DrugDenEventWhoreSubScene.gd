@@ -50,18 +50,18 @@ func _run():
 		saynn("Когда ты идешь по тускло освещенным туннелям, тебе попадается торчок. Этот вроде не настроен на агрессию, а?")
 		
 		saynn("[say=npc]"+RNG.pick([  
-			"Well, well.. look at this. Ain’t often we get fresh meat down here. I got an offer for you.",  
-			"Hey.. um.. I got an offer for you.",  
-			"Stop right there, fresh blood. I got a little offer for a beast like you.",  
-			"You don’t let off the same rotten scent that everyone else does. I got an offer for you.",  
+			"Ну надо же... гляньте-ка. Нечасто к нам сюда свежее мясо забредает. У меня есть для тебя предложение.",  
+			"Эй.. эм.. у меня есть для тебя предложение.",  
+			"Стой, где стоишь, новенький. У меня есть небольшое предложение для такого зверя, как ты.",  
+			"От тебя не несет той же гнилью, что и от всех остальных. У меня есть для тебя предложение.",  
 		])+"[/say]")  
 		
 		saynn("Торчок показывает тебе [b]"+itemName+"[/b] в {npc.his} руке.")
 		
 		saynn("[say=npc]"+RNG.pick([  
-			"I’m feeling needy. You give me a good fuck, and this is yours.",  
-			"You want this? Then come over here and give me a ride.",  
-			"If you want this, you’re gonna have to put in some work and make me feel real good.",  
+			"Что-то я раззадорилась. Если хорошенько меня оттрахаешь, это будет твоим.",  
+			"Хочешь это? Тогда иди сюда и прокатай меня.",  
+			"Если хочешь это, придется постараться и доставить мне истинное удовольствие.",  
 		])+"[/say]")  
 		
 		saynn("{npc.He} даст тебе предмет, если ты заставишь {npc.him} кончить как минимум дважды и оставишь {npc.him} удовлетворенной после секса...")
@@ -81,11 +81,11 @@ func _run():
 		saynn("После секса торчок дает тебе "+itemName+"!")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Not bad..",
-			"Thanks, that scratched the itch.",
-			"You earned it, big {pc.boy}.",
-			"I hope I will run into you again, big {pc.boy}.",
-			"Here you go. Thankies!",
+			"Неплохо..",
+			"Спасибо, прямо зуд уняло.",
+			"Ты заслужил это, здоровяк {pc.boy}.",
+			"Надеюсь, мы еще встретимся, здоровяк {pc.boy}.",
+			"Вот, держи. Спасибочки!",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Пора идти", "endthescene")
@@ -97,15 +97,15 @@ func _run():
 		
 		if(reasonFail == "orgasms"):
 			saynn("[say=npc]"+RNG.pick([
-				"That sucked! You could have made me cum more, you know?",
-				"So weak, I barely even came..",
-				"You think you can get away without making me cum? Fuck you!"
+				"Отстой! Ты мог бы довести меня до оргазма получше, знаешь ли!",
+				"Так слабо... я толком и не кончила даже...",
+				"Думаешь, можно просто так уйти, не доведя меня до кончика? Пошел нахуй!"
 			])+"[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"That sucked! You're left me unsatisfied, you fucker.",
-				"You're so bad at making others feel good, why would I give you anything.",
-				"Fuck off, you suck.",
+				"Хреново вышло! Ты оставил меня неудовлетворенной, ублюдок.",
+				"Ты так паршиво умеешь доставлять удовольствие, с чего бы мне тебе что-то давать?",
+				"Отъебись, ты никчемный.",
 			])+"[/say]")
 		
 		

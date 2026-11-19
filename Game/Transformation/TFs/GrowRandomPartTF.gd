@@ -55,7 +55,7 @@ func getPillOptions() -> Dictionary:
 	return {
 		"specificPartID": {
 			name = "Часть тела",
-			desc = "What bodypart should the drug grow.",
+			desc = "Какую часть тела должен раздуть препарат?",
 			value = "",
 			values = theParts,
 		},
@@ -126,7 +126,7 @@ func doProgress(_context:Dictionary) -> Dictionary:
 
 func reactProgress(_context:Dictionary, _result:TFResult):
 	if(getStage() == 0):
-		addText("{npc.YouHe} {npc.youHeVerb('feel')} a strange warmth spreading through {npc.yourHis} [b]whole body[/b]. {npc.YouHe} {npc.youHeVerb('feel')} itching in completely random spots.")
+		addText("{npc.YouHe} {npc.youHeVerb('feel')} странное тепло разливается по {npc.yourHis} [b]всему телу[/b]. {npc.YouHe} {npc.youHeVerb('feel')} зуд в совершенно случайных местах.")
 		return
 	addText(_result.getAllTFTexts())
 	

@@ -10,9 +10,9 @@ func getVisibleName():
 	return "Использованный презерватив"
 	
 func getDescription():
-	var theText = "A condom that was used. Can be thrown if filled."
+	var theText = "Использованный презерватив. Если он наполнен, его можно выбросить."
 	if(lastUser != ""):
-		theText += "\nFilled by: "+str(lastUser)
+		theText += "\nНаполнен: "+str(lastUser)
 	return theText
 
 func getClothingSlot():
@@ -70,19 +70,19 @@ func getTags():
 func getPossibleActions():
 	return [
 		{
-			"name": "Transfer fluids",
+			"name": "Перекачать жидкость",
 			"scene": "FluidTransferScene",
-			"description": "Transfer the fluids between fluid containers",
+			"description": "Перелить жидкость из одного контейнера в другой",
 		},
 		{
-			"name": "Drink from",
+			"name": "Выпить из",
 			"scene": "DrinkFromScene",
-			"description": "Swallow the contents of this item",
+			"description": "Проглотить содержимое этого предмета",
 		},
 		{
-			"name": "Dispose",
+			"name": "Утилизировать",
 			"scene": "DisposeOfAnItemScene",
-			"description": "Throw out this condom",
+			"description": "Выбросить этот презерватив",
 		},
 	]
 

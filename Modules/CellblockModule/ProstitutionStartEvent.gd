@@ -10,7 +10,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	saynn("Похоже, это место, где тусуются все шлюхи..")
-	addButtonUnlessLate("Prostitution", "Try to offer your body and earn some credits..", "start")
+	addButtonUnlessLate("Проституция", "Попробуй предложить свое тело и заработать немного кредитов...", "start")
 
 func getPriority():
 	return 6

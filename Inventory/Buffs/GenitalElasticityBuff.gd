@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Genital elasticity "+text+"%"
+	return "Эластичность гениталий "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.genitalElasticity += amount / 100.0

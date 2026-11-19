@@ -49,18 +49,18 @@ func _run():
 		saynn("Когда ты идешь по тускло освещенным туннелям, тебе попадается торчок. Этот вроде не настроен на агрессию, а?")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Well, well.. look at this. Ain’t often we get fresh meat down here. I got an offer for you.",
-			"That's a nice ass you got there. I got an offer for you.",
-			"Stop right there, fresh blood. I got a little offer for a slut like you.",
-			"You don't let off the same rotten scent that everyone else does. I got an offer for you.",
+			"Ну надо же... гляньте-ка. Нечасто к нам сюда свежее мясо забредает. У меня есть для тебя предложение.",
+			"А жопка у тебя что надо. Есть для тебя предложение.",
+			"А ну стоять, новенькая. У меня есть небольшое предложение для такой шлюхи, как ты.",
+			"От тебя не несет той же гнилью, что и от остальных. У меня есть для тебя предложение.",
 		])+"[/say]")
 		
 		saynn("Торчок показывает тебе [b]"+itemName+"[/b] в {npc.his} руке.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"I’m feeling generous. I will give you this if you bend over for me.",
-			"Do you want this? Spread your legs for me.",
-			"If you want this, you will have to spread your legs for me.",
+			"Что-то я сегодня щедрая. Отдам тебе это, если ты сейчас же нагнёшься передо мной.",
+			"Хочешь это? А ну раздвинь ноги.",
+			"Если хочешь это, тебе придется раздвинуть ноги.",
 		])+"[/say]")
 		
 		saynn("Похоже, {npc.he} хочет трахнуть тебя...")
@@ -80,11 +80,11 @@ func _run():
 		saynn("После секса торчок дает тебе "+itemName+"!")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Not bad for a cheap whore.",
-			"Here is your prize, little whore.",
-			"You earned it, little whore.",
-			"I hope I will run into you again, little slut.",
-			"Good slut. Here you go.",
+			"Неплохо для дешёвой шлюхи.",
+			"Вот твой приз, маленькая шлюшка.",
+			"Ты это заслужила, маленькая шлюшка.",
+			"Надеюсь, мы еще встретимся, маленькая шлюшка.",
+			"Хорошая сучка. Вот, держи.",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Пора идти", "endthescene")
@@ -95,9 +95,9 @@ func _run():
 		saynn("Наркоман отказывается отдавать тебе предмет!")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"That sucked! Fuck you, go away.",
-			"You're such a bad whore, why would I give you anything.",
-			"Fuck off, you suck as a whore.",
+			"Ну и дрянь же ты! Пошла нахуй, проваливай.",
+			"Ты такая плохая шлюха, с чего бы мне тебе что-то давать?",
+			"Отъебись, из тебя никудышная шлюха.",
 		])+"[/say]")
 		
 		

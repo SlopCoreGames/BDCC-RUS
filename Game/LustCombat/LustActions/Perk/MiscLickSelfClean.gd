@@ -31,7 +31,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Вылизать себя дочиста"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Use your tongue to clean yourself. Swallowing different fluids will provide different effects."
+	return "Используй язык, чтобы очистить себя. Проглатывание различных жидкостей дает разные эффекты."
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -51,14 +51,14 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You stick your tongue out and begin dragging it along the curves of your {pc.masc} body that you can reach. Then you gather the rest of the mess onto your fingers and lick them clean."
+		text += "Ты высовываешь язык и начинаешь проводить им по всем доступным изгибам своего {pc.masc} тела. Затем ты собираешь остатки грязи на пальцы и слизываешь их дочиста."
 		text += "\n\n"
 	else:
-		text += "You begin to gather the fluids off your body onto your tongue and then enjoy swallowing all of it. You suck on all of your digits to make sure they are clean."
+		text += "Ты начинаешь собирать жидкости со своего тела языком, а затем с наслаждением проглатываешь всё до последней капли. Ты посасываешь каждый палец, чтобы убедиться, что они идеально чистые."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You make sure to show off how much you enjoy licking fluids off yourself while keeping an eye contact with your enemy."
+		text += "Ты стараешься вовсю демонстрировать, как сильно тебе нравится слизывать выделения с самой себя, не сводя при этом глаз со своего противника."
 		text += "\n\n"
 
 	text += Util.join(extraMessages, " ")+"\n\n"

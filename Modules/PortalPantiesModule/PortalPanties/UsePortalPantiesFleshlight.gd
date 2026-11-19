@@ -122,30 +122,30 @@ func _run():
 		if(!isRepeat):
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You carefully press your lips against the sweet folds of that pussy.. and instantly feel them between your legs. Such a strange sensation.. and yet, the idea of licking yourself makes you wet in seconds..",
-					"You trace your tongue along the sensitive folds.. and feel the sensation echo between your legs. A cute moan escapes you as your slit becomes wet instantly. Feeling your warm breath on your pussy is so strange..",
+					"Ты осторожно прижимаешься губами к сладким складкам этой киски... и мгновенно чувствуешь их между своих ног. Такое странное ощущение... и всё же, от одной мысли о том, что ты лижешь саму себя, ты намокаешь за считанные секунды...",
+					"Ты проводишь языком по чувствительным складкам... и чувствуешь, как это ощущение отзывается между твоих ног. Из твоих уст вырывается милый стон, а щель мгновенно становится влажной. Чувствовать своё теплое дыхание на своей киске — так странно...",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You carefully press your lips against the sweet hot folds of that {npc.pussyStretch} pussy.. and feel it twitch a bit in response. And that makes you eager to lick it more, tasting the wetness.",
-					"You trace the tip of your tongue along the sensitive folds.. and feel them becoming wet. So you lick more.",
+					"Ты осторожно прижимаешься губами к сладким горячим складкам этой {npc.pussyStretch} киски... и чувствуешь, как она слегка подергивается в ответ. Это заставляет тебя жаждать лизать её еще сильнее, смакуя влагу.",
+					"Ты проводишь кончиком языка по чувствительным складкам... и чувствуешь, как они становятся влажными. И тогда ты начинаешь лизать еще интенсивнее.",
 				]))
 		else:	
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You lick your own {pussy}, tasting your juices and watching it clench.",
-					"You thrust your tongue between the folds and tongue-fuck your pussy, forcing moans out of yourself.",
-					"The taste of your wet drippy {pussy} is so good that you can’t stop licking it.",
-					"You focus on the clit for a bit, rubbing it with your tongue left and right. Makes you squirm so much..",
-					"You prod the pussy entrance a few times and then lap up at your inner walls, panting softly while doing so.",
+					"Ты лижешь свою собственную {pussy}, смакуя свои соки и наблюдая за тем, как она сжимается.",
+					"Ты просовываешь язык между складок и начинаешь языком трахать свою киску, вырывая из себя стоны.",
+					"Вкус твоей мокрой, сочащейся {pussy} настолько хорош, что ты не можешь перестать её лизать.",
+					"Ты на время сосредотачиваешься на клиторе, водя по нему языком влево и вправо. От этого ты начинаешь так сильно ерзать...",
+					"Ты несколько раз тычешь в разрез киски, а затем начинаешь слизывать влагу со своих внутренних стенок, тихонько посапывая в процессе.",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You lick that {pussy} good, tasting the juices and watching it clench.",
-					"You thrust your tongue between the {npc.pussyStretch} folds and tongue-fuck that pussy for a bit, making the wet inner walls clench.",
-					"Licking that wet drippy {pussy} is so fun that you can’t stop doing it.",
-					"You focus on the clit for a bit, rubbing it with your tongue left and right. The whole {pussy} pulses while you do that.",
-					"You prod the pussy entrance a few times and then lap up at the inner walls while warmly breathing onto the wet folds.",
+					"Ты так сладко лижешь эту {pussy}, пробуя сок на вкус и наблюдая, как она сжимается.",
+					"Ты просовываешь язык между складок {npc.pussyStretch} и немного трахаешь эту киску языком, заставляя влажные внутренние стенки пульсировать.",
+					"Лизать эту мокрую, сочащуюся {pussy} настолько весело, что ты просто не можешь остановиться.",
+					"Ты на время сосредотачиваешься на клиторе, водя по нему языком влево и вправо. Пока ты это делаешь, вся {pussy} пульсирует.",
+					"Ты несколько раз тычешь в разрез киски, а затем слизываешь влагу со внутренних стенок, тепло дыша на мокрые складки.",
 				]))
 		
 		if(extraText != ""):
@@ -169,13 +169,13 @@ func _run():
 		
 		if(isPCPortal()):
 			saynn(RNG.pick([
-				"Your own tongue pushes you past the edge, a wave of pleasure courses through you, making you moan and squirm while your {pussy} clenches and releases a fountain of juices. Swallowing your own girlcum.. so good..",
-				"You arch your back and moan passionately while your pussy pulsates and releases a strong current of transparent fluids directly into your mouth. You can’t stop squirming while licking yourself clean..",
+				"Твой собственный язык доводит тебя до самого края; волна наслаждения проносится сквозь тебя, заставляя стонать и извиваться, пока твоя {pussy} сжимается и извергает фонтан соков. Глотать собственную девичью сперму... так хорошо...",
+				"Ты выгибаешь спину и страстно стонешь, пока твоя киска пульсирует, выбрасывая мощный поток прозрачной жидкости прямо тебе в рот. Ты не можешь перестать извиваться, вылизывая себя дочиста...",
 			]))
 		else:
 			saynn(RNG.pick([
-				"You feel that pussy clenching and pulsing.. while you keep licking and rubbing it. And soon enough, it releases a fountain of juices that you are quick to lap up.",
-				"Suddenly, the {pussy} starts pulsing hard.. before squirting all over your face and tongue, the transparent fluids going down your throat.",
+				"Ты чувствуешь, как киска сжимается и пульсирует, пока ты продолжаешь лизать и ласкать её. И вскоре она извергает фонтан соков, который ты тут же начинаешь жадно слизывать.",
+				"Внезапно {pussy} начинает сильно пульсировать... а затем из него фонтаном брызжет прямо тебе на лицо и язык, и прозрачная жидкость стекает тебе в горло.",
 			]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_vagina")
@@ -185,11 +185,11 @@ func _run():
 		
 		if(isPCPortal()):
 			saynn(RNG.pick([
-				"You press your lips against your own {pussy}.. and then spit "+(extraText)+" into it. So kinky..",
+				"Ты прижимаешься губами к своему {pussy}... а затем плюешь "+(extraText)+" прямо в него. Какая извращенная штучка...",
 			]))
 		else:
 			saynn(RNG.pick([
-				"You press your lips against your that {pussy}.. and then spit "+(extraText)+" into it.",
+				"Ты прижимаешься губами к этому {pussy}... а затем плюешь "+(extraText)+" прямо в него.",
 			]))
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_vagina")
 
@@ -230,30 +230,30 @@ func _run():
 		if(!isRepeat):
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You carefully press your lips against the clenched star.. and instantly feel them on your tailhole. Such a strange sensation.. and yet, the idea of rimming yourself makes you quite horny..",
-					"You trace your tongue along the sensitive clenched pucker.. and feel the sensation echo inside you. A cute moan escapes you. Feeling your warm breath on your tailhole is so strange..",
+					"Ты осторожно прижимаешься губами к сжатой «звездочке»... и мгновенно чувствуешь их на своем анусе. Такое странное ощущение... и всё же, мысль о том, чтобы пориммить саму себя, заводит тебя до чертиков.",
+					"Ты проводишь кончиком языка по чувствительному сжатому сфинктеру... и чувствуешь, как это ощущение отзывается внутри тебя. У тебя вырывается милый стон. Чувствовать свое теплое дыхание на собственном анусе — так странно...",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You carefully press your lips against the clenched {npc.analStretch} star.. and feel it twitch a bit in response. And that makes you eager to lick it more.",
-					"You trace the tip of your tongue around the sensitive star.. and feel it react by clenching. So you start to lick more.",
+					"Ты осторожно прижимаешься губами к сжатой «звездочке» {npc.analStretch}... и чувствуешь, как она слегка дергается в ответ. И это заставляет тебя жаждать лизать её еще сильнее.",
+					"Ты обводишь кончиком языка чувствительную «звездочку»... и чувствуешь, как она реагирует сжатием. И тогда ты начинаешь лизать её всё активнее.",
 				]))
 		else:	
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You lick your own {asshole}, tasting it and watching how it clenches.",
-					"You thrust your tongue into your {asshole} and tongue-fuck yourself, making yourself moan.",
-					"The taste of your {pc.analStretch} {asshole} is so good that you can’t stop rimming it.",
-					"You rim yourself thoroughly. Doing that makes you squirm so much..",
-					"You prod the star a few times and then lap up at your inner walls, panting softly while doing so.",
+					"Ты лижешь свой собственный {asshole}, пробуя его на вкус и наблюдая за тем, как он сжимается.",
+					"Ты засовываешь язык в свою {asshole} и начинаешь языком трахать саму себя, издавая стоны.",
+					"Вкус твоей {pc.analStretch} {asshole} настолько хорош, что ты не можешь перестать её лизать.",
+					"Ты тщательно вылизываешь свой анус. От этого ты начинаешь так сильно ерзать...",
+					"Ты несколько раз тычешь языком в анус, а затем слизываешь влагу со внутренних стенок, тихонько посапывая.",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You lick that {asshole} good, tasting it  and watching how it clenches.",
-					"You thrust your tongue into that {npc.analStretch} star and tongue-fuck it for a bit, making the wet inner walls clench.",
-					"Rimming that clenching {asshole} is so fun that you can’t stop doing it.",
-					"You rim that {asshole} thoroughly. It pulses while you do that.",
-					"You prod that star a few times and then lap up at the inner walls while warmly breathing onto the sensitive flesh.",
+					"Ты хорошенько вылизываешь эту {asshole}, пробуя её на вкус и наблюдая за тем, как она сжимается.",
+					"Ты засовываешь язык в эту {npc.analStretch} и какое-то время трахаешь её языком, заставляя влажные внутренние стенки сжиматься.",
+					"Лизать эту сжимающуюся {asshole} так весело, что ты просто не можешь остановиться.",
+					"Ты тщательно вылизываешь эту {asshole}. Она пульсирует под твоим языком.",
+					"Ты несколько раз тычешь языком в анус, а затем слизываешь влагу со стенок, обдавая чувствительную плоть теплым дыханием.",
 				]))
 		
 		if(extraText != ""):
@@ -277,13 +277,13 @@ func _run():
 		
 		if(isPCPortal()):
 			saynn(RNG.pick([
-				"Your own tongue pushes you past the edge, a wave of pleasure courses through you, making you moan and squirm while your {asshole} clenches a lot. Feels so good..",
-				"You arch your back and moan passionately while your {asshole} pulsates and clenches tight. You can’t stop squirming while licking yourself clean..",
+				"Твой собственный язык доводит тебя до грани; волна наслаждения проносится сквозь тебя, заставляя стонать и корчиться, пока твоя {asshole} сильно сжимается. Это так приятно...",
+				"Ты выгибаешь спину и страстно стонешь, пока твоя {asshole} пульсирует и сжимается всё сильнее. Ты не можешь перестать извиваться, слизывая себя дочиста...",
 			]))
 		else:
 			saynn(RNG.pick([
-				"You feel that {asshole} clenching and pulsing.. while you keep licking and rubbing it. ",
-				"Suddenly, the {asshole} starts pulsing hard, the orgasm making it clench a lot.",
+				"Ты чувствуешь, как {asshole} пульсирует и сжимается, пока ты продолжаешь лизать и тереть её... ",
+				"Внезапно {asshole} начинает сильно пульсировать, а от оргазма она сжимается ещё мощнее.",
 			]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_anus")
@@ -293,11 +293,11 @@ func _run():
 		
 		if(isPCPortal()):
 			saynn(RNG.pick([
-				"You press your lips against your own {asshole}.. and then spit "+(extraText)+" into it. So kinky..",
+				"Ты прижимаешься губами к своей {asshole}... а затем пускаешь слюну. "+(extraText)+" прямо в него. Какая извращенная штучка...",
 			]))
 		else:
 			saynn(RNG.pick([
-				"You press your lips against your that {asshole}.. and then spit "+(extraText)+" into it.",
+				"Ты прижимаешься губами к этой {asshole}... а затем пускаешь слюну. "+(extraText)+" прямо в него.",
 			]))
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_anus")
 
@@ -375,18 +375,18 @@ func _run():
 			playAnimation(StageScene.SexPortalMasturbation, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You bring the fleshlight to your butt and then align it with your {pc.vaginaStretch} pussy.. Seeing how it twitches and drips pre when brushing against your sensitive bits only makes you want to put it in faster.. A moan escapes your lips as the tip spreads your petals and slides inside.",
-				"You feel so needy that you don’t waste any time and shove that {npc.penis} down your pussy! A cute moan escapes your lips as you feel it spreading your slick inner walls and dripping precum inside..",
+				"Ты подносишь фаллоимитатор к заднице, а затем приставляешь его к своей {pc.vaginaStretch}... Вид того, как он подергивается и течет предэякулятом, касаясь твоих чувствительных мест, заставляет тебя хотеть вогнать его ещё быстрее... С твоих губ срывается стон, когда кончик раздвигает твои лепестки и скользит внутрь.",
+				"Ты чувствуешь такую жажду, что не теряешь ни секунды и запихиваешь эту {npc.penis} прямо в свою киску! С твоих губ срывается милый стон, когда ты чувствуешь, как она раздвигает твои влажные внутренние стенки, наполняя их смазкой...",
 			]))
 		else:
 			playAnimation(StageScene.SexPortalMasturbation, ("sex" if connectedChar.getArousal() <= 0.7 else "fast"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You use that {penis} like a dildo, shoving it in and out of your needy {pussy}.",
-				"You keep your butt stuck out as you stuff your {pussy} with that hard piece of meat, your inner walls squeezing it tight!",
-				"You keep fucking your wet {pussy} with that cock, your other hand covering up your moans.",
-				"They are probably squirming as much as you, their {penis} is twitching inside your pussy as you masturbate with it!",
-				"You use that {penis} for your pleasure, sliding it inside your {pussy} like it’s some kind of sextoy.",
+				"Ты используешь эту {penis} как дилдо, вгоняя её в свою изголодавшуюся {pussy} и вынимая обратно.",
+				"Ты выставляешь задницу, набивая свою {pussy} этим твердым куском мяса, а твои внутренние стенки сжимают его мертвой хваткой!",
+				"Ты продолжаешь трахать свою влажную {pussy} этим членом, прикрывая рот рукой, чтобы заглушить стоны.",
+				"Они, должно быть, извиваются так же сильно, как и ты; их {penis} дергается внутри твоей киски, пока ты мастурбируешь им!",
+				"Ты используешь этот {penis} для своего удовольствия, вставляя его в свою {pussy}, словно какой-то секс-игрушку.",
 			]))
 		
 		if(extraText != ""):
@@ -409,8 +409,8 @@ func _run():
 		playAnimation(StageScene.SexPortalMasturbation, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}, npcBodyState={hard=true}})
 			
 		saynn(RNG.pick([
-			"You let out some soft moans as that {penis} starts throbbing inside you before releasing its load directly into your awaiting womb! Your legs are shaking as your pussy is milking that shaft for everything that it has.",
-			"You keep shoving that cock in and out.. until it suddenly starts pumping your {pussy} full of its seed! So much that some of it is already leaking out. Your legs are shaky, your lips let out a few cute moans..",
+			"Ты издаешь тихие стоны, когда этот {penis} начинает пульсировать внутри тебя, прежде чем извергнуть свою порцию прямо в твою матку! Твои ноги дрожат, а киска выжимает из этого ствола всё до последней капли.",
+			"Ты продолжаешь вгонять этот член туда-сюда... пока он внезапно не начинает заливать твою {pussy} своим семенем! Столько, что часть его уже вытекает наружу. Ноги дрожат, а с губ срываются несколько милых стонов...",
 		]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
@@ -424,18 +424,18 @@ func _run():
 			playAnimation(StageScene.SexPortalMasturbation, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You bring the fleshlight to your butt and then align it with your {pc.analStretch} {asshole}.. Seeing how it twitches and drips pre when brushing against your sensitive bits only makes you want to put it in faster.. A moan escapes your lips as the tip spreads your star and slides inside.",
-				"You feel so needy that you don’t waste any time and shove that {npc.penis} down your ass! A cute moan escapes your lips as you feel it spreading your warm inner walls and dripping precum inside..",
+				"Ты подносишь флешлайт к заднице и прижимаешь его к своей {pc.analStretch} {asshole}... Вид того, как он дергается и течет предэякулятом, касаясь твоих чувствительных мест, заставляет тебя всаживать его еще быстрее... С губ срывается стон, когда кончик раздвигает твою ануску и скользит внутрь.",
+				"Ты чувствуешь такую жажду, что не теряешь ни секунды и запихиваешь этот {npc.penis} себе в задницу! С твоих губ срывается милый стон, когда ты чувствуешь, как он раздвигает твои теплые внутренние стенки и наполняет их предэякулятом...",
 			]))
 		else:
 			playAnimation(StageScene.SexPortalMasturbation, ("sex" if connectedChar.getArousal() <= 0.7 else "fast"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You use that {penis} like a dildo, shoving it in and out of your needy {asshole}.",
-				"You keep your butt stuck out as you stuff your {asshole} with that hard piece of meat, your inner walls squeezing it tight!",
-				"You keep fucking your {ass} with that cock, your other hand covering up your moans.",
-				"They are probably squirming as much as you, their {penis} is twitching inside your tailhole as you masturbate with it!",
-				"You use that {penis} for your pleasure, sliding it inside your {ass} like it’s some kind of sextoy.",
+				"Ты используешь этот {penis} как дилдо, вгоняя его в свою изголодавшуюся {asshole} и вынимая обратно.",
+				"Ты выставляешь задницу, набивая свою {asshole} этим твердым куском мяса, а твои внутренние стенки сжимают его мертвой хваткой!",
+				"Ты продолжаешь трахать свой {ass} этим членом, прикрывая рот рукой, чтобы заглушить стоны.",
+				"Они, должно быть, извиваются не меньше тебя — их {penis} дергается внутри твоего ануса, пока ты мастурбируешь им!",
+				"Ты используешь этот {penis} для своего удовольствия, скользя им внутрь своей {ass}, словно какой-то секс-игрушкой.",
 			]))
 		
 		if(extraText != ""):
@@ -458,8 +458,8 @@ func _run():
 		playAnimation(StageScene.SexPortalMasturbation, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}, npcBodyState={hard=true}})
 			
 		saynn(RNG.pick([
-			"You let out some soft moans as that {penis} starts throbbing inside before releasing its load directly into your ass! Your legs are shaking as your {asshole} is milking that shaft for everything that it has.",
-			"You keep shoving that cock in and out.. until it suddenly starts pumping your {ass} full of its seed! So much that some of it is already leaking out. Your legs are shaky, your lips let out a few cute moans..",
+			"Ты издаешь тихие стоны, когда этот {penis} начинает пульсировать внутри, прежде чем извергнуть свой заряд прямо тебе в задницу! Твои ноги дрожат, пока твоя {asshole} выжимает из этого ствола всё до последней капли.",
+			"Ты продолжаешь вгонять этот член то в себя, то обратно... пока он внезапно не начинает заливать твою {ass} своим семенем! Так много, что часть его уже начинает вытекать наружу. Твои ноги дрожат, а с губ срываются милые стоны...",
 		]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
@@ -485,19 +485,19 @@ func _run():
 			playAnimation(StageScene.SexPortalRide, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You place the fleshlight with someone’s {npc.penis} on the floor and then position yourself above it. One of your hands guides it down your {pc.vaginaStretch} {pussy} while you slowly lower yourself onto it. A little cute noise leaves your lips as you feel it spreading your petals and sliding inside your wet love tunnel.. Time to ride it..",
-				"You place the fleshlight with someone’s {npc.penis} on the floor and then position yourself above it. Your {pc.vaginaStretch} {pussy} is already quite wet as you lower yourself onto that shaft, its tip spreading your petal and sliding inside, brushing against your inner walls and forcing a little moan out of you.. Time to ride it..",
+				"Ты кладешь на пол фаллоимитатор с чьим-то {npc.penis}, а затем устраиваешься над ним. Одной рукой ты направляешь его в свою {pc.vaginaStretch} {pussy}, медленно опускаясь на него. С твоих губ срывается милый звук, когда ты чувствуешь, как он раздвигает твои лепестки и скользит внутрь твоего влажного любовного туннеля... Пора оседлать его...",
+				"Ты кладешь на пол фаллоимитатор с чьим-то {npc.penis}, а затем устраиваешься над ним. Твоя {pc.vaginaStretch} {pussy} уже совсем мокрая, пока ты опускаешься на этот ствол; его головка раздвигает твои лепестки и скользит внутрь, задевая стенки влагалища и вырывая у тебя тихий стон... Пора оседлать его...",
 			]))
 		else:
 			playAnimation(StageScene.SexPortalRide, ("sex" if connectedChar.getArousal() <= 0.7 else "fast"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You ride that hard {penis}, raising your body before bringing yourself down onto it, your {pussy} getting all tight when you’re getting most of it inside.",
-				"Your {pc.breasts} bounce a bit while you ride that {npc.penis}. It’s so.. warm and slick.. better than any toy.",
-				"You can feel their {npc.penis} twitching inside you.. so you ride it harder. You’re not planning to stop until you milk those balls dry.",
-				"That {penis} is hitting your g-spot so well, more and more moans escape from you as you ride it.",
-				"They’re probably quite confused about why their {penis} is suddenly getting squeezed by your pussy.. good.. Your drippy pussy is coating it with your juices while you ride it.",
-				"You are riding that {penis} like it's just a dildo, an object to pleasure yourself with.. But it’s so much better than any dildo.",
+				"Ты скачешь на этом твердом {penis}, приподнимая тело, а затем с силой опускаешься на него; твоя {pussy} сжимается, когда большая часть его входит внутрь.",
+				"Твои {pc.breasts} слегка подпрыгивают, пока ты скачешь на этом {npc.penis}. Он такой... теплый и скользкий... лучше любой игрушки.",
+				"Ты чувствуешь, как их {npc.penis} дергается внутри тебя... и от этого ты скачешь еще сильнее. Ты не планируешь останавливаться, пока не выдоишь эти яички досуха.",
+				"Этот {penis} так идеально попадает в твою точку G, что с каждым движением, пока ты скачешь на нем, из тебя вырывается всё больше и больше стонов.",
+				"Они, должно быть, в полном замешательстве от того, почему их {penis} внезапно сжимается твоей киской... хорошо... Твоя сочащаяся киска покрывает его своими соками, пока ты скачешь на нем.",
+				"Ты скачешь на этом {penis} так, будто это просто дилдо, просто предмет для самоудовлетворения... Но это куда лучше любого дилдо.",
 			]))
 		
 		if(extraText != ""):
@@ -520,8 +520,8 @@ func _run():
 		playAnimation(StageScene.SexPortalRide, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}, npcBodyState={hard=true}})
 			
 		saynn(RNG.pick([
-			"Their {npc.penis} is throbbing and pulsing inside you.. While you just keep riding it. And soon enough, you feel your {pussy} flooded with waves of sticky {npc.cum}, your womb getting stuffed full. Good..",
-			"You were so busy riding that {npc.penis} that you didn’t even notice when it began pulsing and cumming inside your {pussy}! Waves after waves of sticky hot seed are filling you up.. while you moan and squirm on top of it.",
+			"Их {npc.penis} пульсирует и бьется внутри тебя... А ты просто продолжаешь скакать. И вскоре ты чувствуешь, как твоя {pussy} наполняется волнами липкой {npc.cum}, а матка забивается до отказа. Хорошо...",
+			"Ты была так занята тем, что скакала на этом {npc.penis}, что даже не заметила, как он начал пульсировать и кончать тебе в {pussy}! Волна за волной липкого горячего семени наполняет тебя... пока ты стонешь и извиваешься на нем.",
 		]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
@@ -536,19 +536,19 @@ func _run():
 			playAnimation(StageScene.SexPortalRide, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You place the fleshlight with someone’s {npc.penis} on the floor and then position yourself above it. One of your hands guides it down your {pc.anusStretch} {anus} while you slowly lower yourself onto it. A little cute noise leaves your lips as you feel it spreading your star and sliding inside your needy love tunnel.. Time to ride it..",
-				"You place the fleshlight with someone’s {npc.penis} on the floor and then position yourself above it. Your {pc.anusStretch} {anus} is already feeling quite needy as you lower yourself onto that shaft, its tip spreading your anal star and sliding inside, brushing against your inner walls and forcing a little moan out of you.. Time to ride it..",
+				"Ты кладешь флешлайт с чьим-то {npc.penis} на пол и устраиваешься над ним. Одной рукой ты направляешь его в свою {pc.anusStretch} {anus}, медленно опускаясь на него. С твоих губ срывается милый звук, когда ты чувствуешь, как он раздвигает твою дырочку и скользит внутрь твоего жаждущего любовного туннеля... Пора скакать...",
+				"Ты кладешь на пол флешлайт с чьим-то {npc.penis}, а затем устраиваешься над ним. Твоя {pc.anusStretch} {anus} уже вовсю требует ласки, когда ты опускаешься на этот ствол; его головка растягивает твой анус и скользит внутрь, задевая стенки влагалища и вырывая у тебя тихий стон... Пора оседлать его...",
 			]))
 		else:
 			playAnimation(StageScene.SexPortalRide, ("sex" if connectedChar.getArousal() <= 0.7 else "fast"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 			
 			saynn(RNG.pick([
-				"You ride that hard {penis}, raising your body before bringing yourself down onto it, your {asshole} getting all tight when you’re getting most of it inside.",
-				"Your {pc.breasts} bounce a bit while you ride that {npc.penis}. It’s so.. warm and slick.. better than any toy.",
-				"You can feel their {npc.penis} twitching inside you.. so you ride it harder. You’re not planning to stop until you milk those balls dry.",
-				"That {penis} is hitting your sensitive spot so well, more and more moans escape from you as you ride it.",
-				"They’re probably quite confused about why their {penis} is suddenly getting squeezed by your ass.. good.. Your legs are shivering slightly while you ride it, warmness spreading throughout your whole body.",
-				"You are riding that {penis} like it's just a dildo, an object to pleasure yourself with.. But it’s so much better than any dildo.",
+				"Ты скачешь на этом жестком {penis}, приподнимаясь всем телом, а затем с силой опускаешься на него, чувствуя, как твоя {asshole} сжимается, когда он входит почти целиком.",
+				"Твои {pc.breasts} слегка подпрыгивают, пока ты скачешь на этом {npc.penis}. Он такой... теплый и скользкий... лучше любой игрушки.",
+				"Ты чувствуешь, как их {npc.penis} дергается внутри тебя... и от этого ты скачешь еще сильнее. Ты не планируешь останавливаться, пока не выдоишь эти яички досуха.",
+				"Этот {penis} так точно попадает в твою чувствительную точку, что, пока ты скачешь на нем, из тебя вырывается всё больше и больше стонов.",
+				"Они, должно быть, в полном замешательстве от того, почему их {penis} внезапно оказался зажат в твоей заднице... хорошо... Твои ноги слегка дрожат во время езды, а по всему телу разливается приятное тепло.",
+				"Ты скачешь на этом {penis} так, будто это просто дилдо, просто предмет для самоудовлетворения... Но это куда лучше любого дилдо.",
 			]))
 		
 		if(extraText != ""):
@@ -571,8 +571,8 @@ func _run():
 		playAnimation(StageScene.SexPortalRide, ("inside"), {onlyRight=isPCPortal(), npc=portalCharID, bodyState={exposedCrotch=true, hard=true}, npcBodyState={hard=true}})
 			
 		saynn(RNG.pick([
-			"Their {npc.penis} is throbbing and pulsing inside you.. While you just keep riding it. And soon enough, you feel your {ass} getting flooded with waves of sticky {npc.cum}, your inner walls painted white. Good..",
-			"You were so busy riding that {npc.penis} that you didn’t even notice when it began pulsing and cumming inside your {ass}! Waves after waves of sticky hot seed are filling you up.. while you moan and squirm on top of it.",
+			"Их {npc.penis} пульсирует и бьется внутри тебя... пока ты продолжаешь ритмично двигаться. И вскоре ты чувствуешь, как твоя {ass} заливает волнами липкой {npc.cum}, окрашивающей твои внутренние стенки в белый цвет. Хорошо...",
+			"Ты так увлеклась ездой на этом {npc.penis}, что даже не заметила, как он начал пульсировать и кончать прямо в твою {ass}! Волна за волной липкое горячее семя наполняет тебя, пока ты стонешь и извиваешься сверху.",
 		]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
@@ -589,30 +589,30 @@ func _run():
 		if(!isRepeat):
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You wrap your lips around the tip of that tasty cock.. and immediately feel them around your cock. Feels so strange.. and yet.. so nice.",
-					"You give that cock a lick.. and immediately feel it yourself. So strange.. You let the tip of your own member inside and start sucking on it.",
+					"Ты обхватываешь губами кончик этого вкусного члена... и тут же чувствуешь его вокруг своего члена. Так странно... и в то же время... так приятно.",
+					"Ты слизываешь капельку с этого члена... и тут же чувствуешь это сама. Так необычно... Ты позволяешь кончику своего собственного достоинства войти в рот и начинаешь его сосать.",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You wrap your lips around the tip of that tasty cock.. and feel it throbbing slightly in your mouth. Huh, this only makes you want to suck it more.",
-					"You give that cock a lick and watch it twitch a bit. So interesting. You let the tip of that member inside and start sucking on it.",
+					"Ты обхватываешь губами кончик этого вкусного члена... и чувствуешь, как он слегка пульсирует у тебя во рту. Хм, это только заставляет тебя хотеть сосать его еще сильнее.",
+					"Ты слизываешь капельку с этого члена и наблюдаешь, как он слегка дергается. Как интересно. Ты позволяешь кончику этого органа войти внутрь и начинаешь его сосать.",
 				]))
 		else:	
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You suck your own {cock} through the portal panties!",
-					"You keep sucking, you know exactly how to make yourself feel good..",
-					"You drag your tongue over that {cock} and shiver from the sensations.",
-					"The taste isn’t that bad, you could get used to sucking your own {cock} all day..",
-					"You blow yourself, meeting the motions of your hand with your head.",
+					"Ты сосешь собственный {cock} через портальные трусики!",
+					"Ты продолжаешь сосать, ведь ты точно знаешь, как доставить себе удовольствие...",
+					"Ты проводишь языком по этому {cock} и вздрагиваешь от ощущений.",
+					"Вкус не такой уж плохой, можно было бы сосать собственный {cock} целыми днями...",
+					"Ты дрочишь на саму себя, подстраивая движения головы под движения руки.",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You suck that {npc.penis} through the portal panties!",
-					"You keep sucking on that {cock}, feeling it twitch inside your mouth.",
-					"You drag your tongue over that {cock} and give the tip a few smooches.. before continuing to suck it thoroughly.",
-					"Hard to tell if they like it.. but the taste of {npc.his} pre in your mouth suggests that they do.",
-					"You blow that {cock}, meeting the motions of your hand with your head.",
+					"Ты сосёшь этот {npc.penis} через портальные трусики!",
+					"Ты продолжаешь сосать этот {cock}, чувствуя, как он подёргивается у тебя во рту.",
+					"Ты проводишь языком по этому {cock} и нежно чмокаешь кончик... прежде чем продолжить жадно сосать его.",
+					"Трудно сказать, нравится ли им это... но вкус {npc.his} во рту намекает на то, что да.",
+					"Ты оттягиваешь этот {cock}, двигая головой в такт движениям своей руки.",
 				]))
 		
 		if(connectedChar.getArousal() >= 1.0):
@@ -632,13 +632,13 @@ func _run():
 		
 		if(isPCPortal()):
 			saynn(RNG.pick([
-				"You produce muffled grunts and moans while your own {pc.penis} is throbbing inside your mouth, shooting {pc.cum} deep down your throat.. so good..",
-				"You shove your own {cock} as deep as your {pc.throatStretch} throat allows and squirm while it's throbbing and stuffing your belly full of your own seed.",
+				"Ты издаёшь приглушённое мычание и стоны, пока твой собственный {pc.penis} пульсирует у тебя во рту, выбрасывая {pc.cum} глубоко в глотку... как же хорошо...",
+				"Ты заталкиваешь свой {cock} так глубоко, как позволяет твоя {pc.throatStretch} глотка, и корчишься, пока он пульсирует, наполняя твой живот собственной семенной жидкостью.",
 			]))
 		else:
 			saynn(RNG.pick([
-				"You feel that {npc.penis} throb inside your mouth.. before shooting strings of thick {npc.cum} deep down your throat..",
-				"You shove that {npc.penis} as deep as your {pc.throatStretch} throat allows and just sit still, letting it throb inside and stuff your belly full of thick warm seed.",
+				"Ты чувствуешь, как этот {npc.penis} пульсирует у тебя во рту... прежде чем он выбрасывает струи густой {npc.cum} глубоко в твою глотку...",
+				"Ты заталкиваешь этот {npc.penis} так глубоко, как позволяет твоя {pc.throatStretch} глотка, и просто замираешь, позволяя ему пульсировать внутри и наполнять твой живот густой теплой спермой.",
 			]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
@@ -689,73 +689,73 @@ func _run():
 			if(secondPortalCharID == "pc" && portalCharID == "pc"):
 				# You fuck yourself
 				saynn(RNG.pick([
-					"You press the fleshlights together, causing your own {penis} to penetrate your own pussy.. Moans escape you as your moist inner walls clench around your shaft..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя свой собственный {penis} проникать в твою собственную киску... из тебя вырываются стоны, когда влажные внутренние стенки сжимаются вокруг твоего члена...",
 				]))
 			elif(secondPortalCharID == "pc"):
 				# You are being fucked
 				saynn(RNG.pick([
-					"You press the fleshlights together, causing someone's {penis} to penetrate your pussy.. Moans escape you as your moist inner walls clench around that hard shaft..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя чьё-то {penis} проникать в твою киску... Из твоих уст вырываются стоны, когда влажные внутренние стенки сжимаются вокруг этого твердого члена...",
 				]))
 			elif(isPCPortal()):
 				# You fuck someone else
 				saynn(RNG.pick([
-					"You press the fleshlights together, causing your {penis} to penetrate someone's {pussy} with ease! Let's hope that they are ready because you don't plan on stopping there..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, и твой {penis} с легкостью проникает в чью-то {pussy}! Будем надеяться, они готовы, потому что ты не планируешь на этом останавливаться...",
 				]))
 			elif(secondPortalCharID == portalCharID):
 				# Someone else fucks themselves
 				saynn(RNG.pick([
-					"You press the fleshlights together, making someone's {penis} go up their own {pussy}! Hopefully they are ready because you're gonna make them fuck themselves!",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя чьё-то {penis} входить в их собственную {pussy}! Надеюсь, они готовы, потому что ты заставишь их трахать самих себя!",
 				]))
 			else:
 				# 2 different npcs fuck
 				saynn(RNG.pick([
-					"You press the fleshlights together, making someone's {penis} penetrate someone else's {pussy}! Hopefully they are both ready because you don't plan on stopping there..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя чьё-то {penis} проникать в чью-то другую {pussy}! Надеюсь, они оба готовы, потому что ты не планируешь на этом останавливаться...",
 				]))
 		else:	
 			if(secondPortalCharID == "pc" && portalCharID == "pc"):
 				# You fuck yourself
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, moaning as your own {penis} is fucking your {npc2.vaginaStretch} {pussy}!",
-					"Your body squirms.. while you are fucking yourself in the most weird way possible.",
-					"You can hear your pussy making wet noises as you shove your own {penis} in and out.. Feels so good.",
-					"Each time you slide the fleshlight with your {pussy} along your own {penis}, it spreads your wet inner walls and hammers away at your g-spot.. You know exactly how to make yourself feel good.",
-					"You’re pounding your own {pussy} with your {pc.penis} fast and hard! A slight bump appears on your belly as your {penis} is reaching your cervix each time.",
+					"Ты двигаешь фаллоимитаторы друг о друга, стоная от того, как твой собственный {penis} трахает твою {npc2.vaginaStretch} {pussy}!",
+					"Твое тело извивается... пока ты трахаешь саму себя самым странным из возможных способов.",
+					"Ты слышишь, как твоя киска издает влажные звуки, когда ты вгоняешь свой собственный {penis} туда-сюда... Это так приятно.",
+					"Каждый раз, когда ты скользишь фаллоимитатором со своим {pussy} вдоль своей собственной {penis}, он раздвигает твои влажные внутренние стенки и долбит прямо в точку G... Ты точно знаешь, как доставить себе удовольствие.",
+					"Ты неистово хуяришь свой {pussy} своим {pc.penis}, быстро и жестко! На животе проступает небольшой бугорок, когда твой {penis} каждый раз достигает шейки матки.",
 				]))
 			elif(secondPortalCharID == "pc"):
 				# You are being fucked
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, moaning as someone’s {penis} is fucking your {npc2.vaginaStretch} {pussy}!",
-					"Your body squirms.. while you are making someone fuck you in the most weird way possible.",
-					"You can hear your pussy making wet noises as you shove someone’s {penis} in and out.. Feels so good.",
-					"Each time you slide the fleshlight with your {pussy} along your that {penis}, it spreads your wet inner walls and hammers away at your g-spot.. You know exactly how to make yourself feel good.",
-					"You’re pounding your {pussy} with someone’s {npc.penis} fast and hard like it’s a dildo! A slight bump appears on your belly as that {penis} is reaching your cervix each time.",
+					"Ты трешь фаллоимитаторы друг о друга, стоная от того, как чьё-то {penis} трахает твою {npc2.vaginaStretch} {pussy}!",
+					"Твое тело извивается... пока ты позволяешь кому-то трахать себя самым странным из возможных способов.",
+					"Ты слышишь, как твоя киска хлюпает, когда ты всаживаешь чьё-то {penis} туда-сюда... Чертовски приятно.",
+					"Каждый раз, когда ты скользишь фаллоимитатором со своим {pussy} вдоль этой {penis}, он раздвигает твои влажные внутренние стенки и долбит прямо в точку G... Ты точно знаешь, как доставить себе удовольствие.",
+					"Ты хуяришь свой {pussy} чьим-то {npc.penis} быстро и жестко, словно это дилдо! На животе проступает небольшой бугорок, когда этот {penis} каждый раз достигает шейки матки.",
 				]))
 			elif(isPCPortal()):
 				# You fuck someone else
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, panting softly as your {penis} is fucking someone’s {npc2.vaginaStretch} {pussy}!",
-					"Your body squirms a bit.. while you are fucking someone in the most weird way possible.",
-					"You can hear that {pussy} making wet noises as you shove your {penis} in and out.. Yeah, take that, slut.",
-					"Each time you slide the fleshlight with that {pussy} along your {penis}, it spreads their wet inner walls and hammers away at their g-spot.. Makes that pussy feel so tight..",
-					"You’re pounding that {pussy} with your {npc.penis} fast and hard, having your member disconnected from your body makes it so much easier to fuck someone!",
+					"Ты трешь фаллоимитаторы друг о друга, тихонько дыша от возбуждения, пока твой {penis} трахает чью-то {npc2.vaginaStretch} {pussy}!",
+					"Твое тело слегка извивается... пока ты трахаешь кого-то самым странным из возможных способов.",
+					"Ты слышишь, как этот {pussy} издает влажные звуки, когда ты всаживаешь свой {penis} туда-сюда... Да, получи, сучка.",
+					"Каждый раз, когда ты скользишь флешлайтом с этим {pussy} по их {penis}, его влажные внутренние стенки раздвигаются, а он наотмашь долбит прямо в точку G... От этого киска кажется такой узкой...",
+					"Ты херачишь этим {pussy} своим {npc.penis} быстро и жестко; когда твой член отделен от тела, трахать кого-то становится намного проще!",
 				]))
 			elif(secondPortalCharID == portalCharID):
 				# Someone else fucks themselves
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, making it so someone’s {penis} is fucking their own {npc2.vaginaStretch} {pussy}!",
-					"Your eyes watch with great interest.. while you are making someone fuck themselves in the most weird way possible.",
-					"You can hear that pussy making wet noises as you shove their own {penis} in and out.. Should feel good for them, it’s double the stimulation after all.",
-					"Each time you slide the fleshlight with someone’s {pussy} along their {penis}, it spreads their wet inner walls and hammers away at their g-spot.. You can spot the muscles twitching since you’re watching the action from up so close.",
-					"You’re pounding someone’s {pussy} with their own {npc.penis} fast and hard! That pussy is dripping juices all over the other fleshlight.",
+					"Ты двигаешь флешлайты друг против друга, так что получается, будто чья-то {penis} трахает собственную {npc2.vaginaStretch} {pussy}!",
+					"Твои глаза с огромным интересом наблюдают за тем, как ты заставляешь кого-то трахать самого себя самым странным образом из возможных.",
+					"Ты слышишь, как эта киска издает влажные звуки, пока ты вгоняешь их собственный {penis} туда-сюда... Должно быть, им чертовски приятно, ведь это же двойная стимуляция.",
+					"Каждый раз, когда ты скользишь флешлайтом с чьим-то {pussy} по их {penis}, его влажные внутренние стенки раздвигаются, а он наотмашь долбит прямо в точку G... Ты видишь, как подергиваются мышцы, потому что наблюдаешь за процессом так близко.",
+					"Ты херачишь чьим-то {pussy} их собственным {npc.penis} быстро и жестко! Эта киска заливает соками весь второй флешлайт.",
 				]))
 			else:
 				# 2 different npcs fuck
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, making it so someone’s {penis} is fucking that {npc2.vaginaStretch} {pussy}! They probably don’t even realize that you are making them fuck each other.",
-					"Your eyes watch with great interest.. while you are making someone fuck someone else in the most weird way possible.",
-					"You can hear that pussy making wet noises as you shove someone {penis} in and out.. Feels strange to see a fleshlight work like the real thing.. but it is also quite fun.",
-					"Each time you slide the fleshlight with someone’s {pussy} along someone else’s {penis}, it spreads their wet inner walls and hammers away at their g-spot.. You can spot the muscles twitching since you’re watching the action from up so close.",
-					"You’re pounding someone’s {pussy} with a stranger’s {npc.penis} fast and hard! That pussy is dripping juices all over the other fleshlight.",
+					"Ты трешь фаллоимитаторы друг о друга так, будто чья-то {penis} трахает эту {npc2.vaginaStretch} {pussy}! Они, вероятно, даже не подозревают, что ты заставляешь их трахать друг друга.",
+					"Твои глаза с огромным интересом наблюдают за тем, как ты заставляешь одного человека трахать другого самым странным способом из возможных.",
+					"Ты слышишь, как эта киска издает влажные звуки, пока ты вгоняешь чью-то {penis} туда-сюда... Странно видеть, как фаллоимитатор работает как настоящий... но в этом есть свое удовольствие.",
+					"Каждый раз, когда ты скользишь фаллоимитатором с чьей-то {pussy} по чьей-то другой {penis}, это раздвигает их влажные внутренние стенки и долбит прямо в точку G... Ты видишь, как подергиваются мышцы, потому что наблюдаешь за процессом так близко.",
+					"Ты быстро и жестко вколачиваешь чью-то {pussy} в чужую {npc.penis}! Эта киска заливает соками весь другой фаллоимитатор.",
 				]))
 			
 		if(extraText != ""):
@@ -783,27 +783,27 @@ func _run():
 		if(secondPortalCharID == "pc" && portalCharID == "pc"):
 			# You fuck yourself
 			saynn(RNG.pick([
-				"You let out some passionate stifled noises as your {npc.penis} is throbbing inside your {pussy}.. before stuffing your womb to the brim with your seed. You curl your toes and squirm a lot, your hands shaking, making your cock rub against your pussy walls more..",
+				"Ты издаешь сдавленные страстные звуки, когда твоя {npc.penis} пульсирует внутри твоей {pussy}... прежде чем наполнить свою утробу до краев своей семенной жидкостью. Ты поджимаешь пальцы ног и много ерзаешь, твои руки дрожат, заставляя твой член еще сильнее тереться о стенки твоей киски...",
 			]))
 		elif(secondPortalCharID == "pc"):
 			# You are being fucked
 			saynn(RNG.pick([
-				"You let out some passionate stifled noises as someone’s {npc.penis} is throbbing inside your {pussy}.. before stuffing your womb to the brim with its seed. You curl your toes and squirm a lot, your hands shaking, making that cock rub against your pussy walls more..",
+				"Ты издаешь сдавленные страстные стоны, когда чьё-то {npc.penis} пульсирует внутри твоей {pussy}... а затем наполняет твою матку до краев своей семенной жидкостью. Ты поджимаешь пальцы ног и сильно ерзаешь, а твои руки дрожат, заставляя этот член еще сильнее тереться о стенки твоей киски...",
 			]))
 		elif(isPCPortal()):
 			# You fuck someone else
 			saynn(RNG.pick([
-				"You grunt softly as your {npc.penis} is throbbing inside that clenching {pussy}.. before stuffing its womb to the brim with your seed. Remote breeding, fuck yeah.",
+				"Ты тихо кряхтишь, когда чьё-то {npc.penis} пульсирует внутри этой сжимающейся {pussy}... прежде чем наполнить её матку до краев твоей семенной жидкостью. Дистанционное оплодотворение, черт возьми!",
 			]))
 		elif(secondPortalCharID == portalCharID):
 			# Someone else fucks themselves
 			saynn(RNG.pick([
-				"You can’t help but to grin while watching that throbbing {npc.penis} cum inside the {pussy} that belongs to the same person. What if you just made them knock themselves up?",
+				"Ты не можешь сдержать улыбку, наблюдая, как пульсирующий {npc.penis} кончает внутри {pussy}, принадлежащей тому же самому человеку. Что, если ты просто заставишь их забеременеть друг от друга?",
 			]))
 		else:
 			# 2 different npcs fuck
 			saynn(RNG.pick([
-				"You can’t help but to smile while watching that throbbing {npc.penis} cum inside the helpless twitching {pussy}. You just made two complete strangers breed. Nice.",
+				"Ты невольно улыбаешься, глядя, как пульсирующий {npc.penis} кончает внутри беспомощно дергающейся {pussy}. Ты только что заставила двух совершенно незнакомых людей размножаться. Красава.",
 			]))
 	
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
@@ -828,73 +828,73 @@ func _run():
 			if(secondPortalCharID == "pc" && portalCharID == "pc"):
 				# You fuck yourself
 				saynn(RNG.pick([
-					"You press the fleshlights together, causing your own {penis} to penetrate your own {anus}.. Moans escape you as your moist inner walls clench around your shaft..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя собственный {penis} проникать в твою собственную {anus}... Из тебя вырываются стоны, когда твои влажные внутренние стенки сжимаются вокруг твоего члена...",
 				]))
 			elif(secondPortalCharID == "pc"):
 				# You are being fucked
 				saynn(RNG.pick([
-					"You press the fleshlights together, causing someone's {penis} to penetrate your ass.. Moans escape you as your needy inner walls clench around that hard shaft..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя чьё-то {penis} проникать в твою задницу... Из тебя вырываются стоны, когда твои жаждущие внутренние стенки сжимаются вокруг этого твердого члена...",
 				]))
 			elif(isPCPortal()):
 				# You fuck someone else
 				saynn(RNG.pick([
-					"You press the fleshlights together, causing your {penis} to penetrate someone's {anus} with ease! Let's hope that they are ready because you don't plan on stopping there..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, и твой {penis} с легкостью проникает в чью-то {anus}! Будем надеяться, они готовы, потому что останавливаться ты не собираешься...",
 				]))
 			elif(secondPortalCharID == portalCharID):
 				# Someone else fucks themselves
 				saynn(RNG.pick([
-					"You press the fleshlights together, making someone's {penis} go up their own {ass}! Hopefully they are ready because you're gonna make them fuck themselves!",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя чью-то {penis} зайти в их собственную {ass}! Надеюсь, они готовы, ведь ты заставишь их трахать самих себя!",
 				]))
 			else:
 				# 2 different npcs fuck
 				saynn(RNG.pick([
-					"You press the fleshlights together, making someone's {penis} penetrate someone else's {anus}! Hopefully they are both ready because you don't plan on stopping there..",
+					"Ты прижимаешь фаллоимитаторы друг к другу, заставляя чью-то {penis} проникать в чью-то еще {anus}! Надеюсь, оба готовы, потому что ты не планируешь на этом останавливаться...",
 				]))
 		else:	
 			if(secondPortalCharID == "pc" && portalCharID == "pc"):
 				# You fuck yourself
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, moaning as your own {penis} is fucking your {npc2.anusStretch} {anus}!",
-					"Your body squirms.. while you are fucking yourself in the most weird way possible.",
-					"You can hear your {anus} making wet noises as you shove your own {penis} in and out.. Feels so good.",
-					"Each time you slide the fleshlight with your {anus} along your own {penis}, it spreads your wet inner walls wide and hammers away at your prostate.. You know exactly how to make yourself feel good.",
-					"You’re pounding your own {anus} with your {npc.penis} fast and hard! A slight bump appears on your belly as your {penis} is reaching deep and putting pressure on your inner walls.",
+					"Ты трешь фаллоимитаторы друг о друга, стоная от того, как твоя собственная {penis} трахает твою {npc2.anusStretch} {anus}!",
+					"Твое тело извивается... пока ты трахаешь саму себя самым странным из возможных способов.",
+					"Ты слышишь влажные звуки своей {anus}, когда вгоняешь и вынимаешь свою {penis}... Это так охрененно.",
+					"Каждый раз, когда ты скользишь фаллоимитатором со своей {anus} вдоль своей {penis}, он широко раздвигает твои влажные внутренние стенки и долбит прямо в простату... Ты точно знаешь, как доставить себе удовольствие.",
+					"Ты неистово и быстро хуяришь свою {anus} своей {npc.penis}! На животе появляется небольшая выпуклость, когда твоя {penis} заходит глубоко и давит на внутренние стенки.",
 				]))
 			elif(secondPortalCharID == "pc"):
 				# You are being fucked
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, moaning as someone’s {penis} is fucking your {npc2.anusStretch} {anus}!",
-					"Your body squirms.. while you are making someone fuck you in the most weird way possible.",
-					"You can hear your {anus} making wet noises as you shove someone’s {penis} in and out.. Feels so good.",
-					"Each time you slide the fleshlight with your {anus} along your that {penis}, it spreads your wet inner walls and hammers away at your pleasure spot.. You know exactly how to make yourself feel good.",
-					"You’re pounding your {anus} with someone’s {npc.penis} fast and hard like it’s a dildo! A slight bump appears on your belly as that {penis} is reaching deep and putting pressure on all your buttons.",
+					"Ты трешь фаллоимитаторы друг о друга, стоная от того, как чья-то {penis} трахает твою {npc2.anusStretch} {anus}!",
+					"Твое тело извивается... пока ты позволяешь кому-то трахать себя самым странным из возможных способов.",
+					"Ты слышишь, как твоя {anus} издает влажные звуки, пока ты вгоняешь чью-то {penis} туда и обратно... Чертовски приятно.",
+					"Каждый раз, когда ты скользишь флешлайтом со своей {anus} вдоль этой {penis}, она раздвигает влажные внутренние стенки и долбит прямо в твою эрогенную зону... Ты точно знаешь, как доставить себе удовольствие.",
+					"Ты херачишь своей {anus} чьей-то {npc.penis} быстро и жестко, словно это дилдо! На твоем животе проступает небольшой бугорок, когда эта {penis} проникает глубоко и давит на все твои чувствительные точки.",
 				]))
 			elif(isPCPortal()):
 				# You fuck someone else
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, panting softly as your {penis} is fucking someone’s {npc2.anusStretch} {anus}!",
-					"Your body squirms a bit.. while you are fucking someone in the most weird way possible.",
-					"You can hear that {anus} making wet noises as you shove your {penis} in and out.. Yeah, take that, slut.",
-					"Each time you slide the fleshlight with that {anus} along your {penis}, it spreads their wet inner walls and hammers away at all their buttons.. Makes that ass feel so tight..",
-					"You’re pounding that {anus} with your {npc.penis} fast and hard, having your member disconnected from your body makes it so much easier to fuck someone!",
+					"Ты трешь флешлайты друг о друга, тихонько пошатывая дыханием, пока твоя {penis} трахает чью-то {npc2.anusStretch} {anus}!",
+					"Твое тело слегка извивается... пока ты трахаешь кого-то самым странным из возможных способов.",
+					"Ты слышишь, как эта {anus} издает влажные звуки, пока ты вгоняешь свою {penis} туда и обратно... Да, получи, сучка.",
+					"Каждый раз, когда ты скользишь флешлайтом с этой {anus} вдоль их {penis}, она раздвигает их влажные внутренние стенки и долбит по всем их кнопкам... От этого задница кажется такой узкой...",
+					"Ты херачишь этой {anus} своей {npc.penis} быстро и жестко; когда твой член отсоединен от тела, трахать кого-то становится намного проще!",
 				]))
 			elif(secondPortalCharID == portalCharID):
 				# Someone else fucks themselves
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, making it so someone’s {penis} is fucking their own {npc2.anusStretch} {anus}!",
-					"Your eyes watch with great interest.. while you are making someone fuck themselves in the most weird way possible.",
-					"You can hear that {anus} making wet noises as you shove their own {penis} in and out.. Should feel good for them, it’s double the stimulation after all.",
-					"Each time you slide the fleshlight with someone’s {anus} along their {penis}, it spreads their wet inner walls and hammers away at their prostate.. You can spot the muscles twitching since you’re watching the action from up so close.",
-					"You’re pounding someone’s {anus} with their own {npc.penis} fast and hard! That slut is clenching tight around its own cock!",
+					"Ты трешь флешлайты друг о друга, создавая иллюзию, будто чья-то {penis} трахает их собственную {npc2.anusStretch} {anus}!",
+					"Твои глаза с огромным интересом наблюдают за тем, как ты заставляешь кого-то трахать самого себя самым странным образом из возможных.",
+					"Ты слышишь, как эта {anus} издает влажные звуки, пока ты заталкиваешь их собственный {penis} внутрь и обратно... Должно быть, им приятно, ведь это же двойная стимуляция.",
+					"Каждый раз, когда ты проводишь флешлайтом с чьим-то {anus} вдоль их {penis}, он раздвигает влажные внутренние стенки и долбит прямо в простату... Ты видишь, как подергиваются мышцы, ведь ты наблюдаешь за процессом так близко.",
+					"Ты херачишь чьим-то {anus} через их собственный {npc.penis} — быстро и жестко! Эта сучка сжимается вокруг собственного члена!",
 				]))
 			else:
 				# 2 different npcs fuck
 				saynn(RNG.pick([
-					"You move the fleshlights against each other, making it so someone’s {penis} is fucking that {npc2.anusStretch} {anus}! They probably don’t even realize that you are making them fuck each other.",
-					"Your eyes watch with great interest.. while you are making someone fuck someone else in the most weird way possible.",
-					"You can hear that {anus} making wet noises as you shove someone {penis} in and out.. Feels strange to see a fleshlight work like the real thing.. but it is also quite fun.",
-					"Each time you slide the fleshlight with someone’s {anus} along someone else’s {penis}, it spreads their wet inner walls and hammers away at all their buttons.. You can spot the muscles twitching since you’re watching the action from up so close.",
-					"You’re pounding someone’s {anus} with a stranger’s {npc.penis} fast and hard! That slut is clenching tight around some stranger’s cock!",
+					"Ты трешь флешлайты друг о друга так, что чей-то {penis} буквально трахает этот {npc2.anusStretch} {anus}! Они, вероятно, даже не осознают, что это ты заставляешь их трахать друг друга.",
+					"Твои глаза с огромным интересом наблюдают за тем, как ты заставляешь одного человека трахать другого самым странным способом из возможных.",
+					"Ты слышишь, как эта {anus} издает влажные звуки, пока ты вгоняешь чьё-то {penis} туда-сюда... Странно видеть, как флешлайт работает как настоящий... но это чертовски весело.",
+					"Каждый раз, когда ты скользишь флешлайтом с чьим-то {anus} вдоль чьего-то {penis}, он раздвигает влажные внутренние стенки и долбит по всем эрогенным точкам... Ты видишь, как подергиваются мышцы, ведь ты наблюдаешь за процессом так близко.",
+					"Ты со всей дури вколачиваешь чью-то {anus} в чужую {npc.penis}! Эта шлюха так и сжимает вокруг чужого члена!",
 				]))
 			
 		if(extraText != ""):
@@ -922,27 +922,27 @@ func _run():
 		if(secondPortalCharID == "pc" && portalCharID == "pc"):
 			# You fuck yourself
 			saynn(RNG.pick([
-				"You let out some passionate stifled noises as your {npc.penis} is throbbing inside your {anus}.. before stuffing it to the brim with your seed. You curl your toes and squirm a lot, your hands shaking, making your cock rub against your prostate more..",
+				"Ты издаешь страстные, сдавленные стоны, пока твоя {npc.penis} пульсирует внутри твоей {anus}... прежде чем ты заполняешь её до краев своей спермой. Ты поджимаешь пальцы ног и ерзаешь, руки дрожат, заставляя член еще сильнее тереться о твою простату...",
 			]))
 		elif(secondPortalCharID == "pc"):
 			# You are being fucked
 			saynn(RNG.pick([
-				"You let out some passionate stifled noises as someone’s {npc.penis} is throbbing inside your {anus}.. before stuffing it to the brim with its seed. You curl your toes and squirm a lot, your hands shaking, making that cock rub against your inner walls more..",
+				"Ты издаешь страстные, сдавленные стоны, пока чья-то {npc.penis} пульсирует внутри твоей {anus}... прежде чем ты заполняешь её до краев чужой спермой. Ты поджимаешь пальцы ног и ерзаешь, руки дрожат, заставляя этот член еще сильнее тереться о твои внутренние стенки...",
 			]))
 		elif(isPCPortal()):
 			# You fuck someone else
 			saynn(RNG.pick([
-				"You grunt softly as your {npc.penis} is throbbing inside that clenching {anus}.. before stuffing it to the brim with your seed. Remote pounding, fuck yeah.",
+				"Ты тихо кряхтишь, пока твоя {npc.penis} пульсирует внутри этой сжимающей {anus}... прежде чем ты заполняешь её до краев своей спермой. Дистанционный трах, черт возьми!",
 			]))
 		elif(secondPortalCharID == portalCharID):
 			# Someone else fucks themselves
 			saynn(RNG.pick([
-				"You can’t help but to grin while watching that throbbing {npc.penis} cum inside the {anus} that belongs to the same person. Their prostate is probably aching so must right now..",
+				"Ты не можешь сдержать ухмылки, наблюдая, как пульсирующий {npc.penis} кончает внутри {anus}, принадлежащей тому же человеку. Их простата, должно быть, сейчас просто разрывается от удовольствия...",
 			]))
 		else:
 			# 2 different npcs fuck
 			saynn(RNG.pick([
-				"You can’t help but to smile while watching that throbbing {npc.penis} cum inside the helpless twitching {anus}. You just made two complete strangers fuck. Nice.",
+				"Ты невольно улыбаешься, глядя, как пульсирующий {npc.penis} кончает внутри беспомощно дергающейся {anus}. Ты только что заставил двух совершенно незнакомых людей трахаться. Красава.",
 			]))
 	
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
@@ -960,30 +960,30 @@ func _run():
 		if(!isRepeat):
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You move the fleshlight with your wet {npc.vaginaStretch} {pussy} closer to your {pc.penis}.. and then penetrate yourself, your own member sliding up your pussy slit. Feels nice..",
-					"You grab the fleshlight with your wet {npc.vaginaStretch} {pussy} on it and wear it onto your {pc.penis} like it's a sextoy. Feels good..",
+					"Ты подносишь влажный {npc.vaginaStretch} {pussy} с фаллоимитатором ближе к своей {pc.penis}... а затем входишь в себя, чувствуя, как твой член скользит в твою киску. Ощущения просто кайф...",
+					"Ты хватаешь фаллоимитатор, покрытый чьей-то влажной {npc.vaginaStretch} {pussy}, и надеваешь его на свою {pc.penis}, словно секс-игрушку. Приятно...",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You move the fleshlight with someone’s {npc.vaginaStretch} {pussy} closer to your {pc.penis}.. and then penetrate it, your member sliding up that pussy slit. They are clenching, probably not expecting this. But that only makes you more eager to fuck them.",
-					"You grab the fleshlight with someone’s {npc.vaginaStretch} {pussy} on it and wear it onto your {pc.penis} like it's a sextoy. Their pussy feels nice and warm..",
+					"Ты подносишь фаллоимитатор, на котором осталась чья-то {npc.vaginaStretch} {pussy}, ближе к своей {pc.penis}... а затем входишь в него, чувствуя, как твой член скользит в эту киску. Она сжимается, явно не ожидая такого. Но это лишь разжигает в тебе желание трахнуть её еще сильнее.",
+					"Ты хватаешь фаллоимитатор, на котором осталась чья-то влажная {npc.vaginaStretch} {pussy}, и надеваешь его на свою {pc.penis}, как секс-игрушку. Её киска кажется такой приятной и теплой...",
 				]))
 		else:	
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You moan and shudder as you fuck your own {npc.vaginaStretch} {pussy}!",
-					"You shiver.. while fucking yourself, using your own {pussy} for your pleasure.",
-					"You fuck your own pussy so eagerly that it starts making wet noises.. Feels so good.",
-					"You angle that fleshlight a bit, making it so your {penis} is hammering away at your g-spot as you pound your {pussy}. You know exactly how to make yourself feel good.",
-					"You’re pounding your own {pussy} with your {pc.penis} fast and hard! A slight bump appears on your belly as your {penis} is reaching your cervix each time.",
+					"Ты стонешь и содрогаешься, трахая собственную {npc.vaginaStretch} {pussy}!",
+					"Ты дрожишь... трахая самого себя, используя собственную {pussy} для своего удовольствия.",
+					"Ты так жадно трахаешь собственную киску, что она начинает издавать влажные звуки... Чертовски приятно.",
+					"Ты немного меняешь угол наклона фаллоимитатора, чтобы твоя {penis} долбила прямо в точку G, пока ты вколачиваешь свой {pussy}. Ты точно знаешь, как доставить себе удовольствие.",
+					"Ты неистово хуяришь свой {pussy} своим {pc.penis}, быстро и жестко! На животе проступает небольшой бугорок, когда твой {penis} каждый раз достигает шейки матки.",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You pant softly as you fuck that eager {npc.vaginaStretch} {pussy}! Feels so much better than a sextoy.",
-					"You smile while fucking someone, using their {pussy} for your pleasure remotely.",
-					"You fuck that {pussy} so eagerly that it starts making wet noises.. The way its inner walls grip your length.. so good.",
-					"You shove your {penis} deep, hammering away at that slit’s pleasure spot. Whoever they are, they are dripping like a whore.",
-					"You’re pounding someone’s {pussy} with your {pc.penis} fast and hard! So hard that your {penis} is reaching their cervix each time, probably creating a small bump on their belly.",
+					"Ты тихо посапываешь, трахая эту жадную {npc.vaginaStretch} {pussy}! Это куда приятнее, чем любой секс-игрушка.",
+					"Ты улыбаешься во время секса, используя чью-то {pussy} для своего удовольствия на расстоянии.",
+					"Ты так жадно трахаешь эту {pussy}, что она начинает издавать влажные звуки... То, как её внутренние стенки обхватывают твою длину... это так охеренно.",
+					"Ты заталкиваешь свою {penis} глубоко, вколачиваясь в точку удовольствия в этой щели. Кем бы они ни были, они текут как шлюхи.",
+					"Ты херачишь в чью-то {pussy} своей {pc.penis} быстро и жестко! Так сильно, что твоя {penis} каждый раз достает до самой шейки матки, наверняка выдавливая небольшую шишку на их животе.",
 				]))
 		
 		if(extraText != ""):
@@ -1007,11 +1007,11 @@ func _run():
 		
 		if(isPCPortal()):
 			saynn(RNG.pick([
-				"You let out some passionate stifled noises as your {pc.penis} is throbbing inside your {pussy}.. before stuffing your womb to the brim with your seed. You curl your toes and squirm a lot, your hands shaking, making your cock rub against your pussy walls more..",
+				"Ты издаешь страстные сдавленные звуки, пока твоя {pc.penis} пульсирует внутри твоей {pussy}... прежде чем залить свою матку до краев своей семенной жидкостью. Ты поджимаешь пальцы ног и много ерзаешь, твои руки дрожат, заставляя твой член сильнее тереться о стенки твоей киски...",
 			]))
 		else:
 			saynn(RNG.pick([
-				"You grunt softly as your {pc.penis} is throbbing inside that clenching {pussy}.. before stuffing its womb to the brim with your seed. Remote breeding, fuck yeah.",
+				"Ты тихо кряхтишь, пока твоя {pc.penis} пульсирует внутри этой сжимающей {pussy}... прежде чем залить её матку до краев своей семенной жидкостью. Дистанционное оплодотворение, черт возьми!",
 			]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_vagina")
@@ -1027,30 +1027,30 @@ func _run():
 		if(!isRepeat):
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You move the fleshlight with your {npc.anusStretch} {anus} closer to your {pc.penis}.. and then penetrate yourself, your own member sliding up your own butt. Feels nice..",
-					"You grab the fleshlight with your {npc.anusStretch} {anus} on it and wear it onto your {pc.penis} like it's a sextoy. Feels good..",
+					"Ты подносишь флешлайт со своей {npc.anusStretch} {anus} ближе к своей {pc.penis}... а затем проникаешь в саму себя, когда твой собственный член скользит в твою собственную задницу. Приятное чувство...",
+					"Ты хватаешь флешлайт с чьим-то {npc.anusStretch} {anus} и надеваешь его на свой {pc.penis}, словно секс-игрушку. Приятное чувство...",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You move the fleshlight with someone’s {npc.anusStretch} {anus} closer to your {pc.penis}.. and then penetrate it, your member sliding deep inside. They are clenching, probably not expecting this. But that only makes you more eager to fuck them.",
-					"You grab the fleshlight with someone’s {npc.anusStretch} {anus} on it and wear it onto your {pc.penis} like it's a sextoy. Feels nice and warm..",
+					"Ты подносишь флешлайт с чьим-то {npc.anusStretch} {anus} ближе к своему {pc.penis}... а затем входишь в него, и твой член глубоко скользит внутрь. Они сжимаются, явно не ожидая такого. Но это лишь разжигает в тебе желание трахнуть их еще сильнее.",
+					"Ты хватаешь флешлайт с чьим-то {npc.anusStretch} {anus} и надеваешь его на свой {pc.penis}, как секс-игрушку. Внутри так приятно и тепло...",
 				]))
 		else:	
 			if(isPCPortal()):
 				saynn(RNG.pick([
-					"You moan and shudder as you fuck your own {npc.anusStretch} {ass}!",
-					"You shiver.. while fucking yourself, using your own {asshole} for your pleasure.",
-					"You fuck your own {asshole} so eagerly that it starts making wet noises.. Feels so good.",
-					"You angle that fleshlight a bit, making it so your {penis} is hammering away at your prostate as you pound yourself. You know exactly how to make yourself feel good.",
-					"You’re pounding your own {ass} with your {pc.penis} fast and hard! A slight bump appears on your belly as your {penis} is reaching deep and putting pressure on the inner wall.",
+					"Ты стонешь и содрогаешься, трахая собственную {npc.anusStretch} {ass}!",
+					"Тебя пробирает дрожь... пока ты трахаешь сам себя, используя собственную {asshole} для своего удовольствия.",
+					"Ты так жадно трахаешь собственную {asshole}, что она начинает издавать влажные звуки... Чертовски приятно.",
+					"Ты немного меняешь угол наклона флешлайта, чтобы при каждом толчке твоя {penis} долбила прямо в простату. Ты точно знаешь, как доставить себе удовольствие.",
+					"Ты неистово вколачиваешь свой {pc.penis} в собственную {ass}! На животе появляется небольшая выпуклость, когда твой {penis} проникает глубоко и давит на внутреннюю стенку.",
 				]))
 			else:
 				saynn(RNG.pick([
-					"You pant softly as you fuck that eager {npc.anusStretch} {ass}! Feels so much better than any sextoy.",
-					"You smile while fucking someone, using their {ass} for your pleasure remotely.",
-					"You fuck that {asshole} so eagerly that it starts making wet noises.. The way its inner walls grip your length.. so good.",
-					"You shove your {penis} deep, hammering away at that {asshole}. Whoever they are, they are clenching like a whore.",
-					"You’re pounding someone’s {ass} with your {pc.penis} fast and hard! So hard that your {penis} is reaching deep inside and putting pressure on their inner wall, probably creating a small bump on their belly.",
+					"Ты тихо дышишь, трахая эту возбужденную {npc.anusStretch} {ass}! Это куда лучше любой секс-игрушки.",
+					"Ты улыбаешься во время траха, используя их {ass} для своего удовольствия на расстоянии.",
+					"Ты так жадно трахаешь этот {asshole}, что он начинает издавать влажные звуки... То, как его внутренние стенки обхватывают твою длину... это так чертовски хорошо.",
+					"Ты засовываешь свой {penis} глубоко, вколачиваясь в этот {asshole}. Кем бы они ни были, они сжимаются, словно шлюхи.",
+					"Ты херачишь по чьему-то {ass} своим {pc.penis} быстро и жестко! Так сильно, что твой {penis} проникает глубоко внутрь и давит на их внутреннюю стенку, наверняка образуя небольшую шишку на их животе.",
 				]))
 		
 		if(extraText != ""):
@@ -1074,11 +1074,11 @@ func _run():
 		
 		if(isPCPortal()):
 			saynn(RNG.pick([
-				"You let out some passionate stifled noises as your {pc.penis} is throbbing inside your {anus}.. before stuffing it to the brim with your seed. You curl your toes and squirm a lot, your hands shaking, making your cock rub against your prostate more..",
+				"Ты издаешь страстные, сдавленные звуки, пока твой {pc.penis} пульсирует внутри твоего {anus}... прежде чем залить его до краев своей спермой. Ты поджимаешь пальцы ног и корчишься, твои руки дрожат, заставляя член еще сильнее тереться о простату...",
 			]))
 		else:
 			saynn(RNG.pick([
-				"You grunt softly as your {pc.penis} is throbbing inside that clenching {anus}.. before stuffing it to the brim with your seed. Remote pounding, fuck yeah.",
+				"Ты тихо кряхтишь, пока твой {pc.penis} пульсирует внутри этого сжимающегося {anus}... прежде чем залить его до краев своей спермой. Дистанционный трах, вот это да.",
 			]))
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "choose_anus")
@@ -1358,7 +1358,7 @@ func _react(_action: String, _args):
 			if(RNG.chance(20)):
 				if(connectedChar.bodypartTransferFluidsTo(BodypartSlot.Anus, "pc", BodypartSlot.Head, 0.1, 20.0)):
 					extraText = RNG.pick([ 
-						Util.capitalizeFirstLetter(connectedChar.getBodypartContentsStringList(BodypartSlot.Vagina))+" lands on your tongue, leaking out of {npc.yourHis} "+RNG.pick(["", "used ", "stuffed "])+RNG.pick(["asshole", "tailhole"])+".",
+						Util.capitalizeFirstLetter(connectedChar.getBodypartContentsStringList(BodypartSlot.Vagina))+" попадает тебе на язык, вытекая из {npc.yourHis} "+RNG.pick(["", "used ", "stuffed "])+RNG.pick(["asshole", "tailhole"])+".",
 					])
 	
 	if(_action == "vagina_lick_swallow"):
@@ -1395,7 +1395,7 @@ func _react(_action: String, _args):
 			if(RNG.chance(20)):
 				if(connectedChar.bodypartTransferFluidsTo(BodypartSlot.Vagina, "pc", BodypartSlot.Head, 0.1, 20.0)):
 					extraText = RNG.pick([ 
-						Util.capitalizeFirstLetter(connectedChar.getBodypartContentsStringList(BodypartSlot.Vagina))+" lands on your tongue, leaking out of {npc.yourHis} "+RNG.pick(["", "used ", "stuffed "])+RNG.pick(["pussy", "slit", "kitty"])+".",
+						Util.capitalizeFirstLetter(connectedChar.getBodypartContentsStringList(BodypartSlot.Vagina))+" попадает тебе на язык, вытекая из {npc.yourHis} "+RNG.pick(["", "used ", "stuffed "])+RNG.pick(["pussy", "slit", "kitty"])+".",
 					])
 	
 	if(_action == "penis_suck_swallow"):

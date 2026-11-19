@@ -26,7 +26,7 @@ func _run():
 				addDisabledButton("Отдых до %02d:00" % [t], "На сегодня уже поздно")
 		
 		if(GM.main.MRH.canRestartMainRoute()):
-			addExtraButtonAt(4, "Reset Main Route", "Reset the main route progress, allowing you to start another route if you want to!", "startReset")
+			addExtraButtonAt(4, "Сбросить основной сюжет", "Сбросить прогресс основного сюжета, чтобы вы могли начать прохождение заново!", "startReset")
 		
 	if(state == "rested"):
 		saynn("Ты проводишь некоторое время в камере. Усталость немного отступает.")

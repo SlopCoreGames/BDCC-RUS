@@ -211,7 +211,7 @@ func _react(_action: String, _args):
 		if(RNG.chance(60)):
 			var zone = BodyWritingsZone.getRandomZone()
 			GM.pc.addBodywriting(zone, BodyWritings.getRandomWritingIDForZone(zone))
-			addMessage("Risha also left a memento on your "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
+			addMessage("Риша также оставила памятный след на твоей "+BodyWritingsZone.getZoneVisibleName(zone)+"..")
 
 	if(_action == "endthescene"):
 		endScene()

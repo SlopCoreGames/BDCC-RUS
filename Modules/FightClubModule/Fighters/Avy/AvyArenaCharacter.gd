@@ -31,7 +31,7 @@ func getPronounGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Red inmate, medium-height fox with a black fur and a feminine look."
+	return "Заключенная по кличке Ред — лисица среднего роста с черным мехом и женственной внешностью."
 
 func getSpecies():
 	return ["canine"]
@@ -41,8 +41,8 @@ func _getAttacks():
 
 func getFightIntro(_battleName):
 	if(_battleName == "arenafight"):
-		return "Avy stands tall, her foxy tail swishing behind her. It seems she is waiting for you to do the first move.."
-	return "Avy stands straight, her hands slightly behind her, clawed digits spread out."
+		return "Ави стоит в полный рост, помахивая своим лисьим хвостом. Кажется, она ждет, когда ты сделаешь первый ход..."
+	return "Ави стоит прямо, слегка заложив руки за спину и расставив когтистые пальцы."
 
 func getThickness() -> int:
 	return 75

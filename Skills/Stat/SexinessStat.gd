@@ -7,4 +7,4 @@ func getVisibleName():
 	return "Сексуальность"
 
 func getVisibleDescription():
-	return "Improves your lust attacks and also raises your lust threshold"
+	return "Усиливает ваши атаки похоти, а также повышает ваш порог вожделения"

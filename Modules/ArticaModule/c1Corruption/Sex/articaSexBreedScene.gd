@@ -31,10 +31,10 @@ func _run():
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
 		if (isNaked):
-			saynn("Твой взгляд приковывает к себе белый пушок, ты намеренно задерживаешь на ней взор,"+str(" milky" if getCharacter("artica").isLactating() else "")+" {artica.breasts}.. пушистый"+str(" cute" if !getCharacter("artica").isVisiblyPregnant() else " round")+" животик.. её сомкнутые ноги, скрывающие"+str(" caged up" if isCaged else "n aroused")+" влагалище.. а также жаждущую киску, спрятанную за её яичками.")
+			saynn("Твой взгляд приковывает к себе белый пушок, ты намеренно задерживаешь на ней взор,"+str(" milky" if getCharacter("artica").isLactating() else "")+" {artica.breasts}.. пушистый"+str(" cute" if !getCharacter("artica").isVisiblyPregnant() else " round")+" животик.. её сомкнутые ноги, скрывающие"+str(" запертая в клетке" if isCaged else "возбужденная")+" влагалище.. а также жаждущую киску, спрятанную за её яичками.")
 
 		else:
-			saynn("Твой взгляд приковывает к себе белый пушок, ты намеренно задерживаешь взгляд на её рубашке, скрывающей её {artica.breasts} и пушистый"+str(" cute" if !getCharacter("artica").isVisiblyPregnant() else " round")+" животик.. её шорты, прикрывающие её"+str(" caged up" if isCaged else "n aroused")+" влагалище.. а также жаждущую киску за её яичками.")
+			saynn("Твой взгляд приковывает к себе белый пушок, ты намеренно задерживаешь взгляд на её рубашке, скрывающей её {artica.breasts} и пушистый"+str(" cute" if !getCharacter("artica").isVisiblyPregnant() else " round")+" животик.. её шорты, прикрывающие её"+str(" запертая в клетке" if isCaged else "возбужденная")+" влагалище.. а также жаждущую киску за её яичками.")
 
 		saynn("Она замечает твой жадный взгляд; от такого внимания её пушистое тело начинает подрагивать. Ты буквально... чувствуешь... как её запах становится всё сильнее с каждой секундой твоего созерцания.")
 
@@ -57,11 +57,11 @@ func _run():
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
 		GM.pc.setLocation(GM.pc.getCellLocation())
 		playAnimation(StageScene.SexPawLick, "tease", {pc="pc", npc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Как только вы заходите в твоё тесное жилище, Артика оказывается прижатой к кровати."+str(", your hands remove her clothes in seconds and are already exploring her forms, spreading her legs" if !isNaked else ", your hands already start exploring her forms and spreading her legs")+".")
+		saynn("Как только вы заходите в твоё тесное жилище, Артика оказывается прижатой к кровати."+str(", твои руки за считанные секунды срывают с неё одежду и уже исследуют её тело, раздвигая ей ноги" if !isNaked else ", твои руки уже начинают исследовать её тело и раздвигать ей ноги")+".")
 
 		saynn("[say=artica]Ах..[/say]")
 
-		saynn("Какой великолепный вид... застенчивое, раскрасневшееся личико, которое уже тихонько посапывает от возбуждения..."+str("swollen milky tits with dark cyan perky nips that have purple piercings in them" if getCharacter("artica").isLactating() else "modest round tits with cyan perky nips that have purple piercings in them")+".. её узкая голубая щелочка, спрятанная под пушистыми яичками...")
+		saynn("Какой великолепный вид... застенчивое, раскрасневшееся личико, которое уже тихонько посапывает от возбуждения..."+str("наливные молочные сиськи с темными бирюзовыми упругими сосками, проколотыми фиолетовым пирсингом" if getCharacter("artica").isLactating() else "скромные круглые сиськи с бирюзовыми упругими сосками, проколотыми фиолетовым пирсингом")+".. её узкая голубая щелочка, спрятанная под пушистыми яичками...")
 
 		saynn("Пушистая прикусывает губу, её глаза стараются избегать твоего взгляда...")
 
@@ -134,7 +134,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "what_do")
 	if(state == "picked_strapon"):
 		playAnimation(StageScene.SexPawLick, "tease", {pc="pc", npc="artica", bodyState={naked=true, hard=true, condom=condomUsed}, npcBodyState={naked=true, hard=true, condom=articaCondom}})
-		saynn("Вы закрепляете страпон на талии!"+str(" One that is loaded.." if straponHasCum else "")+""+str(" One that is loaded with Artica's cum.." if straponHasArticaCum else "")+"")
+		saynn("Вы закрепляете страпон на талии!"+str(" Та, что наполнена..." if straponHasCum else "")+""+str(" Та, что полна артиковской спермы..." if straponHasArticaCum else "")+"")
 
 		saynn("[say=artica]Ох.. вау..[/say]")
 
@@ -190,7 +190,7 @@ func _run():
 		addButton("Отмена", "Ты передумал", "endthescene")
 	if(state == "start_fuck"):
 		playAnimation(StageScene.SexPawLick, ("stroke" if isStroking else "")+"sex", {pc="pc", npc="artica", bodyState={naked=true, hard=true, condom=condomUsed}, npcBodyState={naked=true, hard=true, condom=articaCondom}})
-		saynn("Артика ахает, когда ты вонзаешь свой "+str("hard cock" if !isStraponSex else "shiny strapon")+" в её сочащуюся похотью киску, её влажные стенки насильно растягиваются, принимая твою "+str(" rubber" if isStraponSex else "")+"толщину и длину... Один толчок быстро сменяется другим, твой "+str("cock" if !isStraponSex else "toy")+" жадно погружается в эту... тугую... сжимающую... киску."+str(" All the while your hand keeps stroking her off, still at a teasing pace!" if isStroking else "")+"")
+		saynn("Артика ахает, когда ты вонзаешь свой "+str("твердый член" if !isStraponSex else "блестящий страпон")+" в её сочащуюся похотью киску, её влажные стенки насильно растягиваются, принимая твою "+str(" rubber" if isStraponSex else "")+"толщину и длину... Один толчок быстро сменяется другим, твой "+str("cock" if !isStraponSex else "toy")+" жадно погружается в эту... тугую... сжимающую... киску."+str(" При этом твоя рука продолжает ласкать её, всё еще дразняще и неспешно!" if isStroking else "")+"")
 
 		saynn("[say=artica]Ах!.. Н-не т-так с-слишком.. ах..ах..ах..[/say]")
 
@@ -199,7 +199,7 @@ func _run():
 
 		saynn("[say=pc]С чего бы мне замедляться? Твоя шлюшья киска сама умоляет о трахе.[/say]")
 
-		saynn("Её стоны наполняют камеру, пока ты находишь свой ритм, а её "+str(" own" if !isStraponSex else "")+" "+str("cock quickly getting fully hard and swaying back and forth, precum leaking from the tip" if !isCaged else "locked away cock is pushing on its cage, trying to leave the sheath, precum leaking from the peeking tip")+". Пушистка извивается на кровати, пальцы ног поджимаются, ноги раздвигаются всё шире, а её влажные складки затягивают тебя всё глубже в её бархатистое тепло..."+str(" not that you can feel that through the strapon.. but it still feels nice.." if isStraponSex else "")+"")
+		saynn("Её стоны наполняют камеру, пока ты находишь свой ритм, а её "+str(" own" if !isStraponSex else "")+" "+str("член быстро наливается твердостью и раскачивается взад-вперед, с кончика сочится предэякулят" if !isCaged else "запертый в клетке член упирается в неё, пытаясь выбраться из препуция, с кончика, выглядывающего наружу, течет смазка")+". Пушистка извивается на кровати, пальцы ног поджимаются, ноги раздвигаются всё шире, а её влажные складки затягивают тебя всё глубже в её бархатистое тепло..."+str(" не то чтобы ты мог почувствовать это через страпон... но всё равно приятно..." if isStraponSex else "")+"")
 
 		saynn("Пока продолжаются грубые толчки, задняя лапа Артики находит твоё лицо... её когти нежно дразнят твою щеку... бирюзовые подушечки лап массируют её...")
 
@@ -215,15 +215,15 @@ func _run():
 
 			saynn("[say=pc]Я не лапозависимая, это ты такой![/say]")
 
-		saynn("Её киска продолжает сжиматься вокруг твоего "+str("cock" if !isStraponSex else "rubber shaft, increasing friction")+".. но ты продолжаешь долбить её, преодолевая её сопротивление грубой силой. При каждом толчке над её промежностью вздувается бугорок, твой "+str("member" if !isStraponSex else "strapon")+" с силой вбивается в её естественную стенку, пытаясь прорваться прямиком в матку.")
+		saynn("Её киска продолжает сжиматься вокруг твоего "+str("cock" if !isStraponSex else "резиновый ствол, увеличивающий трение")+".. но ты продолжаешь долбить её, преодолевая её сопротивление грубой силой. При каждом толчке над её промежностью вздувается бугорок, твой "+str("member" if !isStraponSex else "strapon")+" с силой вбивается в её естественную стенку, пытаясь прорваться прямиком в матку.")
 
 		saynn("[say=artica]Ах-х.. н-настолько интен-сивно.. боги.. ах.. я.. м.. к-кончаю.. ах..[/say]")
 
 		if (isStroking):
-			saynn(""+str("The knot on the base of the cyan shaft that you're stroking is inflating with blood" if !isCaged else "Her cute caged up cock is desperately twitching in its small prison")+", её киска подергивалась, извергая слабые струйки соков, а от интенсивного жесткого траха её пушистая плоть впивалась в простыни, заставляя её запрокидывать голову.")
+			saynn(""+str("Узел у основания голубого стержня, который ты ласкаешь, раздувается от крови" if !isCaged else "Её милый член в клетке отчаянно дергается в своей маленькой тюрьме")+", её киска подергивалась, извергая слабые струйки соков, а от интенсивного жесткого траха её пушистая плоть впивалась в простыни, заставляя её запрокидывать голову.")
 
 		else:
-			saynn(""+str("The knot on the base of the cyan shaft is inflating with blood" if !isCaged else "Her cute caged up cock is desperately twitching in its small prison")+", её киска подергивалась, извергая слабые струйки соков, а от интенсивного, грубого траха её пушистая плоть впивалась в простыни, заставляя её запрокидывать голову.")
+			saynn(""+str("Узел у основания голубого стержня раздувается от крови" if !isCaged else "Её милый член в клетке отчаянно дергается в своей маленькой тюрьме")+", её киска подергивалась, извергая слабые струйки соков, а от интенсивного, грубого траха её пушистая плоть впивалась в простыни, заставляя её запрокидывать голову.")
 
 		if (isStraponSex):
 			saynn("Она близко.. ты чувствуешь это.. ты даже чуешь это..")
@@ -246,7 +246,7 @@ func _run():
 				saynn("[say=artica]Ох.. ии-ип.. няяяя..-аах..[/say]")
 
 				if (!getCharacter("artica").isVisiblyPregnant()):
-					saynn("[say=pc]Заберемени, жадная шлюха."+str("Enjoy your own pups." if straponHasArticaCum else "Enjoy someone's pups.")+"[/say]")
+					saynn("[say=pc]Заберемени, жадная шлюха."+str("Наслаждайся своими щенками." if straponHasArticaCum else "Наслаждайся чьими-то щенками.")+"[/say]")
 
 					saynn("[say=artica]Ч-что?..[/say]")
 
@@ -255,7 +255,7 @@ func _run():
 					saynn("[say=artica]С-с-сперма?.. ахх-х..[/say]")
 
 				else:
-					saynn("[say=pc]Нгх.. Буду осеменять тебя, даже когда ты будешь беременна. Наслаждайся "+str("your own" if straponHasArticaCum else "someone's")+" спермой внутри себя.[/say]")
+					saynn("[say=pc]Нгх.. Буду осеменять тебя, даже когда ты будешь беременна. Наслаждайся "+str("своими собственными" if straponHasArticaCum else "someone's")+" спермой внутри себя.[/say]")
 
 					saynn("[say=artica]С-с-сперма?.. ахх-х..[/say]")
 
@@ -302,10 +302,10 @@ func _run():
 			saynn("[say=pc]Какая ненасытная шлюшка.[/say]")
 
 		if (!articaCondom):
-			saynn("Её тело содрогается от удовольствия, когда волны оргазма, её"+str(" own" if !isStraponSex else "")+" член дёргается"+str(" in your hand" if isStroking else "")+" и извергает "+str("powerful" if !isCaged else "weak")+"струи густого семени"+str(" from inside its cage.. that land onto her belly and tits.." if isCaged else ".. that land onto her tits and face..")+"")
+			saynn("Её тело содрогается от удовольствия, когда волны оргазма, её"+str(" own" if !isStraponSex else "")+" член дёргается"+str(" в руке" if isStroking else "")+" и извергает "+str("powerful" if !isCaged else "weak")+"струи густого семени"+str(" изнутри клетки... которые попадают ей на живот и сиськи..." if isCaged else "...которые попадают ей на сиськи и лицо...")+"")
 
 		else:
-			saynn("Её тело содрогается от удовольствия, когда волны оргазма, её"+str(" own" if !isStraponSex else "")+" член дёргается"+str(" in your hand" if isStroking else "")+" и извергает "+str("powerful" if !isCaged else "weak")+"струи густого семени"+str(" from inside its cage.. that land onto her belly and tits.." if isCaged else " into the condom, making it sag more and more under its own weight..")+"")
+			saynn("Её тело содрогается от удовольствия, когда волны оргазма, её"+str(" own" if !isStraponSex else "")+" член дёргается"+str(" в руке" if isStroking else "")+" и извергает "+str("powerful" if !isCaged else "weak")+"струи густого семени"+str(" изнутри клетки... которые попадают ей на живот и сиськи..." if isCaged else " в презерватив, из-за чего тот всё сильнее провисает под собственным весом...")+"")
 
 		if (isStraponSex):
 			saynn("Ты остаёшься внутри неё и с огромным интересом наблюдаешь за тем, как Артика переживает свой пик...")
@@ -321,7 +321,7 @@ func _run():
 
 		saynn("[say=artica]Нх-хх.. с-слишком.. м-много..[/say]")
 
-		saynn("Её рука ложится на низ живота и нежно поглаживает его, пальцы очерчивают точную форму твоего "+str("cock" if !isStraponSex else "strapon")+".."+str(" while you still idly stroke her cock, milking all of her remaning seed out.." if isStroking else "")+"")
+		saynn("Её рука ложится на низ живота и нежно поглаживает его, пальцы очерчивают точную форму твоего "+str("cock" if !isStraponSex else "strapon")+".."+str(" пока ты лениво ласкаешь её член, выжимая из него последние капли семени..." if isStroking else "")+"")
 
 		saynn("Пора расслабиться.")
 
@@ -330,7 +330,7 @@ func _run():
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if (!condomUsed):
 			if (isStraponSex):
-				saynn("После такого жесткого траха иногда приятно просто потискать пушистую макушку. Ты притягиваешь Артику к себе и нежно обнимаешь её."+str("Her stuffed cyan cunt is dripping her own seed onto your bed.." if straponHasArticaCum else "")+""+str("Her stuffed cyan cunt is dripping someone's seed onto your bed.." if (straponHasCum && !straponHasArticaCum) else "")+"")
+				saynn("После такого жесткого траха иногда приятно просто потискать пушистую макушку. Ты притягиваешь Артику к себе и нежно обнимаешь её."+str("Её набитая голубая щель сочит её собственную смазку прямо на твою кровать..." if straponHasArticaCum else "")+""+str("Её набитая голубая щель сочит чью-то сперму прямо на твою кровать..." if (straponHasCum && !straponHasArticaCum) else "")+"")
 
 			else:
 				saynn("После такого жесткого траха иногда приятно просто потискать пушистую макушку. Ты притягиваешь Артику к себе и нежно обнимаешь её. Её набитая циановая киска так и сочится твоим семенем прямо на кровать...")

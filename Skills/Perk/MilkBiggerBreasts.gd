@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Много молока"
 
 func getVisibleDescription():
-	return "You love being milked! Your breasts can get bigger by one additional size when lactating, allowing them to hold more milk"
+	return "Ты обожаешь, когда тебя доят! Во время лактации твоя грудь может увеличиваться еще на один размер, позволяя удерживать больше молока."
 
 func getSkillTier():
 	return 0

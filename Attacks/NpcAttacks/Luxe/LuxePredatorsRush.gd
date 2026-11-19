@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Рывок хищника"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -23,9 +23,9 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} бросается на тебя с ужасающей скоростью, {attacker.his} плечо врезается тебе прямо в грудь. От удара ты отлетаешь назад, судорожно хватая ртом воздух, пока резкая боль прошивает ребра."
 	
 	if(_receiver.addEffect(StatusEffect.Weakness, [2])):
-		text += " [b]You feel weak![/b]"
+		text += " [b]Ты чувствуешь слабость![/b]"
 	if(RNG.chance(40) && _receiver.addEffect(StatusEffect.Collapsed)):
-		text += " [b]You collapse![/b]"
+		text += " [b]Ты валишься с ног![/b]"
 		
 	return {
 		text = text,

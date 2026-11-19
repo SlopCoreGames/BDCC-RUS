@@ -12,15 +12,15 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn("Шторы с мягким шорохом раздвигаются, открывая {presenter.name}, который/ая выходит вперед с дерзкой ухмылкой, явно наслаждаясь вниманием публики.")
 	
-	sayPresenter("Well, well, well, look who we have tonight, here at the Blacktail Market! I hope you're all ready for a little fun, because things are about to get interesting.")
+	sayPresenter("Ну надо же, посмотрите, кто у нас сегодня на рынке Блэктейл! Надеюсь, вы все готовы немного развлечься, потому что сейчас станет по-настоящему интересно.")
 	
 	saynn("{presenter.YouHe} {presenter.youHeVerb('give')} игриво подмигивает/ает, указывая на стоящую рядом рабыню/раба. Луч прожектора следует за жестом, мягко освещая {slave.him}, пока {slave.he} нервно щурится/тся и переминается с ноги на ногу.")
 	
-	sayPresenter("Meet this little toy, someone who has just the right mix of charm, skill, and.. well, let’s just say, you’ll have fun figuring out the rest. Plug-And-Play, you know how it works!")
+	sayPresenter("Познакомьтесь с этой игрушкой. В ней есть всё, что нужно: обаяние, навыки и... ну, скажем так, вам будет весело разгадывать остальное. Включил и играй, сами знаете, как это работает!")
 	
 	saynn("В толпе раздается легкий смешок, хотя не все участники аукциона, похоже, впечатлены таким непринужденным тоном. Кто-то откидывается на спинку кресла, а кто-то заинтригован, переводя взгляд с {presenter.name} на рабыню/раба. Вы стараетесь следить за их реакциями и всё фиксируете.")
 	
-	sayPresenter("The starting bet is "+str(_auction.startingBid)+" credits.")
+	sayPresenter("Начальная ставка составляет "+str(_auction.startingBid)+" credits.")
 	
 	for _i in range(3):
 		_auction.unlockRandomRelevantTraitEachBidder()

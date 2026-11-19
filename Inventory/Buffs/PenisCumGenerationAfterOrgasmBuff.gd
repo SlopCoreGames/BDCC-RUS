@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Instant cum generation after orgasm "+text+"%"
+	return "Мгновенная генерация спермы после оргазма "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.CumGenerationAfterOrgasm, amount/100.0)

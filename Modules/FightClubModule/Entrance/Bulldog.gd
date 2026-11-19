@@ -69,17 +69,17 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.Gags):
-		return "Quit drooling, whore"
+		return "Хватит пускать слюни, шлюха"
 	if(interest == InterestTopic.ExposedCock):
-		return "The fuck do you want with that cock"
+		return "Какого хуя тебе сдался этот член?"
 	if(interest == InterestTopic.FullyNaked):
-		return "Preparing to be fucked?"
+		return "Готова, чтобы тебя оттрахали?"
 	if(interest == InterestTopic.HasCockOnly):
-		return "And you don't even have a cunt"
+		return "И ведь у тебя даже киски нет"
 	if(interest == InterestTopic.MasculineBody):
-		return "Am I supposed to fear your sorry ass?"
+		return "И я, по-твоему, должна бояться твоей жалкой задницы?"
 	if(interest == InterestTopic.FeminineBody):
-		return "Just be a good girl and spread your legs"
+		return "Просто будь хорошей девочкой и раздвинь ноги"
 	
 func _getName():
 	return "Bulldog"
@@ -88,7 +88,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Red block inmate. Angry-looking bulldog"
+	return "Заключенная из красного блока. Злобный бульдог"
 
 func getSpecies():
 	return ["canine"]
@@ -97,7 +97,7 @@ func _getAttacks():
 	return ["biteattack", "simplekickattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return getName() + " gets into the combat stance and prepares for a fight."
+	return getName() + " принимает боевую стойку и готовится к драке."
 
 func getThickness() -> int:
 	return 70

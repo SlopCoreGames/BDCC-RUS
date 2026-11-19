@@ -290,7 +290,7 @@ func _run():
 			saynn("Треугольное сиденье вжимается в твою чувствительную киску. Ты еще почти достаешь до пола, но приходится изрядно напрягаться, чтобы стоять на цыпочках. Стоит тебе оступиться, как острый край начинает давить на половые губы, растягивая их, а затем впиваясь в самые чувствительные места.")
 
 		else:
-			saynn("Треугольное сиденье прижимается к твоему промежности. У тебя нет киски, но это все равно доставляет немало дискомфорта."+str(" and your {pc.penis}" if GM.pc.hasPenis() else "")+". Ты еще почти достаешь до пола, но приходится изрядно напрягаться, чтобы стоять на цыпочках. Стоит тебе оступиться, как острый край начинает давить на промежность, причиняя боль.")
+			saynn("Треугольное сиденье прижимается к твоему промежности. У тебя нет киски, но это все равно доставляет немало дискомфорта."+str(" и твой {pc.penis}" if GM.pc.hasPenis() else "")+". Ты еще почти достаешь до пола, но приходится изрядно напрягаться, чтобы стоять на цыпочках. Стоит тебе оступиться, как острый край начинает давить на промежность, причиняя боль.")
 
 		saynn("Ты смотришь на Тави — ей суждено пережить ту же участь; её {tavi.breasts} слегка покачивается, когда деревянная лошадь давит на её светящиеся зеленым лепестки. Она смотрит на тебя глазами, полными надежды.")
 
@@ -791,7 +791,7 @@ func _react(_action: String, _args):
 	if(_action == "tavi_pc_escape"):
 		processTime(10*60)
 		addExperienceToPlayer(100)
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 		setFlag("TaviModule.Ch4ServedPunishment", true)
 		getCharacter("skar").removeAllRestraints()
 
@@ -811,7 +811,7 @@ func _react(_action: String, _args):
 		getCharacter("tavi").removeAllRestraints()
 		GM.pc.removeAllRestraints()
 		addExperienceToPlayer(100)
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 		setFlag("TaviModule.Ch4ServedPunishment", true)
 
 	setState(_action)
@@ -822,10 +822,10 @@ func _react_scene_end(_tag, _result):
 		GM.pc.addPain(20)
 		if(!skar_added_blindfold && GM.pc.getPainLevel() >= 0.5):
 			skar_added_blindfold = true
-			addMessage("Skar notices you struggling against restraints and blindfolds you!")
+			addMessage("Скар замечает, как ты бьешься в путах, и завязывает тебе глаза!")
 			GM.pc.getInventory().forceEquipStoreOtherUnlessRestraint(GlobalRegistry.createItem("blindfold"))
 		else:
-			addMessage("The wooden horse brings more pain to you")
+			addMessage("Деревянная лошадка причиняет тебе еще больше боли")
 		setState("woodenhorse_loop")
 
 	if(_tag == "skarfight"):

@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(GM.QS.isActive("RahiSlaveryQuest") && !getFlag("RahiModule.rahi2SceneHappened")):
-		addButtonUnlessLate("Alcohol", "Talk with the kitty about the alcohol", "rahitalk")
+		addButtonUnlessLate("Алкоголь", "Поболтать с кошечкой об алкоголе", "rahitalk")
 
 func getPriority():
 	return 0

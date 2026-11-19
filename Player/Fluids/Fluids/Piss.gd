@@ -73,22 +73,22 @@ func onGettingHitWith(_pc, _amount):
 	
 	var text = ""
 	if(lustToAdd < 0):
-		text += _pc.getName()+" hated getting splashed with piss!"
+		text += _pc.getName()+" ненавидел, когда на него брызгали мочой!"
 	elif(lustToAdd > 0):
-		text += _pc.getName()+" "+RNG.pick(["loved", "enjoyed", "got lusty from", "liked", "got aroused from"])+" getting splashed with piss!"
+		text += _pc.getName()+" "+RNG.pick(["loved", "enjoyed", "возбудился от", "liked", "завелся от"])+" когда на него брызгают мочой!"
 	
 	var painToAdd = 0
 	if(RNG.chance(4.0 * sqrt(_amount)) && !_pc.hasEffect(StatusEffect.Collapsed)):
 		if(text != ""):
 			text += " "
-		text += _pc.getName()+" slipped on piss, ow!"
+		text += _pc.getName()+" поскользнулся в моче, ой!"
 		_pc.addEffect(StatusEffect.Collapsed)
 		painToAdd = 10
 	
 	if(RNG.chance(4.0 * sqrt(_amount)) && !_pc.hasEffect(StatusEffect.Weakness)):
 		if(text != ""):
 			text += " "
-		text += _pc.getName()+" got very grossed out from getting covered in piss!"
+		text += _pc.getName()+" его дико тошнило от того, что его облили мочой!"
 		_pc.addEffect(StatusEffect.Weakness, [Util.mini(3, 1 + int(_amount/2000))])
 		
 	return {

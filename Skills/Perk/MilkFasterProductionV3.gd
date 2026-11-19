@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Молочная фабрика"
 
 func getVisibleDescription():
-	return "Your tits feel so good when they're heavy that it's all that you can focus on. Your udders began producing milk [b]120%[/b] faster"
+	return "Твоя грудь становится такой тяжелой и приятной, что ты не можешь думать ни о чем другом. Твои вымена начинают вырабатывать молоко [b]120%[/b] быстрее"
 
 func getRequiredPerks():
 	return [Perk.MilkFasterProduction, Perk.MilkFasterProductionV2]

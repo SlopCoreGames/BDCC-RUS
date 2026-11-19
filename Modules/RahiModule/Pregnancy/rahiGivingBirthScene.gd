@@ -76,7 +76,7 @@ func _run():
 		playAnimation(StageScene.Duo, "sit", {pc = "nurse", npc="rahi", npcAction="stand"})
 		saynn("Как только вы заходите в вестибюль, медсестра замечает огромный живот Рахи и тут же вскакивает, уже понимая, к чему всё идет.")
 
-		var randomNurseLine = RNG.pick(["Welcome back", "Back so soon?", "Someone is gonna be a mother again, huh.", "Ready to give birth? You know the drill. Follow me.", "I will go prepare everything.", "Such a fertile cat, huh.", "You like being pregnant, huh?", "You're visiting us quite often lately. Keep them coming.", "Should I start keeping a tally..", "Look who's back.."])
+		var randomNurseLine = RNG.pick(["С возвращением", "Так быстро?", "Кто-то снова станет мамочкой, а?", "Готова рожать? Ты знаешь, что делать. Иди за мной.", "Пойду всё подготовлю.", "Ну и плодовитая же кошка.", "Тебе нравится быть беременной, да?", "В последнее время ты заглядываешь к нам довольно часто. Так держать.", "Может, мне уже начать вести счёт...", "Смотрите-ка, кто вернулся..."])
 		saynn("[say=nurse]"+str(randomNurseLine)+"[/say]")
 
 		saynn("Она ведет вас обоих через короткие коридоры в специальную палату..")
@@ -137,7 +137,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "after_birth")
 	if(state == "after_birth"):
 		playAnimation(StageScene.SexStart, "start", {pc = "pc", npc="rahi", npcBodyState={naked=true}})
-		var randomRahiLine = RNG.pick(["Look.. so beautiful..", "She became a mommy, yet again..", "So cute..", "She did it.. she can't believe it.."])
+		var randomRahiLine = RNG.pick(["Смотри... как же это красиво...", "Она снова стала мамочкой...", "Такая милая...", "Она сделала это... сама не может в это поверить..."])
 		if (bornChildAmount  <= 1):
 			saynn("Твои глаза расширяются от благоговения, когда ты впервые видишь ребенка Рахи, а сердце переполняет любовь. Сама же Рахи невероятно истощена; она лишь улыбается, прижимая новорожденного к лапам.")
 
@@ -328,7 +328,7 @@ func _run():
 		playAnimation(StageScene.Duo, "kneel", {npc="rahi", npcAction="stand"})
 		saynn("Спустя некоторое время входят врачи и видят вас двоих. Рахи вздыхает и смотрит на своего ребенка, прежде чем прошептать что-то голосом, полным любви..")
 
-		var randomLastWord = RNG.pick(["She might not always be by your side.. but know that you are loved beyond measure..", "Be brave, her little one.. Grow up strong and kind..", "Remember that you carry her love with you always.. Let it guide you on your journey..", "Treasure every moment, her.. my.. precious child.. Embrace the world, learn and grow.. Know that she will always be watching over you, my child..", "Though she can't be near you.. know that she will always hold you in her heart.. Embrace the opportunities that come your way and make her proud..", "Don't let the bars that surround her define who you are.. Reach for the stars.. let nothing hold you back..", "Hold onto your dreams, my little one.. Let them ignite the fire without you.. Pursue them with unwavering determination..", "Know that she loves you more than words can express.. May your path be blessed, and may you find happiness in every step you take.."])
+		var randomLastWord = RNG.pick(["Возможно, она не всегда будет рядом... но знай, что тебя любят безгранично...", "Будь храбрым, её малыш... Расти сильным и добрым...", "Помни, что её любовь всегда с тобой... Пусть она направляет тебя на твоём пути...", "Цени каждое мгновение, её... моё... драгоценное дитя... Откройся этому миру, учись и расти... Знай, что она всегда будет присматривать за тобой, моё дитя...", "Пусть она и не может быть рядом... знай, что она всегда будет хранить тебя в своём сердце... Хватайся за каждую возможность и заставь её тобой гордиться...", "Не позволяй решёткам, что её окружают, определять, кто ты есть... Тянись к звёздам... и пусть ничто не удержит тебя!", "Держись за свои мечты, малыш... Пусть они разжигают в тебе огонь... Иди к ним с непоколебимой решимостью...", "Знай, что она любит тебя сильнее, чем можно выразить словами... Пусть твой путь будет благословлен, и пусть ты обретаешь счастье на каждом своем шагу..."])
 		saynn("[say=rahi]"+str(randomLastWord)+"[/say]")
 
 		saynn("После этого она встает и неохотно передает ребенка одной из медсестер.")
@@ -639,7 +639,7 @@ func loadData(data):
 	bornChildAmount = SAVE.loadVar(data, "bornChildAmount", 0)
 
 func getDevCommentary():
-	return "I'm more of a 'pls breed - no preg' kind of person x3. For some reason the nature has decided that giving birth for us humans needed to be super painful. But oh well, what can you do. That's why I yada-yada most of this stuff. But some people are really into it so might as well keep some fun parts like cradling your kids..\n\nThe bedtime story is obviously referencing Rahi and you being stuck in the prison x3. I tried to put a little spin on it."
+	return "Я скорее из тех, кто за формат «пожалуйста, трахай, но без беременности» х3. По какой-то причине природа решила, что роды у нас, людей, должны быть суперболезненными. Но что поделаешь. Поэтому я в основном проматываю всю эту хрень. Но некоторым это реально нравится, так что стоит оставить немного приятного, вроде того, как ты баюкаешь своих деток...\n\nСказка на ночь, очевидно, отсылает к Рахи и к тому, что вы застряли в тюрьме х3. Я попыталась добавить в это немного своего стиля."
 
 func hasDevCommentary():
 	return true

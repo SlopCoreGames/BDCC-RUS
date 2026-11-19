@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Гига-молоко"
 
 func getVisibleDescription():
-	return "Milking feels so good! Your udders must produce more milk! Milk, milk, milk! Your breasts can get bigger by [b]TWO[/b] additional sizes when lactating"
+	return "Доить — это так приятно! Твои вымени должны производить еще больше молока! Молоко, молоко, молоко! Твоя грудь может увеличиться на [b]ДВА[/b] дополнительных размера во время лактации"
 
 func getRequiredPerks():
 	return [Perk.MilkBiggerBreasts, Perk.MilkBiggerBreastsV2]

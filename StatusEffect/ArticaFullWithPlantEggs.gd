@@ -22,10 +22,10 @@ func processTime(_secondsPassed: int):
 		turns = 0
 
 func getEffectName():
-	return "Stuffed with eggs!"
+	return "Внутри полно яиц!"
 
 func getEffectDesc():
-	return "You are stuffed with "+str(eggAmount)+" eggs! "+("You will be ready to lay them in "+Util.getTimeStringHumanReadable(turns) if turns > 0 else "You are ready to lay them!")
+	return "Ты набита "+str(eggAmount)+" яйцами! "+("Ты будешь готова отложить их через "+Util.getTimeStringHumanReadable(turns) if turns > 0 else "Ты готова их отложить!")
 
 func getEffectImage():
 	return "res://Images/StatusEffects/bloating.png"

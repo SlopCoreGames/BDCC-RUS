@@ -15,13 +15,13 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn("Занавес раздвигается, открывая взору {presenter.name}, стоящую на небольшом возвышении.")
 	
-	sayPresenter("Good evening, ladies and gentlemen. Welcome to Blacktail Market! Tonight, I present to you a unique and rare offering.")
+	sayPresenter("Добрый вечер, дамы и господа! Добро пожаловать на рынок Блэктейл! Сегодня я представляю вашему вниманию уникальный и редкий лот.")
 	
 	saynn("Луч прожектора выхватывает {slave.name}, стоящую на {slave.his} {slave.toes}.")
 	
 	saynn("Участники аукциона подаются вперед — любопытные, но сохраняющие самообладание. Вы слышите их негромкий гул и пытаетесь уловить что-нибудь полезное.")
 	
-	sayPresenter("The starting bet is "+str(_auction.startingBid)+" credits.")
+	sayPresenter("Начальная ставка составляет "+str(_auction.startingBid)+" credits.")
 	
 	for _i in range(3):
 		_auction.unlockRandomTraitEachBidder()
@@ -29,39 +29,39 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 func getSlaveReaction(_char:BaseCharacter, _reactionType) -> String:
 	if(_reactionType == AuctionSlaveReaction.Obedient):
 		return RNG.pick([
-			"{slave.name} doesn’t flinch as the light snaps onto {slave.him}, {slave.his} head tilting slightly to the floor in submission. {slave.His} posture remains firm despite the strain. {slave.He} seems to understand where {slave.he} {slave.isAre}.. and accepts {slave.his} fate in silence.",
-			"A quiet gasp escapes {slave.name}'s lips, but {slave.he} quickly recovers, standing tall despite {slave.his} position. {slave.His} gaze lowers respectfully, ready to endure whatever is to come. There is no struggle, only the faintest tremor of anticipation.",
-			"The bright projector blinds {slave.name} momentarily, but {slave.he} remains composed. {slave.His} breathing is deep as {slave.he} looks around, quickly realizing what is happening.. {slave.He} seems to understand {slave.his} purpose, accepting it without protest.",
+			"{slave.name} даже не вздрагивает, когда свет резко падает на {slave.him}; {slave.his} слегка склоняет голову к полу в знак покорности. Несмотря на напряжение, осанка {slave.His} остается твердой. {slave.He} кажется, понимает, что {slave.he} {slave.isAre}.. и молча принимает {slave.his} судьбу.",
+			"С губ {slave.name} срывается тихий вздох, но {slave.he} быстро берет себя в руки и выпрямляется, несмотря на {slave.his} положение. Взгляд {slave.His} почтительно опускается вниз — она готова вынести всё, что уготовано судьбой. Никакого сопротивления, лишь едва уловимая дрожь предвкушения.",
+			"Яркий свет проектора на мгновение ослепляет {slave.name}, но {slave.he} сохраняет самообладание. {slave.His} глубоко дышит, пока {slave.he} оглядывается по сторонам, быстро осознавая, что происходит... {slave.He} кажется, понимает цель {slave.his} и принимает её без протеста.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Confused):
 		return RNG.pick([
-			"The light startles {slave.name}, and {slave.his} {slave.masc} body tenses as {slave.he} {slave.isAre} presented to the bidders, lips parting in a soft gasp. {slave.His} big, sad eyes search the big dark room desperately, as if hoping for an explanation. {slave.He} glances at the presenter, a pleading look in {slave.his} eyes.",
-			"Confusion flickers in {slave.name}'s eyes as the bright light bears down on {slave.him}. {slave.He} lowers {slave.his} head slightly, lips trembling as if to ask a question, but {slave.he} remains still, sadness weighing heavy on {slave.his} features.",
-			"{slave.name} swallows hard, blinking as {slave.he} struggles to make sense of the scene. {slave.His} gaze flits around, unsure and lost, a cloud of sadness settling over {slave.him}. But despite the uncertainty, {slave.he} doesn’t resist.",
+			"Свет пугает {slave.name}, и тело {slave.his} {slave.masc} напрягается, когда {slave.he} {slave.isAre} предстает перед участниками торгов, а губы приоткрываются в тихом вздохе. {slave.His} большие печальные глаза отчаянно ищут что-то в огромном темном зале, словно в надежде найти объяснение. {slave.He} бросает взгляд на ведущего, и в {slave.his} глазах читается мольба.",
+			"В глазах {slave.name} мелькает замешательство, когда яркий свет обрушивается на {slave.him}. {slave.He} слегка опускает {slave.his} голову, губы дрожат, будто собираясь задать вопрос, но {slave.he} замирает, а на {slave.his} лице печать глубокой печали.",
+			"{slave.name} тяжело сглатывает, часто моргая, пока {slave.he} пытается осознать происходящее. {slave.His} беспокойно озирается по сторонам, чувствуя себя потерянной, и на {slave.him} нависает туча грусти. Но, несмотря на неопределенность, {slave.he} не сопротивляется.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Shy):
 		return RNG.pick([
-			"{slave.name}'s cheeks flush a deep red as the light illuminates {slave.him}, {slave.his} gaze immediately darting to the floor. {slave.He} shifts awkwardly on {slave.his} toes, clearly embarrassed but unwilling to raise {slave.his} voice or eyes.",
-			"A startled gasp escapes {slave.name} as the projector light floods the stage. {slave.He} squirms under the attention, face glowing with embarrassment, but {slave.his} eyes never meet the crowd. {slave.He} stays still, trying to disappear into {slave.his} discomfort.",
-			"{slave.name} blushes fiercely as the spotlight settles on {slave.him}. {slave.His} body stiffens, clearly uncomfortable, but {slave.he} doesn’t resist. Instead, {slave.he} closes {slave.his} eyes briefly, trying to compose {slave.himself} under the weight of everyone's gaze.",
+			"Щеки {slave.name} заливаются густым румянцем, когда свет освещает {slave.him}, и {slave.his} тут же утыкается взглядом в пол. {slave.He} неловко переминается с {slave.his} ноги на ногу, явно сгорая от смущения, но не решаясь поднять {slave.his} голос или глаза.",
+			"От яркого света проектора {slave.name} испуганно ахает. {slave.He} ерзает под пристальными взглядами, лицо пылает от смущения, но {slave.his} так и не решается встретиться взглядом с толпой. {slave.He} замирает, пытаясь буквально раствориться в {slave.his} неловкости.",
+			"{slave.name} густо краснеет, когда луч прожектора падает на {slave.him}. Тело {slave.His} напрягается от явного дискомфорта, но {slave.he} не сопротивляется. Вместо этого {slave.he} на мгновение прикрывает {slave.his} глаза, пытаясь взять {slave.himself} под контроль под тяжестью всеобщего внимания.",
 		])
 	if(_reactionType == AuctionSlaveReaction.MindBroken):
 		return RNG.pick([
-			"{slave.name} doesn't react at all to the light or the crowd. {slave.His} eyes are dull, staring ahead blankly as if {slave.he} has long since given up any sense of awareness or hope. {slave.His} body hangs limp despite being bound upright.",
-			"{slave.name}'s breathing is shallow, and {slave.his} gaze is empty, completely devoid of emotion. The light washes over {slave.him}, but {slave.he} doesn't seem to notice. {slave.His} limbs remain slack, like a puppet waiting for orders.",
-			"The projector light snaps on, but {slave.name} doesn’t flinch. {slave.His} body is rigid, but there’s no struggle, no recognition in {slave.his} blank expression. {slave.He} stands there, a husk of what {slave.he} once was.",
+			"{slave.name} никак не реагирует ни на свет, ни на толпу. Взгляд {slave.His} потухший, она безучастно смотрит перед собой, словно {slave.he} давно утратила всякое осознание реальности или надежду. Тело {slave.His} висит обмякшим, несмотря на то, что она привязана вертикально.",
+			"Дыхание {slave.name} прерывистое, а взгляд {slave.his} пустой, совершенно лишенный эмоций. Свет заливает {slave.him}, но {slave.he}, кажется, этого даже не замечает. Конечности {slave.His} остаются расслабленными, словно у марионетки, ждущей команд.",
+			"Свет проектора резко вспыхивает, но {slave.name} даже не вздрагивает. Тело {slave.His} напряжено, но в этом нет ни борьбы, ни проблеска узнавания в {slave.his} пустом взгляде. {slave.He} стоит там, словно пустая оболочка того, кем {slave.he} была когда-то.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Desperate):
 		return RNG.pick([
-			"{slave.name}'s eyes widen as the light hits {slave.him}, panic flashing across {slave.his} face. {slave.He} tugs at the chains, desperation creeping into {slave.his} posture, as if trying to make sense of what’s happening around {slave.him}.",
-			"{slave.name} flinches as the projector light burns onto {slave.his} skin. {slave.He} struggles against {slave.his} cuffs, looking wildly at the crowd, pleading silently for someone to intervene. Confusion and fear war with {slave.his} every movement.",
-			"With a startled gasp, {slave.name} looks around, eyes frantic. {slave.He} jerks at the restraints, visibly shaking as the realization sinks in. Desperation radiates from {slave.him}, as if begging for a way out, though none comes.",
+			"Глаза {slave.name} расширяются, когда свет падает на {slave.him}, и на {slave.his} лице промелькивает паника. {slave.He} дергается в цепях, в позе {slave.his} проступает отчаяние, будто она пытается осознать происходящее вокруг {slave.him}.",
+			"{slave.name} вздрагивает, когда свет проектора обжигает кожу {slave.his}. {slave.He} бьется в {slave.his} кандалах, дико озираясь на толпу и безмолвно умоляя о вмешательстве. Смятение и страх пронизывают каждое движение {slave.his}.",
+			"В испуганном вздохе {slave.name} оглядывается по сторонам безумным взглядом. {slave.He} дергается в оковах, заметно дрожа, когда до нее доходит осознание реальности. От {slave.him} исходит волна отчаяния, словно она молит о спасении, но выхода нет.",
 		])
 	if(_reactionType == AuctionSlaveReaction.Angry):
 		return RNG.pick([
-			"{slave.name}'s eyes narrow as the light snaps onto {slave.him}, a growl barely contained in {slave.his} throat. {slave.He} tugs against the cuffs with raw defiance, daring anyone to challenge {slave.his} strength. {slave.He} refuses to submit, despite the odds.",
-			"A snarl escapes {slave.name} as the projector beam locks onto {slave.him}. {slave.His} teeth grit, muscles tense as {slave.he} glares out at the bidders with pure rage. {slave.He} fights against {slave.his} chains, ready to lash out if given the chance.",
-			"{slave.name} stands tall despite the restraints, defiance burning in {slave.his} eyes. {slave.He} pulls at the chains with fury, teeth bared. The bright light only fuels {slave.his} anger, and {slave.he} stares down the crowd with hatred in every breath.",
+			"Глаза {slave.name} сужаются, когда свет резко падает на {slave.him}; в {slave.his} горле клокочет едва сдерживаемый рык. {slave.He} с необузданным вызовом дергается в кандалах, словно бросая вызов любому, кто посмеет оспорить {slave.his} силу. {slave.He} отказывается подчиняться, несмотря на все обстоятельства.",
+			"Рычание срывается с губ {slave.name}, когда луч проектора фиксируется на {slave.him}. {slave.His} стискивает зубы, мышцы напряжены, пока {slave.he} взирает на покупателей с чистой яростью. {slave.He} борется с {slave.his} цепями, готовая наброситься на любого, стоит ей только представиться случай.",
+			"{slave.name} стоит гордо, несмотря на путы, а в глазах {slave.his} горит непокорность. {slave.He} с яростью тянет за цепи, оскалив зубы. Яркий свет лишь подпитывает {slave.his} гнев, и {slave.he} смотрит на толпу, вкладывая ненависть в каждый свой вздох.",
 		])
 		
 #	Obedient,
@@ -70,7 +70,7 @@ func getSlaveReaction(_char:BaseCharacter, _reactionType) -> String:
 #	MindBroken,
 #	Desperate,
 #	Angry,
-	return "{slave.name} blushes deeply."
+	return "{slave.name} густо краснеет."
 
 func getTraits() -> Dictionary:
 	return {

@@ -33,7 +33,7 @@ func getCasualName():
 	return "feeldoe strapon"
 
 func getLewdStraponName() -> String:
-	return RNG.pick(["ovipositor strapon"])
+	return RNG.pick(["овипозитор-страпон"])
 	
 func getPrice():
 	return 40

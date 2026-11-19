@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Шлепать по сиськам"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -22,10 +22,10 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = ""
 	if((_receiver.isPlayer() && _receiver.hasBigBreasts()) || (!_receiver.isPlayer() && _receiver.getGender() != Gender.Male)):
 		_damage = RNG.randi_range(20, 20)
-		text += "{receiver.name}’s big tits received a painful smack! {attacker.name} also managed to hit the sensitive nips.\n"
+		text += "По огромным сиськам {receiver.name} пришелся болезненный шлепок! {attacker.name} также умудрился задеть чувствительные соски.\n"
 	else:
 		_damage = RNG.randi_range(1, 5)
-		text += "{receiver.name} didn’t even feel the smack but {attacker.name}’s hand did manage to hit the sensitive nips.\n"
+		text += "{receiver.name} даже не почувствовала шлепка, но руке {attacker.name} все же удалось задеть чувствительные соски.\n"
 	
 	return {
 		text = text,
@@ -38,7 +38,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 
 func getAnticipationText(_attacker, _receiver):
 	return RNG.pick([
-		"{attacker.name} rushes at {receiver.name} and aims to slap {receiver.his} tits!",
+		"{attacker.name} бросается на {receiver.name}, целясь шлепнуть по {receiver.his} сиськам!",
 	])
 
 func getRequirements():

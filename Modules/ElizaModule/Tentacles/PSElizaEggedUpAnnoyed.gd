@@ -274,6 +274,6 @@ func _react(_action: String, _args):
 	if(_action == "about_to_leave"):
 		processTime(3*60)
 		GM.pc.getInventory().addItemID("PlantEggEliza")
-		addMessage("You received a tentacle egg!")
+		addMessage("Вы получили яйцо щупальца!")
 
 	setState(_action)

@@ -39,34 +39,34 @@ func _run():
 		if (npcType == "kind"):
 			saynn("Блуждая по тюрьме, ты замечаешь знакомую фигуру. Это {npc.name}, одна из тех "+str(charTypes)+" , которых ты обрюхатил.. {npc.He} замечает тебя и спешит навстречу, на {npc.his} лице читается смесь восторга и беспокойства.")
 
-			var randomNpcLine = RNG.pick(["Hey, it's you. I've been looking for you everywhere. I.. I need your help. With this..", "I've been searching for you, hoping you would assist me. I need your help now more than ever.", "Can you please help me? It's kinda urgent..", "Oh, I finally found you. I really need your help.", "I'm sorry for approaching you like this but I don't have anyone else."])
+			var randomNpcLine = RNG.pick(["О, это ты. Я тебя повсюду искала. Мне... мне нужна твоя помощь. С этим самым...", "Я искала тебя, надеясь, что ты поможешь. Сейчас ты нужен мне как никогда.", "Пожалуйста, помоги мне. Это довольно срочно...", "О, наконец-то я тебя нашла. Мне очень нужна твоя помощь.", "Прости, что подхожу к тебе вот так, но мне больше не к кому обратиться."])
 			saynn("[say=npc]"+str(randomNpcLine)+"[/say]")
 
 			saynn("{npc.He} демонстрирует тебе свой {npc.his} раздутый беременный живот. И, похоже, {npc.he} уже готова рожать..")
 
-			var randomNpcLine2 = RNG.pick(["I think it's happening, I keep feeling contractions..", "I'm pregnant and I can't do this alone. I think it's already happening.. Will you please help me?", "I'm scared and I don't know what to do..", "I feel the contractions.. I'm scared.."])
+			var randomNpcLine2 = RNG.pick(["Кажется, началось... Я всё время чувствую схватки...", "Я беременна, и я не справлюсь в одиночку. Кажется, процесс уже пошёл... Поможешь мне, пожалуйста?", "Мне страшно, и я не знаю, что делать...", "Я чувствую схватки... Мне страшно..."])
 			saynn("[say=npc]"+str(randomNpcLine2)+"[/say]")
 
 		elif (npcType == "mean"):
 			saynn("Блуждая по тюрьме, ты замечаешь знакомую фигуру. Это {npc.name}, одна из тех "+str(charTypes)+" , которых ты обрюхатил.. О нет.. {npc.He} замечает тебя и спешит навстречу, на {npc.his} лице читается ярость.")
 
-			var randomNpcLine = RNG.pick(["Oh, great, it's you! Took your sweet time, didn't you? I've been searching all over this damn station. I can't believe I have to ask you for help.", "Don't even try to act surprised! You know damn well what you've done.", "I can't believe I'm even considering asking you for help, but here it goes."])
+			var randomNpcLine = RNG.pick(["О, отлично, это ты! Ну и заставил же ты меня подождать! Я тебя по всей этой чертовой станции обыскала. Поверить не могу, что мне приходится просить о помощи именно тебя.", "Даже не пытайся строить из себя удивленного! Ты прекрасно знаешь, что натворил.", "Сама не верю, что собираюсь просить тебя о помощи, но вот так всё вышло."])
 			saynn("[say=npc]"+str(randomNpcLine)+"[/say]")
 
 			saynn("{npc.He} демонстрирует тебе свой {npc.his} раздутый беременный живот. И, похоже, {npc.he} уже готова рожать..")
 
-			var randomNpcLine2 = RNG.pick(["I'm pregnant! And it's all because of you. Now I need your sorry ass to do something about it. Fast..", "Of all the people to get knocked up by in this hellhole, it had to be you. What are you gonna do about it?", "Congratulations, I'm pregnant. I can't believe I'm saying this, but I need your sorry ass to step up and help me.", "I'm pregnant and I can't handle this on my own. So quit avoiding responsibility and help me, for once.", "Guess what? I'm fucking pregnant. And I need your help, you selfish jerk..", "Congratulations, you're made me a mother. Now, are you going to step up and assist me, or should I handle it myself?", "I'm pregnant, and whether you like it or not, you're involved. So, are you going to be useful and help or should I find someone else?", "Listen, I'm pregnant, and I need your damn help."])
+			var randomNpcLine2 = RNG.pick(["Я беременна! И всё из-за тебя. Теперь твоей заднице придется что-то с этим делать. И быстро.", "Из всех людей в этой дыре, забеременеть пришлось именно от тебя. И что ты теперь будешь делать?", "Поздравляю, я беременна. Сама не верю, что это говорю, но тебе пора взять на себя ответственность и помочь мне.", "Я беременна, и в одиночку мне не справиться. Так что хватит бегать от ответственности и помоги мне хоть раз!", "Знаешь что? Я, блядь, беременна. И мне нужна твоя помощь, эгоистичная ты сволочь...", "Поздравляю, ты сделал меня матерью. Ну так что, ты собираешься взять на себя заботы или мне разгребать всё самой?", "Я беременна, и нравится тебе это или нет, ты в деле. Так ты будешь полезным и поможешь, или мне найти кого-то другого?", "Слушай сюда: я беременна, и мне нужна твоя чертова помощь."])
 			saynn("[say=npc]"+str(randomNpcLine2)+"[/say]")
 
 		elif (npcType == "subby"):
 			saynn("Блуждая по тюрьме, ты замечаешь знакомую фигуру. Это {npc.name}, одна из тех "+str(charTypes)+" , которых ты обрюхатил.. {npc.He} замечает тебя и краснеет, прежде чем медленно подойти; на {npc.his} застенчивом лице читается смесь восторга и беспокойства.")
 
-			var randomNpcLine = RNG.pick(["Um, excuse me.. It's, uh, you. I've been looking for you. I.. I need your help, if you don't mind..", "Hi, it's me.. I don't know if you remember me.. I..", "Um, hi. I've been looking for you. I don't know who else to ask..", "H-Hey, it's you. I.. I've been.. looking for you.", "Um, excuse me.. I'm sorry to bother you but.."])
+			var randomNpcLine = RNG.pick(["Эм, извини... Это, э-э, ты. Я тебя искала. Мне... мне нужна твоя помощь, если ты не против...", "Привет, это я... Не знаю, помнишь ли ты меня... Я...", "Эм, привет. Я тебя искала. Не знаю, к кому еще обратиться...", "П-привет, это ты. Я... я... искала тебя.", "Эм, извини... Прости, что беспокою, но..."])
 			saynn("[say=npc]"+str(randomNpcLine)+"[/say]")
 
 			saynn("{npc.He} демонстрирует тебе свой {npc.his} раздутый беременный живот. И, похоже, {npc.he} уже готова рожать..")
 
-			var randomNpcLine2 = RNG.pick(["I-I.. I'm pregnant.. And I think.. it's happening..", "I.. I'm pregnant and it's getting really close.. Maybe you could.. help me? Please?..", "I'm pregnant and I'm scared because I think it's about to happen.. Would you mind.. helping me through this?..", "I'm pregnant and I need someone to be there.. because I'm scared.. Would you.. be willing to help?"])
+			var randomNpcLine2 = RNG.pick(["Я... я... я беременна... И кажется... процесс пошел...", "Я... я беременна, и всё уже совсем близко... Может, ты бы мог... помочь мне? Пожалуйста?..", "Я беременна, и мне страшно, потому что, кажется, всё вот-вот случится... Ты не против... помочь мне пройти через это?..", "Я беременна, и мне нужно, чтобы кто-то был рядом... потому что мне страшно... Ты... ты готов помочь?"])
 			saynn("[say=npc]"+str(randomNpcLine2)+"[/say]")
 
 		addButton("Помочь", "Помочь им добраться до медблока и принять роды", "help_them")
@@ -74,13 +74,13 @@ func _run():
 	if(state == "tell_not_my_problem"):
 		saynn("Ты явно не хочешь этим заниматься прямо сейчас.")
 
-		var randomResponce = RNG.pick(["Look, your pregnancy is not my problem. Deal with it on your own.", "I really don't have time for this, just go to the medical wing.", "Seriously? You expect me to drop everything and help you with your pregnancy? I'm not here to handle your problems.", "I have my own problems to deal with. Your pregnancy is not my concern.", "Look, I didn't sign up for this. Your pregnant belly is not my responsibility.", "Why should I care about your pregnant belly? It's not like we planned any of this. Figure it out yourself."])
+		var randomResponce = RNG.pick(["Слушай, твоя беременность — не моя проблема. Разбирайся со всем сама.", "У меня реально нет на это времени, просто дуй в медблок.", "Серьёзно? Ты ждёшь, что я брошу все дела и буду помогать тебе с беременностью? Я здесь не для того, чтобы разгребать твои проблемы.", "У меня своих проблем хватает. Твоя беременность меня не колышет.", "Слушай, я на такое не подписывалась. Твой раздутый живот — не моя забота.", "С чего бы мне вообще париться из-за твоего живота? Мы это всё не планировали. Разбирайся сама."])
 		saynn("[say=pc]"+str(randomResponce)+"[/say]")
 
 		if (npcType == "kind"):
 			saynn("На "+str(charType)+" издает печальные вздохи, всё еще осторожно поддерживая {npc.his} большой живот {npc.his} руками.")
 
-			var randomNpcLine = RNG.pick(["Oh.. I see. I thought you would care. I guess I was wrong.", "I didn't expect you to be so cold-hearted.. I thought we had some connection.. But I guess I was wrong.", "I will figure this out on my own then..", "I guess I was hoping for too much from some inmate..", "This pregnancy is overwhelming.. I thought I could rely on you.. Guess not..", "It's okay. I understand. I will try to get to the medical on my own. Didn't mean to burden you with my problems..", "Okay. I will try to get to the medical on my own.."])
+			var randomNpcLine = RNG.pick(["Ох... понятно. А я думала, тебе не всё равно. Видимо, я ошиблась.", "Не ожидала, что ты окажешься такой бесчувственной... Мне казалось, между нами есть связь... Но, похоже, я ошибалась.", "Тогда я справлюсь сама...", "Наверное, я слишком многого ждала от обычной зэчки...", "Эта беременность меня просто с ног сбивает... Я думала, что смогу на тебя положиться... Но нет...", "Все в порядке. Я понимаю. Попробую добраться до медпункта сама. Не хотела обременять тебя своими проблемами...", "Ладно. Попробую добраться до медпункта сама..."])
 			saynn("[say=npc]"+str(randomNpcLine)+"[/say]")
 
 		elif (npcType == "mean"):
@@ -90,13 +90,13 @@ func _run():
 			else:
 				saynn("На "+str(charType)+" смотрит на тебя {npc.his} раздраженными глазами, сжимая {npc.his} руки в кулаки.")
 
-			var randomNpcLine = RNG.pick(["Typical! I should have known better than to expect any decency from you. Fucker!", "Fine, fuck you too then! I don't need your help anyway. I will manage on my own.", "You fucker. Fine. I will handle this alone, just like I've had to from the beginning.", "Oh, how silly of me to think you might care. I will remember this when I'm holding my baby, knowing that I did it all without you!"])
+			var randomNpcLine = RNG.pick(["Типично! Нужно было сразу понять, что от тебя не дождешься никакого приличия. Ублюдок!", "Ладно, да пошел ты! Мне твоя помощь всё равно не нужна. Сама справлюсь.", "Ах ты кобель. Ладно. Разберусь со всем сама, как и всегда с самого начала.", "Ох, какая же я дура, раз подумала, что тебе не плевать. Я это запомню, когда буду держать на руках своего ребенка, зная, что сделала всё без тебя!"])
 			saynn("[say=npc]"+str(randomNpcLine)+"[/say]")
 
 		elif (npcType == "subby"):
 			saynn("На "+str(charType)+" опускает {npc.his} голову, нежно поглаживая {npc.his} живот {npc.his} руками.")
 
-			var randomNpcLine = RNG.pick(["Oh.. Okay. I understand. I'm sorry for bothering you..", "I.. I didn't mean to impose. I will manage on my own. Sorry for asking..", "Oh.. I guess I will go now. Sorry for wasting your time..", "I.. I'll handle this on my own. Sorry for burdening you with my situation..", "I will find my own way to the medical wing. Sorry for bothering you with my troubles.."])
+			var randomNpcLine = RNG.pick(["Ох... Хорошо. Я понимаю. Прости, что побеспокоила...", "Я... я не хотела навязываться. Справлюсь сама. Прости, что попросила...", "Ох... Ну, тогда я пойду. Прости, что потратила твое время...", "Я... я справлюсь сама. Прости, что нагрузила тебя своей ситуацией...", "Я сама доберусь до медблока. Прости, что нагрузила тебя своими проблемами..."])
 			saynn("[say=npc]"+str(randomNpcLine)+"[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -117,23 +117,23 @@ func _run():
 
 			saynn("Начинаются схватки: {npc.name} стонет от боли, до боли сжимая твою руку.")
 
-			saynn("[say=pc]"+str(RNG.pick(["You're doing great. Just breathe through it. I'm here with you.", "You can do it. Push when the nurse tells you.", "I believe in you, listen to the nurse."]))+"[/say]")
+			saynn("[say=pc]"+str(RNG.pick(["Ты молодец. Просто дыши. Я рядом.", "Ты справишься. Тужься, когда скажет медсестра.", "Я верю в тебя, слушай медсестру."]))+"[/say]")
 
-			saynn("[say=npc]"+str(RNG.pick(["Thank you for being here..", "I don't know how would I do it without you..", "I couldn't go through this alone.. thank you.."]))+"[/say]")
+			saynn("[say=npc]"+str(RNG.pick(["Спасибо, что ты здесь...", "Не знаю, что бы я делала без тебя...", "Я бы не вынесла это в одиночку... спасибо..."]))+"[/say]")
 
 		elif (npcType == "mean"):
 			saynn("Ты стоишь рядом с {npc.nameS}, пока {npc.he} слушает указания медсестры. Ты протягиваешь руку {npc.him}, но, кажется, {npc.he} она не нужна.")
 
-			saynn("[say=npc]"+str(RNG.pick(["I'm strong, I don't need your pity.. ah..", "Do I look like I need your hand? Ah..", "Holding hands is for softies.. ah..", "I'm gonna give birth without any hand holding.. ah.."]))+"[/say]")
+			saynn("[say=npc]"+str(RNG.pick(["Я сильная, не нужно меня жалеть... ах...", "Я что, похожа на ту, кому нужна твоя помощь? Ах...", "Держаться за руки — это для неженок... ах...", "Я что, реально буду рожать совсем одна... ах..."]))+"[/say]")
 
 			saynn("Начинаются схватки, заставляя {npc.name} стонать от боли и, в конце концов, вцепиться в твою руку, сжимая её до белизны в костяшках.")
 
 		elif (npcType == "subby"):
 			saynn("Ты стоишь рядом с {npc.nameS}, пока {npc.he} слушает указания медсестры и изо всех сил старается {npc.his} не шуметь слишком сильно, вероятно, из-за чувства смущения. Ты решаешь взять {npc.his} за руку и крепко сжать её, отчего {npc.him} густо краснеет.")
 
-			saynn("[say=pc]"+str(RNG.pick(["You're doing great. Just breathe through it. I'm here with you.", "You can do it. Push when the nurse tells you.", "I believe in you, listen to the nurse.", "Don't hold it, it's okay to scream if you need to."]))+"[/say]")
+			saynn("[say=pc]"+str(RNG.pick(["Ты молодец. Просто дыши. Я рядом.", "Ты справишься. Тужься, когда скажет медсестра.", "Я верю в тебя, слушай медсестру.", "Не сдерживайся, если нужно — кричи, всё в порядке."]))+"[/say]")
 
-			saynn("[say=npc]"+str(RNG.pick(["Yeah.. okay.. ah..", "Thank you.. ah.."]))+"[/say]")
+			saynn("[say=npc]"+str(RNG.pick(["Yeah.. okay.. ah..", "Спасибо... ах..."]))+"[/say]")
 
 		saynn("Комната наполняется напряжением, когда {npc.name} издает всё более мучительные крики — схватки становятся всё чаще и сильнее.")
 
@@ -166,7 +166,7 @@ func _run():
 
 			saynn("Только когда {npc.name} рожает последнего ребенка, глаза {npc.his} начинают блестеть от слез облегчения и радости. {npc.He} ждет, когда медсестра аккуратно вытрет {npc.his} ребенка, а затем начинает баюкать одного из них в {npc.his} руках.")
 
-		saynn("[say=npc]"+str(RNG.pick(["Oh.. oh my.. so perfect.. Look at the tiny fingers and those little eyes.. So beautiful..", "Hi, mommy loves you more than words can express.. welcome to the world, my precious..", "I can't believe I brought this incredible life into existence.. I can't live without you already..", "I will do everything in my power to give you the life you deserve.."]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["Ох... боже мой... какой идеальный... Посмотри на эти крошечные пальчики, на эти глазки... Какая красота...", "Привет, малыш... Мамочка любит тебя сильнее, чем можно выразить словами... Добро пожаловать в этот мир, моё сокровище...", "Не верится, что я подарила жизнь такому чудесному существу... Кажется, я уже не смогу без тебя дышать...", "Я сделаю всё возможное, чтобы дать тебе ту жизнь, которую ты заслуживаешь..."]))+"[/say]")
 
 		saynn("{npc.He} нежно целует младенца {npc.his} в лоб, пока ты стоишь рядом и улыбаешься.")
 

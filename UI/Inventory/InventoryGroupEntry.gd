@@ -43,16 +43,16 @@ func setItem(theItem:ItemBase, theMode):
 	updateInfo()
 	
 	if(isSell):
-		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Sell all"
+		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Продать всё"
 
 	if(isStash):
-		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Stash all"
+		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Спрятать всё"
 	if(isTake):
-		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Take all"
+		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Забрать всё"
 	if(isGive):
-		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Give all"
+		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Отдать всё"
 	if(isEquipTake):
-		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Take all"
+		$VBoxContainer/HBoxContainer/HBoxContainer/InteractButton.text = "Забрать всё"
 
 func addEntry(newEntry):
 	items.append(newEntry)

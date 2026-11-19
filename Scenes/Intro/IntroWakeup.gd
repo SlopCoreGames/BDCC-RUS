@@ -52,7 +52,7 @@ func _run():
 
 		saynn("[say=risha]Ты хочешь, чтобы я нацепила на тебя поводок и лично потащила тебя в шахты? Или мне просто посадить тебя в колодки, чтобы каждый заключенный мог на тебе отыграться? Секс-игрушки здесь очень популярны, ленивая ты шлюха![/say]")
 
-		saynn("Ты стискиваешь зубы, но хранишь молчание — связываться с охранницей сейчас кажется не лучшей идеей." + (" And besides, being muzzled doesn't help with that either." if (GM.pc.getInventory().hasSlotEquipped(InventorySlot.Mouth)) else "") ) # same but cleaner(?)
+		saynn("Ты стискиваешь зубы, но хранишь молчание — связываться с охранницей сейчас кажется не лучшей идеей." + (" Да и намордник тут тоже особо не помогает." if (GM.pc.getInventory().hasSlotEquipped(InventorySlot.Mouth)) else "") ) # same but cleaner(?)
 
 		saynn("[say=risha]Еще один такой косяк при мне, и я лично посажу тебя в колодки, чтобы все подряд тебя трахали — вот тогда ты поймешь, какая ты на самом деле шлюха. А теперь дуй к лифту и спускайся в шахты![/say]")
 
@@ -74,7 +74,7 @@ func _react_scene_end(_tag, _result):
 	pass
 
 func getDevCommentary():
-	return "This small scene was added just to tell the players that skipped most of the reading: Go to the fucking mineshaft!\n\nYeah, it's written in a way that implies that Risha will come after you if you don't do that. Why doesn't she? I'm lazy x3. And also.. I dunno, she would just fuck you or something. What if you want to explore around first without being fucked by some dickgirl if you press one wrong button? Yeah, I can make it optional or something.."
+	return "Эту маленькую сценку добавили только для того, чтобы сказать игрокам, пропустившим почти весь текст: Дуйте, блять, в шахту!\n\n Да, это написано так, будто Риша придет за тобой, если ты этого не сделаешь. Почему она не приходит? Потому что мне лень x3. Ну и еще... не знаю, она бы просто трахнула тебя или типа того. А что, если ты хочешь сначала побродить вокруг, чтобы тебя не трахнула какая-нибудь дикгёрл из-за одного неверного нажатия кнопки? Ладно, могу сделать это необязательным или типа того..."
 
 func hasDevCommentary():
 	return true

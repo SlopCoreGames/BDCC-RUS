@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Чемпион размножения"
 
 func getVisibleDescription():
-	return "Your balls hold so much of quality seed, it's scary. Your balls capacity and virility are increased by 25% and 10% respectively per each point in Vitality."
+	return "В твоих яйцах столько качественного семени, что становится даже жутковато. Емкость яиц и твоя вирильность увеличиваются на 25% и 10% соответственно за каждую единицу показателя Витальности."
 
 func getRequiredPerks():
 	return [Perk.BreedCumVolumeV2]

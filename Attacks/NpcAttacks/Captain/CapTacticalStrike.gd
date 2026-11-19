@@ -10,7 +10,7 @@ func getVisibleName(_context = {}):
 	return "Тактический удар"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -22,9 +22,9 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "{attacker.name} бросается вперед, нанося {receiver.name} мощный удар, причиняющий сильную боль."
 	if(!_receiver.hasEffect(StatusEffect.Stunned)):
 		if(_receiver.addEffect(StatusEffect.Stunned)):
-			text += " The sudden attack [b]stunned[/b] {receiver.name}."
+			text += " Внезапная атака [b]ошеломила[/b] {receiver.name}."
 			text += "\n\n"
-			text += "[say=attacker]"+RNG.pick(["Why are you still fighting?", "And this isn't even a punishment yet.", "Submit. Now."])+"[/say]"
+			text += "[say=attacker]"+RNG.pick(["Почему ты всё ещё сопротивляешься?", "И это ведь даже не наказание.", "Сдайся. Живо."])+"[/say]"
 	
 	return {
 		text = text,
@@ -35,7 +35,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} prepares to strike {receiver.name} with the handle of {attacker.his} weapon!"
+	return "{attacker.name} готовится ударить {receiver.name} рукоятью {attacker.his}!"
 	
 func getAttackSoloAnimation():
 	return "punch"

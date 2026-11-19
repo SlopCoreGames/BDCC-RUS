@@ -9,7 +9,7 @@ func getVisibleName(_context = {}):
 	return "Лютый выпад"
 	
 func getVisibleDesc(_context = {}):
-	return "Shouldn't see this"
+	return "Этого здесь быть не должно"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkMissed(_attacker, _receiver, DamageType.Physical)):
@@ -23,9 +23,9 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	var text = "С оглушительным ревом {attacker.name} бросается вперед, {attacker.his} когти впиваются в твое плечо и тянут тебя на землю. Огромный вес {attacker.him} прижимает тебя к полу, а {attacker.his} когти с брутальной эффективностью кромсают плоть и мышцы."
 	
 	if(_receiver.addEffect(StatusEffect.Bleeding)):
-		text += " [b]You begin to bleed![/b]"
+		text += " [b]Ты начинаешь истекать кровью![/b]"
 	if(_receiver.addEffect(StatusEffect.Collapsed)):
-		text += " [b]You collapse![/b]"
+		text += " [b]Ты валишься с ног![/b]"
 		
 	return {
 		text = text,

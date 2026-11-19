@@ -19,7 +19,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A feline that sells drugs in the drugstore. Light brown fur, green eyes, short height."
+	return "Кошка-фармацевт, торгующая дурью в аптеке. Светло-коричневая шерсть, зеленые глаза, невысокого роста."
 
 func getSpecies():
 	return ["feline"]

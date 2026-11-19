@@ -24,10 +24,10 @@ func _run():
 
 		saynn("Её хвост дергается, а глаза вспыхивают.")
 
-		saynn("[say=kait]Нет, тупица! Я беременна.."+str(" from you.. pretty sure.." if fromPC else "")+"[/say]")
+		saynn("[say=kait]Нет, тупица! Я беременна.."+str(" от тебя.. почти уверена.." if fromPC else "")+"[/say]")
 
 		if (!fromPC):
-			saynn("[say=pc]Поздравляю. Но это был не я."+str(" I don't even have a way to do that." if !GM.pc.hasReachablePenis() else "")+"[/say]")
+			saynn("[say=pc]Поздравляю. Но это был не я."+str(" У меня даже способа нет, чтобы это сделать." if !GM.pc.hasReachablePenis() else "")+"[/say]")
 
 			saynn("Она скрещивает лапы на груди и отводит взгляд.")
 
@@ -142,7 +142,7 @@ func _react(_action: String, _args):
 
 	if(_action == "embrace_kait"):
 		setFlag("KaitModule.ftpembrace", true)
-		addMessage("You can do special pregnancy-related interactions with Kait if you approach her.")
+		addMessage("Если подойти к Кейт, можно запустить особые взаимодействия, связанные с её беременностью.")
 
 	if(_action == "cold_response"):
 		setFlag("KaitModule.ftpembrace", false)

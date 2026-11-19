@@ -8,7 +8,7 @@ func getVisibleName(_context = {}):
 	return "Ничего не делать"
 	
 func getVisibleDesc(_context = {}):
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	return {

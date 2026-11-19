@@ -70,33 +70,33 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.Pregnant):
-		return "You like breeding too, huh. Come to me when you're in heat next time"
+		return "Тебе тоже нравится размножаться, а? В следующий раз, когда пойдёшь в охоту, сразу ко мне"
 	if(interest == InterestTopic.BDSMRestraints):
-		return "Fuck yeah, bound sluts are so hot"
+		return "О да, связанные шлюхи — это просто секс"
 	if(interest == InterestTopic.NoVagina):
-		return "If you don't have a vagina how I'm gonna breed you, whore?"
+		return "Если у тебя нет киски, как я буду тебя трахать, шлюха?"
 	if(interest == InterestTopic.ExposedBra):
-		return "Throw that bra into trash, you don't need it here"
+		return "Выбрось этот сраный лифчик, здесь он тебе нахрен не нужен"
 	if(interest == InterestTopic.ExposedPanties):
-		return "Your stupid panties are getting torn first"
+		return "Твои тупые трусики порвутся первыми"
 	if(interest == InterestTopic.ExposedPussy):
-		return "Yeah~. Now bend over, slut"
+		return "Да~. А теперь наклонись, шлюшка"
 	if(interest == InterestTopic.BigCock):
-		return "I will find the smallest cage for that cock, I swear"
+		return "Клянусь, я подберу самую тесную клетку для твоего члена"
 	if(interest == InterestTopic.StuffedPussy):
-		return "Oh yeah, I love seeing bred sluts"
+		return "О да, обожаю смотреть на осеменённых шлюх"
 	if(interest == InterestTopic.StuffedAss):
-		return "You're leaking back there, slut"
+		return "Ты там вся течёшь, шлюха"
 	if(interest == InterestTopic.CoveredInCum):
-		return "So messy, I love cum sluts"
+		return "Так грязно... Обожаю конченых шлюх"
 	if(interest == InterestTopic.FullyNaked):
-		return "Think you can just undress without me fucking you after?"
+		return "Думаешь, сможешь просто раздеться и чтобы я тебя после этого не оттрахал?"
 	if(interest == InterestTopic.SlimButt):
-		return "That butt can't fit all my cum, whore"
+		return "В эту жопку не влезет всё моё семя, шлюха"
 	if(interest == InterestTopic.FeminineBody):
-		return "I like girly types, they moan the best"
+		return "Обожаю девчонок, они стонут лучше всех"
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "You're a herm too, huh~. I'm the top though"
+		return "Ты тоже герма, да~? Но в постели я ведущая"
 	
 	
 func _getName():
@@ -109,7 +109,7 @@ func getPronounGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "A very tall lynx with cyan fur. Usually wears her bulky guard armor. Her feline face features a huge amount of piercings"
+	return "Очень высокая рысь с бирюзовой шерстью. Обычно носит громоздкую стражниковскую броню. Её кошачье лицо украшено кучей пирсинга"
 
 func getSpecies():
 	return ["feline"]
@@ -118,7 +118,7 @@ func _getAttacks():
 	return ["aitaunthumiliate", "stunbatonAttack", "stunbatonStrongAttack", "biteattack", "simplekickattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	return getName() + " eyes you out and licks her lips.\n\n"+("[say=risha]You're an easy prey for me. Why don't you just undress and we can have some fun instead~[/say]")+"\n\nRisha then gets into a combat stance and gestures you to come closer. Her heavy armor doesn't seem to impact her mobility one bit, her hand holds the stun baton very tightly\n\nSeems the first move is yours"
+	return getName() + " оглядывает тебя и облизывает губы.\n\n"+("[say=risha]Ты для меня — легкая добыча. Почему бы тебе просто не раздеться, чтобы мы могли повеселиться~[/say]")+"\n\nРиша встает в боевую стойку и жестом приглашает тебя подойти ближе. Её тяжелая броня, кажется, ни капли не мешает подвижности, а руку она крепко сжимает на электрошоковой дубинке\n\nПохоже, первый ход за тобой"
 
 func getThickness() -> int:
 	return 110
@@ -148,56 +148,56 @@ func reactRestraint(restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"Haha! Is that all?",
-				"Pathetic attempt",
-				"Now stop trying to tie me up and spread your legs",
+				"Ха-ха! И это всё?",
+				"Жалкая попытка",
+				"А теперь хватит пытаться меня связать и раздвигай ноги",
 				"Hahaha, cute",
 			])
 		
 		return RNG.pick([
-			"I'm strong, I will rip these in half if I have to",
-			"These won't keep me forever",
-			"This only makes me more horny for that ass",
+			"Я сильная, если надо — порву эти путы пополам",
+			"Они не удержат меня вечно",
+			"От этого у меня только сильнее разгорается желание трахнуть твою задницу",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
-				"Oh shit, stop",
-				"I can't breed you if I'm tied up",
-				"Bitch, I'm in control here",
+				"О черт, прекрати",
+				"Я не смогу тебя осеменить, если буду связана",
+				"Сучка, здесь всё контролирую я",
 			])
 		
 		if(restraintType == RestraintType.Gag):
 			return RNG.pick([
-				"Hey! Don't fucking gag me",
-				"Oh, I'm so-o-o biting you",
+				"Эй! Не затыкай мне, блядь, рот!",
+				"О-о-о, сейчас я тебя укушу",
 			])
 		if(restraintType == RestraintType.Muzzle):
 			return RNG.pick([
-				"Hey! Don't fucking muzzle me",
-				"Oh, I'm so-o-o biting you",
+				"Эй! Не надевай на меня, сука, намордник!",
+				"О-о-о, сейчас я тебя укушу",
 			])
 		if(restraintType == RestraintType.ButtPlug):
 			return RNG.pick([
-				"Fuck!",
-				"My ass!",
-				"Bitch, I will have my revenge on your ass",
+				"Блядь!",
+				"Моя задница!",
+				"Сучка, я еще отомщу твоей заднице!",
 			])
 		if(restraintType == RestraintType.VaginalPlug):
 			return RNG.pick([
-				"Keep these for the sluts!",
-				"I'm not a slut, you are!",
-				"Only sluts use toys. I have the real thing",
+				"Оставь это для шлюх!",
+				"Я не шлюха, это ты!",
+				"Игрушки используют только шлюхи. У меня есть кое-что по-настоящему стоящее.",
 			])
 	
 		return RNG.pick([
-			"Hey! I'm a guard!",
-			"I'm gonna use these against you later",
-			"Don't make me mad",
-			"You can't win like this",
-			"Fight me instead of this shit",
-			"I'm a huge cat, you can't tie me up",
+			"Эй! Вообще-то я охранница!",
+			"Я еще применю это против тебя позже.",
+			"Не вздумай меня злить.",
+			"Так ты не победишь",
+			"Сражайся со мной, а не занимайся этой хернёй",
+			"Я — огромная кошка, тебя не свяжешь!",
 		])
 	return null
 

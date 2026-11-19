@@ -14,7 +14,7 @@ func shouldApplyTo(_npc):
 	return false
 
 func getEffectName():
-	return "Pregnant"
+	return "Беременная"
 
 func getEffectDesc():
 	var progress:float = character.getPregnancyProgress()
@@ -39,7 +39,7 @@ func getEffectDesc():
 		var kidAmount:String = character.getMenstrualCycle().getRoughLitterEstimateString(hasFirstPerk && hasSecondPerk)
 		addText += "\n\nYou think there are "+str(kidAmount)+" in this belly"
 	
-	return "You're visibly pregnant.. "+addText
+	return "У тебя заметно округлился живот. "+addText
 
 func getEffectImage():
 	var progress:float = character.getPregnancyProgress()

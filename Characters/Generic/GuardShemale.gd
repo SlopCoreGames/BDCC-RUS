@@ -10,7 +10,7 @@ func getGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Generic %s guard" % NpcGender.getVisibleName(NpcGender.Shemale)
+	return "Обычный %s охранник" % NpcGender.getVisibleName(NpcGender.Shemale)
 
 func getSpecies():
 	return ["canine"]

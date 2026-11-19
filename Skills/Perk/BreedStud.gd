@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Жеребец"
 
 func getVisibleDescription():
-	return "You're a real stallion, your balls rapidly fill up by 10% after your orgasm to make sure that you are never empty"
+	return "Ты настоящий жеребец: после оргазма твои яйца стремительно наполняются на 10%, чтобы ты никогда не оставался пустым."
 
 func getSkillTier():
 	return 1

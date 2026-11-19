@@ -9,7 +9,7 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "walk", {npc="eliza"})
 		aimCamera("intro_beforeelevator")
-		setLocationName("Intake area")
+		setLocationName("Зона приема")
 		
 		addCharacter("eliza")
 
@@ -22,7 +22,7 @@ func _run():
 
 	if(state == "sneak_up"):
 		aimCamera("intro_medicalarea")
-		setLocationName("Medical area")
+		setLocationName("Медблок")
 		playAnimation(StageScene.Duo, "defeat", {npc="eliza"})
 		
 		saynn("Вы решаете не обнаруживать своё присутствие, а вместо этого начинаете медленно подкрадываться к даме, которая, кажется, слишком увлечена чтением данных на планшете. Вы не сводите с неё глаз, стараясь ступать как можно тише. Вы замечаете, как её кошачьи уши едва заметно подёргиваются. Когда вы приближаетесь к инструментальному столу, ваш взгляд падает на разнообразие инструментов: шприцы, зажимы, ретракторы, но самое главное — несколько скальпелей. Ваша рука зависает над одним из них, когда вы пытаетесь его схватить. Но как только вы это делаете, раздаётся голос.")
@@ -75,7 +75,7 @@ func _run():
 
 	if(state == "introduce_self"):
 		aimCamera("intro_medicalarea")
-		setLocationName("Medical area")
+		setLocationName("Медблок")
 		
 		saynn("Ты слегка кашляешь, пытаясь привлечь её внимание. Её кошачьи ушки тут же улавливают звук и поворачиваются к тебе, а вслед за ними она бросает на тебя взгляд.")
 
@@ -159,7 +159,7 @@ func _run():
 		playAnimation(StageScene.Duo, "shove", {npc="eliza", bodyState={leashedBy="eliza"}})
 		
 		aimCamera("intro_beforeelevator")
-		setLocationName("Intake area")
+		setLocationName("Зона приема")
 		
 		saynn("[say=pc]Ага, щас, разбежалась. Лучше иди нахер сама.[/say]")
 
@@ -179,7 +179,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={leashedBy="eliza"}})
 		
 		aimCamera("intro_beforeelevator")
-		setLocationName("Intake area")
+		setLocationName("Зона приема")
 		
 		saynn("[say=pc]Ладно.[/say]")
 
@@ -197,7 +197,7 @@ func _run():
 
 	if(state == "lift"):
 		aimCamera("intro_elevator")
-		setLocationName("Lift")
+		setLocationName("Лифт")
 		
 		saynn("Вы заходите в просторный лифт. На панели управления видно, что в этой тюрьме немало уровней, но их названия сокращены до двух букв, так что разобраться, что к чему, довольно сложно.")
 
@@ -214,7 +214,7 @@ func _run():
 		
 	if(state == "liftarrives"):
 		aimCamera("hall_elevator")
-		setLocationName("Checkpoint")
+		setLocationName("КПП")
 		
 		playAnimation(StageScene.Duo, "walk", {npc="eliza", npcAction="walk", flipNPC=true, bodyState={leashedBy="eliza"}})
 		
@@ -230,7 +230,7 @@ func _run():
 	
 	if(state == "lookaroundmainhall"):
 		aimCamera("hall_mainentrance")
-		setLocationName("Main hall")
+		setLocationName("Главный зал")
 		addCharacter("tavi")
 		
 		saynn("Вокруг мелькают заключенные. Самые разные виды. Кто-то в оранжевой форме, кто-то в красной или розовой. Очевидно, им не говорили о твоем прибытии, но ты уже начинаешь ловить на себе их взгляды. Почти каждый зек теперь пялится на то, как тебя ведут на поводке; до тебя доносятся обрывки голосов, но всё это звучит как невнятный гул.")
@@ -246,7 +246,7 @@ func _run():
 		removeCharacter("tavi")
 		
 		aimCamera("cellblock_nearcells")
-		setLocationName("Cellblock")
+		setLocationName("Блок камер")
 		
 		saynn("[say=eliza]Вот, это твоя камера.[/say]")
 
@@ -266,7 +266,7 @@ func _run():
 		removeCharacter("eliza")
 		aimCamera(GM.pc.getCellLocation())
 		GM.pc.setLocation(GM.pc.getCellLocation())
-		setLocationName("My new home")
+		setLocationName("Мой новый дом")
 		playAnimation(StageScene.Solo, "stand")
 		
 		saynn("Ты заходишь в камеру и оглядываешься по сторонам.")
@@ -493,7 +493,7 @@ func _react_scene_end(_tag, _result):
 	pass
 
 func getDevCommentary():
-	return "This is the scene that introduces Eliza, the cute doctor that likes to experiment on inmates x3. Why? Because she can. And because AlphaCorp wants so. She will find any reason to justify her actions ^^.\n\nOutside of that, I obviously just needed some doctor that would do all the experiments with you. Eliza does have some backstory behind her. Not that deep but it's there. I have reasons for why she acts a little crazy sometimes is what I'm saying ^^\n\nIf you chose the permanent male chastity starting perk Eliza will cage you up in this scene x3. It was fun to write. I dunno, I enjoy writing chastity content a lot. But it's obviously not for everyone. I tried not to treat the player as Sissy. Because.. well.. what if the player is not male x3. But also the world needs more chastity stuff without sissification."
+	return "Эта сцена знакомит нас с Элизой — милой докторшей, которая обожает ставить эксперименты над заключенными (трижды!). Почему? Потому что она может. И потому что так хочет AlphaCorp. Она найдет любой повод, чтобы оправдать свои действия ^^.\n\nПомимо этого, мне просто нужен был врач, который будет проводить с тобой все эксперименты. У Элизы есть предыстория. Не слишком глубокая, но она есть. Я имею в виду, что у меня есть причины, по которым она иногда ведет себя слегка безумно ^^\n\nЕсли ты выберешь стартовый перк на постоянное мужское целомудрие, Элиза запрёт тебя в клетку в этой сцене (трижды!). Писать это было весело. Не знаю, мне просто очень нравится писать контент про целомудрие. Но это, очевидно, не для всех. Я старался не относиться к игроку как к сисси. Потому что... ну... а что, если игрок не мужчина? x3 Но также миру нужно больше контента про целомудрие без обязательной сиссификации."
 
 func hasDevCommentary():
 	return true

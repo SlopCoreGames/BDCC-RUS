@@ -31,31 +31,31 @@ func processStruggleTurn(_pc, _isActivelyStruggling):
 		var randPart = RNG.pick(possible)
 		if(randPart == "vag"):
 			var texts = [
-				"{user.Your} {user.pussyStretch} pussy gets teased through the portal panties by someone!",
-				"Someone rubs their cock against {user.your} slit through the portal panties!",
-				"Someone’s fingers spread {user.your} pussy folds and tease you through the portal panties!",
-				"Someone’s fingers slide in and out {user.your} kitty through the portal panties!",
-				"You feel a cock finding {user.your} pussy and sliding inside through the portal panties!",
+				"Кто-то дразнит {user.Your} {user.pussyStretch} киску через портальные трусики!",
+				"Кто-то трется своим членом о щелочку {user.your} через портальные трусики!",
+				"Чьи-то пальцы раздвигают складки киски {user.your} и дразнят тебя через портальные трусики!",
+				"Чьи-то пальцы скользят туда-сюда в кошачьей щелке {user.your} через портальные трусики!",
+				"Ты чувствуешь, как член находит киску {user.your} и входит в нее через портальные трусики!",
 			]
 		
 			return {"text": RNG.pick(texts), "lust": scaleDamage(5)}
 		if(randPart == "anus"):
 			var texts = [
-				"{user.Your} {user.analStretch} tailhole gets teased through the portal panties!",
-				"Someone rubs their cock against {user.your} anus ring through the portal panties!",
-				"Someone’s fingers prod at {user.your} anal star and tease you through the portal panties!",
-				"Someone’s fingers slide in and out {user.your} {user.analStretch} anus through the portal panties!",
-				"You feel a cock finding {user.your} anal ring and sliding inside through the portal panties!",
+				"{user.Your} {user.analStretch} анус дразнят через портальные трусики!",
+				"Кто-то трется своим членом об анус {user.your} через портальные трусики!",
+				"Чьи-то пальцы тычут в анус {user.your} и дразнят тебя через портальные трусики!",
+				"Чьи-то пальцы скользят туда-сюда в анусе {user.your} {user.analStretch} через портальные трусики!",
+				"Ты чувствуешь, как член находит анус {user.your} и входит в него через портальные трусики!",
 			]
 		
 			return {"text": RNG.pick(texts), "lust": scaleDamage(5)}
 		if(randPart == "penis"):
 			var texts = [
-				"{user.Your} {user.cock} gets teased through the portal panties by someone!",
-				"Someone’s lips close around the tip of {user.your} cock through the portal panties!",
-				"A tongue licks {user.your} {user.cock} through the portal panties!",
-				"Someone’s digits wrap around {user.your} {user.cock} and strokes it through the portal panties!",
-				"Someone is grinding {user.your} cock with their pussy through the portal panties!",
+				"{user.Your} {user.cock} дразнят через портальные трусики!",
+				"Чьи-то губы смыкаются на кончике члена {user.your} через портальные трусики!",
+				"Чей-то язык лижет {user.your} {user.cock} через портальные трусики!",
+				"Чьи-то пальцы обхватывают {user.your} {user.cock} и ласкают его через портальные трусики!",
+				"Кто-то терется киской о член {user.your} через портальные трусики!",
 			]
 		
 			return {"text": RNG.pick(texts), "lust": scaleDamage(5)}

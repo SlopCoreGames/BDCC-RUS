@@ -81,34 +81,34 @@ func _run():
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 
 			saynn("[say=npc]"+RNG.pick([
-				"You like being useful, right?",
-				"I've got something for you to do.",
-				"You want to serve me?",
+				"Тебе ведь нравится быть полезной, верно?",
+				"У меня есть для тебя дельце.",
+				"Хочешь служить мне?",
 			])+"[/say]")
 			
 		# (mean version)
 		if(npcVariation == "mean"):
 
 			saynn("[say=npc]"+RNG.pick([
-				"You're gonna do something for me.",
-				"Make yourself useful.",
-				"Time to serve, slut."
+				"Ты кое-что сделаешь для меня.",
+				"Будь полезной.",
+				"Пора служить, шлюшка."
 			])+"[/say]")
 
 		# (kind version)
 		if(npcVariation == "kind"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"You have some time, right?",
-				"You wouldn't mind doing something for me, right?",
+				"У тебя ведь есть немного времени?",
+				"Ты ведь не против сделать кое-что для меня?",
 			])+"[/say]")
 			
 		# (subby version)
 		if(npcVariation == "subby"):
 			saynn("[say=npc]"+RNG.pick([
-				"Please, can you help me?",
-				"Can you help me out~?",
-				"Would you do something for me? I'll make it worth your while...",
+				"Пожалуйста, ты можешь мне помочь?",
+				"Поможешь мне~?",
+				"Сделаешь кое-что для меня? Обещаю, это того стоит...",
 			])+"[/say]")
 			
 		saynn("Твои мысли затуманиваются жаждой служения.")
@@ -161,9 +161,9 @@ func _run():
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 
 			saynn("[say=npc]"+RNG.pick([
-				"Nice!",
-				"See, it's nice to feel useful!",
-				"There's a good {pc.boy}.",
+				"Красотка!",
+				"Видишь, чувствовать себя полезной — это так приятно!",
+				"Вот и молодец, {pc.boy}.",
 			])+"[/say]")
 			
 			saynn("{npc.He} {npc.verb('take')} свою доставку и {npc.verb('walk')} прочь.")
@@ -171,9 +171,9 @@ func _run():
 		# (mean version)
 		if(npcVariation == "mean"):
 			saynn("[say=npc]"+RNG.pick([
-				"Figures you'd know how to fetch, bitch.",
-				"About time.",
-				"What took you so long?"
+				"Типично для тебя — сразу сообразила, как притащить нужное, сучка.",
+				"Наконец-то.",
+				"Чего ты так долго?"
 			])+"[/say]")
 			
 			saynn("{npc.He} грубо {npc.verb('snatch', 'snatches')} твою посылку и {npc.verb('stroll')} без единого слова.")
@@ -182,8 +182,8 @@ func _run():
 		if(npcVariation == "kind"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Wow, you can really hustle!",
-				"What a good {pc.boy}!",
+				"Ого, а ты умеешь работать быстро!",
+				"Какая послушная {pc.boy}!",
 			])+"[/say]")
 			
 			saynn("{npc.He} игриво {npc.verb('scratch', 'scratches')} тебя по подбородку, {npc.verb('take')} твою посылку и {npc.verb('walk')} прочь.")
@@ -191,9 +191,9 @@ func _run():
 		# (subby version)
 		if(npcVariation == "subby"):
 			saynn("[say=npc]"+RNG.pick([
-				"Thank you so much!",
-				"My hero!",
-				"I'll have to make sure to thank you properly later~",
+				"Огромное тебе спасибо!",
+				"Мой герой!",
+				"Обязательно отблагодарю тебя как следует позже~",
 			])+"[/say]")
 			
 			saynn("{npc.He} весело {npc.verb('take')} твою посылку и убегает вприпрыжку.")
@@ -204,11 +204,11 @@ func _run():
 	if (state == "resist"):
 		saynn("Ты замираешь и вздрагиваешь, едва не разрушив чары.")
 		saynn("[say=pc]"+RNG.pick([
-			"Wait, what am I...", 
-			"Where am I...", 
-			"Why am I...", 
-			"Wait a minute-", 
-			"But why should I-"
+			"Погоди, что я...", 
+			"Где я...", 
+			"Почему я...", 
+			"Погоди-ка...", 
+			"Но почему это я должен..."
 			])+"[/say]")
 		
 		saynn("Раз уж ты доказал, что [i]можешь[/i] остановиться, тебе действительно стоит просто...")

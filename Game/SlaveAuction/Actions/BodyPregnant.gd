@@ -14,12 +14,12 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"Take a good look, bidders - this one isn’t just a slave. {slave.He} is carrying new life within {slave.him}! Perfect for those who appreciate the beauty of pregnancy.",
-		"You won’t find many like {slave.him} on the market. {slave.HeShe} carries not just the weight of a slave’s duties, but also the future.",
-		"See that belly? It didn't came from overeating, {slave.he} {slave.isAre} pregnant! There is so much potential for unique pleasures.",
-		"There’s something special about a pregnant slave, don’t you think? The round belly, the way {slave.he} cradles life inside - it’s a rare and precious experience.",
-		"{slave.He} will make a beautiful addition to any collection. Pregnant, full of life, and still eager to serve. It’s a combination you don’t want to miss.",
-		"You’ll be buying more than a slave - you’re investing in the future with this one. Pregnancy only adds to {slave.his} appeal.",
+		"Взгляните хорошенько, господа аукционисты — это не просто рабыня. {slave.He} вынашивает новую жизнь внутри {slave.him}! Идеальный вариант для тех, кто ценит красоту беременности.",
+		"На рынке не так много таких, как {slave.him}. {slave.HeShe} несет в себе не только бремя рабских обязанностей, но и будущее.",
+		"Видите этот живот? Это не от объеданий, {slave.he} {slave.isAre} беременна! В этом кроется столько потенциала для уникальных удовольствий.",
+		"В беременных рабынях есть что-то особенное, не находите? Этот округлый живот, то, как {slave.he} бережно хранит жизнь внутри — это редкий и драгоценный опыт.",
+		"{slave.He} станет прекрасным дополнением к любой коллекции. Беременная, полная жизни и всё еще жаждущая служить. Такое сочетание нельзя упускать.",
+		"Вы покупаете не просто рабыню — с этой штучкой вы инвестируете в будущее. Беременность только добавляет {slave.his} привлекательности.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Mind, mightChance())

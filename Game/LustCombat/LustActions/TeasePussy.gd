@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Ласкать киску"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Give your kitty some love through the clothing"
+	return "Поласкать свою киску через одежду"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -28,43 +28,43 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "Your hand slides down to your covered up crotch and hovers there. You feel that behind all the cloth there are some needy pussy lips and a cute clit. Your fingers outline your slit and then gently rub the sensitive spot, causing you to let out a pleasurable moan."
+		text += "Твоя рука скользит вниз к прикрытой паху и замирает там. Ты чувствуешь, что под тканью скрываются жаждущие половые губы и милый клитор. Твои пальцы очерчивают щелочку, а затем нежно массируют чувствительную точку, заставляя тебя издать томный стон."
 		text += "\n\n"
 	else:
-		text += "You sneak your hand down to your slit. You trace around the pussy and then find the little clit with your finger. You begin rubbing it through all the cloth, teasing yourself and making little pleasure noises."
+		text += "Ты незаметно просовываешь руку к своей щелочке. Ты обводишь пальцем контуры киски, а затем нащупываешь крошечный клитор. Ты начинаешь теребить его через ткань, дразня себя и издавая тихие звуки удовольствия."
 		text += "\n\n"
 		
 	if(RNG.chance(30) && _lustState.isInBattle()):
-		text += "You smirk at the enemy as you continue to tease your slit. You’re making it clear that if they want this they gotta work for it."
+		text += "Ты ухмыляешься врагу, продолжая дразнить свою щелочку. Ты ясно даешь понять: если они хотят этого, им придется попотеть."
 		text += "\n\n"
 		
 	if(RNG.chance(50) && pc.hasEffect(StatusEffect.HasCumInsideVagina)):
-		text += "As you continue to rub your slit through the clothing, some fluids leak out. Fluids from your previous lovers, they leave dark spots on the cloth and slide down your {pc.masc} thighs. You’re such a mess~."
+		text += "Пока ты продолжаешь теребить щелочку через одежду, выделяется смазка. Смазка от твоих предыдущих любовников оставляет темные пятна на ткани и стекает по твоим {pc.masc} бедрам. Ну ты и грязнуля~."
 		text += "\n\n"
 		
 	if(RNG.chance(20) && pc.hasEffect(StatusEffect.CoveredInCum)):
-		text += "So much cum on your body.. You catch some with your fingers and rub it into your crotch, can’t let so much good stuff go to waste."
+		text += "Столько спермы на твоем теле... Ты зачерпываешь немного пальцами и втираешь её в промежность — нельзя же давать такому доброму делу пропасть зря."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.getLust() >= 50):
-		text += "Your pussy is so wet and drippy, you feel like you can cum just by teasing yourself.. You push on your clothing and make it dig deeper between the sensitive folds."
+		text += "Твоя киска такая мокрая и сочная, что кажется, ты кончишь, просто дразня себя... Ты сильнее прижимаешь одежду, заставляя её глубже вжиматься в чувствительные складки."
 		text += "\n\n"
 		
 	if(RNG.chance(20) && pc.hasPenis()):
-		text += "As you tease your cunt, your {pc.cock} is only getting harder and leaking more precum, creating another damp spot on the cloth."
+		text += "Пока ты ласкаешь свою киску, твой {pc.cock} становится только тверже и выделяет всё больше предэякулята, оставляя очередное влажное пятно на ткани."
 		text += "\n\n"
 	
 	if(RNG.chance(50)):
 		text += RNG.pick([
-			"[say=pc]Yes, my pussy feels so good..[/say]",
-			"[say=pc]Fuck, I wanna finger myself so hard..[/say]",
-			"[say=pc]Anyone can see me rubbing my needy cunt..[/say]",
-			"[say=pc]Oh fuck..[/say]",
+			"[say=pc]Да, моя киска так приятно горит..[/say]",
+			"[say=pc]Блядь, как же хочется всадить себе пальцы поглубже..[/say]",
+			"[say=pc]Любой может увидеть, как я тереблю свою жаждущую киску..[/say]",
+			"[say=pc]Ох, блядь..[/say]",
 		])
 		text += "\n\n"
 		
 		if(_lustState.isInPublic() && !_lustState.isInBattle()):
-			text += "You hope no one heard that.. You try to keep your mouth shut but it feels so good.."
+			text += "Ты надеешься, что никто этого не услышал... Пытаешься держать рот на замке, но ощущения просто зашкаливают..."
 			text += "\n\n"
 		
 	return {

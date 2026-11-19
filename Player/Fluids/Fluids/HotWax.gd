@@ -36,7 +36,7 @@ func getCost(_amount) -> int:
 
 func onGettingHitWith(_pc, _amount):
 	var text = ""
-	text += _pc.getName()+" got burned by the hot wax!"
+	text += _pc.getName()+" обжегся горячим воском!"
 	
 	return {
 		text = text,

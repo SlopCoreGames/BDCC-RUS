@@ -44,7 +44,7 @@ func _run():
 
 		saynn("Ты занимаешь место на подиуме ведущей и готовишься.")
 
-		saynn("[say=pc]"+str(RNG.pick(["Alright. Time to shine.", "Let's get this bread.", "Time to do this.", "No one but me.", "Show time."]) )+"[/say]")
+		saynn("[say=pc]"+str(RNG.pick(["Ладно. Пора зажечь.", "Пора рубить капусту.", "Пора за дело.", "Никто, кроме меня.", "Время шоу."]) )+"[/say]")
 
 		saynn("Аукцион вот-вот начнется...")
 
@@ -139,7 +139,7 @@ func _react(_action: String, _args):
 		removeCharacter(slaveID)
 		getModule("SlaveAuctionModule").sellToSlavery(slaveID)
 		GM.pc.addCredits(creditsToGive)
-		addMessage("You received "+str(creditsToGive)+" credits.")
+		addMessage("Вы получили "+str(creditsToGive)+" credits.")
 
 	setState(_action)
 
@@ -154,7 +154,7 @@ func _react_scene_end(_tag, _result):
 			var pcNewCredits:int = int(round(float(creditsAmount) * getModule("SlaveAuctionModule").getPCCut()))
 			creditsToGive = pcNewCredits
 			if(getModule("SlaveAuctionModule").isReadyToAdvanceRepLevel()):
-				addMessage("You are ready to advance your and Mirri's slaver reputation level. Talk with her when you are ready.")
+				addMessage("Вы готовы повысить свой уровень репутации работорговца и репутацию Мирри. Поговорите с ней, когда будете готовы.")
 			getModule("SlaveAuctionModule").onSlaveSold(getCharacter(slaveID), creditsAmount)
 			setState("after_sold")
 		

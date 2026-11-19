@@ -563,7 +563,7 @@ anchor_bottom = 0.0
 margin_top = 24.0
 margin_right = 830.0
 margin_bottom = 52.0
-collapseName = "Trigger type settings"
+collapseName = "Настройки типа триггера"
 
 [node name="VBoxContainer" parent="VBoxContainer/MarginContainer/TabContainer/Triggers/HBoxContainer/HSplitContainer/ScrollContainer/TriggerSettingsFullList/PackVarsCollapsableRegion" index="0"]
 margin_right = 823.0

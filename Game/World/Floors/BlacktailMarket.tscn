@@ -8,93 +8,65 @@
 [node name="MarketRoom" parent="." index="0" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 0, -64 )
-roomName = "Mirri's Room"
+roomName = "Комната Мирри"
 roomID = "market_intro"
-roomDescription = "You're standing in Mirri's personal room. It's clean here but that might just be the dim lighting. The floor seems to be made out of some kind of dark wood, pleasant to walk on.
-
-A bed, a pretty soft looking one. A sofa, a little coffee table, a chair and a desk with a laptop. There is also a wooden wardrobe in the corner, filled with bondage equipment.
-
-One of the corners has a teleporter installed, a bulky machine with lots of moving parts."
+roomDescription = "Вы стоите в личной комнате Мирри. Здесь чисто, но, возможно, это лишь из-за тусклого освещения. Пол, кажется, сделан из какого-то темного дерева, по которому приятно ходить.\n\nКровать, выглядит довольно мягкой. Диван, маленький кофейный столик, стул и письменный стол с ноутбуком. В углу также стоит деревянный шкаф, набитый БДСМ-атрибутикой.\n\nВ одном из углов установлен телепорт — громоздкая машина с множеством движущихся деталей."
 roomSprite = 1
 roomColor = 7
 
 [node name="MarketRoom2" parent="." index="1" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 0, -128 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "market_nearmirri"
-roomDescription = "You are following a dark corridor. Red trims follow the slick walls. The main materials are wood and metal with occasional golden accents catching your eye.
-
-Occasionally you meet a painting or two of people that you don't recognize. The thing that unites them is their fur color, all of them have a black or dark-gray fur pattern.
-
-There is a door that leads to Mirri's room here."
+roomDescription = "Вы идете по темному коридору. Гладкие стены украшены красной отделкой. Основные материалы — дерево и металл, лишь изредка взгляд цепляется за золотистые акценты.\n\nВремя от времени вам попадаются одна или две картины с изображением незнакомых людей. Единственное, что их объединяет — это цвет меха: у всех персонажей черный или темно-серый окрас.\n\nЗдесь находится дверь, ведущая в комнату Мирри."
 roomColor = 2
 
 [node name="MarketRoom3" parent="." index="2" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 64, -128 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "market_corridor3"
-roomDescription = "You are following a dark corridor. Red trims follow the slick walls. The main materials are wood and metal with occasional golden accents catching your eye.
-
-Occasionally you meet a painting or two of people that you don't recognize. The thing that unites them is their fur color, all of them have a black or dark-gray fur pattern.
-
-There are doors on both sides of the corridor but all of them seem to be locked."
+roomDescription = "Вы идете по темному коридору. Вдоль гладких стен тянутся красные декоративные элементы. В отделке преобладают дерево и металл, а взгляд изредка цепляют золотистые акценты.\n\nВремя от времени вам попадаются одна или две картины с изображением незнакомых людей. Единственное, что их объединяет, — это цвет меха: у всех персонажей черный или темно-серый окрас.\n\nПо обе стороны коридора виднеются двери, но все они кажутся запертыми."
 roomColor = 2
 
 [node name="MarketRoom4" parent="." index="3" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 128, -128 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "market_corridor4"
-roomDescription = "You are following a dark corridor. Red trims follow the slick walls. The main materials are wood and metal with occasional golden accents catching your eye.
-
-Occasionally you meet a painting or two of people that you don't recognize. The thing that unites them is their fur color, all of them have a black or dark-gray fur pattern.
-
-The corridor turns here, leading into some kind of big space."
+roomDescription = "Вы идете по темному коридору. Вдоль гладких стен тянутся красные декоративные элементы. В отделке преобладают дерево и металл, а взгляд изредка цепляют золотистые акценты.\n\nВремя от времени вам попадаются одна или две картины с изображением незнакомых людей. Единственное, что их объединяет, — это цвет меха: у всех персонажей черный или темно-серый окрас.\n\nЗдесь коридор поворачивает, открывая путь в какое-то обширное пространство."
 roomColor = 2
 
 [node name="MarketRoom5" parent="." index="4" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( -64, -128 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "market_corridor2"
-roomDescription = "You are following a dark corridor. Red trims follow the slick walls. The main materials are wood and metal with occasional golden accents catching your eye.
-
-Occasionally you meet a painting or two of people that you don't recognize. The thing that unites them is their fur color, all of them have a black or dark-gray fur pattern.
-
-There are doors on both sides of the corridor but all of them seem to be locked."
+roomDescription = "Вы идете по темному коридору. Вдоль гладких стен тянутся красные декоративные элементы. В отделке преобладают дерево и металл, а взгляд изредка цепляют золотистые акценты.\n\nВремя от времени вам попадаются одна или две картины с изображением незнакомых людей. Единственное, что их объединяет, — это цвет меха: у всех персонажей черный или темно-серый окрас.\n\nПо обе стороны коридора виднеются двери, но все они кажутся запертыми."
 roomColor = 2
 
 [node name="MarketRoom6" parent="." index="5" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( -128, -128 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "market_corridor1"
-roomDescription = "You are following a dark corridor. Red trims follow the slick walls. The main materials are wood and metal with occasional golden accents catching your eye.
-
-Occasionally you meet a painting or two of people that you don't recognize. The thing that unites them is their fur color, all of them have a black or dark-gray fur pattern.
-
-There are doors on both sides of the corridor but all of them seem to be locked."
+roomDescription = "Вы идете по темному коридору. Вдоль гладких стен тянутся красные декоративные элементы. В отделке преобладают дерево и металл, а взгляд изредка цепляют золотистые акценты.\n\nВремя от времени вам попадаются одна или две картины с изображением незнакомых людей. Единственное, что их объединяет, — это цвет меха: у всех персонажей черный или темно-серый окрас.\n\nПо обе стороны коридора виднеются двери, но все они кажутся запертыми."
 roomColor = 2
 
 [node name="MarketRoom7" parent="." index="6" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( -192, -128 )
-roomName = "Corridor end"
+roomName = "Тупик коридора"
 roomID = "market_near_luxe"
-roomDescription = "You are following a dark corridor. Red trims follow the slick walls. The main materials are wood and metal with occasional golden accents catching your eye.
-
-Occasionally you meet a painting or two of people that you don't recognize. The thing that unites them is their fur color, all of them have a black or dark-gray fur pattern.
-
-There is a door at the end of the corridor, this one different from the rest, bigger and more expensive looking."
+roomDescription = "Вы идете по темному коридору. Вдоль лоснящихся стен тянутся красные декоративные полосы. Основные материалы отделки — дерево и металл, лишь изредка взгляд цепляется за золотистые акценты.\n\nВремя от времени вам попадаются одна или две картины с изображением людей, которых вы не узнаете. Единственное, что их объединяет — это цвет меха: у всех персонажей черный или темно-серый окрас.\n\nВ конце коридора виднеется дверь — она отличается от остальных, выглядит массивнее и дороже."
 canWest = false
 roomColor = 2
 
 [node name="MarketRoom8" parent="." index="7" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( -256, -128 )
-roomName = "Luxe's Office"
+roomName = "Кабинет Люкса"
 roomID = "market_luxe"
 canEast = false
 roomSprite = 1
@@ -103,14 +75,8 @@ roomColor = 7
 [node name="MarketRoom9" parent="." index="8" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 128, -192 )
-roomName = "Blacktail Market"
+roomName = "Рынок Блэктейл"
 roomID = "market_market"
-roomDescription = "What you're standing on looks like a theatrical stage, the black curtains make it obvious. There is a raised platform in one of the corners.
-
-Chains dangle from hooks embedded in the ceiling, clearly designed to hold something or someone.
-
-There is a rig with some powerful projectors above you. All of them are switched off, keeping the space dark.
-
-Feels like this theater can spring into life at any moment. All it needs is some actors."
+roomDescription = "То, на чем вы стоите, напоминает театральную сцену, о чем красноречиво говорят черные занавеси. В одном из углов возвышается подиум.\n\nС крюков, вмонтированных в потолок, свисают цепи, явно предназначенные для того, чтобы удерживать что-то или кого-то.\n\nНад вами расположена установка с мощными проекторами. Все они выключены, погружая пространство во мрак.\n\nКажется, этот театр может ожить в любой момент. Все, что ему нужно — это актеры."
 roomSprite = 4
 roomColor = 7

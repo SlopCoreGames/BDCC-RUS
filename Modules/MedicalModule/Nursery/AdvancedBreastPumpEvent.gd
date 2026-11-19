@@ -45,16 +45,16 @@ func react(_triggerID, _args):
 		GM.pc.addSkillExperience(Skill.Milking, 10)
 		var howMuchTransferred = GM.pc.getBodypart(BodypartSlot.Breasts).getFluids().transferAmountTo(breastPump, maxMilk)
 		if(howMuchTransferred > 0.0):
-			GM.main.addMessage("Your breast pumps engage, milking your breasts for "+str(Util.roundF(howMuchTransferred))+" ml")
+			GM.main.addMessage("Ваши молокоотсосы включаются, выжимая молоко из вашей груди в течение "+str(Util.roundF(howMuchTransferred))+" ml")
 			
 			if(breastPump.getFluids().isFull()):
-				GM.main.addMessage("Your breast pumps are now full!")
+				GM.main.addMessage("Ваши молокоотсосы теперь полны!")
 		
 	else:
 		if(beganLactating):
-			GM.main.addMessage("Your breast pumps engage, stimulating your breasts for a few minutes until you suddenly [b]begin lactating[/b]!")
+			GM.main.addMessage("Ваши молокоотсосы включаются, стимулируя грудь в течение нескольких минут, пока вы внезапно не [b]начинаете лактировать[/b]!")
 		else:
-			GM.main.addMessage("Your breast pumps engage, stimulating your breasts for a few minutes but not getting any milk.")
+			GM.main.addMessage("Ваши молокоотсосы включаются, стимулируя грудь в течение нескольких минут, но молоко не поступает.")
 		
 	return false
 	

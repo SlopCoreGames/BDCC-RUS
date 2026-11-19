@@ -92,7 +92,7 @@ text = "^"
 margin_left = 46.0
 margin_right = 87.0
 margin_bottom = 20.0
-text = "Rem"
+text = "Рем"
 
 [node name="StatesList" type="ItemList" parent="VBoxContainer/TabContainer/States/HBoxContainer/VBoxContainer"]
 margin_top = 52.0

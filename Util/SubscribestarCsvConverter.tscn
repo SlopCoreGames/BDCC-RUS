@@ -68,7 +68,7 @@ margin_right = 1280.0
 margin_bottom = 26.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Rich text"
+text = "Богатый текст"
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Button3" to="." method="_on_Button3_pressed"]

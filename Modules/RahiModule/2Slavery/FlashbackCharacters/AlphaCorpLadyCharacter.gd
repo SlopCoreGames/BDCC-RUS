@@ -19,7 +19,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "A tall woman wearing official AlphaCorp clothes."
+	return "Высокая женщина в официальной форме «АльфаКорп»."
 
 func getSpecies():
 	return ["human"]

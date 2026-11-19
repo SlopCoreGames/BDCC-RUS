@@ -36,7 +36,7 @@ func _run():
 
 		saynn("[say=eliza]Ну~? Рассказывай всё как есть![/say]")
 
-		saynn(""+str("Naked " if isNaked else "")+"Артика густо краснеет, не зная, с чего начать.")
+		saynn(""+str("Голая " if isNaked else "")+"Артика густо краснеет, не зная, с чего начать.")
 
 		saynn("[say=artica].. .. ..[/say]")
 
@@ -83,7 +83,7 @@ func _run():
 		playAnimation(StageScene.Solo, "stand", {pc="artica", bodyState={naked=true,hard=true}})
 		saynn("Ты следуешь за пушистой малышкой, которая мастерски уворачивается от патрулей охраны на пути к священному месту...")
 
-		saynn("Артика входит в оранжерею, её сердце, должно быть, бешено колотится. Она вернулась в место, которое уже дарило ей столь неистовое наслаждение..."+str(" With a deep breath, she began to undress, completely willingly, her shirt and shorts falling to the floor, rendering her completely naked.." if !isNaked else "")+"")
+		saynn("Артика входит в оранжерею, её сердце, должно быть, бешено колотится. Она вернулась в место, которое уже дарило ей столь неистовое наслаждение..."+str(" Глубоко вздохнув, она начала раздеваться — совершенно добровольно. Рубашка и шорты упали на пол, оставив её полностью обнажённой..." if !isNaked else "")+"")
 
 		saynn("[say=artica]Н-не верится, что я п-правда ЭТО сделаю...[/say]")
 
@@ -105,7 +105,7 @@ func _run():
 		addButton("Продолжить", "Смотреть, что будет дальше", "artica_first_penetration")
 	if(state == "artica_first_penetration"):
 		playAnimation(StageScene.TentaclesTease, "inside", {pc="artica", plant=true, bodyState={naked=true, hard=true}})
-		saynn("Присоединяются новые щупальца, обвивая её ноги, талию и руки. Артика тихо ахает, когда они начинают ласкать её тело, дразня {artica.breasts} и нежно поглаживая"+str(" swollen milky nips" if getCharacter("artica").isLactating() else " perky cyan nips")+", растирая её клитор и"+str(" slipping inside her chastity cage, brushing against her trapped canine cock" if isCaged else " brushing against her erect canine cock")+"..")
+		saynn("Присоединяются новые щупальца, обвивая её ноги, талию и руки. Артика тихо ахает, когда они начинают ласкать её тело, дразня {artica.breasts} и нежно поглаживая"+str(" разбухшие молочные соски" if getCharacter("artica").isLactating() else " упругие голубые соски")+", растирая её клитор и"+str(" проскальзывая внутрь её девственной клетки и задевая зажатый внутри собачий член" if isCaged else " задевая её эрегированный собачий член")+"..")
 
 		saynn("[say=artica]Ах.. хах..[/say]")
 
@@ -143,7 +143,7 @@ func _run():
 
 		saynn("[say=artica]АХ!.. Х-Х.. Хх-ххмммм..[/say]")
 
-		saynn("Как только Артика разомкнула губы, подлое щупальце проскальзывает сквозь зубы, заставляя её челюсть широко раскрыться, и начинает трахать и растягивать её горло.."+str(" All the while the tentacle that's wrapped around her cock is stroking her shaft with a smooth, rhythmic motion, its tip is gently teasing the cockhole, threatening to stretch that hole as well.." if !isCaged else " All the while the tentacle that has found its way into her chastity cage is doing swirling motions inside the sheath, circling around the locked away pulsing shaft, its tip is gently teasing the cockhole, threatening to stretch that hole as well..")+"")
+		saynn("Как только Артика разомкнула губы, подлое щупальце проскальзывает сквозь зубы, заставляя её челюсть широко раскрыться, и начинает трахать и растягивать её горло.."+str(" Всё это время щупальце, обвившее её член, совершает плавные ритмичные движения вдоль ствола, а его кончик нежно дразнит отверстие, грозя растянуть и его тоже..." if !isCaged else " Всё это время щупальце, нашедшее путь в её девственную клетку, совершает вращательные движения внутри чехла, обвиваясь вокруг запертого пульсирующего члена, а его кончик нежно дразнит отверстие, грозя растянуть и его тоже...")+"")
 
 		saynn("[say=artica]Мммм-мм.. гххммм-.. хх..[/say]")
 
@@ -154,13 +154,13 @@ func _run():
 		playAnimation(StageScene.TentaclesSex, "fast", {pc="artica", pcCum=true, plant=true, bodyState={naked=true, hard=true}})
 		saynn("Тентакли начинают двигаться быстрее, их толчки глубокие и мощные.. всё больше мелких щупалец умудряются проскользнуть внутрь.. прежде чем раздуться и стать толстыми, растягивая её киску и анус до предела, вколачиваясь в них до красноты..")
 
-		saynn("Бедная беспомощная пушинка стонет вокруг тентакля во рту, её тело дрожит от первобытного удовольствия. Можно буквально почувствовать, как в ней нарастает оргазм, давление усиливается с каждой секундой этого.. эксперимента.."+str(" The knot at the base of Artica's is inflating with blood.. and getting squeezed by the tentacle who is also now thrusting it's thin tip down her urethra, fucking her little cockhole.." if !isCaged else " Her chastity cage is twitching a lot as the trapped cock is pulsing inside.. pleasured by the tentacle who is also now thrusting it's thin tip down her urethra, fucking her little cockhole..")+"")
+		saynn("Бедная беспомощная пушинка стонет вокруг тентакля во рту, её тело дрожит от первобытного удовольствия. Можно буквально почувствовать, как в ней нарастает оргазм, давление усиливается с каждой секундой этого.. эксперимента.."+str(" Узел у основания члена Артики раздувается от крови... и его сжимает щупальце, которое теперь также ввинчивает свой тонкий кончик в её уретру, трахая её крошечное отверстие..." if !isCaged else " Её девственная клетка сильно подёргивается от того, что запертый внутри член пульсирует... доставляя удовольствие щупальцу, которое теперь также ввинчивает свой тонкий кончик в её уретру, трахая её крошечное отверстие...")+"")
 
 		saynn("По мере приближения к оргазму тентакли внутри её киски и задницы, кажется, становятся ещё толще, их кончики раздуваются и пульсируют, одновременно надавливая на точку G и простату Артики, не оставляя её ни на миг пустой..")
 
 		saynn("[say=artica]ААХ-Х-х!.. Мммм-ммхХХ!..[/say]")
 
-		saynn("Один из толчков наконец запустил цепную реакцию.. Тело Артики содрогается в взрывном оргазме, тентакли удерживают её извивающееся тело, пока её жаждущая киска и тугой анус сжимаются вокруг вторгшихся зеленых спиралевидных стержней,"+str("her balls tensing up, her cock twitching as it shoots thick ropes of cum onto the tentacles stroking it, letting it get absorbed by them." if !isCaged else "her balls tensing up, her locked cock twitching inside its cage as it shoots thick ropes of cum from the sheath onto the tentacles fucking her, letting it get absorbed by them..")+"")
+		saynn("Один из толчков наконец запустил цепную реакцию.. Тело Артики содрогается в взрывном оргазме, тентакли удерживают её извивающееся тело, пока её жаждущая киска и тугой анус сжимаются вокруг вторгшихся зеленых спиралевидных стержней,"+str("её яички напряглись, а член задергался, извергая густые струи спермы на ласкающие его щупальца, позволяя им впитывать её." if !isCaged else "её яички напряглись, а зажатый в клетке член задергался, извергая густые струи спермы из препуция на трахающие её щупальца, позволяя им впитывать её.")+"")
 
 		if (getCharacter("artica").isLactating()):
 			saynn("Оргазм настолько сильный, что соски Артики брызгают молоком при каждом пульсации её члена.. которое тентакли тоже быстро впитывают..")

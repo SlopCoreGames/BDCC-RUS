@@ -37,10 +37,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Breeder's Streak"
+	return "Серия заводчика"
 
 func getEffectDesc():
-	return "Your current streak: "+str(streak)+"\nTime left: "+Util.getTimeStringHumanReadable(turns)
+	return "Ваша текущая серия: "+str(streak)+"\nОсталось времени: "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/badge.png"

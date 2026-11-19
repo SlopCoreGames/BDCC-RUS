@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Drug"
+	return "Наркотик"
 
 func getEffectDesc():
-	return character.getName() + " is under an influence of a drug for " + str(turns) + " more turn"+("s" if turns != 1 else "")
+	return character.getName() + " находится под воздействием препарата еще " + str(turns) + " хода"+("s" if turns != 1 else "")
 
 func getEffectImage():
 	return "res://Images/StatusEffects/overdose.png"

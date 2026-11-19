@@ -21,15 +21,15 @@ func getBuffs():
 
 func getTakingOffStringLong(withS):
 	if(withS):
-		return "slips down your panties"
+		return "сползает с твоих трусиков"
 	else:
-		return "slip down your panties"
+		return "сползают с твоих трусиков"
 
 func getPuttingOnStringLong(withS):
 	if(withS):
-		return "puts on the panties"
+		return "надевает трусики"
 	else:
-		return "put on the panties"
+		return "надеть трусики"
 
 
 func getPrice():

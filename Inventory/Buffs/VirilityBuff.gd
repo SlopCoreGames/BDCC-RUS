@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Virility "+text+"%"
+	return "Вирильность "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.extraVirility += (amount/100.0)

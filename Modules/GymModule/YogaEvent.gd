@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "gym_yoga")
 
 func run(_triggerID, _args):
-	addButtonUnlessLate("Yoga mats", "Did somebody say yoga", "yoga")
+	addButtonUnlessLate("Коврики для йоги", "Кто-то сказал «йога»?", "yoga")
 
 func getPriority():
 	return 0

@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Received physical damage "+text+"%"
+	return "Полученный физический урон "+text+"%"
 
 func apply(_buffHolder):
 	_buffHolder.receiveDamageMult[DamageType.Physical] += (amount/100.0)

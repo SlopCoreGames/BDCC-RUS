@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Аномальная беременность"
 
 func getVisibleDescription():
-	return "Ongoing pregnancy doesn't stop you from ovulating or getting into heat. Get more chances to fill your womb with the litter up to its absolute limit."
+	return "Текущая беременность не мешает овуляции или наступлению течки. Получайте больше шансов заполнить свое чрево потомством до самого предела."
 
 func getRequiredPerks():
 	return [Perk.FertilityBetterOvulationV2]

@@ -19,10 +19,10 @@ func getRiggedParts(_character):
 	}
 
 func getCasualName():
-	return "canine strapon"
+	return "собачий страпон"
 
 func getLewdStraponName() -> String:
-	return RNG.pick(["knotted strapon", "canine strapon", "rubber canine cock"])
+	return RNG.pick(["узловатый страпон", "собачий страпон", "резиновый собачий член"])
 
 func getPrice():
 	return 20

@@ -24,15 +24,15 @@ func onSleeping():
 		stop()
 
 func getEffectName():
-	return "Pussy painfully stretched x"+str(stacks)
+	return "Пизда болезненно растянута на x"+str(stacks)
 
 func getEffectDesc():
 	if(stacks <= 1):
-		return "Your pussy looks bruised and kinda hurts.. A day of rest might help"
+		return "Твоя киска выглядит в синяках и побаливает... День отдыха может помочь"
 	if(stacks <= 2):
-		return "Your pussy got so bruised that it won't heal on its own.. You should find a doctor"
+		return "Твоя пизда так сильно разбита, что сама не заживет... Тебе стоит найти врача"
 	
-	return "Your pussy sustained a lot of damage and won't heal on its own.. You should find a doctor"
+	return "Твоя пизда получила серьезные повреждения и сама не заживет... Тебе стоит найти врача"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/vulva.png"

@@ -99,7 +99,7 @@ func _on_MainGreenhousesJumpable_onReact(_room, key):
 	if(key == "vault"):
 		GM.pc.setLocation("yard_vaulthere")
 		GM.main.reRun()
-		GM.main.addMessage("You successfully jumped over the railing")
+		GM.main.addMessage("Вы успешно перепрыгнули через перила")
 
 func _on_MainHallRoom9_onEnter(_room):
 	#room.addButton("Попробовать колодки", "Просунуть в них голову из любопытства", "stocks")

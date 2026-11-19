@@ -9,7 +9,7 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Risha told you to go work in the mineshafts and about the lift in the main hall that can get you there. Maybe this will help you to earn some credits")
+	result.append("Риша сказала тебе отправиться на работу в шахты и упомянула о лифте в главном зале, который доставит тебя туда. Возможно, это поможет тебе подзаработать немного кредитов.")
 	
 	return result
 

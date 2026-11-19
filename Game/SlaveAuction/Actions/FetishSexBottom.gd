@@ -8,13 +8,13 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"{slave.He} got a mouth that knows how to serve in every way!",
-		"Look at this one, eager for all kinds of attention. A perfect plaything for anyone who knows how to use {slave.him}.",
-		"This fucktoy lives to be filled. Every hole is begging for your command.",
-		"Want a pet who craves nothing but to be taken? Here’s one who will never say no.",
-		"From the way {slave.he} moves, you can tell {slave.he} lives for pleasure. Your pleasure, not {slave.his}.",
-		"{slave.He} needs to be claimed, and trust me, there’s nothing {slave.he} enjoys more than being bent over.",
-		"Submissive and willing, this sextoy will make a perfect addition to any breeder's collection.",
+		"У {slave.He} рот, который знает, как угождать во всех смыслах!",
+		"Посмотрите на эту штучку, она жаждет любого внимания. Идеальная игрушка для любого, кто знает, как распорядиться {slave.him}.",
+		"Эта секс-игрушка живет лишь для того, чтобы её наполняли. Каждое её отверстие так и молит о твоей команде.",
+		"Хотите питомца, который не мечтает ни о чем, кроме как быть оттраханным? Вот она — та, кто никогда не скажет «нет».",
+		"По тому, как двигается {slave.he}, сразу видно, что {slave.he} живет ради удовольствия. Ради твоего удовольствия, а не {slave.his}.",
+		"{slave.He} нужно присвоить, и поверьте, нет ничего, что {slave.he} любила бы больше, чем когда её ставят раком.",
+		"Покорная и готовая ко всему, эта секс-кукла станет идеальным дополнением к коллекции любого заводчика.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

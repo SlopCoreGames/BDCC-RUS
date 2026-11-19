@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Уникальная биология"
 
 func getVisibleDescription():
-	return "Your fuckholes have adjusted to all sorts of cocks, gaining some animalistic traits in the process. Knotting you is now easier (and makes you feel good), barbed cocks can cause ovulation, and flared horsecocks will remove all other cum on penetration."
+	return "Твои дырки привыкли к самым разным членам, приобретя в процессе некоторые звериные черты. Теперь тебя легче узлить (и это приносит кайф), шиповатые члены могут вызывать овуляцию, а расширенные лошадиные члены вытесняют всю остальную сперму при проникновении."
 
 func getSkillTier():
 	return 1
@@ -33,7 +33,7 @@ func onSexEvent(_event:SexEvent):
 			_event.getTargetChar().addPain(-30)
 			_event.getTargetChar().addStamina(30)
 			if(npc.isPlayer()):
-				GM.main.addMessage("Being knotted feels so good!")
+				GM.main.addMessage("Быть узлом — это так охеренно!")
 
 	if(_event.getType() == SexEvent.HolePenetrated):
 		var hasBarbs = _event.getSourceChar().bodypartHasTrait(BodypartSlot.Penis, PartTrait.PenisBarbs)
@@ -44,10 +44,10 @@ func onSexEvent(_event:SexEvent):
 			if(hasBarbs && npc.hasWombIn(hole)):
 				if(npc.forceOvulate()):
 					if(npc.isPlayer()):
-						GM.main.addMessage("Barbs are scratching your inner walls, triggering ovulation!")
+						GM.main.addMessage("Шипы скребут по твоим внутренним стенкам, вызывая овуляцию!")
 			if(hasFlare):
 				var bodypart:Bodypart = npc.getBodypart(hole)
 				if(bodypart.isOrificeStuffed()):
 					bodypart.clearOrificeFluids()
 					if(npc.isPlayer()):
-						GM.main.addMessage("The bulbous glans have pushed all other seed from your "+BodypartSlot.getVisibleName(hole).to_lower()+"!")
+						GM.main.addMessage("Раздутая головка вытолкнула всё остальное семя из твоих "+BodypartSlot.getVisibleName(hole).to_lower()+"!")

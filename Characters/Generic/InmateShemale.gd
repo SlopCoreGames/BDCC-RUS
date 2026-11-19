@@ -11,7 +11,7 @@ func getGender():
 	return Gender.Androgynous
 	
 func getSmallDescription() -> String:
-	return "Generic %s inmate" % NpcGender.getVisibleName(NpcGender.Shemale)
+	return "Обычная %s заключенная" % NpcGender.getVisibleName(NpcGender.Shemale)
 
 func getSpecies():
 	return ["canine"]

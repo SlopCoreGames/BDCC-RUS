@@ -28,7 +28,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Теребить простату"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Focus on your p-spot"
+	return "Сосредоточьтесь на точке G"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -37,22 +37,22 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "A passionate moan slides past your lips as you curl your finger inside your butt enough to start pounding at the prostate. Your {pc.cock} reacts each time by throbbing and leaking some transparent fluid down onto the floor."
+		text += "Страстный стон срывается с ваших губ, когда вы вводите палец в задницу достаточно глубоко, чтобы начать ритмично бить по простате. Ваша {pc.cock} каждый раз реагирует на это пульсацией и выделением прозрачной смазки, стекающей на пол."
 		text += "\n\n"
 	else:
-		text += "You shift the fingers in such a way that allows you to rub your prostate each time you thrust them inside. It feels so good, your {pc.cock} is leaking precum almost non-stop while you do that."
+		text += "Вы меняете положение пальцев так, чтобы каждый толчок задевал простату. Это настолько приятно, что ваша {pc.cock} почти непрерывно сочится предэякулятом, пока вы это делаете."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You make sure to give your enemy the best view of your {pc.thick} rear and your dripping cock as you pleasure yourself through the ass."
+		text += "Вы стараетесь, чтобы ваш враг мог во всех деталях рассмотреть ваш {pc.thick} зад и ваш сочащийся член, пока вы ласкаете себя через анус."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasEffect(StatusEffect.HasCumInsideAnus)):
-		text += "Your digits get coated with cum of your previous lovers, it acts great as a lube, allowing you to thrust your fingers in and out with greater force."
+		text += "Твои пальцы покрываются спермой твоих прошлых любовников; она служит отличной смазкой, позволяя тебе входить и выходить с еще большей силой."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.getLust() >= 50):
-		text += "Wow, your cock throbs and pulsates a lot, showing that you’re on the right track of reaching your orgasm with anal stimulation."
+		text += "Ого, ваш член так сильно пульсирует и бьется, показывая, что вы на верном пути к оргазму через анальную стимуляцию."
 		text += "\n\n"
 
 	return {

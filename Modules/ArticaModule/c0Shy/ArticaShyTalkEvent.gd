@@ -10,30 +10,30 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(_args[0] == "cellblock_lilac_nearcell"):
 		if(getFlag("ArticaModule.s0happened") && !getFlag("ArticaModule.s1happened")):
-			addButtonUnlessLate("White fluff", "Search for that new inmate", "search")
+			addButtonUnlessLate("Белый пух", "Поискать ту новенькую", "search")
 		
 		if(getFlag("ArticaModule.s1happened") && !getFlag("ArticaModule.s2happened")):
 			if(GM.main.getDays() > getFlag("ArticaModule.s1day", -1)):
-				addButtonUnlessLate("White fluff", "Search for that new inmate", "c2scene")
+				addButtonUnlessLate("Белый пух", "Поискать ту новенькую", "c2scene")
 			else:
 				addDisabledButton("Белый пух", "Охранник стоит у камеры этого пушистика. Лучше зайти в другой раз")
 	else:
 		if(getFlag("ArticaModule.s2happened") && !getFlag("ArticaModule.s3happened")):
-			addButtonUnlessLate("White fluff", "She seems to be here", "s3scene")
+			addButtonUnlessLate("Белый пух", "Кажется, она здесь", "s3scene")
 		if(getFlag("ArticaModule.s3happened") && !getFlag("ArticaModule.s4happened")):
 			if(GM.main.getDays() > getFlag("ArticaModule.s3day", -1)):
-				addButtonUnlessLate("Artica", "Join the white fluff", "s4scene")
+				addButtonUnlessLate("Артика", "Присоединиться к белому пуху", "s4scene")
 			else:
 				addDisabledButton("Артика", "Навестить её завтра")
 		if(getFlag("ArticaModule.s4happened") && !getFlag("ArticaModule.s5happened")):
-			addButtonUnlessLate("Artica", "Join the white fluff", "s5scene")
+			addButtonUnlessLate("Артика", "Присоединиться к белому пуху", "s5scene")
 		
 		if(getFlag("ArticaModule.s5happened") && !getFlag("ArticaModule.corruptionBegan")):
 			if(GM.main.getDays() > getFlag("ArticaModule.s5day", -1)):
 				if(getFlag("ArticaModule.s6GrabbedThroat")):
-					addButtonUnlessLate("Artica", "Join the white fluff", "s7scene")
+					addButtonUnlessLate("Артика", "Присоединиться к белому пуху", "s7scene")
 				else:
-					addButtonUnlessLate("Artica", "Join the white fluff", "s6scene")
+					addButtonUnlessLate("Артика", "Присоединиться к белому пуху", "s6scene")
 			else:
 				addDisabledButton("Артика", "Навестить её завтра")
 

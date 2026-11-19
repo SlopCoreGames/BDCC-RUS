@@ -9,7 +9,7 @@ func getVisibleName():
 	return "Материнская интуиция"
 
 func getVisibleDescription():
-	return "You got so experienced at being pregnant that you can now roughly guess how many cubs/kids are inside any pregnant belly just from its size and the frequency of baby kicks..  (Stacks with the Insight of You perk)"
+	return "Ты настолько набила руку на беременности, что теперь можешь примерно определить количество детенышей в животе, просто оценив его размер и частоту толчков. (Стакается с перком «Проницательность» [Insight of You])"
 	
 func getRequiredPerks():
 	return []

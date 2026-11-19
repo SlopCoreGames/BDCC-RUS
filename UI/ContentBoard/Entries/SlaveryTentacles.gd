@@ -8,20 +8,20 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Get sold on a slave auction to a biolab where you will help grow your own tentacle monster!"
-	return "Get sold on a slave auction to a biolab where you will help grow your own tentacle monster!"
+		return "Будь продан на аукционе рабов в биолабораторию, где тебе предстоит вырастить собственного монстра с щупальцами!"
+	return "Будь продан на аукционе рабов в биолабораторию, где тебе предстоит вырастить собственного монстра с щупальцами!"
 
 func getKinks() -> Array:
 	return [
-		"Soft bad end",
-		"Tentacles",
-		"Tamagotchi game mechanics",
-		"Sex with tentacles (optional)",
+		"Мягкий плохой финал",
+		"Тентакли",
+		"Механика игры в стиле тамагочи",
+		"Секс с тентаклями (опционально)",
 		"Oviposition (optional)"
 	]
 
 func getCompletedDesc() -> String:
-	return "You have managed to escape slavery!"
+	return "Вам удалось сбежать из рабства!"
 
 func getStatus() -> int:
 	if(GM.main.PSH.didComplete("Tentacles")):
@@ -34,10 +34,10 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("FightClubModule.BulldogBypassed"), "Find a way to get into the underground arena."],
-		[completeIf("PlayerSlaveryModule.foundMeme"), "Find a credits chip that's glued to the floor in one of the corners. Try to peel it off!"],
-		[completeIfBool(getFlag("PlayerSlaveryModule.mirriTimes", 0)>0||getFlag("PlayerSlaveryModule.luxeTimes", 0)>0), "Get sold away on a slave auction."],
+		[completeIf("FightClubModule.BulldogBypassed"), "Найдите способ попасть на подпольную арену."],
+		[completeIf("PlayerSlaveryModule.foundMeme"), "Найдите кредитный чип, приклеенный к полу в одном из углов. Попробуйте его отклеить!"],
+		[completeIfBool(getFlag("PlayerSlaveryModule.mirriTimes", 0)>0||getFlag("PlayerSlaveryModule.luxeTimes", 0)>0), "Быть проданным на аукционе рабов."],
 	]
 
 func getProgressText() -> String:
-	return "Find a way to escape the slavery."
+	return "Найдите способ сбежать из рабства."

@@ -172,7 +172,7 @@ func _react(_action: String, _args):
 
 	if(_action == "after_test"):
 		processTime(3*60)
-		addMessage("New task added!")
-		addMessage("Bounty board is now available in the nursery!")
+		addMessage("Добавлена новая задача!")
+		addMessage("В детской теперь доступна доска объявлений!")
 
 	setState(_action)

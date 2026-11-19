@@ -9,42 +9,42 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_char.hasNonFlatBreasts() && _char.hasPenis()):
 		sayPresenter(RNG.pick([
-			"Now this one, {slave.heShe} has a particular fondness for being milked. Whether it’s those {slave.breasts} or the seed from {slave.his} {slave.penis}, {slave.he} loves every second of it.",
-			"Whether it’s milking those swollen breasts or drawing out every last drop from {slave.his} {slave.penis}, this one’s body aches to be drained!",
-			"{slave.His} whole purpose? To be milked dry. Whether it’s {slave.his} seed or milk, {slave.he} needs that sensation!",
-			"This one is a double delight, ladies and gentlemen. Why? Well, let’s just say you’ll never run out of fresh seed and milk. {slave.He} loves being milked!",
-			"This one's a double treat. Not only does {slave.heShe} live for being drained, but {slave.he} craves it from every part of {slave.his} body. Whether it’s milk from those full breasts or seed from that cock, {slave.he} needs to be milked dry.",
-			"We’ve got a special one here! Both milking those heavy breasts and pumping that cock drive {slave.him} wild. {slave.HeShe} lives for the sensation of being emptied completely, over and over.",
-			"This slave’s desires are simple - total emptiness. Squeeze those {slave.breasts} for every drop of {slave.milk}, pump {slave.his} {slave.penis} for every ounce of seed, and {slave.he} will thank you for it.",
+			"А вот эта {slave.heShe} просто обожает, когда её доят. Будь то {slave.breasts} или семя из {slave.his}, {slave.penis} наслаждается каждой секундой, {slave.he} просто в восторге!",
+			"Будь то дойка этих набухших грудей или выжимание последней капли из {slave.his} {slave.penis}, всё её тело буквально молит о том, чтобы его опустошили!",
+			"В чём смысл существования {slave.His}? Быть выдоенной досуха. Будь то семя {slave.his} или молоко, {slave.he} жизненно необходимы эти ощущения!",
+			"Дамы и господа, перед вами двойное удовольствие. Почему? Скажем так: у вас никогда не закончатся свежее семя и молоко. {slave.He} обожает, когда её доят!",
+			"Это двойной деликатес. {slave.heShe} не просто живет ради того, чтобы её опустошали, — {slave.he} жаждет этого каждой клеточкой {slave.his} тела. Будь то молоко из этих полных грудей или семя из того члена, {slave.he} нужно выдоить досуха.",
+			"У нас тут особенный экземпляр! И дойка этих тяжелых грудей, и накачка этого члена сводят {slave.him} с ума. {slave.HeShe} живет ради ощущения полного опустошения, снова и снова.",
+			"Желания этой рабыни просты — полная пустота. Выжимай эти {slave.breasts} до последней капли {slave.milk}, качай {slave.his} {slave.penis} ради каждой унции семени, и {slave.he} отблагодарит тебя за это.",
 		]))
 	elif(_char.hasPenis()):
 		sayPresenter(RNG.pick([
-			"If you’ve got a taste for seed milking, this slave’s enthusiasm will not disappoint. {slave.He} thrives under the pump, eager for that release. Will you give it to {slave.him}?",
-			"{slave.HeShe} craves being milked dry, again and again! Pump {slave.him} until {slave.he} can’t give any more, and watch {slave.his} body beg for the next round.",
-			"If you’re looking for a slave who loves the sensation of being drained, you’ve found {slave.him}. Milking {slave.his} {slave.penis} is {slave.his} greatest desire - empty {slave.him} completely, and you’ll have a willing servant.",
-			"Don’t let that {slave.penis} go to waste. {slave.He} thrives on the release, the sensation of being drained until {slave.he} can’t give anymore. Keep pumping, and {slave.he}’ll keep giving.",
-			"You won’t have to coax this one. {slave.He} lives to be milked, {slave.his} {slave.penis} twitching and aching for the release that only you can provide. Every drop is a reward.",
-			"Here’s a slave who finds pleasure in being emptied. The more you take, the more {slave.he} craves. Wring {slave.him} dry, and {slave.he}’ll be right back, eager for more.",
+			"Если у тебя есть вкус к дойке семени, энтузиазм этой рабыни тебя не разочарует. {slave.He} расцветает под насосом, жаждая разрядки. Дашь ли ты её {slave.him}?",
+			"{slave.HeShe} жаждет, чтобы её доили досуха, снова и снова! Качай {slave.him}, пока {slave.he} не сможет дать больше ни капли, и наблюдай, как тело {slave.his} будет умолять о новом раунде.",
+			"Если ты ищешь рабыню, которая обожает ощущение опустошения, ты нашел {slave.him}. Дойка {slave.his} {slave.penis} — это величайшее желание {slave.his}: опустоши {slave.him} полностью, и перед тобой предстанет покорная служанка.",
+			"Не дай этому {slave.penis} пропасть зря. {slave.He} живет ради разрядки, ради ощущения, когда из неё выкачивают всё до тех пор, пока {slave.he} не иссякнет. Продолжай качать, и {slave.he} не перестанет отдаваться.",
+			"Тебе не придется её уговаривать. {slave.He} живет ради того, чтобы её доили, пока {slave.his} {slave.penis} дергаются и ноют в ожидании разрядки, которую можешь дать только ты. Каждая капля — это награда.",
+			"Перед вами рабыня, которая находит истинное наслаждение в том, чтобы её опустошали. Чем больше вы забираете, тем сильнее {slave.he} жаждет добавки. Выжмите {slave.him} досуха, и {slave.he} тут же вернется, жаждая продолжения.",
 		]))
 	else:
 		sayPresenter(RNG.pick([
-			"Ever wanted a slave who’s just begging to be milked? This one gets off on the act itself, no encouragement needed!",
-			"Now this one, {slave.heShe} has a particular fondness for being milked. {slave.He} loves every second of it!",
-			"{slave.His} whole purpose? To be milked dry! {slave.He} needs that sensation! But will you give it to {slave.him}?",
-			"This one lives for the feeling of being milked. {slave.HisHer} {slave.breasts} are full, and they ache for release. Squeeze them dry, and {slave.he} won’t be able to stop moaning for more.",
-			"If you’ve ever wanted a slave who needs to be milked, look no further. These {slave.breasts} aren’t just for show - they’re meant to be drained, and {slave.he} loves every second of it.",
-			"You won’t find a more eager participant. Every pull, every squeeze, {slave.he} lives for it. Fill those hands with {slave.his} {slave.breasts}, and watch {slave.him} melt into submission.",
+			"Всегда хотели рабыню, которая просто умоляет о дойке? Эта получает кайф от самого процесса, и никакие уговоры не нужны!",
+			"А вот эта, {slave.heShe}, питает особую слабость к дойке. {slave.He} обожает каждую секунду этого процесса!",
+			"В чем смысл {slave.His}? Быть выжатой досуха! {slave.He} жизненно необходимы эти ощущения! Но дадите ли вы их {slave.him}?",
+			"Эта живет ради чувства, когда её доят. {slave.HisHer} {slave.breasts} переполнены, и они буквально ноют от жажды разрядки. Выжмите их до капли, и {slave.he} не сможет перестать стонать, требуя еще.",
+			"Если вы когда-нибудь мечтали о рабыне, которую нужно постоянно доить, то вы её нашли. Эти {slave.breasts} здесь не просто для красоты — их созданы, чтобы из них выжимали всё до последней капли, и {slave.he} обожает каждую секунду этого процесса.",
+			"Вы не найдете более рьяной участницы. Каждое тянущее движение, каждое сжатие — {slave.he} живет ради этого. Наполните свои ладони {slave.his} {slave.breasts} и смотрите, как {slave.him} тает в полном подчинении.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		"A true milking slave? My machines will love this one!",
-		"This could be fun.",
-		"I’ve got plenty of use for {slave.him}.",
-		"Perfect for my set-up. Milking is an art.",
-		"Sounds like exactly what I need for my farm.",
+		"Настоящая дойная рабыня? Мои машины будут в восторге от этой штучки!",
+		"Это может быть весело.",
+		"Я найду немало способов использовать {slave.him}.",
+		"Идеально подходит для моей заготовки. Доение — это искусство.",
+		"Звучит именно так, как нужно для моей фермы.",
 	])
 
 func getTraits() -> Dictionary:

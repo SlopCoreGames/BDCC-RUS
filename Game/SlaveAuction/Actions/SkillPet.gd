@@ -14,12 +14,12 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"{slave.He} has been trained to perfection as a pet. And you know what means - {slave.he} {slave.isAre} obedient, loyal, and eager to serve.",
-		"Looking for a devoted pet who knows how to follow commands without question? This is the one. Obedient, loyal, and eager to serve.",
-		"From fetching to kneeling, {slave.he} has been trained to respond to your every need like a loyal animal.",
-		"Trained as a pet, {slave.he} will follow you everywhere, ready to serve at a moment’s notice. Always obedient, always loyal.",
-		"This pet knows {slave.his} place at your feet. Ready to obey, eager to please.",
-		"Perfectly conditioned to be a loyal pet, this one will never question your commands.",
+		"{slave.He} обучена до совершенства как питомец. И вы знаете, что это значит — {slave.he} будет {slave.isAre} послушной, верной и жаждущей служить.",
+		"Ищете преданное существо, которое беспрекословно выполняет команды? Это она. Послушная, верная и жаждущая служить.",
+		"От принесения вещей до преклонения колен — {slave.he} обучена реагировать на любую вашу потребность, словно верное животное.",
+		"Обученная как питомец, {slave.he} будет ходить за вами повсюду, готовая прийти на помощь по первому зову. Всегда послушная, всегда верная.",
+		"Этот питомец знает, что {slave.his} — лишь ваше украшение у ног. Готова повиноваться, жаждет угождать.",
+		"Идеально приученная быть верным питомцем, эта крошка никогда не посмеет подвергнуть сомнению ваши приказы.",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

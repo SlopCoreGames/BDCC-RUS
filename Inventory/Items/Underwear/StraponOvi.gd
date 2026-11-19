@@ -28,7 +28,7 @@ func getDescription():
 	for theItem in eggInv.items:
 		contentsList.append(theItem.getStackName())
 	
-	text += "\n\nEgg storage ("+str(getCurrentOvipositorEggAmount())+"/"+str(getMaxOvipositorEggAmount())+"):"
+	text += "\n\nХранилище яиц ("+str(getCurrentOvipositorEggAmount())+"/"+str(getMaxOvipositorEggAmount())+"):"
 	if(contentsList.empty()):
 		text += "\n- Empty\n"
 	else:
@@ -54,7 +54,7 @@ func getCasualName():
 	return "ovipositor strapon"
 
 func getLewdStraponName() -> String:
-	return RNG.pick(["ovipositor strapon"])
+	return RNG.pick(["овипозитор-страпон"])
 
 func getPrice():
 	return 30

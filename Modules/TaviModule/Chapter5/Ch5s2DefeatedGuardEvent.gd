@@ -25,9 +25,9 @@ func onButton(_method, _args):
 		
 		var amountLooted = getFlag("TaviModule.Ch5GuardsLooted", 0)
 		if((RNG.chance(10) && amountLooted > 0) || amountLooted > 3):
-			addMessage("This guard had a datapad! You took it. Task updated!")
+			addMessage("У этого охранника был датапад! Ты забрала его. Задача обновлена!")
 			addExperienceToPlayer(100)
 			setFlag("TaviModule.Ch5StoleDatapadFromGuard", true)
 		else:
-			addMessage("This guard doesn't have a datapad. You gotta check someone else.")
+			addMessage("У этого охранника нет датапада. Придётся поискать у кого-то другого.")
 		GM.main.reRun()

@@ -25,7 +25,7 @@ func _run():
 	if(state == "slip_out"):
 		aimCamera("medical_firstcorridorcross")
 		playAnimation(StageScene.Solo, "walk")
-		setLocationName("Corridors")
+		setLocationName("Коридоры")
 		
 		saynn("Похоже, тебя пока никто не заметил. Ты выбираешься из камеры и оглядываешься: психиатрическое отделение состоит из множества коридоров и комнат. Ты выглядываешь из-за угла и замечаешь патрулирующих медсестер и охранников.")
 
@@ -36,7 +36,7 @@ func _run():
 	if(state == "continue"):
 		aimCamera("med_lobbyne")
 		playAnimation(StageScene.Solo, "walk")
-		setLocationName("Medical lobby")
+		setLocationName("Вестибюль медпункта")
 		GM.pc.setLocation("med_lobbyne")
 		setModuleFlag("MedicalModule", "Mental_PlayerEscaped", true)
 		

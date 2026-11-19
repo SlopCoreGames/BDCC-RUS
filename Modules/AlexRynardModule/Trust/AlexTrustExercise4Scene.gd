@@ -210,7 +210,7 @@ func _run():
 			saynn("Твоя грудь не самая пышная, но ты всё равно выпячиваешь её, выставляя соски напоказ.")
 
 		else:
-			saynn("Ты выпячиваешь грудь, выставляя напоказ свою {pc.breasts} и соски."+str(" Some of your milk trails down your curves already.. Your tits are full of it." if GM.pc.canBeMilked() else "")+"")
+			saynn("Ты выпячиваешь грудь, выставляя напоказ свою {pc.breasts} и соски."+str(" По твоим изгибам уже текут капли молока... Твои сиськи просто полны его." if GM.pc.canBeMilked() else "")+"")
 
 		if (GM.pc.isWearingChastityCage()):
 			saynn("Снять девственную клетку легко не получится, так что тебе остается только явить её Алексу как есть... К этому моменту она уже стала частью тебя. Лисичка замечает, что от выполнения приказов твой запертый член начинает выделять еще больше смазки.")
@@ -314,7 +314,7 @@ func _run():
 
 		saynn("[say=pc]Ну почему, Господин..[/say]")
 
-		saynn("Неужели он и правда так боится тебя оплодотворить.."+str(" You're obviously pregnant already anyway.." if GM.pc.isVisiblyPregnant() else "")+"")
+		saynn("Неужели он и правда так боится тебя оплодотворить.."+str(" Ты ведь уже явно беременна..." if GM.pc.isVisiblyPregnant() else "")+"")
 
 		saynn("[say=alexrynard]Только не в таком состоянии.[/say]")
 
@@ -427,10 +427,10 @@ func _run():
 		saynn("[say=pc]Ну почему, Господин..[/say]")
 
 		if (GM.pc.hasWombIn(BodypartSlot.Anus)):
-			saynn("Неужели он и правда так боится тебя оплодотворить.."+str(" You're obviously pregnant already anyway.." if GM.pc.isVisiblyPregnant() else "")+"")
+			saynn("Неужели он и правда так боится тебя оплодотворить.."+str(" Ты ведь уже явно беременна..." if GM.pc.isVisiblyPregnant() else "")+"")
 
 		else:
-			saynn("Он всё равно не сможет тебя оплодотворить, так зачем вообще возиться с этими резинками..."+str(" And you're somehow pregnant already anyway.." if GM.pc.isVisiblyPregnant() else "")+"")
+			saynn("Он всё равно не сможет тебя оплодотворить, так зачем вообще возиться с этими резинками..."+str(" И ты каким-то образом уже беременна..." if GM.pc.isVisiblyPregnant() else "")+"")
 
 		saynn("[say=alexrynard]Только не в таком состоянии.[/say]")
 
@@ -1603,7 +1603,7 @@ func _react(_action: String, _args):
 
 	if(_action == "hyp_take_off_cage"):
 		processTime(5*60)
-		addMessage("You can now buy an advanced chastity cage.")
+		addMessage("Теперь ты можешь купить продвинутую девственную клетку.")
 
 	if(_action == "hyp_fuck_undress"):
 		processTime(5*60)

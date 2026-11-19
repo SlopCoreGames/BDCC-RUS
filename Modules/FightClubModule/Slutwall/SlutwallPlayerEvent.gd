@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "fight_slutwall")
 	
 func run(_triggerID, _args):
-	addButtonUnlessLate("Slutwall", "Let others use you! Can't get out freely so choose wisely!", "slutwall")
+	addButtonUnlessLate("Стенка для шлюх", "Пусть другие используют тебя! Свободно не выбраться, так что выбирай с умом!", "slutwall")
 
 func getPriority():
 	return 0

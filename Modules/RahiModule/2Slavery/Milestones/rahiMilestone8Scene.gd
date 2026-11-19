@@ -293,7 +293,7 @@ func _run():
 		addButton("Раздеть её", "Подготовить киску к церемонии", "do_undress_kitty")
 	if(state == "do_undress_kitty"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="pc", pc="rahi", bodyState={naked=true}})
-		saynn("Ты расстегиваешь пуговицы на рубашке киски и снимаешь её, обнажая аппетитные упругие груди с розовыми подтянутыми сосками."+str(" that seem to be leaking breastmilk the more you touch them" if getCharacter("rahi").canBeMilked() else "")+". Рахи стоит совершенно неподвижно, её дыхание становится теплым.")
+		saynn("Ты расстегиваешь пуговицы на рубашке киски и снимаешь её, обнажая аппетитные упругие груди с розовыми подтянутыми сосками."+str(" которые, кажется, начинают подтекать молоком, чем больше ты их трогаешь" if getCharacter("rahi").canBeMilked() else "")+". Рахи стоит совершенно неподвижно, её дыхание становится теплым.")
 
 		saynn("Обнажив её грудь, ты переходишь к её шортам, стягивая их вниз и открывая тугую розовую киску своей рабыни. Криогенная обработка, через которую прошла твоя киска, заживила все мелкие синяки и прочие следы насилия; тело Рахи выглядит безупречным и прекрасным.")
 
@@ -523,7 +523,7 @@ func _react(_action: String, _args):
 		processTime(60*60)
 		addExperienceToPlayer(500)
 		setFlag("RahiModule.rahiMile8Happened", true)
-		addMessage("Task completed")
+		addMessage("Задание выполнено")
 
 	if(_action == "resetequipandend"):
 		getCharacter("rahi").resetEquipment()
@@ -559,9 +559,9 @@ func _react(_action: String, _args):
 		processTime(60*60)
 		addExperienceToPlayer(500)
 		setFlag("RahiModule.rahiMile8Happened", true)
-		addMessage("Task completed")
+		addMessage("Задание выполнено")
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("RingRahi"))
-		addMessage("You kept the second ring")
+		addMessage("Ты сохранила второе кольцо")
 
 	setState(_action)
 
@@ -580,7 +580,7 @@ func loadData(data):
 	pierced = SAVE.loadVar(data, "pierced", false)
 
 func getDevCommentary():
-	return "I'm sorry I can't really add dev commentaries to each scene. I'm writing this literally hours before the next release x3. But hopefully you liked Rahi's content. I sure did enjoy writing it. I really enjoy when I get to explore one of my characters. That is, when I have a good direction for them x3. Tavi and Rahi clicked for me. Other characters are yet to do that.\n\nWill there be more content dedicated solely to Rahi? Probably not. I already took 2 updates writing what I have. Rahi probably has more sex scenes than the rest of the game combined right now x3. But that's what passion does to you I guess. What is passion anyway..\n\nA happy ending no matter what ending you choose. Why not, I think the little brown kitty deserves it. Is her story truly over though? ^^"
+	return "Простите, что не могу добавлять комментарии разработчика к каждой сцене. Я пишу это буквально за несколько часов до следующего релиза x3. Но надеюсь, вам понравился контент с Рахи. Мне самой было очень приятно его писать. Я обожаю, когда удается поглубже раскрыть одного из моих персонажей. Ну, то есть, когда у меня есть четкое понимание, куда вести их историю x3. Тави и Рахи сразу «защелкнулись» друг с другом. С остальными персонажами такого пока не случилось.\n\nБудет ли еще контент, посвященный исключительно Рахи? Скорее всего, нет. На написание того, что есть сейчас, у меня уже ушло два обновления. Пожалуй, у Рахи сейчас больше секс-сцен, чем у всей остальной игры вместе взятой x3. Но, полагаю, такова сила страсти. Хотя что такое страсть вообще...\n\nСчастливый конец, какой бы финал вы ни выбрали. Почему бы и нет, мне кажется, эта маленькая коричневая кошечка его заслужила. Но действительно ли её история окончена? ^^"
 
 func hasDevCommentary():
 	return true

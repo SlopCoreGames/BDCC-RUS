@@ -19,10 +19,10 @@ func processTime(_secondsPassed: int):
 	pass
 
 func getEffectName():
-	return "Stealth suit"
+	return "Стелс-костюм"
 
 func getEffectDesc():
-	return "Stealth suit activated for " + str(turns) + " more turn"+("s" if turns != 1 else "")
+	return "Активирован стелс-костюм для " + str(turns) + " хода"+("s" if turns != 1 else "")
 
 func getEffectImage():
 	return "res://Images/StatusEffects/invisible.png"

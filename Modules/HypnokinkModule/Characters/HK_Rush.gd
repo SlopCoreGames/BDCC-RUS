@@ -107,10 +107,10 @@ func getChatColor():
 	return '#F46670'
 	
 func getSmallDescription() -> String:
-	return "A towering stallion."
+	return "Возвышающийся над всеми жеребец."
 	
 func getFightIntro(_battleName):
-	return "Rush towers over you in a textbook boxing stance."
+	return "Раш нависает над тобой, приняв классическую боксерскую стойку."
 
 func getSpecies():
 	return ["equine", "dragon"]

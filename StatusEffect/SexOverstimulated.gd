@@ -26,7 +26,7 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Overstimulated!"
+	return "Перевозбуждение!"
 
 func getEffectDesc():
 	var texts := []
@@ -37,7 +37,7 @@ func getEffectDesc():
 		if(zone.isVisiblyOverstimulated()):
 			texts.append(zone.getNameIs()+" overstimulated ("+str(Util.roundF(zone.getOverstimulation()*100.0, 1))+"%)")
 	
-	return Util.join(texts, "\n")+"\n\nOverstimulated zones will lose sensitivity when stimulated further!"
+	return Util.join(texts, "\n")+"\n\nПри дальнейшем воздействии перестимулированные зоны потеряют чувствительность!"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/light-thorny-triskelion.png"

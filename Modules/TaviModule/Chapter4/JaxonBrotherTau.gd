@@ -20,7 +20,7 @@ func getGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "One of the guards of the research space station 'Exodus'. Jaxon's brother"
+	return "Один из охранников исследовательской космической станции «Экзодус». Брат Джексона."
 
 func getSpecies():
 	return ["human"]

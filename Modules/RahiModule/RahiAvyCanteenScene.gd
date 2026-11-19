@@ -274,7 +274,7 @@ func _react(_action: String, _args):
 
 	if(_action == "beg"):
 		GM.pc.addPain(50)
-		addMessage("Ow, that was a painful lesson")
+		addMessage("Ох, это был болезненный урок")
 		addExperienceToPlayer(50)
 		
 	if(_action == "aftermatch"):
@@ -302,7 +302,7 @@ func _react_scene_end(_tag, _result):
 			addExperienceToPlayer(50)
 
 func getDevCommentary():
-	return "I was.. very tired.. while writing this scene. That's why it's bad..\n\nIdeally you would be able to maybe humiliate Avy if you win. Or something lewd should happen if you lose. But you know.. my motivation to write anything just plummets hard when I'm out of it. So why write then? I dunno.. Should I not write when I'm not in a perfect mood? What if I'm sick? What if I'm feeling only slightly unwell?.. Yeah.. ideally I should write when I know that I can write a good scene, right? x3 How do you even know that without writing something first x3 Should I just throw out bad scenes? Eh, its not disgustingly bad though x3 Just weak.\n\nYou know how I see it? Good scenes will feel even better if sometimes you have to sit through bad ones too x3. I'm not saying almost every scene needs to be awful but.. you know.. if I balance it out well, your experience will be better ^^"
+	return "Я был.. очень уставшим.. когда писал эту сцену. Поэтому она вышла паршивой..\n\nВ идеале, при победе ты мог бы как-то унизить Ави. Или, если проиграешь, должно произойти что-то пошлое. Но, знаешь.. моя мотивация писать хоть что-то резко падает, когда я выжат как лимон. И зачем тогда вообще писать? Не знаю.. Стоит ли мне завязывать с писательством, если у меня не идеальное настроение? А если я заболел? А если мне просто слегка нездоровится?.. Да уж.. в идеале мне стоит писать только тогда, когда я уверен, что выдам годную сцену, верно? x3 Но как это понять, не написав ничего сначала? x3 Может, мне просто выбрасывать плохие сцены? Эх, ну она не то чтобы отвратительно плохая x3. Просто слабовата.\n\nЗнаешь, как я это вижу? Хорошие сцены ощущаются еще круче, если тебе иногда приходится продираться сквозь плохие x3. Я не говорю, что почти каждая сцена должна быть ужасной, но.. ну ты понимаешь.. если я всё грамотно сбалансирую, твой игровой опыт станет только лучше ^^"
 
 func hasDevCommentary():
 	return true

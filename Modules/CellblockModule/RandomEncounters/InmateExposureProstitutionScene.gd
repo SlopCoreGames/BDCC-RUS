@@ -42,15 +42,15 @@ func _run():
 		# (if didn’t saw)
 		if(!sawBefore):
 			saynn(RNG.pick([
-				"[say=npc]Wanna have some fun? I’m offering. I’m well worth the price.[/say]",
-				"[say=npc]Name is {npc.name}. Wanna fuck? Show me some creds~.[/say]",
-				"[say=npc]Looking for company, new face? I can provide. For a price~.[/say]",
+				"[say=npc]Хочешь развлечься? Я предлагаю. Моя цена того стоит.[/say]",
+				"[say=npc]Меня зовут {npc.name}. Хочешь трахнуться? Покажи кредиты~.[/say]",
+				"[say=npc]Ищешь компанию, новенький? Я могу устроить. За определенную цену~.[/say]",
 			]))
 		else:
 			saynn(RNG.pick([
-				"[say=npc]Wanna have.. oh hi, familiar face. Looking to have some fun?[/say]",
-				"[say=npc]Hey there. Wanna fuck? Show me some creds and I will give you a good time.[/say]",
-				"[say=npc]Looking for company, sweetie? I can provide. For a price~.[/say]",
+				"[say=npc]Хочешь... о, привет, знакомое лицо. Хочешь немного повеселиться?[/say]",
+				"[say=npc]Эй. Хочешь трахнуться? Покажи кредиты, и я устрою тебе отличный вечер.[/say]",
+				"[say=npc]Ищешь компанию, сладенький? Я могу помочь. За умеренную плату~.[/say]",
 			]))
 
 		saynn("Хм, похоже, {npc.he} — проститутка. Или просто пытается подзаработать кредитов.")
@@ -77,20 +77,20 @@ func _run():
 		# (if mean)
 		if(npcVariation == "mean"):
 			saynn(RNG.pick([
-				"[say=npc]You fucker. The only free thing you're gonna get is some broken bones.[/say]",
-				"[say=npc]Oh fuck off, I’m not scared. I will break you in half.[/say]",
+				"[say=npc]Ах ты ублюдок. Единственное бесплатное, что ты получишь — это парочку сломанных костей.[/say]",
+				"[say=npc]Да отвали ты, я не боюсь. Я тебя пополам переломаю.[/say]",
 			]))
 		# (if subby)
 		elif(npcVariation == "subby"):
 			saynn(RNG.pick([
-				"[say=npc]Hey! No, that’s not how it works..[/say]",
-				"[say=npc]You’re not getting me for free..[/say]",
+				"[say=npc]Эй! Нет, это работает не так...[/say]",
+				"[say=npc]Бесплатно ты меня не получишь...[/say]",
 			]))
 		# (if normal or kind)
 		else:
 			saynn(RNG.pick([
-				"[say=npc]Oh yeah? Well, try and get me.[/say]",
-				"[say=npc]Good luck getting anything for free in this world.[/say]",
+				"[say=npc]Да неужели? Ну так попробуй поймай![/say]",
+				"[say=npc]Удачи тебе в попытках получить хоть что-то бесплатно в этом мире.[/say]",
 			]))
 
 		saynn("Похоже, назревает драка.")
@@ -107,9 +107,9 @@ func _run():
 		# (if npc is subby)
 		if(subbyStat > 0.2):
 			saynn(RNG.pick([
-				"[say=npc]I can be a total sub bitch for you for just "+str(amountRequested)+" credits~.[/say]",
-				"[say=npc]"+str(amountRequested)+" credits and I will be yours to do whatever you want with me~.[/say]",
-				"[say=npc]Give me "+str(amountRequested)+" credits and I will be your slut~.[/say]",
+				"[say=npc]Я могу быть твоей самой покорной сучкой, лишь бы... "+str(amountRequested)+" credits~.[/say]",
+				"[say=npc]"+str(amountRequested)+" ...кредитов, и я буду в твоем полном распоряжении, делай со мной всё, что пожелаешь~.[/say]",
+				"[say=npc]Дай мне "+str(amountRequested)+" ...кредитов, и я стану твоей шлюхой~.[/say]",
 			]))
 			addButtonWithChecks("Согласиться", "Начать секс в роли доминанта", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
 			addButton("Атаковать", "Вы не хотите платить", "attack")
@@ -119,9 +119,9 @@ func _run():
 		# (if npc is switch)
 		elif(subbyStat >= -0.2):
 			saynn(RNG.pick([
-				"[say=npc]I’m a switch, give me "+str(amountRequested)+" credits and you can fuck me or allow me to fuck your precious body~.[/say]",
-				"[say=npc]"+str(amountRequested)+" credits and you will be able to choose who fucks who~.[/say]",
-				"[say=npc]"+str(amountRequested)+" credits for a fuck. I can top or bottom, your choice~.[/say]",
+				"[say=npc]Я универсал, дай мне "+str(amountRequested)+" кредитов, и сможешь трахать меня или позволить мне трахать твое драгоценное тело~.[/say]",
+				"[say=npc]"+str(amountRequested)+" кредитов, и ты сможешь выбирать, кто кого трахает~.[/say]",
+				"[say=npc]"+str(amountRequested)+" бабки за трах. Могу быть и сверху, и снизу, как захочешь~.[/say]",
 			]))
 			
 			addButtonWithChecks("Доминировать над ней", "Начать секс в роли доминанта", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
@@ -131,9 +131,9 @@ func _run():
 		# (if npcs is dom)
 		else:
 			saynn(RNG.pick([
-				"[say=npc]I can dom your ass for "+str(amountRequested)+" credits, not a credit less.[/say]",
-				"[say=npc]I can fuck you for "+str(amountRequested)+" credits, cutie.[/say]",
-				"[say=npc]"+str(amountRequested)+" credits. I’m a dom so I decide how we will fuck, understand?[/say]",
+				"[say=npc]Я могу доминировать над твоей задницей за "+str(amountRequested)+" кредитов, ни кредитом меньше.[/say]",
+				"[say=npc]Я могу трахнуть тебя за "+str(amountRequested)+" кредитов, милашка.[/say]",
+				"[say=npc]"+str(amountRequested)+" кредитов. Я тут домина, так что я решаю, как мы будем трахаться, усек?[/say]",
 			]))
 			addButtonWithChecks("Согласиться", "Начать секс в роли сабмиссива", "paytosub", [], [[ButtonChecks.HasCredits, amountRequested]])
 			addButton("Атаковать", "Вы не хотите платить", "attack")
@@ -149,9 +149,9 @@ func _run():
 		saynn("Вы соглашаетесь и даете {npc.him} чип с кредитами. {npc.He} смотрит на вас с хитрой ухмылкой и убирает чип.")
 
 		saynn(RNG.pick([
-			"[say=npc]You know what? I changed my mind. I don’t feel like fucking.[/say]",
-			"[say=npc]Thank you very much. Now get lost, bitch, I changed my mind.[/say]",
-			"[say=npc]You know what? I decided that I won’t fuck with you. Thanks for the creds though.[/say]",
+			"[say=npc]Знаешь что? Я передумала. Что-то не тянет меня на секс.[/say]",
+			"[say=npc]Огромное спасибо. А теперь свали в туман, сучка, я передумала.[/say]",
+			"[say=npc]Знаешь что? Я решила, что не буду с тобой трахаться. Но за кредиты спасибо.[/say]",
 		]))
 
 		saynn("{npc.He} явно пытается тебя развести!")
@@ -165,9 +165,9 @@ func _run():
 		saynn("Разъяренный несправедливостью ситуации, вы толкаете заключенного и встаете в боевую стойку. {npc.He} пошатывается, а затем рычит на вас.")
 
 		saynn(RNG.pick([
-			"[say=npc]Should have just left, fucker.[/say]",
-			"[say=npc]Big mistake, bitch.[/say]",
-			"[say=npc]Try me, fucker.[/say]",
+			"[say=npc]Надо было просто сразу уйти, ублюдок.[/say]",
+			"[say=npc]Большая ошибка, сучка.[/say]",
+			"[say=npc]Попробуй, ублюдок.[/say]",
 		]))
 
 		saynn("Похоже, назревает драка.")
@@ -179,8 +179,8 @@ func _run():
 		saynn("Вы склоняете голову, позволяя {npc.him} оставить кредиты себе.")
 		
 		saynn(RNG.pick([
-			"[say=npc]Good paypig, you would have wasted all your credits on sluts anyways.[/say]",
-			"[say=npc]What a good payslut~.[/say]",
+			"[say=npc]Хороший кошелек, ты бы всё равно спустил все свои кредиты на шлюх.[/say]",
+			"[say=npc]Какая послушная шлюшка~.[/say]",
 		]))
 
 		# (scene ends)
@@ -192,9 +192,9 @@ func _run():
 		saynn("Вы спрашиваете заключенного, может ли {npc.he} быть доминантом и трахнуть вас.")
 
 		saynn(RNG.pick([
-			"[say=npc]Uhh.. I can try? You would have to pay way more though, at least "+str(amountRequested)+" credits.[/say]",
-			"[say=npc]You understand that I’m a sub, right?.. Bu-u-ut.. "+str(amountRequested)+" credits and we can try something..[/say]",
-			"[say=npc]I.. I’m not.. hm.. I will do it for "+str(amountRequested)+" credits, how about that.[/say]",
+			"[say=npc]Э-э.. Ну, можно попробовать? Но тогда тебе придется платить гораздо больше, как минимум "+str(amountRequested)+" credits.[/say]",
+			"[say=npc]Ты же понимаешь, что я саб, да?.. Но-о-о... "+str(amountRequested)+" кредитов, и мы можем что-нибудь попробовать..[/say]",
+			"[say=npc]Я.. я не.. хм.. Я сделаю это за "+str(amountRequested)+" кредитов, как тебе такое?[/say]",
 		]))
 
 		# (Options are Agree, Leave, Attack)
@@ -206,9 +206,9 @@ func _run():
 		saynn("Вы спрашиваете заключенного, может ли {npc.he} быть сабом, чтобы вы могли трахнуть {npc.him}.")
 
 		saynn(RNG.pick([
-			"[say=npc]Are you serious? Me? Sub to you? I won’t do it.. Unless you have at least "+str(amountRequested)+" credits.[/say]",
-			"[say=npc]Bitch, I’m a dominant, I will never sub. But I can pretend for "+str(amountRequested)+" credits, how about that.[/say]",
-			"[say=npc]Ugh. Fine, I can let you fuck me. But the price is higher. "+str(amountRequested)+" credits.[/say]",
+			"[say=npc]Ты серьезно? Я? Саб для тебя? Ну не стану.. Если только у тебя нет хотя бы "+str(amountRequested)+" credits.[/say]",
+			"[say=npc]Сучка, я доминантка, я никогда не буду сабмиссивной. Но могу притвориться ради "+str(amountRequested)+" кредитов, как тебе такое?[/say]",
+			"[say=npc]Фух... Ладно, так и быть, давай трахнешь меня. Но цена будет выше. "+str(amountRequested)+" credits.[/say]",
 		]))
 
 		# (Options are Agree, Leave, Attack)
@@ -233,9 +233,9 @@ func _run():
 		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
-			"What a slut.",
-			"Ugh.. Bitch.",
-			"Go fuck yourself.",
+			"Ну и шлюшка.",
+			"Уф.. Сучка.",
+			"Иди нахуй.",
 		])+"[/say]")
 
 		addWonButton()
@@ -348,13 +348,13 @@ func _react_scene_end(_tag, _result):
 			
 			if(triedToScam):
 				GM.pc.addCredits(amountStole)
-				addMessage("You recovered the stolen credits")
+				addMessage("Вы вернули украденные кредиты")
 		else:
 			setState("if_lost")
 			addExperienceToPlayer(5)
 			
 			if(triedToScam):
-				addMessage("You lost the stolen credits..")
+				addMessage("Вы потеряли украденные кредиты..")
 
 func saveData():
 	var data = .saveData()

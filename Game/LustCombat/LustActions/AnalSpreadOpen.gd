@@ -26,7 +26,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Раздвинуть анус"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Stretch open your anal ring"
+	return "Растянуть анус"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(3)
@@ -35,22 +35,22 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "Feeling horny and needy, you spread your buttcheeks and then use two of your fingers to stretch your {pc.analStretch} butthole open as wide as it allows to. So lewd."
+		text += "Охваченная похотью и жаждой ласки, ты разводишь ягодицы и двумя пальцами растягиваешь свое {pc.analStretch} заднее отверстие настолько широко, насколько это возможно. Как же это похотливо."
 		text += "\n\n"
 	else:
-		text += "You pull your buttcheeks aside and use two digits to spread your fuckable tailhole open, letting out a soft noise in the process."
+		text += "Ты раздвигаешь ягодицы и двумя пальцами растягиваешь свою готовую к траху дырочку, невольно издавая при этом тихий стон."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You provide such a great view of your fuckhole, there is no way your opponent’s attention wasn’t stolen by your lewd action."
+		text += "Ты открываешь такой великолепный вид на свою дырку, что противник просто не может не засмотреться на это непристойное зрелище."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasEffect(StatusEffect.HasCumInsideAnus)):
-		text += "Wow, as you hold your butt spread open, more and more jizz leaks out of it, messing up your thighs and dripping down to the floor."
+		text += "Ого, пока ты держишь задницу раздвинутой, из неё всё сильнее вытекает сперма, пачкая твои бёдра и капая на пол."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.getLust() >= 50):
-		text += "You are so horny that you start to sway your hips and moan just from the thought of somebody using your tailhole."
+		text += "Ты настолько возбуждена, что начинаешь покачивать бёдрами и стонать от одной лишь мысли о том, что кто-то воспользуется твоей дырочкой."
 		text += "\n\n"
 
 	return {

@@ -177,7 +177,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Rahi yoga scene. I should make some yoga animations I think x3. It's hard to describe yoga poses in words. But I'm lazy. And I never did any yoga x3. But this particular Rahi would totally do yoga to keep her feline agility in check. Felines just like to stretch, you know? ^^"
+	return "Сцена с йогой Рахи. Думаю, надо бы наделать анимаций йоги x3. Описывать асаны словами — та еще морока. Но мне лень. Да и сама я йогой никогда не занималась x3. Но вот эта конкретная Рахи точно бы практиковала йогу, чтобы поддерживать свою кошачью гибкость. Кошки ведь обожают растягиваться, ну вы понимаете? ^^"
 
 func hasDevCommentary():
 	return true

@@ -36,7 +36,7 @@ func _run():
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):
-		addMessage("You received a hypnovisor")
+		addMessage("Вы получили гипновизор")
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("HypnovisorMk0"))
 		endScene()
 		return

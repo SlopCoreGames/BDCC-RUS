@@ -16,10 +16,10 @@ func processTime(_secondsPassed: int):
 		stop()
 
 func getEffectName():
-	return "Sore nipples"
+	return "Болезненные соски"
 
 func getEffectDesc():
-	return "Your nips feel sore.. "+Util.getTimeStringHumanReadable(turns)
+	return "Твои соски ноют... "+Util.getTimeStringHumanReadable(turns)
 
 func getEffectImage():
 	return "res://Images/StatusEffects/breasts-pain.png"

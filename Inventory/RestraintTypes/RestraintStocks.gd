@@ -61,10 +61,10 @@ func doStruggle(_pc, _minigame:MinigameResult):
 		stamina = RNG.randi_range(70, 90)
 		
 	if(luckChance(_pc, 1) && damage > 0.0):
-		text += " {user.name} managed to free one of {user.his} hands!"
+		text += " {user.name} удалось освободить одну из рук {user.his}!"
 		damage = max(0.5, damage)
 	elif(failChance(_pc, 10)):
-		text += " {user.name} desperately tries to break the stocks locks but just ends up more tired."
+		text += " {user.name} отчаянно пытается взломать замки колодок, но лишь окончательно изматывает себя."
 		stamina += 20
 	
 	return {"text": text, "damage": damage, "lust": lust, "pain": pain, "stamina": stamina}

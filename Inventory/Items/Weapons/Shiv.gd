@@ -20,7 +20,7 @@ func getVisibleName():
 	return "Шило"
 
 func getDescription():
-	var text = "Импровизированное оружие с острым наконечником.\nНаносит"+Util.dmgRangeArrayStr(getDamageRange())+" physical damage and causes bleeding.\nHas enough durability for "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "use")
+	var text = "Импровизированное оружие с острым наконечником.\nНаносит"+Util.dmgRangeArrayStr(getDamageRange())+" физический урон и вызывает кровотечение.\nОбладает достаточной прочностью, чтобы "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "use")
 
 	return text
 

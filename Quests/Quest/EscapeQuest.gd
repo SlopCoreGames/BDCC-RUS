@@ -10,16 +10,16 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Seems like you are stuck in this place for while. You should try and see if escaping from this space prison is even possible.")
+	result.append("Похоже, ты застрял здесь надолго. Стоит попробовать выяснить, реально ли вообще сбежать из этой космической тюрьмы.")
 	
 	if(GM.main.getModuleFlag("TaviModule", "Tavi_ToldHowToEscape")):
-		result.append("(Switch Route) Tavi says that she can help you escape if you find a way to get to the Captain and make him take off your collar.")
+		result.append("(Смена маршрута) Тави говорит, что поможет тебе сбежать, если ты найдешь способ добраться до Капитана и заставишь его снять твой ошейник.")
 	elif(GM.main.getModuleFlag("TaviModule", "Tavi_IntroducedTo")):
-		result.append("(Switch Route) You can find Tavi near the mineshafts and see if she can help you escape this prison.")
+		result.append("(Смена маршрута) Ты можешь найти Тави возле шахт и узнать, поможет ли она тебе сбежать из этой тюрьмы.")
 	if(GM.main.getFlag("KaitModule.talkedKaitArena")):
-		result.append("(Dom Route) It looks like Kait is gathering people for a team in order to try to dominate the whole prison!")
+		result.append("(Маршрут Доминанта) Похоже, Кейт собирает команду, чтобы попытаться подчинить себе всю тюрьму!")
 	elif(GM.main.getFlag("KaitModule.gotMetByKait")):
-		result.append("(Dom Route) You've met Kait, a snow leopard who seems interested in inmates who can fight.")
+		result.append("(Маршрут Доминанта) Ты встретил Кейт — снежную леопардицу, которую, кажется, интересуют только те заключенные, что умеют драться.")
 	
 	return result
 

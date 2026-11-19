@@ -42,7 +42,7 @@ func _react(_action: String, _args):
 			endScene()
 			return
 		
-		addMessage("You got an energy boost and don't feel as hungry anymore.")
+		addMessage("Вы получили заряд энергии, и чувство голода притупилось.")
 
 
 	if(_action == "endthescene"):

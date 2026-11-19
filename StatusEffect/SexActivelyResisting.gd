@@ -18,10 +18,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Actively Resisting"
+	return "Активное сопротивление"
 
 func getEffectDesc():
-	return "This person will actively resist during sex."
+	return "Этот человек будет активно сопротивляться во время секса."
 
 func getEffectImage():
 	return "res://Images/StatusEffects/shattered-heart.png"

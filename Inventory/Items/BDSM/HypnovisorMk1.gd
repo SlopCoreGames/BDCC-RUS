@@ -28,9 +28,9 @@ func getPossibleActions():
 		var wearer = getWearer()
 		if(wearer.hasPerk(Perk.HypnosisVisorMastery)):
 			return [{
-					"name": "Program",
+					"name": "Программа",
 					"scene": "ProgramVisorScene",
-					"description": "Program the visor to suppress your drawback perks",
+					"description": "Запрограммировать визор на подавление ваших негативных перков",
 					"onlyWhenCalm": true
 				}]
 	return []
@@ -55,9 +55,9 @@ func generateRestraintData():
 	
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was forced over your eyes."
+		return getAStackNameCapitalize()+" насильно надели тебе на глаза."
 	else:
-		return getAStackNameCapitalize()+" was forced over {receiver.nameS} eyes!"
+		return getAStackNameCapitalize()+" насильно надели на глаза {receiver.nameS}!"
 
 func onEquippedBy(_otherCharacter, _forced = false):
 	if(not _forced):

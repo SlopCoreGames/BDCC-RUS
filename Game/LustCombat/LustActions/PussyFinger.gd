@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "ласкать киску пальцами"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Pleasure yourself"
+	return "Доставить себе удовольствие"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,27 +30,27 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You slide a digit in and out of your {pc.pussyStretch} pussy, coating it in your juices while doing so. It feels good, you let out a noise of pleasure and keep finger-fucking yourself for anyone who might been lucky to see."
+		text += "Ты вводишь и выводишь палец в свою {pc.pussyStretch} киску, смазывая её своими соками. Это чертовски приятно; ты издаешь стон наслаждения и продолжаешь трахать себя пальцами на глазах у любого, кому посчастливится на это посмотреть."
 		text += "\n\n"
 	else:
-		text += "You thrust a few fingers in and out your {pc.pussyStretch} slit, shoving them nice and deep, pounding at the G-spot. Your juices make it easy for your digits to slide inside and fuck your needy pussy."
+		text += "Ты вгоняешь несколько пальцев в свою {pc.pussyStretch} щелочку, заталкивая их глубоко и с силой, нащупывая точку G. Благодаря смазке пальцы легко скользят внутри, нещадно трахая твою жаждущую киску."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasEffect(StatusEffect.HasCumInsideVagina)):
-		text += "As you finger yourself towards the orgasm, cum leaks out of your cunt and mixes with your girly fluids, so messy."
+		text += "По мере того как ты доводишь себя до оргазма, из твоей щели сочится конча, смешиваясь с женскими выделениями — так грязно и сладко."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && _lustState.isInBattle()):
-		text += "You make sure to show off how much pleasure this brings you to make your opponent jealous."
+		text += "Ты стараешься выставить напоказ, какое наслаждение это тебе приносит, чтобы заставить противницу завидовать."
 		text += "\n\n"
 	
 	if(RNG.chance(30) && pc.hasPenis()):
-		text += "Your {pc.cock} is throbbing and leaking pre as you pleasure your other set of bits."
+		text += "Твоя {pc.cock} пульсирует и течет от предэякулята, пока ты ласкаешь другие свои эрогенные зоны."
 		text += "\n\n"
 	
 	var theAnim:String = "LustRubAttack"
 	if(RNG.chance(50) && pc.getLust() >= 50):
-		text += "You feel really close, your drippy cunt squirts with your juices, soft inner walls clench around your fingers as you push yourself further."
+		text += "Ты чувствуешь, что финиш совсем близко: твоя мокрая киска брызжет соками, а мягкие внутренние стенки сжимаются вокруг пальцев, когда ты входишь еще глубже."
 		text += "\n\n"
 		theAnim = "LustRubAttackFast"
 

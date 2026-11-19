@@ -13,7 +13,7 @@ func getGender():
 	return Gender.Other
 	
 func getSmallDescription() -> String:
-	return "Alex's custom-made security system."
+	return "Самодельная система безопасности Алекса."
 
 func getSpecies():
 	return [Species.Unknown]

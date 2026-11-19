@@ -19,7 +19,7 @@ func getUnlockData() -> Dictionary:
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
-				desc = "Ask if she is brave enough to try her own product. She will probably want to test her new organ.",
+				desc = "Спроси, хватит ли ей смелости опробовать собственный продукт. Скорее всего, ей не терпится протестировать свой новый орган.",
 				sceneID = "ElizaDrugTestGrowCockScene",
 			},
 		],
@@ -91,7 +91,7 @@ func doProgress(_context:Dictionary) -> Dictionary:
 
 func reactProgress(_context:Dictionary, _result:TFResult):
 	if(getStage() == 0):
-		addText("{npc.YouHe} {npc.youHeVerb('feel')} a strange warmth spreading through {npc.yourHis} lower abdomen, as if something new is starting to take shape beneath the surface.")
+		addText("{npc.YouHe} {npc.youHeVerb('feel')} странное тепло разливается по {npc.yourHis} нижней части живота, словно под кожей начинает обретать форму что-то новое.")
 		return
 	addText(_result.getAllTFTexts())
 	

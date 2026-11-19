@@ -67,27 +67,27 @@ func _init():
 	
 func interestVerbalReaction(interest):
 	if(interest == InterestTopic.Pregnant):
-		return "Gonna be a mommy soon? Nice~"
+		return "Скоро станешь мамочкой? Мило~"
 	if(interest == InterestTopic.TallyMarks):
-		return "I'd love to leave more marks on you"
+		return "Я бы с удовольствием оставил на тебе побольше меток"
 	if(interest == InterestTopic.BDSMRestraints):
-		return "Aren't you a cute restriction slut~"
+		return "Разве ты не милая рабыня ограничений~"
 	if(interest == InterestTopic.ThickButt):
-		return "That's an ass I would grope"
+		return "Такую задницу так и хочется пощупать"
 	if(interest == InterestTopic.ExposedPanties):
-		return "Take your panties off, cutie"
+		return "Снимай трусики, милашка"
 	if(interest == InterestTopic.HasVaginaAndCock):
-		return "Herms are nice~. I love the full package~"
+		return "Гермафродиты — это кайф~. Обожаю полный комплект~"
 	if(interest == InterestTopic.StuffedPussyOrAss):
-		return "You got fucked, huh~. Lewd"
+		return "Тебя трахнули, да~? Похотливая"
 	if(interest == InterestTopic.TightAnus):
-		return "Mommy would love to train that ass of yours"
+		return "Мамочке бы очень понравилось дрессировать твою жопку"
 	if(interest == InterestTopic.TightPussy):
-		return "We can have so much fun stretching you~"
+		return "Мы можем так весело тебя растягивать~"
 	if(interest == InterestTopic.MediumBreasts):
-		return "I love your tits, not too small, not too big~"
+		return "Обожаю твою сиську — не слишком маленькая, не слишком большая~"
 	if(interest == InterestTopic.AverageCock):
-		return "Great cock you have there~"
+		return "Какой у тебя классный член~"
 	
 func _getName():
 	return "Nova"
@@ -99,7 +99,7 @@ func getPronounGender():
 	return Gender.Female
 	
 func getSmallDescription() -> String:
-	return "Gray husky that wears hi-tech guard armor. Medium height, fit body"
+	return "Серая хаски в высокотехнологичной броне охраны. Среднего роста, подтянутое телосложение"
 
 func getSpecies():
 	return ["canine"]
@@ -110,7 +110,7 @@ func _getAttacks():
 func getFightIntro(_battleName):
 	var mes = "Nova’s power armor lights up as she grabs her trusty stun baton and directs her attention to you."
 	mes += "\n\n"
-	return mes+formatSay("You have no right to remain silent, anything I say will be used against you. Come here, sweetie~")
+	return mes+formatSay("У тебя нет права молчать: всё, что я скажу, будет использовано против тебя. Иди сюда, сладенькая~")
 
 func getChatColor():
 	return '#90A9F4'
@@ -153,56 +153,56 @@ func reactRestraint(restraintType, restraintAmount, isGettingForced):
 	if(!isGettingForced):
 		if(restraintAmount == 0):
 			return RNG.pick([
-				"Oh, that was a great try, sweetie~",
-				"I'm free. And you're not~",
-				"Cute~",
-				"Was that your worst~?",
+				"О, это была отличная попытка, милашка~",
+				"Я на свободе. А ты — нет~",
+				"Мило~",
+				"Это было твое лучшее?!",
 			])
 		
 		return RNG.pick([
-			"Huff, I didn't became a guard to do this",
-			"This wasn't in my contract",
-			"This reminds me of my past",
+			"Хафф, я становилась охранницей не для этого",
+			"В моем контракте этого не было",
+			"Это напоминает мне о моем прошлом",
 		])
 	
 	if(isGettingForced):
 		if(restraintAmount > 2 && RNG.chance(30)):
 			return RNG.pick([
-				"Hey-hey-hey! I have enough already",
-				"Why don't you wear that?",
-				"Can you unlock that one? I don't need it",
-				"Heck, I hope you don't have a spare collar",
+				"Эй-эй-эй! С меня уже хватит",
+				"Почему бы тебе не надеть это?",
+				"Можешь разблокировать вот этот? Он мне не нужен",
+				"Черт, надеюсь, у тебя нет запасного ошейника",
 			])
 		
 		if(restraintType == RestraintType.Gag):
 			return RNG.pick([
-				"Huff. But I wanna tease you, sweetie",
-				"Time to train my gag speech",
+				"Хафф. Но я хочу пофлиртовать с тобой, сладенький",
+				"Пора тренировать свою речь с кляпом",
 			])
 		if(restraintType == RestraintType.Muzzle):
 			return RNG.pick([
-				"Wow. I'm not your fucking pet",
-				"A muzzle? Are you serious?",
+				"Ого. Я тебе, блять, не домашний питомец",
+				"Намордник? Ты это серьезно?",
 			])
 		if(restraintType == RestraintType.ButtPlug):
 			return RNG.pick([
-				"Oh, there is room for more~",
-				"Hey! I'm not a buttslut, you are!",
-				"I have much bigger ones, wanna try~?",
+				"О, для остальных еще найдется местечко~",
+				"Эй! Это не я задрот по жопам, это ты!",
+				"У меня есть и побольше, хочешь попробовать~?",
 			])
 		if(restraintType == RestraintType.VaginalPlug):
 			return RNG.pick([
-				"Is that a present for me?",
-				"I have much bigger ones, wanna try~?",
+				"Это мне подарок?",
+				"У меня есть и побольше, хочешь попробовать~?",
 			])
 	
 		return RNG.pick([
-			"That won't break me",
-			"Heck!",
-			"Hey, quit it",
-			"Silly pet, stop it",
-			"That's kinky but only if it was on you",
-			"I'm a guard, I'm not a bondage slut",
+			"Это меня не сломит",
+			"Черт возьми!",
+			"Эй, ну хватит",
+			"Глупый питомец, прекрати",
+			"Это было бы извращенно, если бы это делал ты",
+			"Я охранник, а не рабыня в кандалах",
 		])
 	return null
 

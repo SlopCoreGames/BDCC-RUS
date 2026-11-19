@@ -22,7 +22,7 @@ func run(_triggerID, _args):
 		addDisabledButton("Артика", "Сегодня её здесь нет")
 		return
 	
-	addButtonUnlessLate("Artica", "Talk with the herm fluff", "talk")
+	addButtonUnlessLate("Артика", "Поболтать с пушистой гермой", "talk")
 
 func getPriority():
 	return 0

@@ -158,7 +158,7 @@ func _run():
 			saynn("Ты осторожно располагаешь молокоотсосы на груди Артики,"+str(" milky" if isLact else "")+"мягкие присоски плотно обхватывают её нежные соски.")
 
 		if (penisMilking):
-			saynn(""+str("After that, you" if breastMilking else "You")+"ты тянешься за пенисным насосом, прежде чем надеть его на собачий член Артики. Ты надеваешь его без особых хлопот, и кольцо удовольствия теперь плотно обхватывает этот голубой ствол.")
+			saynn(""+str("После этого ты" if breastMilking else "Ты")+"ты тянешься за пенисным насосом, прежде чем надеть его на собачий член Артики. Ты надеваешь его без особых хлопот, и кольцо удовольствия теперь плотно обхватывает этот голубой ствол.")
 
 		addButton("Старт", "Включить насосы", "start_pumps")
 	if(state == "start_pumps"):
@@ -168,7 +168,7 @@ func _run():
 		else:
 			playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="artica", npcBodyState={naked=true, hard=true}})
 		if (breastMilking):
-			saynn("С мягким щелчком ты активируешь каждый из молокоотсосов. Комнату наполняет нежное жужжание — они начинают вытягивать сладкое молоко Артики..."+str(" really trying.." if !isLact else " without much problem it seems, the girl's breasts are lactating quite nicely.")+"")
+			saynn("С мягким щелчком ты активируешь каждый из молокоотсосов. Комнату наполняет нежное жужжание — они начинают вытягивать сладкое молоко Артики..."+str(" действительно стараешься..." if !isLact else " судя по всему, без особых проблем — у девушки отлично идет лактация.")+"")
 
 			if (penisMilking):
 				saynn("Но ты еще не закончил. С сияющей на лице ухмылкой ты тянешься к пенис-насосу и нажимаешь кнопку, заставляя его ожить! Кольцо удовольствия начинает скользить по голубому стволу Артики, пытаясь выжать всё из её яичек, пока остальные насосы вовсю доят её грудь.")
@@ -283,7 +283,7 @@ func _run():
 		showFightUI = true
 		saynn("Мощный оргазм сотрясает тело Артики. Она выгибается и дрожит, пока её мышцы непроизвольно напрягаются.")
 
-		saynn("[say=artica]"+str(RNG.pick(["AhHh-h!..", "Ah-h..ah..ahh..", "t-too much.. ahh-h.. ahh.. nnyah..", "G-gods.. ahh-h.."]))+"[/say]")
+		saynn("[say=artica]"+str(RNG.pick(["AhHh-h!..", "Ah-h..ah..ahh..", "с-слишком много.. ахх.. ах.. нняах..", "G-gods.. ahh-h.."]))+"[/say]")
 
 		if (breastMilking && milkCollected > 1.0):
 			saynn("Во время этого пика из её груди в молокоотсосы брызжет молоко.")
@@ -316,7 +316,7 @@ func _run():
 		else:
 			saynn("[say=artica]Э-это б-было так приятно..[/say]")
 
-		saynn("В итоге вам удалось подоить Артику на.. "+str(str(Util.roundF(milkTotal, 1))+" ml of milk" if breastMilking else "")+""+str(" and " if (breastMilking && penisMilking) else "")+""+str(str(Util.roundF(seedTotal, 1))+" ml of seed" if penisMilking else "")+"")
+		saynn("В итоге вам удалось подоить Артику на.. "+str(str(Util.roundF(milkTotal, 1))+" мл молока" if breastMilking else "")+""+str(" and " if (breastMilking && penisMilking) else "")+""+str(str(Util.roundF(seedTotal, 1))+" мл семени" if penisMilking else "")+"")
 
 		var totalSmart = milkTotal + seedTotal
 		if (totalSmart >= 800.0):

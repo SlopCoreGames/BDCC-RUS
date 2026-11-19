@@ -12,7 +12,7 @@ func getVisibleDescription():
 	var text = str(amount)
 	if(amount > 0):
 		text = "+"+text
-	return "Extra armor when blocking "+text
+	return "Дополнительная броня при блоке "+text
 
 func apply(_buffHolder):
 	_buffHolder.addCustom(BuffAttribute.BlockArmor, amount)

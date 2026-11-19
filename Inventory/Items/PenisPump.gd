@@ -38,19 +38,19 @@ func generateFluids():
 func getPossibleActions():
 	return [
 		{
-			"name": "Milk self",
+			"name": "Собственное молоко",
 			"scene": "PenisPumpMilkingScene",
-			"description": "Use the penis pump",
+			"description": "Использовать помпу для пениса",
 		},
 		{
-			"name": "Transfer fluids",
+			"name": "Перекачать жидкость",
 			"scene": "FluidTransferScene",
-			"description": "Transfer the fluids between fluid containers",
+			"description": "Перелить жидкость из одного контейнера в другой",
 		},
 		{
-			"name": "Drink from",
+			"name": "Выпить из",
 			"scene": "DrinkFromScene",
-			"description": "Swallow the contents of this item",
+			"description": "Проглотить содержимое этого предмета",
 		},
 	]
 

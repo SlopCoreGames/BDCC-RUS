@@ -28,7 +28,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 		stamina = 10
 		
 		if(failChance(_pc, 10)):
-			text += " Ow, {user.name} accidentally steps on {user.his} finger."
+			text += " Ой, {user.name} случайно наступает на палец {user.his}."
 			pain = scaleDamage(5)
 	elif(_canBite && _armsFree):
 		text = "{user.name} вгрызается в одну из варежек, пытаясь освободить {user.his} руку. Не самый эффективный метод, но лучше, чем ничего."
@@ -36,7 +36,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 		stamina = 10
 
 		if(failChance(_pc, 10)):
-			text += " Ow, {user.name} accidentally bit {user.his} hand."
+			text += " Ой, {user.name} случайно прикусывает руку {user.his}."
 			pain = scaleDamage(5)
 	else:
 		text = "{user.name} беспомощно пытается стряхнуть варежки, дрыгая ими."
@@ -44,16 +44,16 @@ func doStruggle(_pc, _minigame:MinigameResult):
 		stamina = RNG.randi_range(10, 20)
 		
 		if(failChance(_pc, 20)):
-			text += " Ow! {user.name} accidently smashed them against "+RNG.pick(["the wall", "the ground", "something"])
+			text += " Ой! {user.name} случайно ударил ими о "+RNG.pick(["стену", "землю", "something"])
 			pain = scaleDamage(RNG.randi_range(5, 10))
 	
 	return {"text": text, "damage": damage, "lust": lust, "pain": pain, "stamina": stamina}
 
 func getTightLockRequiredItemID() -> String:
-	return "Shiv"
+	return "Шило"
 
 func getTightLockUnlockMessage() -> String:
-	return "The lock is impossible to remove so you have to destroy the mittens. You sit down, trap the shiv between your legs and begin cutting the mittens using it, slowly tearing chunks of leather away.\n\nSoon, you manage to free your hands!"
+	return "Замок невозможно снять, так что приходится уничтожать варежки. Ты садишься, зажимаешь заточку между ног и начинаешь кромсать ими кожу, медленно отрывая куски.\n\nВскоре тебе удается освободить руки!"
 
 func getForceOnCombatAnim() -> String:
 	return "RestraintHands"

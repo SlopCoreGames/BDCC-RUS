@@ -8,24 +8,24 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Meet a kind, easy-going fennec engineer with a very interesting outfit. Help her with her tasks all around the prison. Resist the temptations of doing lewd stuff with her out in the public.. or don't."
-	return "Meet a kind fennec engineer with an interesting outfit. Help her with her tasks all around the prison."
+		return "Познакомьтесь с доброй и легкой на подъем инженером-феннеком в очень интересном наряде. Помогайте ей с делами по всей тюрьме. Сопротивляйтесь искушению заняться с ней чем-нибудь пошлым на публике... или не сопротивляйтесь."
+	return "Познакомьтесь с доброй инженером-феннеком в интересном наряде. Помогайте ей с делами по всей тюрьме."
 
 func getKinks() -> Array:
 	return [
-		"Player is dominant",
-		"Public sex",
-		"Public use",
-		"Free use",
-		"Stealth sex",
-		"Exhibitionism",
-		"Hypnosis",
+		"Игрок доминирует",
+		"Секс на публике",
+		"Публичное использование",
+		"Свободное использование",
+		"Секс в режиме скрытности",
+		"Эксгибиционизм",
+		"Гипноз",
 	]
 
 func getCompletedDesc() -> String:
 	if(getFlag("SocketModule.removedWombImplant", false)):
-		return "You helped Socket with all her tasks! You even removed her womb implant!"
-	return "You helped Socket with all her tasks!"
+		return "Вы помогли Сокет со всеми её задачами! Вы даже удалили ей имплант матки!"
+	return "Вы помогли Сокет со всеми её задачами!"
 
 func getStatus() -> int:
 	if(getFlag("SocketModule.h5completed", false)):
@@ -36,13 +36,13 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("Mining_IntroducedToMinning"), "Follow Risha's order and go work in the mines."],
-		[completeIf("PortalPantiesModule.Alex_FirstTimeTalked"), "Talk with Alex Rynard near the entrance to the mines."],
-		[completeIf("PortalPantiesModule.Panties_AskedAlex"), "Ask Alex Rynard if he can help you with credits."],
-		[completeIfBool(getFlag("PortalPantiesModule.Panties_FleshlightsReturnedToAlex", false) || getFlag("PortalPantiesModule.Panties_PcDenied", false)), "Complete the 'portal panties' task that Alex Rynard gives fully or decline him after trying them once."],
-		[completeIfBool(GM.pc.getSkillsHolder().getLevel() >= 10), "Reach level 10."],
-		[completeIf("SocketModule.socketIntroduced"), "Enter the workshop to meet Socket!"],
+		[completeIf("Mining_IntroducedToMinning"), "Выполните приказ Риши и отправляйтесь работать в шахты."],
+		[completeIf("PortalPantiesModule.Alex_FirstTimeTalked"), "Поговорите с Алексом Ринардом у входа в шахты."],
+		[completeIf("PortalPantiesModule.Panties_AskedAlex"), "Спросите Алекса Ринарда, не может ли он помочь вам с кредитами."],
+		[completeIfBool(getFlag("PortalPantiesModule.Panties_FleshlightsReturnedToAlex", false) || getFlag("PortalPantiesModule.Panties_PcDenied", false)), "Полностью выполни задание с «трусиками-порталами», которое дает Алекс Ринард, или откажи ему после первой же попытки."],
+		[completeIfBool(GM.pc.getSkillsHolder().getLevel() >= 10), "Достигните 10 уровня."],
+		[completeIf("SocketModule.socketIntroduced"), "Войдите в мастерскую, чтобы встретить Сокет!"],
 	]
 
 func getProgressText() -> String:
-	return "Help Socket complete her tasks all around the prison."
+	return "Помогайте Сокет выполнять её поручения по всей тюрьме."

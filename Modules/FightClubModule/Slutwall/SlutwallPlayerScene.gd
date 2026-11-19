@@ -69,7 +69,7 @@ func _react_scene_end(_tag, _result):
 	if(_tag == "generic_sex_scene"):
 		if(RNG.chance(20)):
 			GM.pc.addCredits(1)
-			addMessage("Someone decided to put 1 credit into the tip box after using you")
+			addMessage("Кто-то решил кинуть 1 кредит в чаевые после того, как трахнул тебя")
 
 func saveData():
 	var data = .saveData()
@@ -84,7 +84,7 @@ func loadData(data):
 	queueSize = SAVE.loadVar(data, "queueSize", 3)
 
 func getDevCommentary():
-	return "This scene was put together very quickly just so the player would have access to the slutwall. Otherwise the only way to see this stuff is Avy's final arena fight quest.\n\nDunno really how to expand it. This is just another one of those punishment scenes. But I can't come up with anything interesting x3. How does one add a progression system to the slutwall x3. You earn more the more you do it? Kinda eh. Maybe there could be unique scenes randomly happening that start a quest or something, dunno."
+	return "Эту сцену собрали на скорую руку, просто чтобы у игрока был доступ к слюнявой стене. Иначе увидеть всё это можно только в финальном квесте Ави на арене.\n\nДаже не знаю, как это расширять. Это просто очередная сцена наказания. Но мне никак не приходят в голову интересные идеи x3. Как вообще добавить систему прогрессии в слюнявую стену x3? Чем больше делаешь, тем больше получаешь? Ну, такое. Может, можно сделать так, чтобы случайно случались уникальные сцены, которые запускают квест или типа того, хз."
 
 func hasDevCommentary():
 	return true

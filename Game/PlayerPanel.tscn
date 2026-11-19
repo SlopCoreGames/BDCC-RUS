@@ -64,7 +64,7 @@ margin_top = 32.0
 margin_right = 354.0
 margin_bottom = 54.0
 colorGradient = SubResource( 5 )
-propertyName = "Level"
+propertyName = "Уровень"
 
 [node name="PainBar" parent="." instance=ExtResource( 7 )]
 anchor_right = 0.0
@@ -73,7 +73,7 @@ margin_top = 58.0
 margin_right = 354.0
 margin_bottom = 80.0
 colorGradient = SubResource( 3 )
-propertyName = "Pain"
+propertyName = "Боль"
 
 [node name="ConsciousnessBar" parent="." instance=ExtResource( 7 )]
 anchor_right = 0.0
@@ -82,7 +82,7 @@ margin_top = 84.0
 margin_right = 354.0
 margin_bottom = 106.0
 colorGradient = SubResource( 3 )
-propertyName = "Consciousness"
+propertyName = "Сознание"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_top = 110.0
@@ -98,7 +98,7 @@ margin_bottom = 22.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 colorGradient = SubResource( 4 )
-propertyName = "Lust"
+propertyName = "Похоть"
 
 [node name="ArousalBar" parent="HBoxContainer" instance=ExtResource( 7 )]
 anchor_right = 0.0
@@ -109,7 +109,7 @@ margin_bottom = 22.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 colorGradient = SubResource( 4 )
-propertyName = "Arousal"
+propertyName = "Возбужд."
 
 [node name="StaminaBar" parent="." instance=ExtResource( 7 )]
 anchor_right = 0.0
@@ -118,7 +118,7 @@ margin_top = 136.0
 margin_right = 354.0
 margin_bottom = 158.0
 colorGradient = SubResource( 6 )
-propertyName = "Stamina"
+propertyName = "Выносливость"
 
 [node name="CreditsLabel" type="Label" parent="."]
 margin_top = 162.0

@@ -10,9 +10,9 @@ canMeetNPCs = true
 
 [node name="MainHallRoom" parent="." index="0" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
-roomName = "Security checkpoint"
+roomName = "Контрольно-пропускной пункт"
 roomID = "hall_checkpoint"
-roomDescription = "A short, wider corridor connects the main hall and central elevator. A tall fence stretches across the way forward. The only way through is a closely watched guard chokepoint. Two elevators stretch up on either side of the guard outpost, used excluvisely by guards. Theres no way for you to reach them, unfortunately."
+roomDescription = "Короткий широкий коридор соединяет главный зал с центральным лифтом. Прямо перед вами тянется высокий забор. Единственный путь вперед лежит через узкое место под пристальным надзором охраны. По обе стороны от поста охраны расположены два лифта, предназначенных исключительно для персонала. К сожалению, добраться до них вам не суждено."
 roomSprite = 1
 roomColor = 2
 population = 2
@@ -20,40 +20,36 @@ population = 2
 [node name="MainHallRoom2" parent="." index="1" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 0, 64 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "hall_mainentrance"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above.
-
-To the north is the Central Elevator and its guard checkpoint, and to the south there are a set of stairs lead up to the large raised platform in the center of the Main Hall."
+roomDescription = "Главный зал — это невероятно огромное помещение, вокруг которого возвышается массивная подвесная платформа. Гладкие скалистые стены удерживают вас внутри, хотя где-то высоко наверху едва заметно копошатся охранники и персонал. Перила не дают сорваться в бездну каверны, а в центральном провале внизу виднеются опоры фундамента, электрические кабели, сетки, другое конструктивное оборудование и огни тюремных блоков. Потолок уходит далеко за пределы видимости, растворяясь в темноте.\n\nНа севере находится центральный лифт с контрольно-пропускным пунктом, а на юге расположена лестница, ведущая на большую возвышенную платформу в центре главного зала."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom3" parent="." index="2" groups=["zone_prostitution"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -64, 320 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom5"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above."
+roomDescription = "Главный зал — это невероятно огромное помещение, опоясывающее массивную подвесную платформу в самом центре. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя где-то высоко наверху едва различимы места, где копошатся персонал и охрана. Перила не дают сорваться с края расщелины, уходящей вглубь, а в центральной дыре внизу виднеются опоры фундамента, электрические кабели, сетки, прочее конструктивное оборудование и огни жилых блоков этажами ниже. Потолок уходит далеко за всё это, растворяясь в непроглядной темноте."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom4" parent="." index="3" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 64, 320 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom7"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above."
+roomDescription = "Главный зал — это невероятно огромное помещение, опоясывающее массивную подвесную платформу в самом центре. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя где-то высоко наверху едва различимы места, где копошатся персонал и охрана. Перила не дают сорваться с края расщелины, уходящей вглубь, а в центральной дыре внизу виднеются опоры фундамента, электрические кабели, сетки, прочее конструктивное оборудование и огни жилых блоков этажами ниже. Потолок уходит далеко за всё это, растворяясь в непроглядной темноте."
 roomColor = 8
 population = 3
 
 [node name="MainElevator" parent="." index="4" instance=ExtResource( 2 )]
 self_modulate = Color( 1, 0.6, 0.6, 1 )
 position = Vector2( 0, -64 )
-roomName = "Main elevator"
+roomName = "Главный лифт"
 roomID = "hall_elevator"
-roomDescription = "This spacious cargo elevator is your only way throughout the rest of the correctional center. The walls here are painted black rather than the bare gray metallics of everywhere else. Off to the side there sits the control panel with a few buttons.
-
-Annoyingly, there is only a single elevator, probably to limit the movement of inmates."
+roomDescription = "Этот просторный грузовой лифт — ваш единственный путь по остальной части исправительного центра. Стены здесь выкрашены в черный цвет, а не в голый серый металл, как везде в остальных местах. Сбоку расположена панель управления с несколькими кнопками.\n\nРаздражает то, что лифт всего один — вероятно, чтобы ограничить передвижение заключенных."
 roomSprite = 3
 roomColor = 2
 population = 2
@@ -62,9 +58,9 @@ astarConnectedTo = PoolStringArray( "med_elevator", "mining_elevator" )
 [node name="MainStairs1" parent="." index="5" instance=ExtResource( 2 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( -64, 64 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "main_stairs1"
-roomDescription = "These stairs will take you down to the extensive cellblocks below."
+roomDescription = "Эта лестница приведет вас вниз, к обширным тюремным блокам."
 canNorth = false
 canSouth = false
 roomSprite = 3
@@ -74,17 +70,17 @@ astarConnectedTo = PoolStringArray( "CBStairs1" )
 
 [node name="MainHallRoom7" parent="." index="6" instance=ExtResource( 2 )]
 position = Vector2( 0, 128 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "main_stairs_n"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 population = 3
 
 [node name="MainStairs2" parent="." index="7" instance=ExtResource( 2 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( 64, 64 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "main_stairs2"
-roomDescription = "These stairs will take you down to the extensive cellblocks below."
+roomDescription = "Эта лестница приведет вас вниз, к обширным тюремным блокам."
 canNorth = false
 canSouth = false
 roomSprite = 3
@@ -93,28 +89,24 @@ population = 3
 
 [node name="MainHallRoom9" parent="." index="8" groups=["zone_poi"] instance=ExtResource( 2 )]
 position = Vector2( 0, 192 )
-roomName = "Main platform"
+roomName = "Главная платформа"
 roomID = "main_punishment_spot"
-roomDescription = "In the center of this platform, a number of punishment devices are laid out. Pillories, one bar prisons, chain posts. A number of hooks line the floors for easy attachment of chains. You spot a few crates of restraints that, naturally, have had their original contents all stolen besides what is already locked to the floor. With how long those crates have been sitting there, it must be some kinda of meet up spot for prisoners to trade BDSM gear.  The only things left are leg spreaders, spare sets of stocks, all stuff that clearly goes with the larger punishment equipment.
-For all this stuff, though, you can’t shake the feeling all of this was set up because the prison staff did not know what else to put here.
-
-Off to the side there is a very depressed looking inmate in a special uniform with \"Janitorial Worker\" written across the back. 
-They do not look ready for a conversation, so you decide it's best to ignore them."
+roomDescription = "В центре этой платформы разложено множество орудий наказания: колодки, одиночные клетки-решетки, цепные столбы. По всему полу развешаны крюки для удобного крепления цепей. Вы замечаете несколько ящиков с фиксаторами, из которых, естественно, всё украли, кроме того, что уже намертво прикручено к полу. Судя по тому, как долго эти ящики здесь стоят, это место, должно быть, служит точкой сбора для заключенных, торгующих БДСМ-атрибутикой. Остались лишь разделители для ног и запасные комплекты колодок — всё то, что явно идет в дополнение к основному карательному оборудованию.\nВпрочем, глядя на всё это великолепие, не покидает ощущение, что всё это нагромоздили здесь просто потому, что персонал тюрьмы не знал, куда еще это деть.\n\nВ стороне стоит очень подавленный заключенный в специальной униформе, на спине которой красуется надпись \"Уборщик\". \nОн явно не настроен на беседу, так что вы решаете его не беспокоить."
 roomSprite = 4
 population = 3
 
 [node name="MainHallRoom10" parent="." index="9" instance=ExtResource( 2 )]
 position = Vector2( -64, 192 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "main_stairs_w"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 population = 3
 
 [node name="MainHallRoom52" parent="." index="10" instance=ExtResource( 2 )]
 position = Vector2( -64, 256 )
-roomName = "Main platform"
+roomName = "Главная платформа"
 roomID = "main_bench3"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 canWest = false
 canSouth = false
 loctag_NoWallsNear = true
@@ -122,16 +114,16 @@ population = 3
 
 [node name="MainHallRoom53" parent="." index="11" instance=ExtResource( 2 )]
 position = Vector2( 0, 256 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "main_stairs_s"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 population = 3
 
 [node name="MainHallRoom54" parent="." index="12" instance=ExtResource( 2 )]
 position = Vector2( 64, 256 )
-roomName = "Main platform"
+roomName = "Главная платформа"
 roomID = "main_bench4"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 canEast = false
 canSouth = false
 loctag_NoWallsNear = true
@@ -139,9 +131,9 @@ population = 3
 
 [node name="MainHallRoom12" parent="." index="13" instance=ExtResource( 2 )]
 position = Vector2( -64, 128 )
-roomName = "Main platform"
+roomName = "Главная платформа"
 roomID = "main_bench1"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 canWest = false
 canNorth = false
 loctag_NoWallsNear = true
@@ -149,9 +141,9 @@ population = 3
 
 [node name="MainHallRoom49" parent="." index="14" instance=ExtResource( 2 )]
 position = Vector2( 64, 128 )
-roomName = "Main platform"
+roomName = "Главная платформа"
 roomID = "main_bench2"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 canNorth = false
 canEast = false
 roomSprite = 1
@@ -160,53 +152,53 @@ population = 3
 
 [node name="MainHallRoom27" parent="." index="15" instance=ExtResource( 2 )]
 position = Vector2( 0, 384 )
-roomName = "Corridor"
+roomName = "Коридор"
 roomID = "main_yard_connector"
-roomDescription = "A corridor connecting the main hall and the prison yard. Two large cargo bulkheads are permanently locked open on both ends, with a large dirty metal ramp leading down and out into the yard."
+roomDescription = "Коридор, соединяющий главный зал с тюремным двором. Два больших грузовых шлюза на обоих концах навечно заблокированы в открытом положении, а вниз, к двору, ведет широкий грязный металлический пандус."
 population = 3
 
 [node name="MainHallRoom48" parent="." index="16" groups=["zone_yardpatrol"] instance=ExtResource( 2 )]
 position = Vector2( 128, 448 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "yard_stars_green"
-roomDescription = "A set of stairs lead up to the greenhouses with markings on the floor remind inmates that the greenhouses are [color=red]off-limits[/color] for them. "
+roomDescription = "Лестница ведет наверх, к теплицам; разметка на полу напоминает заключенным, что теплицы для них — [color=red]запретная зона[/color]. "
 gridColor = 2
 loctag_Offlimits = true
 population = 2
 
 [node name="MainHallRoom37" parent="." index="17" groups=["zone_poi"] instance=ExtResource( 2 )]
 position = Vector2( -128, 576 )
-roomName = "Gym area"
+roomName = "Зона спортзала"
 roomID = "gym_entrance"
-roomDescription = "The gym here looks a few years newer than the rest of the prison. A bit of space for workouts and some spare mirrors on the walls over by the yoga mats with a few windows looking out into the yard. This small entrance area has a few signs, decorative plants, water coolers, and other cheap decor. A locker room is marked on the far side of the entrance, the weights ahead and yoga to the side."
+roomDescription = "Этот спортзал выглядит на несколько лет новее, чем остальная часть тюрьмы. Здесь есть немного места для тренировок и запасные зеркала на стенах рядом с ковриками для йоги, а пара окон выходят во внутренний двор. В этой небольшой входной зоне стоят таблички, декоративные растения, кулеры с водой и прочий дешевый декор. На противоположной стороне входа отмечена раздевалка, прямо перед вами — веса, а сбоку — зона для йоги."
 population = 1
 
 [node name="MainHallRoom55" parent="." index="18" instance=ExtResource( 2 )]
 position = Vector2( -192, 576 )
-roomName = "Gym area"
+roomName = "Зона спортзала"
 roomID = "gym_weights"
-roomDescription = "All of the weight lifting equipment is chained to the floor. A basic radio switches between a few old classics and terribly bland production line sounds that probably are being reused from an old advertisement. A few posters reminding you how not to hurt yourself on the weights and proper posturing and such."
+roomDescription = "Все оборудование для силовых тренировок приковано цепями к полу. Простенькое радио переключается между старой классикой и ужасно пресными звуками из потокового эфира, которые, скорее всего, были взяты из какой-то старой рекламы. Несколько плакатов напоминают о том, как не травмироваться при работе с весами, о правильной осанке и прочем."
 population = 1
 
 [node name="MainHallRoom56" parent="." index="19" instance=ExtResource( 2 )]
 position = Vector2( -192, 640 )
-roomName = "Gym area"
+roomName = "Зона спортзала"
 roomID = "gym_nearbathroom"
-roomDescription = "Leading to the locker rooms is a bit of a rest area, a few benches scattered around with more water coolers and corkboard with a few outdated adverts on it for events in the prison. The generic radio from the weights section bleeds in and a news bulletin shows a few major events of the outside universe. Most of it is either old news or only covers the broad strokes of the outside world. You remember some from before you got taken into custody."
+roomDescription = "Перед входом в раздевалки расположена небольшая зона отдыха: несколько разбросанных скамеек, кулеры с водой и пробковая доска с парой устаревших объявлений о тюремных мероприятиях. Снаружи доносится глухое бормотание радио из зоны свободных весов, а в новостном выпуске перечисляют основные события во внешней вселенной. В основном это либо старье, либо лишь общие фразы о том, что творится в мире. Ты помнишь некоторые из этих событий еще до того, как тебя взяли под стражу."
 population = 1
 
 [node name="MainHallRoom57" parent="." index="20" instance=ExtResource( 2 )]
 position = Vector2( -128, 640 )
-roomName = "Gym area"
+roomName = "Зона спортзала"
 roomID = "gym_yoga"
-roomDescription = "Here the space is taken up by a number of yoga mats, and mirrors made out of reinforced glass. A number of booklets teaching poses are filed away in little bookshelves. There are also a number of corporate propaganda or motivational ads scattered about, if mostly vandalized."
+roomDescription = "Здесь пространство занято ковриками для йоги и зеркалами из армированного стекла. На небольших книжных полках аккуратно разложены брошюры с описанием поз. Также повсюду разбросана корпоративная пропаганда и мотивационные плакаты, хотя большинство из них изрядно исписано вандалами."
 population = 1
 
 [node name="MainHallRoom58" parent="." index="21" instance=ExtResource( 2 )]
 position = Vector2( -128, 704 )
-roomName = "Secluded place"
+roomName = "Уединенное место"
 roomID = "gym_secret"
-roomDescription = "This area behind the yoga mats is covered by a number of decorative plants, all overgrown. This small area looks like it was lazily blocked off by the staff and forgotten about. An inmate leans against the wall, waiting for something, where a wall panel looks mis-aligned."
+roomDescription = "Эта зона за ковриками для йоги заросла декоративными растениями. Кажется, персонал лениво отгородил этот клочок земли и просто забыл о нем. У стены, где одна из панелей выглядит перекошенной, прислонившись к стене, стоит заключенный в ожидании чего-то."
 roomSprite = 1
 population = 1
 astarConnectedTo = PoolStringArray( "fight_entrance" )
@@ -214,58 +206,54 @@ astarConnectedTo = PoolStringArray( "fight_entrance" )
 [node name="MainHallRoom28" parent="." index="22" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 64, 576 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_corridor2"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above.
-
-Here the paths branch back around the main yard, and the side yard off the east."
+roomDescription = "Обширная открытая зона, заросшая всевозможными деревьями, кустами и другой зеленью. Каменные дорожки ведут в обход большого скалистого выступа в центре. Территорию освещают потрёпанные, накрытые навесами фонари, а высоко вверху расположен огромный световой люк, через который видны звезды.\n\nЗдесь тропинки расходятся обратно вокруг главного двора и ведут во внутренний двор с восточной стороны."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom40" parent="." index="23" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 128, 576 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_corridor3"
-roomDescription = "This side area swings down and around the greenhouse above, a few courtyards sit unused. A few benches are scattered around, overlooking a bit of a rocky, fenced off trench and another sealed skylight far, far to the south, letting you look out at the stars rather than up. A good place for a bit of quiet, if not much privacy."
+roomDescription = "Эта боковая зона плавно спускается и огибает теплицу сверху; несколько двориков здесь пустуют. Повсюду разбросаны скамейки, с которых открывается вид на каменистую, огороженную траншею и еще один застекленный люк далеко на юге, позволяющий смотреть не вверх, а вдаль на звезды. Хорошее место, чтобы побыть в тишине, пусть и без особого уединения."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom42" parent="." index="24" groups=["zone_poi", "zone_yardpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 64, 640 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_deadend2"
-roomDescription = "The stony path leads here but dead ends in a small area with a bench. From here it is really obvious that the yard was made out of some kind of cave in the giant asteroid the prison was built in."
+roomDescription = "Каменная дорожка ведет сюда, но заканчивается тупиком в небольшом закутке со скамейкой. Отсюда становится совершенно очевидно, что двор был высечен внутри какой-то пещеры в гигантском астероиде, на котором построена тюрьма."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom43" parent="." index="25" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 192, 576 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_corridor4"
-roomDescription = "This side area swings down and around the greenhouse above, a few courtyards sit unused. A few benches are scattered around, overlooking a bit of a rocky, fenced off trench and another sealed skylight far, far to the south, letting you look out at the stars rather than up. A good place for a bit of quiet, if not much privacy."
+roomDescription = "Эта боковая зона плавно спускается и огибает теплицу сверху; несколько двориков здесь пустуют. Повсюду разбросаны скамейки, с которых открывается вид на каменистую, огороженную траншею и еще один застекленный люк далеко на юге, позволяющий смотреть не вверх, а вдаль на звезды. Хорошее место, чтобы побыть в тишине, пусть и без особого уединения."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom44" parent="." index="26" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 192, 640 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_waterfall"
-roomDescription = "This side area swings down and around the greenhouse above, a few courtyards sit unused. A few benches are scattered around overlooking a bit of a rocky, fenced off trench and another sealed skylight far, far to the south, letting you look out at the stars rather than up. A good place for a bit of quiet, if not much privacy.
-
-A spot like this is particularly nice, it sits the farest out from the main yard. There is even a small pond complete with a short waterfall. The large southern skylight is still visible and gives a nice view of outer space. Overall it’s a really good spot for meditation."
+roomDescription = "Эта боковая зона плавно уходит вниз и огибает оранжерею сверху; здесь расположено несколько пустующих двориков. Повсюду разбросаны скамейки, с которых открывается вид на каменистую огороженную траншею и еще один запечатанный световой люк далеко на юге — через него смотришь не вверх, а вдаль, на звезды. Хорошее место, чтобы побыть в тишине, пусть и не особо уединенное.\n\nТакое место особенно приятно тем, что оно находится дальше всего от главного двора. Здесь даже есть небольшой пруд с коротким водопадом. Большой южный световой люк все еще виден, открывая прекрасный вид на открытый космос. В целом, это отличное место для медитации."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom45" parent="." index="27" groups=["zone_yardpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( -64, 640 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_deadend1"
-roomDescription = "The stony path leads here but dead ends in a small area with a bench. From here it is really obvious that the yard was made out of some kind of cave in the giant asteroid the prison was built in."
+roomDescription = "Каменная дорожка ведет сюда, но заканчивается тупиком в небольшом закутке со скамейкой. Отсюда становится совершенно очевидно, что двор был высечен внутри какой-то пещеры в гигантском астероиде, на котором построена тюрьма."
 canWest = false
 roomColor = 1
 population = 1
@@ -273,20 +261,18 @@ population = 1
 [node name="MainHallRoom46" parent="." index="28" groups=["zone_yardpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 256, 576 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_vaulthere"
-roomDescription = "This side area swings down and around the greenhouse above, a few courtyards sit unused. A few benches are scattered around, overlooking a bit of a rocky, fenced off trench and another sealed skylight far, far to the south, letting you look out at the stars rather than up. A good place for a bit of quiet, if not much privacy.
-
-This is where the side yard ends, pushed up against the greenhouse above."
+roomDescription = "Эта боковая зона плавно уходит вниз и огибает оранжерею сверху; здесь расположено несколько пустующих двориков. Повсюду разбросаны скамейки, с которых открывается вид на каменистую огороженную траншею и еще один запечатанный световой люк далеко на юге — через него смотришь не вверх, а вдаль, на звезды. Хорошее место, чтобы побыть в тишине, пусть и не особо уединенное.\n\nЗдесь боковой двор заканчивается, упираясь в оранжерею сверху."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom47" parent="." index="29" groups=["zone_yardpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( -128, 448 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_novaspot"
-roomDescription = "The stony path leads here but dead ends in a small area with a bench. From here it is really obvious that the yard was made out of some kind of cave in the giant asteroid the prison was built in."
+roomDescription = "Каменная дорожка ведет сюда, но заканчивается тупиком в небольшом закутке со скамейкой. Отсюда становится совершенно очевидно, что двор был высечен внутри какой-то пещеры в гигантском астероиде, на котором построена тюрьма."
 roomSprite = 1
 roomColor = 1
 population = 1
@@ -294,38 +280,36 @@ population = 1
 [node name="MainHallRoom29" parent="." index="30" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 64, 512 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_eastCorridor"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above."
+roomDescription = "Просторная открытая зона, заросшая всевозможными деревьями, кустарниками и другой зеленью. Каменные дорожки ведут посетителей в обход огромного скалистого выступа в центре. Территорию освещают побитые жизнью фонари под навесами, а высоко вверху расположен огромный световой люк, через который видны звезды."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom30" parent="." index="31" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 64, 448 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_nearstairs"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above."
+roomDescription = "Просторная открытая зона, заросшая всевозможными деревьями, кустарниками и другой зеленью. Каменные дорожки ведут посетителей в обход огромного скалистого выступа в центре. Территорию освещают побитые жизнью фонари под навесами, а высоко вверху расположен огромный световой люк, через который видны звезды."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom31" parent="." index="32" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 0, 448 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_firstroom"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above.
-
-The ground is covered with grass, there are visible pathways made out of stone"
+roomDescription = "Просторная открытая зона, заросшая всевозможными деревьями, кустарниками и другой зеленью. Каменные дорожки ведут посетителей в обход огромного скалистого выступа в центре. Территорию освещают побитые жизнью фонари под навесами, а высоко вверху расположен огромный световой люк, через который видны звезды.\n\nЗемля покрыта травой, видны каменные дорожки."
 roomColor = 1
 population = 1
 
 [node name="MainGreenhouses" parent="." index="33" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 192, 448 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor1"
-roomDescription = "This entrance area of the greenhouses look largely unused with windows looking out over the side yard. All sorts of hydroponics equipment are stored up in boxes, with discarded boxes and crates off to the sides. More crates and unfinished construction materials lead around this first building. A few guards are wandering around actively looking over this… Construction area? Decommissioned zone?"
+roomDescription = "Этот вход в оранжереи выглядит почти заброшенным; из окон открывается вид на боковой двор. Всякая гидропонная аппаратура свалена в коробки, а по бокам валяются брошенные ящики и тара. Вокруг этого первого здания разбросаны другие ящики и незавершенные стройматериалы. Несколько охранников расхаживают здесь, внимательно осматривая это... стройплощадку? Или зону вывода из эксплуатации?"
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -334,9 +318,9 @@ population = 2
 [node name="MainGreenhouses2" parent="." index="34" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 256, 448 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor3"
-roomDescription = "This entrance area of the greenhouses look largely unused with windows looking out over the side yard. All sorts of hydroponics equipment are stored up in boxes, with discarded boxes and crates off to the sides. More crates and unfinished construction materials lead around this first building. A few guards are wandering around actively looking over this… Construction area? Decommissioned zone?"
+roomDescription = "Этот вход в оранжереи выглядит почти заброшенным; из окон открывается вид на боковой двор. Всякая гидропонная аппаратура свалена в коробки, а по бокам валяются брошенные ящики и тара. Вокруг этого первого здания разбросаны другие ящики и незавершенные стройматериалы. Несколько охранников расхаживают здесь, внимательно осматривая это... стройплощадку? Или зону вывода из эксплуатации?"
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -345,12 +329,9 @@ population = 2
 [node name="MainGreenhouses3" parent="." index="35" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 192, 384 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor2"
-roomDescription = "This half of the Greenhouse is built into the cavern and looks notably more set up than the entrance hall. Crates are still stacked around but all the hydroponics and grow beds are all set up. Clipboards on the walls sit blank, including the staff roster. Whiteboards, notebooks, science equipment are all sitting on the tables and bags or dirt are stacked up on pallets.
-
-An Elevator sits off in the corner, watched by a camera and requires ID and a meeting over an intercom to use. Wherever it goes, Guards can be seen coming and going from it, with a few hanging around the spot.
-Best not go near it."
+roomDescription = "Эта половина Оранжереи встроена прямо в пещеру и выглядит куда более обустроенной, чем входной зал. Повсюду всё ещё громоздятся ящики, но гидропонные установки и грядки уже полностью смонтированы. На стенах висят пустые планшеты с зажимами, включая список персонала. На столах разбросаны маркерные доски, блокноты и научное оборудование, а на поддонах лежат мешки с землей.\n\nВ углу стоит лифт под присмотром камеры; чтобы им воспользоваться, нужно приложить ID и договориться о встрече через интерком. Куда бы он ни вел, из него то и дело то появляются, то исчезают охранники, а некоторые из них даже ошиваются неподалеку.\nЛучше к нему не приближаться."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -359,11 +340,9 @@ population = 2
 [node name="MainGreenhouses4" parent="." index="36" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 256, 384 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor4"
-roomDescription = "This half of the Greenhouse is built into the cavern and looks notably more set up than the entrance hall. Crates are still stacked around but all the hydroponics and grow beds are all set up. Clipboards on the walls sit blank, including the staff roster. Whiteboards, notebooks, science equipment are all sitting on the tables and bags or dirt are stacked up on pallets.
-
-Another Elevator is north of here, but it lies completely unfinished, with a permanently unpowered closed glass door showing a dark and empty elevator shaft."
+roomDescription = "Эта половина Оранжереи встроена прямо в пещеру и выглядит куда более обустроенной, чем входной зал. Повсюду всё ещё громоздятся ящики, но гидропонные установки и грядки уже полностью смонтированы. На стенах висят пустые планшеты с зажимами, включая список персонала. На столах разбросаны маркерные доски, блокноты и научное оборудование, а на поддонах лежат мешки с землей.\n\nК северу отсюда находится еще один лифт, но он выглядит совершенно недостроенным: закрытая стеклянная дверь остается обесточенной, открывая вид на темную и пустую шахту."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -372,9 +351,9 @@ population = 2
 [node name="MainGreenhouses7" parent="." index="37" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 320, 384 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor5"
-roomDescription = "This half of the Greenhouse is built into the cavern and looks notably more set up than the entrance hall. Crates are still stacked around but all the hydroponics and grow beds are all set up. Clipboards on the walls sit blank, including the staff roster. Whiteboards, notebooks, science equipment are all sitting on the tables and bags or dirt are stacked up on pallets."
+roomDescription = "Эта половина Оранжереи встроена прямо в пещеру и выглядит куда более обустроенной, чем входной зал. Повсюду всё ещё громоздятся ящики, но гидропонные установки и грядки уже полностью смонтированы. На стенах висят пустые планшеты с зажимами, включая список персонала. На столах разбросаны маркерные доски, блокноты и научное оборудование, а на поддонах лежат мешки с землей."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -383,25 +362,23 @@ population = 2
 [node name="MainGreenhouses9" parent="." index="38" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 320, 320 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_secret"
-roomDescription = "A bunch of crates are stacked up in this little closet. Some kind of storeroom."
+roomDescription = "В этой маленькой каморке навалено куча ящиков. Похоже на какую-то кладовую."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
 population = 2
 lootable = true
-lootAroundMessage = "You notice a credit chip under one of the crates, huh."
+lootAroundMessage = "О, гляди-ка, под одним из ящиков завалялся кредитный чип."
 lootCredits = 3
 
 [node name="MainGreenhouses8" parent="." index="39" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 320, 512 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "green_chokepoint"
-roomDescription = "This balcony is open to the cavern and yard below and connects the two main buildings of the Greenhouses.
-
-North is a door that leads back into the northern building."
+roomDescription = "Этот балкон открывается видом на пещеру и внутренний двор внизу; он соединяет два главных корпуса Оранжереи.\n\nНа севере находится дверь, ведущая обратно в северное здание."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -410,13 +387,9 @@ population = 2
 [node name="MainGreenhousesJumpable" parent="." index="40" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 320, 576 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor7"
-roomDescription = "This balcony is open to the cavern and yard below and connects the two main buildings of the Greenhouses.
-
-The side yard is below, and looking over the railing, the drop doesn’t look too high to just vault over if you need to.
-
-To the south and east, there are doors leading into the second building of the greenhouses."
+roomDescription = "Этот балкон открывается видом на пещеру и внутренний двор внизу; он соединяет два главных корпуса Оранжереи.\n\nВнизу раскинулся боковой двор, и, заглянув через перила, кажется, что высота не такая уж большая — можно просто перемахнуть через него, если понадобится.\n\nНа юге и востоке расположены двери, ведущие во второе здание оранжереи."
 canWest = false
 roomColor = 1
 gridColor = 2
@@ -426,11 +399,9 @@ population = 2
 [node name="MainGreenhouses10" parent="." index="41" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 320, 704 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor11"
-roomDescription = "This second greenhouse is actually far more active than the first. Growbeds are full of plant life and research notes are written up on whiteboards. The whole thing still seems largely automated, and most of the notes are shown to just be production quotas for guard and staff food stocks. Some guards are still hanging around but no staff, strangely.
-
-A maze of crates here are stored along the far wall. Some are tabbed with import and export labels with a number of places listed. “RRDC”, “Better Solutions Production Center”, “Nanotrasen CentComm”, and “Union Aerospace Colonial Division” are the most common, with a few name brands from outside the prison sprinkled in."
+roomDescription = "Эта вторая теплица на самом деле куда активнее первой. Грядки изобилуют растительностью, а на маркерных досках пестрят исследовательские заметки. Всё это место кажется почти полностью автоматизированным, и большинство записей — всего лишь производственные квоты для обеспечения едой охраны и персонала. Некоторые охранники всё ещё слоняются здесь, но, как ни странно, персонала нет совсем.\n\n Вдоль дальней стены тянется лабиринт из ящиков. На некоторых наклеены ярлыки импорта и экспорта с указанием различных мест. Чаще всего встречаются «RRDC», «Better Solutions Production Center», «Nanotrasen CentComm» и «Union Aerospace Colonial Division», а среди них вкраплены и несколько известных брендов из внешнего мира."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -439,9 +410,9 @@ population = 2
 [node name="MainGreenhouses11" parent="." index="42" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 384, 640 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor10"
-roomDescription = "A number of small trees are being grown in this sector, all in neat rows in a sunken down area with a tall glass ceiling showing the cavern above and a number of additional grow lamps and sprinklers hung above on the support beams."
+roomDescription = "В этом секторе ровными рядами высажено множество небольших деревьев. Они растут в углублении под высоким стеклянным потолком, сквозь который видна пещера, а над ними на опорных балках закреплены дополнительные лампы для роста и спринклеры."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -450,9 +421,9 @@ population = 2
 [node name="MainGreenhouses12" parent="." index="43" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 384, 576 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor8"
-roomDescription = "This second greenhouse is actually far more active than the first. Growbeds are full of plant life and research notes are written up on whiteboards. The whole thing still seems largely automated, and most of the notes are shown to just be production quotas for guard and staff food stocks. Some guards are still hanging around but no staff, strangely."
+roomDescription = "Эта вторая теплица на самом деле куда активнее первой. Грядки изобилуют растительностью, а на маркерных досках пестрят исследовательские заметки. Всё это место кажется почти полностью автоматизированным, и большинство записей — всего лишь производственные квоты для обеспечения едой охраны и персонала. Некоторые охранники всё еще бродят здесь, но, как ни странно, персонала нет."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -461,9 +432,9 @@ population = 2
 [node name="MainGreenhouses13" parent="." index="44" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 320, 640 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor9"
-roomDescription = "This second greenhouse is actually far more active than the first. Growbeds are full of plant life and research notes are written up on whiteboards. The whole thing still seems largely automated, and most of the notes are shown to just be production quotas for guard and staff food stocks. Some guards are still hanging around but no staff, strangely."
+roomDescription = "Эта вторая теплица на самом деле куда активнее первой. Грядки изобилуют растительностью, а на маркерных досках пестрят исследовательские заметки. Всё это место кажется почти полностью автоматизированным, и большинство записей — всего лишь производственные квоты для обеспечения едой охраны и персонала. Некоторые охранники всё еще бродят здесь, но, как ни странно, персонала нет."
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -472,11 +443,9 @@ population = 2
 [node name="MainGreenhouses5" parent="." index="45" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 384, 704 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_greenhouses"
-roomDescription = "A maze of crates here are stored along the far wall. Some are tabbed with import and export labels with a number of places listed. “RRDC”, “Better Solutions Production Center”, “Nanotrasen CentComm”, and “Union Aerospace Colonial Division” are the most common, with a few name brands from outside the prison sprinkled in.
-
-You see a few crates with fruits and vegetables here, open and vulnerable."
+roomDescription = "Вдоль дальней стены тянется лабиринт из ящиков. На некоторых наклеены ярлыки импорта и экспорта с указанием различных мест. Чаще всего встречаются «RRDC», «Better Solutions Production Center», «Nanotrasen CentComm» и «Union Aerospace Colonial Division», а среди них вкраплены и несколько известных брендов из внешнего мира.\n\nВы замечаете несколько открытых ящиков с фруктами и овощами, лежащих на виду."
 roomSprite = 4
 roomColor = 1
 gridColor = 2
@@ -486,11 +455,9 @@ population = 2
 [node name="MainGreenhouses6" parent="." index="46" groups=["zone_greenhouses"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 320, 448 )
-roomName = "Greenhouses"
+roomName = "Теплицы"
 roomID = "main_green_corridor6"
-roomDescription = "This entrance area of the greenhouses look largely unused with windows looking out over the side yard. All sorts of hydroponics equipment are stored up in boxes, with discarded boxes and crates off to the sides. More crates and unfinished construction materials lead around this first building. A few guards are wandering around actively looking over this… Construction area? Decommissioned zone?
-
-To the south the building opens up to a small balcony and another greenhouse building. "
+roomDescription = "Эта входная зона теплиц выглядит почти заброшенной; из окон открывается вид на боковой двор. Всякого рода гидропонное оборудование свалено в коробках, а по бокам разбросаны пустые ящики и тара. Вокруг этого первого здания тянутся ряды ящиков и незавершенных стройматериалов. Несколько охранников неспешно бродят здесь, пытаясь понять... что это за стройплощадка? Или зона вывода из эксплуатации?\n\nК югу здание переходит в небольшой балкон и еще одно здание теплицы. "
 roomColor = 1
 gridColor = 2
 loctag_Greenhouses = true
@@ -499,54 +466,52 @@ population = 2
 [node name="MainHallRoom32" parent="." index="47" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( -64, 448 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_corridor1"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above."
+roomDescription = "Просторная открытая зона, заросшая всевозможными деревьями, кустарниками и другой зеленью. Каменные дорожки ведут посетителей в обход огромного скалистого выступа в центре. Территорию освещают побитые жизнью фонари под навесами, а высоко вверху расположен огромный световой люк, через который видны звезды."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom33" parent="." index="48" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( -64, 512 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_westCorridor"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above."
+roomDescription = "Просторная открытая зона, заросшая всевозможными деревьями, кустарниками и другой зеленью. Каменные дорожки ведут посетителей в обход огромного скалистого выступа в центре. Территорию освещают побитые жизнью фонари под навесами, а высоко вверху расположен огромный световой люк, через который видны звезды."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom34" parent="." index="49" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( -64, 576 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_neargym"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above.
-
-To the west sits the entrance to the gym, bored into the cavernous walls."
+roomDescription = "Обширная открытая площадка, заросшая деревьями, кустарниками и прочей зеленью. Каменные дорожки ведут посетителей в обход огромного скалистого выступа в центре. Территорию освещают потрепанные, покрытые налетом фонари, а высоко над головой расположен огромный световой люк, через который видны звезды.\n\nК западу, прямо в пещеристых стенах, выручен вход в спортзал."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom35" parent="." index="50" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 1, 0.7, 1 )
 position = Vector2( 0, 576 )
-roomName = "Prison Yard"
+roomName = "Тюремный двор"
 roomID = "yard_northCorridor"
-roomDescription = "A large open area with all sorts of trees, bushes, and other greenery. Stone pathways show the way around, circling a large rocky outcrop in the center. Covered and beat up lanterns light the area and a large skylight is installed high above, showing the stars above."
+roomDescription = "Просторная открытая зона, заросшая всевозможными деревьями, кустарниками и другой зеленью. Каменные дорожки ведут посетителей в обход огромного скалистого выступа в центре. Территорию освещают побитые жизнью фонари под навесами, а высоко вверху расположен огромный световой люк, через который видны звезды."
 roomColor = 1
 population = 1
 
 [node name="MainHallRoom11" parent="." index="51" instance=ExtResource( 2 )]
 position = Vector2( 64, 192 )
-roomName = "Stairs"
+roomName = "Лестница"
 roomID = "main_stairs_e"
-roomDescription = "The platform here has tall railings on the sides and benches facing inwards to watch whatever inmates are being punished."
+roomDescription = "На этой платформе по бокам установлены высокие перила, а скамьи развернуты внутрь, чтобы можно было наблюдать за тем, как наказывают заключенных."
 population = 3
 
 [node name="MainVendomatRoom" parent="." index="52" groups=["zone_mainpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -128, 64 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom1"
-roomDescription = "The corners of the main hall contain open and barebones common areas. One large angled pillar supports the raised platform in the center of this hangar-sized room."
+roomDescription = "В углах главного зала расположены пустые, аскетичные зоны отдыха. Массивная наклонная колонна поддерживает приподнятую платформу в центре этого помещения размером с ангар."
 roomSprite = 6
 roomColor = 8
 population = 3
@@ -554,165 +519,151 @@ population = 3
 [node name="MainHallRoom13" parent="." index="53" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, 128 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom11"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above."
+roomDescription = "Главный зал — это невероятно огромное помещение, опоясывающее массивную подвесную платформу в самом центре. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя где-то высоко наверху едва различимы места, где копошатся персонал и охрана. Перила не дают сорваться с края расщелины, уходящей вглубь, а в центральной дыре внизу виднеются опоры фундамента, электрические кабели, сетки, прочее конструктивное оборудование и огни жилых блоков этажами ниже. Потолок уходит далеко за всё это, растворяясь в непроглядной темноте."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom14" parent="." index="54" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, 192 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom10"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above.
-
-There are a set of stairs lead up to the large raised platform in the center of the starship hanger called a main hall."
+roomDescription = "Главный зал — это невероятно огромное помещение, опоясывающее массивную возвышенную платформу, свисающую прямо посередине. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя где-то высоко наверху едва заметны места, где копошатся персонал и охранники. Перила не дают сорваться с края расщелины, ведущей вниз, а в глубине центрального провала видны опоры фундамента, электрические кабели, сетки, другое конструктивное оборудование и огни тюремных блоков внизу. Потолок уходит далеко за всё это, растворяясь в темноте.\n\nК большой возвышенной платформе в центре ангара звездолета, именуемого главным залом, ведет лестница."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom15" parent="." index="55" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -128, 192 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hall_west"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above.
-
-There are a set of stairs lead up to the large raised platform in the center of the starship hanger called a main hall."
+roomDescription = "Главный зал — это невероятно огромное помещение, опоясывающее массивную возвышенную платформу, свисающую прямо посередине. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя где-то высоко наверху едва заметны места, где копошатся персонал и охранники. Перила не дают сорваться с края расщелины, ведущей вниз, а в глубине центрального провала видны опоры фундамента, электрические кабели, сетки, другое конструктивное оборудование и огни тюремных блоков внизу. Потолок уходит далеко за всё это, растворяясь в темноте.\n\nК большой возвышенной платформе в центре ангара звездолета, именуемого главным залом, ведет лестница."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom25" parent="." index="56" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -128, 256 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom3"
-roomDescription = "A very spacious hall with a huge raised platform in the middle"
+roomDescription = "Очень просторный зал с огромным возвышающимся подиумом в центре"
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom50" parent="." index="57" groups=["zone_mainpatrol", "zone_prostitution"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -128, 320 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom4"
-roomDescription = "The corners of the main hall contain open and barebones common areas. One large angled pillar supports the raised platform in the center of this hangar-sized room."
+roomDescription = "В углах главного зала расположены пустые, аскетичные зоны отдыха. Массивная наклонная колонна поддерживает приподнятую платформу в центре этого помещения размером с ангар."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom51" parent="." index="58" groups=["zone_mainpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, 320 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom8"
-roomDescription = "The corners of the main hall contain open and barebones common areas. One large angled pillar supports the raised platform in the center of this hangar-sized room."
+roomDescription = "В углах главного зала расположены пустые, аскетичные зоны отдыха. Массивная наклонная колонна поддерживает приподнятую платформу в центре этого помещения размером с ангар."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom26" parent="." index="59" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, 256 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom9"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above.
-
-The Laundry room is off to the east here."
+roomDescription = "Главный зал — это невероятно огромное помещение, вокруг которого в центре свисает массивный возвышающийся подиум. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя высоко над головой едва заметны места, где копошатся персонал и охранники. Перила не дают сорваться с края расщелины, ведущей вниз, а в центральной дыре под ногами видны опоры фундамента, электрические кабели, сетки, другое конструктивное оборудование и огни расположенных ниже тюремных блоков. Потолок уходит далеко за всё это, растворяясь в темноте наверху.\n\nС восточной стороны здесь находится прачечная."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom16" parent="." index="60" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( -128, 128 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom2"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above. 
-
-The cafeteria has been carved out to the west of here."
+roomDescription = "Главный зал — это невероятно огромное помещение, опоясывающее массивную возвышающуюся платформу, свисающую прямо посередине. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя где-то высоко наверху едва заметны места, где копошатся персонал и охрана. Перила не дают сорваться с края расщелины, уходящей вниз, а в глубине центрального провала видны опоры фундамента, электрические кабели, сетки, другое конструктивное оборудование и огни тюремных блоков внизу. Потолок уходит далеко за всё это, растворяясь в темноте. \n\nК западу отсюда вырублена столовая."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom17" parent="." index="61" groups=["zone_mainpatrol"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 128, 64 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "hall_ne_corner"
-roomDescription = "The corners of the main hall contain open and barebones common areas. One large angled pillar supports the raised platform in the center of this hangar-sized room."
+roomDescription = "В углах главного зала расположены пустые, аскетичные зоны отдыха. Массивная наклонная колонна поддерживает приподнятую платформу в центре этого помещения размером с ангар."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom19" parent="." index="62" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
 position = Vector2( 0, 320 )
-roomName = "Main hall"
+roomName = "Главный зал"
 roomID = "main_hallroom6"
-roomDescription = "The main hall is an incredibly huge room, circling a large raised platform hanging down in the middle. The towering walls of smoothed over rock keep you contained, although you can barely spot places where staff and guards go about their business far above. Railings keep you from the edge of the cavern leading down, and down the central hole below there are foundation supports, electrical cables, netting, other structural equipment and the lights of the cell blocks below. The ceiling stretches past it all and into the darkness above.
-
-A wide corridor leads south into the yard area, with a large, inviting cargo bulkhead locked open giving you a small view outside.
-
-There are also a set of stairs that lead up to the large raised platform in the center of the starship hanger called a main hall."
+roomDescription = "Главный зал — это невероятно огромное помещение, опоясывающее массивную приподнятую платформу, свисающую прямо посередине. Возвышающиеся стены из гладкого камня удерживают вас внутри, хотя где-то высоко наверху едва заметно копошатся персонал и охрана. Перила не дают сорваться с края расщелины, ведущей вниз, а в центральной дыре внизу видны опоры фундамента, электрические кабели, сетки, другое конструктивное оборудование и огни жилых блоков этажом ниже. Потолок уходит далеко за всё это, растворяясь в непроглядной темноте.\n\nШирокий коридор ведет на юг к прогулочной зоне; там открыт массивный, манящий грузовой люк, позволяющий мельком взглянуть на то, что снаружи.\n\nТакже здесь есть лестница, ведущая на большую приподнятую платформу в центре ангара звездолета, которую и называют главным залом."
 roomColor = 8
 population = 3
 
 [node name="MainHallRoom21" parent="." index="63" groups=["zone_poi"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -192, 256 )
-roomName = "Bathroom"
+roomName = "Туалет"
 roomID = "main_bathroom1"
-roomDescription = "A bunch of sinks line the walls with a long mirror covered by the thick protective plastic barrier covering it from any destructive inmate. Stalls of toilets line the opposite wall. From here the Locker Rooms and Showers lie further in."
+roomDescription = "Вдоль стен тянется ряд раковин, над которыми висит длинное зеркало, защищенное толстым слоем пластика, чтобы обезумевшие заключенные не разбили его. На противоположной стене расположены туалетные кабинки. Отсюда же можно пройти дальше — в раздевалки и душевые."
 roomSprite = 8
 roomColor = 3
 
 [node name="MainHallRoom38" parent="." index="64" groups=["zone_poi"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -256, 640 )
-roomName = "Bathroom"
+roomName = "Туалет"
 roomID = "main_bathroom2"
-roomDescription = "A bunch of sinks line the walls with a long mirror covered by the thick protective plastic barrier covering it from any destructive inmate. Stalls of toilets line the opposite wall. 
-
-From here the Locker Rooms and Showers lie further in."
+roomDescription = "Вдоль стен тянется ряд раковин, а над ними — длинное зеркало, защищенное толстым слоем пластика, чтобы ни один буйный заключенный не смог его разбить. На противоположной стене расположены туалетные кабинки. \n\nОтсюда дальше вглубь коридора ведут раздевалки и душевые."
 roomSprite = 8
 roomColor = 3
 
 [node name="MainDressingRoom" parent="." index="65" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -256, 256 )
-roomName = "Dressing room"
+roomName = "Раздевалка"
 roomID = "main_dressing1"
-roomDescription = "A large number of color-coded lockers border the walls with large bins for fresh and dirty towels."
+roomDescription = "Вдоль стен стоят многочисленные шкафчики с цветовой маркировкой, а рядом — большие корзины для чистых и грязных полотенец."
 roomColor = 3
 
 [node name="MainShowerRoom" parent="." index="66" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -256, 320 )
-roomName = "Shower"
+roomName = "Душ"
 roomID = "main_shower1"
-roomDescription = "The Showers are rather expansive for what they are, a sequence of walls adorned with shower heads line the tiled room. Soap doesn't seem to be included."
+roomDescription = "Душевые довольно просторны для своего назначения: плитка покрывает всё помещение, а вдоль стен тянутся ряды душевых леек. Мыло здесь, судя по всему, не предусмотрено."
 roomSprite = 7
 roomColor = 3
 
 [node name="MainHallRoom41" parent="." index="67" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -320, 704 )
-roomName = "Shower"
+roomName = "Душ"
 roomID = "main_shower2"
-roomDescription = "The Showers are rather expansive for what they are, a sequence of walls adorned with shower heads line the tiled room. Soap doesn't seem to be included."
+roomDescription = "Душевые довольно просторны для своего назначения: плитка покрывает всё помещение, а вдоль стен тянутся ряды душевых леек. Мыло здесь, судя по всему, не предусмотрено."
 roomSprite = 7
 roomColor = 3
 
 [node name="MainHallRoom39" parent="." index="68" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -256, 704 )
-roomName = "Dressing room"
+roomName = "Раздевалка"
 roomID = "main_dressing2"
-roomDescription = "A large number of color-coded lockers border the walls with large bins for fresh and dirty towels."
+roomDescription = "Вдоль стен стоят многочисленные шкафчики с цветовой маркировкой, а рядом — большие корзины для чистых и грязных полотенец."
 roomColor = 3
 
 [node name="MainCanteen" parent="." index="69" instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -192, 128 )
-roomName = "Canteen"
+roomName = "Столовая"
 roomID = "hall_canteen"
-roomDescription = "The Canteen is lined with a large number of tables for inmates to eat at. On the far wall there clearly used to be an actual kitchen, instead the serving counter and a section of the wall have been cut away to make room for a giant nutrient paste machine. What parts of the kitchen remain are filled with vats, pipes, and tubes all connected to the Nutrient Paste machine. "
+roomDescription = "В столовой расставлено множество столов для заключенных. На дальней стене явно когда-то была настоящая кухня, но теперь часть стены и раздаточная стойка срезаны, чтобы освободить место для гигантской машины по производству питательной пасты. То, что осталось от кухни, забито чанами, трубами и шлангами, которые тянутся прямиком к этой машине. "
 canWest = false
 canSouth = false
 roomSprite = 2
@@ -722,9 +673,9 @@ population = 3
 [node name="MainLaundry" parent="." index="70" groups=["zone_poi"] instance=ExtResource( 2 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 192, 256 )
-roomName = "Laundry"
+roomName = "Прачечная"
 roomID = "main_laundry"
-roomDescription = "Half of the room is taken by a row of bulky industrial-looking washing machines. Then your eye spots a few bins with inmate uniforms and a uniform vendor, similliar to the one that you saw during the intake."
+roomDescription = "Половину комнаты занимает ряд громоздких промышленных стиральных машин. Затем взгляд цепляется за несколько корзин с формой заключенных и лавку торговца униформой — такой же, какую вы видели во время регистрации."
 roomSprite = 9
 roomColor = 3
 

@@ -8,20 +8,20 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Find a cute cat that got stuck in the endless maintenance tunnels and see if you can help her out."+("\n\nSilly sprite original is from [url=https://www.furaffinity.net/view/53363888/]Kidlat's FurAffinity[/url]" if getStatus() == ContentBoardStatus.Completed else "")
-	return "Find a cute cat that got stuck in the endless maintenance tunnels. See if you can help her out"
+		return "Найди милую кошечку, застрявшую в бесконечных технических туннелях, и попробуй ей помочь."+("\n\nОригинальный дурашливый спрайт взят из [url=https://www.furaffinity.net/view/53363888/]FurAffinity Кидлат[/url]" if getStatus() == ContentBoardStatus.Completed else "")
+	return "Найди милую кошечку, застрявшую в бесконечных технических туннелях. Попробуй ей помочь"
 
 func getKinks() -> Array:
 	return [
-		"Player is dominant",
-		"Roguelike element",
-		"Sex/Breeding (pc is top)",
-		"Groping",
-		"Exhibitionism",
+		"Игрок доминирует",
+		"Элемент рогалика",
+		"Секс/Разведение (ПК сверху)",
+		"Мацание",
+		"Эксгибиционизм",
 	]
 
 func getCompletedDesc() -> String:
-	return "Kidlat is no longer in the drugden!"
+	return "Кидлат больше не в наркопритоне!"
 
 func getStatus() -> int:
 	if(getFlag("DrugDenModule.Kidlat8Hap", false)):
@@ -32,10 +32,10 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("ElizaModule.s0hap"), "Find Eliza Quinn in the medbay and ask if you can become her lab assistant."],
-		[completeIf("ElizaModule.s3hap"), "Follow the \"Queen of Alchemy\" task until you get access to the drug den."],
-		[completeIf("DrugDenModule.Kidlat1Hap"), "Start a drug den run and find Kidlat there."],
+		[completeIf("ElizaModule.s0hap"), "Найдите Элизу Куинн в медпункте и спросите, можете ли вы стать её лаборантом."],
+		[completeIf("ElizaModule.s3hap"), "Выполняй задание \"Королевы Алхимии\", пока не получишь доступ к наркопритону."],
+		[completeIf("DrugDenModule.Kidlat1Hap"), "Начни забег в наркопритон и найди там Кидлат."],
 	]
 
 func getProgressText() -> String:
-	return "Follow the \"Kidlat's Shop of Wonders\" task!"
+	return "Выполни задание \"Лавка Чудес Кидлат\"!"

@@ -60,7 +60,7 @@ func getPillOptions() -> Dictionary:
 	return {
 		"noPenisShrink": {
 			name = "Уменьшение пениса",
-			desc = "Should the drug make the penis smaller",
+			desc = "Должен ли препарат уменьшать пенис?",
 			value = false,
 			values = [[false, "Enabled"], [true, "Disabled"]],
 		},
@@ -249,13 +249,13 @@ func reactProgressShort(_context:Dictionary, _result:TFResult):
 	.reactProgressShort(_context, _result)
 	
 	if(_result.getField("penStageInc", false)):
-		addText("{npc.YourHis} penis is now less sensitive!")
+		addText("{npc.YourHis} пенис теперь менее чувствителен!")
 	
 	if(_result.getField("nipStageInc", false)):
-		addText("{npc.YourHis} nipples are now more sensitive!")
+		addText("{npc.YourHis} соски теперь стали чувствительнее!")
 	
 	if(_result.getField("anusStageInc", false)):
-		addText("{npc.YourHis} anus is now more sensitive!")
+		addText("{npc.YourHis} анус теперь более чувствителен!")
 
 func reactProgress(_context:Dictionary, _result:TFResult):
 	var step:String = _result.getField("step", "")
@@ -263,55 +263,55 @@ func reactProgress(_context:Dictionary, _result:TFResult):
 	#var stage:int = getStage()
 	
 	if(isFirstTime()):
-		addText("Without warning, a jolt of energy surges through your body, leaving you breathless. Confusion and fear grip you as you realize something is happening against your will.")
+		addText("Внезапный прилив энергии пронзает ваше тело, заставляя вас задыхаться. Смятение и страх охватывают вас, когда вы осознаете, что с вашим телом происходит нечто помимо вашей воли.")
 	
 	addText(_result.getAllTFTexts())
 	
 	if(_result.getField("penStageInc", false)):
 		if(penisStage == 1):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as an unsettling coldness spreads through {npc.yourHis} cock. A feeling of.. dullness.. is creeping in.. making {npc.yourHis} member less and less sensitive. Good girls only need to focus on pleasing others anyway..",
+				"{npc.youHim} пробирает дрожь, когда по {npc.yourHis} члену разливается тревожный холод. Подкрадывается чувство... притупленности... из-за чего орган {npc.yourHis} становится всё менее и менее чувствительным. Впрочем, хорошим девочкам всё равно нужно только одно — доставлять удовольствие другим...",
 			]))
 		elif(penisStage == 2):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as an unsettling coldness spreads through {npc.yourHis} cock. A feeling of.. dullness.. is creeping in.. making {npc.yourHis} member less and less sensitive. {npc.YouHe} {npc.youDontHeDoesnt} need it anyway..",
+				"{npc.youHim} пробирает дрожь, когда по {npc.yourHis} члену разливается тревожный холод. Подкрадывается чувство... притупленности... из-за чего орган {npc.yourHis} становится всё менее и менее чувствительным. {npc.YouHe} {npc.youDontHeDoesnt} всё равно он не особо нужен...",
 			]))
 		else:
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a pleasing coolness spreads through {npc.yourHis} prick. A feeling of.. dullness.. is creeping in.. making {npc.yourHis} member less and less sensitive. {npc.YourHis} cock is now almost useless.."+(" Good.. It's caged away already anyway." if getChar().isWearingChastityCage() else " Maybe {npc.youHe} should cage it away so {npc.youHe} wouldn't have to worry about it?")
+				"{npc.youHim} пробирает дрожь, когда по {npc.yourHis} члену разливается приятная прохлада. Подкрадывается чувство... притупленности... из-за чего орган {npc.yourHis} становится всё менее и менее чувствительным. {npc.YourHis} член теперь почти бесполезен..."+(" Хорошо... Он всё равно уже заперт в клетке." if getChar().isWearingChastityCage() else " Может, {npc.youHe} стоит запереть его, чтобы {npc.youHe} больше не пришлось о нём беспокоиться?")
 			]))
 	if(_result.getField("nipStageInc", false)):
 		if(nipsStage == 1):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a warm wave of sensation spreads through {npc.yourHis} nipples. A delightful tingling begins to build in {npc.yourHis} sensitive buds, making them crave attention.",
+				"{npc.youHim} пробирает дрожь, когда по {npc.yourHis} соскам разливается теплая волна ощущений. В {npc.yourHis} чувствительных бутонах начинает нарастать восхитительное покалывание, заставляя их жаждать внимания.",
 			]))
 		elif(nipsStage == 2):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a warm wave of sensation spreads through {npc.yourHis} nipples. They get incredible stiff just from rubbing them a bit.. and it feels so good.",
+				"{npc.youHim} пробирает дрожь, когда теплая волна ощущений разливается по {npc.yourHis} соскам. Они становятся невероятно твердыми от одного лишь легкого поглаживания... и это чертовски приятно.",
 			]))
 		else:
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a thrilling warmth envelops {npc.yourHis} nipples. They are now incredibly sensitive, just begging to be played with!"
+				"{npc.youHim} пробирает дрожь, когда волна волнующего тепла окутывает {npc.yourHis} соски. Теперь они невероятно чувствительны и просто умоляют о ласках!"
 			]))
 	if(_result.getField("anusStageInc", false)):
 		if(anusStage == 1):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a warm wave of sensation spreads through {npc.yourHis} anus. A delightful tingling begins to build, awakening {npc.yourHis} new sensitive spot.. {npc.yourHis} prostate.. making it crave attention.",
+				"{npc.youHim} пробирает дрожь, когда теплая волна ощущений разливается по {npc.yourHis} анусу. Начинается восхитительное покалывание, пробуждающее новую чувствительную точку {npc.yourHis}... {npc.yourHis} простату... заставляя её жаждать внимания.",
 			]))
 		elif(anusStage == 2):
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as a thrilling warmth envelops {npc.yourHis} anus. It tightens and quivers with every touch, begging for something to fill it up and bring sweet pleasure.",
+				"{npc.youHim} пробирает дрожь, когда волна волнующего тепла окутывает {npc.yourHis} анус. Он сжимается и дрожит от каждого прикосновения, умоляя о чем-то, что заполнит его и принесет сладкое наслаждение.",
 			]))
 		else:
 			addText(RNG.pick([
-				"A shiver runs through {npc.youHim} as an overwhelming wave of ecstasy washes over {npc.yourHis} anus. {npc.YourHis} prostate is now incredibly sensitive, practically begging to be destroyed by a cock, ready to unleash waves of pleasure with every thrust!"
+				"{npc.youHim} пробирает дрожь, когда сокрушительная волна экстаза накрывает {npc.yourHis} анус. {npc.YourHis} простата теперь невероятно чувствительна, она практически молит о том, чтобы её разнесло член, готовая извергать волны удовольствия при каждом толчке!"
 			]))
 	
 	if(isFirstTime()):
-		addText("What is happening with your body..")
+		addText("Что происходит с вашим телом...")
 	else:
 		if(getPossibleSteps(getChar()).empty()):
-			addText("After all that, a sudden wave of realization washes over {npc.youHim}. {npc.YouHe} {npc.youAreHeIs} now a perfect sissy! {npc.YouHe} just need to take some MorphIn and make these changes permanent..")
+			addText("После всего этого {npc.youHim} накрывает внезапная волна осознания. {npc.YouHe} {npc.youAreHeIs} теперь идеальная сисси! {npc.YouHe} нужно просто принять немного Морфина, чтобы закрепить эти изменения навсегда..")
 	
 	
 	if(step in ["shrinkpenis"]):

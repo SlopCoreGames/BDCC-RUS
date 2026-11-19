@@ -8,19 +8,19 @@ func getName() -> String:
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):
-		return "Get sold on a slave auction to a lovely couple that runs a cafe in dire need of milk and cum."
-	return "Get sold on a slave auction to a lovely couple that runs a cafe in dire need of milk and cum."
+		return "Будь продан на аукционе рабов очаровательной паре, которая держит кафе и отчаянно нуждается в молоке и конче."
+	return "Будь продан на аукционе рабов очаровательной паре, которая держит кафе и отчаянно нуждается в молоке и конче."
 
 func getKinks() -> Array:
 	return [
-		"Soft bad end",
-		"Player is a sub",
-		"Milking, lots of milking (pc is target)",
+		"Мягкий плохой финал",
+		"Игрок — сабмиссив",
+		"Дойка, много дойки (цель — ПК)",
 		"Sex/Pegging/Breeding",
 	]
 
 func getCompletedDesc() -> String:
-	return "You have managed to escape slavery!"
+	return "Вам удалось сбежать из рабства!"
 
 func getStatus() -> int:
 	if(GM.main.PSH.didComplete("MilkCafe")):
@@ -33,10 +33,10 @@ func getStatus() -> int:
 
 func getStartConditions() -> Array:
 	return [
-		[completeIf("FightClubModule.BulldogBypassed"), "Find a way to get into the underground arena."],
-		[completeIf("PlayerSlaveryModule.foundMeme"), "Find a credits chip that's glued to the floor in one of the corners. Try to peel it off!"],
-		[completeIfBool(getFlag("PlayerSlaveryModule.mirriTimes", 0)>0||getFlag("PlayerSlaveryModule.luxeTimes", 0)>0), "Get sold away on a slave auction."],
+		[completeIf("FightClubModule.BulldogBypassed"), "Найдите способ попасть на подпольную арену."],
+		[completeIf("PlayerSlaveryModule.foundMeme"), "Найдите кредитный чип, приклеенный к полу в одном из углов. Попробуйте его отклеить!"],
+		[completeIfBool(getFlag("PlayerSlaveryModule.mirriTimes", 0)>0||getFlag("PlayerSlaveryModule.luxeTimes", 0)>0), "Быть проданным на аукционе рабов."],
 	]
 
 func getProgressText() -> String:
-	return "Find a way to escape the slavery."
+	return "Найдите способ сбежать из рабства."

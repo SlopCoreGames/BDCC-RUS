@@ -2,8 +2,8 @@ extends EventBase
 
 var sneakyPaths = {
 	"eng_airventskip": {
-		"text": "Air vent",
-		"desc": "Climb through the air vert and see where it brings you",
+		"text": "Вентиляционная шахта",
+		"desc": "Пролезь через вентиляцию и посмотри, куда она тебя выведет",
 		"newloc": "eng_firstjunction",
 		"arive": "You climb through the air vent and end up near the engineering block entrance"
 	}

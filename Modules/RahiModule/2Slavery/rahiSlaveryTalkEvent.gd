@@ -16,7 +16,7 @@ func run(_triggerID, _args):
 	if(GM.main.getDays() <= getFlag("RahiModule.rahi4DayHappened", 0)):
 		return
 	
-	addButtonUnlessLate("Rahi", "Talk to the feline", "talk")
+	addButtonUnlessLate("Рахи", "Поговорить с кошкообразной", "talk")
 
 func getPriority():
 	return 0

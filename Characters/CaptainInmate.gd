@@ -9,7 +9,7 @@ func _getName():
 	return "Mr. Wright"
 
 func getSmallDescription() -> String:
-	return "Canine with black fur."
+	return "Черношёрная собака."
 
 func getDefaultEquipment():
 	return ["inmatecollar", "inmateuniformHighsec"]

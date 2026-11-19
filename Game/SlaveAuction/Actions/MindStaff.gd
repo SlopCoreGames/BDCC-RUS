@@ -22,12 +22,12 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 		whoName = "engineer"
 	
 	sayPresenter(RNG.pick([
-		"This fine cutie was once part of the prison staff of an AlphaCorp prison. A trusted "+whoName+" who knows the ins and outs of this place. And now you get to keep {slave.him} as your toy!",
-		"Ever wondered what it’s like to break someone who used to hold the keys? Well, here’s your chance. This slave was previously a "+whoName+" on an AlphaCorp prison!",
-		"{slave.He} once gave orders, but now {slave.he} only obeys. This is an ex-"+whoName+" of an AlphaCorp prison! Turning the tables, don’t you think?",
-		"From being a "+whoName+" on an AlphaCorp prison to a slave. From overseeing discipline to learning it firsthand, this one has made quite the transformation!",
-		"Once a proud AlphaCorp prison "+whoName+", now ready to serve in a much different way. Can you believe it? The power shift is undeniable!",
-		"This is an ex-"+whoName+" of an AlphaCorp prison! You could own someone who used to think they were in control. They thought they were untouchable. Not anymore!",
+		"Эта милашка когда-то была частью персонала тюрьмы АльфаКорп. Доверенная, "+whoName+" которая знает все тонкости этого места. А теперь ты можешь оставить {slave.him} себе в качестве игрушки!",
+		"Задумывались ли вы, каково это — сломить того, кто раньше сам держал ключи? Что ж, вот ваш шанс. Эта рабыня раньше была "+whoName+" в тюрьме АльфаКорп!",
+		"{slave.He} когда-то раздавала приказы, но теперь {slave.he} только подчиняется. Это бывшая"+whoName+" тюрьмы АльфаКорп! Смена ролей, не находите?",
+		"Из "+whoName+" в тюрьме АльфаКорп — в рабыню. От надзора за дисциплиной до её личного познания на собственной шкуре: эта девчонка прошла через невероятную трансформацию!",
+		"Когда-то гордая сотрудница тюрьмы АльфаКорп, "+whoName+"теперь она готова служить совсем по-другому. Можете в это поверить? Смена власти неоспорима!",
+		"Это бывшая —"+whoName+" заключенная тюрьмы АльфаКорп! Вы можете владеть той, кто когда-то мнила, будто всё держит под контролем. Она думала, что её невозможно приручить. Но теперь всё изменилось!",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

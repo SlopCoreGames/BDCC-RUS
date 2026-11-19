@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "Продукт-анализ"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Start prodding at your anal ring"
+	return "Начинаешь ковырять в своем анусе"
 
 func doAction(_lustState: LustCombatState, _args):
 	_lustState.startActivity(LustActivity.ProddingAnal)
@@ -29,10 +29,10 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You move your free hand down to your butt and spread the buttcheeks open with two fingers while using the third one to poke at your {pc.analStretch} ring. Quickly lubing the finger with your saliva helps it to slide inside with ease."
+		text += "Ты опускаешь свободную руку к заднице и разводишь ягодицы двумя пальцами, а третьим начинаешь тыкать в свой {pc.analStretch} анус. Ты быстро смазываешь палец слюной, чтобы он с легкостью скользнул внутрь."
 		text += "\n\n"
 	else:
-		text += "You produce a cute little noise as two of your digits prod at your {pc.analStretch} anal ring before eventually sinking inside."
+		text += "Ты издаешь милый звук, когда два твоих пальца начинают ковырять в твоем {pc.analStretch} анусе, прежде чем в итоге погрузиться внутрь."
 		text += "\n\n"
 
 	return {

@@ -14,12 +14,12 @@ func getButtonDesc() -> String:
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
-		"This one’s been trained in the art of submission. Every command will be followed without hesitation. And that's exactly what you want from a good slave.",
-		"Looking for a slave who already knows how to kneel? This submissive is well-trained and eager to please.",
-		"Submission is this one’s specialty. Perfect for those who enjoy having complete control. Having complete control is incredibly fun, trust me.",
-		"A true submissive, trained to perfection. {slave.He} will never disobey or question your authority. And that's exactly what you want from a good slave.",
-		"With training like this, there’s no need to worry about discipline. {slave.He} already knows how to submit.",
-		"Nothing more satisfying than a slave who lives to serve. And this submissive has been trained to do just that. To serve you!",
+		"Эту обучали искусству подчинения. Каждая команда будет исполнена без малейших колебаний. А это именно то, чего ты ждешь от хорошей рабыни.",
+		"Ищешь рабыню, которая уже знает, как вставать на колени? Эта покорная особа отлично натренирована и жаждет угодить.",
+		"Подчинение — её конек. Идеально подходит для тех, кто обожает полный контроль. Поверь мне, обладать абсолютной властью — это невероятно весело.",
+		"Настоящая подчиненная, отточенная до совершенства. {slave.He} никогда не ослушается и не поставит под сомнение твой авторитет. А это именно то, что нужно от хорошей рабыни.",
+		"При такой подготовке можно даже не беспокоиться о дисциплине. {slave.He} уже знает, как нужно подчиняться.",
+		"Нет ничего приятнее, чем рабыня, живущая ради служения. И эта покорная особа была обучена именно этому. Служить тебе!",
 	]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Personality, mightChance())

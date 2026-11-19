@@ -16,10 +16,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Ammo"
+	return "Патроны"
 
 func getEffectDesc():
-	return character.getName()+" has "+str(ammo)+" bullet"+("s" if ammo != 1 else "")+" left in "+character.hisHer()+" gun"
+	return character.getName()+" has "+str(ammo)+" bullet"+("s" if ammo != 1 else "")+" осталось "+character.hisHer()+" gun"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/bullets.png"

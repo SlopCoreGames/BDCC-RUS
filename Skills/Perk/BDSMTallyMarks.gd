@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Арифметика шлюх"
 
 func getVisibleDescription():
-	return "You love when others leave tally marks on your body after they're done using you. Each tally mark gives you +1% [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] damage!"
+	return "Тебе нравится, когда другие оставляют на твоем теле зарубки после того, как используют тебя. Каждая зарубка дает +1% [color="+DamageType.getColorString(DamageType.Lust)+"]урона похоти[/color]!"
 
 func getSkillTier():
 	return 0

@@ -24,9 +24,9 @@ func useInCombat(_attacker, _receiver):
 func getPossibleActions():
 	return [
 		{
-			"name": "Consume",
+			"name": "Выпить",
 			"scene": "UseItemLikeInCombatScene",
-			"description": "Take the pill",
+			"description": "Принять таблетку",
 		},
 	]
 
@@ -75,7 +75,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	#var dom:BaseCharacter = _domInfo.getChar()
 	
 	return {
-		"name": "Ovicapsin",
+		"name": "Овикапсин",
 		"usedName": "an Ovicapsin pill",
 		"desc": getDescription(),
 		"scoreOnSub": 0.0,

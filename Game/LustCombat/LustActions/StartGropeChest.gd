@@ -20,7 +20,7 @@ func getVisibleName(_lustState: LustCombatState, _args):
 	return "щупать сиськи"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
-	return "Begin groping your chest"
+	return "Начать ласкать свою грудь"
 
 func doAction(_lustState: LustCombatState, _args):
 	#_lustState.getCharacter().addLust(1)
@@ -30,14 +30,14 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var text = ""
 	if(RNG.chance(50)):
-		text += "You put your free hand on your {pc.breasts} and squeeze one of them gently, the nipple rubbing between two digits as you let out a little moan."
+		text += "Ты кладешь свободную руку на свою {pc.breasts} и нежно сжимаешь одну из грудей; сосок терся между пальцами, пока ты издавала тихий стон."
 		text += "\n\n"
 	else:
-		text += "Your free hand jumps on your {pc.breasts} and gives one of them a squeeze. You begin to breathe more deeply as you start teasing your breasts."
+		text += "Твоя свободная рука сама собой тянется к {pc.breasts} и сжимает одну из грудей. Ты начинаешь дышать глубже, дразня свои соски."
 		text += "\n\n"
 	
 	if(RNG.chance(50) && pc.canBeMilked()):
-		text += "A bit of your {pc.milk} leaks out, your breasts seem to be full."
+		text += "Немного {pc.milk} просачивается наружу, твоя грудь кажется налитой."
 		text += "\n\n"
 
 	return {

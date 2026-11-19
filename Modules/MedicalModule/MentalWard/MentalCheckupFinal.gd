@@ -55,7 +55,7 @@ func _run():
 	if(state == "follow"):
 		aimCamera("med_lobbyne")
 		playAnimation(StageScene.Solo, "walk")
-		setLocationName("Medical lobby")
+		setLocationName("Вестибюль медпункта")
 		GM.pc.setLocation("med_lobbyne")
 		
 		saynn("Элиза ведет тебя по коридорам к выходу. Затем она расстегивает твою смирительную рубашку и снимает ее с тебя.")
@@ -147,7 +147,7 @@ func _run():
 	if(state == "run"):
 		aimCamera("med_lobbyne")
 		playAnimation(StageScene.Solo, "walk")
-		setLocationName("Medical lobby")
+		setLocationName("Вестибюль медпункта")
 		GM.pc.setLocation("med_lobbyne")
 		
 		saynn("Похоже, никто еще не знает о твоем побеге, поэтому охраны поблизости немного. Тебе удается проскользнуть мимо всех и пробраться обратно в медицинское лобби!")

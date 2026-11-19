@@ -15,30 +15,30 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("BodySlim") && _slaveTraits["BodySlim"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Admire the elegance here! Slender, toned, and perfectly made for every need.",
-			"Lean and graceful, this one’s body is a work of art. Every move is refined and enticing.",
-			"This slim figure is built for endurance. Perfect for those who prefer their toys lithe and flexible.",
-			"Not too much, not too little - just the right amount of slimness to please the eye and your needs.",
-			"A delicate build, but don’t let that fool you - {slave.he} can handle anything you throw {slave.his} way.",
-			"Sleek and slender, {slave.his}'s body is all about grace, offering a refined, subtle allure.",
+			"Полюбуйтесь этой элегантностью! Стройная, подтянутая и созданная специально для любых нужд.",
+			"Хрупкая и грациозная, эта фигура — настоящее произведение искусства. Каждое движение изысканно и соблазнительно.",
+			"Эта стройная фигура создана для выносливости. Идеально подходит для тех, кто предпочитает гибких и легких игрушек.",
+			"Не слишком много, не слишком мало — именно та степень стройности, что радует глаз и отвечает вашим желаниям.",
+			"Хрупкое телосложение, но не дайте себя обмануть — {slave.he} выдержит всё, что вы бросите {slave.his}.",
+			"Изящная и стройная, фигура {slave.his} воплощает саму грацию, источая утонченное и едва уловимое очарование.",
 		]))
 	if(_slaveTraits.has("BodyAverage") && _slaveTraits["BodyAverage"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Not too thick, not too thin - this slave has the perfect balance for any taste.",
-			"Here we have the ideal body build, ready to meet your every expectation.",
-			"Nothing too extreme here - just a perfectly balanced body, made to please.",
-			"Classic, average, and perfect for anything you have in mind - this slave has simply the perfect body.",
-			"{slave.He} {slave.isAre} the definition of well-proportioned, offering the best of both worlds.",
-			"Look, an all-around perfect form, this one is ready for anything you desire.",
+			"Не слишком толстая, не слишком худая — у этой рабыни идеальный баланс на любой вкус.",
+			"Перед вами идеальное телосложение, готовое оправдать любые ваши ожидания.",
+			"Никаких крайностей — только идеально сбалансированное тело, созданное для вашего удовольствия.",
+			"Классическая, средняя и подходящая для всего, что вы задумали — у этой рабыни просто идеальное тело.",
+			"{slave.He} {slave.isAre} — само воплощение гармонии, сочетающее в себе лучшее из обоих миров.",
+			"Слушай, форма — просто идеал во всём, эта штучка готова на любые твои прихоти.",
 		]))
 	if(_slaveTraits.has("BodyThick") && _slaveTraits["BodyThick"] > 0.0):
 		sayPresenter(RNG.pick([
-			"Now this one’s built to be enjoyed — a body with all the right curves in all the right places.",
-			"Full, thick, and ready for anything, {slave.he} offers more than enough to keep you satisfied.",
-			"{slave.He} has a body that demands attention, thick and perfect for indulgence.",
-			"Love something to hold onto? {slave.He} has the curves that will leave you wanting more.",
-			"Thick thighs, full hips - {slave.he} was made to be enjoyed by those with appetites for more.",
-			"This one has a lot to offer, both to the eye and the touch. For those who like their toys thick, {slave.he} {slave.isAre} perfect.",
+			"А эта создана для истинного наслаждения — у неё все изгибы именно там, где нужно.",
+			"Пышная, сочная и готовая ко всему, {slave.he} предложит тебе более чем достаточно, чтобы ты остался доволен.",
+			"{slave.He} обладает телом, которое требует внимания — пышным и идеальным для наслаждения.",
+			"Любишь, когда есть за что ухватиться? {slave.He} обладает такими изгибами, что тебе всегда будет мало.",
+			"Пышные бедра, полные формы — {slave.he} была создана для того, чтобы ею наслаждались те, чей аппетит не знает границ.",
+			"Эта штучка может многое предложить — и глазу, и рукам. Для тех, кто любит своих игрушек пышными, {slave.he} {slave.isAre} само совершенство.",
 		]))
 	
 	_auction.unlockRandomTraitOfTypeEachBidderWithChance(AuctionTraitType.Mind, mightChance())

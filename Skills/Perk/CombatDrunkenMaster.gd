@@ -8,7 +8,7 @@ func getVisibleName():
 	return "Пьяный мастер"
 
 func getVisibleDescription():
-	return "Being drunk makes you less predictable. If your intoxication is above 50% you get 10% bonus to your dodging"
+	return "Пьяный человек становится менее предсказуемым. Если уровень опьянения превышает 50%, вы получаете 10% бонуса к уклонению."
 
 func getSkillTier():
 	return 0

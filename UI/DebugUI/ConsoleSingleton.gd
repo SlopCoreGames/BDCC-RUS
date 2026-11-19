@@ -24,7 +24,7 @@ func _ready():
 
 	pause_mode = PAUSE_MODE_PROCESS
 
-	printLine("This is a development console")
+	printLine("Это консоль разработчика")
 	addCommand("quit", self, "quit")
 	addCommand("help", self, "help")
 
@@ -67,17 +67,17 @@ func doTextCommand(command):
 			
 			var ref = command_entry["object"]
 			if(ref.get_ref() == null):
-				printLine("Object was destroyed, command is invalid.")
+				printLine("Объект был уничтожен, команда недействительна.")
 				return
 			
 			split_text.pop_front()
 			if(split_text.size() != command_entry["params"].size()):
-				printLine("Wrong amount of arguments, expected: "+str(command_entry["params"].size()))
+				printLine("Неверное количество аргументов, ожидается: "+str(command_entry["params"].size()))
 				return
 			command_entry["function"].call_funcv(split_text)
 
 		else:
-			printLine("Command not found.")
+			printLine("Команда не найдена.")
 
 func printLine(text: String):
 	emit_signal("onConsoleOutput", text)

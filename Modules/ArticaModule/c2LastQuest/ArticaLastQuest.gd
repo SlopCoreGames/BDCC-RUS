@@ -9,7 +9,7 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Someone stole Artica's dreamcatcher while you weren't looking. Find out who did it by beating inmates up and interrogating them!\n\nAlternatively, you can pay doctor Quinn a visit, maybe she can help cure Artica's sadness through alternative means..")
+	result.append("Кто-то стащил ловца снов Артики, пока ты не видела! Выясни, кто это сделал, избивая заключенных и допрашивая их!\n\nИли же ты можешь навестить доктора Куинн — возможно, она поможет исцелить печаль Артики иными, альтернативными способами...")
 
 	var clueNumber = getFlag("ArticaModule.lqClues", 0)
 	var allClues = GlobalRegistry.getModule("ArticaModule").getLastQuestHints()
@@ -25,13 +25,13 @@ func getProgress():
 				break
 			_i += 1
 		
-		result.append("Here are all the hints that you know about Artica's dreamcatcher:\n"+Util.join(learnedClues, "\n"))
+		result.append("Вот все зацепки, которые тебе известны о ловце снов Артики:\n"+Util.join(learnedClues, "\n"))
 
 	if(getFlag("ArticaModule.LQArticaGotDreamCatcher")):
-		result.append("Artica has her dreamcatcher back! She is forever grateful..")
+		result.append("Ловец снов вернулся к Артике! Она бесконечно тебе благодарна...")
 
 	if(getFlag("ArticaModule.LQArticaGotBrainwashed")):
-		result.append("Artica doesn't even remember that she used to have a dreamcatcher. She is now happy to be your obedient slut!")
+		result.append("Артика даже не помнит, что у неё когда-то был ловец снов. Теперь она счастлива быть твоей послушной шлюхой!")
 
 	return result
 

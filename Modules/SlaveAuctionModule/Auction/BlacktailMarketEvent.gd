@@ -49,7 +49,7 @@ func onButton(_method, _args):
 			GM.pc.setLocation("market_market")
 		else:
 			GM.pc.setLocation("market_intro")
-		addMessage("You use your bluespace relay-tag to teleport to the Blacktail Market.")
+		addMessage("Вы используете свой релей-тег синего пространства, чтобы телепортироваться на рынок Блэктейл.")
 		GM.main.reRun()
 	if(_method == "mirri"):
 		if(!GM.ES.triggerReact(Trigger.TalkingToNPC, ["mirri"])):
@@ -57,7 +57,7 @@ func onButton(_method, _args):
 			runScene("MirriTalkScene")
 	if(_method == "exitsecure"):
 		GM.pc.setLocation(GM.pc.getCellLocation())
-		addMessage("You use the teleporter to teleport back to your cell.")
+		addMessage("Вы используете телепорт, чтобы вернуться в свою камеру.")
 		GM.main.reRun()
 	if(_method == "soloslavesell"):
 		runScene("SlaveAuctionGenericSellNoMirriScene")

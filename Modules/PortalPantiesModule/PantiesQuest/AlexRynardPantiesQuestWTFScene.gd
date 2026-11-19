@@ -76,7 +76,7 @@ func _run():
 
 func _react(_action: String, _args):
 	if(_action == "fine"):
-		addMessage("Task was updated")
+		addMessage("Задача обновлена")
 		addExperienceToPlayer(30)
 	
 	if(_action == "endthescene"):

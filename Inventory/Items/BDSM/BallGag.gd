@@ -42,9 +42,9 @@ func generateRestraintData():
 
 func getForcedOnMessage(isPlayer = true):
 	if(isPlayer):
-		return getAStackNameCapitalize()+" was forced into your mouth! You are drooling already"
+		return getAStackNameCapitalize()+" запихали тебе в рот! У тебя уже текут слюни"
 	else:
-		return getAStackNameCapitalize()+" was forced into {receiver.nameS} mouth! {receiver.He} {receiver.is} drooling already"
+		return getAStackNameCapitalize()+" запихали в {receiver.nameS} рот! {receiver.He} {receiver.is} уже текут слюни"
 
 func updateDoll(doll: Doll3D):
 	doll.setState("mouth", "ballgag")

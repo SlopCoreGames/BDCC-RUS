@@ -82,7 +82,7 @@ func initArgs(_args = []):
 		addPermanentWriting(_args[0], _args[1])
 
 func getEffectName():
-	return "Body writings"
+	return "Надписи на теле"
 
 func getEffectDesc():
 	var text = "Кто-то написал это на тебе"
@@ -100,7 +100,7 @@ func getEffectDesc():
 		
 		if(!writingsNames.empty()):
 			var zoneName:String = BodyWritingsZone.getZoneVisibleName(int(zone))
-			text += "\n"+Util.humanReadableList(writingsNames)+" on your "+zoneName
+			text += "\n"+Util.humanReadableList(writingsNames)+" на твоем "+zoneName
 		#text += "\n"+zoneName+": "+Util.humanReadableList(writingsNames)
 	return text
 

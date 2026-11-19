@@ -101,7 +101,7 @@ func _run():
 			sayn(line)
 				
 		addButton("Закрыть", "Продолжить путь", "endthescene")
-		addButtonUnlessLate("Wait here", "Spend some time idling", "wait")
+		addButtonUnlessLate("Жди здесь", "Просто постоять без дела", "wait")
 		if(GM.main.isInDungeon()):
 			addDisabledButton("Подрочить", "Здесь слишком темно и мерзко, чтобы мастурбировать. Найди место для отдыха!")
 		else:
@@ -148,7 +148,7 @@ func _run():
 
 	if(state == "pickpronouns"):
 		saynn("Выберите местоимения вашего персонажа.")
-		saynn("Текущие местоимения: "+GM.pc.heShe()+"/"+GM.pc.hisHer()+(" (derived from gender)" if(GM.pc.pronounsGender == null) else ""))
+		saynn("Текущие местоимения: "+GM.pc.heShe()+"/"+GM.pc.hisHer()+(" (зависит от пола)" if(GM.pc.pronounsGender == null) else ""))
 
 		addButton("Производное от пола", "Автоматически подбирать местоимения в зависимости от пола", "setpronouns", [null])
 		addButton("he/his", "Выбрать мужские местоимения", "setpronouns", [Gender.Male])

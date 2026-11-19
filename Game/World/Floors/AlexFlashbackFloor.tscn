@@ -7,7 +7,7 @@
 
 [node name="AlexFlashRoom" parent="." index="0" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 0.7, 1 )
-roomName = "Alex's Apartment"
+roomName = "Квартира Алекса"
 roomID = "alexf_apart"
 canWest = false
 canEast = false
@@ -72,7 +72,7 @@ roomColor = 8
 [node name="AlexFlashRoom43" parent="." index="9" instance=ExtResource( 1 )]
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( -128, -192 )
-roomName = "Canteen"
+roomName = "Столовая"
 roomID = "alexf_bar"
 roomSprite = 2
 roomColor = 3
@@ -80,7 +80,7 @@ roomColor = 3
 [node name="AlexFlashRoom44" parent="." index="10" instance=ExtResource( 1 )]
 position = Vector2( -384, -64 )
 scale = Vector2( 1, 1 )
-roomName = "Hangar"
+roomName = "Ангар"
 roomID = "alexf_hangar"
 canWest = false
 canNorth = false
@@ -92,7 +92,7 @@ gridColor = 5
 self_modulate = Color( 0.7, 0.7, 1, 1 )
 position = Vector2( 512, 128 )
 scale = Vector2( 1, 1 )
-roomName = "Expo Hangar"
+roomName = "Экспо-ангар"
 roomID = "alexf_expo"
 canWest = false
 canNorth = false
@@ -104,7 +104,7 @@ gridColor = 7
 [node name="AlexFlashRoom45" parent="." index="12" instance=ExtResource( 1 )]
 position = Vector2( -384, 0 )
 scale = Vector2( 1, 1 )
-roomName = "Hangar"
+roomName = "Ангар"
 canWest = false
 canNorth = false
 canEast = false
@@ -114,7 +114,7 @@ gridColor = 5
 [node name="AlexFlashRoom46" parent="." index="13" instance=ExtResource( 1 )]
 position = Vector2( -384, 64 )
 scale = Vector2( 1, 1 )
-roomName = "Hangar"
+roomName = "Ангар"
 canWest = false
 canNorth = false
 canEast = false
@@ -135,7 +135,7 @@ gridColor = 8
 [node name="AlexFlashRoom6" parent="." index="16" instance=ExtResource( 1 )]
 self_modulate = Color( 0.5, 0.5, 0.5, 1 )
 position = Vector2( -64, -128 )
-roomName = "Station's Corridor"
+roomName = "Коридор станции"
 roomID = "alexf_randomcor"
 roomColor = 7
 
@@ -196,7 +196,7 @@ roomColor = 7
 
 [node name="AlexFlashRoom18" parent="." index="28" instance=ExtResource( 1 )]
 position = Vector2( -256, -128 )
-roomName = "Boss's room"
+roomName = "Комната босса"
 roomID = "alexf_bossroom"
 roomSprite = 1
 
@@ -261,7 +261,7 @@ roomColor = 7
 
 [node name="AlexFlashRoom55" parent="." index="40" instance=ExtResource( 1 )]
 position = Vector2( 384, -320 )
-roomName = "Medical"
+roomName = "Медпункт"
 roomID = "alexf_medical"
 gridColor = 3
 

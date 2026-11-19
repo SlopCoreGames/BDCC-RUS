@@ -44,18 +44,18 @@ func _run():
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 
 			saynn("[say=npc]"+RNG.pick([
-				"This'll just get in the way.",
-				"Take this off.",
-				"Strip."
+				"Это будет только мешать.",
+				"Сними это.",
+				"Разденься."
 			])+"[/say]")
 			
 		if(npcVariation == "mean"):
 			saynn("{npc.He} {npc.verb('grab')} хватает тебя за одежду и грубо притягивает к себе.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Take this off or I'll rip it off.",
-				"Take this off. Now.",
-				"Strip, slut."
+				"Сними это, или я сам его с тебя сорву.",
+				"Сними это. Живо.",
+				"Разденься, сучка."
 			])+"[/say]")
 
 		# (kind version)
@@ -63,9 +63,9 @@ func _run():
 			
 			saynn("{npc.He} {npc.verb('brush', 'brushes')} стряхивает пыль с твоей одежды.")
 			saynn("[say=npc]"+RNG.pick([
-				"Why don't you take this off?",
-				"You wouldn't mind stripping for me, right?",
-				"Can you strip down for me?",
+				"Почему бы тебе не снять это?",
+				"Ты ведь не против раздеться для меня, верно?",
+				"Можешь раздеться догола для меня?",
 			])+"[/say]")
 			
 		# (subby version)
@@ -73,9 +73,9 @@ func _run():
 			
 			saynn("{npc.He} {npc.verb('grip')} твою одежду, явно стремясь поскорее её снять.")
 			saynn("[say=npc]"+RNG.pick([
-				"Take these off, please?",
-				"I want to see [i]all[/i] of your beatiful body!",
-				"You've got nothing that needs hiding, handsome~",
+				"Сними это, пожалуйста.",
+				"Я хочу видеть [i]всё[/i] твое прекрасное тело!",
+				"Тебе совершенно нечего скрывать, красавчик~",
 			])+"[/say]")
 			
 		saynn("Не успеваешь ты оглянуться, как одежда сползает с тебя, пока ты...")
@@ -90,33 +90,33 @@ func _run():
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Raise your arms above your head.",
-				"Hands up.",
-				"Keep your arms above your head."
+				"Подними руки над головой.",
+				"Руки вверх.",
+				"Держи руки над головой."
 			])+"[/say]")
 		
 		if(npcVariation == "mean"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Arms above your head.",
-				"Hands up, bitch.",
-				"Keep your arms above your head."
+				"Руки над головой.",
+				"Руки вверх, сучка.",
+				"Не опускай руки, держи их над головой."
 			])+"[/say]")
 
 		# (kind version)
 		if(npcVariation == "kind"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Arms above your head, if you could?",
-				"Hands up, please.",
-				"Could you keep your arms above your head?",
+				"Подними руки над головой, если не сложно?",
+				"Руки вверх, пожалуйста.",
+				"Можешь держать руки над головой?",
 			])+"[/say]")
 			
 		# (subby version)
 		if(npcVariation == "subby"):
 			saynn("[say=npc]"+RNG.pick([
-				"Can you please raise your arms? I want access to all of you~.",
-				"Hands up please? I just wanna bury my face in that chest~",
+				"Подними руки, пожалуйста. Я хочу добраться до каждой твоей складочки~.",
+				"Руки вверх, а? Просто хочу уткнуться лицом в твою грудь~",
 			])+"[/say]")
 			
 		saynn("Твои руки начинают механически подниматься без всякого осознанного усилия с твоей стороны, и ты...")
@@ -132,9 +132,9 @@ func _run():
 			saynn("{npc.He} {npc.verb('grab')} твои "+limb+", зажимая на них что-то.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Eyes forward. Dont move.",
-				"You squirm too much.",
-				"This'll keep you properly helpless."
+				"Смотри прямо перед собой. Не двигайся.",
+				"Ты слишком много ерзаешь.",
+				"Это сделает тебя по-настоящему беспомощной."
 			])+"[/say]")
 		
 		if(npcVariation == "mean"):
@@ -142,9 +142,9 @@ func _run():
 			saynn("{npc.He} мучительно {npc.verb('squeeze')} твои "+limb+", зажимая на них что-то.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Eyes forward. Let me cuff you.",
-				"This should help keep you still.",
-				"A bit of bondage can be fun."
+				"Смотри вперед. Дай мне надеть на тебя наручники.",
+				"Это поможет тебе не шевелиться.",
+				"Немного бондажа — это всегда весело."
 			])+"[/say]")
 
 		# (kind version)
@@ -153,9 +153,9 @@ func _run():
 			saynn("{npc.He} нежно {npc.verb('squeeze')} твой "+limb+", зажимая на них что-то.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"You like being restrained, don't you?",
-				"I think you'd like to be a bit helpless~",
-				"Are you a fan of cuffs?",
+				"Тебе ведь нравится быть связанной, правда?",
+				"Думаю, тебе бы понравилось быть немного беспомощной~",
+				"Тебе нравятся наручники?",
 			])+"[/say]")
 			
 		saynn("Тщетно пытаясь оказать хоть какое-то сопротивление, ты...")
@@ -168,33 +168,33 @@ func _run():
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Let's make it clear what you are.",
-				"A little advertisement seems appropriate."
+				"Давай проясним, кто ты есть на самом деле.",
+				"Небольшая реклама будет очень кстати."
 			])+"[/say]")
 		
 		if(npcVariation == "mean"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Let's make you look like the slut you are.",
-				"Whores should be labeled.",
-				"Hold still, bitch."
+				"Давай сделаем из тебя ту шлюху, которой ты являешься.",
+				"Шлюх нужно маркировать.",
+				"Не дергайся, сучка."
 			])+"[/say]")
 
 		# (kind version)
 		if(npcVariation == "kind"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"You don't mind if I leave a mark, right?",
-				"You really need to advertise yourself~",
-				"Just a little reminder...",
+				"Ты ведь не против, если я оставлю след, правда?",
+				"Тебе действительно стоит заявить о себе~",
+				"Просто маленькое напоминание...",
 			])+"[/say]")
 			
 		# (subby version)
 		if(npcVariation == "subby"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"You don't mind if I leave a mark, right?",
-				"Just so you don't forget me~",
+				"Ты ведь не против, если я оставлю след, правда?",
+				"Просто чтобы ты меня не забыл(а)~",
 			])+"[/say]")
 		
 		saynn("Замирая изо всех сил, ты...")
@@ -205,9 +205,9 @@ func _run():
 		saynn("{npc.He} {npc.verb('draw')} [b]'"+str(BodyWritings.getWritingText(lastBodywritingID))+"'[/b] на твоем "+BodyWritingsZone.getZoneVisibleName(lastBodywritingZone)+".")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Suits you.",
-			"Nice.",
-			"Looks great on you.",
+			"Тебе идет.",
+			"Приятно.",
+			"На тебе смотрится отлично.",
 		])+"[/say]")
 		
 		saynn("Не в силах сопротивляться, ты...")
@@ -219,9 +219,9 @@ func _run():
 		
 		saynn("{npc.He} {npc.verb('kneel')} перед тобой, чтобы рассмотреть тебя поближе.")
 		saynn("[say=npc]"+RNG.pick([
-				"Ooh, I really want to play~",
-				"I could make you feel so good...",
-				"Mmm, I like what I see!"
+				"Ох, как же мне хочется поиграть~",
+				"Я могла бы доставить тебе столько удовольствия...",
+				"Ммм, мне нравится то, что я вижу!"
 			])+"[/say]")
 		
 		saynn("{npc.He} продолжает стоять на коленях перед тобой, нагое разглядывая твое тело. Смущенная таким пристальным желанием, ты...")
@@ -235,9 +235,9 @@ func _run():
 			toOgle = "{pc.vagina}"
 		saynn("{npc.He} {npc.verb('explore')} твое тело {npc.his} взглядом, долго задерживаясь на твоем "+toOgle+", но дразняще не предпринимая никаких действий. Ты послушно замираешь, принимая позы для восхищения.")
 		saynn("[say=npc]"+RNG.pick([
-				"What a lovely sight.",
-				"I could just...",
-				"So tempting~"
+				"Какое прекрасное зрелище.",
+				"Так и хочется...",
+				"Какое искушение~"
 			])+"[/say]")
 			
 		saynn("{npc.He} со временем {npc.verb('rise')} встает на {npc.his} ноги, решая пока продолжить игру. Все еще сгорая от смущения, ты...")
@@ -249,9 +249,9 @@ func _run():
 		#only mean version
 		saynn("Без всякого предупреждения, {npc.he} {npc.verb('sock')} тебя прямо в живот!")
 		saynn("[say=npc]"+RNG.pick([
-				"You'd make a good punching bag!",
-				"Hold still, bitch.",
-				"You're probably gonna enjoy this anyway."
+				"Из тебя вышла бы отличная груша для битья!",
+				"Не дергайся, сучка.",
+				"Тебе всё равно это, скорее всего, понравится."
 			])+"[/say]")
 		
 		saynn("Вздрагивая от боли, ты...")
@@ -262,9 +262,9 @@ func _run():
 		#only mean version
 		saynn("{npc.He} раз за разом {npc.verb('jab')} тебя в живот и грудь!")
 		saynn("[say=npc]"+RNG.pick([
-				"I should make this part of my workout routine.",
-				"Bruises look good on you.",
-				"Maybe I should hit harder. Crack some ribs."
+				"Надо бы сделать это частью моей тренировки.",
+				"Синяки тебе к лицу.",
+				"Может, стоит бить сильнее? Чтобы ребра хрустели."
 			])+"[/say]")
 		
 		saynn("Весь в синяках, ты...")
@@ -273,31 +273,31 @@ func _run():
 	if(state == "hug"):
 		playAnimation(StageScene.Hug, "hug", {npc=npcID})
 		if(!(npcVariation in ["mean", "kind", "subby"])):
-			saynn("{npc.He} внезапно {npc.verb('draw')} тебя в объятия" + ("." if GM.pc.hasBoundArms() else ", and you reflexively wrap your arms around {npc.him}."))
+			saynn("{npc.He} внезапно {npc.verb('draw')} тебя в объятия" + ("." if GM.pc.hasBoundArms() else ", и ты рефлекторно обхватываешь руками {npc.him}."))
 		
 			saynn("[say=npc]"+RNG.pick([
-				"I can be nice~",
-				"You are being [i]very[/i] obedient..."
+				"А я ведь могу быть и милой~",
+				"Ты ведешь себя [i]очень[/i] послушно..."
 			])+"[/say]")
 		#no mean version
 		# (kind version)
 		if(npcVariation == "kind"):
-			saynn("{npc.He} нежно {npc.verb('draw')} тебя в объятия" + ("." if GM.pc.hasBoundArms() else ", and after a brief moment of hesitation, you wrap your arms around {npc.him}."))
+			saynn("{npc.He} нежно {npc.verb('draw')} тебя в объятия" + ("." if GM.pc.hasBoundArms() else ", и после минутного колебания ты обхватываешь руками {npc.him}."))
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Good {pc.boy}...",
-				"You're enjoying yourself, right?",
-				"That's it, just relax...",
+				"Тебе ведь нравится, правда?",
+				"Вот так, просто расслабься...",
 			])+"[/say]")
 			
 		# (subby version)
 		if(npcVariation == "subby"):
-			saynn("{npc.He} обвивает {npc.his} руками тебя" + (" and {npc.verb('nuzzle')} your chest." if GM.pc.hasBoundArms() else ". As {npc.he} {npc.verb('nuzzle')} your chest, you return the hug."))
+			saynn("{npc.He} обвивает {npc.his} руками тебя" + (" и {npc.verb('nuzzle')} твою грудь." if GM.pc.hasBoundArms() else ". Пока {npc.he} {npc.verb('nuzzle')} твою грудь, ты отвечаешь на объятия."))
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Mmm~",
-				"This is okay, right?",
-				"I want you all to myself...",
+				"Ммм~",
+				"Это ведь нормально, да?",
+				"Я хочу, чтобы ты принадлежала только мне...",
 			])+"[/say]")
 		
 		saynn("Спустя некоторое время {npc.he} {npc.verb('let')} уходит. Ты послушно вскидываешь руки, даже не дожидаясь команды, и...")
@@ -310,8 +310,8 @@ func _run():
 			saynn("{npc.He} медленно, дразняще {npc.verb('circle')} за твоей спиной. Ты вздрагиваешь, когда чувствуешь, как руки начинают исследовать всё твое тело.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"You'd do just about anything to please me, hm?",
-				"You are being [i]very[/i] obedient...",
+				"Ты ведь сделаешь всё, чтобы угодить мне, м-м?",
+				"Ты ведешь себя [i]очень[/i] послушно...",
 			])+"[/say]")
 			
 		# (mean version)
@@ -319,9 +319,9 @@ func _run():
 			saynn("{npc.He} {npc.verb('paces')} стоит позади тебя. Ты вздрагиваешь, когда чувствуешь, как руки начинают бесстыдно ощупывать всё твоё тело.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"I could do [i]anything[/i] I want to you.",
-				"That's it, slut. Squirm.",
-				"You're all mine, and there's nothing you can do about it.",
+				"Я могу делать с тобой [i]всё что угодно[/i].",
+				"Вот так, сучка. Трясись.",
+				"Ты полностью моя, и ты ничего не можешь с этим поделать.",
 			])+"[/say]")
 			
 		# (kind version)
@@ -330,8 +330,8 @@ func _run():
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Good {pc.boy}...",
-				"Enjoying yourself? Yes you are...",
-				"That's it, just relax...",
+				"Тебе нравится? О да, еще как...",
+				"Вот так, просто расслабься...",
 			])+"[/say]")
 			
 		# (no subby version)
@@ -346,26 +346,26 @@ func _run():
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Maybe I'll just keep you to myself.",
-				"We'll be doing this a lot more often, I promise you that.",
+				"Может, оставлю тебя только себе.",
+				"Обещаю, мы будем делать это гораздо чаще.",
 			])+"[/say]")
 			
 		# (mean version)
 		if(npcVariation == "mean"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"Gonna make you into my personal fuckpet.",
-				"A slut like you should be used.",
-				"You're gonna be my personal whore.",
+				"Сделаю из тебя свою личную шлюшку-игрушку.",
+				"Такую шлюху, как ты, нужно использовать по полной.",
+				"Ты станешь моей личной шлюхой.",
 			])+"[/say]")
 			
 		# (kind version)
 		if(npcVariation == "kind"):
 			
 			saynn("[say=npc]"+RNG.pick([
-				"I can make you have a [i]very[/i] good time.",
-				"So very submissive and obedient~",
-				"Want to a good [i]toy[/i] for me?",
+				"Я могу устроить тебе [i]очень[/i] приятное время.",
+				"Такая покорная и послушная~",
+				"Хочешь стать моей хорошей [i]игрушкой[/i]?",
 			])+"[/say]")
 			
 		# (no subby version)
@@ -383,9 +383,9 @@ func _run():
 			saynn("Когда твоя похоть и желание становятся очевидными, {npc.he} {npc.verb('drag')} твои запястья за спиной.")
 
 			saynn("[say=npc]"+RNG.pick([
-				"What a cute slut you are~",
-				"Getting off on this, huh?",
-				"Who said you could enjoy yourself?"
+				"Какая же ты милая шлюшка~",
+				"Тебя это заводит, да?",
+				"Кто разрешил тебе получать удовольствие?"
 			])+"[/say]")
 			
 			saynn("Когда {npc.he} {npc.verb('continue')} начинает дразнить тебя, ты не можешь не...")
@@ -394,9 +394,9 @@ func _run():
 			saynn("Когда твоя похоть и желание становятся очевидными, {npc.he} {npc.verb('wrest')} твои запястья за спиной.")
 			
 			saynn("[say=npc]"+RNG.pick([
-				"I see you're getting off on this, bitch.",
-				"Enjoying yourself, slut?",
-				"Having fun? What a whore."
+				"Вижу, тебя это заводит, сучка.",
+				"Наслаждаешься, шлюха?",
+				"Весело тебе? Ну и блядь же ты."
 			])+"[/say]")
 			
 			saynn("Когда {npc.he} {npc.verb('continue')} начинает осыпать тебя словесными унижениями, ты не можешь не...")
@@ -406,9 +406,9 @@ func _run():
 			
 			saynn("Когда твоя похоть и вожделение становятся очевидными, {npc.he} {npc.verb('grab')} твои запястья, мягко отводя их за спину.")
 			saynn("[say=npc]"+RNG.pick([
-				"Aw, you're enjoying yourself~",
-				"Now now, you want to be a good {pc.boy}, right?",
-				"Let's make sure you do this right...",
+				"О-о, а тебе ведь нравится~",
+				"Ну-ну, ты ведь хочешь быть послушной {pc.boy}, верно?",
+				"Давай убедимся, что ты всё делаешь правильно...",
 			])+"[/say]")
 			saynn("Пока {npc.he} {npc.verb('continue')} слова ободрения, ты не можешь удержаться от...")
 			
@@ -417,9 +417,9 @@ func _run():
 			
 			saynn("Когда твоя похоть и вожделение становятся очевидными, {npc.he} мягко {npc.verb('guide')} тебя, заставляя убрать руки за спину.")
 			saynn("[say=npc]"+RNG.pick([
-				"Oh, you'll love this next part!",
-				"You're having a lot of fun, I see~",
-				"I know what'll make you feel good!",
+				"О, следующая часть тебе точно понравится!",
+				"Вижу, ты вовсю развлекаешься~",
+				"Я знаю, что заставит тебя почувствовать себя хорошо!",
 			])+"[/say]")
 			saynn("Пока {npc.he} {npc.verb('continue')} выражать свои {npc.his} похотливые желания, ты не можешь удержаться от...")
 			
@@ -510,30 +510,30 @@ func _run():
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			saynn("[say=npc]"+RNG.pick([
-				"Not a bad party trick.",
-				"I can feel you shivering~",
-				"Hah, it worked. No kidding."
+				"Неплохой фокус для вечеринки.",
+				"Я прямо чувствую, как ты дрожишь~",
+				"Ха, сработало. Без шуток."
 			])+"[/say]")
 			
 		if(npcVariation == "mean"):
 			saynn("[say=npc]"+RNG.pick([
-				"Easy, just like you are.",
-				"Voice controlled fucktoy. I like it.",
-				"Don't get used to it."
+				"Легко, прямо как сейчас.",
+				"Секс-игрушка с голосовым управлением. Мне нравится.",
+				"Не привыкай к этому."
 			])+"[/say]")
 			
 		if(npcVariation == "kind"):
 			saynn("[say=npc]"+RNG.pick([
-				"That's it, ride it out~",
-				"Good {pc.boy}, {pc.name}! Very good!",
-				"You look like you enjoyed that~",
+				"Вот так, прочувствуй это до конца~",
+				"Молодец, {pc.boy}, {pc.name}! Очень хорошо!",
+				"Похоже, тебе понравилось~",
 			])+"[/say]")
 			
 		if(npcVariation == "subby"):
 			saynn("[say=npc]"+RNG.pick([
-				"That looks fun! I've got to learn how to do that.",
-				"Aw, I'm jealous~",
-				"I bet that feels real good...",
+				"Выглядит весело! Надо будет научиться так же.",
+				"Ой, завидую~",
+				"Бьюсь об заклад, это чертовски приятно...",
 			])+"[/say]")
 			
 		saynn("{npc.Name} отпускает твои запястья. Твои руки дрожа поднимаются обратно над головой, и ты...")
@@ -547,34 +547,34 @@ func _run():
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			saynn("[say=npc]"+RNG.pick([
-				"Not a bad party trick.",
-				"I can feel you shivering~",
-				"Hm. No kidding.",
-				"What, all dry?"
+				"Неплохой фокус для вечеринки.",
+				"Я прямо чувствую, как ты дрожишь~",
+				"Хм. И не говори.",
+				"Что, совсем сухой?"
 			])+"[/say]")
 			
 		if(npcVariation == "mean"):
 			saynn("[say=npc]"+RNG.pick([
-				"Easy, just like you are.",
-				"Voice controlled fucktoy. I like it.",
-				"Don't get used to it.",
-				"Did you even actually cum? Whatever, I don't care."
+				"Легко, прямо как сейчас.",
+				"Секс-игрушка с голосовым управлением. Мне нравится.",
+				"Не привыкай к этому.",
+				"Ты вообще кончил? Да хрен с ним, мне плевать."
 			])+"[/say]")
 			
 		if(npcVariation == "kind"):
 			saynn("[say=npc]"+RNG.pick([
-				"That's it, ride it out~",
-				"Good {pc.boy}, {pc.name}! Very good!",
-				"You look like you enjoyed that~",
-				"Aw, a dry orgasm? That's okay, you'll get it right next time, I'm sure."
+				"Вот так, прочувствуй это до конца~",
+				"Молодец, {pc.boy}, {pc.name}! Очень хорошо!",
+				"Похоже, тебе понравилось~",
+				"Оу, сухой оргазм? Ничего страшного, в следующий раз точно получится, я уверена."
 			])+"[/say]")
 			
 		if(npcVariation == "subby"):
 			saynn("[say=npc]"+RNG.pick([
-				"I've got to learn how to do that.",
-				"Aw, I'm jealous~",
-				"I bet that feels pretty good...",
-				"Can't manage it either? You'll get there, I'm sure."
+				"Мне нужно научиться делать так же.",
+				"Ой, завидую~",
+				"Спорим, это было очень приятно...",
+				"Тоже не получается? Ничего, со временем научишься, я уверена."
 			])+"[/say]")
 			
 		saynn("{npc.Name} отпускает твои запястья. Твои руки дрожа поднимаются обратно над головой, и ты...")
@@ -631,35 +631,35 @@ func _run():
 		
 	if(state == "resist"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
-		saynn("[say=pc]"+RNG.pick(["St-stop...", "W-wait...", "I don't...", "I can't-", "No!", "Please, I..."])+"[/say]")
+		saynn("[say=pc]"+RNG.pick(["St-stop...", "W-wait...", "Я не...", "Я не могу—", "Нет!", "Please, I..."])+"[/say]")
 		saynn("Тебя пробирает дрожь — ты почти на грани того, чтобы разрушить чары.")
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			saynn("[say=npc]"+RNG.pick([
-				"What?", 
-				"What is it?", 
-				"No, don't be like that..."
+				"Что?", 
+				"В чем дело?", 
+				"Ну же, не будь такой..."
 				])+"[/say]")
 				
 		if(npcVariation == "mean"):
 			saynn("[say=npc]"+RNG.pick([
-				"Know your place! Last chance.", 
-				"How dare you.", 
-				"Don't do something I'll make you regret."
+				"Знай своё место! Последний шанс.", 
+				"Как ты смеешь.", 
+				"Не делай того, о чем потом пожалеешь."
 				])+"[/say]")
 			
 		if(npcVariation == "kind"):
 			saynn("[say=npc]"+RNG.pick([
-				"Hm? Is there a problem?", 
-				"Do you want to stop?", 
-				"Did I push too hard?"
+				"Хм? Возникли проблемы?", 
+				"Хочешь остановиться?", 
+				"Я не слишком сильно надавила?"
 				])+"[/say]")
 			
 		if(npcVariation == "subby"):
 			saynn("[say=npc]"+RNG.pick([
-				"Aw, are we not playing anymore?", 
-				"No, don't stop yet...", 
-				"Let's have just a little more fun?"
+				"Оу, мы больше не играем?", 
+				"Нет, не останавливайся...", 
+				"Давай еще немного повеселимся?"
 				])+"[/say]")
 			
 		saynn("Ты прервал(а) текущий план действий {npc.nameS}. Раз уж ты это сделал(а), тебе стоит просто...")

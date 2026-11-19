@@ -5,8 +5,8 @@ func _init():
 	
 	# create local server & files
 	var locals = NetworkedComputerServer.new("",["connect"])
-	addFileToServer(locals,newCompFile("readme.txt","Useful shit:\n1[cuss]27.0.69[/cuss] - Server with some porn, I know you would find it eventually, you degenerates\n127.0.10 - bluespace transmitter door, don't touch it unless you were told to\n\nDon't bug me about how to connect to these, RTFM. Or type 'help connect' if you never worked with a terminal before.","",true,1))
-	addFileToServer(locals,newCompFile("forum.html","...**[corrupt]corrupted data[/corrupt]**...\n\n<message>Why the fuck are we using such outdated hardware?</message>\n<message>If it works, don't fix it. It's a piece of shit but you're not gonna play doom on it, this machine supports telnet and that's all we need.</message>\n<message>The fuck is telnet?</message>\n<message>It's what we used before bluespace got discovered. Just read the fucking readme already.</message>\n\n...**[corrupt]more corrupted data[/corrupt]**...","",false,2))
+	addFileToServer(locals,newCompFile("readme.txt","Полезное дерьмо:\n1[cuss]27.0.69[/cuss] - Сервер с порнухой, знаю, вы всё равно рано или поздно его найдёте, дегенераты\n127.0.10 - дверь передатчика блюспейса, не трогай, если тебе не велели\n\nИ не ебите мне мозг вопросами о том, как к ним подключиться, читайте мануалы, блять. Или введите 'help connect', если вы до этого ни разу с терминалом не работали.","",true,1))
+	addFileToServer(locals,newCompFile("forum.html","...**[corrupt]повреждённые данные[/corrupt]**...\n\n<message>Какого хуя мы юзаем такое устаревшее железо?</message>\n<message>Работает — не трогай. Это кусок говна, но ты же не собираешься запускать на нём Doom, эта машина поддерживает telnet, и этого нам за глаза.</message>\n<message>Что ещё за telnet?</message>\n<message>То, чем мы пользовались ещё до открытия блюспейса. Просто прочитай уже этот ебаный readme.</message>\n\n...**[corrupt]ещё больше повреждённых данных[/corrupt]**...","",false,2))
 	
 	# door server
 	var doors = NetworkedComputerServer.new("127.0.10",["mode","disconnect","help"],"Door status: LOCKED\nLast maintenance: [cuss]9999999[/cuss] days ago",false)

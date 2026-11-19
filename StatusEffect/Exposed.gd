@@ -14,10 +14,10 @@ func processTime(_minutesPassed: int):
 	pass
 
 func getEffectName():
-	return "Exposed"
+	return "Обнаженность"
 
 func getEffectDesc():
-	return "Your exposure is very high, someone might take advantage of you!\n\nYour exposure is "+str(Util.roundF(character.getExposure()*100.0))+"%"
+	return "Твоя степень обнаженности очень высока, кто-нибудь может этим воспользоваться!\n\nТвоя степень обнаженности: "+str(Util.roundF(character.getExposure()*100.0))+"%"
 
 func getEffectImage():
 	return "res://Images/StatusEffects/mask.png"
