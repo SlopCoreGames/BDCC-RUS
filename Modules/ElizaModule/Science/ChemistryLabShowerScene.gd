@@ -10,24 +10,24 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Showering, "body", {pc="pc", bodyState={naked=true}})
-		saynn("You undress and step into the smart shower. Clean water begins washing your body.")
+		saynn("Вы раздеваетесь и заходите в умный душ. Чистая вода начинает омывать ваше тело.")
 
-		saynn("The water here is so much more pleasant than in the cellblock.")
+		saynn("Вода здесь куда приятнее, чем в блоке камер.")
 
-		saynn("Any mess that you had on you gets collected and filtered.")
+		saynn("Любая грязь, что была на вас, собирается и фильтруется.")
 
-		addButton("Enough", "Enough showering", "endthescene")
+		addButton("Хватит", "Хватит мыться", "endthescene")
 		if (GM.main.SCI.hasUpgrade("shower2")):
-			addButton("Douche", "Collect the fluids from inside your holes as well", "collect_inside")
+			addButton("Спринцевание", "Собрать жидкости изнутри ваших дырочек тоже", "collect_inside")
 		else:
-			addDisabledButton("Douche", "You don't have the required upgrade installed")
+			addDisabledButton("Спринцевание", "У вас не установлен необходимый апгрейд")
 	if(state == "collect_inside"):
 		playAnimation(StageScene.Showering, "rub", {pc="pc", bodyState={naked=true, hard=true}})
-		saynn("You use the special shower douche that allows you to wash inside your holes as well!")
+		saynn("Вы используете специальный душ-спринцовку, который позволяет промывать и ваши дырочки тоже!")
 
-		saynn("All the lewd fluids that you had inside you got collected and processed.")
+		saynn("Все похотливые жидкости, что были внутри вас, были собраны и обработаны.")
 
-		addButton("Enough", "Enough showering", "endthescene")
+		addButton("Хватит", "Хватит мыться", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

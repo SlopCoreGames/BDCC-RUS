@@ -7,99 +7,99 @@ func _run():
 	if(state == ""):
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "stand", {npc="vion"})
-		saynn("You pull out the foxy's datapad and tap through the diagnostic tools he'd preinstalled.")
-		saynn("[say=vion]What are you up to?[/say]")
-		saynn("[say=pc]That's a surprise~[/say]")
-		saynn("Alex said he'd manage in an hour without these tools. Surely you can match that time with them?")
+		saynn("Ты выхватываешь у лисички датапад и быстро пролистываешь предустановленные им диагностические инструменты.")
+		saynn("[say=vion]Ты что задумал?[/say]")
+		saynn("[say=pc]А вот это сюрприз~[/say]")
+		saynn("Алекс говорил, что справится и без этих инструментов всего за час. Уверена, с ними ты и вовсе уложишься в это время?")
 
-		addButton("Hack", "How hard could it be?", "hack_cage")
+		addButton("Взлом", "Да насколько это может быть сложно?", "hack_cage")
 		
 	if(state == "hack_fail"):
-		saynn("With a frustrated snort, you decide to abandon your efforts for now.")
-		saynn("[say=vion]Everything okay?[/say]")
-		saynn("[say=pc]Yeah, no, I'm fine. It's just a bit harder than I expected.[/say]")
-		saynn("[say=vion]Well, whatever you're up to I'm sure you'll figure it out.[/say]")
+		saynn("Раздраженно фыркнув, ты решаешь пока оставить попытки.")
+		saynn("[say=vion]Всё в порядке?[/say]")
+		saynn("[say=pc]Да нет, всё норм. Просто оказалось чуть сложнее, чем я думал.[/say]")
+		saynn("[say=vion]Ну, что бы ты там ни задумал, уверена — ты со всем разберешься.[/say]")
 		
-		addButton("Leave", "You'll get it right next time.", "hack_fail_after")
+		addButton("Уйти", "В следующий раз получится лучше.", "hack_fail_after")
 
 	if(state == "hack_succeed"):
-		saynn("Well that wasn't too bad. You click the confirm button with a flourish.")
-		saynn("*click*")
-		saynn("Both your and Vion's eyes are magnetized to his crotch. Its only a hearbeat later that a tent starts to form.")
-		saynn("[say=vion]Did you just-[/say]")
-		saynn("[say=pc]Yup. You can thank me later.[/say]")
-		saynn("[say=vion]...I can thank you [i]now[/i].[/say]")
-		saynn("The almost animalistic fierceness of that statement catches you somewhat off guard.")
-		saynn("[say=vion]Unless you aren't interested, in which case I'd suggest you vacate this cell for the next few hours.[/say]")
+		saynn("Ну, было не так уж плохо. Ты с пафосом кликаешь по кнопке подтверждения.")
+		saynn("*клик*")
+		saynn("И твои глаза, и глаза Виона словно примагнитились к его паху. Всего через мгновение там начинает проступать щупальце.")
+		saynn("[say=vion]Ты это сейчас что, реально...[/say]")
+		saynn("[say=pc]Ага. Поблагодаришь меня позже.[/say]")
+		saynn("[say=vion]...Я могу поблагодарить тебя [i]прямо сейчас[/i].[/say]")
+		saynn("Почти животная ярость в его голосе слегка застает тебя врасплох.")
+		saynn("[say=vion]Если только ты не против, в таком случае советую тебе покинуть камеру на ближайшие пару часов.[/say]")
 
-		addButton("Bail", "This seems like your exit cue.", "bail")
-		addButton("Ride it out", "What, and miss out on the price?", "ride_it_out")
+		addButton("Вылезти", "Похоже, это твой сигнал к выходу.", "bail")
+		addButton("Продержаться до конца", "Как это — упустить такую выгоду?", "ride_it_out")
 
 	if(state == "bail"):
-		saynn("[say=pc]I'll leave you to it. Have fun![/say]")
-		saynn("[say=vion]Oh, I will.[/say]")
+		saynn("[say=pc]Ну, оставляю вас. Веселитесь![/say]")
+		saynn("[say=vion]О, еще как![/say]")
 
-		saynn("Making sure to scoop up the cage first, you let yourself out, Vion hot on your heels. He leans out and flags down a passing lynx.")
-		saynn("[say=vion]Hey! You up for a fuck?[/say]")
-		saynn("The lynx barely has time to voice an affirmative before Vion drags him inside by his collar. You decide to give the two some privacy and make a hasty exit, though not fast enough to hear some quite excited noises behind you as you go.")
+		saynn("Сначала ты не забываешь прихватить клетку, а затем выбираешься наружу, а Вион буквально дышит тебе в спину. Он наклоняется и машет пролетающему мимо рыси.")
+		saynn("[say=vion]Эй! Не хочешь трахнуться?[/say]")
+		saynn("Рысь едва успевает подтвердить свое согласие, как Вион хватает его за шиворот и затаскивает внутрь. Ты решаешь дать им немного уединения и поспешно ретируешься, хотя и не успеваешь уйти достаточно тихо, чтобы не услышать за спиной весьма возбужденные звуки.")
 
-		addButton("Leave", "", "endthescene")
+		addButton("Уйти", "", "endthescene")
 
 	if(state == "ride_it_out"):
-		saynn("[say=pc]No, I'm up for it. So should we-[/say]")
-		saynn("You're interrupted by Vion roughly grabbing you by the collar and pulling you close. Noses nearly touching, he stares you down.")
-		saynn("[say=vion][b]Sleep.[/b][/say]")
-		saynn("The authority in the command is irrefutable. Your thoughts shatter into a million pieces, your knees go weak, and you [i]drop[/i].")
-		saynn("[say=vion]And [b]kneel.[/b][/say]")
+		saynn("[say=pc]Нет, я только «за». Так мы должны...[/say]")
+		saynn("Тебя прерывает Вион: он грубо хватает тебя за воротник и притягивает к себе. Почти соприкасаясь носами, он пристально смотрит тебе прямо в глаза.")
+		saynn("[say=vion][b]Сон.[/b][/say]")
+		saynn("Власть приказа неоспорима. Твои мысли разлетаются на миллион осколков, колени слабеют, и ты [i]падаешь[/i].")
+		saynn("[say=vion]И [b]преклоняешь колени.[/b][/say]")
 		
-		addButton("Kneel", "", "sex_1")
+		addButton("Встать на колени", "", "sex_1")
 
 	if(state == "sex_1"):
 		playAnimation(StageScene.SexOral, "fast", {npc="pc", pc="vion", bodyState={exposedCrotch=true, hard=true}})
-		saynn("You sink to your knees before him, silenced and obedient, your vision a blur.")
-		saynn("You are subdued, lost in a hazy fog, only distantly aware of what's happening.")
+		saynn("Ты опускаешься перед ним на колени, безмолвная и послушная, а в глазах всё плывет.")
+		saynn("Ты подавлена, затерянная в туманной дымке, лишь отдаленно осознавая происходящее.")
 		
-		addButton("Submit", "", "sex_2")
+		addButton("Подчиниться", "", "sex_2")
 
 	if(state == "sex_2"):
 		playAnimation(StageScene.SexStanding, "fast", {npc="pc", pc="vion", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})	
-		saynn("At some point your clothes come off.")
-		saynn("Vion does his best to make up for lost time, your body serving as the tool of his relief. Your mind is only along for the ride.")
+		saynn("В какой-то момент с тебя срывают одежду.")
+		saynn("Вион изо всех сил старается наверстать упущенное время, используя твое тело как инструмент для своего облегчения. Твой разум лишь пассивно наблюдает за процессом.")
 
-		addButton("Obey", "", "sex_3")
+		addButton("Повиноваться", "", "sex_3")
 		
 	if(state == "sex_3"):
 		playAnimation(StageScene.SexMissionary, "sex", {npc="pc", pc="vion", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Your body experiences pure, distilled pleasure and bliss.")
-		saynn("You mind drifts in a hazy, mindless, submissive trance, your thoughts silent, your will subdued.")
+		saynn("Твое тело испытывает чистое, концентрированное наслаждение и блаженство.")
+		saynn("Твой разум дрейфует в туманном, бездумном, покорном трансе; мысли затихли, а воля подавлена.")
 		
-		addButton("Serve", "", "sex_4")
+		addButton("Служить", "", "sex_4")
 
 	if(state == "sex_4"):
 		playAnimation(StageScene.SexAllFours, "fastflop", {npc="pc", pc="vion", npcCum=true, pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Details are lost to time, your focus too dedicated to pleasure to remember anything else.")
-		saynn("The one thought you do manage to think is... [i]Totally[/i] worth it.")	
+		saynn("Детали стерлись из памяти — ты слишком поглощен удовольствием, чтобы помнить о чем-то еще.")
+		saynn("Единственная мысль, которую тебе удается удержать в голове... [i]оно[/i] того стоило.")	
 		
 		addButton("...", "", "sex_after")
 
 	if(state == "sex_after"):
 		playAnimation(StageScene.Sleeping, "sleep", {npc="vion", pc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("A few hours later...")
+		saynn("Несколько часов спустя...")
 		
-		saynn("[say=vion]Hey. Hey {pc.name}.[/say]")
-		saynn("[say=pc]Mmh?[/say]")
-		saynn("[say=vion]That wasn't too intense, I hope? Are you still with me?[/say]")
-		saynn("You manage to slur out a response.")
-		saynn("[say=pc]Nnh. I'm... I'm fi-ine.[/say]")
-		saynn("[say=vion]Well. That's good. Hope you don't mind, but I'm going to nap for a while.[/say]")
-		saynn("[say=pc]Nnnah tha's... all good.[/say]")
+		saynn("[say=vion]Эй. Эй, {pc.name}.[/say]")
+		saynn("[say=pc]Ммм?[/say]")
+		saynn("[say=vion]Надеюсь, не слишком сильно тебя накрыло? Ты еще здесь?[/say]")
+		saynn("Тебе удается что-то невнятно пробормотать в ответ.")
+		saynn("[say=pc]Ннх. Я... я в нор-р-ме.[/say]")
+		saynn("[say=vion]Ну, это хорошо. Надеюсь, ты не против, если я немного посплю?[/say]")
+		saynn("[say=pc]Ннн-а, всё... путём.[/say]")
 		
-		addButton("Get up", "", "get_up")
+		addButton("Встать", "", "get_up")
 		
 	if(state == "get_up"):
 		playAnimation(StageScene.Solo, "stand", {pc="pc", bodyState={naked=true}})
-		saynn("You slowly untangle yourself from Vion's arms. As your thoughts slowly surface, you remember to collect Vion's cage. He's certainly not going to miss it. It's only after you stumble out of his cell that you consider that you should probably dress yourself.")
-		addButton("Leave", "", "endthescene")
+		saynn("Ты медленно высвобождаешься из объятий Виона. По мере того как сознание постепенно возвращается, ты вспоминаешь, что нужно забрать его клетку. Он её точно не заметит. И лишь когда ты, спотыкаясь, выходишь из его камеры, до тебя доходит, что тебе, пожалуй, стоит одеться.")
+		addButton("Уйти", "", "endthescene")
 
 func _react_scene_end(_tag, _result):
 	if(_tag == "computerhack"):

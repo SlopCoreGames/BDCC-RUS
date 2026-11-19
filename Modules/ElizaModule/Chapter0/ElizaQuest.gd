@@ -4,7 +4,7 @@ func _init():
 	id = "ElizaQuest"
 
 func getVisibleName():
-	return "Queen of Alchemy"
+	return "Королева Алхимии"
 
 func getProgress():
 	var result = []

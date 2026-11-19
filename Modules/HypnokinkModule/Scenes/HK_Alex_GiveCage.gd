@@ -7,20 +7,20 @@ func _run():
 	if(state == ""):
 		addCharacter("alexrynard")
 		
-		saynn("[say=pc]Okay, I'm finished with this. Thanks.[/say]")
-		saynn("You hand Alex the datapad and the cage.")
-		saynn("[say=alexrynard]Good. Come, take a look.[/say]")
-		saynn("Alex fiddles with the cage using some kind of powered tool resembling a screwdriver. The cover pops off, showing off the innards of the device.")
-		saynn("[say=alexrynard]Let's see what's useful in here. The electromagnet's pretty compact, and the battery's not bad either, but...[/say]")
-		saynn("He points out a green circular component.")
-		saynn("[say=alexrynard]This is the star of the show. It's a micro bio-reactor. Generates electricity from body heat, enough to keep the device charged indefinitely despite the inefficient always-on design. You can always count on DeLoxe when it comes to solving engineering problems with excessive amounts of money.[/say]")
-		saynn("He taps the component a few times with a desoldering tool, then carefully pulls it out with a pair of pliers.")
-		saynn("[say=alexrynard]Yeah, I can think of some uses for this. In the meantime, here.[/say]")
-		saynn("He hands you some credits.")
-		saynn("[say=pc]Thanks, but why? I figured we were square already.[/say]")
-		saynn("[say=alexrynard]Consider it an encouragement to return my stuff when you borrow it.[/say]")
+		saynn("[say=pc]Так, с этим закончил. Спасибо.[/say]")
+		saynn("Вы протягиваете Алексу датапад и клетку.")
+		saynn("[say=alexrynard]Хорошо. Иди сюда, взгляни.[/say]")
+		saynn("Алекс возится с клеткой, используя какой-то электроинструмент, похожий на отвертку. Крышка отщелкивается, обнажая внутренности устройства.")
+		saynn("[say=alexrynard]Посмотрим, что тут полезного. Электромагнит довольно компактный, и батарея тоже ничего, но...[/say]")
+		saynn("Он указывает на зеленый круглый компонент.")
+		saynn("[say=alexrynard]А вот это — звезда шоу. Микробиореактор. Генерирует электричество из тепла тела — этого достаточно, чтобы устройство работало бесконечно, несмотря на неэффективную конструкцию с постоянным включением. На «ДеЛокс» всегда можно положиться, когда дело доходит до решения инженерных проблем с помощью избыточного количества денег.[/say]")
+		saynn("Он несколько раз постукивает по компоненту выпаивателем, а затем осторожно вытягивает его плоскогубцами.")
+		saynn("[say=alexrynard]Да, я могу придумать, как это использовать. А пока — вот, держи.[/say]")
+		saynn("Он протягивает вам несколько кредитов.")
+		saynn("[say=pc]Спасибо, но зачем? Я думала, мы уже в расчете.[/say]")
+		saynn("[say=alexrynard]Считай это стимулом возвращать мои вещи вовремя, когда ты их одалживаешь.[/say]")
 		
-		addButton("Leave", "", "endthescene")
+		addButton("Уйти", "", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

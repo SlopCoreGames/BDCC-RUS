@@ -9,29 +9,29 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="rebel", npcAction="kneel"})
 
 	if(state == ""):
-		saynn("Rebel grunts and drops down to her knee while panting heavily. Her weight is now working against her, pulling her body down.")
+		saynn("Рэбел кряхтит и тяжело опускается на одно колено, часто дыша. Теперь собственный вес тянет её тело к земле.")
 
-		saynn("[say=rebel]Fuck. You fight well, I will give you that one.[/say]")
+		saynn("[say=rebel]Блядь. Ты хорошо дерешься, тут не поспоришь.[/say]")
 
-		saynn("The crowd goes wild and yells at you to take advantage of Rebel’s situation. Seems like the audience doesn’t really have loyalty to anyone, they just want a show. The mare smirks and rubs her nose.")
+		saynn("Толпа сходит с ума, выкрикивая тебе, чтобы ты воспользовалась положением Рэбел. Похоже, у зрителей нет преданности ни к кому конкретному — им просто нужно шоу. Кобыла ухмыляется и потирает нос.")
 
-		saynn("[say=rebel]So, what is it gonna be, sweetheart?[/say]")
+		saynn("[say=rebel]Ну так что ты выберешь, дорогуша?[/say]")
 
-		addButton("Just leave", "She fought well, no need to humiliate her", "just_leave")
-		addButton("Fisting", "She wanted to fist you. Might as well repay her the favor", "fisting")
+		addButton("Просто уйти", "Она хорошо сражалась, нет нужды её унижать", "just_leave")
+		addButton("Фингинг (кулаком)", "Она хотела засунуть тебе кулак. Что ж, стоит оказать ей ответную любезность", "fisting")
 		GM.ES.triggerRun("ArenaFighterPCWon", ["rebel"])
 
 
 	if(state == "just_leave"):
-		saynn("[say=pc]I won’t humiliate you. But I’m curious. Why are you doing that?[/say]")
+		saynn("[say=pc]Я не буду тебя унижать. Но мне любопытно. Зачем ты это делаешь?[/say]")
 
-		saynn("She chuckles and looks at you.")
+		saynn("Она посмеивается, глядя на тебя.")
 
-		saynn("[say=rebel]Why do I fight? Our whole life is a struggle, sweetie. I’m not here to suck dick for experience, I wanna take things into my own hands.[/say]")
+		saynn("[say=rebel]Почему я дерусь? Вся наша жизнь — это борьба, милочка. Я здесь не для того, чтобы сосать ху ради опыта, я хочу брать всё в свои руки.[/say]")
 
-		saynn("The way she worded it was quite strange to you. Something to think about. The crowd starts to boo as you climb over the fence but you don’t care, you got what you wanted.")
+		saynn("То, как она это сформулировала, показалось тебе довольно странным. Есть о чем поразмыслить. Толпа начинает освистывать тебя, когда ты перелезаешь через забор, но тебе плевать — ты получил то, что хотел.")
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 	if(state == "fisting"):
 		playAnimation(StageScene.SexFisting, "sex", {
@@ -39,48 +39,48 @@ func _run():
 			npcBodyState={exposedCrotch=true,}
 		})
 		
-		saynn("The crowd cheers louder as you put on your mean eyes and step towards the defeated opponent. Rebel’s face expression shows acceptance, she tries to cover herself but you take a running start and shove her down to the floor.")
+		saynn("Толпа ликует еще громче, когда ты принимаешь суровый вид и шагаешь к поверженному противнику. На лице Ребел читается смирение; она пытается прикрыться, но ты делаешь разбег и с силой вжимаешь её в пол.")
 
-		saynn("[say=rebel]Ugh. Gonna be a rough ride, huh?[/say]")
+		saynn("[say=rebel]Ух. Похоже, поездочка будет жесткой, а?[/say]")
 
-		saynn("She is huge which is probably why she has a sporty top and shorts instead of a normal uniform. Your hands reach for her top and pull it up, exposing her giant tits with bright red nipples each one having the size of a small apple. Then your hands slide down her powerful six-pack and get a hold of her short’s ribbon. With no resistance from Rebel, you tug them down, exposing her red juicy pussy lips, just about what you would expect from a mare. She even spreads her legs for you, offering you a great view of her slit and a massive anal ring.")
+		saynn("Она огромная, и, вероятно, именно поэтому вместо обычной формы на ней спортивный топ и шорты. Твои руки тянутся к её топу и задирают его вверх, обнажая гигантские сиськи с ярко-красными сосками, каждый размером с небольшое яблоко. Затем твои ладони скользят вниз по её мощному прессу с кубиками и хватаются за завязки шорт. Ребел не сопротивляется, и ты стягиваешь их вниз, обнажая её сочные красные половые губы — точь-в-точь как у кобылы. Она даже раздвигает ноги, открывая тебе великолепный вид на её щель и массивное анальное кольцо.")
 
-		saynn("[say=pc]Yeah, I need to teach you a lesson.[/say]")
+		saynn("[say=pc]Да, мне нужно преподать тебе урок.[/say]")
 
-		saynn("[say=rebel]Oh, I’m excited already, sweetie.[/say]")
+		saynn("[say=rebel]О, я уже в предвкушении, милашка.[/say]")
 
-		saynn("Well she shouldn’t be, you take a hold of her inmate collar and push it into the floor before unceremoniously penetrating her pussy with two of your digits and already pushing them in and out, creating pleasurable friction. The mare parts her lips and starts producing quiet moans for you, she is so warm inside. Her inner walls quickly become wet with her juices, the more you finger her the more eager her eyes look. Then you add another finger. And another. Now the entire palm is sliding in and out, except for the thumb. And the girl is taking it very well, she moans and starts to knead her own milkers in clear view of the whole crowd.")
+		saynn("Ну, ей и не стоит, ведь ты хватаешь её за тюремный ошейник и прижимаешь к полу, прежде чем бесцеремонно вонзить два пальца в её киску, начиная ритмично двигать ими туда-сюда, создавая приятное трение. Кобылка приоткрывает губы и начинает тихо стонать для тебя — внутри у неё так жарко. Её внутренние стенки быстро становятся влажными от соков; чем сильнее ты её пальцуешь, тем более жадными становятся её глаза. Затем ты добавляешь ещё один палец. И ещё один. Теперь уже вся ладонь, кроме большого пальца, скользит туда-сюда. И девчонка принимает это на ура: она стонет и начинает разминать собственные сиськи на виду у всей толпы.")
 
-		saynn("As she gets close to her orgasm, you decide to steal it and pull out your palm, leaving Rebel’s pussy to pulsate and leak juices but without the climax. The mare quivers and lets out desperate moans while her body slowly cools down.")
+		saynn("Когда она оказывается на грани оргазма, ты решаешь украсть его у неё и резко выдергиваешь ладонь, оставляя киску Ребел пульсировать и сочиться соками, но без самого пика. Кобылка дрожит и издаёт отчаянные стоны, пока её тело медленно остывает.")
 
-		saynn("[say=rebel]Ah.. mhh-h.. You made your point.[/say]")
+		saynn("[say=rebel]Ах.. ммм-х.. Ты доказал свою правоту.[/say]")
 
-		saynn("[say=pc]Not yet.[/sat]")
+		saynn("[say=pc]Еще нет.[/sat]")
 
-		saynn("You move your wet palm back to her pussy but this time you turn your hand into a fist and begin trying to shove it inside. Rebel quickly realizes what you are doing and braces, she spreads her legs more for you and produces more moans as her sensitive petals are forced to stretch to accomodate an entire fist. With the help of her juices, your fist eventually slips inside with a satisfying ‘plop’.")
+		saynn("Ты возвращаешь влажную ладонь к её киске, но на этот раз сжимаешь руку в кулак и пытаешься впихнуть его внутрь. Ребел быстро понимает, что ты задумал, и напрягается; она раздвигает ноги ещё шире, издавая всё более громкие стоны, пока её чувствительные лепестки вынуждены растягиваться, чтобы принять целый кулак. Благодаря её сокам, твой кулак в конце концов входит внутрь с сочным «чпок».")
 
-		saynn("[say=rebel]So filling!..[/say]")
+		saynn("[say=rebel]Так наполняет!..[/say]")
 
-		saynn("The mare seems to be really enjoying herself, she even starts shifting her hips back and forth, causing your fist to explore her deeper. You pick up her pace and begin thrusting your hand deeper inside.")
+		saynn("Кобылка, кажется, в полном восторге; она даже начинает двигать бедрами вперед-назад, заставляя твой кулак проникать всё глубже. Ты ускоряешься и начинаешь вбивать руку в неё всё сильнее.")
 
-		saynn("[say=pc]You act like such a slut.[/say]")
+		saynn("[say=pc]Ты ведешь себя как настоящая шлюха.[/say]")
 
-		saynn("[say=rebel]Why would I deny myself this pleasure.. ah..[/say]")
+		saynn("[say=rebel]Зачем же лишать себя такого удовольствия... ах...[/say]")
 
-		saynn("Your whole hand now fits inside her, wrist and everything. And you don’t stop there, you fist-fuck her fat pussy hard while trying to shove move of your arm each time. Eventually you hit the natural blockage inside the mare, her cervix. You begin pounding at it, causing the girl to start arching her back and moan louder. You both are panting heavily, Rebel’s slick inner walls close in around your arm but the juices make it easy to keep thrusting inside, there is a visible outline of your arm on her lower belly that shows how deep you are.")
+		saynn("Теперь твоя рука входит в неё целиком, вместе с запястьем. И ты не останавливаешься: ты жестко трахаешь её жирную киску кулаком, каждый раз пытаясь протолкнуть руку еще глубже. В конце концов ты натыкаешься на естественное препятствие внутри кобылки — её шейку матки. Ты начинаешь долбить прямо в неё, отчего девушка выгибает спину и стонет всё громче. Вы оба тяжело дышите; скользкие внутренние стенки повстанки сжимают твою руку, но благодаря обильной смазке вбиваться внутрь легко, а на её низ живота проступает отчетливый контур твоей руки, показывая, насколько глубоко ты залез.")
 
-		saynn("[say=rebel]Gonna c-cu..m..[/say]")
+		saynn("[say=rebel]Сейчас... с-с кон...чей...[/say]")
 
-		saynn("And indeed, her body soon begins to shiver, her legs shake and try to kick while her pussy pulsates and suddenly starts squirting all over your arm and the floor. Her orgasm is so powerful you are nearly thrown back a few meters, it’s like trying to tame an angry bull. But you keep her pussy stuffed even while she is quivering so much.")
+		saynn("И действительно, вскоре её тело начинает дрожать, ноги трясутся в попытках лягнуть, а киска пульсирует и внезапно начинает заливать твою руку и пол фонтаном смазки. Её оргазм настолько мощный, что тебя едва не отбрасывает на несколько метров — будто пытаешься укротить разъяренного быка. Но ты продолжаешь затыкать ей киску кулаком, даже когда её колотит крупная дрожь.")
 
-		saynn("When the orgasmic waves end, you both are left panting and messy.")
+		saynn("Когда волны оргазма утихают, вы оба остаетесь тяжело дышащими и перепачканными в соках.")
 
-		saynn("[say=rebel]H-huh.. Another round?[/say]")
+		saynn("[say=rebel]Х-ха... Еще раунд?[/say]")
 
-		saynn("Wow, this mare is really something.")
+		saynn("Вау, а эта кобылка — та еще штучка.")
 
-		addButton("Leave", "Nah, this is enough", "leave")
-		addButton("Double trouble", "The mare has a second fuckable hole. You wonder how well she would take your fists in both at the same time", "double_trouble")
+		addButton("Уйти", "Не, на сегодня хватит", "leave")
+		addButton("Двойная порция проблем", "У этой кобылы есть еще одно отверстие, готовое к траху. Ты гадаешь, насколько хорошо она примет твои кулаки в оба сразу", "double_trouble")
 
 
 	if(state == "leave"):
@@ -89,16 +89,16 @@ func _run():
 			npcBodyState={exposedCrotch=true,}
 		})
 		
-		saynn("You gently remove your fist out of her vagina and rub it dry against her thighs")
+		saynn("Ты осторожно вынимаешь кулак из её вагины и вытираешь его о её бедра")
 
-		saynn("[say=pc]That was enough to humiliate you.[/say]")
+		saynn("[say=pc]Этого было достаточно, чтобы унизить тебя.[/say]")
 
-		saynn("[say=rebel]Oh, baby, there was nothing humiliating about it. Losing to you was worth every credit, I loved it.[/say]")
+		saynn("[say=rebel]О, детка, в этом не было ничего унизительного. Проиграть тебе стоило каждого кредита, мне это чертовски понравилось.[/say]")
 
-		saynn("Of course she did, her pussy was made to be fucked by giant horse cocks. You chuckle and leave her alone in all the mess she created.")
+		saynn("Конечно, ей понравилось, ведь её киска была создана для того, чтобы в неё входили гигантские лошадиные члены. Ты усмехаешься и оставляешь её одну во всей той грязи, которую она устроила.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 	if(state == "double_trouble"):
 		playAnimation(StageScene.SexFisting, "fast", {
@@ -106,43 +106,43 @@ func _run():
 			npcBodyState={exposedCrotch=true,}
 		})
 		
-		saynn("[say=pc]You want more, huh? I can get you more. Don’t cry about it later.[/say]")
+		saynn("[say=pc]Хочешь еще, а? Я могу устроить тебе еще. Только не ной потом.[/say]")
 
-		saynn("You forcefully turn the mare around, making her lay on her belly with her buff ass sticking out. She seems intrigued more than anything but when you spread her buttcheeks open she gasps.")
+		saynn("Ты силой разворачиваешь кобылу, заставляя её лечь на живот так, чтобы её накачанная задница торчала вверх. Она кажется скорее заинтригованной, чем чем-либо еще, но когда ты раздвигаешь её ягодицы, она ахает.")
 
-		saynn("[say=rebel]Are you gonna?..[/say]")
+		saynn("[say=rebel]Ты собираешься?..[/say]")
 
-		saynn("One of your fists is still wet with Rebel’s arousal, you move it to her round puffy tailhole and begin trying to shove it in. The sensations instantly make her struggle and clench her butt.")
+		saynn("Один твой кулак всё еще влажный от возбуждения Ребел, ты подносишь его к её круглому, пухлому анусу и начинаешь пытаться впихнуть его внутрь. От этих ощущений она тут же начинает ерзать и сжимать булки.")
 
-		saynn("[say=rebel]That’s too much, sweetie![/say]")
+		saynn("[say=rebel]Слишком много, милый![/say]")
 
-		saynn("You don’t listen to her, instead you apply more and more pressure on her star. Rebel’s legs shake but eventually her pucker starts to give in, allowing the knuckles in. You take some of her arousal onto your other hand and start rubbing it around your fist, using it as lube. Then you begin forcefully pushing your arm forward. The mare produces some passionate moans, her stretched pussy squirts again before you finally manage to stretch her anal ring enough to slide the whole hand in, causing the girl to start squirming uncontrollably.")
+		saynn("Ты не слушаешь её, а вместо этого всё сильнее давишь на её сфинктер. Ноги Ребел дрожат, но в конце концов её анус начинает поддаваться, пропуская костяшки пальцев внутрь. Ты берешь часть её возбуждения другой рукой и начинаешь размазывать её вокруг кулака, используя как смазку. Затем ты начинаешь с силой проталкивать руку вперед. Кобыла издает страстные стоны, её растянутая киска снова брызжет смазкой, прежде чем тебе наконец удается растянуть её анальное кольцо достаточно сильно, чтобы просунуть всю кисть целиком, отчего девушка начинает неистово извиваться.")
 
-		saynn("[say=rebel]Ah-h.. ah… fuck.. My ass..[/say]")
+		saynn("[say=rebel]Ах-х.. ах… блядь.. Моя задница..[/say]")
 
-		saynn("You start sliding your fist in and out, leaving her tailhole gaping before stuffing it full again. Then you start properly fucking it, thrusting deeper each time, using her own juices to make the soft inner walls nice and slick. Surprisingly, it goes way easier, you already reach the same depth as with her pussy but you feel like there is plenty more depth to her butt. Rebel is whining at first but gradually her discomfort goes away, replaced with a new kind of pleasure.")
+		saynn("Ты начинаешь двигать кулаком туда-сюда, оставляя её дырочку широко раскрытой, а затем снова забиваешь её до отказа. Затем ты начинаешь трахать её по-настоящему, с каждым разом проталкиваясь всё глубже, используя её собственные соки, чтобы сделать мягкие внутренние стенки приятными и скользкими. Удивительно, но всё идет гораздо легче: ты уже достигаешь той же глубины, что и в её киске, но чувствуешь, что в её заднице есть еще много места. Сначала Ребел скулит, но постепенно дискомфорт уходит, сменяясь новым видом наслаждения.")
 
-		saynn("[say=pc]That’s right, I’m fisting your ass. And you seem to enjoy it, what a butt whore.[/say]")
+		saynn("[say=pc]Вот так, я трахаю твою задницу кулаком. И, похоже, тебе это нравится, ну и жопная шлюха.[/say]")
 
-		saynn("After the mare gets used to having a fist up her butt, you decide to go further. Your second arm joins the first but is directed towards the girl’s neglected pussy. You clench your hand into a fist and start trying to slide it inside. It goes in way more easily, the folds were already half-spread because of the pressure on her ass. Eventually you manage to stuff both her holes at the same time. Even just having your fists inside makes the girl drip and moan softly.")
+		saynn("Когда кобылка привыкает к кулаку в заднице, ты решаешь зайти дальше. Твоя вторая рука присоединяется к первой, но теперь она нацелена на заброшенную киску девушки. Ты сжимаешь руку в кулак и начинаешь пытаться просунуть её внутрь. Она входит куда легче — складки уже наполовину раздвинуты из-за давления на её зад. В конце концов, тебе удается забить оба её отверстия одновременно. От одного только ощущения твоих кулаков внутри девушка начинает течь и тихо стонать.")
 
-		saynn("[say=rebel]F-fuck..[/say]")
+		saynn("[say=rebel]Блядь...[/say]")
 
-		saynn("There is a serious lack of free space now, the inner walls wrap around your arms so tight. You start thrusting inside the mare at a slow pace, her ass follows your movements with a slight delay. Long passionate noises escape from her mouth, her own hands holding tightly against the floor, her eyes rolling up from the sure amount of pleasure. Crowd cheers loudly seeing the girl being double-fisted, they live for these moments.")
+		saynn("Свободного места почти не осталось, внутренние стенки плотно обхватывают твои руки. Ты начинаешь медленно вколачивать кулаки в кобылку, её зад следует за твоими движениями с небольшой задержкой. Из её рта вырываются долгие страстные звуки, её собственные руки крепко вцепились в пол, а глаза закатываются от невероятного удовольствия. Толпа громко ревет, видя, как девушку трахают сразу двумя кулаками — они живут ради таких моментов.")
 
-		saynn("As you ramp up the pace, the mare's body shivers more and more, her pussy gets tight around your hand and squirts again from too much stimulation. That is when you shove your arms as deep as you can and increase the onslaught on both her stretched holes. Desperate moans escape from the girl as the arm in her butt is in way past the elbow, you pound her hard through her orgasm like a pair of horse cocks would, she keeps squirting and squirting while her body is thrashing around. You feel every muscle tensing up inside her holes, you don’t pull out until her climax is completely over.")
+		saynn("По мере того как ты ускоряешь темп, тело кобылы начинает дрожать всё сильнее, её киска сжимается вокруг твоей руки и снова заливает тебя сквиртом от чрезмерной стимуляции. Именно тогда ты заталкиваешь руки так глубоко, как только можешь, и усиливаешь натиск на оба её растянутых отверстия. Из девушки вырываются отчаянные стоны, когда твоя рука в её заднице оказывается уже дальше локтя; ты вколачиваешься в неё на полную мощь, пробивая её сквозь оргазм, словно пара лошадиных хренов. Она продолжает неистово кончать, а её тело бьётся в конвульсиях. Ты чувствуешь, как каждая мышца внутри её дырок напрягается, и не вынимаешь руки, пока её пик не пройдет окончательно.")
 
-		saynn("[say=rebel]F-ffu-.. ah-h…[/say]")
+		saynn("[say=rebel]Ф-фффу-.. ах-х…[/say]")
 
-		saynn("Even after retracting your arms, the mare is left with both her fuckholes stretched and gaping open. She tries to clench but that doesn’t help, she is on full display with her insides visible to any curious inmate. The whole arena smells of her.")
+		saynn("Даже после того, как ты вытащил руки, у кобылы оба отверстия остаются растянутыми и зияющими. Она пытается сжаться, но это не помогает — она выставлена напоказ, и любое любопытное заключенное может разглядеть её нутро. Вся арена пропитана её запахом.")
 
-		saynn("You stand up and look at the moaning mare, her face doesn’t show much but the satisfaction, seems like you broke her. That’s what she gets for talking so boldly.")
+		saynn("Ты встаешь и смотришь на стонущую кобылу; на её лице почти нет эмоций, кроме удовлетворения — похоже, ты её сломал. Это ей за то, что слишком дерзко болтала.")
 
-		saynn("You are sure that she will be fine. Even if not, that’s another toy for inmates to play with, win-win for everyone. You climb over the fence and go get your reward.")
+		saynn("Ты уверен, что с ней всё будет в порядке. А если и нет, то она станет очередной игрушкой для зэчек — в любом случае выигрыш для всех. Ты перелезаешь через забор, чтобы забрать свою награду.")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

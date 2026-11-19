@@ -102,7 +102,7 @@ func getSmallDescription() -> String:
 	return "Red inmate, has a red band on her head."
 
 func getFightIntro(_battleName):
-	var text = "The girl shows you her crazy eyes as she licks her shiv, even causing a little bleeding."
+	var text = "Девушка смотрит на тебя безумным взглядом, облизывая свой заточенный кусок металла, отчего тот даже слегка кровоточит."
 	text += "\n\n"
 	text += "[say=gymbully3]"+RNG.pick([
 		"A wrong girl with a right knife can do a lot of good stuff in a bad world. It's crazy how they think they are the sane ones~",

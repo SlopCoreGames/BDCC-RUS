@@ -27,11 +27,11 @@ func run(_triggerID, _args):
 		if(getFlag("ElizaModule.tent_started", false) && !getFlag("ElizaModule.tent_born", false)):
 			if(!getFlag("ElizaModule.tent_firstegg", false)):
 				if (GM.pc.getInventory().hasItemID("PlantEgg")):
-					addButton("Give plant egg!", "Give Eliza the tentacle egg that she wanted", "doFirst")
+					addButton("Дать растительное яйцо!", "Отдать Элизе то самое яйцо с щупальцами, которое она хотела", "doFirst")
 				else:
-					addDisabledButton("Give plant egg!", "You don't have any tentacle eggs to give to Eliza..")
+					addDisabledButton("Дать растительное яйцо!", "У тебя нет яиц с щупальцами, чтобы отдать их Элизе...")
 			else:
-				addButton("Plant eggs..", "Talk about the tentacle eggs with Eliza", "giveEgg")
+				addButton("Растительные яйца...", "Поговорить с Элизой о яйцах с щупальцами", "giveEgg")
 	
 
 func getPriority():

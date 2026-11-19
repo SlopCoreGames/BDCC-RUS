@@ -4,10 +4,10 @@ func _init():
 	id = "ImaginaryWristCuffs"
 
 func getVisibleName():
-	return "Real wrist cuffs"
+	return "Настоящие наручники"
 	
 func getDescription():
-	return "A set of definitely real wrist cuffs."
+	return "Набор абсолютно, стопроцентно настоящих наручников."
 
 func getClothingSlot():
 	return InventorySlot.Wrists

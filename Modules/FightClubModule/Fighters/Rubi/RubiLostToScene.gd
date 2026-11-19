@@ -9,18 +9,18 @@ func _run():
 		playAnimation(StageScene.Duo, "kneel", {npc="rubi"})
 
 	if(state == ""):
-		saynn("Defeated, you slump down to the floor.")
+		saynn("Поражённая, ты тяжело оседаешь на пол.")
 
-		saynn("[say=rubi]Huh? Did I actually win? Wow![/say]")
+		saynn("[say=rubi]А? Неужели я реально победила? Ого![/say]")
 
-		saynn("The femboy-ish guy steps closer to you and taps on your head. You groan, unable to continue fighting. Some of the crowd boos since you lost to a seemingly easy opponent. Some laugh seeing the confusion on the cat’s face.")
+		saynn("Этот парень с женственной внешностью подходит ближе и легонько хлопает тебя по голове. Ты стонешь, понимая, что продолжать бой нет сил. Часть толпы гудит, ведь ты проиграла противнику, который казался легкой добычей. Другие же смеются, глядя на растерянное лицо кошки.")
 
-		saynn("[say=rubi]Uhh. Of course I won! Happens all the time. Now.. what to do with you..[/say]")
+		saynn("[say=rubi]Э-э... Ну конечно, я победила! Так постоянно и бывает. Теперь... что же мне с тобой делать...[/say]")
 
-		saynn("He eyes you out and tries to come up with something. He really didn’t think it through, did he?")
+		saynn("Он оглядывает тебя с ног до головы, пытаясь что-то придумать. Он ведь толком и не продумал план, верно?")
 
-		addButtonWithChecks("Power bottom", "See what happens to you", "power_bottom", [], [ButtonChecks.HasReachablePenis])
-		addButton("He cums on you", "See what happens", "he_cums_on_you")
+		addButtonWithChecks("Влажный покорный партнёр", "Посмотреть, что из этого выйдет", "power_bottom", [], [ButtonChecks.HasReachablePenis])
+		addButton("Он кончает на тебя", "Посмотреть, что будет", "he_cums_on_you")
 		GM.ES.triggerRun("ArenaFighterPCLost", ["rubi"])
 
 	if(state == "power_bottom"):
@@ -31,29 +31,29 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
 
-		saynn("He looks at your bulge and finally decides what he wants to do with you.")
+		saynn("Он смотрит на твой бугорок и наконец решает, что именно он хочет с тобой сделать.")
 
-		saynn("[say=rubi]You're gonna serve as my fucktoy![/say]")
+		saynn("[say=rubi]Ты будешь моей секс-игрушкой![/say]")
 
 		# (if not naked)
 		if(!GM.pc.isFullyNaked()):
-			saynn("He {pc.undressMessageS}. He then makes you spread your legs, causing your {pc.cock} to be exposed!")
+			saynn("Он {pc.undressMessageS}. Затем он заставляет тебя раздвинуть ноги, из-за чего твой {pc.cock} оказывается на виду!")
 
 		# (if naked)
 		else:
-			saynn("He makes you spread your legs, causing your {pc.cock} to be exposed!")
+			saynn("Он заставляет тебя раздвинуть ноги, из-за чего твой {pc.cock} оказывается на виду!")
 
-		saynn("Rubi crouches before you and slips a few of his digits into his mouth, coating them with his saliva. He then reaches down to your cock and starts stroking it, spreading his mouth fluids all over your shaft. While he does that, you notice that his own shorts are bulging quite a bit, a little damp spot appears where his feline dick puts pressure on the cloth. You can’t help but to moan softly, his hand is so soft and he strokes your cock so fucking well, some precum already shoots onto his fingers. The crowd already realized what the guy is gonna do and starts cheering “Fuck {pc.his} cock! Do it, slutty femboy!”.")
+		saynn("Руби приседает перед тобой и засовывает несколько пальцев в рот, смазывая их слюной. Затем он тянется к твоему члену и начинает ласкать его, размазывая слюну по всему стволу. Пока он это делает, ты замечаешь, что его собственные шорты заметно раздулись, а там, где его кошачий член давит на ткань, проступает влажное пятно. Ты невольно тихо стонешь — его рука такая мягкая, а ласкает он твой член просто охеренно, так что предэякулят уже вовсю брызжет на его пальцы. Толпа уже поняла, что задумал этот парень, и начинает скандировать: «Трахни {pc.his} в член! Давай, шлюшковатый фембой!»")
 
-		saynn("Rubi then pulls his shorts down, exposing his less-than-average barbed cock and the cute pink butthole. He moves his wet fingers down to his butt, moves the tail out of the way, and rubs some wetness into his star. You don’t seem to mind too much, it’s a free fuck for you!")
+		saynn("Затем Руби стягивает шорты, обнажая свой не самый большой шиповатый член и милое розовое анусное отверстие. Он опускает влажные пальцы к своей заднице, отодвигает хвост в сторону и втирает смазку в свою дырочку. Кажется, тебя это не особо парит — бесплатный секс сам себя не получит!")
 
-		saynn("The femboy then straddles your crotch and slowly lowers himself onto your cock! His tailhole shows some resistance but after some attempts the guy manages to take your shaft down his ass. As his star gives in, he immediately lets out a girly moan and starts rubbing his perky nipples, his barbed cock is bobbing up and down as he clenches his butthole around your cock, getting a feel for it.")
+		saynn("Затем фембой усаживается тебе на пах и медленно опускается на твой член! Его анус поначалу сопротивляется, но после нескольких попыток парню удается принять твой ствол в задницу. Как только его дырочка поддается, он тут же издает девчачий стон и начинает тереть свои упругие соски; его шиповатый член подпрыгивает вверх-вниз, пока он сжимает твой член мышцами ануса, привыкая к нему.")
 
-		saynn("[say=rubi]Fuck, your cock is so good.[/say]")
+		saynn("[say=rubi]Блядь, твой член такой охеренный.[/say]")
 
-		saynn("He gets as low as his butt allows him and then starts to ride you, moving his butt up and down along your length. His prostate seems to be massaged quite well by your shaft as his own cock starts leaking pre left and right. He keeps moaning and panting while the whole crowd watches him power bottom you with great interest.")
+		saynn("Он опускается так низко, насколько позволяет задница, и начинает скакать на тебе, двигая тазом вверх-вниз вдоль всей твоей длины. Кажется, твой член отлично массирует его простату, так как его собственный член начинает сочиться предэякулятом направо и налево. Он продолжает стонать и тяжело дышать, пока вся толпа с огромным интересом наблюдает за тем, как он эффектно принимает тебя в задницу.")
 
-		addButton("Cum!", "You can’t endure this for long", "cum!")
+		addButton("Кончай!", "Ты долго так не выдержишь", "cum!")
 
 	if(state == "cum!"):
 		playAnimation(StageScene.SexCowgirl, "fast", {
@@ -63,16 +63,16 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
 		
-		saynn("Eventually he starts to moan even more passionately, his barbed cock throbs and twitches as it starts to dribble cum onto your chest. As he cums, his tailhole clenches so much that you feel yourself being near your peak too!")
+		saynn("В конце концов он начинает стонать еще более страстно; его шипастый член пульсирует и дергается, начиная капать спермой тебе на грудь. Когда он кончает, его анус так сильно сжимается, что ты чувствуешь, что тоже близок к пику!")
 
-		saynn("[say=rubi]C’mon, cum already![/say]")
+		saynn("[say=rubi]Давай же, кончай уже![/say]")
 
-		saynn("He doesn’t stop, he keeps riding you while his cock is leaking more and more cum, sometimes shooting out a long sticky string instead. The orgasm finally overtakes your body, you grunt, as your {pc.cock} starts stuffing the femboy’s butt full of your {pc.cum}. He takes it like a champ, forcing himself down onto your shaft as deep as he can while his inner walls milk your balls dry. The crowd cheers as they see another cumshot from the cat.")
+		saynn("Он не останавливается, продолжая скакать на тебе, пока его член всё сильнее сочится спермой, а иногда и вовсе выстреливает длинной липкой струей. Наконец оргазм накрывает твое тело; ты кряхтишь, когда твой {pc.cock} начинает забивать задницу фембоя твоей {pc.cum}. Он принимает это как чемпион, силой насаживаясь на твой член так глубоко, как только может, пока его внутренние стенки выжимают твои яйца досуха. Толпа ревет от восторга, видя очередной конч кота.")
 
-		saynn("Even though you lost, you at least got some pretty tasty ass. The guy moans again as he stands up and gives everyone a good view of his stretched and stuffed tailhole. He wiggles his ass before quickly getting over the fence, leaving you alone in the arena and covered in cum.")
+		saynn("Пусть ты и проиграл, зато отхватил чертовски вкусную задницу. Парень снова стонет, когда встает, демонстрируя всем свой растянутый и набитый анус. Он виляет задом, прежде чем быстро перемахнуть через забор, оставляя тебя одного на арене, покрытого спермой.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 	if(state == "he_cums_on_you"):
@@ -83,15 +83,15 @@ func _run():
 			npcBodyState={},
 		})
 
-		saynn("His shorts are bulging harder when he finally decides what to do with you.")
+		saynn("Его шорты раздуваются всё сильнее, когда он наконец решает, что делать с тобой.")
 
-		saynn("[say=rubi]I will turn you into a cum dumpster![/say]")
+		saynn("[say=rubi]Я превращу тебя в помойку для спермы![/say]")
 
-		saynn("Bold claim for such a girly looking inmate, Rubi slides down his shorts exposing his hard feline cock of a less-than average length. But it already oozes with precum. He then grabs you by the collar and forces you to sit while using the other hand to stroke himself, you see how his soft barbs get squeezed under his digits while he pleasures his shaft.")
+		saynn("Смелое заявление для такой девчачьей заключенной. Руби сползает шортами вниз, обнажая свой твердый кошачий член чуть меньше среднего размера. Но он уже сочится предэякулятом. Затем он хватает тебя за воротник и заставляет сесть, а другой рукой начинает ласкать свой член; ты видишь, как мягкие шипики сжимаются под его пальцами, пока он доставляет себе удовольствие.")
 
-		saynn("You’re too weak to do anything about this, a femboy cat is jerking himself near your face while everyone is watching.")
+		saynn("Ты слишком слаба, чтобы что-то предпринять: кошачий фембой дрочит прямо перед твоим лицом на глазах у всех.")
 
-		addButton("Let it happen", "He will cum on you", "let_it_happen")
+		addButton("Пусть всё идет своим чередом", "Он кончит на тебя", "let_it_happen")
 
 	if(state == "let_it_happen"):
 		playAnimation(StageScene.SexHandjob, "tease", {
@@ -101,17 +101,17 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("You switch your gaze between the crowd, the guy’s cock and his eyes. You’re not too happy to be used like some cum toilet but what can you do.")
+		saynn("Твой взгляд мечется между толпой, членом парня и его глазами. Ты не в восторге от того, что тебя используют как очередной толчок для спермы, но что поделаешь.")
 
-		saynn("[say=rubi]Prepare to carry my load! Ah..[/say]")
+		saynn("[say=rubi]Готовься принять мой груз! А-ах...[/say]")
 
-		saynn("Rubi opens his mouth and drops some cute moans while his cock starts to throb. You turn your head to the side slightly and a second later a string of his warm seed hits your cheek. Then another one lands on your hair. He starts cumming and giving you a cum shower, messing up your face and top part of the body. You close your eyes and shut your lips as some of the sticky stuff lands on them and starts dripping off your chin.")
+		saynn("Руби приоткрывает рот, издавая милые стоны, пока его член начинает пульсировать. Ты слегка отворачиваешь голову, и секунду спустя струйка его теплого семени попадает тебе на щеку. Затем еще одна — на волосы. Он начинает кончать, устраивая тебе спермовый душ, заливая твое лицо и верхнюю часть тела. Ты зажмуриваешься и плотно сжимаешь губы, когда липкая жижа попадает на них и начинает стекать по подбородку.")
 
-		saynn("As the guy is done, he is still panting. So humiliating, you open one eye and see the crowd cheering as they watch you, covered in cum of some cute femboy. The guy quickly puts his cock away and headpats you before climbing over the fence, leaving you alone in the arena.")
+		saynn("Когда парень заканчивает, он всё еще тяжело дышит. Какое унижение! Ты приоткрываешь один глаз и видишь, как толпа ликует, глядя на тебя, покрытую спермой милого фембоя. Парень быстро прячет свой член, ласково гладит тебя по голове и перелезает через забор, оставляя тебя одну на арене.")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

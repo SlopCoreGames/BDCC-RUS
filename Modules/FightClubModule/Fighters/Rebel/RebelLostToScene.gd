@@ -9,17 +9,17 @@ func _run():
 		playAnimation(StageScene.Duo, "kneel", {npc="rebel"})
 
 	if(state == ""):
-		saynn("You let out a gasp and fall down to your knees. Rebel turns to the audience and spreads her arms open, looking very smug.")
+		saynn("Ты издаешь судорожный вздох и падаешь на колени. Ребел поворачивается к зрителям и широко разводит руки с самодовольным видом.")
 
-		saynn("[say=rebel]This bitch thought she could win against ME! Against Rebel! The strongest woman ever alive![/say]")
+		saynn("[say=rebel]Эта сучка думала, что сможет победить МЕНЯ! Саму Ребел! Сильнейшую женщину во вселенной![/say]")
 
-		saynn("The crowd cheers loudly, some begin to yell ‘Fist! Fist! Fist!’.")
+		saynn("Толпа громко ликует, некоторые начинают скандировать: «Кулак! Кулак! Кулак!».")
 
-		saynn("[say=rebel]Oh yeah? Am I hearing it right? The crowd wants me to shove my fist into that poor wannabe hero? I could do that![/say]")
+		saynn("[say=rebel]Да неужели? Я правильно слышу? Толпа хочет, чтобы я засунула свой кулак в эту бедную девчонку, возомнившую себя героиней? Так и сделаем![/say]")
 
-		saynn("The audience blows up with even louder yells and cheering. Seems like she won’t ask for your opinion on the matter. It’s not like you can do anything about that, you’re busy panting and catching your breath.")
+		saynn("Зрители взрываются еще более громкими криками и одобрительным ревом. Похоже, ее мнение о том, что делать дальше, тебя не особо интересует. Впрочем, ты и так ничего не можешь сделать — ты слишком занята тем, что тяжело дышишь и пытаешься восстановить дыхание.")
 
-		addButton("Get fisted", "See what happens next..", "get_fisted")
+		addButton("Получить кулаком в зад", "Смотри, что будет дальше...", "get_fisted")
 		GM.ES.triggerRun("ArenaFighterPCLost", ["rebel"])
 
 	if(state == "get_fisted"):
@@ -28,43 +28,43 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true}
 		})
 		
-		saynn("The giant buff mare directs her attention to you and puts on an evil smile. You try to brace and cover yourself with your hands but she easily picks your whole body up like it’s nothing and carries you to the middle of the arena.")
+		saynn("Гигантская мускулистая кобыла переводит взгляд на тебя и расплывается в зловещей ухмылке. Ты пытаешься сгруппироваться и прикрыться руками, но она с легкостью подхватывает тебя, словно пушинку, и несет в самый центр арены.")
 
-		saynn("[say=rebel]No point in running away, sweetheart. It will be very enjoyable. For me at least.[/say]")
+		saynn("[say=rebel]Бежать бесполезно, дорогуша. Это будет очень приятно. По крайней мере, для меня.[/say]")
 
 		# (if not naked)
 		if(!GM.pc.isFullyNaked()):
-			saynn("She easily strips you of any clothing that blocks your crotch and then puts you down onto the floor on all fours before forcing you to raise your {pc.thick} ass higher. Rebel directs her attention to the crowd again.")
+			saynn("Она одним махом срывает с тебя всю одежду, мешающую доступу к промежности, а затем ставит тебя на четвереньки, заставляя выше задрать свой {pc.thick} зад. Ребел снова обращает внимание на толпу.")
 
 		# (if naked)
 		else:
-			saynn("She puts you down onto the floor on all fours before forcing you to raise your {pc.thick} ass higher. Rebel directs her attention to the crowd again.")
+			saynn("Она ставит тебя на четвереньки, заставляя выше задрать свой {pc.thick} зад. Ребел снова обращает внимание на толпу.")
 
-		saynn("[say=rebel]Does this slut deserve her ass to be lubed?[/say]")
+		saynn("[say=rebel]Заслужила ли эта сучка, чтобы её жопу смазали?[/say]")
 
-		saynn("You hear many mixed answers, some mean inmates yell ‘Go bare! Fist {pc.him} raw! Make {pc.him} suffer!’. Some instead ask for lube. Rebel looks at your cute rear and finally makes up her mind.")
+		saynn("Ты слышишь самые разные ответы: одни злые заключенные орут: «Всухую! Кулаком {pc.him} наживую! Пусть {pc.him} мучается!». Другие же требуют смазки. Ребел смотрит на твою милую задницу и наконец принимает решение.")
 
-		saynn("[say=rebel]Let's not break {pc.his} ass completely. Will be more fun for the other inmates to use {pc.him} later, am I right??[/say]")
+		saynn("[say=rebel]Давай не будем разрывать {pc.his} жопу в клочья. Другим зэчкам будет веселее использовать {pc.him} позже, верно??[/say]")
 
-		saynn("Rebel produces a tube of lube and crouches behind you. You try to voice your complaints but instead have your collar and head shoved into the floor while the other hand starts rubbing the slick cold substance into your {pc.analStretch} tailhole. Even just two of her fingers is enough to fill your butt, she lubes you thoroughly and then starts stroking your back.")
+		saynn("Ребел достает тюбик смазки и приседает позади тебя. Ты пытаешься что-то возразить, но вместо этого она вжимает твой ошейник и голову в пол, а другой рукой начинает втирать скользкую холодную субстанцию в твое {pc.analStretch} анус. Ей хватает всего двух пальцев, чтобы заполнить твою задницу; она тщательно смазывает тебя, а затем начинает поглаживать твою спину.")
 
-		saynn("[say=rebel]Resisting is only gonna make this worse, sweetie. Just relax and enjoy the ride.[/say]")
+		saynn("[say=rebel]Сопротивление сделает только хуже, сладенькая. Просто расслабься и наслаждайся поездкой.[/say]")
 
-		saynn("Easy for her to say, she is not the one standing on all fours with her ass being on full display for anyone! She starts easy, thrusting two of her bulky digits down your star. The lube allows them to slide inside mostly without any hassle. She then spreads them, stretching your hole more and causing you to produce a loud moan. Then she adds another finger.. And another.. Four of them are inside you, stretching you out quite a bit. You start squirming and making more noises while the mare slides her palm in and out, any attempts to clench result in her using more strength and quickly overpowering you. The crowd already begs Rebel to shove the whole hand in.")
+		saynn("Ей легко говорить, ведь это не она стоит на четвереньках, выставив свою задницу на всеобщее обозрение! Она начинает неспешно, вгоняя два своих толстых пальца в твою дырочку. Благодаря смазке они входят почти без труда. Затем она разводит их шире, растягивая твой анус так, что ты невольно издаешь громкий стон. Потом она добавляет еще один палец... и еще один... Теперь внутри тебя уже четыре пальца, которые изрядно тебя растягивают. Ты начинаешь ерзать и скулить, пока кобыла водит ладонью туда-сюда; любая попытка сжать мышцы приводит лишь к тому, что она прикладывает больше силы и быстро подавляет твое сопротивление. Толпа уже вовсю умоляет Ребел засунуть всю руку целиком.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Despite your pussy not receiving any attention, your sensitive folds become more aroused, already dripping some juices onto the floor, your body really seems to enjoy it..")
+			saynn("Несмотря на то, что твоя киска пока не получает внимания, ее чувствительные складки все сильнее возбуждаются, уже капая соком на пол — твое тело явно в восторге от происходящего...")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} is mostly lacking any erection but each time Rebel thrusts her fingers inside you feel your pleasure point being rubbed so well.. You feel like you can get used to that..")
+			saynn("Твой {pc.cock} почти не стоит, но каждый раз, когда Ребел вгоняет пальцы внутрь, ты чувствуешь, как идеально они натирают твою точку удовольствия... Кажется, ты начинаешь к этому привыкать...")
 
-		saynn("[say=rebel]Look at {pc.him} moaning. Time for the main event! Hope you’re ready, slut.[/say]")
+		saynn("[say=rebel]Посмотрите, как {pc.him} стонет. Время для главного события! Надеюсь, ты готова, шлюшка.[/say]")
 
-		saynn("She pulls her fingers out, letting your anal ring slowly close up.")
+		saynn("Она вынимает пальцы, позволяя твоему анусу медленно стянуться обратно.")
 
-		addButton("Continue", "See what happens next..", "continue")
+		addButton("Продолжить", "Смотри, что будет дальше...", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.SexFisting, "sex", {
@@ -73,45 +73,45 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true}
 		})
 		
-		saynn("She applies more lube to her hand this time and turns it into a fist. Her actions are quick, she moves her fist to your prepared butt and starts applying pressure onto your star. The discomfort levels quickly rise, you quiver and try to struggle but she holds you pinned to the floor while trying to shove her whole hand inside you.")
+		saynn("На этот раз она мажет руку еще большим количеством лубриканта и сжимает её в кулак. Её движения быстры: она подносит кулак к твоей приготовившейся заднице и начинает давить прямо в анус. Уровень дискомфорта стремительно растет; ты дрожишь и пытаешься вырваться, но она прижимает тебя к полу, пытаясь затолкать в тебя всю свою ладонь целиком.")
 
-		saynn("[say=pc]It won’t fit! Please![/say]")
+		saynn("[say=pc]Он не влезет! Пожалуйста![/say]")
 
-		saynn("But she is relentless, no matter how much you clench, your tailhole slowly opens up and then gets stretched until the fist suddenly slips in! You arch your back and let out a loud passionate moan as your star closes around Rebel’s wrist. Arms and legs are shaking, she didn’t even start moving her arm but you are already moaning like a slut that’s being fucked.")
+		saynn("Но она неумолима: сколько бы ты ни сжимался, твоё анальное отверстие медленно растягивается, пока кулак внезапно не проскальзывает внутрь! Ты выгибаешь спину и издаешь громкий страстный стон, когда сфинктер плотно обхватывает запястье Ребел. Руки и ноги дрожат; она еще даже не начала двигать рукой, а ты уже скулишь, как шлюха, которую трахают.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("With that fist up your butt, your pussy looks cute and small in comparison. The overstimulation causes your slit to start squirting all over the floor.")
+			saynn("С этим кулаком внутри твоей задницы, твоя киска кажется милой и крошечной в сравнении. От чрезмерной стимуляции твоя щелка начинает заливать пол смазкой.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your {pc.cock} instantly goes as hard as the chastity cage allows and shoots a strong line of your precum.")
+			saynn("Твой {pc.cock} мгновенно становится твердым настолько, насколько позволяет девственная клетка, и выстреливает мощной струей предэякулята.")
 		elif(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} instantly goes full hard and shoots a strong line of your precum.")
+			saynn("Твой {pc.cock} мгновенно встает колом и выстреливает мощной струей предэякулята.")
 
-		saynn("[say=rebel]What did ya say, sweetie? All I hear is your ass making wet noises.[/say]")
+		saynn("[say=rebel]Что ты там промямлила, сладенькая? Всё, что я слышу — это как твоя задница издает влажные звуки.[/say]")
 
-		saynn("She starts pulling her hand out but stopping just to ram her fist further and forcing you to squirm harder. Your poor {pc.analStretch} anal ring is stretched beyond limits and now Rebel starts stretching your soft inner walls too, exploring you from the inside. With slow but powerful thrusts, she manages to shove more of her arm in before switching to fist-fucking you. The crowd goes wild seeing you moan with a giant fist up your ass, you can’t endure this for long and cum hard, your tailhole desperately clenches around the arm, sucking it in deeper.")
+		saynn("Она начинает вытягивать руку, но внезапно замирает, чтобы вогнать кулак еще глубже, заставляя тебя извиваться еще сильнее. Твое бедное {pc.analStretch} анальное кольцо растянуто до предела, и теперь Ребел начинает растягивать и твои мягкие внутренние стенки, исследуя тебя изнутри. Медленными, но мощными толчками ей удается засунуть в тебя еще больше руки, прежде чем перейти к полноценному кулачному траху. Толпа сходит с ума, видя, как ты стонешь с гигантским кулаком в заднице; ты не можешь долго это терпеть и кончаешь на полную, а твое анусное отверстие отчаянно сжимается вокруг руки, засасывая её еще глубже.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your pussy squirts again and again, the way her fist rubs your g-spot through the inner wall is so pleasurable, almost makes you wish she used her other hand too.")
+			saynn("Твоя киска снова и снова брызжет соком; то, как её кулак трет твою точку G через внутреннюю стенку, приносит такое удовольствие, что тебе почти хочется, чтобы она использовала и вторую руку тоже.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Thick strings of {pc.cum} burst out of your {pc.cock} and mess up the floor, your prostate was rubbed so much that you now experience a wet orgasm.")
+			saynn("Густые струи {pc.cum} вырываются из твоей {pc.cock} и пачкают пол; твою простату так сильно натерли, что ты испытываешь властный, мокрый оргазм.")
 
-		saynn("[say=rebel]Cumming already, sweetie? That’s how a real horse cock will feel.[/say]")
+		saynn("[say=rebel]Уже кончаешь, милашка? Вот как почувствует себя настоящий лошадиный член![/say]")
 
-		saynn("She pulls her hand out, leaving your ass gaping and you a moaning mess. So much emptiness inside you suddenly. And a desire for something to fill it. She dries her hand against your {pc.masc} butt and then turns towards the public to flex her muscles again.")
+		saynn("Она вытаскивает руку, оставляя твою задницу широко раскрытой, а тебя — стонущим месивом. Внутри внезапно стало так пусто... и так хочется, чтобы эту пустоту чем-то заполнили. Она вытирает руку о твою {pc.masc} задницу, а затем поворачивается к публике, чтобы снова поиграть мускулами.")
 
-		saynn("[say=rebel]That's what happens to anyone who tries to mess with Rebel! Fuck yeah![/say]")
+		saynn("[say=rebel]Вот что бывает с каждым, кто пытается связываться с Ребел! Да! О да![/say]")
 
-		saynn("She bathes in her glory for a bit longer before waving to you and getting over the fence. You’re left alone in the arena with your butt ruined. Time to leave..")
+		saynn("Она еще немного наслаждается своей славой, прежде чем помахать тебе рукой и перелезть через забор. Ты остаешься в арене один на один со своей разодранной задницей. Пора уходить...")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

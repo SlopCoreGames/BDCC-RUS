@@ -8,11 +8,11 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(GM.main.getTime() >= 22*60*60):
-		saynn("You notice Risha sitting on one of the benches")
+		saynn("Вы замечаете Ришу, сидящую на одной из скамей")
 		
 		addButtonUnlessLate("Risha", "Ask what's up", "risha")
 	else:
-		addDisabledButton("Risha", "Visit after 22:00")
+		addDisabledButton("Риша", "Приходите после 22:00")
 
 func getPriority():
 	return 0

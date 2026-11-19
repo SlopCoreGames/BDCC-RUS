@@ -10,222 +10,222 @@ func _run():
 		didArtica = getFlag("ArticaModule.gaveBirthToEggs", false)
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You show Eliza one of the eggs.")
+		saynn("Вы показываете Элизе одно из яиц.")
 
-		saynn("[say=eliza]Ohh, perfect~. Follow me.[/say]")
+		saynn("[say=eliza]Ооо, идеально~. Иди за мной.[/say]")
 
 		if (didArtica):
-			saynn("[say=pc]Couldn't you use the ones that you have?[/say]")
+			saynn("[say=pc]Неужели ты не можешь обойтись теми, что у тебя уже есть?[/say]")
 
-			saynn("[say=eliza]You know.. They're just too tasty~.[/say]")
+			saynn("[say=eliza]Знаешь... они просто слишком вкусненькие~.[/say]")
 
-		saynn("The feline invites you to follow her.")
+		saynn("Кошка приглашает вас следовать за ней.")
 
-		addButton("Follow", "See where she brings you", "in_lab")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "in_lab")
 	if(state == "in_lab"):
 		aimCameraAndSetLocName("med_researchlab")
 		GM.pc.setLocation("med_researchlab")
-		saynn("The feline brings you into the lab.")
+		saynn("Кошка заводит вас в лабораторию.")
 
-		saynn("[say=eliza]Let's begin![/say]")
+		saynn("[say=eliza]Начнём![/say]")
 
-		saynn("[say=pc]What are you gonna do?[/say]")
+		saynn("[say=pc]И что ты собираешься делать?[/say]")
 
-		saynn("[say=eliza]I need the egg so I can scan it. Pretty please?[/say]")
+		saynn("[say=eliza]Мне нужно яйцо, чтобы просканировать его. Ну пожалуйста?[/say]")
 
-		saynn("Why not? You let her grab the egg from your hands and carefully place it into some kind of big machine.")
+		saynn("Почему бы и нет? Вы позволяете ей забрать яйцо из своих рук и осторожно поместить его в какую-то большую машину.")
 
-		saynn("Seconds later, the machine begins doing its job. You hear a faint hiss of escaping steam and the high-pitched whir of scanning lasers.")
+		saynn("Спустя несколько секунд машина начинает свою работу. Вы слышите слабое шипение выходящего пара и высокочастотное жужжание сканирующих лазеров.")
 
-		saynn("It will clearly take a while..")
+		saynn("Очевидно, это займет немало времени...")
 
-		saynn("[say=pc]You just wanna scan it? Why?[/say]")
+		saynn("[say=pc]Ты просто хочешь его просканировать? Зачем?[/say]")
 
-		saynn("[say=eliza]I've realized that.. these fruits.. You know.. What if there is a way to.. turn a single apple into a whole apple tree! Wouldn't that be cool?[/say]")
+		saynn("[say=eliza]Я тут осознала... эти плоды... Знаешь... А что, если есть способ... превратить одно яблоко в целое яблоневое дерево! Разве это не круто?[/say]")
 
-		saynn("She sounds so excited that she can barely contain herself.")
+		saynn("Она звучит настолько воодушевленно, что едва может сдерживать себя.")
 
-		saynn("[say=eliza]Yes.. we have some specimens here already. But they're all kinda dumb and not very productive. If we just do some selection.. We can make a perfect apple tree. Yes-s-s..[/say]")
+		saynn("[say=eliza]Да... у нас тут уже есть кое-какие образцы. Но они все какие-то туповатые и не очень продуктивные. Если провести селекцию... Мы сможем вывести идеальное яблоневое дерево. Да-а-а...[/say]")
 
-		saynn("The machine is still humming away.")
+		saynn("Машина всё так же мерно гудит.")
 
-		saynn("[say=pc]You're talking about growing your own type of tentacles? I'm not sure that this is a good idea.[/say]")
+		saynn("[say=pc]Ты говоришь о том, чтобы выращивать свой собственный вид щупалец? Не уверена, что это хорошая идея.[/say]")
 
-		saynn("[say=eliza]Yeah~. Why else are we here? We're here to have fun exploring. I wanna explore.[/say]")
+		saynn("[say=eliza]Ну да~. А зачем еще мы здесь? Мы здесь, чтобы весело исследовать всё вокруг. Я хочу исследовать![/say]")
 
-		saynn("[say=pc]You already have access to some kind of tentacles. Why not experiment on them?[/say]")
+		saynn("[say=pc]У тебя и так уже есть доступ к каким-то щупальцам. Почему бы не поэкспериментировать с ними?[/say]")
 
-		saynn("[say=eliza]Listen.. I don't wanna. I wanna grow my own from scratch. We.. are gonna grow our own~. The perfect tentacles.[/say]")
+		saynn("[say=eliza]Слушай... я не хочу. Я хочу вырастить свои собственные, с нуля. Мы... вырастим свои собственные~. Идеальные щупальца.[/say]")
 
-		saynn("The machine suddenly beeps! Eliza leans towards the computer screen that's now full of graphs and numbers.")
+		saynn("Машина внезапно издает писк! Элиза наклоняется к экрану компьютера, который теперь пестрит графиками и цифрами.")
 
-		saynn("[say=eliza]Hm.. Mhmm.. uh.. mhm mhm.. mm-m..[/say]")
+		saynn("[say=eliza]Хм.. Ммм.. а.. мхм-мхм.. мм-м..[/say]")
 
-		saynn("She rubs her chin with her clawed digits.")
+		saynn("Она потирает подбородок своими когтистыми пальцами.")
 
-		saynn("[say=eliza]Yeah.. hm.. There is some good news and some bad news.[/say]")
+		saynn("[say=eliza]Так.. хм.. Есть и хорошие новости, и плохие.[/say]")
 
-		saynn("[say=pc]Shoot.[/say]")
+		saynn("[say=pc]Черт.[/say]")
 
-		saynn("[say=eliza]The more they are exposed to air, the more damaged their DNA becomes. I guess shining bright lasers at it didn't help either.[/say]")
+		saynn("[say=eliza]Чем дольше они контактируют с воздухом, тем сильнее разрушается их ДНК. Похоже, облучение яркими лазерами тоже не особо помогло.[/say]")
 
-		saynn("Sounds like overall it was a failure..")
+		saynn("Похоже, в целом всё провалилось...")
 
-		saynn("[say=eliza]The good news is!..[/say]")
+		saynn("[say=eliza]Хорошая новость в том, что!..[/say]")
 
-		saynn("She throws her paws up suddenly while saying that.")
+		saynn("Произнося это, она внезапно вскидывает лапы вверх.")
 
-		saynn("[say=eliza]I've got some great data to analyze![/say]")
+		saynn("[say=eliza]У меня есть отличные данные для анализа![/say]")
 
-		saynn("[say=pc]That doesn't sound very useful.[/say]")
+		saynn("[say=pc]Звучит не особо полезно.[/say]")
 
-		saynn("[say=eliza]Nah, you don't understand. Data is everything in this world. If you have enough of it, you can reconstruct the past, change the now, and predict the future.[/say]")
+		saynn("[say=eliza]Не, ты не понимаешь. Данные — это всё в этом мире. Если их достаточно, можно реконструировать прошлое, изменить настоящее и предсказать будущее.[/say]")
 
-		saynn("You shrug. Somehow you find it hard to believe that a single weird fruit could be that useful.")
+		saynn("Вы пожимаете плечами. Почему-то вам трудно поверить, что один странный фрукт может быть настолько полезным.")
 
-		saynn("[say=pc]Can I have the egg back?[/say]")
+		saynn("[say=pc]Можно мне вернуть яйцо?[/say]")
 
-		saynn("She hums and raises a brow.")
+		saynn("Она что-то напевает себе под нос и приподнимает бровь.")
 
-		saynn("[say=eliza]Well.. This one has gotten an unhealthy dose of radiation, I wouldn't recommend eating it. But.. what if we.. YES![/say]")
+		saynn("[say=eliza]Ну... это подверглось нездоровой дозе радиации, так что есть его я бы не советовал. Но... что если мы... ДА![/say]")
 
-		saynn("Oh no. You watch as Eliza quickly opens the machine and grabs the egg. As she does it, every single Geiger counter in the room gets set off all at once.")
+		saynn("О нет. Вы наблюдаете, как Элиза быстро открывает машину и хватает яйцо. В тот же миг все счетчики Гейгера в комнате начинают разрываться от радиации.")
 
-		saynn("Eliza runs with it into a different room.. some kind of testing chamber.. You watch through the glass as she injects it with something and then just places it on the floor, in the middle of the room.")
+		saynn("Элиза убегает с ним в другую комнату... какую-то испытательную камеру... Вы наблюдаете через стекло, как она вводит в него что-то, а затем просто оставляет лежать на полу посреди комнаты.")
 
-		saynn("Just as fast, she returns to you and joins, observing the lonely egg.")
+		saynn("Так же быстро она возвращается к вам и встает рядом, наблюдая за одиноким яйцом.")
 
-		saynn("[say=pc]Don't tell me you've injected it with mutagen.[/say]")
+		saynn("[say=pc]Только не говори мне, что ты вколола в него мутаген.[/say]")
 
-		saynn("[say=eliza]No-o~. Of course not. The radiation alone is already enough to scramble the DNA. It was just a growth accelerator.[/say]")
+		saynn("[say=eliza]Не-е-ет. Конечно нет. Одной радиации уже достаточно, чтобы перепутать ДНК. Это был всего лишь ускоритель роста.[/say]")
 
-		saynn("Just a growth accelerator..")
+		saynn("Просто ускоритель роста...")
 
-		saynn("Soon.. something about the egg begins to change.")
+		saynn("Вскоре... с яйцом начинает что-то происходить.")
 
-		saynn("It starts.. growing.. That's to be expected.. but it also starts changing color and growing some kind of appendages.. that's less expected.")
+		saynn("Оно начинает... расти... Это ожидаемо... но оно также начинает менять цвет и отращивать какие-то отростки... а вот это уже менее ожидаемо.")
 
-		addButton("Watch", "See what happens next", "egg_grows")
+		addButton("Смотреть", "Смотреть, что будет дальше", "egg_grows")
 	if(state == "egg_grows"):
 		playAnimation(StageScene.SoloBigEgg, "stand")
-		saynn("That white egg grows a green shiny shell around itself. Underneath it.. some kind of weird nest-like structure, made out of little tendrils. These tendrils move a bit.. but then they quickly turn purple and seemingly die..")
+		saynn("Вокруг белого яйца нарастает блестящая зеленая оболочка. Под ней... какая-то странная гнездоподобная структура, состоящая из маленьких усиков. Эти усики немного шевелятся... но затем они быстро становятся фиолетовыми и будто бы засыхают...")
 
-		saynn("[say=eliza]Fascinating. It looks like some of the tentacles got underdeveloped.. They tried to grow too fast. And that shell.. wow.. It reminds me of the peel that some fruits have.[/say]")
+		saynn("[say=eliza]Завораживающе. Похоже, некоторые щупальца развились недостаточно... Они пытались расти слишком быстро. А эта оболочка... вау... Напоминает кожуру у некоторых фруктов.[/say]")
 
-		saynn("[say=pc]Do you have any weapons here? Just in case..[/say]")
+		saynn("[say=pc]У тебя здесь есть какое-нибудь оружие? На всякий случай...[/say]")
 
-		saynn("She looks at you and smiles.. before giving you a few pats.")
+		saynn("Она смотрит на тебя и улыбается... после чего пару раз похлопывает тебя.")
 
-		saynn("[say=eliza]I can space everything that's in that room with a single button press, don't worry~.[/say]")
+		saynn("[say=eliza]Не волнуйся, я могу разнести всё, что находится в той комнате, одним нажатием кнопки~.[/say]")
 
-		saynn("[say=pc]I worry that you won't press it.[/say]")
+		saynn("[say=pc]Я боюсь, что ты её не нажмёшь.[/say]")
 
-		saynn("Eliza chuckles.")
+		saynn("Элиза посмеивается.")
 
-		saynn("[say=eliza]Haha. That'd be funny, wouldn't it?[/say]")
+		saynn("[say=eliza]Ха-ха. Было бы забавно, правда?[/say]")
 
-		saynn("The egg is huge now. And the process of growth doesn't stop. At some point the egg starts shivering ever so slightly. Little thumps.")
+		saynn("Яйцо теперь огромное. И процесс роста не останавливается. В какой-то момент яйцо начинает едва заметно подрагивать. Слышны легкие глухие толчки.")
 
-		saynn("[say=eliza]Woah. Isn't that cool?[/say]")
+		saynn("[say=eliza]Ого. Разве это не круто?[/say]")
 
-		saynn("[say=pc]I'm trusting you with a lot here.[/say]")
+		saynn("[say=pc]Я вверяю тебе нечто очень важное.[/say]")
 
-		saynn("[say=eliza]Everything is under control, can't you see? Just relax and watch~.[/say]")
+		saynn("[say=eliza]Всё под контролем, разве не видно? Просто расслабься и наблюдай~.[/say]")
 
-		saynn("She shows you a remote with a few buttons. It seems to be the one that is controlling things in the testing chamber.")
+		saynn("Она показывает тебе пульт с несколькими кнопками. Похоже, именно он управляет всем, что происходит в испытательной камере.")
 
-		saynn("The egg starts shaking harder.. and faster. The pressure is rising inside it. The light shining behind the egg illuminates the dark inner contours.. of something.")
+		saynn("Яйцо начинает трястись сильнее... и быстрее. Давление внутри нарастает. Свет, сияющий позади яйца, подсвечивает темные внутренние контуры... чего-то.")
 
-		saynn("[say=pc]What if a monster pops out of there and kills us all?[/say]")
+		saynn("[say=pc]А что, если оттуда выскочит монстр и перебьет нас всех?[/say]")
 
-		saynn("[say=eliza]Monster-shmonster.. The risk is always worth it.[/say]")
+		saynn("[say=eliza]Монстр-шмонстр... Риск всегда того стоит.[/say]")
 
-		saynn("The egg is thrashing now. Violent, erratic movements that shake the entire testing chamber. The green shell pulses with each impact that comes from within, cracks begin appearing all across its surface. Some kind of dark green fluid starts leaking through the holes, pooling on the floor.")
+		saynn("Теперь яйцо буквально бьется в конвульсиях. Яростные, беспорядочные движения сотрясают всю испытательную камеру. Зеленая скорлупа пульсирует при каждом ударе изнутри, по всей её поверхности начинают расползаться трещины. Сквозь отверстия начинает сочиться какая-то темно-зеленая жидкость, скапливаясь лужами на полу.")
 
-		saynn("[say=pc]Doctor. Press the button.[/say]")
+		saynn("[say=pc]Доктор. Нажмите на кнопку.[/say]")
 
-		saynn("[say=eliza]Not yet. Look, it's almost here! It's gonna be beautiful![/say]")
+		saynn("[say=eliza]Еще нет. Смотрите, оно уже почти здесь! Это будет прекрасно![/say]")
 
-		saynn("The feline is pressed against the glass, her tail going absolutely rigid with excitement.")
+		saynn("Кошка прижалась к стеклу, её хвост буквально замер от возбуждения.")
 
-		saynn("You have zero trust in Eliza by this point. You try to grab the remote out of her paw.. but she instantly raises it high above her head, out of your reach.")
+		saynn("К этому моменту вы вообще не доверяете Элизе. Вы пытаетесь выхватить пульт из её лапы... но она мгновенно вскидывает его высоко над головой, не давая вам дотянуться.")
 
-		saynn("The egg convulses.. You can clearly see a limb of sorts.. pressing against the shell from inside, stretching it like it's made out of rubber. There is more than one of it inside, for sure.")
+		saynn("Яйцо содрогается... Вы отчетливо видите нечто похожее на конечность, которая давит на скорлупу изнутри, растягивая её, словно резину. Внутри явно находится не одна такая штука.")
 
-		saynn("[say=pc]Give me the damn remote.[/say]")
+		saynn("[say=pc]Отдай чертов пульт.[/say]")
 
-		saynn("[say=eliza]No![/say]")
+		saynn("[say=eliza]Нет![/say]")
 
-		saynn("She pushes you away, her claws digging painfully into your skin as she does it.")
+		saynn("Она отталкивает вас, при этом её когти болезненно впиваются в вашу кожу.")
 
-		saynn("The egg convulses one last time. The shell bulges outward, ready to burst..")
+		saynn("Яйцо содрогается в последний раз. Скорлупа раздувается, готовая вот-вот лопнуть...")
 
-		saynn("But then.. everything stops.")
+		saynn("Но затем... всё замирает.")
 
-		saynn("For one perfect, silent second, everything is still..")
+		saynn("На одну идеальную, безмолвную секунду всё замирает...")
 
-		addButton("Continue", "See what happens next", "egg_boom")
+		addButton("Продолжить", "Смотреть, что будет дальше", "egg_boom")
 	if(state == "egg_boom"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("And then.. the egg explodes.")
+		saynn("А затем... яйцо взрывается.")
 
-		saynn("Green shell fragments fly across the chamber.. together with torn bits of weirdly-deformed chunks of whatever. Thick, viscous fluid sprays in all directions, painting the whole room in the most nasty-looking green color imaginable.")
+		saynn("Осколки зеленой скорлупы разлетаются по всей камере вместе с клочьями какой-то странно деформированной хрени. Густая, вязкая жидкость брызжет во все стороны, окрашивая всю комнату в самый мерзкий зеленый цвет, который только можно вообразить.")
 
-		saynn("That testing chamber.. It now looks like a room straight out of a horror movie.")
+		saynn("Эта испытательная камера... теперь она выглядит как декорация к фильму ужасов.")
 
-		saynn("Eliza stares.. her ears go flat.. her tail flops onto the floor.")
+		saynn("Элиза замерла... её уши прижались к голове, а хвост безжизненно упал на пол.")
 
-		saynn("[say=eliza]..aw..[/say]")
+		saynn("[say=eliza]Ох...[/say]")
 
-		saynn("She lowers the remote, her voice intonation sad.")
+		saynn("Она опускает пульт, её голос звучит печально.")
 
-		saynn("[say=eliza]That was.. disappointing..[/say]")
+		saynn("[say=eliza]Это было... разочаровывающе...[/say]")
 
-		saynn("[say=pc]Look on the bright side, we're still alive.[/say]")
+		saynn("[say=pc]Посмотри на это с позитивной стороны: мы всё еще живы.[/say]")
 
-		saynn("[say=eliza]I guess so.. I will order the nurses to clean it up.. They're used to worse stuff.[/say]")
+		saynn("[say=eliza]Наверное... Я прикажу медсестрам всё убрать... Они и не такое видели.[/say]")
 
-		saynn("She turns away from the glass, her paws pulling out a datapad and then tapping furiously on it.")
+		saynn("Она отворачивается от стекла, достает датапад и начинает яростно по нему стучать.")
 
-		saynn("[say=eliza]But this isn't over. Yes. Of course. I just need more eggs. Fresh ones. Untouched by radiation and my stupidity.[/say]")
+		saynn("[say=eliza]Но это еще не конец. Да. Конечно. Мне просто нужно больше яиц. Свежих. Не тронутых радиацией и моей тупостью.[/say]")
 
-		saynn("[say=pc]You want to try again? After that?[/say]")
+		saynn("[say=pc]Хочешь попробовать еще раз? После всего этого?[/say]")
 
-		saynn("Her sadness fades under her sly little smile.")
+		saynn("Ее печаль исчезает под лукавой маленькой улыбкой.")
 
-		saynn("[say=eliza]Of course. That's how you learn.[/say]")
+		saynn("[say=eliza]Конечно. Только так и учатся.[/say]")
 
-		saynn("Her green eyes are sparking. You watch behind her as poor nurses enter the testing chamber.. and all collectively sigh.. before getting to work.")
+		saynn("Ее зеленые глаза так и искрятся. Ты наблюдаешь за ней и видишь, как несчастные медсестры входят в испытательную камеру... и все они дружно вздыхают... прежде чем приняться за работу.")
 
-		saynn("[say=eliza]We have some DNA now. I can let a bluespace super-computer guess the rest of the structure based on it. Cross-reference it with the other specimens, brute-force the optimal result.. but that gets expensive fast. Very fast. And very expensive.[/say]")
+		saynn("[say=eliza]Теперь у нас есть немного ДНК. Я могу позволить суперкомпьютеру в блюспейсе вычислить остальную структуру на ее основе. Сверить с другими образцами, методом грубой силы подобрать оптимальный результат... но это быстро становится накладным. Очень быстро. И очень дорого.[/say]")
 
-		saynn("[say=pc]How expensive?[/say]")
+		saynn("[say=pc]Насколько дорого?[/say]")
 
-		saynn("She taps her chin with a claw.")
+		saynn("Она постукивает когтем по подбородку.")
 
-		saynn("[say=eliza]About a thousand credits.[/say]")
+		saynn("[say=eliza]Около тысячи кредитов.[/say]")
 
-		saynn("Ooh. That's a lot of rock smashing. Roughly three years of it.")
+		saynn("Ох. Это требует кучи кропотливой работы. Примерно трех лет такой жизни.")
 
-		saynn("[say=eliza]But! Based on this sample.. Each egg will roughly contain 25% of the DNA that we need to make a perfect specimen.[/say]")
+		saynn("[say=eliza]Но! Основываясь на этом образце... Каждое яйцо будет содержать примерно 25% ДНК, необходимой нам для создания идеального экземпляра.[/say]")
 
-		saynn("[say=pc]Sounds like we only need 4 eggs.[/say]")
+		saynn("[say=pc]Звучит так, будто нам нужно всего 4 яйца.[/say]")
 
-		saynn("She smiles.")
+		saynn("Она улыбается.")
 
-		saynn("[say=eliza]You'd think so, wouldn't you? But that's not how the math works out. A lot of the data gets overlapped with the old existing data. But we only need unique bits that we haven't seen yet.[/say]")
+		saynn("[say=eliza]Казалось бы, так? Но математика работает иначе. Большая часть данных будет дублировать уже имеющиеся. А нам нужны только уникальные фрагменты, которых мы еще не видели.[/say]")
 
-		saynn("[say=pc]So-o-o?[/say]")
+		saynn("[say=pc]Ну и-и-и?[/say]")
 
-		saynn("[say=eliza]So bring me more eggs. As many as you can. Each one will lower the cost.[/say]")
+		saynn("[say=eliza]Так что тащи мне больше яиц. Столько, сколько сможешь. Каждое новое снизит общую стоимость.[/say]")
 
-		saynn("You nod. You watch behind her as the nurses get themselves all dirty with the green stuff. But they barely cleared anything.")
+		saynn("Ты киваешь. Ты наблюдаешь за ней и видишь, как медсестры вовсю измазываются в этой зеленой жиже. Но они едва ли что-то очистили.")
 
-		saynn("[say=eliza]See you around~. I trust you will find a way out.[/say]")
+		saynn("[say=eliza]Еще увидимся~. Верю, ты найдешь выход.[/say]")
 
-		saynn("Just like that, she lets you be.")
+		saynn("Вот так просто она оставляет тебя в покое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -7,347 +7,347 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=pc]Wanna try that pill yourself maybe?[/say]")
+		saynn("[say=pc]Может, сама попробуешь эту таблетку?[/say]")
 
-		saynn("Eliza raises a brow.")
+		saynn("Элиза приподнимает бровь.")
 
-		saynn("[say=eliza]I'm not a test subject, you know.[/say]")
+		saynn("[say=eliza]Вообще-то, я тебе не подопытный кролик.[/say]")
 
-		saynn("She isn't it.. so you will have to say something smart to trick her.")
+		saynn("Она не так проста... так что тебе придется ляпнуть что-нибудь умное, чтобы обхитрить её.")
 
-		saynn("[say=pc]So you're saying.. that you're not brave enough. Or is the real reason.. that you don't actually like experimenting.. Maybe you don't like science that much?[/say]")
+		saynn("[say=pc]То есть ты хочешь сказать... что тебе не хватает смелости? Или настоящая причина в том... что тебе на самом деле не в кайф экспериментировать? Может, ты просто не особо любишь науку?[/say]")
 
-		saynn("Oof. That was a huge blow, Quinn's ears flick back momentarily.. but her smirk never wavers. She twirls the pill between her fingers, her sharp eyes fixed on you.")
+		saynn("Ух ты. Это был мощный удар, у Квинн на мгновение прижались уши... но ухмылка никуда не делась. Она крутит таблетку между пальцами, не сводя с тебя своего острого взгляда.")
 
-		saynn("[say=eliza]You think you can goad me into this, patient? I don't need to be tricked.. I've been itching for a proper experiment. Just don't say I didn't warn you~.[/say]")
+		saynn("[say=eliza]Думаешь, сможешь раззадорить меня, пациент? Меня не нужно обманывать... у меня уже руки чешутся провести нормальный эксперимент. Только потом не говори, что я тебя не предупреждала~.[/say]")
 
-		saynn("Without hesitation, she pops the pill into her mouth, swallowing it dry. For a moment, nothing happens.. she raises a brow at you.")
+		saynn("Без малейших колебаний она закидывает таблетку в рот и проглатывает её всухую. На мгновение ничего не происходит... она лишь вскидывает бровь, глядя на тебя.")
 
-		saynn("[say=eliza]Tastes like bad life decisions.. My favourite~.[/say]")
+		saynn("[say=eliza]На вкус как куча хреновых жизненных решений... Моё любимое~.[/say]")
 
-		saynn("[say=pc]Nothing?[/say]")
+		saynn("[say=pc]И ничего?[/say]")
 
-		saynn("[say=eliza]Give it a second. Transformations are slow.. make take days even. See me tomorrow.[/say]")
+		saynn("[say=eliza]Подожди секунду. Трансформации — процесс медленный... могут занять даже несколько дней. Увидимся завтра.[/say]")
 
-		saynn("Suddenly, a ripple courses through her body. Her tail stiffens, her claws dig into the nearest table.")
+		saynn("Внезапно по её телу пробегает дрожь. Хвост напрягается, а когти впиваются в ближайший стол.")
 
-		saynn("[say=eliza]Oh.. oh, this is quite something.[/say]")
+		saynn("[say=eliza]Ох... ох, это нечто.[/say]")
 
-		addButton("Continue", "See what happens next", "eliza_switch")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_switch")
 	if(state == "eliza_switch"):
 		playAnimation(StageScene.Duo, "stand", {npc="elizaDemon"})
-		saynn("Her voice quivers briefly before dropping into a deeper, richer tone.. accompanied by a strange, resonating echo. Small horns pierce through the fur on her head, curving upward with an intimidating kind of grace.")
+		saynn("Её голос на мгновение дрожит, а затем становится глубже и насыщеннее, сопровождая странное резонирующее эхо. Сквозь мех на голове пробиваются маленькие рожки, изгибающиеся вверх с пугающей грацией.")
 
-		saynn("You're not sure how to react.. she is clearly suffering from a huge discomfort.. but that's to be expected.")
+		saynn("Ты не знаешь, как реагировать... очевидно, что она испытывает сильнейший дискомфорт... но это было ожидаемо.")
 
-		saynn("[say=pc]Quinn?[/say]")
+		saynn("[say=pc]Куинн?[/say]")
 
-		saynn("She huffs as her hind paws suddenly begin to change shape, toes losing their definition.. until they merge into two bulky hooves. A sinuous, spaded tail unfurls behind her, flicking with dangerous energy.")
+		saynn("Она тяжело дышит, когда её задние лапы внезапно начинают менять форму, пальцы теряют четкость... пока не сливаются в два массивных копыта. Позади неё разворачивается гибкий хвост с кисточкой на конце, опасно дергающийся от избытка энергии.")
 
-		saynn("So fast.. she said that it would take days.. and yet.. here she is.")
+		saynn("Так быстро... она говорила, что это займет дни... и всё же... вот она.")
 
-		saynn("After all that is over, Eliza is left panting. She straightens up slowly, her top and pencil skirt stretching taut over her now more muscular and curvy frame. Her fur seems to shimmer with a faint glow, her green eyes burning brighter than before.")
+		saynn("Когда всё заканчивается, Элиза остается тяжело дышать. Она медленно выпрямляется, её топ и юбка-карандаш натягиваются на её теперь уже более мускулистом и женственном теле. Её мех словно мерцает слабым светом, а зеленые глаза горят ярче прежнего.")
 
-		saynn("[say=eliza]Well, well..[/say]")
+		saynn("[say=eliza]Ну надо же...[/say]")
 
-		saynn("Her voice is intoxicating now, the echo sending a shiver down your spine. She flexes her fingers, her claws now looking much sharper and longer. She catches her reflection in one of the polished surfaces and lets out a throaty chuckle.")
+		saynn("Её голос теперь дурманит, а эхо заставляет мурашки бежать по твоей спине. Она разминает пальцы, и её когти теперь выглядят гораздо длиннее и острее. Поймав своё отражение в одной из полированных поверхностей, она издает гортанный смешок.")
 
-		saynn("[say=eliza]Not bad.. Not bad at all. I feel so powerful..[/say]")
+		saynn("[say=eliza]Неплохо... Совсем неплохо. Я чувствую такую мощь...[/say]")
 
-		saynn("She turns towards you, her new pointy tail lashing behind her. A demon in sheep's clothes, standing right in front of you. Flashing emerald eyes scan you, her rough tongue polishing her top lip. A second of deafening silence is broken by a single word.")
+		saynn("Она поворачивается к тебе, её новый острый хвост нервно хлещет по воздуху. Демон в овечьей шкуре, стоящий прямо перед тобой. Сверкающие изумрудные глаза сканируют тебя, а шершавый язык облизывает верхнюю губу. Секунду оглушительной тишины прерывает всего одно слово.")
 
-		saynn("[say=eliza]Kneel.[/say]")
+		saynn("[say=eliza]На колени.[/say]")
 
-		saynn("It vibrates through the air, carrying a weight of pure dominance with it. Your body hesitates, your mind caught between awe and.. an unexplainable desire to make her will a reality.")
+		saynn("Это слово вибрирует в воздухе, неся в себе тяжесть абсолютного доминирования. Твое тело колеблется, а разум мечется между благоговейным трепетом и... необъяснимым желанием воплотить её волю в реальность.")
 
-		saynn("She takes a step closer, her hooves clacking against the inviting floor.")
+		saynn("Она делает шаг ближе, и её копыта звонко цокают по манящему полу.")
 
-		saynn("[say=eliza]Did I stutter, inmate?[/say]")
+		saynn("[say=eliza]Я что, заикаюсь, заключенная?[/say]")
 
-		saynn("She did not..")
+		saynn("Нет, не заикалась...")
 
-		addButton("Submit", "Obey her will", "submit")
-		addButton("Resist", "Be a brat about it and see what happens", "resist")
+		addButton("Подчиниться", "Повиноваться ей", "submit")
+		addButton("Сопротивляться", "Включить вредную девчонку и посмотреть, что будет", "resist")
 	if(state == "submit"):
 		playAnimation(StageScene.Duo, "kneel", {npc="elizaDemon"})
-		saynn("Unchallenged obedience is pumping through your veins, you lower yourself before your new mistress and get on your knees.. exactly like told.")
+		saynn("Беспрекословное послушание пульсирует в твоих венах; ты склоняешься перед своей новой госпожой и опускаешься на колени... в точности так, как было сказано.")
 
-		saynn("[say=eliza]Hands behind your head, little assistant.[/say]")
+		saynn("[say=eliza]Руки за голову, маленькая помощница.[/say]")
 
-		saynn("Her voice is laced with a hypnotic, demonic echo that vibrates inside your chest and wraps around your senses like a vice. The heat of her body is overwhelming as she comes and leans closer, her breath teasing your ear.")
+		saynn("В её голосе слышится гипнотическое демоническое эхо, которое вибрирует у тебя в груди и сжимает чувства, словно тиски. Жар её тела становится невыносимым, когда она подаётся вперёд, дразня твоё ухо своим дыханием.")
 
-		saynn("[say=eliza]Good pets do exactly what I say..[/say]")
+		saynn("[say=eliza]Послушные питомцы делают именно то, что я скажу..[/say]")
 
-		saynn("She takes a small step back.. while her spaded tail curls around your neck, forming a second collar of sorts.. complete with a hands-free leash. The faint, musky scent of her arousal fills the air, making your head spin.")
+		saynn("Она делает небольшой шаг назад, но её хвост с наконечником-лопатой обвивает твою шею, образуя своего рода второй ошейник... дополненный поводком, который не нужно держать в руках. Воздух наполняется слабым мускусным ароматом её возбуждения, от которого голова идёт кругом.")
 
-		saynn("Her clawed hands reach for her clothing.")
+		saynn("Её когтистые лапы тянутся к одежде.")
 
-		addButton("Continue", "See what happens next", "eliza_naked")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_naked")
 	if(state == "eliza_naked"):
 		playAnimation(StageScene.SexOralForced, "tease", {pc="elizaDemon", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Her labcoat, her top, her pencil skirt, all fall down to the floor. All that's left on her is the fancy black lingerie. Her alluring curves, her gorgeous six-pack, her busty chest, wide hips and a firm ass, it's all out on display.")
+		saynn("Лабораторный халат, топ, юбка-карандаш — всё это падает на пол. На ней остаётся лишь изысканное чёрное бельё. Её манящие изгибы, великолепный пресс, пышная грудь, широкие бёдра и упругая задница — всё выставлено напоказ.")
 
-		saynn("[say=eliza]Liberating.[/say]")
+		saynn("[say=eliza]Освобождает.[/say]")
 
-		saynn("She tilts her head slightly while looking down at you, her expressionless eyes catching your hungry glances.")
+		saynn("Она слегка наклоняет голову, глядя на тебя сверху вниз, а её бесстрастные глаза ловят твои жадные взгляды.")
 
-		saynn("[say=eliza]You're lucky I'm in a good mood.[/say]")
+		saynn("[say=eliza]Тебе повезло, что я сегодня в хорошем настроении.[/say]")
 
-		saynn("Her flexible tail pulls you forward, towards her crotch.. until your lips are inches away from her lace panties. Her paws grab your wrists and raise them higher, above your head.")
+		saynn("Её гибкий хвост тянет тебя вперёд, к её промежности... пока твои губы не оказываются в считанных сантиметрах от кружевных трусиков. Её лапы хватают твои запястья и задирают их выше, над головой.")
 
-		saynn("[say=eliza]Think I should keep you?[/say]")
+		saynn("[say=eliza]Думаешь, мне стоит тебя оставить?[/say]")
 
-		saynn("The scent.. it's so much stronger near the source. Your mind is clouded, only one thought is loud and clear.. obey..")
+		saynn("Этот запах... у самого источника он куда сильнее. Твой разум затуманен, лишь одна мысль звучит громко и ясно... повиноваться...")
 
-		saynn("[say=pc]Yes.. please..[/say]")
+		saynn("[say=pc]Да.. пожалуйста..[/say]")
 
-		saynn("[say=eliza]Then worship your demon queen. Prove you're worth keeping around.[/say]")
+		saynn("[say=eliza]Тогда поклоняйся своей королеве демонов. Докажи, что тебя стоит оставить рядом.[/say]")
 
-		saynn("She frees one hand and pulls off the rest of her cloth, revealing her moist demonic flower.. flower that's overflowing with juices.")
+		saynn("Освободив одну руку, она срывает с себя остатки одежды, обнажая свой влажный демонический цветок... цветок, переполненный соками.")
 
-		saynn("[say=eliza]Mortal clothing is so uncomfortable.[/say]")
+		saynn("[say=eliza]Смертная одежда такая неудобная.[/say]")
 
-		saynn("She then tightens her grip on your wrists, holding them firmly, her strength making it impossible to resist anymore. Her tail tugs at the back of your head, guiding your lips closer.")
+		saynn("Затем она сильнее сжимает твои запястья, удерживая их намертво; её сила делает сопротивление бесполезным. Её хвост тянет тебя за затылок, направляя твои губы всё ближе.")
 
-		saynn("[say=eliza]No hesitation. Get to work, pet.[/say]")
+		saynn("[say=eliza]Без колебаний. Приступай к делу, питомец.[/say]")
 
-		addButton("Lick", "Worship your queen", "do_lick")
+		addButton("Лизать", "Поклоняться королеве", "do_lick")
 	if(state == "do_lick"):
 		playAnimation(StageScene.SexOralForced, "lick", {pc="elizaDemon", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Your tongue flicks out, its tip touches and follows along the soft, slick folds of her demonic pussy. Quinn exhales sharply, her claws digging slightly into your wrists.")
+		saynn("Твой язык вырывается наружу, его кончик касается и скользит по мягким, влажным складкам её демонической киски. Куинн резко выдыхает, её когти слегка впиваются в твои запястья.")
 
-		saynn("[say=eliza]Hmm~..[/say]")
+		saynn("[say=eliza]Хмм~..[/say]")
 
-		saynn("Her tail loosens slightly, allowing you more movement as you lap at her, your tongue exploring every inch of her slit with eager desperation, drawing little circles around her sensitive clit and traveling along the contours of her drippy lips. Quinn throws her head back, a low throaty growl escaping her as she pushes her crotch into your face, enjoying your licks.")
+		saynn("Её хвост слегка расслабляется, давая тебе больше свободы движений, пока ты слизываешь её соки. Твой язык с жадным отчаянием исследует каждый дюйм её щели, описывая маленькие круги вокруг чувствительного клитора и скользя по контурам её сочащихся губ. Куинн запрокидывает голову, из её горла вырывается низкое рычание, когда она прижимается промежностью к твоему лицу, наслаждаясь твоими ласками.")
 
-		saynn("[say=eliza]Better than I expected. Maybe you're not entirely useless after all.[/say]")
+		saynn("[say=eliza]Лучше, чем я ожидала. Может, ты не совсем уж бесполезен.[/say]")
 
-		saynn("Your tongue spreads her folds and presses deeper, earning another little gasp from her. That tail is still curled around your neck, keeping you in place as she rocks her hips ever so slightly, meeting your tongue. Her demonic voice is filled with a mix of satisfaction and playful cruelty.")
+		saynn("Её язык раздвигает складки и проникает глубже, заставляя её снова судорожно вздохнуть. Хвост всё ещё обвивает твою шею, удерживая на месте, пока она слегка покачивает бёдрами, навстречу твоему языку. В её демоническом голосе слышится смесь удовлетворения и игривой жестокости.")
 
-		saynn("[say=eliza]That's it.. Keep licking like a good little pet. You're mine now, you know that? Every. Single. Inch of you belongs to me.[/say]")
+		saynn("[say=eliza]Вот так... Лижи дальше, мой послушный питомец. Теперь ты мой, понимаешь? Каждый. Божий. Дюйм твоего тела принадлежит мне.[/say]")
 
-		addButton("Continue", "See what happens next", "lick_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lick_faster")
 	if(state == "lick_faster"):
 		playAnimation(StageScene.SexOralForced, "lickfast", {pc="elizaDemon", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("She moves her hips again.. and again.. her pussy sliding along your face as she begins to ride it. The soft sounds of your worship fill the room, mingling with her growly moans. All the while you just give it your all, your tongue licking away at her hot inner walls, lapping up any juices with full devotion. You're drowning in her heat.. and you can't get enough..")
+		saynn("Она снова и снова двигает бёдрами... её киска скользит по твоему лицу, пока она начинает насаживаться на тебя. Мягкие звуки твоего обожания наполняют комнату, смешиваясь с её утробными стонами. Ты выкладываешься на полную, вылизывая её горячие внутренние стенки и с полным рвением слизывая каждую каплю сока. Ты тонешь в её жаре... и тебе всё мало...")
 
-		saynn("[say=eliza]Such a good.. little.. pet..[/say]")
+		saynn("[say=eliza]Такой хороший... маленький... питомец...[/say]")
 
-		saynn("Her movements quickly become more erratic as the peak begins to draw near. She stands strong on her hooves.. but the little shivers, the way her pussy tightens around your tongue.. it tells you all..")
+		saynn("Её движения быстро становятся беспорядочными, когда приближается пик. Она уверенно стоит на копытах... но мелкая дрожь, то, как её киска сжимается вокруг твоего языка... говорит сама за себя.")
 
-		saynn("[say=eliza]Mmhh.. Yes.. Take it all.[/say]")
+		saynn("[say=eliza]Мммхх... Да... Забирай всё.[/say]")
 
-		saynn("With a final, growly noise of love, a wave of ecstasy comes rushing through her demonic frame, her pussy pulsing and gushing juices all over your lips and cheeks in an overwhelming torrent.")
+		saynn("С последним утробным рыком страсти волна экстаза проносится сквозь её демоническое тело; её киска пульсирует, извергая соки на твои губы и щеки мощным, захлестывающим потоком.")
 
-		saynn("[say=eliza]Fuck~..[/say]")
+		saynn("[say=eliza]Блять~...[/say]")
 
-		saynn("She keeps grinding your face, prolonging her orgasm as her fluids continue to coat your face, dripping down your chin and onto the cold floor.")
+		saynn("Она продолжает вжиматься в твоё лицо, продлевая оргазм, пока её выделения покрывают твою кожу, стекая с подбородка на холодный пол.")
 
-		saynn("[say=eliza]Look at you.. Drenched in me.. My servant.[/say]")
+		saynn("[say=eliza]Посмотри на себя... Весь в моем соку... Мой слуга.[/say]")
 
-		saynn("Your mind wants to scream.. to sell off your soul to her.. right here and now..")
+		saynn("Твой разум жаждет кричать... жаждет продать свою душу ей... прямо здесь и сейчас...")
 
-		addButton("Continue", "See what happens next", "after_lick")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_lick")
 	if(state == "after_lick"):
 		playAnimation(StageScene.SexStart, "start", {pc="elizaDemon", bodyState={naked=true}})
-		saynn("She finally releases your wrists.. making you slump. You can finally start catching your breath. Her tail, however, tightens briefly around your neck, lifting your face to meet her intense gaze.")
+		saynn("Она наконец отпускает твои запястья, и ты бессильно оседаешь. Наконец-то можно начать дышать. Однако её хвост на мгновение сжимается на твоей шее, заставляя тебя поднять лицо и встретиться с её пристальным взглядом.")
 
-		saynn("[say=eliza]Let me look at my assistant.. I think I proved my point well enough?[/say]")
+		saynn("[say=eliza]Дай-ка я взгляну на своего ассистента... Думаю, я достаточно убедительно доказала свою правоту?[/say]")
 
-		saynn("You nod.. and feel the vibrations of her demonic chuckle.")
+		saynn("Ты киваешь... и чувствуешь вибрацию её демонического смешка.")
 
-		saynn("[say=eliza]As much as I.. enjoy this.. I think it's corrupting my mind.. I can't think straight.[/say]")
+		saynn("[say=eliza]Как бы сильно я это... ни наслаждалась... кажется, это развращает мой разум... я уже соображаю с трудом.[/say]")
 
-		saynn("She reaches for her labcoat and pulls out some pill from her pockets. Eliza stares at it.. and hums. She was about to eat it.. but something stopped her.")
+		saynn("Она тянется к своему халату и достает из кармана какую-то таблетку. Элиза пристально смотрит на неё и напевает под нос. Она уже собиралась проглотить её, но что-то её остановило.")
 
-		saynn("[say=eliza]Or maybe I should say fuck it.. who cares about science when you can have a worshipper or two..[/say]")
+		saynn("[say=eliza]А может, стоит просто забить?.. Какая разница, что там наука, когда под рукой есть пара верных поклонников...[/say]")
 
-		saynn("You can hear her breathing. She closes her eyes.. furrows her brows.. and focuses.")
+		saynn("Ты слышишь её дыхание. Она закрывает глаза... хмурит брови... и сосредотачивается.")
 
-		saynn("[say=eliza]No..[/say]")
+		saynn("[say=eliza]Нет...[/say]")
 
-		saynn("Finally, she throws the pill into her mouth and swallows it with no regrets.")
+		saynn("Наконец она закидывает таблетку в рот и проглатывает её без малейших сожалений.")
 
-		addButton("Continue", "See what happens next", "after_lick_undo_tf")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_lick_undo_tf")
 	if(state == "after_lick_undo_tf"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("Whatever Eliza ate, it seems to have an opposite effect to DemoniX. Her horns begin to retract back into her skull, getting smaller and smaller. Her pointy tail morphs, getting a bit shorter, losing its sharp tip and growing fur.. her hooves go away, replaced by the digitigrade hind paws. Her body loses some of its curviness..")
+		saynn("Что бы там ни съела Элиза, эффект оказался прямо противоположным действию Демоникс. Её рога начинают втягиваться обратно в череп, становясь всё меньше и меньше. Заостренный хвост трансформируется, немного укорачиваясь, теряя острый кончик и обрастая мехом... копыта исчезают, сменяясь пальцами задних лап. Её тело теряет часть своих изгибов...")
 
-		saynn("[say=eliza]Mmhh..[/say]")
+		saynn("[say=eliza]Мммхх..[/say]")
 
-		saynn("After the process is over.. Eliza opens her eyes..")
+		saynn("Когда процесс завершается... Элиза открывает глаза...")
 
-		saynn("[say=eliza]That was.. something.[/say]")
+		saynn("[say=eliza]Это было... нечто.[/say]")
 
-		saynn("[say=pc]Welcome.. back?[/say]")
+		saynn("[say=pc]С возвращением..?[/say]")
 
-		saynn("She chuckles and starts putting on her clothes.")
+		saynn("Она усмехается и начинает одеваться.")
 
-		saynn("[say=eliza]Got you a bit wet.[/say]")
+		saynn("[say=eliza]Немного тебя намочила.[/say]")
 
-		saynn("That's an understatement.")
+		saynn("Это еще мягко сказано.")
 
-		saynn("[say=pc]It's okay.[/say]")
+		saynn("[say=pc]Всё в порядке.[/say]")
 
-		saynn("[say=eliza]I guess the pill worked~. Of course it did.[/say]")
+		saynn("[say=eliza]Похоже, таблетка сработала~. Ну конечно, она же сработала.[/say]")
 
-		saynn("Eliza helps you to get up..")
+		saynn("Элиза помогает тебе подняться...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "resist"):
 		playAnimation(StageScene.Duo, "stand", {npc="elizaDemon", npcBodyState={naked=true}})
-		saynn("Her order.. it's very tempting.. but something inside you makes you grit your teeth and fight the compulsion.")
+		saynn("Её приказ... он так соблазнителен... но что-то внутри заставляет тебя стиснуть зубы и бороться с навязчивым желанием.")
 
-		saynn("[say=pc]No.. Maybe you're the one who should kneel.[/say]")
+		saynn("[say=pc]Нет... Может, это тебе стоит встать на колени?[/say]")
 
-		saynn("Your words hang in the air for a moment, daring and defiant. Eliza's smirk widens, revealing her sharp, long fangs. She tilts her head slightly, her horns catching the sterile light of the lab as her tail flicks behind her with an audible crack.")
+		saynn("Твои слова на мгновение повисают в воздухе — дерзкие и непокорные. Ухмылка Элизы становится шире, обнажая острые длинные клыки. Она слегка наклоняет голову, и её рога ловят стерильный свет лаборатории, а хвост сзади хлестко дергается, издавая отчетливый щелчок.")
 
-		saynn("[say=eliza]Really~?[/say]")
+		saynn("[say=eliza]Неужели~?[/say]")
 
-		saynn("Her clawed paws reach for her clothing.. and begin stripping it. Her labcoat, her top, her pencil skirt, all fall down to the floor. Even her fancy black lingerie doesn't survive it and experience the same fate.")
+		saynn("Её когтистые лапы тянутся к одежде... и начинают срывать её. Лабораторный халат, топ, юбка-карандаш — всё это падает на пол. Даже её шикарное черное белье не выдерживает и постигает та же участь.")
 
-		saynn("Her alluring curves, her gorgeous six-pack, her busty chest, wide hips and a firm ass, it's all out on display.. as well as her moist demon pussy. The scent of her arousal is making your head spin slightly even from a distance.")
+		saynn("Её манящие изгибы, великолепный пресс, пышная грудь, широкие бедра и упругая задница — всё выставлено напоказ... как и её влажная демоническая киска. Запах её возбуждения заставляет твою голову слегка кружиться даже на расстоянии.")
 
-		saynn("[say=eliza]How about now, mortal? Don't you just want to worship this sexy body~?[/say]")
+		saynn("[say=eliza]Ну как теперь, смертный? Разве тебе не хочется поклоняться этому сексуальному телу~?[/say]")
 
-		saynn("Fuck.. The way her voice reverbs in your mind.. it's becoming harder and harder to say no to.. You focus all of your will power into the next few words.")
+		saynn("Блядь... То, как её голос отдается эхом в твоем сознании... отказывать становится всё труднее и труднее. Ты сосредотачиваешь всю свою силу воли на следующих словах.")
 
-		saynn("[say=pc]Kneel yourself.. then we will talk, demon.[/say]")
+		saynn("[say=pc]Сначала сама встань на колени... а потом поговорим, демоница.[/say]")
 
-		saynn("She winks, her grin just as bright.")
+		saynn("Она подмигивает, и её улыбка сияет так же ярко.")
 
-		saynn("[say=eliza]You've got guts, I will give you that. But you're about to learn something very important, my little assistant..[/say]")
+		saynn("[say=eliza]Смелости тебе не занимать, тут не поспоришь. Но сейчас ты узнаешь кое-что очень важное, мой маленький ассистент...[/say]")
 
-		saynn("You clench your fists and focus your senses..")
+		saynn("Ты сжимаешь кулаки, обостряя все чувства...")
 
-		addButton("Continue", "See what happens next", "resist_table")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resist_table")
 	if(state == "resist_table"):
 		playAnimation(StageScene.SexOralTable, "tease", {pc="elizaDemon", npc="pc", bodyState={naked=true}})
-		saynn("But before you can react, Eliza dashes towards you with demonic speed, her claws catching your wrists in an iron grip. She pushes you backward with inhuman strength, shoving you onto the procedure table. You struggle against her.. but she is far too strong, her clawed paws pinning you down.")
+		saynn("Но прежде чем ты успеваешь среагировать, Элиза с демонической скоростью бросается на тебя, мертвой хваткой вцепляясь когтями в твои запястья. С нечеловеческой силой она толкает тебя назад, швыряя на процедурный стол. Ты пытаешься вырваться... но она слишком сильна, её когтистые лапы намертво прижимают тебя к поверхности.")
 
-		saynn("[say=pc]Agh.. How are you..[/say]")
+		saynn("[say=pc]Агх... Как ты...[/say]")
 
-		saynn("[say=eliza]Simple biology. Mortal flesh is not holding me back.[/say]")
+		saynn("[say=eliza]Простая биология. Смертная плоть меня не сдерживает.[/say]")
 
-		saynn("With quick motions she grabs the cuffs that are chained to the table and snaps them onto your wrists and ankles, locking you securely to the table. She steps back, admiring her handiwork.")
+		saynn("Быстрыми движениями она хватает наручники, прикованные к столу, и защелкивает их на твоих запястьях и лодыжках, намертво фиксируя тебя. Затем она отступает, любуясь своей работой.")
 
-		saynn("[say=eliza]Look at you.. So helpless.. So weak. You knew you wouldn't stand a chance.. Maybe you wanted this? Who am I to say no to this~.[/say]")
+		saynn("[say=eliza]Посмотри на себя... Такой беспомощный... Такой слабый. Ты ведь знал, что шансов нет... А может, ты сам этого хотел? И кто я такая, чтобы отказываться от такого~?[/say]")
 
-		saynn("The dark after-echo of her feminine speech sends shivers down your spine, it reverberates your very soul.. You try to struggle against the chains but the metal is not yielding.")
+		saynn("Темное эхо её женственного голоса заставляет твой позвоночник дрожать, оно резонирует в самой твоей душе... Ты пытаешься бороться с цепями, но металл не поддается.")
 
-		saynn("Her long, flexible tail coils around your neck, above your collar, keeping your head still as she steps a bit closer, her hooves clicking against the sterile floor.")
+		saynn("Её длинный гибкий хвост обвивается вокруг твоей шеи, чуть выше воротника, удерживая твою голову неподвижно, пока она делает шаг ближе, и её копыта цокают по стерильному полу.")
 
-		saynn("[say=eliza]If you won't kneel willingly.. then I will make you serve me another way.[/say]")
+		saynn("[say=eliza]Если ты не хочешь встать на колени добровольно... тогда я заставлю тебя служить мне по-другому.[/say]")
 
-		saynn("Her wet, throbbing demon pussy is hovering just above your face. The musky scent of her arousal overwhelms your senses.. Her claws grip the table on either side of your head as she lowers herself slightly, teasing you with her wetness brushing against your lips without fully committing. A few drops of her arousal drip from her folds, landing on your cheeks and trailing down to your jaw..")
+		saynn("Её влажная, пульсирующая демоническая киска зависла прямо над твоим лицом. Мускусный запах её возбуждения дурманит чувства... Её когти впиваются в стол по обе стороны от твоей головы, когда она слегка опускается, дразня тебя своей влагой, которая касается твоих губ, но не спешит полностью прижаться к ним. Несколько капель её соков стекают из складок, попадая тебе на щеки и стекая к подбородку...")
 
-		saynn("[say=eliza]Go on. Taste me. Or do I have to make you?[/say]")
+		saynn("[say=eliza]Давай же. Попробуй меня на вкус. Или мне придётся заставить тебя?[/say]")
 
-		saynn("Your body wants to respond.. it wants to listen.. your tongue is just itching to feel the heat of that pussy..")
+		saynn("Твоё тело жаждет откликнуться... оно хочет подчиниться... язык так и чешется, чтобы почувствовать жар этой киски...")
 
-		saynn("[say=eliza]I can feel your desire~. C'mon.[/say]")
+		saynn("[say=eliza]Я чувствую твоё желание~. Ну же![/say]")
 
-		saynn("Her tail suddenly tightens around your throat, cutting off some of the blood flow.. Your head is spinning while she presses her warm, slick slit against your face, her folds spreading her wetness across your lips and chin.")
+		saynn("Её хвост внезапно сжимается вокруг твоего горла, перекрывая приток крови... Голова идет кругом, пока она прижимается своей теплой, скользкой щелью к твоему лицу, размазывая влагу своих складок по твоим губам и подбородку.")
 
-		saynn("Giving that pussy a few licks is not gonna be the end of the world..")
+		saynn("Пара лизков этой киски — не конец света...")
 
-		addButton("Lick", "Submit to the urge..", "resist_lick")
+		addButton("Лизать", "Поддайся порыву...", "resist_lick")
 	if(state == "resist_lick"):
 		playAnimation(StageScene.SexOralTable, "lick", {pc="elizaDemon", npc="pc", bodyState={naked=true}})
-		saynn("You flick your tongue out and taste that demon's juices.. Incredible.. Her slick folds part against its tip and let you feel just how hot she is inside.")
+		saynn("Ты высовываешь язык и пробуешь соки этой демоницы... Невероятно... Её скользкие складки раздвигаются под кончиком языка, позволяя тебе почувствовать, насколько она горячая внутри.")
 
-		saynn("[say=eliza]Yes~. Just like that. Nice and slow. Feel every inch of your demon queen.[/say]")
+		saynn("[say=eliza]Да~. Вот так. Нежно и медленно. Прочувствуй каждый дюйм своей демонической королевы.[/say]")
 
-		saynn("Her tail loosens a bit, letting you breathe in more of her intoxicating scent. Her juices begin to drip down the sides of your face while you're dragging your tongue over her folds.. doing little circles around the sensitive clit.. making her own breathing grow heavier.")
+		saynn("Её хвост немного расслабляется, позволяя тебе вдыхать её дурманящий аромат. Её соки начинают стекать по твоим щекам, пока ты водишь языком по её складкам... выписывая маленькие круги вокруг чувствительного клитора... отчего её собственное дыхание становится всё тяжелее.")
 
-		saynn("[say=eliza]Mmhh~..[/say]")
+		saynn("[say=eliza]Мммх~..[/say]")
 
-		saynn("She lets out a satisfied sigh while rocking her hips gently, back and forth, meeting the motions of your tongue.")
+		saynn("Она удовлетворенно вздыхает, плавно покачивая бедрами вперед-назад, подстраиваясь под движения твоего языка.")
 
-		saynn("[say=eliza]I love this form.. I'm gonna make the most out of it.. One piece of advice for you..[/say]")
+		saynn("[say=eliza]Обожаю эту форму... Выжму из неё всё до последней капли... Один тебе совет..[/say]")
 
-		saynn("Advice? You're barely paying attention, your tongue delving between the tantalizing folds, the tip slipping inside the little tight hole and lapping away at the inner walls..")
+		saynn("Совет? Ты едва ли слушаешь её: твой язык проникает между соблазнительных складок, кончик скользит внутрь узкого отверстия, слизывая влагу с внутренних стенок...")
 
-		saynn("[say=eliza]Don't drown~.[/say]")
+		saynn("[say=eliza]Не утони~.[/say]")
 
-		addButton("Continue", "See what happens next", "resist_lick_grind")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resist_lick_grind")
 	if(state == "resist_lick_grind"):
 		playAnimation(StageScene.SexOralTable, "grind", {pc="elizaDemon", npc="pc", bodyState={naked=true}})
-		saynn("Her tail flicks, the tip brushing teasingly against your chest as she starts riding your face, quickly picking the pace up, her hips bucking forward with increasing pressure. Her claws scrape against the table while you work tirelessly against her flower, licking and teasing it.")
+		saynn("Её хвост дергается, кончик дразняще касается твоей груди, когда она начинает скакать тебе на лицо, быстро наращивая темп; её бедра толчками подаются вперед с нарастающим напором. Её когти скребут по столу, пока ты неустанно работаешь над её «цветочком», вылизывая и лаская его.")
 
-		saynn("[say=eliza]Yes.. yes.. just like that.[/say]")
+		saynn("[say=eliza]Да.. да.. именно так.[/say]")
 
-		saynn("Lack of air is not important, being a good pet is. All you see is her slick folds traveling across your face back and forth, forcing its scent into you, marking you.. and it's all that you need.")
+		saynn("Нехватка воздуха не важна, важно быть хорошим питомцем. Перед глазами лишь её скользкие складки, движущиеся по твоему лицу туда-сюда, вбивающие в тебя свой аромат, помечающие тебя... и это всё, что тебе нужно.")
 
-		saynn("Her breathing becomes panting, little demonic moans escaping from her as she presses down harder, the wet sounds of the grinding filling the room. Her tail is squirming a little, her thighs trembling, hooves clicking against the floor as she pushes herself to the edge.")
+		saynn("Её дыхание становится прерывистым, из груди вырываются тихие демонические стоны, когда она нажимает сильнее, а комнату наполняют влажные звуки трения. Её хвост слегка извивается, бедра дрожат, а копыта цокают по полу, пока она подгоняет себя к самому краю.")
 
-		saynn("[say=eliza]Take a deep breath..[/say]")
+		saynn("[say=eliza]Сделай глубокий вдох..[/say]")
 
-		addButton("Continue", "See what happens next", "resist_lick_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resist_lick_cum")
 	if(state == "resist_lick_cum"):
 		playAnimation(StageScene.SexOralTable, "grindfast", {pc="elizaDemon", npc="pc", bodyState={naked=true}})
-		saynn("With a final, primal cry, her body seizes, her thighs locking around your head as a torrent of her juices gushes out, soaking your face in her orgasm. Her wetness splashes over your lips, cheeks and chin, dripping down your neck as she grinds through her climax, milking every last wave of pleasure.")
+		saynn("С последним первобытным криком её тело сводит судорогой, бедра мертвой хваткой сжимают твою голову, а поток её соков хлынет наружу, заливая твоё лицо её оргазмом. Влага брызжет на твои губы, щеки и подбородок, стекая по шее, пока она продолжает терться о тебя, проживая пик и выжимая из себя каждую последнюю волну наслаждения.")
 
-		saynn("[say=eliza]Yes.. Take it all, every drop.. Like a good servant..[/say]")
+		saynn("[say=eliza]Да.. Принимай всё, до последней капли.. Как послушный слуга..[/say]")
 
-		saynn("She throws her head back from satisfaction, her demonic voice echoing in your mind as she rides the last waves of her release. You make sure to follow her orders.. and swallow as much of that hot nectar as possible.")
+		saynn("От удовлетворения она запрокидывает голову, и её демонический голос эхом отдается в твоем разуме, пока она ловит последние волны разрядки. Ты стараешься беспрекословно следовать её приказам... и заглатываешь как можно больше этого горячего нектара.")
 
-		addButton("Continue", "See what happens next", "resist_grind_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resist_grind_after")
 	if(state == "resist_grind_after"):
 		playAnimation(StageScene.SexOralTable, "tease", {pc="elizaDemon", npc="pc", bodyState={naked=true}})
-		saynn("When her grinding finally stops, she leans back and pulls her crotch away from your face, panting softly. Her glowing emerald eyes glowing with smug delight as she gazes down at your drenched face.")
+		saynn("Когда её движения наконец прекращаются, она откидывается назад и убирает промежность от твоего лица, тихонько тяжело дыша. Её светящиеся изумрудные глаза лучатся самодовольным восторгом, когда она смотрит сверху вниз на твоё мокрое от неё лицо.")
 
-		saynn("[say=eliza]Look at you. Absolutely soaked in me. Maybe you should have just obeyed from the start~. I always get what I want.[/say]")
+		saynn("[say=eliza]Посмотри на себя. Весь промок во мне. Может, тебе стоило просто подчиниться с самого начала~? Я всегда получаю то, что хочу.[/say]")
 
-		saynn("Her smirk widens as she traces a claw along your cheek, collecting a drop of her juices before bringing it to her lips and licking it clean.")
+		saynn("Её ухмылка становится шире, когда она проводит когтем по твоей щеке, собирая каплю своего сока, а затем подносит её к губам и слизывает дочиста.")
 
-		saynn("[say=eliza]But I suppose I can't complain. You do make a wonderful little pussy licker.[/say]")
+		saynn("[say=eliza]Но, пожалуй, мне не на что жаловаться. Из тебя вышел чудесный маленький лизунчик.[/say]")
 
-		saynn("While you're left to come up to your senses on the table, Eliza reaches for her labcoat. She pulls out a little pill from one of the pockets.")
+		saynn("Пока ты приходишь в себя на столе, Элиза тянется за своим лабораторным халатом. Она достает маленькую таблетку из одного из карманов.")
 
-		saynn("[say=eliza]Should I.. I'm so sexy right now..[/say]")
+		saynn("[say=eliza]Может, мне стоит?.. Я сейчас такая сексуальная..[/say]")
 
-		saynn("She looks down at herself, at her clawed paws, at her strong hooves, at her curvy hips.. one of her paws reaches up high to her horns and gives them a small rub. But even that is enough to send shivers through her.")
+		saynn("Она опускает взгляд на себя: на свои когтистые лапы, на крепкие копыта, на свои извилистые бедра... Одна из лап тянется вверх, к рогам, и слегка потирает их. Но даже этого достаточно, чтобы по её телу пробежала дрожь.")
 
-		saynn("[say=eliza]Oh.. that feels so strange.[/say]")
+		saynn("[say=eliza]Ох... это такое странное чувство.[/say]")
 
-		saynn("She stays quiet for a bit..")
+		saynn("Она на мгновение замолкает...")
 
-		saynn("[say=eliza]Nah..[/say]")
+		saynn("[say=eliza]Да нет...[/say]")
 
-		saynn("..and throws the pill into her mouth, swallowing it dry.")
+		saynn("...и закидывает таблетку в рот, проглатывая её всухую.")
 
-		addButton("Continue", "See what happens next", "resist_grind_after_undotf")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resist_grind_after_undotf")
 	if(state == "resist_grind_after_undotf"):
 		playAnimation(StageScene.SexOralTable, "tease", {pc="eliza", npc="pc"})
-		saynn("Whatever Eliza ate, it seems to have an opposite effect to DemoniX. Her horns begin to retract back into her skull, getting smaller and smaller. Her pointy tail morphs, getting a bit shorter, losing its sharp tip and growing fur.. her hooves go away, replaced by the digitigrade hind paws. Her body loses some of its curviness..")
+		saynn("Что бы там ни съела Элиза, эффект оказался прямо противоположным действию Демоникс. Её рога начинают втягиваться обратно в череп, становясь всё меньше и меньше. Заостренный хвост трансформируется, немного укорачиваясь, теряя острый кончик и обрастая мехом... копыта исчезают, сменяясь пальцами задних лап. Её тело теряет часть своих изгибов...")
 
-		saynn("[say=eliza]Mmhh..[/say]")
+		saynn("[say=eliza]Мммхх..[/say]")
 
-		saynn("After the process is over.. Eliza opens her eyes..")
+		saynn("Когда процесс завершается... Элиза открывает глаза...")
 
-		saynn("[say=eliza]That was.. something.[/say]")
+		saynn("[say=eliza]Это было... нечто.[/say]")
 
-		saynn("[say=pc]Woah..[/say]")
+		saynn("[say=pc]Ого...[/say]")
 
-		saynn("She chuckles and puts her clothes back on.")
+		saynn("Она посмеивается и натягивает одежду обратно.")
 
-		saynn("[say=eliza]I don't feel so horny anymore. So, let's get you out.[/say]")
+		saynn("[say=eliza]Меня уже не так сильно штырит. Так что, пошли отсюда.[/say]")
 
-		addButton("Continue", "See what happens next", "resist_grind_after_unlock")
+		addButton("Продолжить", "Смотреть, что будет дальше", "resist_grind_after_unlock")
 	if(state == "resist_grind_after_unlock"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("Eliza unlocks the cuffs and helps you to get up.")
+		saynn("Элиза отпирает наручники и помогает тебе подняться.")
 
-		saynn("[say=eliza]You're so wet.[/say]")
+		saynn("[say=eliza]Ты вся такая мокрая.[/say]")
 
-		saynn("[say=pc]Wonder why.[/say]")
+		saynn("[say=pc]Интересно, почему.[/say]")
 
-		saynn("She pats you on the head.")
+		saynn("Она похлопывает тебя по голове.")
 
-		saynn("[say=eliza]I guess the pill worked~. Of course it did.[/say]")
+		saynn("[say=eliza]Похоже, таблетка сработала~. Ну конечно, она же сработала.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

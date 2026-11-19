@@ -12,111 +12,111 @@ func _init():
 func _run():
 	if(state == ""):
 		isEgged = GM.pc.isEggStuffed()
-		saynn("You open your eyes.. and immediately feel that something is different. No, it's not the ceiling of your cell, that's for sure.")
+		saynn("Ты открываешь глаза... и сразу чувствуешь, что что-то изменилось. Нет, это точно не потолок твоей камеры.")
 
-		saynn("A scent.. there is a certain scent in the air. An expensive perfume.")
+		saynn("Запах... в воздухе витает какой-то аромат. Дорогой парфюм.")
 
-		addButton("Look around", "See what's happening", "eliza_intro")
+		addButton("Осмотреться", "Посмотреть, что происходит", "eliza_intro")
 	if(state == "eliza_intro"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="sit"})
-		saynn("You turn your head and blink.")
+		saynn("Ты поворачиваешь голову и моргаешь.")
 
-		saynn("The feline doctor is sitting on a chair, near your bed. Her legs are crossed, her emerald eyes are watching you. It's doctor Quinn..")
+		saynn("Кошка-врач сидит на стуле рядом с твоей кроватью. Нога на ногу, изумрудные глаза следят за тобой. Это доктор Куинн...")
 
-		saynn("[say=eliza]I was starting to think I'd have to poke you.[/say]")
+		saynn("[say=eliza]Я уже начала думать, что мне придётся тебя тыкать.[/say]")
 
-		saynn("You sit up quickly.. and then get up in a hurry. Something tells you she didn't come here for a friendly chat.")
+		saynn("Ты резко садишься... а затем в спешке вскакиваешь на ноги. Что-то подсказывает тебе, что она пришла сюда не для дружеской беседы.")
 
-		saynn("Your quick reaction makes her smile.. She uncrosses her legs.. and crosses them the other way.")
+		saynn("Твоя быстрая реакция заставляет её улыбнуться... Она меняет положение ног, скрещивая их уже по-другому.")
 
-		saynn("[say=eliza]If I needed you for something, you'd already be in medical~.[/say]")
+		saynn("[say=eliza]Если бы ты была нужна мне по делу, ты бы уже была в медблоке~.[/say]")
 
-		saynn("That's probably fair. Still, she certainly has a reason behind why she is here.")
+		saynn("Наверное, справедливо. И всё же, у неё определённо есть причина, по которой она здесь.")
 
 		if (articaVariant):
-			saynn("[say=eliza]You remember those sweet snacks? The ones that got.. produced.. by that cute patient? I did so much work since then that I don't remember exactly when and who.[/say]")
+			saynn("[say=eliza]Помнишь те сладкие вкусняшки? Те самые, которые... производила... та милая пациентка? С тех пор я столько всего переделала, что уже и не вспомню точно, когда и кто именно.[/say]")
 
-			saynn("You're pretty sure she is talking about Artica.")
+			saynn("Ты почти уверен, что она говорит об Артике.")
 
-			saynn("[say=pc]Depends. Why?[/say]")
+			saynn("[say=pc]Зависит от того, зачем. Почему спрашиваешь?[/say]")
 
-			saynn("She chuckles softly.")
+			saynn("Она тихонько посмеивается.")
 
-			saynn("[say=eliza]Relax, I didn't come here to confiscate them~. Well..[/say]")
+			saynn("[say=eliza]Расслабься, я пришла сюда не для того, чтобы их конфисковать~. Ну... может быть...[/say]")
 
-			saynn("Her quick glance to the side is slightly concerning.")
+			saynn("Её быстрый взгляд в сторону вызывает легкое беспокойство.")
 
 		else:
-			saynn("[say=eliza]Did you enjoy your little adventure?[/say]")
+			saynn("[say=eliza]Тебе понравилось твоё маленькое приключение?[/say]")
 
-			saynn("[say=pc]Adventure?[/say]")
+			saynn("[say=pc]Приключение?[/say]")
 
-			saynn("She nods and fixes her glasses before pulling up some files on her datapad.")
+			saynn("Она кивает и поправляет очки, прежде чем открыть файлы на своём датападе.")
 
-			saynn("[say=eliza]Yes, your last escape attempt. I thought that you were just pregnant when you.. arrived.. the other day. I saw the round belly and didn't even bother to check.[/say]")
+			saynn("[say=eliza]Да, твоя последняя попытка побега. Когда ты... прибыла... на днях, я подумала, что ты просто беременна. Увидела круглый живот и даже не потрудилась проверить.[/say]")
 
 			if (isEgged):
-				saynn("Your hand instinctively lands on your belly.. a belly that is still very round.")
+				saynn("Твоя рука инстинктивно ложится на живот... живот, который всё ещё очень круглый.")
 
 			elif (GM.pc.isVisiblyPregnant()):
-				saynn("Your hand instinctively lands on your belly.. a belly that is still round.. but for a different reason.")
+				saynn("Твоя рука инстинктивно ложится на живот... живот, который всё ещё круглый... но по совсем другой причине.")
 
 			else:
-				saynn("Your hand instinctively lands on your belly.. a belly that is currently flat actually.")
+				saynn("Твоя рука инстинктивно ложится на живот... который, вообще-то, сейчас плоский.")
 
-			saynn("[say=eliza]I had nothing better to do today so I decided to check your x-ray. I was surprised. Pleasantly surprised~.[/say]")
+			saynn("[say=eliza]Сегодня мне было заняться нечем, поэтому я решила взглянуть на твой рентген. И я была удивлена. Приятно удивлена~.[/say]")
 
-		addButton("Continue", "See what happens next", "eliza_stands")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_stands")
 	if(state == "eliza_stands"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("The feline stands up, smooths her skirt.. and steps closer to you.")
+		saynn("Кошка встает, разглаживает юбку... и делает шаг к тебе.")
 
 		if (articaVariant):
-			saynn("[say=eliza]I think I can do something fun with those snacks. They're still eggs, you know~.[/say]")
+			saynn("[say=eliza]Думаю, с этими закусками можно устроить кое-что веселое. Это ведь всё ещё яйца, знаешь ли~.[/say]")
 
-			saynn("You hum. She is being so secretive about it.")
+			saynn("Ты что-то напеваешь. Она так загадочно ведет себя.")
 
-			saynn("[say=pc]Where are you heading with this?[/say]")
+			saynn("[say=pc]К чему ты клонишь?[/say]")
 
-			saynn("She eyes your lips and licks hers.")
+			saynn("Она смотрит на твои губы и облизывает свои.")
 
-			saynn("[say=eliza]I.. I think I have a great use for them~.[/say]")
+			saynn("[say=eliza]Я... я думаю, у меня найдется им отличное применение~.[/say]")
 
-			saynn("[say=pc]Use?[/say]")
+			saynn("[say=pc]Применение?[/say]")
 
 		else:
 			if (isEgged):
-				saynn("[say=eliza]You're stuffed. Full of tentacle eggs. Aren't you, patient~?[/say]")
+				saynn("[say=eliza]Ты вся набита. Полная яиц щупалец. Так ведь, пациентка~?[/say]")
 
 			else:
-				saynn("[say=eliza]You're stuffed.. Well.. you WERE stuffed.. full of tentacle eggs. weren't you, patient~? I hope you kept some of them~.[/say]")
+				saynn("[say=eliza]Ты вся набита... Ну... ты БЫЛА набита... полная яиц щупалец, верно, пациентка~? Надеюсь, ты приберегла парочку для меня~.[/say]")
 
-			saynn("It's hard to hide the blush.")
+			saynn("Скрыть румянец трудно.")
 
-			saynn("[say=pc]Where are you heading with this?[/say]")
+			saynn("[say=pc]К чему ты клонишь?[/say]")
 
-			saynn("She eyes your"+str(" round" if isEgged else "")+" belly and licks her lips.")
+			saynn("Она оглядывает твой"+str(" round" if isEgged else "")+" живот и облизывает губы.")
 
-			saynn("[say=eliza]I.. I think I have a great use for them~.[/say]")
+			saynn("[say=eliza]Я... я думаю, у меня найдется им отличное применение~.[/say]")
 
-			saynn("[say=pc]Use?[/say]")
+			saynn("[say=pc]Применение?[/say]")
 
-		saynn("She nods and traces her clawed digit over your chin, ending it with a boop on your nose.")
+		saynn("Она кивает и проводит когтем по твоему подбородку, заканчивая это легким тычком в нос.")
 
-		saynn("[say=eliza]Yes. Bring me some. When you can. Don't make me wait though, I don't like waiting.[/say]")
+		saynn("[say=eliza]Да. Принеси мне немного. Когда сможешь. Только не заставляй меня ждать, я не люблю ждать.[/say]")
 
-		saynn("[say=pc]Why would I do that? I can just eat them instead of all the slop that we, inmates, get here.[/say]")
+		saynn("[say=pc]Зачем мне это делать? Я могу просто съесть их вместо всей той жижи, которой нас, заключенных, тут кормят.[/say]")
 
-		saynn("[say=eliza]Eventually you will run out of them.. But I.. I can.. Well.. You will just have to bring me those eggies to find out~. As many as you can. Trust me, you won't regret it.[/say]")
+		saynn("[say=eliza]В конце концов они у тебя закончатся... Но я... я смогу... Ну... Тебе просто придется принести мне этих яичек, чтобы проверить~. Столько, сколько сможешь. Поверь, ты не пожалеешь.[/say]")
 
-		saynn("She touches her own lips with two digits.. then brings them to yours. A little indirect kiss. Then she starts heading towards the exit, swaying her hips.")
+		saynn("Она касается своих губ двумя пальцами... а затем прижимает их к твоим. Маленький непрямой поцелуй. После чего она направляется к выходу, покачивая бедрами.")
 
-		saynn("[say=eliza]Right now I'm running dangerously low on caffeine. I hope you know where to find me.[/say]")
+		saynn("[say=eliza]Прямо сейчас у меня критически мало кофеина. Надеюсь, ты знаешь, где меня искать.[/say]")
 
-		saynn("You nod.. and watch her disappear.")
+		saynn("Ты киваешь... и смотришь, как она исчезает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

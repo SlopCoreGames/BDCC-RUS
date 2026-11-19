@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Visor Wise"
+	return "Мудрость визора"
 
 func getVisibleDescription():
 	return "You have become intimately familiar with what wearing a hypnotic visor is like."

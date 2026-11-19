@@ -15,7 +15,7 @@ func run(_triggerID, _args):
 		return
 		
 	if(not getFlag("AlexRynardModule.ch1HypnovisorHappened")):
-		addDisabledButton("Vion's issue", "Better wait till Alex is more friendly with you")
+		addDisabledButton("Проблема Виона", "Лучше подожди, пока Алекс не станет к тебе дружелюбнее")
 	else:
 		addButtonUnlessLate("Vion's issue", "Maybe Alex knows where to get the gizmo Vion wanted", "make_deal")
 

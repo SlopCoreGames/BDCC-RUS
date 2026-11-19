@@ -10,215 +10,215 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "idle")
-		saynn("So.. dark.. it's blinding..")
+		saynn("Так.. темно.. аж глаза слепит..")
 
-		saynn("At least you're not dead yet.. wishful thinking, right? Naaah, you're not ready to give up that easily.")
+		saynn("По крайней мере, ты еще не сдох.. самообман, да? Не-а, ты не готов сдаться так просто.")
 
-		saynn("In any case, might as well just rest and see where this life brings you next.")
+		saynn("В любом случае, стоит просто отдохнуть и посмотреть, куда занесет тебя жизнь дальше.")
 
-		addButton("Continue", "See what pain will you have to endure next", "wakey_wakey")
+		addButton("Продолжить", "Посмотреть, какую боль тебе придется терпеть в следующий раз.", "wakey_wakey")
 	if(state == "wakey_wakey"):
 		addCharacter("eliza")
 		playAnimation(StageScene.GivingBirth, "idle", {bodyState={naked=true}})
 		aimCameraAndSetLocName("medical_hospitalwards")
-		saynn("Your head.. hurts.. which makes you extremely happy for some reason. But that.. beeping noise.. is so annoying.. beep.. beep.. beep..")
+		saynn("Голова.. раскалывается.. и почему-то это чертовски радует. Но этот.. писк.. так бесит.. пип.. пип.. пип..")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence! AlphaCorp hopes that you are enjoying your stay here.")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" ...твоего срока! АльфаКорп надеется, что вам нравится пребывание здесь.")
 
-		saynn("You slowly open your eyes and notice.. that you're completely naked. Wait.. are those.. tentacles?.. penetrating your holes?.. You squint a little and realize that they're just plastic tubes that go from some medical machine to your nostrils. False alarm..")
+		saynn("Ты медленно открываешь глаза и замечаешь.. что ты совершенно голый. Погоди.. это что.. щупальца?.. входят в твои дырки?.. Ты прищуриваешься и понимаешь, что это всего лишь пластиковые трубки, идущие от какого-то медицинского аппарата прямо в твои ноздри. Ложная тревога..")
 
-		saynn("[say=eliza]Oh, you're up. Morning, patient. Don't move too much.. or I will have to put a straitjacket on you, hehe.[/say]")
+		saynn("[say=eliza]О, ты очнулся. Доброе утро, пациент. Не дергайся слишком сильно.. а то мне придется застегнуть тебя в смирительную рубашку, хе-хе.[/say]")
 
-		saynn("The headache makes it hard but you make your best effort to look around anyways. The white bright sterile walls remind you of the medical wing instantly. Standing near the bed is a friendly-looking feline with fur of pastel colors, wearing a labcoat and seemingly just reading some things from her datapad.")
+		saynn("Из-за головной боли это дается с трудом, но ты изо всех сил стараешься осмотреться. Ярко-белые стерильные стены мгновенно напоминают тебе о медицинском крыле. У кровати стоит дружелюбная кошка с пастельной шерсткой; на ней надет лабораторный халат, и она, кажется, просто читает что-то в своем датападе.")
 
-		saynn("You can roughly guess where you are. But how and why is still a great question.")
+		saynn("Ты примерно понимаешь, где находишься. Но как и почему — это всё еще большой вопрос.")
 
-		saynn("[say=pc]How did..[/say]")
+		saynn("[say=pc]Как это...[/say]")
 
 		if (isBeaten):
-			saynn("[say=eliza]Tsh-h.. Let me do the talking here. Doctor Quinn in case you don't remember. Let me see..[/say]")
+			saynn("[say=eliza]Тсс... Дай мне поговорить. Доктор Куинн, на случай если не помнишь. Так, посмотрим...[/say]")
 
-			saynn("She swipes through some screens and then tilts her head slightly.")
+			saynn("Она пролистывает несколько экранов, а затем слегка наклоняет голову.")
 
-			saynn("[say=eliza]Huh, wow. Is that an xray or a jigsaw puzzle? Oh, look. It says here that you died, patient.[/say]")
+			saynn("[say=eliza]Хм, ого. Это рентген или пазл? О, гляди-ка. Тут написано, что ты сдох, пациент.[/say]")
 
-			saynn("Doctor directs her gaze at you and how you're still breathing.")
+			saynn("Доктор переводит взгляд на тебя, изучая то, что ты всё ещё дышишь.")
 
-			saynn("[say=eliza]But we resurrected you. You're the reason we had to use the cryopod for its intended purpose - to freeze biological processes. Gave us some much-needed time to stitch your limbs back together.[/say]")
+			saynn("[say=eliza]Но мы тебя воскресили. Ты — та самая причина, по которой нам пришлось использовать криокапсулу по прямому назначению — чтобы заморозить биологические процессы. Это дало нам столь необходимое время, чтобы сшить твои конечности обратно воедино.[/say]")
 
-			saynn("The feline smiles warmly.")
+			saynn("Кошка тепло улыбается.")
 
-			saynn("[say=eliza]Hopefully we didn't mess up. That would be an awkward first toilet visit. Insurance will cover it I'm sure~.[/say]")
+			saynn("[say=eliza]Надеюсь, мы ничего не напортачили. А то первый поход в туалет будет довольно неловким. Страховка всё покроет, я уверена~.[/say]")
 
 		elif (isFucked):
-			saynn("[say=eliza]Tsh-h.. Let me do the talking here. Doctor Quinn in case you don't remember. Let me see..[/say]")
+			saynn("[say=eliza]Тсс... Дай мне поговорить. Доктор Куинн, на случай если не помнишь. Так, посмотрим...[/say]")
 
-			saynn("She swipes through some screens and then tilts her head slightly.")
+			saynn("Она пролистывает несколько экранов, а затем слегка наклоняет голову.")
 
-			saynn("[say=eliza]Huh, wow. That's a fancy vase. Wait, I'm wrong, that's an xray of your crotch actually. It seems you got stretched down there a little past your limits. Quite the feat I must say.[/say]")
+			saynn("[say=eliza]Ох, ого. Какая шикарная ваза. А, нет, ошибаюсь... это рентген твоей промежности. Похоже, там тебя растянули чуть больше положенного. Должна признать, это достижение.[/say]")
 
-			saynn("The doctor directs her gaze at you, her expression a mix of concern and amusement.")
+			saynn("Врач переводит на тебя взгляд; в её глазах смесь беспокойства и веселья.")
 
-			saynn("[say=eliza]But don't worry, one trip to the cryo and your bits are now almost brand new. I'm more concerned about the small concussion that you received. Did you fall off your bed yesterday?[/say]")
+			saynn("[say=eliza]Но не переживай, один сеанс в криокамере — и твои причиндалы почти как новенькие. Меня больше беспокоит легкое сотрясение, которое ты получила. Ты что, вчера с кровати свалилась?[/say]")
 
-			saynn("The feline smiles warmly.")
+			saynn("Кошка тепло улыбается.")
 
-			saynn("[say=eliza]Hopefully we didn't mess up. Would be awkward to hear you bark suddenly~. You will be fine-e-e. Just remember, bigger toys doesn't mean better toys.[/say]")
+			saynn("[say=eliza]Надеюсь, мы ничего не напутали. Было бы неловко, если бы ты вдруг начала лаять~. Всё будет хорошо-о-о. Просто помни: чем больше игрушка, не значит, что она лучше.[/say]")
 
 		else:
-			saynn("[say=eliza]Tsh-h.. Let me do the talking here. Doctor Quinn in case you don't remember. Let me see..[/say]")
+			saynn("[say=eliza]Тсс... Дай мне поговорить. Доктор Куинн, на случай если не помнишь. Так, посмотрим...[/say]")
 
-			saynn("She swipes through some screens and then tilts her head slightly.")
+			saynn("Она пролистывает несколько экранов, а затем слегка наклоняет голову.")
 
-			saynn("[say=eliza]Huh, it seems.. you had a concussion. A good one. It's as if your brain wanted to explore new dimensions. Oh, look. It says here that you died, patient.[/say]")
+			saynn("[say=eliza]Хм, похоже... у тебя сотрясение. Причем знатное. Как будто твой мозг решил исследовать новые измерения. О, гляди-ка. Тут написано, что ты умерла, пациентка.[/say]")
 
-			saynn("Doctor directs her gaze at you and how you're still breathing.")
+			saynn("Доктор переводит взгляд на тебя, изучая то, что ты всё ещё дышишь.")
 
-			saynn("[say=eliza]But we resurrected you. You're the reason we had to use the cryopod for its intended purpose - to freeze biological processes. Gave us some much-needed time to put your skull pieces back together.[/say]")
+			saynn("[say=eliza]Но мы тебя воскресили. Ты — та самая причина, по которой нам пришлось использовать криокапсулу по прямому назначению — чтобы заморозить биологические процессы. Это дало нам столь необходимое время, чтобы собрать твой череп по кусочкам.[/say]")
 
-			saynn("The feline smiles warmly.")
+			saynn("Кошка тепло улыбается.")
 
-			saynn("[say=eliza]Hopefully we didn't mess up. Would be awkward to hear you bark suddenly~. You will be fine-e-e. Just remember, no more headbutting concrete walls for a while, okay?[/say]")
+			saynn("[say=eliza]Надеюсь, мы ничего не напутали. Было бы неловко, если бы ты вдруг начала лаять~. Всё будет хорошо-о-о. Только помни: никаких больше боев головой с бетонными стенами в ближайшее время, ладно?[/say]")
 
-		saynn("What is she.. talking about.. You try to frown but tensing your face muscles just makes the white noise in your head louder.")
+		saynn("О чем она... говорит?.. Ты пытаешься нахмуриться, но от напряжения мышц лица белый шум в голове становится только громче.")
 
-		saynn("[say=eliza]Tshh.. Stay like that, patient. I think you will need at least one more day here in this bed. I will go get some good painkillers.[/say]")
+		saynn("[say=eliza]Тсс... Лежи так, пациентка. Думаю, тебе понадобится еще как минимум один день в этой постели. Пойду достану тебе хорошего обезболивающего.[/say]")
 
-		saynn("The feline leaves your room, letting you.. rest. You put your head on the pillow and close your eyes..")
+		saynn("Кошка покидает твою комнату, давая тебе... отдохнуть. Ты кладешь голову на подушку и закрываешь глаза...")
 
-		saynn("You wonder if you should even tell that doctor about Avy.. beep.. beep.. beep..")
+		saynn("Ты гадаешь, стоит ли вообще рассказывать об Ави тому доктору... бип... бип... бип...")
 
-		addButton("Continue", "See what happens next", "a_new_day")
+		addButton("Продолжить", "Смотреть, что будет дальше", "a_new_day")
 	if(state == "a_new_day"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence!")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" о твоем сроке!")
 
-		saynn("It's the second day of you being here. And you feel.. fine? Better than before, that's for sure.")
+		saynn("Идет второй день твоего пребывания здесь. И ты чувствуешь себя... нормально? Определенно лучше, чем раньше.")
 
-		saynn("You open your eyes and notice that you're not connected to the annoying beeping machine anymore. And your belongings lay before you on the bed. Time to put everything back where it was.")
+		saynn("Ты открываешь глаза и замечаешь, что больше не подключен к этой раздражающей пищащей машине. Твои вещи лежат перед тобой на кровати. Пора разложить всё по местам.")
 
-		saynn("Doctor Quinn walks in and slowly approaches you, datapad in her paws.")
+		saynn("Входит доктор Куинн и медленно приближается к тебе, держа в лапах датапад.")
 
-		saynn("[say=pc]Am I free to go?[/say]")
+		saynn("[say=pc]Я свободна?[/say]")
 
-		saynn("[say=eliza]Yeah, sure. After you explain why one of the inmates has carried your half-dead body through half of the prison. Half half half.[/say]")
+		saynn("[say=eliza]Да, конечно. После того как объяснишь, почему одна из заключенных протащила твое полудохлое тело через половину тюрьмы. Половину, половину, половину.[/say]")
 
-		saynn("Shit. Wait. Inmate?")
+		saynn("Черт. Погоди. Заключенных?")
 
-		saynn("[say=pc]What inmate?[/say]")
+		saynn("[say=pc]Каких заключенных?[/say]")
 
-		saynn("Doctor raises a brow.")
+		saynn("Доктор вопросительно приподнимает бровь.")
 
-		saynn("[say=eliza]How about a deal? You tell me and I tell you.[/say]")
+		saynn("[say=eliza]Как насчет сделки? Ты мне — я тебе.[/say]")
 
-		saynn("You sigh and look around, avoiding eye contact.")
+		saynn("Ты вздыхаешь и оглядываешься по сторонам, избегая зрительного контакта.")
 
-		saynn("[say=pc]I got into a fight, okay? And I lost. Simple as that.[/say]")
+		saynn("[say=pc]Я ввязалась в драку, ладно? И проиграла. Всё просто.[/say]")
 
-		saynn("The feline furrows her brows and swipes through some screens on her datapad.")
+		saynn("Кошка хмурится и начинает быстро пролистывать экраны на своем датападе.")
 
-		saynn("[say=eliza]Explains the DNA of one of the high-security inmates that we found on you.[/say]")
+		saynn("[say=eliza]Объясняет результаты анализа ДНК одной из заключенных строгого режима, которую нашли у тебя.[/say]")
 
 		if (isFucked):
-			saynn("The feline coughs many times for some reason.")
+			saynn("Кошка почему-то начинает часто кашлять.")
 
-			saynn("[say=eliza]A lot of it.. khm..[/say]")
+			saynn("[say=eliza]Много чего... кхм...[/say]")
 
-		saynn("Well, might as well tell her more.")
+		saynn("Что ж, можно и рассказать ей побольше.")
 
-		saynn("[say=pc]Yeah. The bitch got drugs that made her stronger. Without them she is nothing.[/say]")
+		saynn("[say=pc]Ага. У этой сучки были препараты, которые делали её сильнее. Без них она — пустое место.[/say]")
 
-		saynn("The feline hums loudly. You can see a confused expression on her face.")
+		saynn("Кошка громко мурлычет. На её лице читается полное замешательство.")
 
-		saynn("[say=eliza]But, those aren't allowed for inmates. For obvious reasons.. And the only staff member who is using them is..[/say]")
+		saynn("[say=eliza]Но заключённым такие не положены. По вполне очевидным причинам... И единственный сотрудник, который ими пользуется, это..[/say]")
 
-		saynn("She swiftly swipes through more screens, then types something on a holo-keyboard.")
+		saynn("Она быстро пролистывает экраны, а затем что-то печатает на голо-клавиатуре.")
 
-		saynn("[say=eliza]Is Risha. She needs them to not lose her gains or whatever she said.[/say]")
+		saynn("[say=eliza]Риша. Ей они нужны, чтобы не растерять форму или что она там себе напридумывала.[/say]")
 
-		saynn("Doctor Quinn scratches her chin.")
+		saynn("Доктор Куинн задумчиво чешет подбородок.")
 
-		saynn("[say=eliza]And that inmate.. I wouldn't be surprised if they are stealing the drugs from Risha. That.. cat.. has bigger holes in her pockets than the inmate pockets after her.[/say]")
+		saynn("[say=eliza]И этот заключённый... Не удивлюсь, если они воруют лекарства у Риши. У этой.. кошки.. в карманах дыр больше, чем у заключённых после неё.[/say]")
 
-		addButton("Who saved me", "Time for her to answer", "ask_about_kait")
+		addButton("Кто меня спас", "Пора получить ответ", "ask_about_kait")
 	if(state == "ask_about_kait"):
-		saynn("[say=pc]That's great and all. But who was that inmate who.. saved me.[/say]")
+		saynn("[say=pc]Всё это здорово. Но что за заключённый был тот, кто.. спас меня?[/say]")
 
-		saynn("Doctor Quinn is still frowning, clearly focused on something else.")
+		saynn("Доктор Куинн всё ещё хмурится, явно погружённая в свои мысли.")
 
-		saynn("[say=eliza]Huh? Some lilac, a snow leopard I think. She will have to clean the blood trail now. Anyway.[/say]")
+		saynn("[say=eliza]А? Сиреневая... кажется, снежный барс. Теперь ей придётся отмывать кровавый след. Ну да ладно.[/say]")
 
-		saynn("The feline looks at you, her eyes shine like she is excited.")
+		saynn("Кошка смотрит на тебя, её глаза так и сияют от предвкушения.")
 
-		saynn("[say=eliza]I have a great proposition for you.[/say]")
+		saynn("[say=eliza]У меня есть для тебя одно заманчивое предложение.[/say]")
 
-		saynn("You already don't like where this is going.")
+		saynn("Ты уже начинаешь понимать, к чему всё клонится, и тебе это не нравится.")
 
-		saynn("[say=pc]Why would I do..[/say]")
+		saynn("[say=pc]И зачем мне это...[/say]")
 
-		saynn("[say=eliza]You wanna teach that inmate a great lesson about why drugs are bad?[/say]")
+		saynn("[say=eliza]Хочешь преподать этой каторжнице отличный урок о том, как хреново бывает от наркотиков?[/say]")
 
-		saynn("Huh. This does sound interesting now.")
+		saynn("Хм. А вот это уже звучит интересно.")
 
-		saynn("[say=pc]How?[/say]")
+		saynn("[say=pc]Как именно?[/say]")
 
-		saynn("[say=eliza]The plan is simple. We make a drug. The best drug. The most powerful aphrodisiac that was developed. By yours truly, by the way.[/say]")
+		saynn("[say=eliza]План прост. Мы сделаем наркотик. Лучший наркотик. Самый мощный афродизиак из когда-либо созданных. Кстати, разработала его лично я.[/say]")
 
-		saynn("Doctor bites her lip.")
+		saynn("Доктор закусывает губу.")
 
-		saynn("[say=eliza]And when Risha comes to me for her muscle stimulants, oops, I will accidentally give her the wrong ones, how silly of me.[/say]")
+		saynn("[say=eliza]И когда Риша придет ко мне за своими стимуляторами, ой, я случайно дам ей не те, какая же я глупышка.[/say]")
 
-		saynn("The feline smiles.")
+		saynn("Кошка улыбается.")
 
-		saynn("[say=pc]And then I go fight that inmate again?[/say]")
+		saynn("[say=pc]А потом мне снова идти драться с той заключенной?[/say]")
 
-		saynn("[say=eliza]Precisely. Just wait a little so that the inmate has the time to steal the drugs.[/say]")
+		saynn("[say=eliza]Именно. Только подожди немного, чтобы у нее было время украсть лекарство.[/say]")
 
-		saynn("[say=pc]And why would you help me like that?[/say]")
+		saynn("[say=pc]И зачем тебе помогать мне таким образом?[/say]")
 
-		saynn("The feline looks up at the ceiling.")
+		saynn("Кошка смотрит в потолок.")
 
-		saynn("[say=eliza]Let's just say that I have my reasons, patient. The only thing is..[/say]")
+		saynn("[say=eliza]Скажем так, у меня есть свои причины, пациентка. Единственное дело в том, что...[/say]")
 
-		saynn("Doctor Quinn gets a little sad, flicking through the menus of her datapad.")
+		saynn("Доктор Куинн слегка грустит, пролистывая меню на своем датападе.")
 
-		saynn("[say=eliza]I'm missing a component for that drug. A plant. It's the key part of the recipe.[/say]")
+		saynn("[say=eliza]Мне не хватает одного компонента для этого препарата. Растения. Это ключевая часть рецепта.[/say]")
 
-		saynn("[say=pc]Can't you, like, order it?[/say]")
+		saynn("[say=pc]А ты не можешь, ну, типа, заказать его?[/say]")
 
-		saynn("[say=eliza]It will take a while. Logistics, bureaucracy, I hate it all. I just wanna.. experiment. Not be a paper slave.[/say]")
+		saynn("[say=eliza]Это займет немало времени. Логистика, бюрократия — ненавижу всё это. Я просто хочу... экспериментировать. А не быть бумажным рабом.[/say]")
 
-		saynn("The feline scratches her chin again.")
+		saynn("Кошка снова чешет подбородок.")
 
-		saynn("[say=eliza]The plant grows in the green houses, here, on this station. Would you, maybe, go get it for me? I'd like to keep this one.. off the books.[/say]")
+		saynn("[say=eliza]Растения растут в оранжереях, прямо здесь, на станции. Может, сходишь за одним для меня? Хотелось бы оставить это дело... неофициальным.[/say]")
 
-		saynn("Hum. What choice do you have anyway? If you don't get her this plant, Avy will just keep using that drug and win every arena fight. You gotta teach her for what she's done..")
+		saynn("Хм. Впрочем, какой у тебя выбор? Если не принесешь ей это растение, Эви так и будет сидеть на наркоте и выигрывать каждый бой на арене. Тебе нужно преподать ей урок за то, что она натворила...")
 
-		saynn("[say=pc]I will see what I can do.[/say]")
+		saynn("[say=pc]Посмотрим, что можно сделать.[/say]")
 
-		saynn("Doctor's face lights up.")
+		saynn("Лицо доктора озаряется улыбкой.")
 
-		saynn("[say=eliza]Great. It's.. glowing and it's pink. Can't miss it. Now, let's get you out of here.[/say]")
+		saynn("[say=eliza]Отлично. Оно... розовое и светится. Его не перепутаешь. А теперь давай выведем тебя отсюда.[/say]")
 
-		saynn("She produces a chain leash and already reaches to attach it to your collar.")
+		saynn("Она достает цепь-поводок и уже тянется, чтобы пристегнуть её к твоему ошейнику.")
 
-		saynn("[say=pc]Is this really needed?[/say]")
+		saynn("[say=pc]Это правда необходимо?[/say]")
 
-		saynn("The feline nods playfully and clips the leash before offering you to follow.")
+		saynn("Кошка игриво кивает, защелкивает поводок и предлагает тебе следовать за ней.")
 
-		saynn("[say=eliza]Just a standard procedure, patient~.[/say]")
+		saynn("[say=eliza]Просто стандартная процедура, пациентка~.[/say]")
 
-		addButton("Continue", "See where she will bring you", "follow_eliza")
+		addButton("Продолжить", "Посмотреть, куда она вас приведет", "follow_eliza")
 	if(state == "follow_eliza"):
 		aimCameraAndSetLocName("med_lobbyne")
 		GM.pc.setLocation("med_lobbyne")
-		saynn("The feline brings you out into the medical lobby before detaching the leash.")
+		saynn("Кошка выводит тебя в медицинское лобби, после чего отстегивает поводок.")
 
-		saynn("[say=eliza]Well, good luck. I'm always here, behind the counter.[/say]")
+		saynn("[say=eliza]Ну, удачи. Я всегда здесь, за прилавком.[/say]")
 
-		saynn("You nod. Time to go.")
+		saynn("Ты киваешь. Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

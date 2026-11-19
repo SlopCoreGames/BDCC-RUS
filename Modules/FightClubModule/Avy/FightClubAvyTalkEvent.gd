@@ -8,19 +8,19 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(GM.main.MS.isOnMission()):
-		addDisabledButton("Avy", "Can't do that while on a mission")
+		addDisabledButton("Эви", "Нельзя делать это во время миссии")
 		return
 	
-	saynn("Avy stands near the fences that make up the improvised arena.")
+	saynn("Ави стоит у ограждений, образующих импровизированную арену.")
 	
 	if(!getFlag("FightClubModule.AnnouncerIntroduced")):
-		addDisabledButton("Avy", "Talk to the announcer first")
+		addDisabledButton("Эви", "Сначала поговори с ведущим")
 	else:
 		if(!getFlag("FightClubModule.AvyIntroduced")):
 			addButtonUnlessLate("Avy", "Approach the dickgirl", "avyfirst")
 		else:
 			if(getFlag("FightClubModule.AvyIsInSlutwall")):
-				addDisabledButton("Avy", "Avy is still stuck inside the slutwall")
+				addDisabledButton("Эви", "Ави всё ещё застряла в шлюзовой стене")
 			else:
 				addButtonUnlessLate("Avy", "Approach the dickgirl", "avy")
 

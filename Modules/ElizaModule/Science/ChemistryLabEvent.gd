@@ -10,7 +10,7 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(_triggerID == Trigger.TalkingToNPC):
 		if(GM.pc.getTFHolder().hasActiveTransformations()):
-			addButton("I'm transformed!", "Ask the feline to help you with your changing body", "ask_help_tf")
+			addButton("Я трансформируюсь!", "Попросить кошечку помочь тебе освоиться с меняющимся телом", "ask_help_tf")
 	
 	var hasLabAccess:bool = getModule("ElizaModule").hasLabAccess()
 	if(!hasLabAccess):
@@ -18,12 +18,12 @@ func run(_triggerID, _args):
 
 	if(_triggerID == Trigger.TalkingToNPC):
 		if(getFlag("ElizaModule.s2hap") && GM.main.SCI.doesPCHaveUnknownStrangePills()):
-			addButton("Strange pill!", "Make Eliza scan the strange pill that you have", "scan_strange_pill")
+			addButton("Странная таблетка!", "Заставить Элизу просканировать странную таблетку, которая у тебя есть", "scan_strange_pill")
 		if(GM.main.SCI.hasTFsCanScan(GM.pc)):
-			addButton("Get scanned!", "Make Eliza scan the effects of your current transformations", "scan_tfs")
+			addButton("Пройти сканирование!", "Заставить Элизу просканировать эффекты твоих текущих трансформаций", "scan_tfs")
 		return
 	#if(getFlag("ElizaModule.firstDrugTestHappened")):
-	addButton("Lab", "Look at the lab", "lab")
+	addButton("Лаборатория", "Осмотреться в лаборатории", "lab")
 	
 func getPriority():
 	return 0

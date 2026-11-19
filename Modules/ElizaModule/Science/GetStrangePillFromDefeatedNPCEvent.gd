@@ -15,7 +15,7 @@ func run(_triggerID, _args):
 		return
 	
 	if(npcID == GM.main.SCI.peekRandomNpcIDForStrangeDrug()):
-		addButton("Strange pill!", "Take it from them", "doTakePill")
+		addButton("Странная таблетка!", "Забери это у них", "doTakePill")
 	
 func getPriority():
 	return 0

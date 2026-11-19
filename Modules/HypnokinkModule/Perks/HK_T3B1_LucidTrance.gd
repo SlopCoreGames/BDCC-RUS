@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Lucid Trance"
+	return "Осознанный транс"
 
 func getVisibleDescription():
 	return "You've become so accustomed to being hypnotized that a casual observer might not even be able to tell."

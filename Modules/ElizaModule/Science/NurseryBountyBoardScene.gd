@@ -17,16 +17,16 @@ func _run():
 		var nurseryTasks:Array = GM.main.SCI.getNurseryTasks() if !recallMode else GM.main.SCI.peekNurseryTasks()
 		
 		if(!recallMode):
-			saynn("You're standing in front of a holographic bounty board. It scans your collar.. and shows you these tasks:")
+			saynn("Вы стоите перед голографической доской заказов. Она сканирует ваш ошейник... и выводит список доступных задач:")
 		
 		if(nurseryTasks.empty()):
 			if(recallMode):
 				if(GM.main.SCI.didGenerateNurseryTasksToday()):
-					saynn("You can't remember any bounties that you haven't yet completed.. You should probably check the bounty board tomorrow.")
+					saynn("Вы не можете вспомнить ни одного незавершенного заказа... Пожалуй, стоит заглянуть на доску завтра.")
 				else:
-					saynn("You don't know which bounties does the bounty board have. You should go check it down in the nursery!")
+					saynn("Вы понятия не имеете, какие заказы сейчас на доске. Сходите-ка в детский сад и проверьте там!")
 			else:
-				saynn("- No tasks left, come back tomorrow, inmate!")
+				saynn("- Задач больше нет, возвращайтесь завтра, зек!")
 		else:
 			for taskA in nurseryTasks:
 				var task:NurseryTaskBase = taskA
@@ -36,45 +36,45 @@ func _run():
 				var compString:String = task.getCompletionString()
 				if(compString != ""):
 					sayn(compString)
-				sayn("Reward: "+task.getRewardString())
+				sayn("Награда: "+task.getRewardString())
 				saynn(task.getDeadlineString())
 		
 		if(getFlag("ElizaModule.s1hap", false) && GM.main.SCI.didGenerateNurseryTasksToday()):
-			sayn("- SPECIAL BOUNTY")
+			sayn("- ОСОБЫЙ ЗАКАЗ")
 			var charIDWithDrug:String = GM.main.SCI.getRandomNpcIDForStrangeDrug()
 			if(charIDWithDrug == "" || getCharacter(charIDWithDrug) == null):
-				saynn("Intelligence is being gathered. Come back tomorrow.")
+				saynn("Сбор данных продолжается. Возвращайтесь завтра.")
 			else:
 				var theCharacter:BaseCharacter = getCharacter(charIDWithDrug)
-				sayn(theCharacter.getName()+" is known to possess dangerous contraband substances. Convince them to hand it in.")
+				sayn(theCharacter.getName()+" известно, что у них есть опасная контрабанда. Убедите их сдать её.")
 				sayn(NurseryTaskBase.getCharDescription(charIDWithDrug))
-				sayn("Reward: Safer enviroment for everyone")
-				saynn("Last day before task expires")
+				sayn("Награда: Более безопасная обстановка для всех")
+				saynn("Последний день до истечения срока выполнения")
 		
 		if(recallMode):
-			addButton("Back", "Enough remembering", "endthescene")
+			addButton("Назад", "Хватит воспоминаний", "endthescene")
 		else:
-			saynn("Near the board there is a machine that can accept any fluid container. A note says that the container will be fully emptied and then given back.")
+			saynn("Рядом с доской стоит автомат, принимающий любую емкость с жидкостью. В записке сказано, что контейнер будет полностью опустошен, а затем возвращен вам.")
 			
-			addButton("Donate", "Choose a fluid container with fluids that you want to donate", "choose_donate")
-			addButtonWithChecks("Reroll (1 credit)", "Pay 1 credit to reroll all the bounties", "do_reroll", [], [[ButtonChecks.HasCredits, 1]])
-			addButton("Leave", "Time to go", "endthescene")
+			addButton("Пожертвовать", "Выберите емкость с жидкостью, которую хотите пожертвовать", "choose_donate")
+			addButtonWithChecks("Пересдача (1 кредит)", "Заплатите 1 кредит, чтобы обновить все награды", "do_reroll", [], [[ButtonChecks.HasCredits, 1]])
+			addButton("Уйти", "Пора идти", "endthescene")
 	
 	if(state == "do_reroll"):
-		saynn("You press a button and all the tasks disappear.. just like a single credit from your inmate account.")
+		saynn("Вы нажимаете на кнопку, и все задания исчезают... точь-в-точь как один кредит с вашего счета заключенного.")
 
-		saynn("The board hums as it tries to come up with new bonties..")
+		saynn("Доска гудит, пытаясь придумать новые награды...")
 		
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 	if(state == "choose_donate"):
-		saynn("Choose which fluid container you want to use to donate.")
+		saynn("Выберите емкость, которую хотите использовать для пожертвования.")
 		
-		saynn("The container will be fully cleared and returned back to you.")
+		saynn("Контейнер будет полностью опустошен и возвращен вам.")
 		
-		saynn("The ad claims that 30% of the donated fluids will be directed towards the development of new medical drugs.")
+		saynn("В объявлении утверждается, что 30% пожертвованной жидкости пойдет на разработку новых медицинских препаратов.")
 		
-		addButton("Back", "You changed your mind", "")
+		addButton("Назад", "Вы передумали", "")
 		var equippedItems = GM.pc.getInventory().getAllEquippedItems()
 		for slot in equippedItems:
 			var equippedItem:ItemBase = equippedItems[slot]
@@ -84,16 +84,16 @@ func _run():
 		for theitem in GM.pc.getInventory().getItems():
 			if(theitem.getFluids() != null):
 				if(theitem.getFluids().isEmpty()):
-					addDisabledButton(theitem.getStackName(), "(This item is empty)\n\n"+theitem.getVisisbleDescription())
+					addDisabledButton(theitem.getStackName(), "(Этот предмет пуст)\n\n"+theitem.getVisisbleDescription())
 				else:
 					addButton(theitem.getStackName(), theitem.getVisisbleDescription(), "pickDonate", [theitem])
 	
 	if(state == "pickDonate"):
-		saynn("You hand your "+donateText+" to the donation machine and let it do its thing.")
+		saynn("Вы вставляете свой "+donateText+" в донорский аппарат и позволяете ему делать свое дело.")
 		
-		saynn("Soon, the machine beeps and hands you your item back.")
+		saynn("Вскоре аппарат издает звуковой сигнал и возвращает вам ваш предмет.")
 		
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

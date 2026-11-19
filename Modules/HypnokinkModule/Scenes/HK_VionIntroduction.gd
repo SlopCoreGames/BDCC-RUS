@@ -7,40 +7,40 @@ func _run():
 	if(state == ""):
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "stand", {npc="vion"})
-		saynn("You peek inside a random cell. In addition to the standard uncomfortable bed and cheap chair, someone seems to have gone trough the effort of dragging one of the cellblocks ever-present sofas inside. As you look closer, it becomes clear its seen better days - mysterious stains and ripped cushions make up the bulk of its surface.")
+		saynn("Вы заглядываете в одну из случайных камер. Помимо стандартной неудобной койки и дешевого стула, кто-то явно приложил усилия, чтобы затащить внутрь один из вечных диванов, которыми завалены тюремные блоки. Присмотревшись, вы понимаете, что диван повидал лучшие времена: почти вся его поверхность покрыта какими-то загадочными пятнами и дырами в обивке.")
 
-		saynn("[say=vion]If you want one of your own, you'll have to wait until the next time the guards can't be bothered dragging one off for disposal.[/say]")
+		saynn("[say=vion]Если захочешь себе такой же, придется ждать, пока охранникам не станет лень тащить очередной на утилизацию.[/say]")
 
-		saynn("You turn around to the source of the voice, coming face to face with a lean dragon in a lilac uniform, currently sporting an amused smirk. You notice he's wearing glasses, an unusual sight in the era of readily accesible eye correction surgery.")
+		saynn("Вы оборачиваетесь на голос и оказываетесь лицом к лицу с поджарым драконом в сиреневой униформе, на лице которого играет насмешливая ухмылка. Вы замечаете на нем очки — довольно редкое зрелище в эпоху повсеместной доступности операций по коррекции зрения.")
 
-		addButton("Just looking", "Didn't mean to intrude", "just_looking")
-		addButton("Introductions", "Don't believe we've met", "introduction")
+		addButton("Просто осматриваюсь", "Не хотел мешать", "just_looking")
+		addButton("Представиться", "Кажется, мы не знакомы", "introduction")
 	if(state == "just_looking"):
-		saynn("[say=pc]I was just looking around. Didn't mean to intrude.[/say]")
+		saynn("[say=pc]Я просто осматривался. Не хотел мешать.[/say]")
 
-		saynn("The smirk gets a fraction wider.")
+		saynn("Ухмылка становится чуть шире.")
 
-		saynn("[say=vion]Well, feel free to look around. Not much to it, I'm afraid.[/say]")
+		saynn("[say=vion]Ну, не стесняйся, осмотрись. Боюсь, тут особо на что смотреть не на что.[/say]")
 
-		saynn("Another glance around the cell confirms his words. As a cell in the lilac cellblock, it is somewhat above the average, but ultimately it's still just a prison cell.")
+		saynn("Еще один взгляд по камере подтверждает его слова. Будучи камерой в сиреневом блоке, она чуть лучше среднего, но в конечном счете это всё равно всего лишь тюремная камера.")
 
-		addButton("Introductions", "Don't believe we've met", "introduction")
+		addButton("Представиться", "Кажется, мы не знакомы", "introduction")
 	if(state == "introduction"):
-		saynn("[say=pc]My name's {pc.name}. I don't believe we've met?[/say]")
+		saynn("[say=pc]Меня зовут {pc.name}. Кажется, мы еще не знакомы?[/say]")
 
-		saynn("[say=vion]I go by {vion.name}. Pleasure. Now, care to clear the door and let me into my parlor?[/say]")
+		saynn("[say=vion]Меня зовут {vion.name}. Приятно познакомиться. Ну что, не соизволите освободить проход и впустить меня в мою обитель?[/say]")
 
-		saynn("You do seem to be blocking the doorway.")
+		saynn("Ты и впрямь загораживаешь дверной проем.")
 
-		addButton("Oops", "Let me get out of your way", "gang_way")
+		addButton("Ой", "Дай мне пройти", "gang_way")
 	if(state == "gang_way"):
-		saynn("[say=pc]Oh. Lemme get out of your way.[/say]")
+		saynn("[say=pc]Ох. Позволь мне не мешаться у тебя под ногами.[/say]")
 
-		saynn("You step aside and watch as {vion.name} walks inside, then plops down on the bed.")
+		saynn("Ты отступаешь в сторону и наблюдаешь, как {vion.name} заходит внутрь, а затем плюхается на кровать.")
 		
-		saynn("[say=vion]So {pc.name}, do you need anything?[/say]")
+		saynn("[say=vion]Итак, {pc.name}, тебе что-нибудь нужно?[/say]")
 
-		addButton("Talk", "While you're here...", "endthescene")
+		addButton("Поговорить", "Раз уж ты здесь...", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

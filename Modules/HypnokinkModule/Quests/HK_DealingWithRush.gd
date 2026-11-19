@@ -4,7 +4,7 @@ func _init():
 	id = "DealingWithRush"
 
 func getVisibleName():
-	return "Stallion for time"
+	return "Выигрыш времени для жеребца"
 
 func getProgress():
 	var result = []

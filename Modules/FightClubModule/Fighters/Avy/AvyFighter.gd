@@ -4,7 +4,7 @@ func _init():
 	id = "avy"
 	
 func getVisibleName():
-	return "Avy"
+	return "Эви"
 
 func getNameAndNickname():
 	return "Avy, The Unbeatable"

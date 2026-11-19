@@ -15,7 +15,7 @@ func run(_triggerID, _args):
 		if(_triggerID == Trigger.EnteringRoom):
 			addButtonUnlessLate("Bulldog", "Approach the guy", "bulldogtalk")
 	else:
-		addButton("The Underground", "Go down to the fight club", "fightclub")
+		addButton("Подполье", "Спуститься в бойцовский клуб", "fightclub")
 
 
 func getPriority():

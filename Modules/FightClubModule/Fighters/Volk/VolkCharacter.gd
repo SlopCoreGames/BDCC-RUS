@@ -102,7 +102,7 @@ func _getAttacks():
 
 func getFightIntro(_battleName):
 	if(_battleName == "arenafight"):
-		var text = "Volk squats, lowering his profile even more. He then spits to the side. Kinda rude. His voice sounds very raspy, like he was smoking for 10 years straight."
+		var text = "Волк приседает, еще сильнее пригибаясь к земле. Затем он сплевывает в сторону. Довольно грубо. Голос у него очень хриплый, будто он курил без перерыва лет десять."
 		text += "\n\n"
 		text += "[say=volk]What? Have a problem with that?[/say]"
 		text += "\n\n"

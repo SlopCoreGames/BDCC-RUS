@@ -19,12 +19,12 @@ func run(_triggerID, _args):
 				var npcSlave:NpcSlave = character.getNpcSlavery()
 				if(!npcSlave.isDoingActivity()):
 					if(npcSlave.hasSubmittedToPC() || npcSlave.isMindBroken()):
-						addButton("Milking", "Give your slave to Eliza to be milked every day", "give_to_be_milked", [_args[1]])
+						addButton("Дойка", "Отдавай свою рабыню Элизе на ежедневное доение", "give_to_be_milked", [_args[1]])
 					else:
-						addDisabledButton("Milking", "You can only give to Eliza slaves that have submitted to you. Otherwise they would run away, duh!")
+						addDisabledButton("Дойка", "Элизе можно отдавать только тех рабынь, что полностью тебе подчинились. Иначе они просто сбегут, тупица!")
 					
 		if(getModule("ElizaModule").hasLabAccess() && GM.main.SCI.hasTFsCanScan(character)):
-			addButton("Scan TFs!", "Make Eliza Quinn scan the transformations of your slave!", "do_scan_slave", [_args[1]])
+			addButton("Сканировать ТФ!", "Заставь Элизу Куинн просканировать трансформации твоей рабыни!", "do_scan_slave", [_args[1]])
 		return
 	
 	var npcID = _args[0]
@@ -40,7 +40,7 @@ func run(_triggerID, _args):
 		return
 	
 	if(GM.main.SCI.hasTFsCanScan(character)):
-		addButton("Scan TFs!", "Bring them to Eliza Quinn so she can scan their transformations!", "do_scan_them", [_args[0]])
+		addButton("Сканировать ТФ!", "Приведи их к Элизе Куинн, чтобы она просканировала их трансформации!", "do_scan_them", [_args[0]])
 		
 
 func getPriority():

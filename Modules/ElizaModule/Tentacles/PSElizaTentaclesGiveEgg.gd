@@ -6,27 +6,27 @@ func _init():
 func _run():
 	if(state == ""):
 		addCharacter("eliza")
-		saynn("[say=pc]About the eggs..[/say]")
+		saynn("[say=pc]Об яйцах..[/say]")
 
-		saynn("[say=eliza]Yes, with all the current DNA that we have, it will cost us "+str(getModule("ElizaModule").getTentaclesCostStr())+" to produce a perfect specimen.[/say]")
+		saynn("[say=eliza]Да, со всей имеющейся у нас ДНК, создание идеального экземпляра обойдется нам в "+str(getModule("ElizaModule").getTentaclesCostStr())+"[/say]кредитов.[/say]")
 
-		addButton("Enough", "Enough talking about this", "endthescene")
+		addButton("Хватит", "Хватит об этом болтать", "endthescene")
 		if (GM.pc.getInventory().hasItemID("PlantEgg")):
-			addButton("Give egg", "Give Eliza another egg!", "give_egg")
+			addButton("Дать яйцо", "Дать Элизе еще одно яйцо!", "give_egg")
 		else:
-			addDisabledButton("Give egg", "You don't have any plant eggs in your inventory")
+			addDisabledButton("Дать яйцо", "В вашем инвентаре нет растительных яиц")
 		if (GM.pc.getCredits() >= getModule("ElizaModule").getTentaclesCost()):
-			addButton("Pay "+getModule("ElizaModule").getTentaclesCostStr()+"", "Pay this many credits to create a perfect egg", "begin_stuff")
+			addButton("Оплатить "+getModule("ElizaModule").getTentaclesCostStr()+"", "Заплатите столько-то кредитов, чтобы создать идеальное яйцо", "begin_stuff")
 		else:
-			addDisabledButton("Pay "+getModule("ElizaModule").getTentaclesCostStr(), "You don't have this many credits..")
+			addDisabledButton("Оплатить "+getModule("ElizaModule").getTentaclesCostStr(), "У вас недостаточно кредитов..")
 	if(state == "give_egg"):
-		saynn("You give Eliza one of your plant eggs.")
+		saynn("Вы отдаете Элизе одно из своих яиц растений.")
 
-		saynn("[say=eliza]Perfect. Now it should cost us only "+str(getModule("ElizaModule").getTentaclesCostStr())+" to produce a perfect specimen.[/say]")
+		saynn("[say=eliza]Идеально. Теперь это должно стоить нам всего "+str(getModule("ElizaModule").getTentaclesCostStr())+"[/say]кредитов.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

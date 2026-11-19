@@ -4,7 +4,7 @@ func _init():
 	id = "axis"
 	
 func getVisibleName():
-	return "Axis"
+	return "Аксис"
 
 func getNameAndNickname():
 	return "Axis, The Alpha"

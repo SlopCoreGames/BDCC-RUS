@@ -25,31 +25,31 @@ func _run():
 			setFlag("KaitModule.avyApproach", "")
 		# (if fuck meat rank)
 		elif(pcRank == FightClubRank.FuckMeat):
-			saynn("[say=avy]So, ready to prove yourself, fuck meat?[/say]")
+			saynn("[say=avy]Ну что, готов доказать, на что способен, кусок мяса?[/say]")
 
 		# (if failed hero rank)
 		elif(pcRank == FightClubRank.FailedHero):
-			saynn("[say=avy]You’re making quite some noise for yourself, failed hero. Think you can handle the heat?[/say]")
+			saynn("[say=avy]А ты шуму наделал, неудачливый герой. Думаешь, вывезешь жару?[/say]")
 
 		# (if play toy rank)
 		elif(pcRank == FightClubRank.PlayToy):
-			saynn("[say=avy]People like how you fight. Don’t get any wrong ideas though, you’re still just a play toy.[/say]")
+			saynn("[say=avy]Людям нравится, как ты дерешься. Но не обольщайся, ты всё еще просто игрушка.[/say]")
 
 		# (if attention whore)
 		elif(pcRank == FightClubRank.AttentionWhore):
-			saynn("[say=avy]Think you almost reached the top? Think twice, attention whore.[/say]")
+			saynn("[say=avy]Думаешь, почти добрался до вершины? Подумай дважды, сучка жадная до внимания.[/say]")
 
 		# (if grand champion)
 		elif(pcRank == FightClubRank.GrandChampion):
-			saynn("[say=avy]Nobody stayed at the top for long, except for me. Enjoy it while it lasts.[/say]")
+			saynn("[say=avy]Никто не задерживался на вершине надолго, кроме меня. Наслаждайся, пока можешь.[/say]")
 
 		if (getModule("KaitModule").hasHideoutAccess()):
 			var theLove:int = GM.main.MS.getAvyLove()
 			var theObedience:int = GM.main.MS.getAvyObedience()
-			saynn("Avy's Love: "+str(theLove)+"\nAvy's Obedience: "+str(theObedience))
-			addButton("Talk", "Chat with her", "do_talk")
+			saynn("Любовь Эви: "+str(theLove)+"\nПослушание Эви: "+str(theObedience))
+			addButton("Поговорить", "Поболтать с ней", "do_talk")
 
-		saynn("She shows you her notes:")
+		saynn("Она показывает тебе свои записи:")
 
 		var showedPC = false
 		var i = 1
@@ -71,7 +71,7 @@ func _run():
 				var fighter:FightClubFighter = GlobalRegistry.getFightClubFighter(fighterID)
 				
 				if(FightClubModule.isFighterDefeated(fighterID)):
-					sayn(str(i)+" - "+fighter.getNameAndNickname()+" (defeated)")
+					sayn(str(i)+" - "+fighter.getNameAndNickname()+" (побежден)")
 				else:
 					sayn(str(i)+" - "+fighter.getNameAndNickname())
 				i+=1
@@ -80,36 +80,36 @@ func _run():
 				sayn(str(i)+" - {pc.name}")
 				i+=1
 			if(rankID == FightClubRank.FuckMeat && avyRekt):
-				sayn(str(i)+" - Avy The Fallen Hero (defeated)")
+				sayn(str(i)+" - Эви, Падший Герой (побеждена)")
 			
 			sayn("")
 		
 		var nextFighter = FightClubModule.getNextFighter()
 		if(nextFighter != null):
-			addButton("Arena", "Tell her that you are ready to fight the next opponent", "fightnext")
+			addButton("Арена", "Скажи ей, что готов сразиться со следующим противником", "fightnext")
 		else:
-			addDisabledButton("Arena", "No one left to fight :(")
+			addDisabledButton("Арена", "Больше сражаться не с кем :(")
 			
 		if(!getFlag("FightClubModule.GotTaskToStealPlant")):
 			if(getModule("FightClubModule").isReadyToFightAvy()):
-				addButton("Fight Avy", "Time to do this", "do_fight_avy")
+				addButton("Сразиться с Эви", "Пора за дело", "do_fight_avy")
 			else:
-				addDisabledButton("Fight Avy", "You must defeated all other opponents before fighting Avy")
+				addDisabledButton("Сразиться с Эви", "Ты должен победить всех остальных противников, прежде чем бросить вызов Эви")
 		else:
 			if(getFlag("FightClubModule.AvyGotRekt")):
-				addButton("Rematch Avy", "Redo the final fight", "do_fight_avy_second_time") # Maybe a choice between two fights
+				addButton("Реванш с Эви", "Переиграть финальный бой", "do_fight_avy_second_time") # Maybe a choice between two fights
 			else:
 				if(getFlag("FightClubModule.ReturnedPlantToEliza")):
-					addButton("Fight Avy", "Time to do this again", "do_fight_avy_second_time")
+					addButton("Сразиться с Эви", "Пора повторить это снова", "do_fight_avy_second_time")
 				else:
-					addDisabledButton("Fight Avy", "You're not ready to do this! You know you gonna lose again.")
+					addDisabledButton("Сразиться с Эви", "Ты ещё не готов! Ты же знаешь, что опять проиграешь.")
 			
-		addButton("Rematch", "Fight one of your defeated opponents again", "rematchmenu")
+		addButton("Реванш", "Снова сразиться с одним из тех, кого ты уже победил", "rematchmenu")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["avy"])
-		addButton("Leave", "Gotta go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 	if(state == "rematchmenu"):
-		saynn("Who do you wanna rematch?")
+		saynn("С кем хочешь устроить реванш?")
 		
 		for rankID in FightClubRank.getAll():
 			for fighterID in GlobalRegistry.getFightClubFightersIDsByRank(rankID):
@@ -121,32 +121,32 @@ func _run():
 				
 				addButton(fighter.getVisibleName(), fighter.getNameAndNickname(), "rematch", [fighterID])
 		
-		addButton("Back", "You don't wanna fight anyone", "")
+		addButton("Назад", "Ты не хочешь ни с кем драться", "")
 
 	if(state == "fight"):
 		var arenaFighter:FightClubFighter = GlobalRegistry.getFightClubFighter(savedFighterID)
 		# (if first time)
 		if(!getFlag("FightClubModule.FightClubFirstArenaIntroduction")):
-			saynn("[say=pc]I’m ready.[/say]")
+			saynn("[say=pc]Я готов.[/say]")
 
-			saynn("[say=avy]First time is always special, isn’t it, sugar.[/say]")
+			saynn("[say=avy]Первый раз — это всегда особенное чувство, правда, сладкий?[/say]")
 
-			saynn("Avy leans onto the fence and quickly goes through her notes.")
+			saynn("Эви опирается на забор и быстро пробегает глазами по своим записям.")
 
 			saynn("[say=avy]"+arenaFighter.getAvyIntroduction()+"[/say]")
 
 		# (if not first time)
 		else:
-			saynn("[say=pc]Who’s next?[/say]")
+			saynn("[say=pc]Кто следующий?[/say]")
 
-			saynn("Avy leans onto the fence and quickly goes through her notes.")
+			saynn("Эви опирается на забор и быстро пробегает глазами по своим записям.")
 
 			saynn("[say=avy]"+arenaFighter.getAvyIntroduction()+"[/say]")
 
 		# (can start fight or leave)
 
-		addButton("Let's go", "Climb over the fence and start the fight", "fight1")
-		addButton("Cancel", "You need some time to think", "endthescene")
+		addButton("Погнали", "Перелезть через забор и начать бой", "fight1")
+		addButton("Отмена", "Тебе нужно время, чтобы подумать", "endthescene")
 
 	if(state == "fight1"):
 		aimCameraAndSetLocName("fight_arena")
@@ -158,30 +158,30 @@ func _run():
 		addCharacter(arenaFighter.getFightCharacter())
 		addCharacter("announcer")
 		
-		saynn("You nod and get into the fighting space by climbing over the fence. The arena itself is just a huge empty square space that’s separated from the crowd with a tall chain-link fence. Over one of the sides there is a balcony where the announcer stands.")
+		saynn("Ты киваешь и, перелезши через забор, входишь на арену. Сама арена представляет собой огромное пустое квадратное пространство, отделенное от толпы высоким сетчатым забором. С одной из сторон есть балкон, где стоит комментатор.")
 
-		saynn("[say=announcer]Welcome, ladies and gentleman! Are you ready to be entertained?[/say]")
+		saynn("[say=announcer]Добро пожаловать, дамы и господа! Готовы к зрелищу?[/say]")
 
-		saynn("The crowd goes wild, you hear cheering and people banging against the fence.")
+		saynn("Толпа сходит с ума, ты слышишь крики восторга и то, как люди бьются о забор.")
 
 		# (if player first time)
 		if(!getFlag("FightClubModule.FightClubFirstArenaIntroduction")):
 			setFlag("FightClubModule.FightClubFirstArenaIntroduction", true)
-			saynn("[say=announcer]Let’s do this then! We actually have a new addition in our ranks of fighters! In the left corner, we have {pc.name}! Can we make some noise for the fresh meat![/say]")
+			saynn("[say=announcer]Тогда приступим! В наших рядах пополнение! В левом углу у нас {pc.name}! Давайте шумом поприветствуем свежее мясо![/say]")
 
-			saynn("The cheering only gets louder. Though some inmates yell out things like ‘Fuck meat!’, ‘Breeding stock!’, ‘Whore!’.")
+			saynn("Ликование становится только громче. Хотя некоторые заключенные выкрикивают всякую дичь вроде: «Мясо, вперед!», «Лошадка для разводки!», «Шлюха!».")
 
 		# (if fuck meat rank)
 		else:
-			saynn("[say=announcer]Let’s do this then! In the left corner, we have {pc.name}, a proud warrior with a " +FightClubRank.getVisibleName(FightClubModule.getPCRank())+ " rank! Make some noise![/say]")
+			saynn("[say=announcer]Тогда приступим! В левом углу у нас {pc.name}, гордый воин с " +FightClubRank.getVisibleName(FightClubModule.getPCRank())+ " рангом! Пошумите![/say]")
 
-			saynn("The cheering only gets louder.")
+			saynn("Ликование толпы становится только громче.")
 
 		saynn("[say=announcer]"+arenaFighter.getAnnouncerIntroduction()+"[/say]")
 
-		saynn("[say=announcer]And remember, the winner gets to do whatever they want to the loser. Let the fight begin![/say]")
+		saynn("[say=announcer]И помните: победитель волен делать с проигравшим всё, что пожелает. Пусть начнется бой![/say]")
 
-		addButton("Fight", "Time to fight", "startfight")
+		addButton("Драться", "Пора драться", "startfight")
 
 
 

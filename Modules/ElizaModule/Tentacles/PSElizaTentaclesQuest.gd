@@ -4,7 +4,7 @@ func _init():
 	id = "PSElizaTentaclesQuest"
 
 func getVisibleName():
-	return "Seeds Of Desire"
+	return "Семена желания"
 
 func getProgress():
 	var result = []

@@ -10,7 +10,7 @@ func run(_triggerID, _args):
 	if(!getFlag("FightClubModule.AvyIsInSlutwall")):
 		return
 		
-	addButton("Avy", "Look at Avy who is stuck in the slutwall", "avy")
+	addButton("Эви", "Посмотри на Ави, которая застряла в слюнявой стене @@B*@@", "avy")
 
 func getPriority():
 	return 0

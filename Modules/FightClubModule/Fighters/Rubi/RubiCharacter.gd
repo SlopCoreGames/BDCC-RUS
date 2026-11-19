@@ -105,7 +105,7 @@ func _getAttacks():
 	return ["simplepunchattack", "simplekickattack", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	var text = "Rubi is a lilac inmate with no shirt, allowing you to see his defined musculature. But despite that, his body type is more feminine than anything else, narrow shoulders, slim flat chest with a pair of visible nips, wide hips, pretty face, long hair."
+	var text = "Руби — заключенный с лиловым оттенком кожи, он без рубашки, так что видна его рельефная мускулатура. Но, несмотря на это, его телосложение скорее женственное: узкие плечи, стройная плоская грудь с парой заметных сосков, широкие бедра, миловидное лицо и длинные волосы."
 	text += "\n\n"
 	text += "He straightens his posture and taunts you."
 	text += "\n\n"

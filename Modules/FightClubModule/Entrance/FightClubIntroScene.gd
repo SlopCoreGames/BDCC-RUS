@@ -8,157 +8,157 @@ func _run():
 		playAnimation(StageScene.Solo, "stand")
 		GM.pc.setLocation("fight_entrance")
 		aimCameraAndSetLocName("fight_entrance")
-		saynn("You walk through the maintenance hatch and see a dark corridor leading into a set of stairs. As you walk further you notice that all the lights are either broken or barely emitting anything. The guy closes the hatch behind you, the metal screech slightly startling you. When the outside atmosphere of a prison calms down you instead begin to hear some kind of.. white noise. You decide to take it slow and step carefully, who knows, maybe this is a trap.")
+		saynn("Вы проходите через технический люк и видите темный коридор, ведущий к лестнице. Проходя дальше, вы замечаете, что все лампы либо разбиты, либо едва светят. Мужик закрывает за вами люк, и этот металлический скрежет слегка заставляет вас вздрогнуть. Когда шум тюремной суеты затихает, вы начинаете слышать какой-то... белый шум. Вы решаете не спешить и ступать осторожно — кто знает, может, это ловушка.")
 
-		saynn("You reach a set of gloomy stairs and begin going down them. This place is surely some kind of old abandoned area of the prison, lots of trash around suggests that many inmates have been here. You wonder if this corridor could lead to your escape. But alas, the best thing you could hope for is a hole that leads into open space. You do find the source of the white noise though, throughout the walls there is lots of plumbing, pipes that move hot air around to heat up the cell block. And some of the pipes have sharp metal rods stuck into them, causing them to leak lots of hot steam, probably the reason why you aren't freezing here.")
+		saynn("Вы доходите до мрачной лестницы и начинаете спускаться. Это место определенно похоже на какой-то заброшенный сектор тюрьмы: горы мусора вокруг намекают, что здесь часто бывали заключенные. Вы гадаете, может ли этот коридор привести к побегу. Но увы, самое лучшее, на что можно рассчитывать — это дыра, ведущая в открытое пространство. Зато вы находите источник белого шума: вдоль стен тянется куча сантехники — трубы, по которым гоняется горячий воздух для обогрева блока камер. В некоторые трубы вбиты острые металлические штыри, из-за чего они источают клубы горячего пара — вероятно, именно поэтому вы здесь еще не околели.")
 
-		saynn("You duck under the steam and sneak past, continuing to go down the stairs. What is this place..")
+		saynn("Вы пригибаетесь под струями пара и прокрадываетесь мимо, продолжая спускаться по лестнице. Что это вообще за место...")
 
-		addButton("Continue", "See what happens next", "in_arena")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_arena")
 	if(state == "in_arena"):
 		playAnimation(StageScene.Solo, "walk")
 		aimCameraAndSetLocName("fight_nearentrance")
 		addCharacter("announcer")
-		saynn("The stairs end but the corridor seems to go on forever, you don't even hear the steam noise anymore. Though you do feel that you are close to something, you hear.. cheering?")
+		saynn("Лестница заканчивается, но коридор, кажется, тянется бесконечно; шум пара уже почти не слышен. Однако вы чувствуете, что находитесь где-то рядом с чем-то... Вы слышите... ликование?")
 
-		saynn("As you finally reach the end of the corridor you are suddenly greeted by a huge open space that is crowded with inmates, all kinds of them, reds, lilacs, general block ones. In the middle of this room you spot a fenced off area with the one side having some kind of makeshift balcony that has a great view over the whole thing. This place looks like some kind of arena!")
+		saynn("Когда ты наконец добираешься до конца коридора, перед тобой внезапно открывается огромное пространство, забитое заключенными всех мастей: красными, сиреневыми, обычными обитателями блоков. Посреди зала ты замечаешь огороженную зону, с одной стороны которой возвышается какая-то самодельная трибуна с отличным обзором на всё происходящее. Это место чертовски похоже на арену!")
 
-		saynn("Inside the arena there are two inmates, battling it out. Both of them look like girls with one being a high security inmate and the second one being a lilac. Punches flying left and right while the inmates are glued to the view, cheering and booing when the attacks connect.")
+		saynn("Внутри арены дерутся две заключенные. Обе выглядят как девушки: одна — из режима строгого режима, вторая — сиреневая. Кулаки летают туда-сюда, а толпа замерла, прилипнув к ограждению, взрываясь криками одобрения или свистом каждый раз, когда удар достигает цели.")
 
 		if (getFlag("KaitModule.gotMetByKait")):
-			saynn("You actually recognize the lilac. That's Kait, the snow leopard who told you to come down here.")
+			saynn("Ты узнаешь сиреневую. Это Кейт, та самая снежная леопардица, которая советовала тебе спуститься сюда.")
 
-		saynn("You walk further and join the crowd, being curious about the state of the fight. Above you, standing on the balcony is the guy that you met near the entrance. He is holding some kind of bulky microphone that is made to look like a long cane and is also wearing a purple coat above his lilac clothes. He holds the mic near his mouth, his voice getting amplified by it.")
+		saynn("Ты проходишь дальше и вливаешься в толпу, заинтригованный ходом боя. Над тобой, на балконе, стоит тот самый парень, которого ты встретил у входа. В руках он держит какой-то громоздкий микрофон, стилизованный под длинный посох, а поверх своей сиреневой одежды накинут фиолетовый плащ. Он подносит микрофон к губам, и его голос разносится по всему залу благодаря усилению.")
 
-		saynn("[say=announcer]The stakes are getting higher! Will the old champ prove that she still got it? Or will this brave lilac player manage to humiliate the mean red?[/say]")
+		saynn("[say=announcer]Ставки растут! Докажет ли старая чемпионка, что она еще в форме? Или этой отважной сиреневой девчонке удастся унизить заносчивую красную?[/say]")
 
-		saynn("Oh yeah, the guy's low radio voice is perfect for being a commentator.")
+		saynn("О да, этот его низкий, бархатистый голос просто идеально подходит для комментатора.")
 
-		addButton("Watch the fight", "Now this is getting interesting", "watch_the_fight")
+		addButton("Смотреть бой", "А вот теперь становится по-настоящему интересно", "watch_the_fight")
 	if(state == "watch_the_fight"):
 		playAnimation(StageScene.Duo, "dodge", {pc = "kait", npc = "avy", npcAction="punch"})
 		addCharacter("avy")
 		addCharacter("kait")
 		aimCameraAndSetLocName("fight_neararena")
 		GM.pc.setLocation("fight_neararena")
-		saynn("The red lunges forward with her fist out, aiming to hit the other girl in the face. The lilac sees it coming and ducks under it before counter-attacking and scratching the girl's cheek, causing some blood. Who said the fights are gonna be clean.")
+		saynn("Рыжая бросается вперед с занесенным кулаком, целясь другой девчонке прямо в лицо. Сиреневая видит это, ныряет под удар, а затем переходит в контратаку, полоснув соперницу по щеке так, что та начинает кровоточить. Кто говорил, что драки будут чистыми?")
 
-		saynn("The red was so infuriated by it that she lunges forward again and manages to tackle the lilac, pinning her to the floor and straddling before proceeding to pull on her hair painfully. The crowd doesn't mind though, they only cheer louder as the girl is thrown around the arena. They love it even more when the red rips-open lilac's shirt, exposing her cute sexy tits with pink nipples.")
+		saynn("Рыжая приходит в такую ярость, что снова бросается вперед и умудряется повалить сиреневую на пол. Она нависает сверху, расставив ноги, и начинает с болью рвать её за волосы. Толпе плевать — они лишь громче ревут, когда девчонок швыряет по всей арене. Но еще больше они в восторге, когда рыжая разрывает рубашку сиреневой, обнажая её милые сексуальные титьки с розовыми сосками.")
 
-		saynn("[say=announcer]Oh yeah, look at that. Girls are fighting like two cats in heat![/say]")
+		saynn("[say=announcer]О да, гляньте на них! Девки дерутся как две кошки во время течки![/say]")
 
-		saynn("[say=avy]Bitch, I will rip your fucking liver out and eat it![/say]")
+		saynn("[say=avy]Сука, я тебе, блять, печень вырву и сожру![/say]")
 
-		addButton("Continue", "See what happens next", "fight2")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fight2")
 	if(state == "fight2"):
 		playAnimation(StageScene.Duo, "kick", {pc="kait", npc="avy", npcAction="defeat"})
-		saynn("The lilac cries out from pain before finally managing to free her hair and throwing the red off of her by shoving her leg into the red's chest, causing her to hit the metal fence behind and drop to her knees, defeated. Lilac stands up and quickly fixes her torn clothing, still panting heavily.")
+		saynn("Сиреневая вскрикивает от боли, но в итоге ей удается высвободить волосы; она сбрасывает с себя рыжую, упершись ногой ей в грудь. Рыжая отлетает к металлическому ограждению и падает на колени, поверженная. Сиреневая поднимается и поспешно поправляет разорванную одежду, всё еще тяжело дыша.")
 
-		saynn("[say=kait]Just stay down.[/say]")
+		saynn("[say=kait]Просто лежи и не дергайся.[/say]")
 
-		saynn("The crowd is divided, some are cheering her to continue and finish the girl. Some are booing about the bet they lost.")
+		saynn("Толпа разделилась: одни подбадривают её, призывая добить девчонку, другие букают, злясь из-за проигранной ставки.")
 
-		saynn("[say=announcer]Wow, look at the underdog! It seems that we have a winner! What is she gonna do with the red?[/say]")
+		saynn("[say=announcer]Ого, гляньте на аутсайдера! Кажется, у нас есть победительница! И что же она сделает с этой рыжей?[/say]")
 
-		saynn("The crowd quickly forgets about any bets and starts to cheer things like 'Fuck her! Rip her clothes off! Degrade her!'. The lilac shows off her fangs as she extends her claws and starts creeping towards the defeated opponent.")
+		saynn("Толпа быстро забывает о ставках и начинает скандировать что-то вроде: «Еби её! Сорви с неё шмотки! Унизь её!». Сиреневая скалится, обнажая клыки, выпускает когти и начинает подкрадываться к поверженной сопернице.")
 
-		addButton("Continue", "See what happens next", "fight3")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fight3")
 	if(state == "fight3"):
 		playAnimation(StageScene.SexCowgirlChoke, "tease", {pc="kait", npc="avy", bodyState={naked=true, hard=true}})
 		addCharacter("kait", ["naked"])
-		saynn("But as soon as the lilac gets close, red suddenly reaches for her and gets a firm grasp on her collar before yanking it into the fence. The situation got instantly reversed again. The leopard cries out from sudden pain as she is pinned into the fence, she trashes and manages to get some good scratches on the red but they only seem to make her more angry. The fox manages to shove her full hand under the lilac's collar, causing it to start choking her. Desperate, the lilac sinks her claws into the other girl's arm and causes more and more bleeding.")
+		saynn("Но как только сиреневая приближается, рыжая внезапно тянется к ней, крепко хватает за воротник и рывком впечатывает в сетку. Ситуация мгновенно меняется ролями. Леопард вскрикивает от резкой боли, когда её прижимают к ограждению; она бьется в конвульсиях и умудряется изрядно исцарапать рыжую, но это, кажется, только сильнее её злит. Лисице удается просунуть ладонь под воротник сиреневой, из-за чего та начинает задыхаться. В отчаянии сиреневая вонзает когти в руку другой девушки, заставляя ту истекать кровью всё сильнее.")
 
-		saynn("While that is happening, the crowd goes absolutely mental. The announcer spreads his arms and starts talking.")
+		saynn("Пока всё это происходит, толпа окончательно сходит с ума. Ведущий широко разводит руки и начинает говорить.")
 
-		saynn("[say=announcer]Didn't expect that, did you? Welcome! This is The Underground! The place where the only rule is: No rules! A very dangerous place indeed.[/say]")
+		saynn("[say=announcer]Не ожидали такого, а? Добро пожаловать! Это — Подполье! Место, где единственное правило — отсутствие правил! И это чертовски опасное место![/say]")
 
-		saynn("All the while the lilac clearly starts to lose her strength, she gasps for air and gives up trying to claw at the red and instead just holds onto her collar. The red waits until the girl almost loses her consciousness before smacking her head against the fence and letting her collapse onto the floor. The lilac hits the arena and starts gasping more as she finally can breathe again.")
+		saynn("Тем временем сиреневая явно начинает терять силы: она жадно хватает ртом воздух и перестает пытаться царапать рыжую, просто вцепившись в её воротник. Рыжая ждет, пока девушка почти потеряет сознание, а затем с силой бьет её затылком о сетку, позволяя ей рухнуть на пол. Сиреневая падает на арену и начинает судорожно дышать, наконец-то обретая возможность глотать воздух.")
 
-		saynn("But red is not done yet, she puts her leg onto the lilac's belly, preventing her from being able to curl up and then starts ripping her lilac shirt off, exposing the battered chest. Leopard's tits are exposed for anyone to see, her pink nipples sway in the air as she is breathing very fast.")
+		saynn("Но Рыжая еще не закончила: она ставит ногу на живот Лиловой, не давая той свернуться калачиком, и начинает срывать с неё лиловую рубашку, обнажая избитую грудь. Сиськи Леопарда выставлены на всеобщее обозрение, её розовые соски покачиваются в воздухе от частого, прерывистого дыхания.")
 
-		saynn("[say=kait]I g-give up![/say]")
+		saynn("[say=kait]Я с-сдаюсь![/say]")
 
-		saynn("[say=avy]I know.[/say]")
+		saynn("[say=avy]Знаю.[/say]")
 
-		saynn("[say=announcer]What a twist. And here we have it! Make some noise for Avy, the best of the best![/say]")
+		saynn("[say=announcer]Какой поворот! И вот она! Пошумите для Эви — лучшей из лучших![/say]")
 
-		saynn("While the crowd is busy cheering, Avy rips the lilac's shirt into a few rags. She takes one and uses it as a makeshift bandage, wrapping around her bleeding wounds. Then she straddles the defeated girl again and uses the rest of the rags to tie the lilac's hands together behind her back and then to gag her.")
+		saynn("Пока толпа увлеченно ревет, Эви кромсает рубашку Лиловой на несколько тряпок. Одну она использует как самодельную повязку, обматывая ею кровоточащие раны. Затем она снова запрыгивает верхом на побежденную девчонку и остатками тряпок связывает руки Лиловой за спиной, а затем и затыкает ей рот.")
 
-		saynn("The lilac tries to resist but one slap on the cheek calms her down, she lies still while the red starts pulling down her lilac shorts too, exposing the panties underneath. Avy roughly rips the panties off and throws them over the fence, for all the horny inmates to try and catch.")
+		saynn("Лиловая пытается сопротивляться, но один звонкий шлепок по щеке усмиряет её; она замирает, пока Рыжая стягивает с неё и лиловые шорты, обнажая трусики. Эви грубо срывает трусы и швыряет их через забор, чтобы все изголодавшиеся по сексу заключенные могли попытаться их поймать.")
 
-		saynn("[say=avy]Ha, the bitch thought it was a good idea to bring these![/say]")
+		saynn("[say=avy]Ха, сучка думала, что притащить это — хорошая идея![/say]")
 
-		saynn("Behind the panties there are some quite nice pink pussy lips, they look tight and barely used. The poor lilac looks terrified. The red leans down to her face and drags her tongue over the girl's lips. All the while a big knotted cock slips out of her shorts and flops between lilac's thighs, all the violence seems to turn the red on a lot. Some inmates are surprised, others begin to cheer 'Breed! Breed! Breed!'.")
+		saynn("Под трусиками виднеются довольно милые розовые полоски киски, они выглядят узкими и почти нетронутыми. Бедняжка-сиреневая выглядит до смерти напуганной. Красная наклоняется к её лицу и проводит языком по губам девушки. Тем временем из её шорт выскальзывает огромный узловатый член и хлопает между бёдер сиреневой — кажется, вся эта жестокость дико возбуждает красную. Некоторые заключённые удивлены, другие начинают скандировать: «Лохай! Лохай! Лохай!»")
 
-		saynn("The breeding is sure to happen.. unless you do something about it.")
+		saynn("Скрещивание точно произойдёт... если только ты что-нибудь не предпримешь.")
 
-		addButton("Let it happen", "(noncon) See what happens next", "stay")
-		addButton("Distract Avy!", "Distract Avy at the right time to make sure Kait can escape", "do_distract")
+		addButton("Пусть всё идет своим чередом", "(некон) Посмотреть, что будет дальше", "stay")
+		addButton("Отвлечь Эви!", "Отвлечь Эви в нужный момент, чтобы Кейт смогла сбежать", "do_distract")
 	if(state == "stay"):
 		addCharacter("kait", ["naked"])
 		playAnimation(StageScene.SexMatingPress, "fast", {pc = "avy",npc="kait",pcCum=true, npcCum=true,bodyState={exposedCrotch=true,hard=true},npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("The naked cat tries to crawl away from the fox but these attempts are quickly ended by Avy grabbing lilac's legs and then raising and pinning them into the floor using her body, getting the girl into a mating press position. She then quickly directs her veiny cock down the girl's cunt and thrusts inside, causing her knotted cock to spread the sensitive pink folds and slide inside the pussy balls-deep!")
+		saynn("Голая кошечка пытается уползти от лисицы, но эти попытки быстро пресекаются: Эви хватает сиреневую за ноги, а затем поднимает и прижимает их к полу всем своим телом, принимая девушку в позу для спаривания. Затем она быстро направляет свой вздутый член в щель девушки и всаживает его внутрь, отчего её узловатый член растягивает чувствительные розовые складки и входит в киску по самую основу!")
 
-		saynn("The audience goes wild, some begin to pleasure themselves while watching the scene unfold. Some cheer and yell 'Fuck her harder! Break the slut!'.")
+		saynn("Зрители в восторге, некоторые начинают ласкать себя, наблюдая за происходящим. Кто-то кричит и вопит: «Трахни её сильнее! Сломай эту сучку!»")
 
-		saynn("Only some muffled moans can be heard from the lilac while the red starts fucking her, shoving her cock in and out, forcing the cunt to be stretched and make wet noises. Avy gets on all fours and quickly reaches her peak pace, probably ramming her cock so deep that it smashes the girl's cervix each time.")
+		saynn("От сиреневой слышны лишь приглушённые стоны, пока красная начинает её трахать, вгоняя и выгоняя член туда-сюда, заставляя киску растягиваться и издавать влажные звуки. Эви встаёт на четвереньки и быстро выходит на пиковую скорость, вероятно, вбивая свой член так глубоко, что каждый раз он бьётся о шейку матки девушки.")
 
-		saynn("[say=avy]That's what you get, bitch! You get my fucking litter![/say]")
+		saynn("[say=avy]Вот тебе, сучка! Получай мой гребаный выводок![/say]")
 
-		saynn("The crowd keeps yelling 'Breed her! Cum inside! Make her pregnant!'. The poor girl can only let out muffled moans and struggle against the restraints while her pink kitty gets pounded hard in the position that is designed for efficient breeding. Such hard pounding makes the girl shift around her spot, her cute breasts bounce up and down when the cock gets rammed inside again and again.")
+		saynn("Толпа продолжает орать: «Ломай её! Кончай внутрь! Сделай её беременной!». Бедная девчонка может лишь издавать приглушенные стоны и дергаться в путах, пока её розовую киску нещадно долбят в позе, идеально подходящей для эффективного размножения. От такой жесткой долбежки девчонка ерзает на месте, а её милые груди подпрыгивают вверх-вниз каждый раз, когда член раз за разом влетает в неё.")
 
-		saynn("Avy's knot inflates and she doesn't think twice before shoving it inside, causing the lilac to arch her back and produce a long muffled moan while her body starts to shiver and shake. She is cumming hard, her eyes roll up, her slit is stretched beyond limits and squirts juices all over the floor.")
+		saynn("У Эйви раздувается узел, и она, не раздумывая, всаживает его внутрь, заставляя сиреневую девчонку выгнуться дугой и издать долгий приглушенный стон, пока её тело начинает дрожать и биться в конвульсиях. Она кончает на полную катушку: глаза закатываются, щель растянута до предела, а соки брызжут во все стороны прямо на пол.")
 
-		saynn("And Avy still doesn't stop, she keeps knot-fucking the girl, quickly reaching her own peak. She fully pulls out her canine cock just to ram it back inside with full force, making the tip break through the girl's cervix and the knot to stretch her folds again. That is when Avy's balls begin to tense up as her cock starts stuffing that womb full of her virile dickgirl cum. People around are cheering louder while the girl's belly starts to look more cum-inflated with each second.")
+		saynn("А Эйви всё не унимается, она продолжает трахать девчонку узлом, быстро приближаясь к своему пику. Она полностью вынимает свой собачий член лишь для того, чтобы с размаху вогнать его обратно, так что головка пробивает шейку матки, а узел снова растягивает её складки. В этот момент яички Эйви напрягаются, когда её член начинает забивать утробу этой девчонки её мощной спермой дикгёрл. Окружающие кричат всё громче, а живот девчонки с каждой секундой всё сильнее раздувается от избытка спермы.")
 
-		saynn("Then Avy applies extra force to pull her cock out, using the last waves of cum to cover the girl's body, cute tits and the face, marking and humiliating her. The leopard is too busy cumming again to react, her body is making an arch, her gaping cunt gushing out cum and more juices.")
+		saynn("Затем Эви с силой выдергивает свой член, используя последние волны спермы, чтобы покрыть тело девушки, её милые титьки и лицо, помечая и унижая её. Леопардица слишком занята новым оргазмом, чтобы среагировать; её тело выгибается дугой, а разверстая киска извергает сперму и всё больше соков.")
 
-		saynn("Avy chuckles watching the girl and then pulls her cock away. She then climbs over the fence, leaving the poor lilac naked and fucked for everyone to see.")
+		saynn("Эви посмеивается, глядя на девушку, а затем вынимает член. После этого она перелезает через забор, оставляя бедную сиреневую оставить нагой и трахнутой на всеобщее обозрение.")
 
-		saynn("Seems like the show is over for now.. And what a show it was.")
+		saynn("Похоже, шоу на данный момент окончено... И какое же это было шоу.")
 
-		addButton("Continue", "See what happens next", "endthescene_clearstuff")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_clearstuff")
 	if(state == "do_distract"):
 		playAnimation(StageScene.Duo, "defeat", {pc="avy", npc="kait", npcAction="kick", npcBodyState={naked=true}})
-		saynn("You wait for a good moment.. and then yell.. loud enough to stand out against the cheering crowd.")
+		saynn("Ты выжидаешь подходящий момент... а затем кричишь... достаточно громко, чтобы перекричать ликующую толпу.")
 
-		saynn("[say=pc]HEY! Watch out![/say]")
+		saynn("[say=pc]ЭЙ! Осторожнее![/say]")
 
-		saynn("Avy's reflex is to look towards the source of that voice. Her eyes scan the wall of people.. but you have already merged with it.")
+		saynn("Рефлекс Эви — обернуться на голос. Её глаза сканируют стену людей... но ты уже слился с толпой.")
 
-		saynn("[say=avy]Huh?[/say]")
+		saynn("[say=avy]А?[/say]")
 
-		saynn("That split second is all that Kait needed. She doesn't waste her chance and suddenly drives her leg between Avy's legs, giving her sheath a.. very low.. blow.")
+		saynn("Этой доли секунды Кейт хватило с лихвой. Она не упускает шанса и внезапно всаживает ногу между ног Эви, нанося её чехлу... очень низкий... удар.")
 
-		saynn("[say=avy]GAAH! F-FUCK![/say]")
+		saynn("[say=avy]ГХАА! Б-БЛЯТЬ![/say]")
 
-		saynn("Avy's blue eyes go wide, her whole body seizes up, hands flying towards her crotch. The crowd's cheering turns into a mix of gasps, laughter and confused shouts.")
+		saynn("Голубые глаза Эви расширяются, всё её тело сводит судорогой, руки взлетают к паху. Ликование толпы сменяется смесью вздохов, смеха и растерянных выкриков.")
 
-		saynn("[say=announcer]Whoa! Even I felt that one.[/say]")
+		saynn("[say=announcer]Ого! Даже у меня аж дух перехватило.[/say]")
 
-		saynn("The lilac crawls away from the poor foxy, her hands still tied up with cloth. She manages to put enough distance between herself and the enraged red.")
+		saynn("Лиловая отползает прочь от бедной лисички, чьи руки всё ещё стянуты тканью. Ей удаётся разорвать дистанцию с разъярённой рыжей.")
 
-		saynn("[say=avy]You.. you BITCH..[/say]")
+		saynn("[say=avy]Ты.. сука..[/say]")
 
-		saynn("Her words dissolve into a wheeze. Avy collapses, unable to stand straight.")
+		saynn("Её слова переходят в хрип. Эви валится на землю, не в силах даже стоять прямо.")
 
-		saynn("While the foxy is busy, Kait spits her gag out and starts trying to free herself. Her claws find a loose thread and pull on it, tearing the cloth apart.")
+		saynn("Пока лисичка занята, Кейт выплевывает кляп и начинает пытаться освободиться. Её когти нащупывают свободную нитку и тянут за неё, разрывая ткань в клочья.")
 
-		saynn("[say=kait]Fuck you, Avy.[/say]")
+		saynn("[say=kait]Пошла ты нахуй, Эви.[/say]")
 
-		saynn("Kait pushes herself up on shaky legs, her tits still exposed, but she doesn't care. She sprints towards the fence, claws digging into the chain-link. She is pulling herself up bit by bit and then swings herself over the top, dropping down on the outside.")
+		saynn("Кейт поднимается на дрожащих ногах; её титьки всё ещё на виду, но ей плевать. Она срывается на бег к забору, впиваясь когтями в сетку. Она подтягивается дюйм за дюймом, а затем перемахивает через верх и приземляется с другой стороны.")
 
-		saynn("[say=announcer]The lilac lost the fight. But she managed to avoid the consequences. Let's hope our grand champion is alright![/say]")
+		saynn("[say=announcer]Лиловая проиграла бой. Но ей удалось избежать последствий. Будем надеяться, что с нашей чемпионкой всё в порядке![/say]")
 
-		saynn("Avy finally manages to get up. She spits on the floor.. then glares at the crowd.. trying to pick out a certain someone.")
+		saynn("Эви наконец удаётся подняться. Она сплевывает на пол... затем свирепо смотрит на толпу... пытаясь выцепить взглядом кое-кого особенного.")
 
-		saynn("[say=avy]It was one of you, fuckers. So fucking rude.[/say]")
+		saynn("[say=avy]Это был кто-то из вас, ублюдков. До чего же дерзко.[/say]")
 
-		saynn("[say=announcer]That is the arena for you, Avy.[/say]")
+		saynn("[say=announcer]Такова арена, Эви.[/say]")
 
-		saynn("Looks like the show is over.")
+		saynn("Похоже, шоу окончено.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -13,49 +13,49 @@ func _run():
 
 	if(state == ""):
 		if(isOnKaitRoute):
-			saynn("Kait cries out and falls down to her knees, too exhausted to continue fighting. She presses her hands into the ground and pants heavily. As you try to get closer, she recoils back into one of the fences.")
+			saynn("Кейт вскрикивает и падает на колени, слишком измотанная, чтобы продолжать бой. Она упирается ладонями в землю и тяжело дышит. Когда ты пытаешься подойти ближе, она отпрядывает, прижимаясь спиной к одному из ограждений.")
 			
-			saynn("[say=kait]Ah.. I lost.[/say]")
+			saynn("[say=kait]Ах.. я проиграла.[/say]")
 			
-			saynn("You stand where you are and decide to let her speak.")
+			saynn("Ты остаешься на месте, решив дать ей выговориться.")
 			
-			saynn("[say=kait]What are you gonna do to me, your fellow teammate?..[/say]")
+			saynn("[say=kait]И что же ты сделаешь со мной, своей же напарницей?..[/say]")
 			
-			saynn("[say=pc]You know how this arena works.[/say]")
+			saynn("[say=pc]Ты ведь знаешь, как устроена эта арена.[/say]")
 			
-			saynn("[say=kait]I do.. well.. do your worst then. I can take it.[/say]")
+			saynn("[say=kait]Знаю.. ну.. тогда покажи всё, на что способна. Я выдержу.[/say]")
 		else:
-			saynn("Kait cries out and falls down to her knees, too exhausted to continue fighting. She presses her hands into the ground and pants heavily. As you try to get closer, she recoils back into one of the fences.")
+			saynn("Кейт вскрикивает и падает на колени, слишком измотанная, чтобы продолжать бой. Она упирается ладонями в землю и тяжело дышит. Когда ты пытаешься подойти ближе, она отпрядывает, прижимаясь спиной к одному из ограждений.")
 
-			saynn("[say=kait]Wait!..[/say]")
+			saynn("[say=kait]Погоди!..[/say]")
 
-			saynn("You stand where you are and decide to let her speak.")
+			saynn("Ты остаешься на месте, решив дать ей выговориться.")
 
-			saynn("[say=kait]I’m Kait. I’m building a team.[/say]")
+			saynn("[say=kait]Я Кейт. Собираю команду.[/say]")
 
-			saynn("[say=pc]And why should I care?[/say]")
+			saynn("[say=pc]И с чего бы мне об этом париться?[/say]")
 
-			saynn("[say=kait]A team to escape from this rathole. I need people that can help me. People that can fight.. Like you![/say]")
+			saynn("[say=kait]Команда, чтобы сбежать из этой дыры. Мне нужны люди, которые смогут мне помочь. Люди, которые умеют драться.. Как ты![/say]")
 
 			if(didCommit && !isOnKaitRoute):
-				saynn("[say=pc]Too bad. I've already made up my mind.[/say]")
+				saynn("[say=pc]Жаль. Но я уже всё решила.[/say]")
 				
-				saynn("[say=kait]Really? Fuck.. whatever.. do your worst then..[/say]")
+				saynn("[say=kait]Серьёзно? Блядь... ну и ладно... тогда покажи всё, на что способна...[/say]")
 			else:
-				saynn("Hm. Escaping, huh. That could be your chance. Although. She is just a lilac. What can a single lilac do. The crowd starts to notice the lack of actions and boos.")
+				saynn("Хм. Побег, значит. Это может быть её шансом. Хотя она всего лишь сирень. Что может одна сирень? Толпа начинает замечать отсутствие действий и освистывать бойцов.")
 
-				saynn("[say=pc]And what if I say no?[/say]")
+				saynn("[say=pc]А если я скажу «нет»?[/say]")
 
-				saynn("Kait tilts her head down and then shrugs a second later.")
+				saynn("Кейт наклоняет голову, а секунду спустя пожимает плечами.")
 
-				saynn("[say=kait]Then just don’t stand in a way?.. I don’t wanna fight you, I wanna fight them, the corrupt evil fuckers that rule over us like we’re slaves.[/say]")
+				saynn("[say=kait]Тогда просто не стой у меня на пути!.. Я не хочу драться с тобой, я хочу драться с ними — с этими продажными ублюдками, которые правят нами, как рабами![/say]")
 				
 		if(!didCommit):
-			addButton("Join", "(Dom route) Agree to her proposal", "doAgree")
+			addButton("Присоединиться", "(Путь Дома) Согласиться на её предложение", "doAgree")
 		elif(!isOnKaitRoute):
-			addDisabledButton("Join", "You have already commited to another main route, sorry.")
-		addButton("Just leave", "You don’t feel like doing anything with her", "just_leave")
-		addButton("Beat her up", "(brutal noncon) She is just a lilac slut, no need to listen to her", "beat_her_up")
+			addDisabledButton("Присоединиться", "Ты уже выбрал другой основной путь, извини.")
+		addButton("Просто уйти", "У тебя нет никакого желания что-либо с ней делать", "just_leave")
+		addButton("Избить её", "(брутальный нонкон) Она всего лишь шлюшка-сирень, её не обязательно слушать", "beat_her_up")
 		GM.ES.triggerRun("ArenaFighterPCWon", ["kait"])
 
 	if(state == "doAgree"):
@@ -63,119 +63,119 @@ func _run():
 		setFlag("KaitModule.talkedKaitArena", true)
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
 		
-		saynn("[say=pc]Alright. I might join you.[/say]")
+		saynn("[say=pc]Ладно. Может, я и присоединюсь к тебе.[/say]")
 		
-		saynn("You help her to get up. The crowd begins to boo after your decision.")
+		saynn("Ты помогаешь ей подняться. После твоего решения толпа начинает освистывать тебя.")
 		
-		saynn("[say=kait]Good choice. Thanks for not.. uh.. doing anything bad to me.[/say]")
+		saynn("[say=kait]Хороший выбор. Спасибо, что не... э-э... не сделала со мной ничего плохого.[/say]")
 		
-		saynn("[say=pc]You're very welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 		
-		saynn("[say=kait]Meet me near the arena. And then we can begin.[/say]")
+		saynn("[say=kait]Жди меня у арены. И тогда мы начнём.[/say]")
 		
-		saynn("You watch her climb over the fence.")
+		saynn("Ты наблюдаешь, как она перелезает через забор.")
 		
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 	if(state == "just_leave"):
 		if(!isOnKaitRoute):
-			saynn("[say=pc]Your idea seems pretty bad. Look around. It’s a fortress. Just learn to live here.[/say]")
+			saynn("[say=pc]Твоя идея кажется хреновой. Оглянись вокруг. Это крепость. Просто привыкай жить здесь.[/say]")
 
-			saynn("Kait growls and shows off her fangs.")
+			saynn("Кейт рычит, скаля клыки.")
 
-			saynn("[say=kait]What if I don’t wanna? I’m not gonna give up no matter what.[/say]")
+			saynn("[say=kait]А если не хочу? Я не собираюсь сдаваться, что бы ни случилось.[/say]")
 
-			saynn("[say=pc]Well then you're gonna suffer here.[/say]")
+			saynn("[say=pc]Ну тогда ты будешь здесь страдать.[/say]")
 
-			saynn("[say=kait]I’m suffering every single day of my life. But at least I’m fighting to try and change that.[/say]")
+			saynn("[say=kait]Я страдаю каждый божий день своей жизни. Но, по крайней мере, я сражаюсь, чтобы это изменить.[/say]")
 
-			saynn("Now it’s your time to shrug. You do that and walk past her, proceeding to get over the fence. She tracks you with her gaze, getting slightly startled when you walk past.")
+			saynn("Теперь твоя очередь пожать плечами. Ты делаешь это и проходишь мимо неё, направляясь к забору. Она провожает тебя взглядом, слегка опешив, когда ты проходишь мимо.")
 		else:
-			saynn("You reach your hand out towards Kait.")
+			saynn("Ты протягиваешь руку к Кейт.")
 			
-			saynn("[say=pc]Good try, Kait.[/say]")
+			saynn("[say=pc]Хорошая попытка, Кейт.[/say]")
 			
-			saynn("She blinks.. but then uses your hand to help her get up.")
+			saynn("Она моргает... но затем использует твою руку, чтобы подняться.")
 			
-			saynn("[say=kait]I totally expected you to fuck me up or something.[/say]")
+			saynn("[say=kait]Я прям ждала, что ты меня отъебёшь или типа того.[/say]")
 			
-			saynn("[say=pc]Expected or wished?[/say]")
+			saynn("[say=pc]Ожидала или желала?[/say]")
 			
-			saynn("[say=kait]Pff![/say]")
+			saynn("[say=kait]Пфф![/say]")
 			
-			saynn("You watch her climb over the fence. The audience doesn't seem too happy.. but who cares.")
+			saynn("Ты наблюдаешь, как она перелезает через забор. Зрители вроде как не в восторге... но кому какое дело.")
 		
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 	if(state == "beat_her_up"):
 		
-		saynn("You continue stepping towards her, menacingly. Kait keeps crawling away and eventually traps herself in one of the corners.")
+		saynn("Ты продолжаешь угрожающе наступать на неё. Кейт продолжает ползти прочь и в итоге забивается в один из углов.")
 
-		saynn("[say=pc]You know what I’m wondering about, Kait?[/say]")
+		saynn("[say=pc]Знаешь, о чём я гадаю, Кейт?[/say]")
 
-		saynn("She glares at you and extends her claws.")
+		saynn("Она свирепо смотрит на тебя, выставив когти.")
 
-		saynn("[say=kait]What?[/say]")
+		saynn("[say=kait]Что?[/say]")
 
-		saynn("You crouch before her and tilt your head to the side slightly.")
+		saynn("Ты приседаешь перед ней, слегка наклонив голову набок.")
 
-		saynn("[say=pc]Do you purr when you get fucked in the pussy?[/say]")
+		saynn("[say=pc]Ты мурчишь, когда тебе трахают киску?[/say]")
 
-		saynn("She growls and reaches her paw to scratch your face. You anticipate that and capture her arm before wrenching it under an unnatural angle, causing lots of discomfort. Kait cries out painfully and shoves her knee into you, managing to push you back. But not without you getting a grasp on her inmate shirt and ripping all the buttons off and exposing her bare chest with cute c-cup tits with perky pink nipples. The crowd cheers as the fight continues.")
+		saynn("Она рычит и тянется лапой, чтобы полоснуть тебя по лицу. Ты предугадываешь это и перехватываешь её руку, прежде чем вывернуть её под неестественным углом, причиняя ей сильную боль. Кейт болезненно вскрикивает и втыкается коленом в тебя, умудряясь оттолкнуть тебя назад. Но не без последствий: ты успеваешь ухватиться за её тюремную рубашку и с корнем вырываешь все пуговицы, обнажая её голую грудь с милыми сиськами размера C и упругими розовыми сосками. Толпа ревет от восторга, пока бой продолжается.")
 
-		saynn("[say=kait]Go fuck yourself![/say]")
+		saynn("[say=kait]Да иди ты нахуй![/say]")
 
-		saynn("[say=pc]We both know how this is gonna end. The only question is how many bones will I need to crack.[/say]")
+		saynn("[say=pc]Мы обе знаем, чем всё это закончится. Единственный вопрос — сколько костей мне придётся переломать.[/say]")
 
-		saynn("Kait slowly gets up and gets into a fighting stance. She looks tired and is still very much cornered between two fences with her shirt being casually spread open. You take your time to recover after her last trick and then begin to slowly creep towards her again.")
+		saynn("Кейт медленно поднимается и встает в боевую стойку. Она выглядит уставшей и всё еще зажата между двумя заборами, а её рубашка небрежно распахнута. Ты не спешишь, восстанавливаясь после её последнего трюка, а затем начинаешь снова медленно подкрадываться к ней.")
 
-		saynn("You decide to give her the initiative and react to what she will do, you’re very much aware of her strong legs. As you close up the distance you notice her preparing a kick and as she goes forward with it, you mastefully avoid her and get a firm grasp on her digitigrade leg. Kait snarls as she tries to free it but is unable to due to her weak state.")
+		saynn("Ты решаешь отдать инициативу ей и реагировать на её действия, прекрасно осознавая, насколько сильны её ноги. Когда ты сокращаешь дистанцию, ты замечаешь, что она готовится к удару ногой, и в тот момент, когда она делает выпад, ты мастерски уклоняешься и крепко хватаешь её пальцеходящую ногу. Кейт скалится, пытаясь вырваться, но из-за слабости ей это не удается.")
 
-		saynn("[say=pc]Would be a shame to lose one, wouldn’t it?[/say]")
+		saynn("[say=pc]Было бы обидно потерять одну из них, не так ли?[/say]")
 
-		saynn("Kait gasps as she sees you winding your free arm up before bringing it down, striking the leopard’s exposed knee with your elbow. You hear a crack and then a loud cry, Kait experiences true agony as her leg was almost snapped in half. Adrenaline rushes through her blood. Desperate, she grabs onto the fences with her arms and shoves her healthy leg into your chin with full strength of a furious kitty, sending you back a good few meters. Ow, you feel your jaw misaligned. What a bitch.")
+		saynn("Кейт ахает, видя, как ты замахиваешься свободной рукой, а затем обрушиваешь локоть на открытое колено леопарда. Раздается хруст, а следом — громкий крик; Кейт испытывает настоящую агонию, ведь её нога едва не переломилась пополам. Адреналин ударяет ей в кровь. В отчаянии она вцепляется руками в ограждение и со всей яростью разъяренной кошечки впечатывает здоровую ногу тебе в подбородок, отбрасывая тебя на добрых несколько метров. Ох, кажется, челюсть съехала. Ну и сучка.")
 
-		saynn("Kait, unable to stand on her leg, drops to the floor again, hissing and growling at everything. You slowly get up off the floor and put your hands on your lower jaw before forcing it back into place with a satisfying click, she is not the only one who feels adrenaline.")
+		saynn("Кейт, не в силах стоять на ноге, снова падает на пол, шипя и рыча на всё вокруг. Ты медленно поднимаешься с земли и хватаешься за нижнюю челюсть, а затем с приятным щелчком вправляешь её на место — она не единственная, кто сейчас на адреналине.")
 
-		saynn("[say=pc]I can do this all day. While you only have one working leg left. Is it worth it?[/say]")
+		saynn("[say=pc]Я могу так хоть весь день. Правда, у тебя осталась всего одна рабочая нога. Стоит ли оно того?[/say]")
 
-		saynn("Kait whines and cries out from ugly sensations, her shaky paws rub her half-broken leg, trying to soothe the pain. She sees you being up fast and shows her hatred by growling at you. She uses her arms to push herself up and get up off the ground. She has to stand on one leg, her other is barely touching the floor. The snow leopard doesn’t even care that her breasts are exposed.")
+		saynn("Кейт скулит и стонет от жуткой боли, её дрожащие лапы потирают полусломанную ногу, пытаясь унять страдание. Заметив, что ты быстро вскочил, она демонстрирует свою ненависть, рыча на тебя. Она упирается руками в землю, пытаясь подняться. Ей приходится стоять на одной ноге, вторая едва касается пола. Снежный леопард даже не заботится о том, что её грудь обнажена.")
 
-		saynn("[say=kait]F-Fuck you..[/say]")
+		saynn("[say=kait]Б-блядь тебя...[/say]")
 
-		saynn("The girl got courage, you give her that. She is still a fool though, you offer her a sarcastic shrug and start creeping towards her again.")
+		saynn("Девочка набралась смелости, тут не поспоришь. Но она всё ещё дура — ты лишь саркастично пожимаешь плечами и снова начинаешь подкрадываться к ней.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.SexStart, "defeated", {
 			pc="pc", npc="kait", 
 		})
 		
-		saynn("As you get close to her and try to attack her, she tries to kick you again. But it seems like the crowd is tired of seeing her do the same thing, as soon as she grabs onto the fence with her paws, many crowd’s hands slip through the holes in the fences and grab her, pinning Kait’s arms to the fence! Her pupils increase in size, she tries to free herself but only gets her legs grabbed and held in place too, leaving her exposed breasts and chest completely open. She looks at you, her eyes show terror, despair.")
+		saynn("Когда ты приближаешься к ней, пытаясь атаковать, она снова пытается ударить тебя ногой. Но, похоже, толпе надоело смотреть на одно и то же: как только она вцепляется лапами в забор, множество рук просовываются сквозь отверстия и хватают её, прижимая руки Кейт к сетке! Её зрачки расширяются, она пытается вырваться, но в итоге ей хватают и ноги, фиксируя их на месте, отчего её обнаженная грудь и живот остаются полностью открытыми. Она смотрит на тебя, и в её глазах читаются ужас и отчаяние.")
 
-		saynn("Of course you're gonna take advantage of that, you prepare a powerful kick and then lunge forward, shoving your leg into the center of Kait’s mass, her torso. When it connects, you hear a sound of cracked ribs and then a loud gasp, your attack knocks all the air out of Kait. As the hands let her go, she slides down to her knees and then collapses onto the ground like a huge sack of meat. She only finds enough strength to curl up and hug herself, sobbing and whining.")
+		saynn("Разумеется, ты не упустишь такой шанс. Ты готовишь мощный удар ногой и бросаешься вперед, вонзая ногу прямо в центр тела Кейт, в её торс. В момент столкновения раздается хруст сломанных ребер, а затем громкий вдох — твоя атака выбивает из Кейт весь воздух. Когда руки отпускают её, она опускается на колени, а затем валится на землю, словно огромный мешок с мясом. У неё хватает сил лишь на то, чтобы свернуться калачиком и обхватить себя руками, всхлипывая и скуля.")
 
-		saynn("You look down at her. She is coughing and gasping for air, exposed parts of her body are all covered in bruises, her knee looks red.")
+		saynn("Ты смотришь на неё сверху вниз. Она кашляет и жадно ловит ртом воздух, её обнаженные части тела покрыты синяками, а колени покраснели.")
 
-		saynn("[say=pc]This will be a lesson for you.[/say]")
+		saynn("[say=pc]Это будет тебе уроком.[/say]")
 
-		addButton("Leave now", "She suffered enough", "leave_now")
+		addButton("Уйти сейчас", "С неё хватит", "leave_now")
 		if(OPTIONS.isContentEnabled(ContentType.Watersports)):
 			if(GM.pc.hasPenis() || GM.pc.hasVagina()):
-				addButton("Piss on her", "Humiliate that bitch", "piss_on_her")
+				addButton("Нассать на неё", "Унизить эту сучку", "piss_on_her")
 			else:
-				addDisabledButton("Piss on her", "You need a cock or a pussy to piss on her")
+				addDisabledButton("Нассать на неё", "Тебе нужен член или киска, чтобы на неё нассать")
 		else:
-			addDisabledButton("Piss on her", "(Watersports content is disabled) Humiliate that bitch")
-		addButtonWithChecks("Breed her", "(noncon) Might as well stuff some kittens into her", "breed_her", [], [ButtonChecks.HasReachablePenis])
+			addDisabledButton("Нассать на неё", "(Контент с водными играми отключен) Унизить эту сучку")
+		addButtonWithChecks("Оплодотворить её", "(некон) Можно было бы и котят в неё запихать", "breed_her", [], [ButtonChecks.HasReachablePenis])
 
 	if(state == "leave_now"):
-		saynn("You loom over the Kait’s body and decide that torturing her won’t be fun anymore. You turn away and climb the nearest fence, leaving her alone. Cats can lick their wounds, she will be fine.")
+		saynn("Ты возвышаешься над телом Кейт и решаешь, что пытать её больше не будет весело. Ты отворачиваешься и карабкаешься по ближайшему забору, оставляя её одну. Кошкам свойственно зализывать раны, она справится.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 	if(state == "piss_on_her"):
@@ -189,24 +189,24 @@ func _run():
 		# (if has cock)
 		if(GM.pc.hasPenis()):
 			if(GM.pc.isWearingChastityCage()):
-				saynn("You stand near Kait’s body and expose your {pc.cock} that’s locked away behind a chastity cage. The urge comes quickly, a stream of warm piss emerges from the tip of your dick and offers the cat on the ground a golden shower. She winces and tries to cover herself but the piss gets everywhere, you make sure to coat her hair, face, exposed tits and her legs with your gross fluids. A puddle of piss is getting bigger under Kait, the way she is panting there is no way she didn’t catch the scent.")
+				saynn("Ты стоишь рядом с телом Кейт и выставляешь напоказ свой {pc.cock}, запертый в девственной клетке. Позыв накрывает мгновенно: из кончика твоего члена вырывается струя теплой мочи, устраивая кошке на земле золотой дождь. Она морщится и пытается прикрыться, но моча летит повсюду — ты старательно заливаешь свои мерзкие выделения ей на волосы, лицо, обнаженную грудь и ноги. Под Кейт растекается всё большая лужа, и судя по тому, как она тяжело дышит, этот запах она точно учуяла.")
 			else:
-				saynn("You stand near Kait’s body and pull out your {pc.cock}. The urge comes quickly, a stream of warm piss emerges from the tip of your dick and offers the cat on the ground a golden shower. She winces and tries to cover herself but the piss gets everywhere, you make sure to coat her hair, face, exposed tits and her legs with your gross fluids. A puddle of piss is getting bigger under Kait, the way she is panting there is no way she didn’t catch the scent.")
+				saynn("Ты стоишь рядом с телом Кейт и достаешь свой {pc.cock}. Позыв накрывает мгновенно: из кончика твоего члена вырывается струя теплой мочи, устраивая кошке на земле золотой дождь. Она морщится и пытается прикрыться, но моча летит повсюду — ты старательно заливаешь свои мерзкие выделения ей на волосы, лицо, обнаженную грудь и ноги. Под Кейт растекается всё большая лужа, и судя по тому, как она тяжело дышит, этот запах она точно учуяла.")
 
-			saynn("You finish marking her and put your cock away. Her clothes are now all damp and ruined, kitty’s white fur now has many yellow spots, showcasing the piss quite clearly. It will be a while before she can wash it all off, including the gross scent. The crowd is laughing at the poor kitty that got humiliated so hard.")
+			saynn("Ты заканчиваешь метить её и убираешь свой член. Её одежда теперь вся влажная и испорченная, а на белом меху кошечки отчетливо видны желтые пятна от мочи. Пройдет немало времени, прежде чем она сможет всё это отмыть вместе с этим мерзким запахом. Толпа хохочет над бедняжкой, которую так жестко унизили.")
 
-			saynn("You silently climb over the fence and go get your reward. Kait knew this place doesn't have rules.")
+			saynn("Ты молча перелезаешь через забор, чтобы забрать свою награду. Кейт знала, что в этом месте правил нет.")
 
 		# (else if has pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("You stand near Kait’s body and expose your {pc.pussyStretch} pussy. The urge comes quickly, a stream of warm piss emerges from your urethra and offers the cat on the ground a golden shower. She winces and tries to cover herself but the piss gets everywhere, you make sure to coat her hair, face, exposed tits and her legs with your gross fluids. A puddle of piss is getting bigger under Kait, the way she is panting there is no way she didn’t catch the scent.")
+			saynn("Ты стоишь рядом с телом Кейт и выставляешь напоказ свою {pc.pussyStretch} киску. Позыв накрывает быстро: из уретры вырывается струя теплой мочи, устраивая кошке на земле золотой дождь. Она морщится и пытается прикрыться, но моча летит повсюду — ты старательно заливаешь своими мерзкими выделениями её волосы, лицо, обнаженную грудь и ноги. Под Кейт растекается всё большая лужа, и судя по тому, как она тяжело дышит, она точно уловила этот запах.")
 
-			saynn("You finish marking her and cover your slit. Her clothes are now all damp and ruined, kitty’s white fur now has many yellow spots, showcasing the piss quite clearly. It will be a while before she can wash it all off, including the gross scent. The crowd is laughing at the poor kitty that got humiliated so hard.")
+			saynn("Ты заканчиваешь метить её и прикрываешь свою щель. Её одежда теперь вся влажная и испорченная, а на белом меху кошечки отчетливо видны желтые пятна от мочи. Пройдет немало времени, прежде чем она сможет всё это отмыть вместе с этим мерзким запахом. Толпа хохочет над бедняжкой, которую так жестко унизили.")
 
-			saynn("You silently climb over the fence and go get your reward. Kait knew this place doesn't have rules.")
+			saynn("Ты молча перелезаешь через забор, чтобы забрать свою награду. Кейт знала, что в этом месте правил нет.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 	if(state == "breed_her"):
@@ -218,30 +218,30 @@ func _run():
 			npcBodyState={exposedCrotch=true},
 		})
 		
-		saynn("You flex your {pc.masc} arms and then expose your {pc.cock}. Kait sees it and shakes her head subtly.")
+		saynn("Ты напрягаешь свои {pc.masc} руки, а затем выставляешь напоказ свою {pc.cock}. Кейт видит это и едва заметно качает головой.")
 
-		saynn("[say=pc]I’m not done with you.[/say]")
+		saynn("[say=pc]Я с тобой еще не закончил.[/say]")
 
-		saynn("[say=kait]F-fuck off-f..[/say]")
+		saynn("[say=kait]От... отвали...[/say]")
 
-		saynn("That attitude just won’t do, you grab the girl by the shoulder and forcibly uncurl her, causing her to hiss from the pain. Then you get a hold of her shorts and yank them off, exposing her black panties and causing more discomfort as the cloth brushes against the hurt knee, this girl is just so fragile. Yeah, your cock is getting harder from the excitement. Kait is trying to kick you off but one stomp on her bruised knee and she is back to sobbing and whining.")
+		saynn("Такое поведение недопустимо. Ты хватаешь девчонку за плечо и силой распрямляешь её, заставляя её шипеть от боли. Затем ты вцепляешься в её шорты и срываешь их, обнажая черные трусики; она снова морщится от дискомфорта, когда ткань задевает ушибленное колено — эта девчонка такая хрупкая. Да, от возбуждения твой член становится всё тверже. Кейт пытается отпихнуть тебя ногами, но один точный удар по её разбитому колену — и она снова рыдает и скулит.")
 
-		saynn("You get a hold of her panties and try to pull them down but she holds onto them like her life depends on it. Fine, you take the other route and yank them up, forcing the cloth to dig into her slit so hard that it makes her cry out from more pain. A few yanks and the cloth starts to break until her panties get torn off completely, exposing her pink pussy that clearly saw some abuse already. Kait rolls around on the floor and swears at you until you suddenly shove what left of her panties into her mouth and forcibly close her jaw.")
+		saynn("Ты хватаешь её за трусики и пытаешься стянуть вниз, но она вцепляется в них так, будто от этого зависит её жизнь. Ладно, тогда ты идешь другим путем и резко дергаешь их вверх, заставляя ткань так сильно впиться в её щелочку, что она вскрикивает от боли. После нескольких рывков ткань начинает рваться, пока трусики не слетают окончательно, обнажая её розовую киску, которая уже явно повидала виды. Кейт катается по полу и сыплет на тебя проклятиями, пока ты внезапно не запихиваешь остатки её трусиков ей в рот, силой заставляя её челюсть сомкнуться.")
 
-		saynn("[say=pc]If you spew these out, prepare to lose some teeth.[/say]")
+		saynn("[say=pc]Если решишь это выплюнуть, готовься лишиться пары зубов.[/say]")
 
-		saynn("Kait doesn’t even care to react anymore, her expression is a mix of agony and desperation, little tears slide down her cheeks. At least the panties work well at muffling her cries.")
+		saynn("Кейт уже даже не пытается реагировать; на её лице застыла смесь агонии и отчаяния, а по щекам катятся слезы. По крайней мере, трусики отлично справляются с тем, чтобы заглушать её крики.")
 
-		saynn("Seeing that pussy now totally exposed makes you so horny. You won against that bitch, you deserve the right to fuck her in any way you want, who cares if the slut decided to make it harder for herself by resisting. You grab her by the collar and start pulling up, trying to make the girl get up. That is met with her wincing and making more muffled grunts, she flinches each time she tries to put her half-broken leg on the floor.")
+		saynn("Вид её полностью обнаженной киски заводит тебя нереально. Ты победил эту сучку, и ты заслужил право трахать её как угодно — какая разница, что эта шлюха решила усложнить себе жизнь сопротивлением? Ты хватаешь её за воротник и начинаешь тянуть вверх, пытаясь заставить девчонку встать. В ответ она лишь морщится и издает приглушенные стоны, вздрагивая каждый раз, когда пытается поставить свою полусломанную ногу на пол.")
 
-		saynn("But you don’t care, you pull her up and then force her face against the fence, bending her body forward and supporting her by having your free arm on her juicy tits. She is completely helpless, looking somewhere above the crowd with her spaced out eyes, only letting out a muffled noise when something in her battered body hurts. You don’t waste any time and direct your {pc.cock} down her dry cunt before bucking your hips forward and forcing yourself inside her. More tears slide down her cheeks, she is arching her back and letting out a muffled moan. Her kitty is tight, inner walls seem to be clenching every time she experiences a spike of pain. The crowd is wild, everyone is cheering for you to breed the bitch.")
+		saynn("Но тебе плевать: ты рывком поднимаешь её и прижимаешь лицом к забору, наклоняя её тело вперед и придерживая свободной рукой её сочные титьки. Она совершенно беспомощна; её остекленевший взгляд устремлен куда-то над толпой, и она лишь издает глухие звуки всякий раз, когда боль пронзает её избитое тело. Ты не теряешь времени и направляешь свой {pc.cock} в её сухую щель, после чего резко подаешься тазом вперед, втискиваясь внутрь. По её щекам катятся новые слезы; она выгибает спину, издавая приглушенный стон. Её киска узкая, а внутренние стенки, кажется, сжимаются при каждом всплеске боли. Толпа в безумии — все орут, чтобы ты осеменил эту сучку!")
 
-		saynn("Kait’s legs are shaking, she gets a grasp on the fence before her and just lets it happen. You tightly squeeze one of her tits, leaving a bruise, while thrusting deep inside. Her inner walls were mostly dry so fucking her was hard and painful but Kait’s body slowly starts to betray her, detecting the unwilling intercourse that is happening and getting her penetrated slit prepared.")
+		saynn("Ноги Кайт дрожат; она вцепляется в забор перед собой и просто отдается процессу. Ты крепко сжимаешь одну из её сисек, оставляя синяк, и с силой входишь в неё до упора. Её внутренние стенки почти сухие, поэтому трахать её тяжело и больно, но тело Кайт постепенно начинает предавать её, реагируя на нежеланный секс и подготавливая её промокшую щель к проникновению.")
 
-		saynn("Her white fluffy tail is wagging like hell, you get a hold of it and wrap it around your hand, using it as a leash, pulling the girl’s ass back to shove your cock deeper, its tip already ramming her cervix, causing more muffled cries. The crowd joins too, they sneak their hands through the holes in the fences and start groping the poor girl, fondling her exposed breasts and caressing her girly hips while you keep abusing her slutty cunt. Your hand moves from squeezing her breasts to holding her throat, applying extra pressure to make breathing next to impossible.")
+		saynn("Её белый пушистый хвост бешено виляет; ты хватаешь его и обматываешь вокруг руки, используя как поводок, и тянешь её задницу назад, чтобы вогнать свой член еще глубже — его кончик уже долбит в её шейку, вызывая приглушенные стоны. Толпа тоже подключается: они просовывают руки сквозь дыры в заборе и начинают лапать бедную девчонку, тиская её обнаженную грудь и поглаживая девичьи бедра, пока ты продолжаешь насиловать её шлюшью киску. Твоя рука перемещается с её груди на горло, сжимая его сильнее, чтобы ей стало почти невозможно дышать.")
 
-		addButton("Inside", "Stuff Kait’s womb", "inside")
-		addButton("Pull out", "You changed your mind", "pull_out")
+		addButton("Внутри", "Забей матку Кайт", "inside")
+		addButton("Вытащить", "Вы передумали", "pull_out")
 
 	if(state == "inside"):
 		playAnimation(StageScene.SexStanding, "fast", {
@@ -253,24 +253,24 @@ func _run():
 		
 		# (if not pregnant)
 		if(!getCharacter("kait").isVisiblyPregnant()):
-			saynn("[say=pc]Hope you are ready to be bred, whore.[/say]")
+			saynn("[say=pc]Надеюсь, ты готова к осеменению, шлюха.[/say]")
 
 		# (if pregnant)
 		else:
-			saynn("[say=pc]Here is another load for your cunt.[/say]")
+			saynn("[say=pc]Лови еще одну порцию в свою киску.[/say]")
 
-		saynn("While you’re choking Kait, her cunt is clenching so hard around your shaft that you feel like you’re about to cum. And you give in to that feeling, you shove your {pc.cock} balls-deep, breaking through her cervix and proceeding to stuff her womb full of your {pc.cum} as the orgasm overtakes your whole body. The poor kitty squirms and shakes under you as her cunt is getting pumped full of your sticky stuff, her tired eyes roll up, she looks like she is about to lose consciousness.")
+		saynn("Пока ты душишь Кейт, её киска так сильно сжимается вокруг твоего члена, что кажется, будто ты вот-вот кончишь. И ты поддаешься этому чувству, вбивая свои {pc.cock} по самые яйца, пробивая её шейку матки и заполняя её утробу своей {pc.cum}, пока оргазм накрывает всё твоё тело. Бедная кошечка корчится и дрожит под тобой, пока её киску накачивает твоей липкой жижей; её усталые глаза закатываются, и кажется, она вот-вот потеряет сознание.")
 
-		saynn("You wait until her slit is properly bred before pulling your messy cock out and wasting the last waves of {pc.cum} by covering her ass and back. Then you finally stop choking her, letting her slowly slide down the fence and spit out her ruined panties as she is coughing for air. Her used cunt is leaking {pc.cum} onto the floor, the crowd keeps fondling and playing with the kneeling slut, preventing her from flopping onto the ground. The view is nice and messy, just like you wanted.")
+		saynn("Ты ждешь, пока её щель будет как следует осеменена, прежде чем вытащить свой грязный член и потратить последние волны {pc.cum}, забрызгав ей задницу и спину. Затем ты наконец перестаешь её душить, позволяя ей медленно сползти по забору и выплюнуть свои испорченные трусики, пока она судорожно хватает ртом воздух. Её использованная киска подтекает {pc.cum} на пол, а толпа продолжает ласкать и тискать стоящую на коленях шлюху, не давая ей рухнуть на землю. Зрелище чертовски приятное и грязное — именно так, как ты и хотел.")
 
-		saynn("You put your cock away and offer the snow leopard a sarcastic pat on the head. Then you crouch near her and give her scritches under her chin. Kait looks broken, just sobbing quietly and hissing when something hurts, she gives up resisting unknown touches and just holds her paws on her chest and knee.")
+		saynn("Ты убираешь член и саркастично похлопываешь снежного барса по голове. Затем ты приседаешь рядом и начинаешь чесать её под подбородком. Кейт выглядит сломленной: она лишь тихо всхлипывает и шипит, когда что-то причиняет боль; она перестает сопротивляться чужим прикосновениям и просто прижимает лапы к груди и колену.")
 
-		saynn("[say=pc]Next time just spread your legs, whore.[/say]")
+		saynn("[say=pc]В следующий раз просто раздвигай ноги, шлюха.[/say]")
 
-		saynn("Kait glances at you for a second and then tilts her head down. You stand up and climb over the fence, leaving her alone with the crowd and many injuries, both external and internal.")
+		saynn("Кейт на секунду бросает на тебя взгляд, а затем опускает голову. Ты встаешь и перелезаешь через забор, оставляя её одну на растерзание толпе, израненную — как снаружи, так и внутри.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 	if(state == "pull_out"):
@@ -281,19 +281,19 @@ func _run():
 			npcBodyState={exposedCrotch=true},
 		})
 		
-		saynn("While you’re choking Kait, her cunt is clenching so hard around your shaft that you feel like you’re about to cum. But you decide not to ruin her womb too and pull your cock out the moment you get over the peak. Your {pc.cock} starts throbbing and a second later a strong string of {pc.cum} emerges from its tip, landing on Kait’s butt. Then another. And another. The poor kitty squirms and shakes as her butt, tail and thighs become all messy, her tired eyes roll up, she looks like she is about to lose consciousness.")
+		saynn("Пока ты душишь Кейт, её киска так сильно сжимается вокруг твоего члена, что кажется, будто ты вот-вот кончишь. Но ты решаешь не засрать ей матку и вынимаешь свой член в тот самый миг, когда достигаешь пика. Твой {pc.cock} начинает пульсировать, и секунду спустя из его кончика вырывается густая струя {pc.cum}, попадая Кейт на задницу. Затем еще одна. И еще. Бедная кошечка корчится и дрожит, пока её зад, хвост и бедра покрываются липкой массой, а уставшие глаза закатываются — кажется, она вот-вот потеряет сознание.")
 
-		saynn("You wait until the last string of your {pc.cum} lands on Kait before you finally stop choking her, letting her slowly slide down the fence and spit out her ruined panties as she is coughing for air. Her stretched cunt is pulsating and slowly closes up, the crowd keeps fondling and playing with the kneeling slut, preventing her from flopping onto the ground. The view is nice and messy, just like you wanted.")
+		saynn("Ты ждешь, пока последняя струя твоего {pc.cum} попадет на Кейт, прежде чем наконец перестать душить её, позволяя ей медленно сползти по забору и выплюнуть свои испорченные трусики, пока она судорожно ловит ртом воздух. Её растянутая киска пульсирует и медленно смыкается, а толпа продолжает ласкать и тискать стоящую на коленях шлюху, не давая ей рухнуть на землю. Зрелище чертовски приятное и грязное — именно так, как ты и хотел.")
 
-		saynn("You put your cock away and offer the snow leopard a sarcastic pat on the head. Then you crouch near her and give her scritches under her chin. Kait looks broken, just sobbing quietly and hissing when something hurts, she gives up resisting unknown touches and just holds her paws on her chest and knee.")
+		saynn("Ты убираешь член и саркастично похлопываешь снежного барса по голове. Затем ты приседаешь рядом и начинаешь чесать её под подбородком. Кейт выглядит сломленной: она лишь тихо всхлипывает и шипит, когда что-то причиняет боль; она перестает сопротивляться чужим прикосновениям и просто прижимает лапы к груди и колену.")
 
-		saynn("[say=pc]Next time just spread your legs, whore.[/say]")
+		saynn("[say=pc]В следующий раз просто раздвигай ноги, шлюха.[/say]")
 
-		saynn("Kait glances at you for a second and then tilts her head down. You stand up and climb over the fence, leaving her alone with the crowd and many injuries, both external and internal.")
+		saynn("Кейт на секунду бросает на тебя взгляд, а затем опускает голову. Ты встаешь и перелезаешь через забор, оставляя её одну на растерзание толпе, израненную — как снаружи, так и внутри.")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

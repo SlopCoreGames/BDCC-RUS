@@ -18,12 +18,12 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "stand", {npc="vion"})
 		
-		saynn("[say=pc]I'm up for a session.[/say]")
+		saynn("[say=pc]Я готова к сеансу.[/say]")
 		
 		if(onCooldown()):
-			saynn("[say=vion]Not yet you aren't. Give your head some time to settle.[/say]")
+			saynn("[say=vion]Пока еще нет. Дай голове немного прийти в себя.[/say]")
 		else:
-			saynn("[say=vion]What did you have in mind?[/say]")
+			saynn("[say=vion]Что ты задумала?[/say]")
 		
 		addSessionButton("Session zero", "An introductory session", HK_Sessions.BodySessionZero)
 		addSessionButton("Relaxation", "Drift in peace for a while", HK_Sessions.BodyStaminaRestore)
@@ -31,7 +31,7 @@ func _run():
 		addSessionButton("Pain tolerance", "Increase your pain tolerance", HK_Sessions.BodyMaxPainBuff)
 		addSessionButton("Bondage", "Experience a bondage scenario in the safety of your own mind", HK_Sessions.BodyBondage)
 
-		addButton("Nevermind", "Changed your mind about changing your mind", "endthescene")
+		addButton("Проехали", "Передумала насчет того, чтобы передумать", "endthescene")
 		# (scene ends)
 
 func _react(_action: String, _args):
@@ -46,17 +46,17 @@ func _react(_action: String, _args):
 
 func addSessionButton(name: String, desc: String, sessionId: String):
 	if(GM.pc.isBlindfolded()):
-		addDisabledButton(name, desc + "\n\nYou can't participate while blindfolded")
+		addDisabledButton(name, desc + "\n\nНельзя участвовать с повязкой на глазах")
 		return
 	if(GM.pc.isGagged()):
-		addDisabledButton(name, desc + "\n\nYou can't participate while gagged")
+		addDisabledButton(name, desc + "\n\nНельзя участвовать с кляпом во рту")
 		return
 	if(GM.pc.hasBoundArms() or GM.pc.hasBoundLegs()):
-		addDisabledButton(name, desc + "\n\nYou can't participate while restrained")
+		addDisabledButton(name, desc + "\n\nНельзя участвовать в путах")
 		return
 	if(getFlag("HypnokinkModule.DidSessionZero") || sessionId == HK_Sessions.BodySessionZero):
 		if(onCooldown()):
-			addDisabledButton(name, desc + "\n\nIt's too soon since the last session")
+			addDisabledButton(name, desc + "\n\nПрошло слишком мало времени с последнего сеанса")
 			return
 		if(!canAfford(sessionId)):
 			addDisabledButton(name, desc + "\n\n" + getCostString(sessionId))
@@ -64,7 +64,7 @@ func addSessionButton(name: String, desc: String, sessionId: String):
 		addButton(name, desc+ "\n\n" + getCostString(sessionId), sessionId)
 		return
 	else:
-		addDisabledButton(name, "Do Session Zero first")
+		addDisabledButton(name, "Сначала проведи Нулевой Сеанс")
 		return
 		
 func onCooldown() -> bool:

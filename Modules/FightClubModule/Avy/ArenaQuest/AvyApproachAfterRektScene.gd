@@ -7,19 +7,19 @@ func _run():
 	if(state == ""):
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Avy eyes you out curiously when you approach her.")
+		saynn("Когда ты подходишь к ней, Эви с любопытством тебя разглядывает.")
 
-		saynn("[say=avy]Came back for more?[/say]")
+		saynn("[say=avy]Снова пришел за добавкой?[/say]")
 
-		saynn("Foxy looks at her claws.")
+		saynn("Фокси разглядывает свои когти.")
 
-		saynn("[say=avy]You know, I wasn't actually trying to kill you.[/say]")
+		saynn("[say=avy]Знаешь, на самом деле я не пыталась тебя убить.[/say]")
 
-		saynn("Her gaze gets directed back towards you.")
+		saynn("Её взгляд снова устремляется на тебя.")
 
-		saynn("[say=avy]You're just too soft, I guess. Anyway. What do you want?[/say]")
+		saynn("[say=avy]Ты просто слишком мягкотелый, наверное. Ладно. Чего тебе?[/say]")
 
-		addButton("Continue", "That was rude", "do_talk")
+		addButton("Продолжить", "Это было грубо", "do_talk")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

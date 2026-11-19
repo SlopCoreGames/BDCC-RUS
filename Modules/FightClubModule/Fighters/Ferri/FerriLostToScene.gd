@@ -9,55 +9,55 @@ func _run():
 		playAnimation(StageScene.Duo, "kneel", {npc="ferri"})
 
 	if(state == ""):
-		saynn("Unable to continue fighting, you cry out from pain and hit the floor. Ferri pounces at you and closes her muzzle around your throat, threatening to sink her fangs into it. You raise your hands, trying to avoid your neck being bitten.")
+		saynn("Продолжать бой невозможно: от боли ты вскрикиваешь и валишься на пол. Ферри набрасывается на тебя и смыкает пасть на твоем горле, угрожая вонзить клыки. Ты вскидываешь руки, пытаясь уберечь шею от укуса.")
 
-		saynn("[say=pc]I surrender.[/say]")
+		saynn("[say=pc]Я сдаюсь![/say]")
 
-		saynn("Ferri raises her brow and tries to talk without closing her mouth.")
+		saynn("Ферри вскидывает бровь и пытается что-то сказать, не разжимая рта.")
 
-		saynn("[say=ferri]You ffure? Mew..[/say]")
+		saynn("[say=ferri]Ты фыркаешь? Мяу...[/say]")
 
-		saynn("Judging from Ferri’s tone, she almost sounds disappointed. She lets go of your neck and straddles you, wondering about what she should do with you.")
+		saynn("Судя по тону Ферри, она звучит почти разочарованно. Она отпускает твою шею и усаживается верхом, раздумывая, что же ей с тобой делать.")
 
-		addButton("Get teased", "See what happens next", "get_teased")
+		addButton("Дать себя дразнить", "Смотреть, что будет дальше", "get_teased")
 		GM.ES.triggerRun("ArenaFighterPCLost", ["ferri"])
 
 	if(state == "get_teased"):
-		saynn("Ferri slides her paws teasingly over your {pc.masc} curves. Soft purring can be heard from her maw as she reaches your {pc.breasts} and then gives them a smack! Ow, you arch your back but she pins you back to the ground. The crowd behind the fence cheers for more fucking but the dracat’s plans are different.")
+		saynn("Ферри игриво проводит лапами по твоим {pc.masc} изгибам. Из её пасти доносится мягкое мурчание, когда она добирается до твоих {pc.breasts} и отвешивает им звонкую пощечину! Ох, ты выгибаешься, но она прижимает тебя обратно к земле. Толпа за забором требует продолжения траха, но у драката другие планы.")
 
-		saynn("[say=ferri]Who’s a bad pet?[/say]")
+		saynn("[say=ferri]Кто тут плохой питомец?[/say]")
 
-		saynn("[say=pc]You are?[/say]")
+		saynn("[say=pc]Это ты?[/say]")
 
-		saynn("She growls playfully and smacks your hands away before biting your shoulder, painfully enough for you to cry out a moan and wiggle desperately.")
+		saynn("Она игриво рычит и отмахивается от твоих рук, прежде чем укусить тебя за плечо — достаточно больно, чтобы ты вскрикнул от стона и отчаянно задергался.")
 
-		saynn("[say=pc]Hey! Fine.. I am?[/say]")
+		saynn("[say=pc]Эй! Ладно... я?[/say]")
 
-		saynn("Ferri quickly moves away from your shoulder and offers you some headpats as a reward.")
+		saynn("Ферри быстро отстраняется от твоего плеча и в награду гладит тебя по голове.")
 
-		saynn("[say=ferri]That’s right~. You are my soft bratty pillow. Say it or I will bite you again~[/say]")
+		saynn("[say=ferri]Вот так~. Ты моя мягкая, капризная подушка. Скажи это, а не то я снова тебя укушу~[/say]")
 
 		# (if not naked)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Dracat extends the claws on her paw and uses them to open your clothing. Then she drags them over your skin while putting a moderate amount of pressure, threatening to pierce at any second.")
+			saynn("Дракат выпускает когти на своей лапе и использует их, чтобы вскрыть твою одежду. Затем она проводит ими по твоей коже с умеренным нажимом, угрожая пронзить плоть в любую секунду.")
 
 		# (if naked)
 		else:
-			saynn("Dracat extends the claws on her paw and drags them over your skin while putting a moderate amount of pressure, threatening to pierce at any second.")
+			saynn("Дракат выпускает когти на своей лапе и проводит ими по твоей коже с умеренным нажимом, угрожая пронзить плоть в любую секунду.")
 
-		saynn("You stay quiet and squirm under Ferri while the pressure from her claws arises. Eventually her second paw joins, at first it feels like tickling but the painful sensations soon become more prominent.")
+		saynn("Ты молчишь и ерзаешь под Ферри, пока давление её когтей нарастает. В конце концов подключается её вторая лапа; поначалу это похоже на щекотку, но вскоре болезненные ощущения становятся всё отчетливее.")
 
-		saynn("[say=pc]You are the brat here.[/say]")
+		saynn("[say=pc]Это ты тут капризный засранец.[/say]")
 
-		saynn("Suddenly she bites into your shoulder again while using her claws to pinch your exposed sensitive nipples. You can’t help but to arch your back and let out a loud noise as your body shivers, you feel like a prey that got caught. The crowd cheers louder hearing your moans, so humiliating.")
+		saynn("Внезапно она снова впивается зубами в твое плечо, одновременно прищипывая когтями твои обнаженные чувствительные соски. Ты невольно выгибаешь спину и издаешь громкий звук, а всё тело пробирает дрожь — ты чувствуешь себя пойманной добычей. Толпа взрывается криками, услышав твои стоны, — как же это унизительно.")
 
-		saynn("[say=ferri]That’s what you get~. Fight better next time, pain slut.[/say]")
+		saynn("[say=ferri]Так тебе и надо~. В следующий раз сражайся лучше, больная шлюшка.[/say]")
 
-		saynn("And with that, Ferri gets up and leaps over the metal fence, leaving you alone and exposed.")
+		saynn("С этими словами Ферри вскакивает и перепрыгивает через металлический забор, оставляя тебя в одиночестве и беззащитной.")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

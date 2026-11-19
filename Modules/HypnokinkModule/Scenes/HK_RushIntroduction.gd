@@ -7,43 +7,43 @@ func _run():
 	addCharacter("rush")
 	playAnimation(StageScene.Duo, "stand", {npc="rush"})
 	if(state == ""):
-		saynn("After a few minutes of searching, taking care not to let your gaze linger on anyone lest they take it as a personal slight worth stabbing over, you spot a tall stallion matching Vion's description. It would seem he's currently... using a solid wall as a boxing bag? You approach him, mustering up confidence as you go. Noticing your approach, he stops to take a breather.")
+		saynn("Спустя несколько минут поисков — стараясь не задерживать взгляд на ком попало, чтобы никто не принял это за личное оскорбление, за которое стоит пустить в ход нож, — ты замечаешь высокого жеребца, подходящего под описание Виона. Похоже, сейчас он... использует глухую стену в качестве боксерской груши? Ты подходишь к нему, по ходу дела собирая всю свою уверенность в кулак. Заметив твое приближение, он останавливается, чтобы перевести дух.")
 
-		saynn("[say=rush]Name's Rush. Can I help ya', pipsqueak?[/say]")
+		saynn("[say=rush]Меня зовут Раш. Чем могу помочь, малявка?[/say]")
 
-		saynn("Wow, he is big.")
+		saynn("Ого, ну и здоровяк.")
 
-		saynn("[say=pc]Yeah, uh-[/say]")
+		saynn("[say=pc]Да, э-э...[/say]")
 
-		saynn("Your eyes wander downward.")
+		saynn("Твой взгляд невольно скользит вниз.")
 
-		saynn("Wow, he [b]is[/b] big.")
+		saynn("Ого, он [b]реально[/b] огромный.")
 
-		saynn("[say=rush]Spit it out, I don' have all day. Whaddya want?[/say]")
+		saynn("[say=rush]Выкладывай уже, у меня не весь день впереди. Чего тебе?[/say]")
 		
-		addButton("Mention Vion", "", "no_bully")
+		addButton("Упомянуть Виона", "", "no_bully")
 	if(state == "no_bully"):
-		saynn("[say=rush]Oh, four-eyes sent ya, eh? Tha's cute.[/say]")
+		saynn("[say=rush]А, так это тебя Четвероглазый подослал, а? Мило.[/say]")
 
-		saynn("He leaps up, grabbing onto a support beam holding up the ceiling and starts doing pull-ups.")
+		saynn("Он подпрыгивает, хватается за опорную балку, удерживающую потолок, и начинает подтягиваться.")
 
-		saynn("[say=rush]Now why- would I- do tha'?- Pushin' him- about 's- hilarious,-[/say]")
+		saynn("[say=rush]Ну с чего бы это мне- так- делать?- Толкать его- это ж умора,-[/say]")
 
-		saynn("He lets go with one hand, switching to one-armed pull-ups.")
+		saynn("Он отпускает одну руку, переходя на подтягивания на одной руке.")
 
-		saynn("[say=rush]he's tryin'- to be all- [i]dignified[/i]- but I can- tell tha' he's- itchin' for it-[/say]")
+		saynn("[say=rush]он пытается- казаться таким- [i]солидным[/i]- но я- прямо вижу, как его- так и подрывает-[/say]")
 
-		saynn("He swaps hands and even picks up the pace.")
+		saynn("Он меняет руки и даже прибавляет темп.")
 
-		saynn("[say=rush]and I want- that ass- an' besides- if he won't- put out it's- easy credits-[/say]")
+		saynn("[say=rush]а мне нужна- эта задница- да и вообще- если он не- захочет развлечь меня- это ж легкие кредиты-[/say]")
 
-		saynn("He lets go with most of his hand, only maintaining a grip with his index and middle finger. Somehow he seems to still be barely breaking a sweat.")
+		saynn("Он почти полностью разжимает ладонь, удерживаясь лишь указательным и средним пальцами. Каким-то образом он всё ещё почти не потеет.")
 
-		saynn("[say=rush]for me! So yeah- pipsqueak- wha's- in it- for me?[/say]")
+		saynn("[say=rush]ради меня! Так что да- малявка- а что- мне- с этого?[/say]")
 
-		saynn("He lets go and drops with a clang, leaving hoofprints in the metal floor. He rises to full height, once again towering over you.")
+		saynn("Он отпускает перекладину и с лязгом приземляется, оставляя следы копыт на металлическом полу. Он выпрямляется во весь рост, снова возвышаясь над тобой.")
 		
-		addButton("Gulp", "", "endthescene")
+		addButton("Глоток", "", "endthescene")
 
 
 func _react(_action: String, _args):

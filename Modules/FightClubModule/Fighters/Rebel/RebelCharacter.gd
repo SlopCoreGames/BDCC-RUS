@@ -99,7 +99,7 @@ func _getAttacks():
 	return ["StrongPunch", "RebelThrow", "RebelTaunt", "RebelPin", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	var text = "Rebel is such a wrestler, she turns towards the audience and roars while flexing her muscles for everyone to see. Then she shifts her attention to you."
+	var text = "Бунтарка — настоящая рестлерша: она поворачивается к зрителям и взревывает, играя мускулами на всеобщее обозрение. А затем переключает всё своё внимание на тебя."
 	text += "\n\n"
 	text += "[say=rebel]See this?[/say]"
 	text += "\n\n"

@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Fast Asleep"
+	return "Крепкий сон"
 
 func getVisibleDescription():
 	return "You can quickly fall into a deep slumber."

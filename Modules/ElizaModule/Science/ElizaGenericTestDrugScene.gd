@@ -7,63 +7,63 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=pc]Hey, I think the drug effect has settled. I stopped changing.[/say]")
+		saynn("[say=pc]Эй, кажется, эффект препарата стабилизировался. Изменения прекратились.[/say]")
 
 		aimCameraAndSetLocName("med_researchlab")
-		saynn("[say=eliza]Oh? Let's go scan you then![/say]")
+		saynn("[say=eliza]О? Тогда давай тебя просканируем![/say]")
 
-		saynn("Eliza brings you to the research lab and fetches some kind of device. A little hand-held scanner.")
+		saynn("Элиза ведет тебя в исследовательскую лабораторию и достает какое-то устройство. Маленький ручной сканер.")
 
-		saynn("[say=eliza]Hold still![/say]")
+		saynn("[say=eliza]Не двигайся![/say]")
 
-		addButton("Continue", "See what happens next", "after_scan")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_scan")
 	if(state == "after_scan"):
-		saynn("Eliza slowly moves the scanner over your body.. while a warm sensation spreads throughout your body. Eventually, she stops.")
+		saynn("Элиза медленно водит сканером по твоему телу... в то время как по всему твоему телу разливается теплое ощущение. В конце концов она останавливается.")
 
-		saynn("[say=eliza]There we go! The database has been updated! We also got some science points for that, great job![/say]")
+		saynn("[say=eliza]Готово! База данных обновлена! А еще мы получили за это очки науки, отличная работа![/say]")
 
-		saynn("She puts the scanner away.. and then produces two pills.")
+		saynn("Она убирает сканер и достает две таблетки.")
 
-		saynn("[say=eliza]Now.. I have an offer for you.[/say]")
+		saynn("[say=eliza]А теперь.. у меня есть для тебя предложение.[/say]")
 
-		saynn("Two pills, one on each of her opened palms. A blue one in her left hand.. and a red one in her right..")
+		saynn("Две таблетки, по одной на каждой её раскрытой ладони. Синяя — в левой руке... и красная — в правой...")
 
-		saynn("[say=eliza]You can swallow the blue one.. and everything is gonna return to how it was before. All the transformations are gonna be undone. Boring, if you ask me![/say]")
+		saynn("[say=eliza]Можешь проглотить синюю... и всё вернется к тому, как было раньше. Все трансформации откатятся назад. Скучно, как по мне![/say]")
 
-		saynn("Boring, huh..")
+		saynn("Скучно, значит..")
 
-		saynn("[say=eliza]Or! You can swallow the red one.. and accept your new self! It will erase the backup DNA of your body.. making all the current changes permanent.[/say]")
+		saynn("[say=eliza]Или! Можешь проглотить красную... и принять свое новое «я»! Она сотрет резервную ДНК твоего тела... сделав все текущие изменения постоянными.[/say]")
 
-		saynn("The choice is clear..")
+		saynn("Выбор очевиден..")
 
-		addButton("Blue", "Eat the pill that will undo all the transformations", "eat_blue")
-		addButton("Red", "Eat the pill that will make all your transformations permanent", "eat_red")
+		addButton("Синяя", "Съесть таблетку, которая отменит все трансформации", "eat_blue")
+		addButton("Красный", "Съесть таблетку, которая сделает все трансформации постоянными", "eat_red")
 	if(state == "eat_blue"):
-		saynn("You grab the blue one off of her paw.. and eat it.")
+		saynn("Ты хватаешь синюю таблетку с её лапы... и проглатываешь её.")
 
-		saynn("[say=eliza]Aww~.[/say]")
+		saynn("[say=eliza]О-о-о~.[/say]")
 
-		saynn("And soon, your body reverts to its normal state.")
+		saynn("Вскоре твоё тело возвращается в нормальное состояние.")
 
-		saynn("Ah.. much better.")
+		saynn("Ах... так-то лучше.")
 
-		saynn("[say=eliza]Well, come back when you get something else I can scan![/say]")
+		saynn("[say=eliza]Ну, возвращайся, когда принесёшь что-нибудь ещё для сканирования![/say]")
 
-		saynn("You nod. Eliza guides you back to the lobby.")
+		saynn("Ты киваешь. Элиза провожает тебя обратно в лобби.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "eat_red"):
-		saynn("You grab the red one off of her paw.. and eat it.")
+		saynn("Ты хватаешь красную таблетку с её лапы... и проглатываешь её.")
 
-		saynn("[say=eliza]Wise choice~.[/say]")
+		saynn("[say=eliza]Мудрый выбор~.[/say]")
 
-		saynn("You brace.. but nothing changes.. and that's the point! Your new you is now you! Forever and ever! Until the next transformation that is..")
+		saynn("Ты замираешь в ожидании... но ничего не меняется... и в этом-то весь смысл! Твоё новое «я» теперь — это ты! Навсегда и навечно! Ну, до следующей трансформации, конечно...")
 
-		saynn("[say=eliza]Enjoy! Come back when you get something else I can scan![/say]")
+		saynn("[say=eliza]Наслаждайся! Возвращайся, когда принесёшь что-нибудь ещё для сканирования![/say]")
 
-		saynn("You nod. Eliza guides you back to the lobby.")
+		saynn("Ты киваешь. Элиза провожает тебя обратно в лобби.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

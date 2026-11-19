@@ -14,103 +14,103 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="bulldog"})
 
 	if(state == ""):
-		saynn("You stand before the guy that is basically a walking wall. He is blocking the path to some kind of special maintenance hatch.")
+		saynn("Ты стоишь перед мужиком, который выглядит как ходячая стена. Он преграждает путь к какому-то особому техническому люку.")
 
-		addButton("Pay", "Use your credits to pay the guy", "trypay")
-		addButton("Intimidate", "Try to fight the guy. This will be a very tough one", "intimidate")
+		addButton("Заплатить", "Заплатить мужику кредитами", "trypay")
+		addButton("Запугивание", "Попробовать подраться с ним. Это будет очень тяжелый бой", "intimidate")
 		if(!getFlag("FightClubModule.BulldogSeduced")):
-			addButtonWithChecks("Sex?", "Offer to pay with your body. This will be very rough..", "sex?", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 5]])
+			addButtonWithChecks("Секс?", "Предложить заплатить своим телом. Будет очень жестко...", "sex?", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 5]])
 		else:
-			addDisabledButton("Sex?", "You already seduced him..")
-		addButton("Leave", "You don't feel like talking", "endthescene")
+			addDisabledButton("Секс?", "Ты его уже соблазнила...")
+		addButton("Уйти", "Тебе не хочется разговаривать", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["bulldog"])
 
 	if(state == "pay"):
-		saynn("[say=pc]How much was it again?[/say]")
+		saynn("[say=pc]Сколько там было?[/say]")
 
-		saynn("The guy turns more grumpy.")
+		saynn("Мужик становится еще ворчливее.")
 
-		saynn("[say=bulldog]Fifteen creds.[/say]")
+		saynn("[say=bulldog]Пятнадцать кредитов.[/say]")
 		
 		if(GM.pc.getCredits() >= 15):
-			addButton("Pay 15 credits", "Give him your hard earned credits", "pay_15_credits")
+			addButton("Заплатить 15 кредитов", "Отдать ему свои кровно заработанные кредиты", "pay_15_credits")
 		else:
-			addDisabledButton("Pay 15 credits", "You don't have that much..")
-		addButton("Naah", "You don't wanna pay", "")
+			addDisabledButton("Заплатить 15 кредитов", "У тебя не так много..")
+		addButton("Не-а", "Ты не хочешь платить", "")
 
 	if(state == "pay_15_credits"):
-		saynn("You pull out a credit chip that contains 15 credits and hand it to the guy. He quickly checks it and puts it away.")
+		saynn("Ты достаешь кредитный чип с 15 кредитами и протягиваешь его парню. Он быстро проверяет его и убирает.")
 
-		saynn("[say=pc]What now?[/say]")
+		saynn("[say=pc]И что теперь?[/say]")
 
-		saynn("The dude smirks and turns around. He then starts pounding on the hatch with some kind of specific pattern. Three slow thumps and two fast ones.")
+		saynn("Парень ухмыляется и разворачивается. Затем он начинает колотить по люку в каком-то определенном ритме: три медленных удара и два быстрых.")
 
-		saynn("After a few seconds, the hatch opens. And the guy allows you to walk in. Finally.")
+		saynn("Спустя несколько секунд люк открывается, и парень наконец-то пропускает тебя внутрь.")
 
-		addButton("Walk in", "See what this place is about", "walk_in")
+		addButton("Войти", "Посмотреть, что это за место", "walk_in")
 
 	if(state == "pay_5"):
 		# (after seducing)
 
-		saynn("[say=pc]So.. it was two credits, wasn’t it?[/say]")
+		saynn("[say=pc]Значит.. это стоило два кредита, не так ли?[/say]")
 
-		saynn("The guy chuckles.")
+		saynn("Парень усмехается.")
 
-		saynn("[say=bulldog]Don’t oversell yourself. Five credits to enter.[/say]")
+		saynn("[say=bulldog]Не наглей. Вход стоит пять кредитов.[/say]")
 
 		if(GM.pc.getCredits() >= 5):
-			addButton("Pay 5 credits", "Give him your hard earned credits", "pay_5_credits")
+			addButton("Заплатить 5 кредитов", "Отдать ему свои кровно заработанные кредиты", "pay_5_credits")
 		else:
-			addDisabledButton("Pay 5 credits", "You don't have that much..")
-		addButton("Naah", "You don't wanna pay", "")
+			addDisabledButton("Заплатить 5 кредитов", "У тебя не так много..")
+		addButton("Не-а", "Ты не хочешь платить", "")
 
 	if(state == "pay_5_credits"):
-		saynn("You pull out a credit chip that contains 5 credits and hand it to the guy. He quickly checks it and puts it away.")
+		saynn("Вы достаете кредитный чип на 5 кредитов и протягиваете его парню. Он быстро проверяет его и убирает.")
 
-		saynn("[say=pc]What now?[/say]")
+		saynn("[say=pc]И что теперь?[/say]")
 
-		saynn("The dude smirks and turns around. He then starts pounding on the hatch with some kind of specific pattern. Three slow thumps and two fast ones.")
+		saynn("Парень ухмыляется и разворачивается. Затем он начинает колотить по люку в каком-то определенном ритме: три медленных удара и два быстрых.")
 
-		saynn("After a few seconds, the hatch opens. And the guy allows you to walk in. Finally.")
+		saynn("Спустя несколько секунд люк открывается, и парень наконец-то пропускает тебя внутрь.")
 
-		addButton("Walk in", "See what this place is about", "walk_in")
+		addButton("Войти", "Посмотреть, что это за место", "walk_in")
 
 
 	if(state == "intimidate"):
-		saynn("[say=pc]How about I beat you up instead?[/say]")
+		saynn("[say=pc]Как насчет того, чтобы вместо этого я надрал тебе задницу?[/say]")
 
-		saynn("Bulldog stretches his shoulders and spits to the side.")
+		saynn("Булдог разминает плечи и сплевывает в сторону.")
 
-		saynn("[say=bulldog]How about you stop barking at me and do the thing.[/say]")
+		saynn("[say=bulldog]Может, хватит на меня лаять и перейдем сразу к делу?[/say]")
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Let's do this", "startfight")
+		addButton("Драться", "Погнали", "startfight")
 
 	if(state == "if_won"):
-		saynn("Defeated, the bulldog growls as he hits the floor.")
+		saynn("Поверженный, Булдог рычит, повалившись на пол.")
 
-		saynn("[say=pc]So. Am I worthy or do you need your ass kicked more?[/say]")
+		saynn("[say=pc]Ну что? Я достоин или тебе нужно еще разок всыпать?[/say]")
 
-		saynn("The dude coughs and softly chuckles at your words, his voice sounds so raspy.")
+		saynn("Парень кашляет и тихо посмеивается над твоими словами; его голос звучит очень хрипло.")
 
-		saynn("[say=bulldog]You’re worthy alright.[/say]")
+		saynn("[say=bulldog]Ты явно чего-то стоишь.[/say]")
 
-		saynn("He leans back and reaches for the maintenance hatch. He pounds 5 times on it, 3 times slowly and 2 fast. After a few seconds, the door opens up, allowing you to come in. At last.")
+		saynn("Он откидывается назад и тянется к техническому люку. Он стучит по нему пять раз: три медленных и два быстрых. Через несколько секунд дверь открывается, пропуская тебя внутрь. Наконец-то.")
 
 		# (scene ends)
 
-		addButton("Walk in", "See what this place is about", "walk_in")
+		addButton("Войти", "Посмотреть, что это за место", "walk_in")
 
 	if(state == "if_lost"):
-		saynn("You lose the fight and collapse down to your knees.")
+		saynn("Ты проигрываешь бой и падаешь на колени.")
 
-		saynn("[say=bulldog]That was stupid.[/say]")
+		saynn("[say=bulldog]Это было глупо.[/say]")
 
-		saynn("You are too weak to continue. He grabs you by the collar and uses his strength to toss you away.")
+		saynn("Ты слишком слаб, чтобы продолжать. Он хватает тебя за воротник и мощным рывком отшвыривает в сторону.")
 
 		# (scene ends)
-		addButton("Continue", "Ow", "getthrownout")
+		addButton("Продолжить", "Ow", "getthrownout")
 
 
 func _react(_action: String, _args):

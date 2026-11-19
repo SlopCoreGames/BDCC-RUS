@@ -7,254 +7,254 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		addCharacter("PCTentacles")
-		saynn("Another day in a paradise..")
+		saynn("Еще один день в этом раю...")
 
 		saynn("[say=eliza]{pc.name}!![/say]")
 
-		saynn("Something feels different..")
+		saynn("Что-то кажется непривычным...")
 
-		saynn("[say=eliza]Look what you did to me![/say]")
+		saynn("[say=eliza]Посмотри, что ты со мной сделал![/say]")
 
-		saynn("Yeah.. maybe it's the voice.")
+		saynn("Да... может, дело в голосе.")
 
-		saynn("Time to get up..")
+		saynn("Пора вставать...")
 
-		addButton("Continue", "See what happens next", "eliza_rushes_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_rushes_in")
 	if(state == "eliza_rushes_in"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You get up and watch Eliza waddle into your cell, her tail swaying behind her in quick, jerky swipes.")
+		saynn("Ты поднимаешься и наблюдаешь, как Элиза вваливается в твою камеру, а её хвост позади неё совершает быстрые, дерганые взмахи.")
 
-		saynn("She is holding onto her pregnant-looking belly.. and she is also doing her best to stay away from the tentacles in your cell. The curious tips are watching her with great interest.")
+		saynn("Она придерживает свой раздувшийся, похожий на беременный живот... и при этом изо всех сил старается держаться подальше от щупалец в твоей камере. Любопытные кончики следит за ней с огромным интересом.")
 
-		saynn("[say=pc]I don't think it was me who gave you the belly.[/say]")
+		saynn("[say=pc]Не думаю, что это я заставил тебя так раздуться.[/say]")
 
-		saynn("One of her paw stops holding her belly and whips out a shock remote instead, her clawed digit threatening to start pressing scary buttons.")
+		saynn("Одна из её лап отрывается от живота, и вместо этого она выхватывает пульт управления шокером, угрожающе водя когтистым пальцем над пугающими кнопками.")
 
-		saynn("[say=eliza]Does that clear your memory up?[/say]")
+		saynn("[say=eliza]Теперь память прояснилась?[/say]")
 
-		addButton("It fits you", "Tell her that she looks cute like that", "say_cute")
-		addButton("You wanted it", "Tell Eliza that she was practically begging for it to happen", "say_wanted")
+		addButton("Тебе идет", "Сказать ей, что в таком виде она выглядит мило", "say_cute")
+		addButton("Ты сам этого хотел", "Сказать Элизе, что она сама практически умоляла об этом", "say_wanted")
 	if(state == "say_cute"):
-		saynn("You nod and raise your hands slightly.")
+		saynn("Ты киваешь и слегка приподнимаешь руки.")
 
-		saynn("[say=pc]Yep. But this belly does fit you.[/say]")
+		saynn("[say=pc]Ага. Но живот тебе и правда идет.[/say]")
 
-		saynn("She squints, her digit brushing against the button.")
+		saynn("Она прищуривается, касаясь пальцем пуговицы.")
 
-		saynn("[say=eliza]Oh yeah? Does it?[/say]")
+		saynn("[say=eliza]Да неужели? Правда идет?[/say]")
 
-		saynn("You slightly raise your chin instinctively.")
+		saynn("Ты инстинктивно слегка вскидываешь подбородок.")
 
-		saynn("[say=pc]Yeah. You look very cute like that.[/say]")
+		saynn("[say=pc]Да. В таком виде ты выглядишь очень мило.[/say]")
 
-		saynn("She growls softly, her whole body tensing up.. including her inner muscles.")
+		saynn("Она тихо рычит, всё её тело напрягается... включая внутренние мышцы.")
 
-		saynn("[say=eliza]I'm sure you will look cuter when on the floor.[/say]")
+		saynn("[say=eliza]Уверена, на полу ты будешь выглядеть куда милее.[/say]")
 
-		saynn("Eliza was about to press the button.. but then she suddenly drops the remote, her eyes going wide, her tail going stiff like a spear.")
+		saynn("Элиза уже собиралась нажать на кнопку... но вдруг роняет пульт; её глаза расширяются, а хвост застывает, словно копье.")
 
-		saynn("[say=eliza]..oh.. ah.. oh shit..[/say]")
+		saynn("[say=eliza]..о.. ах.. черт возьми..[/say]")
 
-		saynn("Eliza grabs onto her belly, about to collapse.")
+		saynn("Элиза хватается за живот, готовая вот-вот рухнуть.")
 
-		addButton("Catch her", "Catch the feline before she falls", "do_catch")
+		addButton("Подхватить её", "Поймать кошку, пока она не упала", "do_catch")
 	if(state == "say_wanted"):
-		saynn("You raise your hands a bit.")
+		saynn("Ты слегка приподнимаешь руки.")
 
-		saynn("[say=pc]The way you were acting, you were practically begging for it. I knew that you wanted it. I just helped to give you the push that you needed.[/say]")
+		saynn("[say=pc]Судя по тому, как ты себя вела, ты практически умоляла об этом. Я знала, что ты этого хочешь. Я лишь помогла тебе сделать последний шаг.[/say]")
 
-		saynn("She furrows her brows and shows her fangs.. but ends up just rolling her eyes.")
+		saynn("Она хмурится и скалится, обнажая клыки... но в итоге лишь закатывает глаза.")
 
-		saynn("[say=eliza]Hmpff.. There is a small chance that you're not wrong. But I certainly didn't want to be stuffed full of weird eggs! That wasn't part of the plan![/say]")
+		saynn("[say=eliza]Хмф... Есть небольшой шанс, что ты не ошибаешься. Но я точно не хотела, чтобы меня набивали этими странными яйцами! Это не входило в мои планы![/say]")
 
-		saynn("You take one careful step forward and gently brush your hand over her hidden belly. She doesn't seem to mind.")
+		saynn("Ты делаешь осторожный шаг вперед и нежно проводишь рукой по её скрытому животу. Кажется, она не против.")
 
-		saynn("[say=pc]It was your idea to begin with, you knew the risk.[/say]")
+		saynn("[say=pc]Вообще-то, это была твоя идея, ты знал о риске.[/say]")
 
-		saynn("[say=eliza]I guess I did. I tried to.. push them out..[/say]")
+		saynn("[say=eliza]Полагаю, так и есть. Я пыталась... вытолкнуть их...[/say]")
 
-		saynn("Her cheeks blush.")
+		saynn("Её щеки заливаются румянцем.")
 
-		saynn("[say=pc]And?[/say]")
+		saynn("[say=pc]И?[/say]")
 
-		saynn("[say=eliza]They just don't wanna come out.. Look..[/say]")
+		saynn("[say=eliza]Они просто не хотят выходить... Смотри...[/say]")
 
-		saynn("She visibly starts to push, tensing her muscles. Moments later, she gasps, her tail going stiff like a spear.")
+		saynn("Она заметно напрягается, начиная тужиться. Мгновение спустя она ахает, а её хвост становится жестким, как копье.")
 
-		saynn("[say=eliza]..oh.. ah.. oh shit..[/say]")
+		saynn("[say=eliza]..о.. ах.. черт возьми..[/say]")
 
-		saynn("Eliza grabs onto her belly, about to collapse.")
+		saynn("Элиза хватается за живот, готовая вот-вот рухнуть.")
 
-		addButton("Catch her", "Catch the feline before she falls", "do_catch")
+		addButton("Подхватить её", "Поймать кошку, пока она не упала", "do_catch")
 	if(state == "do_catch"):
 		playAnimation(StageScene.Cuddling, "squirm", {pc="pc", npc="eliza", bodyState={}, npcBodyState={exposedCrotch=true}})
-		saynn("You catch Eliza as her legs begin to shake and help her to gently land onto the floor.")
+		saynn("Ты подхватываешь Элизу, когда её ноги начинают дрожать, и помогаешь ей плавно опуститься на пол.")
 
-		saynn("The tentacles, concerned with what's happening, reach out towards her.")
+		saynn("Щупальца, обеспокоенные происходящим, тянутся к ней.")
 
-		saynn("[say=pc]Help undress her.[/say]")
+		saynn("[say=pc]Помочь ей раздеться.[/say]")
 
-		saynn("The tips nod and reach out towards Eliza's clothing. They start by helping to get her arms out of the labcoat.. then they pull her blouse off and help get her skirt down.")
+		saynn("Кончики щупалец покачиваются и тянутся к одежде Элизы. Сначала они помогают ей высунуть руки из лабораторного халата... затем стягивают с неё блузку и помогают спустить юбку.")
 
-		saynn("[say=eliza]Ah.. mmh.. I can feel them.. ugh.. f-fuck me..[/say]")
+		saynn("[say=eliza]Ах.. ммм.. я чувствую их.. ох.. блядь, трахайте меня..[/say]")
 
-		saynn("[say=pc]Maybe later.[/say]")
+		saynn("[say=pc]Может быть, позже.[/say]")
 
-		saynn("Her belly is twitching.. something is moving inside her.. for sure.")
+		saynn("Её живот подергивается... внутри неё точно что-то шевелится.")
 
-		saynn("The bra can stay.. but the panties have to go. You grab onto her fancy lace underwear and slip them off, exposing her wet-looking slit. Her horny scent instantly fills the cell.")
+		saynn("Бра можно оставить... а вот трусики должны уйти. Ты хватаешь её изысканное кружевное белье и стягиваешь его, обнажая её влажную щель. Её похотливый аромат мгновенно заполняет камеру.")
 
-		saynn("[say=pc]You can push now.[/say]")
+		saynn("[say=pc]Теперь можешь входить.[/say]")
 
-		saynn("A hot moan escapes the girl's lips.")
+		saynn("С губ девушки срывается горячий стон.")
 
-		saynn("[say=eliza]Ahh-h~..[/say]")
+		saynn("[say=eliza]Ааах~..[/say]")
 
-		saynn("Her pussy is twitching visibly..")
+		saynn("Её киска заметно подергивается...")
 
-		addButton("Continue", "See what happens next", "egg_birth")
+		addButton("Продолжить", "Смотреть, что будет дальше", "egg_birth")
 	if(state == "egg_birth"):
 		playAnimation(StageScene.EggLaying, "15", {pc="eliza", npc="pc", bodyState={exposedCrotch=true}})
-		saynn("Eliza's body tenses again, her back arching hard. Her claws dig into the concrete as another moan escapes her.")
+		saynn("Тело Элизы снова напрягается, она сильно выгибает спину. Её когти впиваются в бетон, когда из неё вырывается очередной стон.")
 
-		saynn("[say=eliza]Mhh.. ahh..[/say]")
+		saynn("[say=eliza]Ммм.. ахх..[/say]")
 
-		saynn("Her stomach contracts visibly, something moving down. Her pussy begins to stretch..")
+		saynn("Её живот заметно сокращается, что-то движется вниз. Её киска начинает растягиваться..")
 
-		saynn("[say=eliza]Ahhh-h..[/say]")
+		saynn("[say=eliza]Ааахх-х..[/say]")
 
-		saynn("The first egg appears.")
+		saynn("Появляется первое яйцо.")
 
-		saynn("Just the tip at first. Eliza's breath hitches, her eyes going wide. Then, with a wet, sucking sound, it pushes further. Her entire body shudders.")
+		saynn("Сначала только кончик. Дыхание Элизы перехватывает, глаза расширяются. Затем, с влажным, чавкающим звуком, оно проталкивается глубже. Всё её тело содрогается.")
 
-		saynn("[say=eliza]..ohhh fuck..[/say]")
+		saynn("[say=eliza]..ооох, блядь..[/say]")
 
-		saynn("About half of the egg is visible, its most girthy part is now stretching her pussy. Eliza's muscles clench around it, trying to push it out.")
+		saynn("Видна примерно половина яйца, его самая широкая часть теперь растягивает её киску. Мышцы Элизы сжимаются вокруг него, пытаясь вытолкнуть его наружу.")
 
-		saynn("And then.. it finally slides out.")
+		saynn("И затем.. оно наконец выскальзывает.")
 
-		saynn("A thick, wet pop echoes in the cell as the egg drops onto the floor between her spread legs. It's beautiful.. in a weird way.. green and shiny from the girl's pussy juices.. The tentacles watch the scene too as it unfolds.")
+		saynn("В камере раздается гулкий влажный хлопок — яйцо падает на пол между её разведенных ног. Оно прекрасно.. в каком-то странном смысле.. зеленое и блестящее от девичьих соков.. Щупальца тоже наблюдают за тем, как разворачивается эта сцена.")
 
-		saynn("[say=eliza]Hah.. ah..[/say]")
+		saynn("[say=eliza]Хах.. ах..[/say]")
 
-		saynn("Eliza's belly was still full.")
+		saynn("Живот Элизы всё еще был полон.")
 
-		saynn("Another contraction.. This time both of her holes twitch. And so you watch as a second egg begins to appear.. but not from her pussy. Her tailhole begins to spread.")
+		saynn("Очередная схватка... На этот раз дергаются оба её отверстия. И ты наблюдаешь, как начинает появляться второе яйцо... но не из киски. Её анус начинает растягиваться.")
 
-		saynn("[say=eliza]W-wait.. It's coming out from my.. Ahh-h..[/say]")
+		saynn("[say=eliza]П-погоди... Оно выходит из моего... Аахх-х...[/say]")
 
-		saynn("She doesn't finish, the egg stretches her tight ring wide.. before popping free, landing beside the first.")
+		saynn("Она не успевает договорить — яйцо растягивает её тугое кольцо, прежде чем с хлопком выскочить и упасть рядом с первым.")
 
-		saynn("Eliza's entire body convulses, her pussy squirts.. a sudden gush of clear fluid that splashes onto the floor.")
+		saynn("Всё тело Элизы содрогается в конвульсиях, её киска брызжет... внезапный поток прозрачной жидкости разлетается по полу.")
 
-		saynn("[say=eliza]F-fuck.. ah.. why are they so big.. getting them in was easier..[/say]")
+		saynn("[say=eliza]Блядь... ах... почему они такие огромные... запихивать их было проще...[/say]")
 
-		saynn("She chuckles to herself, breathing deeply. Until the next egg starts sliding out of her pussy. It happens faster this time, the round object dropping onto the floor with a wet slap.")
+		saynn("Она тихо посмеивается про себя, глубоко дыша. Пока следующее яйцо не начинает выскальзывать из её киски. На этот раз всё происходит быстрее, и округлый объект падает на пол с влажным шлепком.")
 
-		saynn("[say=eliza]Mmmh..[/say]")
+		saynn("[say=eliza]Мммх...[/say]")
 
-		saynn("Another one from her ass. Then two from her pussy in a row, one right after the other, each one leaving her gasping.. and gaping.")
+		saynn("Еще одно из задницы. Затем два подряд из киски, одно за другим, и каждое заставляет её задыхаться... и широко раскрываться.")
 
-		saynn("[say=eliza]Shit.. How many of these even are in me..[/say]")
+		saynn("[say=eliza]Дерьмо... Сколько же их вообще во мне...[/say]")
 
-		saynn("You don't remember exactly.. so you redirect the question towards the tentacles by looking at them and nodding. They react by raising their tips.. and so you count them.")
+		saynn("Ты не помнишь точно... поэтому переводишь вопрос на щупальца, глядя на них и кивая. Они реагируют тем, что приподнимают свои кончики... и ты начинаешь их считать.")
 
-		saynn("[say=pc]They show.. uh.. six? Or maybe seven. At least six or seven.[/say]")
+		saynn("[say=pc]Там... э-э... шесть? Или семь. Как минимум шесть или семь.[/say]")
 
-		saynn("[say=eliza]Now is really not the time for this shit.. There is clearly more than that in me.. Ahh-h..[/say]")
+		saynn("[say=eliza]Сейчас явно не время для этой херни... Во мне явно больше, чем это... А-а-ах...[/say]")
 
-		saynn("Eliza's pussy spawns another shower of juices as her pussy and tailhole both lay an egg almost at the same time. Another few follow soon after, sliding out of her gaping holes, joining the pile.")
+		saynn("Киска Элизы источает новый поток соков, когда её влагалище и анальное отверстие откладывают яйца почти одновременно. Вскоре за ними следуют еще несколько, выскальзывая из её разверзнутых отверстий и пополняя кучу.")
 
-		saynn("At least now her belly is visibly deflating.")
+		saynn("По крайней мере, теперь видно, как её живот начинает спадать.")
 
-		saynn("[say=eliza]Fuck-k-k~..[/say]")
+		saynn("[say=eliza]Бля-я-я-я~...[/say]")
 
-		saynn("The rest of the eggs slide out of her swiftly, one after another, from both her holes. The last egg is followed by her passionate cry.. Her stretched pussy suddenly starts clenching around nothing, her whole body locking up, legs shaking, toes curling. She would squirt again.. if there was anything to squirt with, poor kitty got dehydrated completely by this point.")
+		saynn("Остальные яйца стремительно выскальзывают из неё, одно за другим, из обоих отверстий. За последним яйцом следует её страстный крик... Её растянутая киска внезапно начинает судорожно сжиматься вокруг пустоты, всё тело сводит судорогой, ноги дрожат, пальцы ног поджимаются. Она бы снова кончила фонтаном... если бы ей было чем, бедняжка к этому моменту уже полностью обезвожилась.")
 
-		saynn("After that, she just throws her head back and gives up, panting heavily.")
+		saynn("После этого она просто откидывает голову назад и сдаётся, тяжело дыша.")
 
-		saynn("[say=eliza]..how.. many..[/say]")
+		saynn("[say=eliza]...сколько... их...[/say]")
 
-		saynn("[say=pc]I see.. fifteen.[/say]")
+		saynn("[say=pc]Вижу... пятнадцать.[/say]")
 
-		saynn("Her paw drops onto her empty belly, pressing softly. Suddenly, she is giggling.. and then laughing loudly.")
+		saynn("Её лапка опускается на пустой живот, мягко надавливая. Внезапно она начинает хихикать... а затем громко хохотать.")
 
-		saynn("[say=eliza]..hah.. Haha.. Hahahh.. f-fuck.. no fucking way..[/say]")
+		saynn("[say=eliza]..хах.. Ха-ха.. Ха-ха-ха.. блядь.. да не может быть..[/say]")
 
-		addButton("Continue", "See what happens next", "after_birth_cuddle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_birth_cuddle")
 	if(state == "after_birth_cuddle"):
 		playAnimation(StageScene.EggLaying, "after", {pc="eliza", npc="pc", bodyState={exposedCrotch=true}})
 		#playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="eliza", bodyState={}, npcBodyState={exposedCrotch=true}})
-		saynn("Eliza just rests in your embrace, still trying to recover her breath. Her fur down there.. her inner thighs are all damp. She just keeps rubbing her belly.. until one of the tentacles decides to help with that, causing the feline to flinch away.")
+		saynn("Элиза просто лежит в твоих объятиях, всё ещё пытаясь восстановить дыхание. Её шерстка там внизу... на внутренней стороне бёдер — вся влажная. Она продолжает поглаживать свой живот... пока один из щупалец не решает помочь, заставляя кошечку вздрогнуть.")
 
-		saynn("[say=eliza]Nope!.. I've made enough little tentacle monsters for one life..[/say]")
+		saynn("[say=eliza]Не!.. За одну жизнь мне хватит уже созданных маленьких щупальцемонстров..[/say]")
 
-		saynn("[say=pc]I think it just wants to touch you.[/say]")
+		saynn("[say=pc]Думаю, оно просто хочет тебя потрогать.[/say]")
 
-		saynn("She sighs.. and just lets the tentacles do their thing. One of them rubs her belly.. another one reaches up to her head and gives her a few pats.. a third one is stroking her waist.")
+		saynn("Она вздыхает... и просто позволяет щупальцам делать своё дело. Одно гладит её по животу... другое тянется к голове и слегка похлопывает её... третье ласкает её талию.")
 
-		saynn("[say=eliza]..I'm keeping the eggs..[/say]")
+		saynn("[say=eliza]..Я оставляю яйца себе..[/say]")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("She bumps you with her elbow.")
+		saynn("Она толкает тебя локтем.")
 
-		saynn("[say=eliza]I've suffered enough so I deserve to keep all of them.. Make your own yourself..[/say]")
+		saynn("[say=eliza]Я достаточно настрадалась, так что заслужила оставить их все себе.. Сами себе делайте..[/say]")
 
-		saynn("[say=pc]Not even one?[/say]")
+		saynn("[say=pc]Даже одного?[/say]")
 
-		saynn("She sighs.")
+		saynn("Она вздыхает.")
 
-		saynn("[say=eliza]..fine, you can have one.. I can be generous.[/say]")
+		saynn("[say=eliza]..ладно, так и быть, возьми одно.. Я могу быть щедрой.[/say]")
 
-		saynn("A little memento of your adventures with Eliza.")
+		saynn("Маленький сувенир о твоих приключениях с Элизой.")
 
-		saynn("She just keeps resting in your hands after that.")
+		saynn("После этого она просто продолжает покоиться в твоих руках.")
 
-		saynn("[say=eliza]You know.. this might have been more intense than surviving an explosion.. This might be the most intense thing I've ever experienced.[/say]")
+		saynn("[say=eliza]Знаешь.. это было куда мощнее, чем пережить взрыв.. Пожалуй, это самое интенсивное чувство, которое я когда-либо испытывала.[/say]")
 
-		saynn("Her laugh illuminates the cell again.")
+		saynn("Её смех снова освещает камеру.")
 
-		saynn("[say=pc]It sure looked like that.[/say]")
+		saynn("[say=pc]Выглядело именно так.[/say]")
 
-		saynn("[say=eliza]I gotta go clean myself up..[/say]")
+		saynn("[say=eliza]Пойду приду в себя..[/say]")
 
-		addButton("Continue", "See what happens next", "about_to_leave")
+		addButton("Продолжить", "Смотреть, что будет дальше", "about_to_leave")
 	if(state == "about_to_leave"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You help Eliza to get up. The tentacles are quick to help fix her ponytail and start dressing her up.")
+		saynn("Ты помогаешь Элизе подняться. Щупальца тут же спешат поправить её хвост и помочь ей одеться.")
 
-		saynn("[say=eliza]Well.. that's not a first for these clothes anymore anyway.. It's not like I'm gonna go out there naked. That'd be weird.[/say]")
+		saynn("[say=eliza]Ну.. для этой одежды это уже давно не новость.. Не то чтобы я собиралась выходить наружу голой. Это было бы странно.[/say]")
 
-		saynn("She starts picking up the eggs that.. she made. She hands you one of the eggs.")
+		saynn("Она начинает собирать яйца, которые... создала. И протягивает одно из них тебе.")
 
-		saynn("[say=eliza]Treasure it. Or eat it the moment I leave. But if you get poisoned, don't come to me.[/say]")
+		saynn("[say=eliza]Цени это. Или сожри в ту же секунду, как я уйду. Но если отравишься — ко мне не суйся.[/say]")
 
-		saynn("A few of the eggs fit into her large labcoat pockets.. but the rest she has to carry in her arms, a whole pile of them.")
+		saynn("Несколько яиц помещается в её огромные карманы лабораторного халата... но остальные ей приходится нести в руках, целой горой.")
 
-		saynn("[say=eliza]See you around.[/say]")
+		saynn("[say=eliza]Ещё увидимся.[/say]")
 
-		saynn("The tentacles wave her goodbye.")
+		saynn("Щупальца машут ей вслед на прощание.")
 
-		saynn("[say=eliza]You can fuck pretty well, I will give you that. Hah..[/say]")
+		saynn("[say=eliza]Трахаешься ты довольно неплохо, тут не поспоришь. Хах...[/say]")
 
-		saynn("The tendrils curve back.. and their tips land on top of themselves. It's like they're being shy.")
+		saynn("Отростки изгибаются... и их кончики ложатся друг на друга. Выглядит так, будто они смущаются.")
 
-		saynn("She looks at you again.")
+		saynn("Она снова смотрит на тебя.")
 
-		saynn("[say=eliza]I'm gonna turn around. If you push me into them again.. I will murder you. Okay~?[/say]")
+		saynn("[say=eliza]Я сейчас развернусь. И если ты снова толкнёшь меня в них... я тебя прикончу. Понял~?[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=pc]As fun as it was, one time is probably enough.[/say]")
+		saynn("[say=pc]Как бы весело ни было, одного раза, пожалуй, достаточно.[/say]")
 
-		saynn("[say=eliza]Good {pc.boy}.[/say]")
+		saynn("[say=eliza]Хорош {pc.boy}.[/say]")
 
-		saynn("And just like that, she steps out of your cell.")
+		saynn("И вот так просто она выходит из твоей камеры.")
 
-		saynn("Your hands play with the egg. You don't even want to remove the shell from this one. Hopefully it won't grow up.. without that growth accelerator thingie..")
+		saynn("Твои руки вертят яйцо. Тебе даже не хочется очищать его от скорлупы. Хоть бы оно не вылупилось... без этой штуковины, ускоряющей рост...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

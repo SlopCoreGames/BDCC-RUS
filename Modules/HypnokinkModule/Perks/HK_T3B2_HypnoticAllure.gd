@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Hypnotic Allure"
+	return "Гипнотическое очарование"
 
 func getVisibleDescription():
 	return "You can make yourself alluring to the point of ensnaring minds."

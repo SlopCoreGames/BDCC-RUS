@@ -7,206 +7,206 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=pc]I think you should try this pill yourself.[/say]")
+		saynn("[say=pc]Думаю, тебе стоит попробовать эту таблетку самой.[/say]")
 
-		saynn("[say=eliza]You think so? Why?[/say]")
+		saynn("[say=eliza]Ты так думаешь? Но почему?[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=pc]I'm just curious.[/say]")
+		saynn("[say=pc]Мне просто любопытно.[/say]")
 
-		saynn("[say=eliza]Curiosity killed the cat, don't you know![/say]")
+		saynn("[say=eliza]Любопытство сгубило кошку, разве ты не знаешь![/say]")
 
-		saynn("[say=pc]But you're still alive, aren't you?[/say]")
+		saynn("[say=pc]Но ты ведь всё ещё жива, не так ли?[/say]")
 
-		saynn("She blinks.. and squints.")
+		saynn("Она моргает... и прищуривается.")
 
-		saynn("[say=eliza]I guess. I never looked at it like that.[/say]")
+		saynn("[say=eliza]Пожалуй. Никогда не смотрела на это с такой стороны.[/say]")
 
-		saynn("Her gaze switches to the pill in her paw.")
+		saynn("Её взгляд переключается на таблетку в её лапе.")
 
-		saynn("[say=eliza]Well, this should be interesting.[/say]")
+		saynn("[say=eliza]Что ж, это должно быть интересно.[/say]")
 
-		saynn("She throws the pill into her mouth and swallows it in one graceful gulp.")
+		saynn("Она закидывает таблетку в рот и проглатывает её одним изящным глотком.")
 
-		saynn("For a heartbeat, nothing happens.. then her eyes widen in surprise.")
+		saynn("На мгновение ничего не происходит... а затем её глаза широко распахиваются от удивления.")
 
-		addButton("Continue", "See what happens next", "eliza_tfs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_tfs")
 	if(state == "eliza_tfs"):
 		playAnimation(StageScene.TFLook, "hands", {pc="eliza"})
-		saynn("A soft ripple runs through her sleek fur. She gasps, pressing a hand to her throat as her muzzle begins to shorten.. whiskers retracting back into her cheeks. Some parts of her furcoat fade away.. revealing a red-ish skin.")
+		saynn("По её гладкой шерстке пробегает мягкая рябь. Она ахает, прижимая ладонь к горлу, пока её мордочка начинает укорачиваться... а вибриссы втягиваются обратно в щеки. Местами мех исчезает... обнажая красноватую кожу.")
 
-		saynn("[say=eliza]Hey, my fur![/say]")
+		saynn("[say=eliza]Эй, моя шерстка![/say]")
 
-		saynn("Her ears change their texture, becoming more fluffy.. and pink, copying the exact color of her ponytail. She reaches up, feeling them.")
+		saynn("Текстура её ушей меняется, они становятся более пушистыми... и розовыми, в точности повторяя цвет её хвоста. Она тянется к ним, ощупывая их.")
 
-		saynn("[say=eliza]These feel soft..[/say]")
+		saynn("[say=eliza]Они такие мягкие...[/say]")
 
-		saynn("She looks at her paws.. who still remain mostly the same.. but somehow looking even more paw-like.")
+		saynn("Она смотрит на свои лапы... они остались почти такими же... но теперь выглядят еще более звериными.")
 
-		saynn("[say=eliza]I feel soft..[/say]")
+		saynn("[say=eliza]Я чувствую себя такой мягкой...[/say]")
 
-		saynn("You watch the transformation with great interest. As the contours of her head finish changing.. you realize.. that she is a human now.. well, part-human.. a catgirl. Her pupils are thin and tall, like that of a wild animal.")
+		saynn("Вы с огромным интересом наблюдаете за трансформацией. Когда контуры её головы окончательно меняются... вы понимаете... что теперь она человек... ну, наполовину человек... кошкодевочка. Её зрачки стали узкими и вытянутыми, как у дикого зверя.")
 
-		addButton("Continue", "See what happens next", "silly_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "silly_talk")
 	if(state == "silly_talk"):
 		playAnimation(StageScene.Grope, "tease", {pc="pc", npc="eliza"})
-		saynn("Eliza looks at herself through the camera of her datapad.")
+		saynn("Элиза разглядывает себя через камеру своего датапада.")
 
-		saynn("[say=eliza]Could have been worse. My tail and ears are still there.[/say]")
+		saynn("[say=eliza]Могло быть и хуже. Хвост и уши всё еще на месте.[/say]")
 
-		saynn("[say=pc]Yeah, I think you look cute.[/say]")
+		saynn("[say=pc]Да, по-моему, ты выглядишь мило.[/say]")
 
-		saynn("She blinks a lot, bouncing in place.")
+		saynn("Она часто моргает и подпрыгивает на месте.")
 
-		saynn("[say=eliza]For some reason.. I really wanna say it..[/say]")
+		saynn("[say=eliza]Почему-то.. мне так хочется это сказать..[/say]")
 
-		saynn("[say=pc]Say what?[/say]")
+		saynn("[say=pc]Что сказать?[/say]")
 
-		saynn("Suddenly, raises her paws and does peace-signs with both.")
+		saynn("Внезапно она вскидывает лапки и показывает обеими знак «виктори».")
 
-		saynn("[say=eliza]Nyah~![/say]")
+		saynn("[say=eliza]Ня~![/say]")
 
-		saynn("Her voice is now higher than before. Oh no..")
+		saynn("Её голос стал выше, чем раньше. О нет..")
 
-		saynn("She smiles silly and sticks her tongue out at you.")
+		saynn("Она глупо улыбается и высовывает тебе язык.")
 
-		saynn("[say=pc]You're alright?[/say]")
+		saynn("[say=pc]Ты в порядке?[/say]")
 
-		saynn("[say=eliza]Uwu~.[/say]")
+		saynn("[say=eliza]Уву~.[/say]")
 
-		saynn("[say=pc]Did you really just say that?[/say]")
+		saynn("[say=pc]Ты реально это сейчас сказала?[/say]")
 
-		saynn("Maybe her brain got transformed too.")
+		saynn("Может, её мозг тоже трансформировался.")
 
-		saynn("[say=eliza]I'm awright, rewax![/say]")
+		saynn("[say=eliza]Я в норме, не волнуйся![/say]")
 
-		saynn("You squint.. while she tries to lick the tip of her nose. Her sharp fangs rest on top of her bottom lip. Eventually, the tip of her tongue manages to do it.")
+		saynn("Ты щуришься, пока она пытается лизнуть кончик своего носа. Её острые клыки упираются в нижнюю губу. Наконец, кончику её языка это удаётся.")
 
-		saynn("[say=eliza]Myah![/say]")
+		saynn("[say=eliza]Мяу![/say]")
 
-		saynn("She giggles and reaches her paw out to poke you on the nose.")
+		saynn("Она хихикает и протягивает лапку, чтобы ткнуть тебя в нос.")
 
-		saynn("[say=eliza]You okay?[/say]")
+		saynn("[say=eliza]Ты в порядке?[/say]")
 
-		saynn("[say=pc]I'm not sure anymore.[/say]")
+		saynn("[say=pc]Я уже и сама не знаю.[/say]")
 
-		saynn("Eliza jumps up to you and starts nuzzling your face from all directions, rubbing cheeks with you, purring playfully.")
+		saynn("Элиза запрыгивает на тебя и начинает тереться мордочкой со всех сторон, прижимаясь щекой к щеке и игриво мурлыча.")
 
-		saynn("[say=eliza]Sowwy! I'm so silly. Can you pat me??[/say]")
+		saynn("[say=eliza]Простинь! Я такая глупышка. Погладишь меня??[/say]")
 
-		saynn("She keeps pawing at you, her ears twitch, flirty tail brushing against your leg.")
+		saynn("Она продолжает лапать тебя, её ушки подергиваются, а кокетливый хвост так и щекочет твою ногу.")
 
-		saynn("[say=eliza]Pwease![/say]")
+		saynn("[say=eliza]Плиззз![/say]")
 
-		addButton("Continue", "See what happens next", "eliza_begs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_begs")
 	if(state == "eliza_begs"):
 		playAnimation(StageScene.Beg, "beg", {pc="eliza", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("She wiggles out of her clothes, revealing her hair-less belly, chest and crotch. She looks more surprised than you are.")
+		saynn("Она стягивает с себя одежду, обнажая гладкий живот, грудь и лобок. Кажется, она удивлена даже больше, чем ты.")
 
-		saynn("[say=eliza]My fur is gone! Wowsies, am even more nekked.[/say]")
+		saynn("[say=eliza]Мой мех пропал! Ого, теперь я ещё более голенькая![/say]")
 
-		saynn("Despite it, the catgirl kneels before you and starts to bounce.")
+		saynn("Несмотря на это, кошкодевочка опускается перед тобой на колени и начинает ритмично двигаться.")
 
-		saynn("[say=eliza]Pwease! Pat me, pat me, pat me![/say]")
+		saynn("[say=eliza]Ну плииззз! Погладь меня, погладь, погладь![/say]")
 
-		saynn("She keeps her paws raised to her chest level, squeezing her {eliza.breasts} between them.")
+		saynn("Она держит лапки на уровне груди, сжимая ими свою {eliza.breasts}.")
 
-		saynn("Maybe combining feline and human features together was a mistake.. But she is kinda cute though.")
+		saynn("Возможно, смешивать кошачьи и человеческие черты было ошибкой... Но она довольно милая.")
 
-		saynn("[say=eliza]Uwu![/say]")
+		saynn("[say=eliza]Уву![/say]")
 
-		saynn("..just gotta gag her maybe.")
+		saynn("...надо бы её как-нибудь заткнуть.")
 
-		addButton("Pat her", "Might as well", "do_pat")
-		addButton("No pats", "Order her to turn back into a fully feline form", "no_pat")
+		addButton("Погладить её", "Почему бы и нет", "do_pat")
+		addButton("Поглаживаний нет", "Приказать ей снова стать полностью кошачьей формой", "no_pat")
 	if(state == "no_pat"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcBodyState={naked=true}})
-		saynn("[say=pc]I ain't gonna pat you. Turn back into your old self, you're acting way too silly.[/say]")
+		saynn("[say=pc]Не буду я тебя гладить. Возвращайся в свой прежний вид, а то ведешь себя слишком глупо![/say]")
 
-		saynn("[say=eliza]Nyo![/say]")
+		saynn("[say=eliza]Нё-ё![/say]")
 
-		saynn("She shows fangs and hisses at you, claws out, tail puffed up.")
+		saynn("Она скалится и шипит на тебя, выпустив когти и распушив хвост.")
 
-		saynn("You find a blue pill in her clothes..")
+		saynn("В её одежде ты находишь синюю таблетку...")
 
-		saynn("[say=pc]Fine, I will pat you, only once. Okay?[/say]")
+		saynn("[say=pc]Ладно, поглажу тебя, но только один раз. Идет?[/say]")
 
-		saynn("[say=eliza]Nyes! Meow-meow-meow~.[/say]")
+		saynn("[say=eliza]Ньес! Мяу-мяу-мяу~.[/say]")
 
-		saynn("You reach your hand out.. but instead of patting her, you quickly force-feed her the pill.")
+		saynn("Ты протягиваешь руку... но вместо того, чтобы погладить её, ты быстро насильно скармливаешь ей таблетку.")
 
-		saynn("[say=eliza]Nyoo-o-o, you myonstyer![/say]")
+		saynn("[say=eliza]Ню-ю-ю, ну ты и монстр![/say]")
 
-		saynn("Her human features begin to morph away before your eyes, her muzzle extending, growing fur and whiskers. Her ears lose some of their volume.. and become the color of the rest of her fur.")
+		saynn("Ее человеческие черты начинают таять на глазах: мордочка вытягивается, покрываясь шерстью и вибриссами. Уши теряют объем... и окрашиваются в цвет остальной шерсти.")
 
-		saynn("When the process is done.. Eliza is left standing.. Her expression.. complete and utter shame. Disgust even. Her opened wide eyes are staring at you.")
+		saynn("Когда процесс завершается... Элиза остается стоять... На ее лице — абсолютный, всепоглощающий стыд. Даже отвращение. Ее широко распахнутые глаза смотрят прямо на тебя.")
 
-		saynn("[say=pc]Are you.. okay?[/say]")
+		saynn("[say=pc]Ты... в порядке?[/say]")
 
-		saynn("You wave a hand in front of her face.. while Eliza just cringes internally.")
+		saynn("Ты машешь рукой перед ее лицом... в то время как Элиза лишь внутренне съеживается.")
 
-		saynn("[say=eliza]Let's forget that this ever happened..[/say]")
+		saynn("[say=eliza]Давай сделаем вид, что этого никогда не было...[/say]")
 
-		saynn("[say=pc]You don't have to tell me twice.[/say]")
+		saynn("[say=pc]Тебе не нужно повторять дважды.[/say]")
 
-		saynn("You hand Eliza her clothes.. and then she just runs away.")
+		saynn("Ты протягиваешь Элизе ее одежду... и она просто убегает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_pat"):
 		playAnimation(StageScene.Beg, "pat", {pc="eliza", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("Fine. You reach your hand out and begin patting the silly catgirl between her ears.")
+		saynn("Ладно. Ты протягиваешь руку и начинаешь поглаживать глупую кошкодевочку между ушек.")
 
-		saynn("[say=eliza]Uwu![/say]")
+		saynn("[say=eliza]Уву![/say]")
 
-		saynn("[say=pc]Please don't say that.[/say]")
+		saynn("[say=pc]Пожалуйста, не говори так.[/say]")
 
-		saynn("[say=eliza]Okay..[/say]")
+		saynn("[say=eliza]Ладно...[/say]")
 
-		saynn("She just purrs while accepting your pats, her frame bouncing eagerly, making her breasts jump up and down.")
+		saynn("Она лишь мурлычет, принимая твои поглаживания, а её тело так и подпрыгивает от нетерпения, отчего грудь ритмично колышется вверх-вниз.")
 
-		saynn("[say=eliza]Mmmhhrrr~..[/say]")
+		saynn("[say=eliza]Мммхрррр~..[/say]")
 
-		saynn("You reach for her clothes and find a blue pill.")
+		saynn("Ты тянешься к её одежде и находишь синюю таблетку.")
 
-		saynn("[say=pc]Now you're gonna eat this, okay?[/say]")
+		saynn("[say=pc]А теперь ты съешь это, хорошо?[/say]")
 
-		saynn("[say=eliza]Do nyot want! I need tunya![/say]")
+		saynn("[say=eliza]Не хацю! Мне нужна туня![/say]")
 
-		saynn("[say=pc]Uh.. this tastes like tunya, I'm sure.[/say]")
+		saynn("[say=pc]Эх.. Уверен, на вкус она как туня.[/say]")
 
-		saynn("[say=eliza]Ohhh! Gimme-gimme-gimme![/say]")
+		saynn("[say=eliza]Оооо! Дай-дай-дай![/say]")
 
-		saynn("She devours the pill from your hand and licks her lips.")
+		saynn("Она жадно заглатывает таблетку прямо из твоей руки и облизывает губы.")
 
-		saynn("[say=eliza]It didn't taste like tunya at all![/say]")
+		saynn("[say=eliza]Вообще не похожа на туню![/say]")
 
-		saynn("[say=pc]Sorry, it's better that way.[/say]")
+		saynn("[say=pc]Прости, но так даже лучше.[/say]")
 
-		saynn("Her human features begin to morph away before your eyes, her muzzle extending, growing fur and whiskers. Her ears lose some of their volume.. and become the color of the rest of her fur.")
+		saynn("Ее человеческие черты начинают таять на глазах: мордочка вытягивается, покрываясь шерстью и вибриссами. Уши теряют объем... и окрашиваются в цвет остальной шерсти.")
 
-		addButton("Continue", "See what happens next", "after_pat")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_pat")
 	if(state == "after_pat"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcBodyState={naked=true}})
-		saynn("When the process is done.. Eliza is left standing.. Her expression.. puzzled.")
+		saynn("Когда процесс завершается... Элиза остается стоять... На её лице... недоумение.")
 
-		saynn("[say=pc]You're okay?[/say]")
+		saynn("[say=pc]Ты в порядке?[/say]")
 
-		saynn("You wave a hand in front of her face..")
+		saynn("Вы машете рукой перед её лицом...")
 
-		saynn("[say=eliza]Yeah.. I think my IQ dropped by about a hundred.[/say]")
+		saynn("[say=eliza]Ага... Кажется, мой IQ только что упал где-то на сотню.[/say]")
 
-		saynn("[say=pc]It was kinda cute.[/say]")
+		saynn("[say=pc]Это было даже мило.[/say]")
 
-		saynn("She cringles slightly.")
+		saynn("Она слегка морщится.")
 
-		saynn("[say=eliza]Gag me if I ever say uwu again.[/say]")
+		saynn("[say=eliza]Пристрелите меня, если я еще хоть раз скажу «уву».[/say]")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("You hand Eliza her clothes.. and then she just runs away.")
+		saynn("Ты протягиваешь Элизе ее одежду... и она просто убегает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

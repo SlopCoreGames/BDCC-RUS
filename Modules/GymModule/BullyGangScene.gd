@@ -17,91 +17,91 @@ func _run():
 		if(!getModuleFlag("GymModule", "Gym_BullyGangIntroduced")):
 			setModuleFlag("GymModule", "Gym_BullyGangIntroduced", true)
 			
-			saynn("As you look around the gym area and think about what you wanna do, three inmates approach you from behind. Two guys and a girl. The main guy taps on your shoulder. You hear a very raspy male voice.")
+			saynn("Пока ты озираешься по сторонам в спортзале, раздумывая, чем бы заняться, к тебе со спины подходят трое заключенных. Двое парней и девчонка. Главный из них хлопает тебя по плечу. Ты слышишь хриплый мужской голос.")
 
-			saynn("[say=gymbully]Hey, you. That’s right, I’m talking to you.[/say]")
+			saynn("[say=gymbully]Эй, ты. Да-да, я с тобой разговариваю.[/say]")
 
-			saynn("You turn around and see that they are all wearing red inmate uniforms but also red bands on their heads, probably a sign of being in the same gang.")
+			saynn("Ты оборачиваешься и видишь, что на всех надеты красные робы, а на головах — красные повязки; судя по всему, они из одной банды.")
 
-			saynn("[say=gymbully]Haven’t seen you here before. You aware of how things work here?[/say]")
+			saynn("[say=gymbully]Раньше тебя здесь не видели. В курсе, как тут всё устроено?[/say]")
 
-			saynn("They don’t seem to be very kind to newcomers. You shake your head slightly.")
+			saynn("Новичков они, похоже, не жалуют. Ты слегка качаешь головой.")
 
-			saynn("[say=gymbully]We control this area, kiddo. And if you wanna be here you better pay up. Official price is 5 credits a day.[/say]")
+			saynn("[say=gymbully]Этой территорией рулим мы, малявка. И если хочешь здесь тусоваться, лучше плати. Официальная цена — 5 кредитов в день.[/say]")
 
-			saynn("[say=pc]And what if I don’t?[/say]")
+			saynn("[say=pc]А если не захочу?[/say]")
 
-			saynn("[say=gymbully]Then you leave.[/say]")
+			saynn("[say=gymbully]Тогда сваливаешь отсюда.[/say]")
 
-			saynn("The girl barks at you from over the shoulder of the main guy.")
+			saynn("Девчонка огрызается тебе прямо из-за плеча главного.")
 
 			# (if general inmate)
 			if(GM.pc.getInmateType() == InmateType.General):
-				saynn("[say=gymbully3]That’s right, general block bitch. Couldn’t even pull a trigger to earn yourself red clothes?[/say]")
+				saynn("[say=gymbully3]Всё верно, сучка из общего блока. Даже спусковой крючок нажать не смогла, чтобы заслужить красную робу?[/say]")
 
 			# (if red inmate)
 			elif(GM.pc.getInmateType() == InmateType.HighSec):
-				saynn("[say=gymbully3]Yeah, pay up or fuck off, bitch.[/say]")
+				saynn("[say=gymbully3]Давай, плати или съебывай, сучка.[/say]")
 
 			# (if lilac)
 			elif(GM.pc.getInmateType() == InmateType.SexDeviant):
-				saynn("[say=gymbully3]You better pay before you get shared between all the inmates here, lilac slut.[/say]")
+				saynn("[say=gymbully3]Лучше заплати сейчас, пока тебя не разделили между всеми зэками здесь, сиреневая шлюшка.[/say]")
 		
 		# (if not the first time)
 		else:
-			saynn("Three inmates approach you, the same ones that you remember. They make a circle around you.")
+			saynn("К тебе подходят трое заключенных — те самые, которых ты помнишь. Они окружают тебя кольцом.")
 
-			saynn("[say=gymbully]You know why we’re here. Pay up or leave.[/say]")
+			saynn("[say=gymbully]Ты сама знаешь, зачем мы здесь. Плати или проваливай.[/say]")
 
 		if(GM.pc.getCredits() >= 5):
-			addButton("Pay", "Well, what can you do", "pay")
+			addButton("Заплатить", "Ну, что тут поделаешь...", "pay")
 		else:
-			addDisabledButton("Pay", "Not enough credits")
-		addButton("Intimidate", "Tell them you won’t leave or pay", "intimidate")
+			addDisabledButton("Заплатить", "Недостаточно кредитов")
+		addButton("Запугивание", "Сказать им, что ты не собираешься ни платить, ни уходить", "intimidate")
 
 	if(state == "pay"):
-		saynn("You hand them a chip with some credits. The main guy quickly checks it and puts it away before offering you a smile.")
+		saynn("Ты протягиваешь им чип с кредитами. Главный быстро проверяет его и убирает, после чего расплывается в улыбке.")
 
-		saynn("[say=gymbully]Pleasure doing business with you.[/say]")
+		saynn("[say=gymbully]Приятно иметь с тобой дело.[/say]")
 
-		saynn("The trio steps away from you and goes to bully someone else.")
+		saynn("Троица отходит от тебя и отправляется донимать кого-то другого.")
 
 		# (scene ends)
-		addButton("Continue", "Sigh", "endthescene")
+		addButton("Продолжить", "Вздох", "endthescene")
 
 	if(state == "intimidate"):
-		saynn("[say=pc]I’m not leaving. And I’m not paying. How about you and your sidekicks go bug someone else.[/say]")
+		saynn("[say=pc]Я не уйду. И платить не собираюсь. Так что вали вместе со своими шестерками и не донимай меня.[/say]")
 
-		saynn("The main guy chuckles, others growl at you.")
+		saynn("Главный ухмыляется, остальные на тебя рычат.")
 
-		saynn("[say=gymbully]Let’s see how you will speak after we fuck your pretty face up.[/say]")
+		saynn("[say=gymbully]Посмотрим, как ты запоешь, когда мы отъебнем твое смазливое личико.[/say]")
 
-		addButton("Fight", "Time to fight", "fight")
+		addButton("Драться", "Пора драться", "fight")
 
 	if(state == "if_won"):
-		saynn("The gang members quickly scatter away as you beat their leader.")
+		saynn("Члены банды быстро разбегаются, когда ты начинаешь вколачивать их лидера.")
 		
-		addButton("Continue", "Nice", "endthescene")
+		addButton("Продолжить", "Приятно", "endthescene")
 
 	if(state == "if_lost"):
-		saynn("Defeated, you drop down to your knees. The gang members then shove you onto the ground and pin you while the main guy searches through your pockets.")
+		saynn("Обессиленный, ты падаешь на колени. Бандиты валят тебя на землю и придавливают к ней, пока главный шарит по твоим карманам.")
 
-		saynn("[say=gymbully]Easy there, sweetheart. I’m not taking everything.[/say]")
+		saynn("[say=gymbully]Полегче, дорогуша. Я не заберу всё до последней копейки.[/say]")
 
 		# (if has 5 credits)
 		if(gotPayed):
-			saynn("His hand finds a chip with 5 credits on you and takes it.")
+			saynn("Его рука находит в твоем кармане чип на 5 кредитов и забирает его.")
 
-			saynn("[say=gymbully]See. Enjoy yourself. For now.[/say]")
+			saynn("[say=gymbully]Вот видишь. Наслаждайся. Пока что.[/say]")
 
 		# (if not enough)
 		else:
-			saynn("His hand was unable to find enough credits on you. He sighs.")
+			saynn("Ему не удалось найти у тебя достаточно кредитов. Он вздыхает.")
 
-			saynn("[say=gymbully]I almost feel pitiful for taking your last credits away. But then again, the experience is worth more than money, ain’t that true.[/say]")
+			saynn("[say=gymbully]Мне даже почти жаль, что я забираю твои последние кредиты. Но с другой стороны, опыт стоит куда больше денег, не так ли?[/say]")
 
 
-		addButton("Continue", "Ow", "endthescene")
+		addButton("Продолжить", "Ow", "endthescene")
 		# (scene ends)
 
 func _react(_action: String, _args):

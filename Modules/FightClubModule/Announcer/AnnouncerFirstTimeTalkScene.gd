@@ -9,81 +9,81 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="announcer"})
 
 	if(state == ""):
-		saynn("You stand near the steps that lead to the balcony where the announcer stands and decide to grab his attention by waving. You have to talk loudly since it’s a pretty crowded space.")
+		saynn("Вы стоите у ступеней, ведущих к балкону, где стоит комментатор, и решаете привлечь его внимание, помахав рукой. Из-за толпы приходится кричать довольно громко.")
 
-		saynn("[say=pc]Hey![/say]")
+		saynn("[say=pc]Эй![/say]")
 
-		saynn("The guy lets out a soft gasp as he notices you, he puts his cane away and approaches you, his hands spread open, welcoming you.")
+		saynn("Заметив вас, парень тихо ахает; он убирает трость и подходит к вам, приветственно раскинув руки.")
 
-		saynn("[say=announcer]Oh hey, baby, you made it. Welcome to my little secret paradise. A place where the law is restrained and bred to create true freedom![/say]")
+		saynn("[say=announcer]О, привет, крошка, ты всё-таки добралась. Добро пожаловать в мой маленький тайный рай. В место, где закон сдерживают, чтобы взрастить истинную свободу![/say]")
 
-		saynn("He taps on your shoulder softly.")
+		saynn("Он мягко хлопает вас по плечу.")
 
-		saynn("[say=announcer]Had any problems with our guard?[/say]")
+		saynn("[say=announcer]Проблемы с нашим охранником были?[/say]")
 
 		# (if just payed)
 		if(!getFlag("FightClubModule.BulldogBeatenUp") && !getFlag("FightClubModule.BulldogSeduced")):
-			saynn("[say=pc]Well, I had to pay him quite a bit.[/say]")
+			saynn("[say=pc]Ну, пришлось ему прилично отвалить.[/say]")
 
-			saynn("The announcer chuckles.")
+			saynn("Комментатор посмеивается.")
 
-			saynn("[say=announcer]A worthy sacrifice, don’t you think.[/say]")
+			saynn("[say=announcer]Достойная жертва, не находишь?[/say]")
 
 		# (if beat him)
 		elif(getFlag("FightClubModule.BulldogBeatenUp")):
-			saynn("[say=pc]Had to beat him up. Hope you don’t mind.[/say]")
+			saynn("[say=pc]Пришлось его немного отлупить. Надеюсь, ты не против.[/say]")
 
-			saynn("The announcer chuckles.")
+			saynn("Комментатор посмеивается.")
 
-			saynn("[say=announcer]Means you are worthy to be here. He will be fine, the guy enjoys a good fight.[/say]")
+			saynn("[say=announcer]Значит, ты достоин быть здесь. С ним всё будет в порядке, этот парень обожает хорошую драку.[/say]")
 
 		# (if seduced and payed)
 
 		elif(getFlag("FightClubModule.BulldogSeduced")):
-			saynn("[say=pc]Uh.. Had to do some negotiations with him.[/say]")
+			saynn("[say=pc]Эх.. Пришлось с ним немного перетереть.[/say]")
 
-			saynn("The announcer chuckles.")
+			saynn("Комментатор посмеивается.")
 
-			saynn("[say=announcer]Oh really? I wonder how that looked.[/say]")
+			saynn("[say=announcer]Да неужели? Интересно, как это выглядело со стороны.[/say]")
 
-		saynn("He puts his arm over your shoulder and walks you away from the loud crowd. You enter some secluded place that looks like his office. He takes off his purple coat, now not looking any different from any lilac.")
+		saynn("Он закидывает руку тебе на плечо и уводит прочь от шумной толпы. Вы заходите в уединенное место, похожее на его кабинет. Он снимает свой фиолетовый @@B*@@, который теперь ничем не отличается от обычного сиреневого.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("He suddenly gasps and bows to you.")
+		saynn("Он внезапно ахает и кланяется тебе.")
 
-		saynn("[say=announcer]Excuse my poor manners. People usually address me as ‘The Announcer’. You can just call me Ans.[/say]")
+		saynn("[say=announcer]Прошу прощения за мою невоспитанность. Обычно меня называют «Диктор». Можешь звать меня просто Анс.[/say]")
 
 		saynn("[say=pc]I’m {pc.name}[/say]")
 
-		saynn("The guy walks to one of his metal cabinets and pulls out a fancy portsigar. He lights up some expensive-looking bulky cigar and starts casually smoking it. The tone of his voice gets even more lower as he makes his first puff.")
+		saynn("Парень подходит к одному из своих металлических шкафчиков и достает шикарный портсигар. Он поджигает толстую, дорогую на вид сигару и начинает небрежно дымить. С первым же затягом его голос становится еще ниже.")
 
-		saynn("[say=announcer]My pleasure. I’m very happy to offer my services.[/say]")
+		saynn("[say=announcer]Пользуйтесь на здоровье. Буду очень рад предложить свои услуги.[/say]")
 
-		saynn("[say=pc]So this is some kind of fighting club?[/say]")
+		saynn("[say=pc]Значит, это какой-то бойцовский клуб?[/say]")
 
-		saynn("[say=announcer]Indeed it is. Although I prefer to think about it as a secret society. A place that works entirely differently from the rest of the world while staying in a shadow of the current corrupt regime.[/say]")
+		saynn("[say=announcer]Именно так. Хотя я предпочитаю считать это тайным обществом. Местом, которое живет по совершенно иным законам, чем весь остальной мир, оставаясь в тени нынешнего коррумпированного режима.[/say]")
 
-		saynn("[say=pc]Yeah, I heard about the rules. Anyone can participate?[/say]")
+		saynn("[say=pc]Да, я слышал про правила. Любой может участвовать?[/say]")
 
-		saynn("The announcer walks up to you and sends another puff of smoke to the side before proceeding to eye you out.")
+		saynn("Объявитель подходит к тебе, выпускает еще одну струю дыма в сторону, а затем начинает тебя разглядывать.")
 
-		saynn("[say=announcer]If you feel like entertaining the crowd while earning some creds and rep, of course. Just be aware of what will happen if you lose.[/say]")
+		saynn("[say=announcer]Если хочешь развлечь толпу и заодно подзаработать кредитов и репутации — конечно. Только имей в виду, что будет, если проиграешь.[/say]")
 
-		saynn("You raise your brow and catch his gaze.")
+		saynn("Ты приподнимаешь бровь, встречаясь с ним взглядом.")
 
-		saynn("[say=pc]What will?[/say]")
+		saynn("[say=pc]Что именно?[/say]")
 
-		saynn("The guy chuckles softly and taps on your shoulder again.")
+		saynn("Парень тихо посмеивается и снова хлопает тебя по плечу.")
 
-		saynn("[say=announcer]Anything. Killing the opponent is not allowed but anything else.. We’re here to give the crowd a good time, baby, that is all that matters. Go talk to Avy if you wanna test your skills.[/say]")
+		saynn("[say=announcer]Да всё что угодно. Убивать противника нельзя, но всё остальное... Мы здесь для того, чтобы народ оторвался по полной, детка, только это и имеет значение. Иди поговори с Эви, если хочешь проверить свои навыки.[/say]")
 
-		saynn("You nod and prepare to leave his office.")
+		saynn("Ты киваешь и готовишься выйти из его кабинета.")
 
 		# (scene ends)
 
-		addButton("Continue", "Leave", "endthescene")
+		addButton("Продолжить", "Уйти", "endthescene")
 
 
 func _react(_action: String, _args):

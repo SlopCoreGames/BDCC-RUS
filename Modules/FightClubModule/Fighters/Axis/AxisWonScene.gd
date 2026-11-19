@@ -9,41 +9,41 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="axis", npcAction="kneel"})
 
 	if(state == ""):
-		saynn("Axis roars and drops to his knees, he is clearly done fighting. Something fell out of his pocket as he hit the ground, something small. You have to get closer to see what it is.")
+		saynn("Аксис издает яростный рев и падает на колени — очевидно, он выдохся. Когда он рухнул на землю, из его кармана что-то выпало, что-то маленькое. Тебе нужно подойти ближе, чтобы разглядеть, что это.")
 
-		saynn("[say=axis]Grr.. Fuck, I can’t lose. Don’t you dare touch me.[/say]")
+		saynn("[say=axis]Грр... Блядь, я не могу проиграть. Только посмей ко мне прикоснуться![/say]")
 
-		saynn("[say=pc]Why? Stop me then, alpha.[/say]")
+		saynn("[say=pc]Почему? Ну так останови меня, альфа.[/say]")
 
-		saynn("The crowd is watching the giant white wolf carefully, some are very surprised that he bent the knee.")
+		saynn("Толпа пристально наблюдает за гигантским белым волком; некоторые в полном шоке от того, что он склонил колено.")
 
-		saynn("[say=axis]If I’m to be humiliated, in front of everyone, others will stop seeing me as alpha. You have to spare me.[/say]")
+		saynn("[say=axis]Если меня унизят на глазах у всех, остальные перестанут видеть во мне альфу. Ты должен пощадить меня.[/say]")
 
-		saynn("[say=pc]You’re a lilac, aren’t you a sextoy already?[/say]")
+		saynn("[say=pc]Так ты сиреневый? Ты что, уже секс-игрушка?[/say]")
 
-		saynn("[say=axis]I’m not! And never was. I’m a lilac because of my crimes.[/say]")
+		saynn("[say=axis]Нет! И никогда не был! Я сиреневый из-за своих преступлений![/say]")
 
-		saynn("Interesting. The guy doesn’t look so smug anymore, he knows his faith is in your hands.")
+		saynn("Интересно. Парень больше не выглядит таким самодовольным — он понимает, что его судьба в твоих руках.")
 
-		saynn("As you approach him, you notice that the object that fell out of his pocket looks a lot like.. a chastity cage. Yeah, it is. It’s a small pink cage designed to keep someone’s dick from becoming erect.")
+		saynn("Когда ты подходишь к нему, ты замечаешь, что предмет, выпавший из его кармана, очень похож на... девайс целомудрия. Да, именно он. Маленькая розовая клетка, предназначенная для того, чтобы не давать члену вставать.")
 
-		saynn("[say=pc]Why do you have that?[/say]")
+		saynn("[say=pc]Зачем он тебе?[/say]")
 
-		saynn("[say=axis]It’s not for me if that’s what you are asking.[/say]")
+		saynn("[say=axis]Если ты об этом, то это не для меня.[/say]")
 
-		addButton("Spare", "You don’t feel like humiliating him", "spare")
-		addButton("Humiliate", "That’s a nice chastity cage he has. You wonder if it will fit on him", "humiliate")
+		addButton("Пощадить", "Тебе не хочется его унижать", "spare")
+		addButton("Унизить", "Какая симпатичная у него девственная клетка. Интересно, налезет ли она на тебя?", "humiliate")
 		GM.ES.triggerRun("ArenaFighterPCWon", ["axis"])
 
 	if(state == "spare"):
-		saynn("[say=pc]Fine. You can stay alpha if you need it so much.[/say]")
+		saynn("[say=pc]Ладно. Можешь оставаться альфой, если тебе это так уж необходимо.[/say]")
 
-		saynn("[say=axis]Thanks for having decency. Appreciate it.[/say]")
+		saynn("[say=axis]Спасибо за благоразумие. Ценю это.[/say]")
 
-		saynn("As you climb over the fence, the guy offers you the same smug smile. The crowd boos at your decision but they always do that when they don’t get to see somebody being fucked against their will.")
+		saynn("Когда ты перелезаешь через забор, парень одаривает тебя всё той же самодовольной ухмылкой. Толпа освистывает твоё решение, но так происходит всегда, когда им не дают увидеть, как кого-то трахают против воли.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 	if(state == "humiliate"):
 		playAnimation(StageScene.Duo, "stand", {
@@ -52,43 +52,43 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
 		
-		saynn("As you approach the guy, his growling becomes more audible. You lean down and pick up the cage that he dropped.")
+		saynn("Когда ты приближаешься к парню, его рычание становится всё громче. Ты наклоняешься и поднимаешь клетку, которую он выронил.")
 
-		saynn("[say=pc]Bet it would look cute on you.[/say]")
+		saynn("[say=pc]Спорим, на тебе она будет смотреться мило?[/say]")
 
-		saynn("He snarls and tries to get up but you shove him before he can do that and press your leg into his chest, pinning him.")
+		saynn("Он рычит и пытается подняться, но ты толкаешь его прежде, чем он успевает это сделать, и придавливаешь его грудь своей ногой, прижимая к полу.")
 
-		saynn("[say=axis]Don’t you fucking dare.[/say]")
+		saynn("[say=axis]Только попробуй, блядь![/say]")
 
-		saynn("[say=pc]What? All the days of being ‘alpha’ spoiled you. Made you a cocky narcissist. A hypocrite. I just bring your ego down to a level it deserves to be at. It will be fun~[/say]")
+		saynn("[say=pc]Что? Все эти дни в роли «альфы» совсем тебя разбаловали. Сделали самовлюбленным нарциссом. Лицемером. Я просто спущу твое эго на землю, туда, где ему и место. Будет весело~[/say]")
 
-		saynn("You shift your leg lower, rubbing your feet against the guy’s crotch. That makes him growl louder. But you do feel his cock hardening up under the clothing. That gives you an idea. You lean down and shove your hand under his shorts, getting a grasp on his canine cock.")
+		saynn("Ты опускаешь ногу ниже, потирая ступней его пах. От этого он рычит еще громче. Ты чувствуешь, как его член твердеет под одеждой. Это наводит тебя на мысль. Ты наклоняешься и просовываешь руку под его шорты, обхватывая его звериный член.")
 
-		saynn("[say=axis]Gonna give me a handjob?[/say]")
+		saynn("[say=axis]Решила сделать мне ручной минет?[/say]")
 
-		saynn("[say=pc]Nah, I feel like your scent has quite some interesting properties.[/say]")
+		saynn("[say=pc]Не-а, мне кажется, твой запах обладает весьма любопытными свойствами.[/say]")
 
-		saynn("The guy raises his brow, being more confused than anything. But then everything becomes clear to him, you catch some of his precum onto your fingers and then shove them under his nose, forcing him to sniff his own fluids. He shakes his head but it’s too late, his own pheromones are already being absorbed into the bloodstream.")
+		saynn("Парень вскидывает брови, скорее в замешательстве, чем в чем-то еще. Но затем до него всё доходит: ты собираешь немного его предэякулята на пальцы и суешь их ему под нос, заставляя вдыхать собственную смазку. Он трясет головой, но уже поздно — его собственные феромоны уже начали впитываться в кровь.")
 
-		saynn("[say=axis]Bitch! What have you done![/say]")
+		saynn("[say=axis]Сука! Что ты наделала![/say]")
 
-		saynn("[say=pc]Exactly what you’ve been doing to others.[/say]")
+		saynn("[say=pc]В точности то же самое, что ты делал с остальными.[/say]")
 
-		saynn("That thing is like a drug, the wolf’s facial expression quickly switches from hostile to a sorry and then to a horny one, the bulge on his shorts becomes bigger until his shorts start to look small.")
+		saynn("Эта штука действует как наркотик: выражение морды волка быстро меняется с враждебного на жалобное, а затем на похотливое; бугор в его шортах раздувается до тех пор, что ткань начинает трещать по швам.")
 
-		saynn("[say=pc]Unbutton your shirt, alpha slut.[/say]")
+		saynn("[say=pc]Расстегни рубашку, альфа-шлюха.[/say]")
 
-		saynn("Weak growling can be heard from him but then it turns into him panting, he grits his teeth but also blushes, his shaky paws move to his shirt and begin undoing the buttons, slowly exposing his white chest and his six pack. The audience cheers and laughs, some horny inmate yells ‘Breed him!’. After he is done, you try to forcefully take off his shirt but you don’t meet any resistance, he allows you to expose his manly buff pecs.")
+		saynn("От него слышится слабое рычание, которое вскоре переходит в тяжелое дыхание; он стискивает зубы, но при этом краснеет. Его дрожащие лапы тянутся к рубашке и начинают расстегивать пуговицы, медленно обнажая белую грудь и кубики пресса. Зрители ликуют и смеются, какой-то возбужденный заключенный выкрикивает: «Отработайте его!». Когда он заканчивает, ты пытаешься силой стянуть с него рубашку, но не встречаешь никакого сопротивления — он позволяет тебе обнажить свои мужественные, накачанные грудные мышцы.")
 
-		saynn("[say=pc]Now the shorts.[/say]")
+		saynn("[say=pc]Теперь шорты.[/say]")
 
-		saynn("The wolf doesn’t fight you, he starts pulling down his shorts, letting his member out, it’s a red knotted cock that is at least {axis.penisSizeStr} long. And it’s dripping more precum. He looks at you with his lusty eyes.")
+		saynn("Волк не сопротивляется, он начинает стягивать шорты, выпуская свой член — это красный узловатый хер длиной не менее {axis.penisSizeStr}. И он уже сочится предэякулятом. Он смотрит на тебя своими похотливыми глазами.")
 
-		saynn("[say=axis]Gonna ride me? Be my guest.[/say]")
+		saynn("[say=axis]Хочешь оседлать меня? Пожалуйста, не отказывай себе в удовольствии.[/say]")
 
-		saynn("You chuckle.")
+		saynn("Вы посмеиваетесь.")
 
-		addButton("Lock his cock", "This is gonna be tricky", "lock_his_cock")
+		addButton("Запереть его член", "Это будет непросто", "lock_his_cock")
 
 	if(state == "lock_his_cock"):
 		playAnimation(StageScene.Duo, "stand", {
@@ -97,62 +97,62 @@ func _run():
 			npcBodyState={exposedCrotch=true,caged=true,},
 		})
 		
-		saynn("The wolf is kneeling before you, his aroused cock is dripping precum onto the floor. You use your foot to make Axis spread his legs wider before crouching near him. You fidget with the pink chastity cage.")
+		saynn("Волк стоит перед тобой на коленях, его возбужденный член капает предэякулятом на пол. Ты наступаешь ему ногой, заставляя Аксиса раздвинуть ноги шире, прежде чем присесть рядом с ним. Ты вертишь в руках розовую девственную клетку.")
 
-		saynn("[say=axis]No..[/say]")
+		saynn("[say=axis]Нет...[/say]")
 
-		saynn("[say=pc]No? You don’t sound too sure. Let’s ask the audience.[/say]")
+		saynn("[say=pc]Нет? Звучит неуверенно. Давай спросим зрителей![/say]")
 
-		saynn("You show the cage to the crowd behind the fences.")
+		saynn("Вы демонстрируете клетку толпе за ограждением.")
 
-		saynn("[say=pc]Look at this. Should I lock it onto this alpha wolf’s cock?[/say]")
+		saynn("[say=pc]Гляньте на это. Надеть её на член этого альфа-волка?[/say]")
 
-		saynn("The crowd cheers loudly, some inmates yell ‘And then fuck him! Make him into a sissy!’. You chuckle and begin putting the cage onto the wolf. It’s quite small so you really have to fight his erection. Although all the precum works nicely as a lube, you spread it along his full length and then start forcing the main part onto his cock. By applying lots of strength you manage to squeeze the pointy tip of his member in and that already made the wolf let out a muffled grunt.")
+		saynn("Толпа громко ревет, некоторые заключенные вопят: «А потом трахни его! Сделай из него сучку!». Вы посмеиваетесь и начинаете натягивать клетку на волка. Она довольно маленькая, так что вам приходится буквально бороться с его эрекцией. Хотя предэякулят отлично подходит в качестве смазки, вы распределяете его по всей длине, а затем начинаете силой насаживать основную часть на его член. Приложив немало усилий, вам удается втиснуть острое жало, от чего волк уже издает приглушенный стон.")
 
-		saynn("[say=axis]It won’t fit, clearly..[/say]")
+		saynn("[say=axis]Очевидно, что она не налезет...[/say]")
 
-		saynn("[say=pc]Watch it.[/say]")
+		saynn("[say=pc]Смотрите внимательнее.[/say]")
 
-		saynn("You start putting more and more pressure, leaving the wolf's body with no choice but to begin moving blood away from his member. Eventually the cage starts to contain more of his length, he raises his chin high and grunts as his giant shaft is now getting stuffed into a small pink cage. His knot deflates on its own and after some extra effort you finally manage to lock it, sealing away the wolf’s cock. Boom, the key is in your hand.")
+		saynn("Вы начинаете давить всё сильнее, не оставляя телу волка выбора, кроме как отхлынуть крови от его члена. В конце концов клетка начинает охватывать всё большую часть его длины; он высоко задирает подбородок и хрипит, пока его гигантский ствол заталкивают в маленькую розовую клетку. Его узел сам собой сдувается, и после дополнительных усилий вам наконец удается защелкнуть замок, запечатывая член волка. Бум, ключ уже у вас в руке.")
 
-		saynn("[say=pc]There we go, one useless cock is locked away.[/say]")
+		saynn("[say=pc]Вот так, один бесполезный член заперт на замок.[/say]")
 
-		saynn("[say=axis]Bitch..[/say]")
+		saynn("[say=axis]Сучка...[/say]")
 
-		saynn("Oh, seems like he needs more of his own pheromones, you swiftly shove your wet fingers into his maw and rub them against his tongue.")
+		saynn("О, похоже, ему нужно еще больше собственных феромонов; вы ловко засовываете мокрые пальцы ему в пасть и растираете их о его язык.")
 
-		saynn("[say=pc]Suck them, sissy.[/say]")
+		saynn("[say=pc]Соси их, сучка.[/say]")
 
-		saynn("The wolf blushes even harder as his alpha state is pushed away, replaced with subbyness. He starts slow, gently sucking your fingers. Then his canine tongue joins, he thrusts it between your digits and gathers all the precum before swallowing it, so cute. After he is done, you pull your fingers out and dry them against his cheek. Wolf’s cage throbs slightly in response, his lusty subby eyes burn with desire.")
+		saynn("Волк краснеет еще сильнее, когда его альфа-состояние отступает, сменяясь покорностью. Он начинает медленно, нежно посасывая твои пальцы. Затем в дело вступает его собачий язык: он просовывает его между пальцами и слизывает всю предэякуляцию, такой милашка. Когда он заканчивает, ты вынимаешь пальцы и вытираешь их о его щеку. Клетка волка слегка пульсирует в ответ, а его похотливые, покорные глаза горят желанием.")
 
-		saynn("[say=pc]Good boy. Or, you’re more of a girl now I guess.[/say]")
+		saynn("[say=pc]Хороший мальчик. Хотя, судя по всему, ты теперь скорее девочка.[/say]")
 
-		saynn("[say=axis]I.. I really wanna cum..[/say]")
+		saynn("[say=axis]Я.. я так хочу кончить..[/say]")
 
-		saynn("[say=pc]Do you now? Turn towards the audience and show how eager you are.[/say]")
+		saynn("[say=pc]Правда? Тогда повернись к зрителям и покажи, как сильно ты этого жаждешь.[/say]")
 
-		saynn("Quiet whining can be heard from him but obeys, turning towards the crowd and putting his paws up like a good kitty would. He then starts bouncing in place like he is riding an invisible cock, his pink cock cage bobbing up and down with small delay as he does that, his trapped cock leaking so much precum. The crowd reacts by yelling ‘Such a wet slut! Get on my cock! Bend over!’.")
+		saynn("Слышится его тихое поскуливание, но он подчиняется, поворачиваясь к толпе и поднимая лапы, словно послушная кошечка. Затем он начинает прыгать на месте, будто оседлал невидимый член; его розовая клетка при этом ритмично подпрыгивает с небольшой задержкой, а запертый внутри член так и течет предэякулятом. Толпа реагирует криками: «Какая мокрая сучка! Садись на мой член! Нагнись!».")
 
-		saynn("He looks at you pleadingly, nothing left of the alpha that you knew. You are still holding the key to his cage, deciding what to do next.")
+		saynn("Он смотрит на тебя умоляющим взглядом — от того альфы, которого ты знала, ничего не осталось. Ключ от его клетки всё еще у тебя в руках, и только тебе решать, что делать дальше.")
 
-		addButton("Enough", "That was some great humiliation", "enough")
-		addButtonWithChecks("Breed", "Give the slutty sissy what she wants", "breed", [], [ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("Grind face", "Rub your crotch against his face", "grind_face", [], [ButtonChecks.HasReachableVagina])
+		addButton("Хватит", "Это было отличное унижение", "enough")
+		addButtonWithChecks("Спариваться", "Дай этой шлюшковатой сисси то, чего она хочет", "breed", [], [ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Тереться лицом", "Потри пах о его лицо", "grind_face", [], [ButtonChecks.HasReachableVagina])
 
 
 	if(state == "enough"):
-		saynn("[say=pc]I think the world saw you for who you really are, a subby slut.[/say]")
+		saynn("[say=pc]Думаю, весь мир увидел тебя настоящую — покорную сучку.[/say]")
 
-		saynn("He tilts his head down, his cage throbs more each time you humiliate him.")
+		saynn("Он склоняет голову; его клетка пульсирует всё сильнее с каждым твоим унижением.")
 
-		saynn("[say=axis]Yes, I’m just a needy slut..[/say]")
+		saynn("[say=axis]Да, я просто жадная сучка..[/say]")
 
-		saynn("You toss the key onto the floor and begin climbing over the fence. While doing so, you notice him pouncing at it and trying to unlock his cage. He is eager so his hands shake a lot but as soon as the padlock gets unlocked, his cock suddenly starts shooting strings of cum! Too much fidgeting with his cage made him climax, he is moaning passionately while his half-erect cock sprays sticky stuff all over his naked body and his unlocked cage. So cute.")
+		saynn("Ты бросаешь ключ на пол и начинаешь перелезать через забор. В процессе ты замечаешь, как он бросается к нему, пытаясь отпереть клетку. Он так возбужден, что его руки сильно дрожат, но как только замок поддается, его член внезапно начинает извергать струи спермы! Из-за постоянной возни с клеткой он дошел до оргазма; он страстно стонет, пока его полуэрегированный член разбрызгивает липкую жижу по всему его обнаженному телу и по открытой клетке. Такой милашка.")
 
-		saynn("You get over the fence and go get your reward.")
+		saynn("Ты перебираешься через забор, чтобы забрать свою награду.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 	if(state == "breed"):
@@ -163,39 +163,39 @@ func _run():
 				npcBodyState={exposedCrotch=true,caged=true},
 		})
 		
-		saynn("You feel like even though this ‘alpha’ was quite an unruly sub, he deserves a relief. You expose your {pc.cock} and stand in front of him, waiting silently.")
+		saynn("Тебе кажется, что, хотя этот «альфа» был довольно строптивым сабом, он заслужил разрядку. Ты обнажаешь свой {pc.cock} и молча встаешь перед ним в ожидании.")
 
-		saynn("Axis gazes at your cock and then looks up at you, pleadingly. Seeing your strict gaze, he moves his muzzle closer to your crotch and begins licking your cock with his long wolf tongue, getting it hard.")
+		saynn("Аксис пристально смотрит на твой член, а затем переводит умоляющий взгляд на тебя. Заметив твой строгий взор, он подносит морду ближе к твоему паху и начинает вылизывать твой член своим длинным волчьим языком, заставляя его твердеть.")
 
-		saynn("[say=pc]You better treat it well, this is what’s gonna breed you.[/say]")
+		saynn("[say=pc]Лучше обращайся с ним хорошо, именно этим тебя и засеменят.[/say]")
 
-		saynn("Wolf’s blushing harder, he parts his lips and engulfs the tip of your cock. You exhale audibly and offer him a nod and a cold headpat. You hear quite purring from the wolf, he gets more of your shaft into his mouth and begins sucking it, dragging his lips along it while using his tongue for extra friction. Your member is now fully hard in his mouth and leaking pre, just like the wolf’s caged cock.")
+		saynn("Волк краснеет еще сильнее, он приоткрывает губы и заглатывает головку твоего члена. Ты слышно выдыхаешь и одобряюще киваешь, сухо погладив его по голове. От волка доносится отчетливое урчание; он берет в рот еще больше твоего ствола и начинает сосать, проводя губами по всей длине и используя язык для дополнительного трения. Твой агрегат теперь полностью твердый у него во рту и сочится предэякулятом, точь-в-точь как клетка волка.")
 
-		saynn("[say=pc]Enough.[/say]")
+		saynn("[say=pc]Достаточно.[/say]")
 
-		saynn("You pull your cock out and use it to smack the sissy’s cheek, making him feel even more humiliated. Then you get a grasp on his collar and pull him up before shoving against the nearby fence. Wolf whines as he is so easily thrown around, he holds onto the fence and sticks his butt out for you. You approach him from behind and give a firm smack on his sissy ass.")
+		saynn("Ты вытаскиваешь свой член и шлепаешь им сисси по щеке, заставляя его чувствовать еще большее унижение. Затем ты хватаешь его за воротник, рывком поднимаешь и прижимаешь к ближайшему забору. Волк скулит, когда его так легко швыряют туда-сюда; он вцепляется в забор и выставляет задницу тебе навстречу. Ты подходишь к нему сзади и с силой шлепаешь его по сисси-жопе.")
 
-		saynn("[say=pc]Move the tail out of the way.[/say]")
+		saynn("[say=pc]Убери хвост с дороги.[/say]")
 
-		saynn("He whines and grips the fence harder but eventually obeys, moving his fluffy tail to the side and exposing his tight-looking anal ring and the small pink cage. The ‘alpha’ is excited, his caged member is leaking profusely. The crowd can’t wait to see him being fucked.")
+		saynn("Он скулит и сильнее сжимает пальцами забор, но в конце концов подчиняется, отводя свой пушистый хвост в сторону и обнажая тугое анальное кольцо и маленькую розовую клетку. «Альфа» возбужден, его зажатый в клетку член обильно смазывает смазкой. Толпа жаждет увидеть, как его будут трахать.")
 
-		saynn("Your hand grabs his tail and holds it as a leash while you guide your wet {pc.cock} towards his tailhole. A quiet gasp escapes from the wolf’s lips as the tip of your shaft starts rubbing and prodding at his clenching star.")
+		saynn("Твоя рука хватает его за хвост, используя его как поводок, пока ты направляешь свой влажный {pc.cock} к его анусу. Тихий вздох срывается с губ волка, когда головка твоего члена начинает тереться и тыкать в его сжимающееся отверстие.")
 
-		saynn("[say=pc]Who is a sissy slut?[/say]")
+		saynn("[say=pc]Кто тут сучка-сисси?[/say]")
 
-		saynn("[say=axis]I am..[/say]")
+		saynn("[say=axis]Я..[/say]")
 
-		saynn("That was the correct answer, you push your hips forward and force your member inside his butt, causing him to let out a moan. Then you yank on his tail to make him move his rear back and forth, letting your cock explore and stretch him out. You let go of the tail but the wolf keeps following the motions, impaling on your member himself while dropping more and more lusty noises. He’s tight, very tight, maybe he even was a virgin. But not anymore, you slowly pick up the rhythm and start fucking the so-called alpha in front of a giant crowd.")
+		saynn("Это был правильный ответ. Ты подаешь бедра вперед и силой вгоняешь свой член в его задницу, заставляя его издать стон. Затем ты дергаешь его за хвост, заставляя его двигать задом вперед-назад, позволяя твоему члену исследовать его и растягивать. Ты отпускаешь хвост, но волк продолжает двигаться в том же ритме, сам насаживаясь на твой член и издавая всё более похотливые звуки. Он узкий, очень узкий, возможно, он даже был девственником. Но теперь нет; ты постепенно ускоряешься и начинаешь трахать так называемого альфу на глазах у огромной толпы.")
 
-		saynn("[say=axis]Ah-h..[/say]")
+		saynn("[say=axis]Ах-х..[/say]")
 
-		saynn("You are clearly hitting his pleasure spot, the wolf is shivering ever so slightly every time you thrust inside him, any discomfort he might have had seems to be gone, replaced with pleasure. You put a hand on his neck, just above the collar, and apply some pressure while using his tight ass.")
+		saynn("Ты явно попадаешь в его эрогенную зону: волк слегка вздрагивает каждый раз, когда ты входишь в него. Любой дискомфорт, который у него мог быть, кажется, исчез, сменившись чистым удовольствием. Ты кладешь руку ему на шею, чуть выше воротника, и слегка сжимаешь, продолжая жадно использовать его узкую задницу.")
 
-		saynn("[say=pc]What? This slut is gonna cum already? C’mon, show everyone how a sissy like you cums into her cage.[/say]")
+		saynn("[say=pc]Что? Эта сучка уже готова кончить? Давай, покажи всем, как такой сисси, как ты, кончает прямо в свою клетку![/say]")
 
-		saynn("You pull your cock completely, leaving empty space behind. The wolf whines and moans desperately while his stretched star struggles to close. Just before it does, you ram your cock deep inside and start fucking him relentlessly. You place your chin on his shoulder and see his face, the wolf looks embarrassed but also incredibly turned on, his own pheromones are to blame for this for sure but maybe he always wanted this, maybe he was suppressing his subby side.")
+		saynn("Ты полностью вынимаешь свой член, оставляя после себя пустоту. Волк отчаянно скулит и стонет, пока его растянутая дырка пытается сомкнуться. Но прежде чем она успевает закрыться, ты с силой вгоняешь член глубоко внутрь и начинаешь неистово трахать его. Ты кладешь подбородок ему на плечо и видишь его лицо: волк выглядит смущенным, но при этом невероятно возбужденным. В этом наверняка виноваты его собственные феромоны, но, возможно, он всегда этого хотел, просто подавлял в себе эту покорную натуру.")
 
-		addButton("Cum", "See what happens next", "cum")
+		addButton("Кончить", "Смотреть, что будет дальше", "cum")
 
 	if(state == "cum"):
 		playAnimation(StageScene.SexStanding, "fast", {
@@ -205,26 +205,26 @@ func _run():
 				npcBodyState={exposedCrotch=true,caged=true},
 		})
 		
-		saynn("More passionate moans escape from him, the wolf is not holding back anymore, his caged member is swaying while he is being fucked and leaking something transparent at a constant rate. His inner walls begin closing around your shaft, trying to milk it. A few more seconds and the wolf suddenly cums, he throws his head back and cries out a loud moan while his trapped cock throbs and shoots a very weak string of cum. And then another. And another. As you fuck and milk his prostate, his cage keep leaking sticky stuff that drips down to the floor. The audience triumphs seeing and hearing the sissy finally wasting her load.")
+		saynn("Из него вырываются всё более страстные стоны; волк больше не сдерживается. Его запертый член покачивается во время ебли, постоянно выделяя прозрачную смазку. Его внутренние стенки начинают сжиматься вокруг твоего члена, пытаясь выдоить его. Спустя несколько секунд волк внезапно кончает: он запрокидывает голову и громко стонет, пока его зажатый член пульсирует, выбрасывая слабую струю спермы. И еще одну. И еще. Пока ты трахаешь его и выжимаешь простату, его клетка продолжает сочиться липкой жижей, которая капает на пол. Зрители ликуют, видя и слыша, как сисси наконец-то разряжается.")
 
-		saynn("[say=axis]F-fuck!.. Feels so g-good!..[/say]")
+		saynn("[say=axis]Бл*дь!.. Так п-приятно!..[/say]")
 
-		saynn("You spank his squirming ass again, causing him to clench harder. You feel like you won’t be able to endure this for long too, you pound his butt until the orgasmic waves overtake your body, you shove your cock deep down the wolf’s butt and let it stuff him to the brim with your {pc.cum}. His tailhole milks you dry, a few grunts escape from you as you both stay still, riding your orgasms to the end.")
+		saynn("Ты снова шлепаешь его извивающуюся задницу, заставляя его сжаться еще сильнее. Тебе кажется, что ты тоже скоро не выдержишь; ты вколачиваешь свой член в его задницу, пока волны оргазма не захлестывают твое тело. Ты заталкиваешь член глубоко в зад волка, наполняя его до краев своей {pc.cum}. Его анус выжимает тебя досуха; ты издаешь несколько хриплых стонов, пока вы оба замираете, проживая свои оргазмы до самого конца.")
 
-		saynn("[say=pc]Such a tight fucktoy.[/say]")
+		saynn("[say=pc]Какая тугая секс-игрушка.[/say]")
 
-		saynn("You pull your cock out, leaving his gaping used hole to leak {pc.cum}, creating even more mess on the ground. The wolf holds onto the fence and keeps moaning while his legs shiver. You pull your cock away.")
+		saynn("Ты вытаскиваешь член, оставляя его разверстую, использованную дырку сочиться {pc.cum}, что создает еще больший беспорядок на полу. Волк вцепляется в забор и продолжает стонать, пока его ноги дрожат. Ты отстраняешься.")
 
-		saynn("[say=pc]Did you like it?[/say]")
+		saynn("[say=pc]Тебе понравилось?[/say]")
 
-		saynn("[say=axis]Yes..[/say]")
+		saynn("[say=axis]Да..[/say]")
 
-		saynn("[say=pc]Good. Don’t worry about the reputation, you will be much more popular as a breeding bitch.[/say]")
+		saynn("[say=pc]Хорошо. Не беспокойся о репутации, ты станешь куда популярнее в роли сучки для разведения.[/say]")
 
-		saynn("You drop the key from his cage into the puddle of {pc.cum} between his legs, making it so he would need to humiliate himself even more to get his cock free. As you begin climbing over the fence, you see his subby eyes watching at you and at the mess he made.")
+		saynn("Ты роняешь ключ из его клетки прямо в лужу {pc.cum} между его ног, так что теперь ему придется еще сильнее унизиться, чтобы освободить свой член. Когда ты начинаешь перелезать через забор, ты видишь, как его покорные глазки следят за тобой и за той грязью, которую он развел.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 	if(state == "grind_face"):
@@ -235,29 +235,29 @@ func _run():
 				npcBodyState={exposedCrotch=true,caged=true},
 		})
 
-		saynn("You stand in front of him and expose your cute {pc.pussyStretch} pussy for him. Then you lean down and scritch the wolf under the chin.")
+		saynn("Ты встаешь перед ним, демонстрируя ему свою милую {pc.pussyStretch} киску. Затем ты наклоняешься и чешешь волка под подбородком.")
 
-		saynn("[say=pc]You need to earn the right to cum, sissy slut.[/say]")
+		saynn("[say=pc]Тебе нужно заслужить право кончить, сисси-шлюшка.[/say]")
 
-		saynn("Before he knows it, you shove your leg into his torso and make him fall back onto his back. Then you step over him and lower yourself onto your knees, offering a great view of your slit for him. You look down at the confused wolf and wait patiently.")
+		saynn("Прежде чем он успевает что-то понять, ты упираешься ногой ему в торс, заставляя его повалиться на спину. Затем ты перешагиваешь через него и опускаешься на колени, открывая ему великолепный вид на свою щель. Ты смотришь вниз на растерянного волка и терпеливо ждешь.")
 
-		saynn("[say=pc]Gonna start licking today, fucktoy?[/say]")
+		saynn("[say=pc]Ну что, сегодня начнешь лизать, секс-игрушка?[/say]")
 
-		saynn("The wolf, hypnotized by your pussy, snaps out of it and sticks his tongue out. He then reaches for your crotch and starts dragging his canine tongue over your sensitive folds. It feels good, you lower yourself more and press your slit into him, letting him lick you more easily.")
+		saynn("Волк, загипнотизированный твоей киской, приходит в себя и высовывает язык. Затем он тянется к твоей промежности и начинает водить своим собачьим языком по твоим чувствительным складкам. Это приятно, и ты опускаешься ниже, прижимаясь щелью к нему, чтобы ему было удобнее тебя лизать.")
 
-		saynn("[say=pc]Much better, use that alpha tongue.[/say]")
+		saynn("[say=pc]Так-то лучше, используй свой альфа-язык.[/say]")
 
-		saynn("He gives some extra attention to your clit, tracing around it and then playfully lapping at it, forcing little moans out of you. Your snatch becomes aroused with your juices, the wolf makes sure to gather your wetness onto his tongue and swallow it. He then finds your {pc.pussyStretch} pussy entering and starts prodding at it, teasing how easy it would be to penetrate you. You steal the initiative from him before he does that and hold his head still between your thighs. Then you start grinding your slit across his entire muzzle, slowly coating it with your juices. The wolf blushes and keeps his tongue out so you can rub yourself against it too. More little moans escape from you as the audience cheers you to ride his face harder.")
+		saynn("Он уделяет особое внимание твоему клитору, очерчивая его кончиком языка, а затем игриво слизывает влагу, заставляя тебя невольно стонать. Твоя киска наливается возбуждением и соком; волк старательно собирает твою смазку языком и проглатывает её. Затем он находит твою {pc.pussyStretch} щель и начинает тыкать в неё, дразня тем, как легко будет войти в тебя. Ты перехватываешь инициативу раньше, чем он успевает это сделать, и зажимаешь его голову между своих бёдер. Затем ты начинаешь тереться своей щелью о его морду, медленно покрывая её соком. Волк краснеет и высунувает язык еще сильнее, чтобы ты могла тереться и о него тоже. Из твоих уст вырывается всё больше стонов, пока толпа подбадривает тебя, призывая сильнее скакать ему на морде.")
 
-		saynn("[say=pc]Yeah, that’s right. The alpha turned out to be a great pussy licker, who would have thought.[/say]")
+		saynn("[say=pc]Да, именно так! Кто бы мог подумать, что этот альфа окажется таким мастером лизать киски?[/say]")
 
-		saynn("You look behind you and see that your words had an effect on the wolf, his pink cage keeps throbbing and leaking precum at a steady rate. You chuckle and keep grinding his face, pushing yourself closer to your peak.")
+		saynn("Ты оглядываешься назад и видишь, что твои слова подействовали на волка: его розовая клетка ритмично пульсирует, непрерывно выделяя предэякулят. Ты посмеиваешься и продолжаешь тереться лицом о его морду, приближаясь к своему пику.")
 
-		saynn("Your hand slips down to your crotch and starts caressing your clit for extra pleasure. Your second hand lands on your {pc.breasts} and rubs a nipple. Your moans become more passionate, each time you take a little break the wolf continues to lick your folds and swallow all the juices.")
+		saynn("Твоя рука соскальзывает вниз к промежности, лаская клитор для дополнительного удовольствия. Вторая рука ложится на твою {pc.breasts} и сжимает сосок. Твои стоны становятся всё более страстными; каждый раз, когда ты делаешь небольшую паузу, волк продолжает вылизывать твои складки, заглатывая всю смазку.")
 
-		saynn("[say=pc]Are you ready, sissy~? Take a deep breath.[/say]")
+		saynn("[say=pc]Ну что, готова, сисси~? Сделай глубокий вдох.[/say]")
 
-		addButton("Cum", "Cum all over the guy", "cum1")
+		addButton("Кончить", "Кончить прямо на него", "cum1")
 
 	if(state == "cum1"):
 		playAnimation(StageScene.SexFaceSitting, "grind", {
@@ -267,21 +267,21 @@ func _run():
 				npcBodyState={exposedCrotch=true,caged=true},
 		})
 		
-		saynn("You grind the wolf’s face until you feel like you can’t take it anymore. Then you raise slightly and shove two fingers inside your slit. Your big thumb rubs the clit while the other two finger yourself at a crazy pace, causing your wet snatch to make wet noises. It only takes a few seconds before you push past the point of no return, you let out some loud moans and cum hard, your pussy squirting juices all over the alpha’s muzzle and into his opened maw. Your shaky legs give up and you fall onto his face again, squirming from all the orgasmic feelings.")
+		saynn("Ты втираешься лицом в морду волка, пока не чувствуешь, что больше не можешь терпеть. Затем ты слегка приподнимаешься и засовываешь два пальца в свою щель. Большой палец неистово трет клитор, пока остальные два пальца работают внутри в бешеном темпе, отчего твоя влажная киска издает чавкающие звуки. Проходит всего несколько секунд, прежде чем ты переходишь точку невозврата; ты громко стонешь и кончаешь на полную катушку, забрызгивая соками всю морду альфы и заливая его приоткрытую пасть. Твои дрожащие ноги подкашиваются, и ты снова падаешь ему на лицо, корчась от оргазмических ощущений.")
 
-		saynn("The wolf swiftly swallows all of your juices and keeps asking for more, he drags his tongue over your pulsating folds and then penetrates them, quickly tongue-fucking you until your slit squirts again. You arch your back and look behind you, noticing that the wolf came too, his caged cock is shooting weak strings of cum that land on his belly, all without any stimulation.")
+		saynn("Волк стремительно проглатывает все твои соки и продолжает требовать добавки; он проводит языком по твоим пульсирующим складкам, а затем проникает в них, быстро трахая тебя языком до тех пор, пока твоя щель снова не начинает брызгать. Ты выгибаешь спину и оглядываешься назад, замечая, что волк тоже кончил: его запертый член выпускает слабые струйки спермы, которые попадают ему на живот, хотя его даже не стимулировали.")
 
-		saynn("[say=pc]Ah~.. You came like a true sissy.[/say]")
+		saynn("[say=pc]Ах~.. Ты кончила как настоящая сисси.[/say]")
 
-		saynn("You pant heavily and get off his face, letting him breathe. Oh, you made quite a mess, wolf’s whole face is covered in your fluids and his crotch has signs of his cum.")
+		saynn("Ты тяжело дышишь и сползаешь с его лица, давая ему вздохнуть. О, ну и беспорядок ты устроила: всё лицо волка покрыто твоими выделениями, а на его паху видны следы его спермы.")
 
-		saynn("[say=pc]Thought about switching away from this whole Alpha bullshit? You’d make a great lilac toy.[/say]")
+		saynn("[say=pc]Не думала завязать со всей этой альфа-херней? Из тебя вышла бы отличная сиреневая игрушка.[/say]")
 
-		saynn("The wolf is too embarrassed to answer you. You chuckle and throw him the key before getting over the fence. That was fun.")
+		saynn("Волку слишком неловко, чтобы ответить. Ты посмеиваешься и бросаешь ему ключ, прежде чем перелезть через забор. Это было весело.")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

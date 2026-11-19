@@ -59,7 +59,7 @@ func _run():
 					"It's time to play~",
 				])+"[/say]")
 				
-			saynn("Not that you have to, but your hypnotic experiences urge you to give in. You should...")
+			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
 				
 			HypnokinkUtil.addHypnoButtons(self, "submit", "decline", [], ["Decline"])
 			
@@ -77,7 +77,7 @@ func _run():
 				"Don't bother squirming.",
 			])+"[/say]")
 
-			saynn("Not that you have to, but your hypnotic experiences urge you to give in. You should...")
+			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
 			
 			HypnokinkUtil.addHypnoButtons(self, "submit", "attack", [], ["Fight"])
 
@@ -103,7 +103,7 @@ func _run():
 					"Would you like some time in trance?",
 				])+"[/say]")
 				
-			saynn("Not that you have to, but your hypnotic experiences urge you to give in. You should...")
+			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
 			
 			HypnokinkUtil.addHypnoButtons(self, "submit", "decline", [], ["Decline"])
 			
@@ -129,7 +129,7 @@ func _run():
 					"Works every time.",
 				])+"[/say]")
 				
-			saynn("Not that you have to, but your hypnotic experiences urge you to give in. You should...")
+			saynn("Не то чтобы ты была обязана, но прошлый гипнотический опыт заставляет тебя поддаться. Тебе стоит...")
 
 			HypnokinkUtil.addHypnoButtons(self, "submit", "decline", [], ["Decline"])
 			
@@ -141,7 +141,7 @@ func _run():
 
 
 	if(state == "attack"):
-		saynn("You shake it off and shove {npc.him} away from you. The inmate growls and gets up, ready to fight.")
+		saynn("Ты отмахиваешься от наваждения и отталкиваешь {npc.him} от себя. Заключенная рычит и вскакивает, готовая к драке.")
 
 		saynn("[say=npc]"+RNG.pick([
 			"Big mistake, bitch.",
@@ -150,26 +150,26 @@ func _run():
 			"Fine. I'll break you the old fashioned way."
 		])+"[/say]")
 
-		addButton("Fight", "Start the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 
 
 	if(state == "if_lost"):
-		saynn("You collapse, unable to continue fighting.")
+		saynn("Ты валишься с ног, не в силах продолжать бой.")
 
 		# (default)
 		if(npcVariation != "mean"):
-			saynn("[say=npc]What did you think was gonna happen?[/say]")
+			saynn("[say=npc]Ты что, думал, всё будет иначе?[/say]")
 
 		# (if mean)
 		else:
-			saynn("[say=npc]Know your place, bitch.[/say]")
+			saynn("[say=npc]Знай своё место, сучка.[/say]")
 
-		saynn("Since you can’t really fight {npc.him} back anymore, your only choice is to submit.")
+		saynn("Поскольку {npc.him} больше не может по-настоящему сопротивляться, у тебя остается только один выбор — подчиниться.")
 
-		addButton("Get fucked", "Well, you lost", "startsexsubby")
+		addButton("Получи по полной", "Ну, ты проиграл(а)", "startsexsubby")
 
 	if(state == "if_won"):
-		saynn("You pin the defeated inmate to the floor. {npc.He} doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
 			"Go fuck yourself.",
@@ -180,7 +180,7 @@ func _run():
 		addWonButton()
 
 	if(state == "decline"):
-		saynn("You shake it off and wave the inmate away.")
+		saynn("Ты отмахиваешься от наваждения и прогоняешь заключенную.")
 
 		saynn("[say=npc]"+RNG.pick([
 			"Aw.",
@@ -191,13 +191,13 @@ func _run():
 		])+"[/say]")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "after_sex" || state == "after_sex_won"):
-		saynn("After the fun time ends, the inmate just leaves you alone.")
+		saynn("Когда веселье заканчивается, зэк просто оставляет тебя в покое.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "after_sex"):
 		GM.ES.triggerRun(Trigger.AfterSexWithDynamicNPCThatWon, [npcID])
@@ -206,12 +206,12 @@ func _run():
 		GM.ES.triggerRun(Trigger.AfterSexWithDefeatedDynamicNPC, [npcID])
 
 func addWonButton():
-	addButton("Leave", "Just leave before anyone else sees you", "endthescene")
-	addButtonWithChecks("Sex!", "Time to fuck them!", "startsexasdom", [], [ButtonChecks.CanStartSex])
-	addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-	addButton("Inventory", "Look at your inventory", "openinventory")
+	addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
+	addButtonWithChecks("Секс!", "Пора их оттрахать!", "startsexasdom", [], [ButtonChecks.CanStartSex])
+	addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+	addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 	if(GM.pc.getInventory().hasRemovableRestraints()):
-		addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
+		addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
 	GM.ES.triggerRun(Trigger.DefeatedDynamicNPC, [npcID])
 
 func _react(_action: String, _args):

@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Deep Trance"
+	return "Глубокий транс"
 
 func getVisibleDescription():
 	return "You now fall into deeper hypnotic trances and do not snap out of them nearly as easily."

@@ -11,51 +11,51 @@ func _reactInit():
 func _run():
 
 	if(state == ""):
-		saynn("You approach one of the free benches. Painted metal of the frame received some scratches over the years and the padding of the seat isn’t as soft but they look alright overall. The only strange thing you notice is that all the dumbbells and barbells are leashed to the floor with a thick chain each.")
+		saynn("Вы подходите к одной из свободных скамей. Крашеное металлическое основание за годы покрылось царапинами, а набивка сиденья стала не такой мягкой, но в целом они выглядят вполне сносно. Единственная странность, которую вы замечаете: все гантели и штанги прикованы к полу толстыми цепями.")
 
-		saynn("You take a seat on the bench, deciding what you wanna do.")
+		saynn("Вы садитесь на скамью, решая, чем заняться.")
 		
 		if(GM.pc.hasEffect(StatusEffect.WorkOut) || GM.pc.hasEffect(StatusEffect.WorkOutLight)):
-			addDisabledButton("Light workout", "You already did a work out recently")
-			addDisabledButton("Heavy workout", "You already did a work out recently")
+			addDisabledButton("Легкая тренировка", "Вы уже тренировались совсем недавно")
+			addDisabledButton("Тяжелая тренировка", "Вы уже тренировались совсем недавно")
 		else:
-			addButtonWithChecks("Light workout", "Do some dumbbell exercises", "light_workout", [], [ButtonChecks.HasStamina])
-			addButtonWithChecks("Heavy workout", "Grab a heavy barbell", "heavy_workout", [], [ButtonChecks.HasStamina, [ButtonChecks.StatCheck, Stat.Strength, 10]])
-		addButton("Leave", "You don't wanna do anything", "endthescene")
+			addButtonWithChecks("Легкая тренировка", "Сделать упражнения с гантелями", "light_workout", [], [ButtonChecks.HasStamina])
+			addButtonWithChecks("Тяжелая тренировка", "Взять тяжелую штангу", "heavy_workout", [], [ButtonChecks.HasStamina, [ButtonChecks.StatCheck, Stat.Strength, 10]])
+		addButton("Уйти", "Ничего не хочется делать", "endthescene")
 		GM.ES.triggerRun(Trigger.ApproachedWeightsBench)
 
 	if(state == "light_workout"):
 		# (if low strength)
 		if(GM.pc.getStat(Stat.Strength) < 10):
-			saynn("Your strength isn’t enough to lift super heavy things so you decide not to push yourself. You grab a pair of dumbbells and prepare yourself by straightening your posture and tensing your core muscles.")
+			saynn("Твоей силы недостаточно, чтобы поднимать по-настоящему тяжелые вещи, поэтому ты решаешь не насиловать организм. Ты берешь пару гантелей и готовишься: выпрямляешь спину и напрягаешь мышцы пресса.")
 
-			saynn("You try to hold your upper arms still as you begin to curl one of the weights up to your shoulder level. After that, you slowly exhale and return it back to the starting position. Then you repeat the same but with the other weight.")
+			saynn("Ты стараешься держать плечи неподвижно, начиная сгибать одну из гантелей к уровню плеча. Затем ты медленно выдыхаешь и возвращаешь её в исходное положение. После этого повторяешь то же самое с другой рукой.")
 
-			saynn("You do about 10 reps of these before you find yourself panting. You take a little breather and do another set. You look around, the few inmates around are mostly busy doing the same, pushing their body to the limit.")
+			saynn("Делаешь около 10 повторений, прежде чем начинаешь тяжело дышать. Ты делаешь небольшой перерыв и приступаешь к новому подходу. Оглядевшись, ты замечаешь, что немногие заключенные вокруг заняты тем же самым — они тоже выжимают из себя все соки.")
 
-			saynn("You finish your sets and set the dumbbells back where they were. Nothing like some exercises to make that blood flow faster.")
+			saynn("Ты заканчиваешь подходы и ставишь гантели на место. Ничто так не разгоняет кровь, как хорошая разминка.")
 
 		# (if high strength)
 		else:
-			saynn("You have quite a powerful muscle set but that doesn’t mean you can’t push yourself more while doing something lighter. You lie down on the bench and grab a dumbbell into each hand before moving your arms to the side of each shoulder and pointing your palms away from you, hands tightly holding the weights.")
+			saynn("У тебя довольно мощные мышцы, но это не значит, что нельзя поднажать на чем-то более легком. Ты ложишься на скамью и берешь по гантели в каждую руку, разводя их в стороны на уровне плеч ладонями от себя и крепко сжимая рукоятки.")
 
-			saynn("You quickly grab some air and begin extending your elbows as you exhale and press the weights above your chest. There, you hold your arms straight for a few seconds before slowly bringing them down to the starting position.")
+			saynn("Ты быстро набираешь воздуха и, на выдохе, начинаешь разгибать локти, выжимая веса над грудью. Там ты замираешь с прямыми руками на несколько секунд, прежде чем медленно опустить их в исходное положение.")
 
-			saynn("You repeat this exercise about 10 times before pausing for a minute or two and doing 2 more sets. By the end of it you feel blood rushing throughout your body. You finish your exercises and set the dumbbells back where they were.")
-		addButton("Leave", "Nice", "endthescene")
+			saynn("Ты повторяешь это упражнение около 10 раз, затем делаешь перерыв на пару минут и выполняешь еще 2 подхода. К концу тренировки ты чувствуешь, как кровь буквально бурлит в жилах. Закончив упражнения, ты возвращаешь гантели на место.")
+		addButton("Уйти", "Приятно", "endthescene")
 
 	if(state == "heavy_workout"):
 		# (strength >= 10)
 
-		saynn("You decide to try some very heavy exercises to test your body. You lie on the bench and grasp the bar with your hands shoulder-width apart while your feet are flat on the ground. Your hands remove the heavy barbell from its resting spot and lower it to your chest. You hold it there for a second and drive your feet hard into the floor while pressing the bar back up.")
+		saynn("Ты решаешь испытать свое тело, взявшись за очень тяжелые веса. Ты ложишься на скамью, расставив руки на ширине плеч, а стопы плотно прижимаешь к полу. Ты срываешь тяжелую штангу со стоек и опускаешь её к груди. Задержав её на секунду, ты с силой упираешься ногами в пол и выжимаешь штангу вверх.")
 
-		saynn("It’s not safe to do bench presses without a spotter but you just about manage. Better than putting your life into the hands of some convict.")
+		saynn("Жать штангу без страхующего небезопасно, но тебе это почти удается. Всё же это лучше, чем доверять свою жизнь какому-нибудь зэку.")
 
-		saynn("You do reps until you start feeling yourself panting a lot. Then you take a breather and do some more sets.")
+		saynn("Ты делаешь повторения до тех пор, пока не начинаешь тяжело дышать. Затем делаешь передышку и приступаешь к следующим подходам.")
 
-		saynn("Eventually, you stop and put the bar up to its resting spot before raising yourself to the sitting position. Yeahh, you feel blood rushing through your body to bring oxygen to your muscles.")
+		saynn("В конце концов, ты останавливаешься и ставишь штангу на стойки, после чего садишься. Да-а-а, ты чувствуешь, как кровь неистово разгоняется по телу, насыщая мышцы кислородом.")
 
-		addButton("Leave", "Nice", "endthescene")
+		addButton("Уйти", "Приятно", "endthescene")
 
 
 func _react(_action: String, _args):

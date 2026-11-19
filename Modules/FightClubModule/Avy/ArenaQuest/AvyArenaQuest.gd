@@ -4,7 +4,7 @@ func _init():
 	id = "AvyArenaQuest"
 
 func getVisibleName():
-	return "The Fallen Champion"
+	return "Падший чемпион"
 
 func getProgress():
 	var result = []

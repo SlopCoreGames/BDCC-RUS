@@ -20,223 +20,223 @@ func _run():
 		addCharacter("PCTentacles")
 		tentMood = getFlag("ElizaModule.tent_mood", "")
 		hasNeuro = getFlag("ElizaModule.tent_neurolink", false)
-		saynn("You approach {pcTentacles}.")
+		saynn("Вы приближаетесь к {pcTentacles}.")
 
 		if (tentMood == "mean"):
 			playAnimation(StageScene.TentaclesDuo, "glare", {plant=true, instantSleep=firstPlay})
-			saynn("It seems to be in a mean mood.")
+			saynn("Похоже, оно в скверном настроении.")
 
 		elif (tentMood == "kind"):
 			playAnimation(StageScene.TentaclesStroke, RNG.pick(["tease", "stroke"]), {plant=true})
-			saynn("It seems to be in a kind mood.")
+			saynn("Похоже, оно в благодушном настроении.")
 
 		elif (tentMood == "lusty"):
 			playAnimation(StageScene.TentaclesGrope, "tease", {plant=true})
-			saynn("It seems to be in a lusty mood, idly groping you.")
+			saynn("Похоже, оно в похотливом настроении и лениво ощупывает вас.")
 
 		else:
 			playAnimation(StageScene.TentaclesDuo, "idle", {plant=true, instantSleep=firstPlay})
-			saynn("It seems to be in its usual mood.")
+			saynn("Похоже, оно в своем обычном настроении.")
 
 		firstPlay = false
-		addButton("Submit", "(Sex) Submit to the tentacles and let them do whatever they want with you..", "doSubmit")
+		addButton("Подчиниться", "(Секс) Подчиниться щупальцам и позволить им делать с вами всё, что им вздумается...", "doSubmit")
 		if (GM.main.getDynamicCharacterIDsFromPool(CharacterPool.Slaves).size() <= 0):
-			addDisabledButton("Offer slave", "You don't have any slaves at the moment..")
+			addDisabledButton("Предложить рабыню", "В данный момент у вас нет рабов...")
 		else:
-			addButton("Offer slave", "(Sex) Offer the tentacles one of your slaves for them to have fun with", "pick_slave_menu")
-		addButton("Mood", "Interact with the tentacles to change their mood", "mood_menu")
+			addButton("Предложить рабыню", "(Секс) Отдать щупальцам одну из своих рабынь, чтобы они могли развлечься", "pick_slave_menu")
+		addButton("Настроение", "Взаимодействуйте с щупальцами, чтобы изменить их настроение", "mood_menu")
 		if (!hasNeuro):
 			if (GM.pc.getInventory().hasItemID("TentNeuroLink")):
-				addButton("Neuro-Link", "Inject the tentacles with the Neuro-Link chip", "doInjectNeuro")
+				addButton("Нейролинк", "Ввести в щупальца чип Нейро-Связи", "doInjectNeuro")
 			else:
-				addDisabledButton("Neuro-Link", "You need to unlock and create a Neuro-Link chip in the bio-lab first..")
-		addButton("Change name", "Change how you call the tentacles", "name_menu")
-		addButton("Leave", "Leave the tentacles be", "endthescene")
+				addDisabledButton("Нейролинк", "Сначала нужно разблокировать и создать чип Нейро-Связи в биолаборатории...")
+		addButton("Изменить имя", "Изменить обращение к щупальцам", "name_menu")
+		addButton("Уйти", "Оставить щупальца в покое", "endthescene")
 	if(state == "doInjectNeuro"):
 		playAnimation(StageScene.TentaclesDuo, "glare", {plant=true})
-		saynn("You approach {pcTentacles}, trying to keep the injector out of sight.")
+		saynn("Вы приближаетесь к {pcTentacles}, стараясь не высовывать инъектор.")
 
-		saynn("But it still looks like it is suspecting something. The green tips are all glaring at you. So you decide to just show the injector and explain what it does.")
+		saynn("Но кажется, они всё равно что-то подозревают. Зелёные кончики буквально сверлят вас взглядами. Тогда вы решаете просто показать инъектор и объяснить, для чего он нужен.")
 
-		saynn("[say=pc]This.. This is an upgrade for you. It will.. expand the horizons of what's possible.[/say]")
+		saynn("[say=pc]Это... это апгрейд для вас. Он... расширит горизонты ваших возможностей.[/say]")
 
-		saynn("You get a little closer and attempt to inject one of the tendrils.. but it is quick to dodge out of the way and smack you away.")
+		saynn("Вы подходите чуть ближе и пытаетесь вонзить иглу в один из отростков... но тот ловко уворачивается и отвешивает вам смачный подзатыльник.")
 
-		saynn("It clearly doesn't trust you.")
+		saynn("Оно явно тебе не доверяет.")
 
-		saynn("[say=pc]Fine.. It will apparently let me control you temporarily. That's the truth. I think it sounds fun, doesn't it?[/say]")
+		saynn("[say=pc]Ладно.. Судя по всему, оно позволит мне временно управлять тобой. Это правда. По-моему, звучит весело, не так ли?[/say]")
 
-		saynn("The tentacles all look at each other, silently deliberating.")
+		saynn("Все щупальца переглядываются, безмолвно принимая решение.")
 
-		saynn("[say=pc]What do you think? I can promise not to abuse this power.. if it will even work at all.[/say]")
+		saynn("[say=pc]Что думаешь? Обещаю не злоупотреблять этой властью.. если вообще всё сработает.[/say]")
 
-		saynn("Most of the tentacles focus on the main, the most thick, tendril. It stays still for a few seconds, watching you. For some reason, you feel.. warmth.. spreading, starting from your head.")
+		saynn("Большинство щупалец сосредоточены на главном, самом толстом отростке. Он замирает на несколько секунд, наблюдая за тобой. Почему-то ты чувствуешь, как от макушки начинает разливаться.. тепло..")
 
-		saynn("The tentacle.. it's reading your mind? It's probably scanning it to figure out your intentions.")
+		saynn("Это щупальце.. оно читает твои мысли? Скорее всего, сканирует их, чтобы понять твои намерения.")
 
-		saynn("As it does it.. the green tips get all drippy and wet.. much more than before.")
+		saynn("Пока оно это делает.. его зеленые кончики становятся совсем скользкими и влажными.. куда сильнее, чем раньше.")
 
-		saynn("The thick tentacle slowly reaches towards you. It stops near your head.. and does a small nod.")
+		saynn("Толстое щупальце медленно тянется к тебе. Оно замирает возле твоей головы.. и едва заметно кивает.")
 
-		saynn("It knows what you're gonna do.")
+		saynn("Оно знает, что ты собираешься сделать.")
 
-		saynn("Slowly, you bring the injector up to it.. and inject it, the tool making a quiet hissing noise.")
+		saynn("Медленно ты подносишь к нему инъектор.. и вводишь препарат; инструмент издает тихое шипящее звуко.")
 
-		saynn("After you've done that.. you realize that the injector still has something in it. Oh yeah, the receiver.")
+		saynn("Когда ты заканчиваешь... ты понимаешь, что в инъекторе всё ещё что-то осталось. Ах да, в нём же содержимое для реципиента.")
 
-		saynn("You've gone this far.. might as well finish it.")
+		saynn("Ты зашёл уже так далеко... так почему бы не довести дело до конца?")
 
-		saynn("You bring the injector up to the back of your neck.. and inject yourself next.")
+		saynn("Ты подносишь инъектор к затылку... и вводишь препарат в себя.")
 
-		saynn("For a moment, nothing happens.")
+		saynn("На мгновение ничего не происходит.")
 
-		saynn("And then.. the whole world splinters.")
+		saynn("А затем... весь мир разлетается на осколки.")
 
-		saynn("You feel a throbbing headache that's unlike anything you've ever felt before. It's like your mind is expanding.. but way too fast for your likings. You stagger, catching yourself against the wall. Your vision gets all blurry.. your senses begin to see colors that don't exist.. sounds that don't make any sense..")
+		saynn("Ты чувствуешь пульсирующую головную боль, подобной которой никогда не испытывал. Кажется, будто твой разум расширяется... но слишком быстро, чтобы это было приятно. Ты пошатываешься, хватаясь за стену, чтобы не упасть. Зрение затуманивается... чувства начинают различать цвета, которых не существует... и звуки, лишенные всякого смысла...")
 
-		saynn("[say=pc]Argh..[/say]")
+		saynn("[say=pc]Ааагх...[/say]")
 
-		saynn("It stays like that for about a minute.. but eventually the pain subsides and your cell comes back into focus.")
+		saynn("Так продолжается около минуты... но в конце концов боль утихает, и очертания твоей камеры снова обретают четкость.")
 
-		saynn("The tentacles are watching you, their tips curious.")
+		saynn("Тентакли наблюдают за тобой, с любопытством водя своими кончиками.")
 
-		saynn("[say=PCTentacles]Do you hear us?[/say]")
+		saynn("[say=PCTentacles]Ты слышишь нас?[/say]")
 
-		saynn("What? Oh wow.")
+		saynn("Что? Ого, ничего себе.")
 
-		saynn("[say=pc]Yeah.. I think so.[/say]")
+		saynn("[say=pc]Да.. Кажется, так и есть.[/say]")
 
-		saynn("[say=PCTentacles]Good. But do you feel us?[/say]")
+		saynn("[say=PCTentacles]Хорошо. Но ты чувствуешь нас?[/say]")
 
-		saynn("You blink and think about it for a second.")
+		saynn("Ты моргаешь и на секунду задумываешься.")
 
-		saynn("Oh.")
+		saynn("Ох.")
 
-		saynn("You feel a calm breeze. But it's not touching you.. it's touching the extension of you. You realize that you can feel each individual tendril. They're all there.. in the back of your mind.")
+		saynn("Ты ощущаешь легкий ветерок. Но он касается не тебя.. он касается твоего продолжения. Ты понимаешь, что чувствуешь каждый отдельный отросток. Они все там.. где-то на задворках твоего сознания.")
 
-		saynn("You think about lifting the thick tentacle up.. And, without any conscious effort, it does so.")
+		saynn("Ты думаешь о том, чтобы приподнять толстый щупалец.. И, без каких-либо сознательных усилий, он подчиняется.")
 
-		saynn("You think about releasing it. And so it obeys.")
+		saynn("Ты думаешь о том, чтобы отпустить его. И он повинуется.")
 
-		saynn("You reach one of the tentacles forward and touch yourself, the tip brushing against the bottom of your chin. It's a surreal feeling.. you feel both touches.")
+		saynn("Ты направляешь одно из щупалец вперед и касаешься себя, кончик проводит по самому подбородку. Это сюрреалистичное чувство.. ты ощущаешь оба касания одновременно.")
 
-		saynn("[say=pc]I can control you.. I can actually control you. I can make you do anything.[/say]")
+		saynn("[say=pc]Я могу управлять тобой.. Я действительно могу тобой управлять. Я могу заставить тебя делать всё, что угодно.[/say]")
 
-		saynn("[say=PCTentacles]You can. But you won't.[/say]")
+		saynn("[say=PCTentacles]Можешь. Но не станешь.[/say]")
 
-		saynn("Right.. You gotta control yourself too.")
+		saynn("Верно.. Тебе тоже нужно держать себя в руках.")
 
-		saynn("[say=pc]Are you able to take control over me?[/say]")
+		saynn("[say=pc]Ты способен взять меня под контроль?[/say]")
 
-		saynn("[say=PCTentacles]We might be able to. But we won't. Because we are grateful. Without you, there won't be us.[/say]")
+		saynn("[say=PCTentacles]Возможно, и смогли бы. Но не станем. Потому что мы тебе благодарны. Без тебя не было бы нас.[/say]")
 
-		saynn("You close your eyes and focus. And there they are.. the many minds of the tentacles.. their thoughts. Curiosity. Affection. Trust.. Hunger.")
+		saynn("Ты закрываешь глаза и сосредотачиваешься. И вот они.. множественные разумы щупалец.. их мысли. Любопытство. Привязанность. Доверие.. Голод.")
 
-		saynn("[say=pc]So.. Can I control you when I bring some-..[/say]")
+		saynn("[say=pc]Так.. Могу ли я управлять тобой, когда принесу немного..[/say]")
 
-		saynn("[say=PCTentacles]Please, be our guest. We wish to impregnate as many lifeforms of your kind as possible.[/say]")
+		saynn("[say=PCTentacles]Пожалуйста, чувствуй себя как дома. Мы желаем оплодотворить как можно больше представителей твоего вида.[/say]")
 
-		saynn("They sure are horny fuckers.")
+		saynn("Ну и похотливые же они трахины.")
 
 		if (getFlag("ElizaModule.tent_eliza")):
-			saynn("[say=PCTentacles]And thank you for offering us.. Eliza.. that is her name. Right. She was a great host for our eggs, we thoroughly enjoyed her company.[/say]")
+			saynn("[say=PCTentacles]И спасибо, что предложила нам.. Элизу.. так её зовут. Точно. Она была отличной кормилицей для наших яиц, нам очень понравилось её общество.[/say]")
 
-			saynn("You nod.")
+			saynn("Ты киваешь.")
 
-			saynn("[say=pc]For her it was more of a.. acquired taste.. it seems.[/say]")
+			saynn("[say=pc]Для неё это, похоже, стало скорее.. специфическим вкусом.. со временем.[/say]")
 
-		saynn("And just like that.. you all learned something new.")
+		saynn("И вот так просто... вы все узнали что-то новое.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "name_menu"):
-		saynn("How do you wanna name your tentacles?")
+		saynn("Как ты хочешь назвать свои щупальца?")
 
 		addTentacleNameButtons()
 		if (false):
-			addButton("Ignore", "you shouldn't see this", "pick_name")
+			addButton("Игнорировать", "тебе не стоит на это смотреть", "pick_name")
 	if(state == "picked_name"):
 		removeCharacter("PCTentacles")
 		addCharacter("PCTentacles")
-		saynn("[say=pc]I think.. {pcTentacles} is a good name for you.[/say]")
+		saynn("[say=pc]Думаю.. {pcTentacles} тебе отлично подходит.[/say]")
 
-		saynn("The tendrils twitch as they hear you. Looks like they like this name.")
+		saynn("Услышав тебя, отростки задергались. Похоже, имя им понравилось.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "doSubmit"):
 		playAnimation(StageScene.TentaclesDuo, "glare", {plant=true, npcAction="kneel"})
-		saynn("You approach {pcTentacles} and kneel in front of it.")
+		saynn("Ты подходишь к {pcTentacles} и опускаешься перед ним на колени.")
 
-		saynn("As you do that, the many tendrils already begin reaching towards you and your body..")
+		saynn("Как только ты это делаешь, множество щупалец уже начинают тянуться к тебе и твоему телу...")
 
-		addButton("Continue", "See what happens next", "start_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_sex")
 	if(state == "after_sex"):
-		saynn("After that sex, you get up and step away from the tentacles..")
+		saynn("После секса ты поднимаешься и отходишь от щупалец...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "mood_menu"):
-		saynn("What do you wanna do with the tentacles?")
+		saynn("Что ты хочешь сделать с щупальцами?")
 
-		addButton("Pat", "Pat the tentacles to make them kind", "mood_pat")
-		addButton("Slap", "Slap the tentacles to make them angry", "mood_slap")
-		addButton("Tease", "Tease the tentacles to make them hungry for your holes..", "mood_tease")
-		addButton("Just chat", "Chat with the tentacles to reset their mood", "mood_chat")
-		addButton("Back", "You changed your mind", "")
+		addButton("Погладить", "Погладить щупальца, чтобы сделать их ласковыми", "mood_pat")
+		addButton("Шлепок", "Хлестнуть щупальца, чтобы разозлить их", "mood_slap")
+		addButton("Подразнить", "Дразнить щупальца, чтобы они изголодались по твоим дырочкам...", "mood_tease")
+		addButton("Просто поболтать", "Поболтать с щупальцами, чтобы сбросить их настроение", "mood_chat")
+		addButton("Назад", "Вы передумали", "")
 	if(state == "mood_pat"):
 		playAnimation(StageScene.TentaclesStroke, "fast", {plant=true})
-		saynn("You approach {pcTentacles} and begin patting its tentacles!")
+		saynn("Ты подходишь к {pcTentacles} и начинаешь поглаживать его щупальца!")
 
-		saynn("The tendrils wiggle happily and lean into your pats, switching each other every few seconds.")
+		saynn("Отростки радостно извиваются и тянутся к твоим рукам, меняясь местами каждые несколько секунд.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "mood_slap"):
 		playAnimation(StageScene.TentaclesDuo, "whip", {plant=true, npcAction="shove"})
-		saynn("You decide to slap {pcTentacles}, hitting one of its tendrils!")
+		saynn("Ты решаешь шлепнуть {pcTentacles}, ударив по одному из его щупалец!")
 
-		saynn("The tentacles recoil from your sudden attack.. and try to smack you back, their tips now glare at you.")
+		saynn("Щупальца отпрянули от твоей внезапной атаки... и попытались ударить тебя в ответ, а их кончики теперь свирепо смотрят на тебя.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "mood_tease"):
 		playAnimation(StageScene.TentaclesGrope, "grope", {plant=true})
-		saynn("You wiggle your {pc.thick} butt in front of the tentacles.. and watch as their tips get all drippy and slick.")
+		saynn("Ты виляешь своей попой {pc.thick} перед щупальцами... и наблюдаешь, как их кончики становятся влажными и скользкими.")
 
-		saynn("The many tendrils reach out to grope your body.")
+		saynn("Множество щупалец тянутся к тебе, жадно ощупывая тело.")
 
-		saynn("You let them do that for a bit.. before escaping their grasp.")
+		saynn("Ты позволяешь им это делать какое-то время... прежде чем вырваться из их хватки.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "mood_chat"):
 		playAnimation(StageScene.TentaclesDuo, "idle", {plant=true})
-		saynn("You just chat with the tentacles for a bit. You explain what this place is, how it works, things like that.")
+		saynn("Ты просто немного болтаешь с щупальцами. Объясняешь им, что это за место, как оно устроено и всё в таком духе.")
 
-		saynn("The tentacles don't seem to be able to answer.. but they seem to be listening and understanding most of it.")
+		saynn("Щупальца, кажется, не могут ответить... но они явно слушают и понимают почти всё, что ты говоришь.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "pick_slave_menu"):
-		saynn("Which of your slaves do you want to be fucked by the tentacles?")
+		saynn("Какую из твоих рабынь ты хочешь отдать на растерзание щупальцам?")
 
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Отмена", "Вы передумали", "endthescene")
 		addSlaveButtons()
 		if (false):
-			addButton("Nope", "You shouldn't see this ever", "pick_slave")
+			addButton("Неа", "Этого вообще не должны были видеть", "pick_slave")
 	if(state == "confirm_pick_slave"):
 		addCharacter(slaveID)
 		playAnimation(StageScene.TentaclesGrope, "tease", {pc=slaveID, plant=true})
-		saynn("You push {slave.name} into your tentacles!")
+		saynn("Ты заталкиваешь {slave.name} прямо в свои щупальца!")
 
-		saynn("The tendrils are quick to grab {slave.him}, about to have fun..")
+		saynn("Щупальца мгновенно хватают {slave.him}, готовясь оторваться по полной...")
 
-		addButton("Continue", "Let the tentacles have fun with your slave on their own", "start_slave_sex")
+		addButton("Продолжить", "Дать щупальцам самим развлечься с твоей рабыней", "start_slave_sex")
 		if (hasNeuro):
-			addButton("Neuro-Link", "Use the Neuro-Link device to control the tentacles while they're having fun with your slave", "start_slave_sex_neuro")
+			addButton("Нейролинк", "Использовать нейро-линк, чтобы управлять щупальцами, пока они трахают твою рабыню", "start_slave_sex_neuro")
 		else:
-			addDisabledButton("Neuro-Link", "You need to unlock and create a Neuro-Link device in the bio-lab first..")
+			addDisabledButton("Нейролинк", "Сначала вам нужно разблокировать и создать устройство Нейро-Связи в биолаборатории...")
 	if(state == "after_sex_slave"):
-		saynn("After that sex, you grab your slave and put {slave.him} back on a leash..")
+		saynn("После этого секса ты хватаешь свою рабыню и снова {slave.him} на поводок...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func addTentacleNameButtons():
 	for theName in PlayerSlaveryTentacles.MONSTER_NAMES:
-		addButton(theName, "Pick this name!", "pick_name", [theName])
+		addButton(theName, "Выбери это имя!", "pick_name", [theName])
 
 func addSlaveButtons():
 	var slaves = GM.main.getDynamicCharacterIDsFromPool(CharacterPool.Slaves)
@@ -246,7 +246,7 @@ func addSlaveButtons():
 		if(npcSlavery == null):
 			continue
 		if(npcSlavery.isDoingActivity()):
-			addDisabledButton(character.getName(), "This slave is currently busy")
+			addDisabledButton(character.getName(), "Эта рабыня сейчас занята")
 			continue
 		addButton(character.getName(), character.getSmallDescription(), "pick_slave", [charID])
 

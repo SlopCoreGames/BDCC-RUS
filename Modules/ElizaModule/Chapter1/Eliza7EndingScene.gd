@@ -7,372 +7,372 @@ func _run():
 	if(state == ""):
 		aimCameraAndSetLocName("med_lobbymain")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("No point in pushing this back any further. Might as well tell her, see what happens.")
+		saynn("Нет смысла больше тянуть. Лучше уж сказать ей и посмотреть, что из этого выйдет.")
 
-		saynn("[say=pc]Hey, I think the database now has entries for each of the drugs that are floating around in the prison.[/say]")
+		saynn("[say=pc]Эй, кажется, в базе данных теперь есть записи по каждому из наркотиков, что гуляют по тюрьме.[/say]")
 
-		saynn("Eliza's eyes open wider, showing off the sparks that are in them.")
+		saynn("Глаза Элизы распахиваются шире, в них вспыхивают искорки.")
 
-		saynn("[say=eliza]Oh, do they?[/say]")
+		saynn("[say=eliza]О, неужели?[/say]")
 
-		saynn("She pulls out her datapad and quickly swipes through some menus.")
+		saynn("Она достает свой датапад и быстро пролистывает несколько меню.")
 
-		saynn("[say=eliza]Shit, you're right. They're all fully tested too.[/say]")
+		saynn("[say=eliza]Бля, ты прав. И все они уже полностью протестированы.[/say]")
 
-		saynn("A little smile is tugging at her lips as she studies the data.. but not for long.")
+		saynn("На её губах играет легкая улыбка, пока она изучает данные... но ненадолго.")
 
-		saynn("[say=elizaMom]I never taught you to swear, dear.[/say]")
+		saynn("[say=elizaMom]Дорогой, я тебя не такому матерщиннику учила.[/say]")
 
-		saynn("That voice came from behind you..")
+		saynn("Этот голос раздался у тебя за спиной...")
 
-		addButton("Continue", "See what happens next", "mom_comes_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "mom_comes_in")
 	if(state == "mom_comes_in"):
 		addCharacter("elizaMom")
 		playAnimation(StageScene.Duo, "stand", {pc="elizaMom", npc="eliza"})
-		saynn("You step aside as soon as you notice the familiar figure, accompanied by the two familiar armed guards exit the elevator. Scarlet's gaze pushes you further away from the counter, into the shadow..")
+		saynn("Как только ты замечаешь знакомую фигуру, сопровождаемую двумя привычными вооруженными охранниками, выходящими из лифта, ты отступаешь в сторону. Взгляд Скарлет оттесняет тебя всё дальше от стойки, в тень...")
 
-		saynn("[say=eliza]Oh, hey mom. Haven't left yet?[/say]")
+		saynn("[say=eliza]О, привет, мам. Ты еще не ушла?[/say]")
 
-		saynn("She smiles politely, her tone laced with a subtle mischief.")
+		saynn("Она вежливо улыбается, но в её голосе сквозит едва уловимое озорство.")
 
-		saynn("Scarlet's lips curve into a cool, measured smile as she crosses her arms.")
+		saynn("Губы Скарлет изгибаются в холодной, сдержанной улыбке, когда она скрещивает руки на груди.")
 
-		saynn("[say=elizaMom]Just wanted to see my daughter again, I finally finished discussing all the current issues with the captain.[/say]")
+		saynn("[say=elizaMom]Просто захотелось снова увидеть свою дочь. Я наконец-то закончила обсуждать все текущие вопросы с капитаном.[/say]")
 
-		saynn("A flicker of determination sparks in Eliza's eyes.")
+		saynn("В глазах Элизы вспыхивает искра решимости.")
 
-		saynn("[say=eliza]That's great, I wanna show you something.[/say]")
+		saynn("[say=eliza]Это здорово! Я хочу тебе кое-что показать.[/say]")
 
-		saynn("In a burst of energy, she slips from behind the counter and disappears behind the wall. Moments later, she reappears at the open door, holding a datapad, presenting it proudly.")
+		saynn("Наполнившись энергией, она выскальзывает из-за прилавка и скрывается за стеной. Мгновение спустя она снова появляется в открытой двери, с гордостью протягивая датапад.")
 
-		saynn("[say=eliza]Look, we solved the prison's drug problem![/say]")
+		saynn("[say=eliza]Смотри, мы решили проблему с наркотиками в тюрьме![/say]")
 
-		saynn("Eliza's voice sounds proud and exciting.")
+		saynn("Голос Элизы звучит гордо и воодушевленно.")
 
-		saynn("[say=elizaMom]Did you really?[/say]")
+		saynn("[say=elizaMom]Неужели правда?[/say]")
 
-		saynn("Scarlet grabs the offered datapad and begins swiping through the data.")
+		saynn("Скарлет хватает предложенный датапад и начинает пролистывать данные.")
 
-		saynn("[say=elizaMom]Hm.[/say]")
+		saynn("[say=elizaMom]Хм.[/say]")
 
-		saynn("[say=eliza]Yeah, we found and tested each of the drugs that were floating around in the prison.[/say]")
+		saynn("[say=eliza]Да, мы нашли и протестировали каждый из наркотиков, которые шатались по тюрьме.[/say]")
 
-		saynn("Scarlet's answer is sharp, her expression strict.")
+		saynn("Ответ Скарлет звучит резко, выражение её лица — суровое.")
 
-		saynn("[say=elizaMom]And that solved it?[/say]")
+		saynn("[say=elizaMom]И это решило проблему?[/say]")
 
-		saynn("The question sends an ice-cold wave through Eliza, making her start mumbling something incoherent before she finally gets her thoughts together.")
+		saynn("Этот вопрос прошивает Элизу ледяной волной; она начинает что-то бессвязно бормотать, прежде чем ей удается наконец собраться с мыслями.")
 
-		saynn("[say=eliza]Well.. uh.. we now know exactly what we're dealing with, down to the molecular structure. There is nothing super dangerous, every effect can be reversed. With all that info, it will be a breeze for the guards to find and destroy the contraband![/say]")
+		saynn("[say=eliza]Ну.. э-э.. теперь мы точно знаем, с чем имеем дело, вплоть до молекулярной структуры. Там нет ничего сверхъестественно опасного, любой эффект можно обратить вспять. Со всей этой инфой охранникам будет проще простого найти и уничтожить контрабанду![/say]")
 
-		saynn("Scarlet's gaze remains fixed on the datapad as she murmurs a quiet..")
+		saynn("Взгляд Скарлет по-прежнему прикован к датападу, когда она тихо бормочет...")
 
-		saynn("[say=elizaMom]Right. Hm.[/say]")
+		saynn("[say=elizaMom]Понятно. Хм.[/say]")
 
-		saynn("Scarlet stays quiet, her eyes idly reading the data, her face expressionless.. Occasionally, she darts a look into a random direction.. occasionally that direction is yours. You don't back away further though, you played a huge part in this.")
+		saynn("Скарлет молчит, лениво изучая данные с бесстрастным лицом. Время от времени она бросает взгляд куда-то в сторону... иногда этот взгляд направлен на тебя. Но ты не отстраняешься — ведь ты сыграл в этом огромную роль.")
 
-		saynn("[say=elizaMom]I'm certainly glad you managed to avoid endangering yourself. You have maybe grown, my dear girl. But I think the drug problem isn't solved until it's fully solved.[/say]")
+		saynn("[say=elizaMom]Я искренне рада, что тебе удалось избежать опасности. Ты, кажется, подросла, моя дорогая девочка. Но я думаю, что проблема с наркотиками не будет решена до тех пор, пока она не будет решена окончательно.[/say]")
 
-		saynn("Eliza lowers her gaze, her paw scratching the back of her head.")
+		saynn("Элиза опускает взгляд, почесывая лапой затылок.")
 
-		saynn("[say=eliza]Hah? It is solved..[/say]")
+		saynn("[say=eliza]А? Решена...[/say]")
 
-		saynn("Scarlet shakes her head slowly.")
+		saynn("Скарлет медленно качает головой.")
 
-		saynn("[say=elizaMom]It will only be solved once every trace of these drugs is eliminated. And something tells me.. this will never realistically happen.[/say]")
+		saynn("[say=elizaMom]Она будет решена только тогда, когда исчезнет каждый след этих препаратов. И что-то мне подсказывает... в реальности этого никогда не случится.[/say]")
 
-		saynn("The piercing gaze is making Eliza extremely uncomfortable. Scarlet is not wrong..")
+		saynn("Пронзительный взгляд заставляет Элизу чувствовать себя крайне неловко. Скарлет права...")
 
-		saynn("[say=elizaMom]Still, you proved that you know your way around a lab. What's left to do here, it's not up to you anymore.[/say]")
+		saynn("[say=elizaMom]И всё же, ты доказала, что умеешь обращаться в лаборатории. Что делать дальше — теперь уже не тебе решать.[/say]")
 
-		saynn("A spark of hope appears in Eliza's eyes.. Scarlet's tone is shifting into something more soft and tender.")
+		saynn("В глазах Элизы вспыхивает искра надежды... Тон Скарлет становится мягче и нежнее.")
 
-		saynn("[say=elizaMom]So I wanna take you back with me.[/say]")
+		saynn("[say=elizaMom]Так что я хочу забрать тебя с собой.[/say]")
 
-		saynn("[say=eliza]Does that mean..?[/say]")
+		saynn("[say=eliza]Это значит..?[/say]")
 
-		saynn("Scarlet nods, giving Eliza the datapad back and stepping closer until the distance between them seems to vanish.")
+		saynn("Скарлет кивает, возвращая Элизе датапад, и делает шаг навстречу, пока расстояние между ними почти не исчезает.")
 
-		saynn("[say=elizaMom]I would love to have you in my lab, sweetheart. You are so incredibly smart.[/say]")
+		saynn("[say=elizaMom]Я бы с удовольствием заполучила тебя в свою лабораторию, милашка. Ты невероятно умная.[/say]")
 
-		saynn("A genuine smile breaks over Eliza's blushing face.")
+		saynn("На раскрасневшемся лице Элизы расцветает искренняя улыбка.")
 
-		saynn("[say=eliza]Yay.[/say]")
+		saynn("[say=eliza]Ура![/say]")
 
-		saynn("Hearing these words is probably a dream come true for the feline. Makes you feel warm inside too.")
+		saynn("Услышать такое для этой кошечки — словно мечта, ставшая явью. От этих слов на душе становится тепло.")
 
-		saynn("[say=elizaMom]Seeing what you did here, I really could use an assistant like you. So, you can go start packing your things.[/say]")
+		saynn("[say=elizaMom]Глядя на то, что ты здесь наворотила, я бы не отказалась от такой помощницы, как ты. Так что можешь начинать собирать вещи.[/say]")
 
-		saynn("For a moment, everything hangs in the balance. But then something about Eliza changes, her eyes widen a little. She takes a pause and then repeats slowly.")
+		saynn("На мгновение всё замирает в ожидании. Но затем в Элизе что-то меняется, её глаза слегка расширяются. Она делает паузу и медленно повторяет:")
 
-		saynn("[say=eliza]Assistant?..[/say]")
+		saynn("[say=eliza]Помощницы?..[/say]")
 
-		saynn("[say=elizaMom]Yes, we'd be working together.[/say]")
+		saynn("[say=elizaMom]Да, мы бы работали вместе.[/say]")
 
-		saynn("Eliza blinks.. many times, uncertainty flashing across her face.")
+		saynn("Элиза часто-часто моргает, на её лице промелькнуло замешательство.")
 
-		saynn("[say=elizaMom]Something is wrong? Isn't that what you wanted?[/say]")
+		saynn("[say=elizaMom]Что-то не так? Разве не этого ты хотела?[/say]")
 
-		saynn("Another pause only fuels the tension. You're not sure if something is wrong.. but not everything is right.. definitely.")
+		saynn("Очередная пауза лишь нагнетает напряжение. Ты не уверена, что всё не так... но точно знаешь, что всё не идеально.")
 
-		saynn("[say=eliza]I.. kinda like our lab..[/say]")
+		saynn("[say=eliza]Мне... вроде как нравится наша лаборатория...[/say]")
 
-		saynn("Eliza hesitates, her voice trailing off.")
+		saynn("Элиза колеблется, её голос затихает.")
 
-		saynn("Scarlet's expression turns serious.")
+		saynn("Выражение лица Скарлет становится серьезным.")
 
-		saynn("[say=elizaMom]Excuse me? Am I hearing you correctly?[/say]")
+		saynn("[say=elizaMom]Прости? Я правильно тебя услышала?[/say]")
 
-		saynn("[say=eliza]I.. I don't know.[/say]")
+		saynn("[say=eliza]Я... я не знаю.[/say]")
 
-		saynn("Eliza stammers, looking away. It's rare that you see her like this.")
+		saynn("Элиза заикается, отводя взгляд. Редко когда её можно увидеть в таком состоянии.")
 
-		saynn("[say=elizaMom]Eliza? Sweetie? What's wrong?[/say]")
+		saynn("[say=elizaMom]Элиза? Милая? Что случилось?[/say]")
 
 		saynn("[say=eliza]I..[/say]")
 
-		saynn("Eliza fails to get the words out, her voice trembling. Scarlet reaches her hand out gently, grabbing her daughter's paw.")
+		saynn("Элиза никак не может подобрать слова, её голос дрожит. Скарлет осторожно протягивает руку и берет дочь за лапку.")
 
-		saynn("[say=elizaMom]I'm not gonna get angry at you. Right now I'm just curious.. How can your current lab setup be better than what we have at home?[/say]")
+		saynn("[say=elizaMom]Я не собираюсь на тебя злиться. Сейчас мне просто любопытно... Как твоя нынешняя лаборатория может быть лучше той, что у нас дома?[/say]")
 
-		saynn("[say=eliza]Well.. it's not. The equipment we have is much worse.[/say]")
+		saynn("[say=eliza]Ну... это не так. Оборудование здесь гораздо лучше.[/say]")
 
-		saynn("Eliza's paw holds her mother's hand tightly. A hint of smile returns on Scarlet's face.")
+		saynn("Лапка Элизы крепко сжимает руку матери. На лице Скарлет снова промелькнула тень улыбки.")
 
-		saynn("[say=elizaMom]Obviously. So if you wanna help me push science forward, you should come with me.[/say]")
+		saynn("[say=elizaMom]Очевидно. Так что, если хочешь помочь мне продвинуть науку вперед, тебе стоит пойти со мной.[/say]")
 
-		saynn("Eliza hesitates again.")
+		saynn("Элиза снова колеблется.")
 
-		saynn("[say=eliza]Right.. well..[/say]")
+		saynn("[say=eliza]Ну... ладно...[/say]")
 
-		saynn("Scarlet raises a brow curiously.")
+		saynn("Скарлет любопытно приподнимает бровь.")
 
-		saynn("[say=elizaMom]Something is holding you here.[/say]")
+		saynn("[say=elizaMom]Тебя что-то держит здесь.[/say]")
 
-		saynn("[say=eliza]Maybe..[/say]")
+		saynn("[say=eliza]Может быть...[/say]")
 
-		saynn("Scarlet sighs softly.")
+		saynn("Скарлет тихо вздыхает.")
 
-		saynn("[say=elizaMom]Look.. I know that we're not always on the best terms. We had our.. disagreements. Maybe we should start to stop being afraid of being honest with each other?[/say]")
+		saynn("[say=elizaMom]Слушай... Я знаю, что мы не всегда ладили. У нас были свои... разногласия. Может, нам пора перестать бояться быть честными друг с другом?[/say]")
 
-		saynn("Eliza's eyes meet Scarlet's, causing the blush to deepen.")
+		saynn("Взгляд Элизы встречается со взглядом Скарлет, отчего румянец на её щеках становится ещё гуще.")
 
-		saynn("[say=eliza]Hm..[/say]")
+		saynn("[say=eliza]Хм...[/say]")
 
-		saynn("[say=elizaMom]I can be first. It might seem like a punishment that I sent you here.. and I certainly worded it like that back then. I was pretty loud.[/say]")
+		saynn("[say=elizaMom]Я могу сделать первый шаг. Может показаться, что моё решение отправить тебя сюда было наказанием... и тогда я точно так и выразилась. Я была довольно резкой.[/say]")
 
-		saynn("Her tender tone is making Eliza's ears turn down.")
+		saynn("От её нежного тона уши Элизы поникают.")
 
-		saynn("[say=elizaMom]Real reason is.. I was busy back then, with a very important project. I just had no time to look after you. Which is why I was very angry. I was angry at myself. My fears came true, I failed to protect you.[/say]")
+		saynn("[say=elizaMom]На самом деле... тогда я была слишком занята очень важным проектом. У меня просто не хватало времени, чтобы присматривать за тобой. Вот почему я так злилась. На самом деле я злилась на саму себя. Мои страхи сбылись — я не смогла тебя защитить.[/say]")
 
-		saynn("Scarlet's voice cracks slightly with the weight of old regrets.")
+		saynn("Голос Скарлет слегка дрожит под тяжестью старых сожалений.")
 
-		saynn("[say=elizaMom]That project is over. I'm free, for now at least. We can join efforts. I'd rather your skills not be wasted.. here.. in this place.[/say]")
+		saynn("[say=elizaMom]Тот проект завершён. Теперь я свободна, по крайней мере, на данный момент. Мы могли бы объединить усилия. Мне бы не хотелось, чтобы твои таланты пропадали зря... здесь... в этом месте.[/say]")
 
-		saynn("Her gaze jumps at you for a second.")
+		saynn("На мгновение её взгляд резко перескакивает на тебя.")
 
-		saynn("[say=elizaMom]Now.. please.. sweetheart.. I love you more than anyone. If you want to stay.. Perhaps you can stay. But can I maybe know what powers your decision? Let me know if I'm asking for too much.[/say]")
+		saynn("[say=elizaMom]А теперь... пожалуйста... милая... Я люблю тебя больше всех на свете. Если ты хочешь остаться... что ж, возможно, тебе стоит остаться. Но можно мне узнать, что стоит за твоим решением? Скажи, если я прошу слишком многого.[/say]")
 
-		saynn("The words are making Eliza's eyes become all watery.")
+		saynn("От этих слов у Элизы на глазах наворачиваются слезы.")
 
-		addButton("Continue", "See what happens next", "eliza_pause")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_pause")
 	if(state == "eliza_pause"):
-		saynn("Eliza stays silent for a bit, her gaze shifting to you for a brief moment.. maybe seeking an answer in your silent support.. before returning to her mother.")
+		saynn("Элиза на мгновение замолкает, на секунду переводя взгляд на тебя... словно ища поддержки в твоем молчании... а затем снова смотрит на мать.")
 
-		saynn("[say=eliza]I like the freedom..[/say]")
+		saynn("[say=eliza]Мне нравится свобода..[/say]")
 
-		saynn("She finally says something in a soft, uncertain tone.")
+		saynn("Наконец она произносит что-то тихим, неуверенным голосом.")
 
-		saynn("[say=elizaMom]Freedom? But you are in a prison, sweetie.[/say]")
+		saynn("[say=elizaMom]Свобода? Но ты же в тюрьме, милая.[/say]")
 
-		saynn("Eliza nods slowly.")
+		saynn("Элиза медленно кивает.")
 
-		saynn("[say=eliza]Freedom of being able to work on what I wanna work on. You would never allow me to work on what I'm working on right now..[/say]")
+		saynn("[say=eliza]Свобода делать то, что я хочу. Ты бы никогда не позволила мне заниматься тем, чем я занимаюсь сейчас..[/say]")
 
-		saynn("Scarlet laughs gently.")
+		saynn("Скарлет мягко смеется.")
 
-		saynn("[say=elizaMom]Fair point. If you want some more of my honesty, that is part of the reason why I wanna take you back with me. But, entertain this, I also thought that you wanted to push science forward?[/say]")
+		saynn("[say=elizaMom]Справедливо. Если хочешь еще больше честности, то это одна из причин, почему я хочу забрать тебя с собой. Но представь на секунду: разве ты не хотела двигать науку вперед?[/say]")
 
-		saynn("[say=eliza]I thought so too.. I was confused for quite a while here myself.[/say]")
+		saynn("[say=eliza]Я тоже так думала.. Сама долгое время была в замешательстве.[/say]")
 
-		saynn("Eliza looks at you, smiling.")
+		saynn("Элиза смотрит на тебя с улыбкой.")
 
-		saynn("[say=eliza]But maybe the answer was right there. Maybe I just wanna have fun.. doing things that I wanna do.. with people that I like.[/say]")
+		saynn("[say=eliza]Но, может, ответ был прямо перед носом. Может, я просто хочу развлекаться... делать то, что хочется... с людьми, которые мне нравятся.[/say]")
 
-		saynn("Scarlet follows her daughter's stare.. until it collides with yours. She judges you at first.")
+		saynn("Скарлет прослеживает за взглядом дочери... пока он не сталкивается с твоим. Сначала она смотрит на тебя оценивающе.")
 
-		saynn("[say=eliza]Even though I'm stuck in a prison, surrounded by criminals, working with old equipment.. You know, mom, I think I'm happy here.[/say]")
+		saynn("[say=eliza]Пусть я и заперта в тюрьме, среди преступников, и работаю на старом оборудовании... Знаешь, мам, мне кажется, я здесь счастлива.[/say]")
 
-		saynn("They're still holding hands. Eliza's clawed digits gently interlock with her mother's.")
+		saynn("Они всё еще держатся за руки. Когтистые пальцы Элизы нежно переплетаются с пальцами матери.")
 
-		saynn("[say=eliza]You wanna protect me.. but I think I don't need protection anymore. Khm..[/say]")
+		saynn("[say=eliza]Ты хочешь меня защитить... но, по-моему, мне уже не нужна защита. Кхм...[/say]")
 
-		saynn("Everyone in the room clears their throats for some reason while Eliza cringes for just a second. But she manages to pull herself back.")
+		saynn("Почему-то все присутствующие в комнате прокашливаются, а Элиза на мгновение съеживается от смущения. Но ей удается быстро взять себя в руки.")
 
-		saynn("[say=eliza]I think I can protect myself now, yeah. And I also got someone that will help~.[/say]")
+		saynn("[say=eliza]Думаю, теперь я и сама могу за себя постоять, да. К тому же, у меня появился тот, кто поможет~.[/say]")
 
-		saynn("Eliza looks at you and smiles.")
+		saynn("Элиза смотрит на тебя и улыбается.")
 
-		saynn("[say=eliza]If all that fails, well, such is life, I'm ready to receive the consequences of my own actions. I think that's.. good?[/say]")
+		saynn("[say=eliza]Если всё провалится — ну, такова жизнь. Я готова принять последствия своих решений. Думаю, это... даже хорошо?[/say]")
 
-		saynn("A warm smile shines on Scarlet's kind face.")
+		saynn("На добром лице Скарлет сияет теплая улыбка.")
 
-		saynn("[say=elizaMom]I guess my little girl did really grow up. All while I wasn't looking..[/say]")
+		saynn("[say=elizaMom]Кажется, моя девочка и правда выросла. Пока я не видела..[/say]")
 
-		saynn("[say=eliza]Hah.. mom..[/say]")
+		saynn("[say=eliza]Хах.. мам..[/say]")
 
-		addButton("Continue", "See what happens next", "they_hug")
+		addButton("Продолжить", "Смотреть, что будет дальше", "they_hug")
 	if(state == "they_hug"):
 		playAnimation(StageScene.Hug, "hug", {pc="elizaMom", npc="eliza"})
-		saynn("And so they embrace each other warmly. Eliza wraps her arms around her mother and rests her lowered chin on Scarlet's chest.")
+		saynn("И вот они тепло обнимают друг друга. Элиза обвивает руками мать и кладет подбородок ей на грудь.")
 
-		saynn("[say=eliza]I love you, mom.. Sorry that I did so much dumb stuff..[/say]")
+		saynn("[say=eliza]Я люблю тебя, мам.. Прости, что натворила столько глупостей..[/say]")
 
-		saynn("[say=elizaMom]It's okay. Pretty sure you got that from me, my sweetie.[/say]")
+		saynn("[say=elizaMom]Все хорошо. Уверена, это у тебя от меня, милая.[/say]")
 
-		saynn("Their reunion makes the whole room seem brighter than it already is. Even Scarlet's quick glance at you doesn't seem so.. arrogant.. anymore.")
+		saynn("Их воссоединение словно наполняет всю комнату светом. Даже мимолетный взгляд Скарлет на тебя больше не кажется таким.. высокомерным..")
 
-		saynn("Elize smiles while tears run down her cheeks.")
+		saynn("Элиза улыбается, а по её щекам текут слезы.")
 
-		saynn("[say=elizaMom]I understand it now. Sorry for being so push-y. It's up to you how you want to live your life.[/say]")
+		saynn("[say=elizaMom]Теперь я всё понимаю. Прости, что так давила на тебя. Жить своей жизнью тебе решать самой.[/say]")
 
-		saynn("[say=eliza]Thank you.. you're the best, mom.. w-wait..[/say]")
+		saynn("[say=eliza]Спасибо.. ты лучшая, мам.. п-погоди..[/say]")
 
-		saynn("Eliza ends the hug prematurely.. before bending over the counter and grabbing something.")
+		saynn("Элиза преждевременно прерывает объятия... прежде чем наклониться к стойке и что-то схватить.")
 
-		saynn("She presents Scarlet.. the mug.. a glued together one that still says 'best mom'.")
+		saynn("Она протягивает Скарлет... кружку... склеенную по кусочкам, на которой всё ещё написано «лучшей маме».")
 
-		saynn("[say=eliza]I still have it.. Maybe you want it now?[/say]")
+		saynn("[say=eliza]Она у меня до сих пор... Может, хочешь забрать её сейчас?[/say]")
 
-		saynn("[say=elizaMom]I noticed it last time, but wasn't sure if it was the one. I didn't look at it that well last time.[/say]")
+		saynn("[say=elizaMom]Я заметила её в прошлый раз, но не была уверена, что это она. Тогда я не разглядела её как следует.[/say]")
 
-		saynn("Scarlet carefully grabs the offered mug and inspects it.")
+		saynn("Скарлет осторожно берет предложенную кружку и внимательно её осматривает.")
 
-		saynn("[say=elizaMom]You glued it piece by piece. That is so impressive, it probably took you forever.[/say]")
+		saynn("[say=elizaMom]Ты склеила её по кусочкам. Это так впечатляет, наверное, у тебя ушла целая вечность.[/say]")
 
-		saynn("[say=eliza]Yeah.. but it was worth it. Been my favourite mug since then. You can have it, if you want.[/say]")
+		saynn("[say=eliza]Да... но оно того стоило. С тех пор это моя любимая кружка. Можешь забрать её, если хочешь.[/say]")
 
-		saynn("Scarlet chuckles softly.")
+		saynn("Скарлет тихонько посмеивается.")
 
-		saynn("[say=elizaMom]I can't accept it, it's yours.[/say]")
+		saynn("[say=elizaMom]Я не могу её принять, она твоя.[/say]")
 
-		saynn("[say=eliza]But it was a gift for you. It was a gift for the best mom.[/say]")
+		saynn("[say=eliza]Но это был подарок для тебя. Подарок для лучшей мамы.[/say]")
 
-		saynn("Scarlet hums.")
+		saynn("Скарлет что-то напевает под нос.")
 
-		saynn("[say=elizaMom]Maybe you will be the best mom~. Unless you are already.[/say]")
+		saynn("[say=elizaMom]Может, ты станешь лучшей мамой~. Если только ты уже не стала.[/say]")
 
-		saynn("[say=eliza]Haha.. ha.. khm.[/say]")
+		saynn("[say=eliza]Ха-ха.. ха.. кхм.[/say]")
 
-		saynn("Scarlet raises a brow.")
+		saynn("Скарлет приподнимает бровь.")
 
-		saynn("[say=elizaMom]Here is an idea, I will send you a new mug. Then you can send me this one, I'd love to have it. But I don't wanna steal your coffee addiction in the meantime.[/say]")
+		saynn("[say=elizaMom]Есть идея: я пришлю тебе новую кружку. А потом ты пришлешь мне эту, я бы с удовольствием её оставила. Но не хочу пока что красть твою кофейную зависимость.[/say]")
 
-		saynn("[say=eliza]That works![/say]")
+		saynn("[say=eliza]Идет![/say]")
 
-		saynn("They hug each other again. There are some inmates gathering in the lobby.. but they're okay with waiting it seems.. especially with two armed guards being around.")
+		saynn("Они снова обнимаются. В вестибюле начинают собираться заключенные... но, похоже, они не против подождать... особенно когда рядом двое вооруженных охранников.")
 
-		saynn("Scarlet smooches her daughter on the cheek.")
+		saynn("Скарлет чмокает дочь в щеку.")
 
-		saynn("[say=elizaMom]Sadly, I think I just got news that my flight is getting delayed by a few days~.[/say]")
+		saynn("[say=elizaMom]К сожалению, кажется, мне только что сообщили, что мой рейс задерживают на несколько дней~.[/say]")
 
-		saynn("[say=eliza]Hah. That's so unfortunate. Looks like we will have to spend more time together.[/say]")
+		saynn("[say=eliza]Хах. Как досадно. Похоже, нам придется провести вместе еще немного времени.[/say]")
 
-		saynn("[say=elizaMom]Indeed we are. We will find something to do together, right?[/say]")
+		saynn("[say=elizaMom]И то правда. Мы ведь найдем, чем заняться вместе, верно?[/say]")
 
-		saynn("[say=eliza]Chemistry, you're thinking?[/say]")
+		saynn("[say=eliza]Химия, ты о чем?[/say]")
 
-		saynn("Scarlet does a playful nod.")
+		saynn("Скарлет игриво кивает.")
 
-		saynn("[say=elizaMom]Nothing but chemistry.[/say]")
+		saynn("[say=elizaMom]Одна сплошная химия.[/say]")
 
-		saynn("They hug it out for a little longer.. but then Scarlet turns her attention towards you.")
+		saynn("Они обнимаются еще немного... но затем Скарлет переключает внимание на тебя.")
 
-		saynn("[say=elizaMom]Excuse me, sweetie.[/say]")
+		saynn("[say=elizaMom]Прости меня, милый.[/say]")
 
-		saynn("She ends the hug.. and steps towards you, with kind intentions, hopefully..")
+		saynn("Она разрывает объятия... и делает шаг к тебе, с добрыми намерениями, как бы ей хотелось...")
 
-		addButton("Continue", "See what happens next", "scarlet_pc_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "scarlet_pc_talk")
 	if(state == "scarlet_pc_talk"):
 		playAnimation(StageScene.Duo, "stand", {npc="elizaMom"})
-		saynn("Scarlet approaches you.")
+		saynn("Скарлет подходит к тебе.")
 
-		saynn("[say=elizaMom]Excuse me for my.. manners.[/say]")
+		saynn("[say=elizaMom]Прости за мои... манеры.[/say]")
 
-		saynn("Her stare is still authoritative.. but she doesn't sound too intimidating.. Her guards are quite scary though.")
+		saynn("Ее взгляд все еще властный... но звучит она не слишком пугающе... хотя ее охранники выглядят довольно жутко.")
 
-		saynn("[say=pc]It's understandable. I'm glad you have found a common language with your daughter.[/say]")
+		saynn("[say=pc]Это вполне понятно. Я рада, что вы нашли общий язык со своей дочерью.[/say]")
 
-		saynn("[say=elizaMom]Yeah, she is a good girl. Does what she wants.. but that runs in the bloodline.[/say]")
+		saynn("[say=elizaMom]Да, она хорошая девочка. Делает то, что хочет... но это у нас в крови.[/say]")
 
-		saynn("Gotta say something nice..")
+		saynn("Нужно сказать что-нибудь приятное...")
 
-		saynn("[say=pc]It's an honor to be her assistant.[/say]")
+		saynn("[say=pc]Для меня честь быть её ассистентом.[/say]")
 
-		saynn("[say=elizaMom]Hah. Thank you for helping Eliza. I'm almost jealous of your position.[/say]")
+		saynn("[say=elizaMom]Хах. Спасибо, что помогаешь Элизе. Я даже почти завидую твоему положению.[/say]")
 
-		saynn("Her eyes pick out your collar. Makes you wanna say something snarky.")
+		saynn("Её взгляд цепляется за твой ошейник. Так и подмывает съязвить в ответ.")
 
-		saynn("[say=pc]You can always murder someone and end up here. Maybe you will like it.[/say]")
+		saynn("[say=pc]Можно всегда кого-нибудь прирезать и оказаться здесь. Может, тебе даже понравится.[/say]")
 
-		saynn("[say=elizaMom]It's a little too extreme for me. I'm an old-school girl. Although, I probably earned a life-sentence or two already.[/say]")
+		saynn("[say=elizaMom]Для меня это слишком радикально. Я девчонка старой закалки. Хотя, наверное, я уже назаслужила парочку пожизненных.[/say]")
 
-		saynn("Awkward silence settles in.. but then Scarlet chuckles.")
+		saynn("Воцаряется неловкое молчание... но затем Скарлет усмехается.")
 
-		saynn("[say=elizaMom]Hah. Gotta push science forward somehow, huh? Ain't that right, sweetie?[/say]")
+		saynn("[say=elizaMom]Хах. Науку же нужно двигать вперед, а? Ведь так, милочка?[/say]")
 
-		saynn("[say=eliza]Who will do it if not us, crazy gals?[/say]")
+		saynn("[say=eliza]Кто, если не мы, сумасшедшие девчонки?[/say]")
 
-		saynn("You can see where she got that trait from..")
+		saynn("Сразу видно, в кого она такая...")
 
-		saynn("[say=elizaMom]Now, if you two excuse me..[/say]")
+		saynn("[say=elizaMom]А теперь, если вы меня извините...[/say]")
 
-		saynn("[say=eliza]See you, mom![/say]")
+		saynn("[say=eliza]Пока, мам![/say]")
 
-		saynn("[say=elizaMom]Ain't leaving yet.[/say]")
+		saynn("[say=elizaMom]Пока не ухожу.[/say]")
 
-		addButton("Continue", "See what happens next", "eliza_outro")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_outro")
 	if(state == "eliza_outro"):
 		removeCharacter("elizaMom")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("While Scarlet and her guards head off somewhere, Eliza Quinn approaches you next, her paw quickly swiping off the left-over tears.")
+		saynn("Пока Скарлет и её стража направляются куда-то по своим делам, к тебе подходит Элиза Куинн, быстро смахивая остатки слез лапкой.")
 
-		saynn("[say=eliza]That went.. pretty good.[/say]")
+		saynn("[say=eliza]Всё прошло... довольно неплохо.[/say]")
 
-		saynn("[say=pc]All things considered.[/say]")
+		saynn("[say=pc]Учитывая все обстоятельства.[/say]")
 
-		saynn("[say=eliza]You're gonna have to endure me for a little longer~.[/say]")
+		saynn("[say=eliza]Тебе придётся потерпеть меня ещё немного~.[/say]")
 
-		saynn("[say=pc]Oh no, I'm gonna have to swallow more random pills?[/say]")
+		saynn("[say=pc]О нет, мне что, опять придётся глотать кучу случайных таблеток?[/say]")
 
-		saynn("She chuckles.. and then gives you a quick hug and a smooch on the cheek.")
+		saynn("Она посмеивается... а затем быстро обнимает тебя и чмокает в щеку.")
 
-		saynn("[say=eliza]Up to you~. Just know that you're the best assistant that I ever had.[/say]")
+		saynn("[say=eliza]Решать тебе~. Просто знай, что ты — лучший ассистент, который у меня когда-либо был.[/say]")
 
-		saynn("[say=pc]That's sweet, thank you.[/say]")
+		saynn("[say=pc]Это мило, спасибо.[/say]")
 
-		saynn("[say=eliza]Without you, I'd be in my mother's lab right now. Doing what I need to do. But not doing what I want to do.[/say]")
+		saynn("[say=eliza]Без тебя я бы сейчас сидела в маминой лаборатории. Делала то, что должна. Но не то, что хочу.[/say]")
 
-		saynn("[say=pc]Maybe you'd be happy?[/say]")
+		saynn("[say=pc]Может, ты была бы счастлива?[/say]")
 
-		saynn("It was her dream after all..")
+		saynn("В конце концов, это была её мечта...")
 
-		saynn("[say=eliza]Maybe. But this way, I can lend my leash to someone on my own terms, you know~.[/say]")
+		saynn("[say=eliza]Может быть. Но так я могу отдать свой поводок кому-то на своих собственных условиях, понимаешь~?[/say]")
 
-		saynn("She winks and sticks the tip of her tongue out at you.")
+		saynn("Она подмигивает и дразняще высовывает кончик языка.")
 
-		saynn("[say=eliza]And now, let's try to enjoy living the rest of our lives.[/say]")
+		saynn("[say=eliza]А теперь давай просто наслаждаться остатком нашей жизни.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("And just like that, Eliza returns to her spot behind the counter. She pours herself some coffee into her 'best mom' mug.. and starts sipping the life juice. A cute, soft moan escapes her maw, together with a small steam cloud.")
+		saynn("И вот так просто Элиза возвращается на свое место за прилавком. Она наливает себе кофе в кружку с надписью «Лучшая мама»... и начинает прихлебывать этот эликсир жизни. Из её пасти вырывается милый, мягкий стон вместе с облачком пара.")
 
-		saynn("[say=eliza]That's hot..[/say]")
+		saynn("[say=eliza]Горячо..[/say]")
 
-		saynn("Makes you smile.")
+		saynn("Заставляет улыбнуться.")
 
-		saynn("(( This is where Eliza's dedicated content ends. Thank you for playing <3 ))")
-		addButton("Continue", "You saw how it ends", "endthescene")
+		saynn("(( На этом эксклюзивный контент Элизы заканчивается. Спасибо за игру <3 ))")
+		addButton("Продолжить", "Ты видел, чем всё закончилось", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

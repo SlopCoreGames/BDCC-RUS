@@ -20,21 +20,21 @@ func _run():
 		addCharacter("PCTentacles")
 		hasNeuro = getFlag("ElizaModule.tent_neurolink", false)
 		playAnimation(StageScene.TentaclesGrope, "tease", {pc=slaveID, plant=true})
-		saynn("You bring {slave.name} into your cell.. and then suddenly shove {slave.him} towards {pcTentacles}, your personal horny cell plant.")
+		saynn("Вы заводите {slave.name} в свою камеру... и вдруг резко толкаете {slave.him} к {pcTentacles}, вашему личному похотливому комнатному растению.")
 
-		saynn("The tendrils are quick to wrap around {slave.his} waist and ankles, preventing {slave.him} from escaping..")
+		saynn("Щупальца мгновенно обвивают талию и лодыжки {slave.his}, не давая {slave.him} сбежать...")
 
-		saynn("The fun is about to begin.")
+		saynn("Веселье вот-вот начнется.")
 
-		addButton("Continue", "Let the tentacles have fun with that person on their own", "start_slave_sex")
+		addButton("Продолжить", "Дать щупальцам самим развлечься с этим человеком", "start_slave_sex")
 		if (hasNeuro):
-			addButton("Neuro-Link", "Use the Neuro-Link device to control the tentacles while they're having fun with that person", "start_slave_sex_neuro")
+			addButton("Нейролинк", "Использовать устройство Нейро-Связи, чтобы управлять щупальцами, пока они развлекаются с этим человеком", "start_slave_sex_neuro")
 		else:
-			addDisabledButton("Neuro-Link", "You need to unlock and create a Neuro-Link device in the bio-lab first..")
+			addDisabledButton("Нейролинк", "Сначала вам нужно разблокировать и создать устройство Нейро-Связи в биолаборатории...")
 	if(state == "after_sex_slave"):
-		saynn("After that sex, you grab {slave.name} and invite {slave.him} out of your cell..")
+		saynn("После секса вы хватаете {slave.name} и приглашаете {slave.him} выйти из вашей камеры...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

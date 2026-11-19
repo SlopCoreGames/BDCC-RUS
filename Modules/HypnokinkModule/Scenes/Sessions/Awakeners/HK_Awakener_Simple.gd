@@ -11,23 +11,23 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 
-		saynn("[say=vion]Alright, let's bring you back up. Take a deep breath.[/say]")
+		saynn("[say=vion]Так, давай возвращать тебя в чувство. Сделай глубокий вдох.[/say]")
 
-		saynn("You breathe in.")
+		saynn("Вы вдыхаете.")
 
-		saynn("[say=vion]Focus on my voice. Bring your thoughts back to the surface.[/say]")
+		saynn("[say=vion]Сосредоточься на моем голосе. Поднимай свои мысли на поверхность.[/say]")
 
-		saynn("Your mind shudders awake, rising from its comfortable, foggy numbness.")
+		saynn("Ваш разум содрогается от пробуждения, выныривая из уютного туманного оцепенения.")
 
-		saynn("[say=vion]With every breath you become more aware of the world that surrounds you. With every word, you become more awake. Now, slowly open your eyes...[/say]")
+		saynn("[say=vion]С каждым вдохом ты всё отчетливее осознаешь окружающий мир. С каждым моим словом ты всё больше просыпаешься. А теперь медленно открывай глаза...[/say]")
 
-		saynn("You open your your eyes and wince at the harsh light coming in from outside.")
+		saynn("Вы открываете глаза и морщитесь от резкого света, льющегося снаружи.")
 
-		saynn("[say=vion]There you go. Waking up. Fully aware.[/say]")
+		saynn("[say=vion]Вот так. Просыпаешься. В полном сознании.[/say]")
 
-		saynn("The trance broken, you take a moment to stretch your legs. Then you stand up.")
+		saynn("Транс прерван, и вы на мгновение замираете, чтобы размять ноги. Затем вы встаете.")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

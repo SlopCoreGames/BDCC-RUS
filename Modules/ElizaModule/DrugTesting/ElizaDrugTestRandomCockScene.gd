@@ -7,208 +7,208 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=pc]Why don't you try this pill, Eliza?[/say]")
+		saynn("[say=pc]Почему бы тебе не попробовать эту таблетку, Элиза?[/say]")
 
-		saynn("[say=eliza]Me? Really?[/say]")
+		saynn("[say=eliza]Меня? Серьёзно?[/say]")
 
-		saynn("She tilts her head slightly.")
+		saynn("Она слегка наклоняет голову набок.")
 
-		saynn("[say=eliza]You think I'd look good with a cock, huh~?[/say]")
+		saynn("[say=eliza]Думаешь, мне пойдет член, да~?[/say]")
 
-		saynn("You shrug and try to hide your cunning smile, looking away.")
+		saynn("Ты пожимаешь плечами, пытаясь скрыть хитрую ухмылку и отводя взгляд.")
 
-		saynn("[say=eliza]Yeah, I can see it in your eyes! But what if I get a bad one?[/say]")
+		saynn("[say=eliza]Да, я прямо вижу это в твоих глазах! Но что, если мне попадется плохой?[/say]")
 
-		saynn("[say=pc]Which one is that?[/say]")
+		saynn("[say=pc]Это еще какой?[/say]")
 
-		saynn("She hums and scritches her chin.")
+		saynn("Она что-то напевает под нос и чешет подбородок.")
 
-		saynn("[say=eliza]Well.. They're all good to be fair.[/say]")
+		saynn("[say=eliza]Ну... честно говоря, они все хороши.[/say]")
 
-		saynn("[say=pc]One more reason to try it, see what you get. Worst case, just get rid of it?[/say]")
+		saynn("[say=pc]Это еще один повод попробовать, чтобы увидеть, что тебе достанется. В худшем случае — просто избавишься от него?[/say]")
 
-		saynn("The feline stares at the pill in her paw.")
+		saynn("Кошка пристально смотрит на таблетку в своей лапе.")
 
-		saynn("[say=eliza]You don't realize.. I have the worst luck in the world..[/say]")
+		saynn("[say=eliza]Ты даже не представляешь... мне просто катастрофически не везет..[/say]")
 
-		saynn("[say=pc]It can't be that bad.[/say]")
+		saynn("[say=pc]Ну не может всё быть настолько плохо.[/say]")
 
-		saynn("She pouts.. but throws the pill into her mouth, swallowing it with no regret.")
+		saynn("Она дуется.. но всё же закидывает таблетку в рот, проглатывая её без малейших сожалений.")
 
-		saynn("The moment the drug hits Eliza's bloodstream, her eyes flutter as deep, pulsing heat begins to spread through her groin!")
+		saynn("Как только препарат попадает в кровь Элизы, её веки начинают дрожать, а в паху разливается глубокий, пульсирующий жар!")
 
-		addButton("Continue", "See what happens next", "eliza_grows_cock")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_grows_cock")
 	if(state == "eliza_grows_cock"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="defeat", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Within seconds, Eliza's hips buckle under the weight of a rapidly enlarging cock under her skirt. She staggers, one hand braced against the lab equipment for support..")
+		saynn("Считанные секунды — и бедра Элизы подгибаются под тяжестью стремительно раздувающегося члена под юбкой. Она пошатывается, упираясь одной рукой в лабораторное оборудование, чтобы удержаться..")
 
-		saynn("[say=eliza]Ah.. it's not slowing down![/say]")
+		saynn("[say=eliza]Ах.. он не замедляется![/say]")
 
-		saynn("The outline of a shaft gets bigger and bigger on her skirt.. before her new giant horsecock suddenly rips it at the seams, together with the panties!")
+		saynn("Очертания ствола под юбкой становятся всё больше и больше.. пока её новый гигантский лошачий член внезапно не разрывает ткань по швам вместе с трусиками!")
 
-		saynn("[say=eliza]AH! My skirt![/say]")
+		saynn("[say=eliza]АХ! Моя юбка![/say]")
 
-		saynn("The recoil from that giant, thick shaft getting set free makes Eliza collapse onto the floor.")
+		saynn("Отдача от высвободившегося гигантского толстого ствола заставляет Элизу рухнуть на пол.")
 
-		saynn("You rush to help her.. but careful not to touch her new member.")
+		saynn("Ты бросаешься ей на помощь.. но стараешься не задеть её новый агрегат.")
 
-		saynn("[say=pc]Are you okay, Eliza?[/say]")
+		saynn("[say=pc]Ты в порядке, Элиза?[/say]")
 
-		saynn("Her massive shaft throbs in time with her racing heart, veins pulsing and bulging while the fat, flat tip drips with ropes of clear precum.")
+		saynn("Её массивный член пульсирует в такт бешеному сердцебиению; вены вздулись и перекатываются под кожей, а жирная плоская головка источает тягучие струйки прозрачной смазки.")
 
-		saynn("[say=eliza]Just about.. ohh-..[/say]")
+		saynn("[say=eliza]Почти... охх...[/say]")
 
-		saynn("She is panting, looking at her cock.")
+		saynn("Она тяжело дышит, не сводя глаз со своего члена.")
 
-		saynn("[say=eliza]Yeah.. just my luck..[/say]")
+		saynn("[say=eliza]Да уж... ну вот и повезло...[/say]")
 
-		saynn("She tries to lift it, somehow making it swell even more.")
+		saynn("Она пытается приподнять его, отчего он каким-то образом раздувается ещё сильнее.")
 
-		saynn("[say=eliza]It's so big.. my balls, they're overflowing.. I feel lightheaded.. funny feeling, haha..[/say]")
+		saynn("[say=eliza]Он такой огромный... мои яйца просто переполнены... голова кружится... странное чувство, ха-ха...[/say]")
 
-		saynn("Probably because of how much blood this thing requires to stay hard.")
+		saynn("Вероятно, из-за того, сколько крови требуется этой дуре, чтобы оставаться твердой.")
 
-		saynn("You help her to get to a stool, her thighs quivering under the impossible load.")
+		saynn("Ты помогаешь ей дойти до табурета; её бёдра дрожат под неимоверной тяжестью.")
 
-		saynn("[say=pc]You need a blue pill?[/say]")
+		saynn("[say=pc]Тебе нужна синяя таблетка?[/say]")
 
-		saynn("[say=eliza]I.. need to be milked.. There is too much cum in these..[/say]")
+		saynn("[say=eliza]Мне... нужно сцедить всё это.. Внутри слишком много спермы..[/say]")
 
-		saynn("She looks around.")
+		saynn("Она оглядывается по сторонам.")
 
-		saynn("[say=eliza]There is a penis pump here somewhere.. I think.. I feel kinda high~.[/say]")
+		saynn("[say=eliza]Где-то здесь должен быть пенис-памп.. Кажется.. Голова так кружится от кайфа~.[/say]")
 
-		saynn("You notice one.. attached to the belt that got snapped off when the skirt got torn. You hand it to the feline.")
+		saynn("Вы замечаете его.. он прикреплен к ремню, который оторвался, когда юбка порвалась. Вы протягиваете его кошке.")
 
-		saynn("She secures it around the base of her cock.. but the device cracks and shatters into pieces the instant it meets the relentless pressure coming from her throbbing cock!")
+		saynn("Она закрепляет его у основания своего члена.. но устройство трескается и разлетается вдребезги в тот самый миг, когда сталкивается с неумолимым напором её пульсирующего члена!")
 
-		saynn("[say=eliza]Fuck! Too tight.[/say]")
+		saynn("[say=eliza]Блядь! Слишком туго.[/say]")
 
-		saynn("[say=pc]What now?[/say]")
+		saynn("[say=pc]И что теперь?[/say]")
 
-		saynn("Eliza blinks.. while looking at you.. silently.")
+		saynn("Элиза моргает.. молча глядя на вас.")
 
-		saynn("[say=pc]I'm gonna die if you shove it inside me, no way.[/say]")
+		saynn("[say=pc]Если ты засунешь его в меня, я точно сдохну, ни за что.[/say]")
 
-		saynn("[say=eliza]Worth a shot. I guess we can try the advanced table, that one has an industrial pump installed![/say]")
+		saynn("[say=eliza]Стоит попробовать. Думаю, мы можем опробовать продвинутый стол, на том установлен промышленный насос![/say]")
 
-		saynn("Whatever, anything will do by this point.")
+		saynn("Да какая разница, на данном этапе сойдет что угодно.")
 
-		addButton("Table", "Bring her into the milking room", "eliza_in_milking_room")
+		addButton("Стол", "Привести её в комнату для дойки", "eliza_in_milking_room")
 	if(state == "eliza_in_milking_room"):
 		playAnimation(StageScene.BDSMMachineFuck, "sex", {pc="eliza", bodyState={naked=true,hard=true,chains=[["hose", "penisPump", "scene", "milkIntake"]]}})
 		aimCameraAndSetLocName("")
-		saynn("Trying to make her stand with that giant cock seems like an impossible task, Eliza is just not strong enough. So you just roll her stool to the secluded room with the right equipment. You catch a few concerned glances from the nurses while pushing the stool through the corridors.. but Eliza assures them that everything is okay.")
+		saynn("Попытка заставить её стоять с таким гигантским членом кажется невыполнимой задачей — Элизе просто не хватает сил. Поэтому ты просто катишь её табурет в уединенную комнату со всем необходимым оборудованием. Проталкивая табурет по коридорам, ты ловишь на себе обеспокоенные взгляды медсестер... но Элиза уверяет их, что всё в порядке.")
 
-		saynn("You find the room that Eliza wanted.")
+		saynn("Ты находишь комнату, которую хотела Элиза.")
 
-		saynn("[say=eliza]The computer![/say]")
+		saynn("[say=eliza]Компьютер![/say]")
 
-		saynn("You turn it on.. and follow the menus. Everything seems to be self-explanatory. When it comes time to choose who the table should operate on.. you choose Eliza.")
+		saynn("Ты включаешь его... и переходишь по меню. Всё кажется предельно понятным. Когда приходит время выбрать, над кем должен провести операцию стол... ты выбираешь Элизу.")
 
-		saynn("Almost instantly, many mechanicals arms darted towards the feline, grabbing her and lifting her off of the chair and bringing her onto the table, making sure she is nice and secure.")
+		saynn("Почти мгновенно множество механических манипуляторов устремились к кошкодевочке, подхватывая её, поднимая с кресла и перенося на стол, надежно фиксируя её тело.")
 
-		saynn("Her cock is still hanging free between her legs.. until another manipulator aligns a pump with it.. and slides it onto the shaft.")
+		saynn("Её член всё ещё свободно болтается между ног... пока другой манипулятор не подводит к нему насос... и не насаживает его на ствол.")
 
-		saynn("[say=eliza]Mmhh~..[/say]")
+		saynn("[say=eliza]Мммх~..[/say]")
 
-		saynn("[say=pc]Why not just swallow that pill that undoes everything?[/say]")
+		saynn("[say=pc]Почему бы просто не проглотить ту таблетку, которая всё отменяет?[/say]")
 
-		saynn("[say=eliza]And miss the opportunity to milk this giant load?![/say]")
+		saynn("[say=eliza]И упустить возможность подоить этот гигантский заряд?![/say]")
 
-		saynn("Everything makes sense now.")
+		saynn("Теперь всё стало на свои места.")
 
-		saynn("You let the computer commence the milking.")
+		saynn("Ты позволил компьютеру начать дойку.")
 
-		saynn("The pump seals itself onto her cock with a hiss of suction. Instantly, the two pleasure rings embedded in it spring to action, sliding along the veiny surface back and forth, stroking it.")
+		saynn("Насос с шипением присасывается к её члену. Мгновенно два вживленных в него кольца для удовольствия приходят в действие, скользя взад-вперед по вздутым венам и лаская его.")
 
-		saynn("[say=eliza]Mhh.. ah..[/say]")
+		saynn("[say=eliza]Ммм.. ах..[/say]")
 
-		saynn("That wasn't everything though. Below Eliza, there was action happening too. The advanced table brings out one of its tools with a shiny dildo-like attachment. Eliza's body shudders as it suddenly starts prodding at one of her holes.")
+		saynn("Но это было еще не всё. Под Элизой тоже началось движение. Продвинутый стол выдвигает один из своих инструментов с блестящим насадкой, похожей на дилдо. Тело Элизы вздрагивает, когда прибор внезапно начинает тыкаться в одно из её отверстий.")
 
-		saynn("[say=eliza]Hey.. Wrong hole!.. ahh.. That's the wrong hole!..[/say]")
+		saynn("[say=eliza]Эй.. Не в то отверстие!.. ахх.. Это не то отверстие!..[/say]")
 
-		saynn("The machine doesn't listen, it just keeps prodding Eliza's ass.. until her puckered anal star stretches enough to let the dildo inside!")
+		saynn("Машина не слушает, она продолжает ковырять задницу Элизы... пока её сжатый анус не растягивается достаточно, чтобы пропустить дилдо внутрь!")
 
-		saynn("[say=eliza]Ah!..[/say]")
+		saynn("[say=eliza]Ах!..[/say]")
 
-		saynn("The dildo starts fucking her, sliding in and out at a steady pace, stimulating Eliza's prostate and making her squirm hard, her new cock throbbing and shooting little rivers of precum. The transparent fluid gushes freely, flooding the collection chamber.")
+		saynn("Дилдо начинает трахать её, мерно входя и выходя, стимулируя простату Элизы и заставляя её сильно извиваться; её новый член пульсирует, выбрасывая струйки предэякулята. Прозрачная жидкость обильно течет, заполняя сборную камеру.")
 
-		saynn("[say=pc]I guess it was the right hole.[/say]")
+		saynn("[say=pc]Похоже, всё-таки в то отверстие.[/say]")
 
-		saynn("[say=eliza]Nhh-h.. ahh..[/say]")
+		saynn("[say=eliza]Нхх-х.. ахх..[/say]")
 
-		saynn("Each cycle of that pump.. coupled with the dildo pounding her tight ass.. sends ripples of electric pleasure through her veins.")
+		saynn("Каждый цикл этого насоса в сочетании с тем, как дилдо вколачивается в её узкую задницу, посылает волны электрического удовольствия по её венам.")
 
-		saynn("You notice a funny button on the screen.. Double trouble..")
+		saynn("Ты замечаешь странную кнопку на экране... Двойная порция проблем...")
 
-		addButton("Double trouble", "Press it", "double_trouble")
+		addButton("Двойная порция проблем", "Нажми её", "double_trouble")
 	if(state == "double_trouble"):
 		playAnimation(StageScene.BDSMMachineFuck, "sexdouble", {pc="eliza", bodyState={naked=true,hard=true,chains=[["hose", "penisPump", "scene", "milkIntake"]]}})
-		saynn("As you press that button, the table brings out its second dildo, aligning it with Eliza's neglected hole.. and ramming it inside!")
+		saynn("Как только ты нажимаешь на кнопку, стол выдвигает второй дилдо, нацеливая его на забытое Элизой отверстие... и с размаху вбивает внутрь!")
 
-		saynn("[say=eliza]Ah! Yes![/say]")
+		saynn("[say=eliza]Ах! Да![/say]")
 
-		saynn("The two silicone cocks begin to fuck her in unison, one pressing insistently into her slick, dripping pussy while the other one is pounding her tight anus, stimulating her new pleasure button.")
+		saynn("Два силиконовых члена начинают трахать её в унисон: один настойчиво втискивается в её влажную, сочащуюся киску, а другой долбит в тугой анус, стимулируя её новую «кнопку удовольствия».")
 
-		saynn("Simultaneously, the heavy-duty vacuum pump keeps sucking away at her giant cock, stimulating it with cycles of negative pressure while the pleasure rings run up and down along the hard, pulsing shaft.")
+		saynn("Одновременно с этим мощный вакуумный насос продолжает сосать её гигантский член, стимулируя его циклами отрицательного давления, пока эротические кольца скользят вверх и вниз по твердому, пульсирующему стволу.")
 
-		saynn("Eliza throws her head back and moans into the air.")
+		saynn("Элиза запрокидывает голову и стонет в пустоту.")
 
-		saynn("[say=eliza]F-fuck!.. That feels so good..[/say]")
+		saynn("[say=eliza]Блядь!.. Как же хорошо..[/say]")
 
-		saynn("Her massive balls are tensing up, the tip of her member begins flaring up.")
+		saynn("Её массивные яйца напрягаются, а головка члена начинает раздуваться.")
 
-		addButton("Continue", "See what happens next", "eliza_cums")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_cums")
 	if(state == "eliza_cums"):
 		playAnimation(StageScene.BDSMMachineFuck, "fastdouble", {pc="eliza", bodyState={naked=true,hard=true,chains=[["hose", "penisPump", "scene", "milkIntake"]]}})
-		saynn("Inside Eliza, the dildoes quicken their tempo. Her pussy clings and squeezes hard while her anus opens wide, welcoming the brutal thrusts. It all drives her closer and closer.")
+		saynn("Внутри Элизы дилдо ускоряют темп. Её киска плотно обхватывает их и сжимается, а анус широко раскрывается, принимая жестокие толчки. Всё это подгоняет её всё ближе и ближе к пределу.")
 
-		saynn("The pump's rings become a little too tight for her girth.. but they keep stroking her, going over her twitching shaft in precise motions.")
+		saynn("Кольца помпы становятся слишком тесными для её обхвата... но они продолжают ласкать её, с точной точностью проходя по её подергивающемуся стволу.")
 
-		saynn("And soon, it becomes too much. Eliza's cock starts throbbing, the head ballooning as veins spike with pressure. Moments later, what could only be described as a white geyser erupts, cum rocketing into the vacuum chamber with such force it leaves a crack in the glass.")
+		saynn("И вскоре становится слишком много. Член Элизы начинает пульсировать, головка раздувается, а вены вздуваются от давления. Мгновение спустя происходит не что иное, как извержение белого гейзера: сперма вылетает в вакуумную камеру с такой силой, что на стекле остается трещина.")
 
-		saynn("[say=eliza]Cummmming~~!..[/say]")
+		saynn("[say=eliza]Кончаааааю~~!..[/say]")
 
-		saynn("Her ballsack is tensing up, again and again, as the pleasure rings milk her orgasm for all of its seed, draining her orbs. Eliza's body arches in a convulsive way, muscles spasming and relaxing uncontrollably. Her pussy and anus contract in rapid succession, the tools extend her peak by pounding her hungry holes!")
+		saynn("Её мошонка напрягается снова и снова, пока ласкающие кольца выжимают из её оргазма всё до последней капли, опустошая яйца. Тело Элизы выгибается в конвульсиях, мышцы бесконтрольно спазмируют и расслабляются. Её киска и анус ритмично сокращаются, а инструменты продлевают её пик, вколачиваясь в её жаждущие отверстия!")
 
-		addButton("Turn off", "Enough fun for Eliza", "turn_off_machine")
+		addButton("Выключить", "С Элизой хватит веселья", "turn_off_machine")
 	if(state == "turn_off_machine"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {pc="eliza", bodyState={naked=true,hard=true}})
-		saynn("You turn off the milking when you see that Eliza's balls are fully drained.")
+		saynn("Вы выключаете доильный аппарат, когда видите, что яйца Элизы полностью опустошены.")
 
-		saynn("When the final waves of her orgasm finish rocking through her, Eliza lies spent, her horsecock still leaking a bit.. the erection losing its power by the second. The dildoes retract with a soft hiss, leaving her holes empty.")
+		saynn("Когда последние волны оргазма утихают, Элиза лежит совершенно обессиленная, а её лошачий член всё ещё слегка подтекает... эрекция тает с каждой секундой. Дильдо с мягким шипением втягиваются, оставляя её отверстия пустыми.")
 
-		saynn("[say=eliza]Now that.. felt good..[/say]")
+		saynn("[say=eliza]Ох... это было... охрененно...[/say]")
 
-		saynn("She is panting heavily, lazy moans still escaping her lips.")
+		saynn("Она тяжело дышит, а с губ всё ещё срываются ленивые стоны.")
 
-		saynn("Might as well help her get down to her feet.")
+		saynn("Стоит помочь ей подняться на ноги.")
 
-		addButton("Continue", "See what happens next", "eliza_undo_tf")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_undo_tf")
 	if(state == "eliza_undo_tf"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcBodyState={naked=true}})
-		saynn("You press a button that makes the table carefully settle Eliza down. Her body is still quite weak so you support her.")
+		saynn("Вы нажимаете кнопку, и стол осторожно опускает Элизу. Её тело всё ещё довольно слабое, поэтому вы поддерживаете её.")
 
-		saynn("[say=pc]Looked like you had a lot of fun. Gonna keep the new toy?[/say]")
+		saynn("[say=pc]Похоже, ты оторвалась по полной. Оставишь себе новую игрушку?[/say]")
 
-		saynn("[say=eliza]And lose consciousness each time I get hard? That will happen pretty often, you know![/say]")
+		saynn("[say=eliza]А что, если я буду терять сознание каждый раз, когда у меня встаёт? А это будет случаться довольно часто, знаешь ли![/say]")
 
-		saynn("[say=pc]Fair enough.[/say]")
+		saynn("[say=pc]Справедливо.[/say]")
 
-		saynn("Eliza pops a blue pill into her mouth.. and watches as her equine sheath gets transformed away, morphing into a clean female crotch.")
+		saynn("Элиза закидывает в рот синюю таблетку... и наблюдает, как её лошадиная препуция исчезает, трансформируясь в чистую женскую промежность.")
 
-		saynn("[say=eliza]Maybe I could whip one out occasionally.[/say]")
+		saynn("[say=eliza]Может, буду иногда доставать его напоказ.[/say]")
 
-		saynn("You chuckle.")
+		saynn("Вы посмеиваетесь.")
 
-		saynn("[say=eliza]But for now I'm gonna go try to sew my skirt back together.. what's left of it anyway.[/say]")
+		saynn("[say=eliza]Но пока что я пойду попробую зашить свою юбку... ну, то, что от неё осталось.[/say]")
 
-		saynn("[say=pc]You go do that.[/say]")
+		saynn("[say=pc]Иди, занимайся этим.[/say]")
 
-		saynn("Eliza nods and heads back to the lab.. naked.")
+		saynn("Элиза кивает и направляется обратно в лабораторию... голышом.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

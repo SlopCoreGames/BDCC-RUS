@@ -7,202 +7,202 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=pc]Why not try this one? You like milking, don't you?[/say]")
+		saynn("[say=pc]Почему бы не попробовать вот этот вариант? Тебе ведь нравится доить, правда?[/say]")
 
-		saynn("Eliza raises a brow.")
+		saynn("Элиза приподнимает бровь.")
 
-		saynn("[say=eliza]I'm usually the one doing it.[/say]")
+		saynn("[say=eliza]Обычно это делаю я.[/say]")
 
-		saynn("[say=pc]So? Do you hate it?[/say]")
+		saynn("[say=pc]И что? Тебе не нравится?[/say]")
 
-		saynn("[say=eliza]Well, no, obviously.. lactation is hot..[/say]")
+		saynn("[say=eliza]Ну, нет, очевидно... лактация — это горячо...[/say]")
 
-		saynn("She looks down at her chest.")
+		saynn("Она опускает взгляд на свою грудь.")
 
-		saynn("[say=eliza]I think my breasts are okay as they are.[/say]")
+		saynn("[say=eliza]Думаю, с моими сиськами и так всё в порядке.[/say]")
 
-		saynn("[say=pc]But they could be so much bigger.[/say]")
+		saynn("[say=pc]Но они могли бы быть куда больше.[/say]")
 
-		saynn("[say=eliza]That's a lot of extra weight. I need to stay nimble, I'm a cat![/say]")
+		saynn("[say=eliza]Это же лишний вес. Мне нужно оставаться ловкой, я же кошка![/say]")
 
-		saynn("You put on the most pleading eyes that you can, your lips shivering like you're about to start crying in front of her.")
+		saynn("Ты делаешь самый умоляющий вид, какой только можешь, а твои губы дрожат, будто ты вот-вот расплачешься прямо перед ней.")
 
-		saynn("Eliza sees it.. and sighs.")
+		saynn("Элиза замечает это... и вздыхает.")
 
-		saynn("[say=eliza]Doesn't hurt to try it. I already forgot, doesn't it come with other side-effects?[/say]")
+		saynn("[say=eliza]Попробовать не помешает. Я уже и забыла, разве у него нет других побочных эффектов?[/say]")
 
-		saynn("[say=pc]I don't think so-o-o-o?[/say]")
+		saynn("[say=pc]Вроде бы нет... или всё-таки да?[/say]")
 
-		saynn("You look away, innocently.")
+		saynn("Ты невинно отводишь взгляд.")
 
-		saynn("Eliza puts the fresh pill onto her tongue.. and lets it dissolve.")
+		saynn("Элиза кладет свежую таблетку на язык... и дает ей раствориться.")
 
-		saynn("Doesn't take long for it to start taking effect.")
+		saynn("Вскоре начинает действовать.")
 
-		saynn("A warm wave rushes through Eliza's body. Her spine arches as her blue top suddenly becomes a little too tight for her, straining at the seams.")
+		saynn("Теплая волна проносится по телу Элизы. Ее спина выгибается, а синий топ внезапно становится ей слишком тесен, треща по швам.")
 
-		saynn("[say=eliza]Oops..[/say]")
+		saynn("[say=eliza]Ой...[/say]")
 
-		addButton("Continue", "See what happens next", "eliza_tfs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_tfs")
 	if(state == "eliza_tfs"):
 		addCharacter("eliza", ["naked"])
 		playAnimation(StageScene.TFLook, "breasts", {pc="eliza", bodyState={exposedChest=true, hard=true}})
-		saynn("Her breasts swell beneath the fabric, getting bigger and bigger until the top gets ripped to shreds!")
+		saynn("Ее грудь раздувается под тканью, становясь всё больше и больше, пока топ не разрывается в клочья!")
 
-		saynn("[say=eliza]I didn't think it would happen so fast![/say]")
+		saynn("[say=eliza]Не думала, что всё произойдет так быстро![/say]")
 
-		saynn("Her bra is still holding.. but not for long. With a loud PLING, one of the clasps fails and flies off, setting her melons free.")
+		saynn("Бюстгальтер всё еще держится... но ненадолго. С громким «ДЗЫНЬ» одна из застежек не выдерживает и отлетает, освобождая ее сочные груди.")
 
-		saynn("[say=eliza]AH! My top![/say]")
+		saynn("[say=eliza]Ах! Мой топ![/say]")
 
-		saynn("While her tits are blossoming outward, the rest of her body changes to accommodate for that new weight, becoming thicker and curvier, her ass sticking out more, thighs getting wider.")
+		saynn("Пока её сиськи раздуваются вовне, остальное тело меняется, подстраиваясь под новый вес: она становится шире и фигуристее, задница выпячивается сильнее, а бёдра — массивнее.")
 
-		saynn("Eliza's breath hitches as she struggles to stand still, her new chest swaying and bouncing, nips growing stiff and milky. Little rivers of her milk already begin trailing down her new curves, her breasts overflowing with that stuff.")
+		saynn("У Элизы перехватывает дыхание, пока она пытается стоять смирно; её новая грудь колышется и подпрыгивает, соски твердеют и наливаются молоком. Тонкие струйки молока уже начинают стекать по её новым изгибам — грудь буквально переполняется этой жижей.")
 
-		saynn("[say=eliza]Mmhh..[/say]")
+		saynn("[say=eliza]Мммхх..[/say]")
 
-		saynn("She cups her own chest, feeling its weight.")
+		saynn("Она обхватывает свою грудь ладонями, ощущая её тяжесть.")
 
-		saynn("[say=eliza]So heavy.. hah..[/say]")
+		saynn("[say=eliza]Такая тяжёлая.. хах..[/say]")
 
-		saynn("Her paws squeeze the fun bags slightly, making them squirt milk.")
+		saynn("Её ладошки слегка сжимают буфера, заставляя их брызгать молоком.")
 
-		saynn("[say=eliza]Ah.. Feels kinda good.[/say]")
+		saynn("[say=eliza]Ах.. А это даже приятно.[/say]")
 
-		saynn("She bites her lip.")
+		saynn("Она прикусывает губу.")
 
-		saynn("[say=pc]Need the blue pill?[/say]")
+		saynn("[say=pc]Тебе нужна синяя таблетка?[/say]")
 
-		saynn("Her ears perk towards you.")
+		saynn("Её ушки навостряются в твою сторону.")
 
-		saynn("[say=eliza]Oh.. well.. uh.. what does the blue one do again.. mmh.. doesn't matter.. maybe we can..[/say]")
+		saynn("[say=eliza]Ох.. ну.. э-э.. а что делает синяя?.. ммм.. неважно.. может, мы сможем..[/say]")
 
-		saynn("She sways her hips slightly, presenting her enormous chest.")
+		saynn("Она слегка покачивает бедрами, выставляя напоказ свою огромную грудь.")
 
-		saynn("[say=eliza]No.. What was I thinking about.. before.. Something about my blue top.. I can't think straight for some reason.[/say]")
+		saynn("[say=eliza]Нет.. О чем я думала.. до этого.. Кажется, о своей синей кофточке.. Почему-то мысли путаются.[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("Her paws keep cupping and kneading her chest.")
+		saynn("Ее лапки продолжают сжимать и разминать грудь.")
 
-		saynn("[say=eliza]Because of these.. huge.. milky.. tits.. So heavy.. nips are itching..[/say]")
+		saynn("[say=eliza]Из-за этих.. огромных.. молочных.. сисек.. Они такие тяжелые.. соски прямо чешутся..[/say]")
 
-		saynn("She looks at you with needy eyes, cheeks blushing.")
+		saynn("Она смотрит на тебя жадными глазами, а ее щеки заливает румянец.")
 
-		saynn("[say=eliza]Could you help drain the milk out of them maybe?.. Please.. mmhh..[/say]")
+		saynn("[say=eliza]Может.. может, ты поможешь мне сцедить молоко?.. Пожалуйста.. мммм..[/say]")
 
-		saynn("Poor kitty, desperate for some milking now.")
+		saynn("Бедная кошечка, совсем изголодалась по дойке.")
 
-		saynn("[say=pc]It looks like it will take hours.[/say]")
+		saynn("[say=pc]Похоже, это займет несколько часов.[/say]")
 
-		saynn("[say=eliza]Please![/say]")
+		saynn("[say=eliza]Ну пожалуйста![/say]")
 
-		saynn("Right. You think about it for a second.")
+		saynn("Так. Ты задумываешься об этом на секунду.")
 
-		saynn("[say=pc]I guess we could use the pumps. Let's go.[/say]")
+		saynn("[say=pc]Думаю, можно воспользоваться насосами. Пошли![/say]")
 
-		saynn("You use her amulet as a make-shift leash, pulling her out of the lab and towards the milking room. Nurses look at Eliza's tits with big open eyes.")
+		saynn("Вы используете её амулет как импровизированный поводок, вытягивая её из лаборатории в сторону доильного зала. Медсестры во все глаза пялятся на сиськи Элизы.")
 
-		saynn("[say=eliza]Hello.. d-don't mind us..[/say]")
+		saynn("[say=eliza]Здравствуйте... н-не обращайте на нас внимания...[/say]")
 
-		addButton("Lock her in", "Prepare Eliza for milking", "lock_eliza_in")
+		addButton("Запереть её", "Подготовить Элизу к дойке", "lock_eliza_in")
 	if(state == "lock_eliza_in"):
 		playAnimation(StageScene.MilkingStallSolo, "milking", {pc="eliza", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milktank"]]}})
 		aimCameraAndSetLocName("med_milkingroom")
-		saynn("You guide Eliza towards the stalls, entering one that is equipped with the industrial breast pumps setup.")
+		saynn("Вы ведете Элизу к стойлам и заходите в то, что оборудовано установкой промышленных молочных насосов.")
 
-		saynn("With gentle firmness, you help Eliza to bend forward, before locking her wrists to a long pipe.")
+		saynn("Мягко, но уверенно вы помогаете Элизе наклониться вперед, после чего пристегиваете её запястья к длинной трубе.")
 
-		saynn("In this position, her massive breasts are hanging below her chest, like udders.")
+		saynn("В таком положении её массивные груди свисают ниже грудной клетки, напоминая вымя.")
 
-		saynn("[say=eliza]Milk me.. please..[/say]")
+		saynn("[say=eliza]Дои меня... пожалуйста...[/say]")
 
-		saynn("[say=pc]One moment.[/say]")
+		saynn("[say=pc]Одну минуту.[/say]")
 
-		saynn("After making sure she is properly secured, you grab the two suction cups that are connected to the big milk tank with flexible tubes. You secure those around Eliza's areolas with a satisfying hiss, some of the air getting sucked out already.")
+		saynn("Убедившись, что она надежно закреплена, вы берете две присоски, соединенные гибкими трубками с большим молочным баком. Вы плотно прижимаете их к ареолам Элизы с характерным шипением, и лишний воздух тут же начинает откачиваться.")
 
-		saynn("You flick a switch.. and the pumps spring to life with a low rumble, alternating between strong draws and then slow releases.")
+		saynn("Вы щелкаете переключателем... и насосы оживают с низким гулом, чередуя мощные всасывания с медленным отпусканием.")
 
-		saynn("[say=eliza]Ah~..[/say]")
+		saynn("[say=eliza]Ах~..[/say]")
 
-		saynn("Milk jets through the clear tubing as Eliza's breasts begin to produce.. produce a lot. Each suction sends jolts of electric pleasure across her nerves. Her large, sensitive nips throb inside the cups, spawning lots of little beads of milk.")
+		saynn("Молоко струится по прозрачным трубкам, когда грудь Элизы начинает вырабатывать... вырабатывать очень много. Каждое всасывание посылает разряды электрического удовольствия по её нервам. Её крупные, чувствительные соски пульсируют внутри чаш, выделяя множество мелких капель молока.")
 
-		addButton("Continue", "See what happens next", "milk_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "milk_fast")
 	if(state == "milk_fast"):
 		playAnimation(StageScene.MilkingStallSolo, "fast", {pc="eliza", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milktank"]]}})
-		saynn("Eliza's breath comes in ragged pants, her spine arches involuntarily, her legs shivering. The pumps keep alternating between fierce suctions and gentle releases, keeping the flow nice and steady, milk spattering against the walls of the pump cups before streaming down into the tubes.")
+		saynn("Дыхание Элизы становится рваным, спина непроизвольно выгибается, а ноги дрожат. Насосы продолжают чередовать яростное всасывание и мягкое отпускание, поддерживая ровный поток; молоко разбрызгивается о стенки чаш, прежде чем устремиться вниз по трубкам.")
 
-		saynn("[say=eliza]Ah.. ah.. feels so good.. more.. mo-..-re..[/say]")
+		saynn("[say=eliza]Ах... ах... так хорошо... еще... е-е-еще...[/say]")
 
-		saynn("Her moans grow louder and hotter. Every breath is a whisper of need. You're glad that you don't have to do it yourself, those pumps are working hard, each suction is making her tits bounce and jiggle.")
+		saynn("Её стоны становятся громче и жарче. Каждый вдох — это шепот нужды. Вы рады, что вам не приходится делать это самому: насосы работают на полную катушку, и от каждого всасывания её титьки подпрыгивают и колышутся.")
 
-		saynn("Standing behind her.. is quite a view. Her tail is pulled to the side, giving you access to her holes, just as needy as the rest of her body, her slick juices dripping down her inner thighs.")
+		saynn("Стоять позади неё... это чертовски приятный вид. Её хвост оттянут в сторону, открывая доступ к её дырочкам, которые так же жаждут ласки, как и всё остальное тело, а сочная смазка стекает по внутренней стороне бёдер.")
 
-		saynn("[say=eliza]I'm g-gonna cum.. ah.. f-fuck.. I'm g-gonna..[/say]")
+		saynn("[say=eliza]Я сейчас с-с кончу... ах... бля... я сейчас...[/say]")
 
-		saynn("Eliza's legs shake, her fists clenching.. Then, without warning, the pumps increase onslaught, tugging on the girl's nips with extra pressure. It becomes too much..")
+		saynn("Ноги Элизы трясутся, кулаки сжимаются... И вдруг, без предупреждения, насосы усиливают натиск, с дополнительным давлением втягивая соски девушки. Накал становится невыносимым...")
 
-		addButton("Continue", "See how she cums", "eliza_cums")
+		addButton("Продолжить", "Смотри, как она кончает", "eliza_cums")
 	if(state == "eliza_cums"):
 		playAnimation(StageScene.MilkingStallSolo, "cum", {pc="eliza", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milktank"]]}})
-		saynn("[say=eliza]Moo-o-o~..[/say]")
+		saynn("[say=eliza]Му-у-у~...[/say]")
 
-		saynn("A cute animal noise escapes from the kitty as a tidal wave of pleasure begins flowing through her. Her body squirms hard as her nipples squirt high-pressure jets of milk directly into the cups, almost overwhelming the system.")
+		saynn("Из пасти кошечки вырывается милый животный звук, когда по её телу начинает разливаться прилив наслаждения. Она сильно извивается, а её соски выстреливают мощными струями молока прямо в стаканы, едва не перегружая систему.")
 
-		saynn("Little geysers of the white, creamy fluid escape from her swollen nips as the pump motors whine, sucking down every drop.")
+		saynn("Маленькие гейзеры белой кремовой жидкости брызжут из её набухших сосков, пока моторы насосов гудят, жадно высасывая каждую каплю.")
 
-		saynn("[say=eliza]Moo.. moo-o~..[/say]")
+		saynn("[say=eliza]Муу.. муу-у~..[/say]")
 
-		saynn("Eliza's noises echo around the stall while her legs buckle, hips trembling, the aftershocks rippling through her. The pumps keep on pumping, hungrily drawing out the rest of the milk from her udders with mechanical pressure.")
+		saynn("Стоны Элизы эхом разносятся по кабинке; её ноги подкашиваются, бедра дрожат, а по телу проходят волны послевкусия. Насосы продолжают работать, механическим давлением жадно вытягивая остатки молока из её вымени.")
 
-		addButton("Continue", "See what happens next", "after_milking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_milking")
 	if(state == "after_milking"):
 		playAnimation(StageScene.MilkingStallSolo, "milking", {pc="eliza", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milktank"]]}})
-		saynn("When Eliza returns from her peak, she is left panting, her udders now slightly less voluminous.. but still looking heavy.")
+		saynn("Когда Элиза приходит в себя после пика, она тяжело дышит; её вымя стало чуть менее объемным, но всё еще выглядит тяжелым.")
 
-		saynn("You turn off the pumps, letting her rest.")
+		saynn("Вы выключаете насосы, давая ей отдохнуть.")
 
-		saynn("[say=eliza]..mhh.. hh-hhah.. ah..[/say]")
+		saynn("[say=eliza]..ммм.. хх-ххаа.. ах..[/say]")
 
-		saynn("[say=pc]Felt good, huh?[/say]")
+		saynn("[say=pc]Приятно было, да?[/say]")
 
-		saynn("[say=eliza]Ye-ess..[/say]")
+		saynn("[say=eliza]Даа..[/say]")
 
-		saynn("[say=pc]Good cow.[/say]")
+		saynn("[say=pc]Хорошая коровка.[/say]")
 
-		saynn("[say=eliza]Moo~..[/say]")
+		saynn("[say=eliza]Муу~..[/say]")
 
-		saynn("You let her recover her breath before proceeding to remove the pumps and unlock the restraints.")
+		saynn("Вы даете ей перевести дух, прежде чем приступить к снятию помп и разблокировке фиксаторов.")
 
-		addButton("Lab", "Get back to the lab with her", "back_to_the_lab")
+		addButton("Лаборатория", "Вернуться в лабораторию вместе с ней", "back_to_the_lab")
 	if(state == "back_to_the_lab"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcBodyState={exposedChest=true}})
-		saynn("You bring Eliza back to the lab.")
+		saynn("Вы возвращаете Элизу в лабораторию.")
 
-		saynn("[say=pc]Wanna stay like this?[/say]")
+		saynn("[say=pc]Хочешь так и остаться?[/say]")
 
-		saynn("She hums while staring at her giant tits.")
+		saynn("Она довольно мычит, не отрывая взгляда от своих огромных сисек.")
 
-		saynn("[say=eliza]They're cool.. but.. they require a lot of looking after them. You know..[/say]")
+		saynn("[say=eliza]Они классные... но... за ними нужен постоянный уход. Ну, ты понимаешь...[/say]")
 
-		saynn("[say=pc]Milking.[/say]")
+		saynn("[say=pc]Дойка.[/say]")
 
-		saynn("[say=eliza]Yeah. If I wasn't a doctor, I'd probably stay a milky cow.. why not..[/say]")
+		saynn("[say=eliza]Ага. Если бы я не была врачом, я бы, наверное, осталась молочной коровкой... почему бы и нет...[/say]")
 
-		saynn("She finds a blue pill and eats it.")
+		saynn("Она находит синюю таблетку и проглатывает её.")
 
-		saynn("Her ample forms begin to get less impressive, gradually losing their volume. Her udders don't sag as much anymore, reaching Eliza's normal size.")
+		saynn("Её пышные формы начинают терять свою внушительность, постепенно уменьшаясь в объёме. Вымя больше не свисает так сильно, постепенно возвращаясь к обычным размерам Элизы.")
 
-		saynn("[say=eliza]Ah.. much better.[/say]")
+		saynn("[say=eliza]Ах.. так гораздо лучше.[/say]")
 
-		saynn("Some milk still drips from the perky nips.")
+		saynn("С упругих сосков всё ещё капает молоко.")
 
-		saynn("[say=eliza]I guess I'm left lactating for a while.. Free milk for my coffee, hah.[/say]")
+		saynn("[say=eliza]Похоже, теперь у меня еще и лактация будет какое-то время... Бесплатное молоко для кофе, ха![/say]")
 
-		saynn("You nod and watch Eliza go back to her spot.")
+		saynn("Вы киваете и провожаете взглядом Элизу, возвращающуюся на своё место.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

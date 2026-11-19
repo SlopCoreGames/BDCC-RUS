@@ -14,7 +14,7 @@ func run(_triggerID, _args):
 	if(!hasLabAccess):
 		return
 	
-	addButton("Enter", "Enter the medical block", "enter")
+	addButton("Войти", "Войти в медицинский блок", "enter")
 	
 func getPriority():
 	return 0

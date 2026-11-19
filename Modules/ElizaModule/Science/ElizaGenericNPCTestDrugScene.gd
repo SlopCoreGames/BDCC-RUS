@@ -18,78 +18,78 @@ func resolveCustomCharacterName(_charID):
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
-		saynn("You notice that {npc.name}'s transformations can be scanned.. So you whip out a leash and swiftly clip it to {npc.his} collar.")
+		saynn("Вы замечаете, что трансформации {npc.name} можно сканировать... Поэтому вы выхватываете поводок и ловко застегиваете его на ошейнике {npc.his}.")
 
-		saynn("[say=pc]You and I are going to the medical.[/say]")
+		saynn("[say=pc]Ты и я идем в медпункт.[/say]")
 
-		addButton("Medical", "Go see Eliza", "bring_to_eliza")
+		addButton("Медпункт", "Пойти к Элизе", "bring_to_eliza")
 	if(state == "bring_to_eliza"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		aimCameraAndSetLocName("med_lobbymain")
-		saynn("You find doctor Quinn behind the counter of the medbay lobby.")
+		saynn("Вы находите доктора Куинн за стойкой в вестибюле медпункта.")
 
-		saynn("[say=pc]Hey, I have a test subject here. I think you can scan {npc.him}.[/say]")
+		saynn("[say=pc]Эй, у меня тут подопытный экземпляр. Думаю, вы сможете просканировать {npc.him}.[/say]")
 
-		saynn("Doctor's eyes light up. The person on your leash feels uneasy, to say the least.")
+		saynn("Глаза доктора загораются. Тот, кто на вашем поводке, чувствует себя, мягко говоря, не в своей тарелке.")
 
-		saynn("[say=eliza]Great![/say]")
+		saynn("[say=eliza]Отлично![/say]")
 
-		saynn("She presses a button and the doors to your side open, inviting you in.")
+		saynn("Она нажимает кнопку, и двери с вашей стороны открываются, приглашая вас войти.")
 
-		saynn("[say=eliza]Let's go to the lab.[/say]")
+		saynn("[say=eliza]Пойдем в лабораторию.[/say]")
 
-		addButton("Lab", "Bring the test subject there", "to_lab")
+		addButton("Лаборатория", "Привести подопытного туда", "to_lab")
 	if(state == "to_lab"):
 		playAnimation(StageScene.Duo, "stand", {pc="eliza", npc=npcID, npcBodyState={leashedBy="eliza"}})
 		aimCameraAndSetLocName("med_researchlab")
 		GM.pc.setLocation("med_researchlab")
-		saynn("You tug on the leash and bring your test subject into the research lab.")
+		saynn("Ты тянешь за поводок, завлекая подопытную в исследовательскую лабораторию.")
 
-		saynn("Eliza fetches a little hand-held scanner and begins to slowly move it over {npc.his} body.. {npc.name} squirms a bit in the process. Eventually, the feline gets enough data.")
+		saynn("Элиза берет небольшой ручной сканер и начинает медленно водить им по телу {npc.his}.. {npc.name} при этом слегка ерзает. В конце концов, кошечке удается собрать достаточно данных.")
 
-		saynn("[say=eliza]There we go! The database has been updated! We also got some science points for that, great job![/say]")
+		saynn("[say=eliza]Готово! База данных обновлена! А еще мы получили за это очки науки, отличная работа![/say]")
 
-		saynn("She puts the scanner away.. and then produces two pills.")
+		saynn("Она убирает сканер и достает две таблетки.")
 
-		saynn("[say=eliza]Now.. I have an offer for you.[/say]")
+		saynn("[say=eliza]А теперь.. у меня есть для тебя предложение.[/say]")
 
-		saynn("She looks at you, with two pills on her palms. A blue one in her left hand.. and a red one in her right..")
+		saynn("Она смотрит на тебя, держа на ладонях две таблетки. Синяя — в левой руке.. и красная — в правой..")
 
-		saynn("[say=eliza]I will give you the choice since you're my assistant~. Blue one will undo any transformations and return everything to how it was. Boring, if you ask me![/say]")
+		saynn("[say=eliza]Раз уж ты мой ассистент, я предоставлю выбор тебе~. Синяя отменит любые трансформации и вернет всё как было. Скучно, как по мне![/say]")
 
-		saynn("Boring, huh..")
+		saynn("Скучно, значит..")
 
-		saynn("[say=eliza]Or! There is also the red one.. in case you like how {npc.he} {npc.verb('look')}! It will erase the backup DNA of {npc.his} body.. making all the current changes permanent.[/say]")
+		saynn("[say=eliza]Или! Есть еще красная.. на случай, если тебе нравится, как выглядит {npc.he} {npc.verb('look')}! Она сотрет резервную ДНК тела {npc.his}.. сделав все текущие изменения постоянными.[/say]")
 
-		saynn("The choice is clear..")
+		saynn("Выбор очевиден..")
 
-		addButton("Blue", "Make them eat a blue pill that will undo all the transformations", "eat_blue")
-		addButton("Red", "Make them eat a red pill that will make all their transformations permanent", "eat_red")
+		addButton("Синяя", "Заставить их съесть синюю таблетку, которая отменит все трансформации", "eat_blue")
+		addButton("Красный", "Заставить их съесть красную таблетку, которая сделает все трансформации постоянными", "eat_red")
 	if(state == "eat_blue"):
-		saynn("You choose the blue one.")
+		saynn("Вы выбираете синюю.")
 
-		saynn("[say=eliza]Aww~.[/say]")
+		saynn("[say=eliza]О-о-о~.[/say]")
 
-		saynn("Eliza carefully feeds {npc.name} your chosen pill. And soon, {npc.his} body reverts to its normal state.")
+		saynn("Элиза осторожно дает {npc.name} выбранную вами таблетку. И вскоре тело {npc.his} возвращается в свое обычное состояние.")
 
-		saynn("[say=eliza]Well, come back when you get someone else I can scan![/say]")
+		saynn("[say=eliza]Ну, возвращайся, когда найдешь кого-нибудь еще, кого я смогу просканировать![/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "eat_red"):
-		saynn("You choose the red one.")
+		saynn("Вы выбираете красную.")
 
-		saynn("[say=eliza]Wise choice~.[/say]")
+		saynn("[say=eliza]Мудрый выбор~.[/say]")
 
-		saynn("Eliza carefully feeds {npc.name} your chosen pill. And, just as expected, nothing changes. But all of the transformations are now permanent!")
+		saynn("Элиза осторожно дает {npc.name} выбранную вами таблетку. И, как и ожидалось, ничего не меняется. Но теперь все трансформации стали постоянными!")
 
-		saynn("[say=eliza]Enjoy! Come back when you get someone else I can scan![/say]")
+		saynn("[say=eliza]Наслаждайся! Возвращайся, когда найдешь кого-нибудь еще, кого я смогу просканировать![/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

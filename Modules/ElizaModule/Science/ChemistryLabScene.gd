@@ -17,54 +17,54 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You stand inside the laboratory.")
+		saynn("Вы стоите внутри лаборатории.")
 		
-		sayn("Science points: " + str(GM.main.SCI.getSciencePoints()))
-		sayn("Unlocked transformation pills: "+str(GM.main.SCI.getUnlockedStrangePillsCount())+"/"+str(GM.main.SCI.getTotalStrangePillCount()))
-		sayn("Tested transformation pills: "+str(GM.main.SCI.getTestedStrangePillsCount())+"/"+str(GM.main.SCI.getTotalStrangePillCount()))
-		saynn("Upgrades: "+str(GM.main.SCI.getUpgradeCount())+"/"+str(GM.main.SCI.getTotalUpgradeCount()))
+		sayn("Очки науки: " + str(GM.main.SCI.getSciencePoints()))
+		sayn("Разблокированные таблетки трансформации: "+str(GM.main.SCI.getUnlockedStrangePillsCount())+"/"+str(GM.main.SCI.getTotalStrangePillCount()))
+		sayn("Протестированные таблетки трансформации: "+str(GM.main.SCI.getTestedStrangePillsCount())+"/"+str(GM.main.SCI.getTotalStrangePillCount()))
+		saynn("Улучшения: "+str(GM.main.SCI.getUpgradeCount())+"/"+str(GM.main.SCI.getTotalUpgradeCount()))
 		
 		sayTanksVolume()
 		
 		# DEBUG INFO
 		if(false):
-			sayn("MAX SCIENCE FOR UNLOCKING TFS: "+str(GM.main.SCI.getMaxScienceFromUnlockingTFs()))
-			sayn("MAX SCIENCE FOR UNLOCKING+TESTING TFS: "+str(GM.main.SCI.getMaxScienceFromUnlockingAndTestingTFs()))
-			saynn("ALL UPGRADES COST: "+str(GM.main.SCI.getAllUpgradesScienceCost()))
+			sayn("МАКС. НАУКИ ДЛЯ РАЗБЛОКИРОВКИ ТФ: "+str(GM.main.SCI.getMaxScienceFromUnlockingTFs()))
+			sayn("МАКС. НАУКИ ДЛЯ РАЗБЛОКИРОВКИ+ТЕСТА ТФ: "+str(GM.main.SCI.getMaxScienceFromUnlockingAndTestingTFs()))
+			saynn("СТОИМОСТЬ ВСЕХ УЛУЧШЕНИЙ: "+str(GM.main.SCI.getAllUpgradesScienceCost()))
 		
-		addButton("Create", "See what you can create in this lab", "create_menu")
-		addButton("Fluids", "See what you can do with the fluid tanks", "fluid_tanks")
-		addButton("Upgrades", "Look at the list of possible upgrades", "upgrades")
-		addButton("Database", "Look at the database of everything that you have unlocked or researched", "database")
+		addButton("Создать", "Посмотреть, что можно создать в этой лаборатории", "create_menu")
+		addButton("Жидкости", "Посмотреть, что можно сделать с резервуарами", "fluid_tanks")
+		addButton("Улучшения", "Просмотреть список доступных улучшений", "upgrades")
+		addButton("База данных", "Просмотреть базу данных всего, что вы разблокировали или изучили", "database")
 		if(GM.main.SCI.hasUpgrade("bluespaceStash")):
-			addButton("Stash", "Look at your personal item stash", "look_stash")
+			addButton("Заначка", "Посмотреть свой личный запас предметов", "look_stash")
 		if(GM.main.SCI.doesPCHaveUnknownStrangePills()):
-			addButton("Strange pill!", "Make Eliza scan the strange pill that you have", "scan_strange_pill")
-		addButton("Leave", "Time to go", "endthescene")
+			addButton("Странная таблетка!", "Заставить Элизу просканировать странную таблетку, которая у тебя есть", "scan_strange_pill")
+		addButton("Уйти", "Пора идти", "endthescene")
 	
 	if(state == "fluid_tanks"):
 		playAnimation(StageScene.Solo, "stand")
 		sayTanksVolume()
 		
-		saynn("What do you want to do?")
+		saynn("Что ты хочешь сделать?")
 		
-		addButton("Fill", "Fill the tanks with one of your items", "tank_fill_select")
-		addButton("Clear", "Select one of the fluid tanks and fully empty it", "tank_clear_select")
+		addButton("Наполнить", "Наполнить резервуары одним из ваших предметов", "tank_fill_select")
+		addButton("Очистить", "Выбрать один из резервуаров и полностью его опустошить", "tank_clear_select")
 		
 		if(GM.main.SCI.hasUpgrade("shower1")):
-			addButton("Shower", "Take a special shower that will collect all the fluids", "tank_shower")
+			addButton("Душ", "Принять особый душ, который соберет все жидкости", "tank_shower")
 		if(GM.main.SCI.hasUpgrade("fluidInspector")):
-			addButton("Inspect container", "Use the lab's equipment to inspect one of your fluid containers and get full info about its contents", "inspect_select")
+			addButton("Осмотреть контейнер", "Использовать лабораторное оборудование, чтобы изучить один из ваших контейнеров с жидкостью и получить полную информацию о её составе", "inspect_select")
 		if(GM.main.SCI.hasUpgrade("fluidFilter")):
-			addButton("Filter container", "Use the lab's equipment to filter away fluids from one of your fluid containers", "filter_select")
+			addButton("Фильтровать контейнер", "Использовать лабораторное оборудование, чтобы отфильтровать жидкости из одного из ваших контейнеров", "filter_select")
 		
 		
-		addButton("Back", "Back to the previous menu", "")
+		addButton("Назад", "Назад в предыдущее меню", "")
 	
 	if(state == "filter_select"):
-		addButton("Back", "Back to the previous menu", "fluid_tanks")
+		addButton("Назад", "Назад в предыдущее меню", "fluid_tanks")
 		
-		saynn("Pick a fluid container that you want to filter. You will be able to remove selected fluids from that container.")
+		saynn("Выберите контейнер, который хотите отфильтровать. Вы сможете удалить выбранные жидкости из этого контейнера.")
 		
 		var equippedItems = GM.pc.getInventory().getAllEquippedItems()
 		for slot in equippedItems:
@@ -75,7 +75,7 @@ func _run():
 		for theitem in GM.pc.getInventory().getItems():
 			if(theitem.getFluids() != null):
 				if(theitem.getFluids().isEmpty()):
-					#addDisabledButton(theitem.getStackName(), "(This item is empty)\n\n"+theitem.getVisisbleDescription())
+					#addDisabledButton(theitem.getStackName(), "(Этот предмет пуст)\n\n"+theitem.getVisisbleDescription())
 					pass
 				else:
 					addButton(theitem.getStackName(), theitem.getVisisbleDescription(), "tank_pickFilter", [theitem])
@@ -83,24 +83,24 @@ func _run():
 	if(state == "tank_pickFilter"):
 		var item:ItemBase = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 		if(item == null):
-			saynn("ERROR, NO ITEM FOUND.")
-			addButton("Continue", "See what happens next", "filter_select")
+			saynn("ОШИБКА: ПРЕДМЕТ НЕ НАЙДЕН.")
+			addButton("Продолжить", "Смотреть, что будет дальше", "filter_select")
 			return
 		var fluids:Fluids = item.getFluids()
 		if(fluids == null):
-			saynn("ERROR, ITEM HAS NO FLUIDS OBJECT.")
-			addButton("Continue", "See what happens next", "filter_select")
+			saynn("ОШИБКА: У ПРЕДМЕТА ОТСУТСТВУЕТ ОБЪЕКТ ЖИДКОСТЕЙ.")
+			addButton("Продолжить", "Смотреть, что будет дальше", "filter_select")
 			return
-		addButton("Back", "Back to the previous menu", "filter_select")
+		addButton("Назад", "Назад в предыдущее меню", "filter_select")
 		
-		sayn("Container name: "+item.getVisibleName())
-		saynn("Capacity: "+str(Util.roundF(fluids.getFluidAmount(), 1))+(("/"+str(Util.roundF(fluids.getCapacity(), 1))) if fluids.isCapacityLimited() else "")+" ml")
+		sayn("Название контейнера: "+item.getVisibleName())
+		saynn("Емкость: "+str(Util.roundF(fluids.getFluidAmount(), 1))+(("/"+str(Util.roundF(fluids.getCapacity(), 1))) if fluids.isCapacityLimited() else "")+" ml")
 		
 		if(fluids.isEmpty()):
-			saynn("The container is empty!")
+			saynn("Контейнер пуст!")
 		else:
 			var fluidByType:Dictionary = fluids.getFluidAmountByType()
-			sayn("Found fluids:")
+			sayn("Обнаруженные жидкости:")
 			
 			for fluidID in fluidByType:
 				var fluidAmount:float = fluidByType[fluidID]
@@ -109,16 +109,16 @@ func _run():
 				
 				sayn(" - "+fluidName+": "+str(Util.roundF(fluidAmount, 1))+" ml")
 				
-				addButton(fluidName, "Remove "+str(Util.roundF(fluidAmount, 1))+" ml of "+fluidName, "do_filter_out", [fluids, fluidID])
+				addButton(fluidName, "Удалить "+str(Util.roundF(fluidAmount, 1))+" мл "+fluidName, "do_filter_out", [fluids, fluidID])
 				
 			sayn("")
-			saynn("Select which fluid you want to filter out. The selected fluid will be removed from the container and disposed safely.")
+			saynn("Выберите жидкость, которую хотите отфильтровать. Выбранная жидкость будет удалена из контейнера и безопасно утилизирована.")
 		
 	
 	if(state == "inspect_select"):
-		addButton("Back", "Back to the previous menu", "fluid_tanks")
+		addButton("Назад", "Назад в предыдущее меню", "fluid_tanks")
 		
-		saynn("Pick a fluid container that you want to inspect. The lab will show you full detailed information about the contents of that item.")
+		saynn("Выберите контейнер с жидкостью для осмотра. Лаборатория покажет вам подробную информацию о содержимом этого предмета.")
 		
 		var equippedItems = GM.pc.getInventory().getAllEquippedItems()
 		for slot in equippedItems:
@@ -129,7 +129,7 @@ func _run():
 		for theitem in GM.pc.getInventory().getItems():
 			if(theitem.getFluids() != null):
 				if(theitem.getFluids().isEmpty()):
-					#addDisabledButton(theitem.getStackName(), "(This item is empty)\n\n"+theitem.getVisisbleDescription())
+					#addDisabledButton(theitem.getStackName(), "(Этот предмет пуст)\n\n"+theitem.getVisisbleDescription())
 					pass
 				else:
 					addButton(theitem.getStackName(), theitem.getVisisbleDescription(), "tank_pickInspect", [theitem])
@@ -137,21 +137,21 @@ func _run():
 	if(state == "tank_pickInspect"):
 		var item:ItemBase = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 		if(item == null):
-			saynn("ERROR, NO ITEM FOUND.")
-			addButton("Continue", "See what happens next", "inspect_select")
+			saynn("ОШИБКА: ПРЕДМЕТ НЕ НАЙДЕН.")
+			addButton("Продолжить", "Смотреть, что будет дальше", "inspect_select")
 			return
 		var fluids:Fluids = item.getFluids()
 		if(fluids == null):
-			saynn("ERROR, ITEM HAS NO FLUIDS OBJECT.")
-			addButton("Continue", "See what happens next", "inspect_select")
+			saynn("ОШИБКА: У ПРЕДМЕТА ОТСУТСТВУЕТ ОБЪЕКТ ЖИДКОСТЕЙ.")
+			addButton("Продолжить", "Смотреть, что будет дальше", "inspect_select")
 			return
 		
-		saynn("You put your container into the scanner and press a button. A computer screen lights up with various info.")
+		saynn("Вы помещаете контейнер в сканер и нажимаете кнопку. Экран компьютера загорается, отображая различные данные.")
 		
-		sayn("Container name: "+item.getVisibleName())
-		saynn("Capacity: "+str(Util.roundF(fluids.getFluidAmount(), 1))+(("/"+str(Util.roundF(fluids.getCapacity(), 1))) if fluids.isCapacityLimited() else "")+" ml")
+		sayn("Название контейнера: "+item.getVisibleName())
+		saynn("Емкость: "+str(Util.roundF(fluids.getFluidAmount(), 1))+(("/"+str(Util.roundF(fluids.getCapacity(), 1))) if fluids.isCapacityLimited() else "")+" ml")
 		
-		saynn("Unique records found: "+str(fluids.contents.size()))
+		saynn("Найдено уникальных записей: "+str(fluids.contents.size()))
 		
 		var _i:int = 1
 		for recordInfo in fluids.contents:
@@ -161,11 +161,11 @@ func _run():
 			var fluidOBJ:FluidBase = GlobalRegistry.getFluid(fluidType)
 			var fluidName:String = fluidOBJ.getVisibleName() if fluidOBJ != null else fluidType
 			
-			sayn("Record #"+str(_i))
-			sayn("Fluid type: "+fluidName)
-			sayn("Amount: "+str(Util.roundF(fluidAmount, 1))+" ml")
+			sayn("Запись №"+str(_i))
+			sayn("Тип жидкости: "+fluidName)
+			sayn("Кол-во: "+str(Util.roundF(fluidAmount, 1))+" ml")
 			if(fluidDNA == null):
-				saynn("No DNA found")
+				saynn("ДНК не обнаружена")
 			else:
 				var theChar:BaseCharacter = fluidDNA.getCharacter()
 				var charName:String = theChar.getName() if theChar != null else "Unknown"
@@ -178,18 +178,18 @@ func _run():
 					if(theSpeciesStr != ""):
 						theSpeciesStr += ", "
 					theSpeciesStr += theSpeciesObj.getVisibleName()
-				sayn("DNA found: "+charName)
-				sayn("Species: "+theSpeciesStr)
-				sayn("Virility: "+str(Util.roundF(fluidDNA.getVirility()*100.0, 1))+"%")
+				sayn("Обнаруженная ДНК: "+charName)
+				sayn("Вид: "+theSpeciesStr)
+				sayn("Вирильность: "+str(Util.roundF(fluidDNA.getVirility()*100.0, 1))+"%")
 				sayn("")
 			
 			_i += 1
 		
-		addButton("Continue", "See what happens next", "inspect_select")
+		addButton("Продолжить", "Смотреть, что будет дальше", "inspect_select")
 	
 	if(state == "tank_fill_select"):
-		addButton("Back", "Back to the previous menu", "fluid_tanks")
-		saynn("Which item do you want to use to fill the fluid tanks? The selected item will be [b]fully emptied[/b]!")
+		addButton("Назад", "Назад в предыдущее меню", "fluid_tanks")
+		saynn("Какой предмет вы хотите использовать, чтобы заполнить резервуары с жидкостью? Выбранный предмет будет [b]опустошен полностью[/b]!")
 		
 		sayTanksVolume()
 		
@@ -202,16 +202,16 @@ func _run():
 		for theitem in GM.pc.getInventory().getItems():
 			if(theitem.getFluids() != null):
 				if(theitem.getFluids().isEmpty()):
-					#addDisabledButton(theitem.getStackName(), "(This item is empty)\n\n"+theitem.getVisisbleDescription())
+					#addDisabledButton(theitem.getStackName(), "(Этот предмет пуст)\n\n"+theitem.getVisisbleDescription())
 					pass
 				else:
 					addButton(theitem.getStackName(), theitem.getVisisbleDescription(), "tank_pickFillFrom", [theitem])
 
 	
 	if(state == "tank_clear_select"):
-		addButton("Back", "Back to the previous menu", "fluid_tanks")
+		addButton("Назад", "Назад в предыдущее меню", "fluid_tanks")
 		
-		saynn("Which fluid tank do you want to empty? [b]This will fully clear it, removing the fluds of that type from your lab[/b].")
+		saynn("Какой резервуар вы хотите опустошить? [b]Это полностью очистит его, удалив все жидкости данного типа из вашей лаборатории[/b].")
 		
 		sayTanksVolume()
 		
@@ -220,10 +220,10 @@ func _run():
 			var fluidOBJ:FluidBase = GlobalRegistry.getFluid(fluidID)
 			var fluidName:String = fluidOBJ.getVisibleName() if fluidOBJ != null else fluidID
 			
-			addButton(fluidName, "Empty "+str(round(storedFluids[fluidID]))+"ml of "+fluidName, "do_empty_tank", [fluidID])
+			addButton(fluidName, "Опустошить "+str(round(storedFluids[fluidID]))+" мл "+fluidName, "do_empty_tank", [fluidID])
 	
 	if(state == "create_menu"):
-		addButton("Back", "Back to the previous menu", "")
+		addButton("Назад", "Назад в предыдущее меню", "")
 		
 		#var canConfigure:bool = GM.main.SCI.canConfigureDrugs()
 		
@@ -293,18 +293,18 @@ func _run():
 		var _ok = inventory.connect("onInteractWith", self, "onMakeInteract")
 	
 	if(state == "database"):
-		addButton("Back", "Back to the previous menu", "")
-		addButton("Replay scene", "Replay one of the old drug-related scene", "replay_menu")
+		addButton("Назад", "Назад в предыдущее меню", "")
+		addButton("Переиграть сцену", "Переиграть одну из старых сцен с наркотиками", "replay_menu")
 		
 		var entries:Dictionary = {}
 		entries["1"] = {
-			name = "= UPGRADES =",
+			name = "= УЛУЧШЕНИЯ =",
 			desc = "This list shows the upgrades that you have unlocked",
 		}
 		
 		var upgradesInfo:Dictionary = GM.main.SCI.getUpgrades()
 		var hasAnyUnlocked:bool = false
-		#sayn("Unlocked upgrades:")
+		#sayn("Доступные улучшения:")
 		for upgradeID in upgradesInfo:
 			if(!GM.main.SCI.hasUpgrade(upgradeID)):
 				continue
@@ -315,18 +315,18 @@ func _run():
 			#sayn(" - "+upgradesInfo[upgradeID]["name"])
 			hasAnyUnlocked = true
 		if(!hasAnyUnlocked):
-			#sayn(" - No upgrades found")
+			#sayn(" - Улучшений не найдено")
 			entries["noup_"] = {
-				name = "No upgrades found",
+				name = "Улучшений не найдено",
 				desc = "Get some upgrades first!",
 			}
 		#sayn("")
 		
 		entries["2"] = {
-			name = "= DRUGS =",
+			name = "= ПРЕПАРАТЫ =",
 			desc = "This list shows the special drugs that you have found",
 		}
-		#sayn("Transformation drugs:")
+		#sayn("Трансформирующие препараты:")
 		var _i:int = 1
 		for tfID in GlobalRegistry.getTransformationRefs():
 			var tf:TFBase = GlobalRegistry.getTransformationRef(tfID)
@@ -336,7 +336,7 @@ func _run():
 			var isTested:bool = isUnlocked && GM.main.SCI.isTransformationTested(tfID)
 			
 			if(!isUnlocked):
-				#sayn(" - "+str(_i)+": Unknown")
+				#sayn(" - "+str(_i)+": Неизвестно")
 				entries["drug_"+tfID] = {
 					name = str(_i)+": Unknown",
 					desc = "You haven't found this drug yet",
@@ -360,7 +360,7 @@ func _run():
 				}
 			
 			#if(isTested):
-			#	addButton(tf.getPillName(), "See detailed info about this pill", "detailedViewTF", [tfID])
+			#	addButton(tf.getPillName(), "Посмотреть подробную информацию об этой таблетке", "detailedViewTF", [tfID])
 			
 			_i += 1
 			
@@ -379,13 +379,13 @@ func _run():
 		var upgradesInfo:Dictionary = GM.main.SCI.getUpgrades()
 		var currentDrugAmount:int = GM.main.SCI.getUnlockedStrangePillsCount()
 		
-		#saynn("Here is a list of upgrades that are currently available. Select any upgrade to see more information about it.")
+		#saynn("Список доступных улучшений. Выберите любое, чтобы узнать подробности.")
 		
 		var hasAnyUpgrades:bool = false
 		
 		var entries:Dictionary = {}
 		
-		addButton("Back", "Back to the previous menu", "")
+		addButton("Назад", "Назад в предыдущее меню", "")
 		for upgradeID in upgradesInfo:
 			if(GM.main.SCI.hasUpgrade(upgradeID)):
 				continue
@@ -393,8 +393,8 @@ func _run():
 				continue
 			hasAnyUpgrades = true
 			var upgradeInfo:Dictionary = upgradesInfo[upgradeID]
-			#sayn("- "+upgradeInfo["name"]+": "+str(upgradeInfo["cost"])+" science points")
-			#addButton(upgradeInfo["name"], "See info about this upgrade", "lookAtUpgrade", [upgradeID])
+			#sayn("- "+upgradeInfo["name"]+": "+str(upgradeInfo["cost"])+" очков науки")
+			#addButton(upgradeInfo["name"], "Инфо об этом улучшении", "lookAtUpgrade", [upgradeID])
 			
 			
 			var canBuy:bool = upgradeInfo["cost"] <= GM.main.SCI.getPoints()
@@ -416,9 +416,9 @@ func _run():
 				] if canBuy else [],
 			}
 		if(!hasAnyUpgrades):
-			#sayn("- No upgrades left to unlock! AlphaCorp is proud of you!")
+			#sayn("- Больше улучшений нет! AlphaCorp вами гордится!")
 			entries["1"] = {
-				name = "= No Upgrades Left =",
+				name = "= Улучшений больше нет =",
 				desc = "No upgrades left to unlock! AlphaCorp is proud of you!",
 			}
 	
@@ -431,47 +431,47 @@ func _run():
 	if(state == "lookAtUpgrade"):
 		var upgradeInfo:Dictionary = GM.main.SCI.getUpgrades()[pickedUpgrade]
 		
-		saynn("Upgrade name: "+upgradeInfo["name"])
-		sayn("Description:")
+		saynn("Название улучшения: "+upgradeInfo["name"])
+		sayn("Описание:")
 		saynn(upgradeInfo["desc"])
-		sayn("Cost: "+str(upgradeInfo["cost"])+" science points")
-		sayn("You currently have "+str(GM.main.SCI.getPoints())+" science points")
+		sayn("Цена: "+str(upgradeInfo["cost"])+" очков науки")
+		sayn("У вас есть "+str(GM.main.SCI.getPoints())+" очков науки")
 		
-		addButton("Back", "Back to the previous menu", "upgrades")
+		addButton("Назад", "Назад в предыдущее меню", "upgrades")
 		if(GM.main.SCI.getPoints() >= upgradeInfo["cost"]):
-			addButton("Buy", "Spend "+str(upgradeInfo["cost"])+" science points to get this upgrade", "doBuyUpgrade", [pickedUpgrade])
+			addButton("Купить", "Потратить "+str(upgradeInfo["cost"])+" очков науки, чтобы получить это улучшение", "doBuyUpgrade", [pickedUpgrade])
 		else:
-			addDisabledButton("Buy", "You don't have enough science points")
+			addDisabledButton("Купить", "Недостаточно очков науки")
 	
 	if(state == "detailedViewTF"):
 		var tf:TFBase = GlobalRegistry.getTransformationRef(pickedTF)
 		if(tf == null):
-			addButton("Back", "Back to the previous menu", "database")
+			addButton("Назад", "Назад в предыдущее меню", "database")
 			return
 		
-		sayn("Pill name: "+tf.getPillName())
-		saynn("Short description: "+tf.getName())
-		sayn("Full descriptiopn:")
+		sayn("Название таблетки: "+tf.getPillName())
+		saynn("Краткое описание: "+tf.getName())
+		sayn("Полное описание:")
 		saynn(tf.getPillDatabaseDesc())
 		
-		addButton("Back", "Back to the previous menu", "database")
+		addButton("Назад", "Назад в предыдущее меню", "database")
 	
 	if(state == "after_buy"):
 		var upgradeInfo:Dictionary = GM.main.SCI.getUpgrades()[pickedUpgrade]
-		saynn("You unlocked the '"+upgradeInfo["name"]+"' upgrade!")
-		addButton("Continue", "See what happens next", "upgrades")
+		saynn("Вы разблокировали '"+upgradeInfo["name"]+" улучшение!")
+		addButton("Продолжить", "Смотреть, что будет дальше", "upgrades")
 		
 	if(state == "configuring_drug"):
 		var tf:TFBase = GlobalRegistry.getTransformationRef(pickedTF)
 		
-		saynn("Here you can configure your pill before creating it.")
+		saynn("Здесь вы можете настроить таблетку перед её созданием.")
 		
-		sayn("Pill name: "+tf.getPillName())
-		saynn("Description: "+tf.getName())
+		sayn("Название таблетки: "+tf.getPillName())
+		saynn("Описание: "+tf.getName())
 		
-		addButton("Create", "Create a pill with these options", "do_create_configured_pill")
+		addButton("Создать", "Создать таблетку с этими параметрами", "do_create_configured_pill")
 		
-		sayn("Settings:")
+		sayn("Настройки:")
 		var _i:int = 1
 		var options:Dictionary = tf.getPillOptions()
 		for optionID in options:
@@ -490,7 +490,7 @@ func _run():
 			addButton(option["name"], option["desc"], "configure_value_menu", [optionID])
 			
 		
-		addButton("CANCEL", "You changed your mind!", "")
+		addButton("CANCEL", "Ты передумал!", "")
 	
 	if(state == "configure_value_menu"):
 		var tf:TFBase = GlobalRegistry.getTransformationRef(pickedTF)
@@ -502,27 +502,27 @@ func _run():
 			GM.ui.addFullScreenCustomControl("colorpicker", colorPicker)
 			colorPicker.setCurrentColor(Color(pickedArgs[pickedTFOption]))
 			
-			addButton("Apply", "Select this color", "set_value_configure_color")
+			addButton("Применить", "Выбрать этот цвет", "set_value_configure_color")
 		else:
 			var currentOptionName:String = "???"
 			for valueEntry in option["values"]:
 				if(valueEntry[0] == pickedArgs[pickedTFOption]):
 					currentOptionName = valueEntry[1]
 			
-			sayn("Option name: "+option["name"])
-			sayn("Description: "+option["desc"])
-			saynn("Current setting: "+currentOptionName)
+			sayn("Название параметра: "+option["name"])
+			sayn("Описание: "+option["desc"])
+			saynn("Текущее значение: "+currentOptionName)
 			
-			saynn("Pick a new setting for this option!")
+			saynn("Выберите новое значение для этого параметра!")
 			
 			for valueEntry in option["values"]:
-				addButton(valueEntry[1], valueEntry[2] if valueEntry.size() > 2 else "Set the setting to this value", "set_value_configure", [valueEntry[0]])
+				addButton(valueEntry[1], valueEntry[2] if valueEntry.size() > 2 else "Установить значение настройки", "set_value_configure", [valueEntry[0]])
 			
-		addButton("BACK", "You changed your mind!", "configuring_drug")
+		addButton("BACK", "Ты передумал!", "configuring_drug")
 		
 	if(state == "replay_menu"):
-		addButton("Back", "Back to the previous menu", "database")
-		saynn("Some transformation drugs have unique Eliza sex scenes attached to them. Here you can see and replay all of them.")
+		addButton("Назад", "Назад в предыдущее меню", "database")
+		saynn("Некоторые трансформирующие препараты имеют уникальные секс-сцены с Элизой. Здесь можно посмотреть и переиграть их все.")
 		
 		for tfID in GlobalRegistry.getTransformationRefs():
 			if(!GM.main.SCI.isTransformationUnlocked(tfID)):
@@ -534,14 +534,14 @@ func _run():
 			if(unlockData.has("tryOptions")):
 				var tryOptions:Array = unlockData["tryOptions"]
 				if(tryOptions.size() > 0):
-					addButton(tf.getPillName(), "See scenes related to this drug", "replay_menu_drug", [tfID])
+					addButton(tf.getPillName(), "Смотреть сцены, связанные с этим препаратом", "replay_menu_drug", [tfID])
 		
 	if(state == "replay_menu_drug"):
-		addButton("Back", "Back to the previous menu", "replay_menu")
+		addButton("Назад", "Назад в предыдущее меню", "replay_menu")
 		var tf:TFBase = GlobalRegistry.getTransformationRef(pickedTF)
 		
-		saynn("Selected drug: "+tf.getPillName())
-		saynn("Do you wanna replay its scene?")
+		saynn("Выбранный препарат: "+tf.getPillName())
+		saynn("Хочешь переиграть сцену?")
 		
 		var unlockData:Dictionary = tf.getUnlockData()
 		if(!unlockData.has("tryOptions")):
@@ -550,7 +550,7 @@ func _run():
 		
 		for optionEntry in tryOptions:
 			if(optionEntry.has("disabled") && optionEntry["disabled"]):
-				addDisabledButton(optionEntry["name"], "(Impossible for your current body) "+optionEntry["desc"])
+				addDisabledButton(optionEntry["name"], "(Невозможно для вашего текущего тела)"+optionEntry["desc"])
 			else:
 				addButton(optionEntry["name"], optionEntry["desc"], "play_replay_scene", [optionEntry["sceneID"]])
 
@@ -564,7 +564,7 @@ func onMakeInteract(_upgradeID:String, _id, _args):
 func sayTanksVolume():
 	var storedFluids:Dictionary = GM.main.SCI.getStoredFluidsWithDefauls()
 	
-	sayn("Fluid tanks contents:")
+	sayn("Содержимое резервуаров с жидкостью:")
 	for fluidID in storedFluids:
 		var fluidAmount:float = storedFluids[fluidID]
 		var fluidLimit:float = GM.main.SCI.getStoredFluidLimit(fluidID)

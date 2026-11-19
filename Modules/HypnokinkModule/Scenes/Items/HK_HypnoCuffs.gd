@@ -12,12 +12,12 @@ func _initScene(_args = []):
 func _run():
 	if(state == ""):
 		if(HypnokinkUtil.isHypnotized(GM.pc)):
-			saynn("You can't possibly hope to remove these very real cuffs.")
-			addButton("Continue", "Nothing you can do", "endthescene")
+			saynn("Ты вряд ли сможешь снять эти вполне реальные наручники.")
+			addButton("Продолжить", "Ничего не поделаешь", "endthescene")
 		else:
-			saynn("After a moment of consideration, you realise you're not actually wearing cuffs!")
-			addButton("Continue", "Well that was easy", "remove")
-			addButton("Play along", "It can be fun to pretend", "endthescene")
+			saynn("Немного подумав, ты понимаешь, что на самом деле на тебе нет никаких наручников!")
+			addButton("Продолжить", "Ну, это было легко.", "remove")
+			addButton("Подыграть", "Притворяться бывает даже весело", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

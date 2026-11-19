@@ -14,154 +14,154 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="announcer"})
 
 	if(state == ""):
-		saynn("You wait until Ans is free and get his attention.")
+		saynn("Вы ждете, пока Анс освободится, и привлекаете его внимание.")
 
-		saynn("[say=announcer]Hey there, babe.[/say]")
+		saynn("[say=announcer]Привет, крошка.[/say]")
 
-		addButton("Talk", "Ask him some questions", "talk")
+		addButton("Поговорить", "Задать ему несколько вопросов", "talk")
 		if(getFlag("FightClubModule.AnnouncerAskedAboutShop")):
-			addButton("Buy", "Look at this offers", "buymenu")
-			addButton("Sell", "See what you can sell", "sellmenu")
+			addButton("Купить", "Посмотреть предложения", "buymenu")
+			addButton("Продать", "Посмотреть, что можно продать", "sellmenu")
 		else:
-			addButton("Buy", "Maybe he sells something", "askbuy")
-		addButton("Leave", "Enough talking", "endthescene")
+			addButton("Купить", "Может, он что-то продает", "askbuy")
+		addButton("Уйти", "Хватит болтать", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["announcer"])
 		if(!getFlag("FightClubModule.CanBuySlaveCollars")):
 			if(getModule("NpcSlaveryModule").canEnslave()):
-				addButton("Collars?", "Ask if he knows where you can get a spare collar", "ask_collars")
+				addButton("Ошейники?", "Спросить, не знает ли он, где можно раздобыть запасной ошейник", "ask_collars")
 
 	if(state == "ask_collars"):
-		saynn("[say=pc]You seem like you know your way around here. Do you know where I can get a collar?[/say]")
+		saynn("[say=pc]Похоже, ты тут знаешь толк. Не подскажешь, где мне достать ошейник?[/say]")
 		
-		saynn("He instinctively tugs on his metal one.")
+		saynn("Он инстинктивно дергает за свой металлический ошейник.")
 		
-		saynn("[say=announcer]Hmm.. As a matter of fact, I do. Out of curiosity, what makes you want a spare one? Neck not heavy enough, babe?[/say]")
+		saynn("[say=announcer]Хмм... Вообще-то, есть. Чисто из любопытства: зачем тебе запасной? Шея недостаточно тяжелая, детка?[/say]")
 
-		saynn("He scratches his chin while watching you.")
+		saynn("Он чешет подбородок, наблюдая за тобой.")
 		
-		saynn("[say=announcer]Hah, I think I know. And I think I can help you. While clearing this abandoned space out, we found a few crates with old supplies, including one full of collars. Strangely enough, not the same model that everyone here is wearing.[/say]")
+		saynn("[say=announcer]Ха, кажется, я догадываюсь. И, думаю, смогу тебе помочь. Когда мы расчищали это заброшенное пространство, то нашли несколько ящиков со старым снаряжением, включая один, набитый ошейниками. Странно то, что это не та модель, которую носят все здесь.[/say]")
 		
-		saynn("Great. Any collar should work for you. But it's never that easy, is it?")
+		saynn("Отлично. Тебе подойдет любой ошейник. Но ведь всё никогда не бывает так просто, верно?")
 		
-		saynn("[say=announcer]Avy found a way to modify them so they can be locked and unlocked by us, inmates.[/say]")
+		saynn("[say=announcer]Эви нашла способ модифицировать их так, чтобы мы, заключенные, могли сами их запирать и отпирать.[/say]")
 
-		saynn("Avy, huh. It's never that easy with her.")
+		saynn("Эви, значит. С ней всё никогда не бывает просто.")
 		
-		saynn("[say=announcer]You will have to earn her trust first.[/say]")
+		saynn("[say=announcer]Сначала тебе придется заслужить её доверие.[/say]")
 		
-		saynn("[say=pc]And how am I gonna do that?[/say]")
+		saynn("[say=pc]И как же мне это сделать?[/say]")
 		
-		saynn("The lilac points at the 4 chain fences in the middle of the space.")
+		saynn("Сиреневая указывает на четыре цепных ограждения в центре площадки.")
 		
-		saynn("[say=announcer]Arena, babe. That's the answer to most things here.[/say]")
+		saynn("[say=announcer]Арена, детка. Это ответ почти на все вопросы в этом месте.[/say]")
 		
-		saynn("Looks like you will have to beat Avy up on the arena first to get access to those collars..")
+		saynn("Похоже, чтобы получить доступ к этим ошейникам, тебе сначала придется отделать Эви на арене...")
 
 		if(getFlag("FightClubModule.AvyGotRekt")):
-			addButton("Done!", "Tell him that you did beat up Avy", "unlock_collars")
-			addButton("Back", "Never mind", "")
+			addButton("Готово!", "Скажи ему, что ты действительно отделал(а) Эви", "unlock_collars")
+			addButton("Назад", "Проехали", "")
 		else:
-			addButton("Continue", "See what happens next", "")
+			addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 	if(state == "unlock_collars"):
-		saynn("[say=pc]Avy got wrecked. I am the grand champion now.[/say]")
+		saynn("[say=pc]Эви размазали по арене. Теперь я великий чемпион![/say]")
 		
-		saynn("The guy chuckles and offers you some claps.")
+		saynn("Парень усмехается и одобрительно хлопает тебя по плечу.")
 		
-		saynn("[say=announcer]Good job, babe. I knew you could do it.[/say]")
+		saynn("[say=announcer]Отличная работа, крошка. Я знала, что ты справишься.[/say]")
 		
-		saynn("You nod-nod and wait for your reward.")
+		saynn("Ты согласно киваешь и ждешь награду.")
 		
-		saynn("[say=announcer]Avy agreed to give you one. If you want more, you will have to pay with creds for them. Avy said she doesn't want to give her modified versions out for free.[/say]")
+		saynn("[say=announcer]Эви согласилась отдать тебе один. Если захочешь больше, придется платить кредитами. Она сказала, что не собирается раздавать свои модифицированные версии на халяву.[/say]")
 
-		saynn("Of course she doesn't, that bitch. Ans hands you an old metal collar. The design is indeed quite different.. this one somehow looks even more bulky and uncomfortable than your current one. But that might be a good thing..")
+		saynn("Ну конечно, сучка! Эви протягивает тебе старый металлический ошейник. Дизайн и впрямь отличается... этот выглядит даже более громоздким и неудобным, чем твой нынешний. Но, возможно, в этом и есть плюс...")
 		
-		saynn("[say=pc]Thank you.[/say]")
+		saynn("[say=pc]Спасибо.[/say]")
 		
-		saynn("He nods.")
+		saynn("Он кивает.")
 		
-		saynn("[say=announcer]Don't mention it, babe. You were fighting great, the crowd loves you.[/say]")
+		saynn("[say=announcer]Не за что, детка. Ты дрался(ась) просто шикарно, толпа от тебя в восторге![/say]")
 		
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 	if(state == "askbuy"):
 		setFlag("FightClubModule.AnnouncerAskedAboutShop", true)
 		
-		saynn("[say=pc]Do you sell anything?[/say]")
+		saynn("[say=pc]Ты чем-нибудь торгуешь?[/say]")
 		
-		saynn("The guy rubs his chin while eyeing you out.")
+		saynn("Парень потирает подбородок, оценивающе разглядывая тебя.")
 
-		saynn("[say=announcer]Perhaps. Looking for something to spice up your love life? I've got just the thing. [/say]")
+		saynn("[say=announcer]Возможно. Ищешь что-нибудь, чтобы подбавить перчинки в постели? У меня есть как раз то, что нужно. [/say]")
 		
-		saynn("You raise a brow.")
+		saynn("Вы вопросительно приподнимаете бровь.")
 		
-		saynn("[say=pc]What are we talking about here?[/say]")
+		saynn("[say=pc]О чем именно идет речь?[/say]")
 		
-		saynn("The guy chuckles.")
+		saynn("Парень усмехается.")
 		
-		saynn("[say=announcer]Fetish gear and toys. Things that staff don't want us to have. I got it all, baby.[/say]")
+		saynn("[say=announcer]Фетиш-шмотки и игрушки. То, чего охрана не хочет нам видеть. У меня есть всё, детка.[/say]")
 
-		saynn("[say=pc]I'll have to think about it. How much are we talking?[/say]")
+		saynn("[say=pc]Надо подумать. О каких ценах идет речь?[/say]")
 		
-		saynn("[say=announcer]Prices vary depending on the item. Why don't you take a look at my inventory and we can go from there?[/say]")
+		saynn("[say=announcer]Цены разные, смотря что выберешь. Почему бы тебе не глянуть мой товар, а там разберемся?[/say]")
 		
-		addButton("Inventory", "Take a look", "buymenu")
-		addButton("Nah", "You're good", "")
+		addButton("Инвентарь", "Взглянуть", "buymenu")
+		addButton("Неа", "Ты деловой", "")
 
 	if(state == "talk"):
-		saynn("[say=pc]Just wanted to talk, ask some things.[/say]")
+		saynn("[say=pc]Да так, просто хотел поболтать, кое-что спросить.[/say]")
 
-		saynn("The guy leans against his fancy cane.")
+		saynn("Парень опирается на свою шикарную трость.")
 
-		saynn("[say=announcer]Shoot.[/say]")
+		saynn("[say=announcer]Стреляй![/say]")
 
-		addButton("Name", "Why is he called like that", "name")
-		addButton("Staff", "Ask what happens if staff finds this place", "staff")
-		addButton("Avy", "Ask about Avy", "avy")
-		addButton("Back", "Enough questions", "")
+		addButton("Имя", "Почему его так называют?", "name")
+		addButton("Персонал", "Спросить, что будет, если персонал найдет это место", "staff")
+		addButton("Эви", "Спросить об Эви", "avy")
+		addButton("Назад", "Хватит вопросов", "")
 
 	if(state == "name"):
-		saynn("[say=pc]Why ‘The Announcer’?[/say]")
+		saynn("[say=pc]Почему «Диктор»?[/say]")
 
-		saynn("He chuckles.")
+		saynn("Он усмехается.")
 
-		saynn("[say=announcer]Because of my voice I guess. Others just began calling me like that and I went with the flow.[/say]")
+		saynn("[say=announcer]Думаю, из-за голоса. Остальные начали так меня называть, ну и я притерся.[/say]")
 
-		saynn("[say=pc]Your voice would be perfect for radio.[/say]")
+		saynn("[say=pc]Твой голос идеально подошел бы для радио.[/say]")
 
-		saynn("He scratches the back of his head and smiles wider.")
+		saynn("Он чешет затылок и улыбается еще шире.")
 
-		saynn("[say=announcer]Nah, I’m not a radio person. Thanks anyway.[/say]")
+		saynn("[say=announcer]Не, я не фанат радио. Но всё равно спасибо.[/say]")
 
-		saynn("[say=pc]Who are you then? How did you end up here?[/say]")
+		saynn("[say=pc]И кто же ты тогда? Как ты здесь оказался?[/say]")
 
-		saynn("He looks down at his lilac clothes.")
+		saynn("Он опускает взгляд на свою сиреневую одежду.")
 
-		saynn("[say=announcer]Thought it was obvious. I’m a pimp, baby. I used to live on the streets, used to look after my girls. On a green ball of dirt called ‘The Earth’. Though right now the more fitting name for it would be ‘The Wasteland’[/say]")
+		saynn("[say=announcer]Думал, это очевидно. Я сутенёр, детка. Раньше жил на улицах, присматривал за своими девочками. На зеленом шарике грязи под названием «Земля». Хотя сейчас ей больше подходит название «Пустошь».[/say]")
 
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 	if(state == "staff"):
-		saynn("[say=pc]This place isn’t exactly legal. What will happen if the staff finds it?[/say]")
+		saynn("[say=pc]Это место не совсем законное. Что будет, если персонал его обнаружит?[/say]")
 
-		saynn("The guy looks around.")
+		saynn("Парень оглядывается по сторонам.")
 
-		saynn("[say=announcer]I have very little doubts about them not knowing about my place. I guess they prefer to look the other way? Your guess is as good as mine.[/say]")
+		saynn("[say=announcer]У меня почти нет сомнений, что они не знают о моем местечке. Наверное, им просто удобнее закрывать на это глаза? Твоя догадка не хуже моей.[/say]")
 
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 	if(state == "avy"):
-		saynn("[say=pc]Who is Avy?[/say]")
+		saynn("[say=pc]Кто такая Эви?[/say]")
 
-		saynn("The guy leans on his cane.")
+		saynn("Парень опирается на свою трость.")
 
-		saynn("[say=announcer]She handles organizing the fights. And she is also the grand champion of the arena. I guess I know how to pick the right person for the job.[/say]")
+		saynn("[say=announcer]Она занимается организацией боев. А еще она — абсолютная чемпионка арены. Думаю, я умею выбирать людей на нужные роли.[/say]")
 
-		saynn("[say=pc]No one has beaten her?[/say]")
+		saynn("[say=pc]Никто так и не смог её одолеть?[/say]")
 
-		saynn("[say=announcer]Many tried. Some even succeeded. But she always returns, each time stronger than before.[/say]")
+		saynn("[say=announcer]Многие пытались. Кому-то даже удавалось. Но она всегда возвращается, и с каждым разом становится всё сильнее.[/say]")
 
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 
 func _react(_action: String, _args):

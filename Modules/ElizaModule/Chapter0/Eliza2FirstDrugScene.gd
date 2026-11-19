@@ -7,369 +7,369 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=pc]Hey, I got one of those weird..[/say]")
+		saynn("[say=pc]Эй, у меня есть одна из тех странных..[/say]")
 
-		saynn("Before you can finish your sentence, Doctor Quinn leans over the counter and covers your mouth.")
+		saynn("Прежде чем вы успеваете закончить фразу, доктор Куинн наклоняется через стойку и зажимает вам рот рукой.")
 
-		saynn("[say=eliza]Tshhh![/say]")
+		saynn("[say=eliza]Тсссс![/say]")
 
-		saynn("Despite trying to be quiet, her actions draw attention from every nurse in the lobby. The feline offers them a polite smile and then just presses a button under her counter, opening the staff-only doors.")
+		saynn("Несмотря на попытки вести себя тихо, её действия привлекают внимание всех медсестер в вестибюле. Кошка одаривает их вежливой улыбкой, а затем просто нажимает кнопку под стойкой, открывая двери для персонала.")
 
-		saynn("She whispers into your ear..")
+		saynn("Она шепчет вам на ухо...")
 
-		saynn("[say=eliza]Come inside, quickly.[/say]")
+		saynn("[say=eliza]Заходи скорее.[/say]")
 
-		saynn("That's a request you can fulfill. The feline narrows her eyes while you're trying to hold yourself from chuckling.")
+		saynn("Это просьба, которую стоит выполнить. Кошка прищуривается, пока вы изо всех сил стараетесь не прыснуть со смеху.")
 
-		saynn("[say=eliza]..before I bap you![/say]")
+		saynn("[say=eliza]..а то как дам по лбу![/say]")
 
-		addButton("Biolab", "See what she wants to do", "in_biolab")
+		addButton("Биолаборатория", "Посмотреть, что она задумала", "in_biolab")
 	if(state == "in_biolab"):
 		aimCameraAndSetLocName("med_researchlab")
 		GM.pc.setLocation("med_researchlab")
-		saynn("You follow the white corridor and enter the research lab. Doctor Quinn is already there, preparing her equipment.")
+		saynn("Вы идете по белому коридору и входите в исследовательскую лабораторию. Доктор Куинн уже там, она подготавливает свое оборудование.")
 
-		saynn("[say=eliza]I gave your collar access to this area. But don't venture in too deep, nurses will still kick your butt if they see you.[/say]")
+		saynn("[say=eliza]Я дала твоему ошейнику доступ в эту зону. Но не зарывайся слишком глубоко — если медсестры тебя заметят, они всё равно надерут тебе задницу.[/say]")
 
-		saynn("She is giving you access? Sounds a lot like she trusts you. You plant your butt on the table in the middle of the room and wait for her.")
+		saynn("Она дает тебе доступ? Похоже, она тебе доверяет. Вы усаживаетесь на стол посреди комнаты и ждете её.")
 
-		saynn("[say=pc]Does that mean what I think it means?[/say]")
+		saynn("[say=pc]Это значит то же самое, о чем я думаю?[/say]")
 
-		saynn("Quinn looks back over her shoulder and smirks, flashing her fangs for a split second.")
+		saynn("Куинн оглядывается через плечо и ухмыляется, на мгновение блеснув клыками.")
 
-		saynn("[say=eliza]You're on some very thin ice right now~. Be careful or you might drown.[/say]")
+		saynn("[say=eliza]Ты сейчас ходишь по очень тонкому льду~. Будь осторожен, а то можешь и утонуть.[/say]")
 
-		saynn("[say=pc]What if I can swim?[/say]")
+		saynn("[say=pc]А что, если я умею плавать?[/say]")
 
-		saynn("You hear a chuckle.")
+		saynn("Вы слышите смешок.")
 
-		saynn("[say=eliza]You're not swimming your way out of this one~.[/say]")
+		saynn("[say=eliza]Тебе не удастся просто выплыть из этой ситуации~.[/say]")
 
-		saynn("Doctor Quinn finishes preparing one of the big machines and turns back to you.")
+		saynn("Доктор Куинн заканчивает подготовку одной из больших машин и поворачивается к вам.")
 
-		saynn("[say=eliza]Show me the goods.[/say]")
+		saynn("[say=eliza]Показывай товар.[/say]")
 
-		saynn("Your hand produces a pill. The feline analyzes it with her sharp eyes.")
+		saynn("Твоя рука протягивает таблетку. Кошка анализирует её своим острым взглядом.")
 
-		saynn("[say=eliza]Yeah. Perfect.[/say]")
+		saynn("[say=eliza]Да. Идеально.[/say]")
 
-		saynn("She puts on some latex gloves and grabs the pill off of your hand before placing it inside a huge machine that takes the whole corner of the lab.")
+		saynn("Она натягивает латексные перчатки и забирает таблетку из твоей руки, после чего помещает её в огромную машину, занимающую почти весь угол лаборатории.")
 
-		saynn("[say=eliza]Let's do some science![/say]")
+		saynn("[say=eliza]Давай займемся наукой![/say]")
 
-		saynn("The machine begins doing its job, blinking lights and spinning its internal components. As it hums to life, you hear a faint hiss of escaping steam and the high-pitched whir of scanning lasers.")
+		saynn("Машина начинает работу: мигают индикаторы, вращаются внутренние детали. Когда она оживает, ты слышишь слабое шипение вырывающегося пара и высокочастотный свист сканирующих лазеров.")
 
-		saynn("Quinn stands with her arms crossed, tapping a claw on her elbow as the machine does its work. Then, with a loud beep, the results flash up on a nearby monitor.")
+		saynn("Куинн стоит, скрестив руки на груди и постукивая когтем по локтю, пока машина делает своё дело. Затем, после громкого писка, на ближайшем мониторе вспыхивают результаты.")
 
-		saynn("[say=eliza]Huh.. interesting. This is very interesting.[/say]")
+		saynn("[say=eliza]Хм... интересно. Очень интересно.[/say]")
 
-		saynn("She gestures for you to join her, her tail flicking with excitement. The screen displays a complex molecular structure, highlighted in red and black.")
+		saynn("Она жестом приглашает тебя подойти, её хвост возбужденно подергивается. На экране отображается сложная молекулярная структура, выделенная красным и черным цветами.")
 
-		saynn("[say=eliza]The primary components? Sulfur-based compounds.. an unusual polymerized protein.. and.. oh, this is fancy.. something resembling bio-alchemical traces. Weird mix.. but I kinda love it.[/say]")
+		saynn("[say=eliza]Основные компоненты? Соединения на основе серы... необычный полимеризованный белок... и... о, это уже изысканно... что-то похожее на биоалхимические следы. Странная смесь... но мне она чертовски нравится.[/say]")
 
-		saynn("She narrows her eyes, studying the structure further while her paw begins to press buttons on the keyboard.")
+		saynn("Она прищуривается, продолжая изучать структуру, пока её лапа начинает нажимать на клавиши клавиатуры.")
 
-		saynn("[say=eliza]Let me unroll this polynucleotide chain. Ohh.. Wow. I already know what it will do~. Do you?[/say]")
+		saynn("[say=eliza]Дай-ка мне развернуть эту полинуклеотидную цепь. Охх.. Вау. Я уже знаю, что она сделает~. А ты?[/say]")
 
-		saynn("Hearing all that lingo leaves you quite confused.")
+		saynn("От всей этой терминологии ты окончательно запутываешься.")
 
-		saynn("[say=pc]No idea.[/say]")
+		saynn("[say=pc]Понятия не имею.[/say]")
 
-		saynn("Quinn smirks and scritches you under the chin lightly with a claw.")
+		saynn("Куинн ухмыляется и слегка чешет тебя когтем под подбородком.")
 
-		saynn("[say=eliza]Well, it's a transformation pill. They all mess with your DNA but that doesn't mean much on its own. You gotta look deeper, find patterns..[/say]")
+		saynn("[say=eliza]Ну, это таблетка трансформации. Все они воздействуют на твою ДНК, но само по себе это мало что значит. Нужно смотреть глубже, искать закономерности..[/say]")
 
-		saynn("[say=pc]I think I will leave this part up to you. What kind of patterns do you see?[/say]")
+		saynn("[say=pc]Думаю, эту часть я оставлю на тебя. Какие закономерности видишь ты?[/say]")
 
-		saynn("She stares into the computer screen and tilts her head to the side a bit.")
+		saynn("Она пристально смотрит в монитор, слегка наклонив голову набок.")
 
-		saynn("[say=eliza]Some of the chains match.. DNA of your typical horns. And those..[/say]")
+		saynn("[say=eliza]Некоторые цепи совпадают.. ДНК твоих типичных рогов. А вот эти..[/say]")
 
-		saynn("She points somewhere on the screen.")
+		saynn("Она указывает на какое-то место на экране.")
 
-		saynn("[say=eliza]Those are hooves. And a tail..[/say]")
+		saynn("[say=eliza]Это копыта. И хвост..[/say]")
 
-		saynn("Quinn grabs her chin.")
+		saynn("Куинн берет её за подбородок.")
 
-		saynn("[say=eliza]Hah.. I think this drug will turn you into a demon.. Well.. Half-demon. A hybrid of sorts.[/say]")
+		saynn("[say=eliza]Хах.. Думаю, от этого наркотика ты превратишься в демона.. Ну, в полудемона. В своего рода гибрид.[/say]")
 
-		saynn("A demon? There is no way a single pill can do that.")
+		saynn("Демона? Не может быть, чтобы одна таблетка сделала такое.")
 
-		saynn("[say=pc]You're joking, right?[/say]")
+		saynn("[say=pc]Ты ведь шутишь, да?[/say]")
 
-		saynn("Quinn raises a brow.")
+		saynn("Куинн приподнимает бровь.")
 
-		saynn("[say=eliza]I don't joke about chemistry. Since we don't have records of such a drug, I can give it a name myself! Let's call it..[/say]")
+		saynn("[say=eliza]О химии я не шучу. Раз у нас нет записей о таком препарате, я сама дам ему название! Назовем его..[/say]")
 
-		saynn("She pauses for effect, a mischievous glint in her eye.")
+		saynn("Она делает паузу для эффекта, а в её глазах вспыхивает озорной блеск.")
 
-		saynn("[say=eliza]DemoniX! Sounds fitting, doesn't it?[/say]")
+		saynn("[say=eliza]ДемониX! Звучит подходяще, не так ли?[/say]")
 
-		saynn("[say=pc]Sure. But what now?[/say]")
+		saynn("[say=pc]Ладно. Но что теперь?[/say]")
 
-		saynn("She snaps off her gloves and tosses them in the bin, already moving toward her chemistry station.")
+		saynn("Она сдергивает перчатки и швыряет их в корзину, уже направляясь к своему химическому столу.")
 
-		saynn("[say=eliza]Since we managed to reverse-engineer it, we can now try to make it! And you're going to help me, assistant~.[/say]")
+		saynn("[say=eliza]Раз уж нам удалось провести реверс-инжиниринг, теперь мы можем попробовать создать его сами! И ты мне поможешь, ассистент~.[/say]")
 
-		saynn("Her feline eyes catch yours.")
+		saynn("Её кошачьи глаза встречаются с твоими.")
 
-		saynn("[say=eliza]What? You're gonna be working in this lab, look closely now![/say]")
+		saynn("[say=eliza]Что? Тебе работать в этой лаборатории, так что смотри внимательно![/say]")
 
-		saynn("Looks like you have earned the title of an assistant!")
+		saynn("Похоже, ты заслужил звание ассистента!")
 
-		addButton("Continue", "See what happens next", "brewing_process")
+		addButton("Продолжить", "Смотреть, что будет дальше", "brewing_process")
 	if(state == "brewing_process"):
-		saynn("[say=pc]I'm watching closely, Doctor Quinn.[/say]")
+		saynn("[say=pc]Я внимательно наблюдаю, доктор Куинн.[/say]")
 
-		saynn("[say=eliza]Good.[/say]")
+		saynn("[say=eliza]Хорошо.[/say]")
 
-		saynn("She pulls out a series of vials and places two large beakers on the table, both filled with something.. white.")
+		saynn("Она достает ряд флаконов и ставит на стол два больших химических стакана, оба наполнены чем-то... белым.")
 
-		saynn("[say=eliza]I can spare some of my reserves this time. But if you're gonna be brewing your own samples, you're gonna need to provide these yourself.[/say]")
+		saynn("[say=eliza]В этот раз я могу выделить немного своих запасов. Но если собираешься варить собственные образцы, придется добывать всё это самому.[/say]")
 
-		saynn("Only now you notice the labels on the beakers.. very interesting labels. Apparently they contain.. semen and breast milk.")
+		saynn("Только сейчас ты замечаешь этикетки на стаканах... весьма любопытные этикетки. Судя по всему, в них... сперма и грудное молоко.")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("She smiles.")
+		saynn("Она улыбается.")
 
-		saynn("[say=eliza]What's the problem~? Surprised? Yeah, breast milk is incredibly valuable for our nursery and frozen seed can be used for artificial impregnation.. but these base fluids are also perfect for synthesizing complex organic compounds. They're abundant and rich in proteins, fats and enzymes.[/say]")
+		saynn("[say=eliza]В чем проблема~? Удивлена? Да, грудное молоко невероятно ценно для нашего детского сада, а замороженные семена можно использовать для искусственного оплодотворения... но эти базовые жидкости также идеально подходят для синтеза сложных органических соединений. Они в изобилии и богаты белками, жирами и ферментами.[/say]")
 
-		saynn("Turning cum and milk into drugs.. interesting.. Those tasks that you had to do make more sense now.")
+		saynn("Превращать сперму и молоко в наркотики... интересно... Теперь те задачи, которые тебе приходилось выполнять, обретают смысл.")
 
-		saynn("[say=eliza]Let's do some chemistry, Doctor Quinn style![/say]")
+		saynn("[say=eliza]Давай займемся химией в стиле доктора Куинн![/say]")
 
-		saynn("She begins by filling a vial with some milk and carefully placing it into a little centrifuge. After pressing a button, the centrifuge begins to spin furiously.")
+		saynn("Она начинает с того, что наполняет флакон молоком и осторожно помещает его в маленькую центрифугу. После нажатия кнопки центрифуга начинает бешено вращаться.")
 
-		saynn("[say=eliza]First, we extract the protein strands from the milk.. Casein, specifically. See it as a.. binding agent.[/say]")
+		saynn("[say=eliza]Сначала мы извлекаем белковые цепочки из молока... конкретно казеин. Считай, что это... связующее вещество.[/say]")
 
-		saynn("As the centrifuge spins, you notice how the milk begins to separate into distinct layers. After that's done, Quinn carefully siphons off the protein-rich layer into its own beaker.")
+		saynn("Пока центрифуга вращается, ты замечаешь, как молоко начинает разделяться на отчетливые слои. Когда это закончено, Куинн осторожно отсасывает богатый белком слой в отдельный химический стакан.")
 
-		saynn("Next, she moves to the semen sample. She places it inside a different machine.")
+		saynn("Затем она переходит к образцу семени. Она помещает его в другой аппарат.")
 
-		saynn("[say=eliza]It's a plasma separator. It can extract nucleic acids and bio-alchemical marks that we will need to emulate the pill's unique transformative properties.[/say]")
+		saynn("[say=eliza]Это сепаратор плазмы. Он может извлекать нуклеиновые кислоты и биоалхимические метки, которые понадобятся нам для имитации уникальных трансформирующих свойств таблетки.[/say]")
 
-		saynn("All of that sounds super complicated.. but it does seem to be too hard to do. You just let machines do their work..")
+		saynn("Все это звучит суперсложно... но, похоже, это слишком трудно сделать вручную. Ты просто позволяешь машинам делать свою работу...")
 
-		saynn("The plasma separator produces a faint glow as it isolates specific molecules. Doctor Quinn extras them into a vial and combines them with the milk proteins in a third machine.")
+		saynn("Сепаратор плазмы испускает слабое свечение, изолируя определенные молекулы. Доктор Куинн переливает их во флакон и смешивает с молочными белками в третьем аппарате.")
 
-		saynn("[say=eliza]This is a chemical assembler. Final step![/say]")
+		saynn("[say=eliza]Это химический ассемблер. Финальный этап![/say]")
 
-		saynn("She inputs the molecular structure of the newly scanned drug and presses a button. And so the machine begins to assemble the component atom by atom, mimicking the original pill's structure.")
+		saynn("Она вводит молекулярную структуру только что просканированного наркотика и нажимает кнопку. И машина начинает собирать компонент атом за атомом, имитируя структуру оригинальной таблетки.")
 
-		saynn("[say=eliza]A little sulfur for stability.. a hint of magic-bound polymer chains.. and there we go![/say]")
+		saynn("[say=eliza]Немного серы для стабильности... капля полимерных цепей, связанных магией... и готово![/say]")
 
-		saynn("The machine spits out a single pill, gleaming in its casing. Quinn holds it up to the light, admiring her work while speaking to herself.")
+		saynn("Машина выплевывает одну-единственную таблетку, сияющую в своей оболочке. Куинн подносит её к свету, любуясь своей работой и разговаривая сама с собой.")
 
-		saynn("[say=eliza]If I wasn't stuck here in this hole, I'd make for a good drug lord.. queen?[/say]")
+		saynn("[say=eliza]Если бы я не застряла в этой дыре, из меня вышел бы отличный наркобарон... или королева?[/say]")
 
-		saynn("She turns to you, her smirk widening into a grin that flashes her sharp feline fangs.")
+		saynn("Она поворачивается к тебе, и её ухмылка перерастает в широкую улыбку, обнажающую острые кошачьи клыки.")
 
-		saynn("[say=eliza]One perfectly brewed DemoniX pill. Now, let's see who is brave.. or stupid.. enough to test it.[/say]")
+		saynn("[say=eliza]Одна идеально сваренная таблетка «Демоникс». Теперь посмотрим, кто окажется достаточно смелым... или тупым... чтобы её протестировать.[/say]")
 
-		saynn("She winks at you and purrs softly.")
+		saynn("Она подмигивает тебе и тихо мурлычет.")
 
-		saynn("[say=eliza]Feeling lucky, inmate~? Wanna do something for science?[/say]")
+		saynn("[say=eliza]Чувствуешь азарт, заключенный~? Хочешь сделать что-нибудь ради науки?[/say]")
 
-		saynn("[say=pc]Isn't that dangerous?[/say]")
+		saynn("[say=pc]Разве это не опасно?[/say]")
 
-		saynn("[say=eliza]Well.. it's safe because it's not permanent.. Until you make it permanent. Our body actually has a backup of its DNA stored. So you can always return to your old self through certain procedures.. unless that backup got cleared too~. Then you're fucked~.[/say]")
+		saynn("[say=eliza]Ну... это безопасно, потому что эффект не постоянный... Пока ты сама не сделаешь его вечным. На самом деле в нашем теле хранится резервная копия ДНК. Так что ты всегда сможешь вернуться к своему прежнему облику с помощью определенных процедур... если только эта копия тоже не затрется~. Тогда тебе пиздец~.[/say]")
 
-		saynn("Wow. Sounds safe indeed.")
+		saynn("Вау. Звучит и правда безопасно.")
 
-		addButton("Eat it", "Being a half-demon sounds fun! The pill will probably not work if you are already a demon or have other transformations already happening..", "eat_pill")
-		addButton("Refuse", "You'd rather not risk it", "no_eat")
-		addButton("Make her eat it", "(Submissive sex) Ask if she is brave enough to try her own product. She will probably become horny and dominant.. very dominant..", "make_her_eat")
+		addButton("Скушать", "Быть полудемоном — это, должно быть, весело! Таблетка, скорее всего, не сработает, если ты уже демон или если у тебя уже идут другие трансформации...", "eat_pill")
+		addButton("Отказаться", "Лучше не рисковать", "no_eat")
+		addButton("Заставить её съесть её", "(Покорный секс) Спросить, хватит ли ей смелости попробовать собственный продукт. Вероятно, она возбудится и станет доминантной... очень доминантной...", "make_her_eat")
 	if(state == "no_eat"):
-		saynn("[say=pc]I'm good. Can I just have that pill maybe?[/say]")
+		saynn("[say=pc]Я в порядке. Можно мне просто взять эту таблетку?[/say]")
 
-		saynn("She twists the drug in her paw, an unsatisfied curiosity sparkling in her eyes.")
+		saynn("Она крутит наркотик в лапе, а в её глазах вспыхивает неутоленное любопытство.")
 
-		saynn("[say=eliza]Ummm.. nah.[/say]")
+		saynn("[say=eliza]Ммм... не, ага.[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("[say=eliza]I used my materials so it's only fair. If you want to have one, you can just make it now, assistant~.[/say]")
+		saynn("[say=eliza]Я потратила свои материалы, так что это будет честно. Если хочешь такую же, можешь просто сделать её прямо сейчас, ассистентка~.[/say]")
 
-		saynn("Eliza gasps softly.")
+		saynn("Элиза тихо ахает.")
 
-		saynn("[say=eliza]Right! This is my lab.. but I will let you use it for now. There is a lot of equipment here, try not to break anything![/say]")
+		saynn("[say=eliza]Верно! Это моя лаборатория... но пока что я позволю тебе ей пользоваться. Тут полно оборудования, постарайся ничего не разломать![/say]")
 
-		saynn("She pockets that pill that she made and turns out, showing you her chemistry station.")
+		saynn("Она прячет в карман сделанную ею таблетку и разворачивается, показывая тебе свою химическую станцию.")
 
-		saynn("[say=eliza]There is where you can brew drugs, just like I did right now. You will have to supply the base fluids yourself. Donating them in the nursery sends some here but you can just fill the tanks directly.. or let me milk you~.[/say]")
+		saynn("[say=eliza]Здесь можно варить наркоту, прямо как я сейчас. Базовую жидкость тебе придётся добывать самому. Если сдавать её в детском отделении, часть будет поступать сюда, но ты можешь наполнять резервуары напрямую... или позволить мне подоить тебя~.[/say]")
 
-		saynn("She then shows you some big machines and a computer.")
+		saynn("Затем она показывает тебе несколько массивных машин и компьютер.")
 
-		saynn("[say=eliza]Leave the drug scanning to me, it's quite a tricky procedure.. especially with our old equipment. But if you get enough science points, you can actually upgrade it.[/say]")
+		saynn("[say=eliza]Сканирование наркотиков оставь мне, это довольно тонкий процесс... особенно с нашим старым оборудованием. Но если накопишь достаточно очков науки, его можно будет прокачать.[/say]")
 
-		saynn("Science points.. you remember the nursery bounties giving you some.")
+		saynn("Очки науки... ты помнишь, что их можно было получить за награды в детском отделении.")
 
-		saynn("[say=pc]Science points?[/say]")
+		saynn("[say=pc]Очки науки?[/say]")
 
-		saynn("She shrugs.")
+		saynn("Она пожимает плечами.")
 
-		saynn("[say=eliza]It's.. entropy mumbo jumbo nonsense, I have no idea how it works. But we can use it to upgrade our equipment and unlock new drugs and prototypes.[/say]")
+		saynn("[say=eliza]Это... какая-то энтропийная херня, я понятия не имею, как это работает. Но с их помощью мы можем улучшать наше оборудование и открывать новые наркотики и прототипы.[/say]")
 
-		saynn("Prototypes.. that sounds interesting.")
+		saynn("Прототипы... звучит интересно.")
 
-		saynn("[say=pc]And how do I earn those science points?[/say]")
+		saynn("[say=pc]И как же мне заработать эти очки науки?[/say]")
 
-		saynn("[say=eliza]Well, by doing bounties and letting me scan new suspicious pills.[/say]")
+		saynn("[say=eliza]Ну, выполняя заказы на охоту и позволяя мне сканировать новые подозрительные таблетки.[/say]")
 
-		saynn("She scritches her chin.")
+		saynn("Она почесывает подбородок.")
 
-		saynn("[say=eliza]Oh yeah, we can also extract useful research data from transformations themselves. Come to me when you think that your transformation has reached its final stage and then I can scan the result! That would give us a lot of science points![/say]")
+		saynn("[say=eliza]Ах да, мы также можем извлекать полезные исследовательские данные из самих трансформаций. Подходи ко мне, когда почувствуешь, что твоя трансформация достигла финальной стадии, и тогда я смогу просканировать результат! Это принесет нам кучу научных очков![/say]")
 
-		saynn("[say=pc]What if I don't want to try these pills on myself?[/say]")
+		saynn("[say=pc]А что, если я не хочу испытывать эти таблетки на себе?[/say]")
 
-		saynn("Eliza hums.")
+		saynn("Элиза что-то напевает под нос.")
 
-		saynn("[say=eliza]Feed them to someone else then. And then bring that person to me~.[/say]")
+		saynn("[say=eliza]Тогда скорми их кому-нибудь другому. А потом приведи этого человека ко мне~.[/say]")
 
-		saynn("So you just have to find a test subject..")
+		saynn("Значит, нужно просто найти подопытного...")
 
-		saynn("[say=pc]Alright. It's a lot so far.[/say]")
+		saynn("[say=pc]Ладно. Пока что этого достаточно.[/say]")
 
-		saynn("Eliza smiles and walks up to you, her paws land on your shoulders.")
+		saynn("Элиза улыбается и подходит к тебе, кладя лапы тебе на плечи.")
 
-		saynn("[say=eliza]Poke around, it's not quantum physics~. Just try not to trash the place.. or I will come find you. And you don't want me to come after you~.[/say]")
+		saynn("[say=eliza]Ковыряйся сколько влезет, это тебе не квантовая физика~. Только постарайся не разнести тут всё к чертям... иначе я приду искать тебя. А тебе точно не захочется, чтобы я за тобой охотилась~.[/say]")
 
-		saynn("So threatening.. but also.. you can't hide your chuckle.")
+		saynn("Такая угрожающая... но в то же время... ты не можешь сдержать смешок.")
 
-		saynn("[say=eliza]Fuck, I did it again![/say]")
+		saynn("[say=eliza]Блядь, я опять это сделала![/say]")
 
-		saynn("Eliza steps back and spreads her arms.")
+		saynn("Элиза отступает назад и широко разводит руки.")
 
-		saynn("[say=eliza]I will go back to my boring ass work shift now. Let me know if you find something interesting![/say]")
+		saynn("[say=eliza]Теперь пойду на свою скучную сраную смену. Дай знать, если найдешь что-нибудь интересное![/say]")
 
-		saynn("And just like that, she leaves you alone.. in her lab.")
+		saynn("И вот так просто она оставляет тебя одного... в своей лаборатории.")
 
-		saynn("Time to do some science.")
+		saynn("Пора заняться наукой.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "make_her_eat"):
-		saynn("Your mind is still quite cloudy.. but you're trying to focus..")
+		saynn("В голове всё еще туман... но ты пытаешься сосредоточиться...")
 
-		saynn("[say=pc]Didn't you say that it should take a while for effects to manifest?[/say]")
+		saynn("[say=pc]Разве ты не говорила, что эффект должен проявиться не сразу?[/say]")
 
-		saynn("She hums.. and then shrugs.")
+		saynn("Она что-то напевает под нос... а затем пожимает плечами.")
 
-		saynn("[say=eliza]That's how it should work.. Maybe something is accelerating the process for me. Might be the other drugs that I accidentally breathe in sometimes during work~.[/say]")
+		saynn("[say=eliza]Так оно и должно работать... Может, что-то ускоряет процесс. Возможно, дело в других препаратах, которыми я иногда случайно надышусь во время работы~.[/say]")
 
-		saynn("Right..")
+		saynn("Понятно...")
 
-		addButton("Continue", "See what happens next", "end_tutorial")
+		addButton("Продолжить", "Смотреть, что будет дальше", "end_tutorial")
 	if(state == "eat_no_effect"):
-		saynn("What could go wrong.. You grab the pill from Eliza's paw.. and throw it into your mouth.")
+		saynn("Что может пойти не так... Ты хватаешь таблетку из лапы Элизы... и закидываешь её в рот.")
 
-		saynn("[say=eliza]So eager~. I love the enthusiasm.[/say]")
+		saynn("[say=eliza]Какая жажда~. Обожаю такой энтузиазм.[/say]")
 
-		saynn("You steady your breathing and try to focus on yourself.. So far.. you don't feel any different.")
+		saynn("Ты стараешься дышать ровно и сосредоточиться на своих ощущениях... Пока что... ты не чувствуешь никакой разницы.")
 
-		saynn("[say=pc]How long does it take?[/say]")
+		saynn("[say=pc]И сколько же это занимает времени?[/say]")
 
-		saynn("Eliza shrugs.")
+		saynn("Элиза пожимает плечами.")
 
-		saynn("[say=eliza]DNA alteration is not a fast process.. It happens in stages too.. not gradual.. but in jumps.[/say]")
+		saynn("[say=eliza]Изменение ДНК — процесс не быстрый... Он идет поэтапно... не плавно, а скачками.[/say]")
 
-		saynn("Time passes slowly when you're so focussed.. seconds feel like minutes.")
+		saynn("Когда ты так сосредоточен, время тянется медленно... секунды кажутся минутами.")
 
-		saynn("[say=eliza]But I think you should have felt something by now. Do you?[/say]")
+		saynn("[say=eliza]Но мне кажется, к этому моменту ты уже должен был что-то почувствовать. Ну как?[/say]")
 
-		saynn("You can't say that you do.. so you shake your head.")
+		saynn("Ты не можешь сказать, что почувствовал, поэтому просто качаешь головой.")
 
-		saynn("[say=eliza]Aw. Not every pill is gonna work on everyone, our body is smart enough to refuse the DNA changes that it can't support. Maybe you're just already too much of a demon~.[/say]")
+		saynn("[say=eliza]Оу. Не каждая таблетка действует на всех одинаково, наше тело достаточно умное, чтобы отвергать те изменения ДНК, которые оно не может выдержать. Может, ты уже слишком сильно разогнался и стал демоном~.[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=eliza]Or maybe your body is already being transformed by something else, hard for me to tell.. with just my eyes.[/say]")
+		saynn("[say=eliza]А может, твое тело уже трансформируется под воздействием чего-то другого... Одними глазами тут сложно разобрать...[/say]")
 
-		addButton("Continue", "See what happens next", "end_tutorial")
+		addButton("Продолжить", "Смотреть, что будет дальше", "end_tutorial")
 	if(state == "end_tutorial"):
-		saynn("[say=eliza]Anyway! This is my lab.. but I will let you use it for now. There is a lot of equipment here, try not to break anything! Be a good assistant.[/say]")
+		saynn("[say=eliza]В любом случае! Это моя лаборатория... но пока что я позволю тебе ею пользоваться. Тут полно оборудования, постарайся ничего не разбить! Будь хорошим ассистентом.[/say]")
 
-		saynn("She turns out, showing you her chemistry station.")
+		saynn("Она разворачивается, показывая тебе свою химическую станцию.")
 
-		saynn("[say=eliza]There is where you can brew drugs, just like I did right now. You will have to supply the base fluids yourself. Donating them in the nursery sends some here but you can just fill the tanks directly.. or let me milk you~.[/say]")
+		saynn("[say=eliza]Здесь можно варить наркоту, прямо как я сейчас. Базовую жидкость тебе придётся добывать самому. Если сдавать её в детском отделении, часть будет поступать сюда, но ты можешь наполнять резервуары напрямую... или позволить мне подоить тебя~.[/say]")
 
-		saynn("She then shows you some big machines and a computer.")
+		saynn("Затем она показывает тебе несколько массивных машин и компьютер.")
 
-		saynn("[say=eliza]Leave the drug scanning to me, it's quite a tricky procedure.. especially with our old equipment. But if you get enough science points, you can actually upgrade it.[/say]")
+		saynn("[say=eliza]Сканирование наркотиков оставь мне, это довольно тонкий процесс... особенно с нашим старым оборудованием. Но если накопишь достаточно очков науки, его можно будет прокачать.[/say]")
 
-		saynn("Science points.. you remember the nursery bounties giving you some.")
+		saynn("Очки науки... ты помнишь, что их можно было получить за награды в детском отделении.")
 
-		saynn("[say=pc]Science points?[/say]")
+		saynn("[say=pc]Очки науки?[/say]")
 
-		saynn("She shrugs.")
+		saynn("Она пожимает плечами.")
 
-		saynn("[say=eliza]It's.. entropy mumbo jumbo nonsense, I have no idea how it works. But we can use it to upgrade our equipment and unlock new drugs and prototypes.[/say]")
+		saynn("[say=eliza]Это... какая-то энтропийная херня, я понятия не имею, как это работает. Но с их помощью мы можем улучшать наше оборудование и открывать новые наркотики и прототипы.[/say]")
 
-		saynn("Prototypes.. that sounds interesting.")
+		saynn("Прототипы... звучит интересно.")
 
-		saynn("[say=pc]And how do I earn those science points?[/say]")
+		saynn("[say=pc]И как же мне заработать эти очки науки?[/say]")
 
-		saynn("[say=eliza]Well, by doing bounties and letting me scan new suspicious pills.[/say]")
+		saynn("[say=eliza]Ну, выполняя заказы на охоту и позволяя мне сканировать новые подозрительные таблетки.[/say]")
 
-		saynn("She scritches her chin.")
+		saynn("Она почесывает подбородок.")
 
-		saynn("[say=eliza]Oh yeah, we can also extract useful research data from transformations themselves. Come to me when you think that your transformation has reached its final stage and then I can scan the result! That would give us a lot of science points![/say]")
+		saynn("[say=eliza]Ах да, мы также можем извлекать полезные исследовательские данные из самих трансформаций. Подходи ко мне, когда почувствуешь, что твоя трансформация достигла финальной стадии, и тогда я смогу просканировать результат! Это принесет нам кучу научных очков![/say]")
 
-		saynn("[say=pc]What if I don't want to try these pills on myself?[/say]")
+		saynn("[say=pc]А что, если я не хочу испытывать эти таблетки на себе?[/say]")
 
-		saynn("Eliza hums.")
+		saynn("Элиза что-то напевает под нос.")
 
-		saynn("[say=eliza]Feed them to someone else then. And then bring that person to me~.[/say]")
+		saynn("[say=eliza]Тогда скорми их кому-нибудь другому. А потом приведи этого человека ко мне~.[/say]")
 
-		saynn("So you just have to find a test subject..")
+		saynn("Значит, нужно просто найти подопытного...")
 
-		saynn("[say=pc]Alright. It's a lot so far.[/say]")
+		saynn("[say=pc]Ладно. Пока что этого достаточно.[/say]")
 
-		saynn("Eliza smiles and walks up to you, her paws land on your shoulders.")
+		saynn("Элиза улыбается и подходит к тебе, кладя лапы тебе на плечи.")
 
-		saynn("[say=eliza]Poke around, it's not quantum physics~. Just try not to trash the place.. or I will come find you. And you don't want me to come after you~.[/say]")
+		saynn("[say=eliza]Ковыряйся сколько влезет, это тебе не квантовая физика~. Только постарайся не разнести тут всё к чертям... иначе я приду искать тебя. А тебе точно не захочется, чтобы я за тобой охотилась~.[/say]")
 
-		saynn("So threatening.. but also.. you can't hide your chuckle.")
+		saynn("Такая угрожающая... но в то же время... ты не можешь сдержать смешок.")
 
-		saynn("[say=eliza]Fuck, I did it again![/say]")
+		saynn("[say=eliza]Блядь, я опять это сделала![/say]")
 
-		saynn("Eliza steps back and spreads her arms.")
+		saynn("Элиза отступает назад и широко разводит руки.")
 
-		saynn("[say=eliza]I will go back to my boring ass work shift now. Let me know if you find something interesting![/say]")
+		saynn("[say=eliza]Теперь пойду на свою скучную сраную смену. Дай знать, если найдешь что-нибудь интересное![/say]")
 
-		saynn("And just like that, she leaves you alone.. in her lab.")
+		saynn("И вот так просто она оставляет тебя одного... в своей лаборатории.")
 
-		saynn("Time to do some science.")
+		saynn("Пора заняться наукой.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "eat_has_effect"):
-		saynn("What could go wrong.. You grab the pill from Eliza's paw.. and throw it into your mouth.")
+		saynn("Что может пойти не так... Ты хватаешь таблетку из лапы Элизы... и закидываешь её в рот.")
 
-		saynn("[say=eliza]So eager~. I love the enthusiasm.[/say]")
+		saynn("[say=eliza]Какая жажда~. Обожаю такой энтузиазм.[/say]")
 
-		saynn("You steady your breathing and try to focus on yourself.. So far.. you don't feel any different.")
+		saynn("Ты стараешься дышать ровно и сосредоточиться на своих ощущениях... Пока что... ты не чувствуешь никакой разницы.")
 
-		saynn("[say=pc]How long does it take?[/say]")
+		saynn("[say=pc]И сколько же это занимает времени?[/say]")
 
-		saynn("Eliza shrugs.")
+		saynn("Элиза пожимает плечами.")
 
-		saynn("[say=eliza]DNA alteration is not a fast process.. It happens in stages too.. not gradual.. but in jumps.[/say]")
+		saynn("[say=eliza]Изменение ДНК — процесс не быстрый... Он идет поэтапно... не плавно, а скачками.[/say]")
 
-		saynn("Time passes slowly when you're so focussed.. seconds feel like minutes.")
+		saynn("Когда ты так сосредоточен, время тянется медленно... секунды кажутся минутами.")
 
-		saynn("[say=eliza]But I think you should have felt something by now. Do you?[/say]")
+		saynn("[say=eliza]Но мне кажется, к этому моменту ты уже должен был что-то почувствовать. Ну как?[/say]")
 
-		saynn("In fact.. yeah.. a slight itch.. near your forehead. You scratch it.. but the feeling doesn't go away. Your butt feels a bit funny too.")
+		saynn("На самом деле... да... легкий зуд... где-то в районе лба. Ты чешешь его... но ощущение не проходит. В заднице тоже становится как-то странно.")
 
-		saynn("[say=pc]I think I do..[/say]")
+		saynn("[say=pc]Думаю, что да...[/say]")
 
-		saynn("[say=eliza]Great~. I'd love to watch it but, like I said, it's a process.. might take hours.. or days.[/say]")
+		saynn("[say=eliza]Отлично~. Я бы с удовольствием понаблюдала, но, как я уже сказала, это процесс... может занять часы... или даже дни.[/say]")
 
-		saynn("All you can do is wait it seems..")
+		saynn("Похоже, всё, что тебе остается — это ждать...")
 
-		saynn("[say=eliza]I've read that some transformations can be accelerated. You will have to figure it out yourself.[/say]")
+		saynn("[say=eliza]Я читала, что некоторые трансформации можно ускорить. Тебе придется разобраться с этим самостоятельно.[/say]")
 
-		addButton("Continue", "See what happens next", "end_tutorial")
+		addButton("Продолжить", "Смотреть, что будет дальше", "end_tutorial")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

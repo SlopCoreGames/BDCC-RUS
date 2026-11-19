@@ -111,9 +111,9 @@ func _run():
 				"Would you do something for me? I'll make it worth your while...",
 			])+"[/say]")
 			
-		saynn("Your thoughs murk over with the desire to serve.")
+		saynn("Твои мысли затуманиваются жаждой служения.")
 			
-		saynn("[say=pc]Yes...[/say]")
+		saynn("[say=pc]Да...[/say]")
 		
 		if(npcVariation in ["kind", "subby"]):
 			saynn("[say=npc]"+descriptionsPolite[endLocation]+"[/say]")
@@ -125,7 +125,7 @@ func _run():
 			else:
 				saynn("[say=npc]"+descriptionsDemanding[endLocation]+"[/say]")
 		
-		saynn("Compelled to obey, you...")
+		saynn("Поддавшись порыву повиноваться, ты...")
 		HypnokinkUtil.addUnresistableHypnoButtons(self, "moving_towards", ["Head out", "Get moving", "Fetch"])
 	
 	if(state == "moving_towards" || state == "moving_back"):
@@ -137,7 +137,7 @@ func _run():
 		var _roomInfo = GM.world.getRoomByID(path[0])
 		
 		var adjective = RNG.pick(["purposefully", "obediently", "docilely", "slavishly"])
-		saynn("You "+adjective+" walk towards your destination.")
+		saynn("Вы "+adjective+" направляешься к цели.")
 		
 		if(_roomInfo == null):
 			pass
@@ -147,16 +147,16 @@ func _run():
 			else:
 				saynn(_roomInfo.getDescription())
 				
-		addButton("Skip", "Fade into trance", "skip_towards")
+		addButton("Пропустить", "Погрузиться в транс", "skip_towards")
 		HypnokinkUtil.addHypnoButtons(self, "moving_towards", "resist", ["Fetch", "Move"], ["Stop", "Resist"], 1)
 		
 	if (state == "arrive"):
-		saynn("You retrieve what you came for.")
+		saynn("Ты забираешь то, за чем пришел.")
 		
-		addButton("Retrieve", "Grab the thing", "head_back")
+		addButton("Забрать", "Схватить вещь", "head_back")
 		
 	if (state == "return"):
-		saynn("You bring the item back as ordered.")
+		saynn("Ты приносишь предмет, как и было приказано.")
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 
@@ -166,7 +166,7 @@ func _run():
 				"There's a good {pc.boy}.",
 			])+"[/say]")
 			
-			saynn("{npc.He} {npc.verb('take')} your delivery and {npc.verb('walk')} away.")
+			saynn("{npc.He} {npc.verb('take')} свою доставку и {npc.verb('walk')} прочь.")
 			
 		# (mean version)
 		if(npcVariation == "mean"):
@@ -176,7 +176,7 @@ func _run():
 				"What took you so long?"
 			])+"[/say]")
 			
-			saynn("{npc.He} roughly {npc.verb('snatch', 'snatches')} your delivery and {npc.verb('stroll')} off without another word.")
+			saynn("{npc.He} грубо {npc.verb('snatch', 'snatches')} твою посылку и {npc.verb('stroll')} без единого слова.")
 
 		# (kind version)
 		if(npcVariation == "kind"):
@@ -186,7 +186,7 @@ func _run():
 				"What a good {pc.boy}!",
 			])+"[/say]")
 			
-			saynn("{npc.He} playfully {npc.verb('scratch', 'scratches')} you on the chin, {npc.verb('take')} your delivery and {npc.verb('walk')} away.")
+			saynn("{npc.He} игриво {npc.verb('scratch', 'scratches')} тебя по подбородку, {npc.verb('take')} твою посылку и {npc.verb('walk')} прочь.")
 			
 		# (subby version)
 		if(npcVariation == "subby"):
@@ -196,13 +196,13 @@ func _run():
 				"I'll have to make sure to thank you properly later~",
 			])+"[/say]")
 			
-			saynn("{npc.He} cheerfully {npc.verb('take')} your delivery and skips off.")
+			saynn("{npc.He} весело {npc.verb('take')} твою посылку и убегает вприпрыжку.")
 		
-		saynn("You bask in the satisfaction of a job well done.")
-		addButton("Nice", "", "endthescene")
+		saynn("Ты наслаждаешься чувством удовлетворения от хорошо выполненной работы.")
+		addButton("Приятно", "", "endthescene")
 		
 	if (state == "resist"):
-		saynn("You stop and shudder in place, on the brink of breaking the spell.")
+		saynn("Ты замираешь и вздрагиваешь, едва не разрушив чары.")
 		saynn("[say=pc]"+RNG.pick([
 			"Wait, what am I...", 
 			"Where am I...", 
@@ -211,16 +211,16 @@ func _run():
 			"But why should I-"
 			])+"[/say]")
 		
-		saynn("Now that you've established you [i]can[/i] stop, you really should just...")
+		saynn("Раз уж ты доказал, что [i]можешь[/i] остановиться, тебе действительно стоит просто...")
 		HypnokinkUtil.addHypnoButtons(self, "moving_towards", "resist_2", ["Fetch", "Move"], ["Stop", "Resist"], 1)
 	if (state == "resist_2"):
 		removeCharacter(npcID)
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You manage to shake it off. Better go before {npc.name} finds you again.")
+		saynn("Тебе удается стряхнуть оцепенение. Лучше уходить, пока {npc.name} не нашла тебя снова.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 		
 func _react(_action: String, _args):

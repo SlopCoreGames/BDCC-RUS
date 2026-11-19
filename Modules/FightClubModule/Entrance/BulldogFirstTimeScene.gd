@@ -9,99 +9,99 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="bulldog"})
 
 	if(state == ""):
-		saynn("Being very curious, you decide to wander closer to the only soul nearby. The high security inmate quickly notices you, he is of a canine species with his face reminding you of a bulldog. His maw is squashed but also angry-looking with fangs clearly visible.")
+		saynn("Движимый любопытством, вы решаете подойти поближе к единственному живому существу поблизости. Заключенный из режима строгого режима быстро замечает вас; это представитель собачьей расы, чьё лицо напоминает бульдога. Его пасть приплюснута, но выглядит свирепо, а клыки отчетливо видны.")
 
-		saynn("He is leaning against a concrete wall with his buff arms crossed, waiting for your move.")
+		saynn("Он прислонился к бетонной стене, скрестив свои мускулистые руки, и ждет вашего хода.")
 
-		addButton("Ask", "Try to get some information", "ask")
+		addButton("Спросить", "Попытаться разузнать что-нибудь", "ask")
 
 	if(state == "ask"):
-		saynn("[say=pc]So what are you doing here?[/say]")
+		saynn("[say=pc]Ну и что ты тут забыл?[/say]")
 
-		saynn("The buff dude stretches his shoulder and rubs his flat snout before snorting at you.")
+		saynn("Качок разминает плечо и трет свою плоскую морду, после чего фыркает в вашу сторону.")
 
-		saynn("[say=bulldog]I don’t recognize your face. Fuck off.[/say]")
+		saynn("[say=bulldog]Твое лицо мне ни о чем не говорит. Отъебись.[/say]")
 
-		saynn("Huh, that was a strange reaction. You decide to stop bugging the mean guy for now and just look around. The only unique properties about this piece of land is how out of the way it is and also a lonely maintenance hatch on one of the walls which doesn’t seem to be powered.")
+		saynn("Хм, странная реакция. Вы решаете пока не докучать угрюмому парню и просто осмотреться. Единственная особенность этого места — его глухость, а еще на одной из стен виден одинокий технический люк, который, кажется, обесточен.")
 
-		saynn("When you focus your gaze on the hatch and try to take a step towards it, you hear growling coming from the dude.")
+		saynn("Стоит вам сосредоточить взгляд на люке и сделать шаг к нему, как со стороны парня доносится рычание.")
 
-		saynn("[say=pc]Are you guarding that? What’s behind it?[/say]")
+		saynn("[say=pc]Ты его охраняешь? Что там внутри?[/say]")
 
-		saynn("[say=bulldog]I told you to fuck off.[/say]")
+		saynn("[say=bulldog]Я же сказал — отъебись.[/say]")
 
-		saynn("Seems like this guy is not the sharing type.")
+		saynn("Похоже, этот парень не из тех, кто любит делиться.")
 
-		addButton("Intimidate", "Maybe some punches can make him talk", "intimidate")
-		addButton("Seduce", "A sweet word or two can make anyone melt", "seduce")
-		addButton("Wait", "Just wait and see what happens.", "wait")
+		addButton("Запугивание", "Может, пара ударов заставят его разговориться?", "intimidate")
+		addButton("Соблазнить", "Пара ласковых слов — и любой растает.", "seduce")
+		addButton("Подождать", "Просто подождать и посмотреть, что будет.", "wait")
 
 	if(state == "intimidate"):
-		saynn("[say=pc]Talk is cheap. Gonna keep barking at me, dog?[/say]")
+		saynn("[say=pc]Слова стоят дешево. И долго ты еще будешь на меня лаять, псина?[/say]")
 
-		saynn("The bulldog cracks his neck and flexes his muscles before pushing himself away from the wall. He walks up to you, his chest is like a wall by itself shoving you back. Seems like it’s a fight.")
+		saynn("Булдог хрустит шеей и напрягает мышцы, прежде чем оттолкнуться от стены. Он идет к тебе, и его грудь, словно каменная стена, буквально вжимает тебя в стену. Похоже, назревает драка.")
 
-		addButton("Someone!", "Someone steals your attention", "someone!")
+		addButton("Эй, кто-нибудь!", "Кто-то переключает твое внимание", "someone!")
 
 	if(state == "seduce"):
-		saynn("[say=pc]You are being awfully mean for such a handsome-looking guy.[/say]")
+		saynn("[say=pc]Ты слишком вредный для такого красавчика.[/say]")
 
-		saynn("You put arms over your {pc.masc} thighs and slowly approach the guy while putting extra sway into your motions. The bulldog squints, his brows frown. But maybe he just needs some extra convincing.")
+		saynn("Ты кладешь руки на свои {pc.masc} бедра и медленно приближаешься к парню, нарочито покачивая тазом. Бульдог прищуривается, его брови хмурятся. Но, возможно, ему просто нужно чуть больше убедительности.")
 
-		addButton("Someone!", "Someone steals your attention", "someone!")
+		addButton("Эй, кто-нибудь!", "Кто-то переключает твое внимание", "someone!")
 
 	if(state == "wait"):
-		saynn("You decide not to anger the guy even and just step back. Though you don’t leave completely, you just watch from afar. The bulldog didn’t seem to like that, he sees you spying on him and begins stepping towards your spot while flexing his muscles and cracking his neck and knuckles.")
+		saynn("Ты решаешь не злить парня и просто отступаешь назад. Хотя ты не уходишь совсем, а лишь наблюдаешь издалека. Бульдогу это, кажется, не нравится: он замечает, что ты шпионишь, и начинает идти в твою сторону, раздувая мышцы и хрустя шеей и костяшками пальцев.")
 
-		saynn("[say=pc]Aww, c’mon. I’m just watching.[/say]")
+		saynn("[say=pc]Ну же, ну чего ты! Я просто смотрю.[/say]")
 
-		saynn("Seems like the fight is inevitable.")
+		saynn("Похоже, драка неизбежна.")
 
-		addButton("Someone!", "Someone steals your attention", "someone!")
+		addButton("Эй, кто-нибудь!", "Кто-то переключает твое внимание", "someone!")
 
 	if(state == "someone!"):
 		addCharacter("announcer")
 		
-		saynn("[say=announcer]La-a-adies![/say]")
+		saynn("[say=announcer]Дамы![/say]")
 
-		saynn("Suddenly another person shows up and steals your and the bulldog's attention. He is a pure human, a very unusual species around here. Black skin, short dark hair, trimmed dark beard. His uniform is that of a lilac inmate. He stops near you and pats the bulldog on the back.")
+		saynn("Внезапно появляется еще один человек и перетягивает на себя внимание и твое, и бульдога. Это чистокровный человек — очень редкий вид в этих краях. Смуглая кожа, короткие темные волосы, аккуратная темная бородка. На нем форма заключенного сиреневого цвета. Он останавливается рядом с тобой и хлопает бульдога по спине.")
 
-		saynn("[say=announcer]And gentleman. And everyone in-between, of course, I don’t discriminate.[/say]")
+		saynn("[say=announcer]И джентльмены. И все, кто между ними, разумеется — я не деликатен в выборе.[/say]")
 
-		saynn("The bulldog guy quickly loses his angry temper and nods to the unknown person.")
+		saynn("Бульдог мгновенно остывает и кивает незнакомцу.")
 
-		saynn("[say=bulldog]Welcome, Mr. Ans. Everyone is waiting for you.[/say]")
+		saynn("[say=bulldog]Добро пожаловать, мистер Анс. Все вас ждут.[/say]")
 
-		saynn("[say=announcer]Yes-yes, so rude of me to be this late.[/say]")
+		saynn("[say=announcer]Да-да, так неловко, что я так опоздал.[/say]")
 
-		saynn("The bulldog focuses his angry gaze at you for a second before going back to the maintenance hatch and loudly knocking on it a few times. After some time, the bulky metal maintenance hatch opens up and the human guy steps in. Though he then turns towards you and spreads his arms slightly.")
+		saynn("Буллдог на секунду впивается в тебя своим яростным взглядом, после чего возвращается к техническому люку и громко стучит по нему несколько раз. Спустя какое-то время тяжелый металлический люк открывается, и внутрь входит мужик. Затем он поворачивается к тебе и слегка разводит руки в стороны.")
 
-		saynn("[say=announcer]Hey there, baby, no time to talk but. I see you wondering about this place. ‘Fraid you will have to take on this challenge to find out. The victories are so-o-o much more sweet if you have to work for them.[/say]")
+		saynn("[say=announcer]Эй, крошка, сейчас не до разговоров, но... Вижу, ты гадаешь, что это за место. Боюсь, тебе придется принять этот вызов, чтобы во всем разобраться. Победы становятся та-а-ак слаще, когда приходится за них побороться.[/say]")
 
-		saynn("His voice is so deep and soothing, your only thought is that he would do great on radio. The guy bows to you and starts unbuttoning his uniform shirt, clearly in a hurry.")
+		saynn("Его голос такой глубокий и успокаивающий, что единственная мысль в твоей голове — он бы отлично смотрелся на радио. Парень кланяется тебе и, явно торопясь, начинает расстегивать пуговицы на своей форменной рубашке.")
 
-		saynn("[say=announcer]Bulldog, let {pc.him} in when you think {pc.he} {pc.isAre} worthy.[/say]")
+		saynn("[say=announcer]Пускай Буллдога {pc.him} впускать, когда посчитаешь, что {pc.he} {pc.isAre} достоин.[/say]")
 
-		saynn("And with that, the human starts heading deeper into the darkness. The bulldog blocks the path and closes the hatch behind him. He crosses his arms again and gazes at you.")
+		saynn("С этими словами человек направляется вглубь темноты. Буллдог преграждает путь и закрывает за ним люк. Он снова скрещивает руки на груди и пристально смотрит на тебя.")
 
-		addButton("Ask", "What can you do to enter", "ask1")
+		addButton("Спросить", "Что ты сделаешь, чтобы войти?", "ask1")
 
 	if(state == "ask1"):
 		removeCharacter("announcer")
 		
-		saynn("[say=pc]So what do you want?[/say]")
+		saynn("[say=pc]Ну, чего тебе?[/say]")
 
-		saynn("The bulldog frowns again and scratches his chin.")
+		saynn("Буллдог снова хмурится и чешет подбородок.")
 
-		saynn("[say=bulldog]Fifteen creds.[/say]")
+		saynn("[say=bulldog]Пятнадцать кредитов.[/say]")
 
-		saynn("Oh.")
+		saynn("Ох.")
 
-		saynn("[say=pc]15 credits? That’s a lot.[/say]")
+		saynn("[say=pc]15 кредитов? Это прилично.[/say]")
 
-		saynn("The guy shrugs. Well, that’s something.")
+		saynn("Парень пожимает плечами. Ну, хоть что-то.")
 
-		addButton("Continue", "See what happens next", "starttalk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "starttalk")
 
 
 func _react(_action: String, _args):

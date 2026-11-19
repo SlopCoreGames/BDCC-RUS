@@ -7,134 +7,134 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=pc]I think you should totally try this one.[/say]")
+		saynn("[say=pc]Думаю, тебе стоит обязательно попробовать вот этот.[/say]")
 
-		saynn("She shakes her head.")
+		saynn("Она качает головой.")
 
-		saynn("[say=eliza]Nope![/say]")
+		saynn("[say=eliza]Не-а![/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("Her tail puffs up.")
+		saynn("Её хвост распушается.")
 
-		saynn("[say=eliza]You don't understand, I have absolutely the worst luck when it comes to these things.[/say]")
+		saynn("[say=eliza]Ты не понимаешь, в таких вещах мне чертовски не везёт.[/say]")
 
-		saynn("[say=pc]Maybe today it's gonna be different. C'mon, you can undo it, right?[/say]")
+		saynn("[say=pc]Может, сегодня всё будет иначе. Давай, ты же можешь всё отменить, да?[/say]")
 
-		saynn("Her expression softens.")
+		saynn("Выражение её лица смягчается.")
 
-		saynn("[say=eliza]I can undo anything.[/say]")
+		saynn("[say=eliza]Я могу отменить что угодно.[/say]")
 
-		saynn("[say=pc]So? You might be missing out on something cool.[/say]")
+		saynn("[say=pc]Ну так что? А то вдруг ты упускаешь что-то крутое.[/say]")
 
-		saynn("She sighs.")
+		saynn("Она вздыхает.")
 
-		saynn("[say=eliza]Alright, I'm hopeful.[/say]")
+		saynn("[say=eliza]Ладно, буду надеяться.[/say]")
 
-		saynn("She throws the pill into her mouth.. and swallows it.")
+		saynn("Она закидывает таблетку в рот... и проглатывает её.")
 
-		saynn("At first, nothing seems to change.. but then a ripple of warmth begins spreading from her chest through every limb.")
+		saynn("Сначала кажется, что ничего не меняется... но затем волна тепла начинает расходиться от её груди по каждой конечности.")
 
-		addButton("Continue", "See what happens next", "dragon_tf")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dragon_tf")
 	if(state == "dragon_tf"):
 		playAnimation(StageScene.TFLook, "start", {pc="eliza"})
-		saynn("Her fur ripples, shifting into tight, iridescent scales that glint under the sterile, clinical lights. Eliza gasps, pressing her paw to her throat as her muzzle tingles.. growing longer and more angular, the whiskered tip reshaping into a proud dragon's snout.")
+		saynn("Её мех колышется, превращаясь в плотную переливчатую чешую, которая блестит под стерильным клиническим светом. Элиза ахает, прижимая лапу к горлу: её мордочка покалывает... она удлиняется и становится более угловатой, а кончик с вибриссами перекраивается в гордый драконий нос.")
 
-		saynn("She stumbles back, eyes wide as twin horns burst from her forehead, curling backwards, a texture of a polished obsidian. Her feline ears morph away.. replaced with elegant dragon frills, now poking out from the sides of her head.")
+		saynn("Она отшатывается, широко раскрыв глаза, когда из её лба вырываются парные рога, закручиваясь назад и приобретая текстуру полированного обсидиана. Кошачьи уши исчезают... сменяясь изящными драконьими гребнями, теперь торчащими по бокам её головы.")
 
-		saynn("Behind her, the slender feline tail thickens and stretches, scales creeping along its length as it grows into a powerful, dragon-like tail.. with a tuft of soft, rich fur at the tip.")
+		saynn("Позади неё тонкий кошачий хвост утолщается и вытягивается, чешуя ползёт по всей его длине, превращая его в мощный драконий хвост... с пучком мягкого, густого меха на самом кончике.")
 
-		saynn("Eliza reaches down to brush her fingers over her new underbelly.. where her plush white fur gives way to overlapping scales.")
+		saynn("Элиза наклоняется, проводя пальцами по своему новому животу... где её плюшевый белый мех уступает место накладывающейся друг на друга чешуе.")
 
-		saynn("When the transformation process concludes, Eliza is left panting.. new Eliza.")
+		saynn("Когда процесс трансформации завершается, Элиза остается тяжело дышать... новая Элиза.")
 
-		saynn("[say=eliza]You've got to be kidding me.[/say]")
+		saynn("[say=eliza]Да вы издеваетесь![/say]")
 
-		saynn("Her voice echoes oddly from within her elongated throat.")
+		saynn("Её голос странным эхом отдается в её удлинившемся горле.")
 
-		saynn("Her gaze fixates on yours.. her nostrils flaring.. her tail wagging behind her, slapping the expensive equipment left and right.")
+		saynn("Её взгляд фиксируется на твоём... ноздри раздуваются... а хвост виляет позади неё, хлопая по дорогостоящему оборудованию то слева, то справа.")
 
-		saynn("[say=eliza]..I really wanna test if I can breathe fire. But I care for the lab too much.[/say]")
+		saynn("[say=eliza]Мне прям очень хочется проверить, умею ли я извергать пламя. Но лаборатория мне слишком дорога.[/say]")
 
-		saynn("[say=pc]I don't think you look that bad.[/say]")
+		saynn("[say=pc]По-моему, ты выглядишь не так уж плохо.[/say]")
 
-		saynn("One glare tells you everything.")
+		saynn("Один лишь взгляд говорит сам за себя.")
 
-		saynn("[say=eliza]I've seen many great-looking dragons. But I look like a plush toy![/say]")
+		saynn("[say=eliza]Я видела много прекрасных драконов. Но сама выгляжу как плюшевая игрушка![/say]")
 
-		saynn("You giggle softly.")
+		saynn("Ты тихо хихикаешь.")
 
-		saynn("[say=pc]Cute plush toy.[/say]")
+		saynn("[say=pc]Милая плюшевая игрушка.[/say]")
 
-		saynn("[say=eliza]Will I have to lay eggs now?! Is that how it works?! That just won't do![/say]")
+		saynn("[say=eliza]Неужели мне теперь придется откладывать яйца?! Так это работает?! Ну уж нет, так не пойдет![/say]")
 
-		saynn("She goes back to the chemistry station and begins brewing the same drug again. Her hands swiftly and expertly go through the process.")
+		saynn("Она возвращается к химическому стенду и снова принимается варить тот же препарат. Её руки быстро и профессионально выполняют все манипуляции.")
 
-		saynn("When that's done, she throws the pill into her mouth, zero deliberation.")
+		saynn("Закончив, она без малейших раздумий закидывает таблетку в рот.")
 
-		addButton("Continue", "See what happens next", "human_tf")
+		addButton("Продолжить", "Смотреть, что будет дальше", "human_tf")
 	if(state == "human_tf"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("A familiar warmth begins to ripple through her bones.")
+		saynn("Знакомое тепло начинает разливаться по её костям.")
 
-		saynn("Her horns are first.. those proud obsidian spirals.. shiver and splinter, cracking like falling stalactites before crumbling away.")
+		saynn("Сначала её рога... эти гордые обсидиановые спирали... они дрожат и раскалываются, трескаясь, словно падающие сталактиты, прежде чем окончательно осыпаться.")
 
-		saynn("Eliza gasps as her scales tighten and shimmer, shifting from jewel-like plates to soft, feather-light skin. You watch the iridescence bleed out of her limbs, replaced by the smooth human flesh. She looks at her new hands, noting the absence of claws.")
+		saynn("Элиза ахает, когда её чешуя натягивается и начинает мерцать, превращаясь из драгоценных пластин в мягкую, невесомую кожу. Ты наблюдаешь, как радужное сияние покидает её конечности, уступая место гладкой человеческой плоти. Она разглядывает свои новые руки, отмечая отсутствие когтей.")
 
-		saynn("Her muzzle shortens, the long dragon snout folding back into a human nose and lips. Eliza stumbles as her jaw realigns, teeth reshaping and sliding into new positions. She touches her face, her brows raising high.")
+		saynn("Её морда укорачивается, длинная драконья пасть втягивается, превращаясь в человеческий нос и губы. Элиза спотыкается, когда её челюсть перестраивается, а зубы меняют форму и встают на новые места. Она касается своего лица, высоко вскинув брови.")
 
-		saynn("Behind her, the hefty tail retracts with a slow, uncomfortable pull. What was a massive, powerful tail is now just a faint tingle in her spine. With it gone, Eliza starts to lose her balance occasionally.")
+		saynn("Позади неё с медленным, неприятным тянущим ощущением втягивается тяжелый хвост. То, что было массивным, мощным хвостом, теперь превратилось лишь в слабое покалывание в позвоночнике. Без него Элиза начинает периодически терять равновесие.")
 
-		saynn("Her digigrade legs change, bones in her calves and ankles realign, flattening her stance into the full-footed plantigrade posture of a human. She reflexively bends her knees, testing the unfamiliar weight distribution. Her feet lose any kind of toe beans..")
+		saynn("Её пальцеходящие ноги меняются: кости в голенях и лодыжках перестраиваются, выравнивая её походку в полноценную человеческую плантарную позу. Она рефлекторно сгибает колени, проверяя непривычное распределение веса. Её ступни теряют любые подушечки...")
 
-		saynn("Looking down, she sees her paws replaced by slender feminine hands with delicate nails and skin.")
+		saynn("Посмотрев вниз, она видит, что её лапы сменились изящными женскими кистями с тонкими ногтями и нежной кожей.")
 
-		saynn("When everything is done, Eliza steps forward cautiously, rolling her heel to toe, eyes wide.")
+		saynn("Когда всё заканчивается, Элиза осторожно делает шаг вперед, перекатываясь с пятки на носок, широко раскрыв глаза.")
 
-		saynn("[say=eliza]Haha. Wow.[/say]")
+		saynn("[say=eliza]Ха-ха. Ого.[/say]")
 
-		saynn("She looks into the datapad, staring at her face from different directions.")
+		saynn("Она смотрит в датапад, разглядывая своё лицо под разными углами.")
 
-		saynn("[say=pc]You don't like it?[/say]")
+		saynn("[say=pc]Тебе не нравится?[/say]")
 
-		saynn("[say=eliza]Why are my ears so complicated?[/say]")
+		saynn("[say=eliza]Почему мои уши такие сложные?[/say]")
 
-		saynn("[say=pc]Probably to hear better.[/say]")
+		saynn("[say=pc]Наверное, чтобы лучше слышать.[/say]")
 
-		saynn("[say=eliza]I was hearing things just fine.. And what is this nose shape?[/say]")
+		saynn("[say=eliza]Да я и раньше прекрасно всё слышала... И что это за форма носа?[/say]")
 
-		saynn("She wiggles her nose.. and furrows her brows.")
+		saynn("Она шевелит носом... и хмурит брови.")
 
-		saynn("[say=eliza]Where is my cute little feline snout..[/say]")
+		saynn("[say=eliza]Где моя милая кошачья мордочка...[/say]")
 
-		saynn("Eliza lifts a foot and gasps at the sight of her little stumpy toes.")
+		saynn("Элиза поднимает ногу и ахает, увидев свои маленькие пухлые пальцы.")
 
-		saynn("[say=eliza]Where are my toe beans?! Where are my paws.. I liked my pastel-colored fur..[/say]")
+		saynn("[say=eliza]Где мои подушечки?! Где мои лапки... Мне так нравился мой пастельный мех...[/say]")
 
-		saynn("She sighs.")
+		saynn("Она вздыхает.")
 
-		saynn("[say=pc]It's not that bad, people can get used to any..[/say]")
+		saynn("[say=pc]Не так уж всё и плохо, люди могут привыкнуть к чему угодно...[/say]")
 
-		saynn("She throws a blue pill into her mouth.")
+		saynn("Она закидывает в рот синюю таблетку.")
 
-		addButton("Continue", "See what happens next", "back_to_cat")
+		addButton("Продолжить", "Смотреть, что будет дальше", "back_to_cat")
 	if(state == "back_to_cat"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("Her fur returns, her face morphs back in a familiar feline muzzle, her ears perk up from under her careful ponytail, her feet change shape and structure, allowing her to walk on her paw pads again, a tail is now wagging behind her back.")
+		saynn("Мех возвращается, её лицо снова принимает привычную кошачью мордочку, уши приподнимаются из-под аккуратного хвоста, стопы меняют форму и структуру, позволяя ей снова ходить на подушечках лап, а сзади начинает вилять хвост.")
 
-		saynn("When it's all over, Eliza touches herself.. and then exhales.")
+		saynn("Когда всё заканчивается, Элиза ласкает себя... а затем выдыхает.")
 
-		saynn("[say=eliza]Home, sweet home..[/say]")
+		saynn("[say=eliza]Дом, милый дом...[/say]")
 
-		saynn("Makes you smile.")
+		saynn("Заставляет улыбнуться.")
 
-		saynn("[say=pc]At least you tried.[/say]")
+		saynn("[say=pc]Ну, хотя бы попытался.[/say]")
 
-		saynn("[say=eliza]Hah. Yeah. Maybe the horns weren't so bad..[/say]")
+		saynn("[say=eliza]Хах. Ага. Может, рога были не такими уж и плохими...[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

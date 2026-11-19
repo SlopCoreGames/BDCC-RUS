@@ -105,7 +105,7 @@ func _getAttacks():
 	return ["NpcScratch", "lickWounds", "StrongBite", "TailSwipe", "FerriTaunt", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	var text = "Ferri exposes her dangerous fangs and playfully growls at you. She then extends her sharp claws and teasingly licks one. Her long dragon tail swishes behind her."
+	var text = "Ферри скалится, обнажая свои опасные клыки, и игриво рычит на тебя. Затем она выпускает острые когти и дразняще облизывает один из них. Её длинный драконий хвост мерно покачивается позади неё."
 	text += "\n\n"
 	text += "[say=ferri]You don’t stand a chance against the all mighty dracat~.[/say]"
 	text += "\n\n"

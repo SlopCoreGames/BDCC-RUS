@@ -7,17 +7,17 @@ func _run():
 	if(state == ""):
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "stand", {npc="vion", npcAction="walk", flipNPC= true, further=true})
-		saynn("Out the corner of your eye, a glint of light catches your attention. You look around for its source, and spot a lilac inmate wearing a pair of old-fashioned glasses that must have reflected the ceiling lights. Who wears glasses anymore? He's talking to another inmate about something.")
+		saynn("Краем глаза ты замечаешь какой-то блеск. Оглядевшись в поисках источника, ты натыкаешься на заключенного в сиреневой робе; на нем были старые очки, в которых, должно быть, отразился свет потолочных ламп. Кто вообще сейчас носит очки? Он о чем-то увлеченно болтает с другим заключенным.")
 
-		saynn("[say=vion]...and if you want a refresher, do not hesitate to visit. I spend as much time as possible in my cell these days anyway, and I won't mind the company.[/say]")
+		saynn("[say=vion]...и если захочешь освежить память, не стесняйся заглянуть. Я всё равно провожу в камере столько времени, сколько возможно, так что компания мне будет только в радость.[/say]")
 		
-		saynn("True to his word, now that his business is concluded he makes haste in the direction of the cellblocks.")
+		saynn("Как и обещал, закончив свои дела, он поспешно направляется в сторону жилых блоков.")
 
-		saynn("[say=pc]I wonder what that was all about?[/say]")
+		saynn("[say=pc]Интересно, о чем это они терли?[/say]")
 		
-		saynn("Well, you can always find out later. By the sounds of it, you can find this dragon in the lilac cellblock.")
+		saynn("Ну, разузнать можно и позже. Судя по всему, этого дракона можно найти в сиреневом блоке.")
 		
-		addButton("Leave", "No need to rush", "endthescene")
+		addButton("Уйти", "Спешить некуда", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

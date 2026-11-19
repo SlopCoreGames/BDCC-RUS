@@ -9,7 +9,7 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(!getModule("ElizaModule").hasAccessToTentacles()):
 		return
-	addButton(getCharacter("PCTentacles").getName(), "Approach your personal green plant", "tentacles")
+	addButton(getCharacter("PCTentacles").getName(), "Подойди к своему личному зеленому растению", "tentacles")
 
 func getPriority():
 	return 3

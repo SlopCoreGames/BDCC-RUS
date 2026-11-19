@@ -5,10 +5,10 @@ func _init():
 	id = "VionGlasses"
 
 func getVisibleName():
-	return "Glasses"
+	return "Очки"
 	
 func getDescription():
-	return "A pair of antique glasses. Who even needs these anymore?"
+	return "Пара антикварных очков. Кому они вообще сейчас нужны?"
 
 func getClothingSlot():
 	return InventorySlot.Eyes

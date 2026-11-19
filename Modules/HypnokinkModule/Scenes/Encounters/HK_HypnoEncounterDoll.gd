@@ -50,7 +50,7 @@ func _run():
 			])+"[/say]")
 			
 		if(npcVariation == "mean"):
-			saynn("{npc.He} {npc.verb('grab')} you by your clothes and roughly pulls you closer.")
+			saynn("{npc.He} {npc.verb('grab')} хватает тебя за одежду и грубо притягивает к себе.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Take this off or I'll rip it off.",
@@ -61,7 +61,7 @@ func _run():
 		# (kind version)
 		if(npcVariation == "kind"):
 			
-			saynn("{npc.He} {npc.verb('brush', 'brushes')} some dust off your clothes.")
+			saynn("{npc.He} {npc.verb('brush', 'brushes')} стряхивает пыль с твоей одежды.")
 			saynn("[say=npc]"+RNG.pick([
 				"Why don't you take this off?",
 				"You wouldn't mind stripping for me, right?",
@@ -71,20 +71,20 @@ func _run():
 		# (subby version)
 		if(npcVariation == "subby"):
 			
-			saynn("{npc.He} {npc.verb('grip')} your clothes, clearly eager to get them off you.")
+			saynn("{npc.He} {npc.verb('grip')} твою одежду, явно стремясь поскорее её снять.")
 			saynn("[say=npc]"+RNG.pick([
 				"Take these off, please?",
 				"I want to see [i]all[/i] of your beatiful body!",
 				"You've got nothing that needs hiding, handsome~",
 			])+"[/say]")
 			
-		saynn("In no time at all your clothes are coming off as you...")
+		saynn("Не успеваешь ты оглянуться, как одежда сползает с тебя, пока ты...")
 		HypnokinkUtil.addHypnoButtons(self, "stripped", "resist", ["Strip", "Remove"])
 		
 	if(state == "stripped"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("You obediently stand still, exposed and vulnerable both in body and mind.")
+		saynn("Ты послушно замираешь, обнаженная и уязвимая как телом, так и разумом.")
 		
 		# (default)
 		if(!(npcVariation in ["mean", "kind", "subby"])):
@@ -119,7 +119,7 @@ func _run():
 				"Hands up please? I just wanna bury my face in that chest~",
 			])+"[/say]")
 			
-		saynn("As your arms mechanically start to rise without any real conscious decision on your part, you...")
+		saynn("Твои руки начинают механически подниматься без всякого осознанного усилия с твоей стороны, и ты...")
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Raise"])
 	
 	if(state == "cuffs_wrists" || state == "cuffs_ankles"):
@@ -129,7 +129,7 @@ func _run():
 		# (default)
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			
-			saynn("{npc.He} {npc.verb('grab')} your "+limb+", clamping something onto them.")
+			saynn("{npc.He} {npc.verb('grab')} твои "+limb+", зажимая на них что-то.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Eyes forward. Dont move.",
@@ -139,7 +139,7 @@ func _run():
 		
 		if(npcVariation == "mean"):
 			
-			saynn("{npc.He} painfully {npc.verb('squeeze')} your "+limb+", clamping something onto them.")
+			saynn("{npc.He} мучительно {npc.verb('squeeze')} твои "+limb+", зажимая на них что-то.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Eyes forward. Let me cuff you.",
@@ -150,7 +150,7 @@ func _run():
 		# (kind version)
 		if(npcVariation == "kind"):
 			
-			saynn("{npc.He} gently {npc.verb('squeeze')} your "+limb+", clamping something onto them.")
+			saynn("{npc.He} нежно {npc.verb('squeeze')} твой "+limb+", зажимая на них что-то.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"You like being restrained, don't you?",
@@ -158,12 +158,12 @@ func _run():
 				"Are you a fan of cuffs?",
 			])+"[/say]")
 			
-		saynn("Struggling to offer any resistance, you...")
+		saynn("Тщетно пытаясь оказать хоть какое-то сопротивление, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "cuffs_"+limb+"_post", "resist", ["Hold still", "Wince", "Whine"])
 		
 	if(state == "bodywriting"):
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID})
-		saynn("{npc.He} {npc.verb('retrieve')} a black marker from somewhere and pops off the cap.")
+		saynn("{npc.He} {npc.verb('retrieve')} откуда-то черный маркер и с щелчком снимает колпачок.")
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			
@@ -197,12 +197,12 @@ func _run():
 				"Just so you don't forget me~",
 			])+"[/say]")
 		
-		saynn("Still as you can be, you...")
+		saynn("Замирая изо всех сил, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "bodywriting_2", "resist", ["Hold still", "Wince", "Whine"])
 		
 	if(state == "bodywriting_2"):
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID})
-		saynn("{npc.He} {npc.verb('draw')} [b]'"+str(BodyWritings.getWritingText(lastBodywritingID))+"'[/b] on your "+BodyWritingsZone.getZoneVisibleName(lastBodywritingZone)+".")
+		saynn("{npc.He} {npc.verb('draw')} [b]'"+str(BodyWritings.getWritingText(lastBodywritingID))+"'[/b] на твоем "+BodyWritingsZone.getZoneVisibleName(lastBodywritingZone)+".")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Suits you.",
@@ -210,21 +210,21 @@ func _run():
 			"Looks great on you.",
 		])+"[/say]")
 		
-		saynn("Unable to offer any resistance, you...")
+		saynn("Не в силах сопротивляться, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Hold still", "Wait", "Whine"])
 		
 	if(state == "kneel"):
 		#only subby version
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID, npcAction="kneel"})
 		
-		saynn("{npc.He} {npc.verb('kneel')} in front of you to admire you from closer up.")
+		saynn("{npc.He} {npc.verb('kneel')} перед тобой, чтобы рассмотреть тебя поближе.")
 		saynn("[say=npc]"+RNG.pick([
 				"Ooh, I really want to play~",
 				"I could make you feel so good...",
 				"Mmm, I like what I see!"
 			])+"[/say]")
 		
-		saynn("{npc.He} continues to kneel in front of you, nakedly ogling your body. Embarrased by the attentive desire, you...")
+		saynn("{npc.He} продолжает стоять на коленях перед тобой, нагое разглядывая твое тело. Смущенная таким пристальным желанием, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "kneel_2", "resist", ["Blush", "Pose"])
 		
 	if(state == "kneel_2"):
@@ -233,47 +233,47 @@ func _run():
 			toOgle = "{pc.penis}"
 		elif(GM.pc.hasVagina()):
 			toOgle = "{pc.vagina}"
-		saynn("{npc.He} {npc.verb('explore')} your body with {npc.his} eyes, lingering for a long time on your "+toOgle+", but teasingly taking no action. You remain obediently still, posing to be admired.")
+		saynn("{npc.He} {npc.verb('explore')} твое тело {npc.his} взглядом, долго задерживаясь на твоем "+toOgle+", но дразняще не предпринимая никаких действий. Ты послушно замираешь, принимая позы для восхищения.")
 		saynn("[say=npc]"+RNG.pick([
 				"What a lovely sight.",
 				"I could just...",
 				"So tempting~"
 			])+"[/say]")
 			
-		saynn("{npc.He} eventually {npc.verb('rise')} back on {npc.his} feet, deciding to keep playing for now. Still flustered, you...")
+		saynn("{npc.He} со временем {npc.verb('rise')} встает на {npc.his} ноги, решая пока продолжить игру. Все еще сгорая от смущения, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Blush"])
 
 
 	if(state == "punch"):
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID, npcAction="punch"})
 		#only mean version
-		saynn("With no warning, {npc.he} {npc.verb('sock')} you in the stomach!")
+		saynn("Без всякого предупреждения, {npc.he} {npc.verb('sock')} тебя прямо в живот!")
 		saynn("[say=npc]"+RNG.pick([
 				"You'd make a good punching bag!",
 				"Hold still, bitch.",
 				"You're probably gonna enjoy this anyway."
 			])+"[/say]")
 		
-		saynn("Wincing with pain, you...")
+		saynn("Вздрагивая от боли, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "punch_2", "resist", ["Hold still"])
 	
 	if(state == "punch_2"):
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID, npcAction="punch"})
 		#only mean version
-		saynn("{npc.He} repeatedly {npc.verb('jab')} you in the stomach and chest!")
+		saynn("{npc.He} раз за разом {npc.verb('jab')} тебя в живот и грудь!")
 		saynn("[say=npc]"+RNG.pick([
 				"I should make this part of my workout routine.",
 				"Bruises look good on you.",
 				"Maybe I should hit harder. Crack some ribs."
 			])+"[/say]")
 		
-		saynn("Bruised, you...")
+		saynn("Весь в синяках, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Suffer", "Endure"])
 		
 	if(state == "hug"):
 		playAnimation(StageScene.Hug, "hug", {npc=npcID})
 		if(!(npcVariation in ["mean", "kind", "subby"])):
-			saynn("{npc.He} suddenly {npc.verb('draw')} you into a hug" + ("." if GM.pc.hasBoundArms() else ", and you reflexively wrap your arms around {npc.him}."))
+			saynn("{npc.He} внезапно {npc.verb('draw')} тебя в объятия" + ("." if GM.pc.hasBoundArms() else ", and you reflexively wrap your arms around {npc.him}."))
 		
 			saynn("[say=npc]"+RNG.pick([
 				"I can be nice~",
@@ -282,7 +282,7 @@ func _run():
 		#no mean version
 		# (kind version)
 		if(npcVariation == "kind"):
-			saynn("{npc.He} gently {npc.verb('draw')} you into a hug" + ("." if GM.pc.hasBoundArms() else ", and after a brief moment of hesitation, you wrap your arms around {npc.him}."))
+			saynn("{npc.He} нежно {npc.verb('draw')} тебя в объятия" + ("." if GM.pc.hasBoundArms() else ", and after a brief moment of hesitation, you wrap your arms around {npc.him}."))
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Good {pc.boy}...",
@@ -292,7 +292,7 @@ func _run():
 			
 		# (subby version)
 		if(npcVariation == "subby"):
-			saynn("{npc.He} wraps {npc.his} arms around you" + (" and {npc.verb('nuzzle')} your chest." if GM.pc.hasBoundArms() else ". As {npc.he} {npc.verb('nuzzle')} your chest, you return the hug."))
+			saynn("{npc.He} обвивает {npc.his} руками тебя" + (" and {npc.verb('nuzzle')} your chest." if GM.pc.hasBoundArms() else ". As {npc.he} {npc.verb('nuzzle')} your chest, you return the hug."))
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Mmm~",
@@ -300,14 +300,14 @@ func _run():
 				"I want you all to myself...",
 			])+"[/say]")
 		
-		saynn("After a while {npc.he} {npc.verb('let')} go. You obediently raise your arms back up without even having to be told, and...")
+		saynn("Спустя некоторое время {npc.he} {npc.verb('let')} уходит. Ты послушно вскидываешь руки, даже не дожидаясь команды, и...")
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", [])
 		
 	if(state == "tease"):
 		playAnimation(StageScene.ArmsRaisedSex, "tease", {npc=npcID})
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
-			saynn("{npc.He} slowly, teasingly {npc.verb('circle')} behind you. You shiver as you feel hands begin to explore all over your body.")
+			saynn("{npc.He} медленно, дразняще {npc.verb('circle')} за твоей спиной. Ты вздрагиваешь, когда чувствуешь, как руки начинают исследовать всё твое тело.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"You'd do just about anything to please me, hm?",
@@ -316,7 +316,7 @@ func _run():
 			
 		# (mean version)
 		if(npcVariation == "mean"):
-			saynn("{npc.He} {npc.verb('paces')} behind you. You shiver as you feel hands begin to grope you all over your body.")
+			saynn("{npc.He} {npc.verb('paces')} стоит позади тебя. Ты вздрагиваешь, когда чувствуешь, как руки начинают бесстыдно ощупывать всё твоё тело.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"I could do [i]anything[/i] I want to you.",
@@ -326,7 +326,7 @@ func _run():
 			
 		# (kind version)
 		if(npcVariation == "kind"):
-			saynn("{npc.He} slowly, teasingly {npc.verb('circle')} behind you. You shiver as you feel hands begin to gently brush over your body.")
+			saynn("{npc.He} медленно и дразняще {npc.verb('circle')} позади тебя. Ты вздрагиваешь, когда чувствуешь, как руки начинают нежно скользить по твоему телу.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Good {pc.boy}...",
@@ -336,12 +336,12 @@ func _run():
 			
 		# (no subby version)
 		
-		saynn("As {npc.he} {npc.verb('continue')} to whisper in your ear, you...")
+		saynn("Когда {npc.he} {npc.verb('continue')} наклоняется, чтобы прошептать тебе на ухо, ты...")
 		HypnokinkUtil.addHypnoButtons(self, "tease_2", "resist", ["Shiver", "Whine"])
 		
 	if(state == "tease_2"):
 		playAnimation(StageScene.ArmsRaisedSex, "inside", {npc=npcID})
-		saynn("{npc.He} leans in even closer, right next to your ear.")
+		saynn("{npc.He} наклоняется ещё ближе, почти касаясь твоих ушей.")
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			
@@ -370,9 +370,9 @@ func _run():
 			
 		# (no subby version)
 		
-		saynn("{npc.His} breath as well as {npc.his} words dancing past your ear sends a hot, exciting shiver down your spine.")
+		saynn("Дыхание {npc.His} и шепот {npc.his}, проносящийся мимо твоего уха, посылают горячую, возбуждающую дрожь по твоему позвоночнику.")
 		
-		saynn("{npc.He} {npc.verb('let')} go, circling back in front of you, eyes locked on yours. You can only...")
+		saynn("{npc.He} {npc.verb('let')} обходит тебя, возвращаясь вперед и не сводя с тебя глаз. Ты можешь только...")
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Shiver", "Whine", "Gulp"])
 		
 	if(state == "hands_free_orgasm"):
@@ -380,7 +380,7 @@ func _run():
 		
 		# (default)
 		if(!(npcVariation in ["mean", "kind", "subby"])):
-			saynn("As your lust and desire becomes apparent, {npc.he} {npc.verb('drag')} your wrists down, behind your back.")
+			saynn("Когда твоя похоть и желание становятся очевидными, {npc.he} {npc.verb('drag')} твои запястья за спиной.")
 
 			saynn("[say=npc]"+RNG.pick([
 				"What a cute slut you are~",
@@ -388,10 +388,10 @@ func _run():
 				"Who said you could enjoy yourself?"
 			])+"[/say]")
 			
-			saynn("As {npc.he} {npc.verb('continue')} to tease you, you can't help but...")
+			saynn("Когда {npc.he} {npc.verb('continue')} начинает дразнить тебя, ты не можешь не...")
 			
 		if(npcVariation == "mean"):
-			saynn("As your lust and desire becomes apparent, {npc.he} {npc.verb('wrest')} your wrists down, behind your back.")
+			saynn("Когда твоя похоть и желание становятся очевидными, {npc.he} {npc.verb('wrest')} твои запястья за спиной.")
 			
 			saynn("[say=npc]"+RNG.pick([
 				"I see you're getting off on this, bitch.",
@@ -399,29 +399,29 @@ func _run():
 				"Having fun? What a whore."
 			])+"[/say]")
 			
-			saynn("As {npc.he} {npc.verb('continue')} to verbally abuse you, you can't help but...")
+			saynn("Когда {npc.he} {npc.verb('continue')} начинает осыпать тебя словесными унижениями, ты не можешь не...")
 
 		# (kind version)
 		if(npcVariation == "kind"):
 			
-			saynn("As your lust and desire becomes apparent, {npc.he} {npc.verb('grab')} hold of your wrists, gently pulling them behind your back.")
+			saynn("Когда твоя похоть и вожделение становятся очевидными, {npc.he} {npc.verb('grab')} твои запястья, мягко отводя их за спину.")
 			saynn("[say=npc]"+RNG.pick([
 				"Aw, you're enjoying yourself~",
 				"Now now, you want to be a good {pc.boy}, right?",
 				"Let's make sure you do this right...",
 			])+"[/say]")
-			saynn("As {npc.he} {npc.verb('continue')} to whisper words of encouragemenent, you can't help but...")
+			saynn("Пока {npc.he} {npc.verb('continue')} слова ободрения, ты не можешь удержаться от...")
 			
 		# (subby version)
 		if(npcVariation == "subby"):
 			
-			saynn("As your lust and desire becomes apparent, {npc.he} gently {npc.verb('guide')} you to put your hands behind your back.")
+			saynn("Когда твоя похоть и вожделение становятся очевидными, {npc.he} мягко {npc.verb('guide')} тебя, заставляя убрать руки за спину.")
 			saynn("[say=npc]"+RNG.pick([
 				"Oh, you'll love this next part!",
 				"You're having a lot of fun, I see~",
 				"I know what'll make you feel good!",
 			])+"[/say]")
-			saynn("As {npc.he} {npc.verb('continue')} to express {npc.his} lustful desires, you can't help but...")
+			saynn("Пока {npc.he} {npc.verb('continue')} выражать свои {npc.his} похотливые желания, ты не можешь удержаться от...")
 			
 		HypnokinkUtil.addHypnoButtons(self, "hands_free_orgasm_2", "resist", ["Tense up", "Squirm"])
 		
@@ -430,44 +430,44 @@ func _run():
 		
 		# (default)
 		if(!(npcVariation in ["mean", "kind", "subby"])):
-			saynn("With your wrists forcibly held behind your back, all you can do is squirm.")
-			saynn("[say=npc]I've heard you've messed with your head so much you can even cum hands-free. Is that right?[/say]")
-			saynn("Any protest you might have offered dies with the wave of pleasure that rolls through your body.")
-			saynn("[say=npc]Neat! Alright, this should be cool to watch. Get all horny and needy for me.[/say]")
-			saynn("You tense up and moan as wave after wave of phantom pleasure surges through you. Wrists secured behind your back, you can only lean forward as your building desire quickly brings you to the edge...")
-			saynn("[say=npc]And... [b]Cum.[/b][/say]")
-			saynn("Already so close, the command makes you...")
+			saynn("Твои запястья насильно заведены за спину, и всё, что тебе остается — это извиваться.")
+			saynn("[say=npc]Слышала, ты так натренировала свой разум, что можешь кончать даже без рук. Это правда?[/say]")
+			saynn("Любой протест, который ты могла бы высказать, затихает под волной наслаждения, проносящейся по твоему телу.")
+			saynn("[say=npc]Круто! Ладно, на это будет приятно посмотреть. Стань совсем развратной и жаждущей меня.[/say]")
+			saynn("Ты напрягаешься и стонешь, когда волна за волной фантомного удовольствия захлестывает тебя. Запястья заведены за спину, и тебе остается только подаваться вперед, пока нарастающее желание стремительно подводит тебя к самому краю...")
+			saynn("[say=npc]И... [b]Кончай.[/b][/say]")
+			saynn("Уже так близко, одна лишь команда заставляет тебя...")
 			
 		if(npcVariation == "mean"):
-			saynn("With your wrists painfully held behind your back, all you can do is squirm.")
-			saynn("[say=npc]I've heard you're such a needy slut you can cum hands-free on command. Seems about right, from how much you're drooling.[/say]")
-			saynn("Any protest you might have mustered dies with the wave of pleasure that rolls through your body.")
-			saynn("[say=npc]Hah. Alright, this I gotta see. I wanna see you horny and desperate, slut. Show me ho much you want it.[/say]")
-			saynn("You tense up and moan as wave after wave of phantom pleasure surges through you. Wrists secured behind your back, you can only lean forward as your building desire quickly brings you to the edge...")
-			saynn("[say=npc][b]Cum[/b], "+RNG.pick(["slut", "whore", "bitch"])+".[/say]")
-			saynn("Already so close, the command makes you...")
+			saynn("Твои запястья мучительно заведены за спину, и всё, что тебе остается — это извиваться.")
+			saynn("[say=npc]До меня дошли слухи, что ты такая ненасытная шлюшка, что можешь кончать без помощи рук по одной лишь команде. Глядя на то, как у тебя текут слюни, это кажется вполне правдой.[/say]")
+			saynn("Любой протест, который ты могла бы издать, тонет в волне наслаждения, проходящей сквозь твое тело.")
+			saynn("[say=npc]Хах. Ладно, это я обязан увидеть. Хочу посмотреть, какой возбужденной и отчаявшейся ты будешь, шлюшка. Покажи мне, как сильно ты этого хочешь.[/say]")
+			saynn("Ты напрягаешься и стонешь, когда волна за волной фантомного удовольствия захлестывает тебя. Запястья заведены за спину, и тебе остается только подаваться вперед, пока нарастающее желание стремительно подводит тебя к самому краю...")
+			saynn("[say=npc][b]Кончай[/b], "+RNG.pick(["slut", "whore", "bitch"])+".[/say]")
+			saynn("Уже так близко, одна лишь команда заставляет тебя...")
 
 		# (kind version)
 		if(npcVariation == "kind"):
 			
-			saynn("With your wrists carefully but securely held behind your back, all you can do is squirm.")
-			saynn("[say=npc]I've heard you can even cum on command, completely hands-free. Does that sound nice?[/say]")
-			saynn("Any comment you might have had dies with the wave of pleasure that rolls through your body.")
-			saynn("[say=npc]I think that's a yes. Since you're so eager, why don't you get all horny and needy for me?[/say]")
-			saynn("You tense up and moan as wave after wave of phantom pleasure surges through you. Wrists secured behind your back, you can only lean forward as your building desire quickly brings you to the edge...")
-			saynn("[say=npc]Now be a good {pc.boy} and [b]cum[/b] for me.[/say]")
-			saynn("Already so close, the command makes you...")
+			saynn("Твои запястья аккуратно, но крепко заведены за спину, и всё, что тебе остается — это извиваться.")
+			saynn("[say=npc]Слышал, ты даже можешь кончать по команде, совершенно без рук. Звучит заманчиво, а?[/say]")
+			saynn("Любой комментарий, который ты могла бы сделать, тонет в волне наслаждения, проходящей сквозь твое тело.")
+			saynn("[say=npc]Думаю, это «да». Раз уж ты так жаждешь, почему бы тебе не стать совсем развратной и изголодавшейся по мне?[/say]")
+			saynn("Ты напрягаешься и стонешь, когда волна за волной фантомного удовольствия захлестывает тебя. Запястья заведены за спину, и тебе остается только подаваться вперед, пока нарастающее желание стремительно подводит тебя к самому краю...")
+			saynn("[say=npc]А теперь будь хорошей {pc.boy} и [b]кончи[/b] для меня.[/say]")
+			saynn("Уже так близко, одна лишь команда заставляет тебя...")
 			
 		# (subby version)
 		if(npcVariation == "subby"):
 			
-			saynn("While {npc.nameS} grip is more of a suggestion, with your mind submerged in obedience all you can do is squirm.")
-			saynn("[say=npc]I've heard you can even cum on command, completely hands-free. I wish I could do that...[/say]")
-			saynn("Any suggestions you might have had die with the wave of pleasure that rolls through your body.")
-			saynn("[say=npc]Ooh! You're certainly easy to please. Why don't you show me how it's done? I can see you're getting needier with every word...[/say]")
-			saynn("You tense up and moan as wave after wave of phantom pleasure surges through you. Wrists secured behind your back, you can only lean forward as your building desire quickly brings you to the edge...")
-			saynn("[say=npc]Okay, are you ready? You must be so close~ Feel the pleasure build, and build... [b]Cum[/b]![/say]")
-			saynn("Already so close, the command makes you...")
+			saynn("Хотя хватка {npc.nameS} — это скорее предложение, когда твой разум погружен в послушание, всё, что тебе остается — это извиваться.")
+			saynn("[say=npc]Я слышала, что ты можешь даже кончать по команде, совершенно без рук. Хотела бы я уметь так же...[/say]")
+			saynn("Любые мысли или предложения, что могли у тебя возникнуть, умирают вместе с волной удовольствия, прокатывающейся по твоему телу.")
+			saynn("[say=npc]Ооо! Тебя так легко порадовать. Почему бы тебе не показать мне, как это делается? Вижу, с каждым моим словом ты становишься всё более нетерпеливой...[/say]")
+			saynn("Ты напрягаешься и стонешь, когда волна за волной фантомного удовольствия захлестывает тебя. Запястья заведены за спину, и тебе остается только подаваться вперед, пока нарастающее желание стремительно подводит тебя к самому краю...")
+			saynn("[say=npc]Так, ты готова? Ты, должно быть, уже совсем близко~ Почувствуй, как удовольствие нарастает, и нарастает... [b]Кончай[/b]![/say]")
+			saynn("Уже так близко, одна лишь команда заставляет тебя...")
 		
 		HypnokinkUtil.addHypnoButtons(self, "hands_free_orgasm_3", "hands_free_orgasm_3_selfdeny", ["Cum", "Orgasm", "Explode"], ["Resist", "Deny", "Stop"])
 		
@@ -504,9 +504,9 @@ func _run():
 			else:
 				cumDesc += " makes your "+undiesDesc+" all wet"
 		
-		saynn("With your hands secured out of reach, you can only desperately moan and hump the air as "+cumDesc+".")
-		saynn("[say=pc]A-aah... Hff...[/say]")
-		saynn("The orgasm is physically unsatisfying with no stimulation or sensation. But to your submissively obedient mind, the pleasure of cumming when commanded is the best feeling imaginable. Even the humiliation of it has you pleased and blushing.")
+		saynn("Поскольку твои руки надежно зафиксированы вне досягаемости, тебе остается лишь отчаянно стонать и толчками двигаться навстречу пустоте, пока "+cumDesc+".")
+		saynn("[say=pc]А-а-ах... Хфф...[/say]")
+		saynn("Оргазм физически неудовлетворителен из-за отсутствия стимуляции или ощущений. Но для твоего покорного, послушного разума удовольствие от того, что ты кончаешь по команде — это лучшее чувство на свете. Даже унижение от этого заставляет тебя довольно улыбаться и краснеть.")
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			saynn("[say=npc]"+RNG.pick([
@@ -536,14 +536,14 @@ func _run():
 				"I bet that feels real good...",
 			])+"[/say]")
 			
-		saynn("{npc.Name} lets go of your wrists. Your arms shakily raise back above your head, and you...")
+		saynn("{npc.Name} отпускает твои запястья. Твои руки дрожа поднимаются обратно над головой, и ты...")
 			
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Calm down", "Relax"])
 	if(state == "hands_free_orgasm_3_selfdeny"):
 		playAnimation(StageScene.SexFreeStanding, "tease", {pc=npcID, npc="pc"})
-		saynn("Even with spikes of pleasures threatening to push you over the edge, you somehow manage to find the willpower to deny yourself the sweet release of orgasm. Instead, desperate and horny, you stay on the edge as your body fakes going through the physical signs that'd usually accompany one.")	
-		saynn("[say=pc]A-aah... Hff...[/say]")
-		saynn("You quiver, and shake, and ride the edge for several agonizing moments.")
+		saynn("Даже когда вспышки удовольствия грозят сбросить тебя с края, тебе каким-то образом удается найти силу воли, чтобы отказать себе в сладком освобождении оргазма. Вместо этого, в отчаянии и от дикого возбуждения, ты замираешь на самом пределе, пока твое тело имитирует физические признаки, которые обычно сопровождают разрядку.")	
+		saynn("[say=pc]А-а-ах... Хфф...[/say]")
+		saynn("Ты дрожишь, содрогаешься и балансируешь на грани несколько мучительных мгновений.")
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			saynn("[say=npc]"+RNG.pick([
@@ -577,7 +577,7 @@ func _run():
 				"Can't manage it either? You'll get there, I'm sure."
 			])+"[/say]")
 			
-		saynn("{npc.Name} lets go of your wrists. Your arms shakily raise back above your head, and you...")
+		saynn("{npc.Name} отпускает твои запястья. Твои руки дрожа поднимаются обратно над головой, и ты...")
 			
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Calm down", "Relax"])
 		
@@ -585,54 +585,54 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
-			saynn("[say=npc]Okay, I think I'm done. You can lower your hands.[/say]")
-			saynn("You let your hands drop.")
+			saynn("[say=npc]Ладно, думаю, на этом всё. Можешь опускать руки.[/say]")
+			saynn("Ты позволяешь рукам упасть.")
 			if(gotStripped):
-				saynn("[say=npc]Dunno about you but [i]I[/i] had fun. Here, put this back on.[/say]")
-				saynn("{npc.He} {npc.verb('hand')} you your "+GM.pc.getInventory().getEquippedItemByID(strippedItemID).getVisibleName().to_lower()+".")
-				saynn("With your thoughts still hazy, by the time you finish dressing yourself and look up, {npc.name} is already gone.")
+				saynn("[say=npc]Не знаю как ты, но [i]я[/i] повеселилась. Держи, надень это обратно.[/say]")
+				saynn("{npc.He} {npc.verb('hand')} тебе твои "+GM.pc.getInventory().getEquippedItemByID(strippedItemID).getVisibleName().to_lower()+".")
+				saynn("Пока твои мысли всё еще затуманены, к тому времени, как ты заканчиваешь одеваться и поднимаешь взгляд, {npc.name} уже исчезает.")
 			else:
-				saynn("Your thoughts still hazy, by the time you look up, {npc.name} is already gone.")
+				saynn("Твои мысли всё еще путаются, и к тому моменту, как ты поднимаешь взгляд, {npc.name} уже нет рядом.")
 				
 			
 		if(npcVariation == "mean"):
-			saynn("[say=npc]I'm done here.[/say]")
+			saynn("[say=npc]С меня хватит.[/say]")
 			if(gotStripped):
 				playAnimation(StageScene.Duo, "defeat", {npc=npcID})
 				#not equipped here, hence not getEquippedItemByID
-				saynn("{npc.He} {npc.verb('toss', 'tosses')} your "+GM.pc.getInventory().getFirstOf(strippedItemID).getVisibleName().to_lower()+" at your feet.")
-				saynn("[say=npc]Pick it up.[/say]")
-				saynn("You reach down to retrieve your things, only to get roughly grabbed by the back of your collar and shoved onto your knees.")
-				saynn("[say=npc]Don't bother putting it back on. Advertise what you are. Understood?[/say]")
-				saynn("All you manage is a shaky nod.")
+				saynn("{npc.He} {npc.verb('toss', 'tosses')} твой "+GM.pc.getInventory().getFirstOf(strippedItemID).getVisibleName().to_lower()+" у твоих ног.")
+				saynn("[say=npc]Подними это.[/say]")
+				saynn("Ты наклоняешься, чтобы собрать свои вещи, но вдруг тебя грубо хватают за шиворот и швыряют на колени.")
+				saynn("[say=npc]Даже не вздумай надевать это обратно. Демонстрируй то, что ты из себя представляешь. Понятно?[/say]")
+				saynn("Всё, на что тебя хватает — это судорожный кивок.")
 			else:
-				saynn("{npc.He} {npc.verb('shove')} you aside.")
-			saynn("[say=npc]You're pathetic, but that just makes fucking with you more fun. I'll see you around, "+RNG.pick(["fucktoy", "slut", "whore", "bitch"])+".[/say]")
+				saynn("{npc.He} {npc.verb('shove')} тебя в сторону.")
+			saynn("[say=npc]Ты жалкая тварь, но именно поэтому с тобой так весело трахаться. Еще увидимся, "+RNG.pick(["fucktoy", "slut", "whore", "bitch"])+".[/say]")
 			
 		if(npcVariation == "kind"):
-			saynn("[say=npc]I've had fun, did you? Lower your hands, please?[/say]")
-			saynn("You let your hands drop.")
+			saynn("[say=npc]Мне было весело, а тебе? Опусти руки, пожалуйста.[/say]")
+			saynn("Ты позволяешь рукам упасть.")
 			if(gotStripped):
-				saynn("[say=npc]You wont mind if I...[/say]")
-				saynn("{npc.He} {npc.verb('help')} you put your "+GM.pc.getInventory().getEquippedItemByID(strippedItemID).getVisibleName().to_lower()+" back on.")
-			saynn("[say=npc]Thanks for playing with me! We should do this again sometime~[/say]")
+				saynn("[say=npc]Ты ведь не против, если я...[/say]")
+				saynn("{npc.He} {npc.verb('help')} ты наденешь свои "+GM.pc.getInventory().getEquippedItemByID(strippedItemID).getVisibleName().to_lower()+" обратно.")
+			saynn("[say=npc]Спасибо, что поиграл со мной! Нам стоит повторить это как-нибудь еще~[/say]")
 			
 		if(npcVariation == "subby"):
-			saynn("[say=npc]I almost want to take you somewhere and have more fun, but...[/say]")
-			saynn("{npc.He} gently {npc.verb('pull')} your arms back down.")
-			saynn("[say=npc]I'd like you better fully aware and in charge~[/say]")
+			saynn("[say=npc]Мне даже хочется утащить тебя куда-нибудь, чтобы повеселиться по полной, но...[/say]")
+			saynn("{npc.He} мягко {npc.verb('pull')} опускает твои руки.")
+			saynn("[say=npc]Ты бы мне больше понравился, если бы полностью всё осознавал и контролировал~[/say]")
 			if(gotStripped):
-				saynn("[say=npc]Can I help you with these?[/say]")
-				saynn("{npc.He} {npc.verb('hand')} you your "+GM.pc.getInventory().getEquippedItemByID(strippedItemID).getVisibleName().to_lower()+" and {npc.verb('help')} you put it back on.")		
-			saynn("{npc.He} {npc.verb('sashay')} away, shaking {npc.his} hips for your benefit a few more times along the way.")
-			saynn("[say=npc]Until then, see you around![/say]")
+				saynn("[say=npc]Помочь тебе с этим?[/say]")
+				saynn("{npc.He} {npc.verb('hand')} тебе твои "+GM.pc.getInventory().getEquippedItemByID(strippedItemID).getVisibleName().to_lower()+" и {npc.verb('help')} ты надеваешь это обратно.")		
+			saynn("{npc.He} {npc.verb('sashay')} прочь, напоследок еще пару раз покачивая {npc.his} бедрами специально для тебя.")
+			saynn("[say=npc]Ну, тогда до встречи![/say]")
 			
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "resist"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		saynn("[say=pc]"+RNG.pick(["St-stop...", "W-wait...", "I don't...", "I can't-", "No!", "Please, I..."])+"[/say]")
-		saynn("You shudder, on the brink of breaking the spell.")
+		saynn("Тебя пробирает дрожь — ты почти на грани того, чтобы разрушить чары.")
 		
 		if(!(npcVariation in ["mean", "kind", "subby"])):
 			saynn("[say=npc]"+RNG.pick([
@@ -662,13 +662,13 @@ func _run():
 				"Let's have just a little more fun?"
 				])+"[/say]")
 			
-		saynn("You've interrupted {npc.nameS} current plan of action. Now that you did, you really should just...")
+		saynn("Ты прервал(а) текущий план действий {npc.nameS}. Раз уж ты это сделал(а), тебе стоит просто...")
 		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist_2", [], ["Escape", "Get away", "Resist", "Break away"])
 		
 	if(state == "resist_2"):
 		playAnimation(StageScene.Solo, "walk")
-		saynn("Taking advantage of the element of surprise, you push {npc.name} aside and run for it.")
-		addButton("Run", "", "endthescene")
+		saynn("Воспользовавшись эффектом неожиданности, ты отталкиваешь {npc.name} и бросаешься наутек.")
+		addButton("Бежать", "", "endthescene")
 			
 func pickSubscene() -> String:
 	if(iterations >= doneWhenIterations):

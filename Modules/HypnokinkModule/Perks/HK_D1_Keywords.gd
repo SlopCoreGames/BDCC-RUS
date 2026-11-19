@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Keyword Fixation"
+	return "Фиксация на ключевых словах"
 
 func getVisibleDescription():
 	return "You find your thoughts lingering on certain words as they are spoken."

@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Detachment"
+	return "Отстраненность"
 
 func getVisibleDescription():
 	return "You've become good enough at being a hypnotic subject to partially disassociate even from physical pain."

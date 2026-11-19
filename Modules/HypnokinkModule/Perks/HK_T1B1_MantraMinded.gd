@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Hypnosis
 
 func getVisibleName():
-	return "Mantra Minded"
+	return "Мантра-разум"
 
 func getVisibleDescription():
 	return "You've learned a set of short, relaxing mantras."

@@ -4,15 +4,15 @@ func _init():
 	id = "HypnovisorMk0"
 
 func getVisibleName():
-	return "Hypnovisor"
+	return "Гипновизор"
 	
 func getDescription():
 	if(isWornByWearer()):
 		if(HypnokinkUtil.isInTrance(getWearer())):
-			return "A very important visor that helps you focus on the important things."
+			return "Очень важный визор, который помогает сосредоточиться на действительно важных вещах."
 		if(HypnokinkUtil.isHypnotized(getWearer())):
-			return "A helpful visor that keeps you safe."
-	return "An old model of a rugged Augmented Reality visor.\nSeems to be modified to display an endlessly spinning spiral, with words and images occasionally flashing too fast to consciously observe."
+			return "Полезный визор, обеспечивающий вашу безопасность."
+	return "Старая модель надежного визора дополненной реальности.\nПохоже, его модифицировали для отображения бесконечно вращающейся спирали, сквозь которую время от времени проносятся слова и образы, мелькающие слишком быстро, чтобы их можно было осознать."
 
 func getClothingSlot():
 	return InventorySlot.Eyes

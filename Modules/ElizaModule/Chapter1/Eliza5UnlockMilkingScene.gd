@@ -11,113 +11,113 @@ func _run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("med_lobbymain")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=eliza]Come here, my assistant![/say]")
+		saynn("[say=eliza]Иди сюда, мой помощник![/say]")
 
-		saynn("Eliza's voice stops you dead in tracks. You glance over and spot her behind the counter in her usual spot, coffee mug in hand, looking way too pleased with herself.")
+		saynn("Голос Элизы заставляет тебя замереть на месте. Ты оглядываешься и видишь её за прилавком, на её привычном месте; она держит кружку кофе и выглядит чертовски довольной собой.")
 
-		saynn("You approach her.")
+		saynn("Ты подходишь к ней.")
 
-		saynn("[say=pc]What's up?[/say]")
+		saynn("[say=pc]Что такое?[/say]")
 
-		saynn("She takes a sip before smiling.")
+		saynn("Она делает глоток, прежде чем улыбнуться.")
 
-		saynn("[say=eliza]First of all, great job so far! Our lab setup is still, like.. 5% of what I had before I got sent here. But trust me, that's a lot![/say]")
+		saynn("[say=eliza]Во-первых, ты отлично справляешься! Наша лаборатория сейчас — это, ну... процентов пять от того, что у меня было до того, как меня сюда зашвырнули. Но поверь мне, это всё равно немало![/say]")
 
-		saynn("[say=pc]You really like that old lab, don't you?[/say]")
+		saynn("[say=pc]Тебе ведь правда нравится та старая лаборатория, да?[/say]")
 
-		saynn("[say=eliza]Ma-aybe? What makes you say so?[/say]")
+		saynn("[say=eliza]Мо-о-жет быть? С чего ты это взял?[/say]")
 
-		saynn("[say=pc]I don't know.. maybe the dozen times you've brought it up?[/say]")
+		saynn("[say=pc]Даже не знаю... может, потому что ты упоминал об этом раз двенадцать?[/say]")
 
-		saynn("Eliza huffs, flicking her tail.")
+		saynn("Элиза фыркает, дернув хвостом.")
 
-		saynn("[say=eliza]Well, duh.. A master is only as good as their tools.. And I had the best tools. I need to work in that lab again. With everything I've learned here? I could do so much more.[/say]")
+		saynn("[say=eliza]Ну еще бы... Мастер хорош лишь настолько, насколько хороши его инструменты... А у меня были лучшие инструменты. Мне нужно снова работать в той лаборатории. Со всем, чему я здесь научилась? Я могла бы горы свернуть![/say]")
 
-		saynn("She pauses for a second, barely able to contain her excitement.")
+		saynn("Она замирает на секунду, едва сдерживая восторг.")
 
-		saynn("[say=eliza]I've heard rumors about the miracles my mother pulled off.. I wanna push science even further.[/say]")
+		saynn("[say=eliza]До меня доходили слухи о чудесах, которые творила моя мать... Я хочу продвинуть науку еще дальше.[/say]")
 
-		saynn("A small thought forms in your mind. A very nagging thought that is hard to ignore.")
+		saynn("В твоей голове рождается мысль. Навязчивая мысль, которую трудно игнорировать.")
 
-		saynn("[say=pc]Does that mean.. If she lets you back in, you're leaving?[/say]")
+		saynn("[say=pc]Значит ли это... что если она впустит тебя обратно, ты уйдешь?[/say]")
 
-		saynn("Eliza barely even hesitates.")
+		saynn("Элиза почти не колеблется.")
 
-		saynn("[say=eliza]A tool without a master is a wasted tool.. Yeah, nothing is really holding me here. Just the fears of my parents. I will get the fuck out of here as soon as I get the chance![/say]")
+		saynn("[say=eliza]Инструмент без хозяина — это бесполезный инструмент... Да, меня здесь по-настоящему ничего не держит. Только страхи моих родителей. Я свалю отсюда к чертям собачьим, как только представится шанс![/say]")
 
-		saynn("Her casual gaze is directed at you while a short silence emerges. For some reason, it's hard not to be saddened by her words. But it makes sense for her to dream big.. she is not stuck behind bars like you.")
+		saynn("Она бросает на тебя непринужденный взгляд, и на мгновение воцаряется тишина. Почему-то от её слов становится тоскливо. Но в её больших мечтах есть смысл... ведь она не заперта за решеткой, как ты.")
 
-		saynn("Eliza's ears flick. She finally takes note of the void.. and gasps.")
+		saynn("Уши Элизы дергаются. Она наконец замечает пустоту... и ахает.")
 
-		saynn("[say=eliza]Oh, right! I didn't call you to be all soapy. I've been busy, can't help you with the lab much, outside of scanning those pills. But! I think I can help you with something.[/say]")
+		saynn("[say=eliza]О, точно! Я позвала тебя не для того, чтобы пускать сопли. Я была занята, так что мало чем могу помочь в лаборатории, кроме сканирования тех таблеток. Но! Думаю, с кое-чем я смогу тебе помочь.[/say]")
 
-		saynn("Any help would be nice.")
+		saynn("Любая помощь будет кстати.")
 
-		saynn("[say=eliza]I have some free time in the mornings. I'm usually sleepy as fuck.. but I think I have enough brain power to milk someone![/say]")
+		saynn("[say=eliza]По утра у меня есть немного свободного времени. Обычно я пиздец какая сонная... но, думаю, мозгов хватит, чтобы кого-нибудь подоить![/say]")
 
-		saynn("[say=pc]Milk someone?[/say]")
+		saynn("[say=pc]Подоить кого-то?[/say]")
 
-		saynn("[say=eliza]It isn't as gross as it sounds! I can just quickly put some pumps on inmates and continue with my morning routine while the milking machine is working on them. Just gotta not forget to check on them occasionally~.[/say]")
+		saynn("[say=eliza]Это не так мерзко, как звучит! Я могу просто быстро нацепить на заключенных насосы и продолжить свои утренние дела, пока доильный аппарат работает. Главное — не забывать время от времени их проверять~.[/say]")
 
-		saynn("That does sound useful.")
+		saynn("Звучит довольно полезно.")
 
-		saynn("[say=eliza]So.. I could obviously milk you~. But if you have someone else in mind, I can work my magic on them too. Hope you won't mind me taking some of the milk for myself, I love it with coffee~.[/say]")
+		saynn("[say=eliza]Так что... я, очевидно, могла бы подоить тебя~. Но если у тебя на примете есть кто-то другой, я могу сотворить магию и с ними. Надеюсь, ты не против, если я немного отхватим молока себе? Обожаю добавлять его в кофе~.[/say]")
 
-		saynn("Right back into the gross territory.. But that could make for a nice passive.. income.. of sorts.")
+		saynn("Опять мы вернулись к теме всякой мерзости... Но это могло бы стать неплохим пассивным... доходом... в каком-то смысле.")
 
-		addButton("Leave", "Time to go", "just_leave")
-		addButton("Kiss?", "You did a lot. Might as well ask for a bigger reward", "get_kiss")
+		addButton("Уйти", "Пора идти", "just_leave")
+		addButton("Поцелуй?", "Ты сделала немало. Можно и попросить награду побольше.", "get_kiss")
 	if(state == "just_leave"):
-		saynn("[say=pc]Yeah, that could be useful. I will keep that in mind.[/say]")
+		saynn("[say=pc]Да, это может быть полезно. Буду иметь в виду.[/say]")
 
-		saynn("Eliza slowly eyes you from toes to tip of your ears.")
+		saynn("Элиза медленно оглядывает тебя с ног до самых кончиков ушей.")
 
-		saynn("[say=eliza]Mhm~. Keep it up. Call me when you find more of those strange drugs.[/say]")
+		saynn("[say=eliza]Ммм~. Так держать. Зови меня, когда найдешь еще те странные препараты.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "get_kiss"):
 		playAnimation(StageScene.Duo, "hurt", {npc="eliza"})
-		saynn("You deserve more than a simple 'good job', you've been looking after her lab!")
+		saynn("Ты заслуживаешь большего, чем простое «молодец», ты ведь присматривал за её лабораторией!")
 
-		saynn("[say=pc]I think I deserve a reward for my work, don't you think? A little kiss would be a good start.[/say]")
+		saynn("[say=pc]Думаю, я заслужила награду за свою работу, тебе не кажется? Маленький поцелуй был бы отличным началом.[/say]")
 
-		saynn("Eliza raises a brow, her eyes linger on your lips while a little smile is formed by hers.")
+		saynn("Элиза приподнимает бровь, её взгляд задерживается на твоих губах, а на лице играет легкая улыбка.")
 
-		saynn("[say=eliza]Kiss.. hmm~.[/say]")
+		saynn("[say=eliza]Поцелуй.. хмм~.[/say]")
 
-		saynn("Her paw closes the laptop as she leans a bit closer, over the counter.")
+		saynn("Её лапа закрывает ноутбук, и она слегка наклоняется вперед через прилавок.")
 
-		saynn("[say=eliza]Come here then.[/say]")
+		saynn("[say=eliza]Ну же, иди сюда.[/say]")
 
-		saynn("As you get closer and lean yourself to meet her.. A sharp pain suddenly swipes through your body, starting at the neck. A painful grunt escapes your lips as your muscles seize up for a long, agonizing, two seconds.")
+		saynn("Когда ты приближаешься и наклоняешься к ней... резкая боль внезапно пронзает всё тело, начиная с шеи. С твоих губ срывается болезненный стон, а мышцы сводит судорогой на долгие, мучительные две секунды.")
 
-		saynn("[say=pc]Gh-h..[/say]")
+		saynn("[say=pc]Гх-х..[/say]")
 
-		saynn("Eliza shows you her little remote with a face full of innocence.")
+		saynn("Элиза с невинным видом демонстрирует тебе свой маленький пульт.")
 
-		saynn("[say=eliza]You will have to earn it, Fucker-r-r~~.[/say]")
+		saynn("[say=eliza]Тебе придётся это заслужить, ублюдо-о-ок~~.[/say]")
 
-		saynn("She really drags the last syllable, singing it.")
+		saynn("Она тянет последний слог, словно напевая.")
 
-		saynn("You grab onto your neck and try to get your breathing back.")
+		saynn("Ты хватаешься за шею, пытаясь восстановить дыхание.")
 
-		saynn("[say=pc]Is that how you play, kitty cat?[/say]")
+		saynn("[say=pc]Так ты играешь, кошечка?[/say]")
 
-		saynn("Her soft purring echoes in your ringing ears, her clawed digit scratching the red button on her remote.")
+		saynn("Её мягкое мурлыканье отдаётся эхом в твоих звенящих ушах, пока её когтистый палец скребёт красную кнопку на пульте.")
 
-		saynn("[say=eliza]That would be Dr. Quinn for you, little patient~. And yes, sometimes I play rough. Explosive chemistry is what I'm known for~.[/say]")
+		saynn("[say=eliza]В этом вся доктор Куинн, мой маленький пациент~. И да, иногда я играю грубо. Взрывная химия — это мой конек~.[/say]")
 
-		saynn("[say=pc]Noted.[/say]")
+		saynn("[say=pc]Принято.[/say]")
 
-		saynn("Her second paw reaches out to gently scritch you under the chin. She bites her lip.")
+		saynn("Её вторая лапка тянется к тебе, чтобы нежно почесать под подбородком. Она прикусывает губу.")
 
-		saynn("[say=eliza]You're always welcome to worship me though. Haha.[/say]")
+		saynn("[say=eliza]Хотя ты всегда можешь поклоняться мне. Ха-ха.[/say]")
 
-		saynn("Such a brat. Eliza leans away to return to her post.")
+		saynn("Какая дрянь. Элиза отстраняется, возвращаясь к своим обязанностям.")
 
-		saynn("[say=eliza]Keep it up. Call me when you find more of those strange drugs.[/say]")
+		saynn("[say=eliza]Так держать. Позови меня, когда найдешь еще этих странных наркотиков.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

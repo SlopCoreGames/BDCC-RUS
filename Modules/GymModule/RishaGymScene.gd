@@ -17,97 +17,97 @@ func _run():
 #ACEPREGEXPAC - Risha in the Gym has a few line variants
 #I dont know for sure if Risha can actually be knocked up by someone other than the player, maybe I'll add a special line later but for now I can leave it ambiguious
 	if(state == ""):
-		saynn("It’s pretty late so this area is not that crowded. But, you see somebody that you didn’t expect to see here. Risha, the lynx, is sitting on one of the benches and removing pieces of her armor. You decide to approach her and ask what’s up.")
+		saynn("Уже довольно поздно, так что здесь не так много народу. Но ты замечаешь того, кого здесь совсем не ожидал увидеть. Риша, рысь, сидит на одной из скамей и снимает элементы своей брони. Ты решаешь подойти к ней и спросить, как дела.")
 
-		saynn("[say=pc]What are you doing?[/say]")
+		saynn("[say=pc]Ты что творишь?[/say]")
 
-		saynn("[say=risha]What does it look like I’m doing? I’m here to lift some heavy ass weights. Gotta keep the gains somehow.[/say]")
+		saynn("[say=risha]А на что это похоже? Пришла поднять ебучего железа. Нужно же как-то поддерживать форму.[/say]")
 
-		saynn("As Risha strips her forearm and shoulder protectors, you do indeed notice the curves of her toned muscles covered by bright cyan fur. The girl’s been working out quite regularly.")
+		saynn("Пока Риша снимает защиту с предплечий и плеч, ты действительно замечаешь изгибы её подтянутых мышц, покрытых ярко-циановой шерстью. Девушка явно занимается регулярно.")
 
-		saynn("[say=pc]Aren’t you afraid that somebody will steal your armor?[/say]")
+		saynn("[say=pc]А ты не боишься, что кто-нибудь украдет твою броню?[/say]")
 
-		saynn("[say=risha]My riot gear? You know, the last fucktoy that even touched it got his neck fried. I’d honestly like to see you try, you would make a great show for all the cameras. AlphaCorp isn’t fucking around with their security.[/say]")
+		saynn("[say=risha]Мою экипировку? Знаешь, у последнего секс-игрушки, который к ней прикоснулся, шею поджарило. Честно, я бы посмотрела, как ты попробуешь — из тебя вышло бы отличное шоу для всех камер. АльфаКорп с их безопасностью не шутит.[/say]")
 
 		if(getCharacter("risha").isVisiblyPregnant()):
-			saynn("She finishes stripping off her arms. Then she moves on to her chest, taking off the waist and chest plates, gradually coming down around her pregnant midsection. Whatever is holding down the undersuit around her gravid belly practically snaps off now that it isnt being pulled so tight. As she strips you realize that she has absolutely nothing under her armor. She casually exposes her huge leaky breasts with bright red perky nipples and stretches a bit like all cats do.")
+			saynn("Она заканчивает снимать защиту с рук и переходит к торсу, расстегивая нагрудную и поясную пластины, постепенно спускаясь к своему беременному животу. То, что удерживало поддежный костюм вокруг её раздувшегося чрева, практически отскакивает, как только натяжение ослабевает. Пока она раздевается, ты понимаешь, что под броней у неё абсолютно ничего нет. Она небрежно выставляет напоказ свою огромную, сочащуюся грудь с ярко-красными упругими сосками и потягивается, как это делают все кошки.")
 			
-			saynn("[say=risha]Getting hard to even fit into it.[/say]")
+			saynn("[say=risha]В неё становится всё труднее втиснуться.[/say]")
 		else:
-			saynn("She finishes stripping off her arms. Then she moves on to her chest, taking off the waist and chest plates. As she strips you realize that she has absolutely nothing under her armor. She casually exposes her huge breasts with bright red perky nipples and stretches a bit like all cats do.")
+			saynn("Она заканчивает сбрасывать наплечники. Затем переходит к груди, снимая нагрудную и поясную пластины. Когда она раздевается, ты понимаешь, что под броней у неё абсолютно ничего нет. Она небрежно выставляет напоказ свою огромную грудь с ярко-красными упругими сосками и слегка потягивается, как это делают кошки.")
 
-		saynn("[say=risha]Wearing it feels like being in an oven and it weighs a ton, fuck me.[/say]")
+		saynn("[say=risha]В этой хреновине чувствуешь себя как в духовке, и весит она целую тонну, блядь.[/say]")
 
-		saynn("Risha carefully places all the pieces nearby and strips further, removing her protected boots and armored thigh pieces. She also removes the crotch protector, revealing her feline barbed cock and a red moist cunt hidden behind her ballsack, she is a herm. All the while still being casual about it. She catches your concerned look.")
+		saynn("Риша аккуратно складывает все части доспеха рядом и раздевается дальше, снимая защитные сапоги и поножи. Она также снимает протектор паха, обнажая свой кошачий шиповатый член и красную влажную щель, спрятанную за мошонкой — она гермафродитка. При этом она ведет себя совершенно непринужденно. Она замечает твой обеспокоенный взгляд.")
 
-		saynn("[say=risha]What? Never seen a cat dick before or what?[/say]")
+		saynn("[say=risha]Что? Никогда раньше не видела кошачий член, что ли?[/say]")
 
-		saynn("[say=pc]Uh. Nothing.[/say]")
+		saynn("[say=pc]А... Да так, ничего.[/say]")
 
-		saynn("[say=risha]How about you stop staring at my cock and spot me instead. It’s the end of my shift, I can do whatever I fucking want.[/say]")
+		saynn("[say=risha]Может, хватит пялиться на мой член и лучше подстрахуешь меня? Моя смена почти закончилась, так что я могу делать всё, что мне, блядь, захочется.[/say]")
 
-		addButton("Sure", "Why not", "sure")
-		addButton("Nah", "You don’t feel like spotting for a naked guard lynx", "nah")
+		addButton("Конечно", "Почему бы и нет", "sure")
+		addButton("Неа", "Тебе неохота подстраховывать голую рысь-охранницу", "nah")
 
 	if(state == "nah"):
-		saynn("[say=pc]Nah, you better find someone else.[/say]")
+		saynn("[say=pc]Ну тогда поищи себе кого-нибудь другого.[/say]")
 
-		saynn("[say=risha]Well then don’t fucking waste my time, fucktoy.[/say]")
+		saynn("[say=risha]Ну тогда не трать моё время, секс-игрушка.[/say]")
 		
 		if(getCharacter("risha").isVisiblyPregnant()):
-			saynn("Risha holds her gravid stomach as she lays back onto the bend and starts lifting heavy weights. She is growling as she quickly picks up the pace and starts to consistently push her body. You stare at her and her stored equipment a little longer and decide to leave her be.")
+			saynn("Риша придерживает свой раздувшийся живот, откидываясь на скамью, и начинает жать тяжелые веса. Она рычит, быстро наращивая темп и заставляя свое тело работать на пределе. Ты засматриваешься на нее и на ее припаркованное снаряжение чуть дольше обычного, но в итоге решаешь оставить ее в покое.")
 		else:
-			saynn("Risha lies onto the bend and starts lifting heavy weights. She is growling as she quickly picks up the pace and starts to consistently push her body. You stare at her and her stored equipment a little longer and decide to leave her be.")
+			saynn("Риша ложится на скамью и начинает жать тяжелые веса. Она рычит, быстро наращивая темп и заставляя свое тело работать на пределе. Ты засматриваешься на нее и на ее припаркованное снаряжение чуть дольше обычного, но в итоге решаешь оставить ее в покое.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "sure"):
-		saynn("You shrug and stand behind the bench so you can watch over Risha.")
+		saynn("Ты пожимаешь плечами и встаешь за скамьей, чтобы приглядывать за Ришей.")
 
-		saynn("[say=pc]You’re putting a lot of trust into someone you don’t know.[/say]")
+		saynn("[say=pc]Ты слишком сильно доверяешь тому, кого толком не знаешь.[/say]")
 
-		saynn("Completely naked lynx quickly stretches some more and then takes place on the bench. She grabs the heavy bar, lifts it from its resting position and starts doing barbell bench presses.")
+		saynn("Совершенно голая рысь делает еще несколько быстрых растяжек, после чего занимает место на скамье. Она хватает тяжелый гриф, отрывает его от стоек и начинает делать жим штанги лежа.")
 
-		saynn("[say=risha]Oh yeah? You inmates are all the same, either want to stick your limp dicks into someone else or be railed so hard you can’t walk the next day.[/say]")
+		saynn("[say=risha]Да неужели? Вы все заключенные на одно лицо: либо хотите впихнуть свои вялые члены в кого-то другого, либо чтобы вас так оттрахали, чтобы на следующий день ноги не держали.[/say]")
 
-		saynn("[say=pc]Really, now? And what do you want?[/say]")
+		saynn("[say=pc]Серьезно? И чего же ты хочешь?[/say]")
 
-		saynn("Risha starts really pushing herself, panting and growling slightly as she works the barbell at a steady pace. Due to her fur she is not really sweating but you do catch her strong scent.")
+		saynn("Риша начинает работать на износ, тяжело дыша и слегка рыча, пока мерно управляет штангой. Из-за густого меха она почти не потеет, но ты отчетливо чувствуешь ее сильный мускусный запах.")
 
-		saynn("[say=risha]Me? I’m just here to have fun. I will take the job of handling fucktoys like you over dying somewhere out there on a war for some fucker that has too much money.[/say]")
+		saynn("[say=risha]Я? Да я просто здесь развлекаюсь. Для меня лучше возиться с такими секс-игрушками, как ты, чем сдохнуть где-нибудь в канаве на войне за какого-нибудь жирного ублюдка с кучей денег.[/say]")
 
-		saynn("[say=pc]Huh. What about the captain, he seems to like having you around. Isn’t he like that.[/say]")
+		saynn("[say=pc]Хм. А как насчет капитана? Кажется, ему нравится, когда ты рядом. Разве он не такой?[/say]")
 
-		saynn("Risha does some more reps until she is completely out of breath. And even then, she focuses on the lifting weights and growls louder as she pushes herself past the point of exhaustion. You seem to notice her barbed cock getting harder as she does that, it leaks precum and throbs each time she lifts the bar. Finally, she stops and, with your help, puts the bar back into its resting place. Risha sits down and quickly catches her breath.")
+		saynn("Риша делает еще несколько повторений, пока окончательно не задыхается. Но даже тогда она сосредоточена на штанге и рычит всё громче, заставляя себя работать на пределе истощения. Ты замечаешь, что по мере этого её шипастый член становится всё тверже; он сочится предэякулятом и пульсирует при каждом подъеме грифа. Наконец она останавливается и с твоей помощью возвращает штангу на место. Риша садится и пытается быстро восстановить дыхание.")
 
-		saynn("[say=risha]Fuck yeah, I’m so fucking ripped! The captain? I don’t ask stupid questions, I just do what’s told. Hey, do you wanna get paid? I have a huge problem that needs to be taken care of.[/say]")
+		saynn("[say=risha]Твою мать, ну я и рельефная! Капитан? Я не задаю тупых вопросов, я просто делаю то, что велят. Эй, хочешь бабла? У меня тут одна огромная проблема, которую нужно решить.[/say]")
 
-		saynn("You move from behind the bench and approach the sitting Risha. Your gaze gets stolen by her erect cock, even the barbs look like they are inflated with blood.")
+		saynn("Ты отходишь от скамьи и подходишь к сидящей Рише. Твой взгляд приковывает её эрегированный член — кажется, даже шипы раздулись от крови.")
 
-		saynn("[say=pc]Yeah, one huge problem. With a cock.[/say]")
+		saynn("[say=pc]Ага, одна огромная проблема. С хуем.[/say]")
 
-		saynn("[say=risha]Very funny, slut. 5 credits.[/say]")
+		saynn("[say=risha]Очень смешно, шлюшка. С тебя 5 кредитов.[/say]")
 
-		saynn("You look around and decide. The place is empty, everyone is either sleeping or doing something else.")
+		saynn("Ты оглядываешься и принимаешь решение. Вокруг пусто, все либо спят, либо заняты своими делами.")
 
-		addButton("Nah", "She can go fuck herself", "nah1")
-		addButtonWithChecks("Offer pussy", "Be bred by Risha", "offer_pussy", [], [ButtonChecks.HasReachableVagina])
-		addButtonWithChecks("Offer ass", "Be fucked in the ass by Risha", "offer_ass", [], [ButtonChecks.HasReachableAnus])
-		addButton("Offer handjob", "Make her cum while being a bit of a brat", "offer_handjob")
-		addButtonWithChecks("Fuck Risha", "(noncon) That lynx is a herm so how about you help her take the edge off by fucking her", "fuck_risha", [], [ButtonChecks.HasReachablePenis, [ButtonChecks.StatCheck, Stat.Strength, 8]])
+		addButton("Неа", "Пусть идет нахуй", "nah1")
+		addButtonWithChecks("Предложить киску", "Позволить Рише осеменить тебя", "offer_pussy", [], [ButtonChecks.HasReachableVagina])
+		addButtonWithChecks("Предложить задницу", "Даться Рише в задницу", "offer_ass", [], [ButtonChecks.HasReachableAnus])
+		addButton("Предложить рукоблудие", "Довести её до оргазма, немного пошалив", "offer_handjob")
+		addButtonWithChecks("Трахать Ришу", "(некон) Эта рысь — затворница, так что, может, поможешь ей снять напряжение, трахнув её?", "fuck_risha", [], [ButtonChecks.HasReachablePenis, [ButtonChecks.StatCheck, Stat.Strength, 8]])
 
 	if(state == "nah1"):
-		saynn("[say=pc]I think you can go fuck yourself for 5 credits.[/say]")
+		saynn("[say=pc]Думаю, ты можешь пойти нахуй всего за 5 кредитов.[/say]")
 
-		saynn("Risha chuckles.")
+		saynn("Риша посмеивается.")
 
-		saynn("[say=risha]Everyone has a price, sweetie. You’re no angel, no one is. You can fuck off though, I need some alone time, can’t you see.[/say]")
+		saynn("[say=risha]У каждого есть своя цена, дорогуша. Ты не ангел, и никто не ангел. Но можешь свалить, мне нужно побыть одной, разве не ясно?[/say]")
 
-		saynn("Well, you decide that you don’t need to watch this show. You shrug and leave the cat alone.")
+		saynn("Что ж, ты решаешь, что смотреть на это шоу тебе необязательно. Ты пожимаешь плечами и оставляешь кошку в покое.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "offer_ass"):
 		playAnimation(StageScene.SexAllFours, "sex", {
@@ -116,63 +116,63 @@ func _run():
 			npcBodyState={exposedCrotch=true,},
 		})
 		
-		saynn("You turn and playfully wiggle your {pc.thick} rear for the lynx. You look behind your shoulder and see Risha checking out your ass. She seems to be very pent up, already massaging her feline balls at the view.")
+		saynn("Ты разворачиваешься и игриво виляешь перед рысью своей {pc.thick} задницей. Оглянувшись через плечо, ты видишь, как Риша разглядывает твой зад. Похоже, она чертовски возбуждена — от такого вида она уже вовсю массирует свои кошачьи яйца.")
 
-		saynn("[say=pc]How’s this for a solution.[/say]")
+		saynn("[say=pc]Как тебе такое решение?[/say]")
 
-		saynn("[say=risha]Good enough.[/say]")
+		saynn("[say=risha]Сойдет.[/say]")
 
-		saynn("Suddenly she grabs you by the arms and switches places, bending you over the bench. You don’t even find time to struggle before she masterfully shoves your head under the metal bar while chaining your arms to its heavy rings, creating a makeshift pillory. The bench itself prevents you from closing your legs, you are quickly made helpless!")
+		saynn("Внезапно она хватает тебя за руки и меняется с тобой местами, нагибая тебя над скамьей. Ты даже не успеваешь опомниться, как она мастерски заталкивает твою голову под металлическую перекладину, приковывая руки к тяжелым кольцам и сооружая из этого импровизированный колодки. Сама скамья не дает тебе свести ноги — ты мгновенно оказываешься в беспомощном положении!")
 
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Risha {pc.undressMessageS}, leaving you butt-naked.")
+			saynn("Риша {pc.undressMessageS}, оставляя тебя совершенно голым.")
 
-		saynn("[say=pc]H-hey..[/say]")
+		saynn("[say=pc]Эй...[/say]")
 
-		saynn("She then lands a smack on your {pc.masc} butt and spreads the cheeks open, catching the view of your {pc.analStretch} anal ring clenching from the pain. She hovers over your ass and drools over your star.")
+		saynn("Затем она отвешивает звонкую пощечину по твоей {pc.masc} заднице и разводит ягодицы в стороны, наблюдая, как твое {pc.analStretch} анальное кольцо сжимается от боли. Она нависает над твоим задом, пуская слюни на твою «звездочку».")
 		if(getCharacter("risha").isVisiblyPregnant()):
-			saynn("[say=risha]Hope you’re ready for me, slut. This pregnancy has been rough and I need to take the edge off.[/say]")
+			saynn("[say=risha]Надеюсь, ты готов ко мне, сучка. Эта беременность дается нелегко, и мне нужно немного расслабиться.[/say]")
 		else:
-			saynn("[say=risha]Hope you’re ready for me, slut. I just need to take the edge off.[/say]")
+			saynn("[say=risha]Надеюсь, ты готов ко мне, сучка. Мне просто нужно немного снять напряжение.[/say]")
 
-		saynn("Well she isn’t wrong technically, you are doing this for the credits. Risha doesn’t waste time for too long, she guides her barbed feline cock and presses it against your tailhole. You arch your back and struggle against the metal bar as the cat’s soft spikes are brushing against your soft {pc.thick} butt.")
+		saynn("Ну, технически она права — ты делаешь это ради кредитов. Риша не теряет времени даром: она направляет свой шипастый кошачий член и прижимает его к твоему анусу. Ты выгибаешь спину, пытаясь сопротивляться металлическому пруту, пока мягкие шипы кошки скребут твою нежную {pc.thick} задницу.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Even though you are stuck in quite an exposed position and are about to be taken advantage of, you feel kinda excited, your {pc.cock} is trying to get more erect but it’s still neatly contained behind chastity.")
+			saynn("Хотя ты зажат в довольно уязвимой позе и вот-вот станешь жертвой ее похоти, ты чувствуешь какое-то возбуждение; твой {pc.cock} пытается встать, но всё еще плотно зажат в девственной деке.")
 		elif(GM.pc.hasPenis()):
-			saynn("Even though you are stuck in quite an exposed position and are about to be taken advantage of, you feel kinda excited, your {pc.cock} is getting more erect.")
+			saynn("Хотя ты зажат в довольно уязвимой позе и вот-вот станешь жертвой ее похоти, ты чувствуешь какое-то возбуждение; твой {pc.cock} становится всё тверже.")
 
-		saynn("Risha spits on her cock and, without much more preparation, buckles her hips forward, forcing her barbed member to penetrate your {pc.analStretch} hole and stretch it open enough to shove the head inside. You arch your back more and let out a moan as she roughly pushes her cock deeper, her spikes raking at your soft inner walls.")
-
-		# (if has cock)
-		if(GM.pc.hasPenis()):
-			saynn("You feel her cock pushing at your sensitive spot, squeezing transparent fluids out of your cock.")
-
-		saynn("[say=pc]Fuck.. So rough.[/say]")
-
-		saynn("[say=risha]See, you, inmates, are so easy to handle.[/say]")
-
-		saynn("Risha shoves her cock as deep as your {pc.masc} ass allows before retracting just enough to not pull out completely. She gives your butt another smack, causing you to moan and clench your tailhole, before thrusting deep again, easily pushing through your attempts at resistance. Risha quickly picks up the pace, ramming her cock down your ass before almost pulling it out. You feel the discomfort slowly fading away, being replaced by a very pleasurable feeling, you part your lips and begin moaning out loud.")
-
-		saynn("[say=risha]Oh yeah, I know you love it. Each whore of this station was on this cock, zero complaints so far.[/say]")
+		saynn("Риша сплевывает на свой член и, без лишних приготовлений, подается тазом вперед, заставляя свой шипастый орган войти в твою {pc.analStretch} дырку и растянуть её достаточно, чтобы просунуть головку внутрь. Ты еще сильнее выгибаешь спину и стонешь, когда она грубо вталкивает член глубже, а её шипы скребут по твоим мягким внутренним стенкам.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} is leaking more and more precum mixed with your prostate fluids, the way her thick shaft rubs your p-spot sends shivers down your spine and makes your member throb. You feel like you won’t be able to endure this for long, after your hard prostate is squeezed it only gets filled more the next second, you feel the peak closing in..")
+			saynn("Ты чувствуешь, как её член давит на твою чувствительную точку, выдавливая прозрачную смазку из твоего члена.")
+
+		saynn("[say=pc]Блядь... Как же грубо.[/say]")
+
+		saynn("[say=risha]Видите, вы, заключенные, такие послушные.[/say]")
+
+		saynn("Риша вгоняет свой член так глубоко, насколько позволяет твоя {pc.masc} задница, а затем отстраняется лишь настолько, чтобы не выскочить полностью. Она снова дает тебе подзатыльник по ягодицам, заставляя тебя застонать и сжать анус, после чего снова глубоко вжимается в тебя, с легкостью преодолевая твои попытки сопротивляться. Риша быстро наращивает темп, вколачивая свой член в твою задницу почти до самого выхода. Ты чувствуешь, как дискомфорт медленно уходит, сменяясь невероятным удовольствием; ты приоткрываешь губы и начинаешь громко стонать.")
+
+		saynn("[say=risha]О да, я знаю, что тебе нравится. Каждая шлюха на этой станции сидела на этом члене, и пока что — никаких жалоб.[/say]")
+
+		# (if has cock)
+		if(GM.pc.hasPenis()):
+			saynn("Твоя {pc.cock} всё больше сочится предэякулятом, смешанным с простатической жидкостью; то, как её толстый ствол трется о твою точку простаты, посылает дрожь по всему позвоночнику и заставляет твой член пульсировать. Кажется, ты долго это не выдержишь: стоит её твердой простате сжаться, как в следующую секунду она наполняется еще сильнее. Ты чувствуешь, что пик уже близко...")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("Even though your other bits aren’t being used, your needy pussy is drenched with juices! Risha’s cock is so thick it rubs your pleasure spot through the inner wall, making it feel very good. Can you really get off to anal sex..")
+			saynn("Хотя остальные твои части тела не задействованы, твоя жаждущая киска буквально пропитана соками! Член Риши такой толстый, что он натирает твою эрогенную зону через внутреннюю стенку, даря невероятное наслаждение. Неужели ты и правда можешь кончать от анального секса...")
 
-		saynn("You feel like you are about to cum, your anal ring is getting tighter around the cat’s cock and she feels it. She only increases her pace, basically ravaging your stretched fuckhole, using her precum and saliva as lube.")
+		saynn("Ты чувствуешь, что вот-вот кончишь; твоё анальное кольцо сжимается вокруг кошачьего члена, и она это чувствует. Она лишь ускоряет темп, буквально терзая твою растянутую дырку, используя свой предэякулят и слюну вместо смазки.")
 
-		saynn("[say=risha]You're gonna take it all, you hear?[/say]")
+		saynn("[say=risha]Ты всё примет, слышишь?[/say]")
 
-		saynn("Your eyes begin to roll up on their own..")
+		saynn("Твои глаза начинают сами собой закатываться...")
 
-		addButton("Cum", "The orgasm overtakes your body", "cumAnal")
+		addButton("Кончить", "Оргазм захлёстывает твоё тело", "cumAnal")
 
 	if(state == "cumAnal"):
 		playAnimation(StageScene.SexAllFours, "fast", {
@@ -182,50 +182,50 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
 		
-		saynn("You begin to thrash against the restraints and make loud pleasure noises, your whole body squirms and shivers as you struggle to stay still. Though Risha’s hands hold your ass nice and tight, she keeps shoving her cock in and out even through your climax.")
+		saynn("Ты начинаешь дёргаться в путах и громко стонать от удовольствия; всё твоё тело корчится и дрожит в попытках замереть. И хотя руки Риши крепко сжимают твою задницу, она продолжает вбивать свой член в тебя снова и снова даже во время твоего пика.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your member desperately tries to get hard but the chastity cage is being very mean to you and prevents all of that. Your prostate got absolutely smashed, it didn’t take long for your {pc.cock} to start leaking weak lines of {pc.cum} onto the bench and floor. She really drains you, even during your wet orgasm she pounds at your p-spot until there is nothing left in your balls.")
+			saynn("Твой член отчаянно пытается встать, но девственная клетка ведет себя с тобой жестоко, не давая этого сделать. Твою простату просто размозжило, и вскоре твой {pc.cock} начал источать тонкие струйки {pc.cum} на скамью и пол. Она выжимает тебя досуха: даже во время твоего влажного оргазма она долбит прямо в твою точку G, пока в твоих яйцах не останется ничего.")
 		elif(GM.pc.hasPenis()):
-			saynn("Your prostate got absolutely smashed, it didn’t take long for your {pc.cock} to start leaking strong lines of {pc.cum} onto the bench and floor. She really drains you, even during your wet orgasm she pounds at your p-spot until there is nothing left in your balls.")
+			saynn("Твою простату просто размозжило, и вскоре твой {pc.cock} начал источать густые струи {pc.cum} на скамью и пол. Она выжимает тебя досуха: даже во время твоего влажного оргазма она долбит прямо в твою точку G, пока в твоих яйцах не останется ничего.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your tailhole got so much stimulation that your neglected pussy suddenly squirts juices all over the bench.")
+			saynn("Твоё анусное отверстие получило столько стимуляции, что твоя заброшенная киска внезапно брызнула соками на всю скамью.")
 
-		saynn("[say=risha]Did my little fuckdoll cum already? Oh, what a shame. Now it’s my turn.[/say]")
+		saynn("[say=risha]Моя маленькая шлюшка уже кончила? О, какая жалость. Теперь моя очередь.[/say]")
 
-		saynn("And she wasn’t kidding, even as your inner walls try to close around her shaft, she keeps fucking your ass, thrusting slow but putting full force into each one. Eventually you begin to feel her barbs hardening, they catch onto your soft insides and scrape on them, preventing Risha from pulling out. She starts to groan, her cock throbbing and pulsating as it shoots wave after wave of hot cum down your anus! Your belly starts to look inflated as she fills you to the brim.")
+		saynn("И она не шутила: даже когда твои внутренние стенки пытаются сжаться вокруг её члена, она продолжает трахать твою задницу, совершая медленные, но мощные толчки, вкладывая в каждый всю свою силу. В конце концов ты начинаешь чувствовать, как её шипы твердеют — они цепляются за твои нежные внутренности и скребут по ним, не давая Рише выскочить. Она начинает стонать, её член пульсирует и бьется, извергая волну за волной горячей спермы прямо в твой анус! Твой живот начинает раздуваться, пока она наполняет тебя до самых краев.")
 
-		saynn("Eventually you both come down from your orgasms but your body still shivers on its own. Risha’s barbs soften up so she pulls her messy cock out, leaving your used fuckhole to gape and leak cum.")
+		saynn("В конце концов вы оба приходите в себя после оргазма, но твоё тело всё ещё бьет мелкая дрожь. Шипы Риши размягчаются, и она вытягивает свой залитый семенем член, оставляя твою использованную дырку зиять и сочиться спермой.")
 
-		saynn("Risha quickly catches her breath and admires the view.")
+		saynn("Риша быстро переводит дух и любуется открывшейся картиной.")
 
 		# (if not pay)
 		if(!gotPayed):
-			saynn("[say=risha]You are a great fuck. But I already paid you this week, can’t have you spoiled. Sorry fucktoy~.[/say]")
+			saynn("[say=risha]Ты охрененная трахалка. Но на этой неделе я тебе уже заплатила, нельзя давать тебе расслабляться. Прости, секс-игрушка~.[/say]")
 
-			saynn("[say=pc]Huh?.. H-hey..[/say]")
+			saynn("[say=pc]А?.. Э-эй..[/say]")
 
-			saynn("Risha quickly unchains you from the bar, causing you to fall onto the bench.")
+			saynn("Риша быстро освобождает тебя от цепей на перекладине, отчего ты валишься на скамью.")
 
-			saynn("[say=risha]Now go away, I’m sure some lilac will happily clean up after you.[/say]")
+			saynn("[say=risha]А теперь проваливай, уверена, какая-нибудь сирень с радостью приберется за тобой.[/say]")
 
-			saynn("With nothing else to do, you quickly gather yourself and stand up, cum still leaking out of you as you awkwardly walk away. Satisfied, though.")
+			saynn("Делать больше нечего, ты быстро приходишь в себя и встаешь, неловко уходя и всё еще подтекая спермой. Впрочем, ты чувствуешь удовлетворение.")
 
 		# (if will pay)
 		else:
-			saynn("[say=risha]You are a great fuck. There you go, you earned it.[/say]")
+			saynn("[say=risha]Ты охрененная трахалка. Вот, держи, ты это заслужила.[/say]")
 
-			saynn("Risha slides a credit chip into your hand and then quickly unchains you from the bar, causing you to fall onto the bench.")
+			saynn("Риша вкладывает кредитный чип тебе в руку, а затем быстро освобождает тебя от цепей на перекладине, отчего ты валишься на скамью.")
 
-			saynn("[say=risha]Now go away, I’m sure some lilac will happily clean up after you.[/say]")
+			saynn("[say=risha]А теперь проваливай, уверена, какая-нибудь сирень с радостью приберется за тобой.[/say]")
 
-			saynn("With nothing else to do, you quickly gather yourself and stand up, cum still leaking out of you as you awkwardly walk away. Satisfied, though.")
+			saynn("Делать больше нечего, ты быстро приходишь в себя и встаешь, неловко уходя и всё еще подтекая спермой. Впрочем, ты чувствуешь удовлетворение.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "offer_handjob"):
 		# (You get on her knees and start stroking her)
@@ -237,50 +237,50 @@ func _run():
 
 #ACEPREGEXPAC - Player and Risha have some additional lines if she's pregnant.
 #dialogue is still, eh, its there. I can come back later if I have to. Maybe its just the weirdness of actually doing it vs thinking of it.
-		saynn("Five credits is still something, you lower yourself onto your knees and shift closer to the bench. Risha spreads her legs for you, offering a full view of her male and female bits. She idly strokes her feline cock while her balls sway slightly, sometimes offering glimpses of her wet cunt.")
+		saynn("Пять кредитов — всё же не пусто, ты опускаешься на колени и пододвигаешься ближе к скамье. Риша раздвигает ноги, открывая тебе полный вид на свои мужские и женские достоинства. Она лениво поглаживает свой кошачий член, пока её яички слегка покачиваются, время от времени обнажая влажную киску.")
 
-		saynn("[say=risha]That was the right choice.[/say]")
+		saynn("[say=risha]Это был правильный выбор.[/say]")
 
-		saynn("[say=pc]Why don’t you find someone to fuck you. Would give a reason for your slit.[/say]")
+		saynn("[say=pc]Почему бы тебе не найти кого-нибудь, кто трахнет тебя? Это дало бы повод твоей щелке.[/say]")
 
-		saynn("Risha stops stroking herself as you wrap your digits around her shaft instead and start gently sliding them along her length. You feel her barbs softly tickling your palm as you brush it over the cock’s head, such a strange feeling. Risha just leans back and enjoys you working.")
+		saynn("Риша перестает ласкать себя сама, когда ты обхватываешь её ствол пальцами и начинаешь плавно вести ими вдоль всей длины. Ты чувствуешь, как её шипы мягко щекочут твою ладонь, когда ты проводишь по головке члена — странное ощущение. Риша просто откидывается назад и наслаждается твоей работой.")
 
-		saynn("[say=risha]I didn’t exactly choose it, you know. I’m not gonna bottom for some wanna be criminal scum. I’d rather use them as my cock sock.[/say]")
+		saynn("[say=risha]Я не то чтобы сама это выбрала, знаешь ли. Я не собираюсь подставлять зад всякому недоделанному преступному отребью. Я скорее буду использовать их как чехол для своего члена.[/say]")
 
 		if(getCharacter("risha").isVisiblyPregnant()):
-			saynn("You look up from under the lynx's expecting belly.")
+			saynn("Ты смотришь снизу вверх на ожидающий живот рыси.")
 			
-			saynn("[say=pc]Are you sure about that?[/say]")
+			saynn("[say=pc]Ты в этом уверена?[/say]")
 			
-			saynn("[say=risha]Maybe, but you're still the same toy as the rest of the sluts here.[/say]")
+			saynn("[say=risha]Может и так, но ты всё равно такая же игрушка, как и остальные шлюхи здесь.[/say]")
 
 #		elif(getCharacter("risha").isVisiblyPregnantFromPlayer()):
-#			saynn("You look up from under the lynx's expecting belly.")
+#			saynn("Ты смотришь снизу вверх на ожидающий живот рыси.")
 #
-#			saynn("[say=pc]That didnt stop me.[/say]")
+#			saynn("[say=pc]Это меня не остановило.[/say]")
 #
-#			saynn("[say=risha]And yet you're back being my toy. Like all the other desperate sluts.[/say]")
+#			saynn("[say=risha]И всё же ты снова стала моей игрушкой. Как и все остальные отчаянные шлюхи.[/say]")
 
 		else:
-			saynn("[say=pc]Really now?[/say]")
+			saynn("[say=pc]Серьезно?[/say]")
 
-		saynn("You keep stroking her red meaty shaft, you digits catch some of her precum and spread it along the surface. Risha smirks while watching you, her face doesn’t really indicate how much pleasure your stroking brings. You decide to toy with her and sneak the second hand under her ballsack, your digits landing on her pussy and teasing the sensitive folds, they are so wet. Risha lets out a surprised moan.")
+		saynn("Ты продолжаешь ласкать её налитый красным мясистый член; твои пальцы собирают немного её предэякулята и размазывают его по всей поверхности. Риша ухмыляется, наблюдая за тобой, но по её лицу трудно понять, насколько сильно ей нравится твоя ласка. Ты решаешь поиграть с ней и просовываешь вторую руку под её мошонку; твои пальцы находят её киску и начинают дразнить чувствительные складки — она невероятно влажная. Риша издает удивленный стон.")
 
-		saynn("[say=risha]Ah. The toy is getting cheeky, huh?[/say]")
+		saynn("[say=risha]Ах. Игрушка становится дерзкой, да?[/say]")
 
-		saynn("[say=pc]Just proving that you’re wrong~.[/say]")
+		saynn("[say=pc]Просто доказываю, что ты ошибаешься~.[/say]")
 
-		saynn("[say=risha]Sure, slut. Just make me cum.[/say]")
+		saynn("[say=risha]Конечно, шлюшка. Просто доведи меня до кончa.[/say]")
 
-		saynn("Two of your digits spread her needy pussy, spawning a few strings of her juices between the petals. Then you use the third digit to prod at her pussy hole until it gives in, surprisingly easy. Your other hand still slides over her shaft while the second now playfully fingers her cunt. You feel how big of an effect it has on Risha, her legs start to shift and shake slightly, she raises her chin high and lets out a few lusty moans as you pleasure her both sets of bits.")
+		saynn("Два твоих пальца раздвигают её жаждущую киску, из-за чего между лепестками тянутся нити её соков. Затем ты используешь третий палец, чтобы ковырять в её дырочке, пока она не поддается — на удивление легко. Твоя другая рука всё еще скользит по её стволу, в то время как вторая игриво перебирает её щели. Ты чувствуешь, какой эффект это оказывает на Ришу: её ноги начинают слегка подрагивать, она высоко задирает подбородок и издает несколько похотливых стонов, пока ты доставляешь удовольствие обоим её отверстиям.")
 
-		saynn("[say=pc]I think somebody is enjoying this way too much~[/say]")
+		saynn("[say=pc]Мне кажется, кто-то получает от этого слишком уж много удовольствия~[/say]")
 
-		saynn("[say=risha]Shut up.. And do it faster.[/say]")
+		saynn("[say=risha]Заткнись... И делай это быстрее.[/say]")
 
-		saynn("You decide to obey but not exactly. As you increase your onslaught on her cunt, you slow down your other hand, barely stroking her cock at this point. You feel her shaft throbbing and pulsing, leaking precum and begging for more attention but you only finger her cunt harder instead, searching for her g-spot and then hammering away at it, causing the lynx to start arching her back and squirming, she clearly won’t be able to resist this for long.")
+		saynn("Ты решаешь подчиниться, но не до конца. Усиливая натиск на её киску, ты замедляешь другую руку, едва поглаживая её член. Ты чувствуешь, как её ствол пульсирует и бьется в конвульсиях, сочась предэякулятом и умоляя о внимании, но вместо этого ты лишь сильнее вбиваешь пальцы в её щель, нащупывая точку G, а затем начинаешь неистово молотить по ней. Рысь начинает выгибать спину и извиваться — очевидно, она долго не продержится.")
 
-		addButton("Make her cum", "Send that bitch to the heavens", "make_her_cum")
+		addButton("Довести её до оргазма", "Отправить эту сучку на небеса", "make_her_cum")
 
 	if(state == "make_her_cum"):
 		# (cum in mouth, stretches mouth, covers in cum)
@@ -291,45 +291,45 @@ func _run():
 			npcBodyState={},
 		})
 
-		saynn("You stop stroking her cock completely, instead just squeezing it near the base. You can feel her veins bulging as she is being edged, her member is leaking precum profusely but she doesn’t cum. You hear her desperate moans as you finger-fuck her pussy, subtle growling can be heard too.")
+		saynn("Ты полностью прекращаешь ласкать её член, вместо этого просто сжимая его у основания. Ты чувствуешь, как вздуваются её вены от эджинга; её плоть обильно сочится смазкой, но она всё ещё не кончает. Ты слышишь её отчаянные стоны, пока ты трахаешь её киску пальцами, и сквозь них пробивается едва уловимое рычание.")
 
-		saynn("[say=pc]Why aren’t you begging, slut~[/say]")
+		saynn("[say=pc]Чего ты не умоляешь, шлюшка~[/say]")
 
-		saynn("Suddenly Risha leans forward and puts her hands around your head, the sharp discomfort makes you whine and open your mouth enough for her to pull your head onto her shaft, making you part your lips and then shoving her throbbing cock deep down your throat. She cries out a groan as your throat closes around her dick, quickly sending the lynx over the edge.")
+		saynn("Внезапно Риша подается вперед и обхватывает твою голову руками; от резкого дискомфорта ты скулишь и приоткрываешь рот, позволяя ей насадить твою голову на свой член. Ты невольно размыкаешь губы, и она с силой заталкивает свой пульсирующий член глубоко тебе в глотку. Она издает стон, когда твоя гортань сжимается вокруг её достоинства, мгновенно доводя рысь до оргазма.")
 #ACEPREGEXPAC - V2 - More Preg Risha lines
 		if(getCharacter("risha").isHeavilyPregnant()):
-			saynn("Her heavily pregnant tummy is pressed against your face as her buff arms bend around it to hold you down around her cock.")
+			saynn("Её тяжело беременный живот прижат к твоему лицу, а её мускулистые руки обхватывают его, удерживая тебя на её члене.")
 		
-		saynn("[say=risha]Grr.. I told you to shut up, fucktoy.[/say]")
+		saynn("[say=risha]Грр.. Я сказала тебе заткнуться, секс-игрушка.[/say]")
 
-		saynn("Your fingers are still lodged into her cunt, you feel her pussy clenching and squirting juices all over your hand as her cock starts shooting many waves of hot cum down your throat. The barbs make sure pulling out at this moment would be a very painful thing so you sit still and allow the dickgirl to force feed you her semen. This orgasm seems very powerful for her, she is groaning and squirming a lot, moans escape one after another until you drain her balls completely.")
+		saynn("Твои пальцы всё еще зажаты в её щели; ты чувствуешь, как её киска сжимается и извергает соки прямо на твою руку, в то время как её член начинает выбрасывать мощные волны горячей спермы тебе в глотку. Благодаря зазубринам, вытащить себя в этот момент будет чертовски больно, так что ты замираешь, позволяя дикгёрл насильно кормить тебя своим семенем. Похоже, этот оргазм для неё невероятно сильный: она стонет и извивается, из неё вырываются стоны один за другим, пока ты полностью не опустошаешь её яйца.")
 
-		saynn("Her barbs finally soften up, allowing you to escape her grasp. As you pull away from the cock, the last strings of cum end up stuffing your mouth and on your face, leaving quite a lovely mess.")
+		saynn("Её зазубрины наконец смягчаются, позволяя тебе вырваться из её хватки. Когда ты отстраняешься от члена, последние струйки спермы попадают тебе в рот и на лицо, оставляя после себя весьма приятный беспорядок.")
 
-		saynn("[say=pc]Bitch..[/say]")
+		saynn("[say=pc]Сучка..[/say]")
 
-		saynn("Risha leans down to you, still panting slightly.")
+		saynn("Риша наклоняется к тебе, всё еще слегка тяжело дыша.")
 
-		saynn("[say=risha]Wanna repeat that?[/say]")
+		saynn("[say=risha]Хочешь повторить?[/say]")
 
-		saynn("You notice her cock still being mostly hard and twitching so you shake your head. Her cum slowly oozes down your cheeks and drips from the chin.")
+		saynn("Ты замечаешь, что её член всё еще почти твердый и подергивается, поэтому ты качаешь головой. Её сперма медленно стекает по твоим щекам и капает с подбородка.")
 
 		# (if no pay)
 		if(!gotPayed):
-			saynn("[say=risha]That’s better. No credits for you, I already gave you some. Now go clean yourself or whatever, slut.[/say]")
+			saynn("[say=risha]Так-то лучше. Денег не дам, я тебе уже немного отсыпала. А теперь иди отмойся или типа того, шлюшка.[/say]")
 
-			saynn("[say=pc]Really?..[/say]")
+			saynn("[say=pc]Серьезно?..[/say]")
 
-			saynn("You stand up and quickly fix your appearance to the best of your ability.")
+			saynn("Ты встаешь и изо всех сил стараешься быстро привести себя в порядок.")
 
 		# (if pay)
 		else:
-			saynn("[say=risha]That’s better. These are your credits. Now go clean yourself or whatever, slut.[/say]")
+			saynn("[say=risha]Так-то лучше. Вот твои кредиты. А теперь иди отмойся или типа того, шлюшка.[/say]")
 
-			saynn("You grab the chip, then stand up and quickly fix your appearance to the best of your ability.")
+			saynn("Ты хватаешь чип, затем встаешь и изо всех сил стараешься быстро привести себя в порядок.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "offer_pussy"):
 		# (needs pussy)
@@ -339,65 +339,65 @@ func _run():
 			npcBodyState={exposedCrotch=true,},
 		})
 
-		saynn("You put your hand over your pussy and begin teasing yourself in Risha’s line of sight. You find your clit and begin rubbing it while producing some cute moans. The lynx seems to be very pent up watching you, already massaging her feline balls.")
+		saynn("Ты кладешь руку на свою киску и начинаешь дразнить себя прямо на виду у Риши. Ты находишь свой клитор и начинаешь тереть его, издавая милые стоны. Рысь, кажется, сильно возбудилась, наблюдая за тобой, и уже вовсю массирует свои кошачьи яйца.")
 
-		saynn("[say=pc]You’d love to breed this, wouldn’t you~.[/say]")
+		saynn("[say=pc]Ты ведь обожаешь, когда тебя трахают ради размножения, а~?[/say]")
 
-		saynn("[say=risha]And who will stop me.[/say]")
+		saynn("[say=risha]И кто же меня остановит?[/say]")
 
-		saynn("Suddenly she grabs you by the arms and switches places, bending you over the bench. You don’t even find time to struggle before she masterfully shoves your head under the metal bar while chaining your arms to its heavy rings, creating a makeshift pillory. The bench itself prevents you from closing your legs, you are quickly made helpless!")
+		saynn("Внезапно она хватает тебя за руки и меняется с тобой местами, нагибая тебя над скамьей. Ты даже не успеваешь опомниться, как она мастерски заталкивает твою голову под металлическую перекладину, приковывая руки к тяжелым кольцам и сооружая из этого импровизированный колодки. Сама скамья не дает тебе свести ноги — ты мгновенно оказываешься в беспомощном положении!")
 
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Risha {pc.undressMessageS}, leaving you naked and your pussy exposed!")
+			saynn("Риша {pc.undressMessageS}, оставляя тебя обнаженной с выставленной напоказ киской!")
 
-		saynn("[say=pc]H-hey..[/say]")
+		saynn("[say=pc]Эй...[/say]")
 
-		saynn("She then spreads open your slit with her digits and checks how wet you are. Having your arms restrained to this frame brings some discomfort but you also feel quite.. excited. Warm feeling rushes throughout your body while Risha focuses on rubbing your little sensitive clit, you are swaying your hips while your snatch gets wet from your juices.")
+		saynn("Затем она раздвигает пальцами твою щель, проверяя, насколько ты промокла. То, что твои руки прикованы к этой раме, вызывает некоторый дискомфорт, но в то же время ты чувствуешь... возбуждение. Тепло разливается по всему телу, пока Риша сосредоточенно трет твой крошечный чувствительный клитор; ты покачиваешь бедрами, а твоя щелка намокает от соков.")
 
-		saynn("[say=risha]What an eager whore, I will enjoy breeding you.[/say]")
+		saynn("[say=risha]Какая жадная шлюшка, мне понравится осеменять тебя.[/say]")
 
-		saynn("Risha doesn’t waste time for too long, she guides her barbed feline cock and presses it against your pussy, its tip sliding up and down along your petals. You arch your back and struggle against the metal bar as the cat’s soft spikes are brushing against your soft flesh.")
+		saynn("Риша не теряет времени даром: она направляет свой шипастый кошачий член и прижимает его к твоей киске, водя кончиком вверх и вниз по твоим лепесткам. Ты выгибаешь спину и борешься с металлической перекладиной, пока мягкие шипы кошки касаются твоей нежной плоти.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Even though you are stuck in quite an exposed position and are about to be taken advantage of, you feel very horny, your {pc.cock} is trying to get more erect but it’s still neatly contained behind chastity.")
+			saynn("Несмотря на то, что ты зажата в весьма уязвимой позе и вот-вот станешь жертвой похоти, ты чувствуешь дикое возбуждение; твой {pc.cock} пытается встать, но всё еще плотно зажат в девственности.")
 		elif(GM.pc.hasPenis()):
-			saynn("Even though you are stuck in quite an exposed position and are about to be taken advantage of, you feel so horny, your {pc.cock} is getting hard.")
+			saynn("Несмотря на то, что ты зажата в весьма уязвимой позе и вот-вот станешь жертвой похоти, ты чувствуешь такое возбуждение, что твой {pc.cock} начинает твердеть.")
 
-		saynn("Risha gets some of your juices and rubs them into her cock and then, without much more preparation, buckles her hips forward, forcing her barbed member to penetrate your {pc.pussyStretch} pussy hole and stretch it open enough to shove the tip inside. You arch your back more and let out a moan as she roughly pushes her cock deeper, her spikes raking at your soft inner walls.")
+		saynn("Риша слизывает твой сок и втирает его в свой член, а затем, без лишних приготовлений, подается тазом вперед, заставляя свой шипастый орган входить в твою {pc.pussyStretch} киску, растягивая её настолько, чтобы просунуть кончик внутрь. Ты выгибаешься в спине и стонешь, когда она грубо вгоняет член всё глубже, а её шипы скребут по твоим нежным внутренним стенкам.")
 #ACEPREGEXPAC - V2 - More Preg Risha lines
 		if(getCharacter("risha").isHeavilyPregnant()):
-			saynn("The weight of Risha's large expecting belly rests on your ass as she bottoms out inside your pussy.")
+			saynn("Тяжесть большого, беременного живота Риши давит тебе на задницу, пока она входит в твою киску до самого упора.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("You feel your useless cock leaking behind the chastity cage, being fucked by a tall lynx makes you so aroused.")
+			saynn("Ты чувствуешь, как твой бесполезный член течет за девственной клеткой; то, что тебя трахает высокая рысь, приводит тебя в невероятное возбуждение.")
 		elif(GM.pc.hasPenis()):
-			saynn("You feel your neglected cock leaking, being fucked by a tall lynx makes you so aroused.")
+			saynn("Ты чувствуешь, как твой заброшенный член течет; то, что тебя трахает высокая рысь, приводит тебя в невероятное возбуждение.")
 
 
-		saynn("[say=pc]Fuck.. So rough.[/say]")
+		saynn("[say=pc]Блядь... Как же грубо.[/say]")
 
-		saynn("[say=risha]See, you, inmates, are so easy to handle.[/say]")
+		saynn("[say=risha]Видите, вы, заключенные, такие послушные.[/say]")
 
-		saynn("Risha shoves her cock balls deep down your fuckhole, smashing the cervix, before retracting just enough to not pull out completely. She gives your butt a firm smack, causing you to moan and clench, before thrusting deep again, easily pushing through your attempts at resistance, a high amount of lube and precum help her to rail you harder. Risha quickly picks up the pace,the way her barbed member pounds at the natural barrier makes you roll up your eyes and moan passionately.")
+		saynn("Риша заталкивает свой член и яйца глубоко в твою дырку, впечатываясь прямо в шейку матки, а затем отстраняется лишь настолько, чтобы не вылететь полностью. Она звонко шлепает тебя по заднице, заставляя тебя застонать и сжаться, после чего снова наносит глубокий толчок, с легкостью преодолевая твои попытки сопротивляться; обилие смазки и предэякулята помогает ей трахать тебя еще жестче. Риша быстро наращивает темп, и то, как её шипастый член долбит в естественный барьер, заставляет тебя закатывать глаза и страстно стонать.")
 
-		saynn("[say=risha]Oh yeah, I know you love it. Each whore of this station was on this cock, zero complaints so far.[/say]")
+		saynn("[say=risha]О да, я знаю, что тебе нравится. Каждая шлюха на этой станции сидела на этом члене, и пока что — никаких жалоб.[/say]")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} is leaking more and more precum, the way her thick shaft fucks you sends shivers down your spine and makes both your member and your pussy pulse. You feel like you won’t be able to endure this for long.")
+			saynn("Твоя {pc.cock} всё сильнее сочится предэякулятом; то, как её толстый ствол трахает тебя, заставляет мурашки бежать по спине, а твой член и киску — пульсировать. Кажется, ты долго это не выдержишь.")
 
-		saynn("Each time Risha rams her cock inside you she hits your g-spot, sending a huge amount of pleasure through your body, sure amount of it slowly making your mind hazy. You stick your tongue out and moan more often.")
+		saynn("Каждый раз, когда Риша вгоняет свой член в тебя, она попадает прямо в точку G, посылая по всему телу волны невероятного удовольствия, от которого твой разум постепенно затуманивается. Ты то и дело высовываешь язык и стонешь всё громче.")
 
-		saynn("You feel like you are about to cum, your pussy hole is getting tighter around the cat’s cock and she feels it. She only increases her pace, basically ravaging your stretched fuckhole, using her precum and your female juices as lube.")
+		saynn("Ты чувствуешь, что вот-вот кончишь; твоя киска сжимается вокруг кошачьего члена, и она это чувствует. Она лишь прибавляет темп, буквально терзая твою растянутую дырку, используя свой предэякулят и твою смазку в качестве лубриканта.")
 
-		saynn("[say=risha]Ready to carry my kittens, whore?[/say]")
+		saynn("[say=risha]Готова выносить моих котят, шлюшка?[/say]")
 
-		saynn("Your eyes begin to roll up on their own..")
+		saynn("Твои глаза начинают сами собой закатываться...")
 
-		addButton("Cum", "The orgasm overtakes your body", "cumVaginal")
+		addButton("Кончить", "Оргазм захлёстывает твоё тело", "cumVaginal")
 
 	if(state == "cumVaginal"):
 		playAnimation(StageScene.SexAllFours, "fast", {
@@ -407,45 +407,45 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true,},
 		})
 		
-		saynn("You begin to thrash against the restraints and make loud pleasure noises, your whole body squirms and shivers as you struggle to stay still. Though Risha’s hands hold your ass nice and tight, she keeps shoving her cock in and out even through your climax. Your fuckhole got so overstimulated that you squirt juices all over the bench.")
+		saynn("Ты начинаешь метаться в путах, издавая громкие стоны наслаждения; всё твоё тело корчится и дрожит в попытках замереть. И хотя руки Риши крепко сжимают твою задницу, она продолжает вколачивать свой член в тебя даже во время твоего оргазма. Твоя дырка настолько перестимулирована, что ты заливаешь сквиртом всю скамью.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your member desperately tries to get hard but the chastity cage is being very mean to you and prevents all of that. It didn’t take long for your {pc.cock} to start leaking weak lines of {pc.cum} onto the bench and floor. She really drains you, even during your wet orgasm she pounds at your pleasure spot until there is nothing left in your balls.")
+			saynn("Твой член отчаянно пытается встать, но девственницкая клетка ведет себя с тобой жестоко, не давая этого сделать. Вскоре твой {pc.cock} начинает источать слабые струйки {pc.cum} на скамью и пол. Она выжимает тебя досуха: даже во время твоего влажного оргазма она долбит в твою эрогенную зону, пока в твоих яйцах не останется ни капли.")
 		elif(GM.pc.hasPenis()):
-			saynn("It didn’t take long for your {pc.cock} to start shooting strong lines of {pc.cum} onto the bench and the floor. She really drains you, even during your orgasm she pounds at your pleasure spot, causing your cock to erupt with more {pc.cum} until there is nothing left in your balls.")
+			saynn("Вскоре твой {pc.cock} начинает извергать мощные струи {pc.cum} на скамью и пол. Она действительно выжимает тебя досуха: даже во время твоего оргазма она долбит в твою эрогенную зону, заставляя твой член извергать всё больше {pc.cum}, пока в твоих яйцах не останется ничего.")
 
-		saynn("[say=risha]Did my little fuckdoll cum already? Oh, what a shame. Now it’s my turn.[/say]")
+		saynn("[say=risha]Моя маленькая шлюшка уже кончила? О, какая жалость. Теперь моя очередь.[/say]")
 
-		saynn("And she wasn’t kidding, even as your inner walls try to close around her shaft, she keeps fucking your slit, thrusting slow but putting full force into each one, your cervix getting softer and eventually getting penetrated, causing you to have another spike of pleasure. You feel her barbs hardening, they catch onto your soft insides and scrape on them, preventing Risha from pulling out. She starts to groan, her cock throbbing and pulsating as it shoots wave after wave of hot cum directly into your womb! Your belly starts to look inflated as she fills you to the brim. She stuffs you so much that some cum already starts to leak.")
+		saynn("И она не шутила: даже когда твои внутренние стенки пытаются сомкнуться вокруг её члена, она продолжает трахать твою щель, совершая медленные, но мощные толчки, от которых твоя шейка матки размягчается и в итоге пропускает его внутрь, вызывая новый всплеск наслаждения. Ты чувствуешь, как её шипы твердеют — они цепляются за твои нежные внутренности и скребут по ним, не давая Рише выскочить. Она начинает стонать, её член пульсирует и бьется, извергая волну за волной горячей спермы прямо тебе в матку! Твой живот начинает раздуваться, пока она наполняет тебя до краев. Она вливает в тебя столько, что часть спермы уже начинает вытекать наружу.")
 
-		saynn("Eventually you both come down from your orgasms but your body still shivers on its own. Risha’s barbs soften up so she pulls her messy cock out, leaving your used fuckhole to gape and leak cum at a high rate.")
+		saynn("В конце концов вы оба приходите в себя после оргазма, но твоё тело всё ещё бьет мелкая дрожь. Шипы Риши размягчаются, и она вытягивает свой залитый семенем член, оставляя твою использованную дырку широко раскрытой и обильно сочащейся спермой.")
 
-		saynn("Risha quickly catches her breath and admires the view.")
+		saynn("Риша быстро переводит дух и любуется открывшейся картиной.")
 
 		# (if not pay)
 		if(!gotPayed):
-			saynn("[say=risha]You are a great fuck. But I already paid you this week, can’t have you spoiled. Sorry fucktoy~.[/say]")
+			saynn("[say=risha]Ты охрененная трахалка. Но на этой неделе я тебе уже заплатила, нельзя давать тебе расслабляться. Прости, секс-игрушка~.[/say]")
 
-			saynn("[say=pc]Huh?.. H-hey..[/say]")
+			saynn("[say=pc]А?.. Э-эй..[/say]")
 
-			saynn("Risha quickly unchains you from the bar, causing you to fall onto the bench.")
+			saynn("Риша быстро освобождает тебя от цепей на перекладине, отчего ты валишься на скамью.")
 
-			saynn("[say=risha]Now go away, I’m sure some lilac will happily clean up after you.[/say]")
+			saynn("[say=risha]А теперь проваливай, уверена, какая-нибудь сирень с радостью приберется за тобой.[/say]")
 
-			saynn("With nothing else to do, you quickly gather yourself and stand up, cum still leaking out of you as you awkwardly walk away. Satisfied, though.")
+			saynn("Делать больше нечего, ты быстро приходишь в себя и встаешь, неловко уходя и всё еще подтекая спермой. Впрочем, ты чувствуешь удовлетворение.")
 
 		# (if will pay)
 		else:
-			saynn("[say=risha]You are a great fuck. There you go, you earned it.[/say]")
+			saynn("[say=risha]Ты охрененная трахалка. Вот, держи, ты это заслужила.[/say]")
 
-			saynn("Risha slides a credit chip into your hand and then quickly unchains you from the bar, causing you to fall onto the bench.")
+			saynn("Риша вкладывает кредитный чип тебе в руку, а затем быстро освобождает тебя от цепей на перекладине, отчего ты валишься на скамью.")
 
-			saynn("[say=risha]Now go away, I’m sure some lilac will happily clean up after you.[/say]")
+			saynn("[say=risha]А теперь проваливай, уверена, какая-нибудь сирень с радостью приберется за тобой.[/say]")
 
-			saynn("With nothing else to do, you quickly gather yourself and stand up, cum still leaking out of you as you awkwardly walk away. Satisfied, though.")
+			saynn("Делать больше нечего, ты быстро приходишь в себя и встаешь, неловко уходя и всё еще подтекая спермой. Впрочем, ты чувствуешь удовлетворение.")
 
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		# (scene ends)
 		
 		
@@ -459,50 +459,50 @@ func _run():
 			npcBodyState={naked=true,hard=true},
 		})
 
-		saynn("[say=pc]I don’t need your credits.[/say]")
+		saynn("[say=pc]Мне не нужны твои кредиты.[/say]")
 
-		saynn("[say=risha]Well then fuck off, why don’t you.[/say]")
+		saynn("[say=risha]Ну тогда вали нахер, чего тебе еще надо.[/say]")
 
-		saynn("You swiftly expose your {pc.cock} and reach for Risha’s neck. The lynx snarls as you put pressure on her throat and pin her to the bench. The lynx instinctevely tries to pry your hands off but you manage to overpower her.")
+		saynn("Ты стремительно обнажаешь свой {pc.cock} и хватаешь Ришу за шею. Рысь рычит, когда ты сдавливаешь её горло и прижимаешь к скамье. Она инстинктивно пытается сбросить твои руки, но тебе удается одолеть её.")
 
-		saynn("[say=pc]Your pussy will do just fine. Don’t worry, slut. You will cum by the end of this.[/say]")
+		saynn("[say=pc]Твоя киска отлично справится. Не парься, сучка. К концу этого ты точно кончишь.[/say]")
 
-		saynn("The lynx squirms and struggles, she is clearly not done resisting, her sweaty body is tensing up and tries to shove you away but you get a better grasp and reach for a long chain that connects the barbell to the bench. That chain is long enough for you to wrap around the herm’s paws a few times, rendering them restrained.")
+		saynn("Рысь извивается и сопротивляется, она явно еще не готова сдаться; её потное тело напрягается, она пытается оттолкнуть тебя, но ты перехватываешь её крепче и тянешься к длинной цепи, соединяющей штангу со скамьей. Цепи хватает, чтобы обмотать лапы герма несколько раз, лишая её возможности двигаться.")
 
-		saynn("[say=risha]F-fuc..ker![/say]")
+		saynn("[say=risha]Ублю..док![/say]")
 
-		saynn("Now that she can’t scratch, bite or punch you, it’s time to get to the business. You let go of her throat, making her cough and breathe heavily as you pull her down along the bench, her chained paws are now above her head and her lower part of the body is fully accessible to you. Risha’s barbed cock is still hard as a rock, her slit hides behind her fluffy balls and seems to be quite wet too, maybe she likes roughness.")
+		saynn("Теперь, когда она не может тебя поцарапать, укусить или ударить, пора переходить к делу. Ты отпускаешь её горло, заставляя её закашляться и тяжело дышать, и тянешь её вниз по скамье; её скованные цепью лапы оказываются над головой, а нижняя часть тела становится полностью доступной для тебя. Шипастый член Риши всё еще твердый как камень, а её щель прячется за пушистыми яичками и кажется довольно влажной — возможно, ей нравится грубость.")
 
-		saynn("You forcefully spread Risha’s legs and keep them parted with your knees as you get a grasp on the herm’s cock and balls and move them out of the way while guiding your own cock towards the guard’s now-exposed slit.")
+		saynn("Ты силой разводишь ноги Риши и удерживаешь их коленями, одновременно обхватываешь член и яички герма, отодвигая их в сторону и направляя свой член к обнаженной щели охранницы.")
 
-		saynn("[say=risha]Don’t you dare, bitch.[/say]")
+		saynn("[say=risha]Только посмей, сучка.[/say]")
 
-		saynn("[say=pc]What? This?[/say]")
+		saynn("[say=pc]Что? Это?[/say]")
 
-		saynn("And as you say that, you force yourself inside the lynx, your {pc.cock} is spreading the herm’s folds and stretches the hole enough to plop inside. Risha lets out a grunt, she is surprisingly tight for a girl of her height, her wet insides wrap around your shaft very much.")
+		saynn("И как только ты это произносишь, ты с силой входишь в рысь; твой {pc.cock} раздвигает складки герма и растягивает отверстие настолько, чтобы войти внутрь. Риша издает стон — она на удивление узкая для девушки такого роста, её влажные внутренности плотно обхватывают твой член.")
 
-		saynn("[say=risha]GHh-h..h..[/say]")
+		saynn("[say=risha]Гхх-х..х..[/say]")
 
-		saynn("[say=pc]I’m just helping you take the edge off, shut up and enjoy it, slut.[/say]")
+		saynn("[say=pc]Я просто помогаю тебе снять напряжение, так что заткнись и наслаждайся, шлюха.[/say]")
 
-		saynn("You shove your member in until you feel her natural barricade. Then you start pulling out but stop just before retracting the tip and instead ram your dick deep inside her again. Risha lets out another noise as her barbed cock leaks some precum. You start fucking her raw, pounding at her cervix and making sure to hit the pleasure button on the way there. Little moans escape from the tall kitty, moans that she tries to hide, her eyes go from burning with hatred to showing pleasure. She didn’t agree to this but seems like her body betrays her.")
+		saynn("Ты втискиваешь свой член до самого упора, пока не упираешься в её природную преграду. Затем ты начинаешь выходить, но останавливаешься в самый последний момент, не вынимая головку, и вместо этого снова с силой вгоняешь свой хер глубоко в неё. Риша издает очередной звук, а её шипастый член слегка подтекает предэякулятом. Ты начинаешь трахать её до красноты, долбя прямо в шейку матки и по пути обязательно нащупывая точку удовольствия. Из ушей высокой кошечки вырываются тихие стоны, которые она пытается скрыть; её взгляд меняется с пылающей ненависти на выражение наслаждения. Она не давала на это согласия, но, похоже, её тело её предает.")
 
-		saynn("[say=risha]F-fuck.. I will throw you into stocks.. when you’re done with me. ah..[/say]")
+		saynn("[say=risha]Черт... я засуну тебя в колодки... когда ты закончишь со мной... ах...[/say]")
 
-		saynn("[say=pc]No you won’t. You love this. You will come back for more.[/say]")
+		saynn("[say=pc]Нет, не засунешь. Тебе это нравится. Ты еще вернешься за добавкой.[/say]")
 
-		saynn("You catch all of the precum off the tip of her cock and shove your digits into the herm’s mouth. Risha seems surprised at that bold move but it seems she doesn’t plan on biting you. Instead, she starts gently sucking her own precum off of your fingers while you keep thrusting inside her, stretching her wet needy pussy out. Your digits get pulled out and dried against the dickgirl’s cheeks, humiliating her.")
+		saynn("Ты слизываешь весь предэякулят с кончика её члена и засовываешь пальцы в рот герме. Риша кажется удивленной такому дерзкому ходу, но, похоже, кусаться она не собирается. Вместо этого она начинает нежно сосать собственный смазочный сок с твоих пальцев, пока ты продолжаешь входить в неё, растягивая её влажную, жаждущую киску. Ты вытаскиваешь пальцы и вытираешь их о щеки дикгёрл, унижая её.")
 
-		saynn("You bend forward and support yourself off of the bench while picking up the pace. Risha’s hard cock gets trapped between your bodies, rubbing against them while you slide your hips back and forth. It only takes a few more seconds before Risha suddenly lets out a loud moan and cum, her cock starts shooting cum onto her own breasts and belly, her pussy tenses around your shaft even more and squirts, her body wants to create an arch but you keep her pinned to the bench.")
+		saynn("Ты наклоняешься вперед, опираясь на скамью и ускоряя темп. Твердый член Риши оказывается зажат между вашими телами, натираясь о них, пока ты двигаешь бедрами вперед-назад. Проходит всего несколько секунд, прежде чем Риша внезапно громко стонет и кончает; её член начинает извергать сперму прямо на её грудь и живот, её киска еще сильнее сжимается вокруг твоего члена и кончает, её тело пытается выгнуться дугой, но ты удерживаешь её, прижимая к скамье.")
 
-		saynn("[say=risha]Ahh-h.. fu-u-uck..[/say]")
+		saynn("[say=risha]Ахх-х.. бля-я-ядь..[/say]")
 
-		saynn("That needy cunt quickly makes you reach your own peak, you feel like you’re about to cum too. And Risha feels that.")
+		saynn("Эта жаждущая щель быстро доводит тебя до пика, ты чувствуешь, что тоже вот-вот кончишь. И Риша это чувствует.")
 
-		saynn("[say=risha]N-not.. inside.[/say]")
+		saynn("[say=risha]Н-не.. внутрь.[/say]")
 
-		addButton("Cum inside", "Stuff her womb full of your cum", "cum_inside_risha")
-		addButton("Pull out", "You’d rather be safe", "pull_out_on_risha")
+		addButton("Кончить внутрь", "Залить её утробу своей спермой", "cum_inside_risha")
+		addButton("Вытащить", "Ты предпочитаешь перестраховаться", "pull_out_on_risha")
 
 
 	if(state == "cum_inside_risha"):
@@ -513,32 +513,32 @@ func _run():
 			npcBodyState={naked=true,hard=true},
 		})
 		
-		saynn("[say=pc]Prepare.. to receive.. my load..[/say]")
+		saynn("[say=pc]Готовься.. принять.. мою порцию..[/say]")
 
-		saynn("You grunt and shove your {pc.cock} as deep as Risha’s pussy allows, you break into her womb and start filling it up with your {pc.cum}. The lynx moans and struggles against her chains, her eyes show a mixture of pleasure and regret. A little bump appears on her lower part of the belly, that amount of {pc.cum} is too much for her so some is already leaking back out of her stuffed slit and creating a mess on her thighs.")
+		saynn("Ты кряхтишь и вталкиваешь свой {pc.cock} так глубоко, как позволяет киска Риши, ты прорываешься в её утробу и начинаешь заполнять её своей {pc.cum}. Рысь стонет и бьется в цепях, в её глазах смесь удовольствия и сожаления. На её нижней части живота появляется небольшая выпуклость — такого количества {pc.cum} для неё слишком много, поэтому часть уже вытекает обратно из её набитой щели, пачкая бедра.")
 
 		# (if risha not visibly pregnant)
 		if(!getCharacter("risha").isVisiblyPregnant()):
-			saynn("[say=risha]That will get me p-pregnant, you fucker![/say]")
+			saynn("[say=risha]Так я же забеременею, ублюдок![/say]")
 
 		# (else)
 		else:
-			saynn("[say=risha]Fuck![/say]")
+			saynn("[say=risha]Блять![/say]")
 
-		saynn("You ride the rest of your orgasm and flop on top of Risha, resting with your member still inside her pussy.")
+		saynn("Ты дожидаешь остатки своего оргазма и валишься на Ришу, отдыхая, пока твой член всё еще находится внутри её киски.")
 
-		saynn("[say=pc]Shut up. You loved it.[/say]")
+		saynn("[say=pc]Заткнись. Тебе же понравилось.[/say]")
 
-		saynn("You slowly pull your messy cock out and watch how the herm’s used cunt is already leaking some of the load back. As you prepare to leave, you catch Risha’s concerned eyes. She rattles the chain and tries to free her paws but can’t.")
+		saynn("Ты медленно вытягиваешь свой небрежно стоящий член и наблюдаешь, как изъеденная использования щель герма уже начинает подтекать обратно твоей спермой. Когда ты собираешься уходить, ты ловишь обеспокоенный взгляд Риши. Она гремит цепью и пытается освободить лапы, но безуспешно.")
 
-		saynn("[say=risha]Hey! Fucker! You forgot something![/say]")
+		saynn("[say=risha]Эй! Ублюдок! Ты кое-что забыл![/say]")
 
-		saynn("[say=pc]No I didn’t~[/say]")
+		saynn("[say=pc]Как бы не так~[/say]")
 
-		saynn("Risha rolls her eyes and throws her head back, it’s like she accepted her fate.")
+		saynn("Риша закатывает глаза и запрокидывает голову — кажется, она смирилась со своей судьбой.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "pull_out_on_risha"):
@@ -548,22 +548,22 @@ func _run():
 			npcBodyState={naked=true,hard=true},
 		})
 				
-		saynn("You grunt as the orgasm overwhelms you but manage to pull out the moment before your {pc.cock} throbs and shoots out many strings of {pc.cum}, the first one hitting the girl’s outer pussy lips with the rest landing on her tits and belly. Risha now looks quite messy, covered in two layers of cum.")
+		saynn("Ты кряхтишь, когда оргазм накрывает тебя с головой, но успеваешь выскочить в тот самый момент, прежде чем твой {pc.cock} пульсирует и выбрасывает целые струи {pc.cum}; первая попадает девушке на внешние половые губы, а остальные — на грудь и живот. Теперь Риша выглядит довольно неопрятно, покрытая двумя слоями кончи.")
 
-		saynn("[say=risha]You fucker..[/say]")
+		saynn("[say=risha]Ах ты кобель..[/say]")
 
-		saynn("[say=pc]Shut up. You loved it.[/say]")
+		saynn("[say=pc]Заткнись. Тебе же понравилось.[/say]")
 
-		saynn("You take a step back and admire the view of a messy herm, her cock is still hard and leaking. As you prepare to leave, you catch Risha’s concerned eyes. She rattles the chain and tries to free her paws but can’t.")
+		saynn("Ты делаешь шаг назад, любуясь видом перепачканной германки; её член всё еще твердый и подтекает. Когда ты собираешься уходить, ты ловишь обеспокоенный взгляд Риши. Она гремит цепью и пытается освободить лапы, но безуспешно.")
 
-		saynn("[say=risha]Hey! Fucker! You forgot something![/say]")
+		saynn("[say=risha]Эй! Ублюдок! Ты кое-что забыл![/say]")
 
-		saynn("[say=pc]No I didn’t~[/say]")
+		saynn("[say=pc]Как бы не так~[/say]")
 
-		saynn("Risha rolls her eyes and throws her head back, it’s like she accepted her fate.")
+		saynn("Риша закатывает глаза и запрокидывает голову — кажется, она смирилась со своей судьбой.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 func _react(_action: String, _args):
 

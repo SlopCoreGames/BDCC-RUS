@@ -7,50 +7,50 @@ func _run():
 	addCharacter("rush")
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("Rush towers over you, arms crossed.")
-		saynn("[say=rush]So what is it, pipsqueak? Think ya can take me?[/say]")
+		saynn("Раш возвышается над тобой, скрестив руки на груди.")
+		saynn("[say=rush]Ну и чего тебе, мелюзга? Думаешь, сможешь меня одолеть?[/say]")
 		
-		addButton("Curiosity", "So what is he in for?", "backstory")
-		addButton("Offer yours", "You have an ass available", "want_dick")
-		addButton("Fight", "Stay away or there will be trouble", "fight_me")
-		#addButton("DEBUG FIGHT", "Haha get sucker punched", "debug_fight")
-		#addButton("DEBUG SEX", "Haha get sucker fucked", "debug_sex")
-		addButton("Leave", "Actually you've remembered a thing at a place", "leaving")
+		addButton("Любопытство", "Так за что он здесь сидит?", "backstory")
+		addButton("Предложить свой", "У тебя есть доступная задница", "want_dick")
+		addButton("Драться", "Держись подальше, а то будут проблемы", "fight_me")
+		#addButton("DEBUG FIGHT", "Ха-ха, получил хук в челюсть!", "debug_fight")
+		#addButton("DEBUG SEX", "Ха-ха, получи, лохушка!", "debug_sex")
+		addButton("Уйти", "Вообще-то, ты что-то вспомнил об одном месте.", "leaving")
 		
 	if(state == "backstory"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("[say=rush]Crushed a bitch's skull against th' pavement. Anger issues. Had it comin'.[/say]")
+		saynn("[say=rush]Раздавил черепушку одной сучке об асфальт. Проблемы с гневом. Сама напросилась.[/say]")
 
-		saynn("[say=pc]Oh.[/say]")
+		saynn("[say=pc]Ох.[/say]")
 
-		saynn("[say=rush]Tha's wha' got me arrested, anyway. Smashin' that table over th' officer's head 's what got 'em to throw away th' key.[/say]")
+		saynn("[say=rush]В общем, из-за этого меня и закрыли. Разнес стол об голову офицера — вот тогда они и выкинули ключ.[/say]")
 
-		saynn("He snorts.")
+		saynn("Он фыркает.")
 
-		saynn("[say=rush]For th' best, really. Lotsa assholes tha' deserve punchin' in 'ere, an' it keeps me away from th' \"general populace\".[/say]")
+		saynn("[say=rush]Так даже лучше, чесслово. Тут полно мудаков, которым только и надо, что получить по морде, да и так я подальше от \"обычного сброда\".[/say]")
 
-		saynn("Interesting. He's more level-headed about it than you'd have expected.")
+		saynn("Интересно. Он кажется куда более рассудительным, чем можно было ожидать.")
 
-		addButton("Back", "", "")
+		addButton("Назад", "", "")
 		
 	if(state == "want_dick"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("You fail to provide an answer. You are too busy being mesmerized by the size of his enormous bulge... You might be drooling a little.")
+		saynn("Ты не находишь ответа. Ты слишком занята тем, что гипнотизируешь взглядом его огромный бугорок... Кажется, у тебя даже слюнки потекли.")
 
-		saynn("Rush follows your gaze, then chuckles.")
+		saynn("Раш прослеживает направление твоего взгляда, а затем посмеивается.")
 		
-		saynn("[say=rush]Ha, yeh tha' happens. Wha', you lookin' for a ride?[/say]")
+		saynn("[say=rush]Ха, бывает. Че, хочешь прокатиться?[/say]")
 		
-		saynn("[say=pc]I- uh... um...")
+		saynn("[say=pc]Э- эх... ну...")
 		
-		saynn("Numbly, you manage a nod.")
+		saynn("Оцепенело, вы выдавливаете кивок.")
 
-		saynn("Rush looks you up and down, sizing you up. He scratches the side of his head, appearing unsure.")
+		saynn("Раш оглядывает вас с ног до головы, оценивая. Он чешет затылок, выглядя несколько неуверенно.")
 
-		saynn("[say=rush]Ya sure? Imma thinkin' I might break ya in two.[/say]")
+		saynn("[say=rush]Уверена? А то мне кажется, я тебя пополам сломаю.[/say]")
 
-		addButton("Absolutely", "Internal trauma is a future you's problem", "need_dick")
-		addButton("Actually no", "Functional internal organs are important", "nah_dick")
+		addButton("Безусловно", "Внутренние травмы — это проблемы будущего «я»", "need_dick")
+		addButton("Вообще-то нет", "Целые внутренние органы всё-таки важны", "nah_dick")
 	if(state == "need_dick"):
 		playAnimation(StageScene.SexStanding, "tease", {
 			pc="rush", npc="pc",
@@ -59,27 +59,27 @@ func _run():
 		})
 		
 		if(GM.pc.isFullyNaked()):
-			saynn("Conveniently, you've come already naked, including your cute {pc.analStretch} tailhole.")
+			saynn("К вашему счастью, вы уже пришли голышом, включая ваше милое отверстие {pc.analStretch}.")
 		else:
-			saynn("You quickly {pc.undressMessage}, leaving your cute {pc.analStretch} tailhole exposed.")
+			saynn("Вы быстро {pc.undressMessage}, оставляя ваше милое {pc.analStretch} открытым.")
 			
-		saynn("[say=rush]Okay, I'm game. Let's get ya ready.[/say]")
+		saynn("[say=rush]Ладно, я в деле. Давай подготовим тебя.[/say]")
 		
-		saynn("After retrieving a bottle of lube from somewhere, Rush forces a few lubed fingers into your anus, making sure to lubricate you well for what's coming ahead.")
+		saynn("Добыв откуда-то бутылочку лубриканта, Раш с силой вводит несколько смазанных пальцев в твой анус, тщательно подготавливая тебя к тому, что ждет впереди.")
 
-		saynn("[say=rush]Lean against th' wall. Ya gonna want some support for this.[/say]")
+		saynn("[say=rush]Прислонись к стене. Тебе понадобится опора.[/say]")
 		
-		saynn("Valid suggestion. You lean against the wall, taking the opportunity to spread your legs wide. Rush steps behind you, slapping his {rush.cockDesc} "+RNG.pick(["cock", "dick", "member"])+" against your back. A cold sense of dread spreads down your spine as you feel its flared tip rest between your shoulder blades. Rush forces his fingers deeper into you, continuing to methodically lubricate your passage.")
+		saynn("Дельное предложение. Ты прислоняешься к стене, пользуясь случаем, чтобы широко раздвинуть ноги. Раш заходит тебе со спины, хлопая своим {rush.cockDesc} "+RNG.pick(["cock", "dick", "member"])+" по твоей спине. Ледяное чувство трепета пробегает по позвоночнику, когда ты чувствуешь, как его расширяющийся кончик упирается между твоих лопаток. Раш проталкивает пальцы еще глубже, методично смазывая твой проход.")
 		
-		saynn("[say=pc]Mmh...[/say]")
+		saynn("[say=pc]Ммм...[/say]")
 		
-		saynn("Surprisingly he takes his time, ensuring you are well stretched and ready. You find yourself almost begging for him to hurry it up by the time he's finally satisfied that you're as stretched as you're going to get this way.")
+		saynn("Удивительно, но он не торопится, следя за тем, чтобы ты была хорошо растянута и готова. К тому времени, как он наконец убеждается, что ты растянута настолько, насколько это возможно таким способом, ты ловишь себя на том, что почти умоляешь его поскорее закончить.")
 		
-		saynn("[say=rush]Time for th' main event. Ya ready, pipsqueak?[/say]")
+		saynn("[say=rush]Пора переходить к главному. Готова, малявка?[/say]")
 		
-		saynn("Continuing with his unexpectedly careful approach, he positions his {rush.cockDesc} "+RNG.pick(["cock", "dick", "member"])+" at the opening of your needy tailhole, it’s flared head prodding against your {pc.analStretch} entrance. Then, slowly but firmly, he begins to push against it.")
+		saynn("Продолжая свой неожиданно осторожный подход, он приставляет свой {rush.cockDesc} "+RNG.pick(["cock", "dick", "member"])+" к отверстию твоего жаждущего заднего прохода, и его расширяющаяся головка упирается в твой {pc.analStretch} вход. Затем, медленно, но уверенно, он начинает давить на него.")
 
-		addButton("Take it", "This is gonna be a stretch", "get_fucked_check")
+		addButton("Принимай", "Это будет непросто", "get_fucked_check")
 			
 	if(state == "get_fucked_pass"):
 		playAnimation(StageScene.SexStanding, "sex", {
@@ -87,36 +87,36 @@ func _run():
 			bodyState={exposedCrotch=true,hard=true},
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
-		saynn("It takes Rush several attempts before he manages to push his {rush.cockDesc}"+RNG.pick(["cock", "dick", "member"])+" into you. When it finally slips in, it feels a lot like being impaled by a tree trunk.")
+		saynn("Рашу требуется несколько попыток, прежде чем ему удается втиснуть свой {rush.cockDesc}"+RNG.pick(["cock", "dick", "member"])+" в тебя. Когда он наконец входит, ощущение такое, будто тебя пронзает настоящее дерево.")
 
-		saynn("[say=pc]F-fuuuck okay okay it's in![/say]")
+		saynn("[say=pc]Твою ж... блядь, окей, окей, он внутри![/say]")
 		
-		saynn("[say=rush]Well alright, pipsqueak! Gotta say, didn't think I'd fit![/say]")
+		saynn("[say=rush]Ну что, мелочь! Должен сказать, не думал, что влезет![/say]")
 		
-		saynn("He gives you a few moments to get used to the feeling, then starts slowly thrusting in and out. The sensation is unbelieveable in every sense of the word, and you are pushed to the tips of your toes with every thrust.")
+		saynn("Он дает тебе несколько мгновений, чтобы привыкнуть к этому чувству, а затем начинает медленно двигаться вперед-назад. Ощущения просто невероятные во всех смыслах, и от каждого толчка тебя подбрасывает на цыпочках.")
 		
-		saynn("[say=rush]Ya okay down there?[/say]")
+		saynn("[say=rush]Эй, ты там как, в норме?[/say]")
 		
-		saynn("[say=pc]Nnnh no I'm good! K-keep going![/say]")
+		saynn("[say=pc]Нннх, да, всё хорошо! П-продолжай![/say]")
 		
-		saynn("Rush snorts and picks up the pace, now pistoning ever deeper. His {rush.cockDesc}"+RNG.pick(["cock", "dick", "member"])+" continues to rub along your insides, thankfully sufficiently lubricated.")
+		saynn("Раш фыркает и ускоряется, теперь вгоняя свой {rush.cockDesc} всё глубже и глубже, словно поршень."+RNG.pick(["cock", "dick", "member"])+" продолжает тереться внутри тебя, к счастью, достаточно смазанный.")
 		
-		addButton("Deeper", "", "get_fucked_2")
+		addButton("Глубже", "", "get_fucked_2")
 	if(state == "get_fucked_2"):
 		playAnimation(StageScene.SexStanding, "fast", {
 			pc="rush", npc="pc",
 			bodyState={exposedCrotch=true,hard=true},
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
-		saynn("Relentless, Rush continues to pound your ass. Your pleasure builds as he picks up more and more speed, pushing deeper into you with every shove of his {rush.cockDesc}"+RNG.pick(["cock", "dick", "member"])+" Your legs start uncontrollably shaking so much you're not sure you could stay standing if it weren't for the cock in you acting as support.")
+		saynn("Неумолимый Раш продолжает долбить твою задницу. Твое удовольствие нарастает, пока он набирает всё больше и больше скорости, вбиваясь всё глубже с каждым толчком своего {rush.cockDesc}"+RNG.pick(["cock", "dick", "member"])+" Твои ноги начинают неконтролируемо дрожать так сильно, что ты не уверена, смогла бы устоять на ногах, если бы не член внутри тебя, служащий опорой.")
 		
-		saynn("[say=rush]You're taking it so fuckin' good, pipsqueak. Not long now, ya hear?[/say]")
+		saynn("[say=rush]Ты принимаешь это просто охеренно, малявка. Скоро всё закончится, слышишь?[/say]")
 		
-		saynn("[say=pc]Y-yeah I'm cl-close too-[/say]")
+		saynn("[say=pc]Д-да, я уж п-почти...[/say]")
 		
-		saynn("You are rapidly approaching the edge of orgasm, the relentless pleasure coursing through your body and turning your thoughts to a blissful mush. Rush pushes his "+RNG.pick(["cock", "dick", "member"])+" all the way in, going balls-deep. With every thrust, he lifts your whole body off the ground with his dick alone.")
+		saynn("Ты стремительно приближаешься к оргазму, неумолимое наслаждение пронзает всё тело, превращая твои мысли в блаженную кашу. Раш вгоняет свой "+RNG.pick(["cock", "dick", "member"])+" до самого конца, на всю глубину. С каждым толчком он приподнимает всё твоё тело над землей одним лишь своим членом.")
 		
-		addButton("Cum!", "Let it happen", "get_fucked_orgasm")
+		addButton("Кончай!", "Пусть всё идет своим чередом", "get_fucked_orgasm")
 		
 	if(state == "get_fucked_orgasm"):
 		playAnimation(StageScene.SexStanding, "inside", {
@@ -127,193 +127,193 @@ func _run():
 		})
 		
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your {pc.cock} weakly pulses inside your chastity cage and shoots strings of {pc.cum} at the wall you're leaning on!")
+			saynn("Твой {pc.cock} слабо пульсирует внутри клетки целомудрия и пускает струйки {pc.cum} на стену, к которой ты прислонилась!")
 		elif(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} throbs and shoots {pc.cum} all over the wall you're leaning on!")
+			saynn("Твой {pc.cock} пульсирует и разбрызгивает {pc.cum} по всей стене, к которой ты прислонилась!")
 		if(GM.pc.hasVagina()):
-			saynn("Your neglected pussy squirts your juices onto the wall and down your thighs!")
+			saynn("Твоя заброшенная киска брызжет соками прямо на стену и стекает по твоим бедрам!")
 		
-		saynn("As your ring clenches and pulses around his "+RNG.pick(["cock", "dick", "member"])+", he groans and finally cums too, slamming you against the wall and your own mess, filling you up to the brim! You feel your insides stretch and expand to accomodate, and distantly wonder if it's going to end up spraying out of your mouth. Even while he cums, your own orgasm still continues as you shiver and squirm, helplessly impaled and held in place against the wall.")
+		saynn("Когда твоё кольцо сжимается и пульсирует вокруг его "+RNG.pick(["cock", "dick", "member"])+", он стонет и, наконец, тоже кончает, впечатывая тебя в стену и в твою собственную смазку, наполняя тебя до самых краев! Ты чувствуешь, как твои внутренности растягиваются и расширяются, чтобы вместить всё это, и в глубине души гадаешь, не выплеснется ли всё это в итоге у тебя изо рта. Даже когда он кончает, твой собственный оргазм всё еще продолжается; ты дрожишь и извиваешься, беспомощно насаженная и прижатая к стене.")
 		
-		saynn("After a few breathless moments, Rush pulls back, allowing you to stand back on your shaking legs.")
+		saynn("После нескольких моментов затаившего дыхание отдыха Раш отстраняется, позволяя тебе встать на свои дрожащие ноги.")
 		
-		saynn("[say=pc]Th-that was...[/say]")
+		saynn("[say=pc]Э-это было...[/say]")
 		
-		saynn("[say=rush]Hah! Tha' was great! Up for another round, pipsqueak?[/say]")
+		saynn("[say=rush]Ха! Это было круто! Готова к еще одному раунду, малявка?[/say]")
 		
-		saynn("Too spent for your horniness to overrule you, you whimper and shake your head.")
+		saynn("Ты слишком вымотана, чтобы похоть взяла верх, поэтому ты лишь скулишь и качаешь головой.")
 		
-		addButton("Get dressed", "You'll feel that in the morning", "get_fucked_after")
+		addButton("Одеться", "Завтра утром ты это почувствуешь", "get_fucked_after")
 		
 	if(state == "get_fucked_after"):
-		saynn("[say=rush]Fair 'nuff. Later, then?[/say]")
+		saynn("[say=rush]Справедливо. Тогда позже?[/say]")
 		
-		saynn("[say=pc]M-maybe, yeah, that sounds...[/say]")
+		saynn("[say=pc]М-может быть, да, звучит...[/say]")
 		
-		saynn("Somewhere in the back of your head, a thought finally manages to make itself known and remind you of why you're here in the first place.")
+		saynn("Где-то на задворках сознания наконец пробивается мысль, напоминающая тебе о том, зачем ты здесь вообще оказался.")
 		
-		saynn("[say=pc]W-Wait, hold on. What about Vion?[/say]")
+		saynn("[say=pc]П-погоди, стой. А как же Вион?[/say]")
 		
-		saynn("[say=rush]Oh, righ'. Tell ya what, I'll lay off four-eyes for a bit, just for ya.[/say]")
+		saynn("[say=rush]А, точно. Слушай сюда: чисто ради тебя, я на время отстану от этого очкарика.[/say]")
 		
-		saynn("You decide to quit while you're ahead and leave to report the good news.")
+		saynn("Ты решаешь уйти на коне и отправиться докладывать о хороших новостях.")
 		
-		addButton("Oof", "", "endthescene")
+		addButton("Уф", "", "endthescene")
 		
 	if(state == "get_fucked_fail"):
-		saynn("Rush makes several attempts to push his {rush.cockDesc} "+RNG.pick(["cock", "dick", "member"])+" into you, but it just refuses to fit. Soon enough pleasure gives way to frustration.")
+		saynn("Раш делает несколько попыток впихнуть свой {rush.cockDesc} "+RNG.pick(["cock", "dick", "member"])+" в тебя, но он никак не хочет лезть. Вскоре на смену удовольствию приходит раздражение.")
 
-		saynn("[say=rush]Looks like yer all talk, pipsqueak. Ain't gettin' it in without rippin' ya in two.[/say]")
+		saynn("[say=rush]Похоже, ты только языком чесать горазд, малявка. Без того, чтобы разорвать тебя пополам, его не впихнуть.[/say]")
 		
-		addButton("What?", "Since when has that stopped anybody?", "get_fucked_fail_2")
-		addButton("Do it anyway", "This is going to hurt", "get_fucked_pass")
+		addButton("Что?", "С каких это пор это кого-то останавливало?", "get_fucked_fail_2")
+		addButton("Всё равно сделать это", "Это будет больно", "get_fucked_pass")
 		
 	if(state == "get_fucked_fail_2"):
-		saynn("[say=pc]Wha- but I-[/say]")
+		saynn("[say=pc]Что... но я...[/say]")
 		
-		saynn("[say=rush]Na', tha's enough. We're done 'ere.[/say]")
+		saynn("[say=rush]Не, хватит с тебя. На сегодня закончили.[/say]")
 		
-		saynn("He steps backs and starts wiping the lube off his "+RNG.pick(["cock", "dick", "member"])+". You suppose you should be glad he decided to stop before doing you harm, but you can't help but feel you've failed some sort of test.")
+		saynn("Он отступает назад и начинает вытирать лубрикант со своего "+RNG.pick(["cock", "dick", "member"])+". Ты вроде как должен радоваться, что он решил остановиться, прежде чем причинить тебе вред, но не можешь отделаться от чувства, будто провалил какой-то тест.")
 		
-		saynn("Also, you're still really horny. Fuck.")
+		saynn("К тому же, тебя всё ещё чертовски штырит. Блядь.")
 
-		addButton("Leave", "", "endthescene")
+		addButton("Уйти", "", "endthescene")
 	if(state == "nah_dick"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("You regain your senses enough to shake your head. Rush pats his enormous, massive bulge. You watch as it bounces, eventually managing to break your gaze.")
+		saynn("Ты приходишь в себя и трясешь головой. Раш похлопывает по своему огромному, массивному бугру. Ты завороженно наблюдаешь за тем, как он подпрыгивает, и лишь спустя время удается отвести взгляд.")
 
-		saynn("[say=rush]Yeh, tha's about right. Not many a cocksleeve tha' can handle [i]this[/i] bad boy.[/say]")
+		saynn("[say=rush]Ага, в самый раз. Не каждая кокслив сможет сдюжить [i]такого[/i] красавчика.[/say]")
 
-		addButton("Back", "", "")
+		addButton("Назад", "", "")
 	if(state == "fight_me"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("He guffaws.")
+		saynn("Он громко хохочет.")
 
-		saynn("[say=rush]Hah! Haha, tha's hilarious! Yer funny, pipsqueak![/say]")
+		saynn("[say=rush]Ха! Ха-ха, ну и умора! А ты забавный, малявка![/say]")
 
-		saynn("You stand your ground.")
+		saynn("Ты не отступаешь.")
 
-		saynn("[say=pc]I'm not kidding. I can take you.[/say]")
+		saynn("[say=pc]Я не шучу. Я тебя сделаю.[/say]")
 
-		saynn("[say=rush]Hah, well alright. Tell ya' what. You last six rounds wit' me, I'll leave four-eyes alone for a bit. Deal?[/say]")
+		saynn("[say=rush]Ладно, ладно. Давай так: если продержишься против меня шесть раундов, я на время оставлю твоего очкарика в покое. Идет?[/say]")
 
-		addButton("Deal", "This will hurt", "deal")
-		addButton("No deal", "You don't like your chances", "no_deal")
+		addButton("Идет", "Будет больно", "deal")
+		addButton("Не идет", "Ты не особо веришь в свои шансы.", "no_deal")
 	if(state == "deal"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("His attitude sobers. He flexes, and enters a classic boxing stance.")
+		saynn("Его спесь улетучивается. Он напрягает мускулы и встает в классическую боксерскую стойку.")
 
-		saynn("[say=rush]Alrigh', but don' go sayin' I didn't warn ya. Put 'em up.[/say]")
+		saynn("[say=rush]Ладно, но потом не говори, что я тебя не предупреждал. Ну, показывай руки![/say]")
 
-		saynn("You try to get ready for what's certainly going to hurt in the morning. If you're lucky.")
+		saynn("Ты пытаешься подготовиться к тому, что утром наверняка будет больно. Если повезет.")
 
-		addButton("Put 'em up", "You weren't using all those ribs anyway", "put_em_up")
+		addButton("Руки вверх", "Все равно ты не всеми ребрами пользовался", "put_em_up")
 	if(state == "no_deal"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("He claps you on the back, sending you stumbling into the wall.")
+		saynn("Он хлопает тебя по спине, отчего ты спотыкаешься и влетаешь в стену.")
 
-		saynn("[say=rush]Yeh tha's right. Good on ya, broken bones ain't no fun for no one.[/say]")
+		saynn("[say=rush]Да, всё верно. Красава. Сломанные кости — удовольствие так себе, никому не нужно.[/say]")
 		
-		addButton("Back", "", "")
+		addButton("Назад", "", "")
 	if(state == "if_won"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush", npcAction="defeat"})
-		saynn("Rush stumbles and falls to one knee.")
+		saynn("Раш спотыкается и падает на одно колено.")
 		
-		saynn("[say=rush]Whoo. Ya got a mean kick to ye, pipsqueak.[/say]")
+		saynn("[say=rush]Ух! Ну и пинок у тебя, малявка.[/say]")
 
-		saynn("Then he rises back to his feet, bruised but unwavering.")
+		saynn("Затем он снова поднимается на ноги, побитый, но непоколебимый.")
 		
-		saynn("[say=rush]Ya got me good. Deal's a deal. Tell four-eyes he's good. Until I need more credits.[/say]")
+		saynn("[say=rush]Хорошо ты меня приложил. Сделка есть сделка. Передай этому очкарику, что он в расчете. Пока мне снова не понадобятся кредиты.[/say]")
 		
-		addButton("Done here", "Good enough for now", "leave_victorious")
+		addButton("Готово", "Сойдет и так", "leave_victorious")
 		if(getFlag("HypnokinkModule.RushDealStruckAtLeastOnce")):
-			saynn("A thought occurs to you. If you were to knock Rush out, there might be a more permanent solution to this problem.")
+			saynn("Вас посещает мысль: если вырубить Раша, можно найти более радикальное решение проблемы.")
 			if(GM.pc.getInventory().hasItemID("inmatewristcuffs") and GM.pc.getInventory().hasItemID("inmateanklecuffs")):
-				addButton("Solution", "Keep fighting", "put_em_up_again")
+				addButton("Решение", "Продолжать бой", "put_em_up_again")
 			else:
-				addDisabledButton("Solution", "Keep fighting\n\nYou'll need a set of wrist and ankle cuffs for this")
+				addDisabledButton("Решение", "Продолжать бой\n\nДля этого тебе понадобится набор наручников для рук и ног")
 		
 	if(state == "if_lost"):
 		playAnimation(StageScene.Duo, "defeat", {npc="rush"})
-		saynn("With one last mighty kick, Rush sends you sprawling on the floor.")
+		saynn("Нанося последний мощный удар ногой, Раш швыряет вас на пол.")
 		
-		saynn("[say=rush]Hah! Tha's right![/say]")
+		saynn("[say=rush]Ха! Вот так![/say]")
 		
-		saynn("Rush advances onto your prone form. You curl up, anticipating a very unpleasant next few minutes...")
+		saynn("Раш надвигается на вас, лежащую на полу. Вы сворачиваетесь калачиком, предвкушая крайне неприятные ближайшие минуты...")
 		
-		saynn("Instead, he pulls you back onto your feet.")
+		saynn("Вместо этого он рывком поднимает вас на ноги.")
 		
-		saynn("[say=rush]Not bad, pipsqueak! Ya wanna throw down like tha' again sometime?[/say]")
+		saynn("[say=rush]Неплохо, малявка! Хочешь как-нибудь еще так закуситься?[/say]")
 		
-		saynn("He brushes the dust off your shoulders, making you wince as his rough hands glide over your bruises.")
+		saynn("Он смахивает пыль с твоих плеч, заставляя тебя поморщиться от того, как его грубые ладони скользят по твоим синякам.")
 		
-		saynn("[say=rush]Ya know where t' find me. Deal's still on th' table![/say]")
+		saynn("[say=rush]Знаешь, где меня искать. Сделка всё еще в силе![/say]")
 		
-		saynn("[say=pc]I don't- Yeah, maybe. Sometime else.[/say]")
+		saynn("[say=pc]Да нет... Ладно, может быть. Как-нибудь в другой раз.[/say]")
 		
-		saynn("You decide to cut your losses and slink off to lick your wounds elsewhere.")
+		saynn("Ты решаешь не рисковать и поспешно уходишь, чтобы зализать раны в другом месте.")
 		
 		addButton("Ow", "", "endthescene")
 		
 	if(state == "leave_victorious"):
-		saynn("You decide to quit while you're ahead and leave to report the good news.")
+		saynn("Ты решаешь уйти на коне и отправиться докладывать о хороших новостях.")
 		
-		addButton("Leave", "", "endthescene")
+		addButton("Уйти", "", "endthescene")
 		
 	if(state == "if_won_serious"):
-		saynn("Rush finally goes down. For a second, it looks like he might manage to drag himself up again, but then his hands go out from under him and he collapses, out like a light. You waste no time clamping your cuffs on him.")
+		saynn("Раш наконец сдувается. На секунду кажется, что он вот-вот сможет подняться, но затем его руки разъезжаются, и он валится на пол, вырубаясь без задних ног. Ты не теряешь времени и защелкиваешь на нем наручники.")
 		
-		addButton("Drag him", "Better get moving", "drag_rush")
-		addButton("Leave", "Actually, maybe not", "endthescene")
+		addButton("Тащить его", "Лучше поторопиться", "drag_rush")
+		addButton("Уйти", "Хотя, пожалуй, не стоит", "endthescene")
 		
 	if(state == "if_lost_serious"):
 		playAnimation(StageScene.Rekt, "kill", {pc="rush", npc="pc"})
-		saynn("You stumble back, and only have time to wince before Rush throttles your neck and slams you into the wall. Your vision swims.")
+		saynn("Ты отшатнулась, и не успеваешь даже поморщиться, как Раш хватает тебя за горло и впечатывает в стену. В глазах всё плывет.")
 		
-		saynn("[say=rush]Ya fuckin' stupid-[/say]")
+		saynn("[say=rush]Ты, блядь, тупая...[/say]")
 		
-		saynn("[b]*WHAM*[/b]")
+		saynn("[b]*БАБАХ*[/b]")
 		
-		saynn("He slams you into the wall again. Through the daze, you wonder if you heard your skull crack.")
+		saynn("Он снова впечатывает тебя в стену. Сквозь пелену в глазах ты гадаешь, не хрустнул ли у тебя череп.")
 		
-		saynn("[say=rush]-don't fuckin' [i]ever[/i]-[/say]")
+		saynn("[say=rush]—никогда, блядь, [i]никогда[/i]—[/say]")
 		
-		saynn("[b]*WHAM*[/b]")
+		saynn("[b]*БАБАХ*[/b]")
 		
-		saynn("Again, you head makes impact with the metal wall behind you. This time you're sure you heard something important snap, and it begins to dawn on you that you might actually be about to die.")
+		saynn("Снова твоя голова врезается в металлическую стену позади тебя. На этот раз ты отчетливо слышишь, как что-то важно хрустнуло, и до тебя начинает доходить: ты, черт возьми, реально можешь сдохнуть.")
 		
-		addButton("Oh shit", "Better say something while you still can", "if_lost_serious_2")
+		addButton("Ох, бля", "Лучше скажи что-нибудь, пока еще можешь", "if_lost_serious_2")
 	if(state == "if_lost_serious_2"):
 		playAnimation(StageScene.Rekt, "end", {pc="rush", npc="pc"})
-		saynn("[say=pc]Wa- wait, I-[/say]")
+		saynn("[say=pc]По- подожди, я...[/say]")
 		
-		saynn("[say=rush]SHUT the FUCK up![/say]")
+		saynn("[say=rush]ЗАТКНИСЬ НАХУЙ![/say]")
 		
-		saynn("[b]*WHAM*[/b]")
+		saynn("[b]*БАБАХ*[/b]")
 		
-		saynn("The following impact effectively silences you as you narrowly avoid biting off your tongue. In lieu of speaking again, you cough up blood instead.")
+		saynn("От этого удара у тебя перехватывает дыхание, и ты едва не откусываешь себе язык. Вместо того чтобы заговорить, ты лишь харкаешь кровью.")
 		
-		saynn("Rush notices your blood on his hand. He lets go with it, rearing up for the punch that ends your life. Then, with the other, he sends you tumbling and skidding across the floor.")
+		saynn("Раш замечает кровь на своей руке. Он отпускает её, замахиваясь для удара, который должен оборвать твою жизнь. А затем второй рукой он отправляет тебя кувыркаться по полу, пока ты не затихаешь в скольжении.")
 		
-		saynn("[b]*WHAM*[/b]")
+		saynn("[b]*БАБАХ*[/b]")
 		
-		saynn("Managing to look up, you see Rush has left a fist shaped imprint in the wall where your head used to be.")
+		saynn("С трудом подняв взгляд, ты видишь, что там, где только что была твоя голова, на стене остался вмятый отпечаток кулака Раша.")
 		
-		saynn("[say=rush]Don't ever do tha' again. Get th' fuck out.[/say]")
+		saynn("[say=rush]Больше так не делай. Проваливай нахер отсюда.[/say]")
 		
-		saynn("You crawl away before you manage to make Rush lose whatever tenuous grasp on his temper he's managed to regain.")
+		saynn("Ты уползаешь прочь прежде, чем успеваешь окончательно выбить из Раша остатки его едва сдерживаемого самообладания.")
 		
 		addButton("Ow", "", "endthescene")
 		
 	if(state == "leaving"):
 		playAnimation(StageScene.Duo, "stand", {npc="rush"})
-		saynn("He does raise a valid point. Or maybe you just don't want your body parts, external [i]or[/i] internal, rearranged. Either way, you leave before he does something you regret.")
+		saynn("В его словах есть смысл. Или, может, ты просто не хочешь, чтобы твои части тела, как внешние, [i]так[/i] и внутренние, перетряхнули с ног на голову. Так или иначе, ты уходишь, пока он не натворил чего-нибудь, о чем ты пожалеешь.")
 		
-		saynn("[say=rush]Alrigh', well see ya around pipsqueak! Y'know where t' find me![/say]")
+		saynn("[say=rush]Ладно, еще увидимся, малявка! Знаешь, где меня искать![/say]")
 		
-		saynn("Weirdly enough, he sounds as if he means that as an actual invitation.")
+		saynn("Как ни странно, звучит так, будто это было настоящее приглашение.")
 		
-		addButton("Retreat", "", "endthescene")
+		addButton("Отступить", "", "endthescene")
 
 
 func _react(_action: String, _args):

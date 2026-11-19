@@ -11,95 +11,95 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 
-		saynn("[say=vion]Bondage is such an interesting, multifaceted topic. What is it about it that interests you? Is it the feeling of restriction, of vulnerability, of powerlessness? Or is it the snug restraints that allow you not to be in control, to simply submit?[/say]")
+		saynn("[say=vion]Бондаж — такая интересная, многогранная тема. Что именно в нем тебя привлекает? Ощущение скованности, уязвимости или беспомощности? Или же тугие путы, которые позволяют тебе не контролировать ситуацию, а просто подчиниться?[/say]")
 
-		saynn("He grabs your wrists and pulls them to your side. He lets go of your left, but grabs your right with both hands and firmly squeezes it.")
+		saynn("Он хватает тебя за запястья и отводит их в сторону. Левую руку он отпускает, но правую сжимает обеими руками, крепко сдавливая её.")
 		
-		addButton("Continue", "", "after_intro")
+		addButton("Продолжить", "", "after_intro")
 	if(state == "after_intro"):
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
-		saynn("[say=vion]I'll start by locking these special cuffs on you. Until I say otherwise, you won't be able to take them off, no matter what you do. Understand?[/say]")
+		saynn("[say=vion]Для начала я застегну на тебе эти специальные наручники. Пока я не скажу иначе, ты не сможешь их снять, что бы ты ни делала. Поняла?[/say]")
 
-		saynn("You nod as he lets go of your right wrist, grabbing your left instead. He squeezes again, repeating the motions of fastening a cuff around it.")
+		saynn("Ты киваешь, когда он отпускает твое правое запястье и вместо него хватает левое. Он снова сжимает его, повторяя движения, будто застегивая манжету.")
 
-		saynn("[say=vion]And there's the second one. They feel wonderful, don't they? Snug, tight, restrictive and secure, but also just the right size for you and perfectly comfortable.[/say]")
+		saynn("[say=vion]А вот и вторые. Они ощущаются чудесно, правда? Плотно, туго, сковывающе и надежно, но при этом идеально подходят тебе по размеру и очень комфортны.[/say]")
 
-		saynn("He pushes your arms behind you and clamps your wrists together.")
+		saynn("Он заводит твои руки за спину и плотно сводит запястья вместе.")
 
-		saynn("[say=vion]There, out of sight and out of mind. Inescapable. Not just restrained, though. Feel them go rigid as my commands wrap around them, taking control of them, entwining with them... Completely trapped, powerless in my grasp. No struggling allowed. No escape possible.[/say]")
+		saynn("[say=vion]Вот так, с глаз долой и из головы. Неизбежно. Но это не просто ограничение движений. Почувствуй, как они каменеют, когда мои команды окутывают их, захватывая контроль, переплетаясь с ними... Полная ловушка, полная беспомощность в моей хватке. Никакой борьбы. Никакого побега.[/say]")
 
-		saynn("You try to squirm, but true to his words, your arms are locked in place as solidly as if they were in a block of concrete.")
-		addButton("Continue", "", "after_wrist_cuffs")
+		saynn("Ты пытаешься вырваться, но, вопреки всему, твои руки зафиксированы так же непоколебимо, словно они замурованы в бетонный блок.")
+		addButton("Продолжить", "", "after_wrist_cuffs")
 
 	if(state == "after_wrist_cuffs"):
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
-		saynn("[say=vion]Now let's take care of your legs. Keep nice and still now...[/say]")
+		saynn("[say=vion]Теперь позаботимся о твоих ногах. А теперь — не шевелись...[/say]")
 
-		saynn("You can't help but shiver as you feel Vion wrap his hands around first your left, then your right ankle, feeling the tension as he twists his hands around them.")
+		saynn("Ты невольно вздрагиваешь, когда чувствуешь, как Вион обхватывает сначала твою левую, а затем и правую лодыжку, и ощущаешь нарастающее напряжение, когда он сжимает их своими руками.")
 
-		saynn("[say=vion]Excellent, just as secure. Do feel free to [i]try[/i] and struggle if you'd like, though...[/say]")
+		saynn("[say=vion]Отлично, теперь сидят надежно. Хотя, если хочешь, не стесняйся [i]попытаться[/i] вырваться и побороться...[/say]")
 
-		saynn("Despite your diligent attempt at doing so, you fail to make the slightest bit of progress.")
-		addButton("Continue", "", "after_ankle_cuffs")
+		saynn("Несмотря на все твои старания, тебе не удается продвинуться ни на йоту.")
+		addButton("Продолжить", "", "after_ankle_cuffs")
 		
 	if(state == "after_ankle_cuffs"):
 		playAnimation(StageScene.Duo, "kneel", {npc="vion", npcAction="sit"})
-		saynn("[say=vion]The best part about being restrained by the power of your own mind, though? Its how convenient it can be. [b]Kneel[/b] for me.[/say]")
+		saynn("[say=vion]Но знаешь, что самое прекрасное в том, чтобы быть скованной силой собственного разума? То, насколько это удобно. [b]Встань на колени[/b] перед мной.[/say]")
 
-		saynn("The restraining strength of Vion's hypnotic command abates for just a moment, allowing you to get down on your knees, only to return immediately afterwards, even stronger than before.")
+		saynn("Сдерживающая сила гипнотического приказа Виона на мгновение ослабевает, позволяя тебе опуститься на колени, но тут же возвращается с новой силой, становясь еще мощнее, чем прежде.")
 
-		saynn("[say=vion]Let's strap you down a bit more, shall we? First let's tie those limbs down...[/say]")
+		saynn("[say=vion]Давай-ка пристегнем тебя покрепче, а? Для начала свяжем эти конечности...[/say]")
 
-		saynn("You feel his hands brush up against your wrists and ankles as he secures restraints to them.")
+		saynn("Ты чувствуешь, как его руки скользят по твоим запястьям и лодыжкам, закрепляя на них стяжки.")
 
-		saynn("[say=vion]That's better. Even if you could move without permission you'd get nowhere now. Now let's do something about this collar, hm?[/say]")
+		saynn("[say=vion]Так-то лучше. Даже если бы ты могла двигаться без разрешения, сейчас ты бы никуда не делась. А теперь давай займемся этим ошейником, м?[/say]")
 
-		saynn("He caresses your neck, pulling and twisting at your collar. Then he grips your chin, forcing you to look straight ahead.")
+		saynn("Он ласкает твою шею, потягивая и поворачивая ошейник. Затем он берет тебя за подбородок, заставляя смотреть прямо перед собой.")
 
-		saynn("[say=vion]I'm locking your head and neck in place. That's right, no looking back now~[/say]")
+		saynn("[say=vion]Я фиксирую твою голову и шею на месте. Вот так, теперь уже не оглянешься~[/say]")
 
-		addButton("Continue", "", "after_anchoring")
+		addButton("Продолжить", "", "after_anchoring")
 	if(state == "after_anchoring"):
 		playAnimation(StageScene.DuoHypnoTied, "sit", {pc="vion", npc="pc", npcAction="kneel", flipNPC=true})
-		saynn("You helplessly stare ahead, shivering as Vion circles behind you.")
+		saynn("Ты беспомощно смотришь перед собой, дрожа, пока Вион кружит позади тебя.")
 		
 		if(GM.pc.hasTail()):
-			saynn("[say=vion]One last thing, just in case you fancy yourself an escape artist. Let's tie this tail down, nice and secure.[/say]")
+			saynn("[say=vion]И последнее, на случай, если ты возомнила себя мастером побега. Давай привяжем этот хвост, покрепче и надежнее.[/say]")
 
-			saynn("He pulls your tail taut, then forces it to lie flat against the ground.")
+			saynn("Он натягивает твой хвост, а затем заставляет его лежать плотно, прижатым к полу.")
 
-		saynn("[say=vion]That should do, I think. Remember, not a peep and keep your eyes closed.[/say]")
+		saynn("[say=vion]Вроде бы готово. Помни: ни звука, и держи глаза закрытыми.[/say]")
 		
-		saynn("You hear the sound of straining cushions as Vion sits down on the sofa behind you.")
-		addButton("Continue", "", "wait")
+		saynn("Ты слышишь, как за спиной скрипят подушки дивана — это Вион усаживается позади тебя.")
+		addButton("Продолжить", "", "wait")
 		
 		
 	if(state == "wait"):
 		playAnimation(StageScene.DuoHypnoTied, "stand", {pc="vion", npc="pc", npcAction="kneel"})
 		
-		saynn("You kneel there, restrained by your own desires.")
+		saynn("Ты стоишь на коленях, скованная собственными желаниями.")
 
-		saynn("Time passes.")
+		saynn("Время идет.")
 
-		saynn("You try to squirm, but...")
+		saynn("Ты пытаешься извернуться, но...")
 
-		saynn("Occasionally you hear the rustle of pencil upon paper behind you.")
+		saynn("Время от времени за спиной слышится шорох карандаша по бумаге.")
 
-		saynn("[say=vion]Hmm hm hmmm~[/say]")
+		saynn("[say=vion]Хм-м, хм-м-м~[/say]")
 
-		saynn("And yet, you continue to wait...")
+		saynn("И всё же, ты продолжаешь ждать...")
 
-		saynn("[say=vion]And done! I'm no artist, but you do make a great model. [i]Very[/i] good at holding a pose! Maybe I'll show you the sketch later, when you're more... present.[/say]")
+		saynn("[say=vion]Готово! Я не художник, но из тебя вышла отличная модель. [i]Очень[/i] хорошо держишь позу! Может, покажу тебе набросок позже, когда ты будешь более... в сознании.[/say]")
 
-		saynn("Again, you hear the sofa creak as Vion stands up and circles back in front of you.")
+		saynn("Снова слышишь, как скрипит диван — Вион встает и обходит тебя, оказываясь прямо перед тобой.")
 
-		saynn("[say=vion]Would you like to get up now? Just nod if you would.[/say]")
+		saynn("[say=vion]Хочешь встать? Просто кивни, если да.[/say]")
 
-		saynn("With the greatest of struggles, you manage a barely perceptible nod.")
+		saynn("С огромным трудом тебе удается едва заметно кивнуть.")
 		
-		saynn("[say=vion]Good {pc.boy}. The cuffs stay on for a bit longer, though~[/say]")
+		saynn("[say=vion]Хорош {pc.boy}. Хотя наручники поносят еще немного~[/say]")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "after_intro"):

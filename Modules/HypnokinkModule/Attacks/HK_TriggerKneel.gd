@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Trigger: Kneel"
+	return "Триггер: Коленопреклонение"
 	
 func getVisibleDesc(_context = {}):
 	return "Use their posthypnotic suggestion to force them to kneel."

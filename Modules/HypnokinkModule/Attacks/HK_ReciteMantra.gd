@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Unspecified
 	
 func getVisibleName(_context = {}):
-	return "Recite Mantra"
+	return "Читать мантру"
 	
 func getVisibleDesc(_context = {}):
 	var amount = HypnokinkUtil.getSuggestibleStacks(GM.pc) / 2

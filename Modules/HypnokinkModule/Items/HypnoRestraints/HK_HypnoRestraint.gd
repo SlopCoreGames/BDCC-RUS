@@ -37,17 +37,17 @@ func shouldDoStruggleMinigame(_pc):
 	return false
 	
 func doStruggle(_pc, _minigame:MinigameResult):
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(HypnokinkUtil.isHypnotized(_pc)):
-		text = "{user.Name} can't seem to take these cuffs off."
+		text = "{user.Name} никак не может снять эти наручники."
 		damage = 0.0
 	else:
-		text = "{user.Name} realises that there are no cuffs."
+		text = "{user.Name} осознаёт, что никаких наручников нет."
 		damage = 1.0
 	
 	return {"text": text, "damage": damage, "lust": lust, "pain": pain, "stamina": stamina}

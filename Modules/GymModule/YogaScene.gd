@@ -11,30 +11,30 @@ func _reactInit():
 func _run():
 
 	if(state == ""):
-		saynn("You approach the little carpets that are laid down on the floor. Nothing complicated about them but at least they look soft enough. Much better deal than doing yoga on the cold floor.")
+		saynn("Вы подходите к расстеленным на полу коврикам. В них нет ничего особенного, но выглядят они достаточно мягкими. Это куда лучше, чем заниматься йогой на холодном полу.")
 
-		saynn("You step onto one of the unoccupied mats and prepare yourself.")
+		saynn("Вы встаете на один из свободных матов и готовитесь.")
 
 		if(GM.pc.hasEffect(StatusEffect.Yoga)):
-			addDisabledButton("Simple poses", "You already did yoga recently")
+			addDisabledButton("Простые позы", "Вы уже занимались йогой совсем недавно")
 		else:
-			addButtonWithChecks("Simple poses", "Train your agility a bit", "simple_poses", [], [ButtonChecks.HasStamina])
-		addButton("Leave", "You don't feel like doing yoga", "endthescene")
+			addButtonWithChecks("Простые позы", "Немного потренировать ловкость", "simple_poses", [], [ButtonChecks.HasStamina])
+		addButton("Уйти", "Вам не особо хочется заниматься йогой", "endthescene")
 		GM.ES.triggerRun(Trigger.ApproachedYogaMats)
 
 	if(state == "simple_poses"):
 		playAnimation(StageScene.Yoga, "dog")
 		
-		saynn("No need to do anything complicated, sometimes simple is all you need.")
+		saynn("Не обязательно делать что-то сложное, иногда простоты вполне достаточно.")
 
-		saynn("You stand straight with your feet together and arms at your side. You make sure to ground your feet completely, yoga requires full body awareness and balance. Then you straighten your {pc.thick} legs and tense up your thigh muscles. As you inhale, you arch your back and extend your arms high up and then out.")
+		saynn("Вы стоите прямо, поставив стопы вместе и опустив руки вдоль тела. Вы следите за тем, чтобы стопы плотно прилегали к полу, ведь йога требует полной осознанности тела и баланса. Затем вы выпрямляете свои {pc.thick} ноги и напрягаете мышцы бедер. На вдохе вы прогибаете спину, высоко поднимаете руки вверх, а затем разводите их в стороны.")
 
-		saynn("Open chest, open heart.. you feel your whole being engaged. Even though it might look like you are just.. standing, all of your muscles are working hard to keep you at balance. After some time like that, you release your arms and instead position behind your back, palms connected, as you hold this new pose, again feeling your thighs and back working hard. So liberating.")
+		saynn("Раскрытая грудь, открытое сердце... вы чувствуете, как задействовано всё ваше существо. Хотя со стороны может показаться, что вы просто... стоите, все ваши мышцы напряженно работают, чтобы удержать равновесие. Спустя некоторое время вы опускаете руки и уводите их за спину, соединяя ладони, и замираете в новой позе, снова ощущая, как тяжело работают бедра и спина. Какое освобождение.")
 
-		saynn("Then you switch to a downward-facing dog pose, spreading your legs and leaning forward, using your hands for support.")
+		saynn("Затем ты переходишь в позу «собаки мордой вниз», широко расставив ноги и наклоняясь вперед, опираясь на ладони.")
 
-		saynn("You slowly exhale and let your body relax. That felt good.")
-		addButton("Leave", "Nice", "endthescene")
+		saynn("Ты медленно выдыхаешь, позволяя телу расслабиться. Это было приятно.")
+		addButton("Уйти", "Приятно", "endthescene")
 
 
 func _react(_action: String, _args):

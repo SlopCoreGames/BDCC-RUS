@@ -13,35 +13,35 @@ func _initScene(_args = []):
 
 func _run():
 	if(state == ""):
-		saynn("You are standing near a wall. But this wall isn't your ordinary wall. This one has.. holes.. in it.. a whole row of them, some are big enough to fit a person and others you can probably only fit an arm or a leg through..")
+		saynn("Ты стоишь у стены. Но это не обычная стена. В ней есть... дыры... целый ряд дыр; некоторые достаточно велики, чтобы в них пролез человек, а в другие, скорее всего, можно просунуть только руку или ногу...")
 
-		saynn("It's clearly a slutwall, a place where inmates punish other inmates.. Or reward them, depending on what you're into.")
+		saynn("Это явно шлюх-стена — место, где заключенные наказывают других заключенных... или вознаграждают их, смотря что тебе больше по душе.")
 
-		saynn("Do you wanna willingly get into the slutwall? Inmates -will- use you if you do so.")
+		saynn("Хочешь добровольно залезть в шлюх-стену? Если сделаешь это, заключенные тебя точно %%will%% используют.")
 
-		addButton("Use me!", "Sounds fun", "get_into_wall")
-		addButton("Abort", "Nope. You're not into free use", "endthescene")
+		addButton("Используй меня!", "Звучит весело", "get_into_wall")
+		addButton("Отмена", "Неа. Ты не по части свободного использования", "endthescene")
 	if(state == "get_into_wall"):
 		playAnimation(StageScene.Slutwall, "idle", {bodyState={naked=true, hard=true}})
-		saynn("You are kinda curious.. And begin asking inmates about how this wall works. And the more you do so, the more they get annoyed with you until they finally just grab you and forcibly shove you into one of the holes!")
+		saynn("Тебе становится любопытно... И ты начинаешь расспрашивать заключенных о том, как работает эта стена. И чем больше ты спрашиваешь, тем сильнее они начинают беситься, пока в конце концов просто не хватают тебя и силой не заталкивают в одну из дыр!")
 
-		saynn("Your wrists and ankles get chained to the wall and your crotch is now on full display. Someone quickly scribbles \"Annoying slut! Free Use!\" near you. A queue of "+str(queueSize)+" inmates already begins to line up behind you..")
+		saynn("Твои запястья и лодыжки приковывают к стене, а промежность оказывается на всеобщем обозрении. Кто-то быстро черкает рядом с тобой: \"Раздражающая шлюха! Свободное использование!\". Очередь из "+str(queueSize)+" заключенных уже начинает выстраиваться за твоей спиной...")
 
-		saynn("Oops..")
+		saynn("Ой...")
 
-		addButton("Continue", "See what happens next", "trapped")
+		addButton("Продолжить", "Смотреть, что будет дальше", "trapped")
 	if(state == "trapped"):
 		playAnimation(StageScene.Slutwall, "idle", {bodyState={naked=true, hard=true}})
-		saynn("You're still stuck in the slutwall. There "+str("is" if queueSize == 1 else "are")+" "+str(queueSize)+" inmates left in the queue.")
+		saynn("Ты всё еще торчишь в шлюх-стене. Там "+str("is" if queueSize == 1 else "are")+" "+str(queueSize)+"заключенных осталось в очереди.")
 
-		addButton("Continue", "See what happens next..", "generate_next")
+		addButton("Продолжить", "Смотри, что будет дальше...", "generate_next")
 	if(state == "isFree"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("After everyone had their turn at using your body, someone finally frees you!")
+		saynn("После того как каждый успел попользоваться твоим телом, тебя наконец-то освобождают!")
 
-		saynn("Wow, it's probably better to avoid looking people in the eyes after all this..")
+		saynn("Вау, пожалуй, после всего этого лучше всё-таки избегать взглядов в глаза...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

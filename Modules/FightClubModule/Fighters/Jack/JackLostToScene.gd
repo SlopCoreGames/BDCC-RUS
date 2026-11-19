@@ -13,14 +13,14 @@ func _run():
 		})
 
 	if(state == ""):
-		saynn("You lose all the ability to fight but just before you hit the ground, Jack catches you by the collar and keeps you from collapsing.")
+		saynn("Ты полностью теряешь способность сражаться, но в тот самый миг, когда ты уже готов рухнуть на землю, Джек хватает тебя за воротник, не давая окончательно упасть.")
 
-		saynn("[say=jack]Got ya.[/say]")
+		saynn("[say=jack]Поймал![/say]")
 
-		saynn("You grab onto his hand and try to pry it off but his grasp is just too powerful. Then you try to strike and kick his chest but he is like a wall, impenetrable to your weak attacks. Jack just nickers at your silly actions.")
+		saynn("Ты хватаешься за его руку и пытаешься разжать пальцы, но хватка у него слишком мощная. Затем ты пытаешься нанести удары и пинки в его грудь, но он словно каменная стена, непробиваемая для твоих слабых атак. Джек лишь фыркает, глядя на твои нелепые попытки.")
 
-		addButtonWithChecks("Offer a condom", "(oral) Maybe the horsie won’t breed you raw", "offer_a_condom", [], [ButtonChecks.HasCondoms])
-		addButton("Breeding", "See what happens next..", "breeding")
+		addButtonWithChecks("Предложить презерватив", "(орально) Может, коняшка не будет трахать тебя всухую", "offer_a_condom", [], [ButtonChecks.HasCondoms])
+		addButton("Бридинг", "Смотри, что будет дальше...", "breeding")
 		GM.ES.triggerRun("ArenaFighterPCLost", ["jack"])
 
 	if(state == "offer_a_condom"):
@@ -31,29 +31,29 @@ func _run():
 			npcBodyState={},
 		})
 
-		saynn("You give up any resistance and instead produce a packaged condom and bring it into Jack’s view. Your gaze is pleading for him to use it. Jack raises his brow.")
+		saynn("Ты перестаешь сопротивляться и вместо этого достаешь упакованный презерватив, демонстрируя его Джеку. Твой взгляд так и умоляет его использовать его. Джек приподнимает бровь.")
 
-		saynn("[say=jack]Hah. Ya sure it’ll hold? Although, now I have a different idea.[/say]")
+		saynn("[say=jack]Хах. Уверен, что не порвется? Хотя... у меня появилась другая идея.[/say]")
 
-		saynn("Jack grabs your offering and lets go of your collar, letting you hit the floor. You get up to your knees and watch the horse rip the package open and then expose his sheath that houses his cock. The tip of his member is out but that's not enough to put the rubber on.")
+		saynn("Джек забирает твое подношение и отпускает воротник, позволяя тебе рухнуть на пол. Ты встаешь на колени и наблюдаешь, как конь разрывает упаковку, а затем обнажает препуций, скрывающий его член. Головка уже снаружи, но этого еще недостаточно, чтобы натянуть резину.")
 
-		saynn("[say=jack]Need ya help here.[/say]")
+		saynn("[say=jack]Тут нужна твоя помощь.[/say]")
 
-		saynn("Instead of explaining, Jack instead puts a hand on the back of your head and shoves it towards his crotch, letting you get a great view of his flat flared member while it’s being rubbed against your cheek. His precum is thick, it quickly makes you look like a wet mess. After being used as a sheath polisher for a bit, you begin to feel his cock getting harder and pushing you away even as it fills with blood.")
+		saynn("Вместо объяснений Джек просто кладет руку тебе на затылок и вжимает твое лицо в свой пах, позволяя во всех подробностях рассмотреть его плоский, раздутый член, пока тот трется о твою щеку. Его предэякулят густой, и ты быстро становишься вся в этой липкой влаге. Немного побыв в роли полировщика чехла, ты начинаешь чувствовать, как его член твердеет и, наполняясь кровью, начинает буквально выталкивать тебя.")
 
-		saynn("His cock is huge, like {jack.penisSizeStr} huge. The glands on the tip being inflated and the veiny texture make it look even more intimidating. Jack grabs your attention by pulling your chin close while holding the condom.")
+		saynn("Его член огромный, размером с {jack.penisSizeStr} огромный. Раздутая головка и вздутые вены делают его еще более внушительным. Джек приковывает твое внимание, притягивая твой подбородок ближе, пока другой рукой держит презерватив.")
 
-		saynn("[say=jack]I’m gonna put this on. And stuff it inside your belly.[/say]")
+		saynn("[say=jack]Сейчас я его надену. И запихну тебе прямо в пузо.[/say]")
 
-		saynn("Oh no, it doesn’t sound like he wants to hear your input on this. He holds his shaft with one hand while applying the condom and dragging it over most of his length, making it look like a tasty oversized lollipop.")
+		saynn("О нет, похоже, твое мнение его не особо интересует. Одной рукой он сжимает ствол, натягивая презерватив и проводя им почти по всей длине, отчего член становится похож на сочный, переразмеренный леденец.")
 
-		saynn("The crowd cheers for him to destroy your throat faster. Jack holds the back of your head again and positions himself above you, making it so you have to raise your chin super high, probably to avoid excessive bending of a cock. So experienced this guy is.")
+		saynn("Толпа ревет, призывая его быстрее разнести твое горло. Джек снова берет тебя за затылок и устраивается над тобой так, что тебе приходится задрать подбородок максимально высоко — вероятно, чтобы не переломить ему член при входе. Какой же он опытный.")
 
-		saynn("[say=jack]Open up, pretty thing.[/say]")
+		saynn("[say=jack]Открывай ротик, красавица.[/say]")
 
-		saynn("Well, it seems you don’t have a choice..")
+		saynn("Что ж, похоже, выбора у тебя нет...")
 
-		addButton("Open mouth", "Let it happen", "open_mouth")
+		addButton("Открыть рот", "Пусть всё идет своим чередом", "open_mouth")
 
 	if(state == "open_mouth"):
 		playAnimation(StageScene.SexOral, "sex", {
@@ -62,50 +62,50 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("Blush appears on your cheeks the more you watch his erect horse cock. You slowly part your lips and then try to open your mouth as wide as you can but even that wasn’t enough, the flat flared out tip plugs your mouth full and gets caught on the teeth, preventing easy insertion.")
+		saynn("Твои щеки заливает румянцем, пока ты во все глаза пялишься на его эрегированный конский член. Ты медленно приоткрываешь губы, пытаясь раскрыть рот как можно шире, но даже этого мало — плоская расширенная головка забивает рот и цепляется за зубы, мешая легкому входу.")
 
-		saynn("[say=jack]This is gonna be a bit rough, ya better brace.[/say]")
+		saynn("[say=jack]Сейчас будет немного грубо, так что лучше приготовься.[/say]")
 
-		saynn("Brace how? Hearing his words makes you tense up slightly, you turn your palms into fists and rest them on Jack’s leg while he positions himself at a bit of an angle before suddenly applying extra pressure, squeezing his flare past your teeth and forcing his cock down your throat.")
+		saynn("Приготовиться как? От его слов ты невольно напрягаешься; ты сжимаешь ладони в кулаки и упираешься ими в ногу Джека, пока он устраивается под углом, а затем внезапно наваливается всем весом, проталкивая расширение головки сквозь твои зубы и силой вгоняя член глубоко в глотку.")
 
-		saynn("It’s not fully inside but you already feel.. filled.. You find yourself barely being able to breathe, your suppression of the gag reflex is constantly being checked and your throat is stretched beyond what it can take. At least the condom seems to be a lubed one which allows Jack to slide his cock without feeling much friction.")
+		saynn("Он еще не вошел до конца, но ты уже чувствуешь... наполненность... Тебе становится трудно дышать, твой контроль над рвотным рефлексом постоянно подвергается испытанию, а горло растягивается за пределы возможного. К счастью, презерватив кажется смазанным, что позволяет Джеку скользить внутри без лишнего трения.")
 
-		saynn("Your whole body is tensed up hard, including your throat. But the stud pushes past that, shoving his horse cock deeper, gradually stretching you out. Your eyes already start to roll up slightly on their own from the lack of oxygen.")
-
-		# (if has cock)
-		if(GM.pc.isWearingChastityCage()):
-			saynn("Your own {pc.cock} is putting a lot of pressure against your chastity cage and leaking profusely, who thought that deepthroating can be so arousing.")
-		elif(GM.pc.hasPenis()):
-			saynn("Your own {pc.cock} is hard as a rock and leaking profusely, who thought that deepthroating can be so arousing.")
-
-		saynn("[say=jack]So tight.[/say]")
-
-		saynn("So deep, you feel his cock stuffing the tip of the condom with precum somewhere.. in your belly. Jack slowly picks up the pace, his huge balls slap against your chin every time he thrusts inside. You feel like you can’t do it anymore, you start gagging on his giant cock but that only makes him more eager. The audience loves seeing how much your throat is bulging out right now.")
-
-		saynn("[say=jack]Nhhhrh.. Get ready.[/say]")
-
-		saynn("Oh wow, you’re surprised you managed to endure such an onslaught on your throat for so long. But the main event is still yet to happen, as your stretched fuckhole clenches tighter around the shaft, Jack switches to slow powerful thrusts instead, pushing himself to his peak until finally letting out a horse whinny and cumming. As the cum travels through his shaft, his dick pulsates and throbs while you are forced to sit still and obey his flared cock stuffing the condom inside you with so much sticky stuff that your belly quickly starts to look inflated.")
+		saynn("Все твое тело, включая горло, сковано сильным напряжением. Но самец продавливает это сопротивление, заталкивая свой конский член еще глубже и постепенно растягивая тебя. От нехватки кислорода твои глаза уже начинают непроизвольно закатываться.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your {pc.cock} shoots out a weak load too! Being used as a cock sleeve felt so good that you managed to cum just from that. Through the cage even.")
+			saynn("Твой собственный {pc.cock} сильно давит на девственную клетку и обильно сочится — кто бы мог подумать, что глубокий минет может быть настолько возбуждающим.")
 		elif(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} shoots out its load too! Being used as a cock sleeve felt so good that you managed to cum just from that.")
+			saynn("Твой собственный {pc.cock} твердый как камень и обильно сочится — кто бы мог подумать, что глубокий минет может быть настолько возбуждающим.")
+
+		saynn("[say=jack]Как тесно.[/say]")
+
+		saynn("Так глубоко, что ты чувствуешь, как его член, смазанный предсеменем, упирается в самый кончик презерватива где-то глубоко в твоем животе... Джек постепенно ускоряется, и его огромные яйца шлепают тебя по подбородку при каждом толчке. Тебе кажется, что силы на исходе, ты начинаешь давиться его гигантским членом, но это лишь раззадоривает его. Зрители в восторге от того, как сильно раздувается твое горло в этот момент.")
+
+		saynn("[say=jack]Нхххрр... Приготовься.[/say]")
+
+		saynn("Ого, ты удивлена, что смогла так долго выдерживать этот натиск на свое горло. Но главное событие еще впереди: пока твое растянутое отверстие всё сильнее сжимается вокруг ствола, Джек переходит на медленные, мощные толчки, доводя себя до пика, пока наконец не издает конское ржание и не кончает. Пока сперма проходит по его члену, тот пульсирует и бьется, а ты вынуждена сидеть смирно и подчиняться его разбухшему члену, который заполняет презерватив внутри тебя таким количеством липкой жижи, что твой живот быстро начинает раздуваться.")
+
+		# (if has cock)
+		if(GM.pc.isWearingChastityCage()):
+			saynn("Твой {pc.cock} тоже выдает слабую порцию! Быть использованной как чехол для члена было настолько приятно, что ты умудрилась кончить просто от этого. Даже сквозь клетку.")
+		elif(GM.pc.hasPenis()):
+			saynn("Твой {pc.cock} тоже извергает сперму! Быть использованной как чехол для члена было настолько приятно, что ты умудрилась кончить просто от этого.")
 
 		# (else if has pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("Your wet pussy squirts out juices all over the floor. Being used as a cock sleeve felt so good that you managed to cum just from that.")
+			saynn("Твоя влажная киска заливает всё вокруг соками. Быть использованной как чехол для члена было настолько приятно, что ты умудрилась кончить просто от этого.")
 
-		saynn("After Jack is done using your throat, he gradually retracts his cock while leaving the filled rubber balloon inside, so lewd. There is zero mess, he ties up the condom and chuckles watching your slutty eyes and open mouth.")
+		saynn("Закончив поигрывать твоим горлом, Джек постепенно вытягивает свой член, оставляя наполненный резиновый шарик внутри — как же это похотливо. Ни капли грязи: он завязывает кондо́м и посмеивается, глядя на твои похотливые глаза и приоткрытый рот.")
 
-		saynn("[say=jack]Ya did good, pretty thing.[/say]")
+		saynn("[say=jack]Хорошо поработала, красавица.[/say]")
 
-		saynn("You start pulling out the condom and it takes quite a while, you feel a lot of friction as the rubber rubs against your throat walls. But eventually you manage to do it. And wow, it’s so big that you’re wondering how it even was fitting inside you.")
+		saynn("Ты начинаешь вытягивать кондо́м, и это занимает немало времени; ты чувствуешь сильное трение, когда резина скользит по стенкам твоего горла. Но в конце концов тебе это удается. И вау, он такой огромный, что ты гадаешь, как он вообще в тебя влез.")
 
-		saynn("Jack nickers and puts his cock away, he seems satisfied enough with your throat. He climbs over the fence, leaving you alone with a hundred inmate eyes staring at you, so humiliating.")
+		saynn("Джек хмыкает и убирает свой член, кажется, он вполне доволен твоим горлом. Он перелезает через забор, оставляя тебя одну под сотнями взглядов заключенных, смотрящих на тебя — какое унижение.")
 
 		# (scene ends)
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 	if(state == "breeding"):
@@ -116,73 +116,73 @@ func _run():
 		})
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Jack makes you turn around and puts his free hand over your crotch, possessively feeling your pussy. His touch isn’t soft or gentle but you find it arousing. His bulge is pressing against your {pc.thick} butt.")
+			saynn("Джек заставляет тебя развернуться и кладет свободную руку тебе на промежность, собственнически ощупывая твою киску. Его прикосновения не мягкие и не нежные, но это тебя возбуждает. Его бугор прижимается к твоей {pc.thick} заднице.")
 
-			saynn("[say=jack]Such a good catch.[/say]")
+			saynn("[say=jack]Отличный улов.[/say]")
 
 		# (if no pussy)
 		else:
-			saynn("Jack makes you turn around and puts his free hand over your crotch but not finding what he was looking far. His hand jumps onto your butt instead and prodding at your rear. His touch isn’t soft or gentle but you find it arousing.")
+			saynn("Джек заставляет тебя развернуться и кладет свободную руку тебе на промежность, но не находит того, что искал. Вместо этого его ладонь перепрыгивает на твою задницу, бесцеремонно ощупывая её. Его прикосновения не мягкие и не нежные, но это тебя возбуждает.")
 
-			saynn("[say=jack]Shame ya don’t possess a cunt. But this will do.[/say]")
+			saynn("[say=jack]Жаль, что у тебя нет киски. Но и это сойдет.[/say]")
 
-		saynn("Resisting doesn’t seem to work against him, there is a reason this stud is one of the best fighters here on the arena. You might as well try to get some pleasure out of it..")
+		saynn("Сопротивление ему, кажется, не помогает — не зря этот самец один из лучших бойцов на этой арене. Так что тебе остается только попытаться извлечь из этого хоть какое-то удовольствие...")
 
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Jack {pc.undressMessageS}, leaving you naked and exposed. The crowd quickly takes note of your {pc.breasts}.")
+			saynn("Джек {pc.undressMessageS}, оставляя тебя нагой и беззащитной. Толпа тут же обращает внимание на твои {pc.breasts}.")
 
 		# (else)
 		else:
-			saynn("Jack slides his hand over your naked curves and plays with your {pc.breasts}, making the crowd happy.")
+			saynn("Джек проводит рукой по твоим обнаженным изгибам и начинает ласкать твою {pc.breasts}, приводя толпу в восторг.")
 
-		saynn("He then forcibly pulls you down to your knees before tugging his shorts down, letting his cock out. And wow, as he strokes it in your view, you notice how huge it is, the shaft must be at least {jack.penisSizeStr} with the heavy balls swaying underneath, one slightly higher than the other. Jack also offers you a view of the flat flared tip with inflated glances and a drop of thick precum hanging off of it.")
+		saynn("Затем он силой заставляет тебя опуститься на колени и стягивает шорты, выпуская свой член. И вау, пока он ласкает его прямо перед твоими глазами, ты замечаешь, насколько он огромный: ствол должен быть не меньше {jack.penisSizeStr}, а снизу покачиваются тяжелые яйца, одно из которых расположено чуть выше другого. Джек также демонстрирует тебе плоскую расширенную головку, на которой набухли вены и висит капля густой смазки.")
 
-		saynn("You gulp and raise your brow, your body tenses up just imagining this cock inside you.")
+		saynn("Ты сглатываешь и приподнимаешь бровь; твое тело напрягается от одной лишь мысли о том, как этот член войдет в тебя.")
 
-		saynn("[say=pc]There is no way it will fit..[/say]")
+		saynn("[say=pc]Он точно не влезет...[/say]")
 
-		saynn("[say=jack]Wanna bet? Ya lost the first one.[/say]")
+		saynn("[say=jack]Хочешь поспорить? Ты проиграла первый раунд.[/say]")
 
-		saynn("You shake your head and glance down at the ground. Jack crouches behind you and presses a hand into your back, making you stand on all fours and stick your ass up for him.")
+		saynn("Ты качаешь головой и опускаешь взгляд в пол. Джек приседает позади тебя и упирается ладонью в твою спину, заставляя тебя встать на четвереньки и выпятить задницу ему навстречу.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("The stud takes it slow, holding you with one hand and guiding his shaft with another, the flared tip of his cock brushing against your {pc.pussyStretch} slit and lubricating it with pre. You produce some soft noises while your outer folds are being parted and your pussy entering being prodded. Such girth causes you to bite your lip and grip the floor tighter. Your inner walls slowly stretch until the fat head finally manages to sink in. That’s when he thrusts his hips forward, forcing half of his cock inside and making you squirm from the sensations of being penetrated.")
+			saynn("Этот самец не торопится: одной рукой он прижимает тебя, а другой направляет свой член, так что расширенная головка слегка задевает твою {pc.pussyStretch} щель, смазывая её предэякулятом. Ты издаешь тихие стоны, пока твои внешние складки раздвигаются, а вход во влагалище прощупывается. От такой толщины ты невольно закусываешь губу и сильнее вцепляешься пальцами в пол. Твои внутренние стенки медленно растягиваются, пока жирная головка наконец не погружается внутрь. В этот момент он резко подается бедрами вперед, вбивая половину своего члена в тебя и заставляя тебя извиваться от ощущений глубокого проникновения.")
 
-			saynn("[say=jack]Pretty tight.[/say]")
+			saynn("[say=jack]Чертовски тесно.[/say]")
 
-			saynn("Oh fuck, Jack starts railing you hard, pulling his horse cock out until only the flared head is left before shoving it deep inside your wet slit and smashing the cervix. All the while his hands pull your body back each time he thrusts forward, causing you to stick your tongue out and drool, it’s just too much.")
+			saynn("Ох, блядь, Джек начинает жестко вколачивать тебя, выдергивая свой конский член почти до самой головки, а затем с силой вгоняя его глубоко в твою мокрую щель, ударяясь прямо в шейку матки. При каждом его толчке его руки тянут твое тело на себя, отчего ты невольно вываливаешь язык и пускаешь слюни — это просто запредельно.")
 
-			saynn("It only takes a few more pleasurable motions before your pussy starts squirting juices from too much stimulation, you arch your back and moan passionately for the whole crowd while your legs really want to shake.")
+			saynn("Всего несколько еще приятных движений, и твоя киска начинает извергать соки от чрезмерной стимуляции; ты выгибаешь спину и страстно стонешь на всю толпу, а твои ноги начинают мелко дрожать.")
 
-			saynn("[say=pc]You’re too b-big! D-don’t break me![/say]")
+			saynn("[say=pc]Ты с-слишком большой! Н-не разорви меня![/say]")
 
-			saynn("[say=jack]Why not?[/say]")
+			saynn("[say=jack]А почему бы и нет?[/say]")
 
-			saynn("Jack only pounds you harder, the crowd cheers when they see his cock creating a visible bulge on your belly. You’re not sure how but your pussy got stretched enough to fit his whole shaft, you feel his huge balls slapping against your crotch.")
+			saynn("Джек лишь начинает долбить еще сильнее, и толпа взрывается криками, когда видит, как его член создает заметный бугор на твоем животе. Ты сама не понимаешь как, но твоя киска растянулась настолько, чтобы вместить его ствол целиком, и ты чувствуешь, как его огромные яйца шлепают по твоему лобку.")
 
-			saynn("Your stretched slit squirts again and gets tighter around the horse cock while your shaky arms give up, causing you to lie down with your butt still up. Jack lets out a horse whinny, he is clearly close.")
+			saynn("Твоя растянутая щель снова брызжет смазкой и плотнее обхватывает лошачий член, пока твои дрожащие руки окончательно слабеют, заставляя тебя лечь на живот, оставив задницу высоко поднятой. Джек издает конское ржание — он явно близок к финишу.")
 
 		# (if no pussy)
 		else:
-			saynn("The stud takes it slow, holding you with one hand and guiding his shaft with another, the flared tip of his cock brushing against your {pc.analStretch} tailhole and lubricating it with pre. You produce some soft noises while your star is being prodded. Such girth causes you to bite your lip and grip the floor tighter. Your inner walls slowly stretch until the fat head finally manages to sink in. That’s when he thrusts his hips forward, forcing half of his cock inside and making you squirm from the sensations of being penetrated.")
+			saynn("Жеребец не спешит: одной рукой он придерживает тебя, а другой направляет свой ствол, так что расширенная головка его члена скользит по твоему {pc.analStretch} ану, смазывая его предэякулятом. Ты издаешь тихие звуки, пока твою дырочку прощупывают. От такой толщины ты невольно закусываешь губу и сильнее вцепляешься в пол. Твои внутренние стенки медленно растягиваются, пока жирная головка наконец не погружается внутрь. В этот момент он резко подается тазом вперед, вбивая половину своего члена в тебя и заставляя тебя извиваться от ощущений глубокого проникновения.")
 
-			saynn("[say=jack]Pretty tight.[/say]")
+			saynn("[say=jack]Чертовски тесно.[/say]")
 
-			saynn("Oh fuck, Jack starts railing you hard, pulling his horse cock out until only the flared head is left before shoving it deep inside your butt. All the while his hands pull your body back each time he thrusts forward, causing you to stick your tongue out and drool, it’s just too much.")
+			saynn("Ох, блядь, Джек начинает жестко вколачивать в тебя свой член, вытаскивая его почти полностью, оставляя лишь расширенную головку, а затем с силой заталкивая его глубоко в твою задницу. При каждом его толчке его руки тянут твое тело на себя, из-за чего ты вываливаешь язык и пускаешь слюни — это просто запредельно.")
 
-			saynn("It only takes a few more pleasurable motions before your pleasure point receives too much stimulation, you arch your back and moan passionately for the whole crowd while your legs really want to shake.")
+			saynn("Нужно всего лишь еще несколько этих упоительных движений, прежде чем твоя точка удовольствия получит слишком сильную стимуляцию; ты выгибаешь спину и страстно стонешь на всю толпу, а твои ноги начинают неистово дрожать.")
 
-			saynn("[say=pc]You’re too b-big! D-don’t break me![/say]")
+			saynn("[say=pc]Ты с-слишком большой! Н-не разорви меня![/say]")
 
-			saynn("[say=jack]Why not?[/say]")
+			saynn("[say=jack]А почему бы и нет?[/say]")
 
-			saynn("Jack only pounds you harder, the crowd cheers when they see his cock creating a visible bulge on your belly. You’re not sure how but your fuckhole got stretched enough to fit his whole shaft, you feel his huge balls slapping against your crotch.")
+			saynn("Джек лишь сильнее вбивается в тебя, и толпа взрывается криками, когда видит, как его член создает заметный бугор на твоем животе. Ты сама не понимаешь как, но твоя дырка растянулась настолько, чтобы принять весь его ствол, и ты чувствуешь, как его огромные яйца шлепают по твоей промежности.")
 
-			saynn("Your stretched tailhole gets tighter around the horse cock while your shaky arms give up, causing you to lie down with your butt still up. Jack lets out a horse whinny, he is clearly close.")
+			saynn("Твое растянутое отверстие все туже обхватывает лошачий член, а дрожащие руки окончательно сдаются, заставляя тебя повалиться на живот, оставив задницу высоко поднятой. Джек издает конское ржание — он явно близок к финишу.")
 
-		addButton("Get bred", "See what happens to you next..", "get_bred")
+		addButton("Даться", "Посмотреть, что будет с тобой дальше...", "get_bred")
 
 	if(state == "get_bred"):
 		playAnimation(StageScene.SexAllFours, "fastflop", {
@@ -194,35 +194,35 @@ func _run():
 		
 		# (if pussy)
 		if(GM.pc.hasVagina()):
-			saynn("After a few strong thrusts Jack neighs and forces his entire shaft inside you, smashing your womb before proceeding to stuff it! You bend your back and cry out a passionate moan while your babymaker is being filled to the brim with thick white horse cum. There is not nearly enough space, you can’t stop squirming around his cock while your soft insides are being painted white with some cum already escaping back and creating a quite wet mess.")
+			saynn("После нескольких мощных толчков Джек ржет и вбивает весь свой ствол в тебя до самого упора, сокрушая твою матку, прежде чем начать набивать её! Ты выгибаешь спину и издаешь страстный стон, пока твою «машину для детей» наполняют до краев густой белой лошадиной спермой. Места катастрофически не хватает, ты не можешь перестать извиваться на его члене, пока твои мягкие внутренности окрашиваются в белый цвет, а часть спермы уже вытекает обратно, создавая жуткую влажную лужу.")
 
-			saynn("[say=pc]F-f-ffuuck!..[/say]")
+			saynn("[say=pc]Б-б-блядь!..[/say]")
 
-			saynn("Your own orgasm overwhelms you, a dragged out noise of pleasure escapes from your lips while ecstatic waves resonate and bounce inside you, leaving your mind shattered from too much pleasure. Your eyes are rolled up, your tongue is out, you look fucked silly.")
+			saynn("Твой собственный оргазм накрывает тебя с головой; с губ срывается затяжной звук наслаждения, пока волны экстаза резонируют и бьются внутри тебя, превращая твой разум в кашу от избытка удовольствия. Глаза закатились, язык высунут — ты выглядишь совершенно трахнутой.")
 
-			saynn("Jack yanks his cock out and cums on your ass too, the audience is going wild over the view of your gaping pussy leaking so much cum.")
+			saynn("Джек резко выдергивает свой член и кончает тебе на задницу; зрители просто сходят с ума от вида твоей разверстой киски, из которой хлещет столько спермы.")
 
 		# (if no pussy)
 		else:
-			saynn("After a few strong thrusts Jack neighs and forces his entire shaft inside you, smashing your ass before proceeding to stuff it! You bend your back and cry out a passionate moan while your butt is being filled to the brim with thick white horse cum. There is not nearly enough space, you can’t stop squirming around his cock while your soft insides are being painted white with some cum already escaping back and creating a quite wet mess.")
+			saynn("После нескольких мощных толчков Джек ржет и вбивает весь свой ствол в тебя до самого упора, сокрушая твою задницу, прежде чем начать набивать её! Ты выгибаешь спину и издаешь страстный стон, пока твою жопу наполняют до краев густой белой лошадиной спермой. Места катастрофически не хватает, ты не можешь перестать извиваться на его члене, пока твои мягкие внутренности окрашиваются в белый цвет, а часть спермы уже вытекает обратно, создавая жуткую влажную лужу.")
 
-			saynn("[say=pc]F-f-ffuuck!..[/say]")
+			saynn("[say=pc]Б-б-блядь!..[/say]")
 
-			saynn("Your own orgasm overwhelms you, a dragged out noise of pleasure escapes from your lips while ecstatic waves resonate and bounce inside you, leaving your mind shattered from too much pleasure. Your eyes are rolled up, your tongue is out, you look fucked silly.")
+			saynn("Твой собственный оргазм накрывает тебя с головой; с губ срывается затяжной звук наслаждения, пока волны экстаза резонируют и бьются внутри тебя, превращая твой разум в кашу от избытка удовольствия. Глаза закатились, язык высунут — ты выглядишь совершенно трахнутой.")
 
-			saynn("Jack yanks his cock out and cums on your ass too, the audience is going wild over the view of your gaping anal leaking so much cum.")
+			saynn("Джек выхватывает свой член и тоже кончает тебе на задницу; толпа сходит с ума, глядя на то, как из твоего разверстого ануса течет столько спермы.")
 
 			# (end)
 
-		saynn("With no support from the horsie, you flop forward and proceed to pant heavily. Jack’s horse cock quickly becomes flaccid and hides in its sheath so he puts it away.")
+		saynn("Без поддержки лошади ты валишься вперед и начинаешь тяжело дышать. Лошадиный член Джека быстро становится вялым и прячется в препуции, так что он убирает его.")
 
-		saynn("[say=jack]Pleasure breeding ya. Come back for more, pretty thing.[/say]")
+		saynn("[say=jack]Удовольствие размножает тебя. Возвращайся за добавкой, прелестная штучка.[/say]")
 
-		saynn("Jack admires the view for a second and climbs over the fence, leaving you a mess.")
+		saynn("Джек на секунду залюбуется видом и перелезает через забор, оставляя тебя в полном беспорядке.")
 
 		# (scene ends)
 		
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

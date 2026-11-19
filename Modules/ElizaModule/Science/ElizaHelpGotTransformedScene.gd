@@ -8,120 +8,120 @@ func _run():
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		if (!getFlag("ElizaModule.firstHelpTFHap")):
-			saynn("[say=pc]I need help! My body, something is happening to me![/say]")
+			saynn("[say=pc]Мне нужна помощь! Мое тело... со мной что-то происходит![/say]")
 
-			saynn("The feline behind the counter leans in closer to see you from toes to ears.")
+			saynn("Кошка за прилавком наклоняется поближе, оглядывая тебя с ног до головы.")
 
-			saynn("[say=eliza]Something hurts? I need more information, patient.[/say]")
+			saynn("[say=eliza]Что-то болит? Мне нужно больше информации, пациент.[/say]")
 
-			saynn("You don't really feel any pain.. you just feel different.")
+			saynn("На самом деле боли нет... ты просто чувствуешь, что становишься другим.")
 
-			saynn("[say=pc]I don't know. I think I'm.. changing. Transforming?[/say]")
+			saynn("[say=pc]Не знаю. Кажется, я... меняюсь. Трансформируюсь?[/say]")
 
-			saynn("Doctor nods softly.")
+			saynn("Доктор мягко кивает.")
 
-			saynn("[say=eliza]Ri-i-ight. Have you eaten any weird pills lately?[/say]")
+			saynn("[say=eliza]Ну-у-ужно так. Ты не глотала в последнее время какие-нибудь странные таблетки?[/say]")
 
-			saynn("[say=pc]Maybe? What if I did?[/say]")
+			saynn("[say=pc]Может быть? А что, если да?[/say]")
 
-			saynn("She shrugs.")
+			saynn("Она пожимает плечами.")
 
-			saynn("[say=eliza]Well, you're screwed then! I have no way to undo that![/say]")
+			saynn("[say=eliza]Ну, тогда тебе крышка! У меня нет способа это обратить вспять![/say]")
 
-			saynn("[say=pc]What? Are you serious?[/say]")
+			saynn("[say=pc]Что? Ты серьезно?[/say]")
 
-			saynn("The feline doctor just looks at you, her face completely still and serious.. except for the twitching corners of her mouth.")
+			saynn("Кошка-доктор просто смотрит на тебя, её лицо совершенно неподвижно и серьезно... если не считать подергивающихся уголков рта.")
 
-			saynn("[say=eliza]No. I'm just fucking with you~.[/say]")
+			saynn("[say=eliza]Да нет же. Я просто над тобой стебусь~.[/say]")
 
-			saynn("She chuckles and sips some coffee out of her mug.")
+			saynn("Она посмеивается и делает глоток кофе из своей кружки.")
 
-			saynn("[say=eliza]Ever since these weird pills began popping up all over the prison, I made some special pills to fight their effects.[/say]")
+			saynn("[say=eliza]С тех пор как по всей тюрьме начали всплывать эти странные таблетки, я сделала особые пилюли, чтобы бороться с их эффектами.[/say]")
 
-			saynn("At least it doesn't seem to be permanent.")
+			saynn("По крайней мере, похоже, что это не навсегда.")
 
-			saynn("[say=pc]Great, give me one.[/say]")
+			saynn("[say=pc]Отлично, дай одну мне.[/say]")
 
-			saynn("The feline hums for an uncomfortable amount of time.")
+			saynn("Кошка напевает что-то под нос в течение мучительно долгого времени.")
 
-			saynn("[say=eliza]Humm-m-m-m.. You knoo-ow.. These pills are quite expensive to produce, I can't just hand them out to everyone.[/say]")
+			saynn("[say=eliza]Хммммм... Знаешь ли... Эти таблетки обходятся довольно дорого в производстве, я не могу просто раздавать их направо и налево.[/say]")
 
-			saynn("You sigh and roll your eyes.")
+			saynn("Ты вздыхаешь и закатываешь глаза.")
 
-			saynn("[say=pc]How much?[/say]")
+			saynn("[say=pc]Сколько?[/say]")
 
-			saynn("[say=eliza]15 credits would cover my expenses for one that undoes all the effects.[/say]")
+			saynn("[say=eliza]15 кредитов покроют мои расходы на одну штучку, которая снимет все эффекты.[/say]")
 
-			saynn("She pulls out a little blue pill and holds it on her paw.. a solution to all your current problems. Somehow you get a feeling that she has another offer.")
+			saynn("Она достает маленькую синюю таблетку и держит её на лапке... решение всех твоих текущих проблем. Каким-то образом у тебя возникает чувство, что у неё есть и другое предложение.")
 
-			saynn("[say=pc]Fifteen credits? That is fifteen days of work, you're serious?[/say]")
+			saynn("[say=pc]Пятнадцать кредитов? Это же пятнадцать дней работы, ты серьезно?[/say]")
 
-			saynn("She shrugs.")
+			saynn("Она пожимает плечами.")
 
-			saynn("[say=eliza]I can let you overdraft if you really need it, go into the negatives. Alternatively.. I can give you a different pill..[/say]")
+			saynn("[say=eliza]Если тебе очень нужно, я могу разрешить тебе уйти в овердрафт, в минус. Или же... я могу дать тебе другую таблетку...[/say]")
 
-			saynn("Her second hand produces a red pill.")
+			saynn("Её вторая лапка достает красную таблетку.")
 
-			saynn("[say=eliza]This one is free~. And it will solve your problem too![/say]")
+			saynn("[say=eliza]Эта — бесплатно~. И она тоже решит твою проблему![/say]")
 
-			saynn("[say=pc]Free? What's the catch?[/say]")
+			saynn("[say=pc]Бесплатно? В чем подвох?[/say]")
 
-			saynn("The feline pulls her gaze high away, looking all innocent.")
+			saynn("Кошечка отводит взгляд вверх, принимая самый невинный вид.")
 
-			saynn("[say=eliza]Well, you know.. It will make all your current changes permanent..[/say]")
+			saynn("[say=eliza]Ну, понимаешь... она сделает все твои текущие изменения постоянными...[/say]")
 
-			saynn("[say=pc]Huh?[/say]")
+			saynn("[say=pc]А?[/say]")
 
-			saynn("[say=eliza]But it will stop the transformation! Isn't that what you want~.[/say]")
+			saynn("[say=eliza]Но она остановит трансформацию! Разве не этого ты хочешь~?[/say]")
 
-			saynn("Stay like this permanently.. for free..")
+			saynn("Остаться в таком виде навсегда... совершенно бесплатно...")
 
-			saynn("Or undo everything.. but pay the price..")
+			saynn("Или отменить всё... но заплатить за это цену...")
 
 		else:
-			saynn("[say=pc]Hey, I need help with the transformations again.[/say]")
+			saynn("[say=pc]Эй, мне снова нужна помощь с трансформациями![/say]")
 
-			saynn("The feline nods and produces two pills in her paws. A blue one.. and a red one.")
+			saynn("Кошка кивает и достает из лап две таблетки. Одну синюю... и одну красную.")
 
-			saynn("[say=eliza]Blue pill costs 15 credits and will undo any effects. Red one is free and will make them permanent~. Which one do you want?[/say]")
+			saynn("[say=eliza]Синяя таблетка стоит 15 кредитов и отменит любые эффекты. Красная — бесплатная и сделает их [say=eliza]постоянными[/say]~. Какую выберешь?[/say]")
 
-		addButton("Blue pill", "Pay 15 credits for a pill that will undo all your transformations and make you look like you did before", "get_blue")
-		addButton("Red pill", "Eat a pill that will make all your current transformations [b]permanent[/b]", "get_red")
-		addButton("Never mind", "You changed your mind", "endthescene")
+		addButton("Синяя таблетка", "Заплатить 15 кредитов за таблетку, которая отменит все твои трансформации и вернет тебе прежний облик", "get_blue")
+		addButton("Красная таблетка", "Съесть таблетку, которая сделает все твои текущие трансформации [b]постоянными[/b]", "get_red")
+		addButton("Проехали", "Вы передумали", "endthescene")
 	if(state == "get_blue"):
-		saynn("You need your old body back. So there is no other choice.")
+		saynn("Тебе нужно вернуть свое прежнее тело. Так что другого выбора нет.")
 
-		saynn("[say=pc]Give me the blue one.[/say]")
+		saynn("[say=pc]Дай мне синюю.[/say]")
 
-		saynn("The feline sighs and slowly hands it to you.")
+		saynn("Кошка вздыхает и медленно протягивает её тебе.")
 
-		saynn("[say=eliza]Oh well, there you go.[/say]")
+		saynn("[say=eliza]Ну что ж, держи.[/say]")
 
-		saynn("You eat the pill.. and soon.. you become your old self.")
+		saynn("Ты проглатываешь таблетку... и вскоре... к тебе возвращается твой прежний облик.")
 
-		saynn("Much better.")
+		saynn("Так гораздо лучше.")
 
-		saynn("[say=eliza]Come back if you ever need another one~.[/say]")
+		saynn("[say=eliza]Заходи ещё, если вдруг понадобится новая~.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "get_red"):
-		saynn("How you look right now.. it's not too bad.. so maybe just stopping there is good enough.")
+		saynn("То, как ты выглядишь сейчас... не так уж и плохо... так что, может, на этом и стоит остановиться.")
 
-		saynn("[say=pc]Give me the red one.[/say]")
+		saynn("[say=pc]Дай мне красную.[/say]")
 
-		saynn("The feline's grin is brighter than the sterile lights of the lobby.")
+		saynn("Ухмылка кошки сияет ярче, чем стерильный свет в вестибюле.")
 
-		saynn("[say=eliza]Great choice~.[/say]")
+		saynn("[say=eliza]Отличный выбор~.[/say]")
 
-		saynn("She hands you the red pill.")
+		saynn("Она протягивает тебе красную таблетку.")
 
-		saynn("You gather enough strength.. and throw it into your mouth. Tastes exactly like you thought it would.. chalk.")
+		saynn("Ты собираешь все силы... и закидываешь это в рот. На вкус именно так, как ты и думал... мел.")
 
-		saynn("No going back anymore. Your new self is now your normal self!")
+		saynn("Пути назад больше нет. Твоё новое «я» теперь — твоя норма!")
 
-		saynn("[say=eliza]Come back if you ever need another one~.[/say]")
+		saynn("[say=eliza]Заходи ещё, если вдруг понадобится новая~.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -8,9 +8,9 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(!getFlag("HypnokinkModule.GotEngineeringFreebieVisor")):
-		saynn("One of the tables has something interesting on it.")
+		saynn("На одном из столов лежит что-то интересное.")
 		
-		addButton("Package", "There's a package in the corner", "take_freebie")
+		addButton("Посылка", "В углу стоит посылка", "take_freebie")
 
 func getPriority():
 	return 0

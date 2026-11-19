@@ -8,438 +8,438 @@ func _run():
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
 		if (getFlag("FightClubModule.AttemptedAvyFight")):
-			saynn("Avy is holding the notes where she tracks the list of the arena champions. Seeing you walk up to her makes her feel excited.")
+			saynn("Ави держит блокнот, в котором ведет список чемпионов арены. Увидев, как ты подходишь к ней, она заметно воодушевляется.")
 
-			saynn("[say=avy]Oh, you're back for more~? Ready, fuckmeat? Or whoever you are.[/say]")
+			saynn("[say=avy]О, ты вернулся за добавкой~? Ну что, мясо, готов? Или кто ты там вообще такой...[/say]")
 
-			addButton("Sure", "Let's prove her how wrong she is", "fight_intro")
-			addButton("No", "You changed your mind", "endthescene")
+			addButton("Конечно", "Докажем ей, как сильно она ошибается", "fight_intro")
+			addButton("No", "Вы передумали", "endthescene")
 		else:
-			saynn("Avy holds the notes where she tracks the list of the arena champions.")
+			saynn("Ави держит блокнот, где записывает имена чемпионов арены.")
 
-			saynn("[say=avy]So. Who are you fighting today, attention whore?[/say]")
+			saynn("[say=avy]Ну и? С кем ты сегодня дерешься, шлюха вниманья?[/say]")
 
-			saynn("But instead of picking anyone else, you just point at the foxy.")
+			saynn("Но вместо того, чтобы выбрать кого-то другого, ты просто указываешь пальцем на эту лисичку.")
 
-			saynn("[say=pc]I wanna fight you.[/say]")
+			saynn("[say=pc]Я хочу сразиться с тобой.[/say]")
 
-			saynn("Avy chuckles, her little mean stare almost makes you feel small. She even stays quiet for a bit, letting the tension rise before finally breaking the silence.")
+			saynn("Ави усмехается; её дерзкий, высокомерный взгляд заставляет тебя почувствовать себя ничтожным. Она даже замолкает на мгновение, давая напряжению нарастать, прежде чем наконец нарушить тишину.")
 
-			saynn("[say=avy]Are you sure~?[/say]")
+			saynn("[say=avy]Ты уверен~?[/say]")
 
-			saynn("Avy tilts her head slightly, admiring your face while a little sly smile shines on her muzzle.")
+			saynn("Ави слегка наклоняет голову, любуясь твоим лицом, а на её мордочке играет лукавая улыбка.")
 
-			saynn("[say=avy]You know why I'm standing here? I didn't lose a single fight inside this arena.[/say]")
+			saynn("[say=avy]Знаешь, почему я здесь стою? В этой арене я не проиграла ни одного боя.[/say]")
 
-			saynn("Her expression changes back to the mean one, her eyes scanning your {pc.masc} frame.")
+			saynn("Её лицо снова принимает презрительное выражение, а глаза сканируют твою {pc.masc} фигуру.")
 
-			saynn("[say=avy]And I'm not about to start.[/say]")
+			saynn("[say=avy]И я не собираюсь менять это правило.[/say]")
 
-			saynn("The dark foxy leans against the fence.")
+			saynn("Темная лисица прислоняется к ограждению.")
 
-			saynn("[say=avy]So? Ready to get fucked?[/say]")
+			saynn("[say=avy]Ну что? Готов, чтобы тебя поимели?[/say]")
 
-			saynn("You give Avy a quick glance of her body. She doesn't even look that strong, you fought inmates that are much more muscly. And her intelligence.. hard to tell, her speech mostly consists of degrading others.")
+			saynn("Ты быстро осматриваешь тело Эви. Она даже не выглядит особо сильной — ты дрался с заключенными куда мускулистее неё. А её интеллект... трудно сказать, ведь её речь в основном состоит из унижений других.")
 
-			saynn("You do notice her shorts bulging where her crotch is. It seems losing would mean you will be fucked in more ways than one.")
+			saynn("Ты замечаешь, как её шорты надулись в паху. Похоже, поражение будет означать, что тебя поимеют во всех смыслах этого слова.")
 
-			addButton("Sure", "Let's prove her how wrong she is", "agree_fight")
-			addButton("No", "You changed your mind", "endthescene")
+			addButton("Конечно", "Докажем ей, как сильно она ошибается", "agree_fight")
+			addButton("No", "Вы передумали", "endthescene")
 	if(state == "agree_fight"):
-		saynn("[say=pc]I wonder what will break first, your ego or your body. Yes, I'm ready.[/say]")
+		saynn("[say=pc]Интересно, что сломается первым: твоё эго или твоё тело. Да, я готов.[/say]")
 
-		saynn("Avy laughs sharply.")
+		saynn("Эви резко смеется.")
 
-		saynn("[say=avy]You? Break me? Let me remind you, dear underdog. You're about to step into a world of pain. Scale the fence and prepare to be humiliated.[/say]")
+		saynn("[say=avy]Ты? Сломаешь меня? Позволь напомнить тебе, дорогуша-аутсайдер: ты вот-вот шагнёшь в мир боли. Залезай через забор и готовься к унижению.[/say]")
 
-		saynn("Avy puts her notes away and starts climbing up the fence in an agile way. She stops to add some more encouraging words.")
+		saynn("Эви убирает свои записи и ловко начинает карабкаться по забору. Она на мгновение останавливается, чтобы подбодрить тебя.")
 
-		saynn("[say=avy]I might spare you if you beg well enough. Let's go, bitch.[/say]")
+		saynn("[say=avy]Может, я и пощажу тебя, если будешь достаточно сладко умолять. Ну, погнали, сучка![/say]")
 
-		addButton("Continue", "See what happens next", "sudden_kait")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sudden_kait")
 	if(state == "sudden_kait"):
 		removeCharacter("avy")
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("Just when you are about to start climbing the fence, someone's hand stops you. Huh. It's that cat that you have beaten before.")
+		saynn("Как раз в тот момент, когда ты собираешься лезть на забор, чья-то рука останавливает тебя. Хм. Это та самая кошка, которую ты уже побеждал раньше.")
 
-		saynn("[say=kait]Listen, I fought her many times.[/say]")
+		saynn("[say=kait]Послушай, я сражалась с ней кучу раз.[/say]")
 
-		saynn("Avy has already scaled the fence and is now waiting for you. The crowd slowly begins to gather and the announcer is here too. Everyone is waiting for you..")
+		saynn("Эви уже взобралась на забор и теперь ждет тебя. Толпа начинает медленно собираться, и диктор тоже уже на месте. Все ждут тебя...")
 
-		saynn("[say=pc]So? Can't this wait?[/say]")
+		saynn("[say=pc]Ну что? Это не может подождать?[/say]")
 
-		saynn("[say=kait]No, it can't. Avy is.. she isn't fighting fair. I don't know.. But you won't win, no matter what you do.[/say]")
+		saynn("[say=kait]Нет, не может. Эви... она не играет честно. Даже не знаю... Но ты не выиграешь, что бы ты ни делал.[/say]")
 
-		saynn("You glance over Kait's fragile-looking feline body and notice her lilac colors. She catches your judging gazes and frowns.")
+		saynn("Ты окидываешь взглядом хрупкое тело Кайты и замечаешь её лиловый окрас. Она ловит твой оценивающий взгляд и хмурится.")
 
-		saynn("[say=pc]Maybe you're just not strong enough?[/say]")
+		saynn("[say=pc]Может, ты просто недостаточно силен?[/say]")
 
-		saynn("The snow leopard rolls her eyes and finally lets you continue.")
+		saynn("Снежная леопардица закатывает глаза и, наконец, позволяет тебе продолжить путь.")
 
-		saynn("If she is right.. then this might prove to be problematic. But it's too late to stop now. Let's see how unbeatable Avy is.")
+		saynn("Если она права... тогда это может стать проблемой. Но останавливаться уже поздно. Посмотрим, насколько непобедима Ави.")
 
-		addButton("Continue", "Time for a fight", "fight_intro")
+		addButton("Продолжить", "Время драки", "fight_intro")
 	if(state == "fight_intro"):
 		aimCameraAndSetLocName("fight_arena")
 		removeCharacter("kait")
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("You quickly climb over the fence and take your spot near the middle, opposite of Avy.")
+		saynn("Ты быстро перелезаешь через забор и занимаешь место в центре, прямо напротив Ави.")
 
-		saynn("The crowd is.. huge.. to say the least. The dim maintenance lights allow you to only see their silhouettes but the excited cheering and trash talk make it obvious. It feels just like the first time you entered this place.. but now you're on the other side of the fence..")
+		saynn("Толпа... скажем так, она огромна. Тусклый свет технических ламп позволяет разглядеть лишь силуэты, но возбужденные крики и ругань говорят сами за себя. Ощущение такое, будто ты впервые вошел в это место... только теперь ты по другую сторону забора.")
 
-		saynn("Suddenly, the announcer's voice makes everyone quiet.")
+		saynn("Внезапно голос диктора заставляет всех замолчать.")
 
-		saynn("[say=announcer]Ladies and Gentlemen! Inmates! All sorts of misfits! Welcome! It's time. Time for another thrilling spectacle![/say]")
+		saynn("[say=announcer]Дамы и господа! Заключенные! Всевозможные отбросы! Добро пожаловать! Настал час. Час очередного захватывающего зрелища![/say]")
 
-		saynn("The crowd erupted into more cheering, their collective roar echoing through the improvised arena.")
+		saynn("Толпа взорвалась еще более неистовыми криками, их общий рев эхом разнесся по импровизированной арене.")
 
-		saynn("[say=announcer]Tonight, we have a special show lined up just for you. In the right corner, we have a true force to be reckoned with, known far and wide as Avy The Unbeatable! So far she didn't lose a single fight. Thanks to her sheer strength and incredible stamina, she managed to break anyone who even just looks at her the wrong way![/say]")
+		saynn("[say=announcer]Сегодня мы подготовили для вас особенное шоу. В правом углу — настоящая стихийная сила, известная далеко за пределами этих стен как Ави Непобедимая! На данный момент она не проиграла ни одного боя. Благодаря своей невероятной мощи и запредельной выносливости, она умудряется ломать любого, кто просто не так на нее посмотрит![/say]")
 
-		saynn("Avy stands tall, radiating an aura of confidence and power. Her face doesn't show much emotion, only her eyes are piercing through you. The audience seems to love her, some are cheering her to win.")
+		saynn("Ави стоит в полный рост, излучая уверенность и силу. На её лице почти нет эмоций, лишь пронзительный взгляд буравит тебя насквозь. Кажется, публика её обожает — некоторые вовсю скандируют её имя, желая победы.")
 
-		saynn("[say=announcer]And in the left corner. We have {pc.name}, one of the most promising warriors that we had in a while. {pc.He} started at the complete bottom of the champion list and managed to climb the ranks until {pc.he} is here! What do you think, will {pc.he} be able to take away Avy's Grand Champion rank or will {pc.he} end up just as another tally mark in Avy's book?[/say]")
+		saynn("[say=announcer]А в левом углу у нас {pc.name}, один из самых многообещающих бойцов за последнее время. {pc.He} начинал на самом дне списка чемпионов и сумел пробиться на вершину, и вот — {pc.he} здесь! Как думаете, сможет ли {pc.he} отобрать титул Гранд-чемпиона у Эви, или же {pc.he} станет лишь очередной зарубкой в её послужном списке?[/say]")
 
-		saynn("A loud murmur of anticipation swipes through the audience, everyone seems to be curious to see the clash between you and Avy. Or maybe they're just waiting for another loser to get fucked..")
+		saynn("По толпе проносится громкий гул предвкушения — всем не терпится увидеть ваше столкновение с Эви. А может, они просто ждут, когда очередного неудачника поимеют во все дырочки...")
 
-		saynn("[say=announcer]And remember, there are no rules in The Underground! The winner gets to do anything they want! Let the fight begin![/say]")
+		saynn("[say=announcer]И помните: на Подземке нет правил! Победитель может делать всё, что пожелает! Пусть бой начнется![/say]")
 
-		addButton("Fight", "Time to do this", "start_first_avy_fight")
+		addButton("Драться", "Пора за дело", "start_first_avy_fight")
 	if(state == "avy_uses_drugs"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy", npcAction="defeat"})
-		saynn("Avy grunts as she collapses onto the hard arena floor, her confident demeanor shattered. Gasps and whispers can be heard echoing around the arena. The crowd seems to be confused about Avy, the supposed grand champion that is now laying in the middle of the arena, seemingly defeated.")
+		saynn("Эви кряхтит, тяжело оседая на твердый пол арены; её уверенность вдребезги разбита. По арене разносится вздох изумления и шепот. Толпа в замешательстве: их великая чемпионка, та самая Эви, лежит посреди арены, потерпевшая поражение.")
 
-		saynn("As the murmurs spread, you begin to slowly approach Avy.")
+		saynn("Пока шепотки разлетаются всё дальше, вы начинаете медленно приближаться к Эви.")
 
-		saynn("[say=announcer]It appears.. Avy.. The current Grand Champion of the arena.. has been defeated.. Ladies and gentlemen..[/say]")
+		saynn("[say=announcer]Похоже... Эви... нынешняя Гранд-чемпионка арены... повержена!.. Дамы и господа!..[/say]")
 
-		saynn("Avy is panting softly while glaring your way. Your attention was focused on her mean face so much that you didn't even notice her pulling something out.. a syringe?..")
+		saynn("Эви тихо тяжело дышит, сверля вас яростным взглядом. Вы так засмотрелись на её злобную рожу, что даже не заметили, как она что-то достала... шприц?..")
 
-		saynn("[say=announcer]Let's cheer for {pc.name}! The new Grand Champi-.. wait![/say]")
+		saynn("[say=announcer]Покричим за {pc.name}! Нового Гранд-чемпи... стоп![/say]")
 
-		saynn("As soon as you reach your hands out to pin the foxy, her eyes start shining with renewed determination. In a swift, fluid motion, that was only visible to you, she pulls that syringe out and injects it into her neck.")
+		saynn("Как только ты протягиваешь руки, чтобы прижать эту лисичку, её глаза начинают сиять с новой решимостью. Одним стремительным, плавным движением, которое заметил только ты, она выхватывает шприц и вонзает его себе в шею.")
 
-		saynn("[say=avy]Thought it would be that easy?..[/say]")
+		saynn("[say=avy]Думала, всё будет так просто?..[/say]")
 
-		addButton("Continue", "See what happens next", "avy_is_fine")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_is_fine")
 	if(state == "avy_is_fine"):
 		playAnimation(StageScene.Duo, "hurt", {npc="avy", npcAction="shove"})
-		saynn("Suddenly Avy lets out a loud animal growl before getting up on her feet and shoving you away with the power of a truck. A surge of energy courses through her veins, making her look just as strong as she was before the fight.. or maybe even stronger..")
+		saynn("Внезапно Ави издает громкий звериный рык, вскакивает на ноги и отшвыривает тебя с силой грузовика. Прилив энергии несется по её венам, делая её такой же сильной, как и до боя... а может, даже сильнее...")
 
-		saynn("[say=avy]I Am Unbeatable. Bitch.[/say]")
+		saynn("[say=avy]Я непобедима. Сучка.[/say]")
 
-		saynn("The crowd erupts in a mix of gasps and cheers, the confusion replaced with excitement. The announcer raises his smooth voice, rallying the crowd.")
+		saynn("Толпа взрывается смесью вздохов и криков восторга; замешательство сменяется азартом. Объявитель возвышает свой бархатный голос, подзадоривая публику.")
 
-		saynn("[say=announcer]Ladies and gentlemen, the fight is not over yet! Avy has found her second wind! Exciting. Let the battle continue![/say]")
+		saynn("[say=announcer]Дамы и господа, бой еще не окончен! У Ави открылось второе дыхание! Потрясающе! Пусть битва продолжается![/say]")
 
-		saynn("Who said it's gonna be easy..")
+		saynn("Кто сказал, что будет легко...")
 
-		addButton("Fight", "Continue fighting", "start_second_fight")
+		addButton("Драться", "Продолжить бой", "start_second_fight")
 	if(state == "avy_wins_anyway"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy", npcAction="defeat"})
-		saynn("Impossible, huh. It seems that the cat was wrong.")
+		saynn("Невозможно, да? Похоже, кошечка ошиблась.")
 
-		saynn("Avy The Unbeatable lays on the arena's floor, battered and beaten. The crowd is stunned, struggling to process it all.")
+		saynn("Непобедимая Ави лежит на полу арены, избитая и измотанная. Толпа ошеломлена, пытаясь осознать происходящее.")
 
-		saynn("[say=pc]Your drugs won't help you.[/say]")
+		saynn("[say=pc]Твои наркотики тебе не помогут![/say]")
 
-		saynn("[say=announcer]Wow! Will Avy get up again or do we have a winner? So tense![/say]")
+		saynn("[say=announcer]Ого! Ави снова встанет или у нас уже есть победитель? Какое напряжение![/say]")
 
-		saynn("As you carefully approach Avy, a glimmer of desperation flashes in her eyes. You press your knee into her back, pinning her in place while your hands try to wrench hers behind her. Quiet growling vibrates the air. You're almost done.. But then you realize that one of her clenched fists holds another syringe!")
+		saynn("Когда ты осторожно приближаешься к Ави, в её глазах вспыхивает отблеск отчаяния. Ты упираешься коленом ей в спину, прижимая её к полу, пока твои руки пытаются вывернуть её кисти за спину. Воздух вибрирует от тихого рычания. Ты почти закончил... Но тут ты замечаешь, что в одном из её сжатых кулаков зажат ещё один шприц!")
 
-		saynn("[say=avy]Fuck you.[/say]")
+		saynn("[say=avy]Пошёл ты нахуй.[/say]")
 
-		saynn("With a swift motion, she injects it into her bruised body. A surge of renewed strength courses through her veins as she easily throws you off herself and springs up to her feet.")
+		saynn("Одним резким движением она вводит содержимое в своё избитое тело. Прилив обновлённых сил проносится по её венам, и она с лёгкостью сбрасывает тебя с себя, вскакивая на ноги.")
 
-		addButton("Continue", "See what happens next", "avy_wins_and_pins")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_wins_and_pins")
 	if(state == "avy_wins_and_pins"):
 		playAnimation(StageScene.SexFeetPlay, "pin", {pc="avy", npc="pc"})
-		saynn("Before you know it, Avy kicks you down and stomps on your chest, forcing all the air out of you. You gasp as she presses her feet hard into you.")
+		saynn("Не успеваешь ты опомниться, как Ави сбивает тебя ударом ноги и наступает сапогом тебе на грудь, выбивая весь воздух из лёгких. Ты судорожно хватаешь ртом воздух, пока она с силой вдавливает стопу в твою грудь.")
 
-		saynn("[say=announcer]Unbelievable! Avy avoids the loss once again. With a remarkable recovery, she has completely turned the tables on our challenger![/say]")
+		saynn("[say=announcer]Невероятно! Ави снова избежала поражения. Благодаря поразительному восстановлению, она полностью перехватила инициативу у нашего претендента![/say]")
 
-		saynn("The crowd cheers. Avy stops growling and puts on her mean eyes before leaning down to you to tell you something that only you will hear.")
+		saynn("Толпа ревёт. Ави перестаёт рычать и принимает свой самый свирепый вид, а затем наклоняется к тебе, чтобы прошептать что-то, что услышишь только ты.")
 
-		saynn("[say=avy]Did you really think you could beat me? You know how many tried? Hah. All of you will always be below me, pathetic.. little.. slaves..[/say]")
+		saynn("[say=avy]Ты реально думал, что сможешь меня победить? Знаешь, сколько до тебя пробовали? Хах. Все вы всегда будете ниже меня... жалкие... мелкие... рабы...[/say]")
 
-		saynn("The crowd starts to yell various things that Avy should do to you. Listening to that.. makes her smile.. and her eyes shine.")
+		saynn("Толпа начинает выкрикивать разные вещи о том, что Ави стоит с тобой сделать. Слушая это... она улыбается, а её глаза начинают сиять.")
 
 		if (getFlag("FightClubModule.ManagedToWinDruggedAvy")):
-			saynn("[say=avy]You think you had me? Not even close. But. You know what. I'm feeling kind today. So I will give you a choice.[/say]")
+			saynn("[say=avy]Думаешь, ты меня уделал? Даже не надейся. Но... знаешь что? Сегодня я добрая. Так что дам тебе выбор.[/say]")
 
 		else:
-			saynn("[say=avy]You know what. I'm feeling kind today. I will give you a choice.[/say]")
+			saynn("[say=avy]Знаешь что? Сегодня я добрая. Так что дам тебе выбор.[/say]")
 
-		saynn("Avy tilts her head to the side slightly, the corners of her mouth get turned down again, making her look mean. All the while the audience just begs the foxy to breed you.")
+		saynn("Эви слегка наклоняет голову набок, уголки её губ снова опускаются, придавая ей злобный вид. Тем временем толпа просто умоляет эту лисицу трахнуть тебя до беспамятства.")
 
-		saynn("[say=avy]I can break you. Fast and easy. A few bones there, a few bones there.. Maybe shatter your jaw.. Break the knees.. Just to show what happens when someone tries to cross me.[/say]")
+		saynn("[say=avy]Я могу сломать тебя. Быстро и легко. Пару костей здесь, пару костей там... Может, раздробить челюсть... Сломать колени... Просто чтобы показать, что бывает, когда кто-то пытается встать у меня на пути.[/say]")
 
-		saynn("Each time you try to move or escape, Avy just puts more strain on your ribs.")
+		saynn("Каждый раз, когда ты пытаешься пошевелиться или сбежать, Эви лишь сильнее сдавливает твои рёбра.")
 
-		saynn("[say=avy]Or we can do what the people want and turn you into some real fuckmeat. I promise.. not to be too rough on your ass.. sweetie.[/say]")
+		saynn("[say=avy]Или мы можем сделать то, чего хочет народ, и превратить тебя в настоящее мясцо для секса. Обещаю... не слишком сильно насиловать твою задницу... сладенький.[/say]")
 
-		saynn("That's one hell of a kind choice.. Avy still has that drug coursing through her veins which is what makes her unbeatable.")
+		saynn("Чертовски «добрый» выбор... В венах Эви всё ещё бурлит наркотик, что и делает её непобедимой.")
 
-		addButton("First option", "(Violence) You're not gonna let her fuck you..", "get_broken")
-		addButton("Second option", "(Rough sex) You really don't wanna get your bones broken..", "get_fukd")
-		addButton("Stay silent", "(Skip) You really don't want either", "get_knockedout")
+		addButton("Первый вариант", "(Насилие) Ты не собираешься позволять ей трахать тебя...", "get_broken")
+		addButton("Второй вариант", "(Грубый секс) Ты ведь правда не хочешь, чтобы тебе переломали все кости...", "get_fukd")
+		addButton("Молчать", "(Пропустить) Ты ведь и этого не хочешь", "get_knockedout")
 	if(state == "get_knockedout"):
-		saynn("You're not gonna play her games so you just stay completely silent. At some point the crowd begins to boo you two, clearly wishing for some action. The foxy rolls her eyes, quickly getting impatient.")
+		saynn("Ты не собираешься играть в её игры, поэтому просто хранишь полное молчание. В какой-то момент толпа начинает освистывать вас двоих, явно жаждая действия. Лисица закатывает глаза, быстро теряя терпение.")
 
-		saynn("[say=avy]Huh. Too shy to pick, huh? Fine. Have it your way.[/say]")
+		saynn("[say=avy]Хм. Слишком застенчив, чтобы выбрать? Ладно. Будь по-твоему.[/say]")
 
-		saynn("The foxy just knocks you out with one devastating punch, square in the face.")
+		saynn("Лисица просто вырубает тебя одним сокрушительным ударом прямо в лицо.")
 
-		saynn("And then there was darkness..")
+		saynn("А затем наступила тьма...")
 
-		addButton("Continue", "Ouch", "got_knocked_out")
+		addButton("Продолжить", "Ой!", "got_knocked_out")
 	if(state == "get_broken"):
-		saynn("[say=pc]Fuck you..[/say]")
+		saynn("[say=pc]Да пошла ты...[/say]")
 
-		saynn("Avy nods understandable.. And then raises her foot before delivering a series of ruthless stomps, each landing with bone-crushing force. Sounds of your [b]ribs snapping[/b] silenced every other noise in the arena.. but then came your cry of agony, even more ear-piercing..")
+		saynn("Эви понимающе кивает... А затем заносит ногу и обрушивает на тебя серию беспощадных ударов сверху, каждый из которых приходится с костедробительной силой. Звук того, как лопаются твои [b]ребра[/b], заглушает все остальные шумы на арене... но затем раздается твой крик агонии, еще более пронзительный...")
 
-		saynn("The broken sharp pieces of your ribs shift inside you, some turning at uncomfortable angles and entering your lung, causing you to start coughing blood.. already.. Seeing that makes Avy stop.")
+		saynn("Острые обломки твоих ребер смещаются внутри тела, некоторые поворачиваются под неестественными углами и вонзаются в легкое, заставляя тебя уже сейчас харкать кровью... Вид этой картины заставляет Эви замереть.")
 
-		saynn("[say=avy]Tshh-h.. We only just started.. you can't die on me already, little thing..[/say]")
+		saynn("[say=avy]Тшш-ш.. Мы ведь только начали.. ты же не можешь сдохнуть прямо сейчас, крошка..[/say]")
 
-		saynn("The crown, torn between morbid fascination and a fast-growing sense of unease, kept watching. Some cover their eyes, unable to witness the brutal display.. while others just can't tear their gaze away, captivated by the raw display of power.")
+		saynn("Толпа, разрываемая между болезненным любопытством и растущим чувством тревоги, продолжала наблюдать. Кто-то закрывал глаза, не в силах вынести это жестокое зрелище... в то время как другие просто не могли оторвать взгляд, завороженные первобытной демонстрацией силы.")
 
-		saynn("You are in agony, breathing heavily, your eyes unable to focus on anything. Avy slowly crouches before you and catches one of your arms that you try to protect yourself with. She easily puts enough strength to yank it out of its socket and then smashes it against the floor, making something inside [b]crack[/b].. Ow.. Another wave of sharp sensations floods your mind.. making you yell out something incoherent.")
+		saynn("Ты корчишься от агонии, тяжело дыша, а глаза не могут ни на чем сфокусироваться. Эви медленно опускается перед тобой и перехватывает одну из твоих рук, которой ты пытаешься защититься. Она с легкостью прикладывает достаточно силы, чтобы вырвать её из сустава, а затем с размаху впечатывает в пол, заставляя что-то внутри [b]хрустнуть[/b].. Ох.. Очередная волна острой боли захлестывает твой разум.. заставляя тебя выкрикнуть что-то бессвязное.")
 
-		saynn("[say=avy]So loud..[/say]")
+		saynn("[say=avy]Как громко..[/say]")
 
-		saynn("Avy seems to take pleasure in your suffering, relishing every whimper and cry that escapes from your tortured lips. She waits for a good moment when your mouth is opened and sinks her sharp claws into your tongue, catching it and leaving deep bleeding wounds.")
+		saynn("Кажется, Эви получает истинное удовольствие от твоих страданий, смакуя каждый стон и крик, срывающийся с твоих истерзанных губ. Она выжидает подходящий момент, когда твой рот приоткрыт, и вонзает свои острые когти тебе в язык, хватая его и оставляя глубокие кровоточащие раны.")
 
-		saynn("[say=avy]But if I rip it out.. You wouldn't be able to tell everyone about me.. Sad..[/say]")
+		saynn("[say=avy]Но если я вырву его целиком.. ты не сможешь всем про меня рассказать.. Жаль..[/say]")
 
-		saynn("Avy retracts her claws out of your tongue, letting you taste your own blood spilling inside your mouth. Then she slowly gets up and starts looking at your unharmed limbs.")
+		saynn("Эви выдергивает когти из твоего языка, позволяя тебе почувствовать вкус собственной крови, разливающейся во рту. Затем она медленно поднимается и начинает разглядывать твои еще целые конечности.")
 
-		saynn("[say=avy]Leg or arm, people?[/say]")
+		saynn("[say=avy]Нога или рука, народ?[/say]")
 
-		saynn("Some sick people yell for her to break both. And some are actually sick, barely holding their breakfast. Avy looks down at you while you are writhing in agony, your broken arm shivering and slowly becoming blue.")
+		saynn("Какие-то психи вопят, чтобы она переломала обе. А некоторые реально больны — их едва не выворачивает от завтрака. Эви смотрит на тебя сверху вниз, пока ты корчишься в агонии, а твоя сломанная рука дрожит и постепенно синеет.")
 
-		saynn("[say=avy]I think they want the leg.. And since the arm was a closed fracture..[/say]")
+		saynn("[say=avy]Думаю, они хотят ногу... А раз уж рука была закрытым переломом...[/say]")
 
-		saynn("Avy suddenly raises her leg and stomps on yours with enough force to [b]break the shin bone[/b] in half and make both parts stick out of the skin. Ow.. This was probably the worst impact yet.. Avy laughs while you are desperately wriggling around on the floor, your voice becoming raspy from screaming so much..")
+		saynn("Эви внезапно заносит ногу и наступает на твою с такой силой, что [b]голень лопается пополам[/b], а обломки костей прорывают кожу. Ох... Пожалуй, это был самый жуткий удар... Эви смеется, пока ты отчаянно извиваешься на полу, а твой голос становится хриплым от бесконечных криков...")
 
-		saynn("Avy revels in the sadistic pleasure that surges through her as she does this. The sickening cracks of breaking bones bring her joy.")
+		saynn("Эви наслаждается садистским удовольствием, которое переполняет её в этот момент. Тошнотворный хруст ломающихся костей приносит ей истинную радость.")
 
-		saynn("[say=avy]Can't walk anymore, huh? Shame. Look at me, I still can.[/say]")
+		saynn("[say=avy]Уже не можешь ходить, а? Жаль. Посмотри на меня — я всё еще могу.[/say]")
 
-		saynn("The foxy slowly circles you, her tail swishing behind her. Her eyes still shine brightly.")
+		saynn("Лисица медленно кружит вокруг тебя, помахивая хвостом. Её глаза всё так же ярко сияют.")
 
-		saynn("But despite your broken body.. a flicker of determination still burned.. The pain and despair fueling your rage.. You use the rest of your strength and, with a primal roar, you lash out at her, catching Avy off guard and knocking her back momentarily.")
+		saynn("Но несмотря на твое изломанное тело... в тебе всё еще теплится искра решимости... Боль и отчаяние подпитывают твою ярость... Собрав последние силы, ты с первобытным ревом бросаешься на неё, заставая Эви врасплох и на мгновение отбрасывая её назад.")
 
-		saynn("The crowd erupts into a mix of gasps and startled cheers, shocked by your sudden burst of resistance. It was a small moment, a glimpse of hope against the overwhelming odds. But Avy, fueled by her sadistic nature, is only chuckling before rising to her feet.")
+		saynn("Толпа взрывается смесью вздохов и испуганных возгласов — все шокированы твоим внезапным сопротивлением. Это был миг, проблеск надежды вопреки всему. Но Эви, ведомая своей садистской натурой, лишь посмеивается, прежде чем подняться на ноги.")
 
-		saynn("[say=avy]Oh yeah. I love a good fight. Let's see how much more you have in you.[/say]")
+		saynn("[say=avy]О да. Обожаю хорошую драку. Посмотрим, сколько еще в тебе осталось сил.[/say]")
 
-		saynn("She resumes her assault, raining down blow after blow upon your battered form. With calculated cruelty, she focuses on the rest of your limbs, subjecting each one to similar fates. The thuds of fractured bones echo through the arena, creating a horrifying symphony of pain. At some point you start gagging on your blood.. not a good sign..")
+		saynn("Она возобновляет атаку, обрушивая удар за ударом на твое избитое тело. С расчетливой жестокостью она переключается на остальные твои конечности, подвергая каждую той же участи. Глухие звуки ломающихся костей эхом разносятся по арене, сливаясь в ужасающую симфонию боли. В какой-то момент ты начинаешь давиться собственной кровью... не лучший знак...")
 
-		saynn("[say=avy]Hah. I think that was it. I broke {pc.him}. The bitch is probably dying to find out what happens next.[/say]")
+		saynn("[say=avy]Хах. Кажется, это было всё. Я сломала {pc.him}. Эта сучка, небось, сгорает от любопытства, чтобы узнать, что будет дальше.[/say]")
 
-		saynn("Everything.. literally everything.. hurts.. Even just breathing is an agonizing experience.. You've lost so much blood that the vision becomes blurry.. unfocussed.. like you're about to pass out.. even the adrenaline pumping through your veins is not enough to keep you awake anymore.. Avy grabs your chin and forces you to look at her.")
+		saynn("Всё... буквально всё... болит... Даже просто дышать — это мучительное испытание... Ты потерял столько крови, что в глазах всё плывет... расплывается... кажется, вот-вот вырубишься... даже адреналина, пульсирующего в венах, уже не хватает, чтобы оставаться в сознании... Эви хватает тебя за подбородок и заставляет смотреть на нее.")
 
-		saynn("[say=avy]No-no-no.. Stay with me, whore. I want this to be a good lesson for you. For everyone. To see what happens when they try to do something as stupid as fighting me..[/say]")
+		saynn("[say=avy]Нет-нет-нет... Не отключайся, шлюха. Я хочу, чтобы это стало для тебя хорошим уроком. Для всех. Чтобы все видели, что бывает, когда пытаются совершить такую глупость, как бой со мной...[/say]")
 
-		saynn("And with that, she grabs your broken body and effortlessly lifts it high above herself. The crowd's gasps of horror mix with excited cheers. Blood leaks out of your open wounds and Avy is sure to stick her tongue out and catch some of it.")
+		saynn("И после этого она хватает твое изломанное тело и без усилий задирает высоко над собой. Вздохи ужаса в толпе смешиваются с возбужденными криками. Кровь сочится из твоих открытых ран, и Эви наверняка высунет язык, чтобы слизнуть ее.")
 
-		saynn("[say=avy]Good night. I won't miss you.[/say]")
+		saynn("[say=avy]Спокойной ночи. Скучать по тебе не буду.[/say]")
 
-		saynn("In one swift, merciless motion, Avy brings you crashing down onto her knee that she raises just in time to shove into your back.. Your spine surely didn't like that.. The sound of impact reverberates through the arena.. A collective wince swept through the crowd, followed by.. silence..")
+		saynn("Одним стремительным, беспощадным движением Эви впечатывает тебя в свое колено, которое она успевает подставить под твою спину... Твой позвоночник явно не в восторге от такого... Звук удара эхом разносится по арене... Толпа дружно вздрогнула, а затем наступила... тишина...")
 
-		saynn("Time seems to slow down.. dragging that moment for what feels like eternity.. And then the rest of it just flashes, you smacking against the floor for the last time before passing out.. Finally.. no more pain..")
+		saynn("Время словно замедляется... растягивая этот миг на целую вечность... А затем всё проносится перед глазами: ты в последний раз шлепаешься об пол и отключаешься... Наконец-то... никакой боли...")
 
-		saynn("Only darkness..")
+		saynn("Только темнота...")
 
-		addButton("Continue", "See if you're alive or not", "got_broken_hard")
+		addButton("Продолжить", "Проверить, жив ты или нет", "got_broken_hard")
 	if(state == "get_fukd"):
 		playAnimation(StageScene.SexFullNelson, "tease", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=pc]You won't turn me into a fuckmeat..[/say]")
+		saynn("[say=pc]Ты не превратишь меня в кусок шлюшьего мяса...[/say]")
 
-		saynn("Avy tilts her head slightly and puts on a mean smile. Her strong paws suddenly reach out for her uniform and pull her shorts down, exposing the canine member. It's tip is already peeking out of the sheath as Avy gets horny just from the thoughts. The crowd loves the display though and tells the foxy to do it already.")
+		saynn("Эви слегка наклоняет голову и хищно улыбается. Её сильные лапы внезапно тянутся к униформе и стягивают шорты, обнажая собачий член. Кончик уже наполовину вылез из препуция — Эви возбудилась от одних только мыслей. Толпа в восторге от такого зрелища и вовсю подгоняет лисицу, требуя, чтобы она сделала это прямо сейчас.")
 
-		saynn("Without a word, Avy leans down to you and effortlessly picks you up, their motions calculated. Your pulse quickens as Avy's arms grabs your legs under your knees and raises them high in a V shape, exposing all your lewd parts to the public. She holds you in a very secure grip with her elbows bent and fingers interlocked behind your neck, forcing you to stare at the crowd while you are completely helpless.")
+		saynn("Без лишних слов Эви наклоняется к тебе и без усилий подхватывает, действуя расчетливо и уверенно. Твой пульс учащается, когда Эви обхватывает твои ноги под коленями и задирает их высоко вверх в форме буквы V, выставляя все твои пошлые места на всеобщее обозрение. Она крепко держит тебя, согнув локти и сцепив пальцы у тебя за шеей, заставляя тебя смотреть прямо на толпу, пока ты абсолютно беспомощен.")
 
-		saynn("[say=avy]Watch me, slut.[/say]")
+		saynn("[say=avy]Смотри на меня, сучка.[/say]")
 
-		saynn("A mixture of fear and discomfort courses through your veins as you realize that she holds you in a 'full nelson' position. Any attempts to resist are met with her easily overpowering you and forcibly spreading your legs more.")
+		saynn("Смесь страха и дискомфорта пробегает по твоим венам, когда ты осознаешь, что она держит тебя в захвате «полный ნельсон». Любые попытки сопротивляться лишь помогают ей еще сильнее подавить тебя, силой разводя твои ноги в стороны.")
 
-		saynn("[say=pc]W-wait..[/say]")
+		saynn("[say=pc]П-погоди..[/say]")
 
-		saynn("You can feel.. heat.. radiating from Avy's crotch, her cock has fully left the sheath and is now twitching slightly, leaking precum onto the floor of the arena.")
+		saynn("Ты чувствуешь.. жар.. исходящий от промежности Эви; её член полностью вышел из ножен и теперь слегка подергивается, капая предэякулятом на пол арены.")
 
 		if (GM.pc.hasReachableVagina()):
-			addButton("Continue", "See what happens next", "fukd_pussy_start")
+			addButton("Продолжить", "Смотреть, что будет дальше", "fukd_pussy_start")
 		else:
-			addButton("Continue", "See what happens next", "fukd_anus_start")
+			addButton("Продолжить", "Смотреть, что будет дальше", "fukd_anus_start")
 	if(state == "fukd_pussy_start"):
 		playAnimation(StageScene.SexFullNelson, "sex", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Both of Avy's hands are busy so she just abuses her raw strength, aligning your whole frame with her hard cock before suddenly thrusting inside, forcibly penetrating your dry {pc.pussyStretch} slit and stretching it wide before sliding deeper into your depths. Your body tenses up in response to such a powerful display of dominance, a mixture of pain.. and pleasure.. washing over you. The crowd cheers loudly, finally seeing some good action.")
+		saynn("Обе руки Эви заняты, поэтому она просто использует свою первобытную мощь: она выравнивает всё твоё тело по линии своего твердого члена, а затем внезапно всаживает его внутрь, силой проникая в твою сухую {pc.pussyStretch} щель и растягивая её, прежде чем уйти еще глубже. Твое тело напрягается в ответ на столь мощный акт доминирования, а тебя накрывает смесью боли.. и наслаждения.. Толпа громко ревет, наконец-то видя достойную движуху.")
 
-		saynn("[say=pc]Ah-h.. H-hey..[/say]")
+		saynn("[say=pc]Ах-х.. Эй..[/say]")
 
-		saynn("[say=avy]Moan, whore.[/say]")
+		saynn("[say=avy]Стони, шлюха.[/say]")
 
-		saynn("Avy's grip on your legs remains unyielding, keeping you in this extremely vulnerable position as she rams her cock deeper, relentlessly pounding your cunt, her tip already smashing your cervix and leaving it with her precum.")
+		saynn("Хватка Эви на твоих ногах остается непоколебимой, удерживая тебя в этом крайне уязвимом положении, пока она вбивает свой член всё глубже, безжалостно долбя в твою киску; её головка уже вовсю бьется о твою шейку матки, заливая её предэякулятом.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("You may deny the pleasure all you want but your body knows better.. Your locked away cock starts inflating with blood.. but the metal keeps it nicely contained in a small package. The pressure inside is slowly rising though..")
+			saynn("Можешь сколько угодно отрицать удовольствие, но твое тело знает правду.. Твой спрятанный член начинает раздуваться от крови.. но металл удерживает его в компактном состоянии. Однако давление внутри медленно нарастает...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("You may deny the pleasure all you want but your body knows better.. Your {pc.penis} starts inflating with blood and leaking pre as the shaft bounces up and down from each Avy's thrust.")
+			saynn("Можешь сколько угодно отрицать это удовольствие, но твое тело знает правду... Твой {pc.penis} раздувается от крови и сочится предэякулятом, пока член подпрыгивает вверх-вниз от каждого толчка Эви.")
 
-		saynn("Muffled cries of pleasure begin to escape from your lips.. it seems Avy is hitting one of your pleasure spots. Her rhythm is steady but primal, little commanding growls can be heard from her..")
+		saynn("С твоих губ начинают срываться приглушенные стоны удовольствия... кажется, Эви попала в одну из твоих эрогенных зон. Ее ритм размеренный, но первобытный, а из ее горла доносится едва слышное властное рычание...")
 
-		saynn("[say=avy]Louder, let the whole arena hear how big of a slut you are.[/say]")
+		saynn("[say=avy]Громче! Пусть вся арена слышит, какая ты шлюха![/say]")
 
-		saynn("You try to keep resisting but your body keeps betraying you. Your bruised stretched folds slowly become moist and needy.. Each forceful thrust sends waves of ecstasy crashing through you with pain only adding to that mix of sensations. You keep your mouth shut but little noises keep escaping when Avy's cock hits.. that.. spot..")
+		saynn("Ты пытаешься сопротивляться, но тело продолжает тебя предавать. Твои ушибленные, растянутые складки постепенно становятся влажными и жаждущими... Каждый мощный толчок обрушивает на тебя волны экстаза, а боль лишь усиливает эту смесь ощущений. Ты держишь рот на замке, но тихие звуки всё равно вырываются наружу, когда член Эви попадает... вот в... это... место...")
 
-		saynn("Fuck, you're getting close..")
+		saynn("Блядь, ты уже близко...")
 
-		addButton("Continue", "See what happens next", "fukd_pussy_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fukd_pussy_faster")
 	if(state == "fukd_pussy_faster"):
 		playAnimation(StageScene.SexFullNelson, "fast", {pc="avy", npc="pc", npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Your wet bruised inner walls are kneading that intruding length and Avy feels it. She takes a better position and fastens her pace, increasing the onslaught on your poor stretched pussy.")
+		saynn("Твои влажные, избитые внутренние стенки обхватывают этот наглый ствол, и Эви это чувствует. Она принимает более удобную позу и ускоряет темп, усиливая натиск на твою бедную растянутую киску.")
 
-		saynn("[say=avy]Cum, bitch.[/say]")
+		saynn("[say=avy]Кончай, сучка![/say]")
 
-		saynn("You make your best attempt to not let it happen.. but focusing on it.. only made it worse. Loud moans suddenly begin escaping from you. Your whole body shivering before the orgasm starts crashing down over you, waves after waves of weird but pleasurable sensations make your muscles tense up and your pussy squirt all over the arena floor, making the crowd happy. But no matter how hard you are trying to squirm, Avy always has you in a tight grip with her throbbing cock still pounding you hard.")
+		saynn("Ты изо всех сил стараешься не дать этому случиться... но чем больше ты на этом фокусируешься, тем хуже становится. Из тебя внезапно начинают вырываться громкие стоны. Всё тело пробивает дрожь, прежде чем на тебя обрушится оргазм; волна за волной странных, но приятных ощущений заставляет твои мышцы напрячься, а киску — забрызгать сквиртом весь пол арены, приводя толпу в восторг. Но как бы ты ни пыталась извиваться, Ави всегда держит тебя мертвой хваткой, а её пульсирующий член продолжает нещадно долбить тебя.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your own cock shooting small strings of {pc.cum} through the little hole in the chastity cage which looks.. incredibly cute.")
+			saynn("Твой собственный член выпускает тонкие струйки {pc.cum} через маленькое отверстие в девственной клетке, что выглядит... невероятно мило.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your own cock shooting strings of {pc.cum} while Avy is destroying your g-spot so much.")
+			saynn("Твой собственный член выпускает струйки {pc.cum}, пока Ави вовсю уничтожает твою точку G.")
 
-		saynn("You begin to feel the base of Avy's member inflating.. a fat meaty knot appearing.. so big that she can't just slip it inside. But who is gonna stop her from trying..")
+		saynn("Ты начинаешь чувствовать, как основание члена Ави раздувается... появляется жирный мясной узел... такой огромный, что она не может просто вставить его внутрь. Но кто станет ей мешать...")
 
-		saynn("[say=pc]Ah.. no-.. wai-..[/say]")
+		saynn("[say=pc]Ах... нет... подожди...[/say]")
 
-		saynn("[say=avy]Shut up and take it.[/say]")
+		saynn("[say=avy]Заткнись и принимай.[/say]")
 
-		saynn("More little growls escape from Avy while she uses her full strength, raising you up slightly before forcibly bringing you down onto her dick, the knot slaps against your abused cunt and slowly stretches your petals even wider.")
+		saynn("Из горла Ави вырывается еще несколько рычащих звуков, пока она вкладывает все свои силы, слегка приподнимая тебя, а затем силой насаживая на свой член; узел с хлопком ударяется о твою измученную киску, медленно растягивая твои лепестки еще шире.")
 
-		saynn("Inch by inch, her knot spreads the folds of your slit more.. until suddenly slipping inside..")
+		saynn("Дюйм за дюймом её узел раздвигает складки твоей щели... пока он внезапно не проскальзывает внутрь...")
 
-		saynn("Fuck. Full length of Avy's dick is inside.. but she doesn't stop.. instead she yanks it out again before forcing it back inside, knot-fucking your pussy while its loose enough. Almost instantly, you cum again, your whole body trying to struggle but yet again, the foxy overpowers you and makes you take her knot.. again and again.. each thrust causing more wear and tear to your sensitive flesh.")
+		saynn("Блядь. Весь член Ави внутри... но она не останавливается... вместо этого она резко выдергивает его и с силой вгоняет обратно, трахая твою размякшую киску своим узлом. Почти мгновенно ты кончаешь снова; всё твоё тело пытается сопротивляться, но эта лисица снова берет верх, заставляя тебя принимать её узел... раз за разом... каждый толчок всё сильнее истерзает твою чувствительную плоть.")
 
-		saynn("[say=avy]You're just a fucktoy.[/say]")
+		saynn("[say=avy]Ты всего лишь ебаная игрушка для секса.[/say]")
 
-		saynn("It's too much, your eyes begin to roll up, your tongue out and drooling, making you look fucked silly. Uncontrollable slutty moans escape from you while Avy is panting warmly into your neck, her cock inflates with even more blood and throbs inside you..")
+		saynn("Это уже слишком, твои глаза закатываются, язык вываливается изо рта, а слюна течет ручьем — ты выглядишь как окончательно трахнутая дурочка. Из тебя вырываются неконтролируемые похотливые стоны, пока Ави жарко дышит тебе в шею, а её член наливается кровью еще сильнее и пульсирует внутри тебя...")
 
-		addButton("Continue", "See what happens next", "fukd_pussy_cuminside")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fukd_pussy_cuminside")
 	if(state == "fukd_pussy_cuminside"):
 		playAnimation(StageScene.SexFullNelson, "inside", {pc="avy", npc="pc", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Your inner walls clench around Avy's knotted cock so much that she can't hold back anymore. She establishes complete dominance over you by shoving the knot inside you for the last time and finally letting the orgasm take over, the pointy tip breaking into your womb before releasing Avy's seed directly into it.")
+		saynn("Твои внутренние стенки так сильно сжимаются вокруг раздутого узла Ави, что она больше не может сдерживаться. Она устанавливает полное доминирование, в последний раз втискивая узел в тебя и наконец позволяя оргазму захлестнуть вас обоих; острый кончик прорывается прямо в твою матку, изливая туда семя Ави.")
 
-		saynn("The power of Avy's climax echoes through you, her tight grip makes your grip on her shaft even harder. Screams of ecstasy can be heard from you while Avy just casually grunts, emptying her balls inside you and making your belly receive a cute bump.")
+		saynn("Мощь оргазма Ави отдается эхом во всем твоем теле, а от её крепкой хватки ты сжимаешь её член еще сильнее. Твои крики экстаза разносятся повсюду, в то время как Ави лишь небрежно хрипит, опустошая свои яйца в тебя так, что твой живот забавно выпирает.")
 
-		saynn("[say=avy]Stupid fucking bitch.. That's what you get for coming here.[/say]")
+		saynn("[say=avy]Тупая ебаная сучка... Вот что бывает, когда решаешь сюда прийти.[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your g-spot is so destroyed by this point that your caged up dick just slowly drips {pc.cum}, almost non-stop.")
+			saynn("Твоя точка G к этому моменту настолько уничтожена, что твой запертый в клетке член просто медленно и почти непрерывно сочится {pc.cum}.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your g-spot is so destroyed by this point that your {pc.penis} just slowly drips {pc.cum}, almost non-stop.")
+			saynn("Твоя точка G настолько избита к этому моменту, что твоя {pc.penis} просто медленно сочится {pc.cum}, почти без остановки.")
 
-		saynn("The audience cheers loudly, seeing Avy's full throbbing length inside you, knot and all. But for your mind it all becomes a blur at this point, that dick has seriously messed you up, physically and mentally..")
+		saynn("Зрители громко ревут, видя всю пульсирующую длину Ави внутри тебя, вместе с узлом. Но для твоего разума всё это превращается в размытое пятно — этот член серьезно надломил тебя и физически, и ментально...")
 
-		saynn("[say=pc]..ah-h..[/say]")
+		saynn("[say=pc]... ах-х...[/say]")
 
-		saynn("[say=avy]Think twice before coming back.[/say]")
+		saynn("[say=avy]Подумай дважды, прежде чем возвращаться сюда.[/say]")
 
-		saynn("The last thing you remember after Avy forcefully yanking her knot out of you is how the floor of the arena begins to quickly approach you..")
+		saynn("Последнее, что ты помнишь после того, как Ави с силой вырвала свой узел из тебя — это как пол арены начинает стремительно приближаться к твоему лицу...")
 
-		saynn("Something inside you cracked.. Was it your soul? Or your bones?")
+		saynn("Что-то внутри тебя треснуло... Твоя душа? Или твои кости?")
 
-		saynn("And then.. just darkness.. Who cares.")
+		saynn("А затем... просто темнота... Да какая разница.")
 
-		addButton("Continue", "Ouch", "got_fuckd_out")
+		addButton("Продолжить", "Ой!", "got_fuckd_out")
 	if(state == "fukd_anus_start"):
 		playAnimation(StageScene.SexFullNelson, "sex", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Both of Avy's hands are busy so she just abuses her raw strength, aligning your whole frame with her hard cock before suddenly thrusting inside, forcibly penetrating your dry {pc.anusStretch} anal ring and stretching it wide before sliding deeper into your depths. Your body tenses up in response to such a powerful display of dominance, a mixture of pain.. and pleasure.. washing over you. The crowd cheers loudly, finally seeing some good action.")
+		saynn("Обе руки Ави заняты, поэтому она просто использует свою первобытную мощь, выравнивая всё твоё тело под свой твердый член, прежде чем внезапно войти внутрь, насильно пробивая твое сухое анальное кольцо {pc.anusStretch} и растягивая его до предела, прежде чем скользнуть еще глубже. Твое тело напрягается в ответ на этот мощный акт доминирования; смесь боли... и удовольствия... накрывает тебя с головой. Толпа громко ликует, наконец-то видя достойное зрелище.")
 
-		saynn("[say=pc]Ah-h.. H-hey..[/say]")
+		saynn("[say=pc]Ах-х.. Эй..[/say]")
 
-		saynn("[say=avy]Moan, whore.[/say]")
+		saynn("[say=avy]Стони, шлюха.[/say]")
 
-		saynn("Avy's grip on your legs remains unyielding, keeping you in this extremely vulnerable position as she rams her cock deeper, relentlessly pounding your ass, her tip already reaching extremely far and lubing the inner walls up with her precum. But that's not enough to soften the pain..")
+		saynn("Хватка Ави на твоих ногах остается непоколебимой, удерживая тебя в этом крайне уязвимом положении, пока она вбивает свой член всё глубже, безжалостно долбя в твою задницу; её головка уже заходит невероятно глубоко, смазывая внутренние стенки предэякулятом. Но этого недостаточно, чтобы смягчить боль...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("You may deny the pleasure all you want but your body knows better.. Your locked away cock starts inflating with blood.. but the metal keeps it nicely contained in a small package. The pressure inside is slowly rising though, the more your prostate gets massaged..")
+			saynn("Можешь сколько угодно отрицать удовольствие, но твое тело знает правду... Твой запертый член начинает раздуваться от крови... но металл надежно удерживает его в тесном пространстве. Однако давление внутри медленно растет по мере того, как массируют твою простату...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("You may deny the pleasure all you want but your body knows better.. Your {pc.penis} starts inflating with blood and leaking pre as the shaft bounces up and down from each Avy's thrust, she massages your prostate so well..")
+			saynn("Можешь сколько угодно отрицать удовольствие, но твое тело знает правду... Твой {pc.penis} раздувается от крови и сочится предэякулятом, пока ствол подпрыгивает вверх-вниз от каждого толчка Ави; она так мастерски массирует твою простату...")
 
-		saynn("Muffled cries of pleasure begin to escape from your lips.. it seems Avy is hitting one of your pleasure spots. Her rhythm is steady but primal, little commanding growls can be heard from her..")
+		saynn("С твоих губ начинают срываться приглушенные стоны удовольствия... кажется, Эви попала в одну из твоих эрогенных зон. Ее ритм размеренный, но первобытный, а из ее горла доносится едва слышное властное рычание...")
 
-		saynn("[say=avy]Louder, let the whole arena hear how big of a slut you are.[/say]")
+		saynn("[say=avy]Громче! Пусть вся арена слышит, какая ты шлюха![/say]")
 
-		saynn("You try to keep resisting but your body keeps betraying you. Your bruised stretched tailhole slowly becomes slick and needy.. Each forceful thrust sends waves of ecstasy crashing through you with pain only adding to that mix of sensations. You keep your mouth shut but little noises keep escaping when Avy's cock hits.. that.. spot..")
+		saynn("Ты пытаешься сопротивляться, но тело продолжает тебя предавать. Твое избитое, растянутое анусное отверстие постепенно становится влажным и жаждущим... Каждый мощный толчок посылает волны экстаза, прошивающие тебя насквозь, а боль лишь добавляет остроты в эту смесь ощущений. Ты держишь рот на замке, но тихие стоны то и дело вырываются наружу, когда член Ави попадает... вот в... ту самую... точку.")
 
-		saynn("Fuck, you're getting close..")
+		saynn("Блядь, ты уже близко...")
 
-		addButton("Continue", "See what happens next", "fukd_anus_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fukd_anus_faster")
 	if(state == "fukd_anus_faster"):
 		playAnimation(StageScene.SexFullNelson, "fast", {pc="avy", npc="pc", npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Your wet bruised inner walls are kneading that intruding length and Avy feels it. She takes a better position and fastens her pace, increasing the onslaught on your poor stretched anal ring.")
+		saynn("Твои влажные, ушибленные внутренние стенки обхватывают этот бесцеремонный ствол, и Ави это чувствует. Она принимает более удобную позу и ускоряет темп, усиливая натиск на твое бедное, растянутое анальное кольцо.")
 
-		saynn("[say=avy]Cum, bitch.[/say]")
+		saynn("[say=avy]Кончай, сучка![/say]")
 
-		saynn("You make your best attempt to not let it happen.. but focusing on it.. only made it worse. Loud moans suddenly begin escaping from you. Your whole body shivering before the orgasm starts crashing down over you, waves after waves of weird but pleasurable sensations make your muscles tense up and your star visible clench, making the crowd happy. But no matter how hard you are trying to squirm, Avy always has you in a tight grip with her throbbing cock still pounding you hard.")
+		saynn("Ты изо всех сил пытаешься не дать этому случиться... но концентрация на ощущениях только всё усугубила. Из тебя внезапно начинают вырываться громкие стоны. Все твое тело дрожит перед тем, как на тебя обрушится оргазм; волна за волной странных, но приятных ощущений заставляет твои мышцы напрягаться, а твою анусную складку — сжиматься, радуя толпу. Но как бы сильно ты ни пытался извиваться, Ави всегда держит тебя в крепкой хватке, а ее пульсирующий член продолжает неистово вколачиваться в тебя.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your own cock shooting small strings of {pc.cum} through the little hole in the chastity cage which looks.. incredibly cute.")
+			saynn("Твой собственный член выпускает тонкие струйки {pc.cum} через маленькое отверстие в девственной клетке, что выглядит... невероятно мило.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your own cock shooting strings of {pc.cum} while Avy is destroying your p-spot so much.")
+			saynn("Твой собственный член испускает струи {pc.cum}, пока Эви нещадно разносит твою точку G.")
 
-		saynn("You begin to feel the base of Avy's member inflating.. a fat meaty knot appearing.. so big that she can't just slip it inside. But who is gonna stop her from trying..")
+		saynn("Ты начинаешь чувствовать, как основание члена Ави раздувается... появляется жирный мясной узел... такой огромный, что она не может просто вставить его внутрь. Но кто станет ей мешать...")
 
-		saynn("[say=pc]Ah.. no-.. wai-..[/say]")
+		saynn("[say=pc]Ах... нет... подожди...[/say]")
 
-		saynn("[say=avy]Shut up and take it.[/say]")
+		saynn("[say=avy]Заткнись и принимай.[/say]")
 
-		saynn("More little growls escape from Avy while she uses her full strength, raising you up slightly before forcibly bringing you down onto her dick, the knot slaps against your abused ass and slowly stretches the hole even wider.")
+		saynn("Из горла Эви вырывается всё больше утробного рычания: она вкладывает все силы, слегка приподнимая тебя, а затем с силой вбивает на свой член; узел с хлопком ударяется о твою измученную задницу, медленно растягивая отверстие ещё шире.")
 
-		saynn("Inch by inch, her knot spreads your tailhole more.. until suddenly slipping inside..")
+		saynn("Дюйм за дюймом её узел растягивает твой анус... пока он внезапно не проскальзывает внутрь...")
 
-		saynn("Fuck. Full length of Avy's dick is inside.. but she doesn't stop.. instead she yanks it out again before forcing it back inside, knot-fucking your anus while its loose enough. Almost instantly, you cum again, your whole body trying to struggle but yet again, the foxy overpowers you and makes you take her knot.. again and again.. each thrust causing more wear and tear to your sensitive flesh.")
+		saynn("Блядь. Член Эви вошел на всю длину... но она не останавливается... вместо этого она резко выдергивает его и снова вбивает внутрь, трахая твой анус узлом, пока он достаточно разболтан. Почти мгновенно ты снова кончаешь; всё твоё тело пытается сопротивляться, но эта лисица снова берет верх, заставляя тебя принимать её узел... снова и снова... каждый толчок всё сильнее изнуряет твою чувствительную плоть.")
 
-		saynn("[say=avy]You're just a fucktoy.[/say]")
+		saynn("[say=avy]Ты всего лишь ебаная игрушка для секса.[/say]")
 
-		saynn("It's too much, your eyes begin to roll up, your tongue out and drooling, making you look fucked silly. Uncontrollable slutty moans escape from you while Avy is panting warmly into your neck, her cock inflates with even more blood and throbs inside you..")
+		saynn("Это уже слишком, твои глаза закатываются, язык вываливается изо рта, а слюна течет ручьем — ты выглядишь как окончательно трахнутая дурочка. Из тебя вырываются неконтролируемые похотливые стоны, пока Ави жарко дышит тебе в шею, а её член наливается кровью еще сильнее и пульсирует внутри тебя...")
 
-		addButton("Continue", "See what happens next", "fukd_anus_cuminside")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fukd_anus_cuminside")
 	if(state == "fukd_anus_cuminside"):
 		playAnimation(StageScene.SexFullNelson, "inside", {pc="avy", npc="pc", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Your inner walls clench around Avy's knotted cock so much that she can't hold back anymore. She establishes complete dominance over you by shoving the knot inside you for the last time and finally letting the orgasm take over, the pointy tip reaching deep inside you before releasing Avy's seed, waves upon waves of it..")
+		saynn("Твои внутренние стенки так сильно сжимаются вокруг узловатого члена Эви, что она больше не может сдерживаться. Она устанавливает над тобой полный контроль, в последний раз втискивая узел в тебя и наконец отдаваясь оргазму; её острый кончик проникает глубоко внутрь, извергая семя Эви волна за волной...")
 
-		saynn("The power of Avy's climax echoes through you, her tight grip makes your grip on her shaft even harder. Screams of ecstasy can be heard from you while Avy just casually grunts, emptying her balls inside you and making your belly receive a cute bump.")
+		saynn("Мощь оргазма Ави отдается эхом во всем твоем теле, а от её крепкой хватки ты сжимаешь её член еще сильнее. Твои крики экстаза разносятся повсюду, в то время как Ави лишь небрежно хрипит, опустошая свои яйца в тебя так, что твой живот забавно выпирает.")
 
-		saynn("[say=avy]Stupid fucking bitch.. That's what you get for coming here.[/say]")
+		saynn("[say=avy]Тупая ебаная сучка... Вот что бывает, когда решаешь сюда прийти.[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your p-spot is so destroyed by this point that your caged up dick just slowly drips {pc.cum}, almost non-stop.")
+			saynn("Твоя точка G к этому моменту настолько уничтожена, что твой зажатый член просто медленно и почти непрерывно сочится {pc.cum}.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your p-spot is so destroyed by this point that your {pc.penis} just slowly drips {pc.cum}, almost non-stop.")
+			saynn("Твоя точка G к этому моменту настолько уничтожена, что твой {pc.penis} просто медленно и почти непрерывно сочится {pc.cum}.")
 
-		saynn("The audience cheers loudly, seeing Avy's full throbbing length inside you, knot and all. But for your mind it all becomes a blur at this point, that dick has seriously messed you up, physically and mentally..")
+		saynn("Зрители громко ревут, видя всю пульсирующую длину Ави внутри тебя, вместе с узлом. Но для твоего разума всё это превращается в размытое пятно — этот член серьезно надломил тебя и физически, и ментально...")
 
-		saynn("[say=pc]..ah-h..[/say]")
+		saynn("[say=pc]... ах-х...[/say]")
 
-		saynn("[say=avy]Think twice before coming back.[/say]")
+		saynn("[say=avy]Подумай дважды, прежде чем возвращаться сюда.[/say]")
 
-		saynn("The last thing you remember after Avy forcefully yanking her knot out of you is how the floor of the arena begins to quickly approach you..")
+		saynn("Последнее, что ты помнишь после того, как Ави с силой вырвала свой узел из тебя — это как пол арены начинает стремительно приближаться к твоему лицу...")
 
-		saynn("Something inside you cracked.. Was it your soul? Or your bones?")
+		saynn("Что-то внутри тебя треснуло... Твоя душа? Или твои кости?")
 
-		saynn("And then.. just darkness.. Who cares.")
+		saynn("А затем... просто темнота... Да какая разница.")
 
-		addButton("Continue", "Ouch", "got_fuckd_out")
+		addButton("Продолжить", "Ой!", "got_fuckd_out")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

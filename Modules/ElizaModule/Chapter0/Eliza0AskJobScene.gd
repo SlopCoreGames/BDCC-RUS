@@ -7,163 +7,163 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You quickly skim through the paper. One of the options sounds intriguing.. Lab Assistant.. it's written with a pen rather than printed.")
+		saynn("Ты быстро пробегаешь глазами по бумаге. Один из вариантов звучит интригующе... Лаборант... написано ручкой, а не напечатано.")
 
-		saynn("[say=pc]Lab assistant? What's that about?[/say]")
+		saynn("[say=pc]Лаборант? Это еще что за хрень?[/say]")
 
-		saynn("Quinn looks at the paper herself.")
+		saynn("Куинн сама заглядывает в листок.")
 
-		saynn("[say=eliza]Oh, yeah. I forgot about that one. No one usually asks.[/say]")
+		saynn("[say=eliza]А, точно. Я совсем про него забыла. Обычно об этой вакансии никто не спрашивает.[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("The feline shrugs and blinks cutely, the corners of her mouth raising in a slightly creepy way.")
+		saynn("Кошка мило пожимает плечами и хлопает ресницами, при этом уголки её рта приподнимаются как-то слегка жутковато.")
 
-		saynn("[say=eliza]I have no idea~.[/say]")
+		saynn("[say=eliza]Понятия не имею~.[/say]")
 
-		saynn("Her eyes are sparking while she stares at you.")
+		saynn("Её глаза так и искрятся, пока она пристально смотрит на тебя.")
 
-		saynn("[say=eliza]You love science, huh~? Isn't it great, making breakthroughs, unlocking hidden knowledge, creating prototypes, testing your freshly-made drugs on unsuspecting test subjects.. mmm~..[/say]")
+		saynn("[say=eliza]Ты ведь любишь науку, да~? Разве это не круто — совершать прорывы, раскрывать тайные знания, создавать прототипы, тестировать свои свежесваренные препараты на ничего не подозревающих подопытных... ммм~...[/say]")
 
-		saynn("She seems to be drifting off somewhere else, her gaze wandering around the lobby..")
+		saynn("Кажется, она где-то улетает мыслями, её взгляд блуждает где-то в районе лобби...")
 
-		saynn("[say=pc]What is the job about, lady?[/say]")
+		saynn("[say=pc]Так в чем суть работы, детка?[/say]")
 
-		saynn("She snaps out of it and frowns.")
+		saynn("Она приходит в себя и хмурится.")
 
-		saynn("[say=eliza]I'm doctor Quinn, not just a lady.[/say]")
+		saynn("[say=eliza]Я доктор Куинн, а не просто дамочка.[/say]")
 
-		saynn("[say=pc]Sure. I just wanted the job details.[/say]")
+		saynn("[say=pc]Конечно. Я просто хотел узнать подробности о работе.[/say]")
 
-		saynn("Doctor Quinn hums and rubs her chin.")
+		saynn("Доктор Куинн что-то мычит себе под нос, потирая подбородок.")
 
-		saynn("[say=eliza]This position is exactly what it sounds like. I need a lab assistant. Someone that can help me in the lab.[/say]")
+		saynn("[say=eliza]Эта должность звучит именно так, как и называется. Мне нужен лаборант. Кто-то, кто сможет помогать мне в лаборатории.[/say]")
 
-		saynn("[say=pc]What kind of help do you need?[/say]")
+		saynn("[say=pc]Какая именно помощь вам нужна?[/say]")
 
-		saynn("Huh. Would she really allow any inmate inside the lab?")
+		saynn("Хм. Неужели она и правда пустит любую заключенную в лабораторию?")
 
-		saynn("[say=eliza]I'm a chemist. I'm researching new types of drugs, medical or.. mostly medical of course. But I've been lacking enough time to do proper research lately. Since, I need an assistant.[/say]")
+		saynn("[say=eliza]Я химик. Исследую новые виды препаратов, медицинских или... в основном медицинских, конечно. Но в последнее время мне катастрофически не хватает времени на полноценные исследования. А значит, мне нужен ассистент.[/say]")
 
-		saynn("Researching drugs.. Could be interesting.")
+		saynn("Исследование препаратов... Может быть интересно.")
 
-		saynn("[say=pc]Let's say.. I want to try to fill that position. What do I do?[/say]")
+		saynn("[say=pc]Скажем так... я хочу попробовать занять это место. Что мне для этого нужно?[/say]")
 
-		saynn("Doctor tilts her head slightly and puts on her serious eyes.")
+		saynn("Доктор слегка наклоняет голову и принимает серьезный вид.")
 
-		saynn("[say=eliza]Do you have experience in the chemistry field?[/say]")
+		saynn("[say=eliza]У вас есть опыт работы в области химии?[/say]")
 
-		saynn("[say=pc]Depends..[/say]")
+		saynn("[say=pc]Смотря в чем..[/say]")
 
-		saynn("Suddenly, the feline switches to her rapid voice.")
+		saynn("Внезапно кошачья грация сменяется стремительной, быстрой речью.")
 
-		saynn("[say=eliza]What is the name of the highly toxic chemical compound that contains a carbon atom triple-bonded to a nitrogen atom and is often associated with certain industrial processes and the poisoning of living organisms?[/say]")
+		saynn("[say=eliza]Как называется высокотоксичное химическое соединение, содержащее атом углерода с тройной связью с атомом азота и часто ассоциируемое с определенными промышленными процессами и отравлением живых организмов?[/say]")
 
-		saynn("[say=pc]Uh..[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("[say=eliza]You have one second to answer.[/say]")
+		saynn("[say=eliza]У вас есть одна секунда на ответ.[/say]")
 
-		saynn("Panic settles fast.. what..")
+		saynn("Паника накрывает мгновенно... что за...")
 
-		saynn("[say=pc]Um..[/say]")
+		saynn("[say=pc]Эм..[/say]")
 
-		saynn("[say=eliza]Beep beep, wrong! The answer is cyanide![/say]")
+		saynn("[say=eliza]Бип-бип, неправильно! Ответ — цианид![/say]")
 
-		saynn("Really?")
+		saynn("Серьезно?")
 
-		saynn("[say=eliza]What is the name of the compound with the formula NH3, commonly used as a fertilizer and in cleaning products?[/say]")
+		saynn("[say=eliza]Как называется соединение с формулой NH3, широко используемое в качестве удобрения и в чистящих средствах?[/say]")
 
-		saynn("[say=pc]Uh.. wait![/say]")
+		saynn("[say=pc]Ой... погоди![/say]")
 
-		saynn("[say=eliza]Ammonia![/say]")
+		saynn("[say=eliza]Аммиак![/say]")
 
-		saynn("More like.. Imma need more time..")
+		saynn("Скорее уж... мне нужно больше времени...")
 
-		saynn("[say=eliza]What is the name of the element with the symbol O, essential for respiration in most living organisms and a key component of water?[/say]")
+		saynn("[say=eliza]Как называется элемент с символом O, необходимый для дыхания большинства живых организмов и являющийся ключевым компонентом воды?[/say]")
 
-		saynn("[say=pc]Oxygen![/say]")
+		saynn("[say=pc]Кислород![/say]")
 
-		saynn("[say=eliza]I'd be surprised if you didn't know that.[/say]")
+		saynn("[say=eliza]Удивилась бы, если бы ты этого не знал.[/say]")
 
-		saynn("[say=pc]Pfff.[/say]")
+		saynn("[say=pc]Пфф.[/say]")
 
-		saynn("[say=eliza]What is the name of the coordination complex with the formula [Fe(CN)6]3-, used in the production of a particular deep blue dye, as well as various other chemical applications?[/say]")
+		saynn("[say=eliza]Как называется координационный комплекс с формулой [Fe(CN)6]3-, используемый в производстве особого темно-синего красителя, а также в различных других химических целях?[/say]")
 
-		saynn("What the heck is that formula..")
+		saynn("Что это вообще за формула такая...")
 
-		saynn("[say=eliza]Ferricyanide! Love that one, by the way.[/say]")
+		saynn("[say=eliza]Феррицианид! Кстати, обожаю его.[/say]")
 
-		saynn("[say=pc]C'mon, we already had cyanide![/say]")
+		saynn("[say=pc]Да ладно тебе, цианид мы уже пробовали![/say]")
 
-		saynn("[say=eliza]What is the name of the organic compound with the formula C(CH2OH)4, commonly known as a type of polyol and used in the production of plastics and resins?[/say]")
+		saynn("[say=eliza]Как называется органическое соединение с формулой C(CH2OH)4, широко известное как разновидность полиола и используемое в производстве пластмасс и смол?[/say]")
 
-		saynn("She is just trying to bury you at this point..")
+		saynn("Она просто пытается тебя закопать...")
 
-		saynn("[say=pc]Plastic is made out of oil, I don't know..[/say]")
+		saynn("[say=pc]Пластик делают из нефти, разве не знаю?..[/say]")
 
-		saynn("[say=eliza]Pentaerythritol![/say]")
+		saynn("[say=eliza]Пентаэритритол![/say]")
 
-		saynn("[say=pc]How can you even spell that?[/say]")
+		saynn("[say=pc]Да как ты вообще это выговорил?[/say]")
 
-		saynn("[say=eliza]What is the name of the compound with the formula NaCl, commonly used as a seasoning and preservative?[/say]")
+		saynn("[say=eliza]Как называется соединение с формулой NaCl, обычно используемое в качестве приправы и консерванта?[/say]")
 
-		saynn("Seasoning..")
+		saynn("Приправа...")
 
-		saynn("[say=pc]You mean.. salt?[/say]")
+		saynn("[say=pc]Ты имеешь в виду... соль?[/say]")
 
-		saynn("Doctor Quinn hums.")
+		saynn("Доктор Куинн что-то напевает под нос.")
 
-		saynn("[say=eliza]Actually, its proper name is Sodium chloride.[/say]")
+		saynn("[say=eliza]Вообще-то, его правильное название — хлорид натрия.[/say]")
 
-		saynn("What a nerd.")
+		saynn("Ну и задротка.")
 
-		saynn("[say=eliza]2 for 6. That's pretty weak.[/say]")
+		saynn("[say=eliza]2 за 6? Слабенько.[/say]")
 
-		saynn("[say=pc]You didn't even give me a proper chance![/say]")
+		saynn("[say=pc]Ты даже не дала мне нормального шанса![/say]")
 
-		saynn("[say=eliza]Sounds like excuses. Science has no space for excuses![/say]")
+		saynn("[say=eliza]Похоже на оправдания. В науке нет места оправданиям![/say]")
 
-		saynn("You can only sigh.")
+		saynn("Вам остаётся только вздохнуть.")
 
-		saynn("[say=pc]So?[/say]")
+		saynn("[say=pc]Ну?[/say]")
 
-		saynn("[say=eliza]Well..[/say]")
+		saynn("[say=eliza]Ну...[/say]")
 
-		addButton("Continue", "See what happens next", "after_test")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_test")
 	if(state == "after_test"):
-		saynn("She looks around the lobby, her paw grips her personal coffee mag, her clawed thumb tapping a rhythm on it.")
+		saynn("Она оглядывает вестибюль, сжимая лапой свою любимую кружку с кофе, а её когтистый большой палец выстукивает по ней ритм.")
 
-		saynn("[say=eliza]You know.. You still did better than all others. I usually just get drug junkies.[/say]")
+		saynn("[say=eliza]Знаешь... Ты всё равно справилась лучше остальных. Обычно ко мне попадаются одни наркоманы.[/say]")
 
-		saynn("A sign of hope?")
+		saynn("Знак надежды?")
 
-		saynn("[say=eliza]But you will have to prove yourself a bit. I can't just trust a random inmate with my precious chemistry lab.[/say]")
+		saynn("[say=eliza]Но тебе придется немного доказать свою профпригодность. Я не могу просто так доверить свою драгоценную химическую лабораторию какому-то случайному заключенному.[/say]")
 
-		saynn("Sounds reasonable.")
+		saynn("Звучит разумно.")
 
-		saynn("[say=pc]Sure. How can I prove myself?[/say]")
+		saynn("[say=pc]Конечно. И как мне себя проявить?[/say]")
 
-		saynn("She scratches her chin.")
+		saynn("Она чешет подбородок.")
 
-		saynn("[say=eliza]Nursery lobby.. the room that's connected to this main lobby.. has a bounty board of sorts. Complete a few tasks there and then I will think about it.[/say]")
+		saynn("[say=eliza]В вестибюле Детского отделения... в комнате, которая соединяется с этим главным холлом... есть своего рода доска объявлений. Выполни там несколько заданий, и тогда я подумаю.[/say]")
 
-		saynn("[say=pc]Nursery? Bounty board? What does that have anything to do with chemistry or researching?[/say]")
+		saynn("[say=pc]Детское отделение? Доска объявлений? Какое это вообще имеет отношение к химии или исследованиям?[/say]")
 
-		saynn("Doctor frowns.")
+		saynn("Доктор хмурится.")
 
-		saynn("[say=eliza]There is a direct connection. We put up tasks there because that's what we need to push science forward![/say]")
+		saynn("[say=eliza]Связь прямая! Мы вешаем там задания, потому что именно это нужно для продвижения науки вперед![/say]")
 
-		saynn("Better not anger the science cat it seems.")
+		saynn("Похоже, лучше не злить эту «кошку науки».")
 
-		saynn("[say=pc]Alright. I get it.[/say]")
+		saynn("[say=pc]Ладно. Я поняла.[/say]")
 
-		saynn("She nods.")
+		saynn("Она кивает.")
 
-		saynn("[say=eliza]If that is all.. I have coffee I need to drink.[/say]")
+		saynn("[say=eliza]Если это всё... Мне пора выпить кофе.[/say]")
 
-		saynn("You let her sip her life juice and step away from the counter..")
+		saynn("Ты позволяешь ей отхлебнуть её «живительного эликсира» и отходишь от стойки...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

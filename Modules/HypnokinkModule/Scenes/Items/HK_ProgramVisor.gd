@@ -15,30 +15,30 @@ func _run():
 		var visor = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 		
 		if(visor.programmedToSuppressPerk() == ""):
-			saynn("This visor is currently running the default program.")
+			saynn("В этом визоре сейчас запущена стандартная программа.")
 		elif(visor.programmedToSuppressPerk() == Perk.HypnosisKeywordsDrawback):
-			saynn("This visor is currently programmed to suppress your keyword fixation.")
+			saynn("Этот визор настроен на подавление вашей фиксации на ключевых словах.")
 		elif(visor.programmedToSuppressPerk() == Perk.HypnosisFamousDrawback):
-			saynn("This visor is currently programmed to suppress your publicly known triggers.")
+			saynn("Этот визор настроен на подавление ваших общеизвестных триггеров.")
 		elif(visor.programmedToSuppressPerk() == Perk.HypnosisDeepTranceDrawback):
-			saynn("This visor is currently programmed to reduce your vulnerability to hypnosis in general.")
+			saynn("Этот визор настроен на общее снижение вашей уязвимости к гипнозу.")
 			
-		saynn("With a bit of know-how, you should be able to alter the programming and by proxy, your own mind.")
+		saynn("Обладая небольшими познаниями, вы сможете изменить программу и, как следствие, собственный разум.")
 		
 		if(visor.programmedToSuppressPerk() != ""):
-			addButton("Reset", "Reset the visor to its default settings", "reset")
+			addButton("Сброс", "Сбросить визор до заводских настроек", "reset")
 		if(GM.pc.hasPerk(Perk.HypnosisKeywordsDrawback)):
-			addButton("Keywords", "Program the visor to suppress your keyword fixation", "keywords")
+			addButton("Ключевые слова", "Настроить визор на подавление фиксации на ключевых словах", "keywords")
 		if(GM.pc.hasPerk(Perk.HypnosisFamousDrawback)):
-			addButton("Famous", "Program the visor to suppress your publicly known triggers.", "famous")
+			addButton("Известные", "Настройте визор так, чтобы он подавлял ваши общеизвестные триггеры.", "famous")
 		if(GM.pc.hasPerk(Perk.HypnosisDeepTranceDrawback)):
-			addButton("Deep trance", "Program the visor to reduce your vulnerability to hypnosis in general", "deep_trance")
-		addButton("Cancel", "Actually, this could be dangerous", "endthescene")
+			addButton("Глубокий транс", "Настройте визор, чтобы снизить вашу общую уязвимость к гипнозу", "deep_trance")
+		addButton("Отмена", "Вообще-то, это может быть опасно", "endthescene")
 		
 	if(state == "post_program"):
-		saynn("You program the visor.")
+		saynn("Вы программируете визор.")
 		
-		addButton("Continue", "You did it", "endthescene")
+		addButton("Продолжить", "У тебя получилось", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

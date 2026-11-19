@@ -11,29 +11,29 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "stand", {npc="vion", npcAction="stand"})
 
-		saynn("[say=vion]Now that that's taken care of...[/say]")
+		saynn("[say=vion]Ну, раз с этим покончено...[/say]")
 
-		saynn("Vion hooks a claw under your collar.")
+		saynn("Вион подцепляет когтем твой воротник.")
 
-		saynn("[say=vion]Stand up. Nice and slow. On your feet.[/say]")
+		saynn("[say=vion]Вставай. Медленно, не спеши. Поднимайся на ноги.[/say]")
 
-		saynn("You rise, Vion guiding you up by dragging your collar.")
+		saynn("Ты поднимаешься, а Вион помогает тебе, потягивая за воротник.")
 
-		saynn("[say=vion]I should probably wake you up, but...[/say]")
+		saynn("[say=vion]Наверное, мне стоит тебя разбудить, но...[/say]")
 
-		saynn("[say=pc]Mmh?[/say]")
+		saynn("[say=pc]Ммм?[/say]")
 
-		saynn("You stand there, gently swaying side to side as he contemplates.")
+		saynn("Ты стоишь, слегка покачиваясь из стороны в сторону, пока он размышляет.")
 
-		saynn("[say=vion]I think it'd be more fun for you if I were to not bother, hmm? Open your eyes, but stay in trance as you do so~[/say]")
+		saynn("[say=vion]Думаю, тебе будет веселее, если я не стану тебя беспокоить, а? Открой глаза, но при этом оставайся в трансе~[/say]")
 
-		saynn("Your eyelids flutter open, and you stare in Vion's commanding eyes.")
+		saynn("Твои веки дрожат и открываются, и ты упираешься взглядом в властные глаза Виона.")
 
-		saynn("[say=vion]That's right. From the outside, you will just look tired, maybe like you've been having too much [i]fun[/i]. But on the inside... your mind will remain the comfortable, thoughtless mush it is right now. Feels nice, doesn't it? Nod for me.[/say]")
+		saynn("[say=vion]Вот так. Со стороны будет казаться, будто ты просто устала, ну, знаешь, будто ты слишком много [i]развлекалась[/i]. Но внутри... твой разум останется такой же уютной, бездумной кашей, какой он и является сейчас. Приятно, правда? Кивни мне.[/say]")
 
-		saynn("You nod...")
+		saynn("Ты киваешь...")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

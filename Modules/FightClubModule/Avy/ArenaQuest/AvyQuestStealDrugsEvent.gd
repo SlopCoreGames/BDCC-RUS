@@ -10,9 +10,9 @@ func run(_triggerID, _args):
 	if(getFlag("FightClubModule.StolePlantForEliza")):
 		return
 	if(getFlag("FightClubModule.GotTaskToStealPlant")):
-		saynn("You notice the glowing pink plants that doctor Quinn has talked about.")
+		saynn("Вы замечаете те самые светящиеся розовые растения, о которых рассказывала доктор Куинн.")
 
-		addButton("Pink plant", "Steal it!", "stealplant")
+		addButton("Розовое растение", "Украсть это!", "stealplant")
 
 func getPriority():
 	return 0

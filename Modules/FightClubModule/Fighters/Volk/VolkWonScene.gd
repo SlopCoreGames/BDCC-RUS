@@ -9,79 +9,79 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="volk", npcAction="kneel"})
 
 	if(state == ""):
-		saynn("Volk drops his weapon and grunts as he hits the floor. As you approach him, his hand starts reaching for his shiv but you swiftly stop that by stepping on his palm and pinning it to the floor.")
+		saynn("Волк роняет оружие и кряхтит, когда приземляется на пол. Когда ты подходишь к нему, он тянется рукой к своему шипу, но ты быстро пресекаешь это движение, наступая ему на ладонь и прижимая её к полу.")
 
-		saynn("[say=volk]Aghrr. Suka![/say]")
+		saynn("[say=volk]Агррр. Сука![/say]")
 
-		saynn("[say=pc]What? Don’t you like the pain?[/say]")
+		saynn("[say=pc]Что? Тебе что, боль не в кайф?[/say]")
 
-		saynn("Growling can be heard from him.")
+		saynn("Из его груди вырывается рычание.")
 
-		addButton("Let him be", "You won and that all that matters", "let_him_be")
-		addButton("Weapon play", "Let him taste his own medicine", "weapon_play")
+		addButton("Оставь его в покое", "Ты победила, и это единственное, что имеет значение.", "let_him_be")
+		addButton("Игра с оружием", "Пусть вкусит собственное лекарство", "weapon_play")
 		GM.ES.triggerRun("ArenaFighterPCWon", ["volk"])
 
 	if(state == "let_him_be"):
-		saynn("You raise your foot and then kick his shiv away so he won’t use it against you.")
+		saynn("Ты заносишь ногу и отшвыриваешь его шип, чтобы он не смог использовать его против тебя.")
 
-		saynn("[say=pc]Bad. You are the suka, not me.[/say]")
+		saynn("[say=pc]Плохо. Это ты сука, а не я.[/say]")
 
-		saynn("Then you just get over the fence and go get your reward.")
+		saynn("Тогда просто перелезай через забор и иди за своей наградой.")
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 	if(state == "weapon_play"):
 		playAnimation(StageScene.SexStart, "start", {npc="volk", pc="pc"})
 		
-		saynn("You lean down and pick up his makeshift weapon. It looks like a piece of glass with some cloth wrapped around so it can be held.")
+		saynn("Ты наклоняешься и подбираешь его самодельное оружие. Это похоже на кусок стекла, обмотанный тряпкой для удобства хвата.")
 
-		saynn("[say=volk]Hey. That’s mine![/say]")
+		saynn("[say=volk]Эй! Это моё![/say]")
 
-		saynn("[say=pc]Not anymore it’s not. You were gonna accidentely cut yourself with that.[/say]")
+		saynn("[say=pc]Уже нет. Ты бы им случайно себя и порезала.[/say]")
 
-		saynn("You raise your leg but then shove into Volk’s chest, pinning him to the floor.")
+		saynn("Ты задираешь ногу, но затем наваливаешься на грудь Волка, прижимая его к полу.")
 
-		saynn("[say=volk]Suka![/say]")
+		saynn("[say=volk]Сука![/say]")
 
-		saynn("[say=pc]What does that even mean.[/say]")
+		saynn("[say=pc]Да что это вообще значит?[/say]")
 
-		saynn("[say=volk]Bitch![/say]")
+		saynn("[say=volk]Сучка![/say]")
 
-		saynn("You apply more pressure to his chest, creating lots of discomfort for him and his ability to breathe. Then you crouch and move the shiv near his neck.")
+		saynn("Ты сильнее давишь ему на грудь, мешая ему дышать и причиняя сильную боль. Затем ты приседаешь и подносишь заточку к его шее.")
 
-		saynn("[say=pc]Am I now?[/say]")
+		saynn("[say=pc]Да неужели?[/say]")
 
-		saynn("He recoils back and tries to avoid that dangerous piece of glass like its fire.")
+		saynn("Он отпрядывает, пытаясь увернуться от этого опасного куска стекла, словно от огня.")
 
-		saynn("[say=volk]You don’t know what you are doing![/say]")
+		saynn("[say=volk]Ты же сама не понимаешь, что творишь![/say]")
 
-		saynn("The shiv gets pressed against his throat. The guy raises his chin high and grits his teeth.")
+		saynn("Заточка прижимается к его горлу. Парень высоко задирает подбородок и стискивает зубы.")
 
-		saynn("[say=pc]Yeah. That makes it more exciting, doesn’t it? One wrong move from you or me and goodbye world.[/say]")
+		saynn("[say=pc]Ага. Так ведь куда интереснее, а? Один неверный шаг — и нам обоим хана.[/say]")
 
-		saynn("The guy is silent but you can tell he is shivering.")
+		saynn("Парень молчит, но видно, что его колотит крупная дрожь.")
 
-		saynn("[say=pc]So who’s suka here?[/say]")
+		saynn("[say=pc]Ну и кто же здесь сука?[/say]")
 
-		saynn("[say=volk]You![/say]")
+		saynn("[say=volk]Ты![/say]")
 
-		saynn("Before he can even finish spitting out his word, you grab his jaw and stick the piece of glass into his mouth, sharp tip is applying lots of pressure onto this canine tongue.")
+		saynn("Прежде чем он успевает выплюнуть слово, ты хватаешь его за челюсть и засовываешь кусок стекла ему в рот; острый кончик с силой давит на его собачий язык.")
 
-		saynn("[say=pc]Would be such a shame to lose your tongue, wouldn’t it? No more shit-talking, no more polishing cocks and asses.[/say]")
+		saynn("[say=pc]Было бы обидно лишиться языка, а? Ни большего пиздежа, ни большего полирования хуёв и жоп.[/say]")
 
-		saynn("You gradually apply more pressure until his tongue starts bleeding. Hissing and painful noises can be heard from him, he is forced to taste his own blood. You put on your meanest gaze and watch the guy’s courage melt before your very eyes.")
+		saynn("Ты постепенно усиливаешь давление, пока его язык не начинает кровоточить. Из его горла доносятся шипение и болезненные стоны — он вынужден чувствовать вкус собственной крови. Ты одаряешь его самым свирепым взглядом и наблюдаешь, как его храбрость тает прямо на глазах.")
 
-		saynn("[say=pc]So. You are the suka, right?[/say]")
+		saynn("[say=pc]Значит. Ты и есть сука, да?[/say]")
 
-		saynn("He winces from pain and nods subtly, causing bigger bleeding. Ow. You finally pull the shiv away from his mouth and wipe the blood against his uniform. Volk closes his mouth and suckles on his own tongue.")
+		saynn("Он морщится от боли и едва заметно кивает, из-за чего кровотечение усиливается. Оу. Наконец ты вынимаешь заточку изо рта и вытираешь кровь о его форму. Волк закрывает рот и начинает посасывать собственный язык.")
 
-		saynn("[say=volk]Fucking maniac..[/say]")
+		saynn("[say=volk]Ебаный маньяк..[/say]")
 
-		saynn("You chuckle and get over the fence, ready to go claim your reward.")
+		saynn("Ты усмехаешься и перелезаешь через забор, готовый забрать свою награду.")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 
 
 func _react(_action: String, _args):

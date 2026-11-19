@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(GM.main.MS.isOnMission()):
-		addDisabledButton("Announcer", "Can't do that while on a mission")
+		addDisabledButton("Диктор", "Нельзя делать это во время миссии")
 		return
 	if(!getFlag("FightClubModule.AnnouncerIntroduced")):
 		addButtonUnlessLate("Announcer", "Approach the guy", "announcerfirst")

@@ -8,31 +8,31 @@ func _initScene(_args = []):
 
 func _run():
 	if(state == ""):
-		saynn("Huh. There is a package here, it has a note attached to it.")
+		saynn("Хм. Тут какая-то посылка, к ней прикреплена записка.")
 		
-		saynn("[b]CARGO MANIFEST[/b]")
+		saynn("[b]ГРУЗОВАЯ ВЕДОМОСТЬ[/b]")
 		
-		sayn("From: BDCC Cargo Bay")
-		saynn("To: Biotech Research Lab")
+		sayn("Откуда: Грузовой отсек BDCC")
+		saynn("Кому: Лаборатория биотехнологических исследований")
 		
-		sayn("Contents:")
-		sayn("1x Medical Augmented Reality (AR) Visor")
-		saynn("Description: An affordable cut-down version of an AR visor designed for medical procedures. Equipped with advanced imaging capabilities, real-time data integration, and augmented reality visualization for enhanced medical diagnostics and surgeries.")
+		sayn("Содержимое:")
+		sayn("1x Медицинский визор дополненной реальности (AR)")
+		saynn("Описание: Бюджетная упрощенная версия AR-визора, предназначенная для медицинских процедур. Оснащен передовыми возможностями визуализации, интеграцией данных в реальном времени и дополненной реальностью для улучшения диагностики и проведения хирургических операций.")
 		
-		sayn("Handling Instructions:")
-		sayn("This package contains delicate medical equipment. Handle with care to prevent damage.")
-		sayn("Make sure to hand the package to Dr. Quinn or anyone else with a higher access level. Make sure to get recipient's signature.")
-		saynn("Bring this manifest back to cargo bay.")
+		sayn("Инструкции по обращению:")
+		sayn("Данная посылка содержит хрупкое медицинское оборудование. Обращаться осторожно, чтобы избежать повреждений.")
+		sayn("Убедитесь, что передали посылку доктору Куинн или любому другому лицу с более высоким уровнем допуска. Обязательно получите подпись получателя.")
+		saynn("Отнеси этот манифест в грузовой отсек.")
 		
-		sayn("Recipient Acknowledgement:")
-		sayn("Please sign and date upon receiving the package, confirming that the contents are in satisfactory condition.")
-		saynn("Recipient Signature: ____________")
+		sayn("Подтверждение получателя:")
+		sayn("Пожалуйста, поставьте подпись и дату при получении посылки, подтверждая, что содержимое находится в удовлетворительном состоянии.")
+		saynn("Подпись получателя: ____________")
 		
-		sayn("No one even signed it.. so they probably wouldn't even mind it going missing.")
+		sayn("Тут даже никто не расписался... так что, скорее всего, они и не заметят, если она пропадет.")
 		
-		saynn("You take it and unwrap it. Yeah, there is some kind of visor inside.")
+		saynn("Ты забираешь её и разворачиваешь. Да, внутри какой-то визор.")
 		
-		addButton("Yoink", "Finders keepers", "endthescene")
+		addButton("Хоп!", "Кто нашел, того и тапки", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):
